@@ -1,0 +1,241 @@
+/* ======================================================================
+   site/css/62-history.css · OWNER: the History lane (history-and-passages) · history.html
+   The seven eras as a coastline rail of numbered medallions; stat tiles on a double rule; the filter panel;
+   each era's head (a gold Roman numeral beside the name); the timeline as the design's ol.timeline coastline
+   (a 2px coast with engraved water-lining echoes seaward, a landmark where the entry happened at a place you
+   can visit, a hollow sounding-free dot where it did not), the year as a Bodoni numeral; the seven National
+   Historic Landmarks as cards under a double gold rule; the register of historic sites by sheet and area,
+   each row a landmark symbol, the name, "Built …", designation boxes and the year as a cigar-label numeral.
+   Tokens only; no color literal; nothing under 12px; 44px targets on phones.
+   ====================================================================== */
+
+/* ---------- the seven eras: a coastline of numbered medallions ---------- */
+.hx-top { margin-top: var(--sp-6); }
+.hx-rail { --coast: 26px; }
+.hx-rail ol {
+  position: relative; list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0 4px;
+}
+.hx-rail ol::before {                       /* the coast: a 2px line and its engraved echoes seaward (below) */
+  content: ""; position: absolute; left: 0; right: 0; top: var(--coast); height: 22px; pointer-events: none;
+  background:
+    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
+    linear-gradient(var(--water-line) 0 0) 0 5px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 72%, transparent) 0 0) 0 9px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 46%, transparent) 0 0) 0 14px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 24%, transparent) 0 0) 0 21px / 100% 1px no-repeat;
+}
+.hx-rail li { position: relative; min-width: 0; }
+.hx-rail a {
+  display: grid; justify-items: center; align-content: start; gap: 3px; height: 100%; min-height: var(--tap);
+  padding: 0 4px var(--sp-3); color: var(--text); text-align: center; text-decoration: none;
+}
+.hx-rail-no {
+  position: relative; z-index: 1; display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 6px; border-radius: 50%;
+  background: var(--surface); border: 2px solid var(--rule-ink); box-shadow: 0 0 0 4px var(--bg), 0 0 0 5px var(--gold);
+  font-family: var(--font-display); font-weight: 800; font-size: 1.125rem; line-height: 1; font-variant-numeric: lining-nums;
+  transition: background var(--speed) var(--ease);
+}
+.hx-rail-name { font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: var(--lh-snug); }
+.hx-rail-span {
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; color: var(--gold-ink); font-variant-numeric: tabular-nums;
+}
+.hx-rail-n { font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.hx-rail a:hover .hx-rail-no { background: var(--gold-tint); }
+.hx-rail a:hover .hx-rail-name { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
+@media (max-width: 899px) {
+  .hx-rail ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--sp-3); }
+  .hx-rail ol::before { display: none; }
+  .hx-rail li { border-bottom: 1px solid var(--border); }
+  .hx-rail a { grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto auto; justify-items: start; column-gap: 12px; row-gap: 1px; padding: 10px 0; text-align: left; }
+  .hx-rail-no { grid-row: 1 / span 3; width: 40px; height: 40px; margin: 2px 0 0; font-size: 1rem; box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--gold); }
+  .hx-rail-name { font-size: var(--fs-base); }
+}
+
+/* ---------- the numbers: tiles on the label's double rule ---------- */
+.hx-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); gap: 1px; margin: var(--sp-6) 0 var(--sp-4);
+  padding-top: 6px; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rule-ink) 0 0) 0 5px / 100% 1px no-repeat;
+}
+.hx-stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; gap: 4px; padding: 12px 14px 14px; background: var(--surface); border-bottom: 1px solid var(--border); }
+.hx-stat dd { margin: 0; font-family: var(--font-display); font-weight: 800; font-size: var(--fs-numeral); line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
+.hx-stat dt { font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.35; }
+.hx-acts { margin-top: var(--sp-2); }
+.hx-acts .btn .i { margin-right: 6px; }
+
+/* ---------- the filter panel (JS only) ---------- */
+.hx-filter {
+  margin-top: var(--sp-7); padding: var(--sp-4) var(--sp-4) var(--sp-3); background: var(--surface); border: 1px solid var(--border);
+  border-top: 3px double var(--rule-ink);
+}
+.hx-filter .toolbar { margin-bottom: var(--sp-3); }
+.hx-filter .toolbar .field { flex: 1 1 280px; }
+.hx-chips { display: grid; grid-template-columns: 56px minmax(0, 1fr); align-items: start; gap: 4px var(--sp-3); margin-top: var(--sp-2); }
+.hx-chips-l { padding-top: 13px; color: var(--text-muted); margin: 0; }
+.hx-filter-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-2); margin-top: var(--sp-3); padding-top: var(--sp-2); border-top: 1px solid var(--border); }
+.hx-filter-foot .btn { min-height: var(--tap); }
+@media (max-width: 559px) {
+  .hx-chips { grid-template-columns: minmax(0, 1fr); }
+  .hx-chips-l { padding-top: 4px; }
+}
+.hx-empty { margin: var(--sp-5) 0; padding: var(--sp-4); border: 1px dashed var(--border-strong); background: var(--surface); color: var(--text-muted); }
+
+/* ---------- an era ---------- */
+.hx-era { margin-top: var(--sp-8); padding-top: calc(var(--wl-h) + 14px);
+  background:
+    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
+    linear-gradient(var(--water-line) 0 0) 0 5px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 72%, transparent) 0 0) 0 9px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 46%, transparent) 0 0) 0 14px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 24%, transparent) 0 0) 0 21px / 100% 1px no-repeat;
+}
+.hx-filtered > .hx-filter + [data-filter-list] .hx-era:first-of-type { margin-top: var(--sp-7); }
+.hx-era-head { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: 4px var(--sp-4); }
+.hx-era-no {
+  min-width: 1.2em; font-family: var(--font-display); font-weight: 800; font-size: clamp(2.75rem, 2rem + 3vw, 4.5rem); line-height: 0.8;
+  color: var(--gold-ink); font-variant-numeric: lining-nums; text-align: center;
+}
+.hx-era-head .sec-kicker { color: var(--text-muted); margin-bottom: 4px; }
+.hx-era-head h2 { font-size: var(--fs-xl); line-height: var(--lh-head); }
+.hx-intro { margin-top: var(--sp-3); max-width: var(--measure); color: var(--text-muted); }
+.hx-intro a { font-weight: var(--wght-ui); }
+.hx-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px var(--sp-4); margin-top: var(--sp-2); font-size: var(--fs-sm); }
+.hx-sitelink { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); font-weight: var(--wght-strong); }
+.hx-sitelink .i { width: 16px; height: 16px; }
+.hx-walk { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); color: var(--text-muted); }
+.hx-walk > .i { flex: none; width: 16px; height: 16px; color: var(--magenta); }
+
+/* ---------- the timeline: a coastline, a landmark where it happened ---------- */
+ol.timeline.hx-tl {
+  --when-w: 0px; --line-x: 7px;
+  margin-top: var(--sp-6);
+  background:
+    linear-gradient(var(--rule-ink) 0 0) var(--line-x) 0 / 2px 100% no-repeat,
+    linear-gradient(var(--water-line) 0 0) calc(var(--line-x) - 5px) 0 / 1px 100% no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 60%, transparent) 0 0) calc(var(--line-x) - 9px) 0 / 1px 100% no-repeat;
+}
+ol.timeline.hx-tl > li.hx-item { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; padding: 0 0 var(--sp-7) calc(var(--line-x) + 26px); }
+ol.timeline.hx-tl > li.hx-item:last-child { padding-bottom: var(--sp-3); }
+ol.timeline.hx-tl > li.hx-item::before {    /* a plain sounding-free dot: it happened here, but no place to visit */
+  left: calc(var(--line-x) - 6px); top: 0.55em; width: 14px; height: 14px; border: 2px solid var(--rule-ink); background: var(--bg);
+}
+ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with a center dot, in the sheet's ink */
+  left: calc(var(--line-x) - 8px); top: 0.4em; width: 18px; height: 18px; border: 2px solid var(--ink-edge);
+  background: radial-gradient(circle, var(--ink-fill) 0 3px, var(--bg) 3.5px);
+  box-shadow: 0 0 0 3px var(--bg);
+}
+.hx-when { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.hx-item .tl-year { font-family: var(--font-display); font-weight: 800; font-size: 1.625rem; line-height: 1.05; color: var(--text); font-variant-numeric: lining-nums; }
+.hx-day {
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-muted);
+}
+.hx-approx { color: var(--text-faint); }
+.tl-year .era-sfx { margin-left: 0.18em; font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); vertical-align: 0.35em; color: var(--text-muted); }
+.hx-body { min-width: 0; max-width: 46rem; }
+.hx-item .tl-title { margin-top: 2px; font-size: var(--fs-lg); line-height: var(--lh-snug); }
+.hx-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 8px; font-size: var(--fs-xs); color: var(--text-muted); }
+.hx-meta a { color: var(--text-muted); display: inline-flex; align-items: center; min-height: 24px; }
+.hx-meta .sheet-dot { margin-right: -4px; }
+.hx-sheet { color: var(--ink-text); font-weight: var(--wght-strong); }
+.hx-item .tl-text { margin-top: 10px; max-width: var(--measure); }
+.hx-item .tl-places { display: flex; align-items: flex-start; gap: 8px; margin-top: var(--sp-3); font-size: var(--fs-sm); color: var(--text); }
+.hx-item .tl-places::before {                  /* the landmark symbol, drawn */
+  content: ""; flex: none; width: 16px; height: 16px; margin-top: 2px; border: 2px solid var(--ink-text); border-radius: 50%;
+  background: radial-gradient(circle, var(--ink-text) 0 2px, transparent 2.5px);
+}
+.hx-item .tl-places .label { margin-right: 4px; color: var(--text-muted); }
+.hx-item .tl-places a { font-weight: var(--wght-strong); }
+.hx-item .source-line { margin-top: var(--sp-3); }
+.hx-fig { max-width: 440px; margin: var(--sp-4) 0 0; }
+.hx-fig img { border: 1px solid var(--border); }
+.hx-fig.is-tall { max-width: 280px; }              /* a portrait image never fills a phone screen */
+@media (min-width: 760px) {
+  ol.timeline.hx-tl { --when-w: 124px; --line-x: 140px; }
+  ol.timeline.hx-tl > li.hx-item { grid-template-columns: var(--when-w) minmax(0, 1fr); column-gap: 42px; padding-left: 0; }
+  .hx-when { display: grid; justify-items: end; align-content: start; gap: 4px; padding-top: 2px; text-align: right; }
+  .hx-item .tl-year { font-size: 2rem; }
+  ol.timeline.hx-tl > li.hx-item::before { top: 0.7em; }
+  ol.timeline.hx-tl > li.hx-item.is-at::before { top: 0.6em; }
+  .hx-item.has-fig .hx-body { max-width: none; display: grid; grid-template-columns: minmax(0, 1fr) minmax(200px, 280px); column-gap: var(--sp-5); align-items: start; }
+  .hx-item.has-fig .hx-body > * { grid-column: 1; }
+  .hx-item.has-fig .hx-fig { grid-column: 2; grid-row: 1 / span 6; margin-top: 4px; }
+}
+
+/* ---------- historic sites: the landmarks, then the register ---------- */
+.hx-sites { margin-top: var(--sp-9); }
+.hx-sites .sec-head .sec-kicker .i { width: 16px; height: 16px; }
+.hx-lms { margin-top: var(--sp-5); }
+.hx-lm-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+.card.hx-lm { display: flex; flex-direction: column; padding: 0; border-top: 3px double var(--gold-ink); }
+.card.hx-lm > .plate-type, .card.hx-lm > .photo { margin: 6px 6px 0; }
+.hx-lm .card-title { font-size: var(--fs-md); line-height: var(--lh-snug); }
+.hx-lm .card-title a { color: var(--text); }
+.hx-lm-des {
+  display: flex; align-items: center; gap: 8px; width: fit-content; padding: 4px 10px; background: var(--gold-tint); color: var(--text);
+  font-size: var(--fs-xs); font-weight: var(--wght-strong);
+}
+.hx-lm-des::before { content: ""; flex: none; width: 12px; height: 12px; border: 2px solid var(--gold-ink); border-radius: 50%; background: radial-gradient(circle, var(--gold-ink) 0 1.5px, transparent 2px); }
+.hx-credit { font-size: var(--fs-xs); color: var(--text-faint); position: relative; z-index: 2; }
+.hx-credit a { color: var(--text-muted); }
+.hx-reg-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px var(--sp-3); margin-top: var(--sp-8); }
+.hx-reg-h .result-count { font-family: var(--font-body); font-size: var(--fs-sm); font-weight: var(--wght-ui); }
+.hs-sheet { margin-top: var(--sp-6); }
+.hs-sheet-h {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 10px 0; font-size: var(--fs-lg); color: var(--ink-text);
+  border-bottom: 2px solid var(--ink-edge);
+}
+.hs-sheet-h > span:not(.hs-n) { color: var(--text); }
+.hs-n { margin-left: auto; font-family: var(--font-body); font-size: var(--fs-sm); font-weight: var(--wght-ui); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.hs-area { margin-top: var(--sp-4); }
+.hs-area-h {
+  display: flex; align-items: center; gap: 10px; padding: 4px 0; border-bottom: 1px solid var(--border);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase;
+}
+.hs-area-h a { display: inline-flex; align-items: center; min-height: var(--tap); color: var(--text); text-decoration: none; }
+.hs-area-h a:hover { text-decoration: underline; }
+.hs-area-h .hs-n { font-family: var(--font-label); font-size: var(--fs-label); letter-spacing: var(--track-label); }
+.hs-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); column-gap: var(--sp-5); }
+.hs-item {
+  position: relative; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; align-items: start; column-gap: 12px;
+  padding: 14px 0; border-bottom: 1px solid var(--border);
+}
+.hs-sym { display: grid; place-items: center; width: 26px; height: 26px; margin-top: 2px; color: var(--ink-text); }
+.hs-sym .i { width: 20px; height: 20px; }
+.hs-item:not(.is-stay)::before {          /* the landmark symbol, drawn: a circle with a center dot */
+  content: ""; justify-self: center; width: 18px; height: 18px; margin-top: 5px; border: 2px solid var(--ink-text); border-radius: 50%;
+  background: radial-gradient(circle, var(--ink-text) 0 2px, transparent 2.5px);
+}
+.hs-body { min-width: 0; }
+.hs-kicker { color: var(--text-muted); margin: 0; }
+.hs-name { margin-top: 3px; font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: var(--lh-snug); }
+.hs-name a { color: var(--text); text-decoration: none; }
+.hs-name a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.14em; }
+.hs-name .badge { vertical-align: 0.15em; margin-left: 4px; }
+.hs-meta { margin-top: 4px; font-size: var(--fs-xs); color: var(--text-muted); }
+.hs-des { margin: 8px 0 0; gap: 4px; }
+.hs-des li { padding: 5px 9px; font-size: var(--fs-xs); gap: 8px; }
+.hs-des li::before { width: 12px; height: 12px; margin-top: 1px; }
+.hs-des li.is-nhl { box-shadow: inset 3px 0 0 var(--gold-ink); }
+.hs-des-none { margin-top: 6px; font-size: var(--fs-xs); }
+.hs-src { margin-top: 6px; font-size: var(--fs-xs); color: var(--text-faint); }
+.hs-src a { color: var(--text-muted); }
+.hs-year {
+  padding-top: 6px; font-family: var(--font-display); font-weight: 800; font-size: 1.375rem; line-height: 1; color: var(--text-muted);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+@media (max-width: 559px) {
+  .hs-item { grid-template-columns: 22px minmax(0, 1fr) auto; column-gap: 10px; }
+  .hs-year { font-size: 1.125rem; }
+}
+
+/* ---------- walk the history, how it is made ---------- */
+.hx-walks { list-style: none; padding: 2px 0 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); column-gap: var(--sp-5); background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; }
+.hx-walks li { border-bottom: 1px solid var(--border); }
+.hx-walks a { display: flex; align-items: center; gap: 12px; min-height: var(--tap); padding: 10px 0; color: var(--text); text-decoration: none; }
+.hx-walks .t { display: block; font-weight: var(--wght-strong); }
+.hx-walks .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+.hx-walks a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+.hx-how p { color: var(--text-muted); }

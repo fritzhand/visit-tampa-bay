@@ -25,33 +25,33 @@ edits, run it, then `git diff data/` and re-apply the edits (their `notes` say w
 |---|---:|
 | regions.json | 6 |
 | areas.json | 45 |
-| places.json | 621 |
-| stays.json | 408 |
-| experiences.json | 162 |
-| events.json | 556 |
+| places.json | 641 |
+| stays.json | 414 |
+| experiences.json | 176 |
+| events.json | 590 |
 | series.json | 106 |
-| timeline.json | 115 |
-| transport.json | 44 |
-| faqs.json | 104 |
-| facts.json | 92 |
-| media.json | 194 |
-| routes.json | 0 |
+| timeline.json | 135 |
+| transport.json | 49 |
+| faqs.json | 118 |
+| facts.json | 99 |
+| media.json | 338 |
+| routes.json | 14 |
 | aliases.json (places) | 13 |
 
-Heritage blocks: 186 (170 places, 16 stays). Events by status: 544 scheduled, 1 changed, 11 tentative. Places by status: 602 open, 12 seasonal, 1 opening-soon, 6 temporarily-closed. Stays by status: 399 open, 6 temporarily-closed, 3 opening-soon.
+Heritage blocks: 195 (179 places, 16 stays). Events by status: 576 scheduled, 12 tentative, 1 changed, 1 cancelled. Places by status: 622 open, 12 seasonal, 1 opening-soon, 6 temporarily-closed. Stays by status: 405 open, 6 temporarily-closed, 3 opening-soon.
 
 ### Per region (sheet)
 
 | file | TP Tampa | SP St. Petersburg | GB Gulf Beaches | CW Clearwater & North Pinellas | AB Around the Bay | DT Day Trips | no region | total |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | areas | 13 | 7 | 8 | 7 | 6 | 4 | 0 | 45 |
-| places | 223 | 102 | 56 | 82 | 45 | 113 | 0 | 621 |
-| stays | 107 | 48 | 135 | 38 | 76 | 4 | 0 | 408 |
-| experiences | 57 | 37 | 31 | 17 | 7 | 13 | 0 | 162 |
-| events | 213 | 126 | 13 | 132 | 15 | 54 | 3 | 556 |
+| places | 228 | 105 | 62 | 82 | 46 | 118 | 0 | 641 |
+| stays | 107 | 48 | 138 | 38 | 79 | 4 | 0 | 414 |
+| experiences | 58 | 38 | 38 | 19 | 8 | 15 | 0 | 176 |
+| events | 244 | 129 | 13 | 134 | 14 | 54 | 2 | 590 |
 | series | 37 | 19 | 8 | 20 | 8 | 12 | 2 | 106 |
-| timeline | 61 | 23 | 5 | 12 | 4 | 10 | 0 | 115 |
-| transport | 21 | 17 | 16 | 13 | 6 | 7 | 0 | 44 |
+| timeline | 69 | 29 | 7 | 16 | 4 | 8 | 2 | 135 |
+| transport | 23 | 19 | 18 | 13 | 6 | 7 | 0 | 49 |
 
 Region follows from `area` (an event or series without one takes its place's; a timeline entry its first place's); transport counts
 once per region it serves.
@@ -62,16 +62,16 @@ once per region it serves.
 |---|---|
 | regions.json | areas 6 |
 | areas.json | areas 45 |
-| places.json | see-tampa 42, see-pinellas 79, venues-bay 70, outdoors 98, around-daytrips 69, eat-tampa 76, eat-pinellas 84, history-tampa 71, history-region 47, practical 6 |
-| stays.json | outdoors 14, stays-tampa-core 37, stays-tampa-outer 138, stays-stpete-pinellas 85, stays-beaches 134 |
-| experiences.json | exp-water 73, exp-land 89 |
-| events.json | events-fall 97, events-spring 53, events-sports 209, events-shows 197 |
+| places.json | see-tampa 42, see-pinellas 79, venues-bay 70, outdoors 98, around-daytrips 69, eat-tampa 76, eat-pinellas 90, history-tampa 76, history-region 51, practical 12 |
+| stays.json | outdoors 14, stays-tampa-core 37, stays-tampa-outer 141, stays-stpete-pinellas 85, stays-beaches 137 |
+| experiences.json | exp-water 87, exp-land 89 |
+| events.json | events-fall 100, events-spring 53, events-sports 209, events-shows 229 |
 | series.json | events-fall 30, events-spring 66, events-sports 30 |
-| timeline.json | timeline 115 |
-| transport.json | getting-around 44 |
-| faqs.json | getting-around 33, practical 71 |
-| facts.json | timeline 8, getting-around 19, practical 65 |
-| media.json | history-tampa 72, history-region 48, timeline 74 |
+| timeline.json | timeline 135 |
+| transport.json | getting-around 49 |
+| faqs.json | getting-around 41, practical 77 |
+| facts.json | timeline 8, getting-around 23, practical 68 |
+| media.json | history-tampa 73, history-region 50, timeline 78, media-commons 137 |
 | routes.json | written in the build phase (Passages); the merge keeps what is there and drops the test fixture's route |
 | aliases.json | location texts the merge resolved to a place, plus earlier entries that still add something |
 
@@ -97,14 +97,15 @@ united by name + ref and `sources` united. Coordinates follow SPEC §7 (below). 
 | experiences | exp-water > exp-land |
 | events | events-sports > events-shows > events-fall > events-spring |
 | series | the slice with most of the series' dated events, then events-spring > events-fall > events-sports > events-shows |
-| media, faqs, facts | history-tampa > history-region > timeline; practical > getting-around; practical > getting-around > timeline |
+| media, faqs, facts | history-tampa > history-region > timeline > media-commons; practical > getting-around; practical > getting-around > timeline |
 
 A place's kind group is read from its non-history records' primary kinds (venue before outdoor before eat).
 
 ### Merged records
 
 - places **sponge-docks-tarpon-springs** ← see-pinellas + history-region (owner see-pinellas; kind group attraction; heritage from history-region; point from see-pinellas (photon); 1 conflict(s))
-- places **tampa-theatre** ← venues-bay + history-tampa (owner venues-bay; verified: venues-bay; kind group venue; heritage from history-tampa; point from history-tampa (photon); 5 conflict(s))
+- places **heritage-village** ← see-pinellas + history-region (owner see-pinellas; verified: see-pinellas, history-region; kind group attraction; heritage from history-region; point from see-pinellas (census); 3 conflict(s))
+- places **tampa-theatre** ← venues-bay + history-tampa (owner venues-bay; verified: venues-bay, history-tampa; kind group venue; heritage from history-tampa; point from history-tampa (photon); 5 conflict(s))
 - places **water-works-park** ← outdoors + venues-bay (owner outdoors; verified: venues-bay; kind group outdoor; point from venues-bay (census); 2 conflict(s))
 - places **polk-theatre** ← venues-bay + around-daytrips (owner venues-bay; verified: venues-bay; kind group venue; heritage from venues-bay; point from venues-bay (census); 4 conflict(s))
 - places **philippe-park** ← outdoors + history-region (owner outdoors; verified: history-region; kind group outdoor; heritage from history-region; point from history-region (census); 3 conflict(s))
@@ -124,6 +125,7 @@ A place's kind group is read from its non-history records' primary kinds (venue 
 - places **palmetto-historical-park** ← around-daytrips + history-region (owner around-daytrips; verified: around-daytrips; kind group attraction; heritage from history-region; point from around-daytrips (census); 7 conflict(s))
 - places **columbia-restaurant-ybor-city** ← eat-tampa + history-tampa (owner eat-tampa; kind group eat; heritage from history-tampa; point from history-tampa (photon); 7 conflict(s))
 - places **ulele** ← eat-tampa + history-tampa (owner eat-tampa; kind group eat; heritage from history-tampa; point from eat-tampa (census); 2 conflict(s))
+- events **tampa-theatre-100th-birthday-2026** ← events-shows + events-fall (owner events-shows; verified: events-shows; 3 conflict(s))
 - series **alafia-lighted-boat-parade** ← events-fall + events-spring (owner events-fall; verified: events-spring; 3 conflict(s))
 - series **christmas-town-busch-gardens** ← events-fall + events-spring (owner events-fall; 3 conflict(s))
 - series **clearwater-jazz-holiday** ← events-fall + events-spring (owner events-fall; verified: events-spring; 3 conflict(s))
@@ -262,13 +264,15 @@ None.
 
 ## Conflicts
 
-152 field conflicts between slices (67 facts, 85 text variants and flags). The kept value
+158 field conflicts between slices (71 facts, 87 text variants and flags). The kept value
 follows the policy above; QA should settle each fact from its source. Values are shortened to 150 characters.
 
 ### Facts
 
 | record | field | kept | other | why |
 |---|---|---|---|---|
+| places#heritage-village | hours_text | see-pinellas: Wednesday–Saturday 10am–4pm, Sunday 1–4pm; closed on county holidays. | history-region: Wednesday–Saturday 10 a.m.–4 p.m., Sunday 1–4 p.m.; closed Monday, Tuesday and county holidays | owner |
+| places#heritage-village | price_text | see-pinellas: Free (donations encouraged). | history-region: Free admission | owner |
 | places#tampa-theatre | heritage.style | history-tampa: Atmospheric movie palace (the City of Tampa lists it as Mediterranean Revival) | venues-bay: Atmospheric movie palace (Mediterranean Revival) | history slice owns heritage |
 | places#polk-theatre | heritage.style | venues-bay: Atmospheric movie palace (Mediterranean village interior) | around-daytrips: Atmospheric (Mediterranean village) | owner |
 | places#weedon-island-preserve | url | history-region: https://www.weedonislandpreserve.org/ | outdoors: https://pinellas.gov/parks/weedon-island-preserve/ | verified |
@@ -302,6 +306,8 @@ follows the policy above; QA should settle each fact from its source. Values are
 | places#columbia-restaurant-ybor-city | hours_text | eat-tampa: Sunday–Thursday 11 AM–9 PM; Friday–Saturday 11 AM–10 PM. Gift shop Monday–Saturday 11 AM–8 PM, Sunday 11 AM–6 PM. | history-tampa: Sunday–Thursday 11 AM–9 PM; Friday–Saturday 11 AM–10 PM. | owner |
 | places#columbia-restaurant-ybor-city | heritage.built | history-tampa: 1903 (saloon); expanded to its present size by the 1930s; tiled arcade 1963 | eat-tampa: 1903–1905 | history slice owns heritage |
 | places#ulele | name | eat-tampa: Ulele | history-tampa: Ulele (Tampa Water Works building) | owner |
+| events#tampa-theatre-100th-birthday-2026 | cost | events-shows: $26 | events-fall: Admission is just $26 | verified |
+| events#tampa-theatre-100th-birthday-2026 | url | events-shows: https://tampatheatre.org/live/centennial-celebration/ | events-fall: https://www.visittampabay.com/tampa-events/details/tampa-theatre%e2%80%99s-100th-birthday-celebration/102356/ | verified |
 | series#alafia-lighted-boat-parade | when_text | events-spring: A Saturday in early December (December 5, 2026, 4 - 7 PM) | events-fall: A Saturday in early December (December 5 in 2026, 4 - 7 PM; the 42nd parade) | verified |
 | series#alafia-lighted-boat-parade | url | events-spring: https://www.alafiaboatparade.com/ | events-fall: https://www.visittampabay.com/tampa-events/details/42nd-annual-alafia-lighted-boat-parade/102320/ | verified |
 | series#christmas-town-busch-gardens | when_text | events-fall: Select dates from mid-November into early January (November 13, 2026 through January 4, 2027), included with park admission | events-spring: Select dates from November 13, 2026 through January 4, 2027 | owner |
@@ -342,10 +348,11 @@ follows the policy above; QA should settle each fact from its source. Values are
 | record | field | kept | other | why |
 |---|---|---|---|---|
 | places#sponge-docks-tarpon-springs | summary | see-pinellas: Historic waterfront along Dodecanese Boulevard, center of Tarpon Springs' Greek sponge industry: docked spong… | history-region: The Anclote River waterfront along Dodecanese Boulevard where Greek divers built Tarpon Springs' sponge indus… | owner |
-| places#tampa-theatre | summary | venues-bay: A 1926 movie palace on Franklin Street that now shows new and classic films and hosts concerts, educational p… | history-tampa: A 1926 atmospheric movie palace designed by John Eberson, rescued from demolition in the 1970s and now a nonp… | verified |
+| places#heritage-village | summary | see-pinellas: Pinellas County's 21-acre history museum park, open since 1976, with more than 28 historic structures from ac… | history-region: Pinellas County's 21-acre history museum park in Largo, run by the county since 1976, with more than 28 histo… | owner |
+| places#tampa-theatre | summary | venues-bay: A 1926 movie palace on Franklin Street that now shows new and classic films and hosts concerts, educational p… | history-tampa: A 1926 atmospheric movie palace designed by John Eberson, rescued from demolition in the 1970s and now a nonp… | owner |
 | places#tampa-theatre | heritage.story | history-tampa: Designed by John Eberson, the theatre opened on October 15, 1926, inside a ten-story office building on Frank… | venues-bay: Tampa Theatre opened on October 15, 1926, an atmospheric movie palace designed by John Eberson. Facing demoli… | history slice owns heritage |
-| places#tampa-theatre | heritage.visiting | history-tampa: See a film or concert, or join one of the building tours the theatre offers (Visit Tampa Bay lists tours amon… | venues-bay: The theatre offers guided building tours as well as films and concerts; buy tickets through the theatre. | history slice owns heritage |
-| places#tampa-theatre | quote | venues-bay: Built in 1926, Tampa's majestic movie palace hosts 600+ events each year, including contemporary films, class… | history-tampa: When Tampa Theatre opened in 1926 it was the city's first commercial building to offer air conditioning. | verified |
+| places#tampa-theatre | heritage.visiting | history-tampa: See a film or concert. The theatre's monthly Balcony to Backstage building tours resume in November 2026; in … | venues-bay: The theatre offers guided building tours as well as films and concerts; buy tickets through the theatre. | history slice owns heritage |
+| places#tampa-theatre | quote | venues-bay: Built in 1926, Tampa's majestic movie palace hosts 600+ events each year, including contemporary films, class… | history-tampa: When Tampa Theatre opened in 1926 it was the city's first commercial building to offer air conditioning. | owner |
 | places#water-works-park | summary | venues-bay: Riverfront city park in Tampa Heights with a festival lawn and an amphitheater pavilion for small and mid-siz… | outdoors: A free City of Tampa riverfront park on the Riverwalk near Armature Works, with a splash pad, a playground, Q… | verified |
 | places#water-works-park | quote | venues-bay: An intimate, open space for festivals and concerts, the Waterworks festival lawn park is the perfect spot for… | outdoors: Water Works Park is a City park (not a water park) open to the public. There is no admission fee. | verified |
 | places#polk-theatre | summary | venues-bay: A 1928 atmospheric movie palace in downtown Lakeland, run by a nonprofit since 1982, that shows classic films… | around-daytrips: A 1928 atmospheric movie palace in downtown Lakeland, designed to look like a Mediterranean village under a s… | verified |
@@ -375,7 +382,7 @@ follows the policy above; QA should settle each fact from its source. Values are
 | places#madira-bickel-mound-state-archaeological-site | heritage.story | history-region: Excavations show Indigenous occupation reaching back about 2,000 years across the Manasota, Weedon Island and… | around-daytrips: Excavations show about 2,000 years of Native American occupation across the Manasota, Weedon Island and Safet… | history slice owns heritage |
 | places#madira-bickel-mound-state-archaeological-site | heritage.visiting | history-region: Stairs lead to a fenced overlook on top of the mound. | around-daytrips: An outdoor mound site run by Florida State Parks; hours were not readable on Sep 27, 2026. | history slice owns heritage |
 | places#crystal-river-archaeological-state-park | summary | history-region: A 61-acre Native American ceremonial site on the Crystal River with burial mounds, temple mounds, a plaza and… | around-daytrips: A 61-acre state park on the Crystal River preserving a six-mound Native American ceremonial center of burial … | verified |
-| places#crystal-river-archaeological-state-park | heritage.story | history-region: For about 1,600 years the six-mound complex served as a ceremonial center, and the state park estimates as ma… | around-daytrips: Native Americans used this bluff on the Crystal River from the second century AD for roughly a thousand years… | history slice owns heritage |
+| places#crystal-river-archaeological-state-park | heritage.story | history-region: For about 1,600 years the six-mound complex served as a ceremonial center, and it was active and abandoned be… | around-daytrips: Native Americans used this bluff on the Crystal River from the second century AD for roughly a thousand years… | history slice owns heritage |
 | places#crystal-river-archaeological-state-park | heritage.visiting | history-region: Walk the grounds daily from 8 am to sunset; the museum is open Thursday to Monday. | around-daytrips: Walk among the mounds and see the museum (Thursday to Monday, 9am–5pm); the grounds open daily 8 am to sunset. | history slice owns heritage |
 | places#old-courthouse-heritage-museum | summary | around-daytrips: A free Citrus County history museum in the 1912 courthouse on the town square in downtown Inverness, with fir… | history-region: Citrus County's 1912 courthouse on the Inverness town square, now a free history museum run by the Citrus Cou… | owner |
 | places#florida-southern-college-architectural-district | summary | history-region: Thirteen buildings Frank Lloyd Wright designed for Florida Southern College in Lakeland from 1938, which the … | around-daytrips: Florida Southern College's Lakeland campus, which the college calls the largest single-site collection of Fra… | verified |
@@ -394,7 +401,8 @@ follows the policy above; QA should settle each fact from its source. Values are
 | places#columbia-restaurant-ybor-city | heritage.story | history-tampa: Casimiro Hernandez Sr., a Spanish-Cuban immigrant, helped open the Columbia Saloon on December 17, 1903, and … | eat-tampa: Spanish-Cuban immigrant Casimiro Hernandez Sr. helped open the Columbia Saloon on Dec. 17, 1903, and it becam… | history slice owns heritage |
 | places#columbia-restaurant-ybor-city | heritage.visiting | history-tampa: Open daily for lunch and dinner; the restaurant says it seats up to 1,700 in 15 dining rooms across 52,000 sq… | eat-tampa: Open daily for lunch and dinner; flamenco shows are booked through the restaurant's website. | history slice owns heritage |
 | places#columbia-restaurant-ybor-city | quote | eat-tampa: For more than 120 years, the Columbia Restaurant has served Spanish-Cuban cuisine to the state of Florida, us… | history-tampa: The 1903 corner saloon transformed into the Columbia Restaurant in 1905, using the same iconic bar. | owner |
-| places#ulele | summary | eat-tampa: A restaurant and brewery on the Riverwalk in Tampa Heights, next to Ulele Spring and Water Works Park, servin… | history-tampa: A restaurant and brewery that opened in 2014 in Tampa's 1902 Water Works pumping station on the Hillsborough … | owner |
+| places#ulele | summary | eat-tampa: A restaurant and brewery on the Riverwalk in Tampa Heights, next to Ulele Spring and Water Works Park, servin… | history-tampa: A restaurant and brewery that opened in August 2014 in Tampa's 1902 Water Works pumping station on the Hillsb… | owner |
+| events#tampa-theatre-100th-birthday-2026 | summary | events-shows: Tampa Theatre marks its 100th birthday with a silent comedy with live music, remarks from Tampa's mayor, spec… | events-fall: Tampa Theatre marks its 100th birthday with a silent comedy with live musical accompaniment, remarks from Tam… | verified |
 | series#alafia-lighted-boat-parade | summary | events-spring: A holiday parade of decorated boats up the Alafia River past the Riverview Civic Center, presented by the Fis… | events-fall: Holiday-decorated boats travel up the Alafia River in Riverview. | verified |
 | series#christmas-town-busch-gardens | summary | events-fall: The whole of Busch Gardens is decorated for the holidays with lights, shows, shopping and seasonal food. | events-spring: Busch Gardens Tampa Bay's holiday event, with lights, holiday shows and seasonal food across the park; includ… | owner |
 | series#christmas-town-busch-gardens | featured | events-fall: true | events-spring: false | any slice's flag |
@@ -437,7 +445,6 @@ Found by the merge on the final data (not errors; each is worth a look at the so
 - places#legacy-trail
 - places#pinellas-trail
 - places#riverwalk-historical-monument-trail
-- places#seahorse-restaurant-pass-a-grille
 - places#selmon-greenway
 - places#suncoast-trail
 - places#worlds-first-airline-monument (address: St. Pete Pier approach, 2nd Ave NE)
@@ -453,6 +460,7 @@ Found by the merge on the final data (not errors; each is worth a look at the so
 - experiences#gulf-coast-airboat-charters
 - experiences#gulp-coast-craft-beer-trail
 - experiences#hillsborough-county-parks-canoe-kayak-rentals
+- experiences#madeira-beach-couples-jet-ski-tours
 - experiences#tampa-bay-food-tours-safety-harbor
 - experiences#urban-kai-paddleboard (address: 310 W 7th Ave, Tampa, FL 33602)
 - experiences#what-it-was-walking-tour
@@ -465,7 +473,7 @@ None.
 
 None.
 
-### Without an official url (118)
+### Without an official url (126)
 
 - places#1914-plant-city-high-school-community-center
 - places#archibald-beach-park
@@ -476,6 +484,7 @@ None.
 - places#bustillo-brothers-diaz-cigar-factory
 - places#centennial-park-ybor
 - places#cleveland-street-district
+- places#columbus-drive-bridge
 - places#courtney-campbell-trail
 - places#crislip-arcade
 - places#detroit-hotel
@@ -507,8 +516,11 @@ None.
 - places#our-lady-of-perpetual-help-church-ybor
 - places#palace-of-florence-apartments
 - places#palmerin-hotel
+- places#palmetto-beach-historic-district
 - places#parque-amigos-de-jose-marti
 - places#peter-o-knight-cottage
+- places#pinellas-point-mound
+- places#rod-and-reel-holmes-beach
 - places#rod-and-reel-pier
 - places#safety-harbor-main-street
 - places#sarasota-municipal-auditorium
@@ -521,7 +533,10 @@ None.
 - places#st-andrews-episcopal-church-tampa
 - places#st-james-house-of-prayer-episcopal-church
 - places#st-paul-ame-church-tampa
+- places#st-peter-claver-catholic-school
 - places#stovall-house
+- places#stringer-stalnaker-house
+- places#sulphur-springs-gazebo
 - places#sulphur-springs-water-tower
 - places#suncoast-trail
 - places#sunshine-skyway-bridge
@@ -574,6 +589,7 @@ None.
 - stays#parker-manor-resort
 - stays#quality-inn-plant-city-lakeland
 - stays#quality-inn-suites-near-fairgrounds-ybor-city
+- stays#roadstar-hotel-zephyrhills
 - stays#saint-hotel
 - stays#schooner-hotel
 - stays#sleep-inn-clearwater-st-petersburg
@@ -590,7 +606,7 @@ None.
 
 - places#brooker-creek-preserve.hours_text: "Preserve and hiking trails: daily, 7 a.m. to about one hour before sunset. Environmental Education Center: Thursday to …" (word: "about")
 - places#weedon-island-preserve.hours_text: "Preserve and trails: daily, 7 a.m. to about 15 minutes before sunset. Cultural and Natural History Center: Thursday to …" (word: "about")
-- transport#jolley-trolley.hours_text: "Posted timetables: North Beach Route Sun-Thu 9:41 AM-10:01 PM, Fri-Sat until about 11:50 PM; South Beach Route Sun-Thu …" (word: "about")
+- transport#jolley-trolley.hours_text: "Daily, 365 days a year. Per PSTA's posted timetables: North Beach Route 9:41 AM-10:01 PM Sunday-Thursday and until abou…" (word: "about")
 - transport#suncoast-beach-trolley.hours_text: "Daily including holidays. Northbound trips leave 75th Ave and Gulf Blvd from 5:12 AM, generally every 30 minutes; the s…" (word: "about")
 
 ### Quotes over 40 words (2)
@@ -602,11 +618,12 @@ None.
 
 None.
 
-### Free but a price is listed (4)
+### Free but a price is listed (5)
 
 - places#egmont-key-state-park: is_free true, price_text "No park fee; ferry or boat fare applies (Hubbard's Marina ferry from Fort De Soto: $45 ages 12 and …"
-- events#keel-farms-harvest-days-2026: is_free true, cost "FREE, $10 Parking"
+- events#keel-farms-harvest-days-2026: is_free true, cost "FREE Admission | $10 Parking"
 - events#armature-works-fall-fest-2026: is_free true, cost "Free to attend; $20 all-day bounce-zone pass; face painting and animal rides extra"
+- events#st-pete-pier-costumed-dog-parade-2026: is_free true, cost "This event is free to attend; participants must register their dogs to participate ($20 plus taxes …"
 - events#largo-holiday-lights-2026: is_free true, cost "FREE to park and walk to view the lights; amusement rides $6 for one ride, 10 rides for $50"
 
 ### Our summaries with a placeholder word (1)
@@ -617,13 +634,12 @@ None.
 
 None.
 
-### Events with no area (3)
+### Events with no area (2)
 
 - events#tampa-bay-collard-green-festival-2027: "St. Petersburg (the 2027 site is not named on the organizer's page; 2240 9th Ave. S. in 2026)"
-- events#shrek-the-musical-in-the-park-american-stage-2027: "American Stage in the Park, St. Petersburg (the season page does not name the park)"
 - events#gasparilla-international-film-festival-2027: "Tampa (screening venues not yet announced)"
 
-Also: 220 events have no start time (53 of them without `time_text` either; pages print "Time not listed"), 47 are long runs (> 14 days), 11 are tentative.
+Also: 234 events have no start time (60 of them without `time_text` either; pages print "Time not listed"), 49 are long runs (> 14 days), 12 are tentative.
 
 ### Names or aliases shared by several places (1)
 
@@ -633,37 +649,38 @@ Also: 220 events have no start time (53 of them without `time_text` either; page
 
 - contains the placeholder "TBD": use null (or leave it out) for unknowns: 7
 - contains the placeholder "TBA": use null (or leave it out) for unknowns: 1 (events.json#rowdies-usl-championship-playoffs-2026-10-30.time_text)
-- places outside the basemap: 90
-- places without coordinates: 8
-- stays outside the basemap: 13
+- places outside the basemap: 92
+- places without coordinates: 7
+- stays outside the basemap: 14
 - stays without coordinates: 5 (stays.json#home2-suites-clearwater-st-petersburg-ulmerton, stays.json#home2-suites-riverview-tampa, stays.json#inn-at-el-reloj, stays.json#james-hotel-west-tampa, stays.json#pendry-tampa)
-- experiences without coordinates: 10
-- experiences outside the basemap: 12
-- events without an area: 3 (events.json#tampa-bay-collard-green-festival-2027.area, events.json#shrek-the-musical-in-the-park-american-stage-2027.area, events.json#gasparilla-international-film-festival-2027.area)
+- experiences without coordinates: 11
+- experiences outside the basemap: 13
+- events without an area: 2 (events.json#tampa-bay-collard-green-festival-2027.area, events.json#gasparilla-international-film-festival-2027.area)
 
 ### Research inputs read
 
-- research/areas/areas.json (checked 2026-09-27): 6 regions, 45 areas; 0 record(s) with a verifier pass in notes
+- research/areas/areas.json (checked 2026-09-27): 6 regions, 45 areas; 51 record(s) with a verifier pass in notes
 - research/see-tampa/see-tampa.json (checked 2026-09-27): 42 places; 42 record(s) with a verifier pass in notes
 - research/see-pinellas/see-pinellas.json (checked 2026-09-27): 79 places; 39 record(s) with a verifier pass in notes
 - research/venues-bay/venues-bay.json (checked 2026-09-27): 70 places; 59 record(s) with a verifier pass in notes
 - research/outdoors/outdoors.json (checked 2026-09-27): 98 places, 14 stays; 43 record(s) with a verifier pass in notes
 - research/around-daytrips/around-daytrips.json (checked 2026-09-27): 69 places; 11 record(s) with a verifier pass in notes
 - research/eat-tampa/eat-tampa.json (checked 2026-09-27): 76 places; 29 record(s) with a verifier pass in notes
-- research/eat-pinellas/eat-pinellas.json (checked 2026-09-27): 84 places; 0 record(s) with a verifier pass in notes
-- research/history-tampa/history-tampa.json (checked 2026-09-27): 71 places, 72 media; 0 record(s) with a verifier pass in notes
-- research/history-region/history-region.json (checked 2026-09-27): 47 places, 48 media; 30 record(s) with a verifier pass in notes
+- research/eat-pinellas/eat-pinellas.json (checked 2026-09-27): 90 places; 0 record(s) with a verifier pass in notes
+- research/history-tampa/history-tampa.json (checked 2026-09-27): 76 places, 73 media; 13 record(s) with a verifier pass in notes
+- research/history-region/history-region.json (checked 2026-09-27): 51 places, 50 media; 36 record(s) with a verifier pass in notes
 - research/stays-tampa-core/stays-tampa-core.json (checked 2026-09-27): 37 stays; 37 record(s) with a verifier pass in notes
-- research/stays-tampa-outer/stays-tampa-outer.json (checked 2026-09-27): 138 stays; 0 record(s) with a verifier pass in notes
+- research/stays-tampa-outer/stays-tampa-outer.json (checked 2026-09-27): 141 stays; 89 record(s) with a verifier pass in notes
 - research/stays-stpete-pinellas/stays-stpete-pinellas.json (checked 2026-09-27): 85 stays; 20 record(s) with a verifier pass in notes
-- research/stays-beaches/stays-beaches.json (checked 2026-09-27): 134 stays; 0 record(s) with a verifier pass in notes
-- research/exp-water/exp-water.json (checked 2026-09-27): 73 experiences; 10 record(s) with a verifier pass in notes
+- research/stays-beaches/stays-beaches.json (checked 2026-09-27): 137 stays; 42 record(s) with a verifier pass in notes
+- research/exp-water/exp-water.json (checked 2026-09-27): 87 experiences; 25 record(s) with a verifier pass in notes
 - research/exp-land/exp-land.json (checked 2026-09-27): 89 experiences; 89 record(s) with a verifier pass in notes
-- research/events-fall/events-fall.json (checked 2026-09-27): 97 events, 30 series; 0 record(s) with a verifier pass in notes
+- research/events-fall/events-fall.json (checked 2026-09-27): 100 events, 30 series; 4 record(s) with a verifier pass in notes
 - research/events-spring/events-spring.json (checked 2026-09-27): 53 events, 66 series; 47 record(s) with a verifier pass in notes
 - research/events-sports/events-sports.json (checked 2026-09-27): 209 events, 30 series; 41 record(s) with a verifier pass in notes
-- research/events-shows/events-shows.json (checked 2026-09-27): 197 events; 0 record(s) with a verifier pass in notes
-- research/timeline/timeline.json (checked 2026-09-27): 115 timeline, 74 media, 8 facts; 0 record(s) with a verifier pass in notes
-- research/getting-around/getting-around.json (checked 2026-09-27): 44 transport, 33 faqs, 19 facts; 0 record(s) with a verifier pass in notes
-- research/practical/practical.json (checked 2026-09-27): 71 faqs, 65 facts, 6 places; 16 record(s) with a verifier pass in notes
+- research/events-shows/events-shows.json (checked 2026-09-27): 229 events; 85 record(s) with a verifier pass in notes
+- research/timeline/timeline.json (checked 2026-09-27): 135 timeline, 78 media, 8 facts; 37 record(s) with a verifier pass in notes
+- research/getting-around/getting-around.json (checked 2026-09-27): 49 transport, 41 faqs, 23 facts; 48 record(s) with a verifier pass in notes
+- research/practical/practical.json (checked 2026-09-27): 77 faqs, 68 facts, 12 places; 33 record(s) with a verifier pass in notes
+- research/media-commons/media-commons.json (checked 2026-09-27): 137 media; 0 record(s) with a verifier pass in notes
 

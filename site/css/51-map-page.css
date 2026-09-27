@@ -1,0 +1,221 @@
+/* ======================================================================
+   site/css/51-map-page.css · OWNER: the Map lane
+   map.html's layout (the chart beside its controls and list, sticky on wide screens; stacked on phones, the selection
+   as a bottom sheet), the layer bar, the neatline margin drawn by features/map.js (.map-grat: minute bands at real
+   coordinates), the scale bar, the rose, stack buoys (+n), list markers for every chart symbol, the in-view list, the
+   panel; plus the chart crops built by ctx.cards.chartMap (.chart-map: area pages, the areas index) and the static
+   no-JS chart. The chart's own look (buoys, clusters, labels, legend marks) is the design system's, in 50-map.css.
+   Tokens only; no color literal; nothing under 12px; 44px targets on touch.
+   ====================================================================== */
+
+/* ---------- page layout ---------- */
+.page-map .content { max-width: 1440px; }
+.map-page { position: relative; margin-top: var(--sp-5); }
+.skip-list {
+  position: absolute; left: 8px; top: 8px; z-index: 20; display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 14px;
+  background: var(--primary); color: var(--primary-contrast); font-weight: var(--wght-strong); text-decoration: none;
+}
+.skip-list:not(:focus) { width: 1px; height: 1px; min-height: 0; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* a compact label frame: the chart is the page */
+.page-head.ph-compact { margin-bottom: var(--sp-4); padding: calc(var(--ribbon-h) / 2 + 14px) clamp(16px, 4vw, 48px) 18px; }
+.page-head.ph-compact::before { display: none; }
+.page-head.ph-compact h1 { font-size: clamp(2.125rem, 1.5rem + 2.2vw, 3.25rem); }
+.page-head.ph-compact .lede { margin-top: 6px; font-size: var(--fs-base); }
+.map-main { display: grid; gap: var(--sp-5); grid-template-columns: minmax(0, 1fr); align-items: start; }
+.map-col { min-width: 0; }
+@media (min-width: 1280px) {
+  .map-main { grid-template-columns: minmax(0, 1fr) 360px; }
+  .map-col { position: sticky; top: calc(var(--topbar-h) + 12px); }
+}
+
+/* ---------- the map bar and the layer bar ---------- */
+.map-bar .view-toggle button { min-height: 40px; padding: 0 12px; }
+.map-bar .view-toggle button[disabled] { color: var(--text-faint); cursor: not-allowed; }
+.map-bar .view-toggle .i { width: 16px; height: 16px; }
+.map-layers { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+/* the layer chips sit in the map box below 1280px, and head the controls beside the chart above it */
+.mc-group.mc-layers { display: none; }
+@media (min-width: 1280px) { .map-layers { display: none; } .mc-group.mc-layers { display: grid; } }
+.map-layers .chip { min-height: 40px; }
+@media (max-width: 699px) {
+  .map-layers { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; padding: 8px; }
+  .map-layers::-webkit-scrollbar { display: none; }
+  .map-layers .chip { flex: none; min-height: var(--tap); }
+  .map-bar-acts .btn { min-height: var(--tap); }
+  .map-bar .view-toggle button { min-height: var(--tap); }
+}
+
+/* ---------- the chart view ---------- */
+.map-page .map-view:not(.is-static) { aspect-ratio: auto; height: min(74vh, 780px); max-height: none; }
+@media (max-width: 699px) { .map-page .map-view:not(.is-static) { height: min(66vh, 560px); } }
+/* the static (no-JS) bay chart keeps the chart's own proportions, so its HTML buoys stay on their points */
+.map-view.is-static { aspect-ratio: var(--map-ratio); max-height: none; width: min(100%, 86vh); margin: 0 auto; cursor: auto; touch-action: auto; background: var(--surface); }
+.map-view.is-static .pin { pointer-events: none; }
+.map-view.is-static .map-note { left: 34px; bottom: 30px; }
+.map-view.is-static .map-rose { left: 34px; top: 34px; }
+
+/* the neatline margin: paper strips, minute bands in ink and paper at the chart's real coordinates, the labels */
+.map-grat { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.map-grat .g-paper { fill: var(--grat-paper); }
+.map-grat .g-ink { fill: var(--grat-ink); }
+.map-grat .g-rule { fill: none; stroke: var(--grat-ink); stroke-width: 1; }
+.map-grat .g-line { fill: none; stroke: var(--map-graticule); stroke-width: 0.6; stroke-opacity: 0.4; }
+.map-grat .g-lab {
+  fill: var(--grat-ink); font-family: var(--font-label); font-stretch: 100%; font-size: var(--fs-label); font-weight: 650;
+  font-variant-numeric: tabular-nums; letter-spacing: 0.02em;
+}
+.map-rose { position: absolute; left: 30px; top: 30px; z-index: 0; width: 72px; pointer-events: none; opacity: 0.92; }
+.map-rose .rose { width: 100%; }
+@media (max-width: 699px) { .map-rose { width: 50px; left: 28px; top: 28px; } }
+.map-page .map-zoom { top: 30px; right: 14px; }
+.map-foot { position: absolute; left: 28px; bottom: 14px; z-index: 4; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px 10px; pointer-events: none; max-width: 46%; }
+.map-foot .map-note { position: static; }
+.map-scale { display: grid; gap: 2px; padding: 4px 7px 3px; background: var(--surface); border: 1px solid var(--border); }
+.map-scale i {
+  display: block; width: var(--w, 60px); height: 6px; border: 1px solid var(--grat-ink);
+  background: linear-gradient(90deg, var(--grat-ink) 0 25%, var(--grat-paper) 0 50%, var(--grat-ink) 0 75%, var(--grat-paper) 0);
+}
+.map-scale b { font-family: var(--font-label); font-size: var(--fs-label); font-weight: 650; color: var(--text); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.map-page .map-edge { left: auto; right: 14px; bottom: 14px; transform: none; max-width: min(360px, calc(100% - 210px)); }
+.map-edge .dir-north { transform: rotate(-90deg); } .map-edge .dir-south { transform: rotate(90deg); } .map-edge .dir-west { transform: rotate(180deg); }
+@media (max-width: 699px) { .map-page .map-edge { max-width: calc(100% - 150px); padding: 0 10px; } .map-foot { max-width: 44%; } }
+
+/* map labels the basemap adds beyond the design's kinds: cities, towns, beaches, islands, areas, routes, airports */
+.map-label.city { font-family: var(--font-display); font-stretch: normal; font-weight: 780; font-size: var(--fs-sm); letter-spacing: 0.14em; color: var(--text); }
+.map-label.town, .map-label.beach, .map-label.island { color: var(--map-label); }
+.map-label.area { color: var(--text-muted); letter-spacing: var(--track-label); }
+.map-label.airport { font-family: var(--font-display); font-style: italic; font-stretch: normal; font-weight: 520; font-size: var(--fs-sm); letter-spacing: 0.01em; text-transform: none; color: var(--text-muted); }
+.map-label.route {
+  padding: 2px 5px 1px; background: var(--surface); border: 1.5px solid var(--text); border-radius: var(--radius-md); color: var(--text);
+  letter-spacing: 0.04em; text-shadow: none; font-variant-numeric: tabular-nums;
+}
+.map-view[data-lod="0"] .map-label.route { display: none; }
+
+/* a stack: several records at the very same point share one buoy, with a "+n" tab */
+.pin-more {
+  position: absolute; top: 0; right: -4px; z-index: 1; min-width: 22px; height: 18px; padding: 0 4px; border-radius: 9px;
+  background: var(--surface); color: var(--text); border: 1.5px solid var(--ink-edge); box-shadow: var(--shadow-1);
+  font-family: var(--font-label); font-size: var(--fs-label); font-weight: 750; line-height: 15px; text-align: center; font-variant-numeric: tabular-nums;
+}
+.pin-stop.has-more .pin-more { top: 2px; right: 0; }
+.pin-event > span .i, .pin-experience > span .i { stroke-width: 2.2; }
+
+/* ---------- legend and attribution ---------- */
+.lg-sym { display: inline-grid; place-items: center; width: 20px; height: 20px; border: 2px solid var(--rule-ink); border-radius: 7px 7px 2px 2px; background: var(--map-pin-bg); }
+.lg-sym .i { width: 13px; height: 13px; }
+.lg-cluster { width: 18px; height: 18px; border-radius: 50%; background: var(--map-cluster-bg); box-shadow: 0 0 0 2px var(--map-cluster-ring); }
+.map-attrib-line { flex-basis: 100%; margin: 4px 0 0; padding-top: 6px; border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-muted); overflow-wrap: anywhere; }
+.map-attrib-line a { color: var(--text-muted); }
+
+/* ---------- controls ---------- */
+.map-ctrl { display: grid; gap: var(--sp-3); margin-bottom: var(--sp-3); padding: var(--sp-3) var(--sp-4) var(--sp-4); background: var(--surface); border: 1px solid var(--border); }
+.mc-group { display: grid; gap: 6px; min-width: 0; }
+.mc-group[hidden] { display: none; }
+.mc-label { margin: 0; color: var(--text-muted); }
+.mc-row { display: flex; flex-wrap: wrap; gap: var(--sp-3) var(--sp-4); align-items: end; }
+.mc-topic .select { min-height: var(--tap); }
+.mc-when button { padding: 0 10px; font-size: var(--fs-xs); }
+.mc-note { font-size: var(--fs-xs); margin: 0; }
+.map-ctrl [data-map-reset] { justify-self: start; }
+.map-count { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px var(--sp-3); margin: 0 0 var(--sp-2); }
+.map-count .result-count { margin: 0; }
+.linkish { display: inline; padding: 0; min-height: 0; border: 0; background: none; color: var(--link); font: inherit; text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer; }
+@media (max-width: 699px) { .linkish { display: inline-flex; align-items: center; min-height: var(--tap); } }
+
+/* ---------- the list: sections by layer, sheets inside, one row per record ---------- */
+.map-list:focus { outline: none; }
+.map-sec[hidden], .map-grp[hidden] { display: none; }
+.map-sec-h .n { margin-left: auto; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+.map-sub {
+  display: flex; align-items: center; gap: 8px; margin: var(--sp-3) 0 0; padding: 4px 0; color: var(--ink-text);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase;
+}
+.map-sub .n { margin-left: auto; color: var(--text-faint); font-variant-numeric: tabular-nums; }
+.map-li { grid-template-columns: 34px minmax(0, 1fr) auto; }
+.map-li[hidden] { display: none; }
+.map-li-b { display: grid; gap: 1px; min-width: 0; padding: 4px 0; }
+.map-li .t { font-weight: var(--wght-strong); }
+.map-li .t::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.map-li .badge { justify-self: start; margin-top: 2px; }
+.map-show { position: relative; z-index: 2; display: grid; place-items: center; width: var(--tap); height: var(--tap); color: var(--text-muted); background: none; border: 1px solid transparent; }
+.map-show:hover { color: var(--text); border-color: var(--border-strong); background: var(--surface); }
+.map-show .i { width: 18px; height: 18px; }
+.map-more { margin: var(--sp-2) 0 0; }
+.map-off { margin-top: var(--sp-5); }
+.map-off > summary { cursor: pointer; list-style: none; min-height: var(--tap); }
+.map-off > summary::-webkit-details-marker { display: none; }
+.map-off-note { margin: var(--sp-2) 0; font-size: var(--fs-sm); }
+.map-li.is-off .m { color: var(--text-faint); }
+
+/* list markers: the same marks as the buoys */
+.mk-sym {
+  display: grid; place-items: center; width: 26px; height: 26px; border: 2px solid var(--ink-edge); border-radius: 11px 11px 3px 3px;
+  background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 4px no-repeat, var(--map-pin-bg); color: var(--text);
+}
+.mk-sym .i { width: 14px; height: 14px; stroke-width: 2.4; }
+.mk-heritage { border-radius: 13px; }
+.mk-stay { border-radius: 3px; }
+.mk-stop { display: grid; place-items: center; }
+.mk-off { display: grid; place-items: center; width: 26px; height: 26px; border: 2px dashed var(--border-strong); border-radius: 11px 11px 3px 3px; color: var(--text-muted); font-family: var(--font-label); font-size: var(--fs-label); }
+
+/* ---------- the selection panel: beside the list on wide screens, a bottom sheet below 1280px ---------- */
+.map-panel[hidden] { display: none; }
+.map-panel { padding-top: var(--sp-3); }
+.map-panel-top { position: absolute; top: 4px; right: 4px; display: flex; gap: 2px; }
+.map-panel-top button { display: grid; place-items: center; width: var(--tap); height: var(--tap); color: var(--text-muted); background: none; border: 0; }
+.map-panel-top button:hover { color: var(--text); background: var(--surface-alt); }
+.map-panel-grip { display: none; }
+.map-panel-k { display: flex; align-items: center; gap: 8px; margin: 0 0 4px; padding-right: 96px; color: var(--ink-text); }
+.map-panel h2 { align-items: flex-start; }
+.map-panel h2 .map-mk { flex: none; margin-top: 3px; }
+.map-panel h2:focus { outline: 3px solid var(--focus); outline-offset: 2px; }
+.map-panel-meta { margin: 2px 0 0; font-size: var(--fs-sm); }
+.map-panel-line { margin: 6px 0 0; font-size: var(--fs-sm); color: var(--text); max-width: 60ch; }
+.map-panel-line:empty { display: none; }
+.map-panel-acts { margin-top: var(--sp-3); gap: var(--sp-2); }
+.map-panel-acts .star { margin-left: auto; }
+.map-panel-h { margin: var(--sp-4) 0 var(--sp-2); font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-muted); }
+.map-panel-list { list-style: none; padding: 0; margin: 0; }
+.map-panel-list li { display: flex; align-items: center; gap: 10px; min-height: var(--tap); padding: 4px 0; border-top: 1px solid var(--border); }
+.map-panel-list li > span:not(.map-mk) { display: grid; min-width: 0; flex: 1; }
+.map-panel-list a { font-weight: var(--wght-strong); }
+.map-panel-list .faint { font-size: var(--fs-xs); }
+.map-panel-list button { display: grid; width: 100%; min-height: var(--tap); padding: 6px 4px; text-align: left; background: none; border: 0; color: var(--text); font-size: var(--fs-sm); }
+.map-panel-list button:hover { background: var(--surface-alt); }
+.map-panel-events { margin: 0; }
+@media (max-width: 1279px) {
+  .map-panel {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; max-height: 56vh; overflow: auto; margin: 0; padding: var(--sp-2) var(--gutter) var(--sp-4);
+    border-left: 0; border-right: 0; box-shadow: var(--shadow-3); transform: translateY(105%); transition: transform var(--speed-slow) var(--ease);
+  }
+  .map-panel.is-open { transform: none; }
+  .map-panel.is-full { max-height: calc(100vh - var(--topbar-h) - 16px); }
+  .map-panel-grip { display: grid; }
+  .map-panel-grip .i { transform: rotate(180deg); transition: transform var(--speed) var(--ease); }
+  .map-panel.is-full .map-panel-grip .i { transform: none; }
+  .map-page.has-sel { padding-bottom: 40vh; }
+}
+@media (max-width: 1023px) { .map-panel { bottom: var(--dock-h); max-height: 44vh; } .map-panel.is-full { max-height: calc(100vh - var(--topbar-h) - var(--dock-h) - 16px); } }
+@media (prefers-reduced-motion: reduce) { .map-panel { transition: none; } }
+
+/* ---------- chart crops (ctx.cards.chartMap): area pages and the areas index ---------- */
+.chart-map { aspect-ratio: var(--map-ratio, 4 / 3); }
+.chart-map .map-label { font-size: var(--fs-label); }
+.chart-map .map-label.water { font-size: var(--fs-sm); }
+.chart-map .map-label.city { font-size: var(--fs-label); }
+.chart-map[data-chart="region"] .map-label.water { font-size: var(--fs-xs); }
+
+.no-js .map-bar-acts, .no-js .map-layers { display: none; }
+
+@media (max-width: 699px) {
+  .page-head.ph-compact { padding-bottom: 14px; }
+  .page-head.ph-compact .lede { font-size: var(--fs-sm); line-height: 1.45; }
+  .js .map-bar > .label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .map-bar { padding: 6px; }
+  .map-bar-acts { width: 100%; justify-content: space-between; }
+}
+.map-panel-dir { gap: 0 var(--sp-2); margin-top: var(--sp-2); }
+.map-panel-dir .label { color: var(--text-muted); margin-right: 2px; }
+.map-panel-dir .btn { padding: 0 8px; }
+@media (max-width: 699px) { .map-panel-dir .btn, .map-panel-acts .btn { min-height: var(--tap); } }

@@ -34,7 +34,7 @@ code and this file disagree, the code wins: report the mismatch.** Contracts are
 | **E2** client | `site/js/main.js`, `site/js/core/*`, `site/js/views/*`, `site/js/lib/{status,facets,trip,ics}.js`, `tests/{client,status,facets,trip,ics}.test.mjs`, `CLAUDE.md`; `site/js/features/*` are the page lanes' (one per page that needs one) |
 | **Design** | `site/css/tokens.css`, every `site/css/NN-*.css` re-skin (today a mechanical port of Cincy Week's CSS), `site/fonts/*`, `site/favicon.svg`, `site/img/brand/*`, `site/og*.png`; `wordmark()` and `MARK` in `build/core/icons.mjs` (markup only; keep the names) |
 | **Basemap** | `site/map/basemap.svg` (a `<g id="bm">`), `data/map.json` (§5) |
-| **Merge / images** | `data/*.json`, `scripts/merge-research.mjs`, `data/images.json` + `site/img/{p,s,a,t,x}/` |
+| **Merge / images** | `data/*.json`, `scripts/merge-research.mjs`, `scripts/fetch-images.py`, `data/images.json` + `site/img/{p,s,a,t,x,r}/` |
 | **Page lanes** | one stub each in `build/pages/` (§3), their CSS partial(s) (§7), their `tests/<lane>.test.mjs` |
 
 ## 3. Page modules: `build/pages/<name>.mjs`
@@ -132,7 +132,7 @@ ctx.c = {    // build/core/components.mjs (data-agnostic)
   recordSource(rec, { label })           // source_url + quote_source + also_sources, note "Checked Sep 27, 2026"
   placeholder(what, owner), secNum(n), STAR_KINDS,
 }
-ctx.img = {  // build/core/images.mjs — manifest data/images.json (§5); kinds p place · s stay · a area · t timeline · x experience
+ctx.img = {  // build/core/images.mjs — manifest data/images.json (§5); kinds p place · s stay · a area · t timeline · x experience · r region
   img(root, kind, id, { alt, cls, sizes, lazy = true, big = false }) → <img …> | "",
   has(kind, id), entry(kind, id), path(kind, id) → "assets/img/p/<id>.webp" | null, srcset(root, kind, id),
   plate(root, kind, rec, { size: ""|"lg", cls, alt, sizes }) → .photo (the image) | .plate-type[data-sheet] (chart code + name)
@@ -224,7 +224,7 @@ closed places without heritage, events without an area, images for records that 
 **Aliases:** an event or series with `place: null` and a `location_text` gets `place` when the text matches a place's name, one of
 its `aliases[]`, or `aliases.json` `places` (keys compared through `aliasKey()`: lowercase, `&` → and, punctuation stripped). Stored values win.
 
-**`data/images.json`** (written by the images pass from `media.json`; never hotlinked): keys `"<kind>/<id>"` (kind `p s a t x`) →
+**`data/images.json`** (written by the images pass from `media.json`; never hotlinked): keys `"<kind>/<id>"` (kind `p s a t x r`, `r` = region) →
 `{ file: "img/p/<id>.webp", w, h, credit (required), license (required: public-domain cc0 cc-by cc-by-sa us-gov), license_url?, page_url?,
 creator?, alt?, media? (a media id), sm?: { file, w, h }, lg?: { file, w, h } }`. Files live in `site/img/<kind>/`.
 
@@ -495,3 +495,22 @@ keywords, `i` an image path.
   experience address lines (`ad`), experience images (`im`), `regions`/`areas` in experiences.json and stays-lite.json. Live-state rules
   made explicit: "Started" lasts to the end of its day (Cincy Week said "Ended" an hour after an unknown end), all-day and time-unknown items
   say "Today", runs say nothing while they run (`running`).
+- **2026-09-27 · Stay lane (experiences-eat-stay)** additive component options, no renames:
+  `stayCard(root, s, { …, plate = true, symbol = false, facts = false, note = "auto" })` (`plate: false` = the compact card of long
+  lists, no typographic plate, a rights-cleared photo still shows, `data-compact="1"` on the article; `symbol` = the anchor before the
+  kind; `facts` = `.card-facts` "312 rooms · Opened 1928 · Built 1925", only what the record states; `note` = the source's `status_note`
+  in `.card-note`: "auto" when not open (the new default: a closed stay's card now says why), `true` always, `false` never) and
+  `ctx.cards.builtYear(rec)` ("1925" | "c. 1912" | "": the first year `heritage.built` states). `experienceCard(root, x, { …, plate = true,
+  symbol = false, note = "auto" })` (same meanings; `symbol` = the kind's chart symbol and the daymark before "Departs"; the meta line now
+  ends with "Season: …" when `season_text` is set) and `ctx.cards.KIND_ICON` (experience kind → sprite icon). The class attribute of both
+  cards is unchanged (`card stay`, `card exp`). New lane JSON `assets/data/stay-map.json` (`{ v, map: { bbox, projection, labels } }`,
+  only with a basemap). New attribute `a[data-set-filter="k=v&k2=v2"]` (a normal link to the same page's filtered URL; `features/stay.js`
+  applies it in place with `app.filter`). `build/pages/stay.mjs` exports `kit(ctx)` (the lane's list helpers) and `STAY_KIND_PLURAL`;
+  `build/pages/experiences.mjs` exports `FAMILIES` (read by tests/stay.test.mjs).
+- **2026-09-27 · Images pass** `scripts/fetch-images.py` writes `data/images.json` and `site/img/<kind>/` from `data/media.json`
+  (one image per subject: the first media record for it, a timeline entry's own `media` order first; `file` is the 480 px rendition,
+  `lg` the ≤ 1200 px one when the source is larger; every entry carries `media`, its media id). Additive engine change: image kind
+  **`r` (region)** in `IMAGE_KINDS` (`build/core/images.mjs`) and in the manifest check (`build/core/load.mjs`: key `r/<region id>`,
+  unknown region ids warn like the other kinds), so a region page can call `img.figure(root, "r", region.id)` / `img.plate(root, "r",
+  region)` (a region's plate takes its chart code from `rec.id`). `creditHtml` compares the credit with the license label
+  case-insensitively, so "(public domain)" in a credit no longer repeats "Public domain" after it.

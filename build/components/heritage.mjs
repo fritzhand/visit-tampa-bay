@@ -1,12 +1,14 @@
 /* ============================================================
    build/components/heritage.mjs · OWNER: E1 (engine). The History lane may extend it additively.
+   Extended additively by the Explore lane (2026-09-27): heritageBlock option sourceLabel.
 
    makeHeritage(ctx) → {
-     heritageBlock(root, rec, { headingLevel = 2, id = "heritage", title = "History and heritage" })
+     heritageBlock(root, rec, { headingLevel = 2, id = "heritage", title = "History and heritage", sourceLabel = null })
          <section class="heritage" id="{id}"> for a place or stay with a heritage block: an "At a glance" facts
          box (built, architect, style, era), the designations (NRHP, National Historic Landmark, local; linked
          when they carry a url), the story (our words), "Visiting today", and the source line of heritage.sources.
-         "" when the record has no heritage block.
+         "" when the record has no heritage block. sourceLabel(url) → text names each source in the source line
+         (place pages pass "host/path", so several pages of one site stay distinguishable); default: the host.
      designationLine(d) → "National Register of Historic Places, #72000322 (1972)" (HTML, linked when d.url)
      eraLabel(era) → "Boomtown, 1884–1919"
      timelineItem(root, t, { headingLevel = 3 }) → <li class="tl-item" id="tl-{id}" data-era data-r> year, title,
@@ -15,6 +17,7 @@
    ============================================================ */
 import { esc, attr, paras, extLink } from "../core/util.mjs";
 import { ERA_LABEL } from "../core/vocab.mjs";
+import { icon } from "../core/icons.mjs";
 
 export function makeHeritage(ctx) {
   const { c } = ctx;
@@ -23,7 +26,7 @@ export function makeHeritage(ctx) {
     const text = `${d.name}${d.ref ? `, #${d.ref}` : ""}${d.year ? ` (${d.year})` : ""}`;
     return d.url ? extLink(d.url, esc(text)) : esc(text);
   }
-  function heritageBlock(root, rec, { headingLevel = 2, id = "heritage", title = "History and heritage" } = {}) {
+  function heritageBlock(root, rec, { headingLevel = 2, id = "heritage", title = "History and heritage", sourceLabel = null } = {}) {
     const h = rec && rec.heritage;
     if (!h) return "";
     const H = `h${headingLevel}`;
@@ -34,8 +37,12 @@ ${c.facts(root, rows, { label: "Heritage at a glance" })}
 ${(h.designations || []).length ? `<ul class="designations">${h.designations.map((d) => `<li>${designationLine(d)}</li>`).join("")}</ul>` : ""}
 ${h.story ? `<div class="prose">${paras(h.story)}</div>` : ""}
 ${h.visiting ? `<p class="heritage-visit"><b>Visiting today:</b> ${esc(h.visiting)}</p>` : ""}
-${c.sourceLine(h.sources || [], { label: "Heritage source" })}
+${sourceLabel ? labeledSources([...new Set(h.sources || [])], sourceLabel) : c.sourceLine(h.sources || [], { label: "Heritage source" })}
 </section>`;
+  }
+  function labeledSources(urls, label) {
+    if (!urls.length) return "";
+    return `<p class="source-line">${icon("info")}<span>Heritage source${urls.length > 1 ? "s" : ""}: ${urls.map((u) => extLink(u, esc(label(u)))).join(" · ")}</span></p>`;
   }
   function timelineItem(root, t, { headingLevel = 3 } = {}) {
     const H = `h${headingLevel}`;

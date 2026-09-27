@@ -26,3 +26,24 @@ details.faq:target > summary { color: var(--accent-strong); }
 .faq-tools .chip-row { flex: 1 1 100%; }
 .faq-topic { margin-top: var(--sp-6); }
 .faq-note { margin-top: var(--sp-6); font-size: var(--fs-sm); }
+
+/* ---------- faq.html (the Visit lane, additive): the tools, the topic chips, the topic sections ----------
+   .faq-root[data-filter-root] > .faq-tools (search, chips, count) + .faq-lists[data-filter-list] > section.faq-sec per topic.
+   On phones the chips scroll sideways in one row instead of stacking ten rows of 44px chips. */
+.faq-root { margin-top: var(--sp-2); }
+.faq-tools { position: relative; }
+.faq-tools .faq-search { flex: 1 1 100%; max-width: 620px; }
+.faq-chips { gap: var(--sp-2); }
+.faq-chips .chip .i { color: var(--text-muted); }
+.faq-chips .chip[aria-pressed="true"] .i { color: inherit; }
+.faq-count { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--sp-3); flex: 1 1 100%; }
+@media (max-width: 699px) {
+  .faq-chips { flex-wrap: nowrap; overflow-x: auto; margin: 0 calc(-1 * var(--gutter)); padding: 2px var(--gutter) 6px; scrollbar-width: thin; scroll-padding: 0 var(--gutter); }
+  .faq-chips .chip { flex: none; }
+}
+.faq-sec { scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
+.faq-sec .sec-kicker .vz-ic { width: 16px; height: 16px; }
+.faq-list { max-width: 78ch; }
+details.faq { scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
+details.faq > .source-line { margin-top: var(--sp-2); }
+.faq-note { max-width: 70ch; color: var(--text-muted); }

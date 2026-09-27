@@ -82,12 +82,14 @@ export const PARAMS = {
   outdoors: ["r", "k", "q"],
   history: ["era", "r", "q"],
   "eat-drink": ["r", "a", "k", "tag", "q"],
-  map: ["layers", "r", "focus"],
+  map: ["layers", "r", "focus", "k", "t", "when", "chart"],
   areas: ["r"],
   faq: ["q", "topic"],
 };
 /** The map's layers (map.html ?layers=) and focus kinds (?focus=<kind>:<id>). */
-export const MAP_LAYERS = ["places", "stays", "experiences", "events", "heritage", "transport"];
+export const MAP_LAYERS = ["places", "stays", "experiences", "events", "heritage", "transport", "outdoors"];
+/** map.html ?chart=: the bay chart (site/map/basemap.svg, the default) or the whole guide box (site/map/region.svg). */
+export const MAP_CHARTS = ["bay", "region"];
 export const FOCUS_KINDS = { place: "place", stay: "stay", experience: "experience", event: "event", area: "area", transport: "transport" };
 
 /** Allowed VALUES per page and key, built from the data (the crawler checks every internal link's query string with
@@ -119,7 +121,7 @@ export function paramValues(db) {
     outdoors: { r: regions, k: placeK, q: any },
     history: { era: list(inSet(ERAS)), r: regions, q: any },
     "eat-drink": { r: regions, a: areas, k: placeK, tag: list(inSet([...placeTags, ...TOPICS])), q: any },
-    map: { layers: list(inSet(MAP_LAYERS)), r: regions, focus },
+    map: { layers: list(inSet(MAP_LAYERS)), r: regions, focus, k: placeK, t: topics, when: one(...Object.keys(WHEN)), chart: inSet(MAP_CHARTS) },
     areas: { r: regions },
     faq: { q: any, topic: inSet([...new Set(db.faqs.map((f) => slugify(f.topic)))]) },
   };

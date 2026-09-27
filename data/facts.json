@@ -477,6 +477,16 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "fact-psta-727-launch",
+    "label": "727 Airport Express (downtown St. Pete to TPA) launch date",
+    "value": "October 4, 2026",
+    "as_of": "PSTA release, Sep 24, 2026",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "quote": "The 727 Airport Express service from downtown St. Petersburg to Tampa International Airport is set to launch October 4, 2026",
+    "source_url": "https://psta.net/press_releases/psta-lowers-property-tax-rate-third-straight-year-approves-2027-public-transit-budget/",
+    "checked": "2026-09-27"
+  },
+  {
     "id": "fact-psta-fare",
     "label": "PSTA bus, SunRunner and trolley fare",
     "value": "$2.25 (daily cap $5)",
@@ -593,6 +603,16 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "fact-tpa-distance-downtown",
+    "label": "Tampa International Airport's distance from downtown Tampa",
+    "value": "5 miles west",
+    "as_of": "Sep 2026",
+    "source": "Tampa International Airport",
+    "quote": "Tampa International Airport is located just five miles west of downtown Tampa on the east shore of Tampa Bay.",
+    "source_url": "https://www.tampaairport.com/directions",
+    "checked": "2026-09-27"
+  },
+  {
     "id": "fact-tpa-international-passengers-2025",
     "label": "Tampa International Airport international passengers, 2025",
     "value": "1,720,094",
@@ -610,6 +630,26 @@
     "source": "Tampa International Airport, Monthly Activity Report",
     "quote": "Total Passengers 2,177,746 2,235,662 -2.59% 24,811,253 24,756,185 0.22%",
     "source_url": "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-tpa-rideshare-fee",
+    "label": "Airport fee on Lyft, Uber and Wridz pickups at TPA",
+    "value": "$5.00 per ride",
+    "as_of": "Sep 2026",
+    "source": "Tampa International Airport",
+    "quote": "A service fee of $5.00 will be added to the cost of the fare.",
+    "source_url": "https://www.tampaairport.com/ground-transportation",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-tpa-taxi-flat-rate",
+    "label": "Taxi from Tampa International Airport to downtown Tampa or the cruise terminal",
+    "value": "$40 flat rate",
+    "as_of": "Sep 2026",
+    "source": "Tampa International Airport",
+    "quote": "There is a flat rate fee of $40 to downtown Tampa and the cruise terminal.",
+    "source_url": "https://www.tampaairport.com/ground-transportation",
     "checked": "2026-09-27"
   },
   {
@@ -834,6 +874,34 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "lightning-deaths-beach-2006-2019",
+    "label": "U.S. lightning deaths during beach activities, 2006–2019",
+    "value": "25 of 418",
+    "as_of": "2006–2019 (February 2020)",
+    "source": "John S. Jensenius Jr. (National Lightning Safety Council), 'A Detailed Analysis of Lightning Deaths in the United States from 2006 through 2019', National Weather Service",
+    "quote": "From 2006 to 2019, there were 40 fishing deaths, 25 beach deaths, 20 camping deaths, and 18 boating deaths.",
+    "source_url": "https://www.weather.gov/media/safety/Analysis06-19.pdf",
+    "also_sources": [
+      "https://www.weather.gov/safety/lightning-victims"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Same summary: 'From 2006 through 2019, 418 people were struck and killed by lightning in the United States.'"
+  },
+  {
+    "id": "lightning-deaths-florida-1959-2017",
+    "label": "Lightning deaths in Florida, 1959–2017",
+    "value": "498, the most of any state (Texas was second with 226)",
+    "as_of": "1959–2017 (updated May 2018)",
+    "source": "Ronald L. Holle (Vaisala), 'Lightning Fatalities by State, 1959–2017', published on the National Weather Service lightning safety site",
+    "quote": null,
+    "source_url": "https://www.weather.gov/media/safety/59-17_State_Ltg_Fatality_Maps_lists.pdf",
+    "also_sources": [
+      "https://www.weather.gov/safety/lightning-victims"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Table 'Number of Lightning Deaths by State from 1959 to 2017': 'Florida 498 1', 'Texas 226 2'. Per million people Florida ranks 5th (0.76). The PDF is linked from weather.gov/safety/lightning-victims."
+  },
+  {
     "id": "lightning-deaths-florida-2026",
     "label": "U.S. lightning deaths in 2026 that happened in Florida",
     "value": "6 of 16 (preliminary)",
@@ -1044,6 +1112,20 @@
     ],
     "checked": "2026-09-27",
     "notes": "Composed of the 6% state tax plus 0.5% school capital outlay, 0.5% indigent care and 0.5% local government infrastructure surtaxes (TIP 25A01-12). Two of the surtaxes were suspended Jan 1 - May 31, 2025 and resumed June 1, 2025 (TIP 24A01-15, TIP 25A01-02). Verifier 2026-09-27: the calendar-2026 DR-15DSS lists Hillsborough at a 1.5% total surtax (three 0.5% surtaxes), consistent with 7.5%."
+  },
+  {
+    "id": "sea-turtle-nesting-season-pinellas",
+    "label": "Sea turtle nesting season in Pinellas County",
+    "value": "May 1 to October 31",
+    "as_of": null,
+    "source": "Pinellas County, Sea Turtle Protection",
+    "quote": "Nesting and hatching season occur from May 1 through October 31.",
+    "source_url": "https://pinellas.gov/sea-turtle-protection/",
+    "also_sources": [
+      "https://pinellas.gov/news/help-our-sea-turtles-thrive-this-nesting-season/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added."
   },
   {
     "id": "tourist-tax-hillsborough",

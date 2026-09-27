@@ -47,7 +47,7 @@
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "The building is in the city of South Pasadena (Census match: 1350 PASADENA AVE S, SOUTH PASADENA, FL 33707); the restaurant gives its mailing city as Saint Petersburg. Filed under west-stpete as the nearest St. Pete area.",
+    "notes": "The building is in the city of South Pasadena (Census match: 1350 PASADENA AVE S, SOUTH PASADENA, FL 33707); the restaurant gives its mailing city as Saint Petersburg. Filed under west-stpete as the nearest St. Pete area. VERIFIER 2026-09-27: Re-read home and history pages; every claim and the hours confirmed.",
     "lat": 27.7562,
     "lng": -82.737066,
     "geo_source": "census"
@@ -71,24 +71,22 @@
     "zip": "33705",
     "url": "https://thechattaway.com/",
     "phone": "(727) 823-1594",
-    "price_text": "Afternoon tea (by reservation, 48 hours' notice, 12:30–3:30): adults $45, ages 16 and under $25",
-    "summary": "Neighborhood restaurant in Old Town St. Petersburg with a garden patio, a small stage for local musicians and an indoor English tea room; afternoon tea is by reservation. The restaurant says it has been part of the community in one form or another for over 90 years.",
-    "quote": "One of the biggest surprises of all is a trip indoors to feel like you’re stepping off the boat into a genuine English Tea Room.",
+    "summary": "Burger restaurant and bar in south St. Petersburg with a leafy garden courtyard, walls covered in photos and plaques, and a tea room; it dates to 1951, when Helen Lund bought the business. New owners reopened it on Sep 25, 2026, adding a second outdoor bar, a covered patio and a full liquor license.",
     "status": "open",
     "tags": [
-     "afternoon-tea",
      "burgers",
      "patio",
      "dog-friendly",
-     "live-music",
-     "landmark-restaurant"
+     "landmark-restaurant",
+     "historic"
     ],
-    "source_url": "https://thechattaway.com/",
+    "source_url": "https://stpeterising.com/home/the-chattaway-reopens-today-with-new-owners-and-a-promise-to-preserve-what-st-pete-loves",
     "also_sources": [
+     "https://thechattaway.com/",
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater's landmark-restaurants list says it opened in 1951; the restaurant's own page says 'over 90 years' in one form or another. Summary uses the restaurant's wording. Opening hours are not on the home page.",
+    "notes": "Visit St. Pete-Clearwater's landmark-restaurants list says it opened in 1951; the restaurant's own page says 'over 90 years' in one form or another. Summary uses the restaurant's wording. Opening hours are not on the home page. VERIFIER 2026-09-27: St Pete Rising (Sep 25, 2026): the Chattaway reopened that day at 358 22nd Ave S under new owners (Cullen Mahoney, Mark Ferguson, John John Delladonna), who bought the restaurant and its 0.70-acre lot after the longtime owners prepared to close; the tea room floor is to be repaired and the tea room used more regularly as a dining space. The old afternoon-tea price and the quote (thechattaway.com, the previous owners' site) were dropped because the new owners have not restated them.",
     "lat": 27.748421,
     "lng": -82.637664,
     "geo_source": "census"
@@ -129,7 +127,7 @@
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "Phone from the Visit St. Pete-Clearwater profile. The site spells the hotel 'Albermarle'.",
+    "notes": "Phone from the Visit St. Pete-Clearwater profile. The site spells the hotel 'Albermarle'. VERIFIER 2026-09-27: Re-read harveys4thstreet.com: 'Est. April 1, 1984', 'fresh gulf grouper daily', hours and decor sentence confirmed.",
     "lat": 27.800584,
     "lng": -82.638521,
     "geo_source": "census"
@@ -169,7 +167,7 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Reservations through OpenTable per teakstpete.com. Hours are not published on the pages read. Coordinates are the Pier Point building at the end of the pier. Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below).",
+    "notes": "Reservations through OpenTable per teakstpete.com. Hours are not published on the pages read. Coordinates are the Pier Point building at the end of the pier. Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below). VERIFIER 2026-09-27: Re-read teakstpete.com and the Pier restaurants page (Level 4 – Teak; quote verbatim on stpetepier.org).",
     "lat": 27.773714,
     "lng": -82.622514,
     "geo_source": "photon"
@@ -190,8 +188,8 @@
     "zip": "33701",
     "url": "https://teakstpete.com/pier-teaki/",
     "phone": "(727) 513-8325",
-    "hours_text": "Mon–Fri 11 AM–11:59 PM; Sat–Sun 10 AM–midnight (per Visit St. Pete-Clearwater)",
-    "summary": "Tiki-style rooftop bar on top of the Pier Point building at the end of the St. Pete Pier, serving tropical cocktails and shareable bites, with private huts looking at the skyline and Tampa Bay. It is run by the owners of The Birchwood and turns 21-and-up after hours, per Visit St. Pete-Clearwater.",
+    "hours_text": "Mon–Fri 11 AM–midnight; Sat–Sun 10 AM–midnight (per Visit St. Pete-Clearwater)",
+    "summary": "Tiki-style rooftop bar on top of the Pier Point building at the end of the St. Pete Pier, serving tropical cocktails and shareable bites, with private Teaki Huts overlooking the skyline and Tampa Bay. Visit St. Pete-Clearwater says it has the same local owners as The Birchwood.",
     "status": "open",
     "tags": [
      "rooftop",
@@ -206,7 +204,7 @@
      "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below).",
+    "notes": "Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below). VERIFIER 2026-09-27: The '21 and up after hours' claim came from a guest review on the tourism profile, not from the listing or the bar, so it was removed.",
     "lat": 27.773714,
     "lng": -82.622514,
     "geo_source": "photon"
@@ -252,7 +250,8 @@
     "checked": "2026-09-27",
     "lat": 27.773326,
     "lng": -82.629055,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: docfords.com now lists three locations (Sanibel Island, Fort Myers Beach, St. Pete Pier); the Pier's page still says 'three other locations', an older count."
    },
    {
     "id": "birchwood-canopy",
@@ -287,7 +286,7 @@
      "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "The Birchwood itself is a hotel (stays slices).",
+    "notes": "The Birchwood itself is a hotel (stays slices). VERIFIER 2026-09-27: Hours re-read on the tourism profile (Mon closed; Tue–Thu 4 PM–midnight; Fri 3 PM–2 AM; Sat 11 AM–2 AM; Sun 11 AM–midnight).",
     "lat": 27.775574,
     "lng": -82.632102,
     "geo_source": "census"
@@ -322,12 +321,15 @@
     ],
     "source_url": "https://www.columbiarestaurant.com/sand-key-clearwater",
     "also_sources": [
-     "https://www.columbiarestaurant.com/"
+     "https://www.columbiarestaurant.com/",
+     "https://www.columbiarestaurant.com/our-story"
     ],
     "checked": "2026-09-27",
     "lat": 27.952868,
     "lng": -82.829486,
-    "geo_source": "census"
+    "geo_source": "census",
+    "phone": "(727) 596-8400",
+    "notes": "VERIFIER 2026-09-27: Phone and hours read on the location page with WebFetch. VERIFIER 2026-09-27: Our Story page added for the 1905 Ybor City founding."
    },
    {
     "id": "columbia-restaurant-st-armands",
@@ -359,12 +361,15 @@
     ],
     "source_url": "https://www.columbiarestaurant.com/st-armands-circle-sarasota",
     "also_sources": [
-     "https://www.columbiarestaurant.com/"
+     "https://www.columbiarestaurant.com/",
+     "https://www.columbiarestaurant.com/our-story"
     ],
     "checked": "2026-09-27",
     "lat": 27.318958,
     "lng": -82.576829,
-    "geo_source": "census"
+    "geo_source": "census",
+    "phone": "(941) 388-3987",
+    "notes": "VERIFIER 2026-09-27: Phone and hours read on the location page with WebFetch. VERIFIER 2026-09-27: 'founded in Ybor City in 1905': the Our Story page says Casimiro Hernandez Sr. helped open the Columbia Saloon on Dec. 17, 1903, which became the Columbia Restaurant in 1905, and links the history to Columbia Ybor City."
    },
    {
     "id": "crabbys-beachside-pavilion",
@@ -401,10 +406,11 @@
     "source_url": "https://crabbysbeachsidepavilion.com/",
     "also_sources": [
      "https://www.visitstpeteclearwater.com/profile/crabby-s-beachside-pavilion/138632",
-     "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
+     "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater dates it to 1926 (first a snack concession with lockers and bath houses) and says it operated as the Palm Pavilion. Phone from that profile.",
+    "notes": "Visit St. Pete-Clearwater dates it to 1926 (first a snack concession with lockers and bath houses) and says it operated as the Palm Pavilion. Phone from that profile. VERIFIER 2026-09-27: Tourism profile re-read: 'Established: 1926' on the landmark list; menu 'seafood ... our famous beach burger, fun tropical drinks'; 'live entertainment on the deck most days'. I Love the Burg (May 18, 2026) lists it among open beach bars.",
     "lat": 27.984943,
     "lng": -82.827579,
     "geo_source": "census"
@@ -444,7 +450,8 @@
     "checked": "2026-09-27",
     "lat": 27.979973,
     "lng": -82.827177,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read: 'Family-owned since 1948', live piano daily, Bobby's Bistro."
    },
    {
     "id": "frenchys-rockaway-grill",
@@ -468,8 +475,8 @@
     "zip": "33767",
     "url": "https://frenchysonline.com/frenchys-rockaway/",
     "phone": "(727) 446-4844",
-    "hours_text": "Mon–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM; Sun 11 AM–10 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Open-air restaurant on the sand at Clearwater Beach serving Gulf seafood, including Frenchy's grouper sandwich, with two bars and live music daily. It is one of several Frenchy's restaurants on the beach; the first, Frenchy's Original Cafe, opened in 1981, per Visit St. Pete-Clearwater.",
+    "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "summary": "Frenchy's largest restaurant, open-air on the sand at Clearwater Beach, serving Gulf seafood including the grouper sandwich and she-crab soup, with two bars and live music daily from local artists. The Frenchy's group says it has been a local favorite since 1981.",
     "signature": true,
     "status": "open",
     "tags": [
@@ -479,14 +486,15 @@
      "frenchys",
      "live-music"
     ],
-    "source_url": "https://www.visitstpeteclearwater.com/profile/frenchy-s-rockaway-grill/138419",
+    "source_url": "https://frenchysonline.com/frenchys-rockaway/",
     "also_sources": [
-     "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants",
-     "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
-     "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/"
+     "https://frenchysonline.com/",
+     "https://www.visitstpeteclearwater.com/profile/frenchy-s-rockaway-grill/138419",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/",
+     "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "frenchysonline.com blocked both WebFetch and curl (bot challenge), so the tourism profile is the source. Its hours are current on that profile; no closure notice there. I Love the Burg (Nov 10, 2024) reported the Rockaway Grill was still recovering from Hurricanes Helene and Milton while the Saltwater Cafe and the original cafe had reopened; the tourism profile now lists regular hours. Michael 'Frenchy' Preston opened the first Frenchy's in 1981, per that article.",
+    "notes": "frenchysonline.com blocked both WebFetch and curl (bot challenge), so the tourism profile is the source. Its hours are current on that profile; no closure notice there. I Love the Burg (Nov 10, 2024) reported the Rockaway Grill was still recovering from Hurricanes Helene and Milton while the Saltwater Cafe and the original cafe had reopened; the tourism profile now lists regular hours. Michael 'Frenchy' Preston opened the first Frenchy's in 1981, per that article. VERIFIER 2026-09-27: frenchysonline.com now reads through WebFetch (curl still gets a bot challenge), so the official page is the source. It calls Rockaway 'our largest venue' with two bars and daily live music; hours Sun–Thu 11–10, Fri–Sat 11–11. I Love the Burg (May 18, 2026) lists it among open beach bars. No quote: WebFetch output is summarized, not verbatim.",
     "lat": 27.983569,
     "lng": -82.827863,
     "geo_source": "census"
@@ -527,7 +535,7 @@
      "https://crabbybills.com/about-crabby-bills/"
     ],
     "checked": "2026-09-27",
-    "notes": "The contact page prints the ZIP as 33706; the ZIP here comes from the Census match. Live-music calendar on the home page runs through late Sep 2026, so it is operating.",
+    "notes": "The contact page prints the ZIP as 33706; the ZIP here comes from the Census match. Live-music calendar on the home page runs through late Sep 2026, so it is operating. VERIFIER 2026-09-27: Re-read contact and about pages; live music calendar has shows on Sep 27–28, 2026.",
     "zip": "33785",
     "lat": 27.882614,
     "lng": -82.850403,
@@ -571,10 +579,11 @@
     "source_url": "https://www.thehurricane.com/",
     "also_sources": [
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
-     "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
+     "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants",
+     "https://www.fox13news.com/news/st-pete-beach-slowly-returns-normal-after-back-to-back-hurricanes"
     ],
     "checked": "2026-09-27",
-    "notes": "The site says the hotel site earlier held Page's Pavilion, a bathhouse built in 1912; the family expanded the first floor in 1986 and added the upper floors and rooftop bar in 1990.",
+    "notes": "The site says the hotel site earlier held Page's Pavilion, a bathhouse built in 1912; the family expanded the first floor in 1986 and added the upper floors and rooftop bar in 1990. VERIFIER 2026-09-27: Open status: FOX 13 (Oct 28, 2024) reported 'Businesses like Hurricane Seafood Restaurant have also reopened' after Helene and Milton (owner Rick Falkenstein); its own site lists current hours and a 'Kick Off The Football Season' promotion, with no closure notice, and no later closure news was found. Pass-a-Grille neighbor The Dewey (109 8th Ave) never reopened after the 2024 storms (St Pete Rising, Jun 30, 2026) and is not included.",
     "lat": 27.688195,
     "lng": -82.737844,
     "geo_source": "census"
@@ -613,7 +622,7 @@
      "https://www.visitstpeteclearwater.com/article/dine-these-michelin-recognized-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "MICHELIN Guide Florida 2026 (announced May 28, 2026) lists 'Il Ritorno, 449 Central Ave. N., #101, St. Petersburg, 33701' among recommended restaurants (the list is an image on the Michelin press page).",
+    "notes": "MICHELIN Guide Florida 2026 (announced May 28, 2026) lists 'Il Ritorno, 449 Central Ave. N., #101, St. Petersburg, 33701' among recommended restaurants (the list is an image on the Michelin press page). VERIFIER 2026-09-27: Michelin 2026 recommended table (image Recco_2_3 on the press page) lists 'Il Ritorno, 449 Central Ave. N., #101' (not marked new, so it was also in the 2025 St. Pete-Clearwater selection).",
     "lat": 27.771263,
     "lng": -82.639324,
     "geo_source": "census"
@@ -650,7 +659,7 @@
      "https://www.visitstpeteclearwater.com/profile/sushi-sho-rexley/138926"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater says the counter seats 10 and chef Rexley Kwok trained under Hiro Ida. The site's structured data lists slightly different hours (Wed–Sun) from its visible text (Thu–Sun 5–9); the visible text is used.",
+    "notes": "Visit St. Pete-Clearwater says the counter seats 10 and chef Rexley Kwok trained under Hiro Ida. The site's structured data lists slightly different hours (Wed–Sun) from its visible text (Thu–Sun 5–9); the visible text is used. VERIFIER 2026-09-27: Michelin 2026 recommended (not new). Visible hours Thu–Sun 5–9 PM re-read.",
     "lat": 27.773717,
     "lng": -82.635638,
     "geo_source": "census"
@@ -689,7 +698,8 @@
     "checked": "2026-09-27",
     "lat": 27.771283,
     "lng": -82.633663,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Tourism profile: 'Located in the historic Ponce De Leon Hotel'. Michelin 2026 recommended (not marked new)."
    },
    {
     "id": "in-between-days",
@@ -713,7 +723,7 @@
     "zip": "33712",
     "url": "https://www.inbetweendays.co/",
     "phone": "(727) 358-3744",
-    "summary": "Sake and vinyl listening bar in a small house on 1st Avenue South, modeled on Tokyo's listening bars, serving sake, French-style oysters and small plates. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
+    "summary": "Sake and vinyl listening bar in a small house on 1st Avenue South, inspired by Tokyo's listening bars, pouring chilled sake and serving oysters in the French style. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
     "quote": "Inspired by the underground listening bars of Tokyo, our little house is warmed by pair of 1972 Klipsch Cornwalls that adorn the back of the bar paired with two turn-tables and a diverse vinyl collection.",
     "status": "open",
     "tags": [
@@ -730,7 +740,7 @@
      "https://www.visitstpeteclearwater.com/profile/in-between-days/143144"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours differ between the site's structured data (Wed–Sat 5–10 PM) and Visit St. Pete-Clearwater (Wed–Sat 5–11 PM, Sun 5–10 PM), so hours are left unknown. Phone from the tourism profile.",
+    "notes": "Hours differ between the site's structured data (Wed–Sat 5–10 PM) and Visit St. Pete-Clearwater (Wed–Sat 5–11 PM, Sun 5–10 PM), so hours are left unknown. Phone from the tourism profile. VERIFIER 2026-09-27: 'small plates' removed: not on the pages read.",
     "lat": 27.770074,
     "lng": -82.664987,
     "geo_source": "census"
@@ -769,7 +779,7 @@
      "https://www.visitstpeteclearwater.com/profile/elliott-aster/142274"
     ],
     "checked": "2026-09-27",
-    "notes": "The Vinoy itself is a historic hotel (stays slices).",
+    "notes": "The Vinoy itself is a historic hotel (stays slices). VERIFIER 2026-09-27: Tourism profile quote checked: 'wood-fired steaks, freshly caught seafood, housemade pastas and a signature antipasti bar.' Michelin 2026 recommended (new).",
     "lat": 27.777674,
     "lng": -82.627977,
     "geo_source": "census"
@@ -811,7 +821,8 @@
     "checked": "2026-09-27",
     "lat": 27.990841,
     "lng": -82.69028,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Michelin 2026 recommended table lists 'The Tides Market, 305 Main St., Safety Harbor, 34695' (not new)."
    },
    {
     "id": "lucky-8",
@@ -826,7 +837,7 @@
     "state": "FL",
     "zip": "34239",
     "url": "https://lucky8srq.com/",
-    "summary": "Southern comfort-food restaurant in Sarasota's Southside Village from chef Mark Majorie, inspired by New Orleans neighborhood eateries. It was named a Bib Gourmand (good food at a good value) in the 2026 MICHELIN Guide Florida, one of three Sarasota restaurants that WWSB reported as the city's first Michelin recognition.",
+    "summary": "New Orleans-inspired comfort-food restaurant in Sarasota from chef Mark Majorie and Eddie Zaki, serving po'boys, red beans and rice, collard greens and smash burgers. It was named a Bib Gourmand (good food at a good value) in the 2026 MICHELIN Guide Florida, one of three Sarasota restaurants that WWSB reported as the city's first Michelin recognition.",
     "status": "open",
     "tags": [
      "michelin-bib-gourmand",
@@ -834,16 +845,20 @@
      "southern",
      "new-orleans"
     ],
-    "source_url": "https://www.visitsarasota.com/article/michelin-guide-recognized-james-beard-dining-sarasota",
+    "source_url": "https://lucky8srq.com/",
     "also_sources": [
      "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/",
-     "https://www.mysuncoast.com/2026/06/29/tralia-pizza-puts-sarasota-michelin-map/"
+     "https://www.mysuncoast.com/2026/06/29/tralia-pizza-puts-sarasota-michelin-map/",
+     "https://www.visitsarasota.com/article/michelin-guide-recognized-james-beard-dining-sarasota"
     ],
     "checked": "2026-09-27",
-    "notes": "lucky8srq.com (the site Visit Sarasota links) returned a bot challenge to both WebFetch and curl, so hours and phone are unknown. Address from the Michelin 2026 Bib Gourmand table. 'First Michelin recognition for Sarasota' per WWSB (mysuncoast.com), which names Lucky 8, Tralia and Focaccia. Visit Sarasota's article describes chef Mark Majorie's New Orleans-inspired Southern comfort food; two WebFetch reads returned different wording, so no quote is used.",
+    "notes": "lucky8srq.com (the site Visit Sarasota links) returned a bot challenge to both WebFetch and curl, so hours and phone are unknown. Address from the Michelin 2026 Bib Gourmand table. 'First Michelin recognition for Sarasota' per WWSB (mysuncoast.com), which names Lucky 8, Tralia and Focaccia. Visit Sarasota's article describes chef Mark Majorie's New Orleans-inspired Southern comfort food; two WebFetch reads returned different wording, so no quote is used. VERIFIER 2026-09-27: lucky8srq.com now answers curl, so it is the source (address, phone, hours Mon–Thu 11–10 and Fri–Sat 11–11; Sunday not listed; walk-in only). Michelin 2026 Bib Gourmand table: 'Lucky 8 (new), 1812 S. Osprey Ave., Sarasota, 34239'. 'Southside Village' removed (not on the pages read).",
     "lat": 27.317178,
     "lng": -82.53381,
-    "geo_source": "census"
+    "geo_source": "census",
+    "phone": "(941) 444-0155",
+    "hours_text": "Mon–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "quote": "Our menu is a love letter to the Crescent City, featuring traditional New Orleans staples like po’boys, red beans and rice, collard greens, and smash burgers"
    },
    {
     "id": "focaccia-sandwich-bakery",
@@ -860,7 +875,7 @@
     "url": "https://www.focacciasandwich.com/",
     "phone": "(941) 924-2268",
     "hours_text": "Tue–Sat 8 AM–4 PM",
-    "summary": "Bakery and sandwich shop from chef Nick Sammelman that bakes its own focaccia loaves and builds breakfast and lunch sandwiches on them. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
+    "summary": "Bakery and sandwich shop that bakes its own focaccia loaves and builds breakfast and lunch sandwiches on them. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
     "quote": "Bringing joy to people through artisan crafted sandwiches, on house made focaccia with clean, wholesome ingredients.",
     "status": "open",
     "tags": [
@@ -879,7 +894,8 @@
     "checked": "2026-09-27",
     "lat": 27.298784,
     "lng": -82.523835,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Chef's name removed: not on the pages read."
    },
    {
     "id": "tralia",
@@ -914,7 +930,7 @@
      "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/"
     ],
     "checked": "2026-09-27",
-    "notes": "The site shows two different sets of hours (Mon–Thu 11–10, Fri–Sat 11–11, Sun 11–10 vs. Fri–Sat 11–12, Sun 10–10), so hours are left unknown.",
+    "notes": "The site shows two different sets of hours (Mon–Thu 11–10, Fri–Sat 11–11, Sun 11–10 vs. Fri–Sat 11–12, Sun 10–10), so hours are left unknown. VERIFIER 2026-09-27: WWSB (Jun 29, 2026) confirms the one-day-a-week pop-up start in Gulf Gate and the two styles (Detroit-style deep dish and artisan round pies). Michelin 2026 recommended (new).",
     "lat": 27.260549,
     "lng": -82.516485,
     "geo_source": "census"
@@ -957,7 +973,8 @@
     "checked": "2026-09-27",
     "lat": 28.044079,
     "lng": -81.95601,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Michelin 2026 recommended (new). Hours re-read on the home page."
    },
    {
     "id": "hellas-restaurant-and-bakery",
@@ -981,7 +998,7 @@
     "zip": "34689",
     "url": "https://hellasbakery.com/",
     "phone": "(727) 943-2400",
-    "hours_text": "Mon–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 11 AM–9 PM (per Visit St. Pete-Clearwater)",
+    "hours_text": "Restaurant Sun–Thu 11 AM–9 PM, Fri–Sat 11 AM–10 PM; bakery Sun–Thu 9 AM–9:30 PM, Fri–Sat 9 AM–10:30 PM",
     "summary": "Greek restaurant and pastry bakery on the Sponge Docks, run by the Karterouliotis family since 1970; the menu runs from gyros and Greek salads to lamb chops and local seafood, and the bakery sells Greek pastries to eat in or take away.",
     "quote": "At Hellas Restaurant & Bakery, our family has been serving authentic Greek food and pastries for over 50 years.",
     "signature": true,
@@ -1001,7 +1018,8 @@
     "checked": "2026-09-27",
     "lat": 28.155394,
     "lng": -82.761857,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Hours now from hellasbakery.com (restaurant and bakery listed separately)."
    },
    {
     "id": "mykonos-restaurant-tarpon-springs",
@@ -1034,7 +1052,7 @@
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "No official website found; the tourism profile links a Facebook page. The landmark list credits founder Andreas Salivaras. Status taken from the tourism profile's current hours; not independently confirmed.",
+    "notes": "No official website found; the tourism profile links a Facebook page. The landmark list credits founder Andreas Salivaras. Status taken from the tourism profile's current hours; not independently confirmed. VERIFIER 2026-09-27: Tourism profile re-read (628 Dodecanese Blvd, daily 11 AM–10 PM, grilled seafood and meats, grilled octopus, indoor and outdoor seating); landmark list 'Established: 1992'. Still no official site; the linked Facebook page is new (2024-era id), so the verifier could not confirm status beyond the tourism listing.",
     "lat": 28.155582,
     "lng": -82.759499,
     "geo_source": "census"
@@ -1048,13 +1066,13 @@
      "water"
     ],
     "area": "tarpon-springs",
-    "address": "698 Dodecanese Blvd",
+    "address": "690 Dodecanese Blvd",
     "city": "Tarpon Springs",
     "state": "FL",
     "zip": "34689",
     "url": "https://dimitrisonthewater.com/",
     "phone": "(727) 945-9400",
-    "summary": "Greek seafood and steak restaurant on the Sponge Docks with indoor and covered outdoor seating looking at the local fishing and sponge boats.",
+    "summary": "Family-owned Greek seafood restaurant on the Sponge Docks, run by the Salivaras family since 2010, with a covered patio looking over the Anclote River and the sponge boats.",
     "status": "open",
     "tags": [
      "greek",
@@ -1062,15 +1080,17 @@
      "waterfront",
      "seafood"
     ],
-    "source_url": "https://www.visitstpeteclearwater.com/profile/dimitri-s-on-the-water/138867",
+    "source_url": "https://dimitrisonthewater.com/",
     "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/dimitri-s-on-the-water/138867",
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "dimitrisonthewater.com returned a bot challenge; facts from the tourism profile, which lists hours for every day but Wednesday, so hours are left unknown.",
-    "lat": 28.155624,
-    "lng": -82.760108,
-    "geo_source": "census"
+    "notes": "dimitrisonthewater.com returned a bot challenge; facts from the tourism profile, which lists hours for every day but Wednesday, so hours are left unknown. VERIFIER 2026-09-27: dimitrisonthewater.com now reads through WebFetch: it prints '690 Dodecanese Blvd.' twice (the tourism profile said 698), 'Family-owned and operated since 2010', the Salivaras family, and hours with Wednesday closed. Coordinates: the OpenStreetMap point for the restaurant at 690.",
+    "lat": 28.155731,
+    "lng": -82.759856,
+    "geo_source": "photon",
+    "hours_text": "Sun–Tue and Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; closed Wed"
    },
    {
     "id": "rusty-bellies-waterfront-grill",
@@ -1085,8 +1105,7 @@
     ],
     "topics": [
      "food",
-     "water",
-     "music"
+     "water"
     ],
     "area": "tarpon-springs",
     "address": "937 Dodecanese Blvd",
@@ -1095,14 +1114,13 @@
     "zip": "34689",
     "url": "https://www.rustybellies.com/",
     "phone": "(727) 934-4047",
-    "summary": "Family-owned seafood restaurant with an outdoor tiki bar and live music directly on the Anclote River by the Sponge Docks; the family's boats supply it, and its seafood market, Pelican Point Seafood, is next door.",
+    "summary": "Family-owned seafood restaurant with an outdoor bar on a working waterfront directly on the Anclote River by the Sponge Docks; its own boats supply fish, and its seafood market, Pelican Point Seafood, is next door.",
     "quote": "Family-owned and operated restaurant, outdoor bar, working waterfront, and fresh seafood market. Located directly on the Anclote River.",
     "status": "open",
     "tags": [
      "seafood",
      "waterfront",
      "sponge-docks",
-     "live-music",
      "seafood-market"
     ],
     "source_url": "https://www.rustybellies.com/",
@@ -1113,7 +1131,9 @@
     "checked": "2026-09-27",
     "lat": 28.155291,
     "lng": -82.764442,
-    "geo_source": "photon"
+    "geo_source": "photon",
+    "hours_text": "Tue–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 11 AM–9 PM; closed Mon",
+    "notes": "VERIFIER 2026-09-27: 'tiki bar' and 'live music' removed (not on the pages read); hours from the Hours & Location page."
    },
    {
     "id": "tarpon-springs-distillery",
@@ -1147,13 +1167,15 @@
     "source_url": "https://www.tarponspringsdistillery.net/",
     "also_sources": [
      "https://www.tarponspringsdistillery.net/about-us/",
-     "https://www.visitstpeteclearwater.com/profile/tarpon-springs-distillery/138973"
+     "https://www.visitstpeteclearwater.com/profile/tarpon-springs-distillery/138973",
+     "https://www.tarponspringsdistillery.net/contact-us/"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours differ between the site's structured data (Wed–Thu 1–6, Fri–Sat 1–10, Sun 1–6) and the tourism profile (open daily, longer hours), so hours are left unknown. The tourism profile says tours and tastings run every half hour 1–5 PM at no charge; not confirmed on the distillery's own pages read.",
+    "notes": "Hours differ between the site's structured data (Wed–Thu 1–6, Fri–Sat 1–10, Sun 1–6) and the tourism profile (open daily, longer hours), so hours are left unknown. The tourism profile says tours and tastings run every half hour 1–5 PM at no charge; not confirmed on the distillery's own pages read. VERIFIER 2026-09-27: Hours from the distillery's contact page (read with WebFetch); the tourism profile agrees except Sunday (11 AM). The profile quotes 'our renovated historic sponge warehouse, the former Stephen Katzaras Sponge Company' and free tours every half hour 1–5 PM.",
     "lat": 28.151877,
     "lng": -82.75684,
-    "geo_source": "census"
+    "geo_source": "census",
+    "hours_text": "Mon–Tue and Sun 1–7:30 PM; Wed–Fri 1–10 PM; Sat 11 AM–10 PM; closed Easter, Christmas and New Year's Day"
    },
    {
     "id": "dunedin-brewery",
@@ -1193,7 +1215,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "The 'oldest' claim is the brewery's own and is qualified on its page (first line of the quote); the header also says 'FL's Oldest Microbrewery'.",
+    "notes": "The 'oldest' claim is the brewery's own and is qualified on its page (first line of the quote); the header also says 'FL's Oldest Microbrewery'. VERIFIER 2026-09-27: Re-read: 'Florida's Oldest Craft Brewery The Original, Brewing since 1996 We weren't the first to make beer in Florida, but we're the oldest distributing microbrewery still in operation.' The claim stays attributed and qualified, as the brief asked.",
     "lat": 28.01416,
     "lng": -82.787854,
     "geo_source": "census"
@@ -1233,7 +1255,8 @@
     "checked": "2026-09-27",
     "lat": 28.016642,
     "lng": -82.789913,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read home and Our Story (Dec 2, 2011 soft opening; hours Mon–Thu and Sun noon–10, Fri–Sat noon–midnight)."
    },
    {
     "id": "caledonia-brewing",
@@ -1268,7 +1291,8 @@
     "checked": "2026-09-27",
     "lat": 28.013512,
     "lng": -82.784406,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read History and Hours page (hours and 21+ after 8 PM confirmed)."
    },
    {
     "id": "restorative",
@@ -1301,7 +1325,8 @@
     "checked": "2026-09-27",
     "lat": 28.005573,
     "lng": -82.775587,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read restorativerestaurant.com (2017, chef-owners, chef's counter, Top 30 2024 and 2025). Hours still from the tourism profile."
    },
    {
     "id": "bon-appetit-restaurant-dunedin",
@@ -1340,7 +1365,7 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Opening year, hours, address and parking come from the site-wide footer text shown on bonappetitrestaurant.com pages.",
+    "notes": "Opening year, hours, address and parking come from the site-wide footer text shown on bonappetitrestaurant.com pages. VERIFIER 2026-09-27: Re-read: opened 1976 by Peter Kreuziger and Chef Karl Riedl; part of the Original Crabby Bill's family brands (sold to them in 2022 per Tampa Bay Times and Creative Loafing headlines); hours Sun–Thu 11–9, Fri–Sat 11–10.",
     "lat": 28.012573,
     "lng": -82.791907,
     "geo_source": "census"
@@ -1379,7 +1404,7 @@
      "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "The Fenway Hotel itself is a stay (stays slices).",
+    "notes": "The Fenway Hotel itself is a stay (stays slices). VERIFIER 2026-09-27: Re-read Fenway Hotel page (first-come seating, no reservations; hours).",
     "lat": 28.005805,
     "lng": -82.791999,
     "geo_source": "census"
@@ -1420,10 +1445,11 @@
      "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
     "checked": "2026-09-27",
-    "notes": "The company says it has grown into one of the largest independent breweries in Florida; not repeated in the summary. The Clearwater Beach tasting room page gives daily hours 11 AM–10 PM.",
+    "notes": "The company says it has grown into one of the largest independent breweries in Florida; not repeated in the summary. The Clearwater Beach tasting room page gives daily hours 11 AM–10 PM. VERIFIER 2026-09-27: The quote is on 3dbrewing.com (home), not the tasting-room page; quote_source added.",
     "lat": 27.769026,
     "lng": -82.663,
-    "geo_source": "census"
+    "geo_source": "census",
+    "quote_source": "https://3dbrewing.com/"
    },
    {
     "id": "green-bench-brewing",
@@ -1442,7 +1468,7 @@
     "zip": "33705",
     "url": "https://www.greenbenchbrewing.com/",
     "hours_text": "Mon–Thu noon–10 PM; Fri–Sat noon–midnight; Sun noon–9 PM",
-    "summary": "Brewery with a tasting room and beer garden on Baum Avenue North; its owners say they opened St. Petersburg's first microbrewery, after starting construction in 2013. The company also runs Webb's City Cellar, a mead and cider bar.",
+    "summary": "Brewery with a tasting room and beer garden on Baum Avenue North; its owners say they opened St. Petersburg's first microbrewery, after starting construction in 2013. It also runs Webb's City Cellar (mead and cider), and on Sep 25, 2026 it opened a bar and lounge upstairs, Upstairs at Webb's.",
     "quote": "Our doors, our bars, our benches, are open to everyone.",
     "status": "open",
     "tags": [
@@ -1455,12 +1481,14 @@
     "source_url": "https://www.greenbenchbrewing.com/",
     "also_sources": [
      "https://greenbenchbrewing.com/our-story",
-     "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
+     "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south",
+     "https://stpeterising.com/home/green-bench-brewing-to-open-a-new-beer-bar-upstairs-at-webbs-in-downtown-st-pete"
     ],
     "checked": "2026-09-27",
     "lat": 27.771565,
     "lng": -82.650114,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Upstairs at Webb's opening (Sep 25, 2026, above Webb's City Cellar at 1133 Baum Ave N) per St Pete Rising, Sep 24, 2026."
    },
    {
     "id": "st-pete-brewing-company",
@@ -1495,7 +1523,8 @@
     "checked": "2026-09-27",
     "lat": 27.772027,
     "lng": -82.640893,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read stpetebrewingcompany.com (hours, Grateful Stout, Scottish Ale)."
    },
    {
     "id": "st-petersburg-distillery",
@@ -1515,7 +1544,7 @@
     "zip": "33712",
     "url": "https://stpetersburgdistillery.com/",
     "hours_text": "Tasting room Wed and Sun 10:30 AM–6 PM, Thu–Sat 10:30 AM–11 PM; speakeasy Thu–Sat 6–11 PM",
-    "summary": "Family-owned craft distillery making spirits in small batches since 2014, just off the Pinellas Trail, with a tasting room, a 1920s-themed speakeasy and guided tours (21 and up for tastings), including an evening Moonshiners Tour about Prohibition-era rum running.",
+    "summary": "Family-owned craft distillery making spirits in small batches since 2014, with a tasting room, a 1920s-themed speakeasy and guided tours (21 and up for tastings), including an evening Moonshiners Tour about Prohibition-era rum running.",
     "quote": "St. Petersburg Distillery—a proudly local, family-owned distillery that has been perfecting the art of craft spirits since 2014.",
     "status": "open",
     "tags": [
@@ -1532,10 +1561,11 @@
      "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "Tour hours per the tour page: distillery tour Thu–Sun 11 AM–4 PM on the hour; Moonshiners Tour Thu–Sat 6–9 PM on the hour (60 minutes). Tours are also in the exp-land slice.",
+    "notes": "Tour hours per the tour page: distillery tour Thu–Sun 11 AM–4 PM on the hour; Moonshiners Tour Thu–Sat 6–9 PM on the hour (60 minutes). Tours are also in the exp-land slice. VERIFIER 2026-09-27: 'just off the Pinellas Trail' removed (not on the pages read); phone from the tour page footer.",
     "lat": 27.761987,
     "lng": -82.675214,
-    "geo_source": "census"
+    "geo_source": "census",
+    "phone": "(727) 726-3795"
    },
    {
     "id": "pinellas-ale-works",
@@ -1571,7 +1601,8 @@
     "checked": "2026-09-27",
     "lat": 27.770153,
     "lng": -82.659753,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read pawbeer.com (hours, Haines Rd taproom, animal-charity events)."
    },
    {
     "id": "cage-brewing",
@@ -1609,7 +1640,8 @@
     "checked": "2026-09-27",
     "lat": 27.770268,
     "lng": -82.660335,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read cagebrewing.com (20 taps, live music most nights, Kraken Joe's oak-fired brick oven pizza)."
    },
    {
     "id": "gulfport-brewery-eatery",
@@ -1632,7 +1664,7 @@
     "zip": "33707",
     "url": "https://www.gulfport-brewing.com/",
     "phone": "(727) 954-4109",
-    "summary": "Brewery and kitchen in a beach bungalow in Gulfport's historic waterfront district, serving its own beers since 2020, including the Hippie Oasis IPA; Visit St. Pete-Clearwater notes it welcomes dogs.",
+    "summary": "Brewery and kitchen in a beach bungalow in Gulfport's historic waterfront district, serving its own beers since 2020, including the Hippie Oasis IPA.",
     "quote": "Located in The Gulfport historic waterFront District, Our BEACH Bungalow HAS BEEN SERVING UP AWARD WINNING BREWS, Food & Entertainment since 2020.",
     "status": "open",
     "tags": [
@@ -1647,7 +1679,8 @@
     "checked": "2026-09-27",
     "lat": 27.739992,
     "lng": -82.707887,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: 'welcomes dogs' removed: on the tourism profile it comes only from a guest review."
    },
    {
     "id": "mad-beach-brewing",
@@ -1687,7 +1720,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
     "checked": "2026-09-27",
-    "notes": "The page says 'Located in the Heart of the Gulf Beaches'; the John's Pass Village location follows from its Village Blvd address. John's Pass businesses were hit by the 2024 hurricanes; the site shows current hours and events.",
+    "notes": "The page says 'Located in the Heart of the Gulf Beaches'; the John's Pass Village location follows from its Village Blvd address. John's Pass businesses were hit by the 2024 hurricanes; the site shows current hours and events. VERIFIER 2026-09-27: FOX 13 (Oct 30, 2024): 'Mad Beach Brewing Company reopens' after the 2024 storms; hours on the site Mon–Sun 11 AM–10 PM.",
     "lat": 27.786138,
     "lng": -82.782779,
     "geo_source": "census"
@@ -1725,7 +1758,8 @@
     "checked": "2026-09-27",
     "lat": 27.88098,
     "lng": -82.850317,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read anecdotebrewing.com (gluten-removed beers; the page still labels its hours 'Summer Hours')."
    },
    {
     "id": "grindhaus-brew-lab",
@@ -1756,7 +1790,8 @@
     "checked": "2026-09-27",
     "lat": 27.981665,
     "lng": -82.754678,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read: Thu 2–10, Fri–Sat 2–11, Sun 2–7; movie nights and events on its calendar for Oct 2026."
    },
    {
     "id": "crooked-thumb-brewery",
@@ -1773,8 +1808,7 @@
     "zip": "34695",
     "url": "https://crookedthumbbrew.com/",
     "phone": "(727) 724-5953",
-    "summary": "Safety Harbor craft brewery with a tasting room and outdoor beer garden a block from Main Street, pouring lagers, IPAs and fruited sours from over 20 taps, with live music and food trucks. Its name comes from a local history's description of Pinellas County hanging off Florida's west coast like a crooked thumb, per Visit St. Pete-Clearwater.",
-    "quote": "Lagers, IPAs, fruited sours and experimental brews rotate among over 20 taps.",
+    "summary": "Safety Harbor craft brewery with a tasting room and a beer garden under a canopy of trees one block off Main Street, with live music, food trucks and events. Its name comes from a line in a history of Safety Harbor describing how Pinellas County hangs off Florida's west coast like a crooked thumb, per Visit St. Pete-Clearwater.",
     "status": "open",
     "tags": [
      "craft-beer",
@@ -1787,10 +1821,11 @@
      "https://www.visitstpeteclearwater.com/profile/crooked-thumb-brewery/140326"
     ],
     "checked": "2026-09-27",
-    "notes": "ZIP 34695 from the brewery's site (the tourism profile prints 34698).",
+    "notes": "ZIP 34695 from the brewery's site (the tourism profile prints 34698). VERIFIER 2026-09-27: The quote ('over 20 taps') was not on crookedthumbbrew.com or the tourism profile as read, so it and the tap count were removed; hours from the brewery's home page.",
     "lat": 27.987366,
     "lng": -82.698479,
-    "geo_source": "census"
+    "geo_source": "census",
+    "hours_text": "Mon–Thu 4–9 PM; Fri 2–11 PM; Sat noon–11 PM; Sun noon–9 PM"
    },
    {
     "id": "rapp-brewing-company",
@@ -1822,7 +1857,8 @@
     "checked": "2026-09-27",
     "lat": 27.870239,
     "lng": -82.735139,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read home, About and Contact pages (40 taps, 5 oz flights, 2012, yeast bank of over 25 strains, hours)."
    },
    {
     "id": "brighter-days-brewing",
@@ -1843,7 +1879,7 @@
     "url": "https://www.instagram.com/brighterdaysbrewco/",
     "phone": "(727) 940-2350",
     "hours_text": "Mon–Thu noon–9 PM; Fri noon–10 PM; Sat 11 AM–10 PM; Sun 11 AM–7 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Brewery next to the Pinellas Trail in downtown Tarpon Springs with a walk-up window, an open-air garage-door room and a patio, geared to cyclists and walkers; it serves sessionable beers and hosts live music.",
+    "summary": "Brewery directly off the Pinellas Trail in downtown Tarpon Springs with a walk-up window, indoor spaces and a large outdoor patio, welcoming cyclists; it serves sessionable beers and hosts live music.",
     "status": "open",
     "tags": [
      "craft-beer",
@@ -1855,7 +1891,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/north"
     ],
     "checked": "2026-09-27",
-    "notes": "brighterdaysbrewing.com did not respond; the tourism profile links only an Instagram account.",
+    "notes": "brighterdaysbrewing.com did not respond; the tourism profile links only an Instagram account. VERIFIER 2026-09-27: 'open-air garage-door room' removed: not in the tourism profile as re-read.",
     "lat": 28.148984,
     "lng": -82.754696,
     "geo_source": "census"
@@ -1896,7 +1932,8 @@
     "checked": "2026-09-27",
     "lat": 27.899828,
     "lng": -82.848041,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read guppys.com and 3bestchefs.com ('Since 1985')."
    },
    {
     "id": "salt-rock-grill",
@@ -1914,7 +1951,7 @@
     "url": "https://saltrockgrill.com/",
     "phone": "(727) 593-7625",
     "hours_text": "Mon–Fri 4–10 PM; Sat–Sun noon–10 PM",
-    "summary": "Steak and seafood restaurant in Indian Shores overlooking the Intracoastal Waterway, with prime and choice beef, day-boat seafood, a raw bar and a large wine cellar. It is part of Baystar Restaurant Group, which also runs Island Way Grill.",
+    "summary": "Steak and seafood restaurant on Gulf Boulevard in Indian Shores, with prime and choice beef, day-boat seafood, a raw bar and a large wine cellar. It is part of Baystar Restaurant Group, which also runs Island Way Grill.",
     "quote": "Known for our hand cut U.S.D.A prime and choice grade beef, fresh dayboat caught seafood, raw bar and amazing wine cellar.",
     "status": "open",
     "tags": [
@@ -1931,7 +1968,8 @@
     "checked": "2026-09-27",
     "lat": 27.848158,
     "lng": -82.843211,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: 'overlooking the Intracoastal Waterway' removed: not on the page read. Chef Tom Pritchard and Frank Chivas opened it in 1997, per the site."
    },
    {
     "id": "friendly-fisherman",
@@ -1971,7 +2009,7 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater says it opened in 1978 as the first restaurant at John's Pass. John's Pass was damaged in the 2024 hurricanes; the site shows current hours (page modified Feb 2026).",
+    "notes": "Visit St. Pete-Clearwater says it opened in 1978 as the first restaurant at John's Pass. John's Pass was damaged in the 2024 hurricanes; the site shows current hours (page modified Feb 2026). VERIFIER 2026-09-27: Re-read: since 1978, Dockside Lounge, 'Cook Your Catch', open daily from 11 AM, closes 9 PM Sun–Thu and 10 PM Fri–Sat.",
     "lat": 27.786354,
     "lng": -82.780749,
     "geo_source": "census"
@@ -2012,12 +2050,15 @@
     "source_url": "https://www.paradisegrille.com/",
     "also_sources": [
      "https://www.paradisegrille.com/our-story",
-     "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
+     "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants",
+     "https://ilovetheburg.com/paradise-grille-reopens-st-pete-beach-bar/",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
     "checked": "2026-09-27",
     "lat": 27.688915,
     "lng": -82.737936,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Reopened after the 2024 hurricanes: FOX 13 (Jan 27, 2025) and I Love the Burg (Feb 14, 2025); listed among open beach bars by I Love the Burg (May 18, 2026)."
    },
    {
     "id": "billys-stone-crab",
@@ -2037,7 +2078,7 @@
     "zip": "33715",
     "url": "https://www.billysstonecrab.com/",
     "phone": "(727) 866-2115",
-    "summary": "Waterfront seafood and steak restaurant in Tierra Verde on Hurricane Hole, open since 1972 in a building made of native cypress and pine; Visit St. Pete-Clearwater says stone crab from thousands of traps is served from October through May.",
+    "summary": "Waterfront seafood and steak restaurant in Tierra Verde overlooking Hurricane Hole, open since 1972 in a building made of native cypress and pine. Visit St. Pete-Clearwater says stone crab is served year-round, at its peak from October through May.",
     "status": "open",
     "tags": [
      "stone-crab",
@@ -2050,7 +2091,7 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "billysstonecrab.com blocked WebFetch (403) and curl (Cloudflare challenge); facts from the tourism profile, which lists hours only for Wed–Sun (Wed–Thu and Sun 11:30 AM–9:30 PM, Fri–Sat 11:30 AM–10 PM), so hours are left out. Stone crab season in Florida is Oct 15–May 1; the profile says October through May.",
+    "notes": "billysstonecrab.com blocked WebFetch (403) and curl (Cloudflare challenge); facts from the tourism profile, which lists hours only for Wed–Sun (Wed–Thu and Sun 11:30 AM–9:30 PM, Fri–Sat 11:30 AM–10 PM), so hours are left out. Stone crab season in Florida is Oct 15–May 1; the profile says October through May. VERIFIER 2026-09-27: billysstonecrab.com still 403. Tourism profile re-read; the 'thousands of traps' detail was not in it and was removed. Operating in Oct 2025 per Tampa Bay 28 ('Billy's Stone Crab in Tierra Verde stays true to its name thanks to local fishermen', Oct 20, 2025).",
     "lat": 27.675165,
     "lng": -82.727283,
     "geo_source": "census"
@@ -2084,7 +2125,7 @@
      "https://www.visitstpeteclearwater.com/profile/maritana/139635"
     ],
     "checked": "2026-09-27",
-    "notes": "The Don CeSar itself is a historic hotel (stays slices). The tourism profile's older description (AAA Four Diamond since 1994, Gayot top 10) is not repeated because the concept has changed.",
+    "notes": "The Don CeSar itself is a historic hotel (stays slices). The tourism profile's older description (AAA Four Diamond since 1994, Gayot top 10) is not repeated because the concept has changed. VERIFIER 2026-09-27: Re-read doncesar.com: Chef Kenny Tufo, Wed–Sun 5:30–10 PM, resort casual, cashless hotel.",
     "lat": 27.708614,
     "lng": -82.736861,
     "geo_source": "census"
@@ -2110,8 +2151,8 @@
     "zip": "33706",
     "url": "https://buoyswaterfrontbar.com/",
     "phone": "(727) 939-2369",
-    "hours_text": "Daily 8 AM–10 PM (per Visit St. Pete-Clearwater); breakfast 8–11 AM, brunch 11 AM–5 PM",
-    "summary": "Scratch-kitchen seafood restaurant and bar in St. Pete Beach with boat docks and a rooftop bar overlooking Blind Pass, serving breakfast, brunch and dinner.",
+    "hours_text": "Mon–Thu 8 AM–10 PM; Fri–Sat 8 AM–11 PM; Sun 8 AM–10 PM; breakfast 8–11 AM, brunch 11 AM–5 PM",
+    "summary": "Scratch-kitchen seafood restaurant and bar in St. Pete Beach with boat docks, serving breakfast, brunch and dinner; Visit St. Pete-Clearwater describes a rooftop bar overlooking Blind Pass.",
     "quote": "Our menu boasts chef-inspired dishes crafted from local and island-inspired ingredients, ensuring freshness in every bite.",
     "status": "open",
     "tags": [
@@ -2129,7 +2170,8 @@
     "checked": "2026-09-27",
     "lat": 27.741117,
     "lng": -82.753854,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Hours now from buoyswaterfrontbar.com (read with WebFetch). The rooftop bar and Blind Pass view are only on the tourism profile ('Roof Top bar overlooking Blind Pass'), so they are attributed."
    },
    {
     "id": "mahuffers",
@@ -2157,7 +2199,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "No website; the profile links a Facebook page. Status from the profile's current hours (a visitor review on the profile says it survived the 2024 hurricanes); not otherwise confirmed.",
+    "notes": "No website; the profile links a Facebook page. Status from the profile's current hours (a visitor review on the profile says it survived the 2024 hurricanes); not otherwise confirmed. VERIFIER 2026-09-27: Tourism profile re-read. Patch (Jul 24, 2026) named it among America's best dive bars, so it is operating.",
     "lat": 27.84607,
     "lng": -82.842233,
     "geo_source": "census"
@@ -2199,7 +2241,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates from the OpenStreetMap point for Ka'Tiki on West Gulf Blvd (the Census match fell on the main Gulf Blvd).",
+    "notes": "Coordinates from the OpenStreetMap point for Ka'Tiki on West Gulf Blvd (the Census match fell on the main Gulf Blvd). VERIFIER 2026-09-27: Re-read katikisunsetbeach.com (since 1982, 21+, 9 AM–2 AM daily, live music 7 days). Operating: The Bradenton Times listed a Sep 22, 2026 show there; I Love the Burg (May 18, 2026) names it next to Caddy's.",
     "lat": 27.753173,
     "lng": -82.763606,
     "geo_source": "photon"
@@ -2230,10 +2272,11 @@
     ],
     "source_url": "https://www.visitstpeteclearwater.com/profile/undertow-beach-bar/140020",
     "also_sources": [
-     "https://www.visitstpeteclearwater.com/eat-drink/drinks"
+     "https://www.visitstpeteclearwater.com/eat-drink/drinks",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
     "checked": "2026-09-27",
-    "notes": "No website; the profile links a Facebook page. Status from the profile; not otherwise confirmed.",
+    "notes": "No website; the profile links a Facebook page. Status from the profile; not otherwise confirmed. VERIFIER 2026-09-27: Tourism profile re-read. Open in 2026: I Love the Burg's May 18, 2026 beach-bar guide lists it at 3850 Gulf Blvd.",
     "lat": 27.714551,
     "lng": -82.738143,
     "geo_source": "census"
@@ -2254,7 +2297,7 @@
     "url": "https://islandwaygrill.com/",
     "phone": "(727) 461-6617",
     "hours_text": "Mon–Thu 4–9 PM; Fri 4–10 PM; Sat noon–10 PM; Sun 4–9 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Waterfront seafood, sushi and steak restaurant on Island Way beside the Mandalay Bay lagoon, per Visit St. Pete-Clearwater, with a dining room and patio over the water and steaks cooked on an oak and citrus open fire pit; Sunday brunch per Visit St. Pete-Clearwater.",
+    "summary": "Waterfront seafood, sushi and steak restaurant on Island Way in Clearwater Beach, with a dining room and waterfront patio, steaks cooked on an oak and citrus open fire pit, Sunday brunch and dock slips for boaters. It is part of Baystar Restaurant Group.",
     "quote": "We take pride in our fresh seafood, delicious sushi, & hand-cut wood-fired steaks.",
     "status": "open",
     "tags": [
@@ -2272,7 +2315,8 @@
     "checked": "2026-09-27",
     "lat": 27.975241,
     "lng": -82.817787,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Summary rewritten from islandwaygrill.com (the old text leaned on the tourism profile twice). Hours still from the tourism profile."
    },
    {
     "id": "jimmys-crows-nest",
@@ -2293,7 +2337,7 @@
     "url": "https://jimmyscrowsnest.com/",
     "phone": "(727) 683-0002",
     "hours_text": "Mon–Thu and Sun noon–midnight; Fri–Sat noon–2 AM (per Visit St. Pete-Clearwater)",
-    "summary": "Rooftop bar and restaurant on the tenth floor of the Pier House 60 Marina Hotel, with views over the Intracoastal Waterway, downtown Clearwater and the beach; on-site parking.",
+    "summary": "Rooftop bar and restaurant on the tenth floor of the Pier House 60 Marina Hotel next to Clearwater Marina, looking over Pier 60 and the marina, with a nightly sunset celebration and on-site parking.",
     "status": "open",
     "tags": [
      "rooftop",
@@ -2309,7 +2353,8 @@
     "checked": "2026-09-27",
     "lat": 27.975796,
     "lng": -82.828049,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: 'Intracoastal Waterway, downtown Clearwater' view claim replaced by the site's own words (Pier 60, Clearwater Marina)."
    },
    {
     "id": "el-cap",
@@ -2342,7 +2387,7 @@
      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "No official website: elcapstpete.com is a parked domain (redirects to a lander page). Status from the tourism profile's current hours.",
+    "notes": "No official website: elcapstpete.com is a parked domain (redirects to a lander page). Status from the tourism profile's current hours. VERIFIER 2026-09-27: Tourism profile re-read (hours, 'sports photos, articles, pennants, and memorabilia', 'World Champ Cheeseburger'); landmark list: 'Established: 1964'.",
     "lat": 27.80401,
     "lng": -82.638657,
     "geo_source": "census"
@@ -2364,7 +2409,7 @@
     "zip": "33711",
     "url": "https://skywayjacksstpete.com/",
     "phone": "(727) 867-1907",
-    "hours_text": "Daily 6 AM–2:30 PM (per Visit St. Pete-Clearwater)",
+    "hours_text": "Daily 6 AM–2:30 PM",
     "summary": "Breakfast-and-lunch diner serving locals and visitors since 1976, marked by a Humpty Dumpty on the front lawn and a large rooster outside; the menu runs from steak and eggs to fried flounder, whole catfish and chicken dumplings.",
     "quote": "Look for the Humpty Dumpty on the front lawn or the large rooster just outside the restaurant.",
     "status": "open",
@@ -2379,7 +2424,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
     "checked": "2026-09-27",
-    "notes": "The restaurant's site gives (727) 867-1907; the tourism profile gives 727-866-3217.",
+    "notes": "The restaurant's site gives (727) 867-1907; the tourism profile gives 727-866-3217. VERIFIER 2026-09-27: Hours now from the restaurant's own site (same as the tourism profile).",
     "lat": 27.743101,
     "lng": -82.679359,
     "geo_source": "census"
@@ -2420,7 +2465,8 @@
     "checked": "2026-09-27",
     "lat": 27.771094,
     "lng": -82.650551,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read eatatbodega.com: EDGE District, chalkboard menu, juice bar, vegetarian and vegan options, Seminole Heights location, hours."
    },
    {
     "id": "mandarin-hide",
@@ -2458,7 +2504,8 @@
     "checked": "2026-09-27",
     "lat": 27.771263,
     "lng": -82.636044,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read: 'For over 16 years on Central Avenue'; hours Mon closed, Tue–Thu 5 PM–3 AM, Fri 4 PM–3 AM, Sat–Sun noon–3 AM."
    },
    {
     "id": "central-park-st-pete-food-hall",
@@ -2483,7 +2530,7 @@
     "url": "https://centralparkstpete.com/",
     "phone": "(727) 385-0234",
     "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
-    "summary": "Food hall of about 28,000 square feet on several floors of the old Woolworth building on Central Avenue, from Hi Hospitality Group; it began a phased opening in February 2026. Counters include Constellation Burger, Palm Avenue Deli, a taqueria, pizza, pasta and Kojo Wok, with a main bar, a self-pour beer wall and a rooftop bar; you order at a table by kiosk, online or from staff.",
+    "summary": "Five-story food hall of about 28,000 square feet at 551 Central Avenue, where the old Woolworth building stood, from Hi Hospitality Group; it began a phased opening in February 2026. Counters include Constellation Burger, Palm Avenue Deli, Don Ricardo's Taqueria, Park Pie Pizza, Speaks Pasta and Kojo Wok, with a main bar, a self-pour beer wall and a rooftop bar; you sit at a table and order online, at a kiosk or from staff.",
     "quote": "At Central Park St. Pete, your group stays together from the moment you walk in.",
     "status": "open",
     "tags": [
@@ -2498,7 +2545,7 @@
      "https://www.fox13news.com/news/newest-food-hall-opens-fall-st-pete"
     ],
     "checked": "2026-09-27",
-    "notes": "FOX 13 (Feb 25, 2026) reported the phased opening, the 28,000 sq ft size and the former Woolworth building. The site lists some concepts as 'now open' and Kojo (modern Asian) as opening soon; Bar Hana by Kojo is the rooftop bar.",
+    "notes": "FOX 13 (Feb 25, 2026) reported the phased opening, the 28,000 sq ft size and the former Woolworth building. The site lists some concepts as 'now open' and Kojo (modern Asian) as opening soon; Bar Hana by Kojo is the rooftop bar. VERIFIER 2026-09-27: FOX 13 (Feb 25, 2026) says 'The five-story' hall is 'located at 551 Central Avenue where the old Woolworth building used to be' (the earlier summary said it was in the Woolworth building).",
     "lat": 27.771258,
     "lng": -82.64098,
     "geo_source": "census"
@@ -2518,15 +2565,26 @@
     "area": "pass-a-grille",
     "city": "St. Pete Beach",
     "state": "FL",
-    "summary": "Pass-a-Grille restaurant in a building dating from 1938, known for its booths with vintage photos and newspaper clippings; it was a popular spot for soldiers during World War II. Hurricane Helene put six to seven feet of water in it in 2024; owner Anayeri Gomez rebuilt it and planned to reopen in early February 2026, per FOX 13.",
+    "summary": "Breakfast-and-lunch restaurant on Pass-a-Grille Way, serving since 1938; it opened as a drive-in in the late 1930s and was a popular stop for soldiers during World War II. Flooded by Hurricanes Helene and Milton in 2024, it was gut-renovated with its wooden booths and memorabilia restored and reopened in early February 2026.",
     "status": "open",
     "tags": [
      "historic",
+     "breakfast",
      "hurricane-rebuilt"
     ],
-    "source_url": "https://www.fox13news.com/news/sixteen-months-after-hurricane-helene-seahorse-restaurant-pass-a-grille-reopens-next-week",
+    "source_url": "https://stpeterising.com/home/the-iconic-87-year-old-seahorse-restaurant-reopens-in-pass-a-grille-after-year-long-closure",
     "checked": "2026-09-27",
-    "notes": "FOX 13 (Jan 26, 2026) said it would reopen the following week. The Gabber's headline 'Pass-a-Grille's Seahorse Restaurant Reopens' appeared in search results but the article could not be read, and no official website or street address was found, so address and coordinates are unknown. VERIFIER: confirm it is serving and add its address."
+    "notes": "VERIFIER 2026-09-27: St Pete Rising (Feb 4, 2026) gives the address (800 Pass a Grille Way), says it welcomed its first customers in more than a year that week, owner Anayeri Gomez, ribbon cutting Feb 6, hours 8 a.m.–2:30 p.m. daily except Tuesdays, and that St. Pete Beach's Historic Preservation Board granted it a historic designation in 2024. Creative Loafing (Jun 19, 2026) confirms it reopened in February. No official website found (the restaurant uses Facebook).",
+    "address": "800 Pass-a-Grille Way",
+    "zip": "33706",
+    "lat": 27.688046,
+    "lng": -82.736246,
+    "geo_source": "census",
+    "hours_text": "Daily 8 AM–2:30 PM except Tuesday (Feb 2026)",
+    "also_sources": [
+     "https://www.fox13news.com/news/sixteen-months-after-hurricane-helene-seahorse-restaurant-pass-a-grille-reopens-next-week",
+     "https://www.cltampa.com/food-drink/pinellas-county-beachside-bars-and-restaurants-are-reopening-following-2024-hurricanes/"
+    ]
    },
    {
     "id": "star-fish-company",
@@ -2576,7 +2634,7 @@
      "https://www.starfishcompany.com/restaurant/"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates are the ones the business publishes in its structured data. Its structured data also lists hours (Mon 10–3, Tue–Sat 10–6, Sun '11:30–3:00'), which look garbled, so hours are left unknown. The Cortez historic fishing village is a place in the around-daytrips slice (cortez-historic-fishing-village).",
+    "notes": "Coordinates are the ones the business publishes in its structured data. Its structured data also lists hours (Mon 10–3, Tue–Sat 10–6, Sun '11:30–3:00'), which look garbled, so hours are left unknown. The Cortez historic fishing village is a place in the around-daytrips slice (cortez-historic-fishing-village). VERIFIER 2026-09-27: About page re-read (early 1920s, Judge Millis; Garner family from the 1950s; retail market in the 1960s; Karen Bell since 1996).",
     "lat": 27.46583,
     "lng": -82.685333,
     "geo_source": "official"
@@ -2628,7 +2686,7 @@
      "https://www.marvistadining.com/about-us"
     ],
     "checked": "2026-09-27",
-    "notes": "Street address printed as '760 Broadway Street North' on the site.",
+    "notes": "Street address printed as '760 Broadway Street North' on the site. VERIFIER 2026-09-27: About page re-read (Rufus Jordan c. 1912, 1921 hurricane, Chiles Hospitality in the 1980s, Beachside Hospitality Group in 2024); hours daily 11–9.",
     "lat": 27.438286,
     "lng": -82.681542,
     "geo_source": "census"
@@ -2682,7 +2740,8 @@
     "checked": "2026-09-27",
     "lat": 27.52562,
     "lng": -82.736617,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: About page re-read; it also says Ed Chiles sold the Sandbar in 2024 to Beachside Hospitality. WWSB (May 14, 2025) reported it 'going strong' after the 2024 hurricanes."
    },
    {
     "id": "yoders-amish-village",
@@ -2724,7 +2783,7 @@
      "https://www.yodersrestaurant.com/about/about-yoder-s-amish-village/"
     ],
     "checked": "2026-09-27",
-    "notes": "Sunday hours are not listed on the site (closed Sunday is likely but not stated). The site's Saturday lunch start reads '12am', an apparent typo, so the summary gives only the closing time.",
+    "notes": "Sunday hours are not listed on the site (closed Sunday is likely but not stated). The site's Saturday lunch start reads '12am', an apparent typo, so the summary gives only the closing time. VERIFIER 2026-09-27: Re-read home and history pages (1975 on Main Street, Bahia Vista location bought in 1984, single location from 1986).",
     "lat": 27.322788,
     "lng": -82.501,
     "geo_source": "census"
@@ -2749,9 +2808,9 @@
     "city": "Anna Maria",
     "state": "FL",
     "zip": "34216",
-    "summary": "Fishing pier and restaurant on Anna Maria Island's north shore, a landmark since 1947, known for its grouper sandwich and key lime pie. Hurricane Milton washed it away in October 2024; in April 2025 the owner, Oli Lemke, said the restaurant would reopen on land in a Holmes Beach shopping plaza, with the same staff and menu.",
+    "summary": "Fishing pier and restaurant on Anna Maria Island's north shore, a landmark since 1947, known for its grouper sandwich and key lime pie. Hurricane Milton destroyed it in October 2024 and only pilings and a memorial remain; the owner plans to rebuild, and meanwhile runs the Rod & Reel restaurant on land in Holmes Beach.",
     "status": "temporarily-closed",
-    "status_note": "The pier and its restaurant were washed away by Hurricane Milton (Oct 2024); only pilings and a memorial remain at the site. In April 2025 the owner announced a replacement restaurant on land in Holmes Beach (the former Old Hamburg Schnitzelhaus), per FOX 13. Whether that location is open in Sep 2026, and whether the pier will be rebuilt, was not confirmed.",
+    "status_note": "The pier and its restaurant were destroyed by Hurricane Milton (Oct 2024). The owner, Oli Lemke, opened a landside Rod & Reel restaurant at 3246 East Bay Drive, Holmes Beach, on Nov 21, 2025 and says its proceeds go toward rebuilding the pier, per AMI Sun (Nov 25, 2025). No reopening date for the pier was found.",
     "tags": [
      "historic",
      "fishing-pier",
@@ -2760,10 +2819,11 @@
     ],
     "source_url": "https://www.fox13news.com/news/anna-maria-islands-rod-reel-pier-return-land",
     "also_sources": [
+     "https://amisun.com/the-rod-reel-restaurant-sets-sail/",
      "https://www.annamaria.com/news-and-blog/the-complete-list-of-anna-maria-island-restaurants/"
     ],
     "checked": "2026-09-27",
-    "notes": "The address is the pier site, from a vacation-rental company's pre-storm restaurant list; the coordinates mark the old pier, not the Holmes Beach replacement. rodandreelpier.com did not respond. VERIFIER: check whether the Holmes Beach Rod & Reel is open and add its address as a separate record if so.",
+    "notes": "The address is the pier site, from a vacation-rental company's pre-storm restaurant list; the coordinates mark the old pier, not the Holmes Beach replacement. rodandreelpier.com did not respond. VERIFIER: check whether the Holmes Beach Rod & Reel is open and add its address as a separate record if so. VERIFIER 2026-09-27: The landside restaurant is its own record: rod-and-reel-holmes-beach.",
     "lat": 27.537501,
     "lng": -82.740063,
     "geo_source": "census"
@@ -2780,9 +2840,8 @@
     "city": "Clearwater Beach",
     "state": "FL",
     "zip": "33767",
-    "url": "https://frenchysonline.com/",
-    "summary": "Frenchy's seafood cafe on Poinsettia Avenue, first opened about 35 years before 2024, known for its grouper sandwiches (including a grouper Reuben), conch fritters and a dog-friendly back patio. It reopened in November 2024 after Hurricanes Helene and Milton.",
-    "quote": "Frenchy’s Saltwater Café (419 Poinsettia Ave), a beloved seafood haven, has reopened after hurricanes Helene and Milton.",
+    "url": "https://frenchysonline.com/frenchys-saltwater-cafe/",
+    "summary": "Frenchy's seafood cafe on Poinsettia Avenue, a block off the beach; the Frenchy's site calls it a local favorite since 1989. It reopened in November 2024 after Hurricanes Helene and Milton, per I Love the Burg.",
     "status": "open",
     "tags": [
      "grouper-sandwich",
@@ -2790,15 +2849,18 @@
      "frenchys",
      "dog-friendly"
     ],
-    "source_url": "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/",
+    "source_url": "https://frenchysonline.com/frenchys-saltwater-cafe/",
     "also_sources": [
-     "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
+     "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/",
+     "https://frenchysonline.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "frenchysonline.com blocked both WebFetch and curl. Source is I Love the Burg (Nov 10, 2024), which also says Michael 'Frenchy' Preston opened the first Frenchy's on Clearwater Beach in 1981 and that the original cafe had reopened then. Visit St. Pete-Clearwater's waterfront list mentions the Intracoastal view and dog-friendly back patio.",
+    "notes": "frenchysonline.com blocked both WebFetch and curl. Source is I Love the Burg (Nov 10, 2024), which also says Michael 'Frenchy' Preston opened the first Frenchy's on Clearwater Beach in 1981 and that the original cafe had reopened then. Visit St. Pete-Clearwater's waterfront list mentions the Intracoastal view and dog-friendly back patio. VERIFIER 2026-09-27: Source switched to the official page (read with WebFetch): 419 Poinsettia Ave, (727) 461-6295, open daily 11–10, 'Local Favorite since 1989'. The old quote was a news sentence from I Love the Burg, not the restaurant's words, so it was dropped. Menu details (grouper Reuben, conch fritters, dog-friendly patio) came only from the 2024 article and were removed.",
     "lat": 27.979548,
     "lng": -82.826317,
-    "geo_source": "census"
+    "geo_source": "census",
+    "phone": "(727) 461-6295",
+    "hours_text": "Daily 11 AM–10 PM"
    },
    {
     "id": "frescos-waterfront-bistro",
@@ -2832,7 +2894,7 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "frescoswaterfront.com returned a Cloudflare challenge; facts from the St. Pete Pier restaurant page and the tourism profile.",
+    "notes": "frescoswaterfront.com returned a Cloudflare challenge; facts from the St. Pete Pier restaurant page and the tourism profile. VERIFIER 2026-09-27: frescoswaterfront.com still returns 403 to both fetchers; St. Pete Pier page re-read (near the Pier entrance, wrap-around deck, lunch, dinner and weekend brunch).",
     "lat": 27.773465,
     "lng": -82.63158,
     "geo_source": "census"
@@ -2857,7 +2919,7 @@
     "url": "https://okeefestavern.com/",
     "phone": "(727) 442-9034",
     "hours_text": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM",
-    "summary": "Irish restaurant and pub on South Fort Harrison Avenue, opened in 1961 by Bill O'Keefe as a 50-seat tap room and run by the DuQuesnay family since 1980; it serves Irish dishes such as corned beef and cabbage and shepherd's pie and holds a large St. Patrick's Day celebration.",
+    "summary": "Irish restaurant and pub on South Fort Harrison Avenue, opened in 1961 by Bill O'Keefe as a 50-seat tap room and run by the DuQuesnay family since 1980; the family grew its annual St. Patrick's Day celebration into what it calls one of the largest private parties in America.",
     "quote": "Established in 1961 by Bill O’Keefe, initially O’Keefe’s consisted of only the “Tap Room”, seating about 50 people.",
     "quote_source": "https://okeefestavern.com/about-us/",
     "status": "open",
@@ -2873,7 +2935,7 @@
      "https://www.visitstpeteclearwater.com/profile/o-keefe-s-tavern/139697"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater quotes the tavern calling itself the home of Florida's largest St. Patrick's celebration; not repeated as fact.",
+    "notes": "Visit St. Pete-Clearwater quotes the tavern calling itself the home of Florida's largest St. Patrick's celebration; not repeated as fact. VERIFIER 2026-09-27: Dish names (corned beef and cabbage, shepherd's pie) removed: not on the pages read.",
     "lat": 27.953068,
     "lng": -82.799851,
     "geo_source": "census"
@@ -2894,13 +2956,13 @@
      "water"
     ],
     "area": "gulfport",
-    "address": "5405 Shore Blvd",
+    "address": "5405 Shore Blvd S",
     "city": "Gulfport",
     "state": "FL",
     "zip": "33707",
     "url": "https://www.omaddys.com/",
     "phone": "(727) 323-8643",
-    "hours_text": "Daily 11 AM–midnight (per Visit St. Pete-Clearwater)",
+    "hours_text": "Daily 11 AM–midnight",
     "summary": "Bar and grill on the Gulfport waterfront with outdoor seating facing the water and the Gulfport pier, serving Gulf seafood, steaks, pasta and vegetarian dishes, with live music every day.",
     "quote": "Our outdoor seating offers great views of the Gulfport waterfront – watch the boats sail by, the fisherman on the Gulfport Pier, or the sun setting over the water.",
     "status": "open",
@@ -2918,7 +2980,8 @@
     "checked": "2026-09-27",
     "lat": 27.737844,
     "lng": -82.706556,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Street suffix S and hours from omaddys.com. Operating: I Love the Burg (Jun 22, 2026) reported its new rooftop bar open; The Gabber (Mar 20, 2026) reported a second floor opening."
    },
    {
     "id": "caretta-on-the-gulf",
@@ -2950,10 +3013,11 @@
      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat from 11 AM (the rest of the hours table was not captured). Sandpearl Resort itself is a stay.",
+    "notes": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat from 11 AM (the rest of the hours table was not captured). Sandpearl Resort itself is a stay. VERIFIER 2026-09-27: Full hours table read from the Opal Collection page.",
     "lat": 27.982213,
     "lng": -82.82698,
-    "geo_source": "census"
+    "geo_source": "census",
+    "hours_text": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat 11 AM–2:30 PM; dinner daily 5:30–10 PM"
    },
    {
     "id": "casa-tina",
@@ -2984,7 +3048,7 @@
      "https://casatinas.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "casatinas.com is a JavaScript app; the address and phone were read from its footer in the site's script bundle ('CasaTina · 365 Main Street. Downtown Dunedin, FL 34698'). Hours not captured.",
+    "notes": "casatinas.com is a JavaScript app; the address and phone were read from its footer in the site's script bundle ('CasaTina · 365 Main Street. Downtown Dunedin, FL 34698'). Hours not captured. VERIFIER 2026-09-27: casatinas.com is a JavaScript app that WebFetch reads as empty; the landmark list ('Established: 1992') remains the source.",
     "lat": 28.011773,
     "lng": -82.788454,
     "geo_source": "census"
@@ -3016,7 +3080,7 @@
      "https://3dbrewing.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "The page places it 'above Hooters' at 381 Mandalay Avenue. The St. Petersburg original is 3-daughters-brewing.",
+    "notes": "The page places it 'above Hooters' at 381 Mandalay Avenue. The St. Petersburg original is 3-daughters-brewing. VERIFIER 2026-09-27: 3dbrewing.com: 'In March of 2022, we opened our second tasting room in Clearwater Beach with' its own brewing system; open Mon–Sun 11 AM–10 PM.",
     "lat": 27.978876,
     "lng": -82.827318,
     "geo_source": "census"
@@ -3058,7 +3122,7 @@
      "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
     "checked": "2026-09-27",
-    "notes": "The resort is also a stay (stays-beaches: shephards-beach-resort). Coordinates are the resort's published point.",
+    "notes": "The resort is also a stay (stays-beaches: shephards-beach-resort). Coordinates are the resort's published point. VERIFIER 2026-09-27: Tourism profile re-read ('live music every day and night', 'dance floor', picnic tables). Listed among open beach bars by I Love the Burg (May 18, 2026).",
     "quote": "This beachside property offers a vibrant atmosphere with live entertainment, well-appointed guest rooms with spectacular views, two restaurants, tropical pool, tiki bars and a nightclub.",
     "quote_source": "https://www.shephards.com/",
     "lat": 27.96702,
@@ -3103,7 +3167,8 @@
     "checked": "2026-09-27",
     "lat": 27.990869,
     "lng": -82.694665,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read gigglewaters.com (1920s theme, one-screen classic movie theater, bourbon-forward cocktails, The 1919 Old Fashioned, film-inspired drinks, no reservations, hours)."
    },
    {
     "id": "cocktail-st-pete",
@@ -3127,7 +3192,7 @@
     "zip": "33713",
     "url": "https://cocktailstpete.com/",
     "phone": "(727) 592-1914",
-    "summary": "LGBTQ bar at the Mari Jean Hotel in the Grand Central District, with drag brunch, themed shows and a pool bar and day club, The Wet Spot. It is 21 and up, and IDs are checked for every guest.",
+    "summary": "LGBTQ bar at the Mari Jean Hotel in the Grand Central District, with a twice-monthly drag brunch at The Wet Spot, the hotel's pool bar and day club, and themed shows. IDs are checked for every guest.",
     "quote": "We ID any guest. Any age. Every time.",
     "status": "open",
     "tags": [
@@ -3141,7 +3206,7 @@
      "https://www.visitstpeteclearwater.com/trip-planning/lgbtq-travel"
     ],
     "checked": "2026-09-27",
-    "notes": "The site's structured data lists daily 12 PM–3 AM; not repeated because the visible page does not state hours. The Mari Jean Hotel is a stay (stays-stpete-pinellas: mari-jean-hotel).",
+    "notes": "The site's structured data lists daily 12 PM–3 AM; not repeated because the visible page does not state hours. The Mari Jean Hotel is a stay (stays-stpete-pinellas: mari-jean-hotel). VERIFIER 2026-09-27: Read with WebFetch (curl was reset). '21 and up' removed: the page says it IDs every guest but the reading did not state an age limit. Drag brunch on the 2nd and 4th Sunday at The Wet Spot per the page.",
     "lat": 27.771072,
     "lng": -82.665183,
     "geo_source": "census"
@@ -3176,7 +3241,7 @@
      "https://spongedocks.net/tarpon-springs-restaurants/"
     ],
     "checked": "2026-09-27",
-    "notes": "The family history (Mama came from Kalymnos, lived in Tarpon Springs from 1961, husband John was a sponge diver) is from the SpongeDocks.net listing. Hours differ between the restaurant's structured data (daily 11–9) and the listing (daily 11–10), so hours are left unknown.",
+    "notes": "The family history (Mama came from Kalymnos, lived in Tarpon Springs from 1961, husband John was a sponge diver) is from the SpongeDocks.net listing. Hours differ between the restaurant's structured data (daily 11–9) and the listing (daily 11–10), so hours are left unknown. VERIFIER 2026-09-27: Address and family history from the SpongeDocks.net listing (735 Dodecanese Blvd #40; Mama from Kalymnos, in Tarpon Springs since 1961; opened in 1978 with her eldest son). The official site gives no street address.",
     "lat": 28.155506,
     "lng": -82.760911,
     "geo_source": "census"
@@ -3208,7 +3273,8 @@
     "checked": "2026-09-27",
     "lat": 27.775036,
     "lng": -82.632323,
-    "geo_source": "census"
+    "geo_source": "census",
+    "notes": "VERIFIER 2026-09-27: Re-read: since 1996, 'the first major restaurant on this vibrant waterfront stretch', Chef Tyson Grant, hours."
    },
    {
     "id": "bellabrava-st-petersburg",
@@ -3227,8 +3293,7 @@
     "zip": "33701",
     "url": "https://www.bellabrava.com/",
     "phone": "(727) 895-5515",
-    "hours_text": "Mon–Thu 11:30 AM–10 PM; Fri–Sat 11:30 AM–11 PM; Sun 11 AM–10 PM",
-    "summary": "Italian trattoria on Beach Drive since 2005, a scratch kitchen making its own pasta and stone-fired pizza, with indoor and outdoor seating a short walk from the Dalí Museum and the Mahaffey Theater. A second BellaBrava is in Tampa's Midtown.",
+    "summary": "Italian trattoria on Beach Drive since 2005, serving housemade pasta and stone-fired pizza, a short walk from the Dalí Museum and the Mahaffey Theater. Other BellaBravas are in Tampa's Midtown and at Bexley in Land O' Lakes.",
     "quote": "Inspired by a 2003 trip through Tuscany and a desire to bring its authentic flavors to the New World, BellaBrava was born in 2005 as a vibrant trattoria.",
     "status": "open",
     "tags": [
@@ -3243,12 +3308,243 @@
      "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours and phone from the site's structured data.",
+    "notes": "Hours and phone from the site's structured data. VERIFIER 2026-09-27: Hours dropped: the site's visible hours table (Sun 11–9, Mon–Thu 11:30–9, Fri 11:30–11, Sat 11–11) differs from its structured data and may belong to another location. The site lists a third location, BellaBrava Bexley (16722 Focus Loop, Land O' Lakes).",
     "lat": 27.773666,
     "lng": -82.632789,
     "geo_source": "census"
+   },
+   {
+    "id": "rod-and-reel-holmes-beach",
+    "name": "The Rod & Reel (Holmes Beach)",
+    "aliases": [
+     "Rod & Reel restaurant",
+     "Rod and Reel Holmes Beach"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "history"
+    ],
+    "area": "bradenton-anna-maria",
+    "address": "3246 East Bay Dr",
+    "city": "Holmes Beach",
+    "state": "FL",
+    "zip": "34217",
+    "lat": 27.492142,
+    "lng": -82.70741,
+    "geo_source": "census",
+    "hours_text": "Daily 8 AM–9 PM; breakfast until 11 AM (Nov 2025)",
+    "price_text": "Pier Burger $15; fried clam strips $16; grouper sandwich market price (Nov 2025)",
+    "summary": "Landside stand-in for the Rod & Reel Pier, which Hurricane Milton destroyed: a 60-seat restaurant in a Holmes Beach shopping plaza with indoor and outdoor seats, serving essentially the old pier menu, with the pier's sign, recovered planks and a mural of the pier inside. It opened on Nov 21, 2025, and the owner says the money goes toward rebuilding the pier.",
+    "status": "open",
+    "tags": [
+     "grouper-sandwich",
+     "breakfast",
+     "seafood",
+     "hurricane-rebuilt"
+    ],
+    "source_url": "https://amisun.com/the-rod-reel-restaurant-sets-sail/",
+    "also_sources": [
+     "https://baynews9.com/fl/tampa/news/2025/11/21/rod---reel-pier-restaurant-opens-its-temporary-location",
+     "https://www.fox13news.com/news/anna-maria-islands-rod-reel-pier-return-land"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. AMI Sun (Nov 25, 2025): opened Nov 21 at 3246 East Bay Drive, 60 seats, open seven days 8 a.m.–9 p.m., breakfast until 11 a.m., prices as listed; FOX 13 (Apr 2025) says it took the former Old Hamburg Schnitzelhaus space. rodandreelpier.com did not respond (502), so hours are as of the Nov 2025 article. The destroyed pier is rod-and-reel-pier."
+   },
+   {
+    "id": "frenchys-original-cafe",
+    "name": "Frenchy's Original Cafe",
+    "aliases": [
+     "Frenchy's Cafe"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "beaches",
+     "history"
+    ],
+    "area": "clearwater-beach",
+    "address": "41 Baymont St",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.982082,
+    "lng": -82.826658,
+    "geo_source": "census",
+    "url": "https://frenchysonline.com/frenchys-original-cafe/",
+    "phone": "(727) 446-3607",
+    "hours_text": "Daily 11 AM–10 PM",
+    "summary": "The first Frenchy's, opened in 1981 on Baymont Street in Clearwater Beach: a small cafe serving many of the group's original menu items, such as smoked fish spread, seafood gumbo, boiled shrimp and Greek salad. The restaurant says its Super Grouper sandwich made its debut here.",
+    "status": "open",
+    "tags": [
+     "grouper-sandwich",
+     "seafood",
+     "frenchys",
+     "historic",
+     "landmark-restaurant"
+    ],
+    "source_url": "https://frenchysonline.com/frenchys-original-cafe/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
+     "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added (the researcher could not read frenchysonline.com; WebFetch now reads it, curl still gets a bot challenge). The page: 41 Baymont St., (727) 446-3607, open daily 11–10, 'Opened in 1981'. Visit St. Pete-Clearwater's landmark list: 'Established: 1981'. I Love the Burg (Nov 10, 2024) reported it had reopened after the 2024 hurricanes. No quote because WebFetch output is not reliably verbatim."
+   },
+   {
+    "id": "frenchys-south-beach-cafe",
+    "name": "Frenchy's South Beach Cafe",
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "351 S Gulfview Blvd",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.971629,
+    "lng": -82.829366,
+    "geo_source": "photon",
+    "url": "https://frenchysonline.com/frenchys-south-beach-cafe/",
+    "phone": "(727) 441-9991",
+    "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "summary": "Frenchy's restaurant on Beach Walk in south Clearwater Beach, with open-air dining, a large sidewalk patio facing the Gulf and a private upstairs room for groups of up to 30; the menu includes the Super Grouper sandwich.",
+    "status": "open",
+    "tags": [
+     "grouper-sandwich",
+     "seafood",
+     "frenchys"
+    ],
+    "source_url": "https://frenchysonline.com/frenchys-south-beach-cafe/",
+    "also_sources": [
+     "https://frenchysonline.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added from the official page (read with WebFetch): 351 South Gulfview Blvd, (727) 441-9991, hours. Coordinates: the OpenStreetMap point for the restaurant."
+   },
+   {
+    "id": "caddys-treasure-island",
+    "name": "Caddy's Treasure Island",
+    "aliases": [
+     "Caddy's on the Beach"
+    ],
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "beaches"
+    ],
+    "area": "treasure-island",
+    "address": "9000 W Gulf Blvd",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.753696,
+    "lng": -82.764118,
+    "geo_source": "photon",
+    "url": "https://www.caddys.com/treasure-island",
+    "phone": "(727) 360-4993",
+    "hours_text": "Sun–Thu 10 AM–9 PM; Fri–Sat 10 AM–10 PM",
+    "summary": "Beach bar and restaurant on Sunset Beach in Treasure Island, the first Caddy's, with a ground floor and a second-floor patio facing the Gulf sunset; Ka'Tiki is next door. The 2024 hurricanes wrecked its building, and it reopened in April 2026 after an 18-month rebuild, per I Love the Burg.",
+    "quote": "Visit the original Caddy’s beach bar. Caddy’s Treasure Island is located on beautiful Sunset Beach in Treasure Island, Florida.",
+    "status": "open",
+    "tags": [
+     "beach-bar",
+     "sunset",
+     "hurricane-rebuilt"
+    ],
+    "source_url": "https://www.caddys.com/treasure-island",
+    "also_sources": [
+     "https://ilovetheburg.com/caddys-treasure-island-reopens/",
+     "https://www.cltampa.com/food-drink/pinellas-county-beachside-bars-and-restaurants-are-reopening-following-2024-hurricanes/",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. caddys.com page read with curl (hours, phone, quote verbatim; 'No coolers, outside food & beverage are allowed'). I Love the Burg (Apr 2, 2026): 18-month rebuild of the ground floor and second-floor patio, ribbon cutting Apr 9 at the start of a soft opening. Creative Loafing (Jun 19, 2026) says it reopened in April after the 2024 hurricanes destroyed its 75-year-old building. Other Caddy's are in Madeira Beach and Indian Shores."
+   },
+   {
+    "id": "wharf-pass-a-grille",
+    "name": "The Wharf Restaurant & Sports Bar",
+    "aliases": [
+     "The Wharf",
+     "The Wharf Pass-a-Grille"
+    ],
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "water",
+     "history"
+    ],
+    "area": "pass-a-grille",
+    "address": "2001 Pass-a-Grille Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.696625,
+    "lng": -82.735286,
+    "geo_source": "photon",
+    "url": "https://wharfpag.com/",
+    "phone": "(727) 367-9469",
+    "hours_text": "Restaurant daily 11 AM–10 PM; bar daily 10 AM–midnight",
+    "summary": "Seafood restaurant and sports bar on Pass-a-Grille Way, open since April 1994 in a building whose pilings Heber Bell set in 1912; in the 1930s it was a fish-processing plant. It has a bar running most of the length of the room and docks for boaters, and is known for its grouper sandwich, per I Love the Burg.",
+    "quote": "The Wharf Restaurant & Sports Bar Opened For Business In April 1994, But Its Beginning Could Be Traced Back As Far As 1912.",
+    "status": "open",
+    "tags": [
+     "grouper-sandwich",
+     "seafood",
+     "waterfront",
+     "sports-bar",
+     "boat-docks"
+    ],
+    "source_url": "https://wharfpag.com/",
+    "also_sources": [
+     "https://ilovetheburg.com/wharf-grouper-beach-boat-docking/",
+     "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. wharfpag.com read with curl (address, phone, hours, history; quote verbatim, the site sets it in title case). I Love the Burg (Jul 13, 2026, a feature that reads like sponsored content) mentions new docks, a remodeled back patio, happy hour Mon–Fri 3:30–6 PM and says it was 'Recently designated a local historic site' (not repeated as a designation because no designation record was read)."
+   },
+   {
+    "id": "florida-orange-groves-winery",
+    "name": "Florida Orange Groves Winery",
+    "kind": "distillery-winery",
+    "topics": [
+     "drink",
+     "shopping"
+    ],
+    "area": "west-stpete",
+    "address": "1500 Pasadena Ave S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33707",
+    "lat": 27.752891,
+    "lng": -82.737902,
+    "geo_source": "photon",
+    "url": "https://www.floridawine.com/",
+    "phone": "(727) 347-4025",
+    "hours_text": "Tours on the half hour 10 AM–4 PM Mon–Sat, noon–3:30 PM Sun; tastings 10 AM–4:30 PM Mon–Sat, noon–4 PM Sun",
+    "summary": "Third-generation, family-run winery on Pasadena Avenue South that makes over 43 varieties of tropical fruit wines; the family began by packing and shipping citrus in St. Petersburg in the early 1970s. You can take a tour, taste the wines and shop the gift shop.",
+    "quote": "Florida Orange Groves Winery is a third generation, family owned and operated, tropical fruit winery.",
+    "status": "open",
+    "tags": [
+     "winery",
+     "tastings",
+     "tours",
+     "citrus"
+    ],
+    "source_url": "https://www.floridawine.com/",
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. floridawine.com read with curl: 'Florida’s Original Tropical Fruit Winery' (its own tagline), 'producing over 43 different varieties', address, phone, tour and tasting hours. Like Ted Peters, the address is in the city of South Pasadena with a St. Petersburg mailing address; filed under west-stpete."
    }
   ]
  },
- "report": "# eat-pinellas: where to eat and drink in St. Pete, the Gulf beaches, Clearwater & North Pinellas, and day-trip towns\n\nChecked 2026-09-27. 84 places (collection `places` only).\n\n## What is covered\n\n- **Historic and landmark restaurants**: Ted Peters Famous Smoked Fish (1951), The Chattaway, Harvey's 4th Street Grill (1984), El Cap, Skyway Jack's (1976), Bob Heilman's Beachcomber (1948), Crabby's Beachside Pavilion (the former Palm Pavilion), the Original Crabby Bill's (1983), The Hurricane (Pass-a-Grille, 1977), the Seahorse (Pass-a-Grille, 1938 building, rebuilt after Helene), Friendly Fisherman (John's Pass, 1978), Billy's Stone Crab (1972), O'Keefe's Tavern (1961), Bon Appétit (Dunedin, 1976), Casa Tina, Columbia Restaurant at Sand Key and at St. Armands Circle.\n- **Frenchy's** (Clearwater Beach): Rockaway Grill and Saltwater Cafe. The Original Cafe and South Beach Cafe were left out (see below).\n- **Tarpon Springs Sponge Docks Greek food**: Hellas Restaurant & Bakery (since 1970), Mykonos, Dimitri's on the Water, Mama's Greek Cuisine (1978), plus Rusty Bellies (seafood) and Tarpon Springs Distillery (ouzo, whiskey).\n- **MICHELIN Guide Florida 2026** (announced May 28, 2026; first statewide guide). There are no starred restaurants in Pinellas, Sarasota or Polk. Recommended: Elliott Aster, Fortu, IL Ritorno, in between days and Sushi Sho Rexley (St. Pete); The Tides Market (Safety Harbor); Focaccia Sandwich + Bakery and Tralia (Sarasota); Nineteen61 (Lakeland). Bib Gourmand: Lucky 8 (Sarasota). Tags: michelin-recommended, michelin-bib-gourmand, michelin-2026. No Clearwater restaurant is in the 2026 selection.\n- **Breweries and distilleries (18)**: Dunedin Brewery (its own claim, quoted and qualified: \"the oldest distributing microbrewery still in operation\" in Florida, brewing since 1996), 7venth Sun, Caledonia (Dunedin); 3 Daughters (St. Pete and Clearwater Beach), Green Bench (it says it was St. Pete's first microbrewery), St. Pete Brewing, Pinellas Ale Works, Cage, Gulfport Brewery, Mad Beach Brewing, Anecdote (Indian Rocks Beach), Grindhaus Brew Lab (Clearwater), Crooked Thumb (Safety Harbor), Rapp (Seminole), Brighter Days (Tarpon Springs); St. Petersburg Distillery and Tarpon Springs Distillery.\n- **St. Pete Pier**: Teak, Pier Teaki (rooftop tiki bar), Doc Ford's, Fresco's.\n- **Rooftop and cocktail bars**: The Canopy at The Birchwood, Pier Teaki, Hi-Fi Rooftop Bar (Fenway Hotel, Dunedin), Jimmy's Crow's Nest (Clearwater Beach), The Mandarin Hide, Gigglewaters (Safety Harbor, 1920s-themed bar with a classic-movie screen), COCKtail St. Pete (LGBTQ, Mari Jean Hotel).\n- **Beach bars and waterfront**: Ka'Tiki (1982), Undertow, Mahuffer's, Shephard's Tiki Bar, Paradise Grille, Buoy's, O'Maddy's (Gulfport), Guppy's, Salt Rock Grill, Island Way Grill, Caretta on the Gulf, Maritana (Don CeSar).\n- **Food hall**: Central Park St. Pete Food Hall (551 Central Ave, old Woolworth building; phased opening from Feb 2026).\n- **Other St. Pete**: Bodega (Cuban sandwich), Parkshore Grill (Beach Drive since 1996), BellaBrava (2005).\n- **Day trips**: Star Fish Company (Cortez, dates to the 1920s), Mar Vista (Longboat Key, c. 1912 building), Sandbar (Anna Maria, site history to 1911, bought 1979), Rod & Reel Pier (status below), Yoder's (Sarasota Amish cooking since 1975), Columbia St. Armands, and the four Michelin picks in Sarasota and Lakeland.\n\n## Counts\n\n- By kind: restaurant 54, brewery 16, bar 10, distillery-winery 2, cafe-bakery 1, food-hall 1.\n- By region: St. Petersburg 29, Gulf Beaches 25, Clearwater & North Pinellas 20, Day Trips 10.\n- By area: downtown-stpete 16, clearwater-beach 9, tarpon-springs 7, dunedin 7, grand-central 6, sarasota 5, indian-rocks-beach 5, bradenton-anna-maria 4, pass-a-grille 3, safety-harbor 3, st-pete-beach 3, south-stpete 2, old-northeast 2, gulfport 2, madeira-beach 2, downtown-clearwater 2, west-stpete 1, sand-key 1, polk 1, largo 1, fort-de-soto 1, treasure-island 1.\n- Status: open 83, temporarily-closed 1 (Rod & Reel Pier). signature: true on 5 (Ted Peters, Frenchy's Rockaway Grill, The Hurricane, Hellas, Dunedin Brewery). Heritage blocks on 4 (Ted Peters, Star Fish Company, Mar Vista, Sandbar).\n- Source: 73 records use the business's own page as source_url. 11 fall back to a Visit St. Pete-Clearwater profile or list because the business site blocked both fetchers or has no site (Frenchy's Rockaway, Billy's Stone Crab, Dimitri's, Fresco's, Mykonos, Mahuffer's, Undertow, El Cap, Brighter Days, Shephard's Tiki Bar, Casa Tina). Also: Visit Sarasota for Lucky 8, FOX 13 for the Seahorse and Rod & Reel, and I Love the Burg for Frenchy's Saltwater Cafe.\n\n## How candidates were found\n\n1. Visit St. Pete-Clearwater lists, read with WebFetch: the Eat & Drink dining hub, \"Landmark Restaurants\", \"Best Waterfront Restaurants\", \"MICHELIN-Recognized Restaurants\", the Gulp Coast Craft Beer Trail (north, central and south region pages), Drinks, Nightlife, \"Best Rooftop Bars & Restaurants\" and the LGBTQ travel page. The individual profiles were used for addresses, phones and hours where a business site blocked us.\n2. The MICHELIN Guide 2026 Florida announcement on michelinmedia.com (read with curl; the full Bib Gourmand, starred and recommended tables are images on that page and were read one by one). guide.michelin.com returned empty pages to both fetchers.\n3. Visit Sarasota's Michelin article, WWSB/mysuncoast (Tralia and the first Sarasota Michelin picks) and the Columbia Restaurant locations page.\n4. The St. Pete Pier restaurants page (stpetepier.org/restaurants) and the SpongeDocks.net Tarpon Springs restaurant list.\n5. News checks for storm damage and closures: FOX 13 (Seahorse reopening, Rod & Reel moving on land, Central Park food hall), I Love the Burg (Frenchy's reopenings, Nov 2024) and Axios (Cycle Brewing taproom closing).\n6. Search: the session's WebSearch budget was already used up, and Bing/DuckDuckGo/Google HTML pages were blocked or broken, so discovery used Marginalia Search (via curl) plus direct fetches of known official sites.\n7. Quotes: every quote was checked against page text read with curl, or taken from a page read directly. Quotes that reached me only through WebFetch's summarizer (mostly Visit St. Pete-Clearwater profiles, and Visit Sarasota for Lucky 8) were dropped, because two reads of the same page returned different wording. 68 records have a quote.\n\n## Deliberately left out (and why)\n\n- **Cycle Brewing** (St. Pete): Axios (May 6, 2025) reported the downtown taproom closing. The article itself was blocked, and cyclebrewing.com shows \"This store is unavailable\". Current status is not confirmed.\n- **Frenchy's Original Cafe and Frenchy's South Beach Cafe**: frenchysonline.com blocks both fetchers, and no readable page gives their current addresses. I Love the Burg (Nov 2024) says the original cafe had reopened.\n- **Woody's Waterfront** (St. Pete Beach): the site's domain did not resolve, and there was no tourism profile.\n- **Coney Island Grill** (St. Pete, hot dogs): coneyislandgrill.com is now an unrelated template site, and the status could not be confirmed. **Munch's** had no site found.\n- **Flanagan's Irish Pub** (Dunedin): its domain is for sale, and the status is unconfirmed.\n- **Merry Pier** (Pass-a-Grille bait shop and pier) is left to the outdoors/see slices, and its status is unknown. The **Anna Maria City Pier** restaurant and **Beach House** (Bradenton Beach) are not covered.\n- **Chains and hotel lobby bars** without a local story; **Kahwa Coffee** (a St. Pete-founded chain with no single flagship identified); Crabby Bill's St. Pete Beach and Palm Harbor branches (mentioned in the main record); smaller Gulp Coast breweries (Bayboro, Overflow, Grand Central Brewhouse, Cueni, HOB, Woodwright, Soggy Bottom, Stilt House, de Bine, Two Frogs, Unrefined, Arkane, Southern Lights, Sea Dog, Mastry's Brewing, Troubled Waters).\n- **Palm Harbor and Oldsmar** have no records; nothing there met the brief's \"historic or signature\" bar in the lists read.\n- **Sarasota** is limited to Michelin picks, the Columbia and Yoder's (historic), as the brief asked.\n\n## Open questions for the verifier\n\n1. **Seahorse Restaurant (Pass-a-Grille)**: FOX 13 (Jan 26, 2026) said it would reopen the next week. Confirm it is serving and add its street address. The record has no address or coordinates.\n2. **Rod & Reel Pier**: the pier was washed away by Milton. Is the Holmes Beach replacement (former Old Hamburg Schnitzelhaus) open, and at what address? Is the pier being rebuilt?\n3. **Status from tourism profiles only** (no official site readable): Frenchy's Rockaway Grill (reported still recovering in Nov 2024; profile now lists hours), Mykonos (Facebook page only), Mahuffer's, Undertow, Billy's Stone Crab, Dimitri's, El Cap.\n4. **Hours left unknown because sources disagree**: in between days, Tralia, Tarpon Springs Distillery, Mama's Greek Cuisine, Star Fish Company.\n5. **Area judgment calls**: Ted Peters is in the city of South Pasadena (filed under west-stpete); Harvey's and El Cap (4th St N at 31st–35th Ave) are filed under old-northeast.\n6. **Own claims, quoted and attributed only**: Dunedin Brewery (\"oldest distributing microbrewery still in operation\"), Green Bench (\"St. Petersburg's first microbrewery\"), Crabby's Beachside Pavilion (\"oldest beach pavilion in Florida\"), Columbia St. Armands (\"oldest operating restaurant in Sarasota\"), Caretta on the Gulf (\"Clearwater's only AAA Four-Diamond\" restaurant), Parkshore Grill (\"first major restaurant\" on Beach Drive), Anecdote (\"closest brewery to the Gulf beach\").\n7. **The Chattaway**: Visit St. Pete-Clearwater says it opened in 1951; the restaurant says \"over 90 years\" in one form or another."
+ "report": "# eat-pinellas: where to eat and drink in St. Pete, the Gulf beaches, Clearwater & North Pinellas, and day-trip towns\n\nChecked 2026-09-27. 84 places (collection `places` only).\n\n## What is covered\n\n- **Historic and landmark restaurants**: Ted Peters Famous Smoked Fish (1951), The Chattaway, Harvey's 4th Street Grill (1984), El Cap, Skyway Jack's (1976), Bob Heilman's Beachcomber (1948), Crabby's Beachside Pavilion (the former Palm Pavilion), the Original Crabby Bill's (1983), The Hurricane (Pass-a-Grille, 1977), the Seahorse (Pass-a-Grille, 1938 building, rebuilt after Helene), Friendly Fisherman (John's Pass, 1978), Billy's Stone Crab (1972), O'Keefe's Tavern (1961), Bon Appétit (Dunedin, 1976), Casa Tina, Columbia Restaurant at Sand Key and at St. Armands Circle.\n- **Frenchy's** (Clearwater Beach): Rockaway Grill and Saltwater Cafe. The Original Cafe and South Beach Cafe were left out (see below).\n- **Tarpon Springs Sponge Docks Greek food**: Hellas Restaurant & Bakery (since 1970), Mykonos, Dimitri's on the Water, Mama's Greek Cuisine (1978), plus Rusty Bellies (seafood) and Tarpon Springs Distillery (ouzo, whiskey).\n- **MICHELIN Guide Florida 2026** (announced May 28, 2026; first statewide guide). There are no starred restaurants in Pinellas, Sarasota or Polk. Recommended: Elliott Aster, Fortu, IL Ritorno, in between days and Sushi Sho Rexley (St. Pete); The Tides Market (Safety Harbor); Focaccia Sandwich + Bakery and Tralia (Sarasota); Nineteen61 (Lakeland). Bib Gourmand: Lucky 8 (Sarasota). Tags: michelin-recommended, michelin-bib-gourmand, michelin-2026. No Clearwater restaurant is in the 2026 selection.\n- **Breweries and distilleries (18)**: Dunedin Brewery (its own claim, quoted and qualified: \"the oldest distributing microbrewery still in operation\" in Florida, brewing since 1996), 7venth Sun, Caledonia (Dunedin); 3 Daughters (St. Pete and Clearwater Beach), Green Bench (it says it was St. Pete's first microbrewery), St. Pete Brewing, Pinellas Ale Works, Cage, Gulfport Brewery, Mad Beach Brewing, Anecdote (Indian Rocks Beach), Grindhaus Brew Lab (Clearwater), Crooked Thumb (Safety Harbor), Rapp (Seminole), Brighter Days (Tarpon Springs); St. Petersburg Distillery and Tarpon Springs Distillery.\n- **St. Pete Pier**: Teak, Pier Teaki (rooftop tiki bar), Doc Ford's, Fresco's.\n- **Rooftop and cocktail bars**: The Canopy at The Birchwood, Pier Teaki, Hi-Fi Rooftop Bar (Fenway Hotel, Dunedin), Jimmy's Crow's Nest (Clearwater Beach), The Mandarin Hide, Gigglewaters (Safety Harbor, 1920s-themed bar with a classic-movie screen), COCKtail St. Pete (LGBTQ, Mari Jean Hotel).\n- **Beach bars and waterfront**: Ka'Tiki (1982), Undertow, Mahuffer's, Shephard's Tiki Bar, Paradise Grille, Buoy's, O'Maddy's (Gulfport), Guppy's, Salt Rock Grill, Island Way Grill, Caretta on the Gulf, Maritana (Don CeSar).\n- **Food hall**: Central Park St. Pete Food Hall (551 Central Ave, old Woolworth building; phased opening from Feb 2026).\n- **Other St. Pete**: Bodega (Cuban sandwich), Parkshore Grill (Beach Drive since 1996), BellaBrava (2005).\n- **Day trips**: Star Fish Company (Cortez, dates to the 1920s), Mar Vista (Longboat Key, c. 1912 building), Sandbar (Anna Maria, site history to 1911, bought 1979), Rod & Reel Pier (status below), Yoder's (Sarasota Amish cooking since 1975), Columbia St. Armands, and the four Michelin picks in Sarasota and Lakeland.\n\n## Counts\n\n- By kind: restaurant 54, brewery 16, bar 10, distillery-winery 2, cafe-bakery 1, food-hall 1.\n- By region: St. Petersburg 29, Gulf Beaches 25, Clearwater & North Pinellas 20, Day Trips 10.\n- By area: downtown-stpete 16, clearwater-beach 9, tarpon-springs 7, dunedin 7, grand-central 6, sarasota 5, indian-rocks-beach 5, bradenton-anna-maria 4, pass-a-grille 3, safety-harbor 3, st-pete-beach 3, south-stpete 2, old-northeast 2, gulfport 2, madeira-beach 2, downtown-clearwater 2, west-stpete 1, sand-key 1, polk 1, largo 1, fort-de-soto 1, treasure-island 1.\n- Status: open 83, temporarily-closed 1 (Rod & Reel Pier). signature: true on 5 (Ted Peters, Frenchy's Rockaway Grill, The Hurricane, Hellas, Dunedin Brewery). Heritage blocks on 4 (Ted Peters, Star Fish Company, Mar Vista, Sandbar).\n- Source: 73 records use the business's own page as source_url. 11 fall back to a Visit St. Pete-Clearwater profile or list because the business site blocked both fetchers or has no site (Frenchy's Rockaway, Billy's Stone Crab, Dimitri's, Fresco's, Mykonos, Mahuffer's, Undertow, El Cap, Brighter Days, Shephard's Tiki Bar, Casa Tina). Also: Visit Sarasota for Lucky 8, FOX 13 for the Seahorse and Rod & Reel, and I Love the Burg for Frenchy's Saltwater Cafe.\n\n## How candidates were found\n\n1. Visit St. Pete-Clearwater lists, read with WebFetch: the Eat & Drink dining hub, \"Landmark Restaurants\", \"Best Waterfront Restaurants\", \"MICHELIN-Recognized Restaurants\", the Gulp Coast Craft Beer Trail (north, central and south region pages), Drinks, Nightlife, \"Best Rooftop Bars & Restaurants\" and the LGBTQ travel page. The individual profiles were used for addresses, phones and hours where a business site blocked us.\n2. The MICHELIN Guide 2026 Florida announcement on michelinmedia.com (read with curl; the full Bib Gourmand, starred and recommended tables are images on that page and were read one by one). guide.michelin.com returned empty pages to both fetchers.\n3. Visit Sarasota's Michelin article, WWSB/mysuncoast (Tralia and the first Sarasota Michelin picks) and the Columbia Restaurant locations page.\n4. The St. Pete Pier restaurants page (stpetepier.org/restaurants) and the SpongeDocks.net Tarpon Springs restaurant list.\n5. News checks for storm damage and closures: FOX 13 (Seahorse reopening, Rod & Reel moving on land, Central Park food hall), I Love the Burg (Frenchy's reopenings, Nov 2024) and Axios (Cycle Brewing taproom closing).\n6. Search: the session's WebSearch budget was already used up, and Bing/DuckDuckGo/Google HTML pages were blocked or broken, so discovery used Marginalia Search (via curl) plus direct fetches of known official sites.\n7. Quotes: every quote was checked against page text read with curl, or taken from a page read directly. Quotes that reached me only through WebFetch's summarizer (mostly Visit St. Pete-Clearwater profiles, and Visit Sarasota for Lucky 8) were dropped, because two reads of the same page returned different wording. 68 records have a quote.\n\n## Deliberately left out (and why)\n\n- **Cycle Brewing** (St. Pete): Axios (May 6, 2025) reported the downtown taproom closing. The article itself was blocked, and cyclebrewing.com shows \"This store is unavailable\". Current status is not confirmed.\n- **Frenchy's Original Cafe and Frenchy's South Beach Cafe**: frenchysonline.com blocks both fetchers, and no readable page gives their current addresses. I Love the Burg (Nov 2024) says the original cafe had reopened.\n- **Woody's Waterfront** (St. Pete Beach): the site's domain did not resolve, and there was no tourism profile.\n- **Coney Island Grill** (St. Pete, hot dogs): coneyislandgrill.com is now an unrelated template site, and the status could not be confirmed. **Munch's** had no site found.\n- **Flanagan's Irish Pub** (Dunedin): its domain is for sale, and the status is unconfirmed.\n- **Merry Pier** (Pass-a-Grille bait shop and pier) is left to the outdoors/see slices, and its status is unknown. The **Anna Maria City Pier** restaurant and **Beach House** (Bradenton Beach) are not covered.\n- **Chains and hotel lobby bars** without a local story; **Kahwa Coffee** (a St. Pete-founded chain with no single flagship identified); Crabby Bill's St. Pete Beach and Palm Harbor branches (mentioned in the main record); smaller Gulp Coast breweries (Bayboro, Overflow, Grand Central Brewhouse, Cueni, HOB, Woodwright, Soggy Bottom, Stilt House, de Bine, Two Frogs, Unrefined, Arkane, Southern Lights, Sea Dog, Mastry's Brewing, Troubled Waters).\n- **Palm Harbor and Oldsmar** have no records; nothing there met the brief's \"historic or signature\" bar in the lists read.\n- **Sarasota** is limited to Michelin picks, the Columbia and Yoder's (historic), as the brief asked.\n\n## Open questions for the verifier\n\n1. **Seahorse Restaurant (Pass-a-Grille)**: FOX 13 (Jan 26, 2026) said it would reopen the next week. Confirm it is serving and add its street address. The record has no address or coordinates.\n2. **Rod & Reel Pier**: the pier was washed away by Milton. Is the Holmes Beach replacement (former Old Hamburg Schnitzelhaus) open, and at what address? Is the pier being rebuilt?\n3. **Status from tourism profiles only** (no official site readable): Frenchy's Rockaway Grill (reported still recovering in Nov 2024; profile now lists hours), Mykonos (Facebook page only), Mahuffer's, Undertow, Billy's Stone Crab, Dimitri's, El Cap.\n4. **Hours left unknown because sources disagree**: in between days, Tralia, Tarpon Springs Distillery, Mama's Greek Cuisine, Star Fish Company.\n5. **Area judgment calls**: Ted Peters is in the city of South Pasadena (filed under west-stpete); Harvey's and El Cap (4th St N at 31st–35th Ave) are filed under old-northeast.\n6. **Own claims, quoted and attributed only**: Dunedin Brewery (\"oldest distributing microbrewery still in operation\"), Green Bench (\"St. Petersburg's first microbrewery\"), Crabby's Beachside Pavilion (\"oldest beach pavilion in Florida\"), Columbia St. Armands (\"oldest operating restaurant in Sarasota\"), Caretta on the Gulf (\"Clearwater's only AAA Four-Diamond\" restaurant), Parkshore Grill (\"first major restaurant\" on Beach Drive), Anecdote (\"closest brewery to the Gulf beach\").\n7. **The Chattaway**: Visit St. Pete-Clearwater says it opened in 1951; the restaurant says \"over 90 years\" in one form or another.\n\n## Verification (2026-09-27)\n\nAn adversarial re-read of every record by a second agent. Result: 84 records checked, 33 corrected, 0 removed, 6 added (90 places now: restaurant 58, brewery 16, bar 11, distillery-winery 3, cafe-bakery 1, food-hall 1; St. Petersburg 30, Gulf Beaches 29, Clearwater & North Pinellas 20, Day Trips 11; open 89, temporarily-closed 1). Validator: 0 errors.\n\n**How.** Every source_url, also_source, url and quote_source was fetched again with curl (browser user agent) and the page text searched for each record's address, phone, hours, years, names and quote; pages that block curl (Visit St. Pete-Clearwater profiles, frenchysonline.com, dimitrisonthewater.com, the Columbia and Tarpon Springs Distillery hour tables, cocktailstpete.com) were read with WebFetch. Every quote was re-matched verbatim against curl text (COCKtail's short quote only through WebFetch). The MICHELIN 2026 Florida lists were re-read from the press page's image tables (Recco_1_3 … Recco_6_2, BG1–2, Star_2_2): the nine recommended and one Bib Gourmand picks in the slice are all there, and there are no starred restaurants and no other Pinellas, Sarasota or Polk entries. Every address was re-geocoded (Census); all points are within 60 m except Teak/Pier Teaki (OpenStreetMap point at the pier head, correct) and Ka'Tiki (OpenStreetMap point on West Gulf Blvd, correct). Closures were checked with Google News RSS searches (WebSearch was unavailable; the RSS links were resolved to publisher URLs) plus Creative Loafing's Jun 19, 2026 roundup of reopened Pinellas beach bars and I Love the Burg's May 18, 2026 guide to open beach bars.\n\n**Status findings.** The Chattaway was about to close earlier in 2026 and reopened on Sep 25, 2026 under new owners (St Pete Rising). The Seahorse (Pass-a-Grille) reopened in early February 2026 at 800 Pass-a-Grille Way (address was missing). The Rod & Reel's landside restaurant opened Nov 21, 2025 at 3246 East Bay Dr, Holmes Beach; the pier itself stays temporarily-closed pending a rebuild. The Hurricane reopened by Oct 28, 2024 (FOX 13). Paradise Grille (Jan 2025), Mad Beach Brewing (Oct 2024), Undertow, Ka'Tiki, Shephard's, Frenchy's Rockaway, Crabby's Pavilion, Billy's Stone Crab, O'Maddy's (new rooftop, Jun 2026), Mahuffer's and Sandbar all have 2025–2026 evidence of operating. Not included, with reasons: The Dewey (Pass-a-Grille) never reopened after 2024 (St Pete Rising, Jun 30, 2026: its space is becoming Moon by Malio's); Cycle Brewing closed its downtown St. Pete taproom in May 2025 (St Pete Rising, Tampa Bay Times); Munch's closed in Dec 2022; Gators Cafe (John's Pass) closed in 2020.\n\n**Corrected (33).** chattaway (new source, summary, dropped the old owners' tea price and quote); pier-teaki (hours; removed a 21+ claim that came from a guest review); columbia-restaurant-sand-key and -st-armands (phones; Our Story page added for the 1905 Ybor founding); frenchys-rockaway-grill and frenchys-saltwater-cafe (official pages now the source; hours, phone; Saltwater's quote was a news sentence and was dropped); in-between-days, focaccia-sandwich-bakery, st-petersburg-distillery, rusty-bellies-waterfront-grill, salt-rock-grill, gulfport-brewery-eatery, brighter-days-brewing, okeefes-tavern, billys-stone-crab, cocktail-st-pete (unsupported details removed from summaries: small plates, a chef's name, Pinellas Trail, tiki bar/live music, Intracoastal view, dogs, garage door, dish names, 'thousands of traps', '21 and up'); lucky-8 (official site now readable: source, phone, hours, verbatim quote); dimitris-on-the-water (official site: address is 690, not 698 Dodecanese; hours with Wednesday closed; family-owned since 2010; re-geocoded); hellas, tarpon-springs-distillery, skyway-jacks, caretta-on-the-gulf, buoys (hours from the official pages); crooked-thumb-brewery (quote and '20 taps' not on any page read: removed; hours added); 3-daughters-brewing (quote_source); green-bench-brewing (Upstairs at Webb's, opened Sep 25, 2026); island-way-grill, jimmys-crows-nest (summaries rewritten from the official sites); central-park-st-pete-food-hall (FOX 13 says it stands where the Woolworth building was, not in it); omaddys (street suffix S, official hours); bellabrava (hours dropped: two conflicting tables; third location noted); seahorse and rod-and-reel-pier (above). Every other record got a dated VERIFIER note saying what was re-read.\n\n**Added (6).** frenchys-original-cafe (the 1981 original, 41 Baymont St) and frenchys-south-beach-cafe (351 S Gulfview Blvd), both from frenchysonline.com; rod-and-reel-holmes-beach (AMI Sun, Nov 25, 2025; Bay News 9); caddys-treasure-island (caddys.com, reopened April 2026 after an 18-month rebuild); wharf-pass-a-grille (wharfpag.com: open since 1994 in a building on 1912 pilings); florida-orange-groves-winery (floridawine.com, South Pasadena). Mazzaro's Italian Market was considered but see-pinellas already holds mazzaros-italian-market, so it is not duplicated here.\n\n**Open questions for the merge.** Mykonos, Undertow, Mahuffer's, El Cap, Billy's, Fresco's, Casa Tina and Brighter Days still rest on tourism profiles (no readable official site). BellaBrava and in between days have no hours. Rod & Reel Holmes Beach hours are as of Nov 2025 (rodandreelpier.com did not respond). The Friendly Tavern (Redington Shores, 1947) and Dockside Dave's (Madeira Beach) both reopened in 2026 but had no readable official page, so they were left out.\n"
 }

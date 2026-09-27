@@ -1,1 +1,702 @@
-[]
+[
+  {
+    "id": "central-avenue-black-history",
+    "title": "Central Avenue: Black history in downtown Tampa",
+    "region": "tampa",
+    "lede": "Places tied to the history of Tampa's Black community downtown, from the Woolworth store where students began lunch-counter sit-ins on February 29, 1960 to the park and library in the old Scrub neighborhood.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "woolworth-sit-in-site",
+        "note": "About 40 Black high school students began daily sit-ins at the lunch counter here on February 29, 1960; a two-sided marker at Polk and Franklin names them."
+      },
+      {
+        "kind": "place",
+        "id": "st-paul-ame-church-tampa",
+        "note": "A 1917 church built for one of Tampa's oldest Black congregations, where Dr. Martin Luther King Jr., Mary McLeod Bethune and Jackie Robinson spoke."
+      },
+      {
+        "kind": "place",
+        "id": "jackson-rooming-house",
+        "note": "A boarding house a block from Union Station that lodged Black travelers, railroad workers and touring musicians during segregation."
+      },
+      {
+        "kind": "place",
+        "id": "perry-harvey-sr-park",
+        "note": "Timeline pavers, historic-photo tiles and a Leaders' Row tell the history of the Central Avenue business district."
+      },
+      {
+        "kind": "place",
+        "id": "tampas-black-history-museum",
+        "note": "Run by the Tampa Bay History Center in a red brick building on Central Avenue; its permanent exhibit is scheduled to open in June 2027."
+      },
+      {
+        "kind": "experience",
+        "id": "tampa-bay-history-center-historic-central-avenue-walking-tour",
+        "note": "Historian Fred Hearns leads a 90-minute, seven-block walk that starts at Tampa's Black History Museum."
+      },
+      {
+        "kind": "place",
+        "id": "robert-w-saunders-sr-public-library",
+        "note": "Named for civil rights activist Robert W. Saunders Sr., with exhibits on the Civil Rights movement and a History of Central Avenue hallway."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records; every note restates that stop's record (summary, quote or experience fields)."
+  },
+  {
+    "id": "cuban-bread-trail",
+    "title": "Cuban bread and the Cuban sandwich",
+    "region": "tampa",
+    "lede": "La Segunda Central Bakery, founded in Ybor City in 1915, bakes Cuban bread by hand. These bakeries and restaurants in West Tampa, Seminole Heights, Ybor City, the Channel District and East Tampa sell Cuban bread or Cuban sandwiches, by their own records.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "alessi-bakery",
+        "note": "A family bakery and food market on West Cypress Street that says it has served Tampa since 1912; it sells fresh Cuban bread."
+      },
+      {
+        "kind": "place",
+        "id": "la-teresita",
+        "note": "Run by the Capdevila family since 1972, serving Cuban sandwiches and other Cuban staples from early morning."
+      },
+      {
+        "kind": "place",
+        "id": "soul-de-cuba-cafe",
+        "note": "A Cuban restaurant and bar on North Florida Avenue serving Cuban sandwiches and slow-roasted dishes."
+      },
+      {
+        "kind": "place",
+        "id": "independent-bar-and-cafe",
+        "note": "Visit Tampa Bay's Cuban sandwich guide lists its Habana Cuban with spicy German mustard."
+      },
+      {
+        "kind": "place",
+        "id": "la-segunda-central-bakery",
+        "note": "Founded in 1915 by Juan Moré; each loaf is baked by hand with a palmetto leaf laid across it, and the counter sells Cuban toast and sandwiches."
+      },
+      {
+        "kind": "place",
+        "id": "carmines-ybor-city",
+        "note": "Established on 7th Avenue in 1948, serving Cuban sandwiches, deviled crabs and Spanish bean soup."
+      },
+      {
+        "kind": "place",
+        "id": "columbia-cafe-tampa-bay-history-center",
+        "note": "The Columbia's riverfront cafe inside the Tampa Bay History Center, serving Spanish-Cuban tapas, Spanish bean soup and Cuban sandwiches."
+      },
+      {
+        "kind": "place",
+        "id": "brocatos-sandwich-shop",
+        "note": "A sandwich shop on East Columbus Drive since 1948, known for Cuban sandwiches, Italian subs and deviled crabs."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: every stop's own record names Cuban bread or Cuban sandwiches."
+  },
+  {
+    "id": "dunedin-and-the-islands",
+    "title": "Dunedin and the islands",
+    "region": "clearwater",
+    "lede": "Downtown Dunedin sits on the Fred Marquis Pinellas Trail. West of town, Honeymoon Island has about four miles of Gulf beach, and a ferry from there reaches Caladesi Island, which you can get to only by boat.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "dunedin-history-museum",
+        "note": "In the town's former railroad depot, rebuilt in 1924 and used by trains until 1987."
+      },
+      {
+        "kind": "place",
+        "id": "downtown-dunedin",
+        "note": "Independent boutiques, cafes and several breweries along the Fred Marquis Pinellas Trail."
+      },
+      {
+        "kind": "place",
+        "id": "dunedin-brewery",
+        "note": "Brewing since 1996, with pub food and live music on two stages."
+      },
+      {
+        "kind": "place",
+        "id": "andrews-memorial-chapel",
+        "note": "An 1888 Carpenter Gothic church built by Dunedin's pioneer families and moved to Hammock Park."
+      },
+      {
+        "kind": "place",
+        "id": "honeymoon-island-state-park",
+        "note": "About four miles of Gulf beach and the 2.5-mile Osprey Trail through virgin slash pine."
+      },
+      {
+        "kind": "experience",
+        "id": "caladesi-island-ferry",
+        "note": "Leaves from the Honeymoon Island docks; tickets are sold only at the ferry office there."
+      },
+      {
+        "kind": "place",
+        "id": "caladesi-island-state-park",
+        "note": "An undeveloped barrier island with three miles of beach, a nature trail and a kayak trail through the mangroves."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "first-peoples-and-the-spanish-landings",
+    "title": "Temple mounds and the Spanish landings",
+    "region": "daytrips",
+    "lede": "Mounds the Tocobaga and earlier peoples built around the bay, and the places tied to the Narváez and de Soto landings of the 1500s, from Safety Harbor to the mouth of the Manatee River.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "philippe-park",
+        "note": "Built around the Tocobaga temple mound of the Safety Harbor Site, a National Historic Landmark; the county calls it the largest remaining mound in the Tampa Bay region."
+      },
+      {
+        "kind": "place",
+        "id": "weedon-island-preserve",
+        "note": "Indigenous people lived here for thousands of years; the preserve says a 1,100-year-old dugout canoe from its shoreline is on view."
+      },
+      {
+        "kind": "place",
+        "id": "jungle-prada-site",
+        "note": "Remains of Tocobaga mounds on Boca Ciega Bay, also identified as the landing place of the Narváez expedition."
+      },
+      {
+        "kind": "place",
+        "id": "madira-bickel-mound-state-archaeological-site",
+        "note": "A 20-foot flat-topped temple mound of shell and sand on Terra Ceia Island."
+      },
+      {
+        "kind": "place",
+        "id": "emerson-point-preserve",
+        "note": "Trails past the Native American mounds of the Portavant Mound Site, where the Manatee River meets Terra Ceia Bay."
+      },
+      {
+        "kind": "place",
+        "id": "de-soto-national-memorial",
+        "note": "A National Park Service site that commemorates Hernando de Soto's 1539 landing, with a monument and a coastal nature trail."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records; notes restate each place's summary, quote and heritage block."
+  },
+  {
+    "id": "fort-de-soto-day",
+    "title": "A day at Fort De Soto",
+    "region": "beaches",
+    "lede": "Fort De Soto Park is Pinellas County's largest park, 1,136 acres on five connected keys. The Spanish–American War fort that gave it its name is on Mullet Key, and a ferry leaves the park for Egmont Key, which you can reach only by boat.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "fort-de-soto-park",
+        "note": "Almost three miles of beach, two fishing piers, seven miles of paved trail and kayak and canoe trails."
+      },
+      {
+        "kind": "experience",
+        "id": "fort-de-soto-kayak-outpost",
+        "note": "The park concession's kayak and paddleboard rentals, for paddling the park's coves, shoreline and 2.25-mile canoe trail."
+      },
+      {
+        "kind": "place",
+        "id": "fort-de-soto-historic-batteries",
+        "note": "The fort's 12-inch mortar battery, brick roads and a small museum."
+      },
+      {
+        "kind": "experience",
+        "id": "hubbards-egmont-key-ferry",
+        "note": "About three hours on Egmont Key; the island has no restrooms or shops, so the operator says to bring water and food."
+      },
+      {
+        "kind": "place",
+        "id": "egmont-key-state-park",
+        "note": "Brick paths through the ruins of Fort Dade (1898–1923), past the 1858 lighthouse."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "gulf-beaches-clearwater-to-pass-a-grille",
+    "title": "The Gulf beaches, Clearwater to Pass-a-Grille",
+    "region": "beaches",
+    "lede": "Stops along Gulf Boulevard from Pier 60 on Clearwater Beach to Pass-a-Grille, where almost nothing is built on the sand. Several of these places report repairs after Hurricanes Helene and Milton in 2024; each stop shows what its source says.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "pier-60",
+        "note": "A 1,080-foot fishing pier beside a beachfront park; Sunsets at Pier 60, a free nightly festival held since 1995, takes place in the park."
+      },
+      {
+        "kind": "place",
+        "id": "sand-key-park",
+        "note": "A 95-acre county beach park with seasonal lifeguards and a boardwalk nature trail by a salt marsh."
+      },
+      {
+        "kind": "place",
+        "id": "indian-rocks-beach-access",
+        "note": "A county beach access with paid parking, restrooms and showers."
+      },
+      {
+        "kind": "place",
+        "id": "seaside-seabird-sanctuary",
+        "note": "An avian hospital and sanctuary on the beach, with more than 100 resident birds; admission and parking are free."
+      },
+      {
+        "kind": "place",
+        "id": "johns-pass-village",
+        "note": "A boardwalk village with more than 100 merchants, the local fishing fleet and boat tours."
+      },
+      {
+        "kind": "place",
+        "id": "treasure-island-beach",
+        "note": "About three miles of wide city beach, with a .85-mile beach trail for walking and biking."
+      },
+      {
+        "kind": "place",
+        "id": "corey-avenue",
+        "note": "Downtown St. Pete Beach's shopping and dining street, with the historic Beach Theatre."
+      },
+      {
+        "kind": "place",
+        "id": "st-pete-beach-access",
+        "note": "A county beach access with 235 paid parking spaces and three boardwalks to the sand."
+      },
+      {
+        "kind": "stay",
+        "id": "don-cesar",
+        "note": "The beachfront hotel that opened in 1928 and calls itself the Pink Palace; it reopened in March 2025 after hurricane repairs."
+      },
+      {
+        "kind": "place",
+        "id": "pass-a-grille-beach",
+        "note": "Walkways over dunes of sea grapes and sea oats, jetties to fish from and metered parking."
+      },
+      {
+        "kind": "place",
+        "id": "pass-a-grille-historic-district",
+        "note": "The old beach town, on the National Register since 1989; the city publishes a self-guided walking tour of 21 historic buildings."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records; hurricane status notes are shown from each record."
+  },
+  {
+    "id": "historic-hotels-of-the-bay",
+    "title": "Historic hotels of the bay",
+    "region": "stpete",
+    "lede": "Hotels in buildings from 1897 to 1928, from Tampa's 1905 federal courthouse to the Don CeSar on St. Pete Beach and the surviving core of Henry Plant's Hotel Belleview.",
+    "stops": [
+      {
+        "kind": "stay",
+        "id": "le-meridien-tampa",
+        "note": "A 130-room hotel inside Tampa's 1905 federal courthouse; former courtrooms are its meeting rooms."
+      },
+      {
+        "kind": "stay",
+        "id": "hotel-flor-tampa-downtown",
+        "note": "The 1920s Floridan hotel tower, reopened in 2024 with 210 rooms."
+      },
+      {
+        "kind": "stay",
+        "id": "safety-harbor-resort-spa",
+        "note": "A resort and spa built on the Espiritu Santo mineral springs, with three pools that use them."
+      },
+      {
+        "kind": "stay",
+        "id": "hacienda-hotel",
+        "note": "A 1927 Spanish Colonial Revival hotel in downtown New Port Richey, reopened in 2022 after a restoration."
+      },
+      {
+        "kind": "stay",
+        "id": "1910-inn",
+        "note": "A Queen Anne-style house from 1910, half a block from St. Nicholas Greek Orthodox Cathedral."
+      },
+      {
+        "kind": "stay",
+        "id": "fenway-hotel",
+        "note": "A restored 1920s hotel on Edgewater Drive in Dunedin."
+      },
+      {
+        "kind": "stay",
+        "id": "belleview-inn",
+        "note": "A 35-room inn in the restored surviving core of Henry Plant's 1897 Hotel Belleview."
+      },
+      {
+        "kind": "stay",
+        "id": "don-cesar",
+        "note": "Opened in 1928 on St. Pete Beach; it closed for repairs after the 2024 hurricanes and reopened in March 2025."
+      },
+      {
+        "kind": "stay",
+        "id": "peninsula-bed-and-cocktails",
+        "note": "A 16-room hotel from 1905 on Gulfport's Beach Boulevard, each room themed on a classic cocktail."
+      },
+      {
+        "kind": "stay",
+        "id": "ponce-de-leon-hotel",
+        "note": "A six-story Mission Revival hotel on Central Avenue, built in 1922."
+      },
+      {
+        "kind": "stay",
+        "id": "cordova-inn",
+        "note": "Opened in 1921 as the Hotel Cordova and took back its historic name in 2014."
+      },
+      {
+        "kind": "stay",
+        "id": "birchwood",
+        "note": "An 18-room hotel on Beach Drive in a 1924 Spanish Mission-style building."
+      },
+      {
+        "kind": "stay",
+        "id": "vinoy-resort-golf-club",
+        "note": "A pink Mediterranean Revival resort on the downtown waterfront that opened on New Year's Eve 1925."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: every stop is a stay with a heritage block; notes restate each stay's summary and heritage."
+  },
+  {
+    "id": "rainy-day-tampa-with-kids",
+    "title": "A rainy day in Tampa, with kids",
+    "region": "tampa",
+    "lede": "A children's museum, a history museum, an aquarium and a hands-on science center with a planetarium, from Gasparilla Plaza downtown to East Fowler Avenue.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "glazer-childrens-museum",
+        "note": "35,000 square feet of hands-on play exhibits, next door to the Tampa Museum of Art."
+      },
+      {
+        "kind": "place",
+        "id": "tampa-bay-history-center",
+        "note": "A regional history museum on the Riverwalk; the Columbia Cafe inside serves Spanish- and Cuban-inspired dishes."
+      },
+      {
+        "kind": "place",
+        "id": "florida-aquarium",
+        "note": "A nonprofit aquarium on the Channel District waterfront, with paid encounters such as penguin meetings and stingray feeding."
+      },
+      {
+        "kind": "place",
+        "id": "mosi",
+        "note": "A hands-on science center; a ticket includes one show in the Saunders Planetarium."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "spring-training-park-to-park",
+    "title": "Spring training, park to park",
+    "region": "clearwater",
+    "lede": "The spring training homes of the Toronto Blue Jays, the Philadelphia Phillies, the New York Yankees and the Pittsburgh Pirates, from Dunedin to Bradenton.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "td-ballpark",
+        "note": "Spring training home of the Toronto Blue Jays; it holds 8,500."
+      },
+      {
+        "kind": "place",
+        "id": "baycare-ballpark",
+        "note": "Spring training home of the Philadelphia Phillies, who have trained in Clearwater since 1947."
+      },
+      {
+        "kind": "place",
+        "id": "george-m-steinbrenner-field",
+        "note": "Spring training home of the New York Yankees, on North Dale Mabry Highway."
+      },
+      {
+        "kind": "place",
+        "id": "lecom-park",
+        "note": "First built in 1923 and long called McKechnie Field; spring training home of the Pittsburgh Pirates."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: the ballparks only; the page lists each park's spring training series and next listed game from series.json and events.json."
+  },
+  {
+    "id": "st-pete-museums-and-the-pier",
+    "title": "Downtown St. Pete's museums and the Pier",
+    "region": "stpete",
+    "lede": "Seven museums from the Dalí to the St. Pete Pier, which charges nothing to enter, ending at the Tampa Bay Watch Discovery Center on the Pier's over-water walkway.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "dali-museum",
+        "note": "Built on the collection of A. Reynolds and Eleanor Morse; the museum says it holds over 2,400 works."
+      },
+      {
+        "kind": "place",
+        "id": "james-museum",
+        "note": "Art of the American West and wildlife art, with galleries of Native American art."
+      },
+      {
+        "kind": "place",
+        "id": "florida-holocaust-museum",
+        "note": "In its current building since 1998; it calls itself one of the largest Holocaust museums in the country."
+      },
+      {
+        "kind": "place",
+        "id": "chihuly-collection",
+        "note": "Glass art by Dale Chihuly in a building designed for it; a ticket includes a glassblowing demonstration nearby."
+      },
+      {
+        "kind": "place",
+        "id": "museum-of-the-american-arts-and-crafts-movement",
+        "note": "Five stories of furniture, pottery, tiles and period rooms from the American Arts and Crafts movement."
+      },
+      {
+        "kind": "place",
+        "id": "museum-of-fine-arts-st-petersburg",
+        "note": "Opened in 1965; the museum says it was the city's first art museum."
+      },
+      {
+        "kind": "place",
+        "id": "st-petersburg-museum-of-history",
+        "note": "At the entrance to the Pier, with a replica of the Benoist airboat of the world's first commercial airline."
+      },
+      {
+        "kind": "place",
+        "id": "st-pete-pier",
+        "note": "Seven restaurants, public art, a playground and splash pad, Spa Beach and a fishing deck."
+      },
+      {
+        "kind": "place",
+        "id": "tampa-bay-watch-discovery-center",
+        "note": "Exhibits on the Tampa Bay estuary, live animals and a touch tank."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "tampa-riverwalk-end-to-end",
+    "title": "The Tampa Riverwalk, end to end",
+    "region": "tampa",
+    "lede": "The Tampa Riverwalk runs 2.6 miles along the Hillsborough River, from just past Armature Works to Beneficial Drive at Channelside Drive. These stops follow it from north to south, with one detour across the Kennedy Boulevard Bridge.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "armature-works",
+        "note": "A restored 1910 streetcar warehouse with the Heights Public Market food hall; the Riverwalk ends just past it."
+      },
+      {
+        "kind": "place",
+        "id": "water-works-park",
+        "note": "A riverfront park with a festival lawn, splash pad, playground and a Pirate Water Taxi stop."
+      },
+      {
+        "kind": "place",
+        "id": "straz-center",
+        "note": "Five theaters for touring Broadway shows, opera, dance and concerts, on the river."
+      },
+      {
+        "kind": "place",
+        "id": "tampa-museum-of-art",
+        "note": "Greek and Roman antiquities and modern and contemporary art, in Curtis Hixon Waterfront Park."
+      },
+      {
+        "kind": "place",
+        "id": "curtis-hixon-waterfront-park",
+        "note": "A great lawn for festivals, two splash pads, a playground and a Pirate Water Taxi stop."
+      },
+      {
+        "kind": "place",
+        "id": "kennedy-boulevard-bridge",
+        "note": "The 1913 bascule bridge between downtown and the University of Tampa; the City calls it the oldest bascule span in Florida."
+      },
+      {
+        "kind": "place",
+        "id": "henry-b-plant-museum",
+        "note": "In the former Tampa Bay Hotel, Henry B. Plant's winter resort of 1891–1932."
+      },
+      {
+        "kind": "experience",
+        "id": "pirate-water-taxi",
+        "note": "Hop-on, hop-off water taxi with 10 stops from the Florida Aquarium to Armature Works; its home dock is Stop 7 at the Convention Center."
+      },
+      {
+        "kind": "place",
+        "id": "tampa-bay-history-center",
+        "note": "A regional history museum on the Riverwalk with the Touchton Map Library."
+      },
+      {
+        "kind": "place",
+        "id": "cotanchobee-fort-brooke-park",
+        "note": "Named in part for Fort Brooke, the Army post of 1824 around which Tampa grew, with a memorial to the Seminole Indian Wars."
+      },
+      {
+        "kind": "place",
+        "id": "sparkman-wharf",
+        "note": "An outdoor dining garden on the Garrison Channel with food and drink vendors and a beer garden."
+      },
+      {
+        "kind": "place",
+        "id": "american-victory-ship-mariners-museum",
+        "note": "A World War II cargo ship you can tour, moored next to the Florida Aquarium."
+      },
+      {
+        "kind": "place",
+        "id": "florida-aquarium",
+        "note": "A nonprofit aquarium on the Channel District waterfront that also runs a Wild Dolphin Cruise."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records; the Riverwalk's own record (tampa-riverwalk) supplies the lede."
+  },
+  {
+    "id": "tarpon-springs-sponge-docks",
+    "title": "Tarpon Springs: the Sponge Docks and downtown",
+    "region": "clearwater",
+    "lede": "The Sponge Docks along Dodecanese Boulevard were the center of Tarpon Springs' Greek sponge industry. Downtown, the domed cathedral was paid for in part by sponge divers' harvests.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "tarpon-springs-visitors-center",
+        "note": "The Chamber of Commerce's visitor center at the Sponge Docks."
+      },
+      {
+        "kind": "place",
+        "id": "spongeorama",
+        "note": "A sponge shop in business for over fifty years that shows a free film on sponge diving."
+      },
+      {
+        "kind": "experience",
+        "id": "st-nicholas-boat-line",
+        "note": "A narrated Anclote River cruise; on select tours a diver in traditional gear brings up a live sponge."
+      },
+      {
+        "kind": "place",
+        "id": "sponge-docks-tarpon-springs",
+        "note": "Docked sponge boats, sponge shops and Greek restaurants and bakeries along the waterfront."
+      },
+      {
+        "kind": "place",
+        "id": "hellas-restaurant-and-bakery",
+        "note": "Greek restaurant and pastry bakery on the docks, run by the Karterouliotis family since 1970."
+      },
+      {
+        "kind": "place",
+        "id": "safford-house-museum",
+        "note": "The 1883 home of Anson P. K. Safford, an early developer of Tarpon Springs, with docent tours."
+      },
+      {
+        "kind": "place",
+        "id": "tarpon-springs-heritage-museum",
+        "note": "A wing on the Greek community of Tarpon Springs and the sponge industry, in Craig Park on Spring Bayou."
+      },
+      {
+        "kind": "place",
+        "id": "st-nicholas-greek-orthodox-cathedral",
+        "note": "The domed 1943 cathedral that leads the city's Epiphany celebration each January 6."
+      },
+      {
+        "kind": "place",
+        "id": "tarpon-springs-depot-museum",
+        "note": "Local history in the town's century-old railroad depot; no fee."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "the-deuces-and-the-heritage-trail",
+    "title": "The Deuces and the African American Heritage Trail",
+    "region": "stpete",
+    "lede": "St. Petersburg's African American Heritage Trail is 19 markers in two corridors, 22nd Street South and 9th Avenue South. Both start at the Woodson African American Museum of Florida.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "african-american-heritage-trail-st-petersburg",
+        "note": "A self-guided walking tour of 19 markers on the history of St. Petersburg's African American community."
+      },
+      {
+        "kind": "place",
+        "id": "woodson-african-american-museum-of-florida",
+        "note": "In the former community center of Jordan Park; its Legacy Garden shows the sculpture 'Harriet Tubman: The Beacon of Hope'."
+      },
+      {
+        "kind": "place",
+        "id": "deuces-live",
+        "note": "The corridor that was the center of St. Petersburg's Black business community during segregation."
+      },
+      {
+        "kind": "place",
+        "id": "manhattan-casino",
+        "note": "A 1925 dance hall that was the center of Black St. Petersburg's entertainment during segregation; tours by appointment."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records."
+  },
+  {
+    "id": "ybor-city-on-foot",
+    "title": "Ybor City on foot",
+    "region": "tampa",
+    "lede": "Ybor City's mutual-aid clubhouses, its first cigar factory, completed in 1886, and its state museum, on and around 7th Avenue from Nebraska Avenue to the Columbia Restaurant.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "centro-asturiano-de-tampa",
+        "note": "Completed in 1913–1914 for a mutual-aid society of immigrants from Asturias, Spain; it offers a free one-hour history tour on Tuesdays at 10 a.m."
+      },
+      {
+        "kind": "place",
+        "id": "la-union-marti-maceo",
+        "note": "Tampa's Afro-Cuban mutual-aid society moved into this 1950 building after its first clubhouse was demolished in 1965."
+      },
+      {
+        "kind": "place",
+        "id": "parque-amigos-de-jose-marti",
+        "note": "On the site of the home of Ruperto and Paulina Pedroso, who sheltered José Martí in 1893."
+      },
+      {
+        "kind": "place",
+        "id": "ybor-factory-building",
+        "note": "Completed in 1886, the first factory of the planned town; José Martí spoke from its 14th Street steps in 1893. Now private offices."
+      },
+      {
+        "kind": "place",
+        "id": "el-pasaje",
+        "note": "Built for the Cherokee Club, across 9th Avenue from the Ybor factory; view it from the street."
+      },
+      {
+        "kind": "place",
+        "id": "cuban-club",
+        "note": "The 1917 clubhouse of El Círculo Cubano, now an event venue with a ballroom, theater, cantina and courtyard."
+      },
+      {
+        "kind": "place",
+        "id": "el-centro-espanol-de-tampa",
+        "note": "The 1912 clubhouse of El Centro Español, a National Historic Landmark, now the centerpiece of Centro Ybor."
+      },
+      {
+        "kind": "place",
+        "id": "italian-club",
+        "note": "The clubhouse of L'Unione Italiana, founded by Italian immigrants in 1894."
+      },
+      {
+        "kind": "place",
+        "id": "centennial-park-ybor",
+        "note": "A 2.5-acre park where a Saturday morning farmers market is held; it has public restrooms."
+      },
+      {
+        "kind": "place",
+        "id": "ybor-city-museum-state-park",
+        "note": "Exhibits on the founding of Ybor City and the cigar industry in the former Ferlita Bakery, with a restored cigar worker's house."
+      },
+      {
+        "kind": "place",
+        "id": "tampa-baseball-museum",
+        "note": "The childhood home of Hall of Famer Al López, moved near the state museum in 2013."
+      },
+      {
+        "kind": "place",
+        "id": "columbia-restaurant-ybor-city",
+        "note": "Opened as a corner saloon in 1903; it now fills a city block, with 15 dining rooms and flamenco shows."
+      }
+    ],
+    "checked": "2026-09-27",
+    "notes": "Passages lane, 2026-09-27: built only from existing records; notes restate each place's summary and heritage block."
+  }
+]

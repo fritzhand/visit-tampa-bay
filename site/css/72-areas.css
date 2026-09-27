@@ -1,0 +1,93 @@
+/* ======================================================================
+   site/css/72-areas.css · OWNER: the Areas lane (with the Map lane)
+   areas.html (sheet sections, each with its index chart and numbered area cards) and areas/<id>.html (the head's
+   "known for" line and actions, the area chart beside the at-a-glance facts, numbered rows with a one-line summary,
+   What's on here, nearby areas with straight-line distances, honest empty notes). Tokens only; nothing under 12px.
+   ====================================================================== */
+
+/* ---------- areas.html ---------- */
+.ar-filter { display: grid; gap: var(--sp-2); margin: var(--sp-5) 0 0; }
+.ar-filter .chip-row { gap: 6px; }
+.ar-sheet-head { align-items: center; }
+.ar-sheet-head .sec-kicker .bullet { margin-right: 2px; }
+.ar-sheet-counts { flex-basis: 100%; margin: 0; font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+.ar-index { margin: 0 0 var(--sp-5); }
+.ar-index .mini-map { margin: 4px; max-width: 900px; }
+.ar-index figcaption { margin-top: var(--sp-2); font-size: var(--fs-xs); }
+.ar-grid { gap: var(--sp-4); }
+.ar-grid .card.area { scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
+/* the area's number on its sheet's index chart: the same numbered buoy as on the chart */
+.card-no {
+  display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 5px 4px 0; margin-right: 4px;
+  border: 2px solid var(--ink-edge); border-radius: 11px 11px 3px 3px; color: var(--text);
+  background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 5px no-repeat, var(--map-pin-bg);
+  font-family: var(--font-label); font-stretch: 100%; font-size: var(--fs-label); font-weight: 780; letter-spacing: 0; line-height: 1; font-variant-numeric: tabular-nums;
+}
+.card.area .card-known { color: var(--text); }
+.card.area { border-top: 3px solid var(--ink-fill); }
+
+/* ---------- areas/<id>.html: the head ---------- */
+.ar-known { max-width: 62ch; margin: var(--sp-4) auto 0; font-size: var(--fs-sm); color: var(--text); line-height: 1.55; }
+.ar-known .label { display: block; margin-bottom: 4px; color: var(--ink-text); }
+.ar-known .sep { color: var(--text-faint); }
+.page-head .head-actions { margin-top: var(--sp-4); }
+.page-head .head-actions .btn .bullet { width: 30px; height: 18px; margin-left: -4px; }
+
+/* the chart beside the facts */
+.ar-top { display: grid; gap: var(--sp-5); margin-top: var(--sp-6); align-items: start; }
+@media (min-width: 900px) { .ar-top { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } }
+.ar-chart { margin: 0; }
+.ar-chart .mini-map { margin: 4px; }
+.ar-chart figcaption { margin-top: var(--sp-2); font-size: var(--fs-xs); }
+.ar-top .facts { margin: 0; }
+.ar-top .fact dd a.ar-n { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-lg); line-height: 1; text-decoration: none; font-variant-numeric: lining-nums; }
+.ar-top .fact dd a.ar-n:hover { text-decoration: underline; text-decoration-thickness: 1px; }
+.ar-nochart { padding: var(--sp-3); border: 1px dashed var(--border-strong); }
+
+/* ---------- rows: a numbered buoy (or the chart symbol), name, kind, star, one line of summary ---------- */
+.ar-row { align-items: center; }
+.ar-row > .map-mk { display: grid; flex: none; align-self: flex-start; min-height: 0; height: 26px; min-width: 26px; margin-top: 9px; }
+.ar-row > .map-mk.mk-sym { width: 26px; }
+.ar-row > a { flex: 1 1 240px; }
+.ar-row > a > span { display: grid; gap: 2px; min-width: 0; }
+.ar-row .w .badge { margin-left: 4px; vertical-align: 1px; }
+.ar-row .seal { margin: 2px 0; min-height: 22px; padding: 2px 10px 2px 8px; }
+.ar-row .star { margin-left: auto; }
+.ar-row > .ar-sum { flex-basis: 100%; margin: -4px 0 4px; padding-left: calc(26px + var(--sp-3)); font-size: var(--fs-sm); color: var(--text-muted); max-width: calc(var(--measure) + 40px); }
+.ar-rows + .sub-h { margin-top: var(--sp-6); }
+.ar-more { margin-top: var(--sp-2); }
+.ar-more > summary { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); color: var(--link); font-weight: var(--wght-strong); cursor: pointer; list-style: none; }
+.ar-more > summary::-webkit-details-marker { display: none; }
+.ar-more > summary::after { content: "+"; }
+.ar-more[open] > summary::after { content: "–"; }
+.ar-link { margin-top: var(--sp-3); font-size: var(--fs-sm); }
+.ar-link a { display: inline-flex; align-items: center; gap: 4px; min-height: var(--tap); font-weight: var(--wght-strong); }
+.ar-link .i { width: 16px; height: 16px; }
+.ar-none { max-width: var(--measure); padding: var(--sp-3) var(--sp-4); border-left: var(--rule-mid) dashed var(--border-strong); color: var(--text-muted); font-size: var(--fs-sm); }
+.ar-none + .ar-rows { margin-top: var(--sp-3); }
+.ar-none a { font-weight: var(--wght-strong); }
+
+/* what's on here */
+.ar-evcount { margin: 0 0 var(--sp-2); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+.ar-evcount:empty { display: none; }
+.ar-tonight li[hidden] { display: none; }
+.ar-tonight .w .badge { margin-left: 4px; }
+.ar-tonight [data-status]:not(:empty) { margin-left: 4px; font-weight: var(--wght-strong); color: var(--accent-strong); }
+.ar-series, .ar-also { max-width: var(--measure); margin-top: var(--sp-4); font-size: var(--fs-sm); line-height: 1.7; }
+.ar-series .label, .ar-also .label { display: block; color: var(--text-muted); }
+.ar-series a, .ar-also a { font-weight: var(--wght-strong); }
+
+/* nearby areas: straight-line distances */
+.ar-near .ar-dist { flex: none; margin-left: auto; font-family: var(--font-label); font-size: var(--fs-label); font-weight: 700; color: var(--text-muted); }
+.ar-near .bullet { flex: none; }
+.ar-note { margin-top: var(--sp-2); font-size: var(--fs-xs); }
+/* the live area chart (features/map.js mounts it over the static crop) */
+.ar-live .map-box { padding: 0; border: 0; background: none; }
+.ar-live .map-box > * { border-left: 0; border-right: 0; }
+.ar-live .map-box > :first-child { border-top: 0; }
+.ar-live .map-view { aspect-ratio: 4 / 3; max-height: 70vh; border: 1px solid var(--grat-ink); box-shadow: 0 0 0 3px var(--surface), 0 0 0 4px var(--grat-ink); margin: 4px; width: auto; }
+.ar-live .map-legend { padding: 8px 0 0; border-top: 0; background: none; }
+.ar-live .map-rose { display: none; }
+.ar-live .map-card { right: 64px; }
+.fig-attrib { display: block; margin-top: 4px; overflow-wrap: anywhere; }
+.fig-attrib a { color: inherit; }

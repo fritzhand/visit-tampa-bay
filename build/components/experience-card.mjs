@@ -1,8 +1,15 @@
 /* ============================================================
    build/components/experience-card.mjs · OWNER: E1 (engine). The Experiences lane may extend it additively.
+   Experiences lane additions (2026-09-27): the options plate, symbol and note (defaults keep E1's markup, plus
+   the source's status note under the badge of an experience that is not open, and the operator's season words
+   in the meta line), and KIND_ICON (a chart symbol per experience kind).
 
    makeExperienceCards(ctx) → {
-     experienceCard(root, x, { headingLevel = 3, anchor = true, summary = true }),
+     experienceCard(root, x, { headingLevel = 3, anchor = true, summary = true, plate = true, symbol = false, note = "auto" }),
+       plate  false → no typographic plate (a rights-cleared photo still shows): the compact card of long lists;
+              the article then carries data-compact="1"
+       symbol true → the kind's chart symbol (KIND_ICON) leads the kind in the kicker, the daymark leads "Departs"
+       note   "auto" → the source's status_note when the experience is not open (seasonal, on hold); false → never
      experienceRow(root, x, { note })  a compact <li> (name, kind · operator)
      experienceFacts(root, x)          "At a glance" rows for c.facts() (the dialog's no-JS twin)
      departsHtml(root, x)              "Departs from <a>Place</a>" | the source's departure text | unknown
@@ -17,8 +24,18 @@
    With JS, [data-open-experience] opens #experience-dialog (E2); ?x=<id> on load opens it too.
    ============================================================ */
 import { esc, attr, extLink } from "../core/util.mjs";
+import { icon } from "../core/icons.mjs";
 import { EXPERIENCE_KIND_LABEL, TOPIC_LABEL } from "../core/vocab.mjs";
 import { norm } from "../../site/js/lib/search.js";
+
+/** A chart symbol per experience kind (every name is in the sprite: build/core/icons.mjs). */
+export const KIND_ICON = {
+  "water-taxi": "ferry", ferry: "ferry", cruise: "boat", "dinner-cruise": "boat", "dolphin-tour": "wave", sailing: "boat",
+  "boat-rental": "boat", "kayak-paddle": "wave", fishing: "fish", "parasail-jetski": "wave", airboat: "boat", "eco-tour": "binoculars",
+  "snorkel-dive": "drop", "walking-tour": "walk", "ghost-tour": "moon", "food-tour": "fork-knife", "drink-tour": "glass", cigar: "cigar",
+  "bike-segway": "bike", "trolley-bus-tour": "trolley", "helicopter-air": "plane", "class-workshop": "spark", "animal-encounter": "binoculars",
+  adventure: "trail", "behind-the-scenes": "eye", show: "ticket", other: "daymark",
+};
 
 export function makeExperienceCards(ctx) {
   const { db, c, img } = ctx;
@@ -48,25 +65,28 @@ export function makeExperienceCards(ctx) {
     ];
   }
 
-  function experienceCard(root, x, { headingLevel = 3, anchor = true, summary = true } = {}) {
+  function experienceCard(root, x, { headingLevel = 3, anchor = true, summary = true, plate = true, symbol = false, note = "auto" } = {}) {
     const H = `h${headingLevel}`;
     const q = norm([x.operator, x.departs_text, x.departs?.name, x.tags, (x.topics || []).map((t) => TOPIC_LABEL[t]), x.city].flat().filter(Boolean).join(" "));
-    const kicker = [c.sheetBadge(x.region), `<span class="card-kind">${esc(EXPERIENCE_KIND_LABEL[x.kind] || x.kind)}</span>`, `<span class="card-area">${esc(areaName(x.area))}</span>`].join(" · ");
+    const kicker = [c.sheetBadge(x.region), `<span class="card-kind">${symbol ? icon(KIND_ICON[x.kind] || "daymark") : ""}${esc(EXPERIENCE_KIND_LABEL[x.kind] || x.kind)}</span>`, `<span class="card-area">${esc(areaName(x.area))}</span>`].join(" · ");
+    const pic = plate || img.has("x", x.id) ? img.plate(root, "x", x) : "";
+    const showNote = x.status !== "open" && x.status_note && note !== false;
     const more = [
       x.quote ? `<blockquote class="card-quote"><p>${esc(x.quote)}</p><cite>${extLink(x.quote_source || x.source_url, esc(x.operator))}</cite></blockquote>` : "",
       c.facts(root, experienceFacts(root, x).filter(([k]) => !["Operator", "Kind", "Area"].includes(k)), { label: "Details" }),
       x.booking_url ? `<p>${extLink(x.booking_url, "Book with the operator", "btn btn-secondary btn-sm")}</p>` : "",
       c.recordSource(x),
     ].join("");
-    return `<article class="card exp"${anchor ? ` id="x-${attr(x.id)}"` : ""} data-x="${attr(x.id)}"${x.region ? ` data-sheet="${x.region}" data-r="${x.region}"` : ""} data-a="${attr(x.area)}" data-k="${x.kind}" data-kg="${x.kg}" data-t="${(x.topics || []).join(" ")}" data-free="${x.is_free === true ? 1 : 0}" data-st="${x.status}"${x.departs_place ? ` data-dp="${attr(x.departs_place)}"` : ""}${x.ll ? ` data-ll="${x.ll.join(",")}"` : ""} data-q="${attr(q)}">`
-      + img.plate(root, "x", x)
+    return `<article class="card exp"${anchor ? ` id="x-${attr(x.id)}"` : ""} data-x="${attr(x.id)}"${x.region ? ` data-sheet="${x.region}" data-r="${x.region}"` : ""} data-a="${attr(x.area)}" data-k="${x.kind}" data-kg="${x.kg}" data-t="${(x.topics || []).join(" ")}" data-free="${x.is_free === true ? 1 : 0}" data-st="${x.status}"${x.departs_place ? ` data-dp="${attr(x.departs_place)}"` : ""}${x.ll ? ` data-ll="${x.ll.join(",")}"` : ""}${plate ? "" : ' data-compact="1"'} data-q="${attr(q)}">`
+      + pic
       + `<div class="card-body"><p class="card-kicker">${kicker}</p>`
       + `<${H} class="card-title"><a href="${root}experiences.html?x=${attr(x.id)}#x-${attr(x.id)}" data-open-experience="${attr(x.id)}">${esc(x.name)}</a></${H}>`
       + `<p class="card-op">${esc(x.operator)}</p>`
-      + `<p class="card-departs">${departsHtml(root, x)}</p>`
+      + `<p class="card-departs">${symbol ? `${icon("daymark")}<span>${departsHtml(root, x)}</span>` : departsHtml(root, x)}</p>`
       + (x.status !== "open" ? `<p class="card-status">${c.statusBadge(x)}</p>` : "")
+      + (showNote ? `<p class="card-note">${esc(x.status_note)}</p>` : "")
       + (summary && x.summary ? `<p class="card-sum">${esc(x.summary)}</p>` : "")
-      + `<p class="card-meta">${x.duration_text ? esc(x.duration_text) : c.unk("Duration not listed")} · ${priceHtml(x)}</p>`
+      + `<p class="card-meta">${x.duration_text ? esc(x.duration_text) : c.unk("Duration not listed")} · ${priceHtml(x)}${x.season_text ? ` · <span class="card-season">Season: ${esc(x.season_text)}</span>` : ""}</p>`
       + `<details class="card-more"><summary>Details</summary>${more}</details>`
       + `</div>${c.starButton(x.id, x.name, { kind: "x" })}</article>`;
   }
@@ -75,5 +95,5 @@ export function makeExperienceCards(ctx) {
     return `<li class="row exp-row"${x.region ? ` data-sheet="${x.region}"` : ""}><a href="${root}experiences.html?x=${attr(x.id)}#x-${attr(x.id)}" data-open-experience="${attr(x.id)}">${x.region ? ctx.h.bullet(x.region) : ""}<span><span class="t">${esc(x.name)}</span><span class="w">${esc([EXPERIENCE_KIND_LABEL[x.kind], x.operator, note].filter(Boolean).join(" · "))}</span></span></a></li>`;
   }
 
-  return { experienceCard, experienceRow, experienceFacts, departsHtml };
+  return { experienceCard, experienceRow, experienceFacts, departsHtml, KIND_ICON };
 }

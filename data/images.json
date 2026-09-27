@@ -1,1 +1,50 @@
-{}
+{
+  "p/palma-ceia-spring": {
+    "alt": "Black-and-white photograph of the original spring-fed pool at Palma Ceia in 1906.",
+    "credit": "Unknown author / Wikimedia Commons (public domain)",
+    "file": "img/p/palma-ceia-spring.webp",
+    "h": 371,
+    "lg": {
+      "file": "img/p/palma-ceia-spring-lg.webp",
+      "h": 927,
+      "w": 1200
+    },
+    "license": "public-domain",
+    "media": "palma-ceia-spring-palma-ceia-springs-original-pool-1906",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Palma_Ceia_springs_original_pool_1906.png",
+    "w": 480
+  },
+  "p/tampa-theatre": {
+    "alt": "The Tampa Theatre's vertical blade sign on Franklin Street.",
+    "creator": "Ebyabe",
+    "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+    "file": "img/p/tampa-theatre.webp",
+    "h": 324,
+    "lg": {
+      "file": "img/p/tampa-theatre-lg.webp",
+      "h": 648,
+      "w": 960
+    },
+    "license": "cc-by",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "media": "tampa-theatre-tampa-theatre",
+    "page_url": "https://commons.wikimedia.org/wiki/File:TampaTheatre01.jpg",
+    "w": 480
+  },
+  "t/tampa-theatre-opens-1926": {
+    "alt": "The Tampa Theatre's marquee and main entrance on Franklin Street, 1978",
+    "creator": "Walter Smalling Jr. (Historic American Buildings Survey)",
+    "credit": "Walter Smalling Jr., Historic American Buildings Survey, Library of Congress / Wikimedia Commons (public domain)",
+    "file": "img/t/tampa-theatre-opens-1926.webp",
+    "h": 598,
+    "lg": {
+      "file": "img/t/tampa-theatre-opens-1926-lg.webp",
+      "h": 1200,
+      "w": 962
+    },
+    "license": "public-domain",
+    "media": "tl-tampa-theatre-habs-1978",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Main_entrance_-_Tampa_Theatre,_Tampa,_Hillsborough_County,_FL_HABS_FLA,29-TAMP,54-1_(CT).tif",
+    "w": 480
+  }
+}

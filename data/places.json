@@ -79,6 +79,7 @@
     "hours_text": "Mon–Thu 11:30 AM–10 PM; Fri–Sat 11:30 AM–midnight; Sun 11:30 AM–8 PM",
     "summary": "Brewery and warehouse tasting room that opened in December 2013, with 42 rotating taps of its own beer, cider, seltzer and sangria and a stage for live entertainment. A second tasting room with its own brewing system opened in March 2022 on the third floor of 381 Mandalay Ave., Clearwater Beach, looking over Pier 60.",
     "quote": "How many beers does it take to put three daughters through college?",
+    "quote_source": "https://3dbrewing.com/",
     "status": "open",
     "tags": [
       "craft-beer",
@@ -92,7 +93,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
     "checked": "2026-09-27",
-    "notes": "The company says it has grown into one of the largest independent breweries in Florida; not repeated in the summary. The Clearwater Beach tasting room page gives daily hours 11 AM–10 PM."
+    "notes": "The company says it has grown into one of the largest independent breweries in Florida; not repeated in the summary. The Clearwater Beach tasting room page gives daily hours 11 AM–10 PM. VERIFIER 2026-09-27: The quote is on 3dbrewing.com (home), not the tasting-room page; quote_source added."
   },
   {
     "id": "3-daughters-brewing-clearwater-beach",
@@ -124,7 +125,7 @@
       "https://3dbrewing.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "The page places it 'above Hooters' at 381 Mandalay Avenue. The St. Petersburg original is 3-daughters-brewing."
+    "notes": "The page places it 'above Hooters' at 381 Mandalay Avenue. The St. Petersburg original is 3-daughters-brewing. VERIFIER 2026-09-27: 3dbrewing.com: 'In March of 2022, we opened our second tasting room in Clearwater Beach with' its own brewing system; open Mon–Sun 11 AM–10 PM."
   },
   {
     "id": "7venth-sun-brewery",
@@ -161,7 +162,8 @@
       "https://7venthsun.com/our-story/",
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/north"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read home and Our Story (Dec 2, 2011 soft opening; hours Mon–Thu and Sun noon–10, Fri–Sat noon–midnight)."
   },
   {
     "id": "adventure-island",
@@ -738,7 +740,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/central"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read anecdotebrewing.com (gluten-removed beers; the page still labels its hours 'Summer Hours')."
   },
   {
     "id": "angry-chair-brewing",
@@ -847,6 +850,38 @@
     "notes": "The city site (cityofannamaria.com) has no pier page; the local newspaper (Anna Maria Island Sun) is the source for status. Verifier: check for a reopening in Oct-Nov 2026 before publishing. The Rod & Reel Pier (private, Anna Maria) was destroyed by Milton and is not included."
   },
   {
+    "id": "anna-maria-island-chamber-visitor-information-center",
+    "name": "Anna Maria Island Chamber of Commerce Visitor Information Center",
+    "aliases": [
+      "Anna Maria Island Chamber of Commerce"
+    ],
+    "kind": "visitor-center",
+    "topics": [
+      "beaches"
+    ],
+    "area": "bradenton-anna-maria",
+    "address": "5313 Gulf Dr. N.",
+    "city": "Holmes Beach",
+    "state": "FL",
+    "zip": "34217",
+    "lat": 27.505958,
+    "lng": -82.713246,
+    "geo_source": "census",
+    "url": "https://www.annamariaislandchamber.org/",
+    "phone": "(941) 778-1541",
+    "summary": "The Anna Maria Island Chamber of Commerce's office in Holmes Beach, which VISIT FLORIDA lists as a certified visitor information center. The chamber publishes a visitors guide and island map.",
+    "status": "open",
+    "tags": [
+      "visitor-information"
+    ],
+    "source_url": "https://www.visitflorida.com/listing/anna-maria-island-chamber-of-commerce-visitor-information-center/25302/",
+    "also_sources": [
+      "https://www.annamariaislandchamber.org/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Chamber footer: 'Anna Maria Island 5313 Gulf Drive, Holmes Beach, FL 34217 941-778-1541'; the home page shows a 'Visit Florida Certified Information' badge and links a Visitors Guide and Island Map. No hours are published. Geocode matched '5313 GULF DR, HOLMES BEACH, FL, 34217' (Census)."
+  },
+  {
     "id": "anna-maria-island-historical-museum",
     "name": "Anna Maria Island Historical Museum",
     "aliases": [
@@ -917,7 +952,7 @@
       "style": null,
       "designations": [],
       "era": "land-boom",
-      "story": "On May 6, 1937, some 5,000 Latinas from Ybor City gathered on 7th Avenue and marched to downtown Tampa to present Mayor R. E. L. Chancey with a petition supporting Spain's Republic. During the Spanish Civil War the community sent food, clothing, 20,000 cigars, four ambulances, an X-ray machine and medicine to Republican forces, and 24 Ybor men joined the Abraham Lincoln Brigade. Michelle Sawyer's mural shows Dolores Ibárruri, Luisa Moreno and Margot Falcón Blanco.",
+      "story": "On May 6, 1937, some 5,000 Latinas from Ybor City gathered on 7th Avenue and marched to downtown Tampa where a marcher presented Mayor R. E. L. Chancey at City Hall with a petition on behalf of the Ybor community. During the Spanish Civil War the community sent food, clothing, 20,000 cigars, four ambulances, an X-ray machine and medicine to Republican forces, and 24 Ybor men joined the Abraham Lincoln Brigade. Michelle Sawyer's mural shows Dolores Ibárruri, Luisa Moreno and Margot Falcón Blanco.",
       "visiting": "The marker stands in front of the Ybor City Development Corporation building; the mural is on its west wall.",
       "sources": [
         "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-the-1937-antifascist-womens-march"
@@ -1142,6 +1177,8 @@
     "lng": -82.473882,
     "geo_source": "photon",
     "url": "https://babezahariasgolf.net/",
+    "phone": "813-631-4374",
+    "hours_text": "Daily 7 AM–6 PM.",
     "summary": "A public golf course laid out in 1925, bought in 1949 by Babe Didrikson Zaharias and her husband George, and reopened by the City of Tampa in 1974 under her name. It is managed by the Tampa Sports Authority.",
     "quote": "Known in the Tampa Bay area as \"The Babe,\" Babe Zaharias Golf Course was named after Mildred Ella \"Babe\" Didrikson Zaharias",
     "quote_source": "https://babezahariasgolf.net/",
@@ -1558,8 +1595,7 @@
     "geo_source": "census",
     "url": "https://www.bellabrava.com/",
     "phone": "(727) 895-5515",
-    "hours_text": "Mon–Thu 11:30 AM–10 PM; Fri–Sat 11:30 AM–11 PM; Sun 11 AM–10 PM",
-    "summary": "Italian trattoria on Beach Drive since 2005, a scratch kitchen making its own pasta and stone-fired pizza, with indoor and outdoor seating a short walk from the Dalí Museum and the Mahaffey Theater. A second BellaBrava is in Tampa's Midtown.",
+    "summary": "Italian trattoria on Beach Drive since 2005, serving housemade pasta and stone-fired pizza, a short walk from the Dalí Museum and the Mahaffey Theater. Other BellaBravas are in Tampa's Midtown and at Bexley in Land O' Lakes.",
     "quote": "Inspired by a 2003 trip through Tuscany and a desire to bring its authentic flavors to the New World, BellaBrava was born in 2005 as a vibrant trattoria.",
     "status": "open",
     "tags": [
@@ -1574,7 +1610,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours and phone from the site's structured data."
+    "notes": "Hours and phone from the site's structured data. VERIFIER 2026-09-27: Hours dropped: the site's visible hours table (Sun 11–9, Mon–Thu 11:30–9, Fri 11:30–11, Sat 11–11) differs from its structured data and may belong to another location. The site lists a third location, BellaBrava Bexley (16722 Focus Loop, Land O' Lakes)."
   },
   {
     "id": "ben-t-davis-beach",
@@ -1870,7 +1906,7 @@
     "geo_source": "census",
     "url": "https://www.billysstonecrab.com/",
     "phone": "(727) 866-2115",
-    "summary": "Waterfront seafood and steak restaurant in Tierra Verde on Hurricane Hole, open since 1972 in a building made of native cypress and pine; Visit St. Pete-Clearwater says stone crab from thousands of traps is served from October through May.",
+    "summary": "Waterfront seafood and steak restaurant in Tierra Verde overlooking Hurricane Hole, open since 1972 in a building made of native cypress and pine. Visit St. Pete-Clearwater says stone crab is served year-round, at its peak from October through May.",
     "status": "open",
     "tags": [
       "stone-crab",
@@ -1883,7 +1919,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "billysstonecrab.com blocked WebFetch (403) and curl (Cloudflare challenge); facts from the tourism profile, which lists hours only for Wed–Sun (Wed–Thu and Sun 11:30 AM–9:30 PM, Fri–Sat 11:30 AM–10 PM), so hours are left out. Stone crab season in Florida is Oct 15–May 1; the profile says October through May."
+    "notes": "billysstonecrab.com blocked WebFetch (403) and curl (Cloudflare challenge); facts from the tourism profile, which lists hours only for Wed–Sun (Wed–Thu and Sun 11:30 AM–9:30 PM, Fri–Sat 11:30 AM–10 PM), so hours are left out. Stone crab season in Florida is Oct 15–May 1; the profile says October through May. VERIFIER 2026-09-27: billysstonecrab.com still 403. Tourism profile re-read; the 'thousands of traps' detail was not in it and was removed. Operating in Oct 2025 per Tampa Bay 28 ('Billy's Stone Crab in Tierra Verde stays true to its name thanks to local fishermen', Oct 20, 2025)."
   },
   {
     "id": "bing-rooming-house-museum",
@@ -1985,7 +2021,7 @@
       "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "The Birchwood itself is a hotel (stays slices)."
+    "notes": "The Birchwood itself is a hotel (stays slices). VERIFIER 2026-09-27: Hours re-read on the tourism profile (Mon closed; Tue–Thu 4 PM–midnight; Fri 3 PM–2 AM; Sat 11 AM–2 AM; Sun 11 AM–midnight)."
   },
   {
     "id": "bishop-museum-of-science-and-nature",
@@ -2138,7 +2174,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read: 'Family-owned since 1948', live piano daily, Bobby's Bistro."
   },
   {
     "id": "boca-ciega-millennium-park",
@@ -2207,7 +2244,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/bodega/138738"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read eatatbodega.com: EDGE District, chalkboard menu, juice bar, vegetarian and vegan options, Seminole Heights location, hours."
   },
   {
     "id": "bok-tower-gardens",
@@ -2331,7 +2369,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Opening year, hours, address and parking come from the site-wide footer text shown on bonappetitrestaurant.com pages."
+    "notes": "Opening year, hours, address and parking come from the site-wide footer text shown on bonappetitrestaurant.com pages. VERIFIER 2026-09-27: Re-read: opened 1976 by Peter Kreuziger and Chef Karl Riedl; part of the Original Crabby Bill's family brands (sold to them in 2022 per Tampa Bay Times and Creative Loafing headlines); hours Sun–Thu 11–9, Fri–Sat 11–10."
   },
   {
     "id": "boyd-hill-nature-preserve",
@@ -2610,7 +2648,7 @@
     "url": "https://www.instagram.com/brighterdaysbrewco/",
     "phone": "(727) 940-2350",
     "hours_text": "Mon–Thu noon–9 PM; Fri noon–10 PM; Sat 11 AM–10 PM; Sun 11 AM–7 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Brewery next to the Pinellas Trail in downtown Tarpon Springs with a walk-up window, an open-air garage-door room and a patio, geared to cyclists and walkers; it serves sessionable beers and hosts live music.",
+    "summary": "Brewery directly off the Pinellas Trail in downtown Tarpon Springs with a walk-up window, indoor spaces and a large outdoor patio, welcoming cyclists; it serves sessionable beers and hosts live music.",
     "status": "open",
     "tags": [
       "craft-beer",
@@ -2622,7 +2660,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/north"
     ],
     "checked": "2026-09-27",
-    "notes": "brighterdaysbrewing.com did not respond; the tourism profile links only an Instagram account."
+    "notes": "brighterdaysbrewing.com did not respond; the tourism profile links only an Instagram account. VERIFIER 2026-09-27: 'open-air garage-door room' removed: not in the tourism profile as re-read."
   },
   {
     "id": "brocatos-sandwich-shop",
@@ -2793,8 +2831,8 @@
     "geo_source": "census",
     "url": "https://buoyswaterfrontbar.com/",
     "phone": "(727) 939-2369",
-    "hours_text": "Daily 8 AM–10 PM (per Visit St. Pete-Clearwater); breakfast 8–11 AM, brunch 11 AM–5 PM",
-    "summary": "Scratch-kitchen seafood restaurant and bar in St. Pete Beach with boat docks and a rooftop bar overlooking Blind Pass, serving breakfast, brunch and dinner.",
+    "hours_text": "Mon–Thu 8 AM–10 PM; Fri–Sat 8 AM–11 PM; Sun 8 AM–10 PM; breakfast 8–11 AM, brunch 11 AM–5 PM",
+    "summary": "Scratch-kitchen seafood restaurant and bar in St. Pete Beach with boat docks, serving breakfast, brunch and dinner; Visit St. Pete-Clearwater describes a rooftop bar overlooking Blind Pass.",
     "quote": "Our menu boasts chef-inspired dishes crafted from local and island-inspired ingredients, ensuring freshness in every bite.",
     "status": "open",
     "tags": [
@@ -2809,7 +2847,8 @@
       "https://www.visitstpeteclearwater.com/profile/buoy-s-waterfront-bar-and-grill/139069",
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Hours now from buoyswaterfrontbar.com (read with WebFetch). The rooftop bar and Blind Pass view are only on the tourism profile ('Roof Top bar overlooking Blind Pass'), so they are attributed."
   },
   {
     "id": "busch-gardens-tampa-bay",
@@ -2938,6 +2977,49 @@
     "notes": "Paid admission (tickets at the nursery registers); price not stated on the pages read. Visit Tampa Bay's listing says releases are at 2 PM; the foundation's own page says noon. Verified 2026-09-27: hours (Living Exhibit & Butterfly Garden, last admission 4 PM), closures, Saturday and Sunday noon releases, bug zoo, reptiles, amphibians and turtles, and tickets at the Little Red Wagon registers re-read."
   },
   {
+    "id": "caddys-treasure-island",
+    "name": "Caddy's Treasure Island",
+    "aliases": [
+      "Caddy's on the Beach"
+    ],
+    "kind": "bar",
+    "kinds": [
+      "restaurant"
+    ],
+    "topics": [
+      "drink",
+      "food",
+      "beaches"
+    ],
+    "area": "treasure-island",
+    "address": "9000 W Gulf Blvd",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.753696,
+    "lng": -82.764118,
+    "geo_source": "photon",
+    "url": "https://www.caddys.com/treasure-island",
+    "phone": "(727) 360-4993",
+    "hours_text": "Sun–Thu 10 AM–9 PM; Fri–Sat 10 AM–10 PM",
+    "summary": "Beach bar and restaurant on Sunset Beach in Treasure Island, the first Caddy's, with a ground floor and a second-floor patio facing the Gulf sunset; Ka'Tiki is next door. The 2024 hurricanes wrecked its building, and it reopened in April 2026 after an 18-month rebuild, per I Love the Burg.",
+    "quote": "Visit the original Caddy’s beach bar. Caddy’s Treasure Island is located on beautiful Sunset Beach in Treasure Island, Florida.",
+    "status": "open",
+    "tags": [
+      "beach-bar",
+      "sunset",
+      "hurricane-rebuilt"
+    ],
+    "source_url": "https://www.caddys.com/treasure-island",
+    "also_sources": [
+      "https://ilovetheburg.com/caddys-treasure-island-reopens/",
+      "https://www.cltampa.com/food-drink/pinellas-county-beachside-bars-and-restaurants-are-reopening-following-2024-hurricanes/",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. caddys.com page read with curl (hours, phone, quote verbatim; 'No coolers, outside food & beverage are allowed'). I Love the Burg (Apr 2, 2026): 18-month rebuild of the ground floor and second-floor patio, ribbon cutting Apr 9 at the start of a soft opening. Creative Loafing (Jun 19, 2026) says it reopened in April after the 2024 hurricanes destroyed its 75-year-old building. Other Caddy's are in Madeira Beach and Indian Shores."
+  },
+  {
     "id": "cafe-quiquiriqui",
     "name": "Café Quiquiriquí",
     "kind": "cafe-bakery",
@@ -3007,7 +3089,8 @@
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south",
       "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read cagebrewing.com (20 taps, live music most nights, Kraken Joe's oak-fired brick oven pizza)."
   },
   {
     "id": "caladesi-island-state-park",
@@ -3096,7 +3179,8 @@
       "https://www.caledoniabrewing.com/",
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/north"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read History and Hours page (hours and 21+ after 8 PM confirmed)."
   },
   {
     "id": "capitol-theatre-clearwater",
@@ -3161,6 +3245,7 @@
     "geo_source": "census",
     "url": "https://www.opalcollection.com/sandpearl/restaurants/caretta-on-the-gulf/",
     "phone": "(727) 674-4171",
+    "hours_text": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat 11 AM–2:30 PM; dinner daily 5:30–10 PM",
     "summary": "Restaurant at the Sandpearl Resort facing the Gulf, named for the loggerhead sea turtles, serving seasonal cuisine from breakfast through dinner with a wine room and private dining; the resort calls it Clearwater's only AAA Four-Diamond restaurant. Jackets are not required.",
     "quote": "Named for the loggerhead sea turtles that grace our shores, Caretta on the Gulf invites guests to experience Clearwater’s only AAA Four-Diamond Awarded restaurant.",
     "status": "open",
@@ -3176,7 +3261,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat from 11 AM (the rest of the hours table was not captured). Sandpearl Resort itself is a stay."
+    "notes": "Breakfast Mon–Sat 7–11 AM, Sun 7–10:30 AM; Sunday brunch 11:30 AM–2 PM; lunch Mon–Sat from 11 AM (the rest of the hours table was not captured). Sandpearl Resort itself is a stay. VERIFIER 2026-09-27: Full hours table read from the Opal Collection page."
   },
   {
     "id": "carmines-ybor-city",
@@ -3385,7 +3470,7 @@
       "https://casatinas.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "casatinas.com is a JavaScript app; the address and phone were read from its footer in the site's script bundle ('CasaTina · 365 Main Street. Downtown Dunedin, FL 34698'). Hours not captured."
+    "notes": "casatinas.com is a JavaScript app; the address and phone were read from its footer in the site's script bundle ('CasaTina · 365 Main Street. Downtown Dunedin, FL 34698'). Hours not captured. VERIFIER 2026-09-27: casatinas.com is a JavaScript app that WebFetch reads as empty; the landmark list ('Established: 1992') remains the source."
   },
   {
     "id": "caspersen-beach-park",
@@ -3624,7 +3709,7 @@
     "url": "https://centralparkstpete.com/",
     "phone": "(727) 385-0234",
     "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
-    "summary": "Food hall of about 28,000 square feet on several floors of the old Woolworth building on Central Avenue, from Hi Hospitality Group; it began a phased opening in February 2026. Counters include Constellation Burger, Palm Avenue Deli, a taqueria, pizza, pasta and Kojo Wok, with a main bar, a self-pour beer wall and a rooftop bar; you order at a table by kiosk, online or from staff.",
+    "summary": "Five-story food hall of about 28,000 square feet at 551 Central Avenue, where the old Woolworth building stood, from Hi Hospitality Group; it began a phased opening in February 2026. Counters include Constellation Burger, Palm Avenue Deli, Don Ricardo's Taqueria, Park Pie Pizza, Speaks Pasta and Kojo Wok, with a main bar, a self-pour beer wall and a rooftop bar; you sit at a table and order online, at a kiosk or from staff.",
     "quote": "At Central Park St. Pete, your group stays together from the moment you walk in.",
     "status": "open",
     "tags": [
@@ -3639,7 +3724,7 @@
       "https://www.fox13news.com/news/newest-food-hall-opens-fall-st-pete"
     ],
     "checked": "2026-09-27",
-    "notes": "FOX 13 (Feb 25, 2026) reported the phased opening, the 28,000 sq ft size and the former Woolworth building. The site lists some concepts as 'now open' and Kojo (modern Asian) as opening soon; Bar Hana by Kojo is the rooftop bar."
+    "notes": "FOX 13 (Feb 25, 2026) reported the phased opening, the 28,000 sq ft size and the former Woolworth building. The site lists some concepts as 'now open' and Kojo (modern Asian) as opening soon; Bar Hana by Kojo is the rooftop bar. VERIFIER 2026-09-27: FOX 13 (Feb 25, 2026) says 'The five-story' hall is 'located at 551 Central Avenue where the old Woolworth building used to be' (the earlier summary said it was in the Woolworth building)."
   },
   {
     "id": "centro-asturiano-de-tampa",
@@ -3801,24 +3886,22 @@
     "geo_source": "census",
     "url": "https://thechattaway.com/",
     "phone": "(727) 823-1594",
-    "price_text": "Afternoon tea (by reservation, 48 hours' notice, 12:30–3:30): adults $45, ages 16 and under $25",
-    "summary": "Neighborhood restaurant in Old Town St. Petersburg with a garden patio, a small stage for local musicians and an indoor English tea room; afternoon tea is by reservation. The restaurant says it has been part of the community in one form or another for over 90 years.",
-    "quote": "One of the biggest surprises of all is a trip indoors to feel like you’re stepping off the boat into a genuine English Tea Room.",
+    "summary": "Burger restaurant and bar in south St. Petersburg with a leafy garden courtyard, walls covered in photos and plaques, and a tea room; it dates to 1951, when Helen Lund bought the business. New owners reopened it on Sep 25, 2026, adding a second outdoor bar, a covered patio and a full liquor license.",
     "status": "open",
     "tags": [
-      "afternoon-tea",
       "burgers",
       "patio",
       "dog-friendly",
-      "live-music",
-      "landmark-restaurant"
+      "landmark-restaurant",
+      "historic"
     ],
-    "source_url": "https://thechattaway.com/",
+    "source_url": "https://stpeterising.com/home/the-chattaway-reopens-today-with-new-owners-and-a-promise-to-preserve-what-st-pete-loves",
     "also_sources": [
+      "https://thechattaway.com/",
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater's landmark-restaurants list says it opened in 1951; the restaurant's own page says 'over 90 years' in one form or another. Summary uses the restaurant's wording. Opening hours are not on the home page."
+    "notes": "Visit St. Pete-Clearwater's landmark-restaurants list says it opened in 1951; the restaurant's own page says 'over 90 years' in one form or another. Summary uses the restaurant's wording. Opening hours are not on the home page. VERIFIER 2026-09-27: St Pete Rising (Sep 25, 2026): the Chattaway reopened that day at 358 22nd Ave S under new owners (Cullen Mahoney, Mark Ferguson, John John Delladonna), who bought the restaurant and its 0.70-acre lot after the longtime owners prepared to close; the tea room floor is to be repaired and the tea room used more regularly as a dining space. The old afternoon-tea price and the quote (thechattaway.com, the previous owners' site) were dropped because the new owners have not restated them."
   },
   {
     "id": "chihuly-collection",
@@ -4349,7 +4432,7 @@
     "geo_source": "census",
     "url": "https://cocktailstpete.com/",
     "phone": "(727) 592-1914",
-    "summary": "LGBTQ bar at the Mari Jean Hotel in the Grand Central District, with drag brunch, themed shows and a pool bar and day club, The Wet Spot. It is 21 and up, and IDs are checked for every guest.",
+    "summary": "LGBTQ bar at the Mari Jean Hotel in the Grand Central District, with a twice-monthly drag brunch at The Wet Spot, the hotel's pool bar and day club, and themed shows. IDs are checked for every guest.",
     "quote": "We ID any guest. Any age. Every time.",
     "status": "open",
     "tags": [
@@ -4363,7 +4446,7 @@
       "https://www.visitstpeteclearwater.com/trip-planning/lgbtq-travel"
     ],
     "checked": "2026-09-27",
-    "notes": "The site's structured data lists daily 12 PM–3 AM; not repeated because the visible page does not state hours. The Mari Jean Hotel is a stay (stays-stpete-pinellas: mari-jean-hotel)."
+    "notes": "The site's structured data lists daily 12 PM–3 AM; not repeated because the visible page does not state hours. The Mari Jean Hotel is a stay (stays-stpete-pinellas: mari-jean-hotel). VERIFIER 2026-09-27: Read with WebFetch (curl was reset). '21 and up' removed: the page says it IDs every guest but the reading did not state an age limit. Drag brunch on the 2nd and 4th Sunday at The Wet Spot per the page."
   },
   {
     "id": "collection-on-palmetto",
@@ -4491,6 +4574,7 @@
     "lng": -82.829486,
     "geo_source": "census",
     "url": "https://www.columbiarestaurant.com/sand-key-clearwater",
+    "phone": "(727) 596-8400",
     "hours_text": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM",
     "summary": "Sand Key branch of the Columbia, the Spanish-Cuban restaurant family founded in Ybor City in 1905, with a Mediterranean-style dining room and an outdoor deck on the Intracoastal Waterway. The company calls itself Florida's oldest restaurant.",
     "quote": "Choose a table looking out onto the Intracoastal Waterway from the Mediterranean dining room, or experience the casual atmosphere from our outdoor deck on the water.",
@@ -4502,9 +4586,11 @@
     ],
     "source_url": "https://www.columbiarestaurant.com/sand-key-clearwater",
     "also_sources": [
-      "https://www.columbiarestaurant.com/"
+      "https://www.columbiarestaurant.com/",
+      "https://www.columbiarestaurant.com/our-story"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Phone and hours read on the location page with WebFetch. VERIFIER 2026-09-27: Our Story page added for the 1905 Ybor City founding."
   },
   {
     "id": "columbia-restaurant-st-armands",
@@ -4527,6 +4613,7 @@
     "lng": -82.576829,
     "geo_source": "census",
     "url": "https://www.columbiarestaurant.com/st-armands-circle-sarasota",
+    "phone": "(941) 388-3987",
     "hours_text": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM",
     "summary": "St. Armands Circle branch of the Columbia, the Spanish-Cuban restaurant family founded in Ybor City in 1905, a short walk from Lido Beach. The Columbia calls this location the oldest operating restaurant in Sarasota.",
     "quote": "Relax in one of our Mediterranean-style dining rooms or enjoy an outdoor table on the patio while sampling our award-winning Spanish/Cuban cuisine at the oldest operating restaurant in Sarasota.",
@@ -4539,9 +4626,11 @@
     ],
     "source_url": "https://www.columbiarestaurant.com/st-armands-circle-sarasota",
     "also_sources": [
-      "https://www.columbiarestaurant.com/"
+      "https://www.columbiarestaurant.com/",
+      "https://www.columbiarestaurant.com/our-story"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Phone and hours read on the location page with WebFetch. VERIFIER 2026-09-27: 'founded in Ybor City in 1905': the Our Story page says Casimiro Hernandez Sr. helped open the Columbia Saloon on Dec. 17, 1903, which became the Columbia Restaurant in 1905, and links the history to Columbia Ybor City."
   },
   {
     "id": "columbia-restaurant-ybor-city",
@@ -4586,7 +4675,7 @@
         }
       ],
       "era": "boomtown",
-      "story": "Casimiro Hernandez Sr., a Spanish-Cuban immigrant, helped open the Columbia Saloon on December 17, 1903, and it became the Columbia Restaurant in 1905; the original bar is still in the Cafe dining room. The NHL nomination says the restaurant had taken on its present dimensions by the 1930s and that its latticed arcade with a red tile roof dates to 1963; inlaid tiles around the windows and doors show flowers, animals and scenes from Spanish history. The restaurant is still owned and run by the founder's family.",
+      "story": "Casimiro Hernandez Sr., a Spanish-Cuban immigrant, helped open the Columbia Saloon on December 17, 1903, and it became the Columbia Restaurant in 1905; the restaurant says the 1905 Columbia used the saloon's bar, and the NHL nomination says the original corner bar and coffee shop are still intact within the restaurant. The NHL nomination says the restaurant had taken on its present dimensions by the 1930s and that its latticed arcade with a red tile roof dates to 1963; inlaid tiles around the windows and doors show flowers, animals and scenes from Spanish history. The restaurant is still owned and run by the founder's family.",
       "visiting": "Open daily for lunch and dinner; the restaurant says it seats up to 1,700 in 15 dining rooms across 52,000 square feet.",
       "sources": [
         "https://www.columbiarestaurant.com/our-story",
@@ -4614,6 +4703,66 @@
     ],
     "checked": "2026-09-27",
     "notes": "Merged from eat-tampa + history-tampa; owner eat-tampa. | [eat-tampa] Phone (813) 248-4961 per the Visit Tampa Bay listing (not printed on the location page). Visit Tampa Bay's Cuban sandwich page says the Columbia uses a 1915 recipe and La Segunda bread, and that 'flamenco dance performances nightly Mon.-Sat.' (listing). The location page says it earned the Distinguished Restaurants of North America Award of Excellence 2005–2008 and has been named 'One of Florida's Top Restaurants' since 1967. History-tampa may also hold this id. | [history-tampa] Heritage record for the eat-tampa id; restaurant details (menu, reservations) belong to eat-tampa. Point is the OSM restaurant feature. The NHL nomination spells the founder 'Casimirio'; the restaurant spells it Casimiro."
+  },
+  {
+    "id": "columbus-drive-bridge",
+    "name": "Columbus Drive Bridge (Michigan Avenue Bridge)",
+    "aliases": [
+      "Michigan Avenue Bridge",
+      "Columbus Drive Swing Span Bridge"
+    ],
+    "kind": "landmark",
+    "kinds": [
+      "historic-site"
+    ],
+    "topics": [
+      "history"
+    ],
+    "area": "west-tampa",
+    "address": null,
+    "city": "Tampa",
+    "state": "FL",
+    "lat": 27.966793,
+    "lng": -82.475174,
+    "geo_source": "wikipedia",
+    "url": null,
+    "summary": "A swing bridge of 1927 that carries Columbus Drive over the Hillsborough River, listed on the National Register in 2017 as the Michigan Avenue Bridge. The City of Tampa says it is one of three bob-tailed swing bridges left in Florida.",
+    "heritage": {
+      "built": "1927 (City of Tampa; the National Register gives 1926 as its significant year)",
+      "architect": "Norman S. Sprague and R. D. Martin; Mount Vernon Bridge Company (National Register record)",
+      "style": null,
+      "designations": [
+        {
+          "name": "National Register of Historic Places",
+          "ref": "100001669",
+          "year": 2017,
+          "url": "https://npgallery.nps.gov/AssetDetail/NRIS/100001669"
+        },
+        {
+          "name": "City of Tampa multiple property designation: Historic Bridges on the Hillsborough River",
+          "year": 2006,
+          "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+        }
+      ],
+      "era": "land-boom",
+      "story": "By the 1880s Hyde Park and West Tampa needed better access to Tampa's business district across the river, and the City of Tampa says each new bridge strengthened the connection. The Columbus Drive (Michigan Avenue) Bridge of 1927 is one of six Hillsborough River bridges built from 1913 to 1939 in the City's historic bridges designation, and the City calls it one of three bob-tailed swing bridges left in the state. It was listed on the National Register on September 25, 2017.",
+      "visiting": "A working road bridge on Columbus Drive between West Tampa and Riverside Heights.",
+      "sources": [
+        "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+        "https://npgallery.nps.gov/AssetDetail/NRIS/100001669",
+        "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+        "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+    "also_sources": [
+      "https://npgallery.nps.gov/AssetDetail/NRIS/100001669",
+      "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. NRHP listing date 9/25/2017 from the NPS listed-properties spreadsheet (to 5/22/2026) and Wikipedia's list; architects and significant year from the NPGallery record; point from Wikipedia's NRHP list ('Old West Tampa, Riverside Heights, and Ridgewood Park'; 'Better known today as the Columbus Drive Swing Span Bridge')."
   },
   {
     "id": "cooltoday-park",
@@ -4871,9 +5020,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33602",
-    "lat": 27.9435577,
-    "lng": -82.448831,
-    "geo_source": "official",
+    "lat": 27.941734,
+    "lng": -82.450829,
+    "geo_source": "photon",
     "url": "https://www.tampa.gov/parks-and-recreation/featured-parks/cotanchobee-park",
     "phone": "(813) 274-8615",
     "hours_text": "7 AM–10 PM daily.",
@@ -4902,7 +5051,7 @@
       "https://en.wikipedia.org/wiki/Fort_Brooke"
     ],
     "checked": "2026-09-27",
-    "notes": "GPS coordinates published on the City page. Fort location relative to the park from Wikipedia (Fort Brooke); fritzhand/history-of-tampa puts the fort site about 613 m west of the park. Arrival date: the City archive says January 18, 1824; Wikipedia says the cantonment was established January 10, 1824."
+    "notes": "Fort location relative to the park from Wikipedia (Fort Brooke); fritzhand/history-of-tampa puts the fort site about 613 m west of the park. Arrival date: the City archive says January 18, 1824; Wikipedia says the cantonment was established January 10, 1824. Verified 2026-09-27: The City page's GPS point (27.9435577, -82.448831) reverse-geocodes to Channelside Drive at South Meridian Avenue, about 280 m northeast of the park; the point is now the OSM park feature 'Cotanchobee Fort Brooke Park' (W906567316), between the Convention Center and the Tampa Bay History Center, which the timeline slice also uses for Fort Brooke."
   },
   {
     "id": "council-oak-steaks-and-seafood",
@@ -5071,7 +5220,7 @@
       "https://crabbybills.com/about-crabby-bills/"
     ],
     "checked": "2026-09-27",
-    "notes": "The contact page prints the ZIP as 33706; the ZIP here comes from the Census match. Live-music calendar on the home page runs through late Sep 2026, so it is operating."
+    "notes": "The contact page prints the ZIP as 33706; the ZIP here comes from the Census match. Live-music calendar on the home page runs through late Sep 2026, so it is operating. VERIFIER 2026-09-27: Re-read contact and about pages; live music calendar has shows on Sep 27–28, 2026."
   },
   {
     "id": "crabbys-beachside-pavilion",
@@ -5111,10 +5260,11 @@
     "source_url": "https://crabbysbeachsidepavilion.com/",
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/crabby-s-beachside-pavilion/138632",
-      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
+      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater dates it to 1926 (first a snack concession with lockers and bath houses) and says it operated as the Palm Pavilion. Phone from that profile."
+    "notes": "Visit St. Pete-Clearwater dates it to 1926 (first a snack concession with lockers and bath houses) and says it operated as the Palm Pavilion. Phone from that profile. VERIFIER 2026-09-27: Tourism profile re-read: 'Established: 1926' on the landmark list; menu 'seafood ... our famous beach burger, fun tropical drinks'; 'live entertainment on the deck most days'. I Love the Burg (May 18, 2026) lists it among open beach bars."
   },
   {
     "id": "cracker-country",
@@ -5199,8 +5349,8 @@
     "geo_source": "census",
     "url": "https://crookedthumbbrew.com/",
     "phone": "(727) 724-5953",
-    "summary": "Safety Harbor craft brewery with a tasting room and outdoor beer garden a block from Main Street, pouring lagers, IPAs and fruited sours from over 20 taps, with live music and food trucks. Its name comes from a local history's description of Pinellas County hanging off Florida's west coast like a crooked thumb, per Visit St. Pete-Clearwater.",
-    "quote": "Lagers, IPAs, fruited sours and experimental brews rotate among over 20 taps.",
+    "hours_text": "Mon–Thu 4–9 PM; Fri 2–11 PM; Sat noon–11 PM; Sun noon–9 PM",
+    "summary": "Safety Harbor craft brewery with a tasting room and a beer garden under a canopy of trees one block off Main Street, with live music, food trucks and events. Its name comes from a line in a history of Safety Harbor describing how Pinellas County hangs off Florida's west coast like a crooked thumb, per Visit St. Pete-Clearwater.",
     "status": "open",
     "tags": [
       "craft-beer",
@@ -5213,7 +5363,7 @@
       "https://www.visitstpeteclearwater.com/profile/crooked-thumb-brewery/140326"
     ],
     "checked": "2026-09-27",
-    "notes": "ZIP 34695 from the brewery's site (the tourism profile prints 34698)."
+    "notes": "ZIP 34695 from the brewery's site (the tourism profile prints 34698). VERIFIER 2026-09-27: The quote ('over 20 taps') was not on crookedthumbbrew.com or the tourism profile as read, so it and the tap count were removed; hours from the brewery's home page."
   },
   {
     "id": "cru-cellars",
@@ -5280,7 +5430,7 @@
     "hours_text": "Grounds 8 a.m. to sunset daily; museum 9 a.m.–5 p.m., Thursday–Monday",
     "price_text": "3 dollars per vehicle (honor box; correct change required)",
     "is_free": false,
-    "summary": "A 61-acre Native American ceremonial site on the Crystal River with burial mounds, temple mounds, a plaza and a shell midden, used for about 1,600 years. It is a National Historic Landmark.",
+    "summary": "A 61-acre Native American ceremonial site on the Crystal River with burial mounds, temple mounds, a plaza and a large midden, used for about 1,600 years. It is a National Historic Landmark.",
     "quote": "For 1,600 years the site served as an imposing ceremonial center for Native Americans.",
     "quote_source": "https://www.discovercrystalriverfl.com/directory/crystal-river-archaeological-state-park-historical-sites/",
     "heritage": {
@@ -5307,7 +5457,7 @@
         }
       ],
       "era": "indigenous",
-      "story": "For about 1,600 years the six-mound complex served as a ceremonial center, and the state park estimates as many as 7,500 people may have visited it each year, and it was active and abandoned before Europeans arrived; it holds burial mounds, temple or platform mounds, a plaza and a large midden. Temple Mound A remains the highest point in Crystal River. The site was listed in the National Register of Historic Places in 1970 and is a National Historic Landmark.",
+      "story": "For about 1,600 years the six-mound complex served as a ceremonial center, and it was active and abandoned before Europeans arrived. The state park estimates that as many as 7,500 Native Americans may have visited it each year to trade and bury their dead. It holds burial mounds, temple or platform mounds, a plaza and a large midden; Citrus County's tourism office says Temple Mound A remains the highest point in Crystal River. The site was listed in the National Register of Historic Places in 1970 and is a National Historic Landmark.",
       "visiting": "Walk the grounds daily from 8 am to sunset; the museum is open Thursday to Monday.",
       "sources": [
         "https://www.floridastateparks.org/parks-and-trails/crystal-river-archaeological-state-park",
@@ -5547,9 +5697,10 @@
       "style": "Art Deco",
       "designations": [
         {
-          "name": "National Register of Historic Places",
+          "name": "Ybor City Historic District (National Historic Landmark district, designated 1990)",
+          "ref": "74000641",
           "year": 1990,
-          "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+          "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text"
         },
         {
           "name": "City of Tampa local historic landmark",
@@ -5572,10 +5723,11 @@
     "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
     "also_sources": [
       "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
-      "https://www.tampa.gov/parks-and-recreation/activities-recreation/aquatics/pool-facilities"
+      "https://www.tampa.gov/parks-and-recreation/activities-recreation/aquatics/pool-facilities",
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
     ],
     "checked": "2026-09-27",
-    "notes": "The City book gives NRHP 1990 (likely as part of the Ybor City district boundary increase; no individual listing in Wikipedia's list)."
+    "notes": "The City book gives 'National Register Listing: 1990'. No individual listing exists in the NPS listed-properties spreadsheet (to 5/22/2026); 1990 is the year the Ybor City district was designated a National Historic Landmark (12/14/1990), and the NHL nomination lists the Cuscaden Swimming Pool and park (with a surviving baseball grandstand) in the district."
   },
   {
     "id": "cws-gin-joint",
@@ -5652,6 +5804,69 @@
       "https://www.tampa.gov/parks-and-recreation/parks-and-facilities/beaches"
     ],
     "checked": "2026-09-27"
+  },
+  {
+    "id": "dade-battlefield-historic-state-park",
+    "name": "Dade Battlefield Historic State Park",
+    "aliases": [
+      "Dade Battlefield Historic Memorial",
+      "Dade Battlefield"
+    ],
+    "kind": "historic-site",
+    "kinds": [
+      "state-park",
+      "museum"
+    ],
+    "topics": [
+      "history",
+      "outdoors"
+    ],
+    "area": "nature-coast",
+    "address": "7200 Battlefield Pkwy",
+    "city": "Bushnell",
+    "state": "FL",
+    "zip": "33513",
+    "lat": 28.652429,
+    "lng": -82.126094,
+    "geo_source": "census",
+    "url": "https://www.floridastateparks.org/parks-and-trails/dade-battlefield-historic-state-park",
+    "phone": "352-793-4781",
+    "hours_text": "8 a.m. to sunset, 365 days a year; visitor center 9 a.m.–5 p.m.",
+    "price_text": "3 dollars per vehicle",
+    "is_free": false,
+    "summary": "A state park near Bushnell on the site of Dade's Battle of December 28, 1835, which opened the Second Seminole War. Its visitor center has a small museum on the Seminole wars, and a reenactment of the battle is held each January.",
+    "quote": "Established in 1921 to preserve and commemorate the site of Dade's Battle of 1835, a momentous event that spawned the longest and most costly American Indian war in U.S. history",
+    "heritage": {
+      "designations": [
+        {
+          "name": "National Register of Historic Places (Dade Battlefield Historic Memorial)",
+          "ref": "72000353",
+          "year": 1972,
+          "url": "https://npgallery.nps.gov/AssetDetail/NRIS/72000353"
+        },
+        {
+          "name": "National Historic Landmark",
+          "year": 1973,
+          "url": "https://en.wikipedia.org/wiki/Dade_Battlefield_Historic_State_Park"
+        }
+      ],
+      "era": "frontier",
+      "story": "On the morning of December 28, 1835, about 130 Seminoles led by Micanopy, with Black Seminole allies, ambushed Major Francis L. Dade and more than 100 soldiers marching on the Fort King Road to reinforce Fort King, near present-day Ocala; all but three of Dade's soldiers were killed. The battle opened the Second Seminole War, which the state park calls the longest and most costly American Indian war in U.S. history. Florida set the site aside as a memorial park in 1921; it was listed in the National Register of Historic Places in 1972 and designated a National Historic Landmark in 1973.",
+      "visiting": "The visitor center has a small museum with artifacts and exhibits on the Florida Seminole wars and a 12-minute video about the battle. About 2,000 people attend the park's battle reenactment each January, per the park; the grounds have trails through pine flatwoods and oak hammock, picnic pavilions and an indoor lodge.",
+      "sources": [
+        "https://www.floridastateparks.org/parks-and-trails/dade-battlefield-historic-state-park",
+        "https://en.wikipedia.org/wiki/Dade_Battlefield_Historic_State_Park",
+        "https://npgallery.nps.gov/AssetDetail/NRIS/72000353"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.floridastateparks.org/parks-and-trails/dade-battlefield-historic-state-park",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Dade_Battlefield_Historic_State_Park",
+      "https://npgallery.nps.gov/AssetDetail/NRIS/72000353"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27). The state park page was read in full through the r.jina.ai reader (floridastateparks.org blocks curl and WebFetch); it shows no alerts. Battle details (130 Seminoles, Micanopy, Black Seminole allies, Fort King Road, 'all but three of Dade's men') and the NRHP/NHL dates are from Wikipedia; NRIS 72000353 names it 'Dade Battlefield Historic Memorial' (significant year 1835). Bushnell is in Sumter County, outside the fixed areas; nature-coast is the nearest day-trip area. Wikipedia says the reenactment falls on the weekend after Christmas; the park page says each January, used here. Point is the Census match for 7200 Battlefield Pkwy (Photon's park polygon is 300 m west)."
   },
   {
     "id": "dali-museum",
@@ -5962,16 +6177,17 @@
       "water"
     ],
     "area": "tarpon-springs",
-    "address": "698 Dodecanese Blvd",
+    "address": "690 Dodecanese Blvd",
     "city": "Tarpon Springs",
     "state": "FL",
     "zip": "34689",
-    "lat": 28.155624,
-    "lng": -82.760108,
-    "geo_source": "census",
+    "lat": 28.155731,
+    "lng": -82.759856,
+    "geo_source": "photon",
     "url": "https://dimitrisonthewater.com/",
     "phone": "(727) 945-9400",
-    "summary": "Greek seafood and steak restaurant on the Sponge Docks with indoor and covered outdoor seating looking at the local fishing and sponge boats.",
+    "hours_text": "Sun–Tue and Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; closed Wed",
+    "summary": "Family-owned Greek seafood restaurant on the Sponge Docks, run by the Salivaras family since 2010, with a covered patio looking over the Anclote River and the sponge boats.",
     "status": "open",
     "tags": [
       "greek",
@@ -5979,12 +6195,13 @@
       "waterfront",
       "seafood"
     ],
-    "source_url": "https://www.visitstpeteclearwater.com/profile/dimitri-s-on-the-water/138867",
+    "source_url": "https://dimitrisonthewater.com/",
     "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/dimitri-s-on-the-water/138867",
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "dimitrisonthewater.com returned a bot challenge; facts from the tourism profile, which lists hours for every day but Wednesday, so hours are left unknown."
+    "notes": "dimitrisonthewater.com returned a bot challenge; facts from the tourism profile, which lists hours for every day but Wednesday, so hours are left unknown. VERIFIER 2026-09-27: dimitrisonthewater.com now reads through WebFetch: it prints '690 Dodecanese Blvd.' twice (the tourism profile said 698), 'Family-owned and operated since 2010', the Salivaras family, and hours with Wednesday closed. Coordinates: the OpenStreetMap point for the restaurant at 690."
   },
   {
     "id": "dinosaur-world-plant-city",
@@ -6026,6 +6243,41 @@
       "https://www.dinosaurworld.com/florida-tickets"
     ],
     "checked": "2026-09-27"
+  },
+  {
+    "id": "discover-crystal-river-tourist-information-center",
+    "name": "Discover Crystal River Tourist Information Center",
+    "aliases": [
+      "Discover Crystal River Visitor Information Center",
+      "Welcome and Visitor's Center"
+    ],
+    "kind": "visitor-center",
+    "topics": [
+      "wildlife"
+    ],
+    "area": "nature-coast",
+    "address": "915 N. Suncoast Blvd.",
+    "city": "Crystal River",
+    "state": "FL",
+    "zip": "34429",
+    "lat": 28.875242,
+    "lng": -82.57908,
+    "geo_source": "photon",
+    "url": "https://www.discovercrystalriverfl.com/",
+    "phone": "(352) 794-5506",
+    "hours_text": "Monday–Friday 8 a.m.–5 p.m.; Saturday 8 a.m.–2 p.m.",
+    "summary": "The tourist information center of Discover Crystal River, the official visitor guide for Crystal River and Citrus County.",
+    "status": "open",
+    "tags": [
+      "visitor-information"
+    ],
+    "source_url": "https://www.discovercrystalriverfl.com/contact-us/",
+    "also_sources": [
+      "https://www.discovercrystalriverfl.com/",
+      "https://www.visitflorida.com/listing/discover-crystal-river-visitor-information-center/30027/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Contact page: 'Tourist Information Center', '915 North Suncoast Boulevard, Crystal River, Florida 34429', '800.587.6667 | 352.794.5506', 'Monday – Friday: 8am – 5pm', 'Saturday: 8am – 2pm'. Coordinates are the OpenStreetMap feature 'Welcome and Visitor's Center', 915 North Suncoast Boulevard (W756056058, information=office). The Census address match (28.887697,-82.584113) is 1.4 km north and VISIT FLORIDA's point (28.899393,-82.593881) 2.8 km north; both are interpolated, so the named OSM building was kept."
   },
   {
     "id": "dk-farms-and-gardens",
@@ -6107,7 +6359,8 @@
       "https://docfords.com/",
       "https://stpetepier.org/restaurants/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: docfords.com now lists three locations (Sanibel Island, Fort Myers Beach, St. Pete Pier); the Pier's page still says 'three other locations', an older count."
   },
   {
     "id": "donatello-italian-restaurant",
@@ -6410,7 +6663,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "The 'oldest' claim is the brewery's own and is qualified on its page (first line of the quote); the header also says 'FL's Oldest Microbrewery'."
+    "notes": "The 'oldest' claim is the brewery's own and is qualified on its page (first line of the quote); the header also says 'FL's Oldest Microbrewery'. VERIFIER 2026-09-27: Re-read: 'Florida's Oldest Craft Brewery The Original, Brewing since 1996 We weren't the first to make beer in Florida, but we're the oldest distributing microbrewery still in operation.' The claim stays attributed and qualified, as the brief asked."
   },
   {
     "id": "dunedin-downtown-market",
@@ -6526,6 +6779,36 @@
     ],
     "checked": "2026-09-27",
     "notes": "Admission table has two columns (members free / general); the general column is used."
+  },
+  {
+    "id": "east-pasco-chamber-visitor-information-center",
+    "name": "East Pasco Chamber of Commerce Visitor Information Center",
+    "aliases": [
+      "Greater East Pasco Chamber of Commerce (Zephyrhills)"
+    ],
+    "kind": "visitor-center",
+    "topics": [],
+    "area": "lutz-wesley-chapel",
+    "address": "38550 5th Ave.",
+    "city": "Zephyrhills",
+    "state": "FL",
+    "zip": "33542",
+    "lat": 28.234673,
+    "lng": -82.178722,
+    "geo_source": "census",
+    "url": "https://www.eastpascochamber.org/",
+    "phone": "(813) 782-1913",
+    "summary": "The Greater East Pasco Chamber of Commerce's Zephyrhills office, which VISIT FLORIDA lists as a certified visitor information center.",
+    "status": "open",
+    "tags": [
+      "visitor-information"
+    ],
+    "source_url": "https://www.visitflorida.com/listing/east-pasco-chamber-of-commerce-visitor-information-center/26900/",
+    "also_sources": [
+      "https://www.eastpascochamber.org/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Chamber footer lists '813-782-1913 38550 5th Avenue, Zephyrhills, FL 33542' (and a Dade City office, 14112 8th Street, 352-567-3769, which VISIT FLORIDA does not list). No hours are published. Geocode matched '38550 5TH AVE, ZEPHYRHILLS, FL, 33542' (Census)."
   },
   {
     "id": "ebbe",
@@ -6862,7 +7145,7 @@
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "No official website: elcapstpete.com is a parked domain (redirects to a lander page). Status from the tourism profile's current hours."
+    "notes": "No official website: elcapstpete.com is a parked domain (redirects to a lander page). Status from the tourism profile's current hours. VERIFIER 2026-09-27: Tourism profile re-read (hours, 'sports photos, articles, pennants, and memorabilia', 'World Champ Cheeseburger'); landmark list: 'Established: 1964'."
   },
   {
     "id": "el-centro-espanol-de-tampa",
@@ -6955,7 +7238,7 @@
     "lng": -82.482926,
     "geo_source": "census",
     "url": null,
-    "summary": "The 1912 West Tampa clubhouse of the Spanish mutual-aid society, with patterned dark red and yellow brick and terra cotta tracery in a Moorish Revival style. It now houses the offices of the Hillsborough Education Foundation.",
+    "summary": "The 1912 West Tampa clubhouse of the Spanish mutual-aid society, a National Historic Landmark, with patterned dark red and yellow brick and terra cotta tracery in a Moorish Revival style. It now houses the offices of the Hillsborough Education Foundation.",
     "heritage": {
       "built": "1912",
       "architect": "Fred J. James",
@@ -6965,6 +7248,12 @@
           "name": "National Register of Historic Places",
           "ref": "74000632",
           "year": 1974,
+          "url": "https://npgallery.nps.gov/AssetDetail/NRIS/74000632"
+        },
+        {
+          "name": "National Historic Landmark",
+          "ref": "74000632",
+          "year": 1988,
           "url": "https://npgallery.nps.gov/AssetDetail/NRIS/74000632"
         },
         {
@@ -6986,7 +7275,8 @@
         "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
         "https://npgallery.nps.gov/AssetDetail/NRIS/74000632",
         "https://en.wikipedia.org/wiki/El_Centro_Espa%C3%B1ol_of_West_Tampa",
-        "https://educationfoundation.com/"
+        "https://educationfoundation.com/",
+        "https://www.nps.gov/subjects/nationalregister/upload/National-Historic-Landmarks_20260522.xlsx"
       ]
     },
     "status": "open",
@@ -6994,10 +7284,12 @@
     "also_sources": [
       "https://npgallery.nps.gov/AssetDetail/NRIS/74000632",
       "https://en.wikipedia.org/wiki/El_Centro_Espa%C3%B1ol_of_West_Tampa",
-      "https://educationfoundation.com/"
+      "https://educationfoundation.com/",
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+      "https://www.nps.gov/subjects/nationalregister/upload/National-Historic-Landmarks_20260522.xlsx"
     ],
     "checked": "2026-09-27",
-    "notes": "Current tenant: the Hillsborough Education Foundation lists 2306 N. Howard Ave. as its address."
+    "notes": "Current tenant: the Hillsborough Education Foundation lists 2306 N. Howard Ave. as its address. Verified 2026-09-27: The NPS NHL spreadsheet (designations to 5/22/2026) lists 74000632 El Centro Espanol of West Tampa with NHL designation 6/10/1988 (NRHP listing 7/30/1974)."
   },
   {
     "id": "el-pasaje",
@@ -7185,7 +7477,7 @@
       "https://www.visitstpeteclearwater.com/profile/elliott-aster/142274"
     ],
     "checked": "2026-09-27",
-    "notes": "The Vinoy itself is a historic hotel (stays slices)."
+    "notes": "The Vinoy itself is a historic hotel (stays slices). VERIFIER 2026-09-27: Tourism profile quote checked: 'wood-fired steaks, freshly caught seafood, housemade pastas and a signature antipasti bar.' Michelin 2026 recommended (new)."
   },
   {
     "id": "emerson-point-preserve",
@@ -7282,6 +7574,49 @@
     ],
     "source_url": "https://hcfl.gov/locations/eureka-springs-conservation-park",
     "checked": "2026-09-27"
+  },
+  {
+    "id": "family-heritage-house-museum",
+    "name": "Family Heritage House Museum",
+    "aliases": [
+      "Family Heritage House"
+    ],
+    "kind": "museum",
+    "topics": [
+      "history",
+      "black-history"
+    ],
+    "area": "bradenton-anna-maria",
+    "address": "5840 26th St W (Library & Learning Center, Building 3, State College of Florida)",
+    "city": "Bradenton",
+    "state": "FL",
+    "zip": "34207",
+    "lat": 27.4372,
+    "lng": -82.589748,
+    "geo_source": "photon",
+    "url": "https://www.familyheritagehousemuseum.com/",
+    "phone": "941-752-5319",
+    "hours_text": "Tuesday–Thursday 10:30 a.m.–3:30 p.m.; Monday, Friday and Saturday by appointment; closed Sunday. The museum says hours may change with staffing and asks visitors to call ahead.",
+    "summary": "An African American museum and resource center on the Bradenton campus of the State College of Florida, Manatee-Sarasota, with artifacts, literature and other resources on African American history and culture, local and national.",
+    "quote": "We truthfully tell the stories of the African American experience for the benefit of the entire community, and the African American community specifically.",
+    "quote_source": "https://www.familyheritagehousemuseum.com/about-us/",
+    "heritage": {
+      "era": "modern",
+      "story": "Fredi Brown and Ernest L. Brown Jr. founded the Family Heritage House Museum in Bradenton in 1990, first on the campus of the local Head Start. In 2000 they formed a partnership with Manatee Community College, now the State College of Florida, Manatee-Sarasota, and moved the collection to its campus, where the college provides the museum's space.",
+      "visiting": "In the Library & Learning Center (Building 3) on the college's Bradenton campus; call ahead, since the museum says hours can change with staffing.",
+      "sources": [
+        "https://www.familyheritagehousemuseum.com/about-us/",
+        "https://www.familyheritagehousemuseum.com/"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.familyheritagehousemuseum.com/",
+    "also_sources": [
+      "https://www.familyheritagehousemuseum.com/about-us/",
+      "https://www.bradentongulfislands.com/listing/family-heritage-house-museum/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27); found in the Bradenton Area CVB listing sitemap. Home page (copyright 2026, posts dated June and September 2026) and About Us page read. No admission price is stated, so none is given. Point is the OSM building 'Library and Family Heritage House' (Photon); the Census match for 5840 26th St W is about 200 m east."
   },
   {
     "id": "fantasy-of-flight",
@@ -7894,6 +8229,38 @@
     "notes": "Verified 2026-09-27: fmopa.org's home and about pages read through the reader proxy (address 1630 E 7th Avenue, 813-221-2222; founded 2001 as the Tampa Gallery of Photographic Arts; 'Exposure: 25 Years of FMoPA' on view through Dec 6, 2026). fmopa.org/visit now returns a bot-check page, so hours, prices and the accessibility text (read by the researcher through a proxy) could not be re-read: accessibility removed, hours and prices stay null. The quote is on the Visit Tampa Bay listing (quote_source). Coordinates moved to the OSM museum feature."
   },
   {
+    "id": "florida-orange-groves-winery",
+    "name": "Florida Orange Groves Winery",
+    "kind": "distillery-winery",
+    "topics": [
+      "drink",
+      "shopping"
+    ],
+    "area": "west-stpete",
+    "address": "1500 Pasadena Ave S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33707",
+    "lat": 27.752891,
+    "lng": -82.737902,
+    "geo_source": "photon",
+    "url": "https://www.floridawine.com/",
+    "phone": "(727) 347-4025",
+    "hours_text": "Tours on the half hour 10 AM–4 PM Mon–Sat, noon–3:30 PM Sun; tastings 10 AM–4:30 PM Mon–Sat, noon–4 PM Sun",
+    "summary": "Third-generation, family-run winery on Pasadena Avenue South that makes over 43 varieties of tropical fruit wines; the family began by packing and shipping citrus in St. Petersburg in the early 1970s. You can take a tour, taste the wines and shop the gift shop.",
+    "quote": "Florida Orange Groves Winery is a third generation, family owned and operated, tropical fruit winery.",
+    "status": "open",
+    "tags": [
+      "winery",
+      "tastings",
+      "tours",
+      "citrus"
+    ],
+    "source_url": "https://www.floridawine.com/",
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. floridawine.com read with curl: 'Florida’s Original Tropical Fruit Winery' (its own tagline), 'producing over 43 different varieties', address, phone, tour and tasting hours. Like Ted Peters, the address is in the city of South Pasadena with a St. Petersburg mailing address; filed under west-stpete."
+  },
+  {
     "id": "florida-railroad-museum",
     "name": "Florida Railroad Museum",
     "kind": "museum",
@@ -8277,7 +8644,7 @@
     "url": "https://www.focacciasandwich.com/",
     "phone": "(941) 924-2268",
     "hours_text": "Tue–Sat 8 AM–4 PM",
-    "summary": "Bakery and sandwich shop from chef Nick Sammelman that bakes its own focaccia loaves and builds breakfast and lunch sandwiches on them. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
+    "summary": "Bakery and sandwich shop that bakes its own focaccia loaves and builds breakfast and lunch sandwiches on them. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
     "quote": "Bringing joy to people through artisan crafted sandwiches, on house made focaccia with clean, wholesome ingredients.",
     "status": "open",
     "tags": [
@@ -8293,7 +8660,8 @@
       "https://www.visitsarasota.com/article/michelin-guide-recognized-james-beard-dining-sarasota",
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Chef's name removed: not on the pages read."
   },
   {
     "id": "fort-cooper-state-park",
@@ -8667,7 +9035,8 @@
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/",
       "https://www.visitstpeteclearwater.com/profile/fortu-restaurant/142417"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Tourism profile: 'Located in the historic Ponce De Leon Hotel'. Michelin 2026 recommended (not marked new)."
   },
   {
     "id": "fortune-taylor-bridge",
@@ -8934,6 +9303,46 @@
     "notes": "Homepage: 6099 Central Avenue; (727) 498-5205; current shows. City page: 'Located between downtown and the beaches'; 'since 2008'. Verifier 2026-09-27: homepage re-read (quote verbatim, address, phone, 2026 runs Sep 18 - Dec 24); city page re-read ('between downtown and the beaches', 'since 2008')."
   },
   {
+    "id": "frenchys-original-cafe",
+    "name": "Frenchy's Original Cafe",
+    "aliases": [
+      "Frenchy's Cafe"
+    ],
+    "kind": "restaurant",
+    "topics": [
+      "food",
+      "beaches",
+      "history"
+    ],
+    "area": "clearwater-beach",
+    "address": "41 Baymont St",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.982082,
+    "lng": -82.826658,
+    "geo_source": "census",
+    "url": "https://frenchysonline.com/frenchys-original-cafe/",
+    "phone": "(727) 446-3607",
+    "hours_text": "Daily 11 AM–10 PM",
+    "summary": "The first Frenchy's, opened in 1981 on Baymont Street in Clearwater Beach: a small cafe serving many of the group's original menu items, such as smoked fish spread, seafood gumbo, boiled shrimp and Greek salad. The restaurant says its Super Grouper sandwich made its debut here.",
+    "status": "open",
+    "tags": [
+      "grouper-sandwich",
+      "seafood",
+      "frenchys",
+      "historic",
+      "landmark-restaurant"
+    ],
+    "source_url": "https://frenchysonline.com/frenchys-original-cafe/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
+      "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added (the researcher could not read frenchysonline.com; WebFetch now reads it, curl still gets a bot challenge). The page: 41 Baymont St., (727) 446-3607, open daily 11–10, 'Opened in 1981'. Visit St. Pete-Clearwater's landmark list: 'Established: 1981'. I Love the Burg (Nov 10, 2024) reported it had reopened after the 2024 hurricanes. No quote because WebFetch output is not reliably verbatim."
+  },
+  {
     "id": "frenchys-rockaway-grill",
     "name": "Frenchy's Rockaway Grill",
     "aliases": [
@@ -8958,8 +9367,8 @@
     "geo_source": "census",
     "url": "https://frenchysonline.com/frenchys-rockaway/",
     "phone": "(727) 446-4844",
-    "hours_text": "Mon–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM; Sun 11 AM–10 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Open-air restaurant on the sand at Clearwater Beach serving Gulf seafood, including Frenchy's grouper sandwich, with two bars and live music daily. It is one of several Frenchy's restaurants on the beach; the first, Frenchy's Original Cafe, opened in 1981, per Visit St. Pete-Clearwater.",
+    "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "summary": "Frenchy's largest restaurant, open-air on the sand at Clearwater Beach, serving Gulf seafood including the grouper sandwich and she-crab soup, with two bars and live music daily from local artists. The Frenchy's group says it has been a local favorite since 1981.",
     "signature": true,
     "status": "open",
     "tags": [
@@ -8969,14 +9378,15 @@
       "frenchys",
       "live-music"
     ],
-    "source_url": "https://www.visitstpeteclearwater.com/profile/frenchy-s-rockaway-grill/138419",
+    "source_url": "https://frenchysonline.com/frenchys-rockaway/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants",
-      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
-      "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/"
+      "https://frenchysonline.com/",
+      "https://www.visitstpeteclearwater.com/profile/frenchy-s-rockaway-grill/138419",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/",
+      "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "frenchysonline.com blocked both WebFetch and curl (bot challenge), so the tourism profile is the source. Its hours are current on that profile; no closure notice there. I Love the Burg (Nov 10, 2024) reported the Rockaway Grill was still recovering from Hurricanes Helene and Milton while the Saltwater Cafe and the original cafe had reopened; the tourism profile now lists regular hours. Michael 'Frenchy' Preston opened the first Frenchy's in 1981, per that article."
+    "notes": "frenchysonline.com blocked both WebFetch and curl (bot challenge), so the tourism profile is the source. Its hours are current on that profile; no closure notice there. I Love the Burg (Nov 10, 2024) reported the Rockaway Grill was still recovering from Hurricanes Helene and Milton while the Saltwater Cafe and the original cafe had reopened; the tourism profile now lists regular hours. Michael 'Frenchy' Preston opened the first Frenchy's in 1981, per that article. VERIFIER 2026-09-27: frenchysonline.com now reads through WebFetch (curl still gets a bot challenge), so the official page is the source. It calls Rockaway 'our largest venue' with two bars and daily live music; hours Sun–Thu 11–10, Fri–Sat 11–11. I Love the Burg (May 18, 2026) lists it among open beach bars. No quote: WebFetch output is summarized, not verbatim."
   },
   {
     "id": "frenchys-saltwater-cafe",
@@ -8993,9 +9403,10 @@
     "lat": 27.979548,
     "lng": -82.826317,
     "geo_source": "census",
-    "url": "https://frenchysonline.com/",
-    "summary": "Frenchy's seafood cafe on Poinsettia Avenue, first opened about 35 years before 2024, known for its grouper sandwiches (including a grouper Reuben), conch fritters and a dog-friendly back patio. It reopened in November 2024 after Hurricanes Helene and Milton.",
-    "quote": "Frenchy’s Saltwater Café (419 Poinsettia Ave), a beloved seafood haven, has reopened after hurricanes Helene and Milton.",
+    "url": "https://frenchysonline.com/frenchys-saltwater-cafe/",
+    "phone": "(727) 461-6295",
+    "hours_text": "Daily 11 AM–10 PM",
+    "summary": "Frenchy's seafood cafe on Poinsettia Avenue, a block off the beach; the Frenchy's site calls it a local favorite since 1989. It reopened in November 2024 after Hurricanes Helene and Milton, per I Love the Burg.",
     "status": "open",
     "tags": [
       "grouper-sandwich",
@@ -9003,12 +9414,46 @@
       "frenchys",
       "dog-friendly"
     ],
-    "source_url": "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/",
+    "source_url": "https://frenchysonline.com/frenchys-saltwater-cafe/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
+      "https://ilovetheburg.com/frenchys-saltwater-cafe-clearwater/",
+      "https://frenchysonline.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "frenchysonline.com blocked both WebFetch and curl. Source is I Love the Burg (Nov 10, 2024), which also says Michael 'Frenchy' Preston opened the first Frenchy's on Clearwater Beach in 1981 and that the original cafe had reopened then. Visit St. Pete-Clearwater's waterfront list mentions the Intracoastal view and dog-friendly back patio."
+    "notes": "frenchysonline.com blocked both WebFetch and curl. Source is I Love the Burg (Nov 10, 2024), which also says Michael 'Frenchy' Preston opened the first Frenchy's on Clearwater Beach in 1981 and that the original cafe had reopened then. Visit St. Pete-Clearwater's waterfront list mentions the Intracoastal view and dog-friendly back patio. VERIFIER 2026-09-27: Source switched to the official page (read with WebFetch): 419 Poinsettia Ave, (727) 461-6295, open daily 11–10, 'Local Favorite since 1989'. The old quote was a news sentence from I Love the Burg, not the restaurant's words, so it was dropped. Menu details (grouper Reuben, conch fritters, dog-friendly patio) came only from the 2024 article and were removed."
+  },
+  {
+    "id": "frenchys-south-beach-cafe",
+    "name": "Frenchy's South Beach Cafe",
+    "kind": "restaurant",
+    "topics": [
+      "food",
+      "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "351 S Gulfview Blvd",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.971629,
+    "lng": -82.829366,
+    "geo_source": "photon",
+    "url": "https://frenchysonline.com/frenchys-south-beach-cafe/",
+    "phone": "(727) 441-9991",
+    "hours_text": "Sun–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "summary": "Frenchy's restaurant on Beach Walk in south Clearwater Beach, with open-air dining, a large sidewalk patio facing the Gulf and a private upstairs room for groups of up to 30; the menu includes the Super Grouper sandwich.",
+    "status": "open",
+    "tags": [
+      "grouper-sandwich",
+      "seafood",
+      "frenchys"
+    ],
+    "source_url": "https://frenchysonline.com/frenchys-south-beach-cafe/",
+    "also_sources": [
+      "https://frenchysonline.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added from the official page (read with WebFetch): 351 South Gulfview Blvd, (727) 441-9991, hours. Coordinates: the OpenStreetMap point for the restaurant."
   },
   {
     "id": "frescos-waterfront-bistro",
@@ -9045,7 +9490,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "frescoswaterfront.com returned a Cloudflare challenge; facts from the St. Pete Pier restaurant page and the tourism profile."
+    "notes": "frescoswaterfront.com returned a Cloudflare challenge; facts from the St. Pete Pier restaurant page and the tourism profile. VERIFIER 2026-09-27: frescoswaterfront.com still returns 403 to both fetchers; St. Pete Pier page re-read (near the Pier entrance, wrap-around deck, lunch, dinner and weekend brunch)."
   },
   {
     "id": "friendly-fisherman",
@@ -9088,7 +9533,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater says it opened in 1978 as the first restaurant at John's Pass. John's Pass was damaged in the 2024 hurricanes; the site shows current hours (page modified Feb 2026)."
+    "notes": "Visit St. Pete-Clearwater says it opened in 1978 as the first restaurant at John's Pass. John's Pass was damaged in the 2024 hurricanes; the site shows current hours (page modified Feb 2026). VERIFIER 2026-09-27: Re-read: since 1978, Dockside Lounge, 'Cook Your Catch', open daily from 11 AM, closes 9 PM Sun–Thu and 10 PM Fri–Sat."
   },
   {
     "id": "funny-bone-tampa",
@@ -9339,7 +9784,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read gigglewaters.com (1920s theme, one-screen classic movie theater, bourbon-forward cocktails, The 1919 Old Fashioned, film-inspired drinks, no reservations, hours)."
   },
   {
     "id": "glazer-childrens-museum",
@@ -9545,7 +9991,7 @@
     "geo_source": "census",
     "url": "https://www.greenbenchbrewing.com/",
     "hours_text": "Mon–Thu noon–10 PM; Fri–Sat noon–midnight; Sun noon–9 PM",
-    "summary": "Brewery with a tasting room and beer garden on Baum Avenue North; its owners say they opened St. Petersburg's first microbrewery, after starting construction in 2013. The company also runs Webb's City Cellar, a mead and cider bar.",
+    "summary": "Brewery with a tasting room and beer garden on Baum Avenue North; its owners say they opened St. Petersburg's first microbrewery, after starting construction in 2013. It also runs Webb's City Cellar (mead and cider), and on Sep 25, 2026 it opened a bar and lounge upstairs, Upstairs at Webb's.",
     "quote": "Our doors, our bars, our benches, are open to everyone.",
     "status": "open",
     "tags": [
@@ -9558,9 +10004,11 @@
     "source_url": "https://www.greenbenchbrewing.com/",
     "also_sources": [
       "https://greenbenchbrewing.com/our-story",
-      "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
+      "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south",
+      "https://stpeterising.com/home/green-bench-brewing-to-open-a-new-beer-bar-upstairs-at-webbs-in-downtown-st-pete"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Upstairs at Webb's opening (Sep 25, 2026, above Webb's City Cellar at 1133 Baum Ave N) per St Pete Rising, Sep 24, 2026."
   },
   {
     "id": "grindhaus-brew-lab",
@@ -9591,7 +10039,8 @@
       "https://grindhausbrewlab.com/location-hours/",
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/central"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read: Thu 2–10, Fri–Sat 2–11, Sun 2–7; movie nights and events on its calendar for Oct 2026."
   },
   {
     "id": "gulfport-brewery-eatery",
@@ -9617,7 +10066,7 @@
     "geo_source": "census",
     "url": "https://www.gulfport-brewing.com/",
     "phone": "(727) 954-4109",
-    "summary": "Brewery and kitchen in a beach bungalow in Gulfport's historic waterfront district, serving its own beers since 2020, including the Hippie Oasis IPA; Visit St. Pete-Clearwater notes it welcomes dogs.",
+    "summary": "Brewery and kitchen in a beach bungalow in Gulfport's historic waterfront district, serving its own beers since 2020, including the Hippie Oasis IPA.",
     "quote": "Located in The Gulfport historic waterFront District, Our BEACH Bungalow HAS BEEN SERVING UP AWARD WINNING BREWS, Food & Entertainment since 2020.",
     "status": "open",
     "tags": [
@@ -9629,7 +10078,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/gulfport-brewery-eatery/138990"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: 'welcomes dogs' removed: on the tourism profile it comes only from a guest review."
   },
   {
     "id": "gulfport-casino-ballroom",
@@ -9831,7 +10281,8 @@
       "https://www.3bestchefs.com/",
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read guppys.com and 3bestchefs.com ('Since 1985')."
   },
   {
     "id": "hampton-terrace-historic-district",
@@ -9993,7 +10444,7 @@
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "Phone from the Visit St. Pete-Clearwater profile. The site spells the hotel 'Albermarle'."
+    "notes": "Phone from the Visit St. Pete-Clearwater profile. The site spells the hotel 'Albermarle'. VERIFIER 2026-09-27: Re-read harveys4thstreet.com: 'Est. April 1, 1984', 'fresh gulf grouper daily', hours and decor sentence confirmed."
   },
   {
     "id": "hellas-restaurant-and-bakery",
@@ -10020,7 +10471,7 @@
     "geo_source": "census",
     "url": "https://hellasbakery.com/",
     "phone": "(727) 943-2400",
-    "hours_text": "Mon–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 11 AM–9 PM (per Visit St. Pete-Clearwater)",
+    "hours_text": "Restaurant Sun–Thu 11 AM–9 PM, Fri–Sat 11 AM–10 PM; bakery Sun–Thu 9 AM–9:30 PM, Fri–Sat 9 AM–10:30 PM",
     "summary": "Greek restaurant and pastry bakery on the Sponge Docks, run by the Karterouliotis family since 1970; the menu runs from gyros and Greek salads to lamb chops and local seafood, and the bakery sells Greek pastries to eat in or take away.",
     "quote": "At Hellas Restaurant & Bakery, our family has been serving authentic Greek food and pastries for over 50 years.",
     "signature": true,
@@ -10037,7 +10488,8 @@
       "https://www.visitstpeteclearwater.com/profile/hellas-restaurant/138774",
       "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Hours now from hellasbakery.com (restaurant and bakery listed separately)."
   },
   {
     "id": "henry-b-plant-museum",
@@ -10107,7 +10559,8 @@
     "id": "heritage-village",
     "name": "Heritage Village",
     "aliases": [
-      "Pinellas County Heritage Village"
+      "Pinellas County Heritage Village",
+      "Heritage Village Park & Museum"
     ],
     "kind": "museum",
     "kinds": [
@@ -10133,6 +10586,15 @@
     "summary": "Pinellas County's 21-acre history museum park, open since 1976, with more than 28 historic structures from across the county, among them the 1924 Gandy Tower, the Turner Bungalow and the McKay Creek Boat Shop, plus two gallery spaces.",
     "quote": "Heritage Village includes over twenty-eight historic structures and features from across Pinellas County, as well as two gallery spaces.",
     "quote_source": "https://www.heritagevillagefl.org/about/",
+    "heritage": {
+      "designations": [],
+      "story": "Pinellas County's Parks & Conservation Resources Department has run Heritage Village as the county's local history museum since 1976, on 21 acres of the Pinewood Cultural Park. Its more than 28 historic structures range from an 1850s log cabin built by Clearwater's founding families, which the museum calls the oldest extant structure in the county, to the 1924 Gandy Tower that marked the entrance to the Gandy Bridge, the first bridge across the bay between St. Petersburg and Tampa, and a 1930s sponge warehouse from Tarpon Springs. The collection holds more than 14,000 objects, and the archives and library more than 9,000 photographs.",
+      "visiting": "Walk the paths between the houses, several furnished as period rooms, and visit the two gallery spaces; admission is free.",
+      "sources": [
+        "https://www.heritagevillagefl.org/about/",
+        "https://www.heritagevillagefl.org/"
+      ]
+    },
     "status": "open",
     "tags": [
       "historic-houses",
@@ -10140,11 +10602,10 @@
     ],
     "source_url": "https://www.heritagevillagefl.org/",
     "also_sources": [
-      "https://www.heritagevillagefl.org/about/",
       "https://pinellas.gov/parks/heritage-village/"
     ],
     "checked": "2026-09-27",
-    "notes": "Phone from the Google Maps link on pinellas.gov's Heritage Village page. Verifier 2026-09-27: 'It sits in the Pinewood Cultural Park with the Florida Botanical Gardens' is not on heritagevillagefl.org or pinellas.gov as read (pinellas.gov lists the two separately); removed."
+    "notes": "Merged from see-pinellas (verified) + history-region (verified); owner see-pinellas. | [see-pinellas] Phone from the Google Maps link on pinellas.gov's Heritage Village page. Verifier 2026-09-27: 'It sits in the Pinewood Cultural Park with the Florida Botanical Gardens' is not on heritagevillagefl.org or pinellas.gov as read (pinellas.gov lists the two separately); removed. | [history-region] Added by the verifier (2026-09-27) to give see-pinellas' heritage-village (shared id, owner) a heritage block; basic fields repeat see-pinellas' record and the museum's own pages (about page and home page read). No designation is claimed: Wikipedia's Pinellas NRHP list has no Heritage Village or McMullen-Coachman entry. The about page also places the museum in the 182-acre Pinewood Cultural Park with the Florida Botanical Gardens and Creative Pinellas (see-pinellas' verifier dropped a similar claim because it could not find it; it is on heritagevillagefl.org/about/). Point copied from see-pinellas (Census)."
   },
   {
     "id": "hi-fi-rooftop-bar",
@@ -10183,7 +10644,7 @@
       "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "The Fenway Hotel itself is a stay (stays slices)."
+    "notes": "The Fenway Hotel itself is a stay (stays slices). VERIFIER 2026-09-27: Re-read Fenway Hotel page (first-come seating, no reservations; hours)."
   },
   {
     "id": "hidden-springs-ale-works",
@@ -10986,10 +11447,11 @@
     "source_url": "https://www.thehurricane.com/",
     "also_sources": [
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater",
-      "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
+      "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants",
+      "https://www.fox13news.com/news/st-pete-beach-slowly-returns-normal-after-back-to-back-hurricanes"
     ],
     "checked": "2026-09-27",
-    "notes": "The site says the hotel site earlier held Page's Pavilion, a bathhouse built in 1912; the family expanded the first floor in 1986 and added the upper floors and rooftop bar in 1990."
+    "notes": "The site says the hotel site earlier held Page's Pavilion, a bathhouse built in 1912; the family expanded the first floor in 1986 and added the upper floors and rooftop bar in 1990. VERIFIER 2026-09-27: Open status: FOX 13 (Oct 28, 2024) reported 'Businesses like Hurricane Seafood Restaurant have also reopened' after Helene and Milton (owner Rick Falkenstein); its own site lists current hours and a 'Kick Off The Football Season' promotion, with no closure notice, and no later closure news was found. Pass-a-Grille neighbor The Dewey (109 8th Ave) never reopened after the 2024 storms (St Pete Rising, Jun 30, 2026) and is not included."
   },
   {
     "id": "hyde-park-historic-district",
@@ -11120,7 +11582,7 @@
       "https://www.visitstpeteclearwater.com/article/dine-these-michelin-recognized-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "MICHELIN Guide Florida 2026 (announced May 28, 2026) lists 'Il Ritorno, 449 Central Ave. N., #101, St. Petersburg, 33701' among recommended restaurants (the list is an image on the Michelin press page)."
+    "notes": "MICHELIN Guide Florida 2026 (announced May 28, 2026) lists 'Il Ritorno, 449 Central Ave. N., #101, St. Petersburg, 33701' among recommended restaurants (the list is an image on the Michelin press page). VERIFIER 2026-09-27: Michelin 2026 recommended table (image Recco_2_3 on the press page) lists 'Il Ritorno, 449 Central Ave. N., #101' (not marked new, so it was also in the 2025 St. Pete-Clearwater selection)."
   },
   {
     "id": "imagine-museum",
@@ -11178,7 +11640,7 @@
     "geo_source": "census",
     "url": "https://www.inbetweendays.co/",
     "phone": "(727) 358-3744",
-    "summary": "Sake and vinyl listening bar in a small house on 1st Avenue South, modeled on Tokyo's listening bars, serving sake, French-style oysters and small plates. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
+    "summary": "Sake and vinyl listening bar in a small house on 1st Avenue South, inspired by Tokyo's listening bars, pouring chilled sake and serving oysters in the French style. It was added as a recommended restaurant in the 2026 MICHELIN Guide Florida.",
     "quote": "Inspired by the underground listening bars of Tokyo, our little house is warmed by pair of 1972 Klipsch Cornwalls that adorn the back of the bar paired with two turn-tables and a diverse vinyl collection.",
     "status": "open",
     "tags": [
@@ -11195,7 +11657,7 @@
       "https://www.visitstpeteclearwater.com/profile/in-between-days/143144"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours differ between the site's structured data (Wed–Sat 5–10 PM) and Visit St. Pete-Clearwater (Wed–Sat 5–11 PM, Sun 5–10 PM), so hours are left unknown. Phone from the tourism profile."
+    "notes": "Hours differ between the site's structured data (Wed–Sat 5–10 PM) and Visit St. Pete-Clearwater (Wed–Sat 5–11 PM, Sun 5–10 PM), so hours are left unknown. Phone from the tourism profile. VERIFIER 2026-09-27: 'small plates' removed: not on the pages read."
   },
   {
     "id": "independent-bar-and-cafe",
@@ -11424,7 +11886,7 @@
     "url": "https://islandwaygrill.com/",
     "phone": "(727) 461-6617",
     "hours_text": "Mon–Thu 4–9 PM; Fri 4–10 PM; Sat noon–10 PM; Sun 4–9 PM (per Visit St. Pete-Clearwater)",
-    "summary": "Waterfront seafood, sushi and steak restaurant on Island Way beside the Mandalay Bay lagoon, per Visit St. Pete-Clearwater, with a dining room and patio over the water and steaks cooked on an oak and citrus open fire pit; Sunday brunch per Visit St. Pete-Clearwater.",
+    "summary": "Waterfront seafood, sushi and steak restaurant on Island Way in Clearwater Beach, with a dining room and waterfront patio, steaks cooked on an oak and citrus open fire pit, Sunday brunch and dock slips for boaters. It is part of Baystar Restaurant Group.",
     "quote": "We take pride in our fresh seafood, delicious sushi, & hand-cut wood-fired steaks.",
     "status": "open",
     "tags": [
@@ -11439,7 +11901,8 @@
       "https://www.visitstpeteclearwater.com/profile/island-way-grill/139519",
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Summary rewritten from islandwaygrill.com (the old text leaned on the tourism profile twice). Hours still from the tourism profile."
   },
   {
     "id": "italian-club",
@@ -11799,6 +12262,51 @@
     "notes": "Verifier 2026-09-27: address, phone and hours corrected from the bar's own location page (705 S Oregon Ave, (813) 737-0740); the Visit Tampa Bay listing gives 1500 W Swann Ave and (813) 358-2037, the same corner (census points 2 m apart). Summary facts from the homepage."
   },
   {
+    "id": "jimi-hendrix-historical-marker",
+    "name": "Jimi Hendrix historical marker",
+    "aliases": [
+      "Jimi Hendrix marker, Curtis Hixon Waterfront Park"
+    ],
+    "kind": "landmark",
+    "kinds": [
+      "historic-site"
+    ],
+    "topics": [
+      "history",
+      "music"
+    ],
+    "area": "downtown-tampa",
+    "address": "N Ashley Dr at E Zack St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.950226,
+    "lng": -82.46076,
+    "geo_source": "osm",
+    "url": "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-jimi-hendrix",
+    "summary": "A 2019 county marker in Curtis Hixon Waterfront Park recalling Jimi Hendrix's two 1968 concerts at Curtis Hixon Hall, which stood where the park is now. The marker says each show drew more than 7,000 fans.",
+    "heritage": {
+      "built": "2019 (marker)",
+      "architect": null,
+      "style": null,
+      "designations": [],
+      "era": "postwar",
+      "story": "Jimi Hendrix played Tampa on August 18 and November 23, 1968, at Curtis Hixon Hall, now the site of Curtis Hixon Waterfront Park. The marker says both concerts were near sellouts with over 7,000 fans each night, two of the 216 concerts the Jimi Hendrix Experience played from 1967 to 1970. The Hillsborough County Historical Advisory Council and Chase Corley, founder of the University of Tampa Guitar Club, erected it in 2019.",
+      "visiting": "The marker is in Curtis Hixon Waterfront Park at North Ashley Drive and East Zack Street, on the right when traveling south on Ashley; the same text is on both sides. It is a Soulwalk stop.",
+      "sources": [
+        "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-jimi-hendrix",
+        "https://www.tampa.gov/soulwalk/historic-markers/jimi-hendrix"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-jimi-hendrix",
+    "also_sources": [
+      "https://www.tampa.gov/soulwalk/historic-markers/jimi-hendrix"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Point: the west end of OpenStreetMap's East Zack Street (its intersection with North Ashley Drive), from Photon's extent for that way; the marker is on the park (west) side of Ashley. Curtis Hixon Waterfront Park itself is the venues-bay record curtis-hixon-waterfront-park."
+  },
+  {
     "id": "jimmys-crows-nest",
     "name": "Jimmy's Crow's Nest",
     "kind": "bar",
@@ -11820,7 +12328,7 @@
     "url": "https://jimmyscrowsnest.com/",
     "phone": "(727) 683-0002",
     "hours_text": "Mon–Thu and Sun noon–midnight; Fri–Sat noon–2 AM (per Visit St. Pete-Clearwater)",
-    "summary": "Rooftop bar and restaurant on the tenth floor of the Pier House 60 Marina Hotel, with views over the Intracoastal Waterway, downtown Clearwater and the beach; on-site parking.",
+    "summary": "Rooftop bar and restaurant on the tenth floor of the Pier House 60 Marina Hotel next to Clearwater Marina, looking over Pier 60 and the marina, with a nightly sunset celebration and on-site parking.",
     "status": "open",
     "parking_text": "On-site parking",
     "tags": [
@@ -11833,7 +12341,8 @@
       "https://www.visitstpeteclearwater.com/profile/jimmy-s-crow-s-nest/138579",
       "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: 'Intracoastal Waterway, downtown Clearwater' view claim replaced by the site's own words (Pier 60, Clearwater Marina)."
   },
   {
     "id": "john-chesnut-sr-park",
@@ -12124,7 +12633,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates from the OpenStreetMap point for Ka'Tiki on West Gulf Blvd (the Census match fell on the main Gulf Blvd)."
+    "notes": "Coordinates from the OpenStreetMap point for Ka'Tiki on West Gulf Blvd (the Census match fell on the main Gulf Blvd). VERIFIER 2026-09-27: Re-read katikisunsetbeach.com (since 1982, 21+, 9 AM–2 AM daily, live music 7 days). Operating: The Bradenton Times listed a Sep 22, 2026 show there; I Love the Burg (May 18, 2026) names it next to Caddy's."
   },
   {
     "id": "keel-farms",
@@ -13154,7 +13663,10 @@
     "lng": -82.53381,
     "geo_source": "census",
     "url": "https://lucky8srq.com/",
-    "summary": "Southern comfort-food restaurant in Sarasota's Southside Village from chef Mark Majorie, inspired by New Orleans neighborhood eateries. It was named a Bib Gourmand (good food at a good value) in the 2026 MICHELIN Guide Florida, one of three Sarasota restaurants that WWSB reported as the city's first Michelin recognition.",
+    "phone": "(941) 444-0155",
+    "hours_text": "Mon–Thu 11 AM–10 PM; Fri–Sat 11 AM–11 PM",
+    "summary": "New Orleans-inspired comfort-food restaurant in Sarasota from chef Mark Majorie and Eddie Zaki, serving po'boys, red beans and rice, collard greens and smash burgers. It was named a Bib Gourmand (good food at a good value) in the 2026 MICHELIN Guide Florida, one of three Sarasota restaurants that WWSB reported as the city's first Michelin recognition.",
+    "quote": "Our menu is a love letter to the Crescent City, featuring traditional New Orleans staples like po’boys, red beans and rice, collard greens, and smash burgers",
     "status": "open",
     "tags": [
       "michelin-bib-gourmand",
@@ -13162,13 +13674,14 @@
       "southern",
       "new-orleans"
     ],
-    "source_url": "https://www.visitsarasota.com/article/michelin-guide-recognized-james-beard-dining-sarasota",
+    "source_url": "https://lucky8srq.com/",
     "also_sources": [
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/",
-      "https://www.mysuncoast.com/2026/06/29/tralia-pizza-puts-sarasota-michelin-map/"
+      "https://www.mysuncoast.com/2026/06/29/tralia-pizza-puts-sarasota-michelin-map/",
+      "https://www.visitsarasota.com/article/michelin-guide-recognized-james-beard-dining-sarasota"
     ],
     "checked": "2026-09-27",
-    "notes": "lucky8srq.com (the site Visit Sarasota links) returned a bot challenge to both WebFetch and curl, so hours and phone are unknown. Address from the Michelin 2026 Bib Gourmand table. 'First Michelin recognition for Sarasota' per WWSB (mysuncoast.com), which names Lucky 8, Tralia and Focaccia. Visit Sarasota's article describes chef Mark Majorie's New Orleans-inspired Southern comfort food; two WebFetch reads returned different wording, so no quote is used."
+    "notes": "lucky8srq.com (the site Visit Sarasota links) returned a bot challenge to both WebFetch and curl, so hours and phone are unknown. Address from the Michelin 2026 Bib Gourmand table. 'First Michelin recognition for Sarasota' per WWSB (mysuncoast.com), which names Lucky 8, Tralia and Focaccia. Visit Sarasota's article describes chef Mark Majorie's New Orleans-inspired Southern comfort food; two WebFetch reads returned different wording, so no quote is used. VERIFIER 2026-09-27: lucky8srq.com now answers curl, so it is the source (address, phone, hours Mon–Thu 11–10 and Fri–Sat 11–11; Sunday not listed; walk-in only). Michelin 2026 Bib Gourmand table: 'Lucky 8 (new), 1812 S. Osprey Ave., Sarasota, 34239'. 'Southside Village' removed (not on the pages read)."
   },
   {
     "id": "m-bird-armature-works",
@@ -13294,7 +13807,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
     "checked": "2026-09-27",
-    "notes": "The page says 'Located in the Heart of the Gulf Beaches'; the John's Pass Village location follows from its Village Blvd address. John's Pass businesses were hit by the 2024 hurricanes; the site shows current hours and events."
+    "notes": "The page says 'Located in the Heart of the Gulf Beaches'; the John's Pass Village location follows from its Village Blvd address. John's Pass businesses were hit by the 2024 hurricanes; the site shows current hours and events. VERIFIER 2026-09-27: FOX 13 (Oct 30, 2024): 'Mad Beach Brewing Company reopens' after the 2024 storms; hours on the site Mon–Sun 11 AM–10 PM."
   },
   {
     "id": "mad-dogs-and-englishmen",
@@ -13502,7 +14015,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "No website; the profile links a Facebook page. Status from the profile's current hours (a visitor review on the profile says it survived the 2024 hurricanes); not otherwise confirmed."
+    "notes": "No website; the profile links a Facebook page. Status from the profile's current hours (a visitor review on the profile says it survived the 2024 hurricanes); not otherwise confirmed. VERIFIER 2026-09-27: Tourism profile re-read. Patch (Jul 24, 2026) named it among America's best dive bars, so it is operating."
   },
   {
     "id": "malios-prime-steakhouse",
@@ -13570,7 +14083,7 @@
       "https://spongedocks.net/tarpon-springs-restaurants/"
     ],
     "checked": "2026-09-27",
-    "notes": "The family history (Mama came from Kalymnos, lived in Tarpon Springs from 1961, husband John was a sponge diver) is from the SpongeDocks.net listing. Hours differ between the restaurant's structured data (daily 11–9) and the listing (daily 11–10), so hours are left unknown."
+    "notes": "The family history (Mama came from Kalymnos, lived in Tarpon Springs from 1961, husband John was a sponge diver) is from the SpongeDocks.net listing. Hours differ between the restaurant's structured data (daily 11–9) and the listing (daily 11–10), so hours are left unknown. VERIFIER 2026-09-27: Address and family history from the SpongeDocks.net listing (735 Dodecanese Blvd #40; Mama from Kalymnos, in Tarpon Springs since 1961; opened in 1978 with her eldest son). The official site gives no street address."
   },
   {
     "id": "manatee-performing-arts-center",
@@ -13722,7 +14235,8 @@
       "https://www.visitstpeteclearwater.com/profile/mandarin-hide/138931",
       "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read: 'For over 16 years on Central Avenue'; hours Mon closed, Tue–Thu 5 PM–3 AM, Fri 4 PM–3 AM, Sat–Sun noon–3 AM."
   },
   {
     "id": "manhattan-casino",
@@ -13769,7 +14283,7 @@
       "sources": [
         "https://www.stpete.org/visitors/attractions/manhattan_casino.php",
         "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
-        "https://www.historicmanhattancasino.org/",
+        "https://historicmanhattancasino.com/",
         "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
       ]
     },
@@ -13833,7 +14347,7 @@
       "https://www.marvistadining.com/about-us"
     ],
     "checked": "2026-09-27",
-    "notes": "Street address printed as '760 Broadway Street North' on the site."
+    "notes": "Street address printed as '760 Broadway Street North' on the site. VERIFIER 2026-09-27: About page re-read (Rufus Jordan c. 1912, 1921 hurricane, Chiles Hospitality in the 1980s, Beachside Hospitality Group in 2024); hours daily 11–9."
   },
   {
     "id": "marie-selby-botanical-gardens",
@@ -13902,7 +14416,7 @@
       "https://www.visitstpeteclearwater.com/profile/maritana/139635"
     ],
     "checked": "2026-09-27",
-    "notes": "The Don CeSar itself is a historic hotel (stays slices). The tourism profile's older description (AAA Four Diamond since 1994, Gayot top 10) is not repeated because the concept has changed."
+    "notes": "The Don CeSar itself is a historic hotel (stays slices). The tourism profile's older description (AAA Four Diamond since 1994, Gayot top 10) is not repeated because the concept has changed. VERIFIER 2026-09-27: Re-read doncesar.com: Chef Kenny Tufo, Wed–Sun 5:30–10 PM, resort casual, cashless hotel."
   },
   {
     "id": "marlene-rose-gallery",
@@ -14884,7 +15398,7 @@
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "No official website found; the tourism profile links a Facebook page. The landmark list credits founder Andreas Salivaras. Status taken from the tourism profile's current hours; not independently confirmed."
+    "notes": "No official website found; the tourism profile links a Facebook page. The landmark list credits founder Andreas Salivaras. Status taken from the tourism profile's current hours; not independently confirmed. VERIFIER 2026-09-27: Tourism profile re-read (628 Dodecanese Blvd, daily 11 AM–10 PM, grilled seafood and meats, grilled octopus, indoor and outdoor seating); landmark list 'Established: 1992'. Still no official site; the linked Facebook page is new (2024-era id), so the verifier could not confirm status beyond the tourism listing."
   },
   {
     "id": "nineteen61",
@@ -14924,7 +15438,8 @@
       "https://www.nineteen61.com/about",
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Michelin 2026 recommended (new). Hours re-read on the home page."
   },
   {
     "id": "noble-rice",
@@ -15037,7 +15552,7 @@
         }
       ],
       "era": "boomtown",
-      "story": "The City of Tampa says these buildings are the last surviving elements of the early downtown business district, which began before 1900 and peaked in the 1930s, serving residents who lived between the Hillsborough River and Nebraska Avenue. The National Register district, listed on March 28, 2002, is bounded by Florida Avenue and East Fortune, Tampa, Franklin and East Harrison streets. The National Register nomination notes that the land boom slowed in 1926, when financial backing for the Davis Islands real estate venture collapsed.",
+      "story": "The City of Tampa says these buildings are the last surviving elements of the early downtown business district, which began before 1900 and peaked in the 1930s, serving residents who lived between the Hillsborough River and Nebraska Avenue. The National Register district, listed on March 28, 2002, is roughly bounded by Florida Avenue and East Fortune, Tampa, Franklin and East Harrison streets. The National Register nomination notes that the land boom slowed in 1926, when financial backing for the Davis Islands real estate venture collapsed.",
       "visiting": "Walk North Franklin Street between Harrison and Fortune streets; the buildings are private.",
       "sources": [
         "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
@@ -15185,7 +15700,7 @@
     "url": "https://okeefestavern.com/",
     "phone": "(727) 442-9034",
     "hours_text": "Sun–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM",
-    "summary": "Irish restaurant and pub on South Fort Harrison Avenue, opened in 1961 by Bill O'Keefe as a 50-seat tap room and run by the DuQuesnay family since 1980; it serves Irish dishes such as corned beef and cabbage and shepherd's pie and holds a large St. Patrick's Day celebration.",
+    "summary": "Irish restaurant and pub on South Fort Harrison Avenue, opened in 1961 by Bill O'Keefe as a 50-seat tap room and run by the DuQuesnay family since 1980; the family grew its annual St. Patrick's Day celebration into what it calls one of the largest private parties in America.",
     "quote": "Established in 1961 by Bill O’Keefe, initially O’Keefe’s consisted of only the “Tap Room”, seating about 50 people.",
     "quote_source": "https://okeefestavern.com/about-us/",
     "status": "open",
@@ -15201,7 +15716,7 @@
       "https://www.visitstpeteclearwater.com/profile/o-keefe-s-tavern/139697"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater quotes the tavern calling itself the home of Florida's largest St. Patrick's celebration; not repeated as fact."
+    "notes": "Visit St. Pete-Clearwater quotes the tavern calling itself the home of Florida's largest St. Patrick's celebration; not repeated as fact. VERIFIER 2026-09-27: Dish names (corned beef and cabbage, shepherd's pie) removed: not on the pages read."
   },
   {
     "id": "old-courthouse-heritage-museum",
@@ -15559,7 +16074,7 @@
     "lng": -82.460839,
     "geo_source": "census",
     "url": null,
-    "summary": "A Carnegie-funded Classical Revival library of 1915 designed by Fred J. James, Tampa's main library until 1968. It now holds library administrative offices; see it from the street.",
+    "summary": "A Carnegie-funded Classical Revival library of 1915 designed by Fred J. James, Tampa's main library until 1968. Wikipedia says library administration has occupied it since 2016; see it from the street.",
     "heritage": {
       "built": "1915",
       "architect": "Fred J. James (builder Aulic, Bastes & Hudnell)",
@@ -15681,7 +16196,7 @@
       "water"
     ],
     "area": "gulfport",
-    "address": "5405 Shore Blvd",
+    "address": "5405 Shore Blvd S",
     "city": "Gulfport",
     "state": "FL",
     "zip": "33707",
@@ -15690,7 +16205,7 @@
     "geo_source": "census",
     "url": "https://www.omaddys.com/",
     "phone": "(727) 323-8643",
-    "hours_text": "Daily 11 AM–midnight (per Visit St. Pete-Clearwater)",
+    "hours_text": "Daily 11 AM–midnight",
     "summary": "Bar and grill on the Gulfport waterfront with outdoor seating facing the water and the Gulfport pier, serving Gulf seafood, steaks, pasta and vegetarian dishes, with live music every day.",
     "quote": "Our outdoor seating offers great views of the Gulfport waterfront – watch the boats sail by, the fisherman on the Gulfport Pier, or the sun setting over the water.",
     "status": "open",
@@ -15705,7 +16220,8 @@
       "https://www.visitstpeteclearwater.com/profile/o-maddy-s-bar-and-grille/138553",
       "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Street suffix S and hours from omaddys.com. Operating: I Love the Burg (Jun 22, 2026) reported its new rooftop bar open; The Gabber (Mar 20, 2026) reported a second floor opening."
   },
   {
     "id": "open-air-post-office",
@@ -16196,6 +16712,57 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "palmetto-beach-historic-district",
+    "name": "Palmetto Beach Historic District",
+    "aliases": [
+      "22nd Street Historic District"
+    ],
+    "kind": "historic-district",
+    "topics": [
+      "history"
+    ],
+    "area": "ybor-city",
+    "address": null,
+    "city": "Tampa",
+    "state": "FL",
+    "lat": 27.94799,
+    "lng": -82.431364,
+    "geo_source": "wikipedia",
+    "url": null,
+    "summary": "A National Register residential district just south of Ybor City, platted in 1894, where four cigar factories were built, the first in 1895.",
+    "heritage": {
+      "built": null,
+      "architect": null,
+      "style": null,
+      "designations": [
+        {
+          "name": "National Register of Historic Places",
+          "ref": "12000496",
+          "year": 2012,
+          "url": "https://npgallery.nps.gov/AssetDetail/NRIS/12000496"
+        }
+      ],
+      "era": "boomtown",
+      "story": "Wikipedia says the neighborhood was platted in 1894 and that four cigar factories were built there, the first in 1895. The National Register listed the district on August 14, 2012, for community planning and architecture; the NPS describes it as roughly bounded by Durham, 28th, Thrace and 22nd streets and also records it as the 22nd Street Historic District.",
+      "visiting": "A residential neighborhood; the houses are private.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Palmetto_Beach_Historic_District",
+        "https://npgallery.nps.gov/AssetDetail/NRIS/12000496",
+        "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+        "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://en.wikipedia.org/wiki/Palmetto_Beach_Historic_District",
+    "also_sources": [
+      "https://npgallery.nps.gov/AssetDetail/NRIS/12000496",
+      "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Boundaries, other name and listing date from the NPS listed-properties spreadsheet (to 5/22/2026); areas of significance from NPGallery (whose location field is garbled: 'DeSoto County, Arcadia'). Area: the district lies just south of Ybor City (south of I-4), so ybor-city is the nearest area. Thin record: the nomination PDF was not read."
+  },
+  {
     "id": "palmetto-historical-park",
     "name": "Palmetto Historical Park",
     "aliases": [
@@ -16309,9 +16876,12 @@
     "source_url": "https://www.paradisegrille.com/",
     "also_sources": [
       "https://www.paradisegrille.com/our-story",
-      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
+      "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants",
+      "https://ilovetheburg.com/paradise-grille-reopens-st-pete-beach-bar/",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Reopened after the 2024 hurricanes: FOX 13 (Jan 27, 2025) and I Love the Burg (Feb 14, 2025); listed among open beach bars by I Love the Burg (May 18, 2026)."
   },
   {
     "id": "parkesdale-market",
@@ -16384,7 +16954,8 @@
       "outdoor-seating"
     ],
     "source_url": "https://www.parkshoregrill.com/",
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read: since 1996, 'the first major restaurant on this vibrant waterfront stretch', Chef Tyson Grant, hours."
   },
   {
     "id": "parque-amigos-de-jose-marti",
@@ -16743,10 +17314,11 @@
       "https://www.tampa.gov/soulwalk/historic-markers/scrub",
       "https://en.wikipedia.org/wiki/Bro_Bowl",
       "https://npgallery.nps.gov/AssetDetail/NRIS/13000811",
-      "https://www.visittampabay.com/blog/archive/post/the-history-vault-of-tampa-bay/"
+      "https://www.visittampabay.com/blog/archive/post/the-history-vault-of-tampa-bay/",
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm"
     ],
     "checked": "2026-09-27",
-    "notes": "GPS coordinates published on the City page. Whether the NRHP listing survives the bowl's demolition is not stated; the verifier should check."
+    "notes": "GPS coordinates published on the City page. Verified 2026-09-27: the NPS 'NRHP Listed properties' spreadsheet (listings up to 5/22/2026, linked from nps.gov data-downloads) still lists 13000811 Perry Harvey Sr. Park Skateboard Bowl as Listed; no removal found in the Removed spreadsheet."
   },
   {
     "id": "peter-o-knight-cottage",
@@ -16961,6 +17533,41 @@
     "notes": "Fishing fees were not stated on the pages read. No closure notice was found on the city's beach page (which invites visitors to 'go fishing on Pier 60'); the verifier should confirm the pier's post-2024 status on myclearwater.com if a Pier 60 page exists. Animals are not permitted on Pier 60 or the bathing beaches (service dogs excepted), per sunsetsatpier60.com. Verifier 2026-09-27: Post-hurricane status confirmed from dated news (the researcher's open question 2)."
   },
   {
+    "id": "pier-60-visitor-center",
+    "name": "Pier 60 Visitor Center",
+    "aliases": [
+      "Amplify Clearwater-Pier 60 Visitor Information Center",
+      "AMPLIFY Clearwater Pier 60 Visitor Center"
+    ],
+    "kind": "visitor-center",
+    "topics": [
+      "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "1 Causeway Blvd. (Pier 60)",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.977213,
+    "lng": -82.828905,
+    "geo_source": "photon",
+    "url": "https://amplifyclearwater.com/",
+    "phone": "(727) 442-3604",
+    "hours_text": "Open 7 days a week (times not listed)",
+    "summary": "A visitor center at Pier 60 on Clearwater Beach, run by AMPLIFY Clearwater, the Clearwater area's chamber of commerce.",
+    "quote": "Through projects, initiatives, events and our welcome centers, we connect tourists to our member businesses and our member businesses to tourism-driven educational and promotional resources.",
+    "status": "open",
+    "tags": [
+      "visitor-information"
+    ],
+    "source_url": "https://amplifyclearwater.com/",
+    "also_sources": [
+      "https://www.visitflorida.com/listing/amplify-clearwater-pier-60-visitor-information-center/25793/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. The AMPLIFY Clearwater site footer reads 'Pier 60 Visitor Center 1 Causeway Blvd. Clearwater Beach, FL 33767 Open 7 days a week 727-442-3604' (the administrative office is 1346 S Fort Harrison Ave, Clearwater). VISIT FLORIDA lists it as a certified center (with ZIP 33755). Coordinates are the OpenStreetMap 'Pier 60' feature (W11250192, man_made=pier), not the booth itself; VISIT FLORIDA's point is about 320 m west, out on the pier. VISIT FLORIDA also lists an 'Amplify Clearwater-Beach Office & Visitor Center' at 429 Poinsettia Ave; the chamber's own site does not mention it, so it is not recorded. Not to be confused with Honeymoon Island State Park, also 1 Causeway Blvd. (Dunedin)."
+  },
+  {
     "id": "pier-teaki",
     "name": "Pier Teaki",
     "kind": "bar",
@@ -16979,8 +17586,8 @@
     "geo_source": "photon",
     "url": "https://teakstpete.com/pier-teaki/",
     "phone": "(727) 513-8325",
-    "hours_text": "Mon–Fri 11 AM–11:59 PM; Sat–Sun 10 AM–midnight (per Visit St. Pete-Clearwater)",
-    "summary": "Tiki-style rooftop bar on top of the Pier Point building at the end of the St. Pete Pier, serving tropical cocktails and shareable bites, with private huts looking at the skyline and Tampa Bay. It is run by the owners of The Birchwood and turns 21-and-up after hours, per Visit St. Pete-Clearwater.",
+    "hours_text": "Mon–Fri 11 AM–midnight; Sat–Sun 10 AM–midnight (per Visit St. Pete-Clearwater)",
+    "summary": "Tiki-style rooftop bar on top of the Pier Point building at the end of the St. Pete Pier, serving tropical cocktails and shareable bites, with private Teaki Huts overlooking the skyline and Tampa Bay. Visit St. Pete-Clearwater says it has the same local owners as The Birchwood.",
     "status": "open",
     "tags": [
       "rooftop",
@@ -16995,7 +17602,7 @@
       "https://www.visitstpeteclearwater.com/list/best-rooftop-bars-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below)."
+    "notes": "Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below). VERIFIER 2026-09-27: The '21 and up after hours' claim came from a guest review on the tourism profile, not from the listing or the bar, so it was removed."
   },
   {
     "id": "pine-island-park",
@@ -17070,7 +17677,56 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read pawbeer.com (hours, Haines Rd taproom, animal-charity events)."
+  },
+  {
+    "id": "pinellas-point-mound",
+    "name": "Pinellas Point Mound",
+    "aliases": [
+      "Princess Hirrihigua Temple Mound Park",
+      "Pinellas Point Temple Mound"
+    ],
+    "kind": "historic-site",
+    "kinds": [
+      "park"
+    ],
+    "topics": [
+      "history"
+    ],
+    "area": "south-stpete",
+    "address": "1811–1827 Mound Pl S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.70384,
+    "lng": -82.657682,
+    "geo_source": "census",
+    "summary": "A Native American mound kept in a small city park on Mound Place in the Pinellas Point neighborhood of south St. Petersburg, a city historic landmark since 2003. Two plaques at the park recall its donation to the city and a 16th-century legend.",
+    "heritage": {
+      "designations": [
+        {
+          "name": "St. Petersburg Register of Historic Places (local landmark)",
+          "ref": "HPC #02-10",
+          "year": 2003,
+          "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        }
+      ],
+      "era": "indigenous",
+      "story": "The city's register lists the Pinellas Point Mound at 1811–1827 Mound Place South as a local historic landmark, designated in March 2003. A plaque at the base of the mound thanks Ed C. Wright for donating the site to the city in December 1958. A 1960 plaque placed by the Princess Hirrihigua Chapter of the Daughters of the American Revolution tells the story of Juan Ortiz, a member of the 1528 expedition sent from Cuba to find Pánfilo de Narváez, who the plaque says was saved by the chief's daughter and was rescued by Hernando de Soto in 1539.",
+      "visiting": "The city's markers list places the mound at Princess Hirrihigua Temple Mound Park on Mound Place, with the two plaques.",
+      "sources": [
+        "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf",
+        "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf",
+    "also_sources": [
+      "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27) from the two city PDFs (markers list updated Sep 19, 2017, entry 44; local register entry HPC #02-10). The researcher had left it out for lack of a descriptive page; neither city PDF gives the mound's size, age or builders, so none is claimed, and the DAR plaque's legend is reported only as the plaque's words. Wikipedia's Pinellas NRHP list has a 'Princess Mound Site' (ref 100004522, listed 2019-10-10, address restricted), and Commons photos of the Princess Mound Site call it 'part of Indian Mound Park'; no page read ties that listing to this park, so no NRHP designation is claimed. Point is the Census match for 1811 Mound Pl S."
   },
   {
     "id": "pinellas-trail",
@@ -17520,7 +18176,8 @@
       "https://www.rappbrewing.com/contact",
       "https://www.rappbrewing.com/about-us"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read home, About and Contact pages (40 taps, 5 oz flights, 2012, yeast bank of over 25 strains, hours)."
   },
   {
     "id": "raymond-james-stadium",
@@ -17692,7 +18349,8 @@
       "https://www.visitstpeteclearwater.com/profile/the-restorative/140618",
       "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read restorativerestaurant.com (2017, chef-owners, chef's counter, Top 30 2024 and 2025). Hours still from the tourism profile."
   },
   {
     "id": "richey-suncoast-theatre",
@@ -17897,7 +18555,7 @@
       "designations": [],
       "era": "modern",
       "story": "The Friends of the Riverwalk and the Tampa Bay History Center set up a committee of local experts that chose 30 honorees from 2012 through 2017. They include Florida's First People (the Mound Builders), Gavino Gutierrez, Ignacio Haya, Paulina Pedroso, Clara C. Frye, Blanche Armwood, Hugh Campbell Macfarlane and Peter Oliphant Knight.",
-      "visiting": "Free and outdoors along the Riverwalk; the Friends of the Riverwalk site has a biography of each honoree.",
+      "visiting": "Outdoors along the Riverwalk; OpenStreetMap maps the monuments along its length, from near Cotanchobee Fort Brooke Park (the Mound Builders, Peter O. Knight) to Tampa Heights (Clara C. Frye). The Friends of the Riverwalk site has a biography of each honoree.",
       "sources": [
         "https://thetampariverwalk.com/visit/historical-monument-trail.html"
       ]
@@ -17908,7 +18566,7 @@
       "https://www.visittampabay.com/blog/archive/post/the-history-vault-of-tampa-bay/"
     ],
     "checked": "2026-09-27",
-    "notes": "No coordinates: the page does not say where along the Riverwalk the monuments stand. Visit Tampa Bay says there are over 30 monuments and that they are built to the height of the individuals (not stated by the Friends' page)."
+    "notes": "No coordinates: the page does not say where along the Riverwalk the monuments stand. Visit Tampa Bay says there are over 30 monuments and that they are built to the height of the individuals (not stated by the Friends' page). Verified 2026-09-27: No single point: OSM (Photon) places honoree monuments from 27.9404,-82.4550 (Peter Oliphant Knight) and 27.9415,-82.4512 (Mound Builders) to 27.9592,-82.4635 (Clara C. Frye), so coordinates stay null."
   },
   {
     "id": "robarts-arena",
@@ -18046,7 +18704,7 @@
       "designations": [],
       "era": "modern",
       "story": "The branch began in 1933 as the Ybor City Branch Library in a storefront donated by the Italian Club; a building at 1505 N. Nebraska Avenue was dedicated in January 1969. On November 5, 2003, the county renamed it for Robert W. Saunders Sr., civil rights activist and former NAACP field director. Wikipedia reports that the 1969 building was replaced by a new two-story library that opened in August 2015, keeping a bronze bust of Saunders and the stone mural Symbols of Mankind.",
-      "visiting": "Free; open Monday to Saturday. The Civil Rights and NAACP displays are in the lobby and the History of Central Avenue hallway has touch panels with audio and video.",
+      "visiting": "Open Monday to Saturday, 10 AM to 6 PM. The Civil Rights and NAACP displays are in the lobby and the History of Central Avenue hallway has touch panels with audio and video.",
       "sources": [
         "https://hcplc.org/locations/robert-w-saunders-sr",
         "https://en.wikipedia.org/wiki/Robert_W._Saunders_Sr._Public_Library"
@@ -18193,6 +18851,44 @@
     "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Site header says Michelin Guide and 'Tampa Bay Times #1 2024'. Verifier 2026-09-27: chef-owner and handmade pasta confirmed on roccatampa.com/about (which also names a returning chef de cuisine); phone (813) 906-5445 is on the About page and in the MICHELIN data, not the homepage."
   },
   {
+    "id": "rod-and-reel-holmes-beach",
+    "name": "The Rod & Reel (Holmes Beach)",
+    "aliases": [
+      "Rod & Reel restaurant",
+      "Rod and Reel Holmes Beach"
+    ],
+    "kind": "restaurant",
+    "topics": [
+      "food",
+      "history"
+    ],
+    "area": "bradenton-anna-maria",
+    "address": "3246 East Bay Dr",
+    "city": "Holmes Beach",
+    "state": "FL",
+    "zip": "34217",
+    "lat": 27.492142,
+    "lng": -82.70741,
+    "geo_source": "census",
+    "hours_text": "Daily 8 AM–9 PM; breakfast until 11 AM (Nov 2025)",
+    "price_text": "Pier Burger $15; fried clam strips $16; grouper sandwich market price (Nov 2025)",
+    "summary": "Landside stand-in for the Rod & Reel Pier, which Hurricane Milton destroyed: a 60-seat restaurant in a Holmes Beach shopping plaza with indoor and outdoor seats, serving essentially the old pier menu, with the pier's sign, recovered planks and a mural of the pier inside. It opened on Nov 21, 2025, and the owner says the money goes toward rebuilding the pier.",
+    "status": "open",
+    "tags": [
+      "grouper-sandwich",
+      "breakfast",
+      "seafood",
+      "hurricane-rebuilt"
+    ],
+    "source_url": "https://amisun.com/the-rod-reel-restaurant-sets-sail/",
+    "also_sources": [
+      "https://baynews9.com/fl/tampa/news/2025/11/21/rod---reel-pier-restaurant-opens-its-temporary-location",
+      "https://www.fox13news.com/news/anna-maria-islands-rod-reel-pier-return-land"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. AMI Sun (Nov 25, 2025): opened Nov 21 at 3246 East Bay Drive, 60 seats, open seven days 8 a.m.–9 p.m., breakfast until 11 a.m., prices as listed; FOX 13 (Apr 2025) says it took the former Old Hamburg Schnitzelhaus space. rodandreelpier.com did not respond (502), so hours are as of the Nov 2025 article. The destroyed pier is rod-and-reel-pier."
+  },
+  {
     "id": "rod-and-reel-pier",
     "name": "Rod & Reel Pier",
     "aliases": [
@@ -18215,9 +18911,9 @@
     "lat": 27.537501,
     "lng": -82.740063,
     "geo_source": "census",
-    "summary": "Fishing pier and restaurant on Anna Maria Island's north shore, a landmark since 1947, known for its grouper sandwich and key lime pie. Hurricane Milton washed it away in October 2024; in April 2025 the owner, Oli Lemke, said the restaurant would reopen on land in a Holmes Beach shopping plaza, with the same staff and menu.",
+    "summary": "Fishing pier and restaurant on Anna Maria Island's north shore, a landmark since 1947, known for its grouper sandwich and key lime pie. Hurricane Milton destroyed it in October 2024 and only pilings and a memorial remain; the owner plans to rebuild, and meanwhile runs the Rod & Reel restaurant on land in Holmes Beach.",
     "status": "temporarily-closed",
-    "status_note": "The pier and its restaurant were washed away by Hurricane Milton (Oct 2024); only pilings and a memorial remain at the site. In April 2025 the owner announced a replacement restaurant on land in Holmes Beach (the former Old Hamburg Schnitzelhaus), per FOX 13. Whether that location is open in Sep 2026, and whether the pier will be rebuilt, was not confirmed.",
+    "status_note": "The pier and its restaurant were destroyed by Hurricane Milton (Oct 2024). The owner, Oli Lemke, opened a landside Rod & Reel restaurant at 3246 East Bay Drive, Holmes Beach, on Nov 21, 2025 and says its proceeds go toward rebuilding the pier, per AMI Sun (Nov 25, 2025). No reopening date for the pier was found.",
     "tags": [
       "historic",
       "fishing-pier",
@@ -18226,10 +18922,11 @@
     ],
     "source_url": "https://www.fox13news.com/news/anna-maria-islands-rod-reel-pier-return-land",
     "also_sources": [
+      "https://amisun.com/the-rod-reel-restaurant-sets-sail/",
       "https://www.annamaria.com/news-and-blog/the-complete-list-of-anna-maria-island-restaurants/"
     ],
     "checked": "2026-09-27",
-    "notes": "The address is the pier site, from a vacation-rental company's pre-storm restaurant list; the coordinates mark the old pier, not the Holmes Beach replacement. rodandreelpier.com did not respond. VERIFIER: check whether the Holmes Beach Rod & Reel is open and add its address as a separate record if so."
+    "notes": "The address is the pier site, from a vacation-rental company's pre-storm restaurant list; the coordinates mark the old pier, not the Holmes Beach replacement. rodandreelpier.com did not respond. VERIFIER: check whether the Holmes Beach Rod & Reel is open and add its address as a separate record if so. VERIFIER 2026-09-27: The landside restaurant is its own record: rod-and-reel-holmes-beach."
   },
   {
     "id": "rogers-park-golf-course",
@@ -18247,15 +18944,16 @@
       "black-history"
     ],
     "area": "north-tampa",
-    "address": "7801 N 30th St",
+    "address": "7911 N 30th St",
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 28.017982,
-    "lng": -82.426327,
+    "lat": 28.019472,
+    "lng": -82.426332,
     "geo_source": "census",
     "url": "https://rogersparkgolf.net/",
-    "summary": "An 18-hole public course on the Hillsborough River, built from 1948 to 1952 as the only golf course open to Tampa's Black residents during segregation. Its original site is on the National Register; the Tampa Sports Authority runs it.",
+    "phone": "813-356-1670",
+    "summary": "An 18-hole public course on the Hillsborough River, built from 1948 to 1952 for Tampa's Black residents during segregation; Wikipedia says it was the only course open to them. Its original site is on the National Register, and the Tampa Sports Authority runs it.",
     "quote": "Built in 1952, Rogers Park Golf Course has evolved as one of Tampa's best kept secrets.",
     "quote_source": "https://rogersparkgolf.net/",
     "heritage": {
@@ -18271,7 +18969,7 @@
         }
       ],
       "era": "postwar",
-      "story": "The City of Tampa acquired land by the river after World War II for a park for Black residents, named for businessman G. D. Rogers in 1951. Caddies led by Willie Black, the first head golf professional, cleared the course; a nine-hole course opened around 1952 and was later expanded to 18 holes. Wikipedia lists Charlie Sifford, Ted Rhodes and Charles Owens among the Black golfers who played it.",
+      "story": "The City of Tampa acquired land by the river in 1947 for a park for Black residents, named for businessman G. D. Rogers in 1951. Caddies led by Willie Black, the first head golf professional, cleared the course; Wikipedia dates the opening of the first nine holes to about May 1952, and the course was later expanded to 18 holes. Wikipedia lists Charlie Sifford, Ted Rhodes and Charles Owens among the Black golfers who played it.",
       "visiting": "Public golf with a driving range and a short course; book tee times on the course site.",
       "sources": [
         "https://rogersparkgolf.net/",
@@ -18287,7 +18985,7 @@
       "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida"
     ],
     "checked": "2026-09-27",
-    "notes": "History is mainly from Wikipedia (citing Tampa Tribune articles); the course site says only 'Built in 1952', 160 acres, 18 holes. NRHP listing 2014-11-12 per Wikipedia's list; NPGallery shows no date. Address: NRHP 7801 N 30th St; Wikipedia gives 7911 Willie Black Drive (no census match)."
+    "notes": "History is mainly from Wikipedia (citing Tampa Tribune articles); the course site says only 'Built in 1952', 160 acres, 18 holes. NRHP listing 2014-11-12 per Wikipedia's list; NPGallery shows no date. Address: NRHP 7801 N 30th St; Wikipedia gives 7911 Willie Black Drive (no census match). Verified 2026-09-27: The course site gives 7911 N 30th St and 813-356-1670; the NRHP record gives 7801 N 30th St (about 170 m south)."
   },
   {
     "id": "rogers-park-weeki-wachee",
@@ -18527,8 +19225,7 @@
     ],
     "topics": [
       "food",
-      "water",
-      "music"
+      "water"
     ],
     "area": "tarpon-springs",
     "address": "937 Dodecanese Blvd",
@@ -18540,14 +19237,14 @@
     "geo_source": "photon",
     "url": "https://www.rustybellies.com/",
     "phone": "(727) 934-4047",
-    "summary": "Family-owned seafood restaurant with an outdoor tiki bar and live music directly on the Anclote River by the Sponge Docks; the family's boats supply it, and its seafood market, Pelican Point Seafood, is next door.",
+    "hours_text": "Tue–Thu 11 AM–9 PM; Fri–Sat 11 AM–10 PM; Sun 11 AM–9 PM; closed Mon",
+    "summary": "Family-owned seafood restaurant with an outdoor bar on a working waterfront directly on the Anclote River by the Sponge Docks; its own boats supply fish, and its seafood market, Pelican Point Seafood, is next door.",
     "quote": "Family-owned and operated restaurant, outdoor bar, working waterfront, and fresh seafood market. Located directly on the Anclote River.",
     "status": "open",
     "tags": [
       "seafood",
       "waterfront",
       "sponge-docks",
-      "live-music",
       "seafood-market"
     ],
     "source_url": "https://www.rustybellies.com/",
@@ -18555,7 +19252,8 @@
       "https://www.rustybellies.com/location/rusty-bellies/",
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: 'tiki bar' and 'live music' removed (not on the pages read); hours from the Hours & Location page."
   },
   {
     "id": "ruth-eckerd-hall",
@@ -19004,7 +19702,7 @@
     "url": "https://saltrockgrill.com/",
     "phone": "(727) 593-7625",
     "hours_text": "Mon–Fri 4–10 PM; Sat–Sun noon–10 PM",
-    "summary": "Steak and seafood restaurant in Indian Shores overlooking the Intracoastal Waterway, with prime and choice beef, day-boat seafood, a raw bar and a large wine cellar. It is part of Baystar Restaurant Group, which also runs Island Way Grill.",
+    "summary": "Steak and seafood restaurant on Gulf Boulevard in Indian Shores, with prime and choice beef, day-boat seafood, a raw bar and a large wine cellar. It is part of Baystar Restaurant Group, which also runs Island Way Grill.",
     "quote": "Known for our hand cut U.S.D.A prime and choice grade beef, fresh dayboat caught seafood, raw bar and amazing wine cellar.",
     "status": "open",
     "tags": [
@@ -19018,7 +19716,8 @@
     "also_sources": [
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: 'overlooking the Intracoastal Waterway' removed: not on the page read. Chef Tom Pritchard and Frank Chivas opened it in 1997, per the site."
   },
   {
     "id": "sand-key-park",
@@ -19117,7 +19816,8 @@
     "also_sources": [
       "https://www.sandbardining.com/about-us"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: About page re-read; it also says Ed Chiles sold the Sandbar in 2024 to Beachside Hospitality. WWSB (May 14, 2025) reported it 'going strong' after the 2024 hurricanes."
   },
   {
     "id": "sarasota-art-museum",
@@ -19480,17 +20180,28 @@
       "history"
     ],
     "area": "pass-a-grille",
+    "address": "800 Pass-a-Grille Way",
     "city": "St. Pete Beach",
     "state": "FL",
-    "summary": "Pass-a-Grille restaurant in a building dating from 1938, known for its booths with vintage photos and newspaper clippings; it was a popular spot for soldiers during World War II. Hurricane Helene put six to seven feet of water in it in 2024; owner Anayeri Gomez rebuilt it and planned to reopen in early February 2026, per FOX 13.",
+    "zip": "33706",
+    "lat": 27.688046,
+    "lng": -82.736246,
+    "geo_source": "census",
+    "hours_text": "Daily 8 AM–2:30 PM except Tuesday (Feb 2026)",
+    "summary": "Breakfast-and-lunch restaurant on Pass-a-Grille Way, serving since 1938; it opened as a drive-in in the late 1930s and was a popular stop for soldiers during World War II. Flooded by Hurricanes Helene and Milton in 2024, it was gut-renovated with its wooden booths and memorabilia restored and reopened in early February 2026.",
     "status": "open",
     "tags": [
       "historic",
+      "breakfast",
       "hurricane-rebuilt"
     ],
-    "source_url": "https://www.fox13news.com/news/sixteen-months-after-hurricane-helene-seahorse-restaurant-pass-a-grille-reopens-next-week",
+    "source_url": "https://stpeterising.com/home/the-iconic-87-year-old-seahorse-restaurant-reopens-in-pass-a-grille-after-year-long-closure",
+    "also_sources": [
+      "https://www.fox13news.com/news/sixteen-months-after-hurricane-helene-seahorse-restaurant-pass-a-grille-reopens-next-week",
+      "https://www.cltampa.com/food-drink/pinellas-county-beachside-bars-and-restaurants-are-reopening-following-2024-hurricanes/"
+    ],
     "checked": "2026-09-27",
-    "notes": "FOX 13 (Jan 26, 2026) said it would reopen the following week. The Gabber's headline 'Pass-a-Grille's Seahorse Restaurant Reopens' appeared in search results but the article could not be read, and no official website or street address was found, so address and coordinates are unknown. VERIFIER: confirm it is serving and add its address."
+    "notes": "VERIFIER 2026-09-27: St Pete Rising (Feb 4, 2026) gives the address (800 Pass a Grille Way), says it welcomed its first customers in more than a year that week, owner Anayeri Gomez, ribbon cutting Feb 6, hours 8 a.m.–2:30 p.m. daily except Tuesdays, and that St. Pete Beach's Historic Preservation Board granted it a historic designation in 2024. Creative Loafing (Jun 19, 2026) confirms it reopened in February. No official website found (the restaurant uses Facebook)."
   },
   {
     "id": "seaside-seabird-sanctuary",
@@ -19666,7 +20377,7 @@
     "lng": -82.459327,
     "geo_source": "census",
     "url": null,
-    "summary": "A 1929 Renaissance Revival department store with terra cotta facades on both Franklin Street and Florida Avenue, on the 'Kress block' it shares with the former Woolworth and Newberry stores. View it from the street; the block's owner has announced plans to preserve and redevelop it.",
+    "summary": "A 1929 Renaissance Revival department store with terra cotta facades on both Franklin Street and Florida Avenue, on the 'Kress block' it shares with the former Woolworth and Newberry stores. View it from the street.",
     "heritage": {
       "built": "1929",
       "architect": "G. F. McKay (builder G. A. Miller)",
@@ -19792,7 +20503,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/nightlife"
     ],
     "checked": "2026-09-27",
-    "notes": "The resort is also a stay (stays-beaches: shephards-beach-resort). Coordinates are the resort's published point."
+    "notes": "The resort is also a stay (stays-beaches: shephards-beach-resort). Coordinates are the resort's published point. VERIFIER 2026-09-27: Tourism profile re-read ('live music every day and night', 'dance floor', picnic tables). Listed among open beach bars by I Love the Burg (May 18, 2026)."
   },
   {
     "id": "shops-at-wiregrass",
@@ -20115,7 +20826,7 @@
     "geo_source": "census",
     "url": "https://skywayjacksstpete.com/",
     "phone": "(727) 867-1907",
-    "hours_text": "Daily 6 AM–2:30 PM (per Visit St. Pete-Clearwater)",
+    "hours_text": "Daily 6 AM–2:30 PM",
     "summary": "Breakfast-and-lunch diner serving locals and visitors since 1976, marked by a Humpty Dumpty on the front lawn and a large rooster outside; the menu runs from steak and eggs to fried flounder, whole catfish and chicken dumplings.",
     "quote": "Look for the Humpty Dumpty on the front lawn or the large rooster just outside the restaurant.",
     "status": "open",
@@ -20130,7 +20841,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/dining"
     ],
     "checked": "2026-09-27",
-    "notes": "The restaurant's site gives (727) 867-1907; the tourism profile gives 727-866-3217."
+    "notes": "The restaurant's site gives (727) 867-1907; the tourism profile gives 727-866-3217. VERIFIER 2026-09-27: Hours now from the restaurant's own site (same as the tourism profile)."
   },
   {
     "id": "smugglers-cove-adventure-golf-indian-shores",
@@ -21051,7 +21762,8 @@
       "https://www.stpetebrewingcompany.com/about-us/",
       "https://www.visitstpeteclearwater.com/eat-drink/gulp-coast-beer-trail/south"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Re-read stpetebrewingcompany.com (hours, Grateful Stout, Scottish Ale)."
   },
   {
     "id": "st-pete-pier",
@@ -21106,6 +21818,45 @@
     ],
     "checked": "2026-09-27",
     "notes": "Verifier 2026-09-27: 'three ADA-compliant trams with four stops' is not on getting-here-parking, visit-pier or faq as read; removed. Rooftop confirmed on visit-pier ('Rooftop – Pier Teak')."
+  },
+  {
+    "id": "st-pete-store-and-visitors-center",
+    "name": "The St. Pete Store & Visitors Center",
+    "aliases": [
+      "St. Pete Store and Visitors Center",
+      "St. Pete Store & Visitor's Center"
+    ],
+    "kind": "visitor-center",
+    "kinds": [
+      "shopping"
+    ],
+    "topics": [
+      "shopping"
+    ],
+    "area": "downtown-stpete",
+    "address": "100 2nd Ave. N., Suite 150",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.773482,
+    "lng": -82.634074,
+    "geo_source": "census",
+    "url": "https://www.thestpetestore.com/visit",
+    "phone": "(727) 388-0686",
+    "hours_text": "Monday–Sunday 10 a.m.–5 p.m.",
+    "summary": "A store and visitors center of the St. Petersburg Area Chamber of Commerce in downtown St. Petersburg, selling apparel, home goods and other items from local makers and artists.",
+    "status": "open",
+    "tags": [
+      "visitor-information",
+      "gift-shop"
+    ],
+    "source_url": "https://www.thestpetestore.com/visit",
+    "also_sources": [
+      "https://www.stpete.com/st-pete-store-visitors-center/",
+      "https://www.visitflorida.com/listing/the-st-pete-store-%26-visitors-center-(st-petersburg-area-coc)/26747/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. thestpetestore.com/visit (read with WebFetch; curl gets a 202 challenge) names 'The St. Pete Store and Visitors Center', '100 2nd Ave N Ste. 150 St. Petersburg, FL 33701', '(727) 388-0686', 'Mon - Sun: 10am - 5pm'. VISIT FLORIDA lists it as a certified visitor information center, 'The St. Pete Store & Visitors Center (St. Petersburg Area COC)'; the chamber's footer address on stpete.com is the same (100 2nd Avenue North #150). Geocode matched '100 2ND AVE N, ST PETERSBURG, FL, 33701' (Census); VISIT FLORIDA's point is 50 m away."
   },
   {
     "id": "st-pete-sunday-market",
@@ -21165,7 +21916,7 @@
     "lat": 27.956866,
     "lng": -82.452728,
     "geo_source": "photon",
-    "url": "https://www.stpeterclaverschool.org/",
+    "url": null,
     "summary": "A 1929 brick school building, one of the few survivors of The Scrub neighborhood, home to what the City of Tampa calls the oldest African American school still operating in Hillsborough County.",
     "heritage": {
       "built": "1929 (annex 1952)",
@@ -21187,8 +21938,11 @@
     },
     "status": "open",
     "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+    "also_sources": [
+      "https://www.dosp.org/school-directory-2/"
+    ],
     "checked": "2026-09-27",
-    "notes": "The school's own site was reachable but not read for history."
+    "notes": "The school's own site was reachable but not read for history. Verified 2026-09-27: stpeterclaverschool.org is St. Peter Claver Preschool & Kindergarten, 5670 Cochran Street, Simi Valley, CA (not this school). The Diocese of St. Petersburg directory links the Tampa school to stpeterclavercatholicschool.org, which returned HTTP 503 today, so url is left null."
   },
   {
     "id": "st-petersburg-city-theatre",
@@ -21286,8 +22040,9 @@
     "lng": -82.675214,
     "geo_source": "census",
     "url": "https://stpetersburgdistillery.com/",
+    "phone": "(727) 726-3795",
     "hours_text": "Tasting room Wed and Sun 10:30 AM–6 PM, Thu–Sat 10:30 AM–11 PM; speakeasy Thu–Sat 6–11 PM",
-    "summary": "Family-owned craft distillery making spirits in small batches since 2014, just off the Pinellas Trail, with a tasting room, a 1920s-themed speakeasy and guided tours (21 and up for tastings), including an evening Moonshiners Tour about Prohibition-era rum running.",
+    "summary": "Family-owned craft distillery making spirits in small batches since 2014, with a tasting room, a 1920s-themed speakeasy and guided tours (21 and up for tastings), including an evening Moonshiners Tour about Prohibition-era rum running.",
     "quote": "St. Petersburg Distillery—a proudly local, family-owned distillery that has been perfecting the art of craft spirits since 2014.",
     "status": "open",
     "tags": [
@@ -21304,7 +22059,7 @@
       "https://www.visitstpeteclearwater.com/eat-drink/drinks"
     ],
     "checked": "2026-09-27",
-    "notes": "Tour hours per the tour page: distillery tour Thu–Sun 11 AM–4 PM on the hour; Moonshiners Tour Thu–Sat 6–9 PM on the hour (60 minutes). Tours are also in the exp-land slice."
+    "notes": "Tour hours per the tour page: distillery tour Thu–Sun 11 AM–4 PM on the hour; Moonshiners Tour Thu–Sat 6–9 PM on the hour (60 minutes). Tours are also in the exp-land slice. VERIFIER 2026-09-27: 'just off the Pinellas Trail' removed (not on the pages read); phone from the tour page footer."
   },
   {
     "id": "st-petersburg-municipal-beach",
@@ -21495,7 +22250,7 @@
       "https://www.starfishcompany.com/restaurant/"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates are the ones the business publishes in its structured data. Its structured data also lists hours (Mon 10–3, Tue–Sat 10–6, Sun '11:30–3:00'), which look garbled, so hours are left unknown. The Cortez historic fishing village is a place in the around-daytrips slice (cortez-historic-fishing-village)."
+    "notes": "Coordinates are the ones the business publishes in its structured data. Its structured data also lists hours (Mon 10–3, Tue–Sat 10–6, Sun '11:30–3:00'), which look garbled, so hours are left unknown. The Cortez historic fishing village is a place in the around-daytrips slice (cortez-historic-fishing-village). VERIFIER 2026-09-27: About page re-read (early 1920s, Judge Millis; Garner family from the 1950s; retail market in the 1960s; Karen Bell since 1996)."
   },
   {
     "id": "steelbach",
@@ -21682,6 +22437,46 @@
     "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Chef and molino details from the Visit Tampa Bay listing. Verifier 2026-09-27: the listing says molino, not stone molino; summary corrected."
   },
   {
+    "id": "stringer-stalnaker-house",
+    "name": "Stringer-Stalnaker House",
+    "kind": "historic-site",
+    "topics": [
+      "history"
+    ],
+    "area": "hyde-park",
+    "address": "2111 W Cleveland St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.943378,
+    "lng": -82.481075,
+    "geo_source": "census",
+    "url": null,
+    "summary": "A frame house the City of Tampa dates to about 1842, built by the Stringer family downtown at Jackson Street and Florida Avenue and moved twice: to Gary around 1914 and to its present site in 2018.",
+    "heritage": {
+      "built": "c. 1842",
+      "architect": null,
+      "style": "Frame vernacular",
+      "designations": [
+        {
+          "name": "City of Tampa local historic landmark",
+          "year": 2018,
+          "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+        }
+      ],
+      "era": "frontier",
+      "story": "The Stringer family built the house at the corner of Jackson Street and Florida Avenue, where Mary Stringer ran it as a boarding house and raised Dr. Sheldon Stringer Sr. In 1914 the city chose the site for its new police department and sold the house to Stalnaker Bros., who moved it to 8th Avenue in Gary, east of Ybor City; Imboden Stalnaker, a grain and feed merchant, lived there until his death in 1949. After 104 years in Gary the house was moved to its present site in 2018.",
+      "visiting": "The City book gives its present address; it does not say whether the house is open to visitors.",
+      "sources": [
+        "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 from the City of Tampa's 2024 designations book (landmark page 64). Current use not stated; point is the Census match for 2111 W Cleveland St."
+  },
+  {
     "id": "studio-1212-art-gallery",
     "name": "Studio 1212 Art Gallery",
     "aliases": [
@@ -21715,6 +22510,58 @@
     ],
     "checked": "2026-09-27",
     "notes": "Verifier 2026-09-27: studio1212.org (read through the r.jina.ai reader) confirms the address, phone and the all-volunteer nonprofit; hours and history stay on the VSPC listing, re-read."
+  },
+  {
+    "id": "sulphur-springs-gazebo",
+    "name": "Sulphur Springs Gazebo",
+    "aliases": [
+      "Sulphur Springs Park gazebo"
+    ],
+    "kind": "landmark",
+    "kinds": [
+      "historic-site",
+      "park"
+    ],
+    "topics": [
+      "history",
+      "outdoors"
+    ],
+    "area": "north-tampa",
+    "address": "701 E Bird St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33604",
+    "lat": 28.02094,
+    "lng": -82.452674,
+    "geo_source": "photon",
+    "url": null,
+    "summary": "A two-story octagonal gazebo of 1925 built by Josiah Richardson over the spring that gave Sulphur Springs its name. By the 1920s the springs were a resort with medicinal waters, an alligator farm, a pool, a toboggan slide and a dance hall.",
+    "heritage": {
+      "built": "1925",
+      "architect": "Josiah Richardson (builder)",
+      "style": "Classical Revival",
+      "designations": [
+        {
+          "name": "City of Tampa local historic landmark",
+          "year": 2013,
+          "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+        }
+      ],
+      "era": "land-boom",
+      "story": "In the early 1900s the land around the spring was platted and sold with small cottages marketed mainly to tourists, and a streetcar line north along Nebraska Avenue put Sulphur Springs within easy reach of Tampa. By the 1920s it was a popular destination with medicinal waters, an alligator farm, a pool, a toboggan slide and a dance hall. Josiah Richardson, who also built the nearby water tower, built the octagonal gazebo on top of the spring.",
+      "visiting": "In the City's Sulphur Springs Park at 701 E. Bird Street, a short walk from the water tower. The City lists the Sulphur Springs Pool at the same address as closed for repairs.",
+      "sources": [
+        "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+        "https://www.tampa.gov/parks-and-recreation/activities-recreation/aquatics/pool-facilities"
+      ]
+    },
+    "status": "open",
+    "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+    "also_sources": [
+      "https://www.tampa.gov/parks-and-recreation/activities-recreation/aquatics/pool-facilities"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (the water tower record already mentioned it). Point: the OSM park 'Sulphur Springs Park, 701 East Bird Street' (W1146818354), not the gazebo itself. Pool status from the City's pool page: 'Sulphur Springs Pool, 701 E Bird St. ... Closed for repairs'."
   },
   {
     "id": "sulphur-springs-museum",
@@ -21774,11 +22621,6 @@
       "style": "Gothic Revival",
       "designations": [
         {
-          "name": "National Register of Historic Places",
-          "year": 1989,
-          "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
-        },
-        {
           "name": "City of Tampa local historic landmark",
           "year": 1989,
           "url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
@@ -21786,15 +22628,20 @@
       ],
       "era": "land-boom",
       "story": "Josiah Richardson built the 214-foot tower over a spring on the Hillsborough River, with a 150,000-gallon tank; it was the area's main water source until the early 1970s. By the 1920s Sulphur Springs was a popular destination reached by streetcar from Tampa, with medicinal waters, an alligator farm, a pool, a toboggan slide and a dance hall. Richardson also built the octagonal 1925 gazebo over the spring itself (701 E. Bird Street), a separate City landmark.",
-      "visiting": "See it from North Florida Avenue near the Hillsborough River.",
+      "visiting": "See it from North Florida Avenue near the Hillsborough River. Wikipedia says the City bought the site and it is now River Tower Park, reached by a one-lane road off Bird Street, with a small parking lot and no facilities.",
       "sources": [
-        "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
+        "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+        "https://en.wikipedia.org/wiki/Sulphur_Springs_Water_Tower"
       ]
     },
     "status": "open",
     "source_url": "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
+    "also_sources": [
+      "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+      "https://en.wikipedia.org/wiki/Sulphur_Springs_Water_Tower"
+    ],
     "checked": "2026-09-27",
-    "notes": "The City book gives 'National Register Listing: 1989', but the tower does not appear in Wikipedia's NRHP list for Tampa; the verifier should find the NRHP reference or drop that designation. The see-tampa slice has sulphur-springs-museum."
+    "notes": "The City book gives 'National Register Listing: 1989', but no Sulphur Springs water tower appears in the NPS 'NRHP Listed properties' or 'Removed properties' spreadsheets (listings to 5/22/2026, all Hillsborough County entries read) or in Wikipedia's NRHP list for Tampa; the NRHP designation was dropped, the City landmark (1989) kept. The see-tampa slice has sulphur-springs-museum. Wikipedia says the City bought the site after 2002 and it is now River Tower Park."
   },
   {
     "id": "suncoast-credit-union-field",
@@ -22066,7 +22913,7 @@
       "https://www.visitstpeteclearwater.com/profile/sushi-sho-rexley/138926"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater says the counter seats 10 and chef Rexley Kwok trained under Hiro Ida. The site's structured data lists slightly different hours (Wed–Sun) from its visible text (Thu–Sun 5–9); the visible text is used."
+    "notes": "Visit St. Pete-Clearwater says the counter seats 10 and chef Rexley Kwok trained under Hiro Ida. The site's structured data lists slightly different hours (Wed–Sun) from its visible text (Thu–Sun 5–9); the visible text is used. VERIFIER 2026-09-27: Michelin 2026 recommended (not new). Visible hours Thu–Sun 5–9 PM re-read."
   },
   {
     "id": "tampa-baseball-museum",
@@ -22153,6 +23000,40 @@
     ],
     "checked": "2026-09-27",
     "notes": "Pinellas Park is in the largo area per SPEC §4.1."
+  },
+  {
+    "id": "tampa-bay-beaches-chamber-visitor-information-center",
+    "name": "Tampa Bay Beaches Chamber of Commerce Visitor Information Center",
+    "aliases": [
+      "Gulf Beaches Chamber of Commerce",
+      "Tampa Bay Beaches Chamber of Commerce"
+    ],
+    "kind": "visitor-center",
+    "topics": [
+      "beaches"
+    ],
+    "area": "st-pete-beach",
+    "address": "6990 Gulf Blvd.",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.738812,
+    "lng": -82.749393,
+    "geo_source": "census",
+    "url": "https://www.tampabaybeaches.com/",
+    "phone": "(727) 360-6957",
+    "summary": "The Tampa Bay Beaches Chamber of Commerce's office on Gulf Boulevard in St. Pete Beach, which VISIT FLORIDA lists as a certified visitor information center. The chamber's member businesses run along the Gulf beaches from Tierra Verde to Clearwater Beach.",
+    "status": "open",
+    "tags": [
+      "visitor-information"
+    ],
+    "source_url": "https://www.visitflorida.com/listing/tampa-bay-beaches-chamber-of-commerce-visitor-information-center/25213/",
+    "also_sources": [
+      "https://www.tampabaybeaches.com/",
+      "https://www.tampabaybeaches.com/our-beaches/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added (the researcher left it out because the chamber's own site never calls its office a visitor center; VISIT FLORIDA's certified list does). Chamber footer: 'Tampa Bay Beaches Chamber of Commerce (Also known as Gulf Beaches Chamber) 6990 Gulf Boulevard, St. Pete Beach, FL 33706 (727) 360-6957'; its home page says its members are 'along the Gulf Beaches, spreading from Tierra Verde to Clearwater Beach'. No hours are published. Geocode matched '6990 GULF BLVD, ST PETE BEACH, FL, 33706' (Census)."
   },
   {
     "id": "tampa-bay-downs",
@@ -22603,9 +23484,11 @@
         }
       ],
       "era": "land-boom",
-      "story": "Designed by John Eberson, the theatre opened on October 15, 1926, inside a ten-story office building on Franklin Street; its auditorium imitates the garden of a Spanish villa under a ceiling of stars, and its Wurlitzer organ is still played. Attendance declined in the 1960s and 1970s and in 1973 the building faced demolition; the City of Tampa rescued it by taking over its leases, the Arts Council of Hillsborough County ran its programming from 1976 to 2010, and it reopened in early 1978. A 2017 renovation reseated the auditorium, reducing capacity from 1,446 to 1,238 seats.",
-      "visiting": "See a film or concert, or join one of the building tours the theatre offers (Visit Tampa Bay lists tours among its 600-plus yearly events). The National Register plaque is on the front of the box office; the Franklin Street box office is open 10 AM–6 PM on weekdays.",
+      "story": "Designed by John Eberson, the theatre opened on October 15, 1926, inside a ten-story office building on Franklin Street; its auditorium imitates the garden of a Spanish villa under a ceiling of stars, and its Wurlitzer organ is still played. Attendance declined in the 1960s and 1970s, and in 1973 the theatre was slated for demolition; the theatre says the City Council struck a deal to purchase and preserve the building, and it reopened in January 1977. The Arts Council of Hillsborough County managed its programming from 1976 to 2010. A 2017 renovation reseated the auditorium, reducing capacity from 1,446 to 1,238 seats (Wikipedia).",
+      "visiting": "See a film or concert. The theatre's monthly Balcony to Backstage building tours resume in November 2026; in October it runs ghost tours ($15, free for members; tickets online or at the Franklin Street box office). The National Register plaque is on the front of the box office.",
       "sources": [
+        "https://tampatheatre.org/about/history/",
+        "https://tampatheatre.org/education-outreach/theatre-tours/",
         "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-county-tampa-theatre",
         "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
         "https://en.wikipedia.org/wiki/Tampa_Theatre",
@@ -22617,12 +23500,14 @@
     "source_url": "https://www.visittampabay.com/listings/tampa-theatre/8911/",
     "also_sources": [
       "https://en.wikipedia.org/wiki/Tampa_Theatre",
+      "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-county-tampa-theatre",
+      "https://tampatheatre.org/education-outreach/theatre-tours/",
       "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf",
       "https://npgallery.nps.gov/AssetDetail/NRIS/78000945",
-      "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-county-tampa-theatre"
+      "https://tampatheatre.org/about/history/"
     ],
     "checked": "2026-09-27",
-    "notes": "Merged from venues-bay (verified) + history-tampa; owner venues-bay. | [venues-bay] tampatheatre.org returned a bot challenge (HTTP 202) to curl and an empty page to WebFetch; the VTB listing (the theatre's own text) is the source. The listing carries two versions of its blurb (1,000+ and 600+ events a year); the summary uses 600+. Wikipedia: opened Oct 15, 1926; architect John Eberson; NRHP #78000945 added Jan 3, 1978; seats 1,252 after the 2017 renovation; city owns the building. Tour offering is from the listing ('weddings and tours'). Verifier 2026-09-27: VTB listing re-read; its phone is (813) 274-8287 (was 274-8286, not on the page) and its admission line says only that admission varies, so price_text is null. tampatheatre.org still blocked (HTTP 202). Wikipedia re-read confirms opening Oct 15, 1926, Eberson, Mediterranean Revival, NRHP 78000945 (Jan 3, 1978), the 1973 rescue, the $6M 2017 renovation, tours. | [history-tampa] Heritage for the shared venues-bay id. The City designations book says 'Constructed: 1925'; the county and Wikipedia give the 1926 opening. tampatheatre.org returned 202/empty to both curl and WebFetch, so it is only the url. Visit Tampa Bay's listing text says both 600+ and 1,000+ events a year."
+    "notes": "Merged from venues-bay (verified) + history-tampa (verified); owner venues-bay. | [venues-bay] tampatheatre.org returned a bot challenge (HTTP 202) to curl and an empty page to WebFetch; the VTB listing (the theatre's own text) is the source. The listing carries two versions of its blurb (1,000+ and 600+ events a year); the summary uses 600+. Wikipedia: opened Oct 15, 1926; architect John Eberson; NRHP #78000945 added Jan 3, 1978; seats 1,252 after the 2017 renovation; city owns the building. Tour offering is from the listing ('weddings and tours'). Verifier 2026-09-27: VTB listing re-read; its phone is (813) 274-8287 (was 274-8286, not on the page) and its admission line says only that admission varies, so price_text is null. tampatheatre.org still blocked (HTTP 202). Wikipedia re-read confirms opening Oct 15, 1926, Eberson, Mediterranean Revival, NRHP 78000945 (Jan 3, 1978), the 1973 rescue, the $6M 2017 renovation, tours. | [history-tampa] Heritage for the shared venues-bay id. The City designations book says 'Constructed: 1925'; the county and Wikipedia give the 1926 opening. Visit Tampa Bay's listing text says both 600+ and 1,000+ events a year. Verified 2026-09-27: source_url moved to the theatre's own history page, read with WebFetch (curl still gets 202). The theatre says it 'opens its doors more than 1,000 times each year'. Wikipedia says it reopened in early 1978; the theatre says January 1977, used here. Tours page says Balcony to Backstage tours 'will resume in November 2026'."
   },
   {
     "id": "tampa-union-station",
@@ -22825,6 +23710,7 @@
     "geo_source": "census",
     "url": "https://www.tarponspringsdistillery.net/",
     "phone": "(727) 940-2045",
+    "hours_text": "Mon–Tue and Sun 1–7:30 PM; Wed–Fri 1–10 PM; Sat 11 AM–10 PM; closed Easter, Christmas and New Year's Day",
     "summary": "Small-batch distillery founded by Lisa and Barry Butler that makes whiskey, moonshine, gin, aquavit and Papou's Ouzo; it offers tours and tastings and has a bar and an outdoor music venue, The Rye Bar. Visit St. Pete-Clearwater says it is in a renovated historic sponge warehouse.",
     "quote": "Our spirits are crafted with heart, heritage, and a bit of Florida’s coastal magic.",
     "status": "open",
@@ -22839,10 +23725,11 @@
     "source_url": "https://www.tarponspringsdistillery.net/",
     "also_sources": [
       "https://www.tarponspringsdistillery.net/about-us/",
-      "https://www.visitstpeteclearwater.com/profile/tarpon-springs-distillery/138973"
+      "https://www.visitstpeteclearwater.com/profile/tarpon-springs-distillery/138973",
+      "https://www.tarponspringsdistillery.net/contact-us/"
     ],
     "checked": "2026-09-27",
-    "notes": "Hours differ between the site's structured data (Wed–Thu 1–6, Fri–Sat 1–10, Sun 1–6) and the tourism profile (open daily, longer hours), so hours are left unknown. The tourism profile says tours and tastings run every half hour 1–5 PM at no charge; not confirmed on the distillery's own pages read."
+    "notes": "Hours differ between the site's structured data (Wed–Thu 1–6, Fri–Sat 1–10, Sun 1–6) and the tourism profile (open daily, longer hours), so hours are left unknown. The tourism profile says tours and tastings run every half hour 1–5 PM at no charge; not confirmed on the distillery's own pages read. VERIFIER 2026-09-27: Hours from the distillery's contact page (read with WebFetch); the tourism profile agrees except Sunday (11 AM). The profile quotes 'our renovated historic sponge warehouse, the former Stephen Katzaras Sponge Company' and free tours every half hour 1–5 PM."
   },
   {
     "id": "tarpon-springs-heritage-museum",
@@ -23053,7 +23940,7 @@
       "https://www.visitstpeteclearwater.com/article/best-waterfront-restaurants"
     ],
     "checked": "2026-09-27",
-    "notes": "Reservations through OpenTable per teakstpete.com. Hours are not published on the pages read. Coordinates are the Pier Point building at the end of the pier. Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below)."
+    "notes": "Reservations through OpenTable per teakstpete.com. Hours are not published on the pages read. Coordinates are the Pier Point building at the end of the pier. Coordinates: the OpenStreetMap point for Pier Teaki at the end of the pier (Teak is one floor below). VERIFIER 2026-09-27: Re-read teakstpete.com and the Pier restaurants page (Level 4 – Teak; quote verbatim on stpetepier.org)."
   },
   {
     "id": "teco-manatee-viewing-center",
@@ -23146,7 +24033,7 @@
       "https://www.visitstpeteclearwater.com/list/landmark-restaurants-st-pete-clearwater"
     ],
     "checked": "2026-09-27",
-    "notes": "The building is in the city of South Pasadena (Census match: 1350 PASADENA AVE S, SOUTH PASADENA, FL 33707); the restaurant gives its mailing city as Saint Petersburg. Filed under west-stpete as the nearest St. Pete area."
+    "notes": "The building is in the city of South Pasadena (Census match: 1350 PASADENA AVE S, SOUTH PASADENA, FL 33707); the restaurant gives its mailing city as Saint Petersburg. Filed under west-stpete as the nearest St. Pete area. VERIFIER 2026-09-27: Re-read home and history pages; every claim and the hours confirmed."
   },
   {
     "id": "temple-terrace-golf-and-country-club",
@@ -23387,7 +24274,8 @@
       "https://www.thetidesmarket.com/our-roots",
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: Michelin 2026 recommended table lists 'The Tides Market, 305 Main St., Safety Harbor, 34695' (not new)."
   },
   {
     "id": "tierra-del-lago-cigar-factory",
@@ -23511,7 +24399,7 @@
       "https://michelinmedia.com/pages/blog/detail/article/c0/a1463/"
     ],
     "checked": "2026-09-27",
-    "notes": "The site shows two different sets of hours (Mon–Thu 11–10, Fri–Sat 11–11, Sun 11–10 vs. Fri–Sat 11–12, Sun 10–10), so hours are left unknown."
+    "notes": "The site shows two different sets of hours (Mon–Thu 11–10, Fri–Sat 11–11, Sun 11–10 vs. Fri–Sat 11–12, Sun 10–10), so hours are left unknown. VERIFIER 2026-09-27: WWSB (Jun 29, 2026) confirms the one-day-a-week pop-up start in Gulf Gate and the two styles (Detroit-style deep dish and artisan round pies). Michelin 2026 recommended (new)."
   },
   {
     "id": "treasure-island-beach",
@@ -23751,10 +24639,11 @@
     ],
     "source_url": "https://www.visitstpeteclearwater.com/profile/undertow-beach-bar/140020",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/eat-drink/drinks"
+      "https://www.visitstpeteclearwater.com/eat-drink/drinks",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
     ],
     "checked": "2026-09-27",
-    "notes": "No website; the profile links a Facebook page. Status from the profile; not otherwise confirmed."
+    "notes": "No website; the profile links a Facebook page. Status from the profile; not otherwise confirmed. VERIFIER 2026-09-27: Tourism profile re-read. Open in 2026: I Love the Burg's May 18, 2026 beach-bar guide lists it at 3850 Gulf Blvd."
   },
   {
     "id": "unitarian-universalist-church-of-tarpon-springs",
@@ -23842,7 +24731,8 @@
     "also_sources": [
       "https://www.visittampabay.com/about/",
       "https://www.visittampabay.com/media/faqs/",
-      "https://www.visittampabay.com/accessible-travel/"
+      "https://www.visittampabay.com/accessible-travel/",
+      "https://www.visitflorida.com/more/visitor-and-tourism-services/certified-visitor-information-centers-central-west-florida/"
     ],
     "checked": "2026-09-27",
     "notes": "Hours are labeled 'Store Hours' on shop.visittampabay.com/pages/about-us. The FAQ says it is 'at the bottom of Tampa City Center'. Geocode matched '201 N FRANKLIN ST, TAMPA, FL, 33602' (Census). Verifier 2026-09-27: coordinates moved to the OpenStreetMap building 'One Tampa City Center' (W106054815), 55 m from the Census street point."
@@ -24323,10 +25213,11 @@
     ],
     "source_url": "https://visitcentralflorida.org/visitor-services/visitor-information-center-locations/",
     "also_sources": [
-      "https://visitcentralflorida.org/visitor-services/"
+      "https://visitcentralflorida.org/visitor-services/",
+      "https://www.visitflorida.com/listing/visit-central-florida-welcome-center/30084/"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates are the OpenStreetMap street 'Adventure Court' (Photon matched 'Adventure Court, 33896', way W11267686), not the building; the Census geocoder matched a different street (101 Adventure Ave), so it was not used. The location description (Hwy 27, 1/2 mile south of I-4 at Exit 55), OJ samples and free maps/Wi-Fi/restrooms are on visitcentralflorida.org/visitor-services/. Polk also has kiosks at Lakeland Linder International Airport, LEGOLAND Florida Resort and the RP Funding Center (not recorded)."
+    "notes": "Coordinates are the OpenStreetMap street 'Adventure Court' (Photon matched 'Adventure Court, 33896', way W11267686), not the building; the Census geocoder matched a different street (101 Adventure Ave), so it was not used. The location description (Hwy 27, 1/2 mile south of I-4 at Exit 55), OJ samples and free maps/Wi-Fi/restrooms are on visitcentralflorida.org/visitor-services/. Polk also has kiosks at Lakeland Linder International Airport, LEGOLAND Florida Resort and the RP Funding Center (not recorded). Verifier 2026-09-27: VISIT FLORIDA lists it as a certified center at 101 Adventure Court with a point (28.222826,-81.644819) about 50 m from the coordinates used, which supports them."
   },
   {
     "id": "visit-sarasota-downtown-visitor-center",
@@ -24350,6 +25241,9 @@
       "visitor-information"
     ],
     "source_url": "https://www.visitsarasota.com/visitor-information",
+    "also_sources": [
+      "https://www.visitflorida.com/listing/visit-sarasota-county-visitor-information-center-downtown-visitor-center/25789/"
+    ],
     "checked": "2026-09-27",
     "notes": "Read with WebFetch (curl gets 403). The page also lists a Venice center (597 S Tamiami Trail, Mon–Fri 10–4) and the Sarasota Bradenton International Airport Welcome Center (6000 Airport Circle, 'Accessible 24/7'), not recorded here. Geocode matched '1945 FRUITVILLE RD, SARASOTA, FL, 34236' (Census)."
   },
@@ -24862,7 +25756,7 @@
       ],
       "era": "boomtown",
       "story": "The City of West Tampa built the library with a grant from the Carnegie Foundation, one of ten Florida public libraries Andrew Carnegie funded, on land given by Angel Cuesta. It linked the town, the cigar industry and its immigrant community, and it still offers materials in Spanish. A 5,000-square-foot addition was completed in 2003 and the original building was refurbished in 2004.",
-      "visiting": "Free; open Monday to Saturday. Artworks by Ferdie Pacheco hang in the foyer and a stained glass installation lines the west wall.",
+      "visiting": "Open Monday to Saturday, 10 AM to 6 PM. Artworks by Ferdie Pacheco hang in the foyer and a stained glass installation lines the west wall.",
       "sources": [
         "https://hcplc.org/locations/west-tampa",
         "https://www.tampa.gov/sites/default/files/document/2025/city-of-tampa-designations-book-final-2024.pdf"
@@ -24990,6 +25884,51 @@
     ],
     "checked": "2026-09-27",
     "notes": "Hours and store names read from the mall site's structured data and directory on Sep 27, 2026 (WebFetch got 403; curl worked). Macy's and Sears named on the older Visit Tampa Bay listing are not in the current directory. Verified 2026-09-27: hours (structured data: Mon-Thu 11-8, Fri-Sat 10-9, Sun 12-6), phone and the named tenants (JCPenney, H&M, Old Navy, AMC, Maggiano's, Seasons 52, P.F. Chang's) re-read via curl; Macy's and Sears are not in the directory. Coordinates are the OSM shop=mall feature."
+  },
+  {
+    "id": "wharf-pass-a-grille",
+    "name": "The Wharf Restaurant & Sports Bar",
+    "aliases": [
+      "The Wharf",
+      "The Wharf Pass-a-Grille"
+    ],
+    "kind": "restaurant",
+    "kinds": [
+      "bar"
+    ],
+    "topics": [
+      "food",
+      "water",
+      "history"
+    ],
+    "area": "pass-a-grille",
+    "address": "2001 Pass-a-Grille Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.696625,
+    "lng": -82.735286,
+    "geo_source": "photon",
+    "url": "https://wharfpag.com/",
+    "phone": "(727) 367-9469",
+    "hours_text": "Restaurant daily 11 AM–10 PM; bar daily 10 AM–midnight",
+    "summary": "Seafood restaurant and sports bar on Pass-a-Grille Way, open since April 1994 in a building whose pilings Heber Bell set in 1912; in the 1930s it was a fish-processing plant. It has a bar running most of the length of the room and docks for boaters, and is known for its grouper sandwich, per I Love the Burg.",
+    "quote": "The Wharf Restaurant & Sports Bar Opened For Business In April 1994, But Its Beginning Could Be Traced Back As Far As 1912.",
+    "status": "open",
+    "tags": [
+      "grouper-sandwich",
+      "seafood",
+      "waterfront",
+      "sports-bar",
+      "boat-docks"
+    ],
+    "source_url": "https://wharfpag.com/",
+    "also_sources": [
+      "https://ilovetheburg.com/wharf-grouper-beach-boat-docking/",
+      "https://ilovetheburg.com/best-beach-bars-st-pete-beach/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "VERIFIER 2026-09-27: added. wharfpag.com read with curl (address, phone, hours, history; quote verbatim, the site sets it in title case). I Love the Burg (Jul 13, 2026, a feature that reads like sponsored content) mentions new docks, a remodeled back patio, happy hour Mon–Fri 3:30–6 PM and says it was 'Recently designated a local historic site' (not repeated as a designation because no designation record was read)."
   },
   {
     "id": "williams-park",
@@ -25616,7 +26555,7 @@
       "https://www.yodersrestaurant.com/about/about-yoder-s-amish-village/"
     ],
     "checked": "2026-09-27",
-    "notes": "Sunday hours are not listed on the site (closed Sunday is likely but not stated). The site's Saturday lunch start reads '12am', an apparent typo, so the summary gives only the closing time."
+    "notes": "Sunday hours are not listed on the site (closed Sunday is likely but not stated). The site's Saturday lunch start reads '12am', an apparent typo, so the summary gives only the closing time. VERIFIER 2026-09-27: Re-read home and history pages (1975 on Main Street, Bahia Vista location bought in 1984, single location from 1986)."
   },
   {
     "id": "yuengling-center",

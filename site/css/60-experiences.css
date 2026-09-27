@@ -1,0 +1,67 @@
+/* ======================================================================
+   site/css/60-experiences.css · OWNER: the Stay lane (experiences-eat-stay)
+   experiences.html: the family index (five label tiles, each with its chart symbol in a paper medallion),
+   the "Check before you go" box, the kind links under each family head, kind heads with their symbol, and
+   the compact experience card's departure line (the daymark). The card grammar is 21-records.css plus the
+   lane's compact card (56-eat.css).
+   Tokens only; no color literal; nothing under 12px.
+   ====================================================================== */
+
+/* ---------- the family index ---------- */
+.tour-index { display: grid; gap: var(--sp-3); grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); margin: var(--sp-6) 0 var(--sp-2); }
+.tour-fam-link {
+  position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto; align-items: center; gap: 2px 14px;
+  min-height: 72px; padding: 12px 14px 12px 12px; color: var(--text); text-decoration: none;
+  background: var(--surface); border: 1px solid var(--border);
+  background-image: linear-gradient(var(--rule-ink) 0 0), linear-gradient(var(--rule-ink) 0 0);
+  background-size: 100% 2px, 100% 1px; background-position: 0 0, 0 5px; background-repeat: no-repeat;
+  padding-top: 16px;
+}
+.tour-fam-link:hover { border-color: var(--border-strong); color: var(--text); }
+.tour-fam-link:hover .tour-fam-t { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.14em; }
+.tour-fam-link > .i {
+  grid-row: 1 / span 2; width: 22px; height: 22px; padding: 9px; box-sizing: content-box; border-radius: 50%;
+  color: var(--text); background: var(--surface);
+  box-shadow: 0 0 0 1.5px var(--rule-ink), 0 0 0 4px var(--surface), 0 0 0 5px var(--border-strong);
+  margin: 4px 2px 4px 5px;
+}
+.tour-fam-t { font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: 1.15; }
+.tour-fam-n { font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.tour-fam-n b { color: var(--text); }
+
+/* ---------- check before you go ---------- */
+.tour-check { max-width: none; }
+.tour-check-h { font-size: var(--fs-lg); margin: 4px 0 var(--sp-2); scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
+.tour-check ul.rows { background: none; padding-top: 0; }
+.tour-check li.row { border-bottom-color: var(--warning-edge); }
+.tour-check li.row > p { color: var(--text); font-size: var(--fs-sm); max-width: 80ch; padding-bottom: 4px; }
+.tour-check li.row .badge { flex: none; }
+
+/* ---------- family sections and kind groups ---------- */
+.tour-list-wrap { scroll-margin-top: calc(var(--topbar-h) + var(--sp-2)); }
+.tour-fam .sec-head h2 { display: flex; align-items: center; gap: 10px; }
+.tour-kinds { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: calc(-1 * var(--sp-2)) 0 var(--sp-5); }
+.tour-kinds a {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 10px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); text-decoration: none; font-size: var(--fs-sm);
+}
+.tour-kinds a:hover { border-color: var(--text); }
+.tour-kinds .n { color: var(--text-faint); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+@media (pointer: coarse), (max-width: 1023px) { .tour-kinds a { min-height: var(--tap); } }
+.tour-kind { margin-top: var(--sp-6); scroll-margin-top: calc(var(--topbar-h) + var(--sp-3)); }
+.tour-kind:first-of-type { margin-top: 0; }
+.tour-kind-h { display: flex; align-items: center; gap: 10px; }
+.tour-kind-h .i { width: 20px; height: 20px; color: var(--text-muted); }
+.tour-grid { margin-top: var(--sp-3); }
+
+/* ---------- the compact experience card ---------- */
+.card.exp[data-compact] .card-op { font-size: var(--fs-sm); }
+.card.exp .card-departs { display: flex; align-items: flex-start; gap: 6px; }
+.card.exp .card-departs > .i { flex: none; width: 16px; height: 16px; margin-top: 1px; color: var(--ink-text); }
+.card.exp[data-st="temporarily-closed"] .card-title a, .card.exp[data-st="opening-soon"] .card-title a { color: var(--text-muted); }
+@media (max-width: 559px) {
+  .tour-index { grid-template-columns: 1fr 1fr; gap: var(--sp-2); }
+  .tour-fam-link { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; align-content: start; gap: 6px; padding: 14px 10px 10px; }
+  .tour-fam-link > .i { grid-row: auto; width: 18px; height: 18px; padding: 7px; margin: 4px 0 2px 4px; }
+  .tour-fam-t { font-size: var(--fs-base); }
+}

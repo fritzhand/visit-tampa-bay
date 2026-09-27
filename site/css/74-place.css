@@ -1,0 +1,120 @@
+/* ======================================================================
+   site/css/74-place.css · OWNER: the Explore lane (explore-and-places)
+   places/<id>.html: the head's meta line (sheet badge · kind · area · status · seal) and the labeled star, the top
+   (photo or plate beside "At a glance"), the notes (status, their words), "Where it is" (mini map beside the
+   address and the map links), "What's on here" (date boxes, live words), the timeline entries, "Nearby" in two
+   columns, the source block. The heritage block's look is 21-records.css (.heritage, .designations).
+   Tokens only; no color literal.
+   ====================================================================== */
+
+/* ---------- head ---------- */
+.pl-head .lede { max-width: 62ch; }
+.pl-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 10px; margin-top: var(--sp-4); font-size: var(--fs-sm); color: var(--text-muted); }
+.pl-meta .sheet-badge { font-weight: var(--wght-strong); }
+.pl-kind { display: inline-flex; align-items: center; gap: 6px; color: var(--text); font-weight: var(--wght-strong); }
+.pl-kind .sym { width: 18px; height: 18px; color: var(--ink-text); }
+.pl-area { display: inline-flex; align-items: center; min-height: var(--tap); font-weight: var(--wght-strong); }
+@media (min-width: 1024px) { .pl-area { min-height: 28px; } }
+.pl-sep { color: var(--border-strong); }
+.pl-head .head-actions { margin-top: var(--sp-3); gap: var(--sp-3); }
+/* the star with its words: "Add to My Trip" / "In My Trip" (the core keeps aria-pressed and the aria-label) */
+.star.pl-star { width: auto; gap: 8px; padding: 0 16px 0 12px; border: 2px solid var(--accent); background: var(--surface); color: var(--accent-strong); font-size: var(--fs-sm); font-weight: var(--wght-strong); display: inline-flex; }
+.star.pl-star:hover { background: var(--accent-tint); color: var(--accent-strong); }
+.star.pl-star[aria-pressed="true"] { background: var(--accent); color: var(--accent-contrast); }
+.pl-star .pl-star-l::before { content: "Add to My Trip"; }
+.pl-star[aria-pressed="true"] .pl-star-l::before { content: "In My Trip"; }
+
+/* ---------- top: the picture (or plate) beside "At a glance" ---------- */
+.pl-top { display: grid; gap: var(--sp-5) var(--sp-6); align-items: start; scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
+@media (min-width: 1000px) { .pl-top { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); } }
+.pl-media .photo-fig { margin: 0; }
+.pl-plate .plate-type { margin: 0; }
+.pl-plate-note { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
+.pl-glance .sub-h { margin-top: 0; }
+.pl-glance .facts { margin-top: var(--sp-2); }
+.pl-glance .fact { flex-basis: 200px; }
+.pl-glance .fact .faint { font-size: var(--fs-xs); }
+.pl-notes { margin-top: var(--sp-5); display: grid; gap: 0 var(--sp-5); }
+.pl-notes .callout { margin: var(--sp-5) 0 0; }
+@media (min-width: 1000px) { .pl-notes:has(> .callout + .callout) { grid-template-columns: 1fr 1fr; align-items: start; } }
+
+/* ---------- sections ---------- */
+.pl-sec { margin-top: var(--sp-8); }
+.pl-note { max-width: 70ch; margin: calc(-1 * var(--sp-2)) 0 var(--sp-4); font-size: var(--fs-sm); color: var(--text-muted); }
+.pl-sec li.row > .badge, .pl-sec li.row > .card-status { flex: none; }
+.pl-empty { margin-top: var(--sp-2); }
+
+/* ---------- where it is ---------- */
+.pl-where { display: grid; gap: var(--sp-4) var(--sp-6); align-items: start; }
+@media (min-width: 900px) { .pl-where { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } }
+.pl-where.is-off { grid-template-columns: minmax(0, 1fr); }
+.pl-map .mini-map { margin: 4px; }
+.pl-map .coord-line, .pl-map .mini-map-none { margin: 0; }
+.pl-where-t { display: grid; gap: var(--sp-2); }
+.pl-addr { font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: var(--lh-snug); }
+.pl-in { font-size: var(--fs-sm); color: var(--text-muted); }
+.pl-in a { font-weight: var(--wght-strong); }
+.pl-links { margin-top: var(--sp-2); gap: var(--sp-2); }
+.pl-geo { font-size: var(--fs-xs); max-width: 60ch; }
+.pl-geo .badge { margin-right: 4px; }
+
+/* ---------- what's on here: date boxes, live words ---------- */
+.pl-evs { list-style: none; padding: 2px 0 0; margin: 0; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; }
+.pl-ev { position: relative; display: grid; grid-template-columns: 60px minmax(0, 1fr) auto; gap: 4px var(--sp-4); align-items: start; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.pl-ev-b { display: grid; gap: 3px; min-width: 0; }
+.pl-ev-k { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; color: var(--text-muted); }
+.pl-ev-k .badge { font-size: var(--fs-label); }
+.pl-ev-st:empty { display: none; }
+.pl-ev-st { color: var(--text); }
+.pl-ev[data-status="live"] .pl-ev-st, .pl-ev[data-status="soon"] .pl-ev-st { color: var(--live-ink); background: var(--live-tint); padding: 2px 6px; }
+.pl-ev[data-status="started"] .pl-ev-st { color: var(--soon); }
+.pl-ev-t { font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: var(--lh-snug); color: var(--text); text-decoration: none; min-height: 24px; }
+.pl-ev-t:hover { text-decoration: underline; text-underline-offset: 0.14em; }
+.pl-ev:has(.pl-ev-t:hover) { background: var(--surface-alt); }
+.pl-ev .badge, .pl-ev .star { position: relative; z-index: 2; }
+.pl-ev-w { font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.pl-ev .star { margin-top: -4px; }
+.pl-ev[data-status="past"] { opacity: 0.72; }
+.pl-evs-more { margin-top: var(--sp-3); }
+.pl-series { margin-top: var(--sp-2); }
+.pl-series li.row > a .i { width: 20px; height: 20px; color: var(--text-muted); flex: none; }
+@media (max-width: 559px) { .pl-ev { grid-template-columns: 52px minmax(0, 1fr) auto; gap: 4px 12px; } .pl-ev .datebox { width: 52px; } }
+
+/* ---------- timeline entries here ---------- */
+.pl-tl { margin-top: var(--sp-2); }
+.pl-tl .tl-title a { color: var(--text); text-decoration: none; }
+.pl-tl .tl-title a:hover { text-decoration: underline; text-underline-offset: 0.14em; }
+.pl-tl > li:last-child { padding-bottom: var(--sp-2); }
+
+/* ---------- nearby: places and stays, straight-line distances ---------- */
+.pl-near { display: grid; gap: var(--sp-5) var(--sp-6); }
+@media (min-width: 900px) { .pl-near:has(> .pl-near-col + .pl-near-col) { grid-template-columns: 1fr 1fr; } }
+.pl-near-col .sub-h { margin-top: 0; }
+
+/* ---------- source ---------- */
+.pl-source { margin-top: var(--sp-8); }
+.pl-source .source-line { margin-top: var(--sp-2); }
+.pl-fix { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
+.pl-fix a { color: var(--text-muted); }
+
+/* ---------- rows with a chart symbol and a distance (nearby, departures) ---------- */
+.pl-near-row > a { gap: 12px; }
+.pl-near-row > a > .sym { width: 20px; height: 20px; flex: none; color: var(--ink-text); }
+.pl-near-row > a > span:not(.pl-d) { flex: 1; min-width: 0; }
+.pl-d { flex: none; margin-left: auto; padding-left: var(--sp-3); font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* ---------- sources: each page named by its address ---------- */
+.pl-src { display: grid; gap: 6px; margin: var(--sp-3) 0 0; font-size: var(--fs-sm); }
+.pl-src > div { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 4px var(--sp-3); align-items: baseline; }
+.pl-src dt { color: var(--text-faint); }
+.pl-src dd { overflow-wrap: anywhere; }
+.pl-src a { color: var(--text-muted); }
+@media (max-width: 459px) { .pl-src > div { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+
+/* the plate beside the facts: taller than 3:2 so a long name never clips */
+@media (min-width: 1000px) { .pl-plate .plate-type.lg { aspect-ratio: 5 / 4; } .pl-plate .plate-type.lg .pt-name { font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2.125rem); } }
+.pl-meta.pl-state { margin-top: var(--sp-2); }
+.pl-glance .fact .badge { white-space: normal; line-height: 1.2; }
+.pl-evs-past { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
+.pl-tl > li:has(.stretched:hover) .tl-title a { text-decoration: underline; text-underline-offset: 0.14em; }
+.pl-tl .tl-places { position: relative; }

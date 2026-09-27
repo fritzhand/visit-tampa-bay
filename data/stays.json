@@ -107,8 +107,11 @@
     "quote": "Brand new among Clearwater Beach hotels, AC Hotel Clearwater Beach brings European sophistication and modern design to the island.",
     "status": "open",
     "source_url": "https://business.tampabaybeaches.com/list/member/ac-by-marriott-clearwater-17765",
+    "also_sources": [
+      "https://pulse2.com/eos-provides-140-million-refinancing-for-mission-hill-hospitality-portfolio/"
+    ],
     "checked": "2026-09-27",
-    "notes": "marriott.com blocks automated reading; facts from the Tampa Bay Beaches Chamber listing."
+    "notes": "marriott.com blocks automated reading; facts from the Tampa Bay Beaches Chamber listing. Verifier (2026-09-27): Pulse 2.0 (Jul 27, 2026) lists 'AC by Marriott Clearwater Beach' in Mission Hill Hospitality's refinanced portfolio (evidence of 2026 operation)."
   },
   {
     "id": "ac-hotel-tampa-airport",
@@ -322,10 +325,9 @@
       "pool",
       "rooftop-bar",
       "fitness",
-      "kitchens",
       "all-suites"
     ],
-    "summary": "An eight-story boutique hotel of two- and three-bedroom suites with Gulf-view balconies steps from Clearwater Beach, with a rooftop bar, pool lounge and gym.",
+    "summary": "An eight-story boutique hotel of 34 two- and three-bedroom suites with Gulf-view balconies steps from Clearwater Beach, with a rooftop pool deck and bar and a gym.",
     "quote": "Simplified Elegance with Breathtaking Gulf Views",
     "status": "open",
     "source_url": "https://theavalonclubhotel.com/",
@@ -333,7 +335,7 @@
       "https://www.visitstpeteclearwater.com/profile/the-avalon-club-hotel/142914"
     ],
     "checked": "2026-09-27",
-    "notes": "Suite types and kitchens per the VSPC profile (34 two- and three-bedroom suites)."
+    "notes": "Suite types and kitchens per the VSPC profile (34 two- and three-bedroom suites). Verifier (2026-09-27): kitchens dropped (VSPC mentions them only in guest reviews)."
   },
   {
     "id": "avalon-hotel-st-petersburg",
@@ -445,7 +447,7 @@
       "kitchens"
     ],
     "summary": "A condominium resort on five waterfront acres on the Intracoastal Waterway in Indian Shores, across Gulf Boulevard from the beach, renting furnished suites with full kitchens around a waterfront pool.",
-    "quote": "Set out on five-acres of waterfront property overlooking the Intracoastal, and right across Gulf Boulevard from the Gulf of Mexico and Indian Shores Beach.",
+    "quote": "Set out on five-acres of waterfront property overlooking the Intracoastal, and right across Gulf Boulevard from the Gulf of Mexico and Indian Shores Beach",
     "status": "open",
     "source_url": "https://www.barefootbeachresort.com/",
     "also_sources": [
@@ -599,7 +601,7 @@
     "lng": -82.738761,
     "geo_source": "osm",
     "url": "https://www.plazabeachresorts.com/our-resorts/bayview-plaza-waterfront-resort/",
-    "rooms": 7,
+    "rooms": null,
     "features": [
       "waterfront",
       "bay-view",
@@ -610,15 +612,15 @@
       "free-parking",
       "ev-charging"
     ],
-    "summary": "A seven-suite resort on Boca Ciega Bay across the street from the beach, with a heated pool, a fitness room and a fishing pier; guests check in at the Plaza Beach Hotel.",
-    "quote": "Bayview Plaza Waterfront Resort – St Pete Beach is an award winning boutique resort of only seven suites located on Boca Ciega Bay.",
+    "summary": "A small suite resort on Boca Ciega Bay across the street from the beach, with a heated pool, a fitness room and a fishing pier; guests check in at the Plaza Beach Hotel.",
+    "quote": "In this boutique, charming property of beautiful suites, you can watch for manatees and dolphins that visit the bay almost on a daily basis.",
     "status": "open",
     "source_url": "https://www.plazabeachresorts.com/our-resorts/bayview-plaza-waterfront-resort/",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/bayview-plaza-waterfront-resort-st-pete-beach-1314"
     ],
     "checked": "2026-09-27",
-    "notes": "Street address from the Tampa Bay Beaches Chamber listing; the resort page gives only the check-in address (4506 Gulf Blvd)."
+    "notes": "Street address from the Tampa Bay Beaches Chamber listing; the resort page gives only the check-in address (4506 Gulf Blvd). Verifier (2026-09-27): rooms set to null and the count dropped from summary and quote: the resort page says 'only seven suites' but the Plaza Beach Resorts home page says 'Offering only 11 exclusive suites'."
   },
   {
     "id": "beach-drive-inn",
@@ -743,16 +745,17 @@
       "meeting-space"
     ],
     "summary": "A resort on almost six landscaped acres with direct beach access at St. Pete Beach, home to Jimmy B's Beach Bar, with live music daily. It reopened in October 2025 after hurricane repairs.",
-    "quote": "The Beachcomber Beach Resort and Hotel located directly on St Pete Beach provides a resort style atmosphere on almost 6 acres of lush tropical landscaped gardens on our own private beach.",
+    "quote": "The Beachcomber provides a resort style atmosphere on almost 6 acres of lush tropical landscaped gardens with direct beach access, on the sun-kissed shores of Florida's Gulf Coast.",
     "status": "open",
     "source_url": "https://www.beachcomberflorida.com/",
     "also_sources": [
       "https://baynews9.com/fl/tampa/news/2025/09/16/pinellas-hotels-closed-beach",
       "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
-      "https://business.tampabaybeaches.com/list/member/beachcomber-beach-resort-hotel-160"
+      "https://business.tampabaybeaches.com/list/member/beachcomber-beach-resort-hotel-160",
+      "https://ilovetheburg.com/beachcomber-st-pete-beach-oto-development/"
     ],
     "checked": "2026-09-27",
-    "notes": "Closed after the 2024 hurricanes; Bay News 9 (Sep 16, 2025) reported it would reopen Oct 30 (2025); Visit St. Pete-Clearwater says it reopened in October 2025."
+    "notes": "Closed after the 2024 hurricanes; Bay News 9 (Sep 16, 2025) reported it would reopen Oct 30 (2025); Visit St. Pete-Clearwater says it reopened in October 2025. Verifier (2026-09-27): quote replaced (the old wording, '...on our own private beach', is no longer on the site). I Love the Burg (May 8, 2026): sold to OTO Development, which 'implied there will be no immediate major changes'; 102 rooms per that article and Visit St. Pete-Clearwater (rooms left null). A Business Journals headline (Aug 18, 2026) says it will become an Outset Collection by Hilton hotel; not read, not recorded."
   },
   {
     "id": "bella-sirena-inn",
@@ -774,13 +777,14 @@
       "free-parking",
       "accessible-rooms"
     ],
-    "summary": "A motel of studio efficiencies and one-bedroom suites with full kitchens on Corey Avenue, St. Pete Beach's shopping street, under an eight-minute walk from the beach; it has a heated pool and no pets.",
+    "summary": "A motel of studio efficiencies and one-bedroom suites with full kitchens on Corey Avenue, St. Pete Beach's shopping street, under an eight-minute walk from the beach; it has an outdoor pool, free self parking and no pets.",
     "status": "open",
     "source_url": "https://bellasirenainn.com/",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/bella-sirena-inn-motel-17870"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): 'heated pool' corrected to 'outdoor pool' (the site says 'Outdoor pool')."
   },
   {
     "id": "belleair-beach-resort-motel",
@@ -936,7 +940,7 @@
     "lng": -82.736388,
     "geo_source": "census",
     "url": "https://www.berkeleybeachclub.com/",
-    "phone": "(727) 228-1000",
+    "phone": "(727) 383-1380",
     "features": [
       "kitchens",
       "rooftop-bar",
@@ -953,7 +957,7 @@
       "https://www.visitstpeteclearwater.com/best-boutique-hotels"
     ],
     "checked": "2026-09-27",
-    "notes": "Own site is partly behind a bot challenge; suites, kitchens, parking and pets from the Visit St. Pete-Clearwater profile. Phone from VSPC; the site shows 727-383-1380."
+    "notes": "Own site is partly behind a bot challenge; suites, kitchens, parking and pets from the Visit St. Pete-Clearwater profile. Phone from VSPC; the site shows 727-383-1380. Verifier (2026-09-27): phone changed to the number on the hotel's own site (VSPC lists 727-228-1000)."
   },
   {
     "id": "best-western-plus-yacht-harbor-inn",
@@ -1024,9 +1028,9 @@
     "city": "Wesley Chapel",
     "state": "FL",
     "zip": "33544",
-    "lat": 28.238226,
-    "lng": -82.357416,
-    "geo_source": "census",
+    "lat": 28.239155,
+    "lng": -82.358037,
+    "geo_source": "photon",
     "rooms": 73,
     "features": [
       "pool",
@@ -1036,7 +1040,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/wesley-chapel/hotel/best-western-wesley-chapel/venue-704d16c9-a05c-4467-835a-c88858c0018e",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Best Western' at 5639 Oakley Boulevard at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Best Western' at 5639 Oakley Boulevard at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Best Western), which was about 120 m from the Census point."
   },
   {
     "id": "bilmar-beach-resort",
@@ -1060,7 +1064,7 @@
       "meeting-space"
     ],
     "summary": "A 166-room beachfront resort on Treasure Island, most of whose rooms, suites and penthouses face the Gulf; it has two heated pools, a whirlpool and a rooftop sun deck. Renovations to its lobby, 30-plus rooms and Waves Beach Bar debuted in September 2025.",
-    "quote": "Come discover our one-of-a-kind blend of relaxation and exhilaration, from our 166 well-appointed rooms, suites and penthouses – 90% of which are beachfront.",
+    "quote": "Come discover our one-of-a-kind blend of relaxation and exhilaration, from our 166 well-appointed rooms, suites and penthouses – 90% of which are beachfront",
     "status": "open",
     "source_url": "https://www.bilmarbeachresort.com/",
     "also_sources": [
@@ -1068,7 +1072,7 @@
       "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
     ],
     "checked": "2026-09-27",
-    "notes": "Phone from the chamber listing; the resort site shows 877.834.0441. 'restaurant' and 'meeting-space' from the site's dining and Meetings & Events sections; Waves Beach Bar named by Visit St. Pete-Clearwater."
+    "notes": "Phone from the chamber listing; the resort site shows 877.834.0441. 'restaurant' and 'meeting-space' from the site's dining and Meetings & Events sections; Waves Beach Bar named by Visit St. Pete-Clearwater. Verifier (2026-09-27): VSPC new-hotels list confirms the 2025 updates (lobby, 30+ rooms, Waves Beach Bar, pools)."
   },
   {
     "id": "birchwood",
@@ -1287,20 +1291,20 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.932113,
-    "lng": -82.339278,
-    "geo_source": "census",
+    "lat": 27.932669,
+    "lng": -82.340431,
+    "geo_source": "photon",
     "rooms": 102,
     "features": [
       "pool",
       "restaurant",
       "meeting-space"
     ],
-    "summary": "A 102-room Cambria hotel on Delaney Lake Drive in the Brandon area, built in 2025 according to its Cvent profile, which lists an outdoor pool and an on-site restaurant.",
+    "summary": "A 102-room Cambria hotel on Delaney Lake Drive in the Brandon area; its Cvent profile says it was built in 2025 and opened in 2026, and lists an outdoor pool and an on-site restaurant.",
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/cambria-hotel-tampa-brandon-12-commission/venue-786c5eea-2958-431c-8d20-121c78ef2524",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent profile name carries a travel-agent note ('-12% commission'), dropped from the name. Cvent: built 2025. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Cambria Hotel' on Delaney Lake Drive at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent profile name carries a travel-agent note ('-12% commission'), dropped from the name. Cvent: built 2025. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Cambria Hotel' on Delaney Lake Drive at this address. Verifier 2026-09-27: summary adds the opening year from the Cvent FAQ ('When did ... open? 2026.'); OpenStreetMap maps a Cambria Hotel on Delaney Lake Drive."
   },
   {
     "id": "camelot-beach-suites",
@@ -1325,14 +1329,15 @@
       "kitchens",
       "pet-friendly"
     ],
-    "summary": "A boutique hotel half a block from the Gulf in north Clearwater Beach whose suites all have kitchenettes; it has a heated pool and accepts pets for a fee.",
+    "summary": "A boutique hotel half a block from the Gulf in north Clearwater Beach whose suites all have kitchenettes; it has a heated pool and a rooftop sundeck, and accepts pets.",
     "quote": "Every Suite at Camelot has a modern, fully equipped kitchenettes and small dining areas.",
     "status": "open",
     "source_url": "https://camelotbeachsuites.com/",
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/camelot-resort/138006"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): pet fee not stated; rooftop sundeck and half-block distance per VSPC profile."
   },
   {
     "id": "candlewood-suites-safety-harbor",
@@ -1478,7 +1483,6 @@
     "phone": "(727) 367-3791",
     "opened": "1952",
     "features": [
-      "pool",
       "kitchens"
     ],
     "summary": "A motel of rooms, efficiencies and apartments built in 1952 across Gulf Boulevard from the Treasure Island beach, about a mile from John's Pass.",
@@ -1486,7 +1490,7 @@
     "status": "open",
     "source_url": "https://cherilynmotel.com/",
     "checked": "2026-09-27",
-    "notes": "'pool' from a guest review on the page ('nice pool'); verifier may drop."
+    "notes": "'pool' from a guest review on the page ('nice pool'); verifier may drop. Verifier (2026-09-27): pool dropped (guest review only)."
   },
   {
     "id": "clarion-inn-suites-clearwater",
@@ -1734,9 +1738,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33647",
-    "lat": 28.124402,
-    "lng": -82.37089,
-    "geo_source": "census",
+    "lat": 28.123474,
+    "lng": -82.370988,
+    "geo_source": "photon",
     "rooms": 86,
     "features": [
       "pool",
@@ -1747,7 +1751,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/comfort-inn-suites-tampa-north-i-75/venue-bd20602a-0c9b-44bc-a792-522b459e7056",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn & Suites' on Dona Michelle Drive at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn & Suites' on Dona Michelle Drive at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Comfort Inn & Suites), which was about 103 m from the Census point."
   },
   {
     "id": "comfort-inn-sun-city-center-tampa-south",
@@ -1760,9 +1764,9 @@
     "city": "Sun City Center",
     "state": "FL",
     "zip": "33573",
-    "lat": 27.713288,
-    "lng": -82.377068,
-    "geo_source": "census",
+    "lat": 27.713707,
+    "lng": -82.378038,
+    "geo_source": "photon",
     "rooms": 74,
     "features": [
       "pool"
@@ -1771,7 +1775,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/sun-city-center/hotel/comfort-inn-sun-city-center-tampa-south/venue-eed9be8d-da10-4d16-b162-e228325e6890",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn' at 718 Cypress Village Boulevard at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn' at 718 Cypress Village Boulevard at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Comfort Inn), which was about 106 m from the Census point."
   },
   {
     "id": "comfort-suites-clearwater-dunedin",
@@ -1840,9 +1844,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.946741,
-    "lng": -82.341288,
-    "geo_source": "census",
+    "lat": 27.945991,
+    "lng": -82.338622,
+    "geo_source": "photon",
     "rooms": 69,
     "features": [
       "pool",
@@ -1853,7 +1857,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/comfort-suites-tampa-brandon/venue-8e506c57-bf13-41be-a8cd-b9ec7ccc8b9e",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Comfort Inn Suites - Brandon' (a different name) at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Comfort Inn Suites - Brandon' (a different name) at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Comfort Inn Suites - Brandon), which was about 274 m from the Census point."
   },
   {
     "id": "coral-reef-beach-resort",
@@ -2006,9 +2010,9 @@
     "city": "Brandon",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.940938,
-    "lng": -82.336744,
-    "geo_source": "census",
+    "lat": 27.940666,
+    "lng": -82.337937,
+    "geo_source": "photon",
     "rooms": 82,
     "features": [
       "pool",
@@ -2019,7 +2023,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/brandon/hotel/country-inn-suites-by-radisson-tampa-brandon-fl/venue-5ee23e5c-7801-49b3-9791-d544182d3874",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Country Inn & Suites, Tampa/Brandon, FL' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Country Inn & Suites, Tampa/Brandon, FL' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Country Inn & Suites, Tampa/Brandon, FL), which was about 121 m from the Census point."
   },
   {
     "id": "country-inn-suites-tampa-rj-stadium",
@@ -2032,9 +2036,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33614",
-    "lat": 27.987685,
-    "lng": -82.505434,
-    "geo_source": "census",
+    "lat": 27.987616,
+    "lng": -82.506856,
+    "geo_source": "photon",
     "rooms": 147,
     "features": [
       "pool",
@@ -2045,7 +2049,35 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/resort/country-inn-suites-by-radisson-tampa-rj-stadium/venue-2c0adf4e-edea-48c2-8e52-af38c217501a",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Country Inn & Suites, Tampa RJ Stadium' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Country Inn & Suites, Tampa RJ Stadium' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Country Inn & Suites, Tampa RJ Stadium), which was about 140 m from the Census point."
+  },
+  {
+    "id": "courtyard-clearwater-beach",
+    "name": "Courtyard Clearwater Beach",
+    "aliases": [
+      "Courtyard by Marriott Clearwater Beach"
+    ],
+    "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "Courtyard by Marriott",
+    "area": "clearwater-beach",
+    "address": "455 East Shore Dr",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.980441,
+    "lng": -82.825422,
+    "geo_source": "photon",
+    "url": "https://www.marriott.com/tpach",
+    "phone": null,
+    "features": [],
+    "summary": "A Courtyard by Marriott hotel on East Shore Drive in Clearwater Beach.",
+    "quote": null,
+    "status": "open",
+    "tags": [],
+    "source_url": "https://pulse2.com/eos-provides-140-million-refinancing-for-mission-hill-hospitality-portfolio/",
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27) addition, thin on purpose. marriott.com blocks automated reading and no tourism or chamber page lists it. Pulse 2.0 (Jul 27, 2026) names 'Courtyard by Marriott Clearwater Beach in Clearwater, Florida' in Mission Hill Hospitality's refinanced portfolio, which is the evidence it operates in 2026. Address, website and position from OpenStreetMap (W919027025 'Courtyard Clearwater Beach, 455, East Shore Drive'; Census matched the same address). OSM phone +1 727-442-4770 not recorded. Amenities unknown (left empty)."
   },
   {
     "id": "courtyard-st-petersburg-clearwater",
@@ -2238,9 +2270,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.069906,
-    "lng": -82.362297,
-    "geo_source": "census",
+    "lat": 28.069851,
+    "lng": -82.361001,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpacy-courtyard-tampa-north-i-75-fletcher/overview/",
     "phone": "(813) 978-9898",
     "rooms": 81,
@@ -2258,7 +2290,7 @@
       "https://www.cvent.com/venues/tampa/hotel/courtyard-by-marriott-tampa-north-i-75-fletcher/venue-2388eed6-8146-4780-8e94-139b2b577855"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Courtyard Tampa North/I-75 Fletcher), which was about 127 m from the Census point."
   },
   {
     "id": "courtyard-tampa-northwest-veterans-expressway",
@@ -2274,9 +2306,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33625",
-    "lat": 28.064674,
-    "lng": -82.570327,
-    "geo_source": "census",
+    "lat": 28.063588,
+    "lng": -82.57056,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpanw-courtyard-tampa-northwest-veterans-expressway/overview/",
     "phone": "(813) 920-2011",
     "rooms": 128,
@@ -2295,7 +2327,7 @@
       "https://www.cvent.com/venues/tampa/hotel/courtyard-by-marriott-tampa-northwest-veterans-expressway/venue-29e57c2a-d944-43d6-bd71-0ec99205a7de"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Courtyard Tampa Northwest/Veterans Expressway), which was about 123 m from the Census point."
   },
   {
     "id": "courtyard-tampa-oldsmar",
@@ -2340,9 +2372,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.952224,
-    "lng": -82.505849,
-    "geo_source": "census",
+    "lat": 27.953054,
+    "lng": -82.507106,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpawt-courtyard-tampa-westshore-airport/overview/",
     "phone": "(813) 874-0555",
     "rooms": 145,
@@ -2361,7 +2393,7 @@
       "https://www.cvent.com/venues/tampa/hotel/courtyard-by-marriott-tampa-westshore-airport/venue-44e1dd2d-677d-4e6f-b92b-240af6fcea95"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Courtyard Tampa Westshore/Airport Building 2), which was about 154 m from the Census point."
   },
   {
     "id": "crystal-palms-beach-resort",
@@ -2384,7 +2416,7 @@
       "kitchens",
       "all-suites"
     ],
-    "summary": "An all-suite boutique resort run by Provident Resorts on Treasure Island, steps from the beach, with suites that have full kitchens.",
+    "summary": "An all-suite boutique resort run by Provident Resorts on Treasure Island, steps from the beach.",
     "quote": "Discover our all-suite Treasure Island boutique hotel, just steps from some of the best beaches in Florida at Crystal Palms Beach Resort.",
     "status": "open",
     "source_url": "https://www.providentresorts.com/crystal-palms-tampa-and-treasure-island/",
@@ -2392,7 +2424,7 @@
       "https://business.tampabaybeaches.com/list/member/crystal-palms-beach-resort-5923"
     ],
     "checked": "2026-09-27",
-    "notes": "'kitchens' and 'pool' appear in guest reviews on the page; verifier may want the rooms page."
+    "notes": "'kitchens' and 'pool' appear in guest reviews on the page; verifier may want the rooms page. Verifier (2026-09-27): pool and kitchens kept only because the resort page's own photos are captioned as the pool deck and a suite kitchen; no room count or kitchen text on the page."
   },
   {
     "id": "current-hotel",
@@ -2408,9 +2440,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.963145,
-    "lng": -82.570195,
-    "geo_source": "census",
+    "lat": 27.962416,
+    "lng": -82.56894,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tparo-the-current-hotel-autograph-collection/overview/",
     "phone": "(484) 951-7370",
     "rooms": 180,
@@ -2423,7 +2455,7 @@
       "bay-view",
       "meeting-space"
     ],
-    "summary": "An Autograph Collection hotel on Rocky Point, built in 2019 according to its Cvent profile, where every room faces Tampa Bay; it has a rooftop bar, a pool, a ninth-floor fitness center and a private beach area for events.",
+    "summary": "An Autograph Collection hotel on Rocky Point, built in 2019 according to its Cvent profile, where every room has a view of Tampa Bay; it has a rooftop bar, a pool, a ninth-floor fitness center and a private beach area.",
     "quote": "Each guest room provides a bay view of Tampa Bay like no other.",
     "status": "open",
     "source_url": "https://www.visittampabay.com/listings/the-current-hotel/13457/",
@@ -2431,7 +2463,7 @@
       "https://www.cvent.com/venues/tampa/hotel/the-current-hotel-autograph-collection/venue-924c7015-be03-4538-89f8-a272b1fd2354"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Visit Tampa Bay 180, Cvent 178 ('178 room luxury waterfront Autograph Collection Hotel'). Cvent: built 2019."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Visit Tampa Bay 180, Cvent 178 ('178 room luxury waterfront Autograph Collection Hotel'). Cvent: built 2019. Verifier 2026-09-27: summary: 'private beach area for events' -> 'private beach area' (the listing describes it for relaxation and sunsets)."
   },
   {
     "id": "days-inn-clearwater-gulf-to-bay",
@@ -2536,6 +2568,79 @@
     "notes": "North St. Petersburg has no area of its own; filed under northeast-stpete."
   },
   {
+    "id": "days-inn-suites-port-richey",
+    "name": "Days Inn & Suites by Wyndham Port Richey",
+    "aliases": [
+      "Days Inn Hotel & Suites - Port Richey"
+    ],
+    "kind": "hotel",
+    "brand": "Wyndham",
+    "collection": "Days Inn by Wyndham",
+    "area": "west-pasco",
+    "address": "10826 US Hwy 19",
+    "city": "Port Richey",
+    "state": "FL",
+    "zip": "34668",
+    "lat": 28.315075,
+    "lng": -82.698503,
+    "geo_source": "photon",
+    "url": "https://www.wyndhamhotels.com/days-inn/port-richey-florida/days-inn-and-suites-port-richey/overview",
+    "phone": "+1-727-755-5830",
+    "rooms": 110,
+    "features": [
+      "pool",
+      "free-breakfast",
+      "free-parking",
+      "meeting-space"
+    ],
+    "summary": "A 110-room Days Inn & Suites on US 19 in Port Richey with a free continental breakfast, free parking, an outdoor pool in a courtyard and a family picnic area.",
+    "quote": "You can also take advantage of our outdoor pool, surrounded by the serenity of a tropical courtyard, and celebrate with loved ones in our family picnic area.",
+    "status": "open",
+    "source_url": "https://www.wyndhamhotels.com/days-inn/port-richey-florida/days-inn-and-suites-port-richey/overview",
+    "also_sources": [
+      "https://www.cvent.com/venues/port-richey/hotel/days-inn-suites-by-wyndham-port-richey/venue-07c718a4-8f37-463f-95fb-6378cf076ebc"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27). Main source: the Wyndham brand page (live; meeting room of 560 sq ft for up to 100). Rooms (110), built 1985 and renovated 2018 from the Cvent profile. Coordinates: OpenStreetMap feature 'Days Inn Hotel & Suites - Port Richey, 10826 US Highway 19'."
+  },
+  {
+    "id": "days-inn-suites-tampa-raymond-james-stadium",
+    "name": "Days Inn & Suites by Wyndham Tampa / Raymond James Stadium",
+    "aliases": [
+      "Days Inn & Suites Tampa Raymond James Stadium"
+    ],
+    "kind": "hotel",
+    "brand": "Wyndham",
+    "collection": "Days Inn by Wyndham",
+    "area": "westshore",
+    "address": "5405 N Church Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33614",
+    "lat": 27.997776,
+    "lng": -82.506876,
+    "geo_source": "photon",
+    "url": "https://www.wyndhamhotels.com/days-inn/tampa-florida/days-inn-tampa-raymond-james-stadium/overview",
+    "phone": "+1-813-280-5063",
+    "rooms": 66,
+    "features": [
+      "pool",
+      "free-breakfast",
+      "free-parking",
+      "pet-friendly",
+      "meeting-space"
+    ],
+    "summary": "A 66-room Days Inn & Suites off Hillsborough Avenue (US 92) north of Raymond James Stadium, with a free light breakfast, an outdoor pool, free parking and pet-friendly rooms for a fee.",
+    "quote": "Raymond James Stadium, home of the Tampa Bay Buccaneers, is about two miles away.",
+    "status": "open",
+    "source_url": "https://www.wyndhamhotels.com/days-inn/tampa-florida/days-inn-tampa-raymond-james-stadium/overview",
+    "also_sources": [
+      "https://www.cvent.com/venues/tampa/hotel/days-inn-suites-by-wyndham-tampa-raymond-james-stadium/venue-54ca992c-9951-4adc-944e-920bba15e49f"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27). Main source: the Wyndham brand page (live; 'Located off Highway 92'; 560 sq ft meeting room). Rooms (66) and renovation year (2020) from the Cvent profile. Coordinates: OpenStreetMap feature 'Days Inn & Suites by Wyndham Tampa / Raymond James Stadium, 5405 North Church Avenue'. Placed in westshore with Country Inn & Suites Tampa RJ Stadium (4750 N Dale Mabry)."
+  },
+  {
     "id": "dolphin-beach-resort",
     "name": "Dolphin Beach Resort",
     "kind": "resort",
@@ -2566,6 +2671,45 @@
     ],
     "checked": "2026-09-27",
     "notes": "OPEN QUESTION: Bay News 9 (Sep 16, 2025) listed it as closed after the 2024 hurricanes with reopening expected in 2026. On Sep 27, 2026 the resort's own site takes bookings and shows no closure notice, so status is open; no dated reopening announcement was found. Amenities per the resort's site (free parking listed there)."
+  },
+  {
+    "id": "dolphin-sands-clearwater-beach",
+    "name": "Dolphin Sands Clearwater Beach, Ascend Hotel Collection",
+    "aliases": [
+      "Dolphin Sands Clearwater Beach",
+      "Winter the Dolphin's Beach Club",
+      "Dolphin Sands Beach Club"
+    ],
+    "kind": "hotel",
+    "brand": "Choice Hotels",
+    "collection": "Ascend Hotel Collection",
+    "area": "clearwater-beach",
+    "address": "655 S Gulfview Blvd",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.966444,
+    "lng": -82.825752,
+    "geo_source": "osm",
+    "url": "https://www.dolphinsandsclearwater.com/",
+    "phone": "(727) 228-8575",
+    "features": [
+      "beachfront",
+      "pool",
+      "restaurant",
+      "fitness",
+      "accessible-rooms"
+    ],
+    "summary": "A beachfront hotel at the south end of Clearwater Beach in Choice Hotels' Ascend Hotel Collection, with a pool, a restaurant and tiki bar, and a fitness room. Visit St. Pete-Clearwater's listing says it honors Winter the Dolphin of the Clearwater Marine Aquarium and that room revenues support the aquarium's animal care.",
+    "quote": "Inspired by the serene waters of Clearwater Beach and its beloved marine inhabitants, our hotel is both family-friendly and eco-friendly.",
+    "status": "open",
+    "source_url": "https://www.dolphinsandsclearwater.com/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/dolphin-sands-clearwater-beach/139001",
+      "https://lodgingmagazine.com/quality-inn-clearwater-beach-to-join-ascend-collection-following-renovation/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): id renamed from winter-the-dolphins-beach-club (not yet published) because the hotel's own site and the VSPC listing now name it 'Dolphin Sands Clearwater Beach' (site title: 'Dolphin Sands Clearwater Beach, Ascend Hotel Collection'). Lodging Magazine (Jan 10, 2020): the former Quality Inn Clearwater Beach (91 rooms and suites, five floors) was to become Dolphin Sands Beach Club in the Ascend Collection. It opened in 2020 under the Winter the Dolphin's Beach Club name (news headlines, Jul 2020). Site read through WebFetch (curl gets 403); quote confirmed twice. VSPC: 91 units (rooms left null), fitness, restaurant, tiki bar, accessible rooms."
   },
   {
     "id": "don-cesar",
@@ -2632,7 +2776,7 @@
       "https://business.tampabaybeaches.com/list/member/don-cesar-hotel-390"
     ],
     "checked": "2026-09-27",
-    "notes": "Closed for hurricane repairs Sep 2024 to Mar 2025 (HVS, Jul 1, 2026; Wikipedia). Room count not stated on the hotel's site (Wikipedia: 277 rooms and 40 suites; Visit St. Pete-Clearwater: 277 rooms and 36 suites), left null. NPS NRIS lists the architect as unknown; Wikipedia names Henry H. Dupont."
+    "notes": "Closed for hurricane repairs Sep 2024 to Mar 2025 (HVS, Jul 1, 2026; Wikipedia). Room count not stated on the hotel's site (Wikipedia: 277 rooms and 40 suites; Visit St. Pete-Clearwater: 277 rooms and 36 suites), left null. NPS NRIS lists the architect as unknown; Wikipedia names Henry H. Dupont. Verifier (2026-09-27): heritage facts re-checked against Wikipedia (Thomas Rowe, opened January 16, 1928; Army purchase; December 1942 hospital; February 1944 convalescent center; VA office by end of 1945; NRHP April 3, 1975, ref 75000563; architect Henry H. Dupont); HVS confirms the Sep 2024-Mar 2025 closure."
   },
   {
     "id": "doubletree-beach-resort-tampa-bay-north-redington-beach",
@@ -2681,9 +2825,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.968895,
-    "lng": -82.569019,
-    "geo_source": "census",
+    "lat": 27.970337,
+    "lng": -82.569311,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tparhdt-doubletree-tampa-rocky-point-waterfront/",
     "phone": "(813) 888-8800",
     "rooms": 291,
@@ -2704,7 +2848,7 @@
       "https://www.cvent.com/venues/tampa/hotel/doubletree-by-hilton-tampa-rocky-point-waterfront/venue-437e31d7-a876-4a8c-8f8b-d93d4e2b0655"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Doubletree Tampa Rocky Point Waterfront), which was about 163 m from the Census point."
   },
   {
     "id": "drury-plaza-hotel-tampa-brandon",
@@ -2825,8 +2969,7 @@
       "pool",
       "rooftop-bar",
       "restaurant",
-      "fitness",
-      "free-breakfast"
+      "fitness"
     ],
     "summary": "A boutique hotel on South Gulfview Boulevard in Clearwater Beach with a glass-walled pool and the Jimmy's on the Edge rooftop bar; its daily amenity fee covers continental breakfast, parking and fitness center use.",
     "quote": "The only hotel in Clearwater Beach with a GLASS WALL POOL and the LARGEST Rooftop Bar!",
@@ -2840,7 +2983,7 @@
       "https://clearwaterbeachcollection.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "Breakfast and parking are included in a daily amenity fee, not free; free-breakfast kept because breakfast is included in the stay; verifier may drop."
+    "notes": "Breakfast and parking are included in a daily amenity fee, not free; free-breakfast kept because breakfast is included in the stay; verifier may drop. Verifier (2026-09-27): free-breakfast dropped: breakfast, parking and fitness are covered by a paid daily amenity fee, so they are not free."
   },
   {
     "id": "edward-medard-campground",
@@ -2988,9 +3131,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.940186,
-    "lng": -82.331903,
-    "geo_source": "census",
+    "lat": 27.941694,
+    "lng": -82.332323,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpabdes-embassy-suites-tampa-brandon/",
     "phone": "(813) 653-1905",
     "rooms": 147,
@@ -3012,7 +3155,7 @@
       "https://www.cvent.com/venues/tampa/hotel/embassy-suites-by-hilton-tampa-brandon/venue-e6abcb5e-a878-4376-be3b-ceb7c4c49bec"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Embassy Suites by Hilton Tampa Brandon), which was about 172 m from the Census point."
   },
   {
     "id": "embassy-suites-tampa-downtown-convention-center",
@@ -3070,9 +3213,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33612",
-    "lat": 28.056056,
-    "lng": -82.420023,
-    "geo_source": "census",
+    "lat": 28.055698,
+    "lng": -82.417478,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpafres-embassy-suites-tampa-usf-near-busch-gardens/",
     "phone": "(813) 977-7066",
     "rooms": 247,
@@ -3093,7 +3236,7 @@
       "https://www.cvent.com/venues/tampa/hotel/embassy-suites-by-hilton-tampa-usf-near-busch-gardens/venue-5d04cf6a-081f-4f11-9cbc-e67106fe972f"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Embassy Suites by Hilton Tampa USF Near Busch Gardens), which was about 252 m from the Census point."
   },
   {
     "id": "emberwood-manor",
@@ -3216,9 +3359,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.957855,
-    "lng": -82.524059,
-    "geo_source": "census",
+    "lat": 27.958131,
+    "lng": -82.522673,
+    "geo_source": "photon",
     "rooms": 132,
     "features": [
       "pool",
@@ -3229,7 +3372,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/extended-stay-america-tampa-airport-n-west-shore-blvd-/venue-1728f1b6-f018-4e01-acbe-d8df0e6dd48c",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists an 'Extended Stay America' (on North Trask Street, next to this address) at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists an 'Extended Stay America' (on North Trask Street, next to this address) at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Extended Stay America, North Trask Street), which was about 139 m from the Census point."
   },
   {
     "id": "extended-stay-america-tampa-airport-spruce-street",
@@ -3242,9 +3385,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.959435,
-    "lng": -82.516136,
-    "geo_source": "census",
+    "lat": 27.959047,
+    "lng": -82.517407,
+    "geo_source": "photon",
     "rooms": 104,
     "features": [
       "pet-friendly"
@@ -3253,7 +3396,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/extended-stay-america-tampa-airport-spruce-street/venue-f813acdd-13c6-45a9-a752-f851497569e3",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists an 'Extended Stay America' on West Spruce Street at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists an 'Extended Stay America' on West Spruce Street at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Extended Stay America), which was about 132 m from the Census point."
   },
   {
     "id": "extended-stay-america-tampa-brandon",
@@ -3321,9 +3464,9 @@
     "city": "Gibsonton",
     "state": "FL",
     "zip": "33534",
-    "lat": 27.847973,
-    "lng": -82.349591,
-    "geo_source": "census",
+    "lat": 27.847576,
+    "lng": -82.351455,
+    "geo_source": "photon",
     "features": [
       "fitness",
       "pet-friendly"
@@ -3332,7 +3475,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/gibsonton/hotel/extended-stay-america-tampa-gibsonton/venue-4384302b-1c6f-4cec-b78d-d88609811d6f",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America Gibsonton' at 10623 East Bay Road at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America Gibsonton' at 10623 East Bay Road at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Extended Stay America Gibsonton), which was about 188 m from the Census point."
   },
   {
     "id": "extended-stay-america-tampa-north-airport",
@@ -3348,9 +3491,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33634",
-    "lat": 27.998096,
-    "lng": -82.548025,
-    "geo_source": "census",
+    "lat": 27.997947,
+    "lng": -82.546619,
+    "geo_source": "photon",
     "rooms": 122,
     "features": [
       "pet-friendly"
@@ -3359,7 +3502,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/extended-stay-america-tampa-north-airport/venue-5eea77ce-49e8-4d91-add2-58e0e3cc7f45",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America - Tampa - North Airport' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America - Tampa - North Airport' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Extended Stay America - Tampa - North Airport), which was about 139 m from the Census point."
   },
   {
     "id": "extended-stay-america-tampa-north-usf-attractions",
@@ -3375,9 +3518,9 @@
     "city": "Temple Terrace",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.069628,
-    "lng": -82.352191,
-    "geo_source": "census",
+    "lat": 28.067879,
+    "lng": -82.356788,
+    "geo_source": "photon",
     "rooms": 101,
     "features": [
       "pet-friendly"
@@ -3386,7 +3529,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/temple-terrace/hotel/extended-stay-america-tampa-north-usf-attractions/venue-a1733270-7d1b-4b75-bc72-d6eb45c6b706",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America - Tampa - North - USF - Attractions' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Extended Stay America - Tampa - North - USF - Attractions' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Extended Stay America - Tampa - North - USF - Attractions), which was about 490 m from the Census point."
   },
   {
     "id": "fairfield-inn-suites-holiday-tarpon-springs",
@@ -3440,9 +3583,9 @@
     "city": "Plant City",
     "state": "FL",
     "zip": "33566",
-    "lat": 28.032295,
-    "lng": -82.057879,
-    "geo_source": "census",
+    "lat": 28.031322,
+    "lng": -82.056871,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpapc-fairfield-inn-and-suites-lakeland-plant-city/overview/",
     "phone": "(813) 757-6202",
     "rooms": 87,
@@ -3461,7 +3604,7 @@
       "https://www.cvent.com/venues/plant-city/hotel/fairfield-by-marriott-inn-suites-lakeland-plant-city/venue-79c223ab-6a49-4732-b023-18837f016615"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Fairfield Inn & Suites Lakeland Plant City), which was about 146 m from the Census point."
   },
   {
     "id": "fairfield-inn-suites-st-petersburg-clearwater",
@@ -3614,9 +3757,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.070533,
-    "lng": -82.351063,
-    "geo_source": "census",
+    "lat": 28.068032,
+    "lng": -82.357344,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpatt-fairfield-inn-and-suites-tampa-north/overview/",
     "phone": "(813) 989-0007",
     "rooms": 82,
@@ -3633,7 +3776,7 @@
       "https://www.cvent.com/venues/temple-terrace/hotel/fairfield-by-marriott-inn-suites-tampa-north/venue-2c5c1f3e-fc5f-4317-92b2-8aaeba85cc72"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Fairfield Inn & Suites Tampa North), which was about 675 m from the Census point."
   },
   {
     "id": "fairfield-inn-suites-tampa-riverview",
@@ -3649,9 +3792,9 @@
     "city": "Riverview",
     "state": "FL",
     "zip": "33579",
-    "lat": 27.792023,
-    "lng": -82.330168,
-    "geo_source": "census",
+    "lat": 27.790485,
+    "lng": -82.329847,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpafr-fairfield-inn-and-suites-tampa-riverview/overview/",
     "rooms": 108,
     "features": [
@@ -3663,7 +3806,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/riverview/hotel/fairfield-by-marriott-inn-suites-tampa-riverview/venue-f8a95371-7436-4bea-8a16-69cb12fac19d",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Fairfield Inn & Suites Tampa Riverview), which was about 174 m from the Census point."
   },
   {
     "id": "fairfield-inn-suites-tampa-wesley-chapel",
@@ -3850,13 +3993,14 @@
       "ev-charging",
       "all-suites"
     ],
-    "summary": "A suite hotel on the Intracoastal side of Gulf Boulevard in Indian Shores with studios and one- and two-bedroom suites with full kitchens, boat slips and a dock, pools, a hot tub and a fitness center, near Indian Shores Beach.",
+    "summary": "A suite hotel on the Intracoastal side of Gulf Boulevard in Indian Shores with studios (mini-kitchens) and one- and two-bedroom suites with full kitchens, boat slips and a dock, a pool and a fitness center, steps from the beach.",
     "status": "open",
     "source_url": "https://www.thefoldhotels.com/indian-shores-fl/",
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/the-fold-hotels-indian-shores/137957"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): the page (Sep 27, 2026) says the hot tub is 'temporarily out of commission', so it is left out of the summary."
   },
   {
     "id": "fort-de-soto-campground",
@@ -3949,14 +4093,13 @@
     "features": [
       "waterfront",
       "pool",
-      "kitchens",
-      "restaurant"
+      "kitchens"
     ],
-    "summary": "A small motel on East Shore Drive overlooking the Intracoastal Waterway in Clearwater Beach, with a pool and kitchens in some units; the listing notes on-site dining.",
+    "summary": "A small motel of 15 units on East Shore Drive overlooking the Intracoastal Waterway in Clearwater Beach, with a pool, balconies and full kitchens in some units.",
     "status": "open",
     "source_url": "https://www.visitstpeteclearwater.com/profile/frenchy-s-oasis-motel/138561",
     "checked": "2026-09-27",
-    "notes": "Own site behind a bot challenge on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (15 units)."
+    "notes": "Own site behind a bot challenge on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (15 units). Verifier (2026-09-27): 'restaurant' and the on-site dining claim removed: the profile's restaurant entry is Frenchy's across the street, not a motel restaurant."
   },
   {
     "id": "fusion-resort-treasure-island",
@@ -3979,7 +4122,6 @@
       "waterfront",
       "marina",
       "pool",
-      "rooftop-bar",
       "kitchens",
       "all-suites",
       "free-parking",
@@ -3993,7 +4135,7 @@
       "https://www.visitstpeteclearwater.com/profile/fusion-resort-in-treasure-island/138955"
     ],
     "checked": "2026-09-27",
-    "notes": "Slips, rooftop terrace, kitchens, parking and on-site restaurant (Vibes Restaurant & Bar) per the Visit St. Pete-Clearwater profile; 'rooftop-bar' interprets the Skyview Terrace, verifier may drop."
+    "notes": "Slips, rooftop terrace, kitchens, parking and on-site restaurant (Vibes Restaurant & Bar) per the Visit St. Pete-Clearwater profile; 'rooftop-bar' interprets the Skyview Terrace, verifier may drop. Verifier (2026-09-27): rooftop-bar dropped (the Skyview Terrace is a rooftop terrace; no bar is named). VSPC profile re-read: 42 units, 18 slips, pool, hot tub, rooftop Skyview Terrace, on-site restaurant, free parking."
   },
   {
     "id": "galaxy-hotel",
@@ -4385,9 +4527,9 @@
     "city": "New Port Richey",
     "state": "FL",
     "zip": "34652",
-    "lat": 28.250246,
-    "lng": -82.721143,
-    "geo_source": "census",
+    "lat": 28.250554,
+    "lng": -82.721375,
+    "geo_source": "photon",
     "url": "https://www.haciendahotelnpr.com/",
     "phone": "1-888-845-5621",
     "rooms": 41,
@@ -4428,7 +4570,7 @@
       "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Pasco_County,_Florida"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site. Zip: Cvent 34652; the Florida's Sports Coast listing gives 34656. Rooms: 40 guest rooms plus one King Suite (own site); Cvent 40."
+    "notes": "Main source: the hotel's own site. Zip: Cvent 34652; the Florida's Sports Coast listing gives 34656. Rooms: 40 guest rooms plus one King Suite (own site); Cvent 40. Verifier 2026-09-27: coordinates: OpenStreetMap building 'Hacienda Hotel, 5621 Main Street' (41 m from the Census point). The Wikipedia NRHP list gives 28.2503, -82.7133, about 770 m east; the OSM building and the Census address agree, so they are kept."
   },
   {
     "id": "hampton-inn-dade-city-zephyrhills",
@@ -4444,9 +4586,9 @@
     "city": "Dade City",
     "state": "FL",
     "zip": "33525",
-    "lat": 28.350254,
-    "lng": -82.187656,
-    "geo_source": "census",
+    "lat": 28.350239,
+    "lng": -82.188823,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/daczphx-hampton-dade-city-zephyrhills/",
     "phone": "(352) 567-5277",
     "features": [
@@ -4462,7 +4604,7 @@
       "https://www.cvent.com/venues/dade-city/hotel/hampton-inn-dade-city-zephyrhills/venue-7d481b8e-3af9-4527-a3d5-9af0447bd5fa"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Florida's Sports Coast 64, Cvent 68; left null. zip from Cvent"
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Florida's Sports Coast 64, Cvent 68; left null. zip from Cvent Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn Dade City - Zephyrhills), which was about 114 m from the Census point."
   },
   {
     "id": "hampton-inn-dunedin",
@@ -4571,9 +4713,9 @@
     "city": "Plant City",
     "state": "FL",
     "zip": "33563",
-    "lat": 28.025929,
-    "lng": -82.150743,
-    "geo_source": "census",
+    "lat": 28.026488,
+    "lng": -82.150751,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaplhx-hampton-plant-city/",
     "phone": "(813) 756-5600",
     "rooms": 89,
@@ -4588,7 +4730,42 @@
       "https://www.cvent.com/venues/plant-city/hotel/hampton-inn-plant-city/venue-60cd82dd-7861-4039-91c0-443d560a2de0"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Address from the Plant City Chamber directory (2702 Thonotosassa Rd); Photon/OSM gives 2707. Cvent: built 2017."
+    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Address from the Plant City Chamber directory (2702 Thonotosassa Rd); Photon/OSM gives 2707. Cvent: built 2017. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn Plant City, 2707 Thonotosassa Road), which was about 62 m from the Census point."
+  },
+  {
+    "id": "hampton-inn-suites-clearwater-beach",
+    "name": "Hampton Inn & Suites Clearwater Beach",
+    "kind": "hotel",
+    "brand": "Hilton",
+    "collection": "Hampton by Hilton",
+    "area": "clearwater-beach",
+    "address": "635 S Gulfview Blvd",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.966789,
+    "lng": -82.826062,
+    "geo_source": "photon",
+    "url": "https://www.hilton.com/en/hotels/clwcbhx-hampton-suites-clearwater-beach/",
+    "phone": null,
+    "features": [
+      "beachfront",
+      "pool",
+      "fitness",
+      "restaurant",
+      "free-breakfast",
+      "meeting-space"
+    ],
+    "summary": "A 91-room beachfront Hampton Inn & Suites on South Gulfview Boulevard in Clearwater Beach with private beach access, an outdoor pool and sundeck, free breakfast, a fitness center and Evy's Terrace Bar & Bistro on the sixth floor. A renovation of all its guest rooms and public spaces was announced as complete in May 2026.",
+    "quote": null,
+    "status": "open",
+    "tags": [],
+    "source_url": "https://lodgingmagazine.com/hampton-inn-suites-clearwater-beach-completes-renovation/",
+    "also_sources": [
+      "https://lodgingmagazine.com/mckibbon-hospitality-adds-three-clearwater-beach-hotels-to-management-portfolio/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27) addition. hilton.com (the URL hamptonclearwaterbeach.com redirects to) returns 403 to automated readers; facts from Lodging Magazine (May 28, 2026), a renovation announcement naming the owner (Page Companies) and manager (McKibbon Hospitality). Street address from OpenStreetMap (N11879278996, matched '635, South Gulfview Boulevard') and the Census geocoder; OSM lists phone +1 727-451-1111 (not recorded). Rooms (91) is from the trade article, not the hotel's page, so rooms is left null. No quote: the hotel's own page could not be read."
   },
   {
     "id": "hampton-inn-suites-clearwater-st-petersburg-ulmerton",
@@ -4668,9 +4845,9 @@
     "city": "Port Richey",
     "state": "FL",
     "zip": "34668",
-    "lat": 28.317853,
-    "lng": -82.699094,
-    "geo_source": "census",
+    "lat": 28.318163,
+    "lng": -82.698011,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/clwprhx-hampton-suites-port-richey/",
     "phone": "(727) 869-4900",
     "rooms": 78,
@@ -4688,7 +4865,7 @@
       "https://www.cvent.com/venues/port-richey/hotel/hampton-inn-suites-port-richey/venue-c1b7933d-6dc7-4b5d-bffc-4fcdb1d9c65d"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn & Suites Port Richey), which was about 111 m from the Census point."
   },
   {
     "id": "hampton-inn-suites-ruskin-i-75",
@@ -4768,9 +4945,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.958,
-    "lng": -82.532407,
-    "geo_source": "census",
+    "lat": 27.959377,
+    "lng": -82.533821,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaashx-hampton-suites-tampa-airport-avion-park-westshore/",
     "phone": "(813) 287-8500",
     "rooms": 178,
@@ -4789,7 +4966,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hampton-inn-suites-tampa-airport-avion-park-westshore/venue-0ab13023-c871-4fcb-9fb1-a388201d56b4"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn & Suites Tampa Airport Avion Park Westshore), which was about 206 m from the Census point."
   },
   {
     "id": "hampton-inn-suites-tampa-busch-gardens-area",
@@ -4828,9 +5005,9 @@
     "city": "Seffner",
     "state": "FL",
     "zip": "33584",
-    "lat": 28.008909,
-    "lng": -82.302099,
-    "geo_source": "census",
+    "lat": 28.008143,
+    "lng": -82.301107,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpahshx-hampton-suites-tampa-east-casino-area/",
     "rooms": 74,
     "features": [
@@ -4842,7 +5019,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/seffner/hotel/hampton-inn-suites-tampa-east-casino-area-/venue-d44b9e4f-f2f3-404e-af9c-a24c31e4e96a",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Seffner is in the brandon area (SPEC §4.1)."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Seffner is in the brandon area (SPEC §4.1). Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn & Suites Tampa East (Casino Area)), which was about 129 m from the Census point."
   },
   {
     "id": "hampton-inn-suites-tampa-north",
@@ -4858,9 +5035,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.069466,
-    "lng": -82.364953,
-    "geo_source": "census",
+    "lat": 28.070008,
+    "lng": -82.365953,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpanohx-hampton-suites-tampa-north/",
     "phone": "(813) 903-6000",
     "rooms": 126,
@@ -4879,7 +5056,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hampton-inn-suites-tampa-north/venue-02821fc0-e27e-441c-acd0-de8462a12a6f"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn & Suites Tampa - North), which was about 115 m from the Census point."
   },
   {
     "id": "hampton-inn-suites-tampa-northwest-oldsmar",
@@ -4927,9 +5104,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.923058,
-    "lng": -82.340557,
-    "geo_source": "census",
+    "lat": 27.924272,
+    "lng": -82.339627,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tparvhx-hampton-suites-tampa-riverview-brandon/",
     "phone": "(813) 497-4558",
     "rooms": 124,
@@ -4948,7 +5125,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hampton-inn-suites-tampa-riverview-brandon/venue-3b650044-a574-49ee-a2df-b6394141b0cf"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn & Suites, 10240 Causeway Boulevard), which was about 163 m from the Census point."
   },
   {
     "id": "hampton-inn-suites-tampa-wesley-chapel",
@@ -5103,9 +5280,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 27.987283,
-    "lng": -82.356638,
-    "geo_source": "census",
+    "lat": 27.988575,
+    "lng": -82.358096,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpainhx-hampton-tampa-fairgrounds-casino/",
     "rooms": 84,
     "features": [
@@ -5118,7 +5295,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/hampton-inn-by-hilton-tampa-fairgrounds-casino/venue-b16a7439-f102-4936-bafc-80f1601df00a",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (OSM building at 4506 Oak Fair Boulevard (still tagged 'Comfort Suites at Fairgrounds - Casino')), which was about 200 m from the Census point. OpenStreetMap still tags this building 'Comfort Suites at Fairgrounds - Casino'; Hilton's property sitemap and the Cvent profile (renovated 2025) list it as a Hampton Inn."
   },
   {
     "id": "hampton-inn-tampa-international-airport-westshore",
@@ -5131,9 +5308,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.956001,
-    "lng": -82.52452,
-    "geo_source": "census",
+    "lat": 27.95662,
+    "lng": -82.525617,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaathx-hampton-tampa-international-airport-westshore/",
     "phone": "(813) 287-0778",
     "rooms": 132,
@@ -5152,7 +5329,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hampton-inn-tampa-international-airport-westshore/venue-245a528b-9d11-4790-b10f-5b7a8b2edab5"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn Tampa Airport, 4817 West Laurel Street), which was about 128 m from the Census point."
   },
   {
     "id": "hampton-inn-tampa-rocky-point-airport",
@@ -5165,9 +5342,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.968947,
-    "lng": -82.565875,
-    "geo_source": "census",
+    "lat": 27.96967,
+    "lng": -82.564517,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tparphx-hampton-tampa-rocky-point-airport/",
     "phone": "(813) 289-6262",
     "rooms": 70,
@@ -5186,7 +5363,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hampton-inn-tampa-rocky-point-airport/venue-e5bdcae3-10e3-417e-8d10-f495356aadd3"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hampton Inn Tampa/Rocky Point-Airport), which was about 155 m from the Census point."
   },
   {
     "id": "hampton-inn-tampa-veterans-expressway",
@@ -5431,9 +5608,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.957851,
-    "lng": -82.532113,
-    "geo_source": "census",
+    "lat": 27.95777,
+    "lng": -82.533361,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpawsgi-hilton-garden-inn-tampa-airport-westshore/",
     "phone": "(813) 289-2700",
     "rooms": 171,
@@ -5454,7 +5631,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hilton-garden-inn-tampa-airport-westshore/venue-1d5ad24f-842e-4501-bc2e-51430250d0cf"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn Tampa Airport Westshore), which was about 123 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-east-brandon",
@@ -5470,9 +5647,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 27.983291,
-    "lng": -82.330993,
-    "geo_source": "census",
+    "lat": 27.983258,
+    "lng": -82.329379,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaebgi-hilton-garden-inn-tampa-east-brandon/",
     "phone": "(813) 626-6700",
     "rooms": 152,
@@ -5490,7 +5667,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hilton-garden-inn-tampa-east-brandon/venue-8a32db14-4c75-449e-bfa9-ac59077697f7"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Visit Tampa Bay 152, Cvent 154 (renovated 2025)."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Visit Tampa Bay 152, Cvent 154 (renovated 2025). Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn Tampa East/Brandon), which was about 158 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-north",
@@ -5503,9 +5680,9 @@
     "city": "Temple Terrace",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.064914,
-    "lng": -82.359367,
-    "geo_source": "census",
+    "lat": 28.066197,
+    "lng": -82.359334,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpanhgi-hilton-garden-inn-tampa-north/",
     "phone": "(813) 342-5000",
     "rooms": 148,
@@ -5524,7 +5701,7 @@
       "https://www.cvent.com/venues/temple-terrace/hotel/hilton-garden-inn-tampa-north/venue-d9e1d0f2-84d6-472b-96e3-8563c76c29d1"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn Tampa North), which was about 142 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-northwest-oldsmar",
@@ -5571,9 +5748,9 @@
     "city": "Riverview",
     "state": "FL",
     "zip": "33578",
-    "lat": 27.910351,
-    "lng": -82.346631,
-    "geo_source": "census",
+    "lat": 27.909495,
+    "lng": -82.345731,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpasegi-hilton-garden-inn-tampa-riverview-brandon/",
     "phone": "(813) 626-6610",
     "rooms": 119,
@@ -5593,7 +5770,7 @@
       "https://www.cvent.com/venues/riverview/hotel/hilton-garden-inn-tampa-riverview-brandon/venue-43ecb11d-59bb-4482-bcd1-dbd9c521a5eb"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn Tampa/Riverview/Brandon), which was about 130 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-suncoast-parkway",
@@ -5606,9 +5783,9 @@
     "city": "Lutz",
     "state": "FL",
     "zip": "33558",
-    "lat": 28.187551,
-    "lng": -82.539531,
-    "geo_source": "census",
+    "lat": 28.189062,
+    "lng": -82.540009,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaspgi-hilton-garden-inn-tampa-suncoast-parkway/",
     "phone": "813-491-4900",
     "rooms": 110,
@@ -5626,7 +5803,7 @@
       "https://www.cvent.com/venues/lutz/hotel/hilton-garden-inn-tampa-suncoast-parkway/venue-bef5b447-96ae-4dd4-a636-76750a756274"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn), which was about 174 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-wesley-chapel",
@@ -5642,9 +5819,9 @@
     "city": "Wesley Chapel",
     "state": "FL",
     "zip": "33544",
-    "lat": 28.186857,
-    "lng": -82.376702,
-    "geo_source": "census",
+    "lat": 28.185897,
+    "lng": -82.374243,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpawlgi-hilton-garden-inn-tampa-wesley-chapel/",
     "phone": "(813) 591-6900",
     "rooms": 124,
@@ -5662,7 +5839,7 @@
       "https://www.cvent.com/venues/wesley-chapel/hotel/hilton-garden-inn-tampa-wesley-chapel/venue-7b25c411-3e55-4648-a68a-fb103588f5df"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Garden Inn), which was about 263 m from the Census point."
   },
   {
     "id": "hilton-garden-inn-tampa-ybor-historic-district",
@@ -5782,9 +5959,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.96347,
-    "lng": -82.515018,
-    "geo_source": "census",
+    "lat": 27.962494,
+    "lng": -82.512774,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaahhf-hilton-tampa-airport-westshore/",
     "phone": "(813) 877-6688",
     "rooms": 238,
@@ -5803,7 +5980,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hilton-tampa-airport-westshore/venue-6875ee98-dbc1-41d9-88d9-1da83e7165e4"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hilton Tampa Airport Westshore Hotel), which was about 245 m from the Census point."
   },
   {
     "id": "hilton-tampa-downtown",
@@ -5864,7 +6041,7 @@
       "restaurant",
       "meeting-space"
     ],
-    "summary": "A Mediterranean-styled Holiday Inn on South Gulfview Boulevard, steps from Clearwater Beach, with Jimmy's Fish House & Iguana Bar and the Duval Center event space.",
+    "summary": "A Mediterranean-styled Holiday Inn on South Gulfview Boulevard, steps from Clearwater Beach, with Jimmy's Fish House & Iguana Bar and event venues for meetings and banquets.",
     "quote": "Holiday Inn Hotel & Suites Clearwater Beach offers you luxurious Mediterranean styled accommodations & amenities in a stunning location.",
     "status": "open",
     "tags": [
@@ -5875,7 +6052,8 @@
       "https://business.tampabaybeaches.com/list/member/holiday-inn-clearwater-beach-clearwater-beach-collection-7360",
       "https://clearwaterbeachcollection.com/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): 'Duval Center' removed (not named on the hotel's site); restaurant name is in the site's page data."
   },
   {
     "id": "holiday-inn-express-clearwater-east-icot-center",
@@ -5922,9 +6100,9 @@
     "city": "Port Richey",
     "state": "FL",
     "zip": "34668",
-    "lat": 28.312659,
-    "lng": -82.699531,
-    "geo_source": "census",
+    "lat": 28.311634,
+    "lng": -82.700597,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/port-richey/clwpt/hoteldetail",
     "phone": "(727) 868-1900",
     "rooms": 85,
@@ -5942,7 +6120,7 @@
       "https://www.cvent.com/venues/port-richey/hotel/holiday-inn-express-hotel-suites-port-richey/venue-d76927d9-6e62-4247-ac50-cfeb79212c93"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. zip from Cvent"
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. zip from Cvent Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites - Port Richey), which was about 154 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-clearwater-gulf-to-bay",
@@ -6044,9 +6222,9 @@
     "city": "Plant City",
     "state": "FL",
     "zip": "33563",
-    "lat": 28.030434,
-    "lng": -82.104972,
-    "geo_source": "census",
+    "lat": 28.033482,
+    "lng": -82.10411,
+    "geo_source": "photon",
     "phone": "(813) 719-3800",
     "rooms": 70,
     "features": [
@@ -6062,7 +6240,7 @@
       "https://www.cvent.com/venues/plant-city/hotel/holiday-inn-express-suites-plant-city/venue-c5c5a7b8-8ec3-487e-9928-d118a9552165"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express), which was about 349 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-ruskin",
@@ -6074,10 +6252,9 @@
     "address": "226 Teco Rd.",
     "city": "Ruskin",
     "state": "FL",
-    "zip": "33701",
-    "lat": 27.713845,
-    "lng": -82.38743,
-    "geo_source": "census",
+    "lat": 27.714742,
+    "lng": -82.386858,
+    "geo_source": "photon",
     "rooms": 92,
     "features": [
       "pool",
@@ -6088,7 +6265,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/ruskin/hotel/holiday-inn-express-suites-ruskin/venue-5c2e7b6e-74c0-4a74-939c-51881f9b4978",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent gives zip 33701 (a St. Petersburg zip), so zip is left null. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Express & Suites Ruskin - Sun City' at 226 Teco Road at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent gives zip 33701 (a St. Petersburg zip), so zip is left null. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Express & Suites Ruskin - Sun City' at 226 Teco Road at this address. Verifier 2026-09-27: zip 33701 removed: it is a St. Petersburg zip and the only page read (Cvent) gives it in error; the notes already said to leave it null. coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites Ruskin - Sun City), which was about 114 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-st-petersburg-north",
@@ -6168,9 +6345,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.965289,
-    "lng": -82.401813,
-    "geo_source": "census",
+    "lat": 27.965714,
+    "lng": -82.403434,
+    "geo_source": "photon",
     "url": "https://www.hiexpress.com/yborcityfl",
     "phone": "(813) 533-0400",
     "rooms": 100,
@@ -6188,7 +6365,7 @@
       "https://www.cvent.com/venues/tampa/hotel/holiday-inn-express-suites-tampa-east-ybor-city/venue-02f1d7ae-404a-4376-95ec-eee3fa85568c"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Visit Tampa Bay files it under Ybor City; the hotel is on North 50th Street east of Ybor, so it is placed in east-tampa."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Visit Tampa Bay files it under Ybor City; the hotel is on North 50th Street east of Ybor, so it is placed in east-tampa. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites Tampa East - Ybor City), which was about 166 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-tampa-fairgrounds-casino",
@@ -6235,9 +6412,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33647",
-    "lat": 28.131699,
-    "lng": -82.369641,
-    "geo_source": "census",
+    "lat": 28.133043,
+    "lng": -82.36931,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/tampa/tpabd/hoteldetail",
     "phone": "(813) 910-7171",
     "rooms": 100,
@@ -6258,7 +6435,7 @@
       "https://www.cvent.com/venues/tampa/hotel/holiday-inn-express-hotel-suites-tampa-i-75-at-bruce-b-downs/venue-a232fae6-1ba9-432a-b88b-581e835a4252"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites Tampa-I-75 @ Bruce B. Downs), which was about 153 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-tampa-north-wesley-chapel",
@@ -6310,9 +6487,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.968442,
-    "lng": -82.566293,
-    "geo_source": "census",
+    "lat": 27.969275,
+    "lng": -82.56367,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/tampa/tpaap/hoteldetail",
     "phone": "(813) 287-8585",
     "rooms": 88,
@@ -6332,7 +6509,7 @@
       "https://www.cvent.com/venues/tampa/hotel/holiday-inn-express-suites-tampa-rocky-point-island/venue-c0a993a9-f522-4a58-9e95-7d17eb21f2eb"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites Tampa Airport), which was about 273 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-tampa-stadium-area",
@@ -6348,9 +6525,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.960472,
-    "lng": -82.505552,
-    "geo_source": "census",
+    "lat": 27.960874,
+    "lng": -82.504639,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/tampa/tpada/hoteldetail",
     "phone": "(813) 303-8947",
     "rooms": 100,
@@ -6369,7 +6546,7 @@
       "https://www.cvent.com/venues/tampa/hotel/holiday-inn-express-suites-tampa-stadium-area/venue-479d44ad-c3be-4f0e-8ca9-eaaca0ca5b26"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Visit Tampa Bay files it under Westshore/Airport; on Dale Mabry near the stadium, so it may also appear in the stays-tampa-core slice (West Tampa). Cvent: built 2023."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Visit Tampa Bay files it under Westshore/Airport; on Dale Mabry near the stadium, so it may also appear in the stays-tampa-core slice (West Tampa). Cvent: built 2023. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Express & Suites Tampa - Stadium Area (OSM housenumber 2005), North Dale Mabry Highway), which was about 100 m from the Census point."
   },
   {
     "id": "holiday-inn-express-suites-tampa-usf-busch-gardens",
@@ -6415,12 +6592,12 @@
     "city": "Trinity",
     "state": "FL",
     "zip": "34655",
-    "lat": 28.187869,
-    "lng": -82.628239,
-    "geo_source": "census",
+    "lat": 28.189486,
+    "lng": -82.628384,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/trinity/tnrex/hoteldetail",
     "phone": "(727) 835-7820",
-    "rooms": 87,
+    "rooms": 86,
     "features": [
       "pool",
       "fitness",
@@ -6435,7 +6612,7 @@
       "https://www.cvent.com/venues/trinity/hotel/holiday-inn-express-trinity/venue-e919a589-6b21-4950-b261-3cc185385c75"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Florida's Sports Coast 87, Cvent 86. zip from Cvent"
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Rooms: Florida's Sports Coast 87, Cvent 86. zip from Cvent Verifier 2026-09-27: rooms 87 -> 86: 87 is not on the Florida's Sports Coast page; the Cvent profile gives 86."
   },
   {
     "id": "holiday-inn-express-tampa-brandon",
@@ -6451,16 +6628,15 @@
     "city": "Brandon",
     "state": "FL",
     "zip": "33510",
-    "lat": 27.9437,
-    "lng": -82.325623,
-    "geo_source": "census",
+    "lat": 27.946456,
+    "lng": -82.32667,
+    "geo_source": "photon",
     "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/brandon/tpabr/hoteldetail",
     "phone": "(813) 643-3800",
     "rooms": 119,
     "features": [
       "pool",
       "fitness",
-      "kitchens",
       "free-breakfast",
       "pet-friendly",
       "meeting-space"
@@ -6473,7 +6649,7 @@
       "https://www.cvent.com/venues/brandon/hotel/holiday-inn-express-hotel-tampa-brandon/venue-6e121486-6a34-48c0-8ca8-79510808ae31"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: kitchens removed: the hotel's text says rooms have microwaves, mini fridges and Keurig coffee makers, not kitchens. coordinates moved to the OpenStreetMap feature (Holiday Inn Express Tampa-Brandon), which was about 323 m from the Census point."
   },
   {
     "id": "holiday-inn-express-tampa-north-i-75-university-area",
@@ -6481,7 +6657,7 @@
     "kind": "hotel",
     "brand": "IHG",
     "collection": "Holiday Inn Express",
-    "area": "north-tampa",
+    "area": "temple-terrace",
     "address": "13294 Telecom Drive",
     "city": "Tampa",
     "state": "FL",
@@ -6499,7 +6675,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/holiday-inn-express-tampa-north-i-75-university-area/venue-ae4d4c1e-5401-4fb3-ab4f-6998d7f451fd",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Express Tampa N I-75 - University Area' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Express Tampa N I-75 - University Area' at this address. Verifier 2026-09-27:  area north-tampa -> temple-terrace: the point lies inside the City of Temple Terrace (Census geographies), like the Residence Inn on Telecom Parkway next door."
   },
   {
     "id": "holiday-inn-hotel-and-suites-clearwater-beach-s-harbourside",
@@ -6618,9 +6794,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33609",
-    "lat": 27.950759,
-    "lng": -82.524218,
-    "geo_source": "census",
+    "lat": 27.951731,
+    "lng": -82.524957,
+    "geo_source": "photon",
     "rooms": 284,
     "features": [
       "pool",
@@ -6635,7 +6811,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/holiday-inn-tampa-westshore-airport-area/venue-fb3fc7ed-b0f0-40be-95d0-1446f92a8d3a",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Tampa Westshore - Airport Area' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Holiday Inn Tampa Westshore - Airport Area' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Holiday Inn Tampa Westshore - Airport Area), which was about 130 m from the Census point."
   },
   {
     "id": "holiday-isles-resort",
@@ -6817,7 +6993,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/riverview/hotel/home2-suites-by-hilton-riverview-tampa/venue-e2c173a9-df23-4f87-b6ee-18d104f2cc01",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: still no coordinates: Census has no match; OpenStreetMap has the new street 'Alafia Preserve Avenue' (way 1466831730, about 27.8559, -82.3416) but no hotel feature, so no point is set. The Cvent profile has no opening year or photos and Hilton's site could not be read; the hotel is in Hilton's property sitemap with the same page set as operating hotels. The merge should re-check that it is open."
   },
   {
     "id": "home2-suites-tampa-downtown-channel-district",
@@ -6906,9 +7082,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.955992,
-    "lng": -82.532966,
-    "geo_source": "census",
+    "lat": 27.954932,
+    "lng": -82.53411,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpawaht-home2-suites-tampa-westshore-airport/",
     "phone": "(813) 284-0568",
     "rooms": 106,
@@ -6929,7 +7105,7 @@
       "https://www.cvent.com/venues/tampa/hotel/home2-suites-by-hilton-tampa-westshore-airport/venue-50229609-4e86-476b-a01b-bf42f0d9b4c9"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Home2 Suites, 5222 West Laurel Street), which was about 163 m from the Census point."
   },
   {
     "id": "hometowne-studios-tampa-airport",
@@ -7015,9 +7191,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.957991,
-    "lng": -82.532329,
-    "geo_source": "census",
+    "lat": 27.958783,
+    "lng": -82.53348,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpaaphw-homewood-suites-tampa-airport-westshore/",
     "phone": "(813) 282-1950",
     "rooms": 144,
@@ -7040,7 +7216,7 @@
       "https://www.cvent.com/venues/tampa/hotel/homewood-suites-by-hilton-tampa-airport-westshore/venue-fbebe212-c562-447e-8ce1-7c66cf4837b7"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Homewood Suites by Hilton Tampa Airport/Westshore), which was about 143 m from the Census point."
   },
   {
     "id": "homewood-suites-tampa-brandon",
@@ -7056,9 +7232,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.939439,
-    "lng": -82.331927,
-    "geo_source": "census",
+    "lat": 27.94045,
+    "lng": -82.331365,
+    "geo_source": "photon",
     "url": "https://www.hilton.com/en/hotels/tpahwhw-homewood-suites-tampa-brandon/",
     "phone": "(813) 315-1942",
     "rooms": 126,
@@ -7079,7 +7255,7 @@
       "https://www.cvent.com/venues/tampa/hotel/homewood-suites-by-hilton-tampa-brandon/venue-09ebafa3-da7f-4c5f-b770-559076c2e3e8"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Homewood Suites, 10240 Palm River Road), which was about 125 m from the Census point."
   },
   {
     "id": "homewood-suites-tampa-port-richey",
@@ -7178,14 +7354,15 @@
       "kitchens",
       "accessible-rooms"
     ],
-    "summary": "A renovated motel-style boutique hotel on Mandalay Avenue in north Clearwater Beach, steps from the Gulf, with rooms, suites and full-kitchen vacation rentals and a heated pool; it says it has hosted guests since 1947.",
+    "summary": "A renovated motel-style boutique hotel on Mandalay Avenue in north Clearwater Beach, across from the sand, with rooms, suites and full-kitchen vacation rentals and a pool; it says it has hosted guests since 1947.",
     "quote": "Just steps from the Gulf Coast, Hotel Cabana has been part of the Clearwater Beach story since 1947.",
     "status": "open",
     "source_url": "https://hotelcabanacwb.com/",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/hotel-cabana-clearwater-beach-14338"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): 'heated' removed (not stated)."
   },
   {
     "id": "hotel-flor-tampa-downtown",
@@ -7301,7 +7478,8 @@
     "id": "hotel-sol-redington-shores",
     "name": "Hotel Sol",
     "aliases": [
-      "The Hotel Sol"
+      "The Hotel Sol",
+      "Hotel Isis"
     ],
     "kind": "boutique-hotel",
     "area": "indian-rocks-beach",
@@ -7319,7 +7497,7 @@
       "pool",
       "kitchens"
     ],
-    "summary": "A beachfront hotel in Redington Shores with suites (some with kitchenettes) around a palm courtyard, a pool with a waterfall, a rooftop deck and breakfast.",
+    "summary": "A beachfront hotel in Redington Shores with suites (some with kitchenettes) around a palm courtyard, a pool with a waterfall and a rooftop deck.",
     "quote": "TRUE BEACH FRONT HOTEL. YOUR HOME AWAY FROM HOME",
     "status": "open",
     "source_url": "https://www.thehotelsol.com/",
@@ -7327,7 +7505,7 @@
       "https://www.visitstpeteclearwater.com/profile/the-hotel-sol/138083"
     ],
     "checked": "2026-09-27",
-    "notes": "The site contains template leftovers naming other hotels ('rancho caymus inn', a wheatleighhotel.com email); address and phone match the Visit St. Pete-Clearwater profile (40 units). OSM labels this address 'Isis'. Verifier should confirm operation."
+    "notes": "The site contains template leftovers naming other hotels ('rancho caymus inn', a wheatleighhotel.com email); address and phone match the Visit St. Pete-Clearwater profile (40 units). OSM labels this address 'Isis'. Verifier should confirm operation. Verifier (2026-09-27): 'breakfast' removed (not stated); VSPC profile text still says 'Welcome to Hotel Isis' (40 units, no closure notice)."
   },
   {
     "id": "hotel-south-tampa-and-suites",
@@ -7481,20 +7659,25 @@
     "city": "Hudson",
     "state": "FL",
     "zip": "34667",
-    "lat": 28.36092,
-    "lng": -82.70665,
-    "geo_source": "census",
+    "lat": 28.360938,
+    "lng": -82.706321,
+    "geo_source": "photon",
     "url": "https://www.hudsondocksideinn.com/",
     "phone": "(727) 857-6047",
     "features": [
+      "waterfront",
       "kitchens"
     ],
-    "summary": "A small inn on Clark Street in Hudson whose rooms each have a separate bedroom and a full kitchenette.",
-    "quote": "Each room has a separate bedroom and full kitchenette, it will feel like your home away from home.",
+    "summary": "A small inn on Clark Street in Hudson, on a canal a short boat or kayak ride from the Gulf and within walking distance of Hudson Beach; its one-bedroom suites have full kitchens, and dock space can be rented.",
+    "quote": "Our hotel sits on 400 feet of canal just moments by boat or kayak to the Gulf of Mexico.",
     "status": "open",
-    "source_url": "https://flsportscoast.com/listing/hudson-dockside-inn/",
+    "source_url": "https://www.hudsondocksideinn.com/about",
+    "also_sources": [
+      "https://flsportscoast.com/listing/hudson-dockside-inn/",
+      "https://www.hudsondocksideinn.com/accommodations"
+    ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. The inn's own site shows only navigation text. Neither source mentions Hurricane Helene (Sep 2024), which flooded the Hudson coast; the verifier should confirm the inn is operating."
+    "notes": "Phone from the inn's own site and the Florida's Sports Coast (Pasco tourism) listing. Verifier 2026-09-27: source_url switched to the inn's own About page (read 2026-09-27: 'Our hotel sits on 400 feet of canal just moments by boat or kayak to the Gulf of Mexico'; rooms 'recently renovated'); Accommodations page: one-bedroom suites with fully equipped kitchens, dock space for rent, free laundry. Neither page nor the tourism listing mentions Hurricane Helene or a closure, so status stays open. Coordinates: OSM 'Hudson Dockside Inn' (tourism=motel)."
   },
   {
     "id": "hyatt-house-tampa-airport-westshore",
@@ -7511,9 +7694,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.957842,
-    "lng": -82.532036,
-    "geo_source": "census",
+    "lat": 27.95691,
+    "lng": -82.532531,
+    "geo_source": "photon",
     "url": "https://www.hyatt.com/en-US/hotel/florida/hyatt-house-tampa-airport-westshore/tpaxw",
     "phone": "(813) 207-9500",
     "rooms": 145,
@@ -7535,7 +7718,7 @@
       "https://www.cvent.com/venues/tampa/resort/hyatt-house-tampa-airport-westshore/venue-1c605fc0-aa68-490c-94f2-f00fe540fbfb"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hyatt House Tampa Airport / Westshore), which was about 114 m from the Census point."
   },
   {
     "id": "hyatt-house-tampa-downtown",
@@ -7618,9 +7801,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.956906,
-    "lng": -82.524281,
-    "geo_source": "census",
+    "lat": 27.957224,
+    "lng": -82.525981,
+    "geo_source": "photon",
     "url": "https://www.hyatt.com/en-US/hotel/florida/hyatt-place-tampa-airport-westshore/tpazw",
     "phone": "(813) 282-1037",
     "rooms": 124,
@@ -7642,7 +7825,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hyatt-place-tampa-airport-westshore/venue-20f4df90-4747-4dde-bc9b-dc5dd361d99b"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hyatt Place Tampa Airport/Westshore), which was about 170 m from the Census point."
   },
   {
     "id": "hyatt-place-tampa-busch-gardens",
@@ -7659,9 +7842,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33612",
-    "lat": 28.051965,
-    "lng": -82.426239,
-    "geo_source": "census",
+    "lat": 28.052285,
+    "lng": -82.427723,
+    "geo_source": "photon",
     "url": "https://tampabuschgardens.place.hyatt.com/en/hotel/home.html",
     "phone": "(813) 979-1922",
     "rooms": 126,
@@ -7681,7 +7864,7 @@
       "https://www.cvent.com/venues/tampa/hotel/hyatt-place-tampa-busch-gardens/venue-3cdd1f1a-a186-46a2-8873-2cba687bcb7b"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent: built 1997, renovated 2024."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent: built 1997, renovated 2024. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Hyatt Place Tampa/Busch Gardens), which was about 150 m from the Census point."
   },
   {
     "id": "hyatt-place-tampa-downtown",
@@ -7735,20 +7918,19 @@
     "city": "Lutz",
     "state": "FL",
     "zip": "33559",
-    "lat": 28.196118,
-    "lng": -82.388144,
-    "geo_source": "census",
+    "lat": 28.195805,
+    "lng": -82.386845,
+    "geo_source": "photon",
     "url": "https://www.hyattplacetampawesleychapel.com",
     "phone": "813.803.5600",
     "rooms": 132,
     "features": [
       "pool",
       "fitness",
-      "free-breakfast",
       "pet-friendly",
       "meeting-space"
     ],
-    "summary": "A 132-room Hyatt Place in Wesley Chapel across the street from Tampa Premium Outlets, with free breakfast, an outdoor pool and a fitness center.",
+    "summary": "A 132-room Hyatt Place in Wesley Chapel across the street from Tampa Premium Outlets, with a breakfast area, a 24-hour market, an outdoor pool and a fitness center.",
     "quote": "At Hyatt Place Wesley Chapel, you can travel in style while you enjoy spacious rooms that let you spread out and relax.",
     "status": "open",
     "source_url": "https://flsportscoast.com/listing/hyatt-place-wesley-chapel/",
@@ -7756,11 +7938,14 @@
       "https://www.cvent.com/venues/wesley-chapel/hotel/hyatt-place-tampa-wesley-chapel/venue-91757a58-8e8d-41c5-b113-836aca04dd18"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Address city is Lutz (26000 Sierra Center Blvd, 33559) though the hotel is branded Wesley Chapel."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Address city is Lutz (26000 Sierra Center Blvd, 33559) though the hotel is branded Wesley Chapel. Verifier 2026-09-27: free-breakfast removed: the listing says 'fresh-made breakfast' and does not say it is free; summary reworded. coordinates moved to the OpenStreetMap feature (Hyatt Place Tampa/Wesley Chapel), which was about 132 m from the Census point."
   },
   {
     "id": "hyatt-regency-clearwater-beach-resort-and-spa",
     "name": "Hyatt Regency Clearwater Beach Resort & Spa",
+    "aliases": [
+      "Hyatt Regency Clearwater Beach Resort & Suites"
+    ],
     "kind": "resort",
     "brand": "Hyatt",
     "collection": "Hyatt Regency",
@@ -7790,7 +7975,7 @@
       "https://business.tampabaybeaches.com/list/member/hyatt-regency-clearwater-beach-resort-suites-18306"
     ],
     "checked": "2026-09-27",
-    "notes": "hyatt.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile (286 rooms per VSPC, left null) and the chamber listing."
+    "notes": "hyatt.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile (286 rooms per VSPC, left null) and the chamber listing. Verifier (2026-09-27): the VSPC profile and chamber listing title it 'Resort and Suites'; the chamber page and the hotel's meta title also use 'Resort & Spa'."
   },
   {
     "id": "hyde-park-hotel",
@@ -7885,7 +8070,7 @@
       "https://www.visitstpeteclearwater.com/profile/inn-on-the-beach/138150"
     ],
     "checked": "2026-09-27",
-    "notes": "The site says its policies are 'adult-focused' (not adults-only), so the adults-only feature is not set."
+    "notes": "The site says its policies are 'adult-focused' (not adults-only), so the adults-only feature is not set. Verifier (2026-09-27): site says 14 rooms and 1 private cottage (rooms left null because the cottage is separate) and 'adult-focused policies'."
   },
   {
     "id": "inn-on-the-gulf",
@@ -7917,7 +8102,7 @@
       "https://innonthegulf.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site. Opened 1998 per the Florida's Sports Coast listing ('opened its doors in 1998'). Address from that listing. Neither page mentions Hurricane Helene (Sep 2024), which flooded the Hudson coast; the verifier should confirm the hotel is operating."
+    "notes": "Main source: the hotel's own site. Opened 1998 per the Florida's Sports Coast listing ('opened its doors in 1998'). Address from that listing. Neither page mentions Hurricane Helene (Sep 2024), which flooded the Hudson coast; the verifier should confirm the hotel is operating. Verifier 2026-09-27: re-read innonthegulf.com home, Hotel, About and vacation-rental pages on 2026-09-27: no closure, storm or reopening notice; the site takes online orders and reservation inquiries and shows a 2026 copyright, so status stays open (no page confirms post-Helene repairs either way)."
   },
   {
     "id": "inn-on-third",
@@ -8051,10 +8236,9 @@
       "beachfront",
       "pool",
       "kitchens",
-      "restaurant",
       "accessible-rooms"
     ],
-    "summary": "A beachfront condo resort on Treasure Island with one- to three-bedroom units, all with efficiency kitchens, a Gulf-front heated pool and a tiki bar; the front desk is open 24 hours.",
+    "summary": "A beachfront resort on Treasure Island with bayside efficiencies, Gulf-front rooms and a three-bedroom Gulf-front suite, all with efficiency kitchens, a Gulf-front heated pool and a tiki bar; booking agents answer 24 hours a day.",
     "quote": "Island Inn Beach Resort, directly on the Gulf in Treasure Island, Fl offers beachfront condos with kitchens, private balconies, heated pool, and Tiki Bar.",
     "status": "open",
     "source_url": "https://www.islandinnresort.com/",
@@ -8062,7 +8246,7 @@
       "https://www.visitstpeteclearwater.com/profile/island-inn-beach-resort/138086"
     ],
     "checked": "2026-09-27",
-    "notes": "'restaurant' reflects the tiki bar; 'accessible-rooms' from 'All rooms are accessible by Wheelchair'."
+    "notes": "'restaurant' reflects the tiki bar; 'accessible-rooms' from 'All rooms are accessible by Wheelchair'. Verifier (2026-09-27): unit types restated from the page; restaurant dropped (a tiki bar)."
   },
   {
     "id": "islands-end-resort",
@@ -8085,7 +8269,7 @@
       "free-parking"
     ],
     "summary": "A cluster of waterfront cottages at the southern tip of Pass-a-Grille, between the Gulf and the Intracoastal Waterway, with a private beach and a fishing dock; well-behaved dogs are welcome.",
-    "quote": "Welcome to Island's End, an oasis of real peace and quiet where the crystal blue waters of the Gulf of Mexico and the Intercoastal Waterway surround your very own private hideaway.",
+    "quote": "Welcome to Island's End, an oasis of real peace and quiet where the crystal blue waters of the Gulf of Mexico and the Intercoastal Waterway surround your very own private hideaway",
     "status": "open",
     "source_url": "https://www.islandsend.com/",
     "also_sources": [
@@ -8413,9 +8597,9 @@
     "city": "Brandon",
     "state": "FL",
     "zip": "33510",
-    "lat": 27.945528,
-    "lng": -82.326322,
-    "geo_source": "census",
+    "lat": 27.943604,
+    "lng": -82.327314,
+    "geo_source": "photon",
     "url": "https://www.wyndhamhotels.com/laquinta/brandon-florida/la-quinta-tampa-brandon-regency-park/overview",
     "phone": "+1-813-200-4997",
     "rooms": 128,
@@ -8433,7 +8617,7 @@
       "https://www.cvent.com/venues/brandon/hotel/la-quinta-inn-suites-by-wyndham-tampa-brandon-regency-park/venue-98e0604e-264a-4158-b3dd-e707e933464b"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Wyndham brand page. Cvent: 128 rooms."
+    "notes": "Main source: Wyndham brand page. Cvent: 128 rooms. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (La Quinta Inn & Suites By Wyndham Tampa Brandon Regency Park), which was about 235 m from the Census point."
   },
   {
     "id": "la-quinta-inn-suites-tampa-brandon-west",
@@ -8480,16 +8664,15 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33614",
-    "lat": 28.025379,
-    "lng": -82.505826,
-    "geo_source": "census",
+    "lat": 28.024306,
+    "lng": -82.506387,
+    "geo_source": "photon",
     "url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-tampa-central/overview",
     "phone": "(813) 490-9090",
     "rooms": 75,
     "features": [
       "pool",
       "fitness",
-      "kitchens",
       "free-breakfast",
       "pet-friendly",
       "meeting-space"
@@ -8502,7 +8685,7 @@
       "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-tampa-central/overview"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Visit Tampa Bay text mentions a free shuttle to the airport, Port of Tampa and Busch Gardens; older text, so airport-shuttle is not set."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Visit Tampa Bay text mentions a free shuttle to the airport, Port of Tampa and Busch Gardens; older text, so airport-shuttle is not set. Verifier 2026-09-27: kitchens removed: the listing says all rooms have a microwave and fridge, not kitchens. coordinates moved to the OpenStreetMap feature (La Quinta Inn & Suites Tampa Central), which was about 131 m from the Census point."
   },
   {
     "id": "la-quinta-inn-suites-tampa-fairgrounds-casino",
@@ -8515,9 +8698,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 27.987556,
-    "lng": -82.358909,
-    "geo_source": "census",
+    "lat": 27.98951,
+    "lng": -82.357748,
+    "geo_source": "photon",
     "url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-tampa-fairgrounds-casino/overview",
     "phone": "+1-813-626-0885",
     "rooms": 101,
@@ -8533,7 +8716,7 @@
       "https://www.cvent.com/venues/tampa/hotel/la-quinta-inn-suites-by-wyndham-tampa-fairgrounds-casino/venue-2fedd3cd-cde6-45ec-b3ca-973169e507e1"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Wyndham brand page. Cvent: 101 rooms."
+    "notes": "Main source: Wyndham brand page. Cvent: 101 rooms. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (La Quinta Inn & Suites Tampa Fairgrounds - Casino), which was about 245 m from the Census point."
   },
   {
     "id": "la-quinta-inn-suites-usf-near-busch-gardens",
@@ -8546,9 +8729,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33612",
-    "lat": 28.054389,
-    "lng": -82.419184,
-    "geo_source": "census",
+    "lat": 28.053445,
+    "lng": -82.418119,
+    "geo_source": "photon",
     "url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-usf-near-busch-gardens/overview",
     "phone": "+1-813-910-7500",
     "rooms": 109,
@@ -8559,14 +8742,14 @@
       "pet-friendly",
       "meeting-space"
     ],
-    "summary": "A La Quinta Inn & Suites on East Fowler Avenue near USF and Busch Gardens, with free breakfast.",
+    "summary": "A La Quinta Inn & Suites on East Fowler Avenue across from the University of South Florida, near Busch Gardens, with free breakfast, an outdoor pool and hot tub and a 24-hour fitness center. Its page says it is under renovation until further notice.",
     "status": "open",
     "source_url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-usf-near-busch-gardens/overview",
     "also_sources": [
       "https://www.cvent.com/venues/tampa/hotel/la-quinta-inn-suites-by-wyndham-usf-near-busch-gardens-/venue-9a852aa4-2036-4820-8722-47e2825cd56d"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Wyndham brand page. Cvent: 109 rooms, built 1998."
+    "notes": "Main source: Wyndham brand page. Cvent: 109 rooms, built 1998. Verifier 2026-09-27: summary expanded from the Wyndham page (renovation notice: 'Please pardon our appearance as we undergo renovations until further notice'). coordinates moved to the OpenStreetMap feature (La Quinta Inn & Suites USF (Near Busch Gardens)), which was about 148 m from the Census point."
   },
   {
     "id": "la-quinta-st-pete-clearwater-airport",
@@ -8722,9 +8905,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33612",
-    "lat": 28.032667,
-    "lng": -82.426392,
-    "geo_source": "census",
+    "lat": 28.033918,
+    "lng": -82.427069,
+    "geo_source": "photon",
     "url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-inn-tampa-near-busch-gardens/overview",
     "phone": "(813) 930-6900",
     "rooms": 144,
@@ -8743,7 +8926,7 @@
       "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-inn-tampa-near-busch-gardens/overview"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Phone: Visit Tampa Bay (813) 930-6900; Wyndham page +1-813-586-2365."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Phone: Visit Tampa Bay (813) 930-6900; Wyndham page +1-813-586-2365. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (La Quinta Inn Tampa Near Busch Gardens), which was about 154 m from the Census point."
   },
   {
     "id": "lake-manatee-state-park-campground",
@@ -8926,6 +9109,37 @@
     "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Phone from the inn's own site (813-909-2100); the Florida's Sports Coast listing gives (813) 731-1016."
   },
   {
+    "id": "lofts-at-st-pete-beach",
+    "name": "The Lofts at St. Pete Beach",
+    "aliases": [
+      "The Lofts at St Pete Beach"
+    ],
+    "kind": "hotel",
+    "area": "st-pete-beach",
+    "address": "601 71st Ave",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.738872,
+    "lng": -82.751209,
+    "geo_source": "census",
+    "url": "https://www.theloftsatstpetebeach.com/",
+    "phone": "(727) 213-3344",
+    "features": [
+      "pool"
+    ],
+    "summary": "A small, locally owned hotel on 71st Avenue in St. Pete Beach, a three-minute walk from the beach, with newly updated rooms, some with private balconies, overlooking a pool.",
+    "quote": "Immerse yourself in a Key West-inspired oasis at The Lofts at St. Pete Beach, our comfortable and convenient hotel lodging on the Florida coast, where everything is new and the beach is less than a 3-minute stroll away.",
+    "status": "open",
+    "tags": [],
+    "source_url": "https://www.theloftsatstpetebeach.com/",
+    "also_sources": [
+      "https://business.tampabaybeaches.com/list/member/the-lofts-at-st-pete-beach-18372"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27) addition, found in the Tampa Bay Beaches Chamber accommodations directory. Address from the site's footer and the chamber listing (601 71st Ave); phone from the site. The chamber calls it a 'locally owned and operated motel'. Room count not stated."
+  },
+  {
     "id": "long-key-beach-resort",
     "name": "Long Key Beach Resort",
     "kind": "motel",
@@ -8978,8 +9192,7 @@
     "features": [
       "beachfront",
       "pool",
-      "restaurant",
-      "pet-friendly"
+      "restaurant"
     ],
     "summary": "A 200-room beachfront Marriott Tribute Portfolio hotel on the former Postcard Inn site at St. Pete Beach, with the Sundrop restaurant, a pool bar and a nightly Sunset Social. It opened in June 2026.",
     "quote": "The Luce is a beachfront Tribute Portfolio hotel on St. Pete Beach with 200 rooms, the largest pool on the beach, modern dining, and nightly Sunset Social.",
@@ -8991,7 +9204,7 @@
       "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market"
     ],
     "checked": "2026-09-27",
-    "notes": "Formerly Postcard Inn on the Beach (closed after the 2024 hurricanes; Bay News 9, Sep 2025). HVS: reopened June 2026 as The Luce. Pet-friendly per the Visit St. Pete-Clearwater profile ('pet-friendly (pets on leash)'), not the hotel's own page; verifier may drop. Coordinates: the site's structured data (27.7253,-82.7412) is about 1.1 km south of 6300 Gulf Blvd; the OSM feature is kept."
+    "notes": "Formerly Postcard Inn on the Beach (closed after the 2024 hurricanes; Bay News 9, Sep 2025). HVS: reopened June 2026 as The Luce. Pet-friendly per the Visit St. Pete-Clearwater profile ('pet-friendly (pets on leash)'), not the hotel's own page; verifier may drop. Coordinates: the site's structured data (27.7253,-82.7412) is about 1.1 km south of 6300 Gulf Blvd; the OSM feature is kept. Verifier (2026-09-27): pet-friendly dropped: not stated on the hotel's own page."
   },
   {
     "id": "madeira-bay-resort-and-marina",
@@ -9013,9 +9226,11 @@
     "features": [
       "waterfront",
       "pool",
-      "restaurant"
+      "restaurant",
+      "marina",
+      "meeting-space"
     ],
-    "summary": "A Mediterranean-style condominium resort on the Intracoastal side of Gulf Boulevard in Madeira Beach, steps from the Gulf beach, renting apartment-style suites; it has a heated pool and the Mad Beach Cantina House restaurant, and transient boat dockage is available nearby.",
+    "summary": "A Mediterranean-style condominium resort on the Intracoastal side of Gulf Boulevard in Madeira Beach, steps from the Gulf beach, renting apartment-style suites; it has a heated pool, the Mad Beach Cantina House restaurant, a 2,000-square-foot function room and docking for guests' boats.",
     "quote": "The Madeira Bay Resort & Marina overlooks Florida's scenic Intracoastal Waterways and is steps from pristine white-sand beaches of the Gulf of Mexico.",
     "status": "open",
     "tags": [
@@ -9027,7 +9242,7 @@
       "https://business.tampabaybeaches.com/list/member/madeira-bay-resort-l-by-trs-17498"
     ],
     "checked": "2026-09-27",
-    "notes": "Two condominium buildings (Madeira Bay Resort I at 13101 and II at 13235 Gulf Blvd per the chamber) are rented together by Travel Resort Services."
+    "notes": "Two condominium buildings (Madeira Bay Resort I at 13101 and II at 13235 Gulf Blvd per the chamber) are rented together by Travel Resort Services. Verifier (2026-09-27): page: 'Docking is available for our guest's boats' and transient dockage by arrangement; 'A 2,000 square foot function/conference room is available for rental'."
   },
   {
     "id": "mainstay-suites-temple-terrace",
@@ -9040,9 +9255,9 @@
     "city": "Temple Terrace",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.066741,
-    "lng": -82.371306,
-    "geo_source": "census",
+    "lat": 28.067652,
+    "lng": -82.371731,
+    "geo_source": "photon",
     "rooms": 94,
     "features": [
       "fitness",
@@ -9052,7 +9267,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/temple-terrace/hotel/mainstay-suites-temple-terrace/venue-6d14a74f-b46c-4868-adb4-aa0b1ec67d2d",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'MainStay Suites' on Woodstork Drive at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'MainStay Suites' on Woodstork Drive at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (MainStay Suites), which was about 109 m from the Census point."
   },
   {
     "id": "malibu-resort-motel",
@@ -9196,8 +9411,7 @@
     "phone": "(727) 367-3721",
     "features": [
       "beachfront",
-      "pool",
-      "kitchens"
+      "pool"
     ],
     "summary": "A beachfront vacation-ownership (timeshare) resort on St. Pete Beach with one- and two-bedroom condominiums that takes reservations; it has a pool, hot tubs and a beachfront patio.",
     "quote": "Mariner Beach Club is a beachfront vacation ownership (timeshare) resort in St Pete Beach, Florida featuring one and two bedroom condominiums",
@@ -9208,7 +9422,7 @@
       "https://business.tampabaybeaches.com/list/member/mariner-beach-club-722"
     ],
     "checked": "2026-09-27",
-    "notes": "'kitchens' inferred from 'condominiums'; not explicitly stated on the pages read. Verifier may drop."
+    "notes": "'kitchens' inferred from 'condominiums'; not explicitly stated on the pages read. Verifier may drop. Verifier (2026-09-27): kitchens dropped (inferred, not stated on the pages read)."
   },
   {
     "id": "marriott-tampa-westshore",
@@ -9224,9 +9438,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.952337,
-    "lng": -82.524087,
-    "geo_source": "census",
+    "lat": 27.953046,
+    "lng": -82.523066,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpawe-marriott-tampa-westshore/overview/",
     "phone": "(813) 287-2555",
     "rooms": 310,
@@ -9234,7 +9448,6 @@
       "pool",
       "fitness",
       "restaurant",
-      "free-parking",
       "airport-shuttle",
       "meeting-space"
     ],
@@ -9246,7 +9459,7 @@
       "https://www.cvent.com/venues/tampa/hotel/marriott-tampa-westshore/venue-926e501f-2a13-4583-8482-b5b0685d4280"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. free-parking from the Visit Tampa Bay description ('Free Self Parking'), which is older text; verify."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. free-parking from the Visit Tampa Bay description ('Free Self Parking'), which is older text; verify. Verifier 2026-09-27: free-parking removed: the Visit Tampa Bay text ('Free Self Parking') is old and the Cvent profile's parking section says 'Paid parking'. coordinates moved to the OpenStreetMap feature (Marriott Tampa Westshore), which was about 127 m from the Census point."
   },
   {
     "id": "meranova-guest-inn",
@@ -9512,12 +9725,11 @@
       "pool",
       "fitness",
       "restaurant",
-      "all-suites",
       "free-breakfast",
       "free-parking",
       "pet-friendly"
     ],
-    "summary": "An independent hotel of two-room suites on University Center Drive near Busch Gardens and USF, with a free shuttle to Busch Gardens, a heated pool, an on-site restaurant, free breakfast, free parking and dog-friendly suites.",
+    "summary": "An independent hotel on University Center Drive near Busch Gardens and USF, with two-room suites, a free shuttle to Busch Gardens, a heated pool, an on-site restaurant, free breakfast, free parking and dog-friendly suites.",
     "quote": "Just minutes away from Busch Gardens, the University of South Florida, and an array of local attractions, Oasis Bay Suites is the place to stay when endless activities and adventures await!",
     "status": "open",
     "source_url": "https://oasisbaysuites.com/",
@@ -9525,7 +9737,7 @@
       "https://www.visittampabay.com/listings/oasis-bay-suites/20959/"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site."
+    "notes": "Main source: the hotel's own site. Verifier 2026-09-27: all-suites removed: the hotel's FAQ also lists 'Double Deluxe (2 QB) rooms', so not every room is a suite."
   },
   {
     "id": "oasis-palms-resort",
@@ -9575,7 +9787,7 @@
       "all-suites",
       "accessible-rooms"
     ],
-    "summary": "A beachfront boutique suite hotel on Treasure Island with a Gulf-front pool and spa, a bar and a gym.",
+    "summary": "A beachfront boutique suite hotel on Treasure Island with a pool and spa, a bar and a gym.",
     "quote": "This Treasure Island Hotel, located on the breathtakingly beautiful beaches of Treasure Island, Florida, offers guests a luxurious way to enjoy their vacation.",
     "status": "open",
     "source_url": "https://oceanclubtihotel.com/",
@@ -9583,7 +9795,7 @@
       "https://business.tampabaybeaches.com/list/member/ocean-club-treasure-island-hotel-17795"
     ],
     "checked": "2026-09-27",
-    "notes": "'all-suites' from the accommodations menu (Suites, Corner Suites, Accessible Suites)."
+    "notes": "'all-suites' from the accommodations menu (Suites, Corner Suites, Accessible Suites). Verifier (2026-09-27): 'Gulf-front pool' not stated; page lists POOL & SPA, BAR, GYM."
   },
   {
     "id": "opal-sands-resort",
@@ -9641,8 +9853,8 @@
       "meeting-space",
       "all-suites"
     ],
-    "summary": "An all-suite Opal Collection resort that opened in 2025 next to Opal Sands on Clearwater Beach, with four restaurants, a full-service spa, and suites with full kitchens; guests share the amenities of both resorts via a sky bridge.",
-    "quote": "Suites with Florida Gulf views, four innovative restaurants, and a full-service spa make Opal Sol your dream Clearwater Beach getaway.",
+    "summary": "An all-suite Opal Collection resort on Clearwater Beach that opened in 2025 next to Opal Sands, with suites that have full kitchens; a glass-enclosed sky bridge links the two resorts, whose guests share up to 10 dining outlets, four pools and two spas.",
+    "quote": "Suites with Florida Gulf views, four innovative restaurants, and a full-service spa make Opal Sol your dream Clearwater Beach getaway",
     "status": "open",
     "source_url": "https://www.opalcollection.com/opal-sol/",
     "also_sources": [
@@ -9650,7 +9862,7 @@
       "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
     ],
     "checked": "2026-09-27",
-    "notes": "Opening: Visit St. Pete-Clearwater says it 'opened in March 2025' (a Travel press item says Feb 14, 2025); only the year is recorded. The quoted meta description continues ', coming 2025' on the page. 'all-suites' per VSPC ('nearly 250 luxury balcony-view suites')."
+    "notes": "Opening: Visit St. Pete-Clearwater says it 'opened in March 2025' (a Travel press item says Feb 14, 2025); only the year is recorded. The quoted meta description continues ', coming 2025' on the page. 'all-suites' per VSPC ('nearly 250 luxury balcony-view suites'). Verifier (2026-09-27): summary restated from the resort page ('up to 10 dining outlets, four sparkling pools, and two full-service luxury Opal Spas' across both resorts)."
   },
   {
     "id": "oscar-scherer-state-park-campground",
@@ -9698,18 +9910,20 @@
     "geo_source": "official",
     "url": "https://pageterrace.com/",
     "phone": "(727) 367-1997",
+    "rooms": 36,
     "features": [
       "beachfront",
       "pool"
     ],
-    "summary": "A family-owned, family-run beachfront hotel on Treasure Island with a Gulf-front patio and a heated pool; the owners have run it for about 30 years.",
+    "summary": "A 36-unit family-owned and -operated beachfront hotel on Treasure Island with a heated freshwater pool, a Gulf-front patio and shuffleboard; it says it has been open since 1990.",
     "quote": "Page Terrace Beachfront Hotel offers a comfortable, spacious, affordable place with a Gulf-front patio and more.",
     "status": "open",
     "source_url": "https://pageterrace.com/",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/page-terrace-beachfront-hotel-802"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): rooms 36 and 'open to all guests since 1990' from the hotel's page; 'run it for about 30 years' replaced."
   },
   {
     "id": "palihouse-hyde-park-village",
@@ -9822,18 +10036,17 @@
     "phone": "(727) 446-6777",
     "features": [
       "pool",
-      "kitchens",
-      "free-parking"
+      "kitchens"
     ],
-    "summary": "A small inn steps from the beach on Bay Esplanade in north Clearwater Beach with rooms, efficiencies and apartments, a heated pool and a rooftop terrace; parking and Wi-Fi are free and there are no resort fees.",
-    "quote": "Complimentary Wi-Fi and parking for inn guests; no resort fees.",
+    "summary": "A small inn steps from the beach on Bay Esplanade in north Clearwater Beach with rooms, efficiencies and apartments, a heated pool and a rooftop terrace. Since March 23, 2026 it charges a daily amenity fee of $25 plus tax, which covers beach chair and umbrella rental.",
+    "quote": "New Adirondack seating on our rooftop terrace — the perfect spot to take in Gulf sunsets, relax in the sun, or simply enjoy the coastal scenery",
     "status": "open",
     "source_url": "https://palmpavilioninn.com/",
     "also_sources": [
       "https://www.visitstpeteclearwater.com/profile/palm-pavilion-inn/138171"
     ],
     "checked": "2026-09-27",
-    "notes": "Pool and kitchens from the Visit St. Pete-Clearwater profile (heated pool; kitchens in select units)."
+    "notes": "Pool and kitchens from the Visit St. Pete-Clearwater profile (heated pool; kitchens in select units). Verifier (2026-09-27): old quote ('...no resort fees') survives only in the site's meta description; the page body now announces the $25 amenity fee effective March 23, 2026, so free-parking and the no-fee claim were removed. Heated pool and kitchens per the VSPC profile (30 units). Sold in Jan 2026 to Beachside Hospitality per news headlines (not read)."
   },
   {
     "id": "palms-of-treasure-island",
@@ -9852,7 +10065,6 @@
     "features": [
       "waterfront",
       "pool",
-      "kitchens",
       "all-suites"
     ],
     "summary": "A condo hotel on Treasure Island with Gulf and Intracoastal views, steps from a public beach access, with a waterfront pool and a fishing dock; units are rented through iTrip.",
@@ -9860,7 +10072,7 @@
     "status": "open",
     "source_url": "https://www.visitstpeteclearwater.com/profile/the-palms-of-treasure-island/138027",
     "checked": "2026-09-27",
-    "notes": "Facts from the Visit St. Pete-Clearwater profile, which gives 36 suites (rooms left null); kitchens inferred from 'stainless appliances', verifier may drop."
+    "notes": "Facts from the Visit St. Pete-Clearwater profile, which gives 36 suites (rooms left null); kitchens inferred from 'stainless appliances', verifier may drop. Verifier (2026-09-27): kitchens dropped (inferred from 'stainless appliances', not stated)."
   },
   {
     "id": "parker-manor-resort",
@@ -10268,7 +10480,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/plant-city/hotel/quality-inn-plant-city-lakeland/venue-af789ccb-4f9f-450d-a3b4-b0fe53db6c77",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn' (a different Choice brand); the verifier should confirm the current flag at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists a 'Comfort Inn' (a different Choice brand); the verifier should confirm the current flag at this address. Verifier 2026-09-27: OpenStreetMap still names the building at 2003 South Frontage Road 'Comfort Inn'; the hotel-maintained Cvent profile says Quality Inn, which is kept. Unresolved without Choice's site."
   },
   {
     "id": "quality-inn-suites-conference-center-new-port-richey",
@@ -10322,9 +10534,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33605",
-    "lat": 27.968531,
-    "lng": -82.402464,
-    "geo_source": "census",
+    "lat": 27.968271,
+    "lng": -82.403699,
+    "geo_source": "photon",
     "rooms": 125,
     "features": [
       "pool",
@@ -10335,7 +10547,7 @@
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/quality-inn-and-suites-near-fairgrounds-ybor-city/venue-2ac730bc-ef7e-4790-aac6-db279a9ffaa5",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Quality Inn & Suites Near Fairgrounds Ybor City' at this address."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Existence cross-checked against OpenStreetMap (Photon), which lists 'Quality Inn & Suites Near Fairgrounds Ybor City' at this address. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Quality Inn & Suites Near Fairgrounds Ybor City), which was about 124 m from the Census point."
   },
   {
     "id": "quality-inn-suites-tarpon-springs",
@@ -10511,9 +10723,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.966496,
-    "lng": -82.512246,
-    "geo_source": "census",
+    "lat": 27.96591,
+    "lng": -82.519899,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpaim-renaissance-tampa-international-plaza-hotel/overview/",
     "phone": "(813) 877-9200",
     "rooms": 293,
@@ -10533,7 +10745,7 @@
       "https://www.cvent.com/venues/tampa/hotel/renaissance-tampa-international-plaza-hotel/venue-1b9cd131-ad75-4548-9e96-bbdbee8abc1c"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Renaissance Tampa International Plaza Hotel), which was about 753 m from the Census point."
   },
   {
     "id": "residence-inn-clearwater-beach",
@@ -10561,7 +10773,7 @@
       "meeting-space"
     ],
     "summary": "An all-suite Residence Inn on Coronado Drive, walking distance from Clearwater Beach, with full kitchens in every suite, a pool, a fitness room and a lobby bar; it shares a building with the SpringHill Suites.",
-    "quote": "Kick back in home-inspired suites complete with full kitchens and expansive dining bars.",
+    "quote": "Kick back in home-inspired suites complete with full kitchens and expansive dining bars",
     "quote_source": "https://business.tampabaybeaches.com/list/member/residence-inn-by-marriott-clearwater-beach-17132",
     "status": "open",
     "source_url": "https://www.visitstpeteclearwater.com/profile/residence-inn-clearwater-beach/141700",
@@ -10795,9 +11007,9 @@
     "city": "Lutz",
     "state": "FL",
     "zip": "33558",
-    "lat": 28.185636,
-    "lng": -82.537744,
-    "geo_source": "census",
+    "lat": 28.188119,
+    "lng": -82.540385,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpasc-residence-inn-tampa-suncoast-parkway-at-northpointe-village/overview/",
     "phone": "813-792-8400",
     "rooms": 100,
@@ -10818,7 +11030,7 @@
       "https://www.cvent.com/venues/lutz/hotel/residence-inn-by-marriott-tampa-suncoast-parkway-at-northpointe-village/venue-fb72e190-489f-4f8a-9fa9-3c28e0542a7e"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Residence Inn Tampa Suncoast Parkway at NorthPointe Village), which was about 378 m from the Census point."
   },
   {
     "id": "residence-inn-tampa-usf-medical-center",
@@ -10873,9 +11085,9 @@
     "city": "Wesley Chapel",
     "state": "FL",
     "zip": "33543",
-    "lat": 28.200002,
-    "lng": -82.338683,
-    "geo_source": "census",
+    "lat": 28.197671,
+    "lng": -82.342412,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tparh-residence-inn-tampa-wesley-chapel/overview/",
     "phone": "813-849-4112",
     "rooms": 128,
@@ -10892,7 +11104,7 @@
       "https://flsportscoast.com/listing/residence-inn-tampa-wesley-chapel/"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. The Florida's Sports Coast listing has no description; the Cvent profile is used as the main source. Phone from the Florida's Sports Coast listing."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. The Florida's Sports Coast listing has no description; the Cvent profile is used as the main source. Phone from the Florida's Sports Coast listing. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Residence Inn Tampa Wesley Chapel), which was about 447 m from the Census point."
   },
   {
     "id": "residence-inn-tampa-westshore-airport",
@@ -10934,6 +11146,39 @@
     ],
     "checked": "2026-09-27",
     "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+  },
+  {
+    "id": "roadstar-hotel-zephyrhills",
+    "name": "Roadstar Hotel Zephyrhills",
+    "aliases": [
+      "Roadstar Hotel – Zephyrhills",
+      "Magnuson Hotel Zephyrhills"
+    ],
+    "kind": "hotel",
+    "brand": null,
+    "area": "lutz-wesley-chapel",
+    "address": "5734 Gall Blvd",
+    "city": "Zephyrhills",
+    "state": "FL",
+    "zip": "33542",
+    "lat": 28.240771,
+    "lng": -82.185503,
+    "geo_source": "census",
+    "url": null,
+    "phone": "(813) 782-5527",
+    "rooms": 52,
+    "features": [
+      "pool",
+      "free-parking"
+    ],
+    "summary": "A 52-room hotel on Gall Boulevard (US 301) in Zephyrhills, listed by Pasco County's tourism office as the Roadstar Hotel; the listing text still calls it the Magnuson Hotel Zephyrhills and describes an outdoor pool, a small meeting room and free parking.",
+    "status": "open",
+    "source_url": "https://flsportscoast.com/listing/roadstar-hotel-zephyrhills/",
+    "also_sources": [
+      "https://www.cvent.com/venues/zephyrhills/hotel/magnuson-hotel-zephyrhills/venue-4ddb4333-1d8d-475b-886c-658b6a8516d4"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier (2026-09-27): it is on the Florida's Sports Coast (Pasco tourism) stay list, the same list that justified Quality Inn and Microtel Zephyrhills. Name from the listing title; the listing's description and the Cvent profile (52 rooms, outdoor pool, complimentary parking) use the older name Magnuson Hotel Zephyrhills. The listing also mentions a free continental breakfast; not set as a feature because that text predates the rename. No own website was found. Coordinates: Census match for 5734 Gall Blvd."
   },
   {
     "id": "roost-tampa",
@@ -11112,9 +11357,9 @@
     "city": "Wesley Chapel",
     "state": "FL",
     "zip": "33543",
-    "lat": 28.234897,
-    "lng": -82.329298,
-    "geo_source": "census",
+    "lat": 28.228392,
+    "lng": -82.327686,
+    "geo_source": "photon",
     "url": "https://www.saddlebrook.com/",
     "phone": "813.973.1111",
     "rooms": 450,
@@ -11137,7 +11382,7 @@
       "https://flsportscoast.com/listing/saddlebrook-resort/"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site. Year 1981 from saddlebrook.com ('Year Established'/'RARE 1981') and Cvent (built 1981). Courts, pool and Rees Jones redesign from the Visit Tampa Bay, Florida's Sports Coast and Cvent texts. Rooms: Visit Tampa Bay 450, Cvent 451 ('451 redesigned guest rooms and suites')."
+    "notes": "Main source: the hotel's own site. Year 1981 from saddlebrook.com ('Year Established'/'RARE 1981') and Cvent (built 1981). Courts, pool and Rees Jones redesign from the Visit Tampa Bay, Florida's Sports Coast and Cvent texts. Rooms: Visit Tampa Bay 450, Cvent 451 ('451 redesigned guest rooms and suites'). Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Saddlebrook Resort), which was about 739 m from the Census point."
   },
   {
     "id": "safety-harbor-motel",
@@ -11235,9 +11480,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.963082,
-    "lng": -82.570373,
-    "geo_source": "census",
+    "lat": 27.963518,
+    "lng": -82.572125,
+    "geo_source": "photon",
     "url": "https://www.providentresorts.com/sailport-waterfront-suites-tampa-and-treasure-island/",
     "phone": "844.503.6373",
     "features": [
@@ -11261,7 +11506,7 @@
       "https://www.cvent.com/venues/tampa/resort/sailport-waterfront-suites-on-tampa-bay/venue-00fa6437-541b-43af-91e0-1b91b1366336"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site. Provident page: 'All units are privately owned'. Rooms: Visit Tampa Bay says 147 suites, Cvent 140; left null. Visit Tampa Bay also lists complimentary parking and an airport/area shuttle."
+    "notes": "Main source: the hotel's own site. Provident page: 'All units are privately owned'. Rooms: Visit Tampa Bay says 147 suites, Cvent 140; left null. Visit Tampa Bay also lists complimentary parking and an airport/area shuttle. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Sailport Waterfront Suites, 2506 North Rocky Point Drive), which was about 178 m from the Census point."
   },
   {
     "id": "sails-resort-motel",
@@ -11286,7 +11531,7 @@
       "pool",
       "kitchens"
     ],
-    "summary": "A family-owned beachfront apartment motel in North Redington Beach with motel rooms, efficiencies and apartments with kitchens and a heated pool. It reopened in March 2026 after an 18-month rebuild following the 2024 storms.",
+    "summary": "A beachfront apartment motel in North Redington Beach with motel rooms, efficiencies and one- and two-bedroom apartments with kitchens or kitchenettes, and a heated pool. It reopened in March 2026 after an 18-month rebuild following storm damage to its lower level.",
     "status": "open",
     "source_url": "https://www.visitstpeteclearwater.com/profile/sails-resort-apartment-motel/137986",
     "also_sources": [
@@ -11294,7 +11539,7 @@
       "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete-Clearwater's new-hotels list: reopened March 2026 after an 18-month rebuild (it calls the location Redington Beach; the profile address is North Redington Beach)."
+    "notes": "Visit St. Pete-Clearwater's new-hotels list: reopened March 2026 after an 18-month rebuild (it calls the location Redington Beach; the profile address is North Redington Beach). Verifier (2026-09-27): 'family-owned' removed (not stated on the profile or the motel's page); the 18-month rebuild is quoted on the VSPC new-hotels list."
   },
   {
     "id": "saint-hotel",
@@ -11367,8 +11612,7 @@
     "features": [
       "waterfront",
       "pool",
-      "pet-friendly",
-      "kitchens"
+      "pet-friendly"
     ],
     "summary": "A small waterfront motel on an inlet of Boca Ciega Bay in Redington Shores, 190 feet from the Gulf beach, with a fishing and boat dock and a heated pool; pets are welcome.",
     "quote": "Sand Vista Motel in Redington Shores, FL offers waterfront rentals with a fishing and boat dock.",
@@ -11378,7 +11622,7 @@
       "https://www.visitstpeteclearwater.com/profile/sand-vista-motel/138186"
     ],
     "checked": "2026-09-27",
-    "notes": "Kitchens from a guest review on the page ('bedroom, kitchenette and pull-out couch'); verifier may drop."
+    "notes": "Kitchens from a guest review on the page ('bedroom, kitchenette and pull-out couch'); verifier may drop. Verifier (2026-09-27): kitchens dropped (guest review only)."
   },
   {
     "id": "sandpearl-resort",
@@ -11401,8 +11645,7 @@
       "pool",
       "spa",
       "restaurant",
-      "kitchens",
-      "marina"
+      "kitchens"
     ],
     "summary": "A 253-room Opal Collection resort on the beach in Clearwater Beach, with a zero-entry pool, the Opal Spa, the Caretta on the Gulf restaurant and suites with full kitchens. Its rooms were renovated in October 2024.",
     "quote": "Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf Coast setting.",
@@ -11413,7 +11656,7 @@
       "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
     ],
     "checked": "2026-09-27",
-    "notes": "'marina' from the site's Marina menu item; verifier may drop."
+    "notes": "'marina' from the site's Marina menu item; verifier may drop. Verifier (2026-09-27): marina dropped: the 'Marina' menu entries are other Opal Collection properties."
   },
   {
     "id": "satellite-motel",
@@ -11580,11 +11823,11 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 27.993547,
-    "lng": -82.373013,
-    "geo_source": "census",
+    "lat": 27.993378,
+    "lng": -82.371462,
+    "geo_source": "photon",
     "url": "https://casino.hardrock.com/tampa",
-    "phone": "1-866-436-4263",
+    "phone": "(813) 627-7625",
     "rooms": 800,
     "features": [
       "pool",
@@ -11604,7 +11847,7 @@
       "https://www.cvent.com/venues/tampa/hotel/seminole-hard-rock-hotel-casino-tampa/venue-f0489762-39f7-43f7-991d-b9537b888740"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: the hotel's own site. Rooms and gaming square footage from the Visit Tampa Bay listing ('800 guestrooms and suites', '245,000-sq. ft. of gaming space')."
+    "notes": "Main source: the hotel's own site. Rooms and gaming square footage from the Visit Tampa Bay listing ('800 guestrooms and suites', '245,000-sq. ft. of gaming space'). Verifier 2026-09-27: phone 1-866-436-4263 appears on neither source page; replaced with the hotel number on the Visit Tampa Bay listing (the casino site's only tel: link is 1-866-388-4263, unlabeled). coordinates moved to the OpenStreetMap feature (Seminole Hard Rock Hotel & Casino - Tampa), which was about 153 m from the Census point."
   },
   {
     "id": "shephards-beach-resort",
@@ -11638,9 +11881,9 @@
   },
   {
     "id": "sheraton-sand-key-resort",
-    "name": "Sheraton Sand Key Resort",
+    "name": "Clearwater Beach Sheraton Resort on Sand Key",
     "aliases": [
-      "Clearwater Beach Sheraton Resort on Sand Key"
+      "Sheraton Sand Key Resort"
     ],
     "kind": "resort",
     "brand": "Marriott",
@@ -11670,7 +11913,7 @@
       "https://business.tampabaybeaches.com/list/member/sheraton-sand-key-resort-1028"
     ],
     "checked": "2026-09-27",
-    "notes": "marriott.com and sheratonsandkey.com block automated reading; facts from the Visit St. Pete-Clearwater profile (390 rooms per VSPC, left null)."
+    "notes": "marriott.com and sheratonsandkey.com block automated reading; facts from the Visit St. Pete-Clearwater profile (390 rooms per VSPC, left null). Verifier (2026-09-27): name changed to the VSPC listing name, also used in 2026 news; the id keeps the short name."
   },
   {
     "id": "sheraton-tampa-brandon",
@@ -11686,9 +11929,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33610",
-    "lat": 27.979912,
-    "lng": -82.332169,
-    "geo_source": "census",
+    "lat": 27.980036,
+    "lng": -82.330568,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpaea-sheraton-tampa-brandon-hotel/overview/",
     "phone": "(813) 623-6363",
     "rooms": 266,
@@ -11707,7 +11950,7 @@
       "https://www.cvent.com/venues/tampa/hotel/sheraton-tampa-brandon-hotel/venue-42aff0e9-045c-4925-9e57-21acfdda84ac"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Sheraton Tampa Brandon Hotel), which was about 158 m from the Census point."
   },
   {
     "id": "shoreline-island-resort",
@@ -11766,15 +12009,16 @@
       "pet-friendly",
       "meeting-space"
     ],
-    "summary": "A large family beach resort and conference center on St. Pete Beach with beachside pools, kids' programs, several bars and restaurants, and rooms, studios and suites, some with kitchenettes. It completed a $25 million renovation in January 2026 and is part of Hilton's Tapestry Collection.",
+    "summary": "A large family beach resort and conference center on St. Pete Beach with beachside pools, kids' activities, three Gulf-front bars and restaurants, and rooms, studios and suites, some with kitchens. After a $25 million renovation of its 228 guest rooms it joined Hilton's Tapestry Collection in 2026.",
     "status": "open",
     "source_url": "https://www.visitstpeteclearwater.com/profile/sirata-hilton-tapestry-beach-resort/138263",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/sirata-hilton-tapestry-1039",
-      "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+      "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
+      "https://stpetecatalyst.com/siratas-next-chapter-beachfront-hotel-joins-hilton-after-makeover/"
     ],
     "checked": "2026-09-27",
-    "notes": "The resort's own site (sirata.com) and hilton.com could not be read on Sep 27, 2026 (503/403); facts from the Visit St. Pete-Clearwater profile and the Tampa Bay Beaches Chamber listing. Visit St. Pete-Clearwater's new-hotels list: $25 million renovation completed January 2026, 228 renovated rooms including 80 suites; its profile still says 382 rooms, so rooms is left null."
+    "notes": "The resort's own site (sirata.com) and hilton.com could not be read on Sep 27, 2026 (503/403); facts from the Visit St. Pete-Clearwater profile and the Tampa Bay Beaches Chamber listing. Visit St. Pete-Clearwater's new-hotels list: $25 million renovation completed January 2026, 228 renovated rooms including 80 suites; its profile still says 382 rooms, so rooms is left null. Verifier (2026-09-27): re-read the VSPC profile (Harry's Beach Bar, Rum Runners Bar & Grille, Compass Grille; 14 meeting rooms; pet-friendly rooms for a fee; no closure notice). St Pete Catalyst (Jun 29, 2026): 'All 228 guest rooms have been renovated' and it joined Hilton's Tapestry Collection. sirata.com still returned 503."
   },
   {
     "id": "skybeach-resort",
@@ -11860,9 +12104,9 @@
     "city": "Temple Terrace",
     "state": "FL",
     "zip": "33637",
-    "lat": 28.071297,
-    "lng": -82.349532,
-    "geo_source": "census",
+    "lat": 28.068333,
+    "lng": -82.358804,
+    "geo_source": "photon",
     "url": "https://www.choicehotels.com/florida/tampa/sleep-inn-hotels/fl078",
     "phone": "(813) 990-0295",
     "rooms": 83,
@@ -11879,7 +12123,7 @@
       "https://www.cvent.com/venues/tampa/hotel/sleep-inn-near-busch-gardens-usf/venue-a7269801-6ed9-4ade-a69b-0a8d5fa731c3"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Sleep Inn Tampa, 12282 Morris Bridge Road), which was about 966 m from the Census point."
   },
   {
     "id": "sleep-inn-suites-tampa-south",
@@ -12150,23 +12394,22 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33647",
-    "lat": 28.126773,
-    "lng": -82.380103,
-    "geo_source": "census",
+    "lat": 28.12745,
+    "lng": -82.377497,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpanp-springhill-suites-tampa-north-i-75-tampa-palms/overview/",
     "rooms": 127,
     "features": [
       "pool",
       "fitness",
-      "all-suites",
       "pet-friendly",
       "meeting-space"
     ],
-    "summary": "An all-suite SpringHill Suites with 127 suites in Tampa Palms off I-75; its Cvent profile lists an outdoor pool and a fitness room.",
+    "summary": "A 127-room SpringHill Suites in Tampa Palms off I-75; its Cvent profile lists an outdoor pool and a fitness room.",
     "status": "open",
     "source_url": "https://www.cvent.com/venues/tampa/hotel/springhill-suites-by-marriott-tampa-north-i-75-tampa-palms/venue-87edc26a-437e-41be-83e9-04507fb642f0",
     "checked": "2026-09-27",
-    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Cvent venue profile (hotel-maintained). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: all-suites removed and summary reworded: the Cvent profile gives 127 guest rooms and does not say all-suite. coordinates moved to the OpenStreetMap feature (SpringHill Suites Tampa North/I-75 Tampa Palms), which was about 266 m from the Census point."
   },
   {
     "id": "springhill-suites-tampa-suncoast-parkway",
@@ -12193,7 +12436,6 @@
       "pool",
       "fitness",
       "all-suites",
-      "free-breakfast",
       "pet-friendly",
       "meeting-space"
     ],
@@ -12205,7 +12447,7 @@
       "https://www.cvent.com/venues/land-o-lakes/hotel/springhill-suites-by-marriott-tampa-suncoast-parkway/venue-995f8c07-db97-4f9e-8d15-d6c246120d4a"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Florida's Sports Coast (Pasco County tourism) listing. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: free-breakfast removed: the listing says 'full breakfast buffet' and does not say it is free."
   },
   {
     "id": "springhill-suites-tampa-westshore-airport",
@@ -12221,9 +12463,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33607",
-    "lat": 27.952345,
-    "lng": -82.524878,
-    "geo_source": "census",
+    "lat": 27.95297,
+    "lng": -82.525626,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpash-springhill-suites-tampa-westshore-airport/overview/",
     "phone": "(813) 639-9600",
     "rooms": 149,
@@ -12245,7 +12487,7 @@
       "https://www.cvent.com/venues/tampa/hotel/springhill-suites-by-marriott-tampa-westshore-airport/venue-04287941-551d-44f7-9d2c-61c0fd1a8175"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (SpringHill Suites Tampa Westshore Airport), which was about 101 m from the Census point."
   },
   {
     "id": "st-pete-beach-suites",
@@ -12268,7 +12510,7 @@
       "all-suites"
     ],
     "summary": "A 27-suite hotel a few steps from the beach in St. Pete Beach; every suite has self-catering facilities. It opened in 1948 as the Dolphin Hotel and was remodeled in 2017.",
-    "quote": "Our hotel has been receiving guests since 1948 as the Dolphin Hotel, a piece of Florida history.",
+    "quote": "Our hotel has been receiving guests since 1948 as the Dolphin Hotel, a piece of Florida history",
     "status": "open",
     "source_url": "https://business.tampabaybeaches.com/list/member/st-pete-beach-suites-10833",
     "checked": "2026-09-27",
@@ -12354,9 +12596,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.977279,
-    "lng": -82.33517,
-    "geo_source": "census",
+    "lat": 27.978549,
+    "lng": -82.337079,
+    "geo_source": "photon",
     "url": "https://www.staybridge.com/tampasabalpark",
     "phone": "(813) 227-4000",
     "rooms": 100,
@@ -12377,7 +12619,7 @@
       "https://www.cvent.com/venues/tampa/hotel/staybridge-suites-tampa-east-brandon/venue-0167948f-0e28-41ab-a835-9ef2d9c52faa"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (Staybridge Suites Tampa East-Brandon), which was about 234 m from the Census point."
   },
   {
     "id": "sunburst-inn",
@@ -12392,14 +12634,15 @@
     "lng": -82.842602,
     "geo_source": "osm",
     "phone": "(727) 596-2500",
-    "summary": "A small retro-styled beachfront motel in Indian Shores with rooms with kitchens, listed as temporarily closed because of hurricane damage.",
+    "summary": "A small retro-styled beachfront motel in Indian Shores with kitchenettes, listed as temporarily closed.",
     "status": "temporarily-closed",
-    "status_note": "Visit St. Pete-Clearwater marks the listing 'TEMPORARILY CLOSED' due to hurricane damage (checked Sep 27, 2026); its website (sunburstinn.com) returned errors.",
+    "status_note": "Visit St. Pete-Clearwater marks the listing 'TEMPORARILY CLOSED' (checked Sep 27, 2026); its website (sunburstinn.com) did not respond.",
     "source_url": "https://www.visitstpeteclearwater.com/profile/sunburst-inn/138201",
     "also_sources": [
       "https://business.tampabaybeaches.com/list/member/sunburst-inn-indian-shores-17772"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier (2026-09-27): 'because of hurricane damage' removed (not stated on the profile)."
   },
   {
     "id": "suncoast-beach-villas",
@@ -12515,7 +12758,7 @@
       "https://www.visitstpeteclearwater.com/profile/sunset-inn-cabanas/138982"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates: the site's structured data gives 27.748435,-82.761501, about 540 m north of the OSM feature and the Census match for 7925 W Gulf Blvd (which agree); the OSM point is kept."
+    "notes": "Coordinates: the site's structured data gives 27.748435,-82.761501, about 540 m north of the OSM feature and the Census match for 7925 W Gulf Blvd (which agree); the OSM point is kept. Verifier (2026-09-27): site: 'In 2026, we unveiled our new concept post-hurricane renovation: an in-ground pool and day pass cabana rentals!'"
   },
   {
     "id": "sunset-vistas-beachfront-suites",
@@ -12538,8 +12781,7 @@
       "pool",
       "restaurant",
       "kitchens",
-      "all-suites",
-      "fitness"
+      "all-suites"
     ],
     "summary": "A Provident Resorts beachfront tower on Treasure Island with 154 two- and three-bedroom condo-size suites, each with a full kitchen and a balcony over the beach, plus pools, whirlpools and a cafe and beach bar.",
     "quote": "Enjoy condo-sized suites & resort amenities in the heart of sunny Treasure Island, FL, when you stay at Sunset Vistas Beachfront Suites.",
@@ -12549,7 +12791,7 @@
       "https://business.tampabaybeaches.com/list/member/sunset-vistas-beachfront-suites-3370"
     ],
     "checked": "2026-09-27",
-    "notes": "'fitness' from a guest review on the page ('Small but good gym'); verifier may drop."
+    "notes": "'fitness' from a guest review on the page ('Small but good gym'); verifier may drop. Verifier (2026-09-27): fitness dropped (guest review only)."
   },
   {
     "id": "super-8-clearwater-st-petersburg-airport",
@@ -12741,7 +12983,7 @@
       "airport-shuttle",
       "meeting-space"
     ],
-    "summary": "A 298-room Marriott inside Tampa International Airport; you walk from the terminal into the hotel lobby. It has an outdoor pool, a fitness center, restaurants and a rooftop event space, and offers day-use rooms for long layovers.",
+    "summary": "A 298-room Marriott inside the main terminal of Tampa International Airport. It has an outdoor pool, a fitness center, restaurants and a rooftop event space, and offers day-use rooms for long layovers.",
     "quote": "Day-use rooms are available for those with long layovers or unexpected flight changes.",
     "status": "open",
     "source_url": "https://www.visittampabay.com/listings/tampa-airport-marriott/2997/",
@@ -12749,7 +12991,7 @@
       "https://www.cvent.com/venues/tampa/hotel/tampa-airport-marriott/venue-b2c9844c-0a83-4b44-ab8a-427e7c63dc75"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: summary reworded: the listing says the hotel is inside the terminal; 'you walk from the terminal into the lobby' was not stated."
   },
   {
     "id": "tampa-bay-extended-stay",
@@ -12965,27 +13207,26 @@
     "city": "Plant City",
     "state": "FL",
     "zip": "33563",
-    "lat": 28.028342,
-    "lng": -82.155223,
-    "geo_source": "census",
+    "lat": 28.025607,
+    "lng": -82.152903,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpapt-towneplace-suites-plant-city/overview/",
     "phone": "(813) 704-5585",
     "rooms": 95,
     "features": [
       "pool",
       "fitness",
-      "all-suites",
       "pet-friendly",
       "meeting-space"
     ],
-    "summary": "A 95-suite TownePlace Suites on Thonotosassa Road in Plant City, built in 2021 according to its Cvent profile, which lists an outdoor pool.",
+    "summary": "A 95-room TownePlace Suites on Thonotosassa Road in Plant City, built in 2021 according to its Cvent profile, which lists an outdoor pool and a fitness room.",
     "status": "open",
     "source_url": "https://business.plantcity.org/list/category/hotels-95",
     "also_sources": [
       "https://www.cvent.com/venues/plant-city/hotel/towneplace-suites-by-marriott-plant-city/venue-9210c64f-9aab-46c9-839c-0f06bc7446ec"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read."
+    "notes": "Main source: Plant City Chamber directory. Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Verifier 2026-09-27: all-suites removed and summary reworded: the pages read give 95 sleeping rooms and do not say all-suite. coordinates moved to the OpenStreetMap feature (TownePlace Suites Plant City), which was about 379 m from the Census point."
   },
   {
     "id": "towneplace-suites-tampa-casino-area",
@@ -13001,9 +13242,9 @@
     "city": "Tampa",
     "state": "FL",
     "zip": "33619",
-    "lat": 27.981571,
-    "lng": -82.387448,
-    "geo_source": "census",
+    "lat": 27.982206,
+    "lng": -82.387057,
+    "geo_source": "photon",
     "url": "https://www.marriott.com/en-us/hotels/tpaif-towneplace-suites-tampa-casino-area/overview/",
     "phone": "(813) 678-2500",
     "rooms": 96,
@@ -13023,7 +13264,7 @@
       "https://www.cvent.com/venues/tampa/hotel/towneplace-suites-by-marriott-tampa-casino-area/venue-5fb19b70-4f0c-4e31-9dd2-dcd5f3d77841"
     ],
     "checked": "2026-09-27",
-    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent: built 2020."
+    "notes": "Main source: Visit Tampa Bay listing (hotel-supplied text and amenity table). Brand sites (Marriott, Hilton, IHG, Hyatt, Choice, Best Western, ESA) returned 403 to our readers, so the brand page in url was not read. Cvent: built 2020. Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature (TownePlace Suites Tampa East/I-4, 6202 East Drive Martin Luther King Jr Boulevard), which was about 80 m from the Census point."
   },
   {
     "id": "towneplace-suites-tampa-south",
@@ -13560,39 +13801,6 @@
     "notes": "Main source: the hotel's own site."
   },
   {
-    "id": "winter-the-dolphins-beach-club",
-    "name": "Winter the Dolphin's Beach Club, Ascend Hotel Collection",
-    "aliases": [
-      "Winter the Dolphin's Beach Club",
-      "Dolphin Sands Clearwater Beach"
-    ],
-    "kind": "hotel",
-    "brand": "Choice Hotels",
-    "collection": "Ascend Hotel Collection",
-    "area": "clearwater-beach",
-    "address": "655 S Gulfview Blvd",
-    "city": "Clearwater Beach",
-    "state": "FL",
-    "zip": "33767",
-    "lat": 27.966444,
-    "lng": -82.825752,
-    "geo_source": "osm",
-    "url": "https://www.dolphinsandsclearwater.com/",
-    "phone": "(727) 228-8575",
-    "features": [
-      "beachfront",
-      "pool",
-      "restaurant",
-      "fitness",
-      "accessible-rooms"
-    ],
-    "summary": "A beachfront hotel at the south end of Clearwater Beach named for Winter the Dolphin of the Clearwater Marine Aquarium; the listing says room proceeds support the aquarium's marine animal care.",
-    "status": "open",
-    "source_url": "https://www.visitstpeteclearwater.com/profile/dolphin-sands-clearwater-beach/139001",
-    "checked": "2026-09-27",
-    "notes": "Own site returned 403 on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (91 units per VSPC; name shown there as Winter the Dolphin's Beach Club under the URL slug dolphin-sands-clearwater-beach). Collection name from OSM; verifier should confirm the current name and flag."
-  },
-  {
     "id": "woodspring-suites-tampa-airport-north-veterans-expressway",
     "name": "WoodSpring Suites Tampa Airport North Veterans Expressway",
     "kind": "extended-stay",
@@ -13690,14 +13898,13 @@
     "url": "https://www.wyndhamgrandclearwater.com/",
     "phone": "(727) 281-9500",
     "features": [
-      "beachfront",
       "pool",
       "spa",
       "fitness",
       "restaurant",
       "meeting-space"
     ],
-    "summary": "A Wyndham Grand resort steps from Clearwater Beach and Pier 60 and across the street from the Clearwater Beach Marina, with a pool bar, several restaurants, a spa and meeting and wedding space.",
+    "summary": "A Wyndham Grand resort steps from Clearwater Beach and Pier 60, with DocK's Pool Bar & Grille, a spa, and more than 22,000 square feet of space for meetings, banquets and weddings.",
     "quote": "The premier Clearwater Beach hotel, Wyndham Grand Clearwater is a top destination with chic accommodations, meeting space and wedding venues.",
     "status": "open",
     "source_url": "https://www.wyndhamgrandclearwater.com/",
@@ -13705,6 +13912,6 @@
       "https://business.tampabaybeaches.com/list/member/wyndham-grand-clearwater-beach-13961"
     ],
     "checked": "2026-09-27",
-    "notes": "The site lists a 'Pool Renovation' information page (checked Sep 27, 2026). Coordinates: the site's structured data (27.975318,-82.830665) is about 215 m west of the OSM building; the OSM point is kept."
+    "notes": "The site lists a 'Pool Renovation' information page (checked Sep 27, 2026). Coordinates: the site's structured data (27.975318,-82.830665) is about 215 m west of the OSM building; the OSM point is kept. Verifier (2026-09-27): 'across the street from the Clearwater Beach Marina' removed (not on the page); beachfront dropped (the page says 'Steps from the Sand')."
   }
 ]

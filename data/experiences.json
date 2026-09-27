@@ -1,5 +1,46 @@
 [
   {
+    "id": "anna-maria-island-dolphin-tours",
+    "name": "Anna Maria Island Dolphin Tours",
+    "operator": "Anna Maria Island Dolphin Tours",
+    "kind": "dolphin-tour",
+    "topics": [
+      "water",
+      "wildlife",
+      "family"
+    ],
+    "area": "bradenton-anna-maria",
+    "address": "5325 Marina Dr, Holmes Beach, FL 34217",
+    "city": "Holmes Beach",
+    "state": "FL",
+    "zip": "34217",
+    "lat": 27.507323,
+    "lng": -82.713665,
+    "geo_source": "photon",
+    "departs_text": "Waterline Marina, Holmes Beach (5325 Marina Drive).",
+    "url": "https://amidolphintours.com/",
+    "booking_url": "https://amidolphintours.com/tours/dolphin-cruise/",
+    "phone": "(941) 281-3461",
+    "duration_text": "2 hours",
+    "price_text": "Public tour: $48 ages 7+; $42 children 6 and under, seniors 65+ and military. Private tour for up to 17 from $495 (covers six people; $50 each additional).",
+    "is_free": false,
+    "ages_text": "All ages.",
+    "summary": "Two-hour public and private dolphin tours from Waterline Marina in Holmes Beach around Anna Maria Island's back bay and toward the Gulf. The company also runs Egmont Key trips, sunset tours, sandbar trips, pontoon rentals and guided jet ski tours.",
+    "quote": "Depart from Waterline Marina in Holmes Beach for a 2-hour cruise around Anna Maria Island, with options for both private family charters and public group tours.",
+    "status": "open",
+    "tags": [
+      "dolphins",
+      "anna-maria-island",
+      "egmont-key"
+    ],
+    "source_url": "https://amidolphintours.com/tours/dolphin-cruise/",
+    "also_sources": [
+      "https://amidolphintours.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (Anna Maria dolphin tours were a gap). Coordinates: OpenStreetMap building for Waterline Marina Resort; the census match for 5325 Marina Dr is 150 m away."
+  },
+  {
     "id": "bay-e-bikes-fort-de-soto-tour",
     "name": "Fort De Soto E-Bike & Beach Day",
     "operator": "Bay E-Bikes",
@@ -395,9 +436,58 @@
     ],
     "source_url": "https://www.starlitecruises.com/calypso-tropical-cruises/evening-cruise/queen/",
     "also_sources": [
-      "https://www.starlitecruises.com/calypso-tropical-cruises/"
+      "https://www.starlitecruises.com/calypso-tropical-cruises/",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
+  },
+  {
+    "id": "canoe-outpost-little-manatee-river",
+    "name": "Canoe Outpost - Little Manatee River",
+    "operator": "Canoe Outpost",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "outdoors",
+      "wildlife"
+    ],
+    "area": "apollo-beach",
+    "address": "18001 US Hwy 301 S, Wimauma, FL 33598",
+    "city": "Wimauma",
+    "state": "FL",
+    "zip": "33598",
+    "lat": 27.672356,
+    "lng": -82.353392,
+    "geo_source": "photon",
+    "departs_text": "Canoe Outpost, 18001 US Hwy 301 S, Wimauma, on the Little Manatee River; buses carry you and the boat to or from the put-in or take-out.",
+    "url": "https://www.thecanoeoutpost.com/",
+    "booking_url": "https://www.thecanoeoutpost.com/reservations.html",
+    "phone": "813-634-2228",
+    "duration_text": "Trip 1: about 6 miles, about 2 1/2 hours of paddling; Trip 2: about 3 miles, about 1 1/4 hours; Trip 3: 6 miles, about 3 1/2 hours; Trip 4: 10 miles, about 5 1/2 hours",
+    "price_text": "Per boat, shuttle, life jackets and paddles included: tandem canoe or kayak $55-$59 and single kayak or SUP $43-$50, depending on the trip. Half-day rentals from the Outpost (up to 4 hours): $33 canoe or double kayak, $27 single kayak.",
+    "is_free": false,
+    "schedule_text": "Trip 1 launches continuously 9:00-2:00 daily and Trip 2 9:00-3:00; Trips 3 and 4 start with a bus at 9:30 or 11:00.",
+    "season_text": "Open all year; tubing on the Trip 2 route when river levels allow (usually in the summer rainy season).",
+    "summary": "Canoe, kayak and paddleboard rentals with shuttle buses for self-guided one-way paddles down the Little Manatee River, including a run through Little Manatee River State Park; guided trips to Cockroach Bay and tubing when the river is high.",
+    "quote": "Located in southern Hillsborough County, Florida, we are less than an hour from Tampa, St. Petersburg, Clearwater, Bradenton, and Sarasota.",
+    "quote_source": "https://www.thecanoeoutpost.com/",
+    "status": "open",
+    "tags": [
+      "canoe",
+      "kayak",
+      "river",
+      "tubing",
+      "rentals"
+    ],
+    "source_url": "https://www.thecanoeoutpost.com/tripslmr.html",
+    "also_sources": [
+      "https://www.thecanoeoutpost.com/",
+      "https://www.thecanoeoutpost.com/pricing.html",
+      "https://www.thecanoeoutpost.com/directions.html"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (fills the south Hillsborough river-paddling gap left by Canoe Escape's closure). The trips page says the state park closed its canoe steps, so Trip 2 now ends at the park's picnic area with a ~200-yard walk to the bus. Coordinates: OpenStreetMap building at 18001 South US 301."
   },
   {
     "id": "captain-memos-pirate-cruise",
@@ -435,10 +525,11 @@
     ],
     "source_url": "https://captainmemo.com/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/profile/captain-memo-s-pirate-cruise/138378"
+      "https://www.visitstpeteclearwater.com/profile/captain-memo-s-pirate-cruise/138378",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Parking at the marina lot is pay per plate, $1 per hour, per the operator. The page mentions champagne on '4:30pm and 7pm cruises', times not in the current schedule."
+    "notes": "Parking at the marina lot is pay per plate, $1 per hour, per the operator. The page mentions champagne on '4:30pm and 7pm cruises', times not in the current schedule. Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "century-of-baseball-history-trolley-tour",
@@ -472,6 +563,50 @@
     ],
     "checked": "2026-09-27",
     "notes": "The event page gives date, time and cost but no departure point; the museum's other trolley tours leave from the Museum of History (335 2nd Ave NE). Verified 2026-09-27: the quote is on the museum's Historic Tours page, now named in quote_source."
+  },
+  {
+    "id": "chute-em-up-parasail-clearwater",
+    "name": "Chute 'Em Up Parasail Clearwater",
+    "operator": "Chute 'Em Up",
+    "kind": "parasail-jetski",
+    "topics": [
+      "water",
+      "thrills",
+      "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "25 Causeway Blvd, Clearwater Beach, FL 33767",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.976294,
+    "lng": -82.827847,
+    "geo_source": "photon",
+    "departs_place": "clearwater-beach-marina",
+    "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd; you board from the dock (Visit St. Pete/Clearwater: near the Marina Cantina building).",
+    "url": "https://proparasail.com/",
+    "booking_url": "https://proparasail.com/pricing/",
+    "phone": "(727) 442-7600",
+    "duration_text": "About 10 minutes in the air",
+    "price_text": "$89.00 plus tax per flyer; observers $40.00; photo and video packs $40.00. Early-bird special for the first boat of the day $79.00 (book 24 hours ahead).",
+    "is_free": false,
+    "ages_text": "Minimum age 5; under 18 need a parent or guardian to sign the waiver; no one over 265 lbs; two or three fly together depending on weight and wind.",
+    "summary": "Parasail flights from a winch boat at the Clearwater Beach Marina: you take off from and land on the boat's flight deck, up to three at a time, for about 10 minutes in the air.",
+    "quote": "With winch boat technology you can even fly up to 3 persons at a time.",
+    "quote_source": "https://proparasail.com/pricing/",
+    "status": "open",
+    "tags": [
+      "parasail"
+    ],
+    "source_url": "https://proparasail.com/frequently-asked-questions/",
+    "also_sources": [
+      "https://proparasail.com/pricing/",
+      "https://proparasail.com/",
+      "https://www.visitstpeteclearwater.com/profile/chute-em-up-parasail/142473",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Coordinates: OpenStreetMap 'Chute Em Up Parasail, Slip 8, Causeway Blvd'. Visit St. Pete/Clearwater lists daily hours 9 AM-6 PM (not on the operator's pages read). Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "city-brew-tours-taste-of-tampa",
@@ -512,6 +647,49 @@
     ],
     "checked": "2026-09-27",
     "notes": "Capacity 14. City Brew Tours also runs a shorter 'Sip of Tampa' public tour (not read). Closed-toe shoes required. Verified 2026-09-27: re-read the source; no change needed."
+  },
+  {
+    "id": "clearwake-watersports-island-excursions",
+    "name": "ClearWake Watersports Private Island Excursions",
+    "operator": "ClearWake Watersports",
+    "kind": "cruise",
+    "topics": [
+      "water",
+      "beaches",
+      "wildlife"
+    ],
+    "area": "downtown-clearwater",
+    "address": "198 Seminole St, Clearwater, FL 33755",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33755",
+    "lat": 27.974176,
+    "lng": -82.801797,
+    "geo_source": "census",
+    "departs_text": "Pickup at 198 Seminole St., Clearwater.",
+    "url": "https://clearwakewatersports.com/",
+    "booking_url": "https://clearwakewatersports.com/island-excursions-in-clearwater-beach/",
+    "phone": "(727) 519-8398",
+    "duration_text": "2, 4 or 6 hours",
+    "price_text": "Private tour for up to 6 guests: 2 hours $350; 4 hours $600; 6 hours $800.",
+    "is_free": false,
+    "summary": "Private captained pontoon trips for up to six from Clearwater to Caladesi Island or Honeymoon Island for swimming, shelling and dolphin watching. You bring your own snacks and drinks; wakesurfing, wakeboarding and tubing trips are also offered.",
+    "quote": "Cruise to Caladesi Island or Honeymoon Island aboard a comfortable pontoon boat with a licensed captain guiding your experience.",
+    "status": "open",
+    "tags": [
+      "private-charter",
+      "pontoon",
+      "caladesi-island",
+      "shelling"
+    ],
+    "source_url": "https://clearwakewatersports.com/island-excursions-in-clearwater-beach/",
+    "also_sources": [
+      "https://clearwakewatersports.com/",
+      "https://clearwakewatersports.com/contact/",
+      "https://www.visitstpeteclearwater.com/profile/clearwake-watersports/141416"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Visit St. Pete/Clearwater gives the business address 1326 S Lotus Dr., Dunedin; the operator's tour page gives the pickup at 198 Seminole St. (mapped). Wake sports are from the Visit St. Pete/Clearwater profile and the operator's menu."
   },
   {
     "id": "clearwater-ferry",
@@ -1182,10 +1360,11 @@
     ],
     "source_url": "https://www.doubleeagledeepseafishing.com/",
     "also_sources": [
-      "https://www.doubleeagledeepseafishing.com/rates-reservations/half-day-fishing-trip"
+      "https://www.doubleeagledeepseafishing.com/rates-reservations/half-day-fishing-trip",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Site warns of marina construction traffic (updated Jul 25, 2026). The 12-hour trip block also says 'Trips Available Coming soon', so its schedule is unclear."
+    "notes": "Site warns of marina construction traffic (updated Jul 25, 2026). The 12-hour trip block also says 'Trips Available Coming soon', so its schedule is unclear. Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "eboats-tampa",
@@ -1262,10 +1441,11 @@
     "also_sources": [
       "https://ecomersion.com/tours/",
       "https://pinellas.gov/parks/weedon-island-preserve/",
-      "https://www.visitstpeteclearwater.com/profile/ecomersion-kayak-tours/140769"
+      "https://www.visitstpeteclearwater.com/profile/ecomersion-kayak-tours/140769",
+      "https://pinellas.gov/county-parks-know-before-you-go/"
     ],
     "checked": "2026-09-27",
-    "notes": "Sweetwater Kayaks also advertised Weedon Island rentals (sweetwaterkayaks.wordpress.com), but its main domain now shows unrelated spam and an 'Outdoor Center is Moving' notice, so its current status could not be confirmed and it was left out. Verifier 2026-09-27: Pinellas County's preserve page says the north paddling trail 'is closed at this time' (one of the two self-guided trails)."
+    "notes": "Sweetwater Kayaks also advertised Weedon Island rentals (sweetwaterkayaks.wordpress.com), but its main domain now shows unrelated spam and an 'Outdoor Center is Moving' notice, so its current status could not be confirmed and it was left out. Verifier 2026-09-27: Pinellas County's preserve page says the north paddling trail 'is closed at this time' (one of the two self-guided trails). The county's park updates page lists Weedon Island Preserve closed until 12 p.m. on Oct. 24, 2026 for a trail run."
   },
   {
     "id": "empower-adventures-zip-line-tampa-bay",
@@ -1701,6 +1881,45 @@
     "notes": "Listed tours and 'From' prices: 8-10 min $119; Tampa Downtown 15 min $149; Tampa Romantic 20 min $229; Tampa Sunset 20 min $219; Tampa Ultimate Beach 40 min $319; Grand Tampa Bay $379 (duration not captured). A national operator with several cities. Verified 2026-09-27: the Grand Tampa Bay tour is 50 minutes per the page."
   },
   {
+    "id": "fort-de-soto-kayak-outpost",
+    "name": "Fort De Soto Kayak Outpost (kayak and paddleboard rentals)",
+    "operator": "Fort De Soto Hospitality",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "outdoors",
+      "wildlife"
+    ],
+    "area": "fort-de-soto",
+    "lat": 27.616493,
+    "lng": -82.728469,
+    "geo_source": "photon",
+    "departs_place": "fort-de-soto-park",
+    "departs_text": "Kayak Outpost next to the dog park on the south side of Fort De Soto Park (the county charges $6 per car to enter the park).",
+    "url": "https://fortdesotobeach.com/locations/",
+    "booking_url": "https://fareharbor.com/embeds/book/fortdesotohospitality/?full-items=yes",
+    "phone": "(727) 618-7132",
+    "duration_text": "Kayak and stand-up paddleboard rentals by the hour, 1 to 4 hours",
+    "schedule_text": "Daily 9:30 am-4:30 pm, weather permitting; from May 16, 2026: 9:30 am-5:30 pm.",
+    "ages_text": "All ages (per the booking page).",
+    "summary": "The park concession's kayak and paddleboard rentals at Fort De Soto, for paddling the park's coves, shoreline and 2.25-mile canoe trail. The same vendor rents bikes, beach chairs and umbrellas.",
+    "quote": "The Kayak Outpost at Fort De Soto Park is the perfect starting point for an unforgettable adventure on the water.",
+    "status": "open",
+    "tags": [
+      "kayak",
+      "paddleboard",
+      "rentals",
+      "mangroves"
+    ],
+    "source_url": "https://fortdesotobeach.com/locations/",
+    "also_sources": [
+      "https://pinellas.gov/parks/fort-de-soto-park/",
+      "https://fareharbor.com/embeds/book/fortdesotohospitality/?full-items=yes"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 in place of topwater-kayak-outpost. Pinellas County: 'Concession, snack bar, souvenir shop, kayak rentals, beach chair & umbrella rentals, bicycle rentals are operated by our partner vendor, Fort De Soto Hospitality.' The 2.25-mile canoe trail is on the county page. Booking items: One/Two/Three/Four Hour Water Rentals (kayaks and stand-up paddleboards); prices are in the booking widget. The vendor's contact address is 3550 Pinellas Bayway S. Coordinates: OpenStreetMap 'PAWS Playground' dog park, next to which the outpost stands (approximate)."
+  },
+  {
     "id": "fun-2-dive-manatee-swim",
     "name": "Fun 2 Dive Classic Manatee Swim",
     "operator": "Fun 2 Dive",
@@ -1743,6 +1962,41 @@
     "notes": "The operator says it has run manatee tours since 1995."
   },
   {
+    "id": "get-up-and-go-kayaking-clearwater",
+    "name": "Get Up and Go Kayaking Clearwater Clear Kayak Tours",
+    "operator": "Get Up and Go Kayaking",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "wildlife",
+      "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "69 Bay Esplanade, Clearwater, FL 33767",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.984852,
+    "lng": -82.823725,
+    "geo_source": "photon",
+    "departs_text": "Launch point: Clearwater Beach Boat Ramp (the operator's address is 69 Bay Esplanade).",
+    "url": "https://getupandgokayaking.com/locations/florida/clearwater/",
+    "phone": "727-472-8954",
+    "summary": "Guided clear-kayak tours on the Intracoastal Waterway off Clearwater Beach, past the marina and waterfront homes, with a stop on a small boat-only bird-preserve island's sandbar. The operator calls it an open-water paddle that needs some comfort on the water and a moderate workout.",
+    "quote": "Step out onto the sandbar, explore the shoreline, and take in sweeping coastal views of the bustling Clearwater Bay.",
+    "status": "open",
+    "tags": [
+      "clear-kayak",
+      "sandbar"
+    ],
+    "source_url": "https://getupandgokayaking.com/locations/florida/clearwater/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/get-up-and-go-kayaking-clearwater/142934"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. The operator says it is 'the only official kayak tour partner of the City of Clearwater'. Price and tour length are in the booking widget. Coordinates: OpenStreetMap 'Clearwater Beach Public Boat Ramp'. Visit St. Pete/Clearwater lists daily hours 8 AM-5 PM."
+  },
+  {
     "id": "get-up-and-go-kayaking-shell-key",
     "name": "Get Up and Go Kayaking Shell Key Preserve Clear Kayak Tours",
     "operator": "Get Up and Go Kayaking",
@@ -1782,6 +2036,48 @@
     ],
     "checked": "2026-09-27",
     "notes": "Street address 1 Collany Rd is from the Visit St. Pete/Clearwater profile; the operator's page says only Tierra Verde."
+  },
+  {
+    "id": "get-up-and-go-kayaking-tarpon-springs",
+    "name": "Get Up and Go Kayaking Tarpon Springs Clear Kayak Tours",
+    "operator": "Get Up and Go Kayaking",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "wildlife",
+      "outdoors",
+      "history"
+    ],
+    "area": "tarpon-springs",
+    "address": "307 Anclote Rd, Tarpon Springs, FL 34689",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.160802,
+    "lng": -82.765167,
+    "geo_source": "census",
+    "departs_text": "307 Anclote Rd, Tarpon Springs.",
+    "url": "https://getupandgokayaking.com/locations/florida/tarpon-springs/",
+    "phone": "(727) 945-6474",
+    "duration_text": "2 hours",
+    "price_text": "From $59.",
+    "is_free": false,
+    "season_text": "Manatee Season tour to Spring Bayou November-March; Sponge Docks & Mangroves tour on the Anclote River March-November.",
+    "ages_text": "Ages 3+.",
+    "summary": "Guided two-hour tours in see-through kayaks: in winter to Spring Bayou to look for manatees, and from March to November along the Anclote River past mangrove islands and the Sponge Docks. The operator notes the river's water is tea-colored from natural tannins.",
+    "quote": "Our clear kayak tour is a tranquil paddle through historic Tarpon Springs leading to Spring Bayou.",
+    "status": "open",
+    "tags": [
+      "clear-kayak",
+      "manatees",
+      "sponge-docks"
+    ],
+    "source_url": "https://getupandgokayaking.com/locations/florida/tarpon-springs/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/get-up-and-go-kayaking-tarpon-springs/142598"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (Tarpon Springs had only the sponge-diving cruise)."
   },
   {
     "id": "ghost-city-tours-darkness-between-us-ybor",
@@ -2218,8 +2514,11 @@
       "fort-dade"
     ],
     "source_url": "https://www.hubbardsmarina.com/egmont-key-ferry-cruise/",
+    "also_sources": [
+      "https://pinellas.gov/county-parks-know-before-you-go/"
+    ],
     "checked": "2026-09-27",
-    "notes": "Coordinates are the Fort De Soto Bay Pier (OSM). No alcohol, glass, pets, kites or drones on Egmont Key. The page says the boat will not always be at the island because of multiple trips. Hubbard's also runs a Shell Key ferry and a 3-hour Shell Key shelling trip from John's Pass (10am daily)."
+    "notes": "Coordinates are the Fort De Soto Bay Pier (OSM). No alcohol, glass, pets, kites or drones on Egmont Key. The page says the boat will not always be at the island because of multiple trips. Hubbard's also runs a Shell Key ferry and a 3-hour Shell Key shelling trip from John's Pass (10am daily). Pinellas County park updates (last updated Sep 25, 2026): 'The far end of the bay pier is closed for hurricane repairs'; all floating docks at the Fort De Soto boat ramp are out of service except one, with phased replacement starting at the end of September and the launch facility expected to fully reopen in winter. Hubbard's pages name both the Bay Pier and the boat ramp as boarding points, so confirm where to board when you book."
   },
   {
     "id": "hubbards-marina-deep-sea-fishing",
@@ -2300,6 +2599,42 @@
     ],
     "checked": "2026-09-27",
     "notes": "Verifier 2026-09-27: the page is behind a JavaScript (Sucuri) challenge for curl; read with WebFetch twice. It gives senior $26.95 (record had $26.50) and departures 11am, 1pm, 3pm, 5pm daily (record had 1pm and 3pm). The earlier quote could not be found on the page and was removed; the arrive-early instruction was not found either."
+  },
+  {
+    "id": "hubbards-shell-key-ferry",
+    "name": "Shell Key Ferry from Fort De Soto",
+    "operator": "Hubbard's Marina (Hubbard's Ferry)",
+    "kind": "ferry",
+    "topics": [
+      "water",
+      "beaches",
+      "wildlife"
+    ],
+    "area": "fort-de-soto",
+    "departs_place": "fort-de-soto-park",
+    "departs_text": "Fort De Soto Park boat ramp (the county charges $6 per car to enter the park). Hubbard's also runs Shell Key trips from John's Pass.",
+    "url": "https://www.hubbardsmarina.com/shell-key-ferry/",
+    "phone": "(727) 393-1947",
+    "duration_text": "3-7 hours, depending on the pickup time you choose",
+    "price_text": "Ages 12+ $35; ages 3-11 $20; ages 2 and under no charge. Camper ticket $50 (camping permit required).",
+    "is_free": false,
+    "schedule_text": "From Fort De Soto at 10am, 12pm and 2pm daily until Labor Day; after Labor Day at 10am, 12pm and 2pm Wednesday, Friday, Saturday, Sunday and Monday. Pickups from Shell Key at 12:30pm, 2:30pm and 4:30pm.",
+    "summary": "A ferry from Fort De Soto Park's boat ramp to Shell Key, an uninhabited barrier-island preserve with no shops or restrooms, for beach time and shelling; choose a return pickup, or camp overnight with a camper ticket and a permit.",
+    "quote": "There are no facilities on the island, so come prepared with a cooler of food, drinks, and water.",
+    "status": "open",
+    "tags": [
+      "shell-key",
+      "ferry",
+      "shelling",
+      "camping"
+    ],
+    "source_url": "https://www.hubbardsmarina.com/shell-key-ferry/",
+    "also_sources": [
+      "https://www.hubbardsmarina.com/egmont-key-ferry-cruise/",
+      "https://pinellas.gov/county-parks-know-before-you-go/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. No alcohol, glass, pets, kites or drones on the island (wildlife preserve); boat capacity 49; while the boat is docked you can use its bathroom and galley. The $6 park entry fee is stated on Hubbard's Egmont Key ferry page. Operator OSM point for the boat ramp not found, so no own coordinates (departs_place carries the location). Pinellas County park updates (last updated Sep 25, 2026): 'The far end of the bay pier is closed for hurricane repairs'; all floating docks at the Fort De Soto boat ramp are out of service except one, with phased replacement starting at the end of September and the launch facility expected to fully reopen in winter. Hubbard's pages name both the Bay Pier and the boat ramp as boarding points, so confirm where to board when you book."
   },
   {
     "id": "ifly-tampa-indoor-skydiving",
@@ -2446,6 +2781,44 @@
     "notes": "Canoe Escape, the private outfitter long based here (12702 N US Hwy 301), is listed as CLOSED on Yelp and its canoeescape.com domain no longer resolves to a site, so it was left out. The county page (modified 8/18/2026) says rentals are at the park office."
   },
   {
+    "id": "johns-pass-parasail",
+    "name": "John's Pass Parasail",
+    "operator": "John's Pass Parasail",
+    "kind": "parasail-jetski",
+    "topics": [
+      "water",
+      "thrills",
+      "beaches"
+    ],
+    "area": "madeira-beach",
+    "address": "207 Boardwalk Pl E, Madeira Beach, FL 33708",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "lat": 27.784949,
+    "lng": -82.782286,
+    "geo_source": "census",
+    "departs_place": "johns-pass-village",
+    "departs_text": "John's Pass Village and Boardwalk, 207 Boardwalk Place East; you board at the company's dock.",
+    "url": "https://johnspassparasail.com/",
+    "phone": "727-391-7738",
+    "duration_text": "About an hour on the water per trip",
+    "ages_text": "Under 18 need a parent or guardian to sign the waiver. Combined weight limits (about 130-165 lbs minimum and 450-550 lbs maximum) change daily with the wind, at the captain's discretion.",
+    "summary": "Parasail trips from John's Pass Village on three 12-passenger boats: you launch from and land on the deck, flying two or three side by side on 800 feet of towline (the operator notes the FAA's 400-foot height limit).",
+    "quote": "Fly two or three at a time using the latest in parasailing equipment.",
+    "status": "open",
+    "tags": [
+      "parasail"
+    ],
+    "source_url": "https://johnspassparasail.com/",
+    "also_sources": [
+      "https://johnspassparasail.com/johns-pass-parasail/faqs/",
+      "https://johnspassparasail.com/contact-us/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Flight prices are not on the pages read; observers ride for $20 if there is room (credited if they decide to fly). Census matched 207 Boardwalk Pl W for the E address; the point is inside John's Pass Village."
+  },
+  {
     "id": "latitudes-tours",
     "name": "Latitudes Tours Eco Tours, Dinner Cruises and Kayak Tours",
     "operator": "Latitudes Tours",
@@ -2563,10 +2936,11 @@
     ],
     "source_url": "https://www.littletoot.us/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/profile/little-toot-dolphin-adventure/139598"
+      "https://www.visitstpeteclearwater.com/profile/little-toot-dolphin-adventure/139598",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "littletoot.com is a parked domain for sale; the operator's site is littletoot.us. Visit St. Pete/Clearwater lists Slip No. 16; the operator's site says Slip 12. Duration not stated on the operator's page (Visit St. Pete/Clearwater: 1-2 hours)."
+    "notes": "littletoot.com is a parked domain for sale; the operator's site is littletoot.us. Visit St. Pete/Clearwater lists Slip No. 16; the operator's site says Slip 12. Duration not stated on the operator's page (Visit St. Pete/Clearwater: 1-2 hours). Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "lost-pearl-pirate-ship",
@@ -2611,6 +2985,38 @@
     ],
     "checked": "2026-09-27",
     "notes": "FAQ: wheelchairs cannot roll on board (steps and a 12-foot gangway); cruises run rain or shine with rainchecks. Seasonal cruises on its site: A Pirate's Halloween, A Pirate's Christmas, Holiday Lighted Boat Parade Cruise, New Year's Eve."
+  },
+  {
+    "id": "madeira-beach-couples-jet-ski-tours",
+    "name": "Madeira Beach Couples Jet Ski Tours",
+    "operator": "Madeira Beach Couples Jet Ski Tours",
+    "kind": "parasail-jetski",
+    "topics": [
+      "water",
+      "thrills",
+      "beaches"
+    ],
+    "area": "madeira-beach",
+    "departs_text": "Madeira Beach; the launch point is given with the reservation (tours by advance booking).",
+    "url": "https://madeirabeachcouplesjetskitours.com/",
+    "phone": "727-353-4280",
+    "duration_text": "Intracoastal tours 2 or 3 hours; private Gulf and Shell Key tours 3 or 4 hours",
+    "price_text": "2-hour Intracoastal tour from $260 per jet ski; 3-hour Intracoastal tour from $360 per jet ski.",
+    "is_free": false,
+    "ages_text": "Drivers must be 21 or older; passengers age 9 and older (14+ on the private Gulf and Shell Key tours, per Visit St. Pete/Clearwater).",
+    "summary": "Guided jet ski tours from Madeira Beach: shared or private Intracoastal rides past John's Pass and waterfront neighborhoods, or private tours that add Gulf riding and a stop at Shell Key. Water, snacks and photos are included.",
+    "status": "open",
+    "tags": [
+      "jet-ski",
+      "guided",
+      "shell-key"
+    ],
+    "source_url": "https://madeirabeachcouplesjetskitours.com/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/madeira-beach-couples-jet-ski-tours/142985"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. The operator's site was read with WebFetch (curl was reset); it names no street address, so there are no coordinates. The Intracoastal tours may be shared with other guests unless two jet skis are booked together."
   },
   {
     "id": "makin-waves-clearwater-beach",
@@ -3209,9 +3615,11 @@
     "source_url": "https://queenfleet.com/rates/",
     "also_sources": [
       "https://queenfleet.com/",
-      "https://queenfleet.com/contact-us/"
+      "https://queenfleet.com/contact-us/",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "raymond-james-stadium-tour",
@@ -3651,10 +4059,91 @@
     ],
     "source_url": "https://www.schoonerclearwater.com/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/profile/schooner-clearwater/139003"
+      "https://www.visitstpeteclearwater.com/profile/schooner-clearwater/139003",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete/Clearwater gives Boat Slip #20. Prices are in the booking system."
+    "notes": "Visit St. Pete/Clearwater gives Boat Slip #20. Prices are in the booking system. Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
+  },
+  {
+    "id": "sea-glass-kayaking-clearwater",
+    "name": "Sea Glass Kayaking Clearwater Clear Kayak Tours",
+    "operator": "Sea Glass Kayaking",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "wildlife",
+      "beaches"
+    ],
+    "area": "clearwater-beach",
+    "address": "561 Bay Esplanade, Clearwater, FL 33767",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.986463,
+    "lng": -82.824264,
+    "geo_source": "census",
+    "departs_text": "Trailer parking lot at 561 Bay Esplanade, north Clearwater Beach; the guide is there 15 minutes before the tour.",
+    "url": "https://seaglasskayaking.com/",
+    "booking_url": "https://seaglasskayaking.com/booknow",
+    "phone": "(727) 219-3309",
+    "duration_text": "2.5 hours",
+    "schedule_text": "Daytime and sunset tours.",
+    "ages_text": "Children under 12 need an adult with them; children 30 lbs or less must bring their own life jacket. Limit 250 lbs per seat and 425 lbs per two-person kayak.",
+    "summary": "Guided 2.5-hour daytime and sunset tours in tandem clear kayaks from north Clearwater Beach, looking for dolphins, manatees and other sea life. Under the city's license rules you launch the kayak yourself; the company provides wheels and help.",
+    "quote": "Explore Clearwater during this 2.5 hour Clear Kayaking Experience.",
+    "status": "open",
+    "tags": [
+      "clear-kayak",
+      "sunset"
+    ],
+    "source_url": "https://seaglasskayaking.com/clearwater-clear-kayaks",
+    "also_sources": [
+      "https://seaglasskayaking.com/faqs-1",
+      "https://www.visitstpeteclearwater.com/profile/sea-glass-kayaking/142090"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Price for the Clearwater tour is not in the page text (booking widget)."
+  },
+  {
+    "id": "sea-glass-kayaking-tampa-glow-tour",
+    "name": "Sea Glass Kayaking Tampa Glowing Clear Kayak Tour",
+    "operator": "Sea Glass Kayaking",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "nightlife"
+    ],
+    "area": "west-tampa",
+    "address": "2305 N Willow Ave, Tampa, FL 33607",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.962971,
+    "lng": -82.47379,
+    "geo_source": "photon",
+    "departs_text": "Next to Rick's on the River, 2305 N Willow Ave: across the parking lot, at the shipping container with the company logo next to Freedom Boat Club.",
+    "url": "https://seaglasskayaking.com/tampa-clear-kayaks",
+    "booking_url": "https://seaglasskayaking.com/booknow",
+    "phone": "(727) 219-3309",
+    "duration_text": "2 hours, after dark",
+    "price_text": "$69 per adult; $49 per child.",
+    "is_free": false,
+    "ages_text": "Limit 250 lbs per seat and 425 lbs per two-person kayak.",
+    "summary": "A two-hour guided night paddle in lighted tandem clear kayaks on the river in Tampa, showing downtown Tampa from the water after dark.",
+    "quote": "Explore Tampa during this 2 hour Clear Kayaking Experience.",
+    "status": "open",
+    "tags": [
+      "clear-kayak",
+      "night",
+      "glow-tour"
+    ],
+    "source_url": "https://seaglasskayaking.com/tampa-clear-kayaks",
+    "also_sources": [
+      "https://seaglasskayaking.com/faqs-1"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (Tampa had no guided kayak tour). Coordinates: OpenStreetMap point for Rick's on the River (2305 N Willow Ave); the launch is across its parking lot."
   },
   {
     "id": "sea-screamer",
@@ -3693,10 +4182,11 @@
     ],
     "source_url": "https://seascreamer.com/",
     "also_sources": [
-      "https://www.visitstpeteclearwater.com/profile/sea-screamer/138558"
+      "https://www.visitstpeteclearwater.com/profile/sea-screamer/138558",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Verifier 2026-09-27: the home page shows two ticket tables (Adults $29.00 / Children 12 & Under $22.00, and Adults $27.00 / Children $20.00, kids 4 and under one free per adult), so price_text is left null. The home page still carries the post-Helene/Milton notice ('ready to go find dolphins for you sometime in mid February'), but the operator's FareHarbor calendar (company SSClearwater) lists 10:00, 12:00, 14:00 and 16:00 departures bookable every day in October 2026; FareHarbor gives the location as 25 Causeway Boulevard, Slip #7, Booth #11."
+    "notes": "Verifier 2026-09-27: the home page shows two ticket tables (Adults $29.00 / Children 12 & Under $22.00, and Adults $27.00 / Children $20.00, kids 4 and under one free per adult), so price_text is left null. The home page still carries the post-Helene/Milton notice ('ready to go find dolphins for you sometime in mid February'), but the operator's FareHarbor calendar (company SSClearwater) lists 10:00, 12:00, 14:00 and 16:00 departures bookable every day in October 2026; FareHarbor gives the location as 25 Causeway Boulevard, Slip #7, Booth #11. Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "silent-slayer-safety-harbor-ghost-tour",
@@ -3808,7 +4298,7 @@
       "thrills",
       "wildlife"
     ],
-    "area": "st-pete-beach",
+    "area": "pass-a-grille",
     "address": "1901 Pass A Grille Way, St. Pete Beach, FL 33706",
     "city": "St. Pete Beach",
     "state": "FL",
@@ -4367,10 +4857,11 @@
     "source_url": "https://www.starlitecruises.com/starlite-dining-yachts/starlite-infinity-dining-yacht/",
     "also_sources": [
       "https://www.starlitecruises.com/parking-directions/",
-      "https://www.visitstpeteclearwater.com/profile/starlite-cruises/141610"
+      "https://www.visitstpeteclearwater.com/profile/starlite-cruises/141610",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Visit St. Pete/Clearwater still lists a 'StarLite Majesty Dining Yacht' profile; the operator's current fleet pages name Starlite Infinity (Clearwater) and Starlite Horizon (Corey Causeway)."
+    "notes": "Visit St. Pete/Clearwater still lists a 'StarLite Majesty Dining Yacht' profile; the operator's current fleet pages name Starlite Infinity (Clearwater) and Starlite Horizon (Corey Causeway). Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "starlite-dining-yacht-st-pete-beach",
@@ -5103,6 +5594,43 @@
     "notes": "The page says the tour 'begins at a new location' (Parque Amigos de José Martí); an earlier Jan 2026 listing met at Centro Ybor. Guide for Nov 21: Evangeline 'Van' Linkous, Ph.D. Verified 2026-09-27: re-read the source; no change needed."
   },
   {
+    "id": "tampa-bay-sunset-sail",
+    "name": "Tampa Bay Sunset Sail",
+    "operator": "Tampa Bay Sunset Sail (Time & Tide Captain Services)",
+    "kind": "sailing",
+    "topics": [
+      "water"
+    ],
+    "area": "downtown-stpete",
+    "address": "500 1st Ave SE, St. Petersburg, FL 33701",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.770079,
+    "lng": -82.631249,
+    "geo_source": "census",
+    "departs_text": "Downtown St. Petersburg (Visit St. Pete/Clearwater gives 500 1st Ave SE).",
+    "url": "https://www.tampabaysunsetsail.com/",
+    "booking_url": "https://www.tampabaysunsetsail.com/live-booking",
+    "phone": "(813) 738-3702",
+    "duration_text": "2 hours",
+    "summary": "Two-hour sunset sails for up to six guests on a 47-foot sailboat with a professional captain, along downtown St. Petersburg's waterfront and past the St. Pete Pier; book a shared or a private sail.",
+    "quote": "We spend as much of the evening as possible exclusively under sail power",
+    "status": "open",
+    "tags": [
+      "sailboat",
+      "sunset",
+      "small-group"
+    ],
+    "source_url": "https://www.tampabaysunsetsail.com/",
+    "also_sources": [
+      "https://www.tampabaysunsetsail.com/contact",
+      "https://www.visitstpeteclearwater.com/profile/tampa-bay-sunset-sail/141421"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. The operator's FAQ answers (meeting point, inclusions) load by script; the address, 'bring your own food and drinks (no red wine)' and 'summer departures 6 PM, earlier in fall and winter' are from the Visit St. Pete/Clearwater profile. Prices are in the booking calendar."
+  },
+  {
     "id": "tampa-bay-tours-downtown-tampa-historical-walking-tour",
     "name": "Downtown Tampa Historical Walking Tour",
     "operator": "Tampa Bay Tours",
@@ -5437,10 +5965,11 @@
     "source_url": "https://www.thetropicsboattours.com/dolphin-exploration-tour",
     "also_sources": [
       "https://www.thetropicsboattours.com/",
-      "https://www.visitstpeteclearwater.com/profile/the-tropics-boat-tours/140014"
+      "https://www.visitstpeteclearwater.com/profile/the-tropics-boat-tours/140014",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Included as an option in Tampa Bay CityPASS per the operator. Prices are in the booking widget, not on the pages read."
+    "notes": "Included as an option in Tampa Bay CityPASS per the operator. Prices are in the booking widget, not on the pages read. Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "tiki-boat-tampa",
@@ -5513,54 +6042,11 @@
       "stairs-only"
     ],
     "source_url": "https://www.starlitecruises.com/tiki-island-cruises/tiki-getaway-byob/",
-    "checked": "2026-09-27"
-  },
-  {
-    "id": "topwater-kayak-outpost",
-    "name": "Topwater Kayak Outpost at Fort De Soto",
-    "operator": "Topwater Kayak Outpost",
-    "kind": "kayak-paddle",
-    "topics": [
-      "water",
-      "outdoors",
-      "wildlife"
-    ],
-    "area": "fort-de-soto",
-    "address": "3500 Pinellas Bayway S, St. Petersburg, FL 33715",
-    "city": "St. Petersburg",
-    "state": "FL",
-    "zip": "33715",
-    "lat": 27.636765,
-    "lng": -82.717326,
-    "geo_source": "census",
-    "departs_place": "fort-de-soto-park",
-    "departs_text": "Rental outpost in Fort De Soto Park, on the park's paddling trail.",
-    "url": "https://www.topwaterkayak.com/",
-    "booking_url": "https://www.topwaterkayak.com/guided-kayaking-tours",
-    "phone": "(727) 864-1991",
-    "duration_text": "Self-guided trail about 2 hours (4-hour maximum rental); guided tour about 2 hours",
-    "price_text": "Single kayak or paddleboard: 2 hours $35, 4 hours $50. Double kayak or canoe: 2 hours $45, 4 hours $60 (tax not included). Guided kayak tour $79 per person.",
-    "is_free": false,
-    "schedule_text": "Kayak, paddleboard and canoe rentals 9am-4pm; no reservations, first come, first served.",
-    "summary": "Kayak, canoe, paddleboard and bicycle rentals inside Fort De Soto Park for a self-guided paddle on the park's mangrove trail, plus about two-hour guided kayak tours.",
-    "quote": "Explore the beautiful mangroves, still waters, and natural habitats of our native wildlife with a guided kayak tour.",
-    "quote_source": "https://www.topwaterkayak.com/",
-    "status": "open",
-    "tags": [
-      "kayak",
-      "canoe",
-      "paddleboard",
-      "bike-rental",
-      "mangroves"
-    ],
-    "source_url": "https://www.topwaterkayak.com/rental-information",
     "also_sources": [
-      "https://www.topwaterkayak.com/",
-      "https://www.topwaterkayak.com/guided-kayaking-tours",
-      "https://www.visitstpeteclearwater.com/profile/topwater-kayak-outpost/140724"
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
     "checked": "2026-09-27",
-    "notes": "Coordinates are the census match for the park's street address, not the outpost itself."
+    "notes": "Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "totally-tiki-tours",
@@ -5691,6 +6177,44 @@
     ],
     "checked": "2026-09-27",
     "notes": "urbankai.com rental and tour pages load their content by script; neither curl nor WebFetch returned tour names, prices or launch points. Address from Visit Tampa Bay; census geocoder matched the wrong side of the street name (E 7th), so no coordinates."
+  },
+  {
+    "id": "weeki-wachee-kayaking",
+    "name": "Weeki Wachee Kayaking Rentals",
+    "operator": "Weeki Wachee Kayaking",
+    "kind": "kayak-paddle",
+    "topics": [
+      "water",
+      "wildlife",
+      "outdoors"
+    ],
+    "area": "nature-coast",
+    "address": "8103 Cortez Blvd, Weeki Wachee, FL 34607",
+    "city": "Weeki Wachee",
+    "state": "FL",
+    "zip": "34607",
+    "lat": 28.529355,
+    "lng": -82.590044,
+    "geo_source": "census",
+    "departs_text": "Check in at the office, 8103 Cortez Blvd; staff then send you to the company's private dock, about 5 minutes' drive away.",
+    "url": "https://weekiwacheekayaking.com/",
+    "phone": "(352) 684-7180",
+    "duration_text": "No hourly time limit; boats due back by 5:00",
+    "price_text": "Single kayak $45; tandem kayak $60 (life vests and paddles included).",
+    "is_free": false,
+    "schedule_text": "Monday-Sunday 9 AM-5 PM.",
+    "summary": "Kayak rentals on the spring-fed Weeki Wachee River: launch from the company's private dock, paddle upriver as far as you like and float back. The dock is about a 12-minute paddle from Hospital Hole, where the operator says manatees are most often seen.",
+    "quote": "We do not restrict how far or where you can go on the river.",
+    "status": "open",
+    "tags": [
+      "kayak",
+      "springs",
+      "manatees",
+      "rentals"
+    ],
+    "source_url": "https://weekiwacheekayaking.com/",
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 (Weeki Wachee paddling was a gap; the state park's rental page returned 403). OpenStreetMap marks a 'Weeki Wachee Kayaking' boat rental at 7224 Shoal Line Blvd (28.531462, -82.627967), probably the dock; the mapped point is the check-in office. Reservations recommended."
   },
   {
     "id": "wet-rentals-clearwater-beach",
@@ -5828,6 +6352,39 @@
     "notes": "Prices are per person by ride length and were not shown. The phone is from the Visit Tampa Bay listing. Verified 2026-09-27: re-read the source; no change needed."
   },
   {
+    "id": "woodys-watersports-johns-pass",
+    "name": "Woody's Watersports Jet Ski Rentals and Tours",
+    "operator": "Woody's Watersports",
+    "kind": "parasail-jetski",
+    "topics": [
+      "water",
+      "thrills"
+    ],
+    "area": "madeira-beach",
+    "departs_place": "johns-pass-village",
+    "departs_text": "The company's docks inside John's Pass (Visit St. Pete/Clearwater gives 205 Boardwalk Place E, John's Pass Village).",
+    "url": "https://woodyswatersports.com/",
+    "phone": "727-391-0200",
+    "duration_text": "Rentals of 1, 1.5 or 2 hours",
+    "price_text": "Jet ski rental starting at $70.",
+    "is_free": false,
+    "ages_text": "A temporary boater's license is required for all operators born after January 1, 1988.",
+    "summary": "Family-run jet ski rentals from docks inside John's Pass, a couple of minutes from open Gulf water, plus a guided John's Pass jet ski tour through the village waterfront and Boca Ciega Bay.",
+    "quote": "From our dock it takes just two minutes to be in the open waters of the Gulf of Mexico!",
+    "status": "open",
+    "tags": [
+      "jet-ski",
+      "rentals",
+      "guided"
+    ],
+    "source_url": "https://woodyswatersports.com/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/profile/woody-s-watersports/138600"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Address, phone and hours (Mon-Sat 9:30 AM-4:30 PM, Sun 9:30 AM-4 PM) are from the Visit St. Pete/Clearwater profile; the operator's page recommends the John's Pass parking garage at 179 Boardwalk Pl. No own coordinates (departs_place carries the location)."
+  },
+  {
     "id": "yacht-starship-clearwater",
     "name": "Yacht StarShip Dining Cruises (Clearwater Beach)",
     "operator": "Yacht StarShip",
@@ -5866,9 +6423,11 @@
     "source_url": "https://yachtstarship.com/event/clearwater-dinner-cruise/",
     "also_sources": [
       "https://yachtstarship.com/dining-cruise-information/",
-      "https://www.visitstpeteclearwater.com/profile/yacht-starship-dining-cruises-clearwater/138342"
+      "https://www.visitstpeteclearwater.com/profile/yacht-starship-dining-cruises-clearwater/138342",
+      "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Marina works (City of Clearwater marina page, read 2026-09-27): a two-phase replacement expected to be complete in August 2026; 'Tourism boating operations are now in their new slips along Coronado Drive', while the fishing fleet and dinner boats are in temporary locations but fully operational, so slip numbers given by operators may have changed."
   },
   {
     "id": "yacht-starship-tampa",

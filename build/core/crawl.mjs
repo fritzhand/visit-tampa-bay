@@ -206,7 +206,8 @@ export function crawl({ out, pages, config, params, values = {}, navSlugs, searc
   budget("assets/data/stays-lite.json", 300, 60);
   budget("assets/data/search.json", 700, 130);       // every record (≈1,500); loaded on first search
   budget("assets/site.css", null, 45);
-  budget("assets/map/basemap.svg", null, 60);
+  budget("assets/map/basemap.svg", null, 150);    // the basemap script's own budget (scripts/build-basemap.mjs); fetched once, cached
+  budget("assets/map/region.svg", null, 40);
   for (const f of files.filter((x) => /^assets\/js\/features\/[^/]+\.js$/.test(x))) budget(f, null, 20);
   {
     const core = files.filter((x) => x === "assets/js/main.js" || /^assets\/js\/core\/[^/]+\.js$/.test(x)).sort();

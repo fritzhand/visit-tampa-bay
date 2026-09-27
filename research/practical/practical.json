@@ -593,7 +593,7 @@
         "id": "visitor-center-tampa",
         "topic": "Visitor information",
         "q": "Is there a visitor center in downtown Tampa?",
-        "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is on the ground floor of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
+        "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is at the bottom of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
         "source_url": "https://shop.visittampabay.com/pages/about-us",
         "also_sources": [
           "https://www.visittampabay.com/media/faqs/",
@@ -613,13 +613,17 @@
         "id": "visitor-centers-pinellas",
         "topic": "Visitor information",
         "q": "Where can I get visitor information in Pinellas County?",
-        "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
+        "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the St. Pete Store & Visitors Center downtown (100 2nd Ave. N., daily 10 a.m. to 5 p.m.), AMPLIFY Clearwater's Pier 60 Visitor Center on Clearwater Beach (open seven days a week), the Tampa Bay Beaches Chamber in St. Pete Beach (6990 Gulf Blvd.), the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
         "source_url": "https://www.visitstpeteclearwater.com/info/visitor-information-resources-faqs",
         "also_sources": [
+          "https://www.thestpetestore.com/visit",
+          "https://amplifyclearwater.com/",
+          "https://www.visitflorida.com/listing/tampa-bay-beaches-chamber-of-commerce-visitor-information-center/25213/",
           "https://www.tarponspringschamber.org/",
           "https://www.beachwelcomecenter.com/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added the St. Pete, Pier 60 and Tampa Bay Beaches centers (each has a place record)."
       },
       {
         "id": "how-many-days",
@@ -664,10 +668,14 @@
         "id": "visitor-center-st-pete",
         "topic": "Visitor information",
         "q": "Is there a visitor center in St. Petersburg?",
-        "a": "The St. Petersburg Chamber of Commerce's website lists a St. Pete Store & Visitor's Center and a visitors and tourism email address, tourism@stpete.com. The chamber's office is at 100 2nd Ave. N., #150 (727-821-4069).",
-        "source_url": "https://www.stpete.com/st-pete-store-visitors-center/",
+        "a": "Yes. The St. Pete Store & Visitors Center, run by the St. Petersburg Area Chamber of Commerce, is at 100 2nd Ave. N., Suite 150, in downtown St. Petersburg. It is open Monday through Sunday, 10 a.m. to 5 p.m.; phone (727) 388-0686. The chamber's visitors and tourism email is tourism@stpete.com.",
+        "source_url": "https://www.thestpetestore.com/visit",
         "checked": "2026-09-27",
-        "notes": "The page body has no address or hours for the store; its own site (thestpetestore.com) returned a captcha. The address and phone are the chamber's, from the page footer. Verifier: confirm the store's location and hours if a readable source turns up."
+        "notes": "Verifier 2026-09-27: rewritten: the store's own page (thestpetestore.com/visit, read with WebFetch) gives the address, hours and phone, and VISIT FLORIDA lists it as the chamber's certified visitor center. The tourism email is from the stpete.com page.",
+        "also_sources": [
+          "https://www.stpete.com/st-pete-store-visitors-center/",
+          "https://www.visitflorida.com/listing/the-st-pete-store-%26-visitors-center-(st-petersburg-area-coc)/26747/"
+        ]
       },
       {
         "id": "beach-conditions-pinellas",
@@ -676,6 +684,70 @@
         "a": "Visit St. Pete/Clearwater keeps a Beach Updates page with the current status (on September 27, 2026 it read: all St. Pete-Clearwater beaches are open, with no advisories), live beach webcams, an explanation of the warning flags, and a link to Mote Marine Laboratory's beach conditions map.",
         "source_url": "https://www.visitstpeteclearwater.com/current-beach-conditions",
         "checked": "2026-09-27"
+      },
+      {
+        "id": "visitor-center-clearwater-beach",
+        "topic": "Visitor information",
+        "q": "Is there a visitor center on Clearwater Beach?",
+        "a": "Yes. AMPLIFY Clearwater, the Clearwater area's chamber of commerce, runs the Pier 60 Visitor Center at 1 Causeway Blvd. on Clearwater Beach. It says the center is open seven days a week; phone (727) 442-3604.",
+        "source_url": "https://amplifyclearwater.com/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/amplify-clearwater-pier-60-visitor-information-center/25793/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "certified-visitor-centers",
+        "topic": "Visitor information",
+        "q": "What is a certified visitor information center?",
+        "a": "One that VISIT FLORIDA, the state's tourism marketing corporation, has inspected and approved. It says certified centers must meet requirements such as operating year-round at least five days a week, being in a convenient and accessible location, and having parking and restrooms for visitors, including people with disabilities. Its Central West Florida list includes the Unlock Tampa Bay Visitors Center, the St. Pete Store & Visitors Center, AMPLIFY Clearwater's centers on Clearwater Beach, the Tampa Bay Beaches Chamber in St. Pete Beach, the East Pasco Chamber in Zephyrhills and Discover Crystal River.",
+        "source_url": "https://www.visitflorida.com/more/visitor-and-tourism-services/certified-visitor-information-centers-central-west-florida/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/anna-maria-island-chamber-of-commerce-visitor-information-center/25302/",
+          "https://www.visitflorida.com/listing/visit-sarasota-county-visitor-information-center-downtown-visitor-center/25789/",
+          "https://www.visitflorida.com/listing/visit-central-florida-welcome-center/30084/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. The criteria are the page's own text ('operating year-round a minimum of five days per week, being in a convenient and accessible location for the ease of travelers and providing access to parking and restroom facilities to accommodate visitors, including persons with disabilities. These facilities undergo a site visit ...'). The list itself loads from the site's listings service (category 'Certified Visitor Information Centers'); read Sep 27, 2026. Nearby centers in other VISIT FLORIDA regions: Anna Maria Island Chamber (Holmes Beach), Visit Sarasota County (downtown Sarasota) and Visit Central Florida (Davenport)."
+      },
+      {
+        "id": "sea-turtle-nesting",
+        "topic": "Beaches & water safety",
+        "q": "What should I know about sea turtle nesting season?",
+        "a": "In Pinellas County, sea turtles nest and hatch from May 1 through October 31. The county asks beachgoers to turn off lights visible from the beach after sunset, pick up trash, fill in holes and knock down sandcastles when they leave, take all their beach equipment, and never harass or touch sea turtles or hatchlings. Report a turtle in trouble or a disturbed nest to FWC at (888) 404-3922.",
+        "source_url": "https://pinellas.gov/sea-turtle-protection/",
+        "also_sources": [
+          "https://pinellas.gov/news/help-our-sea-turtles-thrive-this-nesting-season/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Season: 'Nesting and hatching season occur from May 1 through October 31.' The 'knock down sandcastles and take all your beach equipment' tip is from the county's May 1, 2026 news release. Sand Key and Fort De Soto pages give other month ranges (see the researcher's report); the county's Sea Turtle Protection page is used here."
+      },
+      {
+        "id": "manatees",
+        "topic": "Beaches & water safety",
+        "q": "How can I help protect manatees?",
+        "a": "Report a sick or injured manatee to FWC's Wildlife Alert Hotline at 1-888-404-3922. Pinellas County also asks boaters and anglers to secure items on their vessels, keep plastic bags and fishing line in a container with a lid, and pick up any plastic or fishing line they see. The county enforces no-wake zones and seagrass protection areas.",
+        "source_url": "https://pinellas.gov/manatees/",
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added; every point is on the Pinellas County Manatees page ('What You Can Do')."
+      },
+      {
+        "id": "clearwater-marine-aquarium-accessibility",
+        "topic": "Accessibility",
+        "q": "Is the Clearwater Marine Aquarium accessible?",
+        "a": "The aquarium says it has accessible elevators and ramps throughout, but its eco-boat tours are not wheelchair accessible. It rents manual wheelchairs for the day ($5 plus a $50 refundable deposit, 250 lb limit) and suggests bringing your own, since rentals are not guaranteed. With 14 days' notice it arranges sign language interpreting at no charge; phone 727-441-1790 ext. 0.",
+        "source_url": "https://www.cmaquarium.org/ada-services/",
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added (the researcher could not find this page; it is linked from the aquarium's home page as 'ada-services')."
+      },
+      {
+        "id": "mosi-accessibility",
+        "topic": "Accessibility",
+        "q": "Is MOSI accessible?",
+        "a": "MOSI lends wheelchairs at no cost, first come, first served, at its admissions desk (you leave a driver's license or credit card until you return it); the Holloway Digital Dome Theatre has an elevator entrance on the 4th floor. Service dogs are permitted. USF's Center for Autism and Related Disabilities helped shape its exhibits and programs. For other accommodations, call Guest Services at (813) 987-6000 at least 15 working days before your visit.",
+        "source_url": "https://mosi.org/accessibility/",
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added."
       }
     ],
     "facts": [
@@ -1477,6 +1549,48 @@
         "quote": "Surface observations indicate peak wind gusts generally between 80 to 100 mph, with a maximum gust of 101 mph at Albert Whitted Airport at 9:29 PM EST on October 9.",
         "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf",
         "checked": "2026-09-27"
+      },
+      {
+        "id": "lightning-deaths-florida-1959-2017",
+        "label": "Lightning deaths in Florida, 1959–2017",
+        "value": "498, the most of any state (Texas was second with 226)",
+        "as_of": "1959–2017 (updated May 2018)",
+        "source": "Ronald L. Holle (Vaisala), 'Lightning Fatalities by State, 1959–2017', published on the National Weather Service lightning safety site",
+        "quote": null,
+        "source_url": "https://www.weather.gov/media/safety/59-17_State_Ltg_Fatality_Maps_lists.pdf",
+        "also_sources": [
+          "https://www.weather.gov/safety/lightning-victims"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Table 'Number of Lightning Deaths by State from 1959 to 2017': 'Florida 498 1', 'Texas 226 2'. Per million people Florida ranks 5th (0.76). The PDF is linked from weather.gov/safety/lightning-victims."
+      },
+      {
+        "id": "lightning-deaths-beach-2006-2019",
+        "label": "U.S. lightning deaths during beach activities, 2006–2019",
+        "value": "25 of 418",
+        "as_of": "2006–2019 (February 2020)",
+        "source": "John S. Jensenius Jr. (National Lightning Safety Council), 'A Detailed Analysis of Lightning Deaths in the United States from 2006 through 2019', National Weather Service",
+        "quote": "From 2006 to 2019, there were 40 fishing deaths, 25 beach deaths, 20 camping deaths, and 18 boating deaths.",
+        "source_url": "https://www.weather.gov/media/safety/Analysis06-19.pdf",
+        "also_sources": [
+          "https://www.weather.gov/safety/lightning-victims"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Same summary: 'From 2006 through 2019, 418 people were struck and killed by lightning in the United States.'"
+      },
+      {
+        "id": "sea-turtle-nesting-season-pinellas",
+        "label": "Sea turtle nesting season in Pinellas County",
+        "value": "May 1 to October 31",
+        "as_of": null,
+        "source": "Pinellas County, Sea Turtle Protection",
+        "quote": "Nesting and hatching season occur from May 1 through October 31.",
+        "source_url": "https://pinellas.gov/sea-turtle-protection/",
+        "also_sources": [
+          "https://pinellas.gov/news/help-our-sea-turtles-thrive-this-nesting-season/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added."
       }
     ],
     "places": [
@@ -1517,7 +1631,8 @@
         "also_sources": [
           "https://www.visittampabay.com/about/",
           "https://www.visittampabay.com/media/faqs/",
-          "https://www.visittampabay.com/accessible-travel/"
+          "https://www.visittampabay.com/accessible-travel/",
+          "https://www.visitflorida.com/more/visitor-and-tourism-services/certified-visitor-information-centers-central-west-florida/"
         ],
         "notes": "Hours are labeled 'Store Hours' on shop.visittampabay.com/pages/about-us. The FAQ says it is 'at the bottom of Tampa City Center'. Geocode matched '201 N FRANKLIN ST, TAMPA, FL, 33602' (Census). Verifier 2026-09-27: coordinates moved to the OpenStreetMap building 'One Tampa City Center' (W106054815), 55 m from the Census street point.",
         "checked": "2026-09-27"
@@ -1637,7 +1752,10 @@
         ],
         "source_url": "https://www.visitsarasota.com/visitor-information",
         "notes": "Read with WebFetch (curl gets 403). The page also lists a Venice center (597 S Tamiami Trail, Mon–Fri 10–4) and the Sarasota Bradenton International Airport Welcome Center (6000 Airport Circle, 'Accessible 24/7'), not recorded here. Geocode matched '1945 FRUITVILLE RD, SARASOTA, FL, 34236' (Census).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/visit-sarasota-county-visitor-information-center-downtown-visitor-center/25789/"
+        ]
       },
       {
         "id": "visit-central-florida-welcome-center",
@@ -1672,12 +1790,218 @@
         ],
         "source_url": "https://visitcentralflorida.org/visitor-services/visitor-information-center-locations/",
         "also_sources": [
-          "https://visitcentralflorida.org/visitor-services/"
+          "https://visitcentralflorida.org/visitor-services/",
+          "https://www.visitflorida.com/listing/visit-central-florida-welcome-center/30084/"
         ],
-        "notes": "Coordinates are the OpenStreetMap street 'Adventure Court' (Photon matched 'Adventure Court, 33896', way W11267686), not the building; the Census geocoder matched a different street (101 Adventure Ave), so it was not used. The location description (Hwy 27, 1/2 mile south of I-4 at Exit 55), OJ samples and free maps/Wi-Fi/restrooms are on visitcentralflorida.org/visitor-services/. Polk also has kiosks at Lakeland Linder International Airport, LEGOLAND Florida Resort and the RP Funding Center (not recorded).",
+        "notes": "Coordinates are the OpenStreetMap street 'Adventure Court' (Photon matched 'Adventure Court, 33896', way W11267686), not the building; the Census geocoder matched a different street (101 Adventure Ave), so it was not used. The location description (Hwy 27, 1/2 mile south of I-4 at Exit 55), OJ samples and free maps/Wi-Fi/restrooms are on visitcentralflorida.org/visitor-services/. Polk also has kiosks at Lakeland Linder International Airport, LEGOLAND Florida Resort and the RP Funding Center (not recorded). Verifier 2026-09-27: VISIT FLORIDA lists it as a certified center at 101 Adventure Court with a point (28.222826,-81.644819) about 50 m from the coordinates used, which supports them.",
         "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-store-and-visitors-center",
+        "name": "The St. Pete Store & Visitors Center",
+        "aliases": [
+          "St. Pete Store and Visitors Center",
+          "St. Pete Store & Visitor's Center"
+        ],
+        "kind": "visitor-center",
+        "kinds": [
+          "shopping"
+        ],
+        "topics": [
+          "shopping"
+        ],
+        "area": "downtown-stpete",
+        "address": "100 2nd Ave. N., Suite 150",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.773482,
+        "lng": -82.634074,
+        "geo_source": "census",
+        "url": "https://www.thestpetestore.com/visit",
+        "phone": "(727) 388-0686",
+        "hours_text": "Monday–Sunday 10 a.m.–5 p.m.",
+        "summary": "A store and visitors center of the St. Petersburg Area Chamber of Commerce in downtown St. Petersburg, selling apparel, home goods and other items from local makers and artists.",
+        "status": "open",
+        "tags": [
+          "visitor-information",
+          "gift-shop"
+        ],
+        "source_url": "https://www.thestpetestore.com/visit",
+        "also_sources": [
+          "https://www.stpete.com/st-pete-store-visitors-center/",
+          "https://www.visitflorida.com/listing/the-st-pete-store-%26-visitors-center-(st-petersburg-area-coc)/26747/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. thestpetestore.com/visit (read with WebFetch; curl gets a 202 challenge) names 'The St. Pete Store and Visitors Center', '100 2nd Ave N Ste. 150 St. Petersburg, FL 33701', '(727) 388-0686', 'Mon - Sun: 10am - 5pm'. VISIT FLORIDA lists it as a certified visitor information center, 'The St. Pete Store & Visitors Center (St. Petersburg Area COC)'; the chamber's footer address on stpete.com is the same (100 2nd Avenue North #150). Geocode matched '100 2ND AVE N, ST PETERSBURG, FL, 33701' (Census); VISIT FLORIDA's point is 50 m away."
+      },
+      {
+        "id": "pier-60-visitor-center",
+        "name": "Pier 60 Visitor Center",
+        "aliases": [
+          "Amplify Clearwater-Pier 60 Visitor Information Center",
+          "AMPLIFY Clearwater Pier 60 Visitor Center"
+        ],
+        "kind": "visitor-center",
+        "topics": [
+          "beaches"
+        ],
+        "area": "clearwater-beach",
+        "address": "1 Causeway Blvd. (Pier 60)",
+        "city": "Clearwater Beach",
+        "state": "FL",
+        "zip": "33767",
+        "lat": 27.977213,
+        "lng": -82.828905,
+        "geo_source": "photon",
+        "url": "https://amplifyclearwater.com/",
+        "phone": "(727) 442-3604",
+        "hours_text": "Open 7 days a week (times not listed)",
+        "summary": "A visitor center at Pier 60 on Clearwater Beach, run by AMPLIFY Clearwater, the Clearwater area's chamber of commerce.",
+        "quote": "Through projects, initiatives, events and our welcome centers, we connect tourists to our member businesses and our member businesses to tourism-driven educational and promotional resources.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://amplifyclearwater.com/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/amplify-clearwater-pier-60-visitor-information-center/25793/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. The AMPLIFY Clearwater site footer reads 'Pier 60 Visitor Center 1 Causeway Blvd. Clearwater Beach, FL 33767 Open 7 days a week 727-442-3604' (the administrative office is 1346 S Fort Harrison Ave, Clearwater). VISIT FLORIDA lists it as a certified center (with ZIP 33755). Coordinates are the OpenStreetMap 'Pier 60' feature (W11250192, man_made=pier), not the booth itself; VISIT FLORIDA's point is about 320 m west, out on the pier. VISIT FLORIDA also lists an 'Amplify Clearwater-Beach Office & Visitor Center' at 429 Poinsettia Ave; the chamber's own site does not mention it, so it is not recorded. Not to be confused with Honeymoon Island State Park, also 1 Causeway Blvd. (Dunedin)."
+      },
+      {
+        "id": "tampa-bay-beaches-chamber-visitor-information-center",
+        "name": "Tampa Bay Beaches Chamber of Commerce Visitor Information Center",
+        "aliases": [
+          "Gulf Beaches Chamber of Commerce",
+          "Tampa Bay Beaches Chamber of Commerce"
+        ],
+        "kind": "visitor-center",
+        "topics": [
+          "beaches"
+        ],
+        "area": "st-pete-beach",
+        "address": "6990 Gulf Blvd.",
+        "city": "St. Pete Beach",
+        "state": "FL",
+        "zip": "33706",
+        "lat": 27.738812,
+        "lng": -82.749393,
+        "geo_source": "census",
+        "url": "https://www.tampabaybeaches.com/",
+        "phone": "(727) 360-6957",
+        "summary": "The Tampa Bay Beaches Chamber of Commerce's office on Gulf Boulevard in St. Pete Beach, which VISIT FLORIDA lists as a certified visitor information center. The chamber's member businesses run along the Gulf beaches from Tierra Verde to Clearwater Beach.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.visitflorida.com/listing/tampa-bay-beaches-chamber-of-commerce-visitor-information-center/25213/",
+        "also_sources": [
+          "https://www.tampabaybeaches.com/",
+          "https://www.tampabaybeaches.com/our-beaches/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added (the researcher left it out because the chamber's own site never calls its office a visitor center; VISIT FLORIDA's certified list does). Chamber footer: 'Tampa Bay Beaches Chamber of Commerce (Also known as Gulf Beaches Chamber) 6990 Gulf Boulevard, St. Pete Beach, FL 33706 (727) 360-6957'; its home page says its members are 'along the Gulf Beaches, spreading from Tierra Verde to Clearwater Beach'. No hours are published. Geocode matched '6990 GULF BLVD, ST PETE BEACH, FL, 33706' (Census)."
+      },
+      {
+        "id": "anna-maria-island-chamber-visitor-information-center",
+        "name": "Anna Maria Island Chamber of Commerce Visitor Information Center",
+        "aliases": [
+          "Anna Maria Island Chamber of Commerce"
+        ],
+        "kind": "visitor-center",
+        "topics": [
+          "beaches"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "5313 Gulf Dr. N.",
+        "city": "Holmes Beach",
+        "state": "FL",
+        "zip": "34217",
+        "lat": 27.505958,
+        "lng": -82.713246,
+        "geo_source": "census",
+        "url": "https://www.annamariaislandchamber.org/",
+        "phone": "(941) 778-1541",
+        "summary": "The Anna Maria Island Chamber of Commerce's office in Holmes Beach, which VISIT FLORIDA lists as a certified visitor information center. The chamber publishes a visitors guide and island map.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.visitflorida.com/listing/anna-maria-island-chamber-of-commerce-visitor-information-center/25302/",
+        "also_sources": [
+          "https://www.annamariaislandchamber.org/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Chamber footer: 'Anna Maria Island 5313 Gulf Drive, Holmes Beach, FL 34217 941-778-1541'; the home page shows a 'Visit Florida Certified Information' badge and links a Visitors Guide and Island Map. No hours are published. Geocode matched '5313 GULF DR, HOLMES BEACH, FL, 34217' (Census)."
+      },
+      {
+        "id": "east-pasco-chamber-visitor-information-center",
+        "name": "East Pasco Chamber of Commerce Visitor Information Center",
+        "aliases": [
+          "Greater East Pasco Chamber of Commerce (Zephyrhills)"
+        ],
+        "kind": "visitor-center",
+        "topics": [],
+        "area": "lutz-wesley-chapel",
+        "address": "38550 5th Ave.",
+        "city": "Zephyrhills",
+        "state": "FL",
+        "zip": "33542",
+        "lat": 28.234673,
+        "lng": -82.178722,
+        "geo_source": "census",
+        "url": "https://www.eastpascochamber.org/",
+        "phone": "(813) 782-1913",
+        "summary": "The Greater East Pasco Chamber of Commerce's Zephyrhills office, which VISIT FLORIDA lists as a certified visitor information center.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.visitflorida.com/listing/east-pasco-chamber-of-commerce-visitor-information-center/26900/",
+        "also_sources": [
+          "https://www.eastpascochamber.org/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Chamber footer lists '813-782-1913 38550 5th Avenue, Zephyrhills, FL 33542' (and a Dade City office, 14112 8th Street, 352-567-3769, which VISIT FLORIDA does not list). No hours are published. Geocode matched '38550 5TH AVE, ZEPHYRHILLS, FL, 33542' (Census)."
+      },
+      {
+        "id": "discover-crystal-river-tourist-information-center",
+        "name": "Discover Crystal River Tourist Information Center",
+        "aliases": [
+          "Discover Crystal River Visitor Information Center",
+          "Welcome and Visitor's Center"
+        ],
+        "kind": "visitor-center",
+        "topics": [
+          "wildlife"
+        ],
+        "area": "nature-coast",
+        "address": "915 N. Suncoast Blvd.",
+        "city": "Crystal River",
+        "state": "FL",
+        "zip": "34429",
+        "lat": 28.875242,
+        "lng": -82.57908,
+        "geo_source": "photon",
+        "url": "https://www.discovercrystalriverfl.com/",
+        "phone": "(352) 794-5506",
+        "hours_text": "Monday–Friday 8 a.m.–5 p.m.; Saturday 8 a.m.–2 p.m.",
+        "summary": "The tourist information center of Discover Crystal River, the official visitor guide for Crystal River and Citrus County.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.discovercrystalriverfl.com/contact-us/",
+        "also_sources": [
+          "https://www.discovercrystalriverfl.com/",
+          "https://www.visitflorida.com/listing/discover-crystal-river-visitor-information-center/30027/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: added. Contact page: 'Tourist Information Center', '915 North Suncoast Boulevard, Crystal River, Florida 34429', '800.587.6667 | 352.794.5506', 'Monday – Friday: 8am – 5pm', 'Saturday: 8am – 2pm'. Coordinates are the OpenStreetMap feature 'Welcome and Visitor's Center', 915 North Suncoast Boulevard (W756056058, information=office). The Census address match (28.887697,-82.584113) is 1.4 km north and VISIT FLORIDA's point (28.899393,-82.593881) 2.8 km north; both are interpolated, so the named OSM building was kept."
       }
     ]
   },
-  "report": "## practical slice: what a first-time visitor needs to know (checked Sep 27, 2026)\n\n### Covered\n- **71 faqs** in nine topics:\n\n  | Topic | FAQs |\n  |---|---|\n  | Beaches & water safety | 14 |\n  | Accessibility | 10 |\n  | Weather & hurricanes | 9 |\n  | Alcohol & rules | 8 |\n  | Safety | 8 |\n  | When to visit | 7 |\n  | Money & taxes | 6 |\n  | Visitor information | 5 |\n  | Sun & heat | 4 |\n\n  Every answer is our plain wording of what `source_url` states. `also_sources` hold supporting pages, and `notes` say which page gives which detail when an answer draws on two.\n- **65 facts**:\n  - **Monthly climate (24).** Average high, low and rain for each month, as `climate-<tampa|stpete>-<mon>`. They come from the NOAA NCEI 1991-2020 U.S. Climate Normals data service, for Tampa International Airport (USW00012842) and St. Petersburg/Albert Whitted Airport (USW00092806). The raw numbers are repeated in `notes` (`month=; tmax_f=; tmin_f=; prcp_in=`) for charts.\n  - **Annual normals (6).**\n  - **First cool nights (3).** From the NWS Tampa Bay page on when it usually cools off.\n  - **Hurricane season (3).** From the NHC climatology page.\n  - **2024 hurricanes (6).** From the NWS Tampa Bay post-storm reports: Helene's record surge at Clearwater Beach and East Bay, 12 surge deaths in Pinellas, Milton's Category 3 landfall, and the 101 mph gust and 18.54 in one-day rain at Albert Whitted.\n  - **Lightning (3).** All from NWS pages.\n  - **Taxes (5).** From the Florida Department of Revenue: the 6% state rate; Hillsborough's 7.5% per TIP 25A01-12 (Dec 1, 2025); the Pinellas 1% surtax; and the 6% tourist development tax in each county.\n  - **Gulf water temperature (13).** Twelve monthly figures, as `gulf-water-temp-<mon>`, plus NOAA's statement that 70-78 F is comfortable.\n  - **Pinellas beach parking (2).** $6 a day now; $3.50 an hour capped at $12 a day from Dec 1, 2026.\n- **6 places** (`visitor-center`, all geocoded):\n  - Unlock Tampa Bay Visitors Center (downtown Tampa)\n  - Ybor City Visitor Information Center\n  - Tarpon Springs Chamber Visitor's Center (Sponge Docks)\n  - Beach Welcome Center (Indian Rocks Beach)\n  - Visit Sarasota County's downtown visitor center (day trips)\n  - Visit Central Florida Welcome Center in Davenport (Polk, day trips)\n\n### How candidates were found\n- **Official tourism sites.**\n  - Visit Tampa Bay: media FAQ, fast facts, About, accessible travel, and its shop's About page, which gives the visitor center hours.\n  - Visit St. Pete/Clearwater: the FAQ hub and its weather, beach, red tide, visitor resources and pets FAQs, plus the current beach conditions page, the accessible beaches guide and the dog-friendly beaches article.\n- **Federal and state agencies.**\n  - NOAA NCEI: the normals data service and the Coastal Water Temperature Guide page.\n  - NWS Tampa Bay: 1991-2020 normals, the cool-off page, heat index, beach forecast and tropical event summaries (PDFs).\n  - NWS safety pages on rip currents, lightning and heat.\n  - NHC: climatology and glossary.\n  - NOAA Ocean Service: rip currents.\n  - Florida DEP: the beach warning flag program and its sign image; also s. 380.276 F.S.\n  - FWC: red tide status, general and FAQ pages; alligators.\n  - Florida Department of Revenue: DR-15DSS, DR-15TDT and the TIP indexes for 2025 and 2026.\n  - Florida DEM: Know Your Zone.\n  - Florida DOH: Healthy Beaches.\n- **Counties.**\n  - Hillsborough County: the HEAT evacuation zone lookup and HCFL Alert.\n  - Pinellas County, searched with the site's own search API: evacuation, Alert Pinellas, the disaster FAQ, park rules, dog parks, the parks FAQ, Fort De Soto and Sand Key, the Know Before You Go park updates, the red tide page and the dengue emergency news.\n- **Cities and venues.**\n  - City of Clearwater: beach rules, pets, beach wheelchairs, beach mats and accessible parking.\n  - City of Tampa: beaches and dog parks.\n  - St. Pete Pier: its FAQ.\n- **Attraction accessibility pages.** Busch Gardens, Florida Aquarium, the Dali and the Tampa Museum of Art.\n- **Visitor centers.** We went through chamber and CVB sites for Ybor, St. Pete, Clearwater, Tarpon Springs, Tampa Bay Beaches, Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando, Citrus, Polk, Sarasota and Bradenton.\n- **No web search.** The session's WebSearch budget was already used up when this slice started. Discovery went through official site navigation, sitemaps and site search APIs.\n\n### Left out on purpose\n- **NOAA water temperatures.** The NCEI Coastal Water Temperature Guide the brief named was decommissioned on May 5, 2025 (its NCEI page says so), and web.archive.org is unreachable from here. The monthly Gulf water temperatures therefore come from Visit St. Pete/Clearwater's beach FAQ table, which names no station or period. We did not compute averages from raw NOAA gauge data.\n- **Visitor centers not recorded.**\n  - **St. Petersburg.** The St. Pete Store & Visitor's Center page on stpete.com has no address or hours, and thestpetestore.com serves a captcha. It is covered by the FAQ `visitor-center-st-pete`, which gives the chamber's address, not a place.\n  - **Clearwater Beach.** clearwaterflorida.org fails TLS or returns 503, and no other page names a walk-in center.\n  - **Tampa Bay Beaches Chamber** (6990 Gulf Blvd.). Its site never calls its office a visitor center.\n  - **Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando and Citrus.** No readable page gives a walk-in center with hours.\n  - **Venice and the airport kiosks** listed by Sarasota and Polk.\n- **Facts no official page states.** Tipping, the time zone and any combined hotel-tax total. Taxes are given as parts only: Pinellas is 6% + 1%, never \"7%\".\n- **Sea turtle nesting-season rules.** County pages disagree on the months (Sand Key: April-October; Fort De Soto: April-September).\n- **Pages we could not read.**\n  - floridastateparks.org returns 403, so the Honeymoon Island dog beach and beach wheelchair details come from Visit St. Pete/Clearwater.\n  - The ZooTampa accessibility page serves a captcha, and the Clearwater Marine Aquarium accessibility URL was not found.\n\n### Open questions for the verifier\n1. **Dengue FAQ** (`dengue-mosquitoes`). It rests on the Pinellas County news item of Sep 24, 2026, so it is time-sensitive. Re-check before publishing.\n2. **Marine-life flag color.** Visit St. Pete/Clearwater's current-conditions page says 'Blue' for hazardous marine life. The DEP state sign, read from the image on the DEP program page, shows purple for stinging marine life. We follow DEP.\n3. **Clearwater smoking ban.** The Clearwater beach rules page shows smoking only as a 'No Smoking' heading. Confirm the wording.\n4. **Hillsborough and Pinellas sales tax.** The DR-15DSS at /Forms_library/current/ is still R. 11/24 (calendar 2025). Hillsborough's 7.5% rests on TIP 25A01-12 (Dec 1, 2025). We found no 2026 TIP that changes Hillsborough or Pinellas.\n5. **St. Petersburg normals station.** We used USW00092806 (St. Petersburg AP/Albert Whitted ASOS). The co-located COOP station USC00087886 has slightly different normals, and the PIE station USW00012873 differs more.\n6. **Davenport welcome center coordinates.** They are the OSM street Adventure Court, not the building. The Census geocoder matched a different street.\n7. **Pinellas beach parking.** The Dec 1, 2026 change comes from the Sep 25, 2026 park updates page. Re-check after Dec 1.\n8. **Pages read only through WebFetch.** myclearwater.com, visitstpeteclearwater.com, visitsarasota.com and buschgardens.com return 403 or a captcha to curl. Key wording was re-fetched with copy-exactly prompts, but a human check of exact wording is worthwhile.\n"
+  "report": "## practical slice: what a first-time visitor needs to know (checked Sep 27, 2026)\n\n### Covered\n- **71 faqs** in nine topics:\n\n  | Topic | FAQs |\n  |---|---|\n  | Beaches & water safety | 14 |\n  | Accessibility | 10 |\n  | Weather & hurricanes | 9 |\n  | Alcohol & rules | 8 |\n  | Safety | 8 |\n  | When to visit | 7 |\n  | Money & taxes | 6 |\n  | Visitor information | 5 |\n  | Sun & heat | 4 |\n\n  Every answer is our plain wording of what `source_url` states. `also_sources` hold supporting pages, and `notes` say which page gives which detail when an answer draws on two.\n- **65 facts**:\n  - **Monthly climate (24).** Average high, low and rain for each month, as `climate-<tampa|stpete>-<mon>`. They come from the NOAA NCEI 1991-2020 U.S. Climate Normals data service, for Tampa International Airport (USW00012842) and St. Petersburg/Albert Whitted Airport (USW00092806). The raw numbers are repeated in `notes` (`month=; tmax_f=; tmin_f=; prcp_in=`) for charts.\n  - **Annual normals (6).**\n  - **First cool nights (3).** From the NWS Tampa Bay page on when it usually cools off.\n  - **Hurricane season (3).** From the NHC climatology page.\n  - **2024 hurricanes (6).** From the NWS Tampa Bay post-storm reports: Helene's record surge at Clearwater Beach and East Bay, 12 surge deaths in Pinellas, Milton's Category 3 landfall, and the 101 mph gust and 18.54 in one-day rain at Albert Whitted.\n  - **Lightning (3).** All from NWS pages.\n  - **Taxes (5).** From the Florida Department of Revenue: the 6% state rate; Hillsborough's 7.5% per TIP 25A01-12 (Dec 1, 2025); the Pinellas 1% surtax; and the 6% tourist development tax in each county.\n  - **Gulf water temperature (13).** Twelve monthly figures, as `gulf-water-temp-<mon>`, plus NOAA's statement that 70-78 F is comfortable.\n  - **Pinellas beach parking (2).** $6 a day now; $3.50 an hour capped at $12 a day from Dec 1, 2026.\n- **6 places** (`visitor-center`, all geocoded):\n  - Unlock Tampa Bay Visitors Center (downtown Tampa)\n  - Ybor City Visitor Information Center\n  - Tarpon Springs Chamber Visitor's Center (Sponge Docks)\n  - Beach Welcome Center (Indian Rocks Beach)\n  - Visit Sarasota County's downtown visitor center (day trips)\n  - Visit Central Florida Welcome Center in Davenport (Polk, day trips)\n\n### How candidates were found\n- **Official tourism sites.**\n  - Visit Tampa Bay: media FAQ, fast facts, About, accessible travel, and its shop's About page, which gives the visitor center hours.\n  - Visit St. Pete/Clearwater: the FAQ hub and its weather, beach, red tide, visitor resources and pets FAQs, plus the current beach conditions page, the accessible beaches guide and the dog-friendly beaches article.\n- **Federal and state agencies.**\n  - NOAA NCEI: the normals data service and the Coastal Water Temperature Guide page.\n  - NWS Tampa Bay: 1991-2020 normals, the cool-off page, heat index, beach forecast and tropical event summaries (PDFs).\n  - NWS safety pages on rip currents, lightning and heat.\n  - NHC: climatology and glossary.\n  - NOAA Ocean Service: rip currents.\n  - Florida DEP: the beach warning flag program and its sign image; also s. 380.276 F.S.\n  - FWC: red tide status, general and FAQ pages; alligators.\n  - Florida Department of Revenue: DR-15DSS, DR-15TDT and the TIP indexes for 2025 and 2026.\n  - Florida DEM: Know Your Zone.\n  - Florida DOH: Healthy Beaches.\n- **Counties.**\n  - Hillsborough County: the HEAT evacuation zone lookup and HCFL Alert.\n  - Pinellas County, searched with the site's own search API: evacuation, Alert Pinellas, the disaster FAQ, park rules, dog parks, the parks FAQ, Fort De Soto and Sand Key, the Know Before You Go park updates, the red tide page and the dengue emergency news.\n- **Cities and venues.**\n  - City of Clearwater: beach rules, pets, beach wheelchairs, beach mats and accessible parking.\n  - City of Tampa: beaches and dog parks.\n  - St. Pete Pier: its FAQ.\n- **Attraction accessibility pages.** Busch Gardens, Florida Aquarium, the Dali and the Tampa Museum of Art.\n- **Visitor centers.** We went through chamber and CVB sites for Ybor, St. Pete, Clearwater, Tarpon Springs, Tampa Bay Beaches, Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando, Citrus, Polk, Sarasota and Bradenton.\n- **No web search.** The session's WebSearch budget was already used up when this slice started. Discovery went through official site navigation, sitemaps and site search APIs.\n\n### Left out on purpose\n- **NOAA water temperatures.** The NCEI Coastal Water Temperature Guide the brief named was decommissioned on May 5, 2025 (its NCEI page says so), and web.archive.org is unreachable from here. The monthly Gulf water temperatures therefore come from Visit St. Pete/Clearwater's beach FAQ table, which names no station or period. We did not compute averages from raw NOAA gauge data.\n- **Visitor centers not recorded.**\n  - **St. Petersburg.** The St. Pete Store & Visitor's Center page on stpete.com has no address or hours, and thestpetestore.com serves a captcha. It is covered by the FAQ `visitor-center-st-pete`, which gives the chamber's address, not a place.\n  - **Clearwater Beach.** clearwaterflorida.org fails TLS or returns 503, and no other page names a walk-in center.\n  - **Tampa Bay Beaches Chamber** (6990 Gulf Blvd.). Its site never calls its office a visitor center.\n  - **Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando and Citrus.** No readable page gives a walk-in center with hours.\n  - **Venice and the airport kiosks** listed by Sarasota and Polk.\n- **Facts no official page states.** Tipping, the time zone and any combined hotel-tax total. Taxes are given as parts only: Pinellas is 6% + 1%, never \"7%\".\n- **Sea turtle nesting-season rules.** County pages disagree on the months (Sand Key: April-October; Fort De Soto: April-September).\n- **Pages we could not read.**\n  - floridastateparks.org returns 403, so the Honeymoon Island dog beach and beach wheelchair details come from Visit St. Pete/Clearwater.\n  - The ZooTampa accessibility page serves a captcha, and the Clearwater Marine Aquarium accessibility URL was not found.\n\n### Open questions for the verifier\n1. **Dengue FAQ** (`dengue-mosquitoes`). It rests on the Pinellas County news item of Sep 24, 2026, so it is time-sensitive. Re-check before publishing.\n2. **Marine-life flag color.** Visit St. Pete/Clearwater's current-conditions page says 'Blue' for hazardous marine life. The DEP state sign, read from the image on the DEP program page, shows purple for stinging marine life. We follow DEP.\n3. **Clearwater smoking ban.** The Clearwater beach rules page shows smoking only as a 'No Smoking' heading. Confirm the wording.\n4. **Hillsborough and Pinellas sales tax.** The DR-15DSS at /Forms_library/current/ is still R. 11/24 (calendar 2025). Hillsborough's 7.5% rests on TIP 25A01-12 (Dec 1, 2025). We found no 2026 TIP that changes Hillsborough or Pinellas.\n5. **St. Petersburg normals station.** We used USW00092806 (St. Petersburg AP/Albert Whitted ASOS). The co-located COOP station USC00087886 has slightly different normals, and the PIE station USW00012873 differs more.\n6. **Davenport welcome center coordinates.** They are the OSM street Adventure Court, not the building. The Census geocoder matched a different street.\n7. **Pinellas beach parking.** The Dec 1, 2026 change comes from the Sep 25, 2026 park updates page. Re-check after Dec 1.\n8. **Pages read only through WebFetch.** myclearwater.com, visitstpeteclearwater.com, visitsarasota.com and buschgardens.com return 403 or a captcha to curl. Key wording was re-fetched with copy-exactly prompts, but a human check of exact wording is worthwhile.\n\n\n## Verification (2026-09-27)\n\nAn adversarial verifier re-opened every source behind the 142 records the researcher wrote (71 faqs, 65 facts, 6 places) and checked each claim against the page as it reads today. Counts after verification: **77 faqs, 68 facts, 12 places** (0 removed, 12 added, 20 records fixed). `check-slice` reports no errors and no warnings.\n\n### How it was checked\n- **Climate normals (30 facts).** Re-pulled from the NCEI normals API (monthly and annual, both stations) and compared number by number: all 30 match.\n  - The GHCN station list confirms USW00092806 is \"ST PETERSBURG ALBERT WHITTED A\" and USW00012842 is \"TAMPA INTL AP\".\n  - weather.gov/tbw/newnormals is an explainer on the 1991–2020 normals, with no station values. It is kept only as context.\n- **PDFs** were downloaded and read as text:\n  - the DOR TIPs and the DR-15DSS and DR-15TDT forms;\n  - the NWS Helene and Milton impact narratives and summaries;\n  - the NWS lightning analyses.\n  - Every quoted figure is verbatim, and the Helene deaths figure sits under the Pinellas County heading.\n- **Beach flags.** The DEP beach-flag sign image was downloaded and read. It confirms green, yellow, red, double red and **purple** (stinging marine life), and \"Absence of Flags Does Not Assure Safe Waters\". Visit St. Pete/Clearwater's current-conditions page still says Blue; the FAQ keeps the state's purple.\n- **Everything else** was read with WebFetch (and curl where the site allows it), with copy-exactly prompts for quotes. That covers the NWS/NHC/NOAA pages, FWC, FDOH, the Florida Division of Emergency Management, Hillsborough and Pinellas County pages, City of Clearwater and City of Tampa pages, the St. Pete Pier FAQ, the four attraction accessibility pages, Visit Tampa Bay, Visit St. Pete/Clearwater and every visitor-center page.\n- **Still current.**\n  - The dengue FAQ is still current: pinellas.gov/dengue/ was updated Sep 24, 2026 and the local emergency stands.\n  - The FWC red tide status is dated Sep 25, 2026.\n  - The Pinellas \"Know Before You Go\" page was updated Sep 25, 2026.\n\n### Fixed (20 records)\n- `lightning-at-the-beach`: dropped \"or a building\". The NWS beach section says \"Go to your car!\", and \"Get out of the water, off the beach\" comes from the NWS Miami page.\n- `free-things`: dropped \"and Ybor City\", because Visit Tampa Bay's answer names only downtown for the streetcar. Added \"spot local wildlife\", which is in the same answer.\n- `attraction-passes`: reworded to the sources. The shop page says \"pick up a Tampa Riverwalk Attraction Pass\" at the center.\n- `disabled-parking-beaches`: **corrected a wrong claim.** Clearwater says placard holders do not pay \"but all posted time limits and restrictions must be followed\"; the answer had said \"no time limit\".\n- `beach-wheelchairs-pinellas`: added two locations the guide lists and the answer had left out: Archibald Memorial Beach Park, Madeira Beach (1 chair) and Upham Beach (2).\n- `red-tide-seafood`: reworded to FWC's terms: the recreational harvest ban during red tide closures, and \"cooking, heating, or freezing\".\n- `alcohol-clearwater-beach`: added the no-glass rule from the same page.\n- `alcohol-other-beaches`: added the Treasure Island blocks (8500–9900) and the Saturday and Sunday hours.\n- `florida-aquarium-accessibility`: put it in the page's words (\"wheelchair accessibility to all habitats and exhibits\"), with the rental prices ($8 wheelchair, $15 scooter).\n- `dengue-mosquitoes`: added the 7 Pinellas cases, the daytime-biting note and pinellas.gov/dengue/.\n- **Pinellas sales surtax** (`sales-surtax-pinellas`, `sales-tax-pinellas`, `sales-tax-hillsborough`): moved to the **calendar-2026** DR-15DSS (dr15dss_26.pdf, R. 11/25), linked from the DOR forms index. The researcher had used the calendar-2025 form. The rates are unchanged: Pinellas 1% through Dec 31, 2029; Hillsborough 1.5% in surtaxes, so 7.5% in all.\n- `visitor-center-st-pete`: rewritten with the store's own address, daily 10–5 hours and phone. The page was readable with WebFetch.\n- `visitor-centers-pinellas`: added the St. Pete Store, Pier 60 and Tampa Bay Beaches centers.\n- `visitor-center-tampa`: \"ground floor\" became \"at the bottom of Tampa City Center\", the FAQ's own words.\n- `unlock-tampa-bay-visitors-center`:\n  - coordinates moved to the OpenStreetMap building One Tampa City Center, 55 m from the Census point; VISIT FLORIDA's point is 14 m from it;\n  - the summary now says \"at the base of\" instead of \"ground floor\".\n- `tarpon-springs-visitors-center`: coordinates moved to the OpenStreetMap \"Chamber of Commerce & Visitor Center\" feature on Dodecanese Blvd, 78 m from the Census point.\n- `beach-welcome-center-indian-rocks-beach`: the quote is now the page's location sentence, which is what the summary's \"downtown, near 5th Avenue and Gulf Boulevard\" rests on.\n- `visit-central-florida-welcome-center`: VISIT FLORIDA's listing point is about 50 m from the Adventure Court point, which supports the coordinates. The listing was added as a source.\n\n### Removed (0)\nEvery record's source still states its facts, and every visitor center is open with current hours or contact details.\n\n### Added (12)\n- **Places (6), from VISIT FLORIDA's certified visitor information center list.** The Central West, Southwest and Central region pages load the list from the site's listings service. It was queried for the category \"Certified Visitor Information Centers\" and filtered to the region box: 12 centers, 5 of which were already recorded. The 7 missing ones were checked on the operators' own pages. Six were added:\n  - `st-pete-store-and-visitors-center` (downtown St. Pete, daily 10 a.m.–5 p.m.).\n  - `pier-60-visitor-center` (AMPLIFY Clearwater, formerly the Clearwater Regional Chamber, \"Open 7 days a week\"). This fills the Clearwater Beach gap the researcher reported.\n  - `tampa-bay-beaches-chamber-visitor-information-center` (6990 Gulf Blvd., St. Pete Beach).\n  - `anna-maria-island-chamber-visitor-information-center` (Holmes Beach).\n  - `east-pasco-chamber-visitor-information-center` (Zephyrhills).\n  - `discover-crystal-river-tourist-information-center` (Mon–Fri 8–5, Sat 8–2). The OSM building at 915 N Suncoast Blvd was used: the Census match is 1.4 km off and VISIT FLORIDA's point is 2.8 km off.\n- **Not added.** AMPLIFY's \"Beach Office & Visitor Center\" at 429 Poinsettia Ave is in VISIT FLORIDA's list, but the chamber's own site does not mention it.\n- **FAQs (6):**\n  - `visitor-center-clearwater-beach`\n  - `certified-visitor-centers` (VISIT FLORIDA's criteria, quoted from the page, and the local list)\n  - `sea-turtle-nesting` (Pinellas County Sea Turtle Protection: May 1–Oct 31; lights, holes, trash; FWC 888-404-3922)\n  - `manatees` (Pinellas County Manatees page)\n  - `clearwater-marine-aquarium-accessibility` (cmaquarium.org/ada-services/, the page the researcher could not find)\n  - `mosi-accessibility`\n- **Facts (3):**\n  - `lightning-deaths-florida-1959-2017`: 498, the most of any state, from the NWS-hosted Holle/Vaisala table.\n  - `lightning-deaths-beach-2006-2019`: 25 of 418 U.S. lightning deaths happened during beach activities, from the NWS/NLSC analysis.\n  - `sea-turtle-nesting-season-pinellas`.\n\n### Still open\n- **Gulf water temperatures** still rest on Visit St. Pete/Clearwater's table, which names no station or period. The NCEI guide is confirmed decommissioned (May 5, 2025), and the Wayback Machine returned 429.\n- **Clearwater's \"No Smoking\"** is still only a rule heading on its beach rules page.\n- **ZooTampa accessibility** still serves a challenge page, and Honeymoon Island (floridastateparks.org) was not re-tried.\n- **No published hours.** The Tampa Bay Beaches, Anna Maria Island and East Pasco chambers publish no hours (`hours_text` is null). Pier 60 gives days (\"Open 7 days a week\") but no times.\n- **Pier 60 coordinates** are the OSM pier feature, not the booth itself.\n- **No web search.** The WebSearch budget was exhausted before this pass, so closure checks went through the operators' own pages and official lists rather than news searches."
 }

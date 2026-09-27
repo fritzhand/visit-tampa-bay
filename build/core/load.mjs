@@ -307,10 +307,10 @@ export function load({ dataDir, siteDir, config, fail, warn }) {
   db.code = code;
 
   /* ---------- images manifest (data/images.json, from media.json by the images pass) ---------- */
-  const IMG_KIND = { p: ["place", B.place], s: ["stay", B.stay], a: ["area", B.area], t: ["timeline", B.timeline], x: ["experience", B.experience] };
+  const IMG_KIND = { p: ["place", B.place], s: ["stay", B.stay], a: ["area", B.area], t: ["timeline", B.timeline], x: ["experience", B.experience], r: ["region", B.region] };
   for (const [k, v] of Object.entries(db.images)) {
-    const m = /^([psatx])\/([a-z0-9][a-z0-9-]*)$/.exec(k);
-    if (!m) { fail("data/images.json", `bad key "${k}" (expected p/<place id>, s/<stay id>, a/<area id>, t/<timeline id> or x/<experience id>)`); continue; }
+    const m = /^([psatxr])\/([a-z0-9][a-z0-9-]*)$/.exec(k);
+    if (!m) { fail("data/images.json", `bad key "${k}" (expected p/<place id>, s/<stay id>, a/<area id>, t/<timeline id>, x/<experience id> or r/<region id>)`); continue; }
     if (!v || typeof v.file !== "string") { fail(`data/images.json#${k}`, "needs a file"); continue; }
     if (!existsSync(join(siteDir, v.file))) fail(`data/images.json#${k}.file`, `site/${v.file} does not exist`);
     if (!Number.isInteger(v.w) || !Number.isInteger(v.h)) fail(`data/images.json#${k}`, "needs integer w and h");

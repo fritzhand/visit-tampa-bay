@@ -1,0 +1,219 @@
+/* ======================================================================
+   site/css/31-region.css · OWNER: the Home & Sheets lane
+   The six sheet pages (build/pages/region.mjs) and the event rows they share with the home page:
+     the sheet head's extras (known for, counts, official site), the sheet chart (a neatline crop with area names
+     and numbered buoys) beside its title block (a chart's title cartouche: sheet, code, counts, the buoy key),
+     area cards without plates, signature cards with their buoy number, family panels (things to do,
+     experiences), stay counts, the 60-day list (date-first rows), every year on the sheet, historic places and the
+     mini timeline, getting around. Every sheet shares one system; its ink ([data-sheet] → --ink-*) makes it its own.
+   Tokens only; no color literal; nothing under 12px; 44px targets on phones.
+   ====================================================================== */
+
+/* ---------- no-JS / JS words ---------- */
+.js .nojs-only { display: none; }
+.sec-note { max-width: 70ch; margin: calc(-1 * var(--sp-2)) 0 var(--sp-4); font-size: var(--fs-sm); color: var(--text-muted); }
+.sec-chips { margin-bottom: var(--sp-5); }
+
+/* ---------- the sheet head ---------- */
+.sheet-head .dek { max-width: 50ch; font-size: var(--fs-md); }
+.sh-counts { display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 8px; margin-top: var(--sp-5); color: var(--ink-text); }
+.sh-official { margin-top: var(--sp-2); font-size: var(--fs-sm); color: var(--text-muted); }
+.sh-official a { display: inline-flex; align-items: center; gap: 4px; min-height: var(--tap); }
+.sh-official .i { width: 14px; height: 14px; }
+@media (min-width: 1024px) { .sh-official a { min-height: 32px; } }
+
+/* ---------- the sheet chart and its title block ---------- */
+.sheet-chart { margin-top: var(--sp-6); }
+.sc-grid { display: grid; gap: var(--sp-5); grid-template-columns: minmax(0, 1fr); align-items: start; }
+@media (min-width: 1100px) { .sc-grid { grid-template-columns: minmax(0, 1.5fr) minmax(250px, 1fr); } }
+.sc-map { margin: 0; }
+.sc-map .grat-in { padding: 0; }
+.sc-map .mini-map { margin: 0; border: 0; box-shadow: none; }
+.sheet-map-view { max-height: none; }
+.sheet-map-view .map-label.area-l { letter-spacing: var(--track-label); }
+.sheet-map-view .map-label.water { font-size: var(--fs-sm); }
+.pin-range > span { white-space: nowrap; min-width: 36px; padding-left: 5px; padding-right: 5px; }
+@media (max-width: 559px) { .sheet-map-view .wide-only { display: none; } }
+.sc-cap { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px 6px; border-top: 1px solid var(--grat-ink); background: var(--surface); font-size: var(--fs-xs); color: var(--text-muted); }
+.sc-cap a { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); width: fit-content; font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.sc-cap .i { width: 16px; height: 16px; }
+
+/* the title block: a chart's title cartouche in the sheet's ink */
+.sheet-title {
+  position: relative; padding: var(--sp-4) var(--sp-4) var(--sp-3); background: var(--surface);
+  border: 1px solid var(--border); border-top: var(--stripe-w) solid var(--ink-fill);
+}
+.sheet-title::before {                       /* the label's double rule under the stripe */
+  content: ""; position: absolute; left: 0; right: 0; top: 4px; height: 1px; background: var(--ink-edge); opacity: 0.55;
+}
+.st-no { display: flex; justify-content: space-between; gap: 8px; color: var(--ink-text); }
+.st-name { margin-top: 2px; font-family: var(--font-display); font-weight: var(--wght-head); font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.375rem); line-height: var(--lh-head); color: var(--text); }
+.st-counts { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 0 16px; margin: var(--sp-3) 0 var(--sp-4); padding-top: 3px;
+  background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rule-ink) 0 0) 0 5px / 100% 1px no-repeat; padding-top: 10px; }
+.st-counts > div { display: flex; flex-direction: column-reverse; padding: 4px 0 6px; border-bottom: 1px solid var(--border); }
+.st-counts dd { font-family: var(--font-display); font-weight: 800; font-size: 1.625rem; line-height: 1.05; font-variant-numeric: lining-nums tabular-nums; color: var(--text); }
+.st-counts dt { font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-muted); line-height: 1.25; }
+.st-key-h { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; color: var(--ink-text); }
+.st-key-h .i { width: 16px; height: 16px; }
+.sheet-key { list-style: none; padding: 0; margin: 0; }
+.sheet-key li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 8px; align-items: start; padding: 6px 0; border-bottom: 1px solid var(--border); }
+.sheet-key li:last-child { border-bottom: 0; }
+.sheet-key .kt { display: flex; flex-direction: column; min-width: 0; }
+.sheet-key .kt a { display: inline-flex; align-items: center; min-height: 28px; font-weight: var(--wght-strong); color: var(--text); text-decoration-color: var(--border-strong); }
+.sheet-key .kt a:hover { color: var(--link); }
+.sheet-key .w { font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.35; }
+.sheet-key li.off .kb { border-style: dashed; }
+@media (max-width: 1023px) { .sheet-key .kt a { min-height: var(--tap); } .sheet-key .kb { margin-top: 7px; } }
+/* the buoy number: a paper disc ringed in the sheet's ink with its fill as a top band (the buoys on the chart) */
+.kb, .sig-no {
+  display: grid; place-items: center; width: 30px; height: 30px; border-radius: 12px 12px 4px 4px;
+  background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 5px no-repeat, var(--map-pin-bg); color: var(--map-pin-ink);
+  border: 2px solid var(--ink-edge);
+  font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; font-variant-numeric: tabular-nums; line-height: 1; padding-top: 4px;
+}
+
+/* ---------- areas: the cards without the plate (the names are the titles); a photo stays when there is one ---------- */
+.sheet-areas .card.area { border-top: var(--stripe-w) solid var(--ink-fill); }
+.sheet-areas .card.area > .plate-type { display: none; }
+.sheet-areas .card.area > .photo { aspect-ratio: 5 / 2; }
+
+/* ---------- signature places: the card with its buoy number on the plate's corner ---------- */
+.sig-item { position: relative; display: flex; }
+.sig-item > .card { flex: 1; }
+.sig-no { position: absolute; z-index: 4; left: 14px; top: 14px; box-shadow: var(--shadow-1); }
+
+/* ---------- families (things to do, experiences): panels of five rows and an "all" link ---------- */
+.fams { display: grid; gap: var(--sp-6) var(--sp-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.fam-h { display: flex; align-items: center; gap: 10px; margin-bottom: var(--sp-2); font-size: var(--fs-md); }
+.fam-h .i { width: 20px; height: 20px; color: var(--text-muted); flex: none; }
+.fam-h .n { margin-left: auto; min-width: 32px; padding: 3px 8px; text-align: center; background: var(--surface-alt); font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; letter-spacing: 0.04em; color: var(--text); }
+.fam-all { margin-top: var(--sp-1); }
+.fam-all a { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.fam-all .i { width: 16px; height: 16px; }
+.fam .rows .bullet { flex: none; }
+
+/* ---------- where to stay: counts by area, kind and listed feature ---------- */
+.stay-split { display: grid; gap: var(--sp-2) var(--sp-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); margin-bottom: var(--sp-6); }
+.stay-split .sub-h { margin-top: 0; }
+.count-list { list-style: none; padding: 0; margin: 0; }
+.count-list a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--tap); padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
+.count-list a:hover span:first-child { text-decoration: underline; text-underline-offset: 0.16em; }
+.count-list .n { flex: none; min-width: 34px; padding: 2px 6px; text-align: right; font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; color: var(--ink-text); }
+@media (min-width: 1024px) { .count-list a { min-height: 38px; } }
+
+/* ---------- event rows (shared with the home page) ----------
+   ol.tonight.evrows: time-first (home "today"); ol.evrows.dated: date-first (a sheet's coming weeks) */
+.evrows { list-style: none; padding: 2px 0 0; margin: 0; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; }
+.evrows > li { border-bottom: 1px solid var(--border); }
+.evrows > li[hidden] { display: none; }
+.evrow .badge { margin: 2px 6px 2px 0; }
+.evr-st:empty { display: none; }
+.evr-st {
+  display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 7px; margin-left: 4px; vertical-align: 1px;
+  border: 1px solid var(--soon); color: var(--soon); border-radius: var(--radius-xs); white-space: nowrap;
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase;
+}
+.evrow[data-status="live"] .evr-st { background: var(--live-tint); color: var(--live-ink); border-color: transparent; }
+.evrow[data-status="live"] .evr-st::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--live); }
+.evrow[data-status="today"] .evr-st, .evrow[data-status="started"] .evr-st { background: var(--accent-tint); color: var(--accent-strong); border-color: transparent; }
+.evrow[data-status="past"] .evr-st { background: var(--surface-sunken); color: var(--text-muted); border-color: transparent; }
+.evrow[data-status="past"] .t { color: var(--text-muted); }
+.tonight.evrows time .i { width: 18px; height: 18px; color: var(--text-faint); margin-top: 2px; }
+.tonight.evrows time small { font-family: var(--font-label); letter-spacing: 0.06em; }
+
+.evrows.dated a { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 4px 14px; align-items: start; min-height: var(--tap); padding: 10px 0; color: var(--text); text-decoration: none; }
+.evrows.dated a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+.dbox {
+  display: grid; justify-items: center; gap: 2px; padding: 5px 0 6px; text-align: center;
+  border-top: 2px solid var(--ink-fill); background: var(--ink-tint); color: var(--ink-text);
+}
+.dbox .dw, .dbox .mo { font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1; }
+.dbox .d { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1; font-variant-numeric: lining-nums; color: var(--text); }
+.evr-k { display: block; margin-bottom: 1px; font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-muted); }
+.evrows.dated .t { display: block; font-weight: var(--wght-strong); line-height: 1.35; }
+.evrows.dated .w { display: block; margin-top: 2px; font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.45; }
+.on60 .sub-h { margin-top: var(--sp-5); }
+.on60 .evmonth:first-of-type .sub-h, .on60-note + .evmonth .sub-h { margin-top: var(--sp-3); }
+.on60-note { font-size: var(--fs-sm); color: var(--text-muted); }
+.on60-note .js-only:empty { display: none; }
+.on60-more { margin-top: var(--sp-4); }
+.on60-empty { margin-top: var(--sp-3); padding: var(--sp-3); border: 1px dashed var(--border-strong); background: var(--surface); }
+@media (min-width: 900px) { .evrows.dated { columns: 2; column-gap: var(--sp-6); } .evrows.dated > li { break-inside: avoid; } }
+
+/* ---------- every year on this sheet ---------- */
+.annual-h { margin-top: var(--sp-7); }
+.annual { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 0 var(--sp-6); }
+.annual a { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 10px; align-items: baseline; min-height: var(--tap); padding: 9px 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; font-size: var(--fs-sm); }
+.annual a:hover .an-t { text-decoration: underline; text-underline-offset: 0.16em; }
+.an-m { color: var(--ink-text); }
+.an-t { font-weight: var(--wght-ui); }
+.an-sig { padding: 3px 7px; background: var(--gold-leaf); color: var(--gold-leaf-ink); line-height: 1; }
+
+/* ---------- history: historic places (a Bodoni year) and the mini timeline ---------- */
+.hist-split { display: grid; gap: var(--sp-5) var(--sp-7); grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.hist-split .sub-h { margin-top: 0; }
+.her-list { list-style: none; padding: 2px 0 0; margin: 0; background: linear-gradient(var(--gold-ink) 0 0) 0 0 / 100% 2px no-repeat, linear-gradient(var(--gold-ink) 0 0) 0 5px / 100% 1px no-repeat; padding-top: 8px; }
+.her-list a { display: grid; grid-template-columns: 58px minmax(0, 1fr); gap: 12px; align-items: start; min-height: var(--tap); padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; }
+.her-list a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+.her-y { font-family: var(--font-display); font-weight: 800; font-size: 1.375rem; line-height: 1.1; font-variant-numeric: lining-nums; color: var(--gold-ink); }
+.her-y .unk { font-family: var(--font-body); font-weight: var(--wght-body); font-size: var(--fs-xs); }
+.her-list .t { display: block; font-weight: var(--wght-strong); line-height: 1.35; }
+.her-list .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+.her-d { display: inline-block; margin-top: 5px; padding: 4px 8px; background: var(--gold-tint); font-size: var(--fs-xs); line-height: 1.35; color: var(--text); }
+.mini-tl { list-style: none; padding: 0; margin: 0; background: linear-gradient(var(--rule-ink) 0 0) 6px 10px / 2px calc(100% - 20px) no-repeat; }
+.mini-tl li { position: relative; display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 6px 0 6px 24px; }
+.mini-tl li::before { content: ""; position: absolute; left: 0; top: 13px; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--ink-fill); background: var(--bg); box-shadow: inset 0 0 0 2px var(--bg), inset 0 0 0 5px var(--ink-fill); }
+.mini-tl li.gap { display: block; }
+.mini-tl li.gap::before { border-style: dashed; box-shadow: none; }
+.mini-tl a { display: inline-flex; align-items: center; min-height: var(--tap); color: var(--text); text-decoration-color: var(--border-strong); line-height: 1.35; }
+.mini-tl .mt-y { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-md); font-variant-numeric: lining-nums; color: var(--ink-text); }
+@media (min-width: 1024px) { .mini-tl a { min-height: 32px; } }
+
+/* ---------- getting around ---------- */
+.tr-fams { display: grid; gap: var(--sp-5) var(--sp-6); grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.tr-fams .sub-h { margin-top: 0; }
+.tr-list { list-style: none; padding: 0; margin: 0; }
+.tr-list a { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 12px; align-items: start; min-height: var(--tap); padding: 10px 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; }
+.tr-list a > .i { width: 20px; height: 20px; margin-top: 2px; color: var(--text-muted); }
+.tr-list a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+.tr-list .t { display: block; font-weight: var(--wght-strong); line-height: 1.35; }
+.tr-list .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+.tr-sum { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; margin-top: 3px; font-size: var(--fs-sm); color: var(--text-muted); }
+.tr-code { display: inline-block; margin-left: 6px; padding: 3px 6px; border: 1px solid var(--border-strong); font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: 780; letter-spacing: var(--track-label); line-height: 1; vertical-align: 2px; }
+
+/* ---------- sources ---------- */
+.sheet-sources .source-line { margin-bottom: var(--sp-3); }
+.no-chart .sheet-title { max-width: 520px; }
+
+/* ---------- the legend and the key under the chart ---------- */
+.st-legend { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: var(--fs-xs); color: var(--text-muted); }
+.st-legend li { display: flex; align-items: center; gap: 10px; }
+.st-buoy {
+  display: grid; place-items: center; flex: none; min-width: 26px; height: 28px; padding: 5px 4px 0; border-radius: 12px 12px 4px 4px;
+  background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 5px no-repeat, var(--map-pin-bg); border: 2px solid var(--ink-edge); color: var(--map-pin-ink);
+  font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; line-height: 1; font-variant-numeric: tabular-nums;
+}
+.st-buoy.wide { min-width: 38px; }
+.st-area { flex: none; min-width: 38px; color: var(--map-label); }
+.sheet-keyblock { margin-top: var(--sp-5); }
+.sheet-keyblock .sheet-key { columns: 1; column-gap: var(--sp-6); }
+@media (min-width: 700px) { .sheet-keyblock .sheet-key { columns: 2; } }
+@media (min-width: 1100px) { .sheet-keyblock .sheet-key { columns: 3; } }
+.sheet-keyblock .sheet-key li { break-inside: avoid; border-bottom: 1px solid var(--border); }
+.sheet-keyblock .sheet-key li:last-child { border-bottom: 1px solid var(--border); }
+.sec-foot { margin-top: var(--sp-3); font-size: var(--fs-sm); color: var(--text-muted); }
+.sheet-page .fams .row .bullet { display: none; }
+.evmonth.underway .sub-h { color: var(--text-muted); }
+
+/* ---------- the inset (a harbor inset, as on a printed chart) and its box on the main chart ---------- */
+.sc-side { display: grid; gap: var(--sp-5); align-content: start; }
+.sc-inset { margin: 0; }
+.sc-inset .grat-in { padding: 0; }
+.sc-inset .mini-map { margin: 0; border: 0; box-shadow: none; }
+.inset-box { position: absolute; z-index: 1; border: 2px dashed var(--rule-ink); pointer-events: none; }
+.inset-box > span {
+  position: absolute; left: -2px; top: -2px; transform: translateY(-100%); padding: 2px 6px; background: var(--rule-ink); color: var(--bg);
+  font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; line-height: 1.2;
+}
+.sheet-map-view .map-label.city-l { color: var(--text-faint); letter-spacing: var(--track-label); }
+@media (max-width: 1099px) { .sc-side { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: start; } }

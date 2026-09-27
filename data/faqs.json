@@ -153,6 +153,29 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "certified-visitor-centers",
+    "topic": "Visitor information",
+    "q": "What is a certified visitor information center?",
+    "a": "One that VISIT FLORIDA, the state's tourism marketing corporation, has inspected and approved. It says certified centers must meet requirements such as operating year-round at least five days a week, being in a convenient and accessible location, and having parking and restrooms for visitors, including people with disabilities. Its Central West Florida list includes the Unlock Tampa Bay Visitors Center, the St. Pete Store & Visitors Center, AMPLIFY Clearwater's centers on Clearwater Beach, the Tampa Bay Beaches Chamber in St. Pete Beach, the East Pasco Chamber in Zephyrhills and Discover Crystal River.",
+    "source_url": "https://www.visitflorida.com/more/visitor-and-tourism-services/certified-visitor-information-centers-central-west-florida/",
+    "also_sources": [
+      "https://www.visitflorida.com/listing/anna-maria-island-chamber-of-commerce-visitor-information-center/25302/",
+      "https://www.visitflorida.com/listing/visit-sarasota-county-visitor-information-center-downtown-visitor-center/25789/",
+      "https://www.visitflorida.com/listing/visit-central-florida-welcome-center/30084/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. The criteria are the page's own text ('operating year-round a minimum of five days per week, being in a convenient and accessible location for the ease of travelers and providing access to parking and restroom facilities to accommodate visitors, including persons with disabilities. These facilities undergo a site visit ...'). The list itself loads from the site's listings service (category 'Certified Visitor Information Centers'); read Sep 27, 2026. Nearby centers in other VISIT FLORIDA regions: Anna Maria Island Chamber (Holmes Beach), Visit Sarasota County (downtown Sarasota) and Visit Central Florida (Davenport)."
+  },
+  {
+    "id": "clearwater-marine-aquarium-accessibility",
+    "topic": "Accessibility",
+    "q": "Is the Clearwater Marine Aquarium accessible?",
+    "a": "The aquarium says it has accessible elevators and ramps throughout, but its eco-boat tours are not wheelchair accessible. It rents manual wheelchairs for the day ($5 plus a $50 refundable deposit, 250 lb limit) and suggests bringing your own, since rentals are not guaranteed. With 14 days' notice it arranges sign language interpreting at no charge; phone 727-441-1790 ext. 0.",
+    "source_url": "https://www.cmaquarium.org/ada-services/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added (the researcher could not find this page; it is linked from the aquarium's home page as 'ada-services')."
+  },
+  {
     "id": "county-park-rules",
     "topic": "Alcohol & rules",
     "q": "What is not allowed in Pinellas County beach parks?",
@@ -245,9 +268,11 @@
     "id": "faq-beach-trolley",
     "topic": "Getting around",
     "q": "Is there a bus along the Gulf beaches?",
-    "a": "PSTA's Suncoast Beach Trolley runs daily along Gulf Boulevard from St. Pete Beach (75th Ave) through Treasure Island, John's Pass, Madeira Beach, the Redingtons, Indian Shores, Indian Rocks Beach and Sand Key to Clearwater Beach and downtown Clearwater's Park Street Terminal. On Clearwater Beach itself, the Jolley Trolley runs North Beach and South Beach routes and a Coastal Route to Dunedin, Palm Harbor and Tarpon Springs.",
+    "a": "PSTA's Suncoast Beach Trolley runs daily along Gulf Boulevard from St. Pete Beach (75th Ave) through Treasure Island, John's Pass, Madeira Beach, the Redingtons, Indian Shores, Indian Rocks Beach and Sand Key to Clearwater Beach and downtown Clearwater's Park Street Terminal; the PSTA fare is $2.25. On Clearwater Beach itself, the Jolley Trolley ($2.25) runs North Beach and South Beach routes and a Coastal Route to Dunedin, Palm Harbor and Tarpon Springs.",
     "source_url": "https://psta.net/routes/suncoast-beach-trolley/",
     "also_sources": [
+      "https://psta.net/rider-info/fares/",
+      "https://www.clearwaterjolleytrolley.com/public-routes",
       "https://psta.net/routes/jolley-trolley-coastal-route/"
     ],
     "checked": "2026-09-27"
@@ -286,9 +311,10 @@
     "id": "faq-county-beach-parking",
     "topic": "Getting around",
     "q": "How much does parking cost at Fort De Soto, Sand Key and other Pinellas County beach parks?",
-    "a": "Pinellas County says that from December 1, 2026, beach parking at its parks will be $3.50 an hour, capped at $12 a day, plus tax. An annual beach pass, valid at Fort De Soto, Sand Key and Fred Howard parks, costs $95 from October 1, 2026. Fort De Soto is cashless: pay at a machine, with the Flowbird or ParkMobile app, or by text.",
+    "a": "Pinellas County's beaches page says a $6-a-day parking fee applies at Fort De Soto, Sand Key and Fred Howard parks. From December 1, 2026, beach parking at the county's parks becomes $3.50 an hour, capped at $12 a day, plus tax, and from October 1, 2026 an annual beach pass valid at those three parks costs $95. Fort De Soto is cashless: pay at a machine, with the Flowbird or ParkMobile app, or by text.",
     "source_url": "https://pinellas.gov/annual-parking-permits",
     "also_sources": [
+      "https://pinellas.gov/beaches/",
       "https://pinellas.gov/parks-and-preserves-frequently-asked-questions"
     ],
     "checked": "2026-09-27"
@@ -297,9 +323,10 @@
     "id": "faq-cross-bay-ferry",
     "topic": "Getting around",
     "q": "Is there a ferry between Tampa and St. Petersburg?",
-    "a": "Not as of late September 2026. PSTA is preparing a new Tampa Bay Ferry to replace the former Cross-Bay Ferry, with two vessels now being refurbished in Tarpon Springs and Hubbard's Marina as operator, and says it will announce a start date once refurbishment is nearing completion.",
-    "source_url": "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
+    "a": "Not as of late September 2026. PSTA is preparing a new Tampa Bay Ferry between downtown St. Petersburg and downtown Tampa to replace the former Cross-Bay Ferry, with Hubbard's Marina as operator and two vessels being refurbished in Tarpon Springs. On September 24, 2026 PSTA said the service is scheduled to launch later this year; it has not announced a start date, fares or docks.",
+    "source_url": "https://psta.net/press_releases/psta-lowers-property-tax-rate-third-straight-year-approves-2027-public-transit-budget/",
     "also_sources": [
+      "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
       "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/"
     ],
     "checked": "2026-09-27"
@@ -340,6 +367,17 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "faq-free-beach-ride",
+    "topic": "Getting around",
+    "q": "Is there a free shuttle on St. Pete Beach and Treasure Island?",
+    "a": "Free Beach Ride runs an on-demand, door-to-door shuttle from the south tip of Pass-a-Grille to the northern parts of Madeira Beach. Call 727-776-7553, request a ride online or use its app when you are ready to go; it takes no advance bookings and does not go to the airports. Rides are free, and the operator says drivers welcome tips.",
+    "source_url": "https://www.freebeachride.com/faq/",
+    "also_sources": [
+      "https://www.freebeachride.com/service-area/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
     "id": "faq-intercity-bus",
     "topic": "Getting around",
     "q": "Where do Greyhound and FlixBus buses stop in Tampa?",
@@ -349,6 +387,14 @@
       "https://www.flixbus.com/bus/tampa-fl",
       "https://www.redcoachusa.com/bus-stations/tampa"
     ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-jolley-trolley-fare",
+    "topic": "Getting around",
+    "q": "How much is the Jolley Trolley in Clearwater?",
+    "a": "The Clearwater Jolley Trolley charges $2.25 a ride in cash (exact change) or $1.10 at the reduced rate, and children 8 and under ride free; contactless payment and group passes work through Flamingo Fares. Guests of the Sandpearl, Opal Sands, Sheraton Sand Key, Marriott Sand Key and TradeWinds ride free with their room card.",
+    "source_url": "https://www.clearwaterjolleytrolley.com/public-routes",
     "checked": "2026-09-27"
   },
   {
@@ -430,6 +476,25 @@
     "also_sources": [
       "https://floridasturnpike.com/tolls/electronic-toll-collection/"
     ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-st-pete-beach-parking",
+    "topic": "Getting around",
+    "q": "How much is parking at St. Pete Beach and Pass-a-Grille?",
+    "a": "The City of St. Pete Beach charges $5.00 an hour Monday through Thursday and $6.00 an hour Friday through Sunday, plus $1.00 an hour from February 1 to April 30. Pay by card at the pay stations (no cash), with the ParkMobile app, or by texting 'Park' to 77223. Pass-a-Grille Beach has 541 spaces on Gulf Way and 186 on Pass-a-Grille Way.",
+    "source_url": "https://www.stpetebeach.org/218/Parking-Pay-Station-Instructions",
+    "also_sources": [
+      "https://www.stpetebeach.org/738/Public-Beach-Parking-Locations"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-st-pete-pier-parking",
+    "topic": "Getting around",
+    "q": "Where do I park for the St. Pete Pier?",
+    "a": "The Pier's Dolphin and Pelican lots have more than 500 spaces; weekdays cost $2 an hour for the first four hours (six-hour maximum, $15) and weekends $2.50 an hour (six-hour maximum, $18). On Friday evenings and Saturday afternoons, when the lots fill, the Pier suggests the Sundial garage or the Al Lang lot, both within walking distance. The free Downtown Looper and Central Avenue Trolley also stop at the Pier.",
+    "source_url": "https://stpetepier.org/getting-here-parking/",
     "checked": "2026-09-27"
   },
   {
@@ -523,25 +588,50 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "faq-tpa-parking",
+    "topic": "Getting around",
+    "q": "How much does parking cost at Tampa International Airport?",
+    "a": "The Short Term garage above the main terminal and the Long Term garage next to it charge nothing for the first hour, then $8 an hour, up to $32 and $26 per 24 hours. Economy Parking, linked by the SkyConnect train, is free for the first hour, then $5 an hour, up to $22 per 24 hours. Maximums include tax, stays are limited to 45 days, and the Cell Phone Waiting Lot is free.",
+    "source_url": "https://www.tampaairport.com/parking",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tpa-rental-cars",
+    "topic": "Getting around",
+    "q": "Where do I pick up a rental car at Tampa International Airport?",
+    "a": "At the Rental Car Center, reached by the SkyConnect train from the main terminal. Alamo, Avis, Budget, Dollar, Enterprise, Hertz, National, Thrifty, Ace, American, Fox, Payless, Sixt and Zipcar are there; off-airport companies pick up at the Rental Car Center's remote curb. Most domestic passengers can also check bags there from 5 a.m. to 5 p.m.",
+    "source_url": "https://www.tampaairport.com/ground-transportation",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tpa-taxi",
+    "topic": "Getting around",
+    "q": "How much is a taxi from Tampa International Airport?",
+    "a": "Yellow Cab serves the airport from the Ground Transportation Areas Red 1 and Blue 2, outside baggage claim. The airport lists the fare as $3.50 for the first 1/5 mile plus $2.85 a mile, with a $22 minimum from the airport and a $40 flat rate to downtown Tampa and the cruise terminal.",
+    "source_url": "https://www.tampaairport.com/ground-transportation",
+    "checked": "2026-09-27"
+  },
+  {
     "id": "faq-tpa-to-downtown-tampa",
     "topic": "Getting around",
     "q": "How do I get from Tampa International Airport to downtown Tampa without a car?",
-    "a": "HART Routes 10 (Cypress St.) and 30 (Kennedy Blvd.) run between the airport and downtown Tampa seven days a week, and Route 32 connects the airport with the Netpark Transfer Center. The buses stop near the airport's Rental Car Center: take the SkyConnect train from the Red Baggage Claim to reach it. A HART ride costs $2.00. For a rideshare, Uber says to follow the Blue Express Pickup signs from the main terminal.",
+    "a": "HART Routes 10 (Cypress St.) and 30 (Kennedy Blvd.) run between the airport and downtown Tampa seven days a week, and Route 32 connects the airport with the Netpark Transfer Center. The buses stop at the airport's Rental Car Center: take the SkyConnect train from the main terminal. A HART ride costs $2.00. A Yellow Cab taxi to downtown Tampa or the cruise terminal is a $40 flat rate, and Lyft, Uber and Wridz pick up at the Red Express or Blue Express curbside, with a $5.00 airport fee added to the fare.",
     "source_url": "https://www.gohart.org/Pages/services-bus.aspx",
     "also_sources": [
       "https://www.gohart.org/Pages/fares-cards.aspx",
-      "https://www.uber.com/global/en/r/airports/tpa/pickup/"
+      "https://www.tampaairport.com/ground-transportation"
     ],
     "checked": "2026-09-27"
   },
   {
     "id": "faq-tpa-to-st-pete",
     "topic": "Getting around",
-    "q": "Is there a bus from Tampa International Airport toward St. Petersburg or Pinellas County?",
-    "a": "PSTA's Route 300 express stops at the airport's Rental Car Facility on its way between the Marion Transit Center in downtown Tampa and the Ulmerton Park and Ride in Largo, Monday through Friday only. PSTA's Route 100 express links the Marion Transit Center with the St. Pete Pier area on weekdays. Both charge the regular $2.25 PSTA fare. Neither runs on weekends.",
-    "source_url": "https://psta.net/routes/route-300/",
+    "q": "Is there a bus from Tampa International Airport to St. Petersburg or Pinellas County?",
+    "a": "PSTA says its new 727 Airport Express, between nine stops in downtown St. Petersburg and Tampa International Airport, launches October 4, 2026 and will run daily from 5 a.m. to 11 p.m. (fare not yet published). Until then, and on weekdays after, PSTA's Route 300 express stops at the airport's Rental Car Facility on its way between downtown Tampa and the Ulmerton Park and Ride in Largo, Monday through Friday only, for the regular $2.25 fare.",
+    "source_url": "https://psta.net/services/727/",
     "also_sources": [
-      "https://psta.net/routes/route-100/",
+      "https://psta.net/press_releases/psta-lowers-property-tax-rate-third-straight-year-approves-2027-public-transit-budget/",
+      "https://psta.net/routes/route-300/",
       "https://psta.net/rider-info/fares/"
     ],
     "checked": "2026-09-27"
@@ -565,6 +655,17 @@
     "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
     "also_sources": [
       "https://psta.net/rider-info/fares/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-treasure-island-madeira-parking",
+    "topic": "Getting around",
+    "q": "How much is beach parking on Treasure Island and Madeira Beach?",
+    "a": "Treasure Island's city lots cost $5.00 an hour on weekdays and $5.50 on weekends and holidays ($6.00 and $6.50 on the Sunset Beach side streets); pay by text or with ParkMobile, and do not back into spaces, because license-plate readers enforce payment. Madeira Beach charges $4.00 an hour in its lots, paid through the ParkMobile app.",
+    "source_url": "https://www.mytreasureisland.org/general_parking_information.php",
+    "also_sources": [
+      "https://madeirabeachfl.gov/parking-rates/"
     ],
     "checked": "2026-09-27"
   },
@@ -758,6 +859,24 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "manatees",
+    "topic": "Beaches & water safety",
+    "q": "How can I help protect manatees?",
+    "a": "Report a sick or injured manatee to FWC's Wildlife Alert Hotline at 1-888-404-3922. Pinellas County also asks boaters and anglers to secure items on their vessels, keep plastic bags and fishing line in a container with a lid, and pick up any plastic or fishing line they see. The county enforces no-wake zones and seagrass protection areas.",
+    "source_url": "https://pinellas.gov/manatees/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added; every point is on the Pinellas County Manatees page ('What You Can Do')."
+  },
+  {
+    "id": "mosi-accessibility",
+    "topic": "Accessibility",
+    "q": "Is MOSI accessible?",
+    "a": "MOSI lends wheelchairs at no cost, first come, first served, at its admissions desk (you leave a driver's license or credit card until you return it); the Holloway Digital Dome Theatre has an elevator entrance on the 4th floor. Service dogs are permitted. USF's Center for Autism and Related Disabilities helped shape its exhibits and programs. For other accommodations, call Guest Services at (813) 987-6000 at least 15 working days before your visit.",
+    "source_url": "https://mosi.org/accessibility/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added."
+  },
+  {
     "id": "rainy-season",
     "topic": "When to visit",
     "q": "When is the rainy season?",
@@ -858,6 +977,18 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "sea-turtle-nesting",
+    "topic": "Beaches & water safety",
+    "q": "What should I know about sea turtle nesting season?",
+    "a": "In Pinellas County, sea turtles nest and hatch from May 1 through October 31. The county asks beachgoers to turn off lights visible from the beach after sunset, pick up trash, fill in holes and knock down sandcastles when they leave, take all their beach equipment, and never harass or touch sea turtles or hatchlings. Report a turtle in trouble or a disturbed nest to FWC at (888) 404-3922.",
+    "source_url": "https://pinellas.gov/sea-turtle-protection/",
+    "also_sources": [
+      "https://pinellas.gov/news/help-our-sea-turtles-thrive-this-nesting-season/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added. Season: 'Nesting and hatching season occur from May 1 through October 31.' The 'knock down sandcastles and take all your beach equipment' tip is from the county's May 1, 2026 news release. Sand Key and Fort De Soto pages give other month ranges (see the researcher's report); the county's Sea Turtle Protection page is used here."
+  },
+  {
     "id": "st-pete-pier-accessibility",
     "topic": "Accessibility",
     "q": "Is the St. Pete Pier accessible?",
@@ -929,19 +1060,34 @@
     "checked": "2026-09-27"
   },
   {
+    "id": "visitor-center-clearwater-beach",
+    "topic": "Visitor information",
+    "q": "Is there a visitor center on Clearwater Beach?",
+    "a": "Yes. AMPLIFY Clearwater, the Clearwater area's chamber of commerce, runs the Pier 60 Visitor Center at 1 Causeway Blvd. on Clearwater Beach. It says the center is open seven days a week; phone (727) 442-3604.",
+    "source_url": "https://amplifyclearwater.com/",
+    "also_sources": [
+      "https://www.visitflorida.com/listing/amplify-clearwater-pier-60-visitor-information-center/25793/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
     "id": "visitor-center-st-pete",
     "topic": "Visitor information",
     "q": "Is there a visitor center in St. Petersburg?",
-    "a": "The St. Petersburg Chamber of Commerce's website lists a St. Pete Store & Visitor's Center and a visitors and tourism email address, tourism@stpete.com. The chamber's office is at 100 2nd Ave. N., #150 (727-821-4069).",
-    "source_url": "https://www.stpete.com/st-pete-store-visitors-center/",
+    "a": "Yes. The St. Pete Store & Visitors Center, run by the St. Petersburg Area Chamber of Commerce, is at 100 2nd Ave. N., Suite 150, in downtown St. Petersburg. It is open Monday through Sunday, 10 a.m. to 5 p.m.; phone (727) 388-0686. The chamber's visitors and tourism email is tourism@stpete.com.",
+    "source_url": "https://www.thestpetestore.com/visit",
+    "also_sources": [
+      "https://www.stpete.com/st-pete-store-visitors-center/",
+      "https://www.visitflorida.com/listing/the-st-pete-store-%26-visitors-center-(st-petersburg-area-coc)/26747/"
+    ],
     "checked": "2026-09-27",
-    "notes": "The page body has no address or hours for the store; its own site (thestpetestore.com) returned a captcha. The address and phone are the chamber's, from the page footer. Verifier: confirm the store's location and hours if a readable source turns up."
+    "notes": "Verifier 2026-09-27: rewritten: the store's own page (thestpetestore.com/visit, read with WebFetch) gives the address, hours and phone, and VISIT FLORIDA lists it as the chamber's certified visitor center. The tourism email is from the stpete.com page."
   },
   {
     "id": "visitor-center-tampa",
     "topic": "Visitor information",
     "q": "Is there a visitor center in downtown Tampa?",
-    "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is on the ground floor of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
+    "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is at the bottom of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
     "source_url": "https://shop.visittampabay.com/pages/about-us",
     "also_sources": [
       "https://www.visittampabay.com/media/faqs/",
@@ -961,13 +1107,17 @@
     "id": "visitor-centers-pinellas",
     "topic": "Visitor information",
     "q": "Where can I get visitor information in Pinellas County?",
-    "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
+    "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the St. Pete Store & Visitors Center downtown (100 2nd Ave. N., daily 10 a.m. to 5 p.m.), AMPLIFY Clearwater's Pier 60 Visitor Center on Clearwater Beach (open seven days a week), the Tampa Bay Beaches Chamber in St. Pete Beach (6990 Gulf Blvd.), the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
     "source_url": "https://www.visitstpeteclearwater.com/info/visitor-information-resources-faqs",
     "also_sources": [
+      "https://www.thestpetestore.com/visit",
+      "https://amplifyclearwater.com/",
+      "https://www.visitflorida.com/listing/tampa-bay-beaches-chamber-of-commerce-visitor-information-center/25213/",
       "https://www.tarponspringschamber.org/",
       "https://www.beachwelcomecenter.com/"
     ],
-    "checked": "2026-09-27"
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: added the St. Pete, Pier 60 and Tampa Bay Beaches centers (each has a place record)."
   },
   {
     "id": "water-temperature-today",

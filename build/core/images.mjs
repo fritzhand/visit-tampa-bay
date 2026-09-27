@@ -6,7 +6,7 @@
    credit line; or, with no image, a typographic plate (the record's name and
    its sheet's chart code), never a stock photo.
 
-   Manifest (keys "<kind>/<id>"; kind p place · s stay · a area · t timeline · x experience):
+   Manifest (keys "<kind>/<id>"; kind p place · s stay · a area · t timeline · x experience · r region):
      { file: "img/p/<id>.webp", w, h,
        lg?: { file, w, h },   a larger variant (detail pages, dialogs)
        sm?: { file, w, h },   a small variant (cards, lists)
@@ -35,7 +35,7 @@ export const SIZES = {
   lead: "(min-width: 1100px) 760px, 100vw",
   thumb: "96px",
 };
-export const IMAGE_KINDS = { p: "place", s: "stay", a: "area", t: "timeline", x: "experience" };
+export const IMAGE_KINDS = { p: "place", s: "stay", a: "area", t: "timeline", x: "experience", r: "region" };
 
 export function makeImages(db) {
   const M = db.images || {};
@@ -64,13 +64,13 @@ export function makeImages(db) {
     if (!e) return "";
     const lic = LICENSE_LABEL[e.license] || e.license;
     // the credit line usually names the license already ("… (CC BY-SA 4.0)"): then only link it as "License"
-    const named = e.credit.includes(lic);
+    const named = e.credit.toLowerCase().includes(lic.toLowerCase());
     const licHtml = e.license_url ? extLink(e.license_url, named ? "License" : esc(lic)) : named ? "" : esc(lic);
     return [esc(e.credit), licHtml, e.page_url ? extLink(e.page_url, "Image page") : ""].filter(Boolean).join(" · ");
   }
   /** A card's picture: the image, or a typographic plate with the chart code (decorative: the heading names it). */
   function plate(root, kind, rec, { size = "", cls = "", alt, sizes = "" } = {}) {
-    const region = rec.region || null;
+    const region = rec.region || (kind === "r" ? rec.id : null);
     const i = img(root, kind, rec.id, { alt: alt ?? entry(kind, rec.id)?.alt ?? "", sizes, big: size === "lg" });
     if (i) return `<span class="photo${size ? " " + size : ""}${cls ? " " + cls : ""}">${i}</span>`;
     const code = region && REGIONS[region] ? REGIONS[region].code : "";

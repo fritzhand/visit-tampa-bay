@@ -2345,3 +2345,147 @@
 {"k":"photon:visitor center:28.895,-82.59","v":{"lat":28.651123,"lng":-82.125936,"geo_source":"photon","matched":"Visitor Center, Battlefield Drive","osm":"W317335111 information=office"}}
 {"k":"photon:st. pete store:27.773,-82.634","v":{"lat":27.776095,"lng":-82.67864,"geo_source":"photon","matched":"Store Space, 401, 34th Street North, St. Petersburg, 33713","osm":"W1260741267 shop=storage_rental"}}
 {"k":"photon:pier 60 visitor center:27.977,-82.83","v":null}
+{"k":"photon:caddy's:27.76,-82.77","v":{"lat":27.753696,"lng":-82.764118,"geo_source":"photon","matched":"Caddy's on the Beach, 9000, West Gulf Boulevard, Treasure Island, 33706","osm":"W304668268 amenity=bar"}}
+{"k":"census:18001 us highway 301 s, wimauma, fl 33598","v":null}
+{"k":"photon:18001 us highway 301 s, wimauma, fl 33598:","v":{"lat":27.711449,"lng":-82.284679,"geo_source":"photon","matched":"Wimauma Air Park, State Highway 674, 33598","osm":"W296898399 aeroway=aerodrome"}}
+{"k":"census:8103 cortez blvd, weeki wachee, fl 34607","v":{"lat":28.529355,"lng":-82.590044,"geo_source":"census","matched":"8103 CORTEZ BLVD, WEEKI WACHEE, FL, 34607"}}
+{"k":"census:207 boardwalk pl e, madeira beach, fl 33708","v":{"lat":27.784949,"lng":-82.782286,"geo_source":"census","matched":"207 BOARDWALK PL W, MADEIRA BEACH, FL, 33708"}}
+{"k":"photon:waterline marina:27.5,-82.71","v":{"lat":27.507323,"lng":-82.713665,"geo_source":"photon","matched":"Waterline Marina Resort & Beach Club, Autograph Collection, Sunrise Lane, Holmes Beach, 34217","osm":"W918539400 building=yes"}}
+{"k":"census:5325 marina dr, holmes beach, fl 34217","v":{"lat":27.506091,"lng":-82.71411,"geo_source":"census","matched":"5325 MARINA DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:198 seminole st, clearwater, fl 33755","v":{"lat":27.974176,"lng":-82.801797,"geo_source":"census","matched":"198 SEMINOLE ST, CLEARWATER, FL, 33755"}}
+{"k":"photon:demens landing park:27.77,-82.63","v":{"lat":27.770689,"lng":-82.629894,"geo_source":"photon","matched":"Demen's Landing Park, Saint Petersburg","osm":"W1110840742 leisure=park"}}
+{"k":"census:2001 pass a grille way, st. pete beach, fl 33706","v":{"lat":27.696557,"lng":-82.73576,"geo_source":"census","matched":"2001 PASS A GRILLE WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"photon:zinober concert hall:28.06,-82.41","v":null}
+{"k":"photon:canoe outpost:27.68,-82.33","v":null}
+{"k":"census:18001 us hwy 301, wimauma, fl 33598","v":null}
+{"k":"photon:usf school of music:28.06,-82.41","v":{"lat":28.064657,"lng":-82.418337,"geo_source":"photon","matched":"School of Music, USF Holly Drive, Tampa, 33620","osm":"W104599891 building=yes"}}
+{"k":"photon:18001 us hwy 301, wimauma, fl 33598:","v":{"lat":27.672356,"lng":-82.353392,"geo_source":"photon","matched":"18001, South US 301, 33598","osm":"W1087578871 building=yes"}}
+{"k":"photon:weeki wachee kayaking:28.53,-82.59","v":{"lat":28.531462,"lng":-82.627967,"geo_source":"photon","matched":"Weeki Wachee Kayaking, 7224, Shoal Line Boulevard, Weeki Wachee, 34607","osm":"W1370325209 amenity=boat_rental"}}
+{"k":"photon:chute em up:27.977,-82.827","v":{"lat":27.976294,"lng":-82.827847,"geo_source":"photon","matched":"Chute Em Up Parasail, Slip 8, Causeway Blvd, Clearwater Beach, 33767","osm":"N10737009802 shop=water_sports"}}
+{"k":"photon:fort de soto boat ramp:27.62,-82.72","v":{"lat":27.43714,"lng":-81.405363,"geo_source":"photon","matched":"Red Beach Lake Boat Ramp and Pier","osm":"W1116997364 landuse=recreation_ground"}}
+{"k":"photon:largo central park:27.91,-82.78","v":{"lat":27.914918,"lng":-82.785511,"geo_source":"photon","matched":"Largo Central Park, Largo","osm":"W31635246 leisure=park"}}
+{"k":"photon:highlander park:28.03,-82.77","v":null}
+{"k":"photon:pioneer park:28.01,-82.79","v":{"lat":28.012051,"lng":-82.787579,"geo_source":"photon","matched":"Pioneer Park, Dunedin","osm":"W129702898 leisure=park"}}
+{"k":"photon:raprager:28.11,-82.60","v":null}
+{"k":"photon:hunsader farms:27.44,-82.30","v":null}
+{"k":"photon:randy l. larson softball four-plex:28.00,-82.11","v":null}
+{"k":"photon:riverview civic center:27.86,-82.32","v":{"lat":27.866414,"lng":-82.318425,"geo_source":"photon","matched":"Riverview Civic Center, Casa Loma Drive, Riverview, 33569","osm":"N367826185 building=public"}}
+{"k":"photon:fort desoto park boat ramp:27.64,-82.72","v":{"lat":28.883036,"lng":-81.705226,"geo_source":"photon","matched":"Marsh Park & Boat Ramp, Yale Retreat Road, Eustis, 32627","osm":"N12355094419 leisure=slipway"}}
+{"k":"photon:slipway:27.645,-82.717","v":null}
+{"k":"census:1500 pasadena ave s, st. petersburg, fl 33707","v":{"lat":27.753423,"lng":-82.738097,"geo_source":"census","matched":"1500 PASADENA AVE S, ST PETERSBURG, FL, 33707"}}
+{"k":"census:690 dodecanese blvd, tarpon springs, fl 34689","v":{"lat":28.155618,"lng":-82.760038,"geo_source":"census","matched":"690 DODECANESE BLVD, TARPON SPRINGS, FL, 34689"}}
+{"k":"census:41 baymont st, clearwater, fl 33767","v":{"lat":27.982082,"lng":-82.826658,"geo_source":"census","matched":"41 BAYMONT ST, CLEARWATER, FL, 33767"}}
+{"k":"census:351 s gulfview blvd, clearwater, fl 33767","v":null}
+{"k":"photon:351 s gulfview blvd, clearwater, fl 33767:","v":{"lat":27.975854,"lng":-82.828577,"geo_source":"photon","matched":"South Gulfview Boulevard, Clearwater, 33767","osm":"W11252687 highway=tertiary"}}
+{"k":"photon:dimitri's on the water:28.155,-82.76","v":{"lat":28.155731,"lng":-82.759856,"geo_source":"photon","matched":"Dimitri's on the Water, 690, Dodecanese Boulevard, Tarpon Springs, 34689","osm":"W656815748 amenity=restaurant"}}
+{"k":"photon:frenchy's original cafe:27.98,-82.827","v":{"lat":27.971629,"lng":-82.829366,"geo_source":"photon","matched":"Frenchy's South Beach Cafe, The Haitus Clearwater Beach Vallet Parking, Clearwater, 33767","osm":"W523896346 amenity=restaurant"}}
+{"k":"photon:frenchy's south beach cafe:27.97,-82.827","v":{"lat":27.971629,"lng":-82.829366,"geo_source":"photon","matched":"Frenchy's South Beach Cafe, The Haitus Clearwater Beach Vallet Parking, Clearwater, 33767","osm":"W523896346 amenity=restaurant"}}
+{"k":"photon:hampton inn & suites clearwater beach:27.967,-82.827","v":{"lat":27.966789,"lng":-82.826062,"geo_source":"photon","matched":"Hampton Inn & Suites, 635, South Gulfview Boulevard, Clearwater Beach, 33767","osm":"N11879278996 tourism=hotel"}}
+{"k":"photon:the wharf:27.6966,-82.7357","v":{"lat":27.696625,"lng":-82.735286,"geo_source":"photon","matched":"The Wharf, 2001, Pass A Grille Way, Saint Pete Beach, 33706","osm":"W388902684 amenity=restaurant"}}
+{"k":"photon:fairfield inn & suites clearwater beach:27.98,-82.827","v":{"lat":27.988045,"lng":-82.825098,"geo_source":"photon","matched":"Fairfield Inn & Suites Clearwater Beach, 650, Bay Esplanade, Clearwater Beach, 33767","osm":"W765287332 tourism=hotel"}}
+{"k":"photon:florida orange groves winery:27.75,-82.738","v":{"lat":27.752891,"lng":-82.737902,"geo_source":"photon","matched":"Florida Orange Groves Winery, 1500, Pasadena Avenue South, Pasadena, 33706","osm":"W333179387 shop=wine"}}
+{"k":"photon:courtyard clearwater beach:27.98,-82.827","v":{"lat":27.980441,"lng":-82.825422,"geo_source":"photon","matched":"Courtyard Clearwater Beach, 455, East Shore Drive, Clearwater Beach, 33767","osm":"W919027025 tourism=hotel"}}
+{"k":"census:635 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.967193,"lng":-82.826386,"geo_source":"census","matched":"635 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"photon:john's pass parasail:27.785,-82.782","v":{"lat":27.785867,"lng":-82.78227,"geo_source":"photon","matched":"John's Pass Village, Madeira Beach","osm":"W267254771 landuse=retail"}}
+{"k":"census:500 1st ave se, st. petersburg, fl 33701","v":{"lat":27.770079,"lng":-82.631249,"geo_source":"census","matched":"500 1ST AVE SE, ST PETERSBURG, FL, 33701"}}
+{"k":"photon:midflorida credit union amphitheatre:27.99,-82.37","v":{"lat":27.993378,"lng":-82.364817,"geo_source":"photon","matched":"MIDFLORIDA Credit Union Ampitheatre, 4802, U.S. Highway 301 North, Tampa, 33610","osm":"W522995936 amenity=events_venue"}}
+{"k":"photon:hard rock event center:27.99,-82.37","v":{"lat":28.478549,"lng":-81.463988,"geo_source":"photon","matched":"Hard Rock Hotel Parking, Orlando, 32819","osm":"W45759137 highway=service"}}
+{"k":"census:4802 us highway 301 n, tampa, fl 33610","v":null}
+{"k":"photon:paw playground:27.62,-82.72","v":{"lat":27.616493,"lng":-82.728469,"geo_source":"photon","matched":"PAWS Playground, Anderson Boulevard","osm":"W329959791 leisure=dog_park"}}
+{"k":"photon:fort de soto dog park:27.62,-82.72","v":{"lat":27.630054,"lng":-82.735749,"geo_source":"photon","matched":"Fort De Soto County Park, Saint Petersburg","osm":"R20601460 leisure=park"}}
+{"k":"photon:dog park:27.625,-82.72","v":{"lat":27.742476,"lng":-82.706198,"geo_source":"photon","matched":"Large dog park, 28th Avenue South, Gulfport, 33707","osm":"W341360625 leisure=dog_park"}}
+{"k":"census:5734 gall blvd, zephyrhills, fl 33542","v":{"lat":28.240771,"lng":-82.185503,"geo_source":"census","matched":"5734 GALL BLVD, ZEPHYRHILLS, FL, 33542"}}
+{"k":"photon:magnuson hotel zephyrhills:28.24,-82.18","v":{"lat":27.705759,"lng":-82.678391,"geo_source":"photon","matched":"Magnuson Hotel Marina Cove, Skyway Trail, Saint Petersburg, 33715","osm":"W388799133 tourism=hotel"}}
+{"k":"photon:quality beach resort:27.85,-82.82","v":null}
+{"k":"photon:hampton inn madeira beach:27.85,-82.82","v":{"lat":27.81587,"lng":-82.778865,"geo_source":"photon","matched":"Holiday Inn Express & Suites Saint Petersburg - Madeira Beach, 4816, 100th Way North, Saint Petersburg, 33708","osm":"W829765729 tourism=hotel"}}
+{"k":"photon:holiday inn express clearwater beach:27.85,-82.82","v":{"lat":27.961123,"lng":-82.730715,"geo_source":"photon","matched":"Holiday Inn Express & Suites Clearwater/US 19 N, 2580, Gulf to Bay Boulevard, Clearwater, 33759","osm":"W261454206 tourism=hotel"}}
+{"k":"photon:hilton garden inn clearwater beach:27.85,-82.82","v":{"lat":27.732954,"lng":-82.746469,"geo_source":"photon","matched":"Hilton Garden Inn, 6100, Gulf Boulevard, Saint Pete Beach, 33706","osm":"W523258456 tourism=hotel"}}
+{"k":"photon:snug harbor inn:27.85,-82.82","v":null}
+{"k":"photon:roadstar hotel zephyrhills:28.24,-82.18","v":null}
+{"k":"photon:tides beach resort:27.85,-82.82","v":{"lat":27.72032,"lng":-82.740259,"geo_source":"photon","matched":"Plaza Beach Hotel - Beachfront Resort, 4506, Gulf Boulevard, Saint Pete Beach, 33706","osm":"W523253390 tourism=hotel"}}
+{"k":"photon:pass-a-grille beach motel:27.85,-82.82","v":{"lat":27.71368,"lng":-82.739491,"geo_source":"photon","matched":"Pass-a-Grille Beach, Saint Pete Beach","osm":"W193761305 natural=beach"}}
+{"k":"photon:alafia preserve avenue:27.87,-82.33","v":{"lat":27.855873,"lng":-82.341551,"geo_source":"photon","matched":"Alafia Preserve Avenue, Riverview, 33578","osm":"W1466831730 highway=unclassified"}}
+{"k":"photon:sandpiper:27.85,-82.82","v":{"lat":28.02189,"lng":-82.564624,"geo_source":"photon","matched":"Sandpiper, 33615","osm":"N12218705735 place=neighbourhood"}}
+{"k":"photon:woody's watersports:27.785,-82.782","v":{"lat":27.879719,"lng":-82.817162,"geo_source":"photon","matched":"Watersports West, 12900, Walsingham Road, Largo, 33774","osm":"W218125726 shop=sports"}}
+{"k":"photon:clearwater beach boat ramp:27.98,-82.82","v":{"lat":27.984852,"lng":-82.823725,"geo_source":"photon","matched":"Clearwater Beach Public Boat Ramp, Clearwater, 33767","osm":"W889581597 highway=service"}}
+{"k":"census:69 bay esplanade, clearwater, fl 33767","v":{"lat":27.98482,"lng":-82.824866,"geo_source":"census","matched":"69 BAY ESPLANADE, CLEARWATER, FL, 33767"}}
+{"k":"census:601 71st ave, st. pete beach, fl 33706","v":{"lat":27.738872,"lng":-82.751209,"geo_source":"census","matched":"601 71ST AVE, ST PETE BEACH, FL, 33706"}}
+{"k":"photon:the lofts at st pete beach:27.738,-82.75","v":{"lat":27.7375,"lng":-82.750941,"geo_source":"photon","matched":"The Villas At Saint Pete Beach, 6901, Sunset Way, Saint Pete Beach, 33706","osm":"W523258502 tourism=hotel"}}
+{"k":"census:455 east shore dr, clearwater beach, fl 33767","v":{"lat":27.980434,"lng":-82.825656,"geo_source":"census","matched":"455 E SHORE DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"photon:pirate water taxi:27.944,-82.446","v":null}
+{"k":"photon:palm avenue garage:27.963,-82.44","v":{"lat":27.336257,"lng":-82.544074,"geo_source":"photon","matched":"Palm Avenue Parking Garage, North Palm Avenue, Sarasota, 34236","osm":"W141309233 amenity=parking"}}
+{"k":"photon:palm ave parking garage:27.963,-82.44","v":{"lat":27.336257,"lng":-82.544074,"geo_source":"photon","matched":"Palm Avenue Parking Garage, North Palm Avenue, Sarasota, 34236","osm":"W141309233 amenity=parking"}}
+{"k":"photon:sundial parking garage:27.773,-82.635","v":{"lat":27.772508,"lng":-82.634772,"geo_source":"photon","matched":"Sundial Parking Garage, 2nd Street North, Saint Petersburg, 33701","osm":"W31667756 amenity=parking"}}
+{"k":"photon:dolphin parking lot:27.773,-82.628","v":null}
+{"k":"census:4100 george j bean pkwy, tampa, fl 33607","v":{"lat":27.982117,"lng":-82.534639,"geo_source":"census","matched":"4100 GEORGE J BEAN OUTBND PKWY, TAMPA, FL, 33607"}}
+{"k":"photon:st. pete pier:27.773,-82.627","v":{"lat":27.77221,"lng":-82.626309,"geo_source":"photon","matched":"St Pete Pier Transient Dock, 1st Avenue Southeast, Saint Petersburg, 33701","osm":"W1453462898 man_made=pier"}}
+{"k":"census:7911 n 30th st, tampa, fl 33610","v":{"lat":28.019472,"lng":-82.426332,"geo_source":"census","matched":"7911 N 30TH ST, TAMPA, FL, 33610"}}
+{"k":"photon:cuban-club:","v":{"lat":28.014023,"lng":-82.601338,"geo_source":"photon","matched":"Club Civic Cubano, 10905, Memorial Highway, Tampa, 33615","osm":"W1217826500 amenity=community_centre"}}
+{"k":"photon:el-centro-espanol-de-tampa:","v":{"lat":27.960638,"lng":-82.441961,"geo_source":"photon","matched":"El Centro Español de Tampa, 1526-1536, East 7th Avenue, Tampa, 33605","osm":"W333785161 building=yes"}}
+{"k":"photon:centro-asturiano-de-tampa:","v":{"lat":27.962017,"lng":-82.450835,"geo_source":"photon","matched":"Centro Asturiano, 1913, North Nebraska Avenue, Tampa, 33602","osm":"W524376484 amenity=community_centre"}}
+{"k":"photon:italian-club:","v":{"lat":27.960095,"lng":-82.439418,"geo_source":"photon","matched":"The Italian Club, 1731, East 7th Avenue, Tampa, 33605","osm":"W524533379 amenity=events_venue"}}
+{"k":"photon:el-pasaje:","v":null}
+{"k":"photon:parque-amigos-de-jose-marti:","v":null}
+{"k":"photon:la-union-marti-maceo:","v":null}
+{"k":"photon:columbia-restaurant-ybor-city:","v":{"lat":27.960014,"lng":-82.435133,"geo_source":"photon","matched":"Columbia Restaurant, 2117, East 7th Avenue, Tampa, 33602","osm":"W524527246 amenity=restaurant"}}
+{"k":"photon:tampa-theatre:","v":{"lat":27.950381,"lng":-82.458807,"geo_source":"photon","matched":"Tampa Theatre, 711, N Franklin St, Tampa, 33602","osm":"W186133293 amenity=theatre"}}
+{"k":"photon:old-tampa-city-hall:","v":{"lat":27.947659,"lng":-82.457237,"geo_source":"photon","matched":"Tampa City Hall, 306, East Jackson Street, Tampa, 33602","osm":"W146191766 amenity=townhall"}}
+{"k":"photon:sh-kress-building:","v":null}
+{"k":"photon:sacred-heart-catholic-church-tampa:","v":{"lat":27.949332,"lng":-82.457244,"geo_source":"photon","matched":"Sacred Heart Catholic Church, North Florida Avenue, Tampa, 33602","osm":"W105949830 amenity=place_of_worship"}}
+{"k":"photon:st-andrews-episcopal-church-tampa:","v":{"lat":27.949322,"lng":-82.456411,"geo_source":"photon","matched":"Saint Andrew's Episcopal Church, 509, East Twiggs Street, Tampa, 33602","osm":"W909087869 amenity=place_of_worship"}}
+{"k":"photon:tampa-union-station:","v":{"lat":27.953105,"lng":-82.450704,"geo_source":"photon","matched":"Tampa Union Station, Green Spine, Tampa, 33601","osm":"N7393556284 railway=station"}}
+{"k":"photon:jackson-rooming-house:","v":null}
+{"k":"photon:masonic-temple-no-25:","v":null}
+{"k":"photon:cotanchobee-fort-brooke-park:","v":{"lat":27.941734,"lng":-82.450829,"geo_source":"photon","matched":"Cotanchobee Fort Brooke Park, Tampa","osm":"W906567316 leisure=park"}}
+{"k":"photon:perry-harvey-sr-park:","v":null}
+{"k":"photon:oaklawn-cemetery:","v":{"lat":27.954575,"lng":-82.45727,"geo_source":"photon","matched":"Oaklawn Cemetery, Tampa","osm":"W144841267 landuse=cemetery"}}
+{"k":"photon:st-paul-ame-church-tampa:","v":{"lat":27.953804,"lng":-82.458417,"geo_source":"photon","matched":"Saint Paul A.M.E. Church, North Marion Street, Tampa, 33602","osm":"W106091071 amenity=place_of_worship"}}
+{"k":"photon:st-peter-claver-catholic-school:","v":{"lat":27.956866,"lng":-82.452728,"geo_source":"photon","matched":"Saint Peter Claver Catholic School, Scott Street, Tampa, 33605","osm":"W28095432 amenity=school"}}
+{"k":"photon:robert-w-saunders-sr-public-library:","v":{"lat":27.958399,"lng":-82.450771,"geo_source":"photon","matched":"Robert W Saunders Public Library, 1505, North Nebraska Avenue, Tampa, 33602","osm":"W1125703138 amenity=library"}}
+{"k":"photon:old-tampa-free-public-library:","v":null}
+{"k":"photon:woodlawn-cemetery-tampa:","v":{"lat":27.97519,"lng":-82.465131,"geo_source":"photon","matched":"Woodlawn Cemetery, Tampa","osm":"W99417392 landuse=cemetery"}}
+{"k":"photon:st-james-house-of-prayer-episcopal-church:","v":{"lat":27.967201,"lng":-82.455597,"geo_source":"photon","matched":"Saint James House of Prayer, N Central Ave, Tampa, 33602","osm":"N358757711 amenity=place_of_worship"}}
+{"k":"photon:old-hillsborough-county-high-school:","v":{"lat":27.793361,"lng":-82.365648,"geo_source":"photon","matched":"Eisenhower Junior High School, Old Big Bend Road, 33534","osm":"N358712936 amenity=school"}}
+{"k":"photon:ulele:","v":{"lat":27.982267,"lng":-82.531961,"geo_source":"photon","matched":"Ulele, 4100, George J. Bean Parkway, Tampa, 33607","osm":"N6375071259 amenity=restaurant"}}
+{"k":"photon:sulphur-springs-water-tower:","v":{"lat":28.021409,"lng":-82.458891,"geo_source":"photon","matched":"Sulphur Springs Water Tower, North Florida Avenue, Tampa, 33604","osm":"W523912393 man_made=water_tower"}}
+{"k":"photon:babe-zaharias-golf-course:","v":{"lat":28.051224,"lng":-82.473882,"geo_source":"photon","matched":"Babe Zaharias Golf Course, North Forest Hills Drive, Tampa, 33612","osm":"R4680174 leisure=golf_course"}}
+{"k":"photon:rogers-park-golf-course:","v":null}
+{"k":"photon:el-centro-espanol-de-west-tampa:","v":{"lat":27.960638,"lng":-82.441961,"geo_source":"photon","matched":"El Centro Español de Tampa, 1526-1536, East 7th Avenue, Tampa, 33605","osm":"W333785161 building=yes"}}
+{"k":"photon:west-tampa-branch-library:","v":{"lat":27.95773,"lng":-82.483286,"geo_source":"photon","matched":"West Tampa Branch Library, 2312, West Union Street, Tampa, 33607","osm":"W524346214 amenity=library"}}
+{"k":"photon:fort-homer-hesterly-armory:","v":null}
+{"k":"photon:sicilian-club-west-tampa:","v":{"lat":27.886969,"lng":-82.485341,"geo_source":"photon","matched":"West Country Club Avenue, Tampa, 33611","osm":"W10998872 highway=residential"}}
+{"k":"photon:berriman-morgan-cigar-factory:","v":null}
+{"k":"photon:bustillo-brothers-diaz-cigar-factory:","v":null}
+{"k":"photon:balbin-brothers-cigar-factory:","v":null}
+{"k":"photon:macfarlane-park:","v":{"lat":27.965561,"lng":-82.493541,"geo_source":"photon","matched":"Macfarlane Park, Tampa, 33607","osm":"N3133717657 place=neighbourhood"}}
+{"k":"photon:marti-colon-cemetery:","v":null}
+{"k":"photon:peter-o-knight-cottage:","v":{"lat":27.915306,"lng":-82.449172,"geo_source":"photon","matched":"Peter O. Knight Airport, Superior Avenue, Tampa, 33606","osm":"W624226557 aeroway=aerodrome"}}
+{"k":"photon:plant-park:","v":{"lat":27.946689,"lng":-82.462656,"geo_source":"photon","matched":"Plant Park, Tampa","osm":"W32534602 leisure=park"}}
+{"k":"photon:old-school-house-tampa:","v":{"lat":27.985404,"lng":-82.27851,"geo_source":"photon","matched":"Seffner Old School House, Euclid Avenue, Seffner, 33584","osm":"W793281720 historic=building"}}
+{"k":"photon:stovall-house:","v":null}
+{"k":"photon:palma-ceia-spring:","v":{"lat":27.92184,"lng":-82.488285,"geo_source":"photon","matched":"Palma Ceia Spring, Rubideaux Street, Tampa, 33629","osm":"N3153753376 natural=spring"}}
+{"k":"photon:palace-of-florence-apartments:","v":null}
+{"k":"photon:palmerin-hotel:","v":null}
+{"k":"photon:roy-jenkins-pool:","v":{"lat":27.929284,"lng":-82.454719,"geo_source":"photon","matched":"Roy Jenkins Pool, 154, Columbia Drive, Tampa, 33606","osm":"W1053697726 leisure=sports_centre"}}
+{"k":"photon:cuscaden-park-pool:","v":{"lat":27.969257,"lng":-82.443573,"geo_source":"photon","matched":"Cuscaden Park, Tampa","osm":"W26610766 leisure=park"}}
+{"k":"photon:our-lady-of-perpetual-help-church-ybor:","v":{"lat":27.962827,"lng":-82.440165,"geo_source":"photon","matched":"Our Lady of Perpetual Help Church, North 17th Street, Tampa, 33605","osm":"N287065239 amenity=place_of_worship"}}
+{"k":"photon:antifascist-womens-march-marker:","v":null}
+{"k":"photon:memorial-park-cemetery-tampa:","v":{"lat":27.980492,"lng":-82.432698,"geo_source":"photon","matched":"Memorial Park Cemetery, Tampa","osm":"W83471264 landuse=cemetery"}}
+{"k":"photon:tom-henderson-memorial-chapel:","v":null}
+{"k":"photon:first-federal-savings-and-loan-tampa:","v":null}
+{"k":"photon:home-association-old-peoples-home:","v":null}
+{"k":"photon:dr-jacob-white-sr-house:","v":null}
+{"k":"photon:tierra-del-lago-cigar-factory:","v":null}
+{"k":"census:2704 n highland ave, tampa, fl 33602","v":{"lat":27.967712,"lng":-82.462417,"geo_source":"census","matched":"2704 N HIGHLAND AVE, TAMPA, FL, 33602"}}
+{"k":"photon:macfarlane park:27.958,-82.497","v":{"lat":27.965561,"lng":-82.493541,"geo_source":"photon","matched":"Macfarlane Park, Tampa, 33607","osm":"N3133717657 place=neighbourhood"}}
+{"k":"photon:cotanchobee fort brooke park:27.943,-82.449","v":{"lat":27.941734,"lng":-82.450829,"geo_source":"photon","matched":"Cotanchobee Fort Brooke Park, Tampa","osm":"W906567316 leisure=park"}}
+{"k":"photon:tampa bay history center:27.943,-82.449","v":{"lat":27.942253,"lng":-82.449906,"geo_source":"photon","matched":"Tampa Bay History Center, 801, Water Street, Tampa, 33602","osm":"W52035847 tourism=museum"}}
+{"k":"photon:cuban club:27.962,-82.444","v":{"lat":28.014023,"lng":-82.601338,"geo_source":"photon","matched":"Club Civic Cubano, 10905, Memorial Highway, Tampa, 33615","osm":"W1217826500 amenity=community_centre"}}
+{"k":"photon:hillsborough river:28.15,-82.22","v":{"lat":28.095522,"lng":-82.309239,"geo_source":"photon","matched":"Hillsborough River","osm":"R2193512 waterway=river"}}
+{"k":"census:2111 w cleveland st, tampa, fl","v":{"lat":27.943378,"lng":-82.481075,"geo_source":"census","matched":"2111 W CLEVELAND ST, TAMPA, FL, 33606"}}
+{"k":"photon:jimi hendrix:27.9505,-82.4625","v":null}
+{"k":"photon:curtis hixon waterfront park:27.9505,-82.4625","v":{"lat":27.949047,"lng":-82.461887,"geo_source":"photon","matched":"Curtis Hixon Waterfront Park, 600, North Ashley Drive, Tampa, 33602","osm":"W905636016 leisure=park"}}
+{"k":"photon:sulphur springs park:28.021,-82.453","v":{"lat":28.02094,"lng":-82.452674,"geo_source":"photon","matched":"Sulphur Springs Park, 701, East Bird Street, Tampa, 33604","osm":"W1146818354 leisure=park"}}
+{"k":"photon:columbus drive bridge:27.9667,-82.47","v":null}
+{"k":"census:700 n ashley dr, tampa, fl 33602","v":{"lat":27.949232,"lng":-82.460699,"geo_source":"census","matched":"700 N ASHLEY DR, TAMPA, FL, 33602"}}
+{"k":"census:699 n ashley dr, tampa, fl 33602","v":{"lat":27.949281,"lng":-82.460581,"geo_source":"census","matched":"699 N ASHLEY DR, TAMPA, FL, 33602"}}

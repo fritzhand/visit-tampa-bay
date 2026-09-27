@@ -1,0 +1,108 @@
+/* ======================================================================
+   site/css/41-trip.css · OWNER: the What's On lane (the trip page)
+   trip.html (build/pages/trip.mjs): the privacy line in the page head, "Times that overlap" ([data-trip-clash],
+   site/js/features/whats-on.js), the core's My Trip view (site/js/views/trip.js: .trip-summary .trip-actions
+   .trip-gone .trip-group .trip-list .trip-item .is-removed .trip-shared), how it works, where to find things, and
+   the printed list (the Day chart on paper: the list alone, no buttons). Tokens only; no color literal.
+   ====================================================================== */
+.trip-privacy { display: flex; justify-content: center; align-items: baseline; gap: 8px; max-width: 58ch; margin: var(--sp-3) auto 0; font-size: var(--fs-sm); color: var(--text-muted); }
+.trip-privacy .i { flex: none; width: 15px; height: 15px; align-self: center; color: var(--accent-strong); }
+.no-js .trip-root, .no-js .trip-print { display: none; }
+
+/* ---------- the view: summary, actions, groups ---------- */
+.trip-root { min-height: 120px; }
+.trip-summary {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding: 10px 0 12px; font-size: var(--fs-md);
+  font-family: var(--font-display); font-weight: var(--wght-head); line-height: var(--lh-snug);
+  background: linear-gradient(var(--rule-ink) 0 0) 0 100% / 100% 1px no-repeat;
+}
+.trip-actions { margin: var(--sp-4) 0 var(--sp-2); }
+.trip-actions .btn[disabled] { display: none; }
+.trip-gone { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2) var(--sp-3); max-width: none; }
+.trip-group { margin-top: var(--sp-6); }
+.trip-group > .sub-h { display: flex; align-items: center; gap: 10px; margin-top: 0; font-size: var(--fs-label); border-bottom: 0; }
+.trip-group > .sub-h .count {
+  display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; background: var(--primary); color: var(--primary-contrast);
+  font-family: var(--font-label); font-size: var(--fs-label); letter-spacing: 0;
+}
+.trip-list .trip-item { padding: 4px 0; }
+.trip-item > a { gap: 14px; }
+.trip-item > a > .bullet, .trip-item > a > .i { flex: none; align-self: flex-start; margin-top: 4px; }
+.trip-item > a > .i { width: 22px; height: 22px; color: var(--text-muted); }
+.trip-item .t { font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); line-height: var(--lh-snug); }
+.trip-item .w { margin-top: 3px; font-size: var(--fs-xs); line-height: 1.5; font-variant-numeric: tabular-nums; }
+.trip-item .w .badge, .trip-item .w .ev-status { margin-left: 6px; vertical-align: 1px; }
+.trip-item[data-status="past"] .t { color: var(--text-muted); }
+.trip-item[data-cancelled] .t { text-decoration: line-through; color: var(--text-muted); }
+/* unstarred this visit: kept, dimmed and said, so a slip can be undone with the star */
+.trip-item.is-removed { background: var(--surface-sunken); }
+.trip-item.is-removed .t { color: var(--text-muted); }
+.trip-item.is-removed .w::after {
+  content: "Removed · tap the star to keep it"; display: inline-block; margin-left: 8px; color: var(--text-muted);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase;
+}
+.trip-shared { max-width: none; }
+.trip-shared h2 { font-size: var(--fs-lg); margin-bottom: var(--sp-2); }
+.trip-shared .btn-row { margin-top: var(--sp-3); }
+.trip-root .empty-state { max-width: none; margin-top: var(--sp-2); }
+.trip-root .empty-state .btn-row { margin-top: var(--sp-3); }
+.trip-print { margin-top: var(--sp-5); }
+
+/* ---------- times that overlap: a "check before you go" note ---------- */
+.trip-clash {
+  position: relative; margin: 0 0 var(--sp-6); padding: 16px 18px 12px; max-width: none;
+  background: var(--warning-tint); border: 1px solid var(--warning-edge); border-left: var(--rule-heavy) solid var(--warning);
+}
+.trip-clash[hidden] { display: none; }
+.trip-clash h2 { font-size: var(--fs-lg); line-height: var(--lh-snug); }
+.trip-clash > .muted { margin-top: 4px; font-size: var(--fs-sm); }
+.trip-clash-list { list-style: none; padding: 0; margin-top: var(--sp-3); display: grid; gap: var(--sp-3); }
+.trip-clash-list > li { padding: 10px 12px 12px; background: var(--surface); border: 1px solid var(--border); }
+.trip-clash-evs, .trip-clash-pairs { list-style: none; padding: 0; }
+.trip-clash-evs { margin-top: 6px; }
+.trip-clash-evs li { padding: 5px 0; border-top: 1px solid var(--border); }
+.trip-clash-evs a { font-weight: var(--wght-strong); }
+.trip-clash-evs .tnum { font-variant-numeric: tabular-nums; margin-left: 4px; }
+.trip-clash-evs .w { color: var(--text-muted); }
+.trip-clash-pairs { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--border-strong); font-size: var(--fs-xs); color: var(--text-muted); }
+.trip-clash-pairs li + li { margin-top: 4px; }
+.trip-clash-pairs .tnum { color: var(--text); font-weight: var(--wght-strong); font-variant-numeric: tabular-nums; }
+.trip-clash-note { margin-top: var(--sp-3); font-size: var(--fs-xs); }
+.trip-clash-day { color: var(--warning); }
+.trip-print[hidden] { display: none; }
+
+/* ---------- how it works, where to find things ---------- */
+.trip-how-list { list-style: none; padding: 0; display: grid; gap: var(--sp-4) var(--sp-5); grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); }
+.trip-how-list li { display: grid; grid-template-columns: 46px minmax(0, 1fr); column-gap: 14px; align-items: start; }
+.trip-how-i {
+  grid-row: span 2; display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--surface); color: var(--text);
+  box-shadow: 0 0 0 1.5px var(--rule-ink), 0 0 0 4px var(--surface), 0 0 0 5px color-mix(in srgb, var(--rule-ink) 45%, transparent);
+}
+.trip-how-i .i { width: 22px; height: 22px; }
+.trip-how-list h3 { font-size: var(--fs-md); }
+.trip-how-list p { margin-top: 4px; font-size: var(--fs-sm); color: var(--text-muted); }
+.trip-find-list { list-style: none; padding: 2px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); column-gap: var(--sp-5); background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; }
+.trip-find-list a { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 0; border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; }
+.trip-find-list a > .i { flex: none; width: 22px; height: 22px; color: var(--text-muted); }
+.trip-find-list a > .go { margin-left: auto; width: 18px; height: 18px; color: var(--link); }
+.trip-find-list .t { display: block; font-weight: var(--wght-strong); }
+.trip-find-list .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+.trip-find-list a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+
+@media (max-width: 559px) {
+  .trip-privacy { text-align: left; }
+  .trip-actions .btn { flex: 1 1 100%; }
+  .trip-item.is-removed .w::after { display: block; margin: 4px 0 0; }
+}
+
+/* ---------- the printed list: the list and its words, nothing to press ---------- */
+@media print {
+  .trip-page .page-head { margin: 0 0 12pt; padding: 12pt; }
+  .trip-page .page-head::before { display: none; }
+  .trip-actions, .trip-print, .trip-how, .trip-find, .trip-shared .btn-row, .trip-gone, .trip-privacy .i { display: none !important; }
+  .trip-item { padding: 4pt 0; }
+  .trip-item > a { min-height: 0; }
+  .trip-item.is-removed { display: none; }
+  .trip-clash { background: none; border: 1pt solid var(--text); }
+  .trip-group { margin-top: 12pt; break-inside: avoid-page; }
+}
