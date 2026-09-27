@@ -81,6 +81,8 @@ test("placeSym: every kind has a chart symbol the sprite knows", async () => {
   const { ICONS } = await import(path.join(REPO, "build", "core", "icons.mjs"));
   for (const k of PLACE_KINDS) assert.ok(ICONS[placeSym({ kind: k, tags: [] })], `${k} → ${placeSym({ kind: k })}`);
   assert.equal(placeSym({ kind: "landmark", tags: ["lighthouse"] }), "lighthouse");
+  assert.equal(placeSym({ kind: "restaurant", tags: [] }), "fork-knife", "eat kinds carry the fork and knife");
+  assert.equal(placeSym({ kind: "brewery", tags: [] }), "glass", "drink kinds carry the glass");
 });
 
 /* ---------- the pages, built from the fixture ---------- */
@@ -124,6 +126,14 @@ test("things-to-do.html: every place whose home it is, once, grouped by family, 
     assert.match(html, /Checked Sep 27, 2026/);
     assert.match(html, /<span class="unk">Hours not listed<\/span>/);
     assert.match(html, /<span class="unk">Price not listed<\/span>/);
+    // hours and price on rows of their own, each labeled for screen readers
+    assert.equal((html.match(/<p class="card-meta card-meta-rows">/g) || []).length, want.length);
+    assert.equal((html.match(/<span class="sr-only">Hours: <\/span>/g) || []).length, want.length);
+    assert.equal((html.match(/<span class="sr-only">Price: <\/span>/g) || []).length, want.length);
+    // each Start here strip says how many it holds
+    for (const m of start.matchAll(/<div class="xp-start-row" data-sheet="([a-z]+)">[\s\S]*?<span class="xp-start-n">(\d+) signature places?<\/span>[\s\S]*?<ul class="xp-start-list">([\s\S]*?)<\/ul>/g)) {
+      assert.equal(Number(m[2]), (m[3].match(/<li>/g) || []).length, `Start here ${m[1]}: the count matches the strip`);
+    }
     assert.doesNotMatch(html.replace(/data-q="[^"]*"/g, ""), PLACEHOLDERS);
     assert.match(html, /<body[^>]*data-features="[^"]*\bexplore\b/);
   } finally { cleanup(dir); }
@@ -146,8 +156,12 @@ test("outdoors.html: beaches north to south, then the bay, each place once, camp
     assert.match(gulf, /<span>Dog beach<\/span>/, "tags as words");
     assert.match(gulf, /<span>Lifeguards<\/span><span>No alcohol<\/span>/);
     assert.match(gulf, /class="card place no-plate"/, "beach cards carry no plate without a cleared photo");
-    // campgrounds are stays and link to their stay pages
-    assert.match(sectionOf(html, "f-camp"), /href="stays\/xp-camp\.html"/);
+    // campgrounds are stays and link to their stay pages; like every card here they name their source
+    const camp = sectionOf(html, "f-camp");
+    assert.match(camp, /href="stays\/xp-camp\.html"/);
+    assert.match(camp, /<p class="card-src">Source: <a href="https:\/\/example\.org\/beach"[^>]*>example\.org<span class="sr-only"> \(opens in a new tab\)<\/span><\/a> · Checked Sep 27, 2026<\/p><\/div><button class="star"/);
+    // the search box never suggests a search that also finds its opposite ("dog beach" finds "No dogs")
+    assert.doesNotMatch(html, /placeholder="[^"]*dog/i);
     // before you swim: the FAQ's own answers, linked to faq.html#fq-<id>
     assert.match(html, /id="safety"/);
     for (const f of EXTRA_FAQS) assert.match(html, new RegExp(`href="faq\\.html#fq-${f.id}"`));
@@ -181,7 +195,26 @@ test("places/<id>.html: every place, its parent page, facts with unknowns as unk
       if (p.status !== "open") assert.match(html, /Check before you go/);
       assert.doesNotMatch(html.replace(/<script[\s\S]*?<\/script>/g, ""), PLACEHOLDERS, p.id);
     }
-    // events here: rows with the live-state attributes, next first, opening the event dialog
+    // the ribbon kicker keeps each separator on the line before it
+    assert.match(read(docs, "places/florida-aquarium.html"), /Sheet 1\u00a0· Tampa\u00a0· Aquarium/);
+    // Keep exploring: every link is a filtered list whose count is what that list holds (the lib/facets.js rules)
+    const pageCards = (file) => [...read(docs, file).matchAll(/<article class="card[^"]*"([^>]*)>/g)].map((m) => Object.fromEntries([...m[1].matchAll(/data-([a-z]+)="([^"]*)"/g)].map((a) => [a[1], a[2].split(" ")])));
+    const lists = { "things-to-do.html": pageCards("things-to-do.html"), "outdoors.html": pageCards("outdoors.html"), "eat-drink.html": pageCards("eat-drink.html") };
+    const KEYS = { k: ["k", "ks", "kg", "g"], a: ["a"], r: ["r", "sheet"] };
+    let moreN = 0;
+    for (const p of places) {
+      const html = read(docs, `places/${p.id}.html`);
+      const sec = sectionOf(html, "more");
+      for (const m of sec.matchAll(/<a href="\.\.\/([a-z-]+\.html)\?([a-z]+)=([a-z0-9,-]+)">[\s\S]*?<b class="tnum">(\d+)<\/b> ([^<]+)</g)) {
+        const [, file, key, val, n, text] = m;
+        if (!lists[file]) { assert.equal(file, "whats-on.html", `${p.id}: ${file}`); assert.equal(key, "a"); assert.match(text, /listed in .* this season/); continue; }
+        const got = lists[file].filter((c) => KEYS[key].some((k) => (c[k] || []).includes(val))).length;
+        assert.equal(Number(n), got, `${p.id}: "${n} ${text}" → ${file}?${key}=${val} holds ${got}`);
+        moreN++;
+      }
+      assert.doesNotMatch(sec, /\b1 (places|things|events)\b/, `${p.id}: singular after 1`);
+    }
+    assert.ok(moreN > 0, "some place pages link onward");
     const curtis = read(docs, "places/curtis-hixon-waterfront-park.html");
     assert.match(curtis, /id="whats-on-here"/);
     assert.match(curtis, /<li class="pl-ev" data-sheet="tampa" data-s="\d+" data-e="\d+"[^>]*>[\s\S]*?data-open-event="riverwalk-concert-2026-10-02"/);
@@ -222,6 +255,10 @@ test("with a basemap: the Map view, the Gulf beaches' chart with matching number
     const aq = read(docs, "places/florida-aquarium.html");
     assert.match(aq, /<div class="mini-map" role="img" aria-label="Map: The Florida Aquarium">/);
     assert.match(aq, /href="\.\.\/map\.html\?focus=place:florida-aquarium"/);
+    // a place without coordinates points at its area on the chart instead
+    const trail = read(docs, "places/xp-mystery-trail.html");
+    assert.match(trail, /Not on the map: no coordinates listed/);
+    assert.match(trail, /href="\.\.\/map\.html\?focus=area:south-tampa"/);
   } finally { cleanup(dir); }
 });
 

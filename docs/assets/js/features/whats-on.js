@@ -25,7 +25,7 @@
    ============================================================ */
 import { inDays } from "../lib/facets.js";
 import { liveState } from "../lib/status.js";
-import { whenRange, nyParts, fmtDay, fmtTime, fmtRange, fmtDate, fmtDateRange, fmtThrough } from "../lib/time.js";
+import { whenRange, nyParts, fmtDay, fmtTime, fmtRange, fmtDate, fmtDateRange, fmtThrough, fmtMonth } from "../lib/time.js";
 import { project, onMap, cluster, haversine } from "../lib/geo.js";
 import { esc } from "../lib/text.js";
 
@@ -37,6 +37,42 @@ const plural = (n, one, many = `${one}s`) => `${n} ${n === 1 ? one : many}`;
 const set = (v) => v != null && v !== "" && v !== false && !(Array.isArray(v) && !v.length);
 const DEAD = new Set(["cancelled", "postponed"]);
 const hm = (t) => nyParts(t).hhmm;
+
+/* ---------- pure helpers (exported for tests/whats-on.test.mjs) ---------- */
+
+/** The page's date tests for core/filter.js: an item matches a date key on its OWN listing day (data-day: a card's
+ *  first day, a row's day); a long run (data-run) on any day it covers. now: a function returning epoch ms. */
+export function dateTests(now) {
+  return {
+    day: (it, v) => { const ds = [].concat(v); return it.run ? ds.some((d) => inDays(it, d, d)) : ds.includes(it.ds.day); },
+    when: (it, v) => { const r = whenRange(v, now()); if (!r) return true; return it.run ? inDays(it, r[0], r[1]) : it.ds.day >= r[0] && it.ds.day <= r[1]; },
+    month: (it, v) => { const ms = [].concat(v); if (it.run) { const have = String(it.ds.month || "").split(/\s+/); return ms.some((m) => have.includes(m)); } return ms.includes(String(it.ds.day || "").slice(0, 7)); },
+  };
+}
+
+/** Starred events (events.json records) whose listed times overlap, as pairs [a, b] of { ev, day, s, e|null }
+ *  (a starts first). Only published times count: untimed, all-day and long-run instances are skipped, as are
+ *  cancelled and postponed events and instances already over at `now`. With no end time listed an instance has no
+ *  known span: it overlaps what is under way when it starts, or what starts with it, never what starts after it. */
+export function overlaps(events, now) {
+  const slots = [];
+  for (const ev of events) {
+    if (!ev || DEAD.has(ev.st)) continue;
+    for (const [day, s, e, f] of ev.i || []) {
+      if (f & (2 | 4 | 32)) continue;
+      if ((f & 1 ? s : e) <= now) continue;
+      slots.push({ ev, day, s, e: f & 1 ? null : e });
+    }
+  }
+  slots.sort((a, b) => a.s - b.s || (a.ev.id < b.ev.id ? -1 : 1));
+  const out = [];
+  for (let i = 0; i < slots.length; i++) for (let j = i + 1; j < slots.length; j++) {
+    const a = slots[i], b = slots[j];
+    if (!(b.s === a.s || (a.e != null && b.s < a.e))) break;   // nothing later can overlap a
+    if (a.ev !== b.ev) out.push([a, b]);
+  }
+  return out;
+}
 
 export function init(app) {
   if (app.page === "trip") return initTrip(app);
@@ -89,12 +125,7 @@ function initWhatsOn(app, list) {
   let state = {}, showPast = false, lastKey = "";
 
   /* ---------- the date keys match an item's own listing day ---------- */
-  const tests = {
-    day: (it, v) => { const ds = [].concat(v); return it.run ? ds.some((d) => inDays(it, d, d)) : ds.includes(it.ds.day); },
-    when: (it, v) => { const r = whenRange(v, app.now()); if (!r) return true; return it.run ? inDays(it, r[0], r[1]) : it.ds.day >= r[0] && it.ds.day <= r[1]; },
-    month: (it, v) => { const ms = [].concat(v); if (it.run) { const have = String(it.ds.month || "").split(/\s+/); return ms.some((m) => have.includes(m)); } return ms.includes(String(it.ds.day || "").slice(0, 7)); },
-    star: (it) => app.trip.has(it.ds.ev),
-  };
+  const tests = { ...dateTests(() => app.now()), star: (it) => app.trip.has(it.ds.ev) };
 
   /* ---------- the past (only while the clock is inside the window) ---------- */
   const inWindow = () => { const d = app.today(); return !!win.start && d >= win.start && d <= win.end; };
@@ -184,7 +215,9 @@ function initWhatsOn(app, list) {
       if (el) el.textContent = `${plural(c.live, "event")} on ${plural(nd, "day")}`;
       m.classList.toggle("is-past", hide && !days.length && !m.hidden);
       const b = bar && $(`[data-wo-bn="${m.dataset.m}"]`, bar);
-      if (b) { b.textContent = String(c.live); const a = b.closest("a"); const none = !c.live || m.hidden || (hide && !days.length); a.classList.toggle("is-none", none); if (none) a.setAttribute("aria-disabled", "true"); else a.removeAttribute("aria-disabled"); }
+      // a month that is wholly over leaves the bar while the past is folded ("Show earlier" brings it back)
+      const gone = hide && $$(".wo-day", m).every((d) => d.dataset.status === "past");
+      if (b) { b.textContent = String(c.live); const a = b.closest("a"); a.hidden = gone; a.setAttribute("aria-label", `${fmtMonth(m.dataset.m)}: ${plural(c.live, "event")}`); const none = !c.live || m.hidden || (hide && !days.length); a.classList.toggle("is-none", none); if (none) a.setAttribute("aria-disabled", "true"); else a.removeAttribute("aria-disabled"); }
     }
     if (bar && runBox) {
       const b = $('[data-wo-bn="runs"]', bar);
@@ -193,7 +226,15 @@ function initWhatsOn(app, list) {
     }
     todayLink();
     const empty = $("[data-filter-empty]", scope);
-    if (empty) empty.hidden = u.ids.size > 0;
+    if (empty) {
+      empty.hidden = u.ids.size > 0;
+      // "In My Trip" alone, with nothing starred here yet, says how to star rather than "no match"
+      const onlyStar = set(state.star) && Object.entries(state).every(([k, v]) => k === "star" || k === "view" || !set(v));
+      const h = $(".empty-state h2, .empty-state h3", empty), p = $(".empty-state p", empty);
+      if (h && !empty.dataset.t) { empty.dataset.t = h.textContent; empty.dataset.b = p ? p.textContent : ""; }
+      if (h) h.textContent = onlyStar ? "No event from this list is in My Trip yet" : empty.dataset.t;
+      if (p) p.textContent = onlyStar ? "Tap the star on an event card to add it. Your stars stay in this browser." : empty.dataset.b;
+    }
     const key = JSON.stringify(state) + hide;
     if (map && key !== lastKey && mapPane && !mapPane.hidden) map.update(u.ids, true);
     lastKey = key;
@@ -335,9 +376,24 @@ function makeMap(app, pane, data, extra) {
     const s = cw / vb.w;
     const px = (x) => (x - vb.x) * s, py = (y) => (y - vb.y) * s;
     const zoom = meta.W / vb.w;
-    labelsEl.innerHTML = labels.filter((l) => (l.minZoom || 1) <= zoom * 1.4).map((l) => { const [x, y] = project(l.lat, l.lng, meta); const X = px(x), Y = py(y); return X > 30 && X < cw - 30 && Y > 12 && Y < ch - 12 ? `<span class="map-label ${esc(l.kind)}" style="left: ${X.toFixed(0)}px; top: ${Y.toFixed(0)}px">${esc(l.text)}</span>` : ""; }).join("");
     const inView = pts.filter((g) => px(g.x) >= -20 && px(g.x) <= cw + 20 && py(g.y) >= -20 && py(g.y) <= ch + 20);
     const cl = cluster(inView.sort((a, b) => b.evs.length - a.evs.length).map((g) => ({ x: px(g.x), y: py(g.y), g })), 40);
+    // a name is drawn only where no buoy or cluster covers it (an approximate box: spaced caps about 11 px a letter, water names about 9), and
+    // never over another name, so "TAMPA" is not half hidden under a medallion
+    const boxes = cl.map((c) => [c.x - 24, c.y - 40, c.x + 24, c.y + 24]);
+    const hit = (b) => boxes.some((p) => b[0] < p[2] && b[2] > p[0] && b[1] < p[3] && b[3] > p[1]);
+    labelsEl.innerHTML = labels.filter((l) => (l.minZoom || 1) <= zoom * 1.4).map((l) => {
+      const [x, y] = project(l.lat, l.lng, meta); const X = px(x), Y = py(y);
+      if (!(X > 30 && X < cw - 30 && Y > 12 && Y < ch - 12)) return "";
+      // a name under a buoy moves just below or above it (never far sideways: a name marks where it is); else it is left out
+      const half = (String(l.text).length * (l.kind === "water" ? 4.3 : 5.6)) + 4;
+      const at = [[0, 0], [0, 34], [0, -50], [0, 58], [30, 34], [-30, 34], [0, -72]]
+        .find(([dx, dy]) => !hit([X + dx - half, Y + dy - 9, X + dx + half, Y + dy + 9]) && Y + dy > 12 && Y + dy < ch - 12 && X + dx - half > 4 && X + dx + half < cw - 4);
+      if (!at) return "";
+      const [x1, y1] = [X + at[0], Y + at[1]];
+      boxes.push([x1 - half, y1 - 9, x1 + half, y1 + 9]);
+      return `<span class="map-label ${esc(l.kind)}" style="left: ${x1.toFixed(0)}px; top: ${y1.toFixed(0)}px">${esc(l.text)}</span>`;
+    }).join("");
     pinsEl.innerHTML = cl.map((c, i) => {
       const gs = c.members.map((m) => m.g), n = gs.reduce((a, g) => a + g.evs.length, 0);
       const pos = `left: ${c.x.toFixed(1)}px; top: ${c.y.toFixed(1)}px`;
@@ -413,6 +469,8 @@ function makeMap(app, pane, data, extra) {
 async function initTrip(app) {
   const box = $("[data-trip-clash]");
   $$("[data-trip-print]").forEach((b) => b.addEventListener("click", () => window.print()));
+  // the printed list shows every distance (a closed <details> would print shut)
+  window.addEventListener("beforeprint", () => $$(".trip-clash-more").forEach((d) => { d.open = true; }));
   if (!box) return;
   let data;
   try { data = await app.data("events.json"); } catch { return; }
@@ -422,27 +480,7 @@ async function initTrip(app) {
   const placeOf = (ev) => (ev.pl && places[ev.pl] ? places[ev.pl].n : ev.lt || "");
   const mi = (m) => (m < 400 ? `${Math.round(m / 10) * 10} m` : `${(m / 1609.344).toFixed(1)} mi`);
 
-  function clashes() {
-    const t = app.now(), slots = [];
-    for (const id of app.trip.list().e) {
-      const ev = byId.get(id);
-      if (!ev || DEAD.has(ev.st)) continue;
-      for (const [day, s, e, f] of ev.i || []) {
-        if (f & (2 | 4 | 32)) continue;                 // no listed time, all day, a long run: nothing to compare
-        if ((f & 1 ? s : e) <= t) continue;              // over
-        slots.push({ ev, day, s, e: f & 1 ? null : e });
-      }
-    }
-    slots.sort((a, b) => a.s - b.s);
-    const out = [];
-    for (let i = 0; i < slots.length; i++) for (let j = i + 1; j < slots.length; j++) {
-      const a = slots[i], b = slots[j];
-      // b starts while a is on (a's end is listed), or both start together; nothing later can overlap a
-      if (!(b.s === a.s || (a.e != null && b.s < a.e))) break;
-      if (a.ev !== b.ev) out.push([a, b]);
-    }
-    return out;
-  }
+  const clashes = () => overlaps(app.trip.list().e.map((id) => byId.get(id)).filter(Boolean), app.now());
   const whenOf = (x) => (x.e ? fmtRange(hm(x.s), hm(x.e)) : `${fmtTime(hm(x.s))}, end time not listed`);
   const link = (ev) => `<a href="${app.root}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${esc(ev.t)}</a>`;
   const prints = $$("[data-trip-print]");
@@ -460,12 +498,18 @@ async function initTrip(app) {
       const la = llOf(a.ev), lb = llOf(b.ev);
       return la && lb ? `${mi(haversine({ lat: la[0], lng: la[1] }, { lat: lb[0], lng: lb[1] }))} apart` : "distance not known: a place has no coordinates";
     };
+    // two or three pairs are listed; more (five festivals on one Saturday make ten) fold behind "How far apart" so the
+    // times stay the first thing read
+    const pairsHtml = (pairs) => {
+      const ul = `<ul class="trip-clash-pairs">${pairs.map(([a, b]) => `<li>${esc(a.ev.t)} <span class="faint">and</span> ${esc(b.ev.t)}: <span class="tnum">${esc(apart(a, b))}</span></li>`).join("")}</ul>`;
+      return pairs.length <= 3 ? ul : `<details class="trip-clash-more"><summary>How far apart: ${esc(plural(pairs.length, "pair"))}</summary>${ul}</details>`;
+    };
     const n = new Set(cs.flatMap(([a, b]) => [a.ev.id, b.ev.id])).size;
     box.innerHTML = `<h2 id="trip-clash-h">Times that overlap</h2>
 <p class="muted">${esc(`${plural(n, "starred event")} ${n === 1 ? "has" : "have"} listed times that overlap. Check the organizers' pages before you choose.`)}</p>
 <ul class="trip-clash-list">${[...days].map(([day, d]) => `<li><p class="trip-clash-day label">${esc(fmtDay(day))} · ${esc(plural(d.slots.size, "event"))}</p>
 <ul class="trip-clash-evs">${[...d.slots.values()].sort((a, b) => a.s - b.s).map((x) => `<li>${link(x.ev)} <span class="tnum">${esc(whenOf(x))}</span>${placeOf(x.ev) ? `<span class="w"> · ${esc(placeOf(x.ev))}</span>` : ""}</li>`).join("")}</ul>
-<ul class="trip-clash-pairs">${d.pairs.map(([a, b]) => `<li>${esc(a.ev.t)} <span class="faint">and</span> ${esc(b.ev.t)}: <span class="tnum">${esc(apart(a, b))}</span></li>`).join("")}</ul></li>`).join("")}</ul>
+${pairsHtml(d.pairs)}</li>`).join("")}</ul>
 <p class="faint trip-clash-note">Distances are straight lines between the two places: estimates, not travel times. An event with no end time listed overlaps only what is under way when it starts.</p>`;
   }
   render();

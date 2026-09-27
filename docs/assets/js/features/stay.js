@@ -61,13 +61,26 @@ function initFilterLinks(app) {
 function initStayList(app, list) {
   const every = (item, v) => { const have = String(item.ds.f || "").split(/\s+/); return v.every((x) => have.includes(String(x))); };
   const ctl = app.filter.mount(list, { tests: { f: every } });
+  // each feature chip counts the places shown that state it: what selecting it would leave ("has all of")
+  const chips = $$("[data-filter-chip^='f=']");
+  const recount = (visible) => {
+    for (const b of chips) {
+      const f = b.dataset.filterChip.slice(2), n = $(".n", b);
+      if (!n) continue;
+      const k = visible.filter((el) => String(el.dataset.f || "").split(/\s+/).includes(f)).length;
+      n.textContent = String(k);
+      b.classList.toggle("is-zero", k === 0 && b.getAttribute("aria-pressed") !== "true");
+    }
+  };
+  list.addEventListener("tbc:filter", (e) => recount(e.detail.visible));
+  if (ctl) recount(ctl.visible());
   const box = $("[data-stay-map]");
   if (!ctl || !box) return;
   let map = null;
   const pinsOf = (els) => els.filter((el) => el.dataset.stay).map((el) => {
     const ll = (el.dataset.ll || "").split(",").map(Number);
     const a = $(".card-title a", el);
-    return { id: el.dataset.stay, lat: ll.length === 2 ? ll[0] : null, lng: ll.length === 2 ? ll[1] : null, sheet: el.dataset.sheet || "", name: a ? a.textContent : el.dataset.stay, href: a ? a.getAttribute("href") : "#", kind: ($(".card-kind", el) || {}).textContent || "", area: ($(".card-area", el) || {}).textContent || "", st: el.dataset.st || "open", status: ($(".card-status .badge", el) || {}).textContent || "" };
+    return { id: el.dataset.stay, lat: ll.length === 2 ? ll[0] : null, lng: ll.length === 2 ? ll[1] : null, sheet: el.dataset.sheet || "", name: a ? a.textContent : el.dataset.stay, href: a ? a.getAttribute("href") : "#", kind: ($(".card-kind", el) || {}).textContent || "", area: ($(".card-area", el) || $(".stay-area-h a", el.closest(".stay-area") || el) || {}).textContent || "", st: el.dataset.st || "open", status: ($(".card-status .badge", el) || {}).textContent || "" };
   });
   const sync = (els) => {
     if (!map) return;
@@ -309,7 +322,9 @@ function initNearEvents(app, sec) {
   const main = $("[data-near-list]", sec);
   const more = $("[data-near-more]", sec);
   const FIRST = 8;
-  const today = app.today(), end = addDays(today, 29);
+  const today = app.today(), end30 = addDays(today, 29);
+  const winEnd = sec.dataset.windowEnd || "";
+  const end = winEnd && winEnd < end30 ? winEnd : end30;          // the guide lists nothing after its window
   const next = [], later = [];
   for (const r of rows) {
     const days = (r.dataset.days || "").split(/\s+/).filter(Boolean);
@@ -330,7 +345,7 @@ function initNearEvents(app, sec) {
     moreList.replaceChildren(...next.slice(FIRST));
     more.hidden = next.length <= FIRST;
     const l = $("[data-near-more-l]", more);
-    if (l) l.textContent = `${plural(next.length - FIRST, "more event")} in the next 30 days`;
+    if (l) l.textContent = next.length > FIRST ? `${plural(next.length - FIRST, "more event")} in the next 30 days` : "";
   } else if (next.length > FIRST) {
     sec.querySelector(".nx-list").insertAdjacentHTML("afterend", `<details class="nx-more" data-near-more><summary>${I("chev-d")}<span>${plural(next.length - FIRST, "more event")} in the next 30 days</span></summary><ol class="nx-list"></ol></details>`);
     moreList = $("[data-near-more] ol", sec);
@@ -343,7 +358,7 @@ function initNearEvents(app, sec) {
   }
   const when = $("[data-near-when]", sec), n = $("[data-near-n]", sec), empty = $("[data-near-empty]", sec);
   if (when) when.textContent = `in the next 30 days`;
-  if (n) n.textContent = `${plural(next.length, "event")} listed from ${fmtDate(today)} to ${fmtDate(end)}`;
+  if (n) n.textContent = winEnd && today > winEnd ? `This guide lists events through ${fmtDate(winEnd)} only` : `${plural(next.length, "event")} listed from ${fmtDate(today)} to ${fmtDate(end)}${end < end30 ? " (the end of this guide's season)" : ""}`;
   if (empty) empty.hidden = next.length > 0;
   main.hidden = next.length === 0;
 }

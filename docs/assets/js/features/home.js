@@ -14,7 +14,7 @@
    Pure helpers (band, nextFor, items) are exported for tests/home.test.mjs.
    ============================================================ */
 import { esc, truncate } from "../lib/text.js";
-import { nyParts, addDays, dateRange, fmtDay, fmtDayLong, fmtTime, fmtRange, fmtDate, fmtDateY, fmtThrough, whenRange, weekday, isoLocal } from "../lib/time.js";
+import { nyParts, addDays, dateRange, daysBetween, fmtDay, fmtDayLong, fmtTime, fmtRange, fmtDate, fmtDateY, fmtDateRange, fmtThrough, whenRange, weekday, isoLocal } from "../lib/time.js";
 
 export const FL = { END_UNKNOWN: 1, TIME_UNKNOWN: 2, ALL_DAY: 4, ONGOING: 8, LATE: 16, RUN: 32 };
 const dead = (ev) => ev.st === "cancelled" || ev.st === "postponed";
@@ -32,10 +32,12 @@ export function band(all, now, win) {
   const today = nyParts(now).date;
   const dated = all.filter((x) => !(x.f & FL.RUN));
   const byDay = (d) => dated.filter((x) => x.day === d).sort((a, b) => ((a.f & (FL.TIME_UNKNOWN | FL.ALL_DAY)) ? 1 : 0) - ((b.f & (FL.TIME_UNKNOWN | FL.ALL_DAY)) ? 1 : 0) || a.s - b.s);
-  const todayList = byDay(today);
+  // today: what is on or still ahead first (timed by start, then untimed), what has ended after it
+  const ended = (x) => !(x.f & (FL.TIME_UNKNOWN | FL.ALL_DAY | FL.END_UNKNOWN)) && x.e <= now;
+  const todayList = byDay(today).sort((a, b) => (ended(a) ? 1 : 0) - (ended(b) ? 1 : 0));
   let [a, b] = whenRange("weekend", now);
   let wkDays = dateRange(a, b).filter((d) => d > today);
-  let wkLabel = "This weekend";
+  let wkLabel = wkDays.length && wkDays.length < dateRange(a, b).length ? "Rest of the weekend" : "This weekend";
   if (!wkDays.length) { const w = weekday(today); const fri = addDays(today, ((5 - w + 7) % 7) || 7); wkDays = [fri, addDays(fri, 1), addDays(fri, 2)]; wkLabel = "Next weekend"; }
   const weekend = wkDays.map((d) => ({ d, list: byDay(d) }));
   const runs = all.filter((x) => (x.f & FL.RUN) && x.day <= today && x.e > now && (x.ev.ed ? x.ev.ed >= today : true));
@@ -58,6 +60,37 @@ export function nextFor(all, region, now) {
 const bullet = (r) => (r ? `<svg class="bullet" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><use href="#b-${esc(r)}"/></svg>` : '<span aria-hidden="true"></span>');
 const hhmm = (t) => nyParts(t).hhmm;
 
+/** An event's listing days in words, as the server prints them (build/pages/region.mjs dateText): "Sat, Oct 24",
+ *  "Oct 23–25", "Oct 3, Oct 10 and Oct 17", "12 dates, Oct 3 to Dec 19". */
+export function daysText(days) {
+  if (days.length <= 1) return days.length ? fmtDay(days[0]) : "";
+  const first = days[0], last = days[days.length - 1];
+  if (daysBetween(first, last) + 1 === days.length) return fmtDateRange(first, last);
+  if (days.length <= 4) return `${days.slice(0, -1).map(fmtDate).join(", ")} and ${fmtDate(last)}`;
+  return `${days.length} dates, ${fmtDate(first)} to ${fmtDate(last)}`;
+}
+
+/** Where an event is: its place's name, else the source's location text, else "Place not listed" (HTML). */
+export const placeOf = (ev, data) => {
+  const p = ev.pl && data.places && data.places[ev.pl];
+  if (p) return esc(p.n);
+  if (ev.lt) return esc(ev.lt);
+  return '<span class="unk">Place not listed</span>';
+};
+const stBadge = (ev, data) => (ev.st && ev.st !== "scheduled" ? `<span class="badge ${ev.st === "tentative" ? "badge-unconfirmed" : "badge-warn"}">${esc((data.lb && data.lb.st && data.lb.st[ev.st]) || ev.st)}</span>` : "");
+/** A time-first row from events.json: the same markup as build/pages/region.mjs timeRow (tests/home.test.mjs compares them). */
+export function rowHtml(x, data, R, { withDate = false } = {}) {
+  const ev = x.ev, f = x.f;
+  const tu = f & FL.TIME_UNKNOWN, ad = f & FL.ALL_DAY, eu = f & FL.END_UNKNOWN;
+  const timed = !tu && !ad;
+  const [hm, ap] = timed ? fmtTime(hhmm(x.s)).split(" ") : ["", ""];
+  const tcol = timed ? `<time datetime="${isoLocal(x.s)}">${esc(hm)}<small>${esc(ap)}</small></time>`
+    : ad ? "<time><small>All day</small></time>"
+      : ev.tt ? '<time><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></time>' : "<time><small>Time not listed</small></time>";
+  const bits = [withDate ? esc(fmtDay(x.day)) : "", timed && !eu ? esc(fmtRange(hhmm(x.s), hhmm(x.e))) : timed ? '<span class="unk">end time not listed</span>' : tu && ev.tt ? esc(truncate(ev.tt, 72)) : "", placeOf(ev, data)].filter(Boolean);
+  return `<li class="evrow" data-ev="${esc(ev.id)}"${ev.r ? ` data-sheet="${esc(ev.r)}"` : ""} data-s="${x.s}" data-e="${x.e}"${eu ? ' data-end-unknown="1"' : ""}${tu ? ` data-days="${x.day}"` : ""}${tu ? ' data-time-unknown="1"' : ""}${ad ? ' data-all-day="1"' : ""}><a href="${R}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${tcol}${bullet(ev.r)}<span><span class="t">${esc(ev.t)}</span>${stBadge(ev, data)}<span class="w">${bits.join(" · ")} <span class="evr-st" data-status></span></span></span></a></li>`;
+}
+
 export function init(app) {
   const R = app.root;
   const $ = (s, el = document) => el.querySelector(s);
@@ -79,9 +112,11 @@ export function init(app) {
   const almanac = (now) => {
     const key = nyParts(now).date.slice(0, 7);
     const months = $$(".al-month");
-    const i = months.findIndex((m) => m.dataset.month === key);
-    months.forEach((m, j) => { if (j === i) m.setAttribute("data-now", "1"); else m.removeAttribute("data-now"); });
-    if (window.matchMedia && window.matchMedia("(max-width: 699px)").matches && i > -1) months.forEach((m, j) => { m.open = j >= i && j <= i + 2; });
+    months.forEach((m) => { if (m.dataset.month === key) m.setAttribute("data-now", "1"); else m.removeAttribute("data-now"); });
+    // on phones: this month (or the next in the calendar) and the two after it stay open
+    let i = months.findIndex((m) => m.dataset.month >= key);
+    if (i < 0) i = 0;
+    if (window.matchMedia && window.matchMedia("(max-width: 699px)").matches) months.forEach((m, j) => { m.open = j >= i && j <= i + 2; });
   };
 
   /* the stat tiles: hover opens them where there is a mouse */
@@ -95,26 +130,8 @@ export function init(app) {
   }
 
   let data = null, all = null, lastKey = "";
-  const place = (ev) => {
-    const p = ev.pl && data.places[ev.pl];
-    if (p) return esc(p.n);
-    if (ev.lt) return esc(ev.lt);
-    return '<span class="unk">Place not listed</span>';
-  };
-  const stBadge = (ev) => (ev.st && ev.st !== "scheduled" ? `<span class="badge ${ev.st === "tentative" ? "badge-unconfirmed" : "badge-warn"}">${esc((data.lb && data.lb.st && data.lb.st[ev.st]) || ev.st)}</span>` : "");
-  /** A time-first row (the same markup as build/pages/region.mjs timeRow). */
-  function row(x, { withDate = false } = {}) {
-    const ev = x.ev, f = x.f;
-    const tu = f & FL.TIME_UNKNOWN, ad = f & FL.ALL_DAY, eu = f & FL.END_UNKNOWN;
-    const timed = !tu && !ad;
-    const [hm, ap] = timed ? fmtTime(hhmm(x.s)).split(" ") : ["", ""];
-    const tcol = timed ? `<time datetime="${isoLocal(x.s)}">${esc(hm)}<small>${esc(ap)}</small></time>`
-      : ad ? "<time><small>All day</small></time>"
-        : ev.tt ? '<time><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></time>' : "<time><small>Time not listed</small></time>";
-    const bits = [withDate ? esc(fmtDay(x.day)) : "", timed && !eu ? esc(fmtRange(hhmm(x.s), hhmm(x.e))) : tu && ev.tt ? esc(truncate(ev.tt, 72)) : "", place(ev)].filter(Boolean);
-    return `<li class="evrow" data-ev="${esc(ev.id)}"${ev.r ? ` data-sheet="${esc(ev.r)}"` : ""} data-s="${x.s}" data-e="${x.e}"${eu ? ' data-end-unknown="1"' : ""}${tu ? ` data-time-unknown="1" data-days="${x.day}"` : ""}${ad ? ' data-all-day="1"' : ""}><a href="${R}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${tcol}${bullet(ev.r)}<span><span class="t">${esc(ev.t)}</span>${stBadge(ev)}<span class="w">${bits.join(" · ")} <span class="evr-st" data-status></span></span></span></a></li>`;
-  }
-  const list = (xs, max) => `<ol class="tonight evrows">${xs.slice(0, max).map((x) => row(x)).join("")}</ol>`;
+  const list = (xs, max) => `<ol class="tonight evrows">${xs.slice(0, max).map((x) => rowHtml(x, data, R)).join("")}</ol>`;
+  const place = (ev) => placeOf(ev, data);
 
   function drawBand(now) {
     const body = $("[data-tb-body]");
@@ -134,13 +151,15 @@ export function init(app) {
     col.push(t + "</div>");
     // the weekend
     const n = b.weekend.reduce((s, d) => s + d.list.length, 0);
-    let w = `<div class="tb-col"><h3 class="tb-h"><span class="label">${esc(b.wkLabel)}</span><span class="tb-d">${esc(`${fmtDay(b.weekend[0].d)} to ${fmtDay(b.weekend[b.weekend.length - 1].d)}`)}</span></h3>`;
-    if (!n) w += `<p class="tb-none">${esc(b.phase === "after" ? "Nothing listed: the listings have ended." : "Nothing is listed for these days.")}</p>`;
+    const w0 = b.weekend[0].d, w1 = b.weekend[b.weekend.length - 1].d;
+    let w = `<div class="tb-col"><h3 class="tb-h"><span class="label">${esc(b.wkLabel)}</span><span class="tb-d">${esc(w0 === w1 ? fmtDay(w0) : `${fmtDay(w0)} to ${fmtDay(w1)}`)}</span></h3>`;
+    const pastEnd = win && b.weekend.some((d) => d.d > win.end);
+    if (!n) w += `<p class="tb-none">${esc(b.phase === "after" ? "Nothing listed: the listings have ended." : pastEnd ? `Nothing is listed for these days. The listings in this guide end ${fmtDay(win.end)}, ${win.end.slice(0, 4)}.` : "Nothing is listed for these days.")}</p>`;
     for (const d of b.weekend) {
       if (!d.list.length) continue;
       w += `<div class="tb-day"><h4 class="sub-h">${esc(`${fmtDay(d.d)} · ${d.list.length === 1 ? "1 event" : `${d.list.length} events`}`)}</h4>${list(d.list, PER)}${d.list.length > PER ? `<p class="tb-more"><a href="${R}whats-on.html?day=${d.d}">${esc(`All ${d.list.length} on ${fmtDay(d.d)}`)}</a></p>` : ""}</div>`;
     }
-    if (b.wkLabel === "This weekend" && n) w += `<p class="tb-more"><a href="${R}whats-on.html?when=weekend">This weekend on What's On</a></p>`;
+    if (b.wkLabel !== "Next weekend" && n) w += `<p class="tb-more"><a href="${R}whats-on.html?when=weekend">This weekend on What's On</a></p>`;
     col.push(w + "</div>");
     const runs = b.runs.slice(0, 4);
     const runsHtml = runs.length ? `<div class="tb-runs"><h3 class="sub-h">${esc(`Open for a run of weeks · ${b.runs.length}`)}</h3><ul class="tb-runlist">${runs.map((x) => `<li${x.ev.r ? ` data-sheet="${esc(x.ev.r)}"` : ""}><a href="${R}whats-on.html?e=${esc(x.ev.id)}#e-${esc(x.ev.id)}" data-open-event="${esc(x.ev.id)}">${bullet(x.ev.r)}<span><span class="t">${esc(x.ev.t)}</span><span class="w">${esc(x.ev.ed ? fmtThrough(x.ev.ed, b.today) : "")} · ${place(x.ev)}</span></span></a></li>`).join("")}</ul></div>` : "";
@@ -151,10 +170,10 @@ export function init(app) {
   function drawNext(now) {
     for (const el of $$("[data-next-featured]")) {
       const x = nextFor(all, el.dataset.nextFeatured, now);
-      const head = '<p class="si-sub label">Next signature event</p>';
-      if (!x) { el.innerHTML = `${head}<span class="unk">No signature event listed from today to ${esc(fmtDateY(win.end))}</span>`; continue; }
-      const multi = x.ev.i.length > 1;
-      const when = x.f & FL.RUN ? fmtThrough(x.ev.ed || x.day, x.day) : multi ? `${fmtDate(x.ev.i[0][0])} to ${fmtDate(x.ev.i[x.ev.i.length - 1][0])}` : fmtDay(x.day);
+      if (!x) { el.innerHTML = `<p class="si-sub label">Next signature event</p><span class="unk">No signature event listed from today to ${esc(fmtDateY(win.end))}</span>`; continue; }
+      // under way: its first listing has begun (a festival on its second day, a run that opened before today)
+      const head = `<p class="si-sub label">${x.ev.i[0][1] <= now ? "Signature event under way" : "Next signature event"}</p>`;
+      const when = x.f & FL.RUN ? fmtThrough(x.ev.ed || x.day, x.day) : daysText([...new Set(x.ev.i.map((y) => y[0]))].sort());
       el.innerHTML = `${head}<a href="${R}whats-on.html?e=${esc(x.ev.id)}#e-${esc(x.ev.id)}" data-open-event="${esc(x.ev.id)}"><span class="t">${esc(x.ev.t)}</span><span class="w">${esc(when)}${x.ev.pl && data.places[x.ev.pl] ? ` · ${esc(data.places[x.ev.pl].n)}` : ""}</span></a>`;
     }
   }

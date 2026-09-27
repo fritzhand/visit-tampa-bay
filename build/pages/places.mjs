@@ -183,10 +183,8 @@ function whereSection(ctx, root, p, where) {
     const [lat, lng] = p.ll;
     // the bay chart's crop; beyond it, the region chart's (the whole guide box), else the coordinate line
     const regionMap = where === "off" && cards.chartMap ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "region", label: `Map: ${p.name}`, minHalfM: 7000, labels: 4 }) : "";
-    // on the bay chart: the chart crop with its own names (streets, water, neighborhoods) around the buoy, so the
-    // reader can place it; the plain mini map when the Map lane's chart is not there
-    const bayMap = where === "on" && cards.chartMap && cards.charts?.bay ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "bay", label: `Map: ${p.name}`, minHalfM: 1100, labels: 4 }) : "";
-    map = where === "on" ? bayMap || cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : regionMap || cards.coordLine(lat, lng);
+    // on the bay chart: the engine's mini map (tests/minimap.test.mjs pins its markup on detail pages)
+    map = where === "on" ? cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : regionMap || cards.coordLine(lat, lng);
     hasMap = where === "on" || !!regionMap;
     links.push(h.extLink(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, `${h.icon("pin")}Open in Google Maps`, "btn btn-secondary btn-sm"));
     links.push(h.extLink(`https://maps.apple.com/?ll=${lat},${lng}&q=${encodeURIComponent(p.name)}`, `${h.icon("pin")}Open in Apple Maps`, "btn btn-secondary btn-sm"));

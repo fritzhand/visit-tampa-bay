@@ -30,13 +30,10 @@ The six sheets (regions; `research/tools/schema.mjs REGIONS`, pages in `build/na
 
 Every located record has an `area` (45 fixed ids, SPEC §4.1, `research/tools/schema.mjs AREAS`); its sheet follows from the area.
 
-**Status (Sep 27, 2026): the engine is built; the data and the pages are being built.** Landed: the build engine (E1:
-`build.mjs`, `build/`, the fixture, the build tests), the client runtime (E2: `site/js/`, its tests, this manual), and in
-parallel the design system (`design/`, `site/css/tokens.css`, fonts) and the basemap (`scripts/build-basemap.mjs`,
-`site/map/`, `data/map.json`). Research agents are writing `research/<slice>/` (23 slices, `research/README.md`). Next: the
-merge (`scripts/merge-research.mjs`, not written yet) replaces `data/` (today a copy of the test fixture: every record's
-`notes` says FIXTURE), then the page lanes replace the stubs in `build/pages/`, then images, QA and integration. Update this
-paragraph when a phase lands.
+**Status (Sep 27, 2026, paused): see `CHECKPOINT.md`** for exactly what is done, what was interrupted and how to resume.
+Done: the engine, the design system, the basemap, the 23 verified research slices and their merge into `data/`, and all seven
+page lanes (four reviewed; three reviews interrupted). Remaining: the three reviews, image processing, the two completeness
+slices (`stays-dbpr`, `gaps-listings`), the promo video, integration QA and the README.
 
 ## The rules that never bend
 

@@ -33,7 +33,9 @@ function initList(app, list) {
   const open = new Set();
   let filtered = false;
   const phone = matchMedia("(max-width: 699px)");
-  const limitOf = (sec) => { const n = Number(sec.dataset.limit) || 6; return phone.matches ? Math.min(n, 3) : n; };   // phones show three cards a section
+  // phones show three cards a section; a section that asks for more (the numbered Gulf beaches, whose chart shows every
+  // number) keeps its own limit
+  const limitOf = (sec) => { const n = Number(sec.dataset.limit) || 6; return phone.matches && n <= 6 ? Math.min(n, 3) : n; };
 
   function paint() {
     for (const sec of sections) {
@@ -176,7 +178,7 @@ function initMap(app, list, root, view) {
         sym: symUse ? symUse.getAttribute("href") : "#i-buoy",
         kicker: [...c.querySelectorAll(".card-kind, .card-area")].map((k) => k.textContent.trim()).join(" · "),
         status: c.querySelector(".card-status")?.textContent.trim() || "",
-        meta: c.querySelector(".card-meta")?.textContent.replace(/\s*Signature\s*$/, "").trim() || "",
+        meta: metaText(c.querySelector(".card-meta")),
       });
     }
     pts = out.sort((a, b) => Number(b.sig) - Number(a.sig));
@@ -335,8 +337,29 @@ function initMap(app, list, root, view) {
 
   const show = () => { if (!built) build(); collect(); if (!userMoved || !v) fit(); else render(); };
   list.addEventListener("tbc:filter", () => { if (!pane.hidden) { userMoved = false; show(); } });
-  root.addEventListener("tbc:view", (e) => { if (e.detail?.view === "map") requestAnimationFrame(show); });
+  // the reader's own switch to the Map (a click on the toggle, not a remembered view on load) brings the chart into
+  // view when it opens below the fold: under a long filter panel, especially on phones
+  let asked = false;
+  root.querySelectorAll('[data-view="map"]').forEach((b) => b.addEventListener("click", () => { asked = true; }));
+  root.addEventListener("tbc:view", (e) => {
+    if (e.detail?.view !== "map") return;
+    requestAnimationFrame(() => {
+      show();
+      if (!asked) return;
+      asked = false;
+      const box = pane.getBoundingClientRect();
+      if (box.top > innerHeight * 0.55) pane.scrollIntoView({ block: "start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    });
+  });
   if (!pane.hidden) requestAnimationFrame(show);
+}
+
+/** A card's meta line as plain text for the map card: "hours · price" (the two-row meta joined), no seal. */
+function metaText(el) {
+  if (!el) return "";
+  const rows = [...el.querySelectorAll(":scope > .cm:not(.cm-seal)")];
+  const text = (x) => { const y = x.cloneNode(true); y.querySelectorAll(".sr-only, .seal").forEach((z) => z.remove()); return y.textContent.replace(/\s+/g, " ").trim(); };
+  return rows.length ? rows.map(text).filter(Boolean).join(" · ") : text(el);
 }
 
 /** Greedy clustering seeds groups on their first member, so two groups' centroids can end up closer than a medallion:

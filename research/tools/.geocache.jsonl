@@ -3248,3 +3248,5 @@
 {"k":"photon:comfort motel:27.70,-82.43","v":{"lat":27.704553,"lng":-82.439952,"geo_source":"photon","matched":"Comfort Motel, 1804, South US 41, Ruskin, 33570","osm":"N11518949728 tourism=motel"}}
 {"k":"photon:hampton inn ellenton:27.53,-82.505","v":{"lat":27.532742,"lng":-82.504553,"geo_source":"photon","matched":"Hampton Inn Ellenton/Bradenton, 5810, 20th Court East, Ellenton, 34222","osm":"W223448054 tourism=hotel"}}
 {"k":"photon:hampton inn ellenton/bradenton:27.53,-82.505","v":{"lat":27.532742,"lng":-82.504553,"geo_source":"photon","matched":"Hampton Inn Ellenton/Bradenton, 5810, 20th Court East, Ellenton, 34222","osm":"W223448054 tourism=hotel"}}
+{"k":"photon:courtyard bradenton sarasota riverfront:27.4987,-82.5643","v":{"lat":27.499668,"lng":-82.565124,"geo_source":"photon","matched":"Courtyard Bradenton Sarasota/Riverfront, 100, Riverfront Boulelvard, Bradenton, 34205","osm":"R13180403 tourism=hotel"}}
+{"k":"photon:courtyard by marriott bradenton:27.4987,-82.5643","v":{"lat":27.999385,"lng":-81.976006,"geo_source":"photon","matched":"Courtyard by Marriott Lakeland, 3725, Harden Boulevard, Lakeland, 33803","osm":"W114223346 tourism=hotel"}}

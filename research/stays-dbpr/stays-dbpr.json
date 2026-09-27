@@ -34,15 +34,17 @@
     "city": "Clearwater Beach",
     "state": "FL",
     "zip": "33767",
+    "url": "https://abodebeach.com/",
     "rooms": 33,
     "summary": "Licensed by the State of Florida as a motel with 33 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://abodebeach.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6204683, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/24/2026; Pinellas County; DBPR business name \"ABODE BEACH HOUSE\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name."
+    "notes": "DBPR license MOT6204683, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/24/2026; Pinellas County; DBPR business name \"ABODE BEACH HOUSE\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name. Verified 2026-09-27: the property's own site (read today, 455 South Gulfview Blvd, 33 all-suite units) says \"We're open during a thoughtful renovation.\""
    },
    {
     "id": "abrams-arbors",
@@ -67,8 +69,11 @@
     "notes": "DBPR license MOT5103667, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 04/28/2026; Manatee County; DBPR business name \"ABRAMS ARBORS LLC\". The legal suffix in the DBPR business name is dropped from the name. Coordinates: census match \"5441 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228\"."
    },
    {
-    "id": "ac-hotel",
-    "name": "AC Hotel",
+    "id": "ac-hotel-st-petersburg",
+    "name": "AC Hotel by Marriott St. Petersburg",
+    "aliases": [
+     "AC Hotel"
+    ],
     "kind": "hotel",
     "brand": "Marriott",
     "collection": "AC Hotels by Marriott",
@@ -85,10 +90,11 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.visitstpeteclearwater.com/meetings/profile/ac-hotel-marriott-st-petersburg/141230"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215843, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Pinellas County; DBPR business name \"AC HOTEL\". Coordinates: census match \"110 2ND ST N, ST PETERSBURG, FL, 33701\"."
+    "notes": "DBPR license HOT6215843, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Pinellas County; DBPR business name \"AC HOTEL\". Coordinates: census match \"110 2ND ST N, ST PETERSBURG, FL, 33701\". Verified 2026-09-27: the Visit St. Pete/Clearwater listing (read today) names it AC Hotel by Marriott St. Petersburg at 110 2nd St. N with 172 rooms, matching DBPR."
    },
    {
     "id": "alamanda-villa",
@@ -157,28 +163,6 @@
     "notes": "DBPR license MOT3901297, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/26/2026; Hillsborough County; DBPR business name \"ALASKA MOTEL\". Coordinates: census match \"1307 E HILLSBOROUGH AVE, TAMPA, FL, 33604\"."
    },
    {
-    "id": "alden-beach-resort",
-    "name": "Alden Beach Resort",
-    "kind": "motel",
-    "area": "st-pete-beach",
-    "address": "5900 Gulf Blvd",
-    "city": "St. Pete Beach",
-    "state": "FL",
-    "zip": "33706",
-    "lat": 27.731947,
-    "lng": -82.745165,
-    "geo_source": "photon",
-    "rooms": 143,
-    "summary": "Licensed by the State of Florida as a motel with 143 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license MOT6201330, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/16/2026; Pinellas County; DBPR business name \"ALDEN BEACH RESORT\". Coordinates: photon match \"Alden Suites - A Beachfront Resort, Gulf Boulevard, Saint Pete Beach, 33706 (R2595010 tourism=hotel)\"."
-   },
-   {
     "id": "americana-inn",
     "name": "Americana Inn",
     "kind": "motel",
@@ -201,7 +185,7 @@
     "notes": "DBPR license MOT3905535, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/10/2026; Hillsborough County; DBPR business name \"AMERICANA INN\". Coordinates: census match \"321 E FLETCHER AVE, TAMPA, FL, 33612\"."
    },
    {
-    "id": "americas-best-value-inn",
+    "id": "americas-best-value-inn-bradenton",
     "name": "America's Best Value Inn",
     "kind": "motel",
     "brand": "Sonesta",
@@ -500,15 +484,17 @@
     "lat": 27.724055,
     "lng": -82.741009,
     "geo_source": "census",
+    "url": "https://www.beachhavenresortfl.com/",
     "rooms": 18,
     "summary": "Licensed by the State of Florida as a motel with 18 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.beachhavenresortfl.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6202041, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/29/2026; Pinellas County; DBPR business name \"BEACH HAVEN RESORT\". Coordinates: census match \"4980 GULF BLVD, ST PETE BEACH, FL, 33706\"."
+    "notes": "DBPR license MOT6202041, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/29/2026; Pinellas County; DBPR business name \"BEACH HAVEN RESORT\". Coordinates: census match \"4980 GULF BLVD, ST PETE BEACH, FL, 33706\". Verified 2026-09-27: the resort's own site (read today) gives 4980 Gulf Blvd, St Pete Beach, 18 cottage-style units, and takes bookings; no closure notice."
    },
    {
     "id": "beachside-resort-motel",
@@ -522,15 +508,17 @@
     "lat": 27.774455,
     "lng": -82.774893,
     "geo_source": "census",
+    "url": "https://beachsideresortmotel.com/",
     "rooms": 17,
     "summary": "Licensed by the State of Florida as a motel with 17 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://beachsideresortmotel.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215791, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/12/2026; Pinellas County; DBPR business name \"BEACHSIDE RESORT MOTEL\". Coordinates: census match \"11600 GULF BLVD, TREASURE ISLAND, FL, 33706\"."
+    "notes": "DBPR license MOT6215791, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/12/2026; Pinellas County; DBPR business name \"BEACHSIDE RESORT MOTEL\". Coordinates: census match \"11600 GULF BLVD, TREASURE ISLAND, FL, 33706\". Verified 2026-09-27: the motel's own site (read today, 11600 Gulf Blvd) takes bookings; no closure notice."
    },
    {
     "id": "beso-del-sol-resort",
@@ -639,7 +627,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215507, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/27/2026; Pinellas County; DBPR business name \"BLUE MOON INN\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name."
+    "notes": "DBPR license MOT6215507, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/27/2026; Pinellas County; DBPR business name \"BLUE MOON INN\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name. Verified 2026-09-27: the DBPR licensee is Sun Communities; search results place the inn on the grounds of Sun Retreats Dunedin (2920 Alternate 19 N). Still no coordinates: the only Census match for 2920 US Hwy 19 Alt is in ZIP 34683 (Palm Harbor) and could not be confirmed as this property."
    },
    {
     "id": "blue-water-beach-rentals",
@@ -705,10 +693,10 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6205583, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/14/2026; Pinellas County; DBPR business name \"BRECKENRIDGE BEACH RESORT\". Coordinates: census match \"5700 GULF BLVD, ST PETE BEACH, FL, 33706\"."
+    "notes": "DBPR license MOT6205583, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/14/2026; Pinellas County; DBPR business name \"BRECKENRIDGE BEACH RESORT\". Coordinates: census match \"5700 GULF BLVD, ST PETE BEACH, FL, 33706\". Verified 2026-09-27: search results identify 5700 Gulf Blvd as the Breckenridge Club at TradeWinds (a timeshare resort in the TradeWinds complex); it holds its own DBPR motel license, separate from Island Grand at TradeWinds (5500 Gulf Blvd) in data/stays.json."
    },
    {
-    "id": "breezeway",
+    "id": "breezeway-clearwater-beach",
     "name": "Breezeway",
     "kind": "motel",
     "area": "clearwater-beach",
@@ -909,7 +897,7 @@
     "notes": "DBPR license MOT6200574, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/07/2026; Pinellas County; DBPR business name \"CACTUS MOTEL\". Coordinates: photon match \"Cactus Motel, 34th Street North, Saint Petersburg, 33713 (R3727619 tourism=motel)\"."
    },
    {
-    "id": "caliente",
+    "id": "caliente-land-o-lakes",
     "name": "Caliente",
     "kind": "hotel",
     "area": "lutz-wesley-chapel",
@@ -1144,15 +1132,17 @@
     "lat": 27.968758,
     "lng": -82.82817,
     "geo_source": "photon",
+    "url": "https://clwbh.com/",
     "rooms": 66,
     "summary": "Licensed by the State of Florida as a motel with 66 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://clwbh.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6210194, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/08/2026; Pinellas County; DBPR business name \"CLEARWATER BEACH HOTEL\". Coordinates: photon match \"Clearwater Beach Hotel, 504, South Gulfview Boulevard, Clearwater, 33767 (W191972386 tourism=hotel)\"."
+    "notes": "DBPR license MOT6210194, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/08/2026; Pinellas County; DBPR business name \"CLEARWATER BEACH HOTEL\". Coordinates: photon match \"Clearwater Beach Hotel, 504, South Gulfview Boulevard, Clearwater, 33767 (W191972386 tourism=hotel)\". Verified 2026-09-27: the hotel's own site (read today, 504 South Gulfview Boulevard) takes reservations; no closure notice."
    },
    {
     "id": "clearwater-inn",
@@ -1221,7 +1211,7 @@
     "notes": "DBPR license MOT3900018, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Hillsborough County; DBPR business name \"COLUMBIA MOTEL\". Coordinates: photon match \"Columbia Motel, 1042, East Hillsborough Avenue, Tampa, 33604 (W523104598 tourism=motel)\"."
    },
    {
-    "id": "comfort-inn-and-suites",
+    "id": "comfort-inn-and-suites-bradenton",
     "name": "Comfort Inn & Suites",
     "kind": "motel",
     "brand": "Choice Hotels",
@@ -1243,6 +1233,29 @@
     ],
     "checked": "2026-09-27",
     "notes": "DBPR license MOT5104362, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/29/2026; Manatee County; DBPR business name \"COMFORT INN & SUITES\". Coordinates: photon match \"Comfort Inn & Suites, 648, 67th Street Circle East, Bradenton, 34208 (W307992916 tourism=hotel)\"."
+   },
+   {
+    "id": "comfort-motel-ruskin",
+    "name": "Comfort Motel",
+    "kind": "motel",
+    "area": "apollo-beach",
+    "address": "1804 S US Hwy 41",
+    "city": "Ruskin",
+    "state": "FL",
+    "zip": "33570",
+    "lat": 27.704553,
+    "lng": -82.439952,
+    "geo_source": "photon",
+    "rooms": 20,
+    "summary": "Licensed by the State of Florida as a motel with 20 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.superpages.com/ruskin-fl/bpp/comfort-motel-6026642"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license MOT3900606, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Hillsborough County; DBPR business name \"TARABA LLC\" (a company name only). Verified 2026-09-27: added by the verifier. The trade name Comfort Motel at 1804 S US Highway 41, Ruskin is from the Superpages listing (read today) and matches the OpenStreetMap motel feature at the same address. Not a Choice Hotels Comfort Inn: brand left null. Coordinates: photon match \"Comfort Motel, 1804, South US 41, Ruskin, 33570 (N11518949728 tourism=motel)\"; the Census match of the address is 60 m away."
    },
    {
     "id": "compass-by-margaritaville-anna-maria-sound",
@@ -1289,7 +1302,7 @@
     "notes": "DBPR license MOT6201834, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/30/2026; Pinellas County; DBPR business name \"CORAL COVE MOTEL\". Coordinates: census match \"1379 GULF TO BAY BLVD, CLEARWATER, FL, 33755\"."
    },
    {
-    "id": "country-inn-and-suites-by-radisson",
+    "id": "country-inn-and-suites-by-radisson-bradenton",
     "name": "Country Inn & Suites by Radisson",
     "kind": "hotel",
     "brand": "Radisson",
@@ -1323,9 +1336,9 @@
     "city": "Bradenton",
     "state": "FL",
     "zip": "34205",
-    "lat": 27.498712,
-    "lng": -82.564352,
-    "geo_source": "census",
+    "lat": 27.499668,
+    "lng": -82.565124,
+    "geo_source": "photon",
     "rooms": 153,
     "summary": "Licensed by the State of Florida as a hotel with 153 rental units.",
     "status": "open",
@@ -1334,7 +1347,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105043, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/28/2026; Manatee County; DBPR business name \"COURTYARD BY MARRIOTT BRADENTON\". Coordinates: census match \"100 RIVERFRONT BLVD, BRADENTON, FL, 34205\"."
+    "notes": "DBPR license HOT5105043, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/28/2026; Manatee County; DBPR business name \"COURTYARD BY MARRIOTT BRADENTON\". Coordinates: census match \"100 RIVERFRONT BLVD, BRADENTON, FL, 34205\". Verified 2026-09-27: coordinates replaced: the Census match was on Riverfront Blvd; now the OSM feature \"Courtyard Bradenton Sarasota/Riverfront, 100, Riverfront Boulevard, Bradenton, 34205 (R13180403 tourism=hotel)\", 130 m from the Census point."
    },
    {
     "id": "courtyard-sarasota-university-park",
@@ -1399,10 +1412,11 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://en.wikipedia.org/wiki/Crystal_Bay_Hotel"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215801, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Pinellas County; DBPR business name \"CRYSTAL BAY HOTEL\". Coordinates: photon match \"Crystal Bay Hotel, Park Street North, Saint Petersburg, 33707 (W918532140 tourism=hotel)\"."
+    "notes": "DBPR license HOT6215801, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Pinellas County; DBPR business name \"CRYSTAL BAY HOTEL\". Coordinates: photon match \"Crystal Bay Hotel, Park Street North, Saint Petersburg, 33707 (W918532140 tourism=hotel)\". Verified 2026-09-27: Wikipedia (read today) says the building opened in 1915 as the Sunset Hotel, was listed on the National Register of Historic Places in 2014, and operates as the Crystal Bay Hotel, a boutique bed and breakfast with 60 guest rooms. A heritage block could be added from the NRHP nomination."
    },
    {
     "id": "crystal-inn",
@@ -1457,15 +1471,17 @@
     "lat": 27.97949,
     "lng": -82.825789,
     "geo_source": "census",
+    "url": "https://cw-hotel.com/",
     "rooms": 91,
     "summary": "Licensed by the State of Florida as a hotel with 91 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://cw-hotel.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215862, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/11/2026; Pinellas County; DBPR business name \"CW RESORT AND MARINA\". Coordinates: census match \"411 E SHORE DR, CLEARWATER, FL, 33767\"."
+    "notes": "DBPR license HOT6215862, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/11/2026; Pinellas County; DBPR business name \"CW RESORT AND MARINA\". Coordinates: census match \"411 E SHORE DR, CLEARWATER, FL, 33767\". Verified 2026-09-27: the property's own site (read today, 411 East Shore Drive) calls it a \"boutique luxury condo hotel\" and has a booking form; no opening date is stated."
    },
    {
     "id": "d-and-f-pathways-motel",
@@ -1582,8 +1598,12 @@
     "notes": "DBPR license HOT5105041, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/24/2026; Manatee County; DBPR business name \"DELUXE INN\". Coordinates: census match \"8071 N TAMIAMI TRL, SARASOTA, FL, 34243\"."
    },
    {
-    "id": "devon-shores-beach-suites",
-    "name": "Devon Shores Beach Suites",
+    "id": "devon-shores",
+    "name": "Devon Shores",
+    "aliases": [
+     "Devon Shores Beach Suites",
+     "Devon Shores Suites & Studios"
+    ],
     "kind": "motel",
     "area": "clearwater-beach",
     "address": "342 Hamden Dr",
@@ -1593,37 +1613,18 @@
     "lat": 27.971766,
     "lng": -82.827841,
     "geo_source": "census",
-    "rooms": 27,
-    "summary": "Licensed by the State of Florida as a motel with 27 rental units.",
+    "url": "https://devonshores.com/",
+    "rooms": 45,
+    "summary": "Licensed by the State of Florida as a motel under two licenses, at 342 and 332 Hamden Dr, with 27 and 18 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://devonshores.com/",
+     "https://www.visitstpeteclearwater.com/profile/devon-shores/138145"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6202013, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/02/2026; Pinellas County; DBPR business name \"DEVON SHORES BEACH SUITES\". Coordinates: census match \"342 S HAMDEN DR, CLEARWATER, FL, 33767\"."
-   },
-   {
-    "id": "devon-shores-suites-and-studios",
-    "name": "Devon Shores Suites & Studios",
-    "kind": "motel",
-    "area": "clearwater-beach",
-    "address": "332 Hamden Dr",
-    "city": "Clearwater Beach",
-    "state": "FL",
-    "zip": "33767",
-    "lat": 27.97196,
-    "lng": -82.827793,
-    "geo_source": "census",
-    "rooms": 18,
-    "summary": "Licensed by the State of Florida as a motel with 18 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license MOT6204653, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/02/2026; Pinellas County; DBPR business name \"DEVON SHORES SUITES & STUDIOS\". Coordinates: census match \"332 S HAMDEN DR, CLEARWATER, FL, 33767\"."
+    "notes": "DBPR license MOT6202013, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/02/2026; Pinellas County; DBPR business name \"DEVON SHORES BEACH SUITES\". Coordinates: census match \"342 S HAMDEN DR, CLEARWATER, FL, 33767\". Second DBPR license MOT6204653 (DEVON SHORES SUITES & STUDIOS, 332 HAMDEN DR, 18 units, status 20/20, same licensee Devon Shores Inc, last inspection 09/02/2026); rooms is the sum of both licenses. Verified 2026-09-27: merged the two licenses (same licensee, adjacent buildings) into one record; the property's own site (devonshores.com, read today) names it Devon Shores at 342 S Hamden Dr, owned and operated by Devon Shores Inc, and takes bookings."
    },
    {
     "id": "diana-motel",
@@ -1694,7 +1695,7 @@
     "notes": "DBPR license MOT3901940, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Hillsborough County; DBPR business name \"DOWNTOWN MOTEL\". Coordinates: photon match \"Downtown Motel, 2739, North Florida Avenue, Tampa, 33602 (W935747721 tourism=motel)\"."
    },
    {
-    "id": "driftwood",
+    "id": "driftwood-holmes-beach",
     "name": "Driftwood",
     "kind": "motel",
     "area": "bradenton-anna-maria",
@@ -1735,7 +1736,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6214540, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 03/20/2026; Pinellas County; DBPR business name \"DRIFTWOOD MOTEL\". Coordinates: census match \"1600 34TH ST S, ST PETERSBURG, FL, 33711\"."
+    "notes": "DBPR license MOT6214540, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 03/20/2026; Pinellas County; DBPR business name \"DRIFTWOOD MOTEL\". Coordinates: census match \"1600 34TH ST S, ST PETERSBURG, FL, 33711\". Verified 2026-09-27: search results show Yelp labeling the Driftwood Motel at 1600 34th St S \"CLOSED\" (the page could not be opened); DBPR shows a current license and an inspection on 03/20/2026. Status left open on the DBPR evidence; re-check."
    },
    {
     "id": "driftwood-motel-apts",
@@ -1936,7 +1937,7 @@
     "notes": "DBPR license MOT6202745, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/14/2026; Pinellas County; DBPR business name \"ECONO INN MOTEL\". Coordinates: census match \"18736 US HWY 19, CLEARWATER, FL, 33764\"."
    },
    {
-    "id": "econo-lodge-inn-and-suites",
+    "id": "econo-lodge-inn-and-suites-clearwater",
     "name": "Econo Lodge Inn & Suites",
     "kind": "motel",
     "brand": "Choice Hotels",
@@ -2190,27 +2191,6 @@
     "notes": "DBPR license MOT6209543, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/14/2026; Pinellas County; DBPR business name \"EXPRESS INN & SUITES\". Coordinates: photon match \"Express Inn & Suites, 11333, US-19, Pinellas Park, 33764 (W190548117 tourism=motel)\"."
    },
    {
-    "id": "extended-stay-america-premier-suites",
-    "name": "Extended Stay America Premier Suites",
-    "kind": "extended-stay",
-    "brand": "Extended Stay America",
-    "collection": "Extended Stay America",
-    "area": "east-tampa",
-    "address": "6780 Lakeview Center Dr",
-    "city": "Tampa",
-    "state": "FL",
-    "zip": "33619",
-    "rooms": 122,
-    "summary": "Licensed by the State of Florida as a hotel with 122 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license HOT3913693, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 07/20/2026; Hillsborough County; DBPR business name \"EXTENDED STAY AMERICA PREMIER STE (1561)\". The internal property number (1561) in the DBPR name is dropped from the name. No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name."
-   },
-   {
     "id": "extended-stay-america-premier-suites-bradenton",
     "name": "Extended Stay America Premier Suites Bradenton",
     "kind": "extended-stay",
@@ -2233,6 +2213,30 @@
     ],
     "checked": "2026-09-27",
     "notes": "DBPR license HOT5105040, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 05/12/2026; Manatee County; DBPR business name \"EXTENDED STAY AMERICA PREMIER SUITES BRADENTON\". Coordinates: census match \"4550 53RD AVE E, BRADENTON, FL, 34203\"."
+   },
+   {
+    "id": "extended-stay-america-premier-suites-tampa",
+    "name": "Extended Stay America Premier Suites",
+    "kind": "extended-stay",
+    "brand": "Extended Stay America",
+    "collection": "Extended Stay America",
+    "area": "east-tampa",
+    "address": "6780 Lakeview Center Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33619",
+    "lat": 27.980757,
+    "lng": -82.381721,
+    "geo_source": "photon",
+    "rooms": 122,
+    "summary": "Licensed by the State of Florida as a hotel with 122 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license HOT3913693, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 07/20/2026; Hillsborough County; DBPR business name \"EXTENDED STAY AMERICA PREMIER STE (1561)\". The internal property number (1561) in the DBPR name is dropped from the name.  Verified 2026-09-27: coordinates added: OSM feature \"Extended Stay America, 6780, Corporex Park Drive, East Lake-Orient Park, 33619 (N13819446706 tourism=hotel)\", same house number, next to Fairfield Inn & Suites Tampa Fairgrounds/Casino at 6720 Lakeview Center Dr. Search results name the hotel at 6780 Lakeview Center Dr \"Extended Stay America Suites - Tampa - Casino Area\" (the brand site blocks automated reading, so the name was not changed)."
    },
    {
     "id": "extended-stay-america-suites-clearwater",
@@ -2329,7 +2333,7 @@
     "notes": "DBPR license MOT6209041, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Pinellas County; DBPR business name \"EXTENDED STAY PALM HARBOR\". Coordinates: census match \"32000 US HWY 19 N, PALM HARBOR, FL, 34684\"."
    },
    {
-    "id": "fairfield-inn-and-suites",
+    "id": "fairfield-inn-and-suites-clearwater",
     "name": "Fairfield Inn & Suites",
     "kind": "hotel",
     "brand": "Marriott",
@@ -2353,8 +2357,11 @@
     "notes": "DBPR license HOT6215190, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/21/2026; Pinellas County; DBPR business name \"FAIRFIELD INN & SUITE\". Coordinates: photon match \"Fairfield Inn & Suites Clearwater, 3070, Gulf to Bay Boulevard, Clearwater, 33759 (W230612246 tourism=hotel)\"."
    },
    {
-    "id": "fairfield-inn-and-suites-by-marriott",
-    "name": "Fairfield Inn & Suites by Marriott",
+    "id": "fairfield-inn-and-suites-clearwater-beach",
+    "name": "Fairfield Inn & Suites Clearwater Beach",
+    "aliases": [
+     "Fairfield Inn & Suites by Marriott"
+    ],
     "kind": "hotel",
     "brand": "Marriott",
     "collection": "Fairfield by Marriott",
@@ -2371,14 +2378,18 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.visitstpeteclearwater.com/profile/fairfield-inn-suites-clearwater-beach/138740"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215810, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/18/2026; Pinellas County; DBPR business name \"FAIRFIELD INN AND SUITES BY MARRIOTT\". Coordinates: census match \"650 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767\"."
+    "notes": "DBPR license HOT6215810, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/18/2026; Pinellas County; DBPR business name \"FAIRFIELD INN AND SUITES BY MARRIOTT\". Coordinates: census match \"650 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767\". Verified 2026-09-27: the Visit St. Pete/Clearwater listing (read today) names it Fairfield Inn & Suites Clearwater Beach at 650 Bay Esplanade and gives 102 units, matching DBPR."
    },
    {
-    "id": "fairfield-inn-and-suites-lwr",
-    "name": "Fairfield Inn & Suites-LWR",
+    "id": "fairfield-inn-and-suites-lakewood-ranch",
+    "name": "Fairfield Inn & Suites Lakewood Ranch",
+    "aliases": [
+     "Fairfield Inn & Suites-LWR"
+    ],
     "kind": "hotel",
     "brand": "Marriott",
     "collection": "Fairfield by Marriott",
@@ -2395,10 +2406,11 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.bradentongulfislands.com/listing/fairfield-inn-suites-lakewood-ranch/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105013, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/14/2026; Manatee County; DBPR business name \"FAIRFIELD INN & SUITES-LWR\". Coordinates: photon match \"Fairfield Inn & Suites Sarasota Lakewood Ranch, 6105, Exchange Way, Bradenton, 34202 (W461587979 tourism=hotel)\"."
+    "notes": "DBPR license HOT5105013, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/14/2026; Manatee County; DBPR business name \"FAIRFIELD INN & SUITES-LWR\". Coordinates: photon match \"Fairfield Inn & Suites Sarasota Lakewood Ranch, 6105, Exchange Way, Bradenton, 34202 (W461587979 tourism=hotel)\". Verified 2026-09-27: the Bradenton Gulf Islands listing (read today) names it Fairfield Inn & Suites - Lakewood Ranch at 6105 Exchange Way."
    },
    {
     "id": "florida-bound-motel",
@@ -2546,10 +2558,11 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.myfloridalicense.com/LicenseDetail.asp?SID=&id=E8DDF325B46996C44503EF0E05EE2E00"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6102920, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/28/2026; Pasco County; DBPR business name \"GRAND BOULEVARD EFFICIENCY MOTEL\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name."
+    "notes": "DBPR license MOT6102920, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/28/2026; Pasco County; DBPR business name \"GRAND BOULEVARD EFFICIENCY MOTEL\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name. Verified 2026-09-27: directory sites list the property as Grand Boulevard Apartments; its earlier DBPR transient-apartment license TAP6101470 is Closed (DBPR license page read today), and the current license is a motel license. Kept on the motel license; the merge may want to drop it as non-visitor lodging."
    },
    {
     "id": "green-key-beach-motel",
@@ -2618,30 +2631,6 @@
     "notes": "DBPR license MOT6209739, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/24/2026; Pinellas County; DBPR business name \"GULFVIEW HOTEL ON (THE) BEACH\". Coordinates: photon match \"Gulfview Hotel on the Beach, 625, South Gulfview Boulevard, Clearwater, 33767 (W192113277 tourism=hotel)\"."
    },
    {
-    "id": "hampton-inn",
-    "name": "Hampton Inn",
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Hampton by Hilton",
-    "area": "bradenton-anna-maria",
-    "address": "5810 E 20th Ct",
-    "city": "Ellenton",
-    "state": "FL",
-    "zip": "34222",
-    "lat": 27.532082,
-    "lng": -82.504239,
-    "geo_source": "census",
-    "rooms": 116,
-    "summary": "Licensed by the State of Florida as a hotel with 116 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license HOT5104398, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/31/2026; Manatee County; DBPR business name \"HAMPTON INN\". Coordinates: census match \"5810 20TH ST E, ELLENTON, FL, 34222\"."
-   },
-   {
     "id": "hampton-inn-and-suites-bradenton-downtown-historic-district",
     "name": "Hampton Inn & Suites Bradenton Downtown Historic District",
     "kind": "hotel",
@@ -2690,6 +2679,30 @@
     "notes": "DBPR license HOT5105018, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/15/2026; Manatee County; DBPR business name \"HAMPTON INN & SUITES SARASOTA/UNIV PARK\". Coordinates: census match \"8565 COOPER CREEK BLVD, UNIVERSITY PARK, FL, 34201\"."
    },
    {
+    "id": "hampton-inn-ellenton",
+    "name": "Hampton Inn",
+    "kind": "hotel",
+    "brand": "Hilton",
+    "collection": "Hampton by Hilton",
+    "area": "bradenton-anna-maria",
+    "address": "5810 E 20th Ct",
+    "city": "Ellenton",
+    "state": "FL",
+    "zip": "34222",
+    "lat": 27.532742,
+    "lng": -82.504553,
+    "geo_source": "photon",
+    "rooms": 116,
+    "summary": "Licensed by the State of Florida as a hotel with 116 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license HOT5104398, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/31/2026; Manatee County; DBPR business name \"HAMPTON INN\". Coordinates: census match \"5810 20TH ST E, ELLENTON, FL, 34222\". Verified 2026-09-27: coordinates replaced: the Census match was on 20th St E, not 20th Ct E; now the OSM feature \"Hampton Inn Ellenton/Bradenton, 5810, 20th Court East, Ellenton, 34222 (W223448054 tourism=hotel)\"."
+   },
+   {
     "id": "hampton-inn-sarasota",
     "name": "Hampton Inn Sarasota",
     "kind": "hotel",
@@ -2711,7 +2724,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6804144, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 11/25/2025; Manatee County; DBPR business name \"HAMPTON INN SARASOTA\". Coordinates: photon match \"Hampton Inn Sarasota - I-75 Bee Ridge, 5995, Cattleridge Boulevard, Sarasota, 34232 (W578705339 tourism=hotel)\"."
+    "notes": "DBPR license HOT6804144, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 11/25/2025; Manatee County; DBPR business name \"HAMPTON INN SARASOTA\". Coordinates: photon match \"Hampton Inn Sarasota - I-75 Bee Ridge, 5995, Cattleridge Boulevard, Sarasota, 34232 (W578705339 tourism=hotel)\". Verified 2026-09-27: the Census geographies service places this point in Sarasota County and the license number carries Sarasota's county code (68), although the extract codes the license to Manatee County; kept because DBPR lists it under Manatee (area sarasota)."
    },
    {
     "id": "harbor-light-motel",
@@ -2826,54 +2839,6 @@
     "notes": "DBPR license HOT6804620, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 05/18/2026; Manatee County; DBPR business name \"HILTON GARDEN INN SARASOTA BRADENTON AIRPORT\". Coordinates: census match \"8270 N TAMIAMI TRL, SARASOTA, FL, 34243\"."
    },
    {
-    "id": "holiday-inn",
-    "name": "Holiday Inn",
-    "kind": "hotel",
-    "brand": "IHG",
-    "collection": "Holiday Inn",
-    "area": "grand-central",
-    "address": "1200 34th St N",
-    "city": "St. Petersburg",
-    "state": "FL",
-    "zip": "33713",
-    "lat": 27.783684,
-    "lng": -82.679499,
-    "geo_source": "census",
-    "rooms": 129,
-    "summary": "Licensed by the State of Florida as a hotel with 129 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license HOT6214910, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/11/2026; Pinellas County; DBPR business name \"HOLIDAY INN\". Coordinates: census match \"1200 34TH ST N, ST PETERSBURG, FL, 33713\"."
-   },
-   {
-    "id": "holiday-inn-express",
-    "name": "Holiday Inn Express",
-    "kind": "hotel",
-    "brand": "IHG",
-    "collection": "Holiday Inn Express",
-    "area": "bradenton-anna-maria",
-    "address": "5464 Lena Rd",
-    "city": "Bradenton",
-    "state": "FL",
-    "zip": "34211",
-    "lat": 27.442146,
-    "lng": -82.456036,
-    "geo_source": "photon",
-    "rooms": 78,
-    "summary": "Licensed by the State of Florida as a hotel with 78 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105014, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/17/2026; Manatee County; DBPR business name \"HOLIDAY INN EXPRESS\". Coordinates: photon match \"Holiday Inn Express & Suites Bradenton East-Lakewood Ranch, Lena Road, 34202 (W450026658 tourism=hotel)\"."
-   },
-   {
     "id": "holiday-inn-express-and-suites-bradenton-west",
     "name": "Holiday Inn Express & Suites Bradenton West",
     "kind": "hotel",
@@ -2896,6 +2861,34 @@
     ],
     "checked": "2026-09-27",
     "notes": "DBPR license HOT5103072, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/10/2026; Manatee County; DBPR business name \"HOLIDAY INN EXPRESS & SUITES BRADENTON WEST\". Coordinates: photon match \"Holiday Inn Express & Suites Bradenton West, Hampton Court, Bradenton, 34210 (W307992947 building=hotel)\"."
+   },
+   {
+    "id": "holiday-inn-express-and-suites-lakewood-ranch",
+    "name": "Holiday Inn Express & Suites Lakewood Ranch",
+    "aliases": [
+     "Holiday Inn Express"
+    ],
+    "kind": "hotel",
+    "brand": "IHG",
+    "collection": "Holiday Inn Express",
+    "area": "bradenton-anna-maria",
+    "address": "5464 Lena Rd",
+    "city": "Bradenton",
+    "state": "FL",
+    "zip": "34211",
+    "lat": 27.442146,
+    "lng": -82.456036,
+    "geo_source": "photon",
+    "rooms": 78,
+    "summary": "Licensed by the State of Florida as a hotel with 78 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.bradentongulfislands.com/listing/holiday-inn-express-suites-lakewood-ranch/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license HOT5105014, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/17/2026; Manatee County; DBPR business name \"HOLIDAY INN EXPRESS\". Coordinates: photon match \"Holiday Inn Express & Suites Bradenton East-Lakewood Ranch, Lena Road, 34202 (W450026658 tourism=hotel)\". Verified 2026-09-27: the Bradenton Gulf Islands listing (read today) names it Holiday Inn Express & Suites Lakewood Ranch at 5464 Lena Road."
    },
    {
     "id": "holiday-inn-express-hotel-seminole-fl",
@@ -2946,6 +2939,34 @@
     "notes": "DBPR license HOT6215079, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/28/2026; Pinellas County; DBPR business name \"HOLIDAY INN EXPRESS OLDSMAR\". Coordinates: photon match \"Holiday Inn Express & Suites Tampa Northwest-Oldsmar, Saint Petersburg Drive East, Oldsmar, 34677 (W920666648 tourism=hotel)\"."
    },
    {
+    "id": "holiday-inn-st-petersburg-west",
+    "name": "Holiday Inn St. Petersburg West",
+    "aliases": [
+     "Holiday Inn"
+    ],
+    "kind": "hotel",
+    "brand": "IHG",
+    "collection": "Holiday Inn",
+    "area": "grand-central",
+    "address": "1200 34th St N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33713",
+    "lat": 27.783684,
+    "lng": -82.679499,
+    "geo_source": "census",
+    "rooms": 129,
+    "summary": "Licensed by the State of Florida as a hotel with 129 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.visitstpeteclearwater.com/profile/holiday-inn-st-petersburg-west/142470"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license HOT6214910, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/11/2026; Pinellas County; DBPR business name \"HOLIDAY INN\". Coordinates: census match \"1200 34TH ST N, ST PETERSBURG, FL, 33713\". Verified 2026-09-27: the Visit St. Pete/Clearwater listing (read today) names it Holiday Inn St Petersburg West at 1200 34th St N with 129 rooms, matching DBPR."
+   },
+   {
     "id": "home2-suites-by-hilton-lakewood-ranch",
     "name": "Home2 Suites by Hilton - Lakewood Ranch",
     "kind": "extended-stay",
@@ -2956,9 +2977,9 @@
     "city": "Bradenton",
     "state": "FL",
     "zip": "34202",
-    "lat": 27.390655,
-    "lng": -82.44735,
-    "geo_source": "census",
+    "lat": 27.392815,
+    "lng": -82.447953,
+    "geo_source": "photon",
     "rooms": 108,
     "summary": "Licensed by the State of Florida as a hotel with 108 rental units.",
     "status": "open",
@@ -2967,7 +2988,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105034, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/01/2026; Manatee County; DBPR business name \"HOME2 SUITES BY HILTON - LAKEWOOD RANCH\". Coordinates: census match \"6015 EXCHANGE WAY, BRADENTON, FL, 34202\"."
+    "notes": "DBPR license HOT5105034, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/01/2026; Manatee County; DBPR business name \"HOME2 SUITES BY HILTON - LAKEWOOD RANCH\". Coordinates: census match \"6015 EXCHANGE WAY, BRADENTON, FL, 34202\". Verified 2026-09-27: coordinates replaced: the Census match put this hotel and Hyatt Place (6021 Exchange Way) on the same interpolated point; now the OSM feature \"Home2 Suites, 6015, Exchange Way, Bradenton, 34202 (N11879278991 tourism=hotel)\"."
    },
    {
     "id": "home2-suites-by-hilton-sarasota-bradenton-airport",
@@ -3034,14 +3055,18 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://stpetecatalyst.com/redevelopment-of-exchange-hotel-moves-forward/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6209303, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Pinellas County; DBPR business name \"HOTEL NEXA\". Coordinates: census match \"234 3RD AVE N, ST PETERSBURG, FL, 33701\"."
+    "notes": "DBPR license HOT6209303, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Pinellas County; DBPR business name \"HOTEL NEXA\". Coordinates: census match \"234 3RD AVE N, ST PETERSBURG, FL, 33701\". Verified 2026-09-27: 234 3rd Ave N was The Exchange Hotel (formerly the Martha Washington Hotel); St. Pete Catalyst (Jul 14, 2023, read today) reports that the city approved demolition of the Exchange Hotel for a 28-story apartment tower. The DBPR license HOTEL NEXA is current with an inspection on 06/30/2026, so the building was still licensed and inspected as a hotel this summer; no page naming Hotel Nexa was found. Status left open on the DBPR evidence; re-check before publishing."
    },
    {
-    "id": "hyatt-place",
-    "name": "Hyatt Place",
+    "id": "hyatt-place-sarasota-lakewood-ranch",
+    "name": "Hyatt Place Sarasota/Lakewood Ranch",
+    "aliases": [
+     "Hyatt Place"
+    ],
     "kind": "hotel",
     "brand": "Hyatt",
     "collection": "Hyatt Place",
@@ -3050,18 +3075,19 @@
     "city": "Lakewood Ranch",
     "state": "FL",
     "zip": "34202",
-    "lat": 27.390654,
-    "lng": -82.447348,
-    "geo_source": "census",
+    "lat": 27.391819,
+    "lng": -82.448002,
+    "geo_source": "photon",
     "rooms": 122,
     "summary": "Licensed by the State of Florida as a hotel with 122 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.bradentongulfislands.com/places/735/hyatt-place-sarasota-lakewood-ranch"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105022, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/26/2026; Manatee County; DBPR business name \"HYATT PLACE\". Coordinates: census match \"6021 EXCHANGE WAY, LAKEWOOD RANCH, FL, 34202\"."
+    "notes": "DBPR license HOT5105022, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/26/2026; Manatee County; DBPR business name \"HYATT PLACE\". Coordinates: census match \"6021 EXCHANGE WAY, LAKEWOOD RANCH, FL, 34202\". Verified 2026-09-27: the Bradenton Gulf Islands listing (read today) names it Hyatt Place Sarasota / Lakewood Ranch at 6021 Exchange Way. Coordinates replaced: the Census match put this hotel and Home2 Suites (6015 Exchange Way) on the same interpolated point; now the OSM hotel feature \"Hyatt Place Sarasota / Lakewood Ranch, 6021, Exchange Way (W808600168 tourism=hotel)\"."
    },
    {
     "id": "ibeach-resort",
@@ -3163,15 +3189,17 @@
     "lat": 27.819671,
     "lng": -82.824761,
     "geo_source": "census",
+    "url": "https://www.islandhousebeachhotel.com/",
     "rooms": 31,
     "summary": "Licensed by the State of Florida as a motel with 31 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.islandhousebeachhotel.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6203086, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; Pinellas County; DBPR business name \"ISLAND HOUSE RESORT HOTEL\". Coordinates: census match \"17103 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708\"."
+    "notes": "DBPR license MOT6203086, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; Pinellas County; DBPR business name \"ISLAND HOUSE RESORT HOTEL\". Coordinates: census match \"17103 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708\". Verified 2026-09-27: the hotel's own site (read today) gives 17103 Gulf Blvd, North Redington Beach and takes bookings; no closure notice."
    },
    {
     "id": "jayhawk-motel",
@@ -3198,6 +3226,9 @@
    {
     "id": "johns-pass-hotel",
     "name": "John's Pass Hotel",
+    "aliases": [
+     "John's Pass Hotel and Condo's"
+    ],
     "kind": "hotel",
     "area": "madeira-beach",
     "address": "12854 John's Way",
@@ -3207,15 +3238,17 @@
     "lat": 27.785122,
     "lng": -82.782561,
     "geo_source": "photon",
+    "url": "https://johnspasshotelfl.com/",
     "rooms": 24,
     "summary": "Licensed by the State of Florida as a hotel with 20 rental units; a second hotel license under the same name at 111 Boardwalk Pl E lists 4 units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://johnspasshotelfl.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215835, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 02/20/2026; Pinellas County; DBPR business name \"JOHN'S PASS HOTEL\". Second DBPR license HOT6215854 (JOHN'S PASS HOTEL, 111 BOARDWALK PL E, 4 units, status 20/20); rooms is the sum of both licenses. Coordinates: photon match \"John's Way, Madeira Beach, 33708 (OSM W267254776, the street)\". Coordinates are the OSM feature for the short street John's Way in John's Pass Village, not the building; no address match was found."
+    "notes": "DBPR license HOT6215835, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 02/20/2026; Pinellas County; DBPR business name \"JOHN'S PASS HOTEL\". Second DBPR license HOT6215854 (JOHN'S PASS HOTEL, 111 BOARDWALK PL E, 4 units, status 20/20); rooms is the sum of both licenses. Coordinates: photon match \"John's Way, Madeira Beach, 33708 (OSM W267254776, the street)\". Coordinates are the OSM feature for the short street John's Way in John's Pass Village, not the building; no address match was found. Verified 2026-09-27: the hotel's own site (read today, \"John's Pass Hotel and Condo's\", 12854 John's Way) takes bookings; no closure notice."
    },
    {
     "id": "kentucky-motel",
@@ -3463,6 +3496,9 @@
    {
     "id": "las-olas",
     "name": "Las Olas",
+    "aliases": [
+     "Las Olas Treasure Island"
+    ],
     "kind": "motel",
     "area": "treasure-island",
     "address": "12035 Gulf Blvd",
@@ -3472,15 +3508,17 @@
     "lat": 27.776586,
     "lng": -82.77822,
     "geo_source": "census",
+    "url": "https://lasolastreasureisland.com/",
     "rooms": 12,
     "summary": "Licensed by the State of Florida as a motel with 12 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://lasolastreasureisland.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215810, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/12/2026; Pinellas County; DBPR business name \"LAS OLAS\". Coordinates: census match \"12035 GULF BLVD, TREASURE ISLAND, FL, 33706\"."
+    "notes": "DBPR license MOT6215810, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/12/2026; Pinellas County; DBPR business name \"LAS OLAS\". Coordinates: census match \"12035 GULF BLVD, TREASURE ISLAND, FL, 33706\". Verified 2026-09-27: the property's own site (read today, \"Las Olas Treasure Island\") has a booking link; no closure notice."
    },
    {
     "id": "legacy-hotel",
@@ -3505,7 +3543,7 @@
     "notes": "DBPR license HOT5105026, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/17/2026; Manatee County; DBPR business name \"LEGACY HOTEL\". Coordinates: photon match \"Legacy Hotel, 47th Street West, South Bradenton, 34210 (W872786076 tourism=hotel)\"."
    },
    {
-    "id": "lenox",
+    "id": "lenox-st-petersburg",
     "name": "Lenox",
     "kind": "motel",
     "area": "downtown-stpete",
@@ -3593,7 +3631,7 @@
     "notes": "DBPR license MOT3901857, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/12/2026; Hillsborough County; DBPR business name \"MACS MOTEL\". Coordinates: census match \"5605 N NEBRASKA AVE, TAMPA, FL, 33604\"."
    },
    {
-    "id": "magnuson",
+    "id": "magnuson-bradenton",
     "name": "Magnuson",
     "kind": "motel",
     "area": "bradenton-anna-maria",
@@ -3788,30 +3826,6 @@
     "notes": "DBPR license MOT3902030, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 03/18/2026; Hillsborough County; DBPR business name \"MOTEL 301\". No coordinates: neither the Census geocoder nor OpenStreetMap (Photon) matched this address or name."
    },
    {
-    "id": "motel-6",
-    "name": "Motel 6",
-    "kind": "motel",
-    "brand": "G6",
-    "collection": "Motel 6",
-    "area": "east-tampa",
-    "address": "6626 Martin Luther King Jr Blvd",
-    "city": "Tampa",
-    "state": "FL",
-    "zip": "33619",
-    "lat": 27.98159,
-    "lng": -82.381289,
-    "geo_source": "census",
-    "rooms": 124,
-    "summary": "Licensed by the State of Florida as a motel with 124 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license MOT3906304, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 07/21/2026; Hillsborough County; DBPR business name \"MOTEL 6\". Coordinates: census match \"6626 E DR MARTIN LUTHER KING JR BLVD, TAMPA, FL, 33619\"."
-   },
-   {
     "id": "motel-6-bradenton",
     "name": "Motel 6 - Bradenton",
     "kind": "motel",
@@ -3834,6 +3848,30 @@
     ],
     "checked": "2026-09-27",
     "notes": "DBPR license MOT5102841, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 06/09/2026; Manatee County; DBPR business name \"MOTEL 6 - BRADENTON\". Coordinates: photon match \"Motel 6 - Bradenton, 67th Street Circle East, 34208 (W307992918 tourism=motel)\"."
+   },
+   {
+    "id": "motel-6-tampa",
+    "name": "Motel 6",
+    "kind": "motel",
+    "brand": "G6",
+    "collection": "Motel 6",
+    "area": "east-tampa",
+    "address": "6626 Martin Luther King Jr Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33619",
+    "lat": 27.98159,
+    "lng": -82.381289,
+    "geo_source": "census",
+    "rooms": 124,
+    "summary": "Licensed by the State of Florida as a motel with 124 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license MOT3906304, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 07/21/2026; Hillsborough County; DBPR business name \"MOTEL 6\". Coordinates: census match \"6626 E DR MARTIN LUTHER KING JR BLVD, TAMPA, FL, 33619\"."
    },
    {
     "id": "motel-6-tampa-fairgrounds",
@@ -3904,9 +3942,13 @@
     "notes": "DBPR license MOT6215813, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 03/19/2026; Pinellas County; DBPR business name \"NACHMAN'S REEL RETREAT\". Coordinates: census match \"17800 GULF BLVD, REDINGTON SHORES, FL, 33708\"."
    },
    {
-    "id": "new-hotel-collection",
-    "name": "New Hotel Collection",
+    "id": "new-hotel-collection-harbourside-resort",
+    "name": "New Hotel Collection Harbourside Resort",
+    "aliases": [
+     "New Hotel Collection"
+    ],
     "kind": "hotel",
+    "brand": "New Hotel Collection",
     "area": "indian-rocks-beach",
     "address": "399 2nd St",
     "city": "Indian Rocks Beach",
@@ -3915,15 +3957,17 @@
     "lat": 27.882507,
     "lng": -82.848922,
     "geo_source": "census",
+    "url": "https://www.newhotelcollection.com/harbourside.php",
     "rooms": 86,
     "summary": "Licensed by the State of Florida as a hotel with 86 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.newhotelcollection.com/harbourside.php"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215836, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/30/2026; Pinellas County; DBPR business name \"NEW HOTEL COLLECTION\". Coordinates: census match \"399 2ND ST, INDIAN ROCKS BEACH, FL, 33785\"."
+    "notes": "DBPR license HOT6215836, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/30/2026; Pinellas County; DBPR business name \"NEW HOTEL COLLECTION\". Coordinates: census match \"399 2ND ST, INDIAN ROCKS BEACH, FL, 33785\". Verified 2026-09-27: the operator's own page (read today) names it New Hotel Collection Harbourside Resort at 399 2nd St, Indian Rocks Beach, \"a unique condominium and hotel property\", and takes bookings. Brand set to New Hotel Collection as in data/stays.json (cordova-inn)."
    },
    {
     "id": "nights-hotel",
@@ -4276,7 +4320,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215783, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/30/2026; Pinellas County; DBPR business name \"PARADISE BEACH VILLAGE\". Coordinates: census match \"11875 GULF BLVD, TREASURE ISLAND, FL, 33706\"."
+    "notes": "DBPR license MOT6215783, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/30/2026; Pinellas County; DBPR business name \"PARADISE BEACH VILLAGE\". Coordinates: census match \"11875 GULF BLVD, TREASURE ISLAND, FL, 33706\". Verified 2026-09-27: search results show apartment sites (Redfin, Zillow, Rent.com) listing Paradise Beach Village with monthly rents; those pages could not be opened. Kept because DBPR licenses it as a motel; the merge may want to drop it as non-visitor lodging."
    },
    {
     "id": "paradise-lakes-resort",
@@ -4386,7 +4430,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215780, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/27/2026; Pinellas County; DBPR business name \"PASA TIEMPO\". Coordinates: census match \"7141 BAY ST, ST PETE BEACH, FL, 33706\"."
+    "notes": "DBPR license MOT6215780, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/27/2026; Pinellas County; DBPR business name \"PASA TIEMPO\". Coordinates: census match \"7141 BAY ST, ST PETE BEACH, FL, 33706\". Verified 2026-09-27: search results report Hurricane Helene flooding and a shutdown for rebuilding; the Visit St. Pete/Clearwater listing (read today) shows no closure note and DBPR inspected the property on 05/27/2026. Status left open; the property's site returned an empty page."
    },
    {
     "id": "patio-palm",
@@ -4620,7 +4664,7 @@
     "kind": "motel",
     "brand": "Choice Hotels",
     "collection": "Quality Inn",
-    "area": "east-tampa",
+    "area": "brandon",
     "address": "9331 E Adamo Dr",
     "city": "Tampa",
     "state": "FL",
@@ -4636,7 +4680,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT3902682, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/16/2026; Hillsborough County; DBPR business name \"QUALITY INN TAMPA-BRANDON\". Coordinates: census match \"9331 ADAMO DR, TAMPA, FL, 33619\"."
+    "notes": "DBPR license MOT3902682, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/16/2026; Hillsborough County; DBPR business name \"QUALITY INN TAMPA-BRANDON\". Coordinates: census match \"9331 ADAMO DR, TAMPA, FL, 33619\". Verified 2026-09-27: area changed from east-tampa to brandon: the Census geographies service places 9331 E Adamo Dr in the Brandon CDP, and data/stays.json puts Comfort Suites Tampa-Brandon (9932 E Adamo Dr) in brandon."
    },
    {
     "id": "rainbow-fountain-motel",
@@ -4753,7 +4797,7 @@
     "notes": "DBPR license MOT5104144, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/17/2026; Manatee County; DBPR business name \"RED ROOF INN\". Coordinates: photon match \"Red Roof Inn Ellenton, 17th Street East, 34221 (W915818638 tourism=hotel)\"."
    },
    {
-    "id": "red-roof-inn-plus-and-suites",
+    "id": "red-roof-inn-plus-and-suites-tampa",
     "name": "Red Roof Inn Plus & Suites",
     "kind": "hotel",
     "brand": "Red Roof",
@@ -4852,9 +4896,9 @@
     "id": "redington-surf-resort",
     "name": "Redington Surf Resort",
     "kind": "hotel",
-    "area": "madeira-beach",
+    "area": "indian-rocks-beach",
     "address": "17300 Gulf Blvd",
-    "city": "Redington Beach",
+    "city": "North Redington Beach",
     "state": "FL",
     "zip": "33708",
     "lat": 27.821616,
@@ -4868,7 +4912,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215826, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Pinellas County; DBPR business name \"REDINGTON SURF RESORT\". Coordinates: census match \"17300 GULF BLVD, REDINGTON BEACH, FL, 33708\"."
+    "notes": "DBPR license HOT6215826, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Pinellas County; DBPR business name \"REDINGTON SURF RESORT\". Coordinates: census match \"17300 GULF BLVD, REDINGTON BEACH, FL, 33708\". Verified 2026-09-27: area changed from madeira-beach to indian-rocks-beach and city from Redington Beach to North Redington Beach: the Census geographies service places 17300 Gulf Blvd in North Redington Beach town (the DBPR location city reads REDINGTON BEACH), and SPEC puts North Redington Beach in indian-rocks-beach, as data/stays.json does for its neighbors at 17120 and 17248 Gulf Blvd."
    },
    {
     "id": "regency-inn",
@@ -5285,7 +5329,7 @@
     "notes": "DBPR license MOT6203125, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/04/2026; Pinellas County; DBPR business name \"SAHARA MOTEL\". Coordinates: photon match \"Sahara Motel Inc, Gandy Boulevard, Gandy, 33716 (W523895812 tourism=motel)\"."
    },
    {
-    "id": "sala",
+    "id": "sala-st-pete-beach",
     "name": "Sala",
     "kind": "motel",
     "area": "st-pete-beach",
@@ -5375,6 +5419,9 @@
    {
     "id": "sea-turtle-bungalows",
     "name": "Sea Turtle Bungalows",
+    "aliases": [
+     "Sea Turtle Bungalows @ John's Pass"
+    ],
     "kind": "motel",
     "area": "madeira-beach",
     "address": "12901 Pelican Ln",
@@ -5384,15 +5431,17 @@
     "lat": 27.786292,
     "lng": -82.781895,
     "geo_source": "census",
+    "url": "https://seaturtlebungalows.com/",
     "rooms": 9,
     "summary": "Licensed by the State of Florida as a motel with 9 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://seaturtlebungalows.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6203466, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/16/2026; Pinellas County; DBPR business name \"SEA TURTLE BUNGALOWS\". Coordinates: census match \"12901 PELICAN LN, MADEIRA BEACH, FL, 33708\"."
+    "notes": "DBPR license MOT6203466, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/16/2026; Pinellas County; DBPR business name \"SEA TURTLE BUNGALOWS\". Coordinates: census match \"12901 PELICAN LN, MADEIRA BEACH, FL, 33708\". Verified 2026-09-27: the property's own site (read today, \"Sea Turtle Bungalows @ John's Pass\", 12901 Pelican Lane) takes bookings; no closure notice."
    },
    {
     "id": "seaside-artisan-motel",
@@ -5508,7 +5557,7 @@
     "notes": "DBPR license MOT3901898, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/18/2026; Hillsborough County; DBPR business name \"SHAWS MOTEL\". Coordinates: photon match \"Shaw's Motel, 1509, East Hillsborough Avenue, Tampa, 33610 (W523011506 tourism=motel)\"."
    },
    {
-    "id": "sierra",
+    "id": "sierra-pinellas-park",
     "name": "Sierra",
     "kind": "motel",
     "area": "largo",
@@ -5625,7 +5674,7 @@
     "kind": "hotel",
     "brand": "Marriott",
     "collection": "St. Regis",
-    "area": "bradenton-anna-maria",
+    "area": "sarasota",
     "address": "1601 Gulf of Mexico Dr",
     "city": "Longboat Key",
     "state": "FL",
@@ -5641,7 +5690,7 @@
      "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105038, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/15/2026; Manatee County; DBPR business name \"ST. REGIS LONGBOAT KEY RESORT\". Coordinates: census match \"1601 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228\"."
+    "notes": "DBPR license HOT5105038, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/15/2026; Manatee County; DBPR business name \"ST. REGIS LONGBOAT KEY RESORT\". Coordinates: census match \"1601 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228\". Verified 2026-09-27: area changed from bradenton-anna-maria to sarasota: the Census geographies service places the point (1601 Gulf of Mexico Dr) in Sarasota County (Longboat Key town), although the DBPR extract codes the license to Manatee County. Kept because DBPR lists it under Manatee."
    },
    {
     "id": "sta-n-pla-motel",
@@ -5811,15 +5860,17 @@
     "lat": 27.764012,
     "lng": -82.767471,
     "geo_source": "photon",
+    "url": "https://suncoastmotel.com/",
     "rooms": 26,
     "summary": "Licensed by the State of Florida as a motel with 26 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://suncoastmotel.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6203506, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/19/2026; Pinellas County; DBPR business name \"SUNCOAST MOTEL\". Coordinates: photon match \"Suncoast Motel, Gulf Boulevard, Treasure Island, 33785 (R2595011 tourism=motel)\"."
+    "notes": "DBPR license MOT6203506, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/19/2026; Pinellas County; DBPR business name \"SUNCOAST MOTEL\". Coordinates: photon match \"Suncoast Motel, Gulf Boulevard, Treasure Island, 33785 (R2595011 tourism=motel)\". Verified 2026-09-27: the motel's own site (read today, 10264 Gulf Blvd) takes bookings; no closure notice."
    },
    {
     "id": "sundaze-motel",
@@ -6023,30 +6074,6 @@
     "notes": "DBPR license MOT6100217, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/21/2026; Pasco County; DBPR business name \"VRUNDA ISHA LLC\". The DBPR business-name field holds the company name VRUNDA ISHA LLC and the licensee-name field holds SUNSHINE INN MOTEL; the latter is used as the name. Coordinates: census match \"12421 US HWY 301, DADE CITY, FL, 33525\"."
    },
    {
-    "id": "super-8",
-    "name": "Super 8",
-    "kind": "motel",
-    "brand": "Wyndham",
-    "collection": "Super 8 by Wyndham",
-    "area": "bradenton-anna-maria",
-    "address": "5218 17th St E",
-    "city": "Ellenton",
-    "state": "FL",
-    "zip": "34222",
-    "lat": 27.530108,
-    "lng": -82.511,
-    "geo_source": "photon",
-    "rooms": 73,
-    "summary": "Licensed by the State of Florida as a motel with 73 rental units.",
-    "status": "open",
-    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
-    "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
-    ],
-    "checked": "2026-09-27",
-    "notes": "DBPR license MOT5102929, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/20/2026; Manatee County; DBPR business name \"SUPER 8\". Coordinates: photon match \"Super 8, 5218, 17th Street East, Ellenton, 34222 (W309666673 tourism=motel)\"."
-   },
-   {
     "id": "super-8-bradenton-sarasota-area",
     "name": "Super 8 Bradenton Sarasota Area",
     "kind": "motel",
@@ -6071,7 +6098,31 @@
     "notes": "DBPR license MOT5102828, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 07/15/2026; Manatee County; DBPR business name \"SUPER 8 BRADENTON SARASOTA AREA\". Coordinates: census match \"6516 14TH ST W, BRADENTON, FL, 34207\"."
    },
    {
-    "id": "surestay-by-best-western",
+    "id": "super-8-ellenton",
+    "name": "Super 8",
+    "kind": "motel",
+    "brand": "Wyndham",
+    "collection": "Super 8 by Wyndham",
+    "area": "bradenton-anna-maria",
+    "address": "5218 17th St E",
+    "city": "Ellenton",
+    "state": "FL",
+    "zip": "34222",
+    "lat": 27.530108,
+    "lng": -82.511,
+    "geo_source": "photon",
+    "rooms": 73,
+    "summary": "Licensed by the State of Florida as a motel with 73 rental units.",
+    "status": "open",
+    "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
+    "also_sources": [
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DBPR license MOT5102929, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 08/20/2026; Manatee County; DBPR business name \"SUPER 8\". Coordinates: photon match \"Super 8, 5218, 17th Street East, Ellenton, 34222 (W309666673 tourism=motel)\"."
+   },
+   {
+    "id": "surestay-by-best-western-clearwater",
     "name": "SureStay by Best Western",
     "kind": "motel",
     "brand": "Best Western",
@@ -6277,7 +6328,7 @@
     "notes": "DBPR license MOT6215774, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 04/13/2026; Pinellas County; DBPR business name \"TARPON INN\". Coordinates: photon match \"Tarpon Inn, Spring Boulevard, Tarpon Springs, 34689 (W778113886 tourism=hotel)\"."
    },
    {
-    "id": "towneplace-suites-by-marriott",
+    "id": "towneplace-suites-by-marriott-bradenton",
     "name": "TownePlace Suites by Marriott",
     "kind": "extended-stay",
     "brand": "Marriott",
@@ -6391,8 +6442,11 @@
     "notes": "DBPR license MOT6215814, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/28/2026; Pinellas County; DBPR business name \"TRBA MOTEL\". Coordinates: census match \"1466 GULF TO BAY BLVD, CLEARWATER, FL, 33755\"."
    },
    {
-    "id": "treasure-bay-resort-and-marina",
-    "name": "Treasure Bay Resort and Marina",
+    "id": "treasure-island-hotel-and-marina",
+    "name": "Treasure Island Hotel & Marina",
+    "aliases": [
+     "Treasure Bay Resort and Marina"
+    ],
     "kind": "hotel",
     "area": "treasure-island",
     "address": "11125 Gulf Blvd",
@@ -6402,15 +6456,17 @@
     "lat": 27.771749,
     "lng": -82.771731,
     "geo_source": "census",
+    "url": "https://treasureislandhotelfl.com/",
     "rooms": 84,
     "summary": "Licensed by the State of Florida as a hotel with 84 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://treasureislandhotelfl.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT6215804, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/13/2026; Pinellas County; DBPR business name \"TREASURE BAY RESORT AND MARINA\". Coordinates: census match \"11125 GULF BLVD, TREASURE ISLAND, FL, 33706\"."
+    "notes": "DBPR license HOT6215804, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/13/2026; Pinellas County; DBPR business name \"TREASURE BAY RESORT AND MARINA\". Coordinates: census match \"11125 GULF BLVD, TREASURE ISLAND, FL, 33706\". Verified 2026-09-27: the property's own site (read today) names it Treasure Island Hotel & Marina at 11125 Gulf Boulevard and takes bookings; the DBPR license still reads TREASURE BAY RESORT AND MARINA. Name updated, DBPR name kept as an alias."
    },
    {
     "id": "tropical-inn-and-suites",
@@ -6580,15 +6636,17 @@
     "lat": 27.779635,
     "lng": -82.780715,
     "geo_source": "census",
+    "url": "https://www.twinsinn.com/",
     "rooms": 11,
     "summary": "Licensed by the State of Florida as a motel with 11 rental units.",
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.twinsinn.com/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license MOT6215785, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/13/2026; Pinellas County; DBPR business name \"TWINS INN & APARTMENTS\". Coordinates: census match \"12520 GULF BLVD, TREASURE ISLAND, FL, 33706\"."
+    "notes": "DBPR license MOT6215785, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 08/13/2026; Pinellas County; DBPR business name \"TWINS INN & APARTMENTS\". Coordinates: census match \"12520 GULF BLVD, TREASURE ISLAND, FL, 33706\". Verified 2026-09-27: the property's own site (read today, 12520 Gulf Boulevard) takes nightly bookings; no closure notice."
    },
    {
     "id": "university-motel",
@@ -6613,7 +6671,7 @@
     "notes": "DBPR license MOT3911399, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 09/11/2026; Hillsborough County; DBPR business name \"UNIVERSITY MOTEL\". Coordinates: census match \"9408 N NEBRASKA AVE, TAMPA, FL, 33612\"."
    },
    {
-    "id": "uptown",
+    "id": "uptown-st-petersburg",
     "name": "Uptown",
     "kind": "hotel",
     "area": "downtown-stpete",
@@ -6635,7 +6693,7 @@
     "notes": "DBPR license HOT6215817, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 03/19/2026; Pinellas County; DBPR business name \"UPTOWN\". Coordinates: census match \"465 7TH AVE N, ST PETERSBURG, FL, 33701\"."
    },
    {
-    "id": "uptown-suites",
+    "id": "uptown-suites-st-petersburg",
     "name": "Uptown Suites",
     "kind": "extended-stay",
     "area": "old-northeast",
@@ -6679,7 +6737,7 @@
     "notes": "DBPR license HOT3913662, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 06/30/2026; Hillsborough County; DBPR business name \"UPTOWN SUITES - TAMPA/RIVERVIEW\". Coordinates: photon match \"Uptown Suites Tampa Riverview, 9321, Everhart Road, Riverview, 33578 (W904324648 tourism=hotel)\"."
    },
    {
-    "id": "valencia",
+    "id": "valencia-clearwater",
     "name": "Valencia",
     "kind": "motel",
     "area": "downtown-clearwater",
@@ -6811,9 +6869,15 @@
     "notes": "DBPR license MOT3901377, class Motel (license type 2002, rank MOTL); primary status 20 Current, secondary status 20 Active; license expires 02/01/2027; last inspection 05/18/2026; Hillsborough County; DBPR business name \"VILLAGE MOTEL\". Coordinates: photon match \"Village Motel, 4100, East Hillsborough Avenue, Tampa, 33610 (W523018159 tourism=motel)\"."
    },
    {
-    "id": "waterline-marina-resort-and-beach-club",
-    "name": "Waterline Marina Resort and Beach Club",
+    "id": "waterline-villas-and-marina",
+    "name": "Waterline Villas & Marina",
+    "aliases": [
+     "Waterline Marina Resort and Beach Club",
+     "Waterline Villas & Marina, Autograph Collection"
+    ],
     "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "Autograph Collection",
     "area": "bradenton-anna-maria",
     "address": "5325 Marina Dr",
     "city": "Holmes Beach",
@@ -6827,10 +6891,11 @@
     "status": "open",
     "source_url": "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge7.csv",
     "also_sources": [
-     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/"
+     "https://www2.myfloridalicense.com/hotels-restaurants/lodging-public-records/",
+     "https://www.bradentongulfislands.com/listing/waterline-marina-resort-beach-club/"
     ],
     "checked": "2026-09-27",
-    "notes": "DBPR license HOT5105024, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/08/2026; Manatee County; DBPR business name \"WATERLINE MARINA RESORT AND BEACH CLUB\". Coordinates: census match \"5325 MARINA DR, HOLMES BEACH, FL, 34217\"."
+    "notes": "DBPR license HOT5105024, class Hotel (license type 2001, rank HOTL); primary status 20 Current, secondary status 20 Active; license expires 12/01/2026; last inspection 09/08/2026; Manatee County; DBPR business name \"WATERLINE MARINA RESORT AND BEACH CLUB\". Coordinates: census match \"5325 MARINA DR, HOLMES BEACH, FL, 34217\". Verified 2026-09-27: the Bradenton Gulf Islands (Manatee County tourism) listing, read today, names it \"Waterline Villas & Marina, Autograph Collection\" at 5325 Marina Drive, Holmes Beach; brand and collection set from it."
    },
    {
     "id": "west-wing-boutique-hotel",
