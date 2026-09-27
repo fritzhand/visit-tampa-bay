@@ -137,7 +137,7 @@ export function pages(ctx) {
 ${ph}<header class="si-head"><span class="si-no" aria-hidden="true">${r.n}</span><div class="si-title"><p class="si-code label">Sheet ${r.n} · ${esc(r.code)}</p><h3 id="si-${r.id}"><a href="${root}${sheetHref(r)}">${esc(r.name)}</a></h3></div>${bullet(r.id, "lg")}</header>
 ${r.lede ? `<p class="si-lede">${esc(firstSentence(r.lede))}</p>` : ""}
 <dl class="si-counts tnum">${counts.map(([v, l]) => `<div><dd>${v}</dd><dt>${esc(l)}</dt></div>`).join("")}</dl>
-${pk.list.length ? `<p class="si-sub label">${pk.signature === pk.list.length ? "Signature places" : pk.signature ? "Signature places, then by kind" : "Places to start, by kind"}</p><ul class="si-sig">${pk.list.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(PLACE_KIND_LABEL[p.kind] || p.kind)}</span></a></li>`).join("")}</ul>` : ""}
+${pk.list.length ? `<p class="si-sub label">${pk.signature === pk.list.length ? "Signature places" : pk.signature ? "Signature places, then by kind" : "Places to start, by kind"}</p><ul class="si-sig">${pk.list.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(PLACE_KIND_LABEL[p.kind] || p.kind)}</span>${p.status && p.status !== "open" ? c.statusBadge(p) : ""}</a></li>`).join("")}</ul>` : ""}
 <div class="si-next" data-next-featured="${r.id}"><p class="si-sub label">${nf && nf.date < W0 ? "Signature event under way" : "Next signature event"}</p>${nfHtml}</div>
 <p class="si-go"><a class="btn btn-secondary" href="${root}${sheetHref(r)}">Open sheet ${r.n}${icon("arrow-r")}</a></p>
 </article>`;

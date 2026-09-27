@@ -35,7 +35,8 @@ Etiquette  User-Agent "tampa-bay-chartbook/1.0 (https://github.com/fritzhand/vis
          up to 16 s, after every 429, easing back after 8 answers in a row), Retry-After honored (up to 15 min), exponential backoff (5, 10, 20, 40, 80 s)
          on 429 and 5xx without one, and after 4 images in a row are refused for rate limiting the run stops fetching
          (those images are "deferred" and retried by the next plain run); with --max-minutes it pauses 10 min
-         instead and goes on until the time is up. Every response's outcome is logged.
+         after 2 such images instead and goes on until the time is up. A refused image is tried once more at the
+         end of the run's queue. Every response's outcome is logged.
          Ctrl-C, SIGTERM or --max-minutes stop the downloads the same way: images already cached are still
          processed and the manifest is written, so a run can be interrupted at any time and resumed by the next one.
 Cache    .cache/img-src/<sha1(fetch url)>.<ext> (the downloads, gitignored) + index.json (url → file, bytes, type,
@@ -90,7 +91,7 @@ GAP, GAP_MAX = 1.5, 64.0         # seconds between request starts to one host; t
 BACKOFF = (5, 10, 20, 40, 80)    # seconds to wait before attempts 2..6 when there is no Retry-After
 RETRY_AFTER_MAX = 900
 STOP_AFTER_RATE_LIMITED = 4      # images refused in a row for rate limiting → stop fetching this run
-PAUSE = 600                      # … or, with --max-minutes, pause this many seconds and go on
+PAUSE, PAUSE_AFTER_RATE_LIMITED = 600, 2  # … or, with --max-minutes, pause 10 min after 2 such images and go on
 MAX_BYTES = 60 * 1024 * 1024
 Image.MAX_IMAGE_PIXELS = 250_000_000
 
@@ -690,7 +691,7 @@ def main():
                 requeued.add(j["key"])
                 queue.append(j)
             rate_limited_run += 1
-            if rate_limited_run >= STOP_AFTER_RATE_LIMITED:
+            if rate_limited_run >= (PAUSE_AFTER_RATE_LIMITED if STOP["deadline"] is not None else STOP_AFTER_RATE_LIMITED):
                 if STOP["deadline"] is not None:  # a time budget was given: pause, then keep going until it runs out
                     log(f"  {rate_limited_run} images in a row refused for rate limiting: pausing downloads for {PAUSE // 60} min")
                     rate_limited_run = 0

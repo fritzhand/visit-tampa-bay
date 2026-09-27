@@ -230,3 +230,15 @@
 .sheet-photo img { width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover; }
 @media (max-width: 559px) { .sheet-photo img { aspect-ratio: 3 / 2; } }
 @media (max-width: 699px) { .sheet-photo figcaption a { display: inline-flex; align-items: center; min-height: var(--tap); } }
+
+/* ---------- every year: the rest behind a disclosure ---------- */
+.annual-more { margin-top: var(--sp-2); }
+.annual-more > summary { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); cursor: pointer; list-style: none; font-size: var(--fs-sm); font-weight: var(--wght-strong); color: var(--link); }
+.annual-more > summary::-webkit-details-marker { display: none; }
+.annual-more > summary .chev { width: 16px; height: 16px; transition: transform var(--speed) var(--ease); }
+.annual-more[open] > summary .chev { transform: rotate(180deg); }
+.annual-more > summary:hover span { text-decoration: underline; text-underline-offset: 0.16em; }
+
+/* ---------- status words beside a name (Temporarily closed, Seasonal): the badge keeps its own width ---------- */
+.her-st { display: block; margin-top: 4px; }
+.sheet-key .kt .badge { align-self: flex-start; margin: 2px 0; }

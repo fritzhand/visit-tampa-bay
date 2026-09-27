@@ -421,6 +421,83 @@
         ],
         "checked": "2026-09-27",
         "notes": "gaps-listings: Visit St. Pete/Clearwater profile 141461. The club's calendar (read Sep 27) lists shows on Sep 27, 28, 29, 30 and Oct 1 and 2, 2026. Census address point."
+      },
+      {
+        "id": "bonnet-springs-park",
+        "name": "Bonnet Springs Park",
+        "kind": "park",
+        "kinds": [
+          "garden"
+        ],
+        "topics": [
+          "outdoors",
+          "family"
+        ],
+        "area": "polk",
+        "address": null,
+        "city": "Lakeland",
+        "state": "FL",
+        "zip": null,
+        "lat": 28.049151,
+        "lng": -81.968735,
+        "geo_source": "photon",
+        "url": "https://bonnetspringspark.com/",
+        "phone": null,
+        "hours_text": "Gates open at 6AM; gates close at 7:30PM; tram every day 9AM-7PM",
+        "price_text": "Free admission",
+        "is_free": true,
+        "summary": "A 168-acre park on the east side of Lake Bonnet, just outside downtown Lakeland, with trails, gardens, playgrounds and a tram; admission is free.",
+        "quote": "Bonnet Springs Park is a beautifully designed 168-acre urban-nature park in Lakeland, open daily with free admission.",
+        "status": "open",
+        "tags": [
+          "urban-park",
+          "free"
+        ],
+        "source_url": "https://bonnetspringspark.com/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/bonnet-springs-park/30555/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Florida listing 30555. The site places the park between West Memorial Boulevard and George Jenkins Boulevard; no street address was read. Coordinates: OSM park W1087287251 (the same point data/ uses for florida-childrens-museum, 600 Bonnet Springs Blvd)."
+      },
+      {
+        "id": "palma-sola-botanical-park",
+        "name": "Palma Sola Botanical Park",
+        "kind": "garden",
+        "kinds": [
+          "park"
+        ],
+        "topics": [
+          "outdoors",
+          "family"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "9800 17th Ave NW",
+        "city": "Bradenton",
+        "state": "FL",
+        "zip": "34209",
+        "lat": 27.513502,
+        "lng": -82.659921,
+        "geo_source": "photon",
+        "url": "https://palmasolabp.org/",
+        "phone": null,
+        "hours_text": "8am - Dusk every day",
+        "price_text": "No entrance fee; donations welcome",
+        "is_free": true,
+        "summary": "A 10-acre nonprofit botanical park in west Bradenton on the former Manatee County nursery site, open free every day; well-behaved pets are welcome.",
+        "quote": "We rely greatly on donations to keep the park open free of charge to the public 7 days per week.",
+        "status": "open",
+        "tags": [
+          "botanical-garden",
+          "free",
+          "pet-friendly"
+        ],
+        "source_url": "https://palmasolabp.org/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/palma-sola-botanical-park/32022/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Florida listing 32022. Coordinates: OSM park W32656458 (the Census geocoder did not match the address)."
       }
     ],
     "experiences": [
@@ -526,6 +603,158 @@
         ],
         "checked": "2026-09-27",
         "notes": "gaps-listings: Visit Tampa Bay listing 21055 (Tours). The tours page names the routes but gives no prices, times or meeting points."
+      },
+      {
+        "id": "spb-concierge-electric-boat-rentals",
+        "name": "St. Pete Beach electric boat and Moke rentals",
+        "operator": "SPB Concierge (St. Pete Beach Electric Boat Company)",
+        "kind": "boat-rental",
+        "topics": [
+          "water",
+          "beaches"
+        ],
+        "area": "st-pete-beach",
+        "departs_text": "Multiple departure locations in St. Pete Beach; the company also drops off rentals",
+        "url": "https://spbconcierge.com/",
+        "booking_url": "https://spbconcierge.com/",
+        "phone": "727-655-0535",
+        "duration_text": "Half-day or full-day Moke rentals",
+        "price_text": null,
+        "is_free": null,
+        "schedule_text": null,
+        "season_text": null,
+        "ages_text": null,
+        "summary": "Self-drive electric Duffy boats for up to 8 passengers on the waters around St. Pete Beach and Pass-a-Grille, plus open-air electric Moke cars for getting around on land.",
+        "quote": "Be Your Own Captain and discover the beauty of St. Pete Beach and Pass-a-Grille",
+        "status": "open",
+        "tags": [
+          "electric-boat",
+          "self-drive"
+        ],
+        "source_url": "https://spbconcierge.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/profile/st-pete-beach-electric-boat-company/142321"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 142321 (St. Pete Beach Electric Boat Company, 3062 W Vina Del Mar Blvd, which links to spbconcierge.com). Prices were not on the page read."
+      },
+      {
+        "id": "jimbos-jumbo-food-tour",
+        "name": "Jimbo's Jumbo Food Tour",
+        "operator": "Jimbo's Jumbo Food Tour",
+        "kind": "food-tour",
+        "topics": [
+          "food",
+          "history"
+        ],
+        "area": "clearwater-beach",
+        "departs_text": "Public tours in Clearwater Beach, St. Petersburg, Tampa and Safety Harbor (meeting points are not listed on the tours page)",
+        "url": "https://www.jimbosjumbofoodtour.com/",
+        "booking_url": "https://www.jimbosjumbofoodtour.com/food-tours",
+        "phone": null,
+        "duration_text": "About 3 hours, walking roughly 1.5 miles",
+        "price_text": null,
+        "is_free": null,
+        "schedule_text": null,
+        "season_text": null,
+        "ages_text": null,
+        "summary": "Walking food tours with stops at 4 to 5 local restaurants, local history, trivia and a scavenger hunt, in Clearwater Beach, downtown St. Petersburg, along the Tampa Riverwalk and in Safety Harbor.",
+        "quote": "Tours last approximately 3 hours and participants can expect to walk roughly 1.5 miles over that time.",
+        "quote_source": "https://www.jimbosjumbofoodtour.com/faq",
+        "status": "open",
+        "tags": [
+          "walking",
+          "trivia"
+        ],
+        "source_url": "https://www.jimbosjumbofoodtour.com/food-tours",
+        "also_sources": [
+          "https://www.jimbosjumbofoodtour.com/faq"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Florida listing 32343 (Clearwater). The site also runs a Miami tour (out of region). Alcohol is not included; drinks can be bought at the restaurants (FAQ). Prices and meeting points were not on the pages read."
+      },
+      {
+        "id": "marina-rose-cruises",
+        "name": "Marina Rose lunch and sunset dinner cruises",
+        "operator": "Marina Rose Cruises",
+        "kind": "dinner-cruise",
+        "topics": [
+          "water",
+          "food"
+        ],
+        "area": "nature-coast",
+        "address": "4139 Shoal Line Boulevard, Slip 18",
+        "city": "Hernando Beach",
+        "state": "FL",
+        "zip": "34607",
+        "lat": 28.490088,
+        "lng": -82.650782,
+        "geo_source": "photon",
+        "departs_text": "Hernando Beach Marina, 4139 Shoal Line Boulevard, Slip 18; boarding begins 15 minutes before departure",
+        "url": "https://marinarosecruises.com/",
+        "booking_url": "https://marinarosecruises.com/",
+        "phone": null,
+        "duration_text": "2 hours",
+        "price_text": "Sunset Dinner Cruise $74 per person, Lunch Cruise $64 per person, plus tax and gratuity; drinks sold on board",
+        "is_free": false,
+        "schedule_text": "Book at least 24 hours ahead; a minimum number of passengers is needed to sail",
+        "season_text": null,
+        "ages_text": null,
+        "summary": "Two-hour lunch and sunset dinner cruises on the Gulf off Hernando Beach aboard a riverboat replica, with food from local restaurants; advance reservations required.",
+        "quote": "This Riverboat Replica will offer a 2 hour Lunch & Dinner Cruises.",
+        "status": "open",
+        "tags": [
+          "riverboat",
+          "sunset"
+        ],
+        "source_url": "https://marinarosecruises.com/",
+        "also_sources": [
+          "https://www.visitflorida.com/listing/marina-rose-cruises/32075/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Florida listing 32075. The page says the architectural design limits ADA access to the onboard restroom. Coordinates: OSM marina W1253508548 (Census address match 110 m away)."
+      },
+      {
+        "id": "dakin-dairy-farms-tour",
+        "name": "Dakin Dairy Farms farm tour",
+        "operator": "Dakin Dairy Farms",
+        "kind": "behind-the-scenes",
+        "topics": [
+          "family",
+          "food"
+        ],
+        "area": "sarasota",
+        "address": "30771 Betts Rd.",
+        "city": "Myakka City",
+        "state": "FL",
+        "zip": "34251",
+        "lat": 27.361878,
+        "lng": -82.225894,
+        "geo_source": "census",
+        "departs_text": "Dakin Dairy Farms, 30771 Betts Rd., Myakka City",
+        "url": "https://dakindairyfarms.com/tours/",
+        "booking_url": "https://dakindairyfarms.com/tours/",
+        "phone": "941-322-2802",
+        "duration_text": "45 minutes to an hour",
+        "price_text": "Children 2 and under are free",
+        "is_free": null,
+        "schedule_text": "Farm hours Monday - Friday 9AM - 5PM, Saturday 9AM - 4PM, Sunday closed",
+        "season_text": null,
+        "ages_text": null,
+        "summary": "A guided tour of a working family dairy in Myakka City: the milking parlor, the bottling and cheese-making plant, and the farm's calves and goats, with a taste of fresh milk.",
+        "quote": "Tours last 45 minutes to an hour.",
+        "status": "open",
+        "tags": [
+          "farm-tour",
+          "kids"
+        ],
+        "source_url": "https://dakindairyfarms.com/tours/",
+        "also_sources": [
+          "https://www.dakindairyfarms.com/",
+          "https://www.visitflorida.com/listing/dakin-dairy-farms/18777/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Florida listing 18777. Myakka City is in inland Manatee County; area sarasota to sit with Myakka River State Park. Tour prices for older guests were not on the page read. The Dakin Dairy Harvest Festival post (Aug 17, 2026) gives no festival date, so no event record."
       }
     ],
     "events": [
@@ -1885,6 +2114,39 @@
         ],
         "checked": "2026-09-27",
         "notes": "gaps-listings. The MFA's current show New African Masquerades (through January 3, 2027) was left out because its page gives no opening date."
+      },
+      {
+        "id": "midtown-tampa-sunset-market-2026-10-01",
+        "title": "Sunset Market",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "food",
+          "music"
+        ],
+        "series": "midtown-tampa-sunset-market",
+        "date": "2026-10-01",
+        "start": "18:00",
+        "end": "22:00",
+        "place": "midtown-tampa",
+        "area": "westshore",
+        "cost": null,
+        "is_free": null,
+        "url": "https://midtowntampa.com/midtown-events/",
+        "tickets_url": null,
+        "description": null,
+        "summary": "Midtown Tampa's first-Thursday evening market of local vendors, live music and art.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "local-vendors"
+        ],
+        "source_url": "https://midtowntampa.com/midtown-events/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/sunset-market-in-midtown-tampa/101609/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Midtown Tampa's calendar (Oct 1, 6:00 pm - 10:00 pm). Later dates were not yet on its calendar."
       }
     ],
     "series": [
@@ -2063,6 +2325,83 @@
         "source_url": "https://www.tampasdowntown.com/events/downtown-core-downtowns-backyard-market/",
         "checked": "2026-09-27",
         "notes": "gaps-listings."
+      },
+      {
+        "id": "midtown-tampa-sunset-market",
+        "name": "Sunset Market at Midtown Tampa",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "food",
+          "music"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "every first Thursday of each month",
+        "place": "midtown-tampa",
+        "area": "westshore",
+        "since": null,
+        "url": "https://midtowntampa.com/midtown-events/",
+        "summary": "An evening market at Midtown Tampa with more than 40 local vendors, live music, cocktails and artists, on the first Thursday of the month.",
+        "quote": "Join Midtown Tampa every first Thursday of each month for its Sunset Market!",
+        "quote_source": "https://www.visittampabay.com/blog/archive/post/tampa-bay-monthly-markets/",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/blog/archive/post/tampa-bay-monthly-markets/",
+        "also_sources": [
+          "https://midtowntampa.com/midtown-events/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the rule and vendor count come from Visit Tampa Bay's markets page; Midtown Tampa's own calendar lists the Oct 1, 2026 market, 6:00 pm - 10:00 pm."
+      },
+      {
+        "id": "midtown-tampa-sunshine-market",
+        "name": "Sunshine Market at Midtown Tampa",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "food"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "every 4th Saturday of each month",
+        "place": "midtown-tampa",
+        "area": "westshore",
+        "since": null,
+        "url": "https://midtowntampa.com/midtown-events/",
+        "summary": "A daytime market at Midtown Tampa with local vendors, bakeries, restaurants, jewelry, art and live entertainment on the fourth Saturday of the month.",
+        "quote": "Midtown Tampa is hosting Sunshine Market every 4th Saturday of each month!",
+        "quote_source": "https://www.visittampabay.com/blog/archive/post/tampa-bay-monthly-markets/",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/blog/archive/post/tampa-bay-monthly-markets/",
+        "also_sources": [
+          "https://midtowntampa.com/midtown-events/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Midtown Tampa's calendar lists the Sep 26, 2026 market, 10:00 am - 2:00 pm; later dates were not yet on its calendar page."
       }
     ]
   },

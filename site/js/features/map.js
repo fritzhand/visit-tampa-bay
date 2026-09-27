@@ -589,7 +589,7 @@ const evIn = (x, a, b) => (x.days || []).some((d) => d >= a && d <= b) || (x.run
 
 /* ---------- map.html ---------- */
 const CAP = 40;                                      // rows per list section before "Show all"
-const SEC_NOUN = { places: KIND_WORD.place, outdoors: KIND_WORD.place, heritage: KIND_WORD.heritage, events: KIND_WORD.event, stays: KIND_WORD.stay, experiences: KIND_WORD.experience, transport: KIND_WORD.stop };
+const SEC_NOUN = { places: ["thing to do", "things to do"], outdoors: ["beach or outdoor place", "beaches and outdoor places"], heritage: KIND_WORD.heritage, events: KIND_WORD.event, stays: KIND_WORD.stay, experiences: KIND_WORD.experience, transport: KIND_WORD.stop };
 const TOPICAL = new Set(["place", "heritage", "experience", "event"]);
 function mapPage(app) {
   const page = $("[data-map-page]");
@@ -612,6 +612,7 @@ function mapPage(app) {
   const DEF = (page.dataset.defaultLayers || "").split(" ").filter((l) => LAY.includes(l));
   const REG = $$("[data-mr]", page).map((b) => b.dataset.mr), GRP = $$("[data-mk]", page).map((b) => b.dataset.mk);
   const topicSel = $("[data-mt]", page), TOP = topicSel ? [...topicSel.options].map((o) => o.value).filter(Boolean) : [];
+  const areaSel = $("[data-ma]", page);
   const WHENS = ["today", "weekend", "week", "month"];
   const q = new URLSearchParams(location.search);
   const listOf = (k, ok) => (q.get(k) || "").split(",").filter((x) => ok.includes(x));
@@ -678,6 +679,7 @@ function mapPage(app) {
     for (const b of $$("[data-mw]", page)) b.setAttribute("aria-pressed", String(b.dataset.mw === st.when));
     for (const b of $$("[data-chart]", page)) b.setAttribute("aria-pressed", String(b.dataset.chart === (map.chart || "bay")));
     if (topicSel) topicSel.value = st.t[0] || "";
+    if (areaSel) areaSel.value = st.area && !st.sel ? st.area : "";
     for (const g of $$("[data-for]", page)) g.hidden = !g.dataset.for.split(" ").some((l) => st.layers.includes(l));
     for (const l of $$("[data-lg]", page)) l.hidden = !l.dataset.lg.split(" ").some((x) => st.layers.includes(x));
     const note = $("[data-mc-note]", page); if (note) note.hidden = !st.t.length;
@@ -798,6 +800,7 @@ function mapPage(app) {
   }
   function closePanel(restore = true) {
     st.sel = null; st.lead = null; st.area = null; st.focusEv = null;
+    if (areaSel) areaSel.value = "";
     for (const y of rows) y.el.classList.remove("is-sel");
     panel.classList.remove("is-open", "is-full");
     panel.hidden = true;
@@ -857,6 +860,14 @@ ${others.length ? `<h3 class="map-panel-h">Also at this spot</h3><ul class="map-
   function showArea(id) {
     const a = charts && charts.areas && charts.areas[id];
     if (!a) return;
+    // an area beyond the chart in use (a day trip on the bay chart): switch charts first
+    const cur = map.chart === "region" ? regionMeta : bayMeta, other = map.chart === "region" ? "bay" : "region", om = other === "region" ? regionMeta : bayMeta;
+    const pt = a.ll || (shown.find((x) => x.a === id) || {}).ll?.split(",").map(Number);
+    if (pt && cur && om && !onMap(cur, pt[0], pt[1]) && onMap(om, pt[0], pt[1]) && !showArea.busy) {
+      showArea.busy = true;
+      map.setChart(other, { fit: "home" }).then(() => { showArea.busy = false; paintControls(); showArea(id); });
+      return;
+    }
     const inArea = shown.filter((x) => x.a === id), mt = map.chart && (map.chart === "bay" ? bayMeta : regionMeta);
     const on = inArea.filter((x) => mt && onMap(mt, x.lat, x.lng));
     if (on.length) map.fit(on.map((x) => ({ lat: x.lat, lng: x.lng })));
@@ -895,6 +906,14 @@ ${others.length ? `<h3 class="map-panel-h">Also at this spot</h3><ul class="map-
     if (grow) { const full = panel.classList.toggle("is-full"); grow.setAttribute("aria-expanded", String(full)); grow.setAttribute("aria-label", full ? "Collapse" : "Expand"); }
   });
   if (topicSel) topicSel.addEventListener("change", () => { st.t = topicSel.value ? [topicSel.value] : []; apply(); });
+  if (areaSel) areaSel.addEventListener("change", () => {
+    const id = areaSel.value;
+    if (!id) return;
+    if (st.sel) { st.sel = null; st.lead = null; for (const y of rows) y.el.classList.remove("is-sel"); }
+    st.area = id; st.focusEv = null;
+    showArea(id); writeUrl();
+    if (narrow()) toView();
+  });
   panel.addEventListener("keydown", (e) => { if (e.key === "Escape") { e.preventDefault(); closePanel(); } });
   list.addEventListener("pointerover", (e) => { const li = e.target.closest("li.map-li[data-id]"); map.highlight(li ? pinOfRow.get(li.dataset.id) : null); });
   list.addEventListener("pointerleave", () => map.highlight(null));

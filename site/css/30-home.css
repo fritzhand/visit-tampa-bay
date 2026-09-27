@@ -238,3 +238,4 @@ table.dist .near { margin-left: 0; }
 .si-credit { margin-top: 4px; font-size: var(--fs-xs); color: var(--text-faint); overflow-wrap: anywhere; }
 .si-credit a { color: var(--text-muted); }
 @media (max-width: 699px) { .si-credit a { display: inline-flex; align-items: center; min-height: var(--tap); } }
+.si-sig a .badge { align-self: flex-start; margin: 2px 0; }

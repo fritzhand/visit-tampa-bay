@@ -360,7 +360,7 @@ export function pages(ctx) {
     const keyOrder = h.sortBy(keyPlaces, (p) => numbers.get(p.id) ?? 999);
     const keyList = keyOrder.map((p) => {
       const no = numbers.get(p.id);
-      return `<li${no ? "" : ' class="off"'}><span class="kb" data-sheet="${r.id}" aria-hidden="true">${no ? no : ""}</span><span class="kt"><a href="ROOT/places/${h.attr(p.id)}.html">${h.esc(p.name)}</a><span class="w">${h.esc([PLACE_KIND_LABEL[p.kind], db.byId.area.get(p.area)?.name].filter(Boolean).join(" · "))}${no ? "" : ` · ${p.ll ? "outside this chart" : "no coordinates listed, not on the chart"}`}</span></span>${no ? `<span class="sr-only">, buoy ${no}</span>` : ""}</li>`;
+      return `<li${no ? "" : ' class="off"'}><span class="kb" data-sheet="${r.id}" aria-hidden="true">${no ? no : ""}</span><span class="kt"><a href="ROOT/places/${h.attr(p.id)}.html">${h.esc(p.name)}</a>${p.status && p.status !== "open" ? c.statusBadge(p) : ""}<span class="w">${h.esc([PLACE_KIND_LABEL[p.kind], db.byId.area.get(p.area)?.name].filter(Boolean).join(" · "))}${no ? "" : ` · ${p.ll ? "outside this chart" : "no coordinates listed, not on the chart"}`}</span></span>${no ? `<span class="sr-only">, buoy ${no}</span>` : ""}</li>`;
     }).join("");
     const counts = [[areasWith.length, "area", "areas"], [r.places.length, "place", "places"], [r.stays.length, "place to stay", "places to stay"], [r.experiences.length, "experience", "experiences"], [r.events.length, "event", "events"]];
     const titleBlock = `<div class="sheet-title" data-sheet="${r.id}">
@@ -439,6 +439,14 @@ ${stayPick.length ? `<h3 class="sub-h">A few to start with</h3><div class="grid 
     const list60 = [...rowsByMonth].map(([m, list]) => `<div class="evmonth" data-month="${m}"${list.some((e) => first60.includes(e)) ? "" : " hidden"}><h3 class="sub-h">${h.esc(fmtMonth(m))}</h3><ol class="evrows dated">${list.map((e) => dateRow(ctx, "ROOT/", e, { hidden: !first60.includes(e) })).join("")}</ol></div>`).join("");
     const annual = h.sortBy(r.series, (s) => SEASON.findIndex((m) => (s.months || []).includes(m)), (s) => (s.featured ? 0 : 1), (s) => s.name);
     const span = monthSpan;
+    // the signature ones (else the first ten) in view; with more than twelve, the rest behind a disclosure
+    const anLi = (s) => `<li><a href="ROOT/whats-on.html#s-${h.attr(s.id)}"><span class="an-m label tnum">${h.esc(span(s.months))}</span><span class="an-t">${h.esc(s.name)}</span>${s.featured ? '<span class="an-sig label">Signature</span>' : ""}</a></li>`;
+    const annualList = (list) => {
+      if (list.length <= 12) return `<ul class="annual">${list.map(anLi).join("")}</ul>`;
+      const top = list.some((s) => s.featured) ? list.filter((s) => s.featured) : list.slice(0, 10);
+      const rest = list.filter((s) => !top.includes(s));
+      return `<ul class="annual">${top.map(anLi).join("")}</ul>${rest.length ? `<details class="annual-more"><summary><span>${h.esc(`${rest.length} more every year`)}</span>${h.icon("chev-d", "chev")}</summary><ul class="annual">${rest.map(anLi).join("")}</ul></details>` : ""}`;
+    };
     const onSec = c.section({ id: "on", kicker: `${S} · ${h.plural(r.events.length, "event")} listed`, title: "What's on in the next 60 days", root: "ROOT/", more: { href: `whats-on.html?r=${r.id}`, label: "All events on this sheet" },
       body: (evs.length ? `<div class="on60" data-on60 data-window-start="${W0}" data-window-end="${db.window.end}">
 <p class="on60-note" data-on60-note><span class="nojs-only">The first 60 days of the listings, ${h.esc(fmtDateRange(W0, until))}${W0.slice(0, 4) !== until.slice(0, 4) ? "" : `, ${W0.slice(0, 4)}`}.</span><span class="js-only" data-on60-range></span></p>
@@ -446,7 +454,7 @@ ${list60}
 <p class="on60-empty" data-on60-empty hidden><span data-on60-why>Nothing is listed on this sheet in the next 60 days.</span> <a href="ROOT/whats-on.html?r=${r.id}">Every event on this sheet</a>.</p>
 <p class="on60-more js-only" data-on60-more hidden><button class="btn btn-secondary btn-sm" type="button" data-on60-show></button></p>
 </div>` : c.emptyState({ title: "No events listed on this sheet yet", body: `The guide lists events from ${h.fmtDateY(W0)} to ${h.fmtDateY(db.window.end)}.`, level: 3, sheet: r.id }))
-      + (annual.length ? `<h3 class="sub-h annual-h" id="every-year">Every year on this sheet</h3><ul class="annual">${annual.map((s) => `<li><a href="ROOT/whats-on.html#s-${h.attr(s.id)}"><span class="an-m label tnum">${h.esc(span(s.months))}</span><span class="an-t">${h.esc(s.name)}</span>${s.featured ? '<span class="an-sig label">Signature</span>' : ""}</a></li>`).join("")}</ul>` : "") });
+      + (annual.length ? `<h3 class="sub-h annual-h" id="every-year">Every year on this sheet · ${annual.length}</h3>${annualList(annual)}` : "") });
 
     /* ---------- experiences that depart here ---------- */
     const expFam = EXP_GROUPS.map((g) => {
@@ -465,7 +473,7 @@ ${list60}
     const herRow = ({ kind, rec }) => {
       const hh = rec.heritage;
       const d = (hh.designations || [])[0];
-      return `<li class="her"><a href="ROOT/${kind === "stay" ? "stays" : "places"}/${h.attr(rec.id)}.html"><span class="her-y tnum">${hh.built ? h.esc(String(hh.built).match(/\d{4}/)?.[0] || hh.built) : '<span class="unk">Year not listed</span>'}</span><span><span class="t">${h.esc(rec.name)}</span><span class="w">${h.esc([kind === "stay" ? "Hotel" : PLACE_KIND_LABEL[rec.kind], hh.era ? ERA_NAME[hh.era] : "", db.byId.area.get(rec.area)?.name].filter(Boolean).join(" · "))}</span>${d ? `<span class="her-d">${h.esc(`${d.name}${d.year ? ` (${d.year})` : ""}`)}${hh.designations.length > 1 ? ` <span class="faint">and ${hh.designations.length - 1} more</span>` : ""}</span>` : ""}</span></a></li>`;
+      return `<li class="her"><a href="ROOT/${kind === "stay" ? "stays" : "places"}/${h.attr(rec.id)}.html"><span class="her-y tnum">${hh.built ? h.esc(String(hh.built).match(/\d{4}/)?.[0] || hh.built) : '<span class="unk">Year not listed</span>'}</span><span><span class="t">${h.esc(rec.name)}</span><span class="w">${h.esc([kind === "stay" ? "Hotel" : PLACE_KIND_LABEL[rec.kind], hh.era ? ERA_NAME[hh.era] : "", db.byId.area.get(rec.area)?.name].filter(Boolean).join(" · "))}</span>${rec.status && rec.status !== "open" ? `<span class="her-st">${c.statusBadge(rec)}</span>` : ""}${d ? `<span class="her-d">${h.esc(`${d.name}${d.year ? ` (${d.year})` : ""}`)}${hh.designations.length > 1 ? ` <span class="faint">and ${hh.designations.length - 1} more</span>` : ""}</span>` : ""}</span></a></li>`;
     };
     const tl = h.sortBy(r.timeline, (t) => t.year ?? 0, (t) => t.date || "", (t) => t.id);
     const tlShow = tl.length > 6 ? [...tl.slice(0, 3), ...tl.slice(-3)] : tl;

@@ -3237,3 +3237,14 @@
 {"k":"photon:hyatt place sarasota lakewood ranch:27.3906,-82.4473","v":{"lat":27.391819,"lng":-82.448002,"geo_source":"photon","matched":"Hyatt Place Sarasota / Lakewood Ranch, 6021, Exchange Way, Bradenton, 34202","osm":"W808600168 tourism=hotel"}}
 {"k":"photon:hilton garden inn sarasota bradenton airport:27.393,-82.5615","v":null}
 {"k":"photon:home2 suites sarasota bradenton airport:27.393,-82.5615","v":null}
+{"k":"photon:palma sola botanical park:27.49,-82.65","v":{"lat":27.513502,"lng":-82.659921,"geo_source":"photon","matched":"Palma Sola Botanical Park","osm":"W32656458 leisure=park"}}
+{"k":"census:9800 17th ave nw, bradenton, fl 34209","v":null}
+{"k":"photon:9800 17th ave nw, bradenton, fl 34209:","v":{"lat":27.484638,"lng":-82.586051,"geo_source":"photon","matched":"17th Avenue West, Bradenton, 34209","osm":"W1063176416 highway=tertiary"}}
+{"k":"census:4139 shoal line blvd, hernando beach, fl 34607","v":{"lat":28.489121,"lng":-82.650378,"geo_source":"census","matched":"4139 SHOAL LINE BLVD, HERNANDO BEACH, FL, 34607"}}
+{"k":"photon:hernando beach marina:28.47,-82.66","v":{"lat":28.490088,"lng":-82.650782,"geo_source":"photon","matched":"Hernando Beach Marina, Shoal Line Blvd, 34607","osm":"W1253508548 leisure=marina"}}
+{"k":"census:30771 betts rd, myakka city, fl 34251","v":{"lat":27.361878,"lng":-82.225894,"geo_source":"census","matched":"30771 BETTS RD, MYAKKA CITY, FL, 34251"}}
+{"k":"photon:dakin dairy farms:27.35,-82.2","v":{"lat":28.016793,"lng":-82.148665,"geo_source":"photon","matched":"Astin Farms dairy, swine, and steer pavillion, West Oak Avenue, Plant City, 33563","osm":"W353944251 building=yes"}}
+{"k":"census:1804 s us highway 41, ruskin, fl 33570","v":{"lat":27.704949,"lng":-82.44038,"geo_source":"census","matched":"1804 S US HWY 41, RUSKIN, FL, 33570"}}
+{"k":"photon:comfort motel:27.70,-82.43","v":{"lat":27.704553,"lng":-82.439952,"geo_source":"photon","matched":"Comfort Motel, 1804, South US 41, Ruskin, 33570","osm":"N11518949728 tourism=motel"}}
+{"k":"photon:hampton inn ellenton:27.53,-82.505","v":{"lat":27.532742,"lng":-82.504553,"geo_source":"photon","matched":"Hampton Inn Ellenton/Bradenton, 5810, 20th Court East, Ellenton, 34222","osm":"W223448054 tourism=hotel"}}
+{"k":"photon:hampton inn ellenton/bradenton:27.53,-82.505","v":{"lat":27.532742,"lng":-82.504553,"geo_source":"photon","matched":"Hampton Inn Ellenton/Bradenton, 5810, 20th Court East, Ellenton, 34222","osm":"W223448054 tourism=hotel"}}

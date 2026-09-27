@@ -183,7 +183,10 @@ function whereSection(ctx, root, p, where) {
     const [lat, lng] = p.ll;
     // the bay chart's crop; beyond it, the region chart's (the whole guide box), else the coordinate line
     const regionMap = where === "off" && cards.chartMap ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "region", label: `Map: ${p.name}`, minHalfM: 7000, labels: 4 }) : "";
-    map = where === "on" ? cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : regionMap || cards.coordLine(lat, lng);
+    // on the bay chart: the chart crop with its own names (streets, water, neighborhoods) around the buoy, so the
+    // reader can place it; the plain mini map when the Map lane's chart is not there
+    const bayMap = where === "on" && cards.chartMap && cards.charts?.bay ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "bay", label: `Map: ${p.name}`, minHalfM: 1100, labels: 4 }) : "";
+    map = where === "on" ? bayMap || cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : regionMap || cards.coordLine(lat, lng);
     hasMap = where === "on" || !!regionMap;
     links.push(h.extLink(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, `${h.icon("pin")}Open in Google Maps`, "btn btn-secondary btn-sm"));
     links.push(h.extLink(`https://maps.apple.com/?ll=${lat},${lng}&q=${encodeURIComponent(p.name)}`, `${h.icon("pin")}Open in Apple Maps`, "btn btn-secondary btn-sm"));
@@ -300,15 +303,17 @@ function moreLinks(ctx, p) {
   // the area's things to do and food and drink (outdoors.html takes no area filter: its sheet instead)
   const inArea = (l) => l.filter((x) => x.area === p.area && x.id !== p.id).length;
   const tn = inArea(lists["things-to-do"]);
-  if (tn) out.push({ href: `things-to-do.html?a=${p.area}`, n: lists["things-to-do"].filter((x) => x.area === p.area).length, text: `things to do in ${area.name}`, ic: "compass" });
+  const tAll = lists["things-to-do"].filter((x) => x.area === p.area).length, eAll = lists["eat-drink"].filter((x) => x.area === p.area).length;
+  if (tn) out.push({ href: `things-to-do.html?a=${p.area}`, n: tAll, text: `${tAll === 1 ? "thing" : "things"} to do in ${area.name}`, ic: "compass" });
   const en = inArea(lists["eat-drink"]);
-  if (en) out.push({ href: `eat-drink.html?a=${p.area}`, n: lists["eat-drink"].filter((x) => x.area === p.area).length, text: `places to eat and drink in ${area.name}`, ic: "fork-knife" });
+  if (en) out.push({ href: `eat-drink.html?a=${p.area}`, n: eAll, text: `${eAll === 1 ? "place" : "places"} to eat and drink in ${area.name}`, ic: "fork-knife" });
   if (home === "outdoors") {
     const on = lists.outdoors.filter((x) => x.region === p.region).length + db.stays.filter((s) => s.kind === "campground" && s.region === p.region).length;
     if (on > 1) out.push({ href: `outdoors.html?r=${p.region}`, n: on, text: `beaches and outdoor places on Sheet ${region.n}, ${region.name}`, ic: "umbrella" });
   }
   const evn = (db.eventsByArea.get(p.area) || []).length;
-  if (evn) out.push({ href: `whats-on.html?a=${p.area}`, n: evn, text: `${evn === 1 ? "event" : "events"} in ${area.name} on What's On`, ic: "calendar" });
+  // What's On leaves out events that have ended, so this is the season's listing, not what it shows today
+  if (evn) out.push({ href: `whats-on.html?a=${p.area}`, n: evn, text: `${evn === 1 ? "event" : "events"} listed in ${area.name} this season (${h.fmtDate(db.window.start)} to ${h.fmtDateY(db.window.end)})`, ic: "calendar" });
   return out;
 }
 function keepExploring(ctx, root, p, links) {
@@ -318,7 +323,7 @@ function keepExploring(ctx, root, p, links) {
   const area = db.byId.area.get(p.area);
   return section(ctx, {
     id: "more", title: "Keep exploring",
-    note: `Each link opens a filtered list; the number is how many it shows. <a href="${root}areas/${attr(p.area)}.html">${esc(area.name)}</a> has its own page with its places, stays, tours and events.`,
+    note: `Each link opens a filtered list with that count (What's On leaves out events that have already ended). <a href="${root}areas/${attr(p.area)}.html">${esc(area.name)}</a> has its own page with its places, stays, tours and events.`,
     body: `<ul class="rows pl-more">${links.map((l) => `<li class="row"><a href="${root}${attr(l.href)}">${h.icon(l.ic, "sym")}<span class="t"><b class="tnum">${esc(String(l.n))}</b> ${esc(l.text)}</span>${h.icon("arrow-r", "go")}</a></li>`).join("")}</ul>`,
   });
 }
