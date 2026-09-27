@@ -300,3 +300,6 @@ ol.wv-cols { position: relative; list-style: none; padding: 0; margin: 0; displa
 .wv-yr-ev a + a { border-top: 1px solid var(--border); }
 .wv-yr-ev .i { width: 16px; height: 16px; margin-left: auto; }
 .wv-yr-ev .unk { padding: 10px 0; font-size: var(--fs-xs); }
+
+/* review pass: the date a "Not running" word was read, beside the badge */
+.tx-asof { align-self: center; font-size: var(--fs-xs); color: var(--text-faint); }

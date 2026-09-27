@@ -1,7 +1,7 @@
 /* ============================================================
    build/components/place-card.mjs · OWNER: E1 (engine). Page lanes may extend it additively.
-   Extended additively by the Explore lane (2026-09-27): placeCard options sym, lead, extra, foot, seal, plate
-   (defaults keep existing callers' markup exactly as before), and the helpers placeHome, placeSym,
+   Extended additively by the Explore lane (2026-09-27): placeCard options sym, lead, extra, foot, seal, plate,
+   meta: "rows" (defaults keep existing callers' markup exactly as before), and the helpers placeHome, placeSym,
    placeTagWords, OUTDOOR_HOME_KINDS.
 
    makePlaceCards(ctx) → {
@@ -14,6 +14,8 @@
          seal  the gold "Signature" seal in the meta line for signature places
          plate true: the photo or the typographic plate · "photo": the photo only when one exists (compact lists)
                · false: no picture (the card gets .no-plate)
+         meta  true: "hours · price" on one line · "rows": hours and price on lines of their own, each after its
+               symbol (clock, ticket) and a screen-reader label ("Hours: ", "Price: ") · false: none
      placeRow(root, place, { note })   a compact <li> for lists (name, kind · area, status), inside <ul class="rows">
      placeFacts(root, place)           the detail page's "At a glance" rows: [[label, valueHtml]] for c.facts()
      placeWhere(place)                 "3001 N Florida Ave · Tampa Heights" | "" (plain text)
@@ -56,6 +58,8 @@ const SYM = {
   cemetery: "landmark", "house-of-worship": "landmark", aquarium: "fish", zoo: "binoculars", "performing-arts": "ticket",
   "music-venue": "ticket", "arena-stadium": "ticket", sports: "ticket", shopping: "bag", market: "bag", district: "hood",
   "visitor-center": "info", casino: "spark", "theme-park": "spark", "water-park": "drop",
+  restaurant: "fork-knife", "cafe-bakery": "fork-knife", "food-hall": "fork-knife",
+  bar: "glass", brewery: "glass", "distillery-winery": "glass", nightlife: "glass",
 };
 export const placeSym = (p) => ((p.tags || []).includes("lighthouse") && p.kind === "landmark" ? "lighthouse" : SYM[p.kind] || "buoy");
 
@@ -117,7 +121,8 @@ export function makePlaceCards(ctx) {
       + (p.status !== "open" ? `<p class="card-status">${c.statusBadge(p)}</p>` : "")
       + (summary && p.summary ? `<p class="card-sum">${esc(p.summary)}</p>` : "")
       + (extra ? `<div class="card-extra">${extra}</div>` : "")
-      + (meta ? `<p class="card-meta">${p.hours_text ? esc(p.hours_text) : c.unk("Hours not listed")} · ${priceHtml(p)}${sealHtml}</p>` : sealHtml ? `<p class="card-meta">${sealHtml}</p>` : "")
+      + (meta === "rows" ? `<p class="card-meta card-meta-rows"><span class="cm">${sy("clock")}<span><span class="sr-only">Hours: </span>${p.hours_text ? esc(p.hours_text) : c.unk("Hours not listed")}</span></span><span class="cm">${sy("ticket")}<span><span class="sr-only">Price: </span>${priceHtml(p)}</span></span>${sealHtml ? `<span class="cm cm-seal">${sealHtml.trim()}</span>` : ""}</p>`
+        : meta ? `<p class="card-meta">${p.hours_text ? esc(p.hours_text) : c.unk("Hours not listed")} · ${priceHtml(p)}${sealHtml}</p>` : sealHtml ? `<p class="card-meta">${sealHtml}</p>` : "")
       + (foot && p.source_url ? `<p class="card-src">Source: ${extLink(p.source_url, esc(hostOf(p.source_url)))}${p.checked ? ` · Checked ${esc(fmtDateY(p.checked))}` : ""}</p>` : "")
       + `</div>${c.starButton(p.id, p.name, { kind: "p" })}</article>`;
   }

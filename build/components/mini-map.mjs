@@ -132,20 +132,29 @@ export function makeMiniMaps(ctx) {
     for (const id of ["bay", "region"]) { const ch = charts[id]; if (ch && pts.length && pts.every((p) => onMap(ch.meta, p.lat, p.lng))) return id; }
     return null;
   }
-  /** Medallions whose centers end up closer than d px (cluster() seeds groups, then centers them on their members)
-   *  merge, so no medallion hides another; two lone buoys are left to the lifts. */
-  function mergeNear(groups, d) {
-    const gs = groups.map((g) => ({ members: g.members.slice() }));
-    const ctr = (g) => [g.members.reduce((a, m) => a + m.x, 0) / g.members.length, g.members.reduce((a, m) => a + m.y, 0) / g.members.length];
-    for (let again = true; again;) {
-      again = false;
-      outer: for (let i = 0; i < gs.length; i++) for (let j = i + 1; j < gs.length; j++) {
-        if (gs[i].members.length + gs[j].members.length < 3) continue;
-        const [ax, ay] = ctr(gs[i]), [bx, by] = ctr(gs[j]);
-        if (Math.hypot(ax - bx, ay - by) < d) { gs[i].members.push(...gs[j].members); gs.splice(j, 1); again = true; break outer; }
+  /** cluster() centers each group on its members, so two medallions (or a medallion and a buoy) can land on each other:
+   *  nudge the medallions apart, never more than `cap` px from their centers; buoys never move. → [{ x, y }] per group. */
+  function spread(groups, { gap = 46, buoy = 36, cap = 24 } = {}) {
+    const G = groups.map((g) => ({ x: g.x, y: g.y, x0: g.x, y0: g.y, med: g.members.length > 1 }));
+    const ctr = (q) => (q.med ? [q.x, q.y] : [q.x, q.y - 30]);
+    for (let it = 0; it < 14; it++) {
+      let moved = false;
+      for (let i = 0; i < G.length; i++) for (let j = i + 1; j < G.length; j++) {
+        const a = G[i], b = G[j];
+        if (!a.med && !b.med) continue;
+        const need = a.med && b.med ? gap : buoy, [ax, ay] = ctr(a), [bx, by] = ctr(b);
+        let dx = bx - ax, dy = by - ay, d = Math.hypot(dx, dy);
+        if (d >= need) continue;
+        if (d < 0.01) { dx = 0; dy = 1; d = 1; }
+        const k = (need - d) / d;
+        if (a.med && b.med) { a.x -= (dx * k) / 2; a.y -= (dy * k) / 2; b.x += (dx * k) / 2; b.y += (dy * k) / 2; }
+        else if (a.med) { a.x -= dx * k; a.y -= dy * k; } else { b.x += dx * k; b.y += dy * k; }
+        moved = true;
       }
+      for (const q of G) if (q.med) { const dx = q.x - q.x0, dy = q.y - q.y0, d = Math.hypot(dx, dy); if (d > cap) { q.x = q.x0 + (dx * cap) / d; q.y = q.y0 + (dy * cap) / d; } }
+      if (!moved) break;
     }
-    return gs;
+    return G;
   }
   // land names wide, water names in italic: rough widths (px per character, measured on the rendered labels) to keep
   // labels clear of pins and of each other
@@ -181,12 +190,13 @@ export function makeMiniMaps(ctx) {
     const RW = refW, RH = refW / ratio, X = (p) => (px(p.xy[0]) / 100) * RW, Y = (p) => (py(p.xy[1]) / 100) * RH;
     // places too close to tell apart at this size share a medallion with their count (the lists name them)
     const cr = clusterPx ?? (whole ? 0 : 26);
-    const groups = cr > 0 ? mergeNear(cluster(pts.map((p) => ({ p, x: X(p), y: Y(p) })), cr), 36) : pts.map((p) => ({ members: [{ p }] }));
+    const groups = cr > 0 ? cluster(pts.map((p) => ({ p, x: X(p), y: Y(p) })), cr) : pts.map((p) => ({ members: [{ p }] }));
+    if (cr > 0) spread(groups).forEach((q, i) => { groups[i].dx = q.x - q.x0; groups[i].dy = q.y - q.y0; });
     // a buoy drawn over another one's number is lifted on a longer stem (up to two steps), so every number stays
     // readable: southern buoys are placed first, each northern neighbor takes the step that covers the least (a number
     // or a medallion weighs 10, another buoy's position circle 1, a body cut off by the top of the frame 5)
     const STEP = 26, hit = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
-    const meds = groups.filter((g) => g.members.length > 1).map((g) => { const ms = g.members.map((m) => m.p); return { ms, xy: [ms.reduce((a, m) => a + m.xy[0], 0) / ms.length, ms.reduce((a, m) => a + m.xy[1], 0) / ms.length] }; });
+    const meds = groups.filter((g) => g.members.length > 1).map((g) => { const ms = g.members.map((m) => m.p); return { ms, xy: [ms.reduce((a, m) => a + m.xy[0], 0) / ms.length + ((g.dx || 0) * w) / RW, ms.reduce((a, m) => a + m.xy[1], 0) / ms.length + ((g.dy || 0) * hh) / RH] }; });
     const singles = groups.filter((g) => g.members.length === 1).map((g) => g.members[0].p);
     const lift = new Map();
     let boxes = [];
@@ -206,6 +216,8 @@ export function makeMiniMaps(ctx) {
       boxes = [...solid, ...dots.map((d) => d.b)];
     };
     place();
+    // the whole chart's own furniture (the rose, top left; the "Not for navigation" note, bottom left) takes no label
+    if (whole) boxes.push([0, 0, 0.2 * RW, 0.2 * RW], [0, RH - 0.09 * RW, 0.42 * RW, RH]);
     // a crop (not the whole chart) moves up when a lifted buoy would be cut off by its top edge
     const minTop = Math.min(Infinity, ...boxes.map((b) => b[1]));
     if (!whole && minTop < 4 && y0 > 0) { y0 = Math.max(0, y0 - ((4 - minTop) / RH) * hh); place(); }

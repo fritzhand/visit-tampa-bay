@@ -241,7 +241,9 @@ function labelsIn(crop, meta, cands, buoys, { narrow = false } = {}) {
         .sort((p, q) => (Math.abs(p[1]) + Math.abs(p[0]) * 0.4) - (Math.abs(q[1]) + Math.abs(q[0]) * 0.4));
       for (const [dx, dy] of offs) {
         const b = { x: at[0] + (dx / W) * 100, y: at[1] + (dy / H) * 100, hw: s.hw, hh: s.hh };
-        if (clear(k, b)) { placed = { k, b }; break; }
+        // a label placed at phone width shows at every width, so it must also clear the wide chart's labels
+        const bw = k === "phone" && boxes.wide ? { ...b, ...sizeAt(l, NOMINAL.wide) } : null;
+        if (clear(k, b) && (!bw || clear("wide", bw))) { placed = { k, b }; break; }
       }
       if (placed) break;
     }

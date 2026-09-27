@@ -583,7 +583,7 @@ keywords, `i` an image path.
 - **2026-09-27 · What's On lane** (`build/pages/{whats-on,trip}.mjs`, `site/js/features/whats-on.js`, `site/css/{41-trip,45-whats-on}.css`,
   `tests/whats-on.test.mjs`; additive in `build/components/event-card.mjs`):
   - `eventCard(root, x, { lean, datebox, checked })`: the lean card What's On lists (same `article.ev` contract and attributes but
-    `data-pl`; `data-fe="1"` on featured events). No inline SVG (`i.ev-sb` is the sheet badge drawn by CSS from `--ink-code`, the star
+    `data-pl`; `data-fe="1"` on featured events). No inline SVG (the sheet badge is `.ev-meta::after`, drawn by CSS from `--ink-code`; the star
     `button.star` is empty and drawn by a CSS mask; the core still wires both), no summary, description or `details` (the dialog has them),
     no `<time>`; the kicker reads KIND · AREA with the badge at its end (DESIGN §8), `.ev-cost` (the source's price words, a Free badge, or
     "Price not listed"), `p.ev-src` ("Source: host", linked when the event has no place page; "Checked <date>" only when it differs from
@@ -600,3 +600,13 @@ keywords, `i` an image path.
     minZoom }] }` (the map view's names and credit, fetched when the map opens).
   - trip.html loads the `whats-on` feature too (it owns no other JS file): `[data-trip-clash]` "Times that overlap" from events.json,
     `[data-trip-print]`. `[data-trip-root]` is the core's view, unchanged; 41-trip.css styles it (and its print sheet).
+- **2026-09-27 · What's On lane, review pass** (additive; lane files only): the lean card now carries `data-inst` whenever an event has
+  several instances (and `data-days` when they are untimed), so its live word follows the event instead of its first day (a festival is
+  no longer "Ended" after its first evening); it lists every start of its day ("12:00 PM, 4:00 PM and 8:00 PM") and says "hours differ by
+  day" when a multi-day event's hours do; a cancelled or postponed card drops its Tickets link; the sheet badge is `.ev-meta::after`
+  (no `i.ev-sb` element). What's On: under a day head that already says "Today", "Tomorrow" or "This weekend" the cards do not repeat
+  it; months wholly past leave the month bar while the past is folded; bar links carry `aria-label="October 2026: 38 events"`; a series
+  with more than eight dated events names its first six and links `whats-on.html?series=<id>` ("List all n"); the annual calendar says
+  its quoted dates are "as each source states them". My Trip: "Find things to star" gives each Explore page's own count (Things to do,
+  Beaches & outdoors with its campgrounds, Eat & drink: tests/whats-on.test.mjs compares them with the pages' result lines), and more
+  than three overlapping pairs on a day fold behind "How far apart".

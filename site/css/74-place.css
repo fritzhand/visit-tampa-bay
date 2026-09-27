@@ -125,3 +125,19 @@
 .pl-page .source-line, .pl-page .source-line > span, .pl-src dd { overflow-wrap: anywhere; min-width: 0; }
 .pl-photo figcaption p { margin: 0; }
 .pl-photo img { border: 1px solid var(--border); }
+
+/* ---------- review pass (2026-09-27) ---------- */
+/* source notes (the record's and the heritage block's): the info mark in its own column, every line beside it */
+.pl-page .source-line { display: grid; grid-template-columns: 14px minmax(0, 1fr); column-gap: 8px; row-gap: 2px; align-items: start; }
+.pl-page .source-line > .i { grid-row: 1; margin-top: 2px; align-self: start; }
+.pl-page .source-line > span { grid-column: 2; }
+/* an unknown address is a note, not a headline */
+.pl-addr .unk { font-family: var(--font-body); font-weight: var(--wght-body); font-size: var(--fs-base); }
+/* keep exploring: filtered lists, each with its count */
+.pl-more li.row > a { gap: 12px; }
+.pl-more li.row > a > .sym { width: 20px; height: 20px; flex: none; color: var(--text-muted); }
+.pl-more li.row > a > .t { flex: 1; min-width: 0; font-weight: var(--wght-ui); }
+.pl-more li.row > a > .t b { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-md); font-variant-numeric: lining-nums tabular-nums; margin-right: 2px; }
+.pl-more li.row > a > .go { width: 18px; height: 18px; flex: none; color: var(--text-muted); }
+.pl-more li.row > a:hover > .go { color: var(--link); }
+@media (min-width: 900px) { .pl-more { display: grid; grid-template-columns: 1fr 1fr; column-gap: var(--sp-6); } }

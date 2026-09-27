@@ -17,6 +17,8 @@
      departures  experiences that leave from here (they open the experience dialog)
      timeline    history entries that name this place (history.html#tl-<id>)
      nearby      places and places to stay within a mile, by straight-line distance (labeled as such)
+     more        "Keep exploring": the same kind on its Explore page, things to do / food and drink / events in the
+                 same area, each a filtered link whose count is what that page shows for it
      source      source_url, quote_source, also_sources, "Checked Sep 27, 2026", the corrections link
    Detail pages stay light: no inline data, no big lists (events are compact rows, nearby is capped).
    ============================================================ */
@@ -30,6 +32,17 @@ const VENUE_KINDS = new Set(["performing-arts", "music-venue", "arena-stadium", 
 /** A source named by its address, "americanvictory.org/hours-and-admission" (several pages of one site stay apart). */
 const srcLabel = (u) => { try { const x = new URL(u); const s = x.hostname.replace(/^www\./, "") + x.pathname.replace(/\/$/, ""); return s.length > 56 ? `${s.slice(0, 55)}…` : s; } catch { return u; } };
 const NEAR_M = 1609;
+/** Kind labels in the plural, for "12 museums on Things to do" (a kind without one reads "… places"). */
+const KIND_PLURAL = {
+  "theme-park": "theme parks", "water-park": "water parks", zoo: "zoos", aquarium: "aquariums", museum: "museums", gallery: "galleries",
+  "science-center": "science centers", "historic-site": "historic sites", "historic-district": "historic districts", landmark: "landmarks",
+  "performing-arts": "performing arts venues", "music-venue": "music venues", "arena-stadium": "arenas and stadiums", park: "parks",
+  beach: "beaches", "state-park": "state parks", "nature-preserve": "nature preserves", garden: "gardens", trail: "trails", island: "islands",
+  pier: "piers", waterfront: "waterfronts", district: "districts", shopping: "shopping places", market: "markets", "food-hall": "food halls",
+  restaurant: "restaurants", "cafe-bakery": "cafés and bakeries", bar: "bars", brewery: "breweries", "distillery-winery": "distilleries and wineries",
+  nightlife: "nightlife places", casino: "casinos", cemetery: "cemeteries", "house-of-worship": "houses of worship", "visitor-center": "visitor centers",
+  attraction: "attractions",
+};
 
 export function pages(ctx) {
   return ctx.db.places.map((p) => placePage(ctx, p));
@@ -47,6 +60,7 @@ function placePage(ctx, p) {
   const near = p.ll ? db.nearby(p.ll[0], p.ll[1], NEAR_M, { kinds: ["place"] }).filter((x) => x.rec.open).slice(0, 8) : [];
   const nearStays = p.nearbyStays || [];
   const url = `${config.siteBase}places/${p.id}.html`;
+  const more = moreLinks(ctx, p);
   const image = img.has("p", p.id) ? `${config.siteBase}${img.path("p", p.id)}` : undefined;
 
   const toc = [
@@ -57,6 +71,7 @@ function placePage(ctx, p) {
     p.experiences.length ? ["departures", "Tours from here"] : null,
     p.timeline.length ? ["timeline", "In the timeline"] : null,
     near.length || nearStays.length ? ["nearby", "Nearby"] : null,
+    more.length ? ["more", "Keep exploring"] : null,
     ["source", "Source"],
   ].filter(Boolean);
 
@@ -78,6 +93,7 @@ function placePage(ctx, p) {
       departures(ctx, root, p),
       timeline(ctx, root, p),
       nearby(ctx, root, p, near, nearStays),
+      keepExploring(ctx, root, p, more),
       sources(ctx, root, p),
     ].join("\n"),
   };
@@ -104,7 +120,8 @@ function head(ctx, root, p, { region, area, kindLabel }) {
   ].map((x) => `<span class="pl-mi">${x}</span>`).join("");
   const state = [p.status !== "open" ? c.statusBadge(p) : "", p.signature ? `<span class="seal">${h.icon("seal")}Signature</span>` : ""].filter(Boolean).join(" ");
   return c.pageHead({
-    sheet: p.region, kicker: `Sheet ${region.n} · ${region.name} · ${kindLabel}`, title: p.name, lede: p.summary || "", cls: "pl-head",
+    // "\u00a0·" keeps each separator on the line before it, so the wrapped ribbon never starts a line with a dot
+    sheet: p.region, kicker: `Sheet ${region.n}\u00a0· ${region.name}\u00a0· ${kindLabel}`, title: p.name, lede: p.summary || "", cls: "pl-head",
     after: `<p class="pl-meta">${meta}</p>${state ? `<p class="pl-meta pl-state">${state}</p>` : ""}<p class="head-actions">${star}${p.url ? h.extLink(p.url, `${h.icon("ext")}Official site`, "btn btn-secondary") : ""}</p>`,
   });
 }
@@ -117,7 +134,9 @@ function top(ctx, root, p) {
   const price = p.price_text ? esc(p.price_text) : p.is_free === true ? "Free" : unk("Price");
   const tags = cards.placeTagWords(p);
   const also = (p.kinds || []).filter((k) => k !== p.kind).map((k) => vocab.PLACE_KIND_LABEL[k]);
-  const topics = (p.topics || []).map((t) => (placeHome(p) === "things-to-do" ? `<a href="${root}things-to-do.html?t=${t}">${esc(vocab.TOPIC_LABEL[t])}</a>` : esc(vocab.TOPIC_LABEL[t])));
+  // a topic links to its filtered list where the parent page takes one (Things to do ?t=, Eat & drink ?tag=)
+  const topicHref = { "things-to-do": (t) => `things-to-do.html?t=${t}`, "eat-drink": (t) => `eat-drink.html?tag=${t}` }[placeHome(p)];
+  const topics = (p.topics || []).map((t) => (topicHref ? `<a href="${root}${topicHref(t)}">${esc(vocab.TOPIC_LABEL[t])}</a>` : esc(vocab.TOPIC_LABEL[t])));
   const rows = [
     ["Address", addr ? esc(addr) : unk("Address")],
     ["Hours", p.hours_text ? esc(p.hours_text) : unk("Hours")],
@@ -173,7 +192,8 @@ function whereSection(ctx, root, p, where) {
   } else {
     map = `<p class="unk mini-map-none">Not on the map: no coordinates listed</p>`;
     if (addr) links.push(h.extLink(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr)}`, `${h.icon("pin")}Find the address in Google Maps`, "btn btn-secondary btn-sm"));
-    note = addr ? "The source gives an address but no position, so this place has no buoy on the chart." : "The source gives no address and no position.";
+    if (ctx.cards.charts?.bay) links.push(`<a class="btn btn-ghost btn-sm" href="${root}map.html?focus=area:${attr(p.area)}">${h.icon("map")}${esc(area.name)} on the chart</a>`);
+    note = addr ? "The source gives an address but no position, so this place has no buoy on the chart." : "The source gives no address and no position, so this place has no buoy on the chart; its area is shown instead.";
   }
   return section(ctx, {
     id: "where", title: "Where it is",
@@ -254,6 +274,52 @@ function nearby(ctx, root, p, near, stays) {
     id: "nearby", title: "Nearby",
     note: "Within a mile, nearest first. Distances are straight lines between two points, not walking or driving routes.",
     body: `<div class="pl-near">${placeRows ? col("Places", placeRows) : ""}${stayRows ? col("Places to stay", stayRows) : ""}</div>`,
+  });
+}
+
+/** "Keep exploring": filtered links to the lists this place belongs to, each with the count that list shows.
+ *  Counts follow the pages' own rules (a k= value matches a card's kind, secondary kinds or group, as lib/facets.js
+ *  does; Things to do lists placeHome "things-to-do", Beaches & outdoors adds piers and waterfronts, Eat & drink lists
+ *  every place with an eat or drink kind). Only links that lead somewhere new are kept. */
+function moreLinks(ctx, p) {
+  const { db, vocab, h, nav } = ctx;
+  const home = placeHome(p);
+  const EAT = new Set(vocab.EAT_DRINK_KINDS || []);
+  const lists = {
+    "things-to-do": db.places.filter((x) => placeHome(x) === "things-to-do"),
+    outdoors: db.places.filter((x) => placeHome(x) === "outdoors" || ["pier", "waterfront"].includes(x.kind)),
+    "eat-drink": db.places.filter((x) => x.kindsAll.some((k) => EAT.has(k))),
+  };
+  const area = db.byId.area.get(p.area), region = db.byId.region.get(p.region);
+  const out = [];
+  // the same kind on its Explore page (a kind that is also a group id, "sports", filters as the group: say so)
+  const k = p.kind, isGroup = Object.values(vocab.PLACE_GROUP).includes(k);
+  const kn = lists[home].filter((x) => [...x.kindsAll, ...x.groups].includes(k)).length;
+  const kWord = isGroup ? (vocab.PLACE_GROUP_LABEL[k] || k).toLowerCase() : KIND_PLURAL[k] || `${(vocab.PLACE_KIND_LABEL[k] || k).toLowerCase()} places`;
+  if (kn > 1) out.push({ href: `${home}.html?k=${k}`, n: kn, text: `${kWord} on ${nav.NAV_LABEL[home]}`, ic: "compass" });
+  // the area's things to do and food and drink (outdoors.html takes no area filter: its sheet instead)
+  const inArea = (l) => l.filter((x) => x.area === p.area && x.id !== p.id).length;
+  const tn = inArea(lists["things-to-do"]);
+  if (tn) out.push({ href: `things-to-do.html?a=${p.area}`, n: lists["things-to-do"].filter((x) => x.area === p.area).length, text: `things to do in ${area.name}`, ic: "compass" });
+  const en = inArea(lists["eat-drink"]);
+  if (en) out.push({ href: `eat-drink.html?a=${p.area}`, n: lists["eat-drink"].filter((x) => x.area === p.area).length, text: `places to eat and drink in ${area.name}`, ic: "fork-knife" });
+  if (home === "outdoors") {
+    const on = lists.outdoors.filter((x) => x.region === p.region).length + db.stays.filter((s) => s.kind === "campground" && s.region === p.region).length;
+    if (on > 1) out.push({ href: `outdoors.html?r=${p.region}`, n: on, text: `beaches and outdoor places on Sheet ${region.n}, ${region.name}`, ic: "umbrella" });
+  }
+  const evn = (db.eventsByArea.get(p.area) || []).length;
+  if (evn) out.push({ href: `whats-on.html?a=${p.area}`, n: evn, text: `${evn === 1 ? "event" : "events"} in ${area.name} on What's On`, ic: "calendar" });
+  return out;
+}
+function keepExploring(ctx, root, p, links) {
+  const { h, db } = ctx;
+  const { esc, attr } = h;
+  if (!links.length) return "";
+  const area = db.byId.area.get(p.area);
+  return section(ctx, {
+    id: "more", title: "Keep exploring",
+    note: `Each link opens a filtered list; the number is how many it shows. <a href="${root}areas/${attr(p.area)}.html">${esc(area.name)}</a> has its own page with its places, stays, tours and events.`,
+    body: `<ul class="rows pl-more">${links.map((l) => `<li class="row"><a href="${root}${attr(l.href)}">${h.icon(l.ic, "sym")}<span class="t"><b class="tnum">${esc(String(l.n))}</b> ${esc(l.text)}</span>${h.icon("arrow-r", "go")}</a></li>`).join("")}</ul>`,
   });
 }
 

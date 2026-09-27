@@ -2,7 +2,7 @@
    site/css/45-whats-on.css · OWNER: the What's On lane
    whats-on.html (build/pages/whats-on.mjs, site/js/features/whats-on.js): the filter panel, the sticky month bar,
    the long-runs band, month and day sections (sticky day heads), the lean event card (date box, the CSS-drawn
-   sheet badge and star: no inline SVG per card), the continuing-day rows, the map view and the annual calendar
+   sheet badge (the kicker's ::after) and star: no inline SVG per card), the continuing-day rows, the map view and the annual calendar
    (twelve-month strips). The card itself is 40-events.css; this file only adds what the lean card and the page need.
    Tokens only; no color literal (the two star masks below are alpha sources: shapes, no color).
    ====================================================================== */
@@ -186,15 +186,15 @@
 .wo-list .ev-where { display: block; }
 .nw { white-space: nowrap; }
 
-/* the sheet badge without an SVG (i.ev-sb, decorative): the sheet's shape (clip or mask) in its fill, its chart code in
-   Archivo on top; at the end of the kicker, whose area names the place in words */
-.ev-sb { flex: none; display: inline-flex; margin-left: auto; font-style: normal; }
-.ev-sb::before {
-  content: var(--ink-code); flex: none; display: grid; place-items: center; width: 40px; height: 24px;
+/* the sheet badge without an element: the kicker's ::after (decorative: CSS content is not read out, and the area in the
+   kicker names the place in words), the sheet's shape (clip or mask) in its fill with its chart code in Archivo on top;
+   only on What's On's lean cards and the annual calendar (other cards print the SVG badge) */
+:is(.wo-list .ev[data-sheet] > .ev-body, .wo-se[data-sheet]) > .ev-meta::after {
+  content: var(--ink-code); flex: none; display: grid; place-items: center; width: 40px; height: 24px; margin-left: auto;
   background: var(--ink-fill); color: var(--ink-on);
   font-family: var(--font-label); font-stretch: 100%; font-size: var(--fs-label); font-weight: 800; letter-spacing: 0.06em; line-height: 1;
 }
-[data-sheet="tampa"] .ev-sb::before {
+:is(.wo-list .ev[data-sheet="tampa"] > .ev-body, .wo-se[data-sheet="tampa"]) > .ev-meta::after {
   -webkit-mask:
     radial-gradient(circle at 0 0, transparent 5px, var(--mask-ink) 5.5px) 0 0 / 51% 51% no-repeat,
     radial-gradient(circle at 100% 0, transparent 5px, var(--mask-ink) 5.5px) 100% 0 / 51% 51% no-repeat,
@@ -206,11 +206,11 @@
     radial-gradient(circle at 0 100%, transparent 5px, var(--mask-ink) 5.5px) 0 100% / 51% 51% no-repeat,
     radial-gradient(circle at 100% 100%, transparent 5px, var(--mask-ink) 5.5px) 100% 100% / 51% 51% no-repeat;
 }
-[data-sheet="stpete"] .ev-sb::before { clip-path: ellipse(50% 50% at 50% 50%); }
-[data-sheet="beaches"] .ev-sb::before { clip-path: polygon(17.3% 0, 82.7% 0, 100% 50%, 82.7% 100%, 17.3% 100%, 0 50%); }
-[data-sheet="clearwater"] .ev-sb::before { clip-path: path("M0 0H40V9.7C40 16.6 29.6 20.8 20 24C10.4 20.8 0 16.6 0 9.7Z"); padding-bottom: 4px; }
-[data-sheet="around"] .ev-sb::before { clip-path: polygon(17.3% 0, 100% 0, 82.7% 100%, 0 100%); }
-[data-sheet="daytrips"] .ev-sb::before { clip-path: polygon(0 0, 100% 0, 80.4% 50%, 100% 100%, 0 100%); padding-right: 7px; }
+:is(.wo-list .ev[data-sheet="stpete"] > .ev-body, .wo-se[data-sheet="stpete"]) > .ev-meta::after { clip-path: ellipse(50% 50% at 50% 50%); }
+:is(.wo-list .ev[data-sheet="beaches"] > .ev-body, .wo-se[data-sheet="beaches"]) > .ev-meta::after { clip-path: polygon(17.3% 0, 82.7% 0, 100% 50%, 82.7% 100%, 17.3% 100%, 0 50%); }
+:is(.wo-list .ev[data-sheet="clearwater"] > .ev-body, .wo-se[data-sheet="clearwater"]) > .ev-meta::after { clip-path: path("M0 0H40V9.7C40 16.6 29.6 20.8 20 24C10.4 20.8 0 16.6 0 9.7Z"); padding-bottom: 4px; }
+:is(.wo-list .ev[data-sheet="around"] > .ev-body, .wo-se[data-sheet="around"]) > .ev-meta::after { clip-path: polygon(17.3% 0, 100% 0, 82.7% 100%, 0 100%); }
+:is(.wo-list .ev[data-sheet="daytrips"] > .ev-body, .wo-se[data-sheet="daytrips"]) > .ev-meta::after { clip-path: polygon(0 0, 100% 0, 80.4% 50%, 100% 100%, 0 100%); padding-right: 7px; }
 
 /* the star without an SVG: a mask in the button's color (the house ink when it is in My Trip) */
 .wo .ev > .star:empty::before, .wo-list .ev > .star:empty::before {

@@ -33,7 +33,7 @@
      three shown, topics); a filter adds the card's visible text.
    The lean card ({ lean: true }, What's On's list: ~590 of them on one page) keeps every attribute above (but data-pl;
    data-inst and data-days whenever the event has several instances, so its live word follows the event, not its first day)
-   and the same classes, and drops the weight: no inline SVG at all (the sheet badge i.ev-sb[aria-hidden] and the star are drawn
+   and the same classes, and drops the weight: no inline SVG at all (the sheet badge, the kicker's ::after, and the star are drawn
    by CSS, 45-whats-on.css; the kicker reads KIND · AREA as in the design's card grammar), no summary and no description (the dialog, one click away, shows both: event-text.json),
    no details, no <time> elements; every start of its day ("12:00, 4:00 and 8:00 PM"), and "hours differ by day" when a
    multi-day event's hours do; it adds .ev-cost (the source's price words, "Free", or "Price not listed"), a source
@@ -198,15 +198,14 @@ export function makeEventCards(ctx) {
     const open = `<article class="ev"${anchor ? ` id="e-${attr(ev.id)}"` : ""} data-ev="${attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}" data-r="${ev.region}"` : ""}${ev.area ? ` data-a="${attr(ev.area)}"` : ""} data-k="${ev.kind}" data-kg="${ev.kg}" data-day="${inst.day}" data-month="${monthsOf(ev).join(" ")}" data-s="${inst.s}" data-e="${inst.e}"${instAttr}${daysAttr}${inst.run ? ` data-run="${inst.through}"` : ""}${inst.endUnknown ? ' data-end-unknown="1"' : ""}${inst.timeUnknown ? ' data-time-unknown="1"' : ""} data-t="${t}"${ev.place && !lean ? ` data-pl="${attr(ev.place)}"` : ""}${ev.series ? ` data-se="${attr(ev.series)}"` : ""} data-free="${ev.is_free === true ? 1 : 0}" data-q="${attr(q)}"${dead ? ' data-cancelled="1"' : ""}${lean && ev.featured ? ' data-fe="1"' : ""}>`;
     const title = `<${H} class="ev-title"><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}">${esc(ev.title)}</a></${H}>`;
     if (lean) {
-      // the design's card kicker: KIND · AREA in words, the sheet badge (code, shape, ink: decorative, the area names the
-      // place) at its end
-      const sb = ev.region ? '<i class="ev-sb" aria-hidden="true"></i>' : "";
+      // the design's card kicker: KIND · AREA in words; 45-whats-on.css draws the sheet badge (code, shape, ink: decorative,
+      // the area names the place) at its end as .ev-meta::after
       const kicker = [EVENT_KIND_LABEL[ev.kind] || ev.kind, ev.area ? areaName(ev.area) : ""].filter(Boolean).join(" · ");
       const seal = ev.featured ? '<span class="seal">Signature</span>' : "";
       return open
         + (datebox ? dateBox(inst.day, { until: inst.run ? inst.through : null, compact: true }) : "")
         + `<div class="ev-when">${when(inst, { showDate, lean: true })} <span class="ev-status" data-status></span></div>`
-        + `<div class="ev-body"><p class="ev-meta"><span class="ev-kind">${esc(kicker)}</span>${c.eventStatusBadge(ev)}${seal}${sb}</p>`
+        + `<div class="ev-body"><p class="ev-meta"><span class="ev-kind">${esc(kicker)}</span>${c.eventStatusBadge(ev)}${seal}</p>`
         + title + where(root, ev, here, true)
         + costLine(ev) + leanSource(ev, checked) + "</div>"
         + `${leanStar(ev)}</article>`;

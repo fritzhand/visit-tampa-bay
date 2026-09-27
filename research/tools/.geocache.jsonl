@@ -3233,3 +3233,7 @@
 {"k":"photon:3411 n us hwy 301, tampa, fl 33619:","v":{"lat":27.94924,"lng":-82.50494,"geo_source":"photon","matched":"Tampa - N Dale Mabry Hwy Supercharger, 401, North Dale Mabry Highway, Tampa, 33609","osm":"N10189167878 amenity=charging_station"}}
 {"k":"census:455 s gulfview blvd, clearwater, fl 33767","v":null}
 {"k":"photon:455 s gulfview blvd, clearwater, fl 33767:","v":{"lat":27.975854,"lng":-82.828577,"geo_source":"photon","matched":"South Gulfview Boulevard, Clearwater, 33767","osm":"W11252687 highway=tertiary"}}
+{"k":"photon:home2 suites lakewood ranch:27.3906,-82.4473","v":{"lat":27.392815,"lng":-82.447953,"geo_source":"photon","matched":"Home2 Suites, 6015, Exchange Way, Bradenton, 34202","osm":"N11879278991 tourism=hotel"}}
+{"k":"photon:hyatt place sarasota lakewood ranch:27.3906,-82.4473","v":{"lat":27.391819,"lng":-82.448002,"geo_source":"photon","matched":"Hyatt Place Sarasota / Lakewood Ranch, 6021, Exchange Way, Bradenton, 34202","osm":"W808600168 tourism=hotel"}}
+{"k":"photon:hilton garden inn sarasota bradenton airport:27.393,-82.5615","v":null}
+{"k":"photon:home2 suites sarasota bradenton airport:27.393,-82.5615","v":null}

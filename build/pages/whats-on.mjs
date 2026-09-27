@@ -19,9 +19,10 @@
    - #annual "Every year": every series once (id="s-<id>"), filed under the month its season starts
      (year-round first), featured first; a 12-month strip shows every month it runs, "Also this month" lines
      name the series that started earlier; when_text is the organizer's own wording, in quotation marks.
-   Weight: whats-on.html carries ~556 cards. The lean card (build/components/event-card.mjs { lean: true }) has
-   no inline SVG and no description (the dialog loads descriptions from event-text.json), so the page stays well
-   under the 1,600 KB raw budget (build/core/crawl.mjs).
+   Weight: whats-on.html carries ~590 cards. The lean card (build/components/event-card.mjs { lean: true }) has
+   no inline SVG and no description (the dialog loads descriptions from event-text.json): ~1,110 KB raw, ~125 KB
+   gzipped on Sep 27 (the crawl budget is 1,600 KB raw). Most of what remains per card is the card contract that
+   tests/build.test.mjs pins (the id six times: anchor, data-ev, the deep link twice, the dialog hook, the star).
    ============================================================ */
 
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -146,7 +147,7 @@ ${months.map(monthSec).join("\n")}
     const evs = seriesEvents(s);
     const where = s.venue ? `<a href="${root}places/${attr(s.venue.id)}.html">${esc(s.venue.name)}</a>` : s.location_text ? esc(s.location_text) : c.unk("Place not listed");
     const kicker = [vocab.EVENT_KIND_LABEL[s.kind] || s.kind, s.area ? db.byId.area.get(s.area)?.name : "", s.since ? `Since ${s.since}` : ""].filter(Boolean).join(" · ");
-    const meta = `<span class="ev-kind">${esc(kicker)}</span>${s.featured ? '<span class="seal">Signature</span>' : ""}${s.region ? '<i class="ev-sb" aria-hidden="true"></i>' : ""}`;
+    const meta = `<span class="ev-kind">${esc(kicker)}</span>${s.featured ? '<span class="seal">Signature</span>' : ""}`;   // the sheet badge: .ev-meta::after (45-whats-on.css)
     // the dated events of this series in the list: every one when there are a few; a long season (42 home games) names
     // its first dates and links the whole set as a filtered list (?series=; without JS the link opens the whole list)
     const dateLink = (e) => `<a href="#e-${attr(e.id)}">${esc(e.run ? h.fmtDateRange(e.date, e.end_date) : e.instances.length > 1 ? h.fmtDateRange(e.instances[0].day, e.instances[e.instances.length - 1].day) : h.fmtDay(e.instances[0].day))}</a>${e.live ? "" : ` (${esc(vocab.EVENT_STATUS_LABEL[e.status])})`}`;

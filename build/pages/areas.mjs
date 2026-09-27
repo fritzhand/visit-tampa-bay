@@ -161,7 +161,7 @@ ${chart}
         const known = (a.known_for || []).length ? `<p class="ar-known"><span class="label">Known for</span> ${a.known_for.map((k) => `<span>${esc(k)}</span>`).join('<span class="sep" aria-hidden="true"> · </span>')}</p>` : "";
         const head = c.pageHead({ sheet: a.region, kicker: `Sheet ${r.n} · ${r.name}${a.kind ? ` · ${AREA_KIND_LABEL[a.kind]}` : ""}`, title: a.name, lede: a.summary || "", after: `${known}<p class="head-actions">${links}</p>` });
         const chart = places.length
-          ? cards.chartMap(root, places.map((p) => ({ lat: p.ll[0], lng: p.ll[1], kind: p.heritage || PLACE_GROUP[p.kind] === "history" ? "heritage" : "place", sheet: a.region, n: num.get(p.id), title: p.name })), { chart: "auto", minHalfM: 700, ratio: 4 / 3, labels: 3, label: `Chart of ${a.name}: ${plural(places.length, "place")}, numbered as in the lists below`, cls: "ar-map", refW: 420 })
+          ? cards.chartMap(root, places.map((p) => ({ lat: p.ll[0], lng: p.ll[1], kind: p.heritage || PLACE_GROUP[p.kind] === "history" ? "heritage" : "place", sheet: a.region, n: num.get(p.id), title: p.name })), { chart: "auto", minHalfM: 700, ratio: 4 / 3, labels: 3, label: `Chart of ${a.name}: ${plural(places.length, "place")}, numbered as in the lists below`, cls: "ar-map", refW: 420, clusterPx: 44 })
           : a.ll ? cards.miniMap(root, a.ll[0], a.ll[1], { sheet: a.region, label: `Map: ${a.name}`, halfWidthM: 2500 }) : "";
         const glance = c.facts(root, [
           ["Sheet", `<a href="${root}${ctx.nav.regionHref(a.region)}">${esc(`${r.n} · ${r.name}`)}</a>`],

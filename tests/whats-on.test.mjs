@@ -98,7 +98,7 @@ test("counts are computed from the data", () => {
     const key = m[1], s = monthOf(wo, key);
     const ids = new Set([...s.matchAll(/<article class="ev" id="e-([a-z0-9-]+)"[^>]*>/g)].filter((x) => !x[0].includes("data-cancelled")).map((x) => x[1]));
     for (const r of s.matchAll(/<li class="ev-also"><a href="#e-([a-z0-9-]+)">/g)) ids.add(r[1]);
-    assert.match(wo, new RegExp(`<a href="#m-${key}" data-m="${key}"><b>[^<]*(<small>\\d{4}</small>)?</b><span class="n tnum" data-wo-bn="${key}">${ids.size}</span></a>`), `bar count for ${key}`);
+    assert.match(wo, new RegExp(`<a href="#m-${key}" data-m="${key}" aria-label="[A-Z][a-z]+ \\d{4}: ${ids.size} events?"><b>[^<]*(<small>\\d{4}</small>)?</b><span class="n tnum" data-wo-bn="${key}">${ids.size}</span></a>`), `bar count for ${key}`);
     assert.match(s, new RegExp(`<p class="wo-mc">${ids.size} events? on \\d+ days?</p>`), `month head count for ${key}`);
   }
 });
@@ -192,6 +192,31 @@ test("overlaps: only published times, no invented end", () => {
   assert.deepEqual(overlaps([A, B], at("2026-10-24", "22:00")), [], "over by now");
   const G = ev("g", [["2026-10-24", at("2026-10-24", "19:00"), at("2026-10-24", "20:00"), 1]]);
   assert.deepEqual(overlaps([B, G], now).map(([x, y]) => [x.ev.id, y.ev.id].sort().join("")), ["bg"], "two unknown ends starting together");
+});
+
+test("a multi-day card carries every day; several shows on a day are all listed; a cancelled card has no ticket link", () => {
+  // the fixture as it is: the 12-day fair and the 3-date market carry each day's times, so the card's word follows the event
+  assert.match(card(wo, "florida-state-fair-2027"), /data-inst="(\d+:\d+,){11}\d+:\d+"/, "the fair's twelve days");
+  assert.match(card(wo, "saturday-morning-market-2026-10"), /data-inst="\d+:\d+,\d+:\d+,\d+:\d+"/);
+  assert.doesNotMatch(card(wo, "guavaween-2026"), /data-inst=/, "a one-day event needs none");
+  const d = copyRepo();
+  try {
+    editData("events", (a) => {
+      const m = a.find((e) => e.id === "saturday-morning-market-2026-10");
+      m.occurrences = [{ date: "2026-10-03", start: "09:00", end: "14:00" }, { date: "2026-10-03", start: "15:00", end: "17:00" }, { date: "2026-10-10", start: "09:00", end: "14:00" }, { date: "2026-10-17", start: "10:00", end: "13:00" }];
+      a.find((e) => e.id === "riverwalk-boat-parade-2026-12-12").tickets_url = "https://example.com/tickets";
+    })(d);
+    const r = build(d);
+    assert.equal(r.status, 0, r.stderr);
+    const h = read(d, "docs/whats-on.html");
+    const m = card(h, "saturday-morning-market-2026-10").replace(/\u00a0/g, " ");
+    assert.match(m, /Oct 3: <\/span><span>9:00 AM–2:00 PM and 3:00–5:00 PM<\/span>/, "both starts of the first day, never only the first");
+    assert.match(m, /hours differ by day/, "and the hours are said to differ by day");
+    assert.match(section(h, "d-2026-10-17"), /10:00 AM–1:00 PM/, "the later day's own hours on its row");
+    const dead = card(h, "riverwalk-boat-parade-2026-12-12");
+    assert.match(dead, /Cancelled/);
+    assert.doesNotMatch(dead, /Tickets/, "no ticket link on a cancelled card");
+  } finally { cleanup(d); }
 });
 
 test("a page without events still builds (empty states, no series)", () => {

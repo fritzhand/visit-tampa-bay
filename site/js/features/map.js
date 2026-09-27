@@ -43,20 +43,30 @@ function loadSvg(file) {
 }
 const FILE = { bay: "basemap.svg", region: "region.svg" };
 
-/** Medallions whose centers end up closer than d px merge (cluster() seeds a group at its first point, then centers
- *  it on its members, so two medallions can land on each other); two lone buoys never merge. */
-function mergeNear(groups, d) {
-  const gs = groups.map((g) => ({ members: g.members.slice() }));
-  const ctr = (g) => [g.members.reduce((a, m) => a + m.x, 0) / g.members.length, g.members.reduce((a, m) => a + m.y, 0) / g.members.length];
-  for (let again = true; again;) {
-    again = false;
-    outer: for (let i = 0; i < gs.length; i++) for (let j = i + 1; j < gs.length; j++) {
-      if (gs[i].members.length + gs[j].members.length < 3) continue;
-      const [ax, ay] = ctr(gs[i]), [bx, by] = ctr(gs[j]);
-      if (Math.hypot(ax - bx, ay - by) < d) { gs[i].members.push(...gs[j].members); gs.splice(j, 1); again = true; break outer; }
+/** cluster() seeds a group at its first point and then centers it on its members, so two medallions (or a medallion
+ *  and a buoy) can land on each other. Nudge the medallions apart, a few px at a time and never more than `cap` px
+ *  from their centers; buoys never move (they mark real points). Returns [{ x, y }] (screen px), one per group. */
+function spread(groups, { gap = 48, buoy = 38, cap = 30 } = {}) {
+  const G = groups.map((g) => ({ x: g.x, y: g.y, x0: g.x, y0: g.y, med: g.members.length > 1 }));
+  const ctr = (q) => (q.med ? [q.x, q.y] : [q.x, q.y - 30]);   // a buoy's body stands above its point
+  for (let it = 0; it < 14; it++) {
+    let moved = false;
+    for (let i = 0; i < G.length; i++) for (let j = i + 1; j < G.length; j++) {
+      const a = G[i], b = G[j];
+      if (!a.med && !b.med) continue;
+      const need = a.med && b.med ? gap : buoy, [ax, ay] = ctr(a), [bx, by] = ctr(b);
+      let dx = bx - ax, dy = by - ay, d = Math.hypot(dx, dy);
+      if (d >= need) continue;
+      if (d < 0.01) { dx = 0; dy = 1; d = 1; }
+      const k = (need - d) / d;
+      if (a.med && b.med) { a.x -= (dx * k) / 2; a.y -= (dy * k) / 2; b.x += (dx * k) / 2; b.y += (dy * k) / 2; }
+      else if (a.med) { a.x -= dx * k; a.y -= dy * k; } else { b.x += dx * k; b.y += dy * k; }
+      moved = true;
     }
+    for (const q of G) if (q.med) { const dx = q.x - q.x0, dy = q.y - q.y0, d = Math.hypot(dx, dy); if (d > cap) { q.x = q.x0 + (dx * cap) / d; q.y = q.y0 + (dy * cap) / d; } }
+    if (!moved) break;
   }
-  return gs;
+  return G.map((q) => ({ x: q.x, y: q.y }));
 }
 
 /* ---------- coordinates in the margin: 27°56′N, 82°27.5′W ---------- */
@@ -354,10 +364,11 @@ export function mountMap(el, opts = {}) {
       pts.push({ p, x, y });
     }
     const sel = pts.find((q) => q.p.id === S.sel);
-    const groups = mergeNear(cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 56 : 44), 50);
+    const groups = cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 56 : 44);
     if (sel) groups.push({ x: sel.x, y: sel.y, members: [sel] });
+    const at = spread(groups);
     const keep = new Set(), placed = [];
-    for (const g of groups) {
+    for (const [gi, g] of groups.entries()) {
       if (g.members.length === 1) { const p = g.members[0].p; keep.add(p.el); placed.push(p); continue; }
       const ms = g.members.map((m) => m.p);
       const el = document.createElement("button");
@@ -368,7 +379,7 @@ export function mountMap(el, opts = {}) {
       el.setAttribute("aria-label", `${n} here: ${kinds.join(", ")}. ${canSplit(ms) ? "Zoom in to see them" : "List them"}`);
       el.innerHTML = `<span>${n}</span>`;
       el._members = ms;
-      placed.push({ el, x: ms.reduce((a, m) => a + m.x, 0) / ms.length, y: ms.reduce((a, m) => a + m.y, 0) / ms.length, cluster: true });
+      placed.push({ el, x: ms.reduce((a, m) => a + m.x, 0) / ms.length + (at[gi].x - g.x) / S.v.s, y: ms.reduce((a, m) => a + m.y, 0) / ms.length + (at[gi].y - g.y) / S.v.s, cluster: true });
       keep.add(el);
     }
     const had = document.activeElement && pinsEl.contains(document.activeElement) ? document.activeElement : null;

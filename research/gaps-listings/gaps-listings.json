@@ -1633,6 +1633,258 @@
         "source_url": "https://www.visittampabay.com/tampa-events/details/rocky-in-concert-%26%238211%3b-celebrating-the-50th-anniversary-of-rocky/101456/",
         "checked": "2026-09-27",
         "notes": "gaps-listings: only the Visit Tampa Bay listing 101456 (Nov 21, 2026, 8:00 PM, Straz Center; description from its event data) could be read; strazcenter.org did not render. The verifier should confirm on the Straz page."
+      },
+      {
+        "id": "cinema-in-the-sunshine-state-tbhc-2026",
+        "title": "Cinema in the Sunshine State",
+        "kind": "exhibition",
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "date": "2026-09-19",
+        "end_date": "2027-03-21",
+        "time_text": "Wayne Thomas Gallery, during museum hours",
+        "place": "tampa-bay-history-center",
+        "area": "channel-district",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampabayhistorycenter.org/exhibits/",
+        "tickets_url": null,
+        "description": "From the earliest days of filmmaking, Florida has played a vital role in American cinema. Once a rival to California for movie production, the Sunshine State’s warm climate and striking landscapes attracted filmmakers seeking year-round locations.",
+        "summary": "A Tampa Bay History Center exhibition on Florida's role in American filmmaking, from early location shoots such as Tarzan to Esther Williams films.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition"
+        ],
+        "source_url": "https://tampabayhistorycenter.org/exhibits/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: museum exhibition not in data/. Admission price not read on this page."
+      },
+      {
+        "id": "mapping-the-14th-colony-tbhc-2026",
+        "title": "Mapping the 14th Colony",
+        "kind": "exhibition",
+        "topics": [
+          "history"
+        ],
+        "date": "2026-07-03",
+        "end_date": "2026-11-29",
+        "place": "tampa-bay-history-center",
+        "area": "channel-district",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampabayhistorycenter.org/exhibits/",
+        "tickets_url": null,
+        "description": "The American Revolution helped shape a new nation, but Florida's role in that story is often overlooked. While the original 13 American British colonies joined the fight for independence, East Florida and West Florida remained loyal to the British crown.",
+        "summary": "A map exhibition at the Tampa Bay History Center on British East and West Florida, the colonies that stayed loyal to the crown during the American Revolution.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "maps"
+        ],
+        "source_url": "https://tampabayhistorycenter.org/exhibits/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: museum exhibition not in data/."
+      },
+      {
+        "id": "mysteries-of-the-nile-tampa-museum-of-art",
+        "title": "Mysteries of the Nile: Ancient Egypt",
+        "kind": "exhibition",
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "date": "2026-06-25",
+        "end_date": "2028-06-25",
+        "place": "tampa-museum-of-art",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampamuseum.org/current-exhibitions/",
+        "tickets_url": null,
+        "description": "For thousands of years, the Nile River has carved a green ribbon through the desert of northeastern Africa, nurturing one of the world’s most remarkable civilizations.",
+        "summary": "A two-year installation of ancient Egyptian objects at the Tampa Museum of Art.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "antiquities"
+        ],
+        "source_url": "https://tampamuseum.org/current-exhibitions/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: runs June 25, 2026 - June 25, 2028 per the museum; the end is past the data window."
+      },
+      {
+        "id": "eye-of-the-beholder-zewadski-tampa-museum-of-art",
+        "title": "Eye of the Beholder: The William Knight Zewadski Legacy",
+        "kind": "exhibition",
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "date": "2026-05-08",
+        "end_date": "2027-01-03",
+        "place": "tampa-museum-of-art",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampamuseum.org/current-exhibitions/",
+        "tickets_url": null,
+        "description": "The treasures displayed in this exhibition reflect a very personal passion for ancient Greek and Roman art and archaeology, ancient theater and architecture — as well as their reception in modern prints and photography.",
+        "summary": "Greek and Roman antiquities and related prints and photographs from the collection of William Knight Zewadski, a longtime donor to the Tampa Museum of Art.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "antiquities"
+        ],
+        "source_url": "https://tampamuseum.org/current-exhibitions/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
+      },
+      {
+        "id": "sam-modder-tampa-museum-of-art",
+        "title": "Sam Modder: Her Hair Like the Sun and Clouds",
+        "kind": "exhibition",
+        "topics": [
+          "arts"
+        ],
+        "date": "2026-07-23",
+        "end_date": "2027-07-04",
+        "place": "tampa-museum-of-art",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampamuseum.org/current-exhibitions/",
+        "tickets_url": null,
+        "description": "Following the presentations of monumental paintings by Naeem Khan (2023) and Vaughn Spann (2024), the Tampa Museum of Art will feature large-scale wall drawings by artist Sam Modder (Nigerian, b. 1995).",
+        "summary": "Large-scale ballpoint-pen wall drawings by the Tampa-based artist Sam Modder at the Tampa Museum of Art.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition"
+        ],
+        "source_url": "https://tampamuseum.org/current-exhibitions/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: runs past the data window (to July 4, 2027)."
+      },
+      {
+        "id": "i-know-the-sun-will-shine-tampa-museum-of-art",
+        "title": "I Know the Sun Will Shine: Mary Proctor, Ruby Williams, and Purvis Young",
+        "kind": "exhibition",
+        "topics": [
+          "arts",
+          "black-history"
+        ],
+        "date": "2026-11-25",
+        "time_text": "Opening November 25, 2026; the closing date is not published",
+        "place": "tampa-museum-of-art",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://tampamuseum.org/upcoming-exhibitions/",
+        "tickets_url": null,
+        "description": "I Know the Sun Will Shine: Mary Proctor, Ruby Williams, and Purvis Young presents three artists from the Tampa Museum of Art’s (TMA) growing collection of Florida self-taught artists.",
+        "summary": "Work by three Florida self-taught artists, Mary Proctor, Ruby Williams and Purvis Young, from the Tampa Museum of Art's collection, opening Nov 25.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "self-taught-art"
+        ],
+        "source_url": "https://tampamuseum.org/upcoming-exhibitions/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: only the opening date is published, so no end_date."
+      },
+      {
+        "id": "ed-mell-legacy-in-light-james-museum",
+        "title": "Ed Mell: Legacy in Light",
+        "kind": "exhibition",
+        "topics": [
+          "arts"
+        ],
+        "date": "2026-09-19",
+        "end_date": "2027-01-10",
+        "place": "james-museum",
+        "area": "downtown-stpete",
+        "cost": "Ticketed separately; members free",
+        "is_free": false,
+        "url": "https://thejamesmuseum.org/exhibitions/ed-mell/",
+        "tickets_url": null,
+        "description": "Ed Mell (1942–2024) was a giant in contemporary art of the American West. His 50-year career was a love letter to the land, expressing a unique play between the styles of realism and abstraction.",
+        "summary": "A special exhibition at the James Museum of paintings by the Western landscape artist Ed Mell; it needs its own ticket.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "western-art"
+        ],
+        "source_url": "https://thejamesmuseum.org/exhibitions/ed-mell/",
+        "also_sources": [
+          "https://thejamesmuseum.org/current-upcoming-exhibitions/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: dates Sep 19 - Jan 10, 2027 from the exhibition list on the page. is_free false: the page says the exhibition is ticketed separately (price not read)."
+      },
+      {
+        "id": "kay-walkingstick-hudson-river-school-james-museum",
+        "title": "Kay WalkingStick / Hudson River School",
+        "kind": "exhibition",
+        "topics": [
+          "arts"
+        ],
+        "date": "2026-11-07",
+        "end_date": "2027-03-21",
+        "place": "james-museum",
+        "area": "downtown-stpete",
+        "cost": null,
+        "is_free": null,
+        "url": "https://thejamesmuseum.org/exhibitions/kay-walkingstick/",
+        "tickets_url": null,
+        "description": "This exhibition showcases landscape paintings by the renowned, contemporary Cherokee artist Kay WalkingStick in conversation with classic works from The New York Historical’s collection of 19th-century Hudson River School paintings, including work by the illustrious painter Albert Bierstadt.",
+        "summary": "Landscapes by the Cherokee painter Kay WalkingStick shown with 19th-century Hudson River School paintings from The New York Historical at the James Museum.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition"
+        ],
+        "source_url": "https://thejamesmuseum.org/exhibitions/kay-walkingstick/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
+      },
+      {
+        "id": "live-conservation-luis-seixas-mfa-2026",
+        "title": "Live Conservation with Luis Seixas",
+        "kind": "exhibition",
+        "topics": [
+          "arts",
+          "history"
+        ],
+        "date": "2026-10-03",
+        "end_date": "2027-01-03",
+        "place": "museum-of-fine-arts-st-petersburg",
+        "area": "downtown-stpete",
+        "cost": null,
+        "is_free": null,
+        "url": "https://mfastpete.org/exhibition/live-conservation-with-luis-seixas/",
+        "tickets_url": null,
+        "description": "This exhibition highlights the final phase of Luis Seixas’ conservation of the museum’s Tabernacle of Saints Peter and Paul.",
+        "summary": "Visitors watch conservator Luis Seixas treat the Museum of Fine Arts' gilded and carved Tabernacle of Saints Peter and Paul and other objects in the galleries.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "conservation"
+        ],
+        "source_url": "https://mfastpete.org/exhibition/live-conservation-with-luis-seixas/",
+        "also_sources": [
+          "https://www.mfastpete.org/exhibitions/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings. The MFA's current show New African Masquerades (through January 3, 2027) was left out because its page gives no opening date."
       }
     ],
     "series": [

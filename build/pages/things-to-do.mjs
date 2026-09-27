@@ -127,14 +127,14 @@ export function pages(ctx) {
   const groupIds = [...new Set(items.flatMap((p) => p.groups))].filter((g) => !["eat", "drink"].includes(g));
   kindGroups.push(["Broad groups", groupIds.map((g) => [g, vocab.PLACE_GROUP_LABEL[g], items.filter((p) => p.groups.includes(g)).length])]);
 
-  const cardOpts = { sym: true, foot: true, seal: true };
+  const cardOpts = { sym: true, foot: true, seal: true, meta: "rows" };
   const startHtml = (root) => {
     if (!sig.length) return "";
     const bySheet = vocab.REGION_IDS.map((r) => [r, sig.filter((p) => p.region === r)]).filter(([, l]) => l.length);
     return `<section class="section xp-start" id="start" aria-labelledby="start-h">
 <div class="sec-head oxford"><p class="sec-kicker label">${h.icon("seal")}${esc(`${sig.length} signature places`)}</p><h2 id="start-h">Start here</h2></div>
 <p class="xp-note">The region's defining places, as this guide marks them, sheet by sheet. Each links to its page with hours, prices and the source.</p>
-<div class="xp-start-grid">${bySheet.map(([r, l]) => `<div class="xp-start-row" data-sheet="${r}"><a class="xp-start-sheet" href="${root}${ctx.nav.regionHref(r)}">${h.bullet(r, "lg")}<span><span class="label">Sheet ${vocab.REGIONS[r].n}</span><b>${esc(vocab.REGIONS[r].name)}</b></span></a><ul class="xp-start-list">${l.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(vocab.PLACE_KIND_LABEL[p.kind])} · ${esc(db.byId.area.get(p.area)?.name || "")}</span></a></li>`).join("")}</ul></div>`).join("")}</div>
+<div class="xp-start-grid">${bySheet.map(([r, l]) => `<div class="xp-start-row" data-sheet="${r}"><a class="xp-start-sheet" href="${root}${ctx.nav.regionHref(r)}">${h.bullet(r, "lg")}<span><span class="label">Sheet ${vocab.REGIONS[r].n}</span><b>${esc(vocab.REGIONS[r].name)}</b><span class="xp-start-n">${esc(h.plural(l.length, "signature place"))}</span></span></a><ul class="xp-start-list">${l.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(vocab.PLACE_KIND_LABEL[p.kind])} · ${esc(db.byId.area.get(p.area)?.name || "")}</span></a></li>`).join("")}</ul></div>`).join("")}</div>
 </section>`;
   };
 

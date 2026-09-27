@@ -194,3 +194,20 @@ details.xp-safety-more .xp-safety-links { margin-top: var(--sp-2); }
 /* the chart's count stays readable on phones (the Map page hides its own bar label there) */
 .js .xp-map .map-bar > .label { position: static; width: auto; height: auto; overflow: visible; clip-path: none; white-space: normal; }
 .xp-map .map-legend > .xp-attr { display: block; }
+
+/* ---------- review pass (2026-09-27) ---------- */
+/* the page's closing source note: the info mark in its own column, the words beside it (never a lone icon line) */
+.source-line.xp-src { display: grid; grid-template-columns: 14px minmax(0, 1fr); column-gap: 8px; align-items: start; }
+.source-line.xp-src > .i { margin-top: 2px; align-self: start; }
+.source-line.xp-src > span { grid-column: 2; min-width: 0; }
+/* hours and price on lines of their own, each after its symbol (placeCard meta: "rows") */
+.card-meta-rows { display: grid; gap: 3px; }
+.card-meta-rows .cm { display: grid; grid-template-columns: 15px minmax(0, 1fr); column-gap: 7px; align-items: start; }
+.card-meta-rows .cm > .sym { width: 15px; height: 15px; margin-top: 2px; color: var(--text-faint); }
+.card-meta-rows .unk::before { display: none; }   /* the row's own symbol already marks the line */
+.card-meta-rows .cm-seal { display: block; margin-top: 4px; }
+.card-meta-rows .cm-seal .seal { margin-left: 0; }
+/* Start here: how many signature places each sheet's strip holds (a phone shows one and a half at a time) */
+.xp-start-n { font-size: var(--fs-xs); color: var(--text-muted); }
+/* the Gulf beaches' chart above its list (under 1100px): never wider than a phone-and-a-half, so it stays one screen tall */
+@media (max-width: 1099px) { .xp-gulf > .xp-chart { max-width: 520px; } }

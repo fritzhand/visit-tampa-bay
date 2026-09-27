@@ -192,8 +192,9 @@ function gettingAround(ctx) {
   };
 
   /* ---------- the stops. A line (in the operator's numbering) only when the operator numbers every stop: the streetcar's
-     "(#11)", the water taxi's "Stop 7:". Otherwise a plain list in data order (a route's order is not claimed), numbered
-     for the map. Pins carry the same numbers. ---------- */
+     "(#11)", the water taxi's "Stop 7:", the Looper's "14:". Otherwise a plain list in data order (a route's order is not
+     claimed), numbered for the map, the names as written. Pins carry the same numbers; coverage() says, counted, what the
+     map leaves out and why. ---------- */
   function stopsBlock(root, t) {
     const S = (t.stops || []).filter((s, i, all) => !(all.length === 1 && t.name.includes(s.name)));   // "Amtrak at Tampa Union Station" needs no one-stop list
     if (!S.length) return { html: "", map: "" };
@@ -241,6 +242,8 @@ function gettingAround(ctx) {
     const status = [
       t.is_free === true && t.mode !== "toll" && t.mode !== "parking" ? c.badge("free", "Free") : "",
       t.season_text ? c.badge(seasonWord(t.season_text) === "Seasonal" ? "" : "warn", seasonWord(t.season_text)) : "",
+      // "Not running" is what the source said the day it was read: the page is read later, so the word carries its date
+      t.season_text && seasonWord(t.season_text) !== "Seasonal" && t.checked ? `<span class="tx-asof">as of ${esc(h.fmtDateY(t.checked))}</span>` : "",
     ].join("");
     const stops = stopsBlock(root, t);
     const pts = pointsOf(t);
@@ -282,7 +285,7 @@ ${side}
 
   const notices = () => [
     free.length ? c.callout("tip", `<p>${esc(h.plural(free.length, "ride", "rides"))} in the guide ${free.length === 1 ? "is" : "are"} free, as ${free.length === 1 ? "its operator says" : "their operators say"}:</p><ul class="ga-free">${free.map((t) => `<li><a href="#t-${attr(t.id)}">${esc(t.name)}</a> <span class="faint">${esc(vocab.MODE_LABEL[t.mode] || t.mode)}${(t.regions || [])[0] ? ` · ${esc(c.sheetName(t.regions[0]))}` : ""}</span></li>`).join("")}</ul>`, { flag: "Free to ride" }) : "",
-    ...notRunning.map((t) => c.callout("warn", `<p><a href="#t-${attr(t.id)}"><b>${esc(t.name)}</b></a>: ${esc(t.season_text)}</p>`, { flag: seasonWord(t.season_text) })),
+    ...notRunning.map((t) => c.callout("warn", `<p><a href="#t-${attr(t.id)}"><b>${esc(t.name)}</b></a>: ${esc(t.season_text)}</p>${t.checked ? `<p class="faint">${esc(`Checked ${h.fmtDateY(t.checked)}: check the operator's page before you plan on it.`)}</p>` : ""}`, { flag: seasonWord(t.season_text) })),
   ].join("");
   /** How to read the stop maps, and the SPEC §7 credit every page with a map prints (once, above the first map). */
   const mapNote = () => `<p class="ga-mapnote">${icon("map")}<span>In the stop lists, a solid ring marks a stop on the record's map and a dashed ring a stop without coordinates; the buoys on each map carry the same numbers. Positions are the listed coordinates, and distances on this page are straight lines. Not for navigation. Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${h.extLink("https://www.openstreetmap.org/copyright", "openstreetmap.org/copyright")}).</span></p>`;
@@ -498,7 +501,7 @@ ${list.length ? `<ul class="wv-yr-list">${list.slice(0, SHOW).map(li).join("")}<
     toc,
     body: (root) => `${c.pageHead({ num: 5, kicker: "Visit · weather, storms and the year", title: "When to visit",
       lede: "Highs, lows, rain and Gulf water temperature by month, from NOAA's climate normals and a published table of Gulf water temperatures; hurricane season and what to do; and what happens every year, month by month." })}
-${toc.find(([id]) => id === "climate") ? sect(ctx, { id: "climate", title: "Weather by month", kicker: "Normals, 1991–2020", icon: "sun", root, body: `${hasClimate ? `<p class="vz-lede">${esc(["One chart", "Two charts", "Three charts"][CITIES.filter((cty) => cityHas(cty.key)).length + (gulfHas ? 1 : 0) - 1] || "The charts")} on one scale: the bars run from the average low to the average high${gulfHas ? `, and the Gulf line is the average water temperature (warmest in ${esc(warmest)})` : ""}. Point at a month for its values; every value is also listed below.</p>
+${toc.find(([id]) => id === "climate") ? sect(ctx, { id: "climate", title: "Weather by month", kicker: "Normals, 1991–2020", icon: "sun", root, body: `${hasClimate ? `<p class="vz-lede">${esc(["One chart", "Two charts", "Three charts"][CITIES.filter((cty) => cityHas(cty.key)).length + (gulfHas ? 1 : 0) - 1] || "The charts")} on one scale: the bars run from the average low to the average high${gulfHas ? `, and the Gulf line is the average water temperature (warmest in ${esc(warmest)})` : ""}. Point at or tap a month for its values; every value is also listed below.</p>
 <div class="wv-clims">${CITIES.filter((cty) => cityHas(cty.key)).map(cityPanel).join("")}${gulfHas ? gulfPanel() : ""}</div>
 ${table()}
 ${climateFacts.length ? `${srcLine(ctx, { source_url: climateFacts[0].source_url, also_sources: climateFacts.slice(1).map((f) => f.source_url), checked: climateFacts.every((f) => f.checked === climateFacts[0].checked) ? climateFacts[0].checked : null })}<p class="vz-srcnote">${esc(climateSources.map((f) => f.source).join(" · "))}.</p>` : ""}` : ""}

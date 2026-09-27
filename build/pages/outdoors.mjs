@@ -64,7 +64,7 @@ export function pages(ctx) {
     .map(([v, l]) => [v, l, inAll(v.split(","))]).filter(([, , n]) => n > 0);
 
   const tagLine = (p) => { const w = cards.placeTagWords(p, { max: 5 }); return w.length ? `<p class="xp-tags">${w.map((x) => `<span>${esc(x)}</span>`).join("")}</p>` : ""; };
-  const card = (root, p, n, beach) => cards.placeCard(root, p, { sym: true, foot: true, seal: true, plate: beach ? "photo" : true, extra: tagLine(p), lead: n ? `<span class="xp-no" data-n="${n}"><span class="sr-only">Number </span>${n}</span>` : "" });
+  const card = (root, p, n, beach) => cards.placeCard(root, p, { sym: true, foot: true, seal: true, meta: "rows", plate: beach ? "photo" : true, extra: tagLine(p), lead: n ? `<span class="xp-no" data-n="${n}"><span class="sr-only">Number </span>${n}</span>` : "" });
 
   /* ---------- the chart of the Gulf beaches: a dot on each beach, its number in the Gulf margin ---------- */
   const gulf = sections.find((s) => s.id === "f-gulf");
@@ -99,7 +99,7 @@ ${safety(root)}
 <div class="xp-root" data-filter-root>
 ${listTools(ctx, root, {
   items: [...all, ...camps], noun: "places",
-  search: { label: "Search beaches and parks", placeholder: "Search: name, area, dog beach, kayak…" },
+  search: { label: "Search beaches and parks", placeholder: "Search: name, area, springs, kayak…" },
   selects: [{ name: "k", label: "Kind", groups: [["", kindOpts]] }], inline: true,
 })}
 <div class="xp-list" data-filter-list data-filter-items=".card">
@@ -107,13 +107,23 @@ ${sections.map((s) => {
   const body = s.list.map((p, i) => card(root, p, s.numbered ? i + 1 : 0, s.group === "beaches")).join("");
   return familySection(ctx, root, { id: s.id, title: s.title, n: s.list.length, note: s.note ? esc(s.note) : "", pre: s.numbered ? chart(root) : "", body, limit: s.numbered ? 999 : 6, cls: [s.numbered ? "xp-gulf" : "", s.group === "beaches" ? "xp-beaches" : ""].filter(Boolean).join(" ") });
 }).join("\n")}
-${camps.length ? familySection(ctx, root, { id: "f-camp", title: "Campgrounds", n: camps.length, noun: ["campground", "campgrounds"], note: `The ${esc(h.plural(camps.length, "campground"))} listed in <a href="${root}stay.html">Where to stay</a>, sheet by sheet. Each page gives what its source lists and names that source.`, body: camps.map((s) => cards.stayCard(root, s, { features: 3 })).join("") }) : ""}
+${camps.length ? familySection(ctx, root, { id: "f-camp", title: "Campgrounds", n: camps.length, noun: ["campground", "campgrounds"], note: `The ${esc(h.plural(camps.length, "campground"))} listed in <a href="${root}stay.html">Where to stay</a>, sheet by sheet. Each page gives what its source lists and names that source.`, body: camps.map((s) => campCard(ctx, root, s)).join("") }) : ""}
 </div>
 <div data-filter-empty hidden>${c.emptyState({ title: "Nothing matches these filters", body: "Clear a filter, pick another sheet or search for something else.", glyph: "compass", action: `<button class="btn btn-secondary" type="button" data-filter-clear>${h.icon("x")}Clear filters</button>` })}</div>
 </div>
 <p class="source-line xp-src">${h.icon("info")}<span>Every place carries its own source on its card and page. Fees, hours and rules are the operators' own words as of the date checked. Beach conditions change daily: check the flags on the day.</span></p>`,
   };
   return [page];
+}
+
+/** A campground's stay card with its source at the foot, like every place card on this page ("Source: host · Checked …"). */
+function campCard(ctx, root, s) {
+  const { h, cards } = ctx;
+  const html = cards.stayCard(root, s, { features: 3 });
+  if (!s.source_url) return html;
+  const src = `<p class="card-src">Source: ${h.extLink(s.source_url, h.esc(h.hostOf(s.source_url)))}${s.checked ? ` · Checked ${h.esc(h.fmtDateY(s.checked))}` : ""}</p>`;
+  const i = html.lastIndexOf("</div><button");   // the end of .card-body, just before the star
+  return i < 0 ? html : html.slice(0, i) + src + html.slice(i);
 }
 
 /** The Gulf beaches' chart: a crop of the basemap along the coast, a dot on each beach and its number stacked in the
