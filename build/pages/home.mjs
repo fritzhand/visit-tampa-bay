@@ -19,26 +19,17 @@ import { rose, wordmarkArt } from "../core/icons.mjs";
 import { ERAS, ERA_NAME, ERA_LABEL, STAY_KIND_LABEL, FEATURE_LABEL, PLACE_KIND_LABEL, EVENT_KIND_LABEL, MODE_LABEL } from "../core/vocab.mjs";
 import { metaOf, project, onMap, haversine } from "../../site/js/lib/geo.js";
 import { addDays, dateRange, fmtDay, fmtDate, fmtDateY, dowShort, monthKey } from "../core/time.mjs";
-import { sheetPicks, rankPlaces, firstSentence, timeRow, evSpan, dateText, hoursText, whereHtml, liveAttrs, nextFeatured, principalArea, miles, shortArea } from "./region.mjs";
+import { sheetPicks, rankPlaces, firstSentence, timeRow, evSpan, dateText, hoursText, whereHtml, liveAttrs, nextFeatured, principalArea, miles, shortArea, SEASON, monthSpan } from "./region.mjs";
+export { SEASON, monthSpan };
 
 /** The stat tiles (data/facts.json ids, in order; a missing id is skipped, and with none left the first six facts show). */
 export const HOME_FACTS = ["population-tampa-bay-metro-2025", "fact-tpa-passengers-2025", "fact-port-tampa-bay-cruise", "climate-tampa-annual-mean", "climate-tampa-days-90", "hurricane-season"];
-/** Months in season order: the listings run October to April, then the rest of the year. */
-export const SEASON = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 const MONTH = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
 const FEATURED_SHOWN = 9;
 
 /** The first season month a series covers (its place in the annual calendar); 0 for a year-round series. */
 export const seasonMonth = (s) => ((s.months || []).length >= 11 ? 0 : SEASON.find((m) => (s.months || []).includes(m)) || 0);
-/** "Oct–Apr", "Nov", "All year" from a series' months. */
-export function monthSpan(ms) {
-  if (!ms || !ms.length) return "";
-  if (ms.length >= 12) return "All year";
-  const o = SEASON.filter((m) => ms.includes(m));
-  const s = (m) => MONTH[m - 1].slice(0, 3);
-  return o.length === 1 ? s(o[0]) : `${s(o[0])}–${s(o[o.length - 1])}`;
-}
 
 export function pages(ctx) {
   const { db, c, h, cards, config, img } = ctx;
@@ -121,7 +112,14 @@ export function pages(ctx) {
       if (!moved) break;
     }
     const marks = pos.map(({ r, xy: [px, py] }) => `<span class="ix-badge" data-sheet="${r.id}" style="left: ${px.toFixed(2)}%; top: ${py.toFixed(2)}%">${bullet(r.id)}</span>`).join("");
-    const water = (db.map.region.labels || []).filter((l) => l.kind === "water" && (l.minZoom || 1) <= 1).map((l) => { const [px, py] = at(l.lat, l.lng); return px > 4 && px < 96 && py > 3 && py < 97 ? `<span class="map-label water" style="left: ${px.toFixed(1)}%; top: ${py.toFixed(1)}%">${esc(l.text)}</span>` : ""; }).join("");
+    // water names (Bodoni italic, about 9px a character at phone width) only where no badge covers them
+    const water = (db.map.region.labels || []).filter((l) => l.kind === "water" && (l.minZoom || 1) <= 1).map((l) => {
+      const [px, py] = at(l.lat, l.lng);
+      const hw = ((l.text.length * 9.2 + 6) / 2 / PW) * 100, hhh = (10 / PH) * 100;
+      if (px - hw < 1 || px + hw > 99 || py - hhh < 3 || py + hhh > 97) return "";
+      if (pos.some(({ xy: [bx, by] }) => Math.abs(bx - px) < bw / 2 + hw && Math.abs(by - py) < bh / 2 + hhh)) return "";
+      return `<span class="map-label water" style="left: ${px.toFixed(1)}%; top: ${py.toFixed(1)}%">${esc(l.text)}</span>`;
+    }).join("");
     const lim = (v, p, q) => `${Math.abs(v).toFixed(1)}° ${v >= 0 ? p : q}`;
     const latN = db.map.region.bbox.core.n - y0 / meta.sx, latS = db.map.region.bbox.core.n - (y0 + hh) / meta.sx;
     const lngW = db.map.region.bbox.core.w + x0 / (meta.k * meta.sx), lngE = db.map.region.bbox.core.w + (x0 + w) / (meta.k * meta.sx);
@@ -140,7 +138,7 @@ ${ph}<header class="si-head"><span class="si-no" aria-hidden="true">${r.n}</span
 ${r.lede ? `<p class="si-lede">${esc(firstSentence(r.lede))}</p>` : ""}
 <dl class="si-counts tnum">${counts.map(([v, l]) => `<div><dd>${v}</dd><dt>${esc(l)}</dt></div>`).join("")}</dl>
 ${pk.list.length ? `<p class="si-sub label">${pk.signature === pk.list.length ? "Signature places" : pk.signature ? "Signature places, then by kind" : "Places to start, by kind"}</p><ul class="si-sig">${pk.list.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(PLACE_KIND_LABEL[p.kind] || p.kind)}</span></a></li>`).join("")}</ul>` : ""}
-<div class="si-next" data-next-featured="${r.id}"><p class="si-sub label">Next signature event</p>${nfHtml}</div>
+<div class="si-next" data-next-featured="${r.id}"><p class="si-sub label">${nf && nf.date < W0 ? "Signature event under way" : "Next signature event"}</p>${nfHtml}</div>
 <p class="si-go"><a class="btn btn-secondary" href="${root}${sheetHref(r)}">Open sheet ${r.n}${icon("arrow-r")}</a></p>
 </article>`;
   };
@@ -165,7 +163,7 @@ ${pk.list.length ? `<p class="si-sub label">${pk.signature === pk.list.length ? 
     const hours = hoursText(h, ev, x);
     return `<li class="fe-item evrow" data-ev="${attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}"` : ""} data-first="${sp.first}" data-last="${sp.last}"${liveAttrs(ev)}${i >= FEATURED_SHOWN ? " hidden" : ""}>
 <span class="dbox" aria-hidden="true"><span class="dw">${esc(x.run ? "Thru" : dowShort(d))}</span><span class="d">${Number(d.slice(8))}</span><span class="mo">${esc(fmtDate(d).split(" ")[0])}</span></span>
-<div class="fe-body"><p class="fe-meta">${ev.region ? c.sheetBadge(ev.region) : ""}<span class="fe-k">${esc(EVENT_KIND_LABEL[ev.kind] || ev.kind)}</span>${c.eventStatusBadge(ev)}</p><h3 class="fe-t"><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}">${esc(ev.title)}</a></h3><p class="fe-w">${esc(dateText(h, db, ev))}${hours ? ` · ${esc(hours)}` : ""} · ${whereHtml(h, c, ev)} <span class="evr-st" data-status></span></p></div></li>`;
+<div class="fe-body"><p class="fe-meta">${ev.region ? c.sheetBadge(ev.region) : ""}<span class="fe-k">${esc(EVENT_KIND_LABEL[ev.kind] || ev.kind)}</span>${c.eventStatusBadge(ev)}</p><h3 class="fe-t"><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}">${esc(ev.title)}</a></h3><p class="fe-w">${esc(dateText(h, db, ev))} · ${hours ? esc(hours) : x.timeUnknown ? c.unk("Time not listed") : ""}${hours || x.timeUnknown ? " · " : ""}${whereHtml(h, c, ev)} <span class="evr-st" data-status></span></p></div></li>`;
   };
   const yearRound = h.sortBy(db.series.filter((s) => seasonMonth(s) === 0), (s) => s.name);
   const byMonth = new Map(SEASON.map((m) => [m, h.sortBy(db.series.filter((s) => seasonMonth(s) === m), (s) => (s.featured ? 0 : 1), (s) => s.name)]));
@@ -223,7 +221,7 @@ ${r.stays.length ? `<ul class="count-list">${byArea.map(({ a, n: k }) => `<li><a
     const withLL = airports.filter((t) => t.lat != null);
     const table = withLL.length && rows.length ? `<div class="table-wrap"><table class="data dist"><caption class="sr-only">Straight-line miles from each airport to the area with the most places on each sheet</caption>
 <thead><tr><th scope="col">Sheet and its main area</th>${withLL.map((t) => `<th scope="col" class="tnum">${esc(t.code || t.name)}</th>`).join("")}</tr></thead>
-<tbody>${rows.map(({ r, a }) => { const ds = withLL.map((t) => haversine({ lat: t.lat, lng: t.lng }, { lat: a.lat, lng: a.lng })); const min = Math.min(...ds); return `<tr data-sheet="${r.id}"><th scope="row">${bullet(r.id)}<span><span class="t">${esc(r.name)}</span><span class="w">${esc(a.name)}</span></span></th>${ds.map((d, i) => `<td class="tnum" data-label="${attr(withLL[i].code || withLL[i].name)}">${esc(miles(d))}${d === min ? ' <span class="near">nearest</span>' : ""}</td>`).join("")}</tr>`; }).join("")}</tbody></table></div>
+<tbody>${rows.map(({ r, a }) => { const ds = withLL.map((t) => haversine({ lat: t.lat, lng: t.lng }, { lat: a.lat, lng: a.lng })); const min = Math.min(...ds); return `<tr data-sheet="${r.id}"><th scope="row">${bullet(r.id)}<span><span class="t">${esc(r.name)}</span><span class="w">${esc(a.name)}</span></span></th>${ds.map((d, i) => `<td class="tnum" data-label="${attr(withLL[i].code || withLL[i].name)}"><span class="dv">${esc(miles(d, { fine: true }))}${d === min ? ' <span class="near">nearest</span>' : ""}</span></td>`).join("")}</tr>`; }).join("")}</tbody></table></div>
 <p class="sec-foot">Straight-line distances from the airport to the center of the area, not road miles. A sheet's main area is the one with the most places in this guide.</p>` : "";
     return c.section({ id: "arrive", num: 5, kicker: `Visit · ${h.plural(airports.length, "airport")}`, title: "Getting here", root, more: { href: "getting-around.html", label: "Getting around" },
       body: `${airports.length ? `<div class="ap-grid">${airports.map((t) => `<article class="ap" id="ap-${attr(t.id)}"><p class="ap-code tnum" aria-hidden="true">${esc(t.code || "")}</p><h3 class="ap-name"><a href="${root}getting-around.html#t-${attr(t.id)}">${esc(t.name)}</a>${t.code ? `<span class="sr-only"> (${esc(t.code)})</span>` : ""}</h3>${t.summary ? `<p class="ap-sum">${esc(t.summary)}</p>` : ""}<p class="ap-meta">${esc(h.listJoin((t.regions || []).map((x) => db.byId.region.get(x)?.name).filter(Boolean)))}${t.url ? ` · ${h.extLink(t.url, `${esc(h.hostOf(t.url))}${icon("ext")}`)}` : ""}</p></article>`).join("")}</div>` : ""}

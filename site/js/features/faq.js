@@ -20,8 +20,12 @@ export function init(app) {
     if (!/^fq-/.test(id)) return;
     const d = document.getElementById(id);
     if (!d || !d.matches("details.faq")) return;
-    d.hidden = false;
+    // a question the search or a topic hides (faq.html?topic=getting-around#fq-know-your-zone): the link names the
+    // question, so the filter gives way (un-hiding it alone would last only until the filter's next pass)
     const g = d.closest("[data-filter-group]");
+    const ctl = list ? app.filter.get(list) : null;
+    if ((d.hidden || (g && g.hidden)) && ctl) ctl.reset();
+    d.hidden = false;
     if (g) g.hidden = false;
     d.open = true;
     requestAnimationFrame(() => d.scrollIntoView({ block: "start" }));

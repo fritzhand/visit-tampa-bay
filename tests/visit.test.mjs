@@ -41,11 +41,22 @@ test("parsers: climate normals, water temperature, day of year, operator stop nu
   assert.equal(V.stopNo("Stop 7: Convention Center / Marriott Water Street"), 7);
   assert.equal(V.stopNo("Hattricks Station (#11), Franklin St & Whiting St"), 11);
   assert.equal(V.stopNo("Gateway Mall"), null);
+  assert.equal(V.stopNo("14: The Dali Museum (during Dali Museum hours only)"), 14, "the Looper's own numbering");
+  assert.equal(V.stopNo("10:30 departure"), null, "a time is not a stop number");
   assert.equal(V.stopName("Stop 16: Armature Works / Ulele"), "Armature Works / Ulele");
+  assert.equal(V.stopName("19: St. Pete Pier / St. Pete History Museum"), "St. Pete Pier / St. Pete History Museum");
   assert.equal(V.stopName("Hattricks Station (#11), Franklin St & Whiting St"), "Hattricks Station, Franklin St & Whiting St");
   assert.equal(V.seasonWord("Not running as of Sep 27, 2026. PSTA says it will announce a start date"), "Not running");
   assert.equal(V.seasonWord("Launching October 4, 2026, per PSTA; not yet running on Sep 27, 2026."), "Not running yet");
   assert.equal(V.seasonWord("November to April"), "Seasonal");
+});
+
+test("fact tiles keep the value verbatim, its own punctuation included", () => {
+  const ctx = { h: { esc, attr: esc, icon: () => "", extLink: (u, t) => `<a href="${u}">${t}</a>`, hostOf, fmtDateY: (d) => d } };
+  const tile = (value) => V.statTile(ctx, { id: "x", label: "L", value }).replace(/<[^>]+>/g, "");
+  for (const v of ["12, all storm surge drownings", "18.54 in, the site's one-day record", "$2.00 (daily cap $4.00)", "7.2 ft above MHHW, a site record", "Over 60", "About 20"]) {
+    assert.ok(tile(v).includes(esc(v)), `${v} → ${tile(v)}`);
+  }
 });
 
 test("about: the source groups", () => {
@@ -148,7 +159,10 @@ describe("the real data", { skip: isFixture && "data/ is still the fixture" }, (
       if (t.season_text) assert.ok(card.includes(esc(t.season_text)), `${t.id}: season_text verbatim`);
       if (t.code) assert.ok(card.includes(`<span class="tx-code-v">${esc(t.code)}</span>`), `${t.id}: its code`);
       assert.ok(card.includes(`href="${esc(t.source_url)}"`), `${t.id}: its source is linked`);
-      for (const s of t.stops || []) assert.ok(card.includes(esc(V.stopName(s.name))), `${t.id}: stop ${s.name}`);
+      const numbered = (t.stops || []).length >= 2 && t.stops.every((s) => V.stopNo(s.name) != null);
+      for (const s of t.stops || []) assert.ok(card.includes(esc(numbered ? V.stopName(s.name) : s.name)), `${t.id}: stop ${s.name}`);
+      // a coverage note never claims "on the map" for a card without a map
+      if (/ on the map;/.test(card)) assert.match(card, /class="mini-map/, `${t.id}: "n of m on the map" only under a drawn map`);
     }
     const arriving = sections.find(([id]) => id === "arriving")?.[1] || "";
     for (const t of transport.filter((x) => x.mode === "airport")) assert.ok(arriving.includes(`id="t-${t.id}"`), `${t.id} is under Arriving`);
@@ -242,6 +256,21 @@ describe("the real data", { skip: isFixture && "data/ is still the fixture" }, (
     for (const k of hosts) assert.ok(html.includes(`>${esc(k)}<`), `host listed: ${k}`);
     assert.ok(main(html).includes(esc(INDEPENDENCE)));
     assert.match(html, /id="corrections"/);
+    // the closures list agrees in number: "1 event cancelled", never "1 events cancelled"
+    for (const m of html.matchAll(/<li><b class="tnum">(\d+)<\/b> (\w+)/g)) if (m[1] === "1") assert.doesNotMatch(m[2], /s$/, `"1 ${m[2]}"`);
+  });
+
+  test("getting-around: the map credit (SPEC §7) and the region links", () => {
+    const html = read(docs, "getting-around.html");
+    if (html.includes('class="mini-map')) {
+      assert.match(html, /class="ga-mapnote"/);
+      assert.match(html, /US Census Bureau TIGER\/Line \(public domain\)/);
+      assert.match(html, /openstreetmap\.org\/copyright/);
+    }
+    for (const t of transport.filter((x) => (x.regions || []).length && x.regions.length < 6)) {
+      const card = block(html, `t-${t.id}`);
+      for (const r of t.regions) assert.match(card, new RegExp(`class="tx-sheet" href="[^"]*\\.html"><span class="sheet-badge" data-sheet="${r}"`), `${t.id}: ${r} linked`);
+    }
   });
 
   test("no undefined, NaN, null or [object Object] leaks into the pages; nothing says TBA", () => {

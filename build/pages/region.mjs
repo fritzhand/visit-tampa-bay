@@ -146,8 +146,26 @@ export const nextFeatured = (db, events, fromDay) => events.find((e) => e.live &
 /** The area of a sheet with the most places in the guide (then the most events): the distance tables' "main area". */
 export const principalArea = (h, region) => h.sortBy(region.areas.filter((a) => a.lat != null), (a) => -a.places.length, (a) => -a.events.length, (a) => a.name)[0] || null;
 
-/** Metres → "4.2 mi" (straight-line: callers say so). */
-export const miles = (m) => { const mi = m / 1609.344; return `${mi < 9.95 ? mi.toFixed(1) : Math.round(mi)} mi`; };
+/** Metres → "4.2 mi" (straight-line: callers say so). `fine`: one decimal up to 20 mi, so two nearby airports never
+ *  print the same number while only one of them is called the nearest. */
+export const miles = (m, { fine = false } = {}) => { const mi = m / 1609.344; return `${mi < (fine ? 19.95 : 9.95) ? mi.toFixed(1) : Math.round(mi)} mi`; };
+
+/** Months in season order: the listings run October to April, then the rest of the year. */
+export const SEASON = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const MON3 = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+/** A series' months as words: "Sep–Jan" (a run across the new year), "Mar–Apr, Jun–Jul, Sep–Oct" (several runs, in season
+ *  order), "Nov", "All year". Runs are found around the calendar's circle, so a Sep–Oct series never reads "Oct–Sep". */
+export function monthSpan(ms) {
+  const set = new Set((ms || []).filter((m) => m >= 1 && m <= 12));
+  if (!set.size) return "";
+  if (set.size >= 12) return "All year";
+  const prev = (m) => (m === 1 ? 12 : m - 1), next = (m) => (m === 12 ? 1 : m + 1);
+  return SEASON.filter((m) => set.has(m) && !set.has(prev(m))).map((a) => {
+    let b = a;
+    while (set.has(next(b))) b = next(b);
+    return a === b ? MON3[a - 1] : `${MON3[a - 1]}–${MON3[b - 1]}`;
+  }).join(", ");
+}
 
 /* ---------------------------------------------------------------- the sheet chart
    A static crop of the basemap (or of the region overview, site/map/region.svg, for a sheet that reaches past the
@@ -156,8 +174,10 @@ export const miles = (m) => { const mi = m / 1609.344; return `${mi < 9.95 ? mi.
    one buoy with a range ("5–9") where they sit too close to show apart at phone width. The biggest such group gets an
    inset at a larger scale (a harbor inset, as on a printed chart), outlined and lettered on the main chart. The
    crop's limits are printed from the real georeference. Plain SVG + HTML, no JS. null without a basemap. */
-const NOMINAL = { phone: 340, wide: 480 };
-const textW = (s, kind) => s.length * (kind === "water" ? 7.2 : 8.8) + 6;
+const NOMINAL = { phone: 340, wide: 480, inset: 300 };
+// label widths measured in the browser: land names (Archivo caps, 12px, tracked) ≈ 10.3px a character, water names
+// (Bodoni italic, 14px) ≈ 9px; plus the halo
+const textW = (s, kind) => s.length * (kind === "water" ? 9.2 : 10.6) + 6;
 const RANGE = (ns) => { const a = [...ns].sort((x, y) => x - y); return a.length === 1 ? String(a[0]) : a.every((v, i) => !i || v === a[i - 1] + 1) ? `${a[0]}–${a[a.length - 1]}` : a.join(", "); };
 
 function fitCrop(meta, xy, { ratio, pad, minHalfM }) {
@@ -200,20 +220,25 @@ function buoysIn(h, crop, meta, places, { numbers = null, radius = 30 } = {}) {
 }
 /** Labels placed greedily clear of the buoys and of each other: the point, then around it; checked at phone width
  *  first, then at the wide width (such a label is hidden on phones). */
-function labelsIn(crop, meta, cands, buoys) {
+function labelsIn(crop, meta, cands, buoys, { narrow = false } = {}) {
   const ratio = crop.ratio;
+  // an inset is always drawn narrow (the side column, or a phone): its labels are placed at that width only
+  const WIDTHS = narrow ? [["phone", NOMINAL.inset]] : [["phone", NOMINAL.phone], ["wide", NOMINAL.wide]];
   const bBox = (b, W) => { const H = W / ratio, bw = b.label.length > 2 ? 12 + b.label.length * 7.5 : 30; return { x: b.px, y: b.py - (19 / H) * 100, hw: (bw / 2 / W) * 100, hh: (30 / H) * 100 }; };
-  const boxes = { phone: buoys.map((b) => bBox(b, NOMINAL.phone)), wide: buoys.map((b) => bBox(b, NOMINAL.wide)) };
-  const sizeAt = (l, W) => ({ hw: (textW(l.text, l.kind) / 2 / W) * 100, hh: (9 / (W / ratio)) * 100 });
+  const boxes = Object.fromEntries(WIDTHS.map(([k, W]) => [k, buoys.map((b) => bBox(b, W))]));
+  const sizeAt = (l, W) => ({ hw: (textW(l.text, l.kind) / 2 / W) * 100, hh: ((l.kind === "water" ? 10 : 9) / (W / ratio)) * 100 });
   const clear = (k, b) => b.x - b.hw > 1 && b.x + b.hw < 99 && b.y - b.hh > 1 && b.y + b.hh < 99 && !boxes[k].some((o) => Math.abs(o.x - b.x) < o.hw + b.hw && Math.abs(o.y - b.y) < o.hh + b.hh);
   const out = [];
   for (const l of cands) {
     const at = pctIn(crop, meta, l.lat, l.lng, 0);
     if (!at) continue;
     let placed = null;
-    for (const [k, W] of [["phone", NOMINAL.phone], ["wide", NOMINAL.wide]]) {
-      const s = sizeAt(l, W), H = W / ratio, sx = (s.hw * W) / 100 + 12;
-      const offs = l.kind === "water" ? [[0, 0]] : [[0, 0], [0, 16], [0, -16], [sx, 0], [-sx, 0], [0, 30], [0, -30], [sx, 14], [-sx, 14], [sx, -14], [-sx, -14]];
+    for (const [k, W] of WIDTHS) {
+      // an area name has no dot of its own: it may slide, but always stays over its point (never beside it, where it
+      // would name the wrong town)
+      const s = sizeAt(l, W), H = W / ratio, a = (s.hw * W) / 100 * 0.5, b = (s.hw * W) / 100 * 0.85;
+      const offs = l.kind === "water" ? [[0, 0]] : [0, 14, -14, 26, -26, 38].flatMap((dy) => [0, a, -a, b, -b].map((dx) => [dx, dy]))
+        .sort((p, q) => (Math.abs(p[1]) + Math.abs(p[0]) * 0.4) - (Math.abs(q[1]) + Math.abs(q[0]) * 0.4));
       for (const [dx, dy] of offs) {
         const b = { x: at[0] + (dx / W) * 100, y: at[1] + (dy / H) * 100, hw: s.hw, hh: s.hh };
         if (clear(k, b)) { placed = { k, b }; break; }
@@ -223,7 +248,7 @@ function labelsIn(crop, meta, cands, buoys) {
     if (!placed) continue;
     const { k, b } = placed;
     boxes[k].push(b);
-    if (k === "phone") { const s2 = sizeAt(l, NOMINAL.wide); boxes.wide.push({ ...b, hw: s2.hw, hh: s2.hh }); }
+    if (k === "phone" && boxes.wide) { const s2 = sizeAt(l, NOMINAL.wide); boxes.wide.push({ ...b, hw: s2.hw, hh: s2.hh }); }
     out.push({ ...l, px: b.x, py: b.y, pri: k === "phone" ? 1 : 2 });
   }
   return out;
@@ -273,7 +298,7 @@ export function sheetChart(ctx, root, { region, places = [], areas = [], overvie
     const ic = fitWithBuoys(meta, mxy, mxy, { ratio: 4 / 3, pad: 6, minHalfM: 700 });
     const ib = buoysIn(h, ic, meta, big.members, { numbers, radius: 24 });
     const inAreas = areaCands.filter((a) => pctIn(ic, meta, a.lat, a.lng, 4));
-    const il = labelsIn(ic, meta, inAreas, ib);
+    const il = labelsIn(ic, meta, inAreas, ib, { narrow: true });
     const home = h.sortBy([...h.groupBy(big.members, (p) => p.area)], ([, l]) => -l.length)[0][0];
     const name = db.byId.area.get(home)?.name || "";
     // the inset's outline on the main chart
@@ -361,9 +386,12 @@ ${keyBlock}
       body: `<p class="sec-note">${sig.length ? "The places the region's official visitor guides lead with. The number is the buoy on the chart above." : "This sheet has no place marked signature in this guide. These are its first places by kind (theme parks, zoos, museums, beaches and parks first). The number is the buoy on the chart above."}</p>
 <div class="grid grid-3 sig-grid">${keyPlaces.map((p) => `<div class="sig-item">${numbers.get(p.id) ? `<span class="sig-no" data-sheet="${r.id}" aria-hidden="true">${numbers.get(p.id)}</span>` : ""}${cards.placeCard("ROOT/", p, { headingLevel: 3, meta: false })}</div>`).join("")}</div>` }) : "";
 
-    /* ---------- things to do, by family ---------- */
+    /* ---------- things to do, by family ----------
+       only the places Things to do lists (placeHome), so "All N" is the count the filtered page shows; a place whose
+       own kind is in the family comes before one that joins it by a second kind (an arena that is also a music venue) */
+    const todo = r.places.filter((p) => cards.placeHome(p) === "things-to-do");
     const fam = OUT_GROUPS.map((g) => {
-      const list = rankPlaces(h, r.places.filter((p) => p.groups.includes(g)));
+      const list = h.sortBy(rankPlaces(h, todo.filter((p) => p.groups.includes(g))), (p) => (PLACE_GROUP[p.kind] === g ? 0 : 1));
       if (!list.length) return "";
       return `<div class="fam" data-g="${g}"><h3 class="fam-h">${h.icon(GROUP_ICON[g])}<span>${h.esc(PLACE_GROUP_LABEL[g])}</span><span class="n tnum">${list.length}</span></h3>
 <ul class="rows">${list.slice(0, 5).map((p) => cards.placeRow("ROOT/", p)).join("")}</ul>
@@ -373,11 +401,14 @@ ${keyBlock}
       body: `<div class="fams">${fam.join("")}</div>` }) : "";
 
     /* ---------- beaches and outdoors ---------- */
-    const outdoors = h.sortBy(r.places.filter((p) => p.groups.includes("outdoors")), stRank, (p) => { const i = OUTDOOR_ORDER.findIndex((k) => p.kindsAll.includes(k)); return i < 0 ? 99 : i; }, (p) => (p.signature ? 0 : 1), (p) => -refsOf(p), (p) => p.name.toLowerCase());
-    const beaches = r.places.filter((p) => p.kindsAll.includes("beach"));
+    // the places Beaches & outdoors lists (its own kind outdoors, or a pier or waterfront walk), so every count here is
+    // the count its filtered page shows; ordered by the kind of the place itself (a museum in a state park is not a park)
+    const outSet = r.places.filter((p) => cards.placeHome(p) === "outdoors" || ["pier", "waterfront"].includes(p.kind));
+    const outdoors = h.sortBy(outSet, stRank, (p) => { const i = OUTDOOR_ORDER.indexOf(p.kind); return i < 0 ? 99 : i; }, (p) => (p.signature ? 0 : 1), (p) => -refsOf(p), (p) => p.name.toLowerCase());
+    const beaches = outSet.filter((p) => p.kindsAll.includes("beach"));
     const outChips = [
       beaches.length ? c.chip(h.plural(beaches.length, "beach", "beaches"), `outdoors.html?r=${r.id}&k=beach`, { root: "ROOT/", ic: "umbrella" }) : "",
-      ...["state-park", "park", "nature-preserve", "trail", "island"].map((k) => { const n = r.places.filter((p) => p.kindsAll.includes(k)).length; return n ? c.chip(`${n} ${n === 1 ? PLACE_KIND_LABEL[k].toLowerCase() : `${PLACE_KIND_LABEL[k].toLowerCase()}s`}`, `outdoors.html?r=${r.id}&k=${k}`, { root: "ROOT/" }) : ""; }),
+      ...["state-park", "park", "nature-preserve", "trail", "island"].map((k) => { const n = outSet.filter((p) => p.kindsAll.includes(k)).length; return n ? c.chip(`${n} ${n === 1 ? PLACE_KIND_LABEL[k].toLowerCase() : `${PLACE_KIND_LABEL[k].toLowerCase()}s`}`, `outdoors.html?r=${r.id}&k=${k}`, { root: "ROOT/" }) : ""; }),
     ].filter(Boolean);
     const outSec = outdoors.length ? c.section({ id: "outdoors", kicker: `${S} · ${h.plural(outdoors.length, "place")} outdoors`, title: beaches.length ? "Beaches and outdoors" : "Parks and outdoors", root: "ROOT/", more: { href: `outdoors.html?r=${r.id}`, label: "All beaches and outdoors" },
       body: `${outChips.length ? `<div class="chip-row sec-chips">${outChips.join("")}</div>` : ""}<div class="grid grid-3">${outdoors.slice(0, 6).map((p) => cards.placeCard("ROOT/", p, { headingLevel: 3 })).join("")}</div>` }) : "";
@@ -404,16 +435,15 @@ ${stayPick.length ? `<h3 class="sub-h">A few to start with</h3><div class="grid 
     const monthsOf = (e) => monthKey(evSpan(db, e).first < W0 ? W0 : evSpan(db, e).first);
     const rowsByMonth = h.groupBy(evs, monthsOf);
     const list60 = [...rowsByMonth].map(([m, list]) => `<div class="evmonth" data-month="${m}"${list.some((e) => first60.includes(e)) ? "" : " hidden"}><h3 class="sub-h">${h.esc(fmtMonth(m))}</h3><ol class="evrows dated">${list.map((e) => dateRow(ctx, "ROOT/", e, { hidden: !first60.includes(e) })).join("")}</ol></div>`).join("");
-    const annual = h.sortBy(r.series, (s) => { const o = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9]; return o.findIndex((m) => (s.months || []).includes(m)); }, (s) => (s.featured ? 0 : 1), (s) => s.name);
-    const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-    const span = (ms) => { if (!ms || !ms.length) return ""; if (ms.length >= 12) return "All year"; const o = [10, 11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9].filter((m) => ms.includes(m)); return o.length === 1 ? MON[o[0] - 1] : `${MON[o[0] - 1]}–${MON[o[o.length - 1] - 1]}`; };
+    const annual = h.sortBy(r.series, (s) => SEASON.findIndex((m) => (s.months || []).includes(m)), (s) => (s.featured ? 0 : 1), (s) => s.name);
+    const span = monthSpan;
     const onSec = c.section({ id: "on", kicker: `${S} · ${h.plural(r.events.length, "event")} listed`, title: "What's on in the next 60 days", root: "ROOT/", more: { href: `whats-on.html?r=${r.id}`, label: "All events on this sheet" },
-      body: evs.length ? `<div class="on60" data-on60 data-window-start="${W0}" data-window-end="${db.window.end}">
+      body: (evs.length ? `<div class="on60" data-on60 data-window-start="${W0}" data-window-end="${db.window.end}">
 <p class="on60-note" data-on60-note><span class="nojs-only">The first 60 days of the listings, ${h.esc(fmtDateRange(W0, until))}${W0.slice(0, 4) !== until.slice(0, 4) ? "" : `, ${W0.slice(0, 4)}`}.</span><span class="js-only" data-on60-range></span></p>
 ${list60}
-<p class="on60-empty" data-on60-empty hidden>Nothing is listed on this sheet in the next 60 days. <a href="ROOT/whats-on.html?r=${r.id}">Every event on this sheet</a>.</p>
+<p class="on60-empty" data-on60-empty hidden><span data-on60-why>Nothing is listed on this sheet in the next 60 days.</span> <a href="ROOT/whats-on.html?r=${r.id}">Every event on this sheet</a>.</p>
 <p class="on60-more js-only" data-on60-more hidden><button class="btn btn-secondary btn-sm" type="button" data-on60-show></button></p>
-</div>` : c.emptyState({ title: "No events listed on this sheet yet", body: "Events are listed from Sep 28, 2026 to Apr 30, 2027.", level: 3, sheet: r.id })
+</div>` : c.emptyState({ title: "No events listed on this sheet yet", body: `The guide lists events from ${h.fmtDateY(W0)} to ${h.fmtDateY(db.window.end)}.`, level: 3, sheet: r.id }))
       + (annual.length ? `<h3 class="sub-h annual-h" id="every-year">Every year on this sheet</h3><ul class="annual">${annual.map((s) => `<li><a href="ROOT/whats-on.html#s-${h.attr(s.id)}"><span class="an-m label tnum">${h.esc(span(s.months))}</span><span class="an-t">${h.esc(s.name)}</span>${s.featured ? '<span class="an-sig label">Signature</span>' : ""}</a></li>`).join("")}</ul>` : "") });
 
     /* ---------- experiences that depart here ---------- */
@@ -437,7 +467,7 @@ ${list60}
     };
     const tl = h.sortBy(r.timeline, (t) => t.year ?? 0, (t) => t.date || "", (t) => t.id);
     const tlShow = tl.length > 6 ? [...tl.slice(0, 3), ...tl.slice(-3)] : tl;
-    const histSec = her.length || tl.length ? c.section({ id: "history", kicker: `${S} · ${h.plural(her.length, "historic place")} · ${h.plural(tl.length, "milestone")}`, title: "History on this sheet", root: "ROOT/", more: { href: `history.html?r=${r.id}`, label: "History on this sheet" },
+    const histSec = her.length || tl.length ? c.section({ id: "history", kicker: `${S} · ${h.plural(her.length, "historic place")} · ${h.plural(tl.length, "milestone")}`, title: "History on this sheet", root: "ROOT/", more: { href: `history.html?r=${r.id}`, label: "All history on this sheet" },
       body: `<div class="hist-split">
 ${her.length ? `<div><h3 class="sub-h">Historic places, most designated first</h3><ul class="her-list">${herTop.map(herRow).join("")}</ul>${her.length > herTop.length ? `<p class="fam-all"><a href="ROOT/history.html?r=${r.id}">All ${her.length} historic places on this sheet${h.icon("arrow-r")}</a></p>` : ""}</div>` : ""}
 ${tl.length ? `<div><h3 class="sub-h">On the timeline${tl.length > 6 ? ": the first and the latest" : ""}</h3><ol class="mini-tl">${tlShow.map((t, i) => `${tl.length > 6 && i === 3 ? `<li class="gap"><a href="ROOT/history.html?r=${r.id}">${h.esc(`${tl.length - 6} more milestones`)}</a></li>` : ""}<li data-era="${t.era}"><span class="mt-y tnum">${h.esc(t.year < 0 ? `${-t.year} BCE` : String(t.year))}</span><a href="ROOT/history.html#tl-${h.attr(t.id)}">${h.esc(t.title)}</a></li>`).join("")}</ol></div>` : ""}
@@ -446,19 +476,25 @@ ${tl.length ? `<div><h3 class="sub-h">On the timeline${tl.length > 6 ? ": the fi
     /* ---------- eat and drink ---------- */
     const ed = r.places.filter((p) => p.groups.includes("eat") || p.groups.includes("drink"));
     const tagOf = (p) => EAT_TAGS.findIndex(([t]) => (p.tags || []).includes(t));
-    const edTop = h.sortBy(ed.filter((p) => tagOf(p) > -1 && tagOf(p) < 6 || p.heritage), stRank, (p) => { const i = tagOf(p); return i < 0 ? 5.5 : i; }, (p) => (p.signature ? 0 : 1), (p) => p.name.toLowerCase()).slice(0, 8);
+    // the heading names three kinds of pick, so the list holds each: award tags (Michelin, James Beard) first, then the
+    // historic restaurants, up to nine in all
+    const edRank = (list) => h.sortBy(list, stRank, (p) => { const i = tagOf(p); return i < 0 ? 5.5 : i; }, (p) => (p.signature ? 0 : 1), (p) => p.name.toLowerCase());
+    const edAward = edRank(ed.filter((p) => tagOf(p) > -1 && tagOf(p) < 4));
+    const edHist = edRank(ed.filter((p) => !edAward.includes(p) && ((tagOf(p) > 3 && tagOf(p) < 6) || p.heritage)));
+    const nHist = Math.min(edHist.length, 3), nAward = Math.min(edAward.length, 9 - nHist);
+    const edTop = [...edAward.slice(0, nAward), ...edHist.slice(0, 9 - nAward)];
     const edChips = [
       ...EAT_TAGS.map(([t, word]) => { const n = ed.filter((p) => (p.tags || []).includes(t)).length; return n ? c.chip(word, `eat-drink.html?r=${r.id}&tag=${t}`, { root: "ROOT/", count: n }) : ""; }),
       ...["brewery", "food-hall", "cafe-bakery", "distillery-winery"].map((k) => { const n = ed.filter((p) => p.kindsAll.includes(k)).length; return n ? c.chip(PLACE_KIND_LABEL[k], `eat-drink.html?r=${r.id}&k=${k}`, { root: "ROOT/", count: n }) : ""; }),
     ].filter(Boolean);
     const eatSec = ed.length ? c.section({ id: "eat", kicker: `${S} · ${h.plural(ed.length, "place")} to eat and drink`, title: "Eat and drink", root: "ROOT/", more: { href: `eat-drink.html?r=${r.id}`, label: "All places to eat and drink" },
-      body: `${edChips.length ? `<div class="chip-row sec-chips">${edChips.join("")}</div>` : ""}${edTop.length ? `<h3 class="sub-h">Michelin Guide picks, award winners and historic restaurants</h3><ul class="rows">${edTop.map((p) => { const i = tagOf(p); return cards.placeRow("ROOT/", p, { note: i > -1 && i < 6 ? EAT_TAGS[i][1] : p.heritage?.built ? `Historic, ${String(p.heritage.built).match(/\d{4}/)?.[0] || p.heritage.built}` : "Historic" }); }).join("")}</ul>` : `<ul class="rows">${rankPlaces(h, ed).slice(0, 6).map((p) => cards.placeRow("ROOT/", p)).join("")}</ul>`}` }) : "";
+      body: `${edChips.length ? `<div class="chip-row sec-chips">${edChips.join("")}</div>` : ""}${edTop.length ? `<h3 class="sub-h">${h.esc(edAward.length && edHist.length ? "Michelin Guide picks, award winners and historic restaurants" : edAward.length ? "Michelin Guide picks and award winners" : "Historic restaurants and bars")}</h3><ul class="rows">${edTop.map((p) => { const i = tagOf(p); return cards.placeRow("ROOT/", p, { note: i > -1 && i < 6 ? EAT_TAGS[i][1] : p.heritage?.built ? `Historic building, built ${String(p.heritage.built).match(/\d{4}/)?.[0] || p.heritage.built}` : "Historic" }); }).join("")}</ul>` : `<ul class="rows">${rankPlaces(h, ed).slice(0, 6).map((p) => cards.placeRow("ROOT/", p)).join("")}</ul>`}` }) : "";
 
     /* ---------- getting around ---------- */
     const tr = db.transport.filter((t) => (t.regions || []).includes(r.id));
-    const trByFam = h.groupBy(h.sortBy(tr, (t) => ["arrive", "transit", "bike", "drive"].indexOf(TRANSPORT_FAMILY[t.mode] || "drive"), (t) => t.name), (t) => TRANSPORT_FAMILY[t.mode] || "drive");
+    const trByFam = h.groupBy(h.sortBy(tr, (t) => ["arrive", "transit", "bike", "drive"].indexOf(TRANSPORT_FAMILY[t.mode] || "drive"), (t) => { const i = Object.keys(TRANSPORT_FAMILY).indexOf(t.mode); return i < 0 ? 99 : i; }, (t) => t.name), (t) => TRANSPORT_FAMILY[t.mode] || "drive");
     const aroundSec = tr.length ? c.section({ id: "around", kicker: `${S} · ${h.plural(tr.length, "way", "ways")} to get here and around`, title: "Getting around", root: "ROOT/", more: { href: "getting-around.html", label: "Getting around" },
-      body: `<div class="tr-fams">${[...trByFam].map(([f, list]) => `<div><h3 class="sub-h">${h.esc(FAMILY_LABEL[f])}</h3><ul class="tr-list">${list.map((t) => `<li><a href="ROOT/getting-around.html#t-${h.attr(t.id)}">${h.icon(MODE_ICON[t.mode] || "route")}<span><span class="t">${h.esc(t.name)}${t.code ? ` <span class="tr-code">${h.esc(t.code)}</span>` : ""}</span><span class="w">${h.esc([MODE_LABEL[t.mode], t.fare_text && t.fare_text.length < 60 ? t.fare_text : t.is_free === true ? "Free" : ""].filter(Boolean).join(" · "))}</span>${t.summary && (f === "arrive" || f === "transit") ? `<span class="tr-sum">${h.esc(t.summary)}</span>` : ""}</span></a></li>`).join("")}</ul></div>`).join("")}</div>` }) : "";
+      body: `<div class="tr-fams">${[...trByFam].map(([f, list]) => `<div><h3 class="sub-h">${h.esc(FAMILY_LABEL[f])}</h3><ul class="tr-list">${list.map((t) => `<li><a href="ROOT/getting-around.html#t-${h.attr(t.id)}">${h.icon(MODE_ICON[t.mode] || "route")}<span><span class="t">${h.esc(t.name)}${t.code ? ` <span class="tr-code">${h.esc(t.mode === "airport" ? t.code : `Station code ${t.code}`)}</span>` : ""}</span><span class="w">${h.esc([MODE_LABEL[t.mode], t.fare_text && t.fare_text.length < 60 ? t.fare_text : t.is_free === true ? "Free" : ""].filter(Boolean).join(" · "))}</span>${t.summary && (f === "arrive" || f === "transit") ? `<span class="tr-sum">${h.esc(t.summary)}</span>` : ""}</span></a></li>`).join("")}</ul></div>`).join("")}</div>` }) : "";
 
     /* ---------- sources ---------- */
     const srcSec = `<section class="section sheet-sources" id="sources" aria-labelledby="sources-h"><div class="sec-head oxford"><h2 id="sources-h">Sources</h2></div>

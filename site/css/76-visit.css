@@ -15,7 +15,7 @@
    Charts follow the dataviz rules: one scale, thin marks with 4px rounded ends, a 2px line, dots with a 2px surface ring,
    hairline solid grid, text in text tokens (never the data ink), extremes labeled, every value in the table.
    Tokens only; no color literal; nothing under 12px; 44px targets on phones.
-   ======================================================================
+   ====================================================================== */
 
 /* ---------- shared ---------- */
 .vz-lede { max-width: 66ch; margin: calc(-1 * var(--sp-2)) 0 var(--sp-5); color: var(--text-muted); }
@@ -74,6 +74,10 @@
 .ga-free li { padding: 4px 0; border-top: 1px solid var(--border); font-size: var(--fs-sm); }
 .ga-free a { font-weight: var(--wght-strong); }
 .ga-fares-h { margin-top: var(--sp-6); }
+/* how to read the stop maps + the map credit (SPEC §7), once above the first map */
+.ga-mapnote { display: flex; align-items: flex-start; gap: 10px; max-width: 90ch; margin: 0 0 var(--sp-5); font-size: var(--fs-xs); line-height: 1.5; color: var(--text-muted); }
+.ga-mapnote .i { flex: none; width: 16px; height: 16px; margin-top: 1px; color: var(--text-faint); }
+.ga-mapnote a { color: var(--text-muted); }
 .ga-qh { display: flex; align-items: center; gap: 8px; margin-top: var(--sp-6); }
 .ga-qh .i { width: 16px; height: 16px; }
 .ga-allq { margin-top: var(--sp-6); }
@@ -86,6 +90,11 @@
   scroll-margin-top: calc(var(--topbar-h) + var(--sp-4));
 }
 .tx.is-wide { grid-column: 1 / -1; }
+/* one column (tablets): the stops and their map side by side, so a 4:3 map never fills the card's whole width */
+@media (min-width: 560px) and (max-width: 899px) {
+  .tx.is-wide > .tx-side:has(> .tx-stops-b + .mini-map) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+  .tx.is-wide > .tx-side > .mini-map:only-child { max-width: 440px; }
+}
 @media (min-width: 900px) {
   .tx.is-wide { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); grid-template-areas: "main side" "foot side"; grid-template-rows: auto 1fr; }
   .tx.is-wide > .tx-main { grid-area: main; } .tx.is-wide > .tx-side { grid-area: side; } .tx.is-wide > .tx-foot { grid-area: foot; align-self: start; }
@@ -114,6 +123,9 @@
 .tx-foot > :first-child { margin-top: 0; }
 .vz-srcn { color: var(--text-faint); }
 .tx-sheets { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-top: var(--sp-3); font-size: var(--fs-sm); }
+a.tx-sheet { display: inline-flex; align-items: center; text-decoration: none; }
+a.tx-sheet:hover .sheet-badge { text-decoration: underline; text-underline-offset: 0.2em; }
+@media (max-width: 699px) { a.tx-sheet { min-height: var(--tap); } .tx-sheets { gap: 0 14px; } }
 .tx-acts { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-3); }
 .tx .source-line { margin-top: var(--sp-3); }
 .tx-h { margin-bottom: 8px; color: var(--text-muted); }
@@ -214,6 +226,7 @@ ol.wv-cols { position: relative; list-style: none; padding: 0; margin: 0; displa
 .wv-tnote { display: none; font-size: var(--fs-sm); color: var(--text-muted); }
 @media (max-width: 699px) { .wv-tablewrap { display: none; } .wv-tnote { display: block; } }   /* the month cards carry every value */
 .wv-table td.num, .wv-table th.num { white-space: nowrap; }
+.wv-table td:last-child { white-space: normal; min-width: 5.5em; }   /* "64°F (17.7°C)" may break at its space */
 @media (min-width: 700px) {
   .wv-table th:nth-child(4), .wv-table td:nth-child(4), .wv-table th:nth-child(7), .wv-table td:nth-child(7) { border-right: 1px solid var(--border); }
 }

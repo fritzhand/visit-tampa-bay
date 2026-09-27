@@ -80,7 +80,11 @@ export function init(app) {
     }
     for (const w of months.values()) box.insertBefore(w, empty);
     if (note) note.textContent = `${fmtDay(today)} to ${fmtDay(addDays(today, DAYS - 1))}: ${shown.length === 1 ? "1 event" : `${shown.length} events`} on this sheet.`;
-    if (empty) empty.hidden = shown.length > 0;
+    if (empty) {
+      empty.hidden = shown.length > 0;
+      const why = empty.querySelector("[data-on60-why]"), end = box.dataset.windowEnd;
+      if (why && end) why.textContent = today > end ? `The listings in this guide ended ${fmtDay(end)}, ${end.slice(0, 4)}.` : "Nothing is listed on this sheet in the next 60 days.";
+    }
     if (moreP && moreB) {
       moreP.hidden = all || dated.length <= SHOW_FIRST;
       moreB.textContent = `Show all ${dated.length} dated events in the next 60 days`;

@@ -258,7 +258,7 @@ ${listSection(root)}
     const list = nearEvents(s.ll);
     const w = db.window;
     const head = `<div class="sec-head oxford"><p class="sec-kicker label">${h.icon("flag")}Within 2 km (1.2 mi) in a straight line, an estimate</p><h2 id="near-events-h">What's on nearby <span class="nx-when" data-near-when>this season, ${esc(h.fmtDate(w.start))} to ${esc(h.fmtDateY(w.end))}</span></h2></div>`;
-    if (!list.length) return `<section class="section" id="near-events" aria-labelledby="near-events-h">${head}<p class="unk">No event in this guide is listed within 2 km of ${esc(s.name)}.</p><p><a href="${root}whats-on.html?a=${attr(s.area)}">${h.icon("calendar")}What's on in ${esc(db.byId.area.get(s.area)?.name || "the area")}</a></p></section>`;
+    if (!list.length) return `<section class="section" id="near-events" aria-labelledby="near-events-h">${head}<p class="unk">No event in this guide is listed within 2 km of ${esc(s.name)}.</p><p class="nx-all"><a href="${root}whats-on.html?a=${attr(s.area)}">${h.icon("calendar")}What's on in ${esc(db.byId.area.get(s.area)?.name || "the area")}</a></p></section>`;
     const FIRST = 8;
     const rows = list.map((x) => eventRowNear(root, x));
     return `<section class="section" id="near-events" aria-labelledby="near-events-h" data-near-events data-n="${list.length}" data-window-end="${attr(w.end)}">${head}

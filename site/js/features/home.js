@@ -14,7 +14,7 @@
    Pure helpers (band, nextFor, items) are exported for tests/home.test.mjs.
    ============================================================ */
 import { esc, truncate } from "../lib/text.js";
-import { nyParts, addDays, dateRange, fmtDay, fmtDayLong, fmtTime, fmtRange, fmtDate, fmtDateY, fmtThrough, whenRange, weekday, isoLocal } from "../lib/time.js";
+import { nyParts, addDays, dateRange, daysBetween, fmtDay, fmtDayLong, fmtTime, fmtRange, fmtDate, fmtDateY, fmtDateRange, fmtThrough, whenRange, weekday, isoLocal } from "../lib/time.js";
 
 export const FL = { END_UNKNOWN: 1, TIME_UNKNOWN: 2, ALL_DAY: 4, ONGOING: 8, LATE: 16, RUN: 32 };
 const dead = (ev) => ev.st === "cancelled" || ev.st === "postponed";
@@ -59,6 +59,16 @@ export function nextFor(all, region, now) {
 
 const bullet = (r) => (r ? `<svg class="bullet" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><use href="#b-${esc(r)}"/></svg>` : '<span aria-hidden="true"></span>');
 const hhmm = (t) => nyParts(t).hhmm;
+
+/** An event's listing days in words, as the server prints them (build/pages/region.mjs dateText): "Sat, Oct 24",
+ *  "Oct 23–25", "Oct 3, Oct 10 and Oct 17", "12 dates, Oct 3 to Dec 19". */
+export function daysText(days) {
+  if (days.length <= 1) return days.length ? fmtDay(days[0]) : "";
+  const first = days[0], last = days[days.length - 1];
+  if (daysBetween(first, last) + 1 === days.length) return fmtDateRange(first, last);
+  if (days.length <= 4) return `${days.slice(0, -1).map(fmtDate).join(", ")} and ${fmtDate(last)}`;
+  return `${days.length} dates, ${fmtDate(first)} to ${fmtDate(last)}`;
+}
 
 /** Where an event is: its place's name, else the source's location text, else "Place not listed" (HTML). */
 export const placeOf = (ev, data) => {
@@ -143,7 +153,8 @@ export function init(app) {
     const n = b.weekend.reduce((s, d) => s + d.list.length, 0);
     const w0 = b.weekend[0].d, w1 = b.weekend[b.weekend.length - 1].d;
     let w = `<div class="tb-col"><h3 class="tb-h"><span class="label">${esc(b.wkLabel)}</span><span class="tb-d">${esc(w0 === w1 ? fmtDay(w0) : `${fmtDay(w0)} to ${fmtDay(w1)}`)}</span></h3>`;
-    if (!n) w += `<p class="tb-none">${esc(b.phase === "after" ? "Nothing listed: the listings have ended." : "Nothing is listed for these days.")}</p>`;
+    const pastEnd = win && b.weekend.some((d) => d.d > win.end);
+    if (!n) w += `<p class="tb-none">${esc(b.phase === "after" ? "Nothing listed: the listings have ended." : pastEnd ? `Nothing is listed for these days. The listings in this guide end ${fmtDay(win.end)}, ${win.end.slice(0, 4)}.` : "Nothing is listed for these days.")}</p>`;
     for (const d of b.weekend) {
       if (!d.list.length) continue;
       w += `<div class="tb-day"><h4 class="sub-h">${esc(`${fmtDay(d.d)} · ${d.list.length === 1 ? "1 event" : `${d.list.length} events`}`)}</h4>${list(d.list, PER)}${d.list.length > PER ? `<p class="tb-more"><a href="${R}whats-on.html?day=${d.d}">${esc(`All ${d.list.length} on ${fmtDay(d.d)}`)}</a></p>` : ""}</div>`;
@@ -159,10 +170,10 @@ export function init(app) {
   function drawNext(now) {
     for (const el of $$("[data-next-featured]")) {
       const x = nextFor(all, el.dataset.nextFeatured, now);
-      const head = '<p class="si-sub label">Next signature event</p>';
-      if (!x) { el.innerHTML = `${head}<span class="unk">No signature event listed from today to ${esc(fmtDateY(win.end))}</span>`; continue; }
-      const multi = x.ev.i.length > 1;
-      const when = x.f & FL.RUN ? fmtThrough(x.ev.ed || x.day, x.day) : multi ? `${fmtDate(x.ev.i[0][0])} to ${fmtDate(x.ev.i[x.ev.i.length - 1][0])}` : fmtDay(x.day);
+      if (!x) { el.innerHTML = `<p class="si-sub label">Next signature event</p><span class="unk">No signature event listed from today to ${esc(fmtDateY(win.end))}</span>`; continue; }
+      // under way: its first listing has begun (a festival on its second day, a run that opened before today)
+      const head = `<p class="si-sub label">${x.ev.i[0][1] <= now ? "Signature event under way" : "Next signature event"}</p>`;
+      const when = x.f & FL.RUN ? fmtThrough(x.ev.ed || x.day, x.day) : daysText([...new Set(x.ev.i.map((y) => y[0]))].sort());
       el.innerHTML = `${head}<a href="${R}whats-on.html?e=${esc(x.ev.id)}#e-${esc(x.ev.id)}" data-open-event="${esc(x.ev.id)}"><span class="t">${esc(x.ev.t)}</span><span class="w">${esc(when)}${x.ev.pl && data.places[x.ev.pl] ? ` · ${esc(data.places[x.ev.pl].n)}` : ""}</span></a>`;
     }
   }

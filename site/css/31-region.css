@@ -25,7 +25,8 @@
 /* ---------- the sheet chart and its title block ---------- */
 .sheet-chart { margin-top: var(--sp-6); }
 .sc-grid { display: grid; gap: var(--sp-5); grid-template-columns: minmax(0, 1fr); align-items: start; }
-@media (min-width: 1100px) { .sc-grid { grid-template-columns: minmax(0, 1.5fr) minmax(250px, 1fr); } }
+/* from tablet width the chart and its title block sit side by side (a portrait strip of beaches never fills a screen) */
+@media (min-width: 700px) { .sc-grid { grid-template-columns: minmax(0, 1.5fr) minmax(240px, 1fr); } }
 .sc-map { margin: 0; }
 .sc-map .grat-in { padding: 0; }
 .sc-map .mini-map { margin: 0; border: 0; box-shadow: none; }
@@ -33,7 +34,10 @@
 .sheet-map-view .map-label.area-l { letter-spacing: var(--track-label); }
 .sheet-map-view .map-label.water { font-size: var(--fs-sm); }
 .pin-range > span { white-space: nowrap; min-width: 36px; padding-left: 5px; padding-right: 5px; }
-@media (max-width: 559px) { .sheet-map-view .wide-only { display: none; } }
+/* names placed for the wide chart (480px) show only where the chart is drawn that wide */
+.sc-map > .grat-in { container-type: inline-size; }
+.sheet-map-view .wide-only { display: none; }
+@container (min-width: 460px) { .sheet-map-view .wide-only { display: block; } }
 .sc-cap { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px 6px; border-top: 1px solid var(--grat-ink); background: var(--surface); font-size: var(--fs-xs); color: var(--text-muted); }
 .sc-cap a { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); width: fit-content; font-size: var(--fs-sm); font-weight: var(--wght-strong); }
 .sc-cap .i { width: 16px; height: 16px; }
@@ -202,7 +206,10 @@
 .sheet-keyblock .sheet-key li { break-inside: avoid; border-bottom: 1px solid var(--border); }
 .sheet-keyblock .sheet-key li:last-child { border-bottom: 1px solid var(--border); }
 .sec-foot { margin-top: var(--sp-3); font-size: var(--fs-sm); color: var(--text-muted); }
-.sheet-page .fams .row .bullet { display: none; }
+.sheet-page .rows .row .bullet { display: none; }         /* every row on a sheet page is on that sheet */
+/* the plate's two-line name needs about 160px of height: 16:10 on a three-up grid, 2:1 on a phone (never clipped) */
+.sheet-page .section .grid .card:not(.area) > .plate-type, .sheet-page .section .grid .card:not(.area) > .photo { aspect-ratio: 16 / 10; }
+@media (max-width: 559px) { .sheet-page .section .grid .card:not(.area) > .plate-type, .sheet-page .section .grid .card:not(.area) > .photo { aspect-ratio: 2 / 1; } }
 .evmonth.underway .sub-h { color: var(--text-muted); }
 
 /* ---------- the inset (a harbor inset, as on a printed chart) and its box on the main chart ---------- */
@@ -216,9 +223,10 @@
   font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; line-height: 1.2;
 }
 .sheet-map-view .map-label.city-l { color: var(--text-faint); letter-spacing: var(--track-label); }
-@media (max-width: 1099px) { .sc-side { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: start; } }
+@media (min-width: 560px) and (max-width: 699px) { .sc-side { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); align-items: start; } }
 
 /* ---------- the sheet's own photo (a rights-cleared image with its credit), when the guide has one ---------- */
 .sheet-photo { margin: 0 0 var(--sp-6); }
 .sheet-photo img { width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover; }
 @media (max-width: 559px) { .sheet-photo img { aspect-ratio: 3 / 2; } }
+@media (max-width: 699px) { .sheet-photo figcaption a { display: inline-flex; align-items: center; min-height: var(--tap); } }

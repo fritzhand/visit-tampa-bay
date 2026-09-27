@@ -89,14 +89,14 @@ export function pages(ctx) {
 
   /* ---------- the month bar (works without JS: anchor links) ---------- */
   const monthLabel = (m, i) => `${MON[Number(m.slice(5)) - 1]}${i === 0 || m.endsWith("-01") ? ` <small>${m.slice(0, 4)}</small>` : ""}`;
-  const bar = `<nav class="wo-bar" aria-label="Jump to a month" data-wo-bar><div class="wo-bar-in">${runs.length ? `<a class="wo-bar-runs" href="#runs"><b>Long runs</b><span class="n tnum" data-wo-bn="runs">${runs.filter((e) => e.live).length}</span></a>` : ""}${months.map((m, i) => `<a href="#m-${m}" data-m="${m}"><b>${monthLabel(m, i)}</b><span class="n tnum" data-wo-bn="${m}">${monthCount(m)}</span></a>`).join("")}${db.series.length ? `<a class="wo-bar-yr" href="#annual"><b>Every year</b><span class="n tnum">${db.series.length}</span></a>` : ""}</div></nav>`;
+  const bar = `<nav class="wo-bar" aria-label="Jump to a month" data-wo-bar><div class="wo-bar-in">${runs.length ? `<a class="wo-bar-runs" href="#runs"><b>Long runs</b><span class="n tnum" data-wo-bn="runs">${runs.filter((e) => e.live).length}</span></a>` : ""}${months.map((m, i) => `<a href="#m-${m}" data-m="${m}" aria-label="${attr(`${h.fmtMonth(m)}: ${plural(monthCount(m), "event")}`)}"><b>${monthLabel(m, i)}</b><span class="n tnum" data-wo-bn="${m}">${monthCount(m)}</span></a>`).join("")}${db.series.length ? `<a class="wo-bar-yr" href="#annual"><b>Every year</b><span class="n tnum">${db.series.length}</span></a>` : ""}</div></nav>`;
 
   const empty = `<div class="wo-empty" data-filter-empty hidden>${c.emptyState({ title: "No events match these filters", body: "Try another date, sheet or kind, or clear the filters.", glyph: "calendar", level: 2, action: '<button class="btn btn-secondary" type="button" data-filter-clear>Clear filters</button>' })}</div>`;
   /* ---------- the list (root: "" here; kept so every internal URL is root + path) ---------- */
   const render = (root) => {
   const card = (x, hl) => cards.eventCard(root, x, { lean: true, datebox: true, headingLevel: hl, showDate: false, checked });
   const runsSec = runs.length ? `<section class="wo-runs" id="runs" data-filter-group aria-labelledby="runs-h" data-wo-runs>
-<header class="wo-sech"><h2 id="runs-h">Long runs</h2><p class="wo-secd">${esc(`${plural(runs.length, "exhibition, season or market", "exhibitions, seasons and markets")} on for more than two weeks. Each is listed once, with its last day.`)}</p></header>
+<header class="wo-sech"><h2 id="runs-h">Long runs</h2><p class="wo-secd">${esc(`${plural(runs.filter((e) => e.live).length, "exhibition, season or market", "exhibitions, seasons and markets")} on for more than two weeks${runs.some((e) => !e.live) ? `, plus ${runs.filter((e) => !e.live).length} cancelled or postponed` : ""}. Each is listed once, with its last day.`)}</p></header>
 <div class="wo-grid" data-wo-run-list>${runs.map((e) => card(e.instances[0], 3)).join("")}</div>
 </section>` : "";
   const daySec = (d) => {
@@ -104,7 +104,7 @@ export function pages(ctx) {
     const n = dayCount(d);
     return `<section class="wo-day" id="d-${d}" data-filter-group>
 <h3 class="wo-dh"><span class="wo-dn">${esc(h.fmtDayLong(d))}</span> <span class="wo-dc">${n ? plural(n, "event") : "Cancelled or postponed only"}</span> <span class="ev-status"></span></h3>
-${cs.length ? `<div class="wo-grid">${cs.map((x) => card(x, 4)).join("")}</div>` : ""}${also.length ? `<div class="wo-also-box"><p class="wo-also-h">${cs.length ? "Also on this day" : "On this day"} <span>· more dates of multi-day events</span></p><ul class="wo-also">${also.map((xs) => cards.alsoRow(root, xs[0], { local: true, slim: true, times: xs })).join("")}</ul></div>` : ""}
+${cs.length ? `<div class="wo-grid">${cs.map((x) => card(x, 4)).join("")}</div>` : ""}${also.length ? `<div class="wo-also-box"><p class="wo-also-h">${cs.length ? "Also on this day" : "On this day"}</p><ul class="wo-also">${also.map((xs) => cards.alsoRow(root, xs[0], { local: true, slim: true, times: xs })).join("")}</ul></div>` : ""}
 </section>`;
   };
   const monthSec = (m) => {
@@ -139,20 +139,26 @@ ${months.map(monthSec).join("\n")}
   const seriesSorted = h.sortBy(db.series, (s) => (s.featured ? 0 : 1), (s) => s.name.toLowerCase());
   const yr = new Map([[0, []], ...Array.from({ length: 12 }, (_, i) => [i + 1, []])]);
   for (const s of seriesSorted) yr.get(seasonStart(s.months || []))?.push(s);
+  // the source's name; when the official site is another page of the same host, "host page" so the two links read apart
+  const srcLabel = (s) => (s.url && s.url !== s.source_url && h.hostOf(s.url) === h.hostOf(s.source_url) ? `${h.hostOf(s.source_url)} (source page)` : h.hostOf(s.source_url));
   const seriesEvents = (s) => h.sortBy(db.events.filter((e) => e.series === s.id && e.instances.length), (e) => e.first);
   const seriesEntry = (s, root) => {
     const evs = seriesEvents(s);
     const where = s.venue ? `<a href="${root}places/${attr(s.venue.id)}.html">${esc(s.venue.name)}</a>` : s.location_text ? esc(s.location_text) : c.unk("Place not listed");
     const kicker = [vocab.EVENT_KIND_LABEL[s.kind] || s.kind, s.area ? db.byId.area.get(s.area)?.name : "", s.since ? `Since ${s.since}` : ""].filter(Boolean).join(" · ");
     const meta = `<span class="ev-kind">${esc(kicker)}</span>${s.featured ? '<span class="seal">Signature</span>' : ""}${s.region ? '<i class="ev-sb" aria-hidden="true"></i>' : ""}`;
-    const dates = evs.length ? `<p class="wo-se-next"><span class="label">In this guide</span> ${evs.map((e) => `<a href="#e-${attr(e.id)}">${esc(e.run ? h.fmtDateRange(e.date, e.end_date) : e.instances.length > 1 ? h.fmtDateRange(e.instances[0].day, e.instances[e.instances.length - 1].day) : h.fmtDay(e.instances[0].day))}</a>${e.live ? "" : ` (${esc(vocab.EVENT_STATUS_LABEL[e.status])})`}`).join(", ")}</p>` : "";
+    // the dated events of this series in the list: every one when there are a few; a long season (42 home games) names
+    // its first dates and links the whole set as a filtered list (?series=; without JS the link opens the whole list)
+    const dateLink = (e) => `<a href="#e-${attr(e.id)}">${esc(e.run ? h.fmtDateRange(e.date, e.end_date) : e.instances.length > 1 ? h.fmtDateRange(e.instances[0].day, e.instances[e.instances.length - 1].day) : h.fmtDay(e.instances[0].day))}</a>${e.live ? "" : ` (${esc(vocab.EVENT_STATUS_LABEL[e.status])})`}`;
+    const SHOW = 6, few = evs.length <= SHOW + 2;
+    const dates = evs.length ? `<p class="wo-se-next"><span class="label">In this guide</span> ${(few ? evs : evs.slice(0, SHOW)).map(dateLink).join(", ")}${few ? "" : `, and ${evs.length - SHOW} more`}${evs.length > 1 ? ` <a class="wo-se-all" href="${root}whats-on.html?series=${attr(s.id)}">${esc(`List all ${evs.length}`)}</a>` : ""}</p>` : "";
     return `<article class="wo-se" id="s-${attr(s.id)}"${s.region ? ` data-sheet="${s.region}"` : ""}>
 ${strip(s.months || [])}<p class="ev-meta">${meta}</p>
 <h4 class="wo-se-t">${esc(s.name)}</h4>
 <p class="wo-se-when">“${esc(s.when_text)}”</p>
 <p class="wo-se-where">${where}</p>
 ${s.summary ? `<p class="wo-se-sum">${esc(s.summary)}</p>` : ""}
-${dates}<p class="source-line">${s.url && s.url !== s.source_url ? `Official site: ${h.extLink(s.url, esc(h.hostOf(s.url)))} · Source: ` : s.url ? "Official site and source: " : "Source: "}${h.extLink(s.source_url, esc(h.hostOf(s.source_url)))}${s.checked && s.checked !== checked ? ` · Checked ${esc(h.fmtDateY(s.checked))}` : ""}</p>
+${dates}<p class="source-line">${s.url && s.url !== s.source_url ? `Official site: ${h.extLink(s.url, esc(h.hostOf(s.url)))} · Source: ` : s.url ? "Official site and source: " : "Source: "}${h.extLink(s.source_url, esc(srcLabel(s)))}${s.checked && s.checked !== checked ? ` · Checked ${esc(h.fmtDateY(s.checked))}` : ""}</p>
 </article>`;
   };
   const alsoIn = (m) => {
@@ -163,13 +169,15 @@ ${dates}<p class="source-line">${s.url && s.url !== s.source_url ? `Official sit
   const yearRound = yr.get(0).length;
   const annual = (root) => (db.series.length ? c.section({
     id: "annual", title: "Every year", kicker: `The annual calendar · ${plural(db.series.length, "recurring event")}`, root,
-    body: `<p class="wo-secd">What happens every year, filed under the month each season starts${yearRound ? " (year-round events first)" : ""}. The dates in quotation marks are the organizers' own wording; the dated events in this guide are linked under each.</p>
+    body: `<p class="wo-secd">What happens every year, filed under the month each season starts${yearRound ? " (year-round events first)" : ""}. The dates in quotation marks are as each source states them (the source is named under each); the dated events in this guide are linked under each.</p>
 <nav class="wo-yr-idx" aria-label="Annual calendar by month">${yearRound ? `<a href="#yr-0">Year-round <span class="n">${yearRound}</span></a>` : ""}${MON.map((m, i) => (yr.get(i + 1).length || alsoIn(i + 1) ? `<a href="#yr-${i + 1}">${m} <span class="n">${yr.get(i + 1).length}</span></a>` : "")).join("")}</nav>
 ${[...yr].filter(([m, list]) => list.length || alsoIn(m)).map(([m, list]) => `<section class="wo-yr" id="yr-${m}" aria-labelledby="yr-${m}-h"><h3 class="wo-yr-h" id="yr-${m}-h">${m ? `${MONTH_LONG[m - 1]} <span>${list.length ? `${plural(list.length, "season starts", "seasons start")}` : "nothing new starts"}</span>` : `Year-round <span>${plural(list.length, "event")}</span>`}</h3>${alsoIn(m)}${list.length ? `<div class="wo-se-grid">${list.map((x) => seriesEntry(x, root)).join("\n")}</div>` : ""}</section>`).join("\n")}`,
   }) : "");
 
   /* ---------- the page ---------- */
-  const lede = `${plural(live.length, "event")} on ${plural(liveDays, "day")}, ${h.fmtDate(win.start)}, ${win.start.slice(0, 4)} to ${h.fmtDateY(win.end)}: festivals, fairs, concerts, games and shows. ${freeN} are free; ${sigN} are signature events.`;
+  const lede = live.length
+    ? `${plural(live.length, "event")} on ${plural(liveDays, "day")}, ${h.fmtDate(win.start)}, ${win.start.slice(0, 4)} to ${h.fmtDateY(win.end)}: festivals, fairs, concerts, games and shows. ${freeN} ${freeN === 1 ? "is" : "are"} free; ${sigN} ${sigN === 1 ? "is a signature event" : "are signature events"}.`
+    : `No events are listed yet for ${h.fmtDateY(win.start)} to ${h.fmtDateY(win.end)}.`;
   return [{
     path: "whats-on.html", nav: "whats-on", title: "What's On",
     description: `Every dated event in this Tampa Bay guide from ${h.fmtDateY(win.start)} to ${h.fmtDateY(win.end)}, by month and day: festivals, parades, fairs, concerts, home games and shows, each linked to its source.`,
@@ -177,7 +185,7 @@ ${[...yr].filter(([m, list]) => list.length || alsoIn(m)).map(([m, list]) => `<s
     body: (root) => `${c.pageHead({ kicker: `Plan · ${MONTH_LONG[Number(win.start.slice(5, 7)) - 1].slice(0, 3)} ${win.start.slice(0, 4)} – ${MONTH_LONG[Number(win.end.slice(5, 7)) - 1].slice(0, 3)} ${win.end.slice(0, 4)}`, num: 1, title: "What's On", lede })}
 <div class="wo">
 ${tools}
-<p class="wo-note">${h.icon("info")}<span>Select an event for its details, map and source link. ${checked ? esc(checkedAll ? `Every listing here was checked against its source on ${h.fmtDateY(checked)}.` : `Most listings here were checked against their sources on ${h.fmtDateY(checked)}; the others say when.`) : ""}</span></p>
+<p class="wo-note">${h.icon("info")}<span>Select an event for its details, map and source link. An event on several days has its card on its first day and a short row on each later day. ${checked ? esc(checkedAll ? `Every listing here was checked against its source on ${h.fmtDateY(checked)}.` : `Most listings here were checked against their sources on ${h.fmtDateY(checked)}; the others say when.`) : ""}</span></p>
 <div class="wo-pane" data-view-pane="list">
 ${bar}
 ${empty}

@@ -149,6 +149,15 @@ test("trip.html: the page around the core's view", () => {
   assert.match(trip, /data-features="whats-on"/);
   assert.match(trip, /data-trip-print/);
   assert.match(trip, new RegExp(`${events.filter((e) => e.status !== "cancelled").length} events, by day`));
+  // "Find things to star": each Explore page's count is the count that page itself shows
+  for (const [page, label] of [["things-to-do", "Things to do"], ["outdoors", "Beaches and outdoors"], ["eat-drink", "Eat and drink"]]) {
+    const own = read(dir, `docs/${page}.html`).match(/data-result-count[^>]*>Showing <b>\d+<\/b> of (\d+) places?/);
+    const said = trip.slice(trip.indexOf('id="find"')).match(new RegExp(`href="${page}\\.html">[^]*?<span class="t">${label}</span><span class="w">(\\d+) places?(?: and (\\d+) campgrounds?)?`));
+    if (!own) continue;                                  // a page without a result line (its lane's choice)
+    assert.ok(said, `trip.html links ${page}.html with a count`);
+    const n = Number(said[1]) + Number(said[2] || 0);   // Beaches & outdoors counts its campgrounds with its places
+    assert.equal(n, Number(own[1]), `${page}: trip.html says ${n}, the page lists ${own[1]}`);
+  }
 });
 
 test("date tests: an item matches on its own listing day; a run on any day it covers", () => {
@@ -193,7 +202,7 @@ test("a page without events still builds (empty states, no series)", () => {
     const r = build(d);
     assert.equal(r.status, 0, r.stderr);
     const h = read(d, "docs/whats-on.html");
-    assert.match(h, /<p class="lede">0 events on 0 days/);
+    assert.match(h, /<p class="lede">No events are listed yet for /, "an empty calendar says so, not \"0 events on 0 days\"");
     assert.doesNotMatch(h, /id="annual"/);
   } finally { cleanup(d); }
 });

@@ -508,6 +508,13 @@ keywords, `i` an image path.
   only with a basemap). New attribute `a[data-set-filter="k=v&k2=v2"]` (a normal link to the same page's filtered URL; `features/stay.js`
   applies it in place with `app.filter`). `build/pages/stay.mjs` exports `kit(ctx)` (the lane's list helpers) and `STAY_KIND_PLURAL`;
   `build/pages/experiences.mjs` exports `FAMILIES` (read by tests/stay.test.mjs).
+- **2026-09-27 · Stay lane review pass** (additive): `experienceFacts(root, x)`'s "Where" row adds the operator's `departs_text`
+  (`.fact-note`) when a departure place is also linked. `kit(ctx).filterLink(root, page, params, html, cls, hash = "list")` takes the
+  anchor a link lands on without JS (stay.html's area counts and "All n in <area>" land on `#area-<id>`, the area's group; JS still
+  applies the filter in place). stays/<id>.html: sections `#around` (a stay with no coordinates: its area's pages instead of
+  distances) and `#on-the-timeline`; "Within walking distance" counts places at the stay's very own point ("same position in this
+  guide"; `db.nearby` skips points under 0.5 m, meant for a record's own point) and, when nothing is within 1.2 km, lists the
+  nearest places (straight line, labeled); stays beyond the bay chart show the region chart (`cards.chartMap`, as place pages do).
 - **2026-09-27 · Images pass** `scripts/fetch-images.py` writes `data/images.json` and `site/img/<kind>/` from `data/media.json`
   (one image per subject: the first media record for it, a timeline entry's own `media` order first; `file` is the 480 px rendition,
   `lg` the ≤ 1200 px one when the source is larger; every entry carries `media`, its media id). Additive engine change: image kind

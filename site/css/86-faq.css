@@ -47,3 +47,11 @@ details.faq:target > summary { color: var(--accent-strong); }
 details.faq { scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
 details.faq > .source-line { margin-top: var(--sp-2); }
 .faq-note { max-width: 70ch; color: var(--text-muted); }
+
+/* the Visit lane's source line (srcLine in build/pages/faq.mjs, on faq.html, getting-around.html and when-to-visit.html):
+   the icon in its own 14px column, the hosts beside it, "Checked …" under the hosts; the shared flex row wrapped the
+   icon onto a line of its own whenever the hosts did not fit beside it */
+.source-line.vz-src { display: grid; grid-template-columns: 14px minmax(0, 1fr); column-gap: 8px; row-gap: 2px; align-items: start; }
+.source-line.vz-src > .i { grid-row: 1; margin-top: 2px; align-self: start; }
+.source-line.vz-src > span { grid-column: 2; min-width: 0; overflow-wrap: anywhere; }
+.vz-srcnote { margin-top: 4px; font-size: var(--fs-xs); line-height: 1.5; color: var(--text-faint); max-width: 90ch; }

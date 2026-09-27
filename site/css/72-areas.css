@@ -71,6 +71,9 @@
 .ar-evcount { margin: 0 0 var(--sp-2); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
 .ar-evcount:empty { display: none; }
 .ar-tonight li[hidden] { display: none; }
+.ar-tonight a { grid-template-columns: 74px minmax(0, 1fr); }
+@media (max-width: 399px) { .ar-tonight a { grid-template-columns: 64px minmax(0, 1fr); } }
+.ar-evmore[hidden] { display: none; }
 .ar-tonight .w .badge { margin-left: 4px; }
 .ar-tonight [data-status]:not(:empty) { margin-left: 4px; font-weight: var(--wght-strong); color: var(--accent-strong); }
 .ar-series, .ar-also { max-width: var(--measure); margin-top: var(--sp-4); font-size: var(--fs-sm); line-height: 1.7; }
@@ -86,7 +89,7 @@
 .ar-live .map-box > * { border-left: 0; border-right: 0; }
 .ar-live .map-box > :first-child { border-top: 0; }
 .ar-live .map-view { aspect-ratio: 4 / 3; max-height: 70vh; border: 1px solid var(--grat-ink); box-shadow: 0 0 0 3px var(--surface), 0 0 0 4px var(--grat-ink); margin: 4px; width: auto; }
-.ar-live .map-legend { padding: 8px 0 0; border-top: 0; background: none; }
+.ar-live .map-legend { display: none; }   /* the figure's caption carries the attribution line */
 .ar-live .map-rose { display: none; }
 .ar-live .map-card { right: 64px; }
 .fig-attrib { display: block; margin-top: 4px; overflow-wrap: anywhere; }

@@ -9,16 +9,37 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { copyRepo, build, read, write, json, editData, cleanup, fx, REPO } from "./helpers.mjs";
-import { tlDate, yearText, isNHL, isNR } from "../build/pages/history.mjs";
+import { tlDate, yearText, isNHL, isNR, dateWords, yearNumeral, sourceWords } from "../build/pages/history.mjs";
 import { routeFacts, distWords, walkWords, stopHref } from "../build/pages/passages.mjs";
 
 /* ---------- pure helpers ---------- */
 test("timeline dates print as precisely as the source gives them, never more", () => {
-  assert.deepEqual(tlDate({ year: 1914, date: "1914-01-01", era: "boomtown" }), { year: "1914", day: "Jan 1", iso: "1914-01-01", approx: false });
-  assert.deepEqual(tlDate({ year: 1539, date: "1539-05", era: "spanish" }), { year: "1539", day: "May", iso: "1539-05", approx: false });
-  assert.deepEqual(tlDate({ year: 1821, date: "1821", era: "frontier" }), { year: "1821", day: "", iso: "1821", approx: false });
-  // no date: the year is only a sort key, so the page says so
-  assert.deepEqual(tlDate({ year: 1960, era: "postwar" }), { year: "1960", day: "", iso: "", approx: true });
+  assert.deepEqual(tlDate({ year: 1914, date: "1914-01-01", era: "boomtown" }), { year: "1914", day: "Jan 1", iso: "1914-01-01", approx: false, about: false });
+  assert.deepEqual(tlDate({ year: 1539, date: "1539-05", era: "spanish" }), { year: "1539", day: "May", iso: "1539-05", approx: false, about: false });
+  assert.deepEqual(tlDate({ year: 1821, date: "1821", era: "frontier" }), { year: "1821", day: "", iso: "1821", approx: false, about: false });
+  // no date and a text that never states the year: the year is only a sort key, so the page says so
+  assert.deepEqual(tlDate({ year: 1960, era: "postwar", text: "Fixture timeline text." }), { year: "1960", day: "", iso: "", approx: true, about: false });
+  // no date, but the entry's own text states the year: printed as a year alone (never "No exact date")
+  assert.deepEqual(tlDate({ year: 1887, era: "boomtown", text: "The light went up on Anclote Key in 1887. It was automated in 1952." }), { year: "1887", day: "", iso: "1887", approx: false, about: false });
+  // …an approximate year stays approximate, a decade stays a decade
+  assert.deepEqual(tlDate({ year: -500, era: "indigenous", text: "From about 500 BCE the Manasota culture lived here." }), { year: "500 BCE", day: "", iso: "", approx: false, about: true });
+  assert.deepEqual(tlDate({ year: 1500, era: "indigenous", text: "It was occupied into the early Spanish period (about 1500 to 1650)." }), { year: "1500 CE", day: "", iso: "", approx: false, about: true });
+  assert.deepEqual(tlDate({ year: 1960, era: "postwar", text: "The city says it peaked in the 1960s with more than 100 businesses." }), { year: "1960s", day: "", iso: "", approx: false, about: false });
+  assert.equal(dateWords(tlDate({ year: 1960, era: "postwar", text: "It peaked in the 1960s." })), "the 1960s");
+  assert.equal(dateWords(tlDate({ year: 900, era: "indigenous", text: "From about 900 CE until after 1700." })), "about 900 CE");
+  // a year inside a longer number is not the year ("11,887 visitors" never dates an entry to 1887)
+  assert.equal(tlDate({ year: 1887, era: "boomtown", text: "It drew 11,887 visitors." }).approx, true);
+  // the register's big numeral: a plain year or range only, circa kept, qualified values keep their words only
+  assert.equal(yearNumeral("1912"), "1912");
+  assert.equal(yearNumeral("1898–1905"), "1898");
+  assert.equal(yearNumeral("c. 1855"), "c. 1855");
+  assert.equal(yearNumeral("about 1928"), "c. 1928");
+  assert.equal(yearNumeral("1539 (event commemorated); 1948 (memorial authorized)"), "");
+  assert.equal(yearNumeral("1900–1949 (period of significance)"), "");
+  assert.equal(yearNumeral("c. 1855 (City of Tampa); 1858 (Wikipedia)"), "");
+  // source links never read the same twice
+  assert.deepEqual(sourceWords(["https://a.org/", "https://a.org/about/", "https://b.org/x"]), ["a.org", "a.org (about)", "b.org"]);
+  assert.deepEqual(sourceWords(["https://t.org/history/", "https://t.org/about/history"]), ["t.org (history)", "t.org (about/history)"]);
   assert.equal(yearText(-500, "indigenous"), "500 BCE");
   assert.equal(yearText(900, "indigenous"), "900 CE");
   assert.equal(yearText(1886, "boomtown"), "1886");
@@ -68,6 +89,8 @@ before(() => {
     a.push({ id: "zz-history-lane-test", title: "A test passage", region: "stpete", lede: "Test lede.",
       stops: [{ kind: "place", id: "dali-museum", note: "First stop note." }, { kind: "event", id: "riverwalk-concert-2026-10-02" }, { kind: "place", id: "sunken-gardens" }, { kind: "stay", id: "the-vinoy" }],
       notes: "test route (tests/history.test.mjs)" });
+    a.push({ id: "zz-lede-source", title: "A passage whose lede cites a record that is not a stop", region: "tampa", lede: "Test lede.", source_url: "https://thetampariverwalk.com/",
+      stops: [{ kind: "place", id: "tampa-theatre" }, { kind: "stay", id: "the-vinoy" }], notes: "test route (tests/history.test.mjs)" });
   })(dir);
   write(dir, `site/img/t/${TL_IMG}.webp`, "RIFF-not-really-a-webp");
   write(dir, "data/images.json", JSON.stringify({ [`t/${TL_IMG}`]: { file: `img/t/${TL_IMG}.webp`, w: 640, h: 427, credit: "Test Creator / Wikimedia Commons (public domain)", license: "public-domain", page_url: "https://commons.wikimedia.org/wiki/File:Test.jpg", alt: "A test image" } }));
@@ -103,13 +126,13 @@ test("history.html: dates as given (a day, a month, a year alone, no exact date)
   assert.match(H, /<time datetime="1528-04">1528<\/time><\/p><p class="hx-day">April<\/p>/);
   // entries with no date print their year and say there is no exact date (never a made-up day)
   const undated = H.slice(H.indexOf('id="tl-tampa-bay-hotel-opens-1891"'), H.indexOf("</li>", H.indexOf('id="tl-tampa-bay-hotel-opens-1891"')));
-  assert.match(undated, />1891<\/p><p class="hx-day hx-approx">No exact date</);
+  assert.match(undated, />1891<\/p><p class="hx-day hx-approx">No exact date</, "the fixture's text never states its year");
   // the intro: the count and the first and last entries, linked; never prose we wrote about the era
   const boom = H.slice(H.indexOf('id="era-boomtown"'), H.indexOf('<ol class="timeline', H.indexOf('id="era-boomtown"')));
   assert.match(boom, /2 entries, from 1886 \(<a href="#tl-ybor-cigar-factory-1886">Cigar making begins in Ybor City<\/a>\) to about 1891 \(<a href="#tl-tampa-bay-hotel-opens-1891">/, "an undated last entry reads \"about\"");
   assert.match(boom, /No timeline entries|historic site/);
   assert.match(H, /No timeline entries for this era yet\./, "an era without entries says so");
-  assert.match(H, /4 dated moments in the region&#39;s history, from 1528 to about 1925, and 3 historic places and hotels you can visit\./);
+  assert.match(H, /4 dated moments in the region&#39;s history, from 1528 to about 1925, and 3 historic places you can visit, 1 of them a place to stay\./);
 });
 
 test("history.html: a timeline image shows with its full credit; entries without one show none", () => {
@@ -121,7 +144,7 @@ test("history.html: a timeline image shows with its full credit; entries without
   assert.match(H, /1 entry shows a rights-cleared image/);
 });
 
-test("history.html: every historic place and hotel is listed once, designations as words, unknowns as unknowns", () => {
+test("history.html: every historic place and place to stay is listed once, designations as words, unknowns as unknowns", () => {
   const her = [...fx("places"), ...fx("stays")].filter((r) => r.heritage);
   for (const r of her) {
     assert.equal(count(H, new RegExp(`id="hs-${r.id}"`, "g")), 1, r.id);
@@ -132,15 +155,18 @@ test("history.html: every historic place and hotel is listed once, designations 
   assert.match(H, /<li>National Register of Historic Places \(1978\)<\/li>/);
   assert.match(H, /<span class="unk">Year built not listed<\/span>/);
   assert.match(H, /class="hs-item is-stay" id="hs-the-vinoy"/);
-  // the National Historic Landmarks as cards, with a star
-  assert.match(H, /The 1 National Historic Landmark in this guide/);
-  assert.match(H, /<article class="card hx-lm" data-sheet="tampa">[\s\S]*?Henry B\. Plant Museum[\s\S]*?data-star="henry-b-plant-museum" data-star-kind="p"/);
+  // the places tied to a National Historic Landmark as cards (the designation's own name), filterable, with a star
+  assert.match(H, /1 place tied to a National Historic Landmark/);
+  assert.match(H, /<article class="card hx-lm" id="lm-henry-b-plant-museum" data-sheet="tampa" data-era="boomtown"[^>]*>[\s\S]*?Henry B\. Plant Museum[\s\S]*?<p class="hx-lm-des">National Historic Landmark, 1976<\/p>[\s\S]*?data-star="henry-b-plant-museum" data-star-kind="p"/);
+  assert.match(H, /<div class="hx-lms" data-filter-group>/);
+  // the sheet heading of the register links its sheet page
+  assert.match(H, /<h3 class="hs-sheet-h">[\s\S]*?<a href="tampa\.html">Tampa<\/a>/);
   assert.match(H, /href="map\.html\?layers=heritage"/);
   assert.doesNotMatch(main(H), /\bTBA\b|\bTBD\b|N\/A|\bundefined\b|\bnull\b|NaN/);
 });
 
 test("history.html: the filter covers the timeline and the sites (era, sheet, text) and every deep link is valid", () => {
-  assert.match(H, /<div data-filter-list data-filter-items="\.tl-item, \.hs-item">/);
+  assert.match(H, /<div data-filter-list data-filter-items="\.tl-item, \.hs-item, \.hx-lm">/);
   for (const era of ["indigenous", "spanish", "frontier", "boomtown", "land-boom", "postwar", "modern"]) assert.match(H, new RegExp(`data-filter-chip="era=${era}"`));
   assert.match(H, /data-filter-chip="r=tampa"/);
   assert.match(H, /<input type="search" name="q"[^>]*data-filter-q>/);
@@ -196,6 +222,17 @@ test("passages.html: the chart has a numbered marker per stop and a course line 
   assert.ok(/\b1\b/.test(marks) && /\b4\b/.test(marks), `markers name the stops: ${marks}`);
 });
 
+test("passages.html: each chart carries its attribution, each passage links its sheets and areas, a lede's own source shows", () => {
+  const t = P.slice(P.indexOf('id="r-zz-history-lane-test"'), P.indexOf("</section>", P.indexOf('id="r-zz-history-lane-test"')));
+  assert.match(t, /Not for navigation\./);
+  assert.match(t, /<p class="rt-attrib">Basemap: US Census Bureau TIGER\/Line \(public domain\)\. Place coordinates include data © OpenStreetMap contributors, ODbL/);
+  assert.match(t, /<p class="rt-where">[\s\S]*?<a href="st-petersburg\.html">Sheet 2 · St\. Petersburg<\/a>[\s\S]*?<a href="areas\/[a-z0-9-]+\.html">/);
+  assert.match(t, /1 place to stay/, "a stay is a place to stay (an inn or a B&B is not a hotel)");
+  assert.doesNotMatch(t, /Source of this introduction/, "no route source, no line");
+  const f = P.slice(P.indexOf('id="r-zz-lede-source"'), P.indexOf("</section>", P.indexOf('id="r-zz-lede-source"')));
+  assert.match(f, /<p class="source-line rt-lede-src">[\s\S]*?Source of this introduction: <a href="https:\/\/thetampariverwalk\.com\/"/);
+});
+
 test("search: timeline entries and passages point at their anchors", () => {
   const s = json(dir, "docs/assets/data/search.json").items;
   const tl = s.find((x) => x.k === "tl" && x.id === TL_IMG);
@@ -224,6 +261,20 @@ test("data/routes.json: 10–14 passages built only from records that exist, at 
     const sentences = rt.lede ? rt.lede.replace(/\b(St|Dr|Jr|Mr|Mrs|Mt|Ft|No|Ave|Blvd)\./g, "$1").split(/(?<=[.!?])\s+(?=[A-Z])/).length : 0;
     assert.ok(sentences >= 1 && sentences <= 2, `${rt.id}: a lede of one or two sentences (${sentences})`);
     for (const s of rt.stops) assert.ok(col[s.kind] && col[s.kind].some((r) => r.id === s.id), `${rt.id}: ${s.kind} ${s.id} exists`);
+  }
+});
+
+test("data/routes.json: a lede never states a number its stops' records (or the record its own source_url names) do not hold", { skip: !merged() && "data/ is the fixture" }, () => {
+  const col = { place: load("places"), stay: load("stays"), experience: load("experiences"), event: load("events") };
+  const all = Object.values(col).flat();
+  for (const rt of load("routes")) {
+    const recs = rt.stops.map((s) => col[s.kind].find((r) => r.id === s.id));
+    if (rt.source_url) recs.push(...all.filter((r) => r.source_url === rt.source_url));
+    const blob = JSON.stringify(recs);
+    for (const m of rt.lede.match(/\b\d[\d,.]*\b/g) || []) {
+      const x = m.replace(/\.$/, "");
+      assert.ok(blob.includes(x) || blob.includes(x.replace(/,/g, "")), `${rt.id}: the lede says "${m}", which no stop's record holds`);
+    }
   }
 });
 

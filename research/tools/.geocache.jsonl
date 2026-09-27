@@ -3185,3 +3185,51 @@
 {"k":"photon:dunedin rv resort:28.03,-82.77","v":{"lat":28.274945,"lng":-82.680162,"geo_source":"photon","matched":"Orchid Lake RV Resort, Jasmine Estates","osm":"W931992337 landuse=residential"}}
 {"k":"photon:econo lodge wesley chapel:28.19,-82.35","v":{"lat":28.238458,"lng":-82.359995,"geo_source":"photon","matched":"Econo Lodge, 27615, Wesley Chapel Boulevard, Wesley Chapel, 33544","osm":"W539766551 tourism=motel"}}
 {"k":"photon:blue moon inn:28.03,-82.77","v":null}
+{"k":"census:1301 s frontage rd, plant city, fl 33563","v":{"lat":28.03643,"lng":-82.113322,"geo_source":"census","matched":"1301 S FRONTAGE RD, PLANT CITY, FL, 33563"}}
+{"k":"photon:wish farms:28.0,-82.11","v":{"lat":28.035679,"lng":-82.109823,"geo_source":"photon","matched":"Wish Farms, 2262, Pixie Way, Plant City, 33563","osm":"N8316397320 office=yes"}}
+{"k":"census:2606 fairfield ave s, st petersburg, fl 33712","v":{"lat":27.763707,"lng":-82.669225,"geo_source":"census","matched":"2606 FAIRFIELD AVE S, ST PETERSBURG, FL, 33712"}}
+{"k":"photon:the factory st. pete:27.76,-82.67","v":{"lat":27.771216,"lng":-82.711057,"geo_source":"photon","matched":"The Crumb Factory Bakery & Cafe, 57th Street North, Saint Petersburg, 33707","osm":"N13458066703 shop=bakery"}}
+{"k":"photon:clearwater community sailing center:27.95,-82.82","v":{"lat":27.955087,"lng":-82.826689,"geo_source":"photon","matched":"Sailing Center, Gulf Boulevard, Clearwater, 33767","osm":"W388329122 building=yes"}}
+{"k":"census:1001 gulf blvd, clearwater, fl 33767","v":{"lat":27.964913,"lng":-82.822111,"geo_source":"census","matched":"1001 GULF BLVD, CLEARWATER, FL, 33767"}}
+{"k":"photon:sunshine city comedy club:27.72,-82.74","v":{"lat":27.960751,"lng":-82.441857,"geo_source":"photon","matched":"Funny Bone Comedy Club, 1600, East 8th Avenue, Tampa, 33605","osm":"N2640988380 amenity=theatre"}}
+{"k":"census:5501 gulf blvd, st pete beach, fl 33706","v":{"lat":27.729352,"lng":-82.74314,"geo_source":"census","matched":"5501 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:455 south gulfview boulevard, clearwater, fl 33767","v":null}
+{"k":"census:3062 w vina del mar blvd, st pete beach, fl 33706","v":{"lat":27.706884,"lng":-82.727361,"geo_source":"census","matched":"3062 W VINA DEL MAR BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"photon:455 south gulfview boulevard, clearwater, fl 33767:","v":{"lat":27.975854,"lng":-82.828577,"geo_source":"photon","matched":"South Gulfview Boulevard, Clearwater, 33767","osm":"W11252687 highway=tertiary"}}
+{"k":"photon:museum of motherhood:27.76,-82.67","v":{"lat":27.38137,"lng":-82.559792,"geo_source":"photon","matched":"John and Mable Ringling Museum of Art, 5401, Bay Shore Road, Sarasota, 34243","osm":"W32451494 tourism=museum"}}
+{"k":"census:2920 us alt 19 n, palm harbor, fl 34683","v":{"lat":28.095053,"lng":-82.77254,"geo_source":"census","matched":"2920 US HWY 19 ALT, PALM HARBOR, FL, 34683"}}
+{"k":"census:3411 us-301, tampa, fl 33619","v":null}
+{"k":"photon:3411 us-301, tampa, fl 33619:","v":{"lat":27.98951,"lng":-82.357748,"geo_source":"photon","matched":"La Quinta Inn & Suites Tampa Fairgrounds - Casino, 4811, US-301, Tampa, 33610","osm":"W523890753 tourism=hotel"}}
+{"k":"census:12854 johns way, madeira beach, fl 33708","v":null}
+{"k":"photon:12854 johns way, madeira beach, fl 33708:","v":{"lat":27.785122,"lng":-82.782561,"geo_source":"photon","matched":"John's way, Madeira Beach, 33708","osm":"W267254776 highway=residential"}}
+{"k":"photon:abode beach house:27.97,-82.83","v":{"lat":27.972516,"lng":-82.829928,"geo_source":"photon","matched":"BareFoot Beach House, Beachwalk, Clearwater, 33767","osm":"N6190526331 amenity=fast_food"}}
+{"k":"photon:extended stay america premier suites tampa:27.98,-82.38","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:la quinta clearwater south:27.9,-82.75","v":{"lat":27.966317,"lng":-82.730607,"geo_source":"photon","matched":"La Quinta Inn & Suites, Southbound Frontage Road, Clearwater, 34619","osm":"R18773999 tourism=hotel"}}
+{"k":"photon:motel 301:27.97,-82.36","v":null}
+{"k":"photon:grand boulevard motel:28.3,-82.71","v":null}
+{"k":"photon:john's pass hotel:27.785,-82.782","v":null}
+{"k":"photon:la quinta inn & suites by wyndham clearwater south:27.89,-82.72","v":{"lat":27.943604,"lng":-82.327314,"geo_source":"photon","matched":"La Quinta Inn & Suites By Wyndham Tampa Brandon Regency Park, 310, Grand Regency Boulevard, Brandon, 33510","osm":"W524063149 tourism=hotel"}}
+{"k":"photon:extended stay america suites tampa casino area:27.98,-82.38","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:extended stay america:27.9805,-82.3825","v":{"lat":27.980757,"lng":-82.381721,"geo_source":"photon","matched":"Extended Stay America, 6780, Corporex Park Drive, East Lake-Orient Park, 33619","osm":"N13819446706 tourism=hotel"}}
+{"k":"census:5000 lake blvd, largo, fl 33760","v":null}
+{"k":"photon:5000 lake blvd, largo, fl 33760:","v":null}
+{"k":"photon:sun retreats dunedin:28.09,-82.77","v":{"lat":28.019721,"lng":-82.740973,"geo_source":"photon","matched":"Sun Country Cleaners, State Road 580, Dunedin, 33736","osm":"N4126487597 shop=dry_cleaning"}}
+{"k":"photon:dunedin rv resort:28.09,-82.77","v":{"lat":28.274945,"lng":-82.680162,"geo_source":"photon","matched":"Orchid Lake RV Resort, Jasmine Estates","osm":"W931992337 landuse=residential"}}
+{"k":"census:2600 us hwy 19 alt, palm harbor, fl 34683","v":{"lat":28.093236,"lng":-82.772491,"geo_source":"census","matched":"2600 US HWY 19 ALT, PALM HARBOR, FL, 34683"}}
+{"k":"census:3000 us hwy 19 alt, palm harbor, fl 34683","v":{"lat":28.096008,"lng":-82.772567,"geo_source":"census","matched":"3000 US HWY 19 ALT, PALM HARBOR, FL, 34683"}}
+{"k":"census:2920 us hwy 19 alt, dunedin, fl 34698","v":null}
+{"k":"photon:2920 us hwy 19 alt, dunedin, fl 34698:","v":null}
+{"k":"census:2920 alt 19 n, dunedin, fl 34698","v":null}
+{"k":"photon:2920 alt 19 n, dunedin, fl 34698:","v":{"lat":28.078509,"lng":-82.767184,"geo_source":"photon","matched":"Alternate 19 & Nebraska Avenue, Palm Harbor Boulevard, Palm Harbor, 34683","osm":"N916908447 highway=bus_stop"}}
+{"k":"census:7804 grand boulevard, port richey, fl 34668","v":null}
+{"k":"photon:7804 grand boulevard, port richey, fl 34668:","v":{"lat":28.273629,"lng":-82.722403,"geo_source":"photon","matched":"Grand Boulevard, Port Richey, 34668","osm":"W1349495435 highway=tertiary"}}
+{"k":"census:7804 grand blvd, port richey, fl","v":null}
+{"k":"photon:7804 grand blvd, port richey, fl:","v":{"lat":28.225009,"lng":-82.723644,"geo_source":"photon","matched":"Grand Dentistry of New Port Richey, 4530, Grand Blvd., New Port Richey, 34652","osm":"N10173324850 amenity=dentist"}}
+{"k":"census:6736 gall boulevard, zephyrhills, fl 33542","v":null}
+{"k":"photon:6736 gall boulevard, zephyrhills, fl 33542:","v":{"lat":28.256649,"lng":-82.189146,"geo_source":"photon","matched":"Quality Inn Zephyrhills, 6815, Gall Boulevard, Zephyrhills, 33542","osm":"W1023451294 tourism=hotel"}}
+{"k":"census:6736 us highway 301, zephyrhills, fl 33542","v":null}
+{"k":"photon:6736 us highway 301, zephyrhills, fl 33542:","v":{"lat":28.350239,"lng":-82.188823,"geo_source":"photon","matched":"Hampton Inn Dade City - Zephyrhills, 13215, US Highway 301, Dade City, 33525","osm":"W1024115723 tourism=hotel"}}
+{"k":"census:3411 n us hwy 301, tampa, fl 33619","v":null}
+{"k":"photon:3411 n us hwy 301, tampa, fl 33619:","v":{"lat":27.94924,"lng":-82.50494,"geo_source":"photon","matched":"Tampa - N Dale Mabry Hwy Supercharger, 401, North Dale Mabry Highway, Tampa, 33609","osm":"N10189167878 amenity=charging_station"}}
+{"k":"census:455 s gulfview blvd, clearwater, fl 33767","v":null}
+{"k":"photon:455 s gulfview blvd, clearwater, fl 33767:","v":{"lat":27.975854,"lng":-82.828577,"geo_source":"photon","matched":"South Gulfview Boulevard, Clearwater, 33767","osm":"W11252687 highway=tertiary"}}

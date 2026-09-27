@@ -51,6 +51,34 @@ export function tlDate(t) {
 /** A date as words in a sentence: "about 900 CE", "the 1960s", "1886". */
 export const dateWords = (x) => (x.approx || x.about ? `about ${x.year}` : /\ds$/.test(x.year) ? `the ${x.year}` : x.year);
 /** Designation words: which kinds a record holds (for counts and the register's tags). */
+/** Link words for a list of source URLs: the host, and when one host appears more than once, the page too
+ *  ("armatureworks.com (about)", "en.wikipedia.org (History of Tampa, Florida)"), so two links never read the same. */
+export function sourceWords(urls) {
+  const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } };
+  const words = (u, whole) => {
+    try {
+      const x = new URL(u), segs = x.pathname.split("/").filter(Boolean);
+      let w = decodeURIComponent(whole ? segs.join("/") : segs.pop() || "").replace(/\.(html?|php|aspx?|pdf)$/i, "").replace(/[_-]+/g, " ").trim();
+      if (x.search) w = `${w} ${decodeURIComponent(x.search.slice(1)).replace(/[=&_-]+/g, " ")}`.trim();
+      return w.length > 40 ? `${w.slice(0, 38).trim()}…` : w;
+    } catch { return ""; }
+  };
+  const n = {};
+  for (const u of urls) n[host(u)] = (n[host(u)] || 0) + 1;
+  let out = urls.map((u) => (n[host(u)] > 1 && words(u) ? `${host(u)} (${words(u)})` : host(u)));
+  // two pages that still read the same: name the whole path, then number what is left
+  out = out.map((w, i) => (out.indexOf(w) !== out.lastIndexOf(w) && words(urls[i], true) ? `${host(urls[i])} (${words(urls[i], true)})` : w));
+  return out.map((w, i) => (out.indexOf(w) !== i ? `${w} (${out.slice(0, i).filter((x) => x === w).length + 1})` : w));
+}
+/** The same page, however it is written (www., a trailing slash, the scheme's case). */
+export const pageKey = (u) => { try { const x = new URL(u); return `${x.hostname.replace(/^www\./, "").toLowerCase()}${x.pathname.replace(/\/+$/, "")}${x.search}`; } catch { return u; } };
+/** A source line from URLs (deduped, labeled by sourceWords), with an optional note ("Checked Sep 27, 2026"). */
+export function sourceLineHtml(h, urls, { label = "Source", note = "", icon = "", cls = "" } = {}) {
+  const seen = new Set(), u = urls.filter((x) => x && !seen.has(pageKey(x)) && seen.add(pageKey(x)));
+  if (!u.length) return "";
+  const words = sourceWords(u);
+  return `<p class="source-line${cls ? ` ${cls}` : ""}">${icon}<span>${h.esc(label)}${u.length > 1 ? "s" : ""}: ${u.map((x, i) => h.extLink(x, h.esc(words[i]))).join(" · ")}</span>${note ? `<span>${h.esc(note)}</span>` : ""}</p>`;
+}
 export const isNHL = (d) => /^National Historic Landmark/.test(d.name);
 export const isNR = (d) => /National Register/.test(d.name) && !/delisted/i.test(d.name);
 const firstYear = (s) => { const m = /(\d{4})/.exec(String(s || "")); return m ? Number(m[1]) : null; };
@@ -107,9 +135,7 @@ export function pages(ctx) {
   }
   /** A record's source line (source_url + also_sources, "Checked …"), without the icon: 115 of them on this page. */
   function srcLine(rec) {
-    const u = [...new Set([rec.source_url, rec.quote_source, ...(rec.also_sources || [])].filter(Boolean))];
-    if (!u.length) return "";
-    return `<p class="source-line"><span>Source${u.length > 1 ? "s" : ""}: ${u.map((x) => h.extLink(x, h.esc(h.hostOf(x) || x))).join(" · ")}</span>${rec.checked ? `<span>Checked ${h.esc(h.fmtDateY(rec.checked))}</span>` : ""}</p>`;
+    return sourceLineHtml(h, [rec.source_url, rec.quote_source, ...(rec.also_sources || [])], { note: rec.checked ? `Checked ${h.fmtDateY(rec.checked)}` : "" });
   }
   function tlItem(root, t) {
     const links = t.links.map((l) => `<a href="${root}${hrefOf(l.kind, l.rec)}">${h.esc(l.rec.name)}</a>${l.rec.status && l.rec.status !== "open" ? ` ${c.statusBadge(l.rec)}` : ""}`);

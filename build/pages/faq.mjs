@@ -38,7 +38,9 @@ export function srcLine(ctx, rec, { label = "Source" } = {}) {
   const byHost = new Map();
   for (const u of urls) { const k = h.hostOf(u) || u; if (!byHost.has(k)) byHost.set(k, []); byHost.get(k).push(u); }
   const parts = [...byHost].map(([k, us]) => `${h.extLink(us[0], h.esc(k))}${us.length > 1 ? ` <span class="vz-srcn">(${us.length} pages)</span>` : ""}`);
-  return `<p class="source-line">${h.icon("info")}<span>${h.esc(label)}${byHost.size > 1 ? "s" : ""}: ${parts.join(" · ")}</span>${rec.checked ? `<span>Checked ${h.esc(h.fmtDateY(rec.checked))}</span>` : ""}</p>`;
+  // .vz-src (86-faq.css): the icon keeps its place at the start of the line when the hosts wrap (the flex row of the
+  // shared .source-line dropped it onto a line of its own in narrow tiles and cards)
+  return `<p class="source-line vz-src">${h.icon("info")}<span>${h.esc(label)}${byHost.size > 1 ? "s" : ""}: ${parts.join(" · ")}</span>${rec.checked ? `<span>Checked ${h.esc(h.fmtDateY(rec.checked))}</span>` : ""}</p>`;
 }
 
 /** One question: <details class="faq" [id="fq-<id>"] data-topic data-q><summary>Q</summary><div class="prose">A</div>source</details>.

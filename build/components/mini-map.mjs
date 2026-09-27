@@ -23,11 +23,15 @@
      charts → { bay: { meta, labels, file: "basemap.svg" } | null, region: { … file: "region.svg" } | null }
               the two charts of data/map.json (the bay chart, and `region`: the whole guide box, site/map/region.svg)
      chartOf(points) → "bay" | "region" | null: the chart that holds every point with coordinates (bay first)
-     chartMap(root, points, { chart = "auto", label, minHalfM = 900, ratio = 4 / 3 | "auto", cls, labels = 3, whole = false, grid = true })
+     chartMap(root, points, { chart = "auto", label, minHalfM = 900, ratio = 4 / 3 | "auto", cls, labels = 3, whole = false, grid = true,
+                              refW = 640, clusterPx = 26 (0 when whole), lifts = true })
          a static crop (no JS) of that chart fitting every point: .mini-map.chart-map[data-chart] > <svg> with
          <use href="…#bm"/> (+ the graticule lines <use href="…#bm-grid"/>), up to `labels` basemap labels clear of the
          pins, and one .pin.pin-{kind}[data-sheet] per point ({ lat, lng, kind = "place", sheet, n, ic, title }): the
-         number n, or the icon ic; points closer than 26px at refW share a .pin-cluster medallion with their count. whole: the full chart with the neatline margin and its minute ticks (bm-grid).
+         number n, or the icon ic. Estimates are made at refW px wide (pass the narrowest width the chart is shown at):
+         points closer than clusterPx share a .pin-cluster medallion with their count (0: never); a buoy that would
+         still cover another's number is lifted on a longer stem ([data-lift="1|2"], style --lift: 26px | 52px; the
+         CSS is in 51-map-page.css). whole: the full chart with the neatline margin and its minute ticks (bm-grid).
          bare: only the inner markup (svg.map-base, labels, pins), for a container of the caller's.
          "" when no chart holds a point (callers print the honest line). Points off the chosen chart are dropped.
    }
@@ -128,9 +132,26 @@ export function makeMiniMaps(ctx) {
     for (const id of ["bay", "region"]) { const ch = charts[id]; if (ch && pts.length && pts.every((p) => onMap(ch.meta, p.lat, p.lng))) return id; }
     return null;
   }
-  // land names wide, water names in italic: rough widths (px at 12px) to keep labels clear of pins and each other
+  /** Medallions whose centers end up closer than d px (cluster() seeds groups, then centers them on their members)
+   *  merge, so no medallion hides another; two lone buoys are left to the lifts. */
+  function mergeNear(groups, d) {
+    const gs = groups.map((g) => ({ members: g.members.slice() }));
+    const ctr = (g) => [g.members.reduce((a, m) => a + m.x, 0) / g.members.length, g.members.reduce((a, m) => a + m.y, 0) / g.members.length];
+    for (let again = true; again;) {
+      again = false;
+      outer: for (let i = 0; i < gs.length; i++) for (let j = i + 1; j < gs.length; j++) {
+        if (gs[i].members.length + gs[j].members.length < 3) continue;
+        const [ax, ay] = ctr(gs[i]), [bx, by] = ctr(gs[j]);
+        if (Math.hypot(ax - bx, ay - by) < d) { gs[i].members.push(...gs[j].members); gs.splice(j, 1); again = true; break outer; }
+      }
+    }
+    return gs;
+  }
+  // land names wide, water names in italic: rough widths (px per character, measured on the rendered labels) to keep
+  // labels clear of pins and of each other
   const LABEL_KINDS = { water: 0, city: 1, town: 2, beach: 3, island: 3, hood: 4, area: 5, park: 6 };
-  function chartMap(root, points, { chart = "auto", label = "", minHalfM = 900, ratio: ratio0 = 4 / 3, cls = "", labels = 3, whole = false, grid = true, refW = 640, bare = false } = {}) {
+  const LABEL_W = { water: 9.4, city: 11.6, park: 7.4 };
+  function chartMap(root, points, { chart = "auto", label = "", minHalfM = 900, ratio: ratio0 = 4 / 3, cls = "", labels = 3, whole = false, grid = true, refW = 640, bare = false, clusterPx = null, lifts = true } = {}) {
     const id = chart === "auto" ? chartOf(points) || (charts.bay && points.some((p) => onMap(meta, p.lat, p.lng)) ? "bay" : null) : chart;
     const ch = id && charts[id];
     if (!ch) return "";
@@ -156,11 +177,41 @@ export function makeMiniMaps(ctx) {
     }
     const px = (v) => (((v - x0) / w) * 100), py = (v) => (((v - y0) / hh) * 100);
     const f2 = (v) => v.toFixed(2);
+    // everything below is estimated at refW px wide (the narrowest width the caller expects the chart to be shown at)
+    const RW = refW, RH = refW / ratio, X = (p) => (px(p.xy[0]) / 100) * RW, Y = (p) => (py(p.xy[1]) / 100) * RH;
     // places too close to tell apart at this size share a medallion with their count (the lists name them)
-    const groups = whole ? pts.map((p) => ({ members: [{ p }] })) : cluster(pts.map((p) => ({ p, x: (px(p.xy[0]) / 100) * refW, y: (py(p.xy[1]) / 100) * (refW / ratio) })), 26);
-    const med = (g) => { const ms = g.members.map((m) => m.p), x = ms.reduce((a, m) => a + m.xy[0], 0) / ms.length, y = ms.reduce((a, m) => a + m.xy[1], 0) / ms.length; return `<span class="pin pin-cluster" style="left: ${f2(px(x))}%; top: ${f2(py(y))}%" title="${attr(ms.some((m) => m.n != null) ? `Nos. ${ms.map((m) => m.n).filter((n) => n != null).join(", ")}` : `${ms.length} places`)}"><span>${ms.length}</span></span>`; };
-    const pin = (p) => `<span class="pin pin-${attr(p.kind || "place")}"${p.sheet ? ` data-sheet="${attr(p.sheet)}"` : ""} style="left: ${f2(px(p.xy[0]))}%; top: ${f2(py(p.xy[1]))}%"${p.title ? ` title="${attr(p.title)}"` : ""}><span>${p.n != null ? esc(p.n) : p.ic ? icon(p.ic) : ""}</span></span>`;
-    // labels: the chart's own names inside the crop, clear of the pins and of each other (estimates at refW px)
+    const cr = clusterPx ?? (whole ? 0 : 26);
+    const groups = cr > 0 ? mergeNear(cluster(pts.map((p) => ({ p, x: X(p), y: Y(p) })), cr), 36) : pts.map((p) => ({ members: [{ p }] }));
+    // a buoy drawn over another one's number is lifted on a longer stem (up to two steps), so every number stays
+    // readable: southern buoys are placed first, each northern neighbor takes the step that covers the least (a number
+    // or a medallion weighs 10, another buoy's position circle 1, a body cut off by the top of the frame 5)
+    const STEP = 26, hit = (a, b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1];
+    const meds = groups.filter((g) => g.members.length > 1).map((g) => { const ms = g.members.map((m) => m.p); return { ms, xy: [ms.reduce((a, m) => a + m.xy[0], 0) / ms.length, ms.reduce((a, m) => a + m.xy[1], 0) / ms.length] }; });
+    const singles = groups.filter((g) => g.members.length === 1).map((g) => g.members[0].p);
+    const lift = new Map();
+    let boxes = [];
+    const place = () => {
+      const solid = meds.map((m) => { const x = (px(m.xy[0]) / 100) * RW, y = (py(m.xy[1]) / 100) * RH; return [x - 23, y - 23, x + 23, y + 23]; });
+      const dots = singles.map((p) => ({ p, b: [X(p) - 6, Y(p) - 6, X(p) + 6, Y(p) + 6] }));
+      for (const p of [...singles].sort((a, b) => Y(b) - Y(a))) {
+        const hw = Math.max(15, String(p.n ?? "").length * 4 + 9), x = X(p), y = Y(p);
+        let best = 0, bestW = Infinity, bestBox = null;
+        for (let L = 0; L <= (lifts ? 2 : 0); L++) {
+          const box = [x - hw, y - 48 - L * STEP, x + hw, y - 16 - L * STEP];
+          const wgt = 10 * solid.filter((b) => hit(box, b)).length + dots.filter((d) => d.p !== p && hit(box, d.b)).length + (box[1] < 2 ? 5 : 0) + L * 0.5;
+          if (wgt < bestW) { best = L; bestW = wgt; bestBox = box; }
+        }
+        lift.set(p, best); solid.push(bestBox);
+      }
+      boxes = [...solid, ...dots.map((d) => d.b)];
+    };
+    place();
+    // a crop (not the whole chart) moves up when a lifted buoy would be cut off by its top edge
+    const minTop = Math.min(Infinity, ...boxes.map((b) => b[1]));
+    if (!whole && minTop < 4 && y0 > 0) { y0 = Math.max(0, y0 - ((4 - minTop) / RH) * hh); place(); }
+    const med = (m) => `<span class="pin pin-cluster" style="left: ${f2(px(m.xy[0]))}%; top: ${f2(py(m.xy[1]))}%" title="${attr(m.ms.some((x) => x.n != null) ? `Nos. ${m.ms.map((x) => x.n).filter((n) => n != null).join(", ")}` : `${m.ms.length} places`)}"><span>${m.ms.length}</span></span>`;
+    const pin = (p) => { const L = lift.get(p) || 0; return `<span class="pin pin-${attr(p.kind || "place")}"${p.sheet ? ` data-sheet="${attr(p.sheet)}"` : ""}${L ? ` data-lift="${L}"` : ""} style="left: ${f2(px(p.xy[0]))}%; top: ${f2(py(p.xy[1]))}%${L ? `; --lift: ${L * STEP}px` : ""}"${p.title ? ` title="${attr(p.title)}"` : ""}><span>${p.n != null ? esc(p.n) : p.ic ? icon(p.ic) : ""}</span></span>`; };
+    // labels: the chart's own names inside the crop, clear of the buoys, medallions and each other
     const out = [];
     if (labels) {
       const cand = (ch.labels || []).filter((l) => LABEL_KINDS[l.kind] != null && typeof l.text === "string")
@@ -169,12 +220,12 @@ export function makeMiniMaps(ctx) {
         .sort((a, b) => LABEL_KINDS[a.l.kind] - LABEL_KINDS[b.l.kind] || (a.l.minZoom || 9) - (b.l.minZoom || 9));
       for (const q of cand) {
         if (out.length >= labels) break;
-        const wpx = q.l.text.length * (q.l.kind === "water" ? 7.4 : 9.6) + 8;
-        const half = ((wpx / 2) / refW) * 100, halfY = (11 / (refW / ratio)) * 100;
-        if (q.x - half < 2 || q.x + half > 98 || q.y - halfY < 3 || q.y + halfY > 97) continue;
-        if (pts.some((p) => Math.abs(px(p.xy[0]) - q.x) < half + 4 && py(p.xy[1]) - q.y < halfY + 9 && q.y - py(p.xy[1]) < halfY + 3)) continue;
-        if (out.some((o) => Math.abs(o.x - q.x) < o.half + half + 1 && Math.abs(o.y - q.y) < o.halfY + halfY + 1)) continue;
-        out.push({ ...q, half, halfY });
+        const wpx = q.l.text.length * (LABEL_W[q.l.kind] || 11.2) + 10, x = (q.x / 100) * RW, y = (q.y / 100) * RH;
+        const box = [x - wpx / 2, y - 10, x + wpx / 2, y + 10];
+        if (box[0] < 6 || box[2] > RW - 6 || box[1] < 6 || box[3] > RH - 6) continue;
+        if (boxes.some((b) => hit(box, b))) continue;
+        boxes.push(box);
+        out.push(q);
       }
     }
     const lab = out.map((q) => `<span class="map-label ${q.l.kind}" style="left: ${f2(q.x)}%; top: ${f2(q.y)}%${q.l.angle ? `; --a: ${q.l.angle}deg` : ""}">${esc(q.l.text)}</span>`).join("");
@@ -183,7 +234,7 @@ export function makeMiniMaps(ctx) {
     const inner = whole
       ? `<rect x="${x0}" y="${y0}" width="${w}" height="${hh}" style="fill:var(--surface)"/><svg x="0" y="0" width="${M.W}" height="${M.H}" viewBox="0 0 ${M.W} ${M.H}"><use href="${href}#bm"/></svg>${grid && ch.grid ? `<use href="${href}#bm-grid"/>` : ""}`
       : `<use href="${href}#bm"/>${grid && ch.grid ? `<use href="${href}#bm-grid"/>` : ""}`;
-    const body = `<svg class="map-base" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">${inner}</svg><span class="mini-labels" aria-hidden="true">${lab}</span>${groups.map((g) => (g.members.length > 1 ? med(g) : pin(g.members[0].p))).join("")}`;
+    const body = `<svg class="map-base" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">${inner}</svg><span class="mini-labels" aria-hidden="true">${lab}</span>${groups.map((g) => (g.members.length > 1 ? med(meds.find((m) => m.ms[0] === g.members[0].p)) : pin(g.members[0].p))).join("")}`;
     if (bare) return body;
     return `<div class="mini-map chart-map${cls ? " " + cls : ""}" data-chart="${id}" style="--map-ratio: ${w.toFixed(1)} / ${hh.toFixed(1)}; --map-ar: ${(w / hh).toFixed(3)}"${label ? ` role="img" aria-label="${attr(label)}"` : ""}>${body}</div>`;
   }

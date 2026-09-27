@@ -15,13 +15,27 @@ export function pages(ctx) {
   const { c, h, db } = ctx;
   const { esc, plural, icon } = h;
   const live = db.events.filter((e) => e.live).length;
+  // each Explore page's own count, selected as that page selects (tests/whats-on.test.mjs compares them with the pages'
+  // result counts): Things to do lists the places whose home it is (ctx.cards.placeHome), Beaches & outdoors adds piers
+  // and waterfronts, Eat & drink lists every place with an eat or drink kind
+  const homeOf = (p) => (ctx.cards.placeHome ? ctx.cards.placeHome(p) : "things-to-do");
+  const EAT = new Set(ctx.vocab.EAT_DRINK_KINDS || []);
+  const counts = {
+    "things-to-do": db.places.filter((p) => homeOf(p) === "things-to-do").length,
+    outdoors: db.places.filter((p) => homeOf(p) === "outdoors" || ["pier", "waterfront"].includes(p.kind)).length,
+    "eat-drink": db.places.filter((p) => (p.kindsAll || [p.kind]).some((k) => EAT.has(k))).length,
+  };
+  const home = (slug) => counts[slug];
+  const camps = db.stays.filter((st) => st.kind === "campground").length;     // Beaches & outdoors lists its campgrounds too
   const find = [
     ["whats-on.html", "calendar", "What's On", `${plural(live, "event")}, by day`],
-    ["things-to-do.html", "compass", "Things to do", plural(db.places.length, "place")],
+    ["things-to-do.html", "compass", "Things to do", `${plural(home("things-to-do"), "place")}: attractions, museums, stages, historic sites`],
+    ["outdoors.html", "umbrella", "Beaches and outdoors", `${plural(home("outdoors"), "place")}${camps ? ` and ${plural(camps, "campground")}` : ""}: beaches, parks, preserves, trails`],
+    ["eat-drink.html", "fork-knife", "Eat and drink", `${plural(home("eat-drink"), "place")}: restaurants, cafés, bars, breweries`],
     ["experiences.html", "boat", "Experiences and tours", plural(db.experiences.length, "tour or trip", "tours and trips")],
     ["stay.html", "anchor", "Where to stay", plural(db.stays.length, "place to stay", "places to stay")],
-    ["map.html", "map", "The map", "Everything with a location"],
-  ];
+    ["map.html", "map", "The map", "Everything with coordinates, on one chart"],
+  ].filter(([href, , , n]) => href === "map.html" || !/^0 /.test(n));
   const how = [
     ["star", "Stars", "Tap the star on any event, place, place to stay or tour. It lands here, grouped by kind, events by date."],
     ["share", "Share link", "Share my trip makes a link that carries your list in the link itself. Whoever opens it sees your list and chooses whether to add it to theirs."],

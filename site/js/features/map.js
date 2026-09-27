@@ -23,7 +23,7 @@ const KIND_WORD = { place: ["place", "places"], heritage: ["historic site", "his
 const KIND_LABEL = { place: "Place", heritage: "Historic site", stay: "Place to stay", experience: "Tour departure", event: "What's on", stop: "Getting around" };
 const SYMBOL = { heritage: "landmark", stay: "anchor", experience: "daymark", event: "flag" };
 const LABEL_RANK = { water: 0, city: 1, town: 2, beach: 2, island: 2, hood: 3, area: 4, park: 5, airport: 5, bridge: 6, route: 7, county: 8 };
-const LABEL_W = { water: 7.6, city: 10.6, route: 7.2, park: 7, airport: 7, bridge: 7 };
+const LABEL_W = { water: 9.4, city: 11.6, route: 7.2, park: 7.4, airport: 7.4, bridge: 7.4 };   // px per character, measured on the rendered labels
 const tbc = () => window.tbc || null;
 const toast = (t) => { const a = tbc(); if (a && a.toast) a.toast(t, { ms: 4000 }); };
 const directions = (lat, lng) => ({ apple: `https://maps.apple.com/?daddr=${lat},${lng}`, google: `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}` });
@@ -42,6 +42,22 @@ function loadSvg(file) {
   return svgs[file];
 }
 const FILE = { bay: "basemap.svg", region: "region.svg" };
+
+/** Medallions whose centers end up closer than d px merge (cluster() seeds a group at its first point, then centers
+ *  it on its members, so two medallions can land on each other); two lone buoys never merge. */
+function mergeNear(groups, d) {
+  const gs = groups.map((g) => ({ members: g.members.slice() }));
+  const ctr = (g) => [g.members.reduce((a, m) => a + m.x, 0) / g.members.length, g.members.reduce((a, m) => a + m.y, 0) / g.members.length];
+  for (let again = true; again;) {
+    again = false;
+    outer: for (let i = 0; i < gs.length; i++) for (let j = i + 1; j < gs.length; j++) {
+      if (gs[i].members.length + gs[j].members.length < 3) continue;
+      const [ax, ay] = ctr(gs[i]), [bx, by] = ctr(gs[j]);
+      if (Math.hypot(ax - bx, ay - by) < d) { gs[i].members.push(...gs[j].members); gs.splice(j, 1); again = true; break outer; }
+    }
+  }
+  return gs;
+}
 
 /* ---------- coordinates in the margin: 27°56′N, 82°27.5′W ---------- */
 function dm(v, lab, pos, neg) {
@@ -259,6 +275,9 @@ export function mountMap(el, opts = {}) {
     const bandOf = (lab, ppm) => BAND_STEPS.find((b) => b * ppm >= 7 && Math.abs(lab / b - Math.round(lab / b)) < 1e-6) || lab;
     const bLat = bandOf(labLat, ppmLat), bLng = bandOf(labLng, ppmLng);
     const X = (lng) => ((lng - M.bbox.w) * M.k * M.sx - x0) * s, Y = (lat) => ((M.bbox.n - lat) * M.sx - y0) * s;
+    // buoys and medallions reaching into the margin: a coordinate they would cover is left out
+    const reach = S.placed.map((p) => { const px = (p.x - x0) * s, py = (p.y - y0) * s; return p.cluster ? [px - 26, py - 26, px + 26, py + 26] : [px - 17, py - 52, px + 17, py + 4]; }).filter((b) => b[1] < T || b[0] < L);
+    const covered = (b) => reach.some((r) => b[0] < r[2] && b[2] > r[0] && b[1] < r[3] && b[3] > r[1]);
     const out = [`<rect class="g-paper" x="0" y="0" width="${W}" height="${T}"/><rect class="g-paper" x="0" y="0" width="${L}" height="${H}"/><rect class="g-paper" x="${W - R}" y="0" width="${R}" height="${H}"/><rect class="g-paper" x="0" y="${H - B}" width="${W}" height="${B}"/>`];
     const lines = [], labs = [];
     // longitude: vertical minute bands on the top and bottom, labels on top
@@ -269,7 +288,7 @@ export function mountMap(el, opts = {}) {
       if (Math.round(m / bLng) % 2 === 0 && xb > xa) out.push(`<rect class="g-ink" x="${xa.toFixed(1)}" y="${T - bw}" width="${(xb - xa).toFixed(1)}" height="${bw}"/><rect class="g-ink" x="${xa.toFixed(1)}" y="${H - B}" width="${(xb - xa).toFixed(1)}" height="${bw}"/>`);
       if (Math.abs(m / labLng - Math.round(m / labLng)) < 1e-6 && a > L + 36 && a < W - R - 36) {
         lines.push(`M${a.toFixed(1)} ${T}V${H - B}`);
-        labs.push(`<text class="g-lab" x="${a.toFixed(1)}" y="${T - bw - 2}" text-anchor="middle">${dm(m / 60, labLng, "E", "W")}</text>`);
+        if (!covered([a - 34, 0, a + 34, T])) labs.push(`<text class="g-lab" x="${a.toFixed(1)}" y="${T - bw - 2}" text-anchor="middle">${dm(m / 60, labLng, "E", "W")}</text>`);
       }
     }
     // latitude: horizontal bands on the left and right, labels on the left (rotated)
@@ -281,7 +300,7 @@ export function mountMap(el, opts = {}) {
       const yl = Y(m / 60);
       if (Math.abs(m / labLat - Math.round(m / labLat)) < 1e-6 && yl > T + 34 && yl < H - B - 34) {
         lines.push(`M${L} ${yl.toFixed(1)}H${W - R}`);
-        labs.push(`<text class="g-lab" x="${L - bw - 3}" y="${yl.toFixed(1)}" text-anchor="middle" transform="rotate(-90 ${L - bw - 3} ${yl.toFixed(1)})">${dm(m / 60, labLat, "N", "S")}</text>`);
+        if (!covered([0, yl - 32, L, yl + 32])) labs.push(`<text class="g-lab" x="${L - bw - 3}" y="${yl.toFixed(1)}" text-anchor="middle" transform="rotate(-90 ${L - bw - 3} ${yl.toFixed(1)})">${dm(m / 60, labLat, "N", "S")}</text>`);
       }
     }
     gratEl.setAttribute("viewBox", `0 0 ${W} ${H}`);
@@ -306,7 +325,7 @@ export function mountMap(el, opts = {}) {
       if ((l.minZoom || 1) > z + 1e-9) continue;
       const x0 = sx(l.xy[0]), y0 = sy(l.xy[1]);
       if (x0 < -80 || y0 < -20 || x0 > S.vw + 80 || y0 > S.vh + 20) continue;
-      const wpx = l.text.length * (LABEL_W[l.kind] || 9.6) + 10, hpx = l.kind === "route" ? 22 : 18;
+      const wpx = l.text.length * (LABEL_W[l.kind] || 11.2) + 12, hpx = l.kind === "route" ? 22 : 18;
       const a = ((l.angle || 0) * Math.PI) / 180, bw = Math.abs(wpx * Math.cos(a)) + Math.abs(hpx * Math.sin(a)), bh = Math.abs(wpx * Math.sin(a)) + Math.abs(hpx * Math.cos(a));
       let r = null, y = y0;
       for (const dy of l.kind === "route" || l.kind === "bridge" || l.kind === "water" ? [0] : [0, -22, 22]) {
@@ -335,7 +354,7 @@ export function mountMap(el, opts = {}) {
       pts.push({ p, x, y });
     }
     const sel = pts.find((q) => q.p.id === S.sel);
-    const groups = cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 56 : 44);
+    const groups = mergeNear(cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 56 : 44), 50);
     if (sel) groups.push({ x: sel.x, y: sel.y, members: [sel] });
     const keep = new Set(), placed = [];
     for (const g of groups) {
@@ -551,7 +570,6 @@ function areaChart(fig) {
   const box = document.createElement("div");
   box.className = "ar-live";
   stat.replaceWith(box);
-  const at = $(".fig-attrib", fig); if (at) at.remove();
   mountMap(box, { pins, chart: stat.dataset.chart, fit: "pins", title: `Chart of ${fig.dataset.areaChart}, numbered as in the lists` });
 }
 
@@ -589,14 +607,14 @@ function mapPage(app) {
   const st = {
     layers: q.has("layers") ? listOf("layers", LAY) : DEF.slice(), r: listOf("r", REG), k: listOf("k", GRP), t: listOf("t", TOP),
     when: WHENS.includes(q.get("when")) ? q.get("when") : "", chart: ["bay", "region"].includes(q.get("chart")) ? q.get("chart") : "",
-    sel: null, lead: null, area: null, pinned: null, scope: "view", more: new Set(),
+    sel: null, lead: null, area: null, pinned: null, scope: "view", more: new Set(), focusEv: null,
   };
 
   /* focus=<kind>:<id> → a row (or an area) */
   const fq = q.get("focus") || "", fi = fq.indexOf(":"), fk = fq.slice(0, fi), fid = fq.slice(fi + 1);
   let focusRow = null;
   if (fk === "place" || fk === "stay" || fk === "experience") focusRow = byId.get(`${fk[0] === "e" ? "x" : fk[0]}:${fid}`) || null;
-  else if (fk === "event") focusRow = evRow.get(fid) || null;
+  else if (fk === "event") { focusRow = evRow.get(fid) || null; if (focusRow) st.focusEv = fid; }
   else if (fk === "transport") focusRow = rows.find((x) => x.id.startsWith(`t:${fid}~`)) || null;
   else if (fk === "area") st.area = fid;
   if (focusRow) {
@@ -728,7 +746,7 @@ function mapPage(app) {
     set("focus", st.area && !st.sel ? `area:${st.area}` : x ? focusOf(x) : "");
     try { history.replaceState(history.state, "", u.pathname + u.search + u.hash); } catch { /* sandboxed */ }
   }
-  const focusOf = (x) => (x.f ? x.f : x.k === "event" ? `event:${firstEvent(x) || x.evs[0]}` : `${{ p: "place", s: "stay", x: "experience" }[x.id[0]]}:${x.id.slice(2)}`);
+  const focusOf = (x) => (x.f ? x.f : x.k === "event" ? `event:${st.focusEv && x.evs.includes(st.focusEv) ? st.focusEv : firstEvent(x) || x.evs[0]}` : `${{ p: "place", s: "stay", x: "experience" }[x.id[0]]}:${x.id.slice(2)}`);
   const firstEvent = (x) => { if (!evData) return null; const w = win(); const e = evData.events.find((ev) => x.evs.includes(ev.id) && ev.i.some(([d]) => d >= w[0] && d <= w[1])); return e ? e.id : null; };
 
   const narrow = () => matchMedia("(max-width: 1279px)").matches;
@@ -743,11 +761,23 @@ function mapPage(app) {
     if (narrow() && !st.sel) toView();
     st.sel = pinId; st.area = null;
     st.lead = lead ? byId.get(lead) || null : null;
+    if (st.focusEv && !pin.members.some((m) => (m.evs || []).includes(st.focusEv))) st.focusEv = null;
     returnTo = keyboard ? document.activeElement : null;
     for (const y of rows) y.el.classList.toggle("is-sel", pin.members.includes(y));
     renderPanel(pin);
     openPanel(keyboard);
+    keepAbove();
     writeUrl();
+  }
+  /** Phones and tablets: once the sheet is up, scroll the page so the selected buoy sits above it. */
+  function keepAbove() {
+    if (!narrow()) return;
+    setTimeout(() => {
+      const el = st.sel && box.querySelector(`.map-pins [data-pin="${CSS.escape(st.sel)}"]`);
+      if (!el || panel.hidden) return;
+      const over = el.getBoundingClientRect().bottom + 16 - panel.getBoundingClientRect().top;
+      if (over > 0) window.scrollBy({ top: over, behavior: still() ? "auto" : "smooth" });
+    }, 420);
   }
   function openPanel(focus) {
     panel.hidden = false;
@@ -756,7 +786,7 @@ function mapPage(app) {
     if (focus) { const t = $("[data-panel-title]", panel); if (t) t.focus({ preventScroll: true }); }
   }
   function closePanel(restore = true) {
-    st.sel = null; st.lead = null; st.area = null;
+    st.sel = null; st.lead = null; st.area = null; st.focusEv = null;
     for (const y of rows) y.el.classList.remove("is-sel");
     panel.classList.remove("is-open", "is-full");
     panel.hidden = true;
@@ -769,7 +799,7 @@ function mapPage(app) {
   const sheetShort = (r) => { const b = $(`[data-mr="${r}"] span`, page); return b ? b.textContent : ""; };
   const sheetName = (r) => (REG.includes(r) ? `Sheet ${REG.indexOf(r) + 1}, ${sheetShort(r)}` : "");
   const star = (x) => { const kind = { p: "p", s: "s", x: "x" }[x.id[0]]; return kind ? `<button class="star" type="button" data-star="${esc(x.id.slice(2))}" data-star-kind="${kind}" aria-pressed="false" aria-label="Add “${esc(x.name)}” to My Trip">${I("star")}</button>` : ""; };
-  const openLink = (x, cls = "btn btn-secondary btn-sm") => `<a class="${cls}" href="${esc(x.href)}"${x.oe ? ` data-open-event="${esc(x.oe)}"` : x.ox ? ` data-open-experience="${esc(x.ox)}"` : ""}>${x.k === "stop" ? "Getting around" : x.ox || x.oe ? "Details" : x.k === "event" ? "Place page" : "Page"}${I("arrow-r")}</a>`;
+  const openLink = (x, cls = "btn btn-secondary btn-sm") => `<a class="${cls}" href="${esc(x.href)}"${x.oe ? ` data-open-event="${esc(x.oe)}"` : x.ox ? ` data-open-experience="${esc(x.ox)}"` : ""}>${x.k === "stop" ? "Getting around" : x.ox || x.oe ? "Details" : x.k === "event" ? "Place page" : "Open page"}${I("arrow-r")}</a>`;
   function renderPanel(pin) {
     const ms = pin.members.slice();
     if (st.lead && ms.includes(st.lead)) ms.sort((a, b) => (a === st.lead ? -1 : b === st.lead ? 1 : 0));
@@ -801,9 +831,16 @@ ${others.length ? `<h3 class="map-panel-h">Also at this spot</h3><ul class="map-
       const attrs = `data-s="${i.s}" data-e="${i.en}"${i.f & 1 ? ' data-end-unknown="1"' : ""}${i.f & 2 ? ' data-time-unknown="1"' : ""}${i.f & 4 ? ' data-all-day="1"' : ""}${i.f & 32 ? ` data-run="${esc(i.e.ed || "")}"` : ""}`;
       return `<li ${attrs}><a href="${ROOT}whats-on.html?e=${esc(i.e.id)}#e-${esc(i.e.id)}" data-open-event="${esc(i.e.id)}"><time>${hm ? `${esc(hm)}<small>${esc(ap)}</small>` : `<small>${i.f & 32 ? "Ongoing" : i.f & 4 ? "All day" : "Time not listed"}</small>`}</time><span><span class="t">${esc(i.e.t)}</span><span class="w">${esc(i.f & 32 ? fmtThrough(i.e.ed || i.day, i.day) : fmtDay(i.day))} <span data-status></span></span></span></a></li>`;
     };
-    boxEl.innerHTML = pick.length
+    // a link to one event (focus=event:<id>) always shows that event, even when it is outside the window
+    let named = "";
+    const fe = st.focusEv && ids.has(st.focusEv) && !pick.some((i) => i.e.id === st.focusEv) ? evData.events.find((e) => e.id === st.focusEv) : null;
+    if (fe && fe.i.length) {
+      const today = nyParts(now).date, [day, s, en, f] = fe.i.find(([d, , , fl]) => (fl & 32 ? (fe.ed || d) >= today : d >= today)) || fe.i[fe.i.length - 1];
+      named = `<h3 class="map-panel-h">The event in your link</h3><ol class="tonight map-panel-events">${row({ e: fe, day, s, en, f })}</ol>`;
+    }
+    boxEl.innerHTML = named + (pick.length
       ? `<h3 class="map-panel-h">What's on here · ${esc(label)}</h3><ol class="tonight map-panel-events">${pick.slice(0, 8).map(row).join("")}</ol>${pick.length > 8 ? `<p class="faint">${pick.length - 8} more in this window: see the place's page or What's On.</p>` : ""}`
-      : `<p class="faint">Nothing listed here for ${esc(label.toLowerCase())}.</p>`;
+      : `<p class="faint">Nothing listed here for ${esc(label.toLowerCase())}.</p>`);
     app.status.update(now, boxEl);
   }
   function showArea(id) {
@@ -829,9 +866,9 @@ ${others.length ? `<h3 class="map-panel-h">Also at this spot</h3><ul class="map-
     if (kb) { const k = kb.dataset.mk; st.k = st.k.includes(k) ? st.k.filter((x) => x !== k) : [...st.k, k]; apply(); return; }
     const wb = e.target.closest("[data-mw]");
     if (wb) { st.when = wb.dataset.mw; apply(); if (st.sel) { const p = pinsById.get(st.sel); if (p) renderPanel(p); } return; }
-    const cb = e.target.closest("[data-chart], [data-to-chart]");
+    const cb = e.target.closest("button[data-chart], [data-to-chart]");
     if (cb && !cb.disabled) { toChart(cb.dataset.chart || cb.dataset.toChart, true); return; }
-    if (e.target.closest("[data-map-reset]")) { st.r = []; st.k = []; st.t = []; st.when = ""; st.pinned = null; apply(); return; }
+    if (e.target.closest("[data-map-reset]")) { st.r = []; st.k = []; st.t = []; st.when = ""; st.pinned = null; autoChart(); apply(); return; }
     if (e.target.closest("[data-map-scope]")) { st.scope = st.scope === "all" ? "view" : "all"; st.more.clear(); paintList(); return; }
     const mb = e.target.closest("[data-more]");
     if (mb) { const s = mb.dataset.more; if (st.more.has(s)) st.more.delete(s); else st.more.add(s); paintList(); return; }
@@ -909,21 +946,45 @@ ${others.length ? `<h3 class="map-panel-h">Also at this spot</h3><ul class="map-
   app.onTick(() => { const d = app.today(); if (d !== day) { day = d; apply(false); } }, { immediate: false });
 }
 
-/* ---------- area pages: "What's on here" follows the clock (the next 60 days) ---------- */
+/* ---------- area pages: "What's on here" follows the clock (the next 60 days, never past the guide's last day), in
+   the order of each listing's next day from today; past 12 rows, "Show all n" ---------- */
+const AREA_CAP = 12;
 function areaEvents(app, box) {
-  const rows = $$("li[data-ev]", box), empty = $("[data-ev-empty]", box), count = $("[data-ev-count]", box);
+  const list = $("ol", box), rows = $$("li[data-ev]", box), empty = $("[data-ev-empty]", box), count = $("[data-ev-count]", box);
+  const end = box.dataset.windowEnd || "";
+  let all = false;
+  const more = document.createElement("p");
+  more.className = "ar-link ar-evmore";
+  more.innerHTML = `<button class="btn btn-secondary btn-sm" type="button" aria-expanded="false"></button>`;
+  more.hidden = true;
+  if (list) list.after(more);
+  const btn = $("button", more);
+  const info = rows.map((li) => {
+    const days = (li.dataset.days || "").split(" ").filter(Boolean), run = li.dataset.runTo ? [li.dataset.runFrom, li.dataset.runTo] : null;
+    return { li, days, run, hm: li.dataset.s ? nyParts(+li.dataset.s).hhmm : "99:99" };
+  });
   const paint = () => {
-    const a = app.today(), b = addDays(a, 59);
-    let n = 0;
-    for (const li of rows) {
-      const days = (li.dataset.days || "").split(" ").filter(Boolean), run = li.dataset.runTo ? [[li.dataset.runFrom, li.dataset.runTo]] : [];
-      const ok = evIn({ days, runs: run }, a, b);
-      li.hidden = !ok; if (ok) n++;
+    const a = app.today(), b0 = addDays(a, 59), b = end && end < b0 ? end : b0;
+    const ok = [];
+    for (const x of info) {
+      const on = evIn({ days: x.days, runs: x.run ? [x.run] : [] }, a, b);
+      x.li.hidden = true;
+      if (!on) continue;
+      x.next = x.run ? (x.run[0] > a ? x.run[0] : a) : x.days.find((d) => d >= a) || "";
+      ok.push(x);
     }
-    if (empty) empty.hidden = n > 0;
-    if (count) count.textContent = n ? `${n} ${n === 1 ? "event" : "events"} from ${fmtDate(a)} to ${fmtDate(b)}` : "";
+    ok.sort((p, q) => (p.next < q.next ? -1 : p.next > q.next ? 1 : (p.run ? 0 : 1) - (q.run ? 0 : 1) || (p.hm < q.hm ? -1 : p.hm > q.hm ? 1 : 0)));
+    if (list) for (const x of ok) list.appendChild(x.li);
+    ok.forEach((x, i) => { x.li.hidden = !all && i >= AREA_CAP; });
+    more.hidden = ok.length <= AREA_CAP;
+    btn.textContent = all ? `Show the first ${AREA_CAP}` : `Show all ${ok.length} events`;
+    btn.setAttribute("aria-expanded", String(all));
+    if (empty) empty.hidden = ok.length > 0;
+    if (count) count.textContent = end && a > end ? `This guide lists events through ${fmtDate(end)}, ${end.slice(0, 4)}.` : ok.length ? `${ok.length} ${ok.length === 1 ? "event" : "events"} from ${fmtDate(a)} to ${fmtDate(b)}${b < b0 ? ", the last day this guide lists" : ""}` : "";
   };
+  btn.addEventListener("click", () => { all = !all; paint(); if (!all && list) list.scrollIntoView({ block: "nearest" }); });
   paint();
+  app.status.update(app.now(), box);
   let day = app.today();
   app.onTick(() => { const d = app.today(); if (d !== day) { day = d; paint(); } }, { immediate: false });
 }

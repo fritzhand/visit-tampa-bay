@@ -667,11 +667,15 @@ def main():
     results, failures, deferred = {}, {}, {}
     rate_limited_run = 0
     t0 = time.monotonic()
-    for n, j in enumerate(todo, 1):
+    queue, requeued, n = list(todo), set(), 0
+    while n < len(queue):
+        j = queue[n]
+        n += 1
         urls = fetch_plan(j["rec"])
         try:
             data, src = orig.get(urls)
             rate_limited_run = 0
+            deferred.pop(j["key"], None)
         except Deferred as e:
             deferred[j["key"]] = str(e)
             continue
@@ -682,6 +686,9 @@ def main():
             continue
         except RateLimited as e:
             deferred[j["key"]] = f"{e} (rate limited; the next run retries it)"
+            if j["key"] not in requeued:  # one more try at the end of this run's queue
+                requeued.add(j["key"])
+                queue.append(j)
             rate_limited_run += 1
             if rate_limited_run >= STOP_AFTER_RATE_LIMITED:
                 if STOP["deadline"] is not None:  # a time budget was given: pause, then keep going until it runs out
@@ -707,9 +714,9 @@ def main():
         results[j["key"]] = entry
         state[j["key"]] = {"src": src, "file_url": j["rec"]["file_url"], "media": j["rec"]["id"], "pipeline": PIPELINE,
                            "source_px": list(size)}
-        if n % 10 == 0 or n == len(todo):
+        if n % 10 == 0 or n == len(queue):
             orig.save()
-            log(f"  {n}/{len(todo)} · {len(results)} ok · {len(failures)} failed · {len(deferred)} deferred · "
+            log(f"  {n}/{len(queue)} · {len(results)} ok · {len(failures)} failed · {len(deferred)} deferred · "
                 f"{orig.fetched} downloaded · {time.monotonic() - t0:.0f} s")
     orig.save()
 

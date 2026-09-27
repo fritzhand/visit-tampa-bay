@@ -236,7 +236,7 @@
         "phone": "(727) 943-5897",
         "hours_text": "Open Thursday - Sunday 10 am - 4 pm",
         "price_text": null,
-        "is_free": false,
+        "is_free": null,
         "summary": "A nonprofit sanctuary in Palm Harbor for primates and other animals that can no longer live as pets or have retired from labs and film. Visitors see chimpanzees, orangutans, monkeys, reptiles and tropical birds.",
         "quote": "The Sanctuary provides a home to more than 50 animals, including chimpanzees, orangutans, monkeys, reptiles, tropical birds and more.",
         "status": "open",
@@ -248,7 +248,7 @@
           "https://www.visitstpeteclearwater.com/profile/suncoast-primate-sanctuary/138588"
         ],
         "checked": "2026-09-27",
-        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 138588 (it says 'over 70 animals'; the sanctuary's own site says more than 50, used here). is_free false: the VSPC profile says admission proceeds support animal care; no price is published. Census address point."
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 138588 (it says 'over 70 animals'; the sanctuary's own site says more than 50, used here). The site has an Admissions page and online booking; no price was read. Census address point."
       },
       {
         "id": "creative-clay",
@@ -348,6 +348,79 @@
         "source_url": "https://www.safetyharborartandmusiccenter.com/whimzeyland",
         "checked": "2026-09-27",
         "notes": "gaps-listings: Visit St. Pete/Clearwater profile whimzeyland (id not captured). whimzeyland.com redirects to this page. It is a private home: the page welcomes visitors to walk the grounds. Census address point."
+      },
+      {
+        "id": "museum-of-motherhood",
+        "name": "Museum of Motherhood",
+        "aliases": [
+          "MoM"
+        ],
+        "kind": "museum",
+        "topics": [
+          "history",
+          "arts",
+          "family"
+        ],
+        "area": "grand-central",
+        "address": "2606 Fairfield Ave S, Building 7",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.763707,
+        "lng": -82.669225,
+        "geo_source": "census",
+        "url": "https://mommuseum.org/",
+        "phone": "877-711-6667",
+        "hours_text": "Wed 1:30-3:30 PM; Thu-Sat 12-6 PM; Sun 12-3 PM (per the Visit St. Pete/Clearwater listing)",
+        "price_text": "Free; donations welcome (per the Visit St. Pete/Clearwater listing)",
+        "is_free": true,
+        "summary": "A small nonprofit museum and gallery in Building 7 of The Factory, a St. Petersburg arts complex, devoted to the art, science and history of women, mothers and families. It describes itself as the first and only such exhibition and education center.",
+        "quote": "The Museum of Motherhood (MoM) is the first and only exhibition and education center devoted to the art, science and history of women, mothers and families inclusive of all reproductive identities.",
+        "status": "open",
+        "tags": [
+          "small-museum"
+        ],
+        "source_url": "https://mommuseum.org/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/profile/museum-of-motherhood/142982"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 142982, which gives the hours and free admission (the museum's own page was read for the address, the Gallery Row location and the description). Census address point for The Factory; area grand-central (Warehouse Arts District)."
+      },
+      {
+        "id": "sunshine-city-comedy-club",
+        "name": "Sunshine City Comedy Club",
+        "kind": "nightlife",
+        "topics": [
+          "nightlife"
+        ],
+        "area": "st-pete-beach",
+        "address": "5501 Gulf Blvd",
+        "city": "St. Pete Beach",
+        "state": "FL",
+        "zip": "33706",
+        "lat": 27.729352,
+        "lng": -82.74314,
+        "geo_source": "census",
+        "url": "https://www.sunshinecitycomedyclub.com/",
+        "phone": "(727) 435-0327",
+        "hours_text": null,
+        "price_text": null,
+        "is_free": null,
+        "summary": "A small comedy club on St. Pete Beach with shows most nights: open mics, local showcases and weekend headliners, per its calendar.",
+        "quote": "A new boutique comedy club located with speakeasy vibes on St Pete Beach!",
+        "quote_source": "https://www.visitstpeteclearwater.com/profile/sunshine-city-comedy-club/141461",
+        "status": "open",
+        "tags": [
+          "comedy",
+          "stand-up"
+        ],
+        "source_url": "https://www.sunshinecitycomedyclub.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/profile/sunshine-city-comedy-club/141461"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 141461. The club's calendar (read Sep 27) lists shows on Sep 27, 28, 29, 30 and Oct 1 and 2, 2026. Census address point."
       }
     ],
     "experiences": [
@@ -380,6 +453,79 @@
         "source_url": "https://www.stpetepreservation.org/",
         "checked": "2026-09-27",
         "notes": "gaps-listings: Visit St. Pete/Clearwater lists the group (profile st-petersburg-preservation/138399). Dated tours are separate event records (ids ptb-*)."
+      },
+      {
+        "id": "clearwater-community-sailing-center",
+        "name": "Clearwater Community Sailing Center",
+        "operator": "Clearwater Community Sailing Center",
+        "kind": "sailing",
+        "topics": [
+          "water",
+          "outdoors"
+        ],
+        "area": "sand-key",
+        "address": "1001 Gulf Blvd",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33767",
+        "lat": 27.955087,
+        "lng": -82.826689,
+        "geo_source": "photon",
+        "departs_text": "The center on Sand Key, 1001 Gulf Blvd",
+        "url": "https://www.clearwatercommunitysailing.org/",
+        "booking_url": null,
+        "phone": "727-517-7776",
+        "duration_text": null,
+        "price_text": null,
+        "is_free": null,
+        "schedule_text": "Tuesday-Sunday 9am-5pm; first boats out at 10am; boats must return 30 minutes before closing",
+        "season_text": null,
+        "ages_text": "Lessons for all ages",
+        "summary": "A community sailing center on Sand Key that rents sailboats, kayaks, windsurfers and paddleboards and teaches private and group sailing lessons.",
+        "quote": "The Mission of the Clearwater Community Sailing Center is to provide safe, enriching and affordable sailing opportunities to local residents and visitors, including youth, seniors and the disabled for the enjoyment and benefit of our entire community.",
+        "status": "open",
+        "tags": [
+          "sailing-lessons",
+          "rentals"
+        ],
+        "source_url": "https://www.clearwatercommunitysailing.org/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile clearwater-community-sailing-center/138376. Coordinates: OSM building named 'Sailing Center' on Gulf Blvd (Photon); the Census address match for 1001 Gulf Blvd is about 1.1 km north near Clearwater Pass. The two disagree by more than 250 m: the verifier should settle it."
+      },
+      {
+        "id": "florida-running-tours",
+        "name": "Florida Running Tours",
+        "operator": "Florida Running Tours",
+        "kind": "other",
+        "topics": [
+          "sports",
+          "history",
+          "arts"
+        ],
+        "area": "downtown-tampa",
+        "departs_text": "Downtown Tampa, Ybor City or St. Petersburg, depending on the tour (meeting points are not listed on the tours page)",
+        "url": "https://floridarunningtours.com/",
+        "booking_url": "https://floridarunningtours.com/tours/",
+        "phone": null,
+        "duration_text": null,
+        "price_text": null,
+        "is_free": null,
+        "schedule_text": null,
+        "season_text": null,
+        "ages_text": null,
+        "summary": "Guided sightseeing runs: in Tampa a Downtown and Riverwalk 7K, a Ybor City 10K and a 21K tour of the city; in St. Petersburg a murals-and-history 10K, a mural 10K and a half-marathon tour.",
+        "quote": null,
+        "status": "open",
+        "tags": [
+          "running-tour"
+        ],
+        "source_url": "https://floridarunningtours.com/tours/",
+        "also_sources": [
+          "https://floridarunningtours.com/",
+          "https://www.visittampabay.com/listings/florida-running-tours/21055/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 21055 (Tours). The tours page names the routes but gives no prices, times or meeting points."
       }
     ],
     "events": [
@@ -731,7 +877,7 @@
         "location_text": "South Straub Park, the paved plaza at 2nd Ave N and Beach Drive",
         "area": "downtown-stpete",
         "url": "https://www.stpetepreservation.org/event-6846670",
-        "description": "Join our expert PTB guide and past president Emily Elwyn for a stroll along the waterfront! Tour participants will learn about the waterfront’s importance to the city’s efforts to promote itself as the embodiment of the Florida dream.",
+        "description": "Join our expert PTB guide and past president Emily Elwyn for a stroll along the waterfront! Tour participants will learn about the waterfront’s importance to the city’s efforts to promote itself as the embodiment of the Florida dream and hear stories about the civic visionaries who transformed a working waterfront into one of the country’s largest waterfront park systems.",
         "summary": "An evening walk along the downtown St. Petersburg waterfront parks with a Preserve the Burg guide, covering spring training, the 1914 airboat line and the city’s waterfront park system.",
         "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
       },
@@ -815,7 +961,7 @@
         "location_text": "Entrance to the cafe at the Arts & Crafts Museum, 355 4th St. N.; the group gathers at 4th Ave. and 3rd Street",
         "area": "downtown-stpete",
         "url": "https://www.stpetepreservation.org/event-6846681",
-        "description": "Back by popular demand, join Preserve the ‘Burg for a relaxing stroll led by architectural historian and preservationist Emily Elwyn. This special walking tour will take you on a stroll along the two of the most historic Avenues in St. Pete.",
+        "description": "Back by popular demand, join Preserve the ‘Burg for a relaxing stroll led by architectural historian and preservationist Emily Elwyn. This special walking tour will take you on a stroll along the two of the most historic Avenues in St. Pete that serve as the dividing line between the Historic Old Northeast neighborhood and the the Downtown National Register Historic District.",
         "summary": "A two-hour architecture walk along 4th and 5th Avenues North, between the Old Northeast and the downtown National Register district.",
         "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
       },
@@ -927,6 +1073,566 @@
         "description": "Tour St. Petersburg’s newest Local Historic District, Mirror Lake! Designated as a LHD at the end of 2024 after years of hard work by Mirror Lake residents and Preserve the ‘Burg board members and volunteers, Mirror Lake and its surrounding neighborhood are a special part of the ‘Burg.",
         "summary": "A walk around Mirror Lake, a local historic district since 2024, past the 1916 Carnegie Library and the 1924 St. Petersburg Shuffleboard Club.",
         "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "id": "jurassic-haunt-dinosaur-world-2026",
+        "title": "Jurassic Haunt: Pirates of the Prehistoric",
+        "kind": "holiday",
+        "topics": [
+          "family"
+        ],
+        "date": "2026-09-26",
+        "end_date": "2026-11-01",
+        "time_text": "Select nights from September 26 through November 1 (evening event)",
+        "place": "dinosaur-world-plant-city",
+        "area": "plant-city",
+        "cost": "Online sale $19.95 (normally $24.95); included with admission and annual passes",
+        "is_free": false,
+        "url": "https://www.dinosaurworld.com/jurassic-haunt",
+        "tickets_url": null,
+        "description": "Dinosaur World’s Jurassic Haunt returns bigger than ever, transforming the park after dark with glowing trails, spooky-fun scare zones, a haunted train ride, free face painting, temporary tattoo station and more.",
+        "summary": "Dinosaur World's family Halloween nights in Plant City, with a haunted train ride, glowing trails, mild scare zones and free face painting, on select nights through Nov 1.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "halloween",
+          "kids"
+        ],
+        "source_url": "https://www.dinosaurworld.com/jurassic-haunt",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/jurassic-haunt%3a-pirates-of-the-prehistoric/102642/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay event 102642. The page does not list which nights; it calls the whole event about a 1 out of 10 on its scare scale."
+      },
+      {
+        "id": "pixierock-2026",
+        "title": "PixieRock 2026",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "date": "2026-11-07",
+        "start": "17:00",
+        "end": null,
+        "time_text": "5 PM gates open; main stage: Amanda Anne Platt & the Honeycutters 6:40 PM, X Ambassadors 8:20 PM, Grace Potter 10:15 PM. Rain or shine.",
+        "location_text": "Wish Farms Headquarters, 1301 S. Frontage Rd, Plant City",
+        "area": "plant-city",
+        "lat": 28.03643,
+        "lng": -82.113322,
+        "cost": "Individual tickets on sale; Jam Zone tickets also sold",
+        "is_free": false,
+        "url": "https://wishfarms.com/pixierock2026/",
+        "tickets_url": "https://wishfarms.com/pixierock2026/",
+        "description": "PixieRock ® is a celebration born from a passion for live music, a great party and a desire to support worthy charitable efforts.",
+        "summary": "An outdoor charity concert on the lawn of Wish Farms' headquarters in Plant City, with Grace Potter, X Ambassadors, Amanda Anne Platt & the Honeycutters and Soul Circus Cowboys.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "charity",
+          "outdoor-concert"
+        ],
+        "source_url": "https://wishfarms.com/pixierock2026/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/pixierock/102366/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay event 102366. Coordinates: Census match for 1301 S Frontage Rd. Ticket prices were not read."
+      },
+      {
+        "id": "anthony-jeselnik-straz-2026-12-04",
+        "title": "Anthony Jeselnik: Wrath of Man",
+        "kind": "comedy",
+        "topics": [],
+        "date": "2026-12-04",
+        "end_date": "2026-12-05",
+        "occurrences": [
+          {
+            "date": "2026-12-04",
+            "start": "19:30",
+            "end": null
+          },
+          {
+            "date": "2026-12-05",
+            "start": "19:00",
+            "end": null
+          }
+        ],
+        "place": "straz-center",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.strazcenter.org/events/2627-season/comedy/anthony-jeselnik/",
+        "tickets_url": null,
+        "description": null,
+        "summary": "Stand-up comedian Anthony Jeselnik brings his Wrath of Man tour to the Straz Center's Morsani Hall for two nights.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "stand-up"
+        ],
+        "source_url": "https://www.anthonyjeselnik.com/tour",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/anthony-jeselnik%3a-wrath-of-man/101440/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay event 101440. The comedian's tour page lists Tampa, FL 12/04/26 7:30 PM and 12/05/26 7:00 PM at Morsani Hall. strazcenter.org did not render for our tools."
+      },
+      {
+        "id": "tall-tales-of-old-florida-2026",
+        "title": "Tall Tales of Old Florida at Cracker Country",
+        "kind": "family",
+        "topics": [
+          "history",
+          "family"
+        ],
+        "date": "2026-10-24",
+        "start": "18:45",
+        "end": "21:00",
+        "time_text": "Gates open at 6:45pm. Tours start every 10 minutes, and each tour is approximately 60 minutes long.",
+        "place": "cracker-country",
+        "area": "east-tampa",
+        "cost": "$18 per person, including a snack and drink; later time slots $5 less; parking $10 online, $12 in person",
+        "is_free": false,
+        "url": "https://floridastatefairgrounds.com/event/tall-tales-of-old-florida-2/",
+        "tickets_url": "https://floridastatefair.ticketspice.com/tall-tales-2026",
+        "description": "Explore Tampa’s 19th century living history museum by night. Along the way, meet storytellers who will spin wild yarns about a few of Florida’s unexplained oddities! A little scary, a little funny and always family friendly, the Tall Tales of Old Florida tour is a Florida history adventure by lantern light!",
+        "summary": "A one-night, lantern-lit storytelling tour of Cracker Country, the Florida State Fairgrounds' 19th-century village, with Victorian games; advance tickets required and not recommended for children under 6.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "halloween",
+          "living-history"
+        ],
+        "source_url": "https://floridastatefairgrounds.com/event/tall-tales-of-old-florida-2/",
+        "also_sources": [
+          "https://www.crackercountry.org/",
+          "https://www.visittampabay.com/tampa-events/details/tall-tales-of-old-florida/102370/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay event 102370; Florida State Fairgrounds calendar. End 21:00 from the Cracker Country calendar card (6:45 PM - 9:00 PM)."
+      },
+      {
+        "id": "scaradise-florida-horror-convention-2026",
+        "title": "Scaradise! Florida’s Horror Convention",
+        "kind": "convention",
+        "topics": [],
+        "date": "2026-10-02",
+        "end_date": "2026-10-04",
+        "occurrences": [
+          {
+            "date": "2026-10-02",
+            "start": "13:00",
+            "end": "20:00"
+          },
+          {
+            "date": "2026-10-03",
+            "start": "10:00",
+            "end": "19:00"
+          },
+          {
+            "date": "2026-10-04",
+            "start": "10:00",
+            "end": "18:00"
+          }
+        ],
+        "place": "florida-state-fairgrounds",
+        "location_text": "Expo Hall and Entertainment Hall, Florida State Fairgrounds (enter from US Hwy 301)",
+        "area": "east-tampa",
+        "cost": "Admission Range from $35 to $80; kids 10 and under are free; parking $10 online, $12 onsite",
+        "is_free": false,
+        "url": "https://www.scaradise.net/",
+        "tickets_url": null,
+        "description": "Bringing together horror fans from across the Southeast, Scaradise features celebrity guest appearances, autograph signings, photo opportunities, vendors, artists, collectibles, horror-themed merchandise, and more.",
+        "summary": "A three-day horror fan convention at the Florida State Fairgrounds with celebrity guests, autographs, photo ops and a marketplace of horror collectibles.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "halloween",
+          "fan-convention"
+        ],
+        "source_url": "https://floridastatefairgrounds.com/event/scaradise/2026-10-02/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: from the Florida State Fairgrounds events calendar (its events API and event page)."
+      },
+      {
+        "id": "tampa-bay-gem-mineral-jewelry-show-2026",
+        "title": "67th Annual Gem, Mineral & Jewelry Show",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "family"
+        ],
+        "date": "2026-11-07",
+        "end_date": "2026-11-08",
+        "occurrences": [
+          {
+            "date": "2026-11-07",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2026-11-08",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "florida-state-fairgrounds",
+        "location_text": "Special Events Center, Florida State Fairgrounds (enter through the MLK entrance)",
+        "area": "east-tampa",
+        "cost": "Adults $8; seniors and military $7; kids 12 and under free; parking $10 online, $12 onsite",
+        "is_free": false,
+        "url": "https://tampabayrockclub.org/show-information",
+        "tickets_url": null,
+        "description": "The Tampa Bay Mineral and Science Club is excited to present its 67th Annual Fall Gem, Mineral, and Jewelry Show, happening on Saturday, November 7, and Sunday, November 8, at the Florida Fairgrounds Special Events Center. Over 60 vendors will showcase a remarkable selection of unique slabs, cabochons, beads, gemstones, jewelry, and more.",
+        "summary": "The Tampa Bay Mineral and Science Club's indoor show with more than 60 vendors of gems, minerals and jewelry, plus a kids' area with a sluice and a mineral ID booth.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "collectors"
+        ],
+        "source_url": "https://floridastatefairgrounds.com/event/gem-mineral-jewelry-show/2026-11-07/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Florida State Fairgrounds events calendar."
+      },
+      {
+        "id": "tampa-oddities-curiosities-expo-2026",
+        "title": "Tampa Oddities & Curiosities Expo",
+        "kind": "market",
+        "topics": [
+          "shopping"
+        ],
+        "date": "2026-11-21",
+        "end_date": "2026-11-22",
+        "start": "10:00",
+        "end": "18:00",
+        "place": "florida-state-fairgrounds",
+        "location_text": "Expo Hall and Entertainment Hall, Florida State Fairgrounds (enter from US Hwy 301)",
+        "area": "east-tampa",
+        "cost": "Advanced General Admission $15; Day Of General Admission $20; kids 12 and under free; parking $10 online, $12 onsite",
+        "is_free": false,
+        "url": "https://www.showpass.com/tampa-oddities-curiosities-expo-2026/",
+        "tickets_url": "https://www.showpass.com/tampa-oddities-curiosities-expo-2026/",
+        "description": "The Oddities & Curiosities Expo is the world’s largest traveling oddities event showcasing hand selected vendors, dealers, artists and small businesses with all things weird.",
+        "summary": "A two-day marketplace of taxidermy, antiques, odd art and curios at the Florida State Fairgrounds, with sideshow performers on stage and taxidermy classes.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "collectors"
+        ],
+        "source_url": "https://floridastatefairgrounds.com/event/tampa-oddities-curiosities-expo/2026-11-21/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Florida State Fairgrounds events calendar. Hours 10:00am - 6:00pm both days per the event page (its events API said 5 pm; the page is used)."
+      },
+      {
+        "id": "la-septima-cuban-club-2026",
+        "title": "La Séptima: Immersive Experience",
+        "kind": "dance",
+        "topics": [
+          "history",
+          "arts",
+          "latin-heritage"
+        ],
+        "date": "2026-10-09",
+        "end_date": "2026-10-11",
+        "occurrences": [
+          {
+            "date": "2026-10-09",
+            "start": null,
+            "end": null
+          },
+          {
+            "date": "2026-10-10",
+            "start": "19:30",
+            "end": "21:30"
+          },
+          {
+            "date": "2026-10-11",
+            "start": "16:00",
+            "end": "18:00"
+          }
+        ],
+        "place": "cuban-club",
+        "area": "ybor-city",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.tampacityballet.org/",
+        "tickets_url": null,
+        "description": "Step into Tampa, 1926. Streetcars rumble down 7th Avenue. The scent of tobacco drifts from cigar factories as music spills from social clubs. Experience La Séptima, an immersive production that transforms the historic Cuban Club into old Ybor City. Travel through its rooms as ballet, live music and storytelling bring Tampa's history to life.",
+        "summary": "Tampa City Ballet's immersive production set in 1926 Ybor City, staged through the rooms of the historic Cuban Club with ballet, live music and storytelling.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "ballet",
+          "immersive"
+        ],
+        "source_url": "https://www.tampacityballet.org/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/la-s%c3%a9ptima%3a-immersive-experience/102706/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Tampa City Ballet's season list gives La Septima at The Cuban Club October 9 - 11, 2026 (also Oct 2-3 at New Tampa Performing Arts Center and Oct 17 at USF, not added). Show times and the description come from Visit Tampa Bay events 102706 (Oct 10, 7:30-9:30 PM) and 102707 (Oct 11, 4-6 PM); no time was found for Oct 9. The show's own domain, laseptimaybor.com, did not resolve."
+      },
+      {
+        "id": "rock-the-park-tampa-fall-2026",
+        "title": "Rock the Park",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "series": "rock-the-park-tampa",
+        "date": "2026-10-01",
+        "end_date": "2026-12-03",
+        "occurrences": [
+          {
+            "date": "2026-10-01",
+            "start": "18:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2026-11-05",
+            "start": "18:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2026-12-03",
+            "start": "18:00",
+            "end": "21:00"
+          }
+        ],
+        "place": "curtis-hixon-waterfront-park",
+        "area": "downtown-tampa",
+        "cost": "FREE",
+        "is_free": true,
+        "url": "https://www.tampasdowntown.com/events/rock-the-park-tampa/",
+        "tickets_url": null,
+        "description": "Rock the Park is a FREE monthly music series showcasing musical talents of all genres. Rock the Park is typically held at Tampa’s Curtis Hixon Waterfront Park on the first Thursday of each month and facilitated through a 15+ year partnership between the Tampa Downtown Partnership & Brokenmold Entertainment.",
+        "summary": "A free evening of live local music at Curtis Hixon Waterfront Park on the first Thursday of the month.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "free",
+          "live-music"
+        ],
+        "source_url": "https://www.tampasdowntown.com/events/rock-the-park-tampa/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/rock-the-park/99891/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the page lists upcoming dates October 1, November 5 and December 3, 2026 at 6pm; the event details give 6:00 pm - 9:00 pm."
+      },
+      {
+        "id": "mayors-food-truck-fiesta-fall-2026",
+        "title": "Mayor’s Food Truck Fiesta",
+        "kind": "food-drink",
+        "topics": [
+          "food"
+        ],
+        "series": "mayors-food-truck-fiesta",
+        "date": "2026-10-07",
+        "end_date": "2026-12-02",
+        "occurrences": [
+          {
+            "date": "2026-10-07",
+            "start": "11:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-11-04",
+            "start": "11:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-12-02",
+            "start": "11:00",
+            "end": "14:00"
+          }
+        ],
+        "place": null,
+        "location_text": "Lykes Gaslight Square Park, 241-263 E Madison St, downtown Tampa",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.tampasdowntown.com/events/mayors-food-truck-fiesta/",
+        "tickets_url": null,
+        "description": "Back by popular demand (and hunger), the Mayor’s Food Truck Fiesta is rolling in to Lykes Gaslight Park the first Wednesday of every month from 11am to 2pm. Join us for truckloads of local favorites and food that goes the extra mile.",
+        "summary": "A lunchtime gathering of local food trucks in downtown Tampa's Lykes Gaslight Square Park on the first Wednesday of each month.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "food-trucks",
+          "lunch"
+        ],
+        "source_url": "https://www.tampasdowntown.com/events/mayors-food-truck-fiesta/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/mayor%e2%80%99s-food-truck-fiesta/99861/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the page states 'the first Wednesday of every month from 11am to 2pm' and shows Oct 07, 2026; Nov 4 and Dec 2 are the first Wednesdays that rule gives (Visit Tampa Bay's listing 99861 runs to Dec 2, 2026)."
+      },
+      {
+        "id": "downtowns-backyard-market-fall-2026",
+        "title": "Downtown’s Backyard Market",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "food"
+        ],
+        "series": "downtowns-backyard-market",
+        "date": "2026-10-08",
+        "end_date": "2026-12-10",
+        "occurrences": [
+          {
+            "date": "2026-10-08",
+            "start": "11:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-11-12",
+            "start": "11:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-12-10",
+            "start": "11:00",
+            "end": "14:00"
+          }
+        ],
+        "place": null,
+        "location_text": "Poe Plaza (Tampa City Center Esplanade), 200 N. Franklin Street, Tampa",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.tampasdowntown.com/events/downtown-core-downtowns-backyard-market/",
+        "tickets_url": null,
+        "description": "Find fresh finds and city vibes at Downtown’s Backyard Market! This monthly market invites you to Tampa City Center’s Esplanade (Poe Plaza) to get down to earth as local businesses and vendors bring fresh produce and food to the heart of Downtown.",
+        "summary": "A monthly midday market of local produce, food and makers on Poe Plaza in downtown Tampa, on the second Thursday of each month.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "local-vendors"
+        ],
+        "source_url": "https://www.tampasdowntown.com/events/downtown-core-downtowns-backyard-market/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/downtown%e2%80%99s-backyard-market/99782/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the page says 'the second Thursday of each month' and shows Oct 08, 2026, 11:00 am - 2:00 pm; Nov 12 and Dec 10 are the second Thursdays (Visit Tampa Bay's listing 99782 runs to Dec 10, 2026)."
+      },
+      {
+        "id": "water-street-night-market-2026-10-01",
+        "title": "Night Market",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "arts",
+          "nightlife"
+        ],
+        "date": "2026-10-01",
+        "start": "18:00",
+        "end": "21:00",
+        "place": "water-street-tampa",
+        "location_text": "Via Corazon and Raybon Plaza, Water Street Tampa (971 Water St)",
+        "area": "channel-district",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.waterstreettampa.com/experience/night-market-october?date=2026-10-01",
+        "tickets_url": null,
+        "description": "Experience the magic of Night Market, where Water Street Tampa comes alive with creativity and community. Held across Via Corazon and Raybon Plaza, this evening transforms the neighborhood into a vibrant marketplace filled with inspired makers, artists, and independent creatives.",
+        "summary": "Water Street Tampa's quarterly evening market with up to 30 local makers and vendors, interactive art installations and a community art wall.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "makers-market"
+        ],
+        "source_url": "https://www.waterstreettampa.com/experience/night-market-october?date=2026-10-01",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/night-market/102720/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the page says Night Market occurs quarterly; only the Oct 1, 2026 date was posted."
+      },
+      {
+        "id": "wynonna-judd-straz-2026-11-11",
+        "title": "Wynonna Judd with Troubadour Blue",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "date": "2026-11-11",
+        "start": "19:00",
+        "end": null,
+        "place": "straz-center",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.strazcenter.org/events/2627-season/music/wynonna-judd/",
+        "tickets_url": null,
+        "description": "Grammy-winning country music superstar Wynonna Judd is heading out on tour in support of her new album, The Hard Truth, set for release in October.",
+        "summary": "Country singer Wynonna Judd plays the Straz Center, with the Nashville band Troubadour Blue opening.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "country"
+        ],
+        "source_url": "https://www.wynonna.com/tour",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/wynonna-judd-with-troubadour-blue/102261/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the artist's tour page lists 11 NOV 2026, Tampa, FL, Straz Center. Start time 7:00 PM and the description come from Visit Tampa Bay event 102261 (which quotes the Straz page); strazcenter.org did not render for our tools."
+      },
+      {
+        "id": "aziz-ansari-straz-2026-10-10",
+        "title": "Aziz Ansari: Hypothetical Tour",
+        "kind": "comedy",
+        "topics": [],
+        "date": "2026-10-10",
+        "start": "19:00",
+        "end": null,
+        "place": "straz-center",
+        "area": "downtown-tampa",
+        "cost": "Regularly priced tickets start at $104.75",
+        "is_free": false,
+        "url": "https://www.strazcenter.org/events/2627-season/comedy/aziz-ansari/",
+        "tickets_url": null,
+        "description": "He has several successful Netflix stand-up specials and he’s heading out on a stand-up tour this fall.",
+        "summary": "Comedian Aziz Ansari brings his Hypothetical Tour to the Straz Center.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "stand-up"
+        ],
+        "source_url": "https://www.visittampabay.com/tampa-events/details/aziz-ansari%3a-hypothetical-tour/102128/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: only the Visit Tampa Bay listing (events 102128 and 102270, both Oct 10, 2026, 7:00 PM, Straz Center) could be read; strazcenter.org and azizansari.com did not render the date for our tools. The verifier should confirm on the Straz page."
+      },
+      {
+        "id": "rocky-in-concert-straz-2026-11-21",
+        "title": "Rocky in Concert – Celebrating the 50th Anniversary of Rocky",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "date": "2026-11-21",
+        "start": "20:00",
+        "end": null,
+        "place": "straz-center",
+        "area": "downtown-tampa",
+        "cost": null,
+        "is_free": null,
+        "url": "https://www.strazcenter.org/events/2627-season/music/rocky-in-concert/",
+        "tickets_url": null,
+        "description": "Rocky in Concert brings the ultimate underdog story to life like never before! Watch the original Rocky on the big screen as Bill Conti’s legendary score, including the iconic “Gonna Fly Now,” is performed LIVE by a full symphony orchestra.",
+        "summary": "The film Rocky shown on a big screen while a full symphony orchestra plays Bill Conti’s score live, for the film’s 50th anniversary.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "film-in-concert"
+        ],
+        "source_url": "https://www.visittampabay.com/tampa-events/details/rocky-in-concert-%26%238211%3b-celebrating-the-50th-anniversary-of-rocky/101456/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: only the Visit Tampa Bay listing 101456 (Nov 21, 2026, 8:00 PM, Straz Center; description from its event data) could be read; strazcenter.org did not render. The verifier should confirm on the Straz page."
       }
     ],
     "series": [
@@ -1003,6 +1709,108 @@
         ],
         "checked": "2026-09-27",
         "notes": "gaps-listings: listed by the city among its major events."
+      },
+      {
+        "id": "rock-the-park-tampa",
+        "name": "Rock the Park",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "typically held at Tampa’s Curtis Hixon Waterfront Park on the first Thursday of each month",
+        "place": "curtis-hixon-waterfront-park",
+        "area": "downtown-tampa",
+        "since": null,
+        "url": "https://www.tampasdowntown.com/events/rock-the-park-tampa/",
+        "summary": "A free monthly music series in downtown Tampa, run for more than 15 years by the Tampa Downtown Partnership and Brokenmold Entertainment.",
+        "quote": "Rock the Park is a FREE monthly music series showcasing musical talents of all genres.",
+        "featured": false,
+        "source_url": "https://www.tampasdowntown.com/events/rock-the-park-tampa/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
+      },
+      {
+        "id": "mayors-food-truck-fiesta",
+        "name": "Mayor’s Food Truck Fiesta",
+        "kind": "food-drink",
+        "topics": [
+          "food"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "the first Wednesday of every month from 11am to 2pm",
+        "place": null,
+        "location_text": "Lykes Gaslight Square Park, downtown Tampa",
+        "area": "downtown-tampa",
+        "since": null,
+        "url": "https://www.tampasdowntown.com/events/mayors-food-truck-fiesta/",
+        "summary": "A monthly lunchtime food-truck gathering in downtown Tampa, sponsored by the City of Tampa and organized by the Tampa Downtown Partnership.",
+        "quote": null,
+        "featured": false,
+        "source_url": "https://www.tampasdowntown.com/events/mayors-food-truck-fiesta/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
+      },
+      {
+        "id": "downtowns-backyard-market",
+        "name": "Downtown’s Backyard Market",
+        "kind": "market",
+        "topics": [
+          "shopping",
+          "food"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "the second Thursday of each month",
+        "place": null,
+        "location_text": "Poe Plaza (Tampa City Center Esplanade), downtown Tampa",
+        "area": "downtown-tampa",
+        "since": null,
+        "url": "https://www.tampasdowntown.com/events/downtown-core-downtowns-backyard-market/",
+        "summary": "A monthly market of local vendors, produce and food on Poe Plaza in downtown Tampa.",
+        "quote": null,
+        "featured": false,
+        "source_url": "https://www.tampasdowntown.com/events/downtown-core-downtowns-backyard-market/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
       }
     ]
   },

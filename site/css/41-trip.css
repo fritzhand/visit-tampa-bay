@@ -68,6 +68,13 @@
 .trip-clash-pairs li + li { margin-top: 4px; }
 .trip-clash-pairs .tnum { color: var(--text); font-weight: var(--wght-strong); font-variant-numeric: tabular-nums; }
 .trip-clash-note { margin-top: var(--sp-3); font-size: var(--fs-xs); }
+/* many pairs on one day fold behind "How far apart: n pairs" (the times above stay the first thing read) */
+.trip-clash-more { margin-top: 6px; border-top: 1px dashed var(--border-strong); }
+.trip-clash-more > summary {
+  display: flex; align-items: center; min-height: var(--tap); cursor: pointer; color: var(--link); font-size: var(--fs-sm); font-weight: var(--wght-strong);
+}
+.trip-clash-more > .trip-clash-pairs { margin-top: 0; padding-top: 0; border-top: 0; padding-bottom: 4px; }
+@media print { .trip-clash-more > summary { display: none; } }   /* features/whats-on.js opens it before printing */
 .trip-clash-day { color: var(--warning); }
 .trip-print[hidden] { display: none; }
 

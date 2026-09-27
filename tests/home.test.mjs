@@ -20,7 +20,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { REPO, fx, copyRepo, build, read, write, cleanup } from "./helpers.mjs";
 
-const { AREAS, REGIONS, REGION_IDS, ERAS } = await import(path.join(REPO, "build", "core", "vocab.mjs"));
+const { AREAS, REGIONS, REGION_IDS, ERAS, PLACE_GROUP } = await import(path.join(REPO, "build", "core", "vocab.mjs"));
+const PC = await import(path.join(REPO, "build", "components", "place-card.mjs"));
 const { REGION_PAGES } = await import(path.join(REPO, "build", "nav.mjs"));
 const U = await import(path.join(REPO, "build", "core", "util.mjs"));
 const R = await import(path.join(REPO, "build", "pages", "region.mjs"));
@@ -62,9 +63,20 @@ test("season months, spans and straight-line miles", () => {
   assert.equal(H.monthSpan([11, 12, 1]), "Nov–Jan");
   assert.equal(H.monthSpan([4]), "Apr");
   assert.equal(H.monthSpan([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]), "All year");
+  // runs are read around the calendar: a series that starts in September never reads "Oct–Sep" (a whole year)
+  assert.equal(H.monthSpan([9, 10]), "Sep–Oct");
+  assert.equal(H.monthSpan([9, 10, 11, 12, 1]), "Sep–Jan");
+  assert.equal(H.monthSpan([3, 4, 5, 6, 7, 8, 9, 10]), "Mar–Oct");
+  assert.equal(H.monthSpan([8, 9, 10, 11]), "Aug–Nov");
+  assert.equal(H.monthSpan([3, 4, 6, 7, 9, 10]), "Mar–Apr, Jun–Jul, Sep–Oct", "several runs are each named");
+  assert.equal(H.monthSpan([1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]), "Oct–Aug", "closed in September only");
+  assert.equal(H.monthSpan(R.SEASON), "All year");
   assert.equal(R.miles(1609.344 * 4.26), "4.3 mi");
   assert.equal(R.miles(1609.344 * 9.97), "10 mi", "never 10.0");
   assert.equal(R.miles(1609.344 * 38.6), "39 mi");
+  assert.equal(R.miles(1609.344 * 18.46, { fine: true }), "18.5 mi", "the distance table keeps a decimal to 20 mi");
+  assert.equal(R.miles(1609.344 * 17.58, { fine: true }), "17.6 mi");
+  assert.equal(R.miles(1609.344 * 25.2, { fine: true }), "25 mi");
 });
 
 test("region.js plan: the rows in the next 60 days, by their next listing day; runs while open", () => {
@@ -79,6 +91,15 @@ test("region.js plan: the rows in the next 60 days, by their next listing day; r
   assert.deepEqual(RJ.plan(rows, "2026-12-20").map((x) => x.i), [2, 3], "60 days from Dec 20 reach Feb 5");
   assert.deepEqual(RJ.plan(rows, "2027-03-01"), [], "nothing left");
   assert.deepEqual(RJ.rowOf({ first: "2026-10-02", last: "2026-10-02" }).listing, ["2026-10-02"], "a single day lists itself");
+});
+
+test("home.js daysText says an event's days the way the server's dateText does", () => {
+  const h2 = { listJoin: U.listJoin };
+  const db = { window: { start: W0, end: W1 } };
+  const ev = (days) => ({ instances: days.map((d) => ({ day: d, date: d })) });
+  for (const days of [["2026-10-24"], ["2026-10-23", "2026-10-24", "2026-10-25"], ["2026-10-03", "2026-10-10", "2026-10-17"], ["2026-10-04", "2026-11-01", "2026-12-06", "2027-01-03", "2027-02-07"], ["2026-12-30", "2026-12-31", "2027-01-01"]]) {
+    assert.equal(HJ.daysText(days), R.dateText(h2, db, ev(days)), days.join(" "));
+  }
 });
 
 test("home.js band: today, the weekend, runs, the next listed day; before and after the listings", () => {
@@ -215,8 +236,20 @@ test("sheet pages: head, TOC anchors, prev/next sheets, the 60-day list, family 
     const until = T.addDays(W0, 59);
     for (const m of rows) assert.equal(/\shidden(?=[\s>])/.test(m[0]), m[2] > until, `${rp.slug}: ${m[1]} ${m[2] > until ? "waits" : "shows"} without JS`);
     assert.ok(!html.includes('data-ev="riverwalk-boat-parade-2026-12-12"'), "a cancelled event is not in the coming weeks");
-    // families link to their filtered lists
+    // families link to their filtered lists, and each "All N" is what Things to do lists for that sheet and group
     for (const m of html.matchAll(/href="things-to-do\.html\?([^"]+)"/g)) assert.match(m[1], new RegExp(`^r=${rid}(&amp;k=(attractions|arts|sports|shopping))?$`));
+    for (const m of html.matchAll(/<div class="fam" data-g="(attractions|arts|sports|shopping)"><h3 class="fam-h">[\s\S]*?<span class="n tnum">(\d+)<\/span>/g)) {
+      const want = fxPlaces.filter((p) => regionOf(p.area) === rid && PC.placeHome(p) === "things-to-do" && [p.kind, ...(p.kinds || [])].some((k) => PLACE_GROUP[k] === m[1])).length;
+      assert.equal(Number(m[2]), want, `${rp.slug}: ${m[1]} counts the places Things to do lists`);
+    }
+    // every yearly event of the sheet is listed once under "Every year on this sheet" (whether or not the sheet has events)
+    for (const se of fxSeries.filter((x) => regionOf(x.area || fxPlaces.find((p) => p.id === x.place)?.area) === rid)) {
+      assert.equal((html.match(new RegExp(`<li><a href="whats-on\\.html#s-${se.id}">`, "g")) || []).length, 1, `${rp.slug}: series ${se.id} under every year`);
+    }
+    // the outdoors count is what Beaches & outdoors lists for the sheet
+    const out = html.match(/<section class="section" id="outdoors"[\s\S]*?· (\d+) places? outdoors/);
+    const wantOut = fxPlaces.filter((p) => regionOf(p.area) === rid && (PC.placeHome(p) === "outdoors" || ["pier", "waterfront"].includes(p.kind))).length;
+    if (wantOut) assert.equal(Number(out?.[1]), wantOut, `${rp.slug}: outdoors count`); else assert.ok(!out, `${rp.slug}: no outdoors section without outdoor places`);
     // prev / next are the neighbouring sheets
     const i = REGION_PAGES.indexOf(rp);
     if (i > 0) assert.match(html, new RegExp(`class="prev" href="${REGION_PAGES[i - 1].slug}\\.html"`));

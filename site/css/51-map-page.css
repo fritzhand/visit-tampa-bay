@@ -118,6 +118,12 @@
 .mc-when button { padding: 0 10px; font-size: var(--fs-xs); }
 .mc-note { font-size: var(--fs-xs); margin: 0; }
 .map-ctrl [data-map-reset] { justify-self: start; }
+/* phones: each chip group is one row that scrolls sideways, so the list starts sooner */
+@media (max-width: 699px) {
+  .map-ctrl .chip-row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; margin: 0 calc(-1 * var(--sp-4)); padding: 2px var(--sp-4) 4px; }
+  .map-ctrl .chip-row::-webkit-scrollbar { display: none; }
+  .map-ctrl .chip-row .chip { flex: none; min-height: var(--tap); }
+}
 .map-count { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px var(--sp-3); margin: 0 0 var(--sp-2); }
 .map-count .result-count { margin: 0; }
 .linkish { display: inline; padding: 0; min-height: 0; border: 0; background: none; color: var(--link); font: inherit; text-decoration: underline; text-underline-offset: 0.18em; cursor: pointer; }
@@ -197,6 +203,10 @@
   .map-page.has-sel { padding-bottom: 40vh; }
 }
 @media (max-width: 1023px) { .map-panel { bottom: var(--dock-h); max-height: 44vh; } .map-panel.is-full { max-height: calc(100vh - var(--topbar-h) - var(--dock-h) - 16px); } }
+/* wide screens: the panel stays in view at the top of its column while the list scrolls under it */
+@media (min-width: 1280px) {
+  .map-panel { position: sticky; top: calc(var(--topbar-h) + 12px); z-index: 6; max-height: calc(100vh - var(--topbar-h) - 24px); overflow: auto; box-shadow: var(--shadow-2); }
+}
 @media (prefers-reduced-motion: reduce) { .map-panel { transition: none; } }
 
 /* ---------- chart crops (ctx.cards.chartMap): area pages and the areas index ---------- */
@@ -219,3 +229,9 @@
 .map-panel-dir .label { color: var(--text-muted); margin-right: 2px; }
 .map-panel-dir .btn { padding: 0 8px; }
 @media (max-width: 699px) { .map-panel-dir .btn, .map-panel-acts .btn { min-height: var(--tap); } }
+
+/* ---------- static charts (ctx.cards.chartMap): a buoy that would cover a neighbor's number stands on a longer stem ---------- */
+.pin[data-lift] { height: calc(52px + var(--lift, 0px)); }
+.pin[data-lift] > span { margin-bottom: calc(18px + var(--lift, 0px)); }
+.pin[data-lift] > span::before { height: calc(7px + var(--lift, 0px)); }
+.pin[data-lift] > span::after { top: calc(100% + 8px + var(--lift, 0px)); }

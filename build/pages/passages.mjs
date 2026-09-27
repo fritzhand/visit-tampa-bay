@@ -19,6 +19,7 @@
    ============================================================ */
 import { readFileSync, existsSync } from "node:fs";
 import { project, haversine, walkMinutes, onMap } from "../../site/js/lib/geo.js";
+import { sourceLineHtml } from "./history.mjs";
 
 /** Does a chart file (site/map/<file>) carry the graticule group #bm-grid? (A test basemap may not.) */
 const GRID = new Map();
@@ -118,7 +119,7 @@ export function pages(ctx) {
       + heads
       + (series.length ? `<p class="rt-series">${h.icon("calendar")}<span>${series.map((se) => `<a href="${root}whats-on.html#s-${h.attr(se.id)}">${h.esc(se.name)}</a>: ${h.esc(se.when_text)}`).join("<br>")}</span></p>` : "")
       + (!s.ll ? `<p class="rt-noll">${unk("Not on the map: no coordinates listed")}</p>` : "")
-      + c.sourceLine([r.source_url], { label: "Source", note: r.checked ? `Checked ${h.fmtDateY(r.checked)}` : "" })
+      + sourceLineHtml(h, [r.source_url, r.quote_source, ...(r.also_sources || []), rows.some(([k]) => k === "Built") ? (r.heritage?.sources || [])[0] : null], { icon: h.icon("info"), note: r.checked ? `Checked ${h.fmtDateY(r.checked)}` : "" })
       + legHtml(s)
       + `</li>`;
   }
@@ -196,6 +197,15 @@ export function pages(ctx) {
     return h.extLink(u, `${h.icon("route")}Directions in Google Maps`, "btn btn-secondary");
   }
 
+  /** SPEC §7: the attribution line printed with every map. */
+  const ATTRIB = `<p class="rt-attrib">Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${h.extLink("https://www.openstreetmap.org/copyright", "openstreetmap.org/copyright")}).</p>`;
+  /** The sheet pages and areas a passage runs through, in stop order (links to go on from). */
+  function whereLinks(root, rt, f) {
+    const sheets = [...new Set([rt.region, ...f.stops.map((s) => s.rec.region).filter(Boolean)])].sort((a, b) => REGIONS[a].n - REGIONS[b].n);
+    const areas = [...new Set(f.stops.map((s) => s.rec.area).filter((a) => a && db.byId.area.has(a)))];
+    return `<p class="rt-where">${h.icon("compass")}<span><span class="label">On the chart</span> ${sheets.map((r) => `<a href="${root}${h.regionHref(r)}">Sheet ${REGIONS[r].n} · ${h.esc(REGIONS[r].name)}</a>`).join(", ")}${areas.length ? ` <span class="rt-where-sep">·</span> ${h.plural(areas.length, "area")}: ${areas.map((a) => `<a href="${root}areas/${h.attr(a)}.html">${h.esc(areaName(a))}</a>`).join(", ")}` : ""}</span></p>`;
+  }
+
   /* ---------- one passage ---------- */
   function passage(root, rt, i) {
     const f = facts.get(rt.id);
@@ -212,13 +222,15 @@ export function pages(ctx) {
 <p class="rt-kicker label">${h.bullet(rt.region, "lg")}<span>Passage ${i + 1} of ${routes.length} · Sheet ${REGIONS[rt.region].n} · ${h.esc(REGIONS[rt.region].name)}</span></p>
 <h2 id="r-${h.attr(rt.id)}-h">${h.esc(rt.title)}</h2>
 ${rt.lede ? `<p class="rt-lede">${h.esc(rt.lede)}</p>` : ""}
+${sourceLineHtml(h, [rt.source_url, ...(rt.also_sources || [])], { label: "Source of this introduction", icon: h.icon("info"), cls: "rt-lede-src", note: rt.checked ? `Checked ${h.fmtDateY(rt.checked)}` : "" })}
 <dl class="rt-stats">${statRows.map(([k, v]) => `<div><dt>${h.esc(k)}</dt><dd>${v}</dd></div>`).join("")}</dl>
 <p class="btn-row rt-acts"><button class="btn btn-house js-only" type="button" data-star-all="${h.attr(star)}" data-title="${h.attr(rt.title)}" aria-pressed="false">${h.icon("star")}<span data-star-all-label>Star all ${f.stops.length} stops</span></button>${directionsLink(f)}</p>
 </header>
 <div class="rt-grid${map ? "" : " no-map"}">
-${map ? `<div class="rt-map"><div class="rt-map-in">${map}<p class="rt-map-note">${h.icon("course")}<span>Numbers match the list. The dashed line joins the stops in straight lines, not streets.</span></p></div></div>` : ""}
+${map ? `<div class="rt-map"><div class="rt-map-in">${map}<p class="rt-map-note">${h.icon("course")}<span>Numbers match the list. The dashed line joins the stops in straight lines, not streets. Not for navigation.</span></p>${ATTRIB}</div></div>` : ""}
 <ol class="stops rt-stops">${f.stops.map((s) => stopItem(root, rt, s)).join("")}</ol>
 </div>
+${whereLinks(root, rt, f)}
 <p class="rt-foot">${h.icon("info")}<span>Put together${rt.checked ? ` on ${h.esc(h.fmtDateY(rt.checked))}` : ""} from the ${f.stops.length} entries above. Each stop's facts come from its own source, linked under it.</span></p>
 </section>`;
   }

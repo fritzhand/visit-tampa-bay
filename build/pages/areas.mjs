@@ -16,7 +16,7 @@
 import { sortBy } from "../core/util.mjs";
 import { haversine } from "../../site/js/lib/geo.js";
 import { PLACE_GROUP, PLACE_GROUP_LABEL, PLACE_KIND_LABEL, STAY_KIND_LABEL, EXPERIENCE_KIND_LABEL, AREA_KIND_LABEL, FEATURE_LABEL, EVENT_KIND_LABEL, REGIONS } from "../core/vocab.mjs";
-import { fmtTime, fmtDay, fmtDate, fmtDateRange, fmtThrough, addDays, isoLocal } from "../core/time.mjs";
+import { fmtTime, fmtDay, fmtDate, fmtDateY, fmtDateRange, fmtThrough, addDays, isoLocal } from "../core/time.mjs";
 import { oneLine } from "./map.mjs";
 
 /** "Things to do" groups in the order an area page lists them (history, eat and drink have sections of their own). */
@@ -63,11 +63,25 @@ export function pages(ctx) {
     const multi = days.length > 1;
     const consecutive = multi && days.every((d, i) => i === 0 || addDays(days[i - 1], 1) === d);
     const when = next.run ? fmtThrough(next.through, next.date) : multi ? (consecutive ? fmtDateRange(days[0], days[days.length - 1]) : `${days.length} dates from ${fmtDate(days[0])}`) : fmtDay(next.day);
-    const where = ev.venue?.name || ev.location_text || "";
+    const where0 = ev.venue?.name || ev.location_text || "", where = where0 && where0.toLowerCase() !== ev.title.toLowerCase() ? where0 : "";
     const inWin = next.run ? next.date <= refEnd && next.through >= ref : days.some((d) => d >= ref && d <= refEnd);
     const inst = multi && !next.timeUnknown ? ` data-inst="${ev.instances.map((y) => `${y.s}:${y.e}`).join(",")}"` : "";
     const live = `data-s="${next.s}" data-e="${next.e}"${inst}${days.length ? ` data-days="${days.join(" ")}"` : ""}${next.run ? ` data-run="${next.through}" data-run-from="${next.date}" data-run-to="${next.through < db.window.end ? next.through : db.window.end}"` : ""}${next.endUnknown ? ' data-end-unknown="1"' : ""}${next.timeUnknown ? ' data-time-unknown="1"' : ""}${next.allDay ? ' data-all-day="1"' : ""}`;
-    return `<li data-ev="${attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}"` : ""} ${live}${inWin ? "" : " hidden"}><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}"><time${timed ? ` datetime="${isoLocal(next.s)}"` : ""}>${timed ? `${esc(hm)}<small>${esc(ap)}</small>` : `<small>${esc(next.run ? `From ${fmtDate(ev.date)}` : next.allDay ? "All day" : "Time not listed")}</small>`}</time>${ev.region ? bullet(ev.region) : ""}<span><span class="t">${esc(ev.title)}</span><span class="w">${esc([when, EVENT_KIND_LABEL[ev.kind], where].filter(Boolean).join(" · "))}${ev.status !== "scheduled" ? ` ${c.eventStatusBadge(ev)}` : ""} <span data-status></span></span></span></a></li>`;
+    return `<li data-ev="${attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}"` : ""} ${live}${inWin ? "" : " hidden"}><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}"><time${timed ? ` datetime="${isoLocal(next.s)}"` : ""}>${timed ? `${esc(hm)}<small>${esc(ap)}</small>` : `<small>${esc(next.run ? `From ${fmtDate(ev.date)}` : next.allDay ? "All day" : "Time not listed")}</small>`}</time><span><span class="t">${esc(ev.title)}</span><span class="w">${esc([when, EVENT_KIND_LABEL[ev.kind], where].filter(Boolean).join(" · "))}${ev.status !== "scheduled" ? ` ${c.eventStatusBadge(ev)}` : ""} <span data-status></span></span></span></a></li>`;
+  }
+  /** The area's source line (c.recordSource's markup): a host that appears twice is told apart by its path. */
+  function sourceOf(a) {
+    const urls = [...new Set([a.source_url, ...(a.also_sources || [])].filter(Boolean))];
+    if (!urls.length) return "";
+    const host = (u) => h.hostOf(u) || u, n = new Map();
+    for (const u of urls) n.set(host(u), (n.get(host(u)) || 0) + 1);
+    const name = (u) => {
+      if (n.get(host(u)) < 2) return host(u);
+      let path = "";
+      try { path = decodeURIComponent(new URL(u).pathname).replace(/\/+$/, ""); } catch { /* keep the host */ }
+      return path ? `${host(u)}${path.length > 36 ? `/…${path.slice(path.lastIndexOf("/"))}` : path}` : host(u);
+    };
+    return `<p class="source-line">${icon("info")}<span>Source${urls.length > 1 ? "s" : ""}: ${urls.map((u) => extLink(u, esc(name(u)))).join(" · ")}</span>${a.checked ? `<span>${esc(`Checked ${fmtDateY(a.checked)}`)}</span>` : ""}</p>`;
   }
   const rows = (items, cls = "") => `<ul class="rows ar-rows${cls ? " " + cls : ""}">${items.join("")}</ul>`;
   const note = (html) => `<p class="ar-none">${html}</p>`;
@@ -90,7 +104,7 @@ export function pages(ctx) {
   const withCounts = (a) => a.places.length + a.stays.length + a.experiences.length + a.events.length;
   const indexChart = (root, r) => {
     const pts = r.areas.map((a, i) => (a.ll ? { lat: a.ll[0], lng: a.ll[1], kind: "place", sheet: r.id, n: i + 1, title: a.name } : null)).filter(Boolean);
-    const m = pts.length ? cards.chartMap(root, pts, { chart: "auto", minHalfM: 2500, ratio: "auto", labels: 3, label: `Chart of the ${plural(pts.length, "area")} on Sheet ${r.n}, ${r.name}, numbered as in the cards below`, cls: "ar-index-map", refW: 720 }) : "";
+    const m = pts.length ? cards.chartMap(root, pts, { chart: "auto", minHalfM: 2500, ratio: "auto", labels: 3, label: `Chart of the ${plural(pts.length, "area")} on Sheet ${r.n}, ${r.name}, numbered as in the cards below`, cls: "ar-index-map", refW: 360, clusterPx: 0 }) : "";
     return m ? `<figure class="ar-index${/--map-ar: 0\./.test(m) ? " is-tall" : ""}" data-sheet="${r.id}">${m}<figcaption class="faint">Each buoy marks an area's center; the numbers match the cards. Not for navigation. ${attribution}</figcaption></figure>` : "";
   };
   const list = {
@@ -147,7 +161,7 @@ ${chart}
         const known = (a.known_for || []).length ? `<p class="ar-known"><span class="label">Known for</span> ${a.known_for.map((k) => `<span>${esc(k)}</span>`).join('<span class="sep" aria-hidden="true"> · </span>')}</p>` : "";
         const head = c.pageHead({ sheet: a.region, kicker: `Sheet ${r.n} · ${r.name}${a.kind ? ` · ${AREA_KIND_LABEL[a.kind]}` : ""}`, title: a.name, lede: a.summary || "", after: `${known}<p class="head-actions">${links}</p>` });
         const chart = places.length
-          ? cards.chartMap(root, places.map((p) => ({ lat: p.ll[0], lng: p.ll[1], kind: p.heritage || PLACE_GROUP[p.kind] === "history" ? "heritage" : "place", sheet: a.region, n: num.get(p.id), title: p.name })), { chart: "auto", minHalfM: 700, ratio: 4 / 3, labels: 3, label: `Chart of ${a.name}: ${plural(places.length, "place")}, numbered as in the lists below`, cls: "ar-map" })
+          ? cards.chartMap(root, places.map((p) => ({ lat: p.ll[0], lng: p.ll[1], kind: p.heritage || PLACE_GROUP[p.kind] === "history" ? "heritage" : "place", sheet: a.region, n: num.get(p.id), title: p.name })), { chart: "auto", minHalfM: 700, ratio: 4 / 3, labels: 3, label: `Chart of ${a.name}: ${plural(places.length, "place")}, numbered as in the lists below`, cls: "ar-map", refW: 420 })
           : a.ll ? cards.miniMap(root, a.ll[0], a.ll[1], { sheet: a.region, label: `Map: ${a.name}`, halfWidthM: 2500 }) : "";
         const glance = c.facts(root, [
           ["Sheet", `<a href="${root}${ctx.nav.regionHref(a.region)}">${esc(`${r.n} · ${r.name}`)}</a>`],
@@ -171,7 +185,7 @@ ${chart}
           ? rows(tours.map((x) => tourRow(root, a, x)))
           : note(`No tours or boat trips in this guide depart from ${esc(a.name)}. <a href="${root}experiences.html?r=${a.region}">Experiences on the ${esc(r.name)} sheet</a>.`) });
         const series = sortBy(a.series || [], (s) => s.name.toLowerCase());
-        const sOn = c.section({ id: "on", title: "What's on here", root, body: `<div class="ar-events" data-area-events>
+        const sOn = c.section({ id: "on", title: "What's on here", root, body: `<div class="ar-events" data-area-events data-window-end="${db.window.end}">
 <p class="ar-evcount faint" data-ev-count>${inWin.length ? `${plural(inWin.length, "event")} from ${esc(fmtDate(ref))} to ${esc(fmtDate(refEnd))}` : ""}</p>
 ${evs.length ? `<ol class="tonight ar-tonight">${evs.map((e) => eventRow(root, e)).join("")}</ol>` : ""}
 <p class="ar-none" data-ev-empty${inWin.length ? " hidden" : ""}>Nothing is listed in ${esc(a.name)} for the next ${WINDOW_DAYS} days. <a href="${root}whats-on.html?r=${a.region}">What's on across the ${esc(r.name)} sheet</a>.</p>
@@ -186,7 +200,7 @@ ${series.length ? `<p class="ar-series"><span class="label">Every year here</spa
         const sNear = c.section({ id: "nearby", title: "Nearby areas", root, body: nearby.length
           ? `<ul class="rows ar-rows ar-near">${nearby.map(({ o, d }) => `<li class="row ar-row" data-sheet="${o.region}"><a href="${root}areas/${attr(o.id)}.html">${bullet(o.region)}<span><span class="t">${esc(o.name)}</span><span class="w">${esc([o.kind ? AREA_KIND_LABEL[o.kind] : "", o.region !== a.region ? `Sheet ${regionOf(o.region).n} · ${regionOf(o.region).name}` : ""].filter(Boolean).join(" · "))}</span></span></a><span class="ar-dist tnum">${esc(distLabel(d))}</span></li>`).join("")}</ul><p class="faint ar-note">Straight-line distance between area centers; by road it is farther.</p>`
           : note("This area has no center coordinates, so nearby areas cannot be measured.") });
-        return [head, chartBlock, sDo, sStay, sTours, sOn, sHist, sEat, sNear, a.record ? c.recordSource(a) : c.callout("", `<p>This area has no profile in the guide's data yet, so it has no summary or sources of its own. The lists above come from the places, stays and events filed under it.</p>`, { flag: "No profile yet" })].join("\n");
+        return [head, chartBlock, sDo, sStay, sTours, sOn, sHist, sEat, sNear, a.record ? sourceOf(a) : c.callout("", `<p>This area has no profile in the guide's data yet, so it has no summary or sources of its own. The lists above come from the places, stays and events filed under it.</p>`, { flag: "No profile yet" })].join("\n");
       },
     };
   });

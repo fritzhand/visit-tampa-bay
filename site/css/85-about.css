@@ -109,3 +109,15 @@
 .ab-fix ol { padding-left: 1.3em; }
 .ab-author p { max-width: 70ch; }
 .ab-built { margin-top: var(--sp-4); padding-top: var(--sp-3); border-top: 1px solid var(--border); color: var(--text-muted); }
+
+/* the two count tables stay compact rows on phones (the shared table.data turns every row into a card with a Bodoni
+   heading, which made "OpenStreetMap · Points 80" a screen tall): the label, its count on the right, the note under it */
+@media (max-width: 699px) {
+  table.data:is(.ab-geo, .ab-unk) tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; gap: 2px 16px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  table.data:is(.ab-geo, .ab-unk) tbody th { font-family: var(--font-body); font-weight: var(--wght-strong); font-size: var(--fs-sm); line-height: 1.4; }
+  table.data:is(.ab-geo, .ab-unk) td { display: block; padding: 0; }
+  table.data:is(.ab-geo, .ab-unk) td.num::before { content: none; }
+  table.data:is(.ab-geo, .ab-unk) td.num { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-md); line-height: 1.1; text-align: right; }
+  table.data.ab-unk td:last-child { grid-column: 1 / -1; display: flex; gap: 8px; font-size: var(--fs-xs); color: var(--text-muted); }
+  table.data.ab-unk td:last-child::before { padding-top: 1px; }
+}

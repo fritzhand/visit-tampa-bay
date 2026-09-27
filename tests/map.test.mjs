@@ -99,9 +99,11 @@ test("map.html (fixture): one row per located record, with its layers; numbers 1
   assert.deepEqual(nums, nums.map((_, i) => i + 1));
   for (const r of rows.filter((r) => r.k === "heritage")) assert.equal(r.n, undefined, `${r.id} is a landmark, not a number`);
   assert.ok(rows.some((r) => r.id === "p:tampa-theatre" && r.k === "heritage"), "a heritage block makes a landmark");
-  // numbered in sheet order: every Tampa number comes before every St. Petersburg number
-  const tp = rows.filter((r) => r.n && r.r === "tampa").map((r) => +r.n), sp = rows.filter((r) => r.n && r.r === "stpete").map((r) => +r.n);
-  assert.ok(Math.max(...tp) < Math.min(...sp));
+  // numbered in the list's reading order: Things to do, then Beaches & outdoors, each by sheet (Tampa before St. Petersburg)
+  assert.deepEqual(rows.filter((r) => r.n).map((r) => +r.n), nums, "the numbers run 1…n down the list");
+  const inSec = (sec) => rowsOf(html.slice(html.indexOf(`data-sec="${sec}"`), html.indexOf("</section>", html.indexOf(`data-sec="${sec}"`))));
+  const tp = inSec("places").filter((r) => r.n && r.r === "tampa").map((r) => +r.n), sp = inSec("places").filter((r) => r.n && r.r === "stpete").map((r) => +r.n);
+  if (tp.length && sp.length) assert.ok(Math.max(...tp) < Math.min(...sp), "Tampa before St. Petersburg");
   // the layer chips count what the rows carry
   for (const l of LAYERS) {
     const m = new RegExp(`data-layer="${l.id}" aria-pressed="(true|false)">[\\s\\S]*?<span class="n">(\\d+)</span>`).exec(html);

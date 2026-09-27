@@ -90,7 +90,7 @@ export function pages(ctx) {
   const counts = [
     [db.regions.length, "sheets", "index.html"], [db.areas.length, "areas and towns", "areas.html"], [db.places.length, "places", "things-to-do.html"],
     [db.stays.length, "places to stay", "stay.html"], [db.experiences.length, "experiences and tours", "experiences.html"], [live.length, "dated events", "whats-on.html"],
-    [db.series.length, "annual events", "when-to-visit.html#year"], [db.timeline.length, "history entries", "history.html"], [db.heritage.length, "historic places with a heritage record", "history.html"],
+    [db.series.length, "annual events", "when-to-visit.html#year"], [db.timeline.length, "history entries", "history.html"], [db.heritage.length, (() => { const st = db.heritage.filter((x) => x.kind === "stay").length; return st ? "historic sites and hotels with a heritage record" : "historic sites with a heritage record"; })(), "history.html"],
     [db.transport.length, "ways to get around", "getting-around.html"], [db.faqs.length, "questions and answers", "faq.html"], [db.facts.length, "facts", "when-to-visit.html"],
   ].filter(([n]) => n > 0);
 
@@ -101,19 +101,22 @@ export function pages(ctx) {
     ["Places whose price is not listed", db.places.filter((p) => open(p) && !p.price_text && p.is_free !== true).length, "“Price not listed”"],
     ["Places, stays and experiences without coordinates", [...db.places, ...db.stays, ...db.experiences].filter((r) => !r.ll).length, "“Not on the map: no coordinates listed”"],
     ["Experiences whose price is not listed", db.experiences.filter((x) => !x.price_text && x.is_free !== true).length, "“Price not listed”"],
-    ["Events whose start time is not listed", live.filter((e) => e.instances.some((x) => x.timeUnknown)).length, "“Time not listed”, and never “Now”"],
+    ["Events whose start time is not listed", live.filter((e) => e.instances.some((x) => x.timeUnknown)).length, "“Time not listed” (or the source's own words, such as “Gates open at 11 a.m.”), and never “Now”"],
     ["Events whose end time is not listed", live.filter((e) => e.instances.some((x) => x.endUnknown && !x.timeUnknown)).length, "“end time not listed”; “Started”, never “Now”"],
-    ["Events whose cost is not stated", live.filter((e) => !e.cost && e.is_free == null).length, "no Free tag and no price"],
+    ["Events whose price is not listed", live.filter((e) => !e.cost && e.is_free !== true).length, "“Price not listed”"],
     ["Transport without a published fare", db.transport.filter((t) => !t.fare_text && t.is_free !== true).length, "“Fare not listed” (or “Fees”, “Prices”)"],
   ].filter(([, n]) => n > 0);
   const stN = (arr, st) => arr.filter((r) => r.status === st).length;
+  /* [singular, plural, count]: "1 place opening soon", "6 places temporarily closed" */
   const closures = [
-    ["Places temporarily closed", stN(db.places, "temporarily-closed")], ["Places open by season", stN(db.places, "seasonal")], ["Places opening soon", stN(db.places, "opening-soon")],
-    ["Places closed for good, kept for their history", stN(db.places, "closed")], ["Places to stay temporarily closed", stN(db.stays, "temporarily-closed")],
-    ["Places to stay opening soon", stN(db.stays, "opening-soon")], ["Experiences temporarily closed", stN(db.experiences, "temporarily-closed")],
-    ["Experiences run by season", stN(db.experiences, "seasonal")], ["Events cancelled", stN(db.events, "cancelled")], ["Events postponed", stN(db.events, "postponed")],
-    ["Events whose date the organizer calls tentative", stN(db.events, "tentative")], ["Events changed at short notice", stN(db.events, "changed")],
-  ].filter(([, n]) => n > 0);
+    ["place temporarily closed", "places temporarily closed", stN(db.places, "temporarily-closed")], ["place open by season", "places open by season", stN(db.places, "seasonal")],
+    ["place opening soon", "places opening soon", stN(db.places, "opening-soon")], ["place closed for good, kept for its history", "places closed for good, kept for their history", stN(db.places, "closed")],
+    ["place to stay temporarily closed", "places to stay temporarily closed", stN(db.stays, "temporarily-closed")], ["place to stay open by season", "places to stay open by season", stN(db.stays, "seasonal")],
+    ["place to stay opening soon", "places to stay opening soon", stN(db.stays, "opening-soon")], ["experience temporarily closed", "experiences temporarily closed", stN(db.experiences, "temporarily-closed")],
+    ["experience run by season", "experiences run by season", stN(db.experiences, "seasonal")], ["experience opening soon", "experiences opening soon", stN(db.experiences, "opening-soon")],
+    ["event cancelled", "events cancelled", stN(db.events, "cancelled")], ["event postponed", "events postponed", stN(db.events, "postponed")],
+    ["event whose date the organizer calls tentative", "events whose date the organizer calls tentative", stN(db.events, "tentative")], ["event changed at short notice", "events changed at short notice", stN(db.events, "changed")],
+  ].filter(([, , n]) => n > 0);
   const quotes = [...db.places, ...db.stays, ...db.experiences, ...db.series].filter((r) => r.quote).length;
   const descriptions = db.events.filter((e) => e.description).length;
 
@@ -151,6 +154,9 @@ export function pages(ctx) {
     return `<tr><th scope="row" data-label="Image">${esc(m.title)}${m.year ? ` <span class="faint">(${esc(m.year)})</span>` : ""}${href ? `<span class="ab-sub"><a href="${root}${attr(href)}">${esc(subjectName({ place: "p", stay: "s", area: "a", timeline: "t", experience: "x" }[m.subject_kind], m.subject))}</a></span>` : ""}</th><td data-label="Creator">${m.creator ? esc(m.creator) : c.unk("Creator not named")}</td><td data-label="License">${licenseLink(m.license, m.license_url)}</td><td data-label="Source">${h.extLink(m.page_url, esc(h.hostOf(m.page_url)))}</td></tr>`;
   };
   const notShown = db.media.filter((m) => !usedMedia.has(m.id));
+  /* where the images come from, computed (the Images paragraph and the credits say only this) */
+  const imgHosts = new Set([...db.media.map((m) => h.hostOf(m.page_url)), ...manifest.map(([, e]) => (e.page_url ? h.hostOf(e.page_url) : null))].filter(Boolean));
+  const allCommons = imgHosts.size > 0 && [...imgHosts].every((x) => x === "commons.wikimedia.org");
   const mediaLic = new Map();
   for (const m of notShown) mediaLic.set(m.license, (mediaLic.get(m.license) || 0) + 1);
 
@@ -200,11 +206,11 @@ ${c.section({ id: "rules", title: "The rules", anchor: true, root, body: `<div c
 <div class="ab-rule"><h3>${icon("walk")}Distances are estimates</h3><p>Distances between two points are straight lines, and the guide says so. Walking and driving routes are longer.</p></div>
 </div>
 ${unknowns.length ? `<h3 class="sub-h">What the sources don't say</h3><div class="table-wrap"><table class="data ab-unk"><caption>Counted from the data. These gaps close as the sources publish more.</caption><thead><tr><th scope="col">Not published</th><th scope="col" class="num">Records</th><th scope="col">What the guide prints</th></tr></thead><tbody>${unknowns.map(([l, n, w]) => `<tr><th scope="row" data-label="Not published">${esc(l)}</th><td class="num" data-label="Records">${n}</td><td data-label="Printed as">${esc(w)}</td></tr>`).join("")}</tbody></table></div>` : ""}
-${closures.length ? `<h3 class="sub-h">Closures, seasons and changes</h3><ul class="ab-closed">${closures.map(([l, n]) => `<li><b class="tnum">${n}</b> ${esc(l.charAt(0).toLowerCase() + l.slice(1))}</li>`).join("")}</ul>` : ""}` })}
+${closures.length ? `<h3 class="sub-h">Closures, seasons and changes</h3><ul class="ab-closed">${closures.map(([one, many, n]) => `<li><b class="tnum">${n}</b> ${esc(n === 1 ? one : many)}</li>`).join("")}</ul>` : ""}` })}
 ${c.section({ id: "sources", title: "Sources", anchor: true, root, body: `<p class="ab-lede">${esc(`${h.plural(hosts.size, "site")} are cited by the guide's records. The number beside each is how many records cite it (a record that cites one site twice counts once). The groups are the guide's own.`)}</p>
 <nav class="ab-gnav" aria-label="Source groups">${GROUPS.filter((g) => byGroup.get(g.id).length).map((g) => `<a href="#src-${g.id}"><span>${esc(g.title)}</span><b class="tnum">${byGroup.get(g.id).length}</b></a>`).join("")}</nav>
 ${sourcesBody()}` })}
-${c.section({ id: "images", title: "Images and credits", anchor: true, root, body: `<div class="prose"><p>Every photograph in the guide is rights-cleared and stored with the guide, never loaded from another site. Each comes from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA or a U.S. government work) or the history-of-tampa archive, with its creator, license and credit line. None is taken from a hotel, venue or operator site. A record without a cleared image gets a typographic plate, its chart code and name, never a stock photo.</p></div>
+${c.section({ id: "images", title: "Images and credits", anchor: true, root, body: `<div class="prose"><p>Every photograph in the guide is rights-cleared and stored with the guide, never loaded from another site. The guide takes images only from Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA or a U.S. government work) or the history-of-tampa archive, each with its creator, license and credit line${imgHosts.size ? `; ${allCommons ? `every one gathered so far (${esc(h.plural(db.media.length, "image"))}) is a Commons file` : `the ${esc(h.plural(db.media.length, "image"))} gathered so far come from ${esc(h.listJoin([...imgHosts]))}`}` : ""}. None is taken from a hotel, venue or operator site. A record without a cleared image gets a typographic plate, its chart code and name, never a stock photo.</p></div>
 ${manifest.length ? `<p class="ab-lic">${[...byLicense].map(([lic, n]) => `<span><b class="tnum">${n}</b> ${esc(vocab.LICENSE_LABEL[lic] || lic)}</span>`).join("")}</p>
 <details class="ab-credits" id="credits-list" open><summary>${esc(`All ${h.plural(manifest.length, "image")} shown, with credits`)}</summary><div class="table-wrap"><table class="data ab-img"><thead><tr><th scope="col">Image</th><th scope="col">Creator</th><th scope="col">License</th><th scope="col">Source</th></tr></thead><tbody>${shown.map((x) => creditRow(root, x)).join("")}</tbody></table></div></details>`
       : `<p class="ab-lic"><span>No photographs are shown yet: every record carries its typographic plate.</span></p>`}
@@ -213,7 +219,7 @@ ${notShown.length ? `<details class="ab-credits" id="media-list"><summary>${esc(
 ${c.section({ id: "credits", title: "Map, type and code", anchor: true, root, body: `<dl class="ab-dl">
 <div><dt>Basemap</dt><dd>${h.extLink(mapSrc, esc(mapAttr))}. The water lining, roads and coastline of every map are drawn from it for this guide.</dd></div>
 <div><dt>Coordinates</dt><dd>Place coordinates include data ${osmLink("© OpenStreetMap contributors")}, available under the Open Database License (ODbL)${osmN ? `: ${esc(h.plural(osmN, "point"))} in the guide come from it` : ""}. ${geoRows.filter(([k]) => k !== "photon" && k !== "osm").length ? ` Other points come from ${esc(h.listJoin(geoRows.filter(([k]) => k !== "photon" && k !== "osm").map(([k]) => ({ census: "the U.S. Census geocoder (public domain)", official: "the places' and operators' own pages", wikipedia: "Wikipedia", manual: "the sources' own maps and descriptions" })[k] || k)))}.` : ""}</dd></div>
-<div><dt>Images</dt><dd>Wikimedia Commons contributors and the history-of-tampa archive, each credited by name and license in the <a href="#images">list above</a> and beside the image.</dd></div>
+<div><dt>Images</dt><dd>${allCommons || !imgHosts.size ? "Wikimedia Commons contributors" : "Wikimedia Commons contributors and the history-of-tampa archive"}, each credited by name and license in the <a href="#images">list above</a> and beside the image.</dd></div>
 <div><dt>Type</dt><dd>Bodoni Moda, Figtree and Archivo, all under the SIL Open Font License 1.1, served with the site: <a href="${root}assets/fonts/OFL-BodoniModa.txt">Bodoni Moda license</a> · <a href="${root}assets/fonts/OFL-Figtree.txt">Figtree license</a> · <a href="${root}assets/fonts/OFL-Archivo.txt">Archivo license</a>.</dd></div>
 <div><dt>Engine</dt><dd>The build engine, the checks and the tone rules come from ${h.extLink("https://github.com/fritzhand/cincy-week", "Cincy Week")} (fritzhand/cincy-week), a source-linked guide to a week in Cincinnati.</dd></div>
 <div><dt>History</dt><dd>The history and the citation standard come from ${h.extLink("https://github.com/fritzhand/history-of-tampa", "History of Tampa")} (fritzhand/history-of-tampa).</dd></div>

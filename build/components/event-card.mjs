@@ -31,12 +31,14 @@
    - data-cancelled="1" when the event is cancelled or postponed (never "Now", left out of counts).
    - data-q is normalized text of what the card does NOT print (place aliases, series name, tags beyond the
      three shown, topics); a filter adds the card's visible text.
-   The lean card ({ lean: true }, What's On's list: 556 of them on one page) keeps every attribute above (but data-pl)
+   The lean card ({ lean: true }, What's On's list: ~590 of them on one page) keeps every attribute above (but data-pl;
+   data-inst and data-days whenever the event has several instances, so its live word follows the event, not its first day)
    and the same classes, and drops the weight: no inline SVG at all (the sheet badge i.ev-sb[aria-hidden] and the star are drawn
    by CSS, 45-whats-on.css; the kicker reads KIND · AREA as in the design's card grammar), no summary and no description (the dialog, one click away, shows both: event-text.json),
-   no details, no <time> elements; it adds .ev-cost (the source's price words, "Free", or "Price not listed"), a source
+   no details, no <time> elements; every start of its day ("12:00, 4:00 and 8:00 PM"), and "hours differ by day" when a
+   multi-day event's hours do; it adds .ev-cost (the source's price words, "Free", or "Price not listed"), a source
    line (.ev-src: "Source: host", plus "Checked <date>" when it differs from { checked }, the date the page
-   states once, and Tickets when listed), the signature seal for featured events (data-fe="1"), and with
+   states once, and Tickets when listed and the event is not cancelled or postponed), the signature seal for featured events (data-fe="1"), and with
    { datebox: true } a date box first (a long run's box reads "Until" + its last day).
    Unknowns print as unknowns: "Time not listed", "end time not listed", "Place not listed", "Price not listed".
    ============================================================ */
@@ -92,15 +94,26 @@ export function makeEventCards(ctx) {
     const date = showDate ? `<span class="ev-date">${esc(range || fmtDay(inst.day))}</span> · ` : range ? `<span class="ev-date">${esc(range)}</span> · ` : "";
     if (inst.allDay) return `${date}<span>All day</span>`;
     if (inst.timeUnknown) return `${date}${ev.time_text ? `<span class="ev-tt">${esc(ev.time_text)}</span>` : '<span class="unk">Time not listed</span>'}`;
-    // several days with different hours: the first day's hours, said as such (the dialog lists every day)
-    const differs = spread && (ev.instances || []).some((y) => y.start !== inst.start || y.end !== inst.end);
+    // several days with different hours: this day's hours, said as such, then "hours differ by day" (each later day's own
+    // hours are on its row under that day, and the dialog lists every day)
+    const same = lean ? (ev.instances || []).filter((y) => y.day === inst.day && y.start && !y.timeUnknown && !y.allDay) : [];
+    const sig = new Map();
+    if (spread) for (const y of ev.instances || []) sig.set(y.day, `${sig.get(y.day) || ""}${y.start}-${y.end};`);
+    const differs = spread && new Set(sig.values()).size > 1;
+    const late = inst.lateNight ? ' <span class="ev-dates">· after midnight</span>' : "";
+    const first = differs ? `<span class="ev-dates">${esc(fmtDate(inst.day))}: </span>` : "";
+    const vary = differs ? ' <span class="ev-dates">· hours differ by day</span>' : "";
+    // several shows on one day (lean: the card lists every start that day, never only the first)
+    if (same.length > 1) {
+      const parts = same.map((y) => (y.end ? ctx.h.fmtRange(y.start, y.end) : fmtTime(y.start)).replace(/ (AM|PM)/g, " $1"));
+      return `${date}${first}<span>${esc(ctx.h.listJoin(parts))}</span>${same.some((y) => !y.end) ? ' <span class="unk">end time not listed</span>' : ""}${late}${vary}`;
+    }
     const a = fmtTime(inst.start), b = inst.end ? fmtTime(inst.end) : "";
     const sameHalf = b && a.slice(-2) === b.slice(-2) && inst.end > inst.start;
     const t1 = tm(inst.s, sameHalf ? a.slice(0, -3) : a);
-    const late = inst.lateNight ? ' <span class="ev-dates">· after midnight</span>' : "";
-    const first = differs ? `<span class="ev-dates">first ${esc(fmtDate(inst.day))} </span>` : "";
-    if (!b) return `${date}${first}${t1} <span class="unk">end time not listed</span>${late}`;
-    return lean ? `${date}${first}<span class="nw">${t1}–${tm(inst.e, b)}</span>${late}` : `${date}${first}${t1}–${tm(inst.e, b)}${late}`;
+    if (!b) return `${date}${first}${t1} <span class="unk">end time not listed</span>${late}${vary}`;
+    if (lean) return `${date}${first}<span class="nw">${t1}–${tm(inst.e, b)}</span>${late}${vary}`;
+    return `${date}${first}${t1}–${tm(inst.e, b)}${late}`;
   }
   /** Plain-text version for labels and search. */
   function whenText(inst) {
@@ -149,7 +162,8 @@ export function makeEventCards(ctx) {
    *  place page (a place page's full card links it too), so a reader without JavaScript can always reach it. */
   const leanSource = (ev, checked) => {
     const host = esc(hostOf(ev.source_url) || "the source");
-    return `<p class="ev-src">Source: ${ev.venue ? host : extLink(ev.source_url, host)}${ev.checked && ev.checked !== checked ? ` · Checked ${esc(fmtDateY(ev.checked))}` : ""}${ev.tickets_url ? ` · ${extLink(ev.tickets_url, "Tickets")}` : ""}</p>`;
+    // no ticket link on a cancelled or postponed card (the dialog still lists it, with the status beside it)
+    return `<p class="ev-src">Source: ${ev.venue ? host : extLink(ev.source_url, host)}${ev.checked && ev.checked !== checked ? ` · Checked ${esc(fmtDateY(ev.checked))}` : ""}${ev.tickets_url && ev.live ? ` · ${extLink(ev.tickets_url, "Tickets")}` : ""}</p>`;
   };
 
   /** The date box: weekday and month in caps over the day numeral; a long run's box says "Until" and its last day.
@@ -169,9 +183,12 @@ export function makeEventCards(ctx) {
     const inst = x.ev ? x : { ...(x.instances?.[0] || { day: x.date, date: x.date, s: 0, e: 0, timeUnknown: true }), ev: x };
     const ev = inst.ev;
     const all = ev.instances || [];
-    const multi = all.length > 1 && (span || !x.ev);
+    // lean (What's On): a card filed under its first day still carries every day, so its live word follows the event
+    // (a four-day festival is not "Ended" after its first evening; the page's own date tests read data-day)
+    const multi = all.length > 1 && (span || !x.ev || lean);
     const instAttr = multi && !inst.timeUnknown ? ` data-inst="${all.map((y) => `${y.s}:${y.e}`).join(",")}"` : "";
-    const daysAttr = multi ? ` data-days="${[...new Set(all.map((y) => y.day))].join(" ")}"` : "";
+    // (a lean timed card needs only data-inst for its live word: What's On's own date tests read data-day)
+    const daysAttr = multi && !(lean && instAttr) ? ` data-days="${[...new Set(all.map((y) => y.day))].join(" ")}"` : "";
     const tagList = [...new Set((ev.tags || []).map((t) => t.replace(/-/g, " ")))];
     const tags = [ev.is_free === true ? '<span class="free">Free</span>' : "", ...tagList.slice(0, 3).map(esc)].filter(Boolean);
     const q = [...new Set(norm((lean ? [ev.seriesRec?.name, tagList] : [ev.venue?.aliases, ev.seriesRec?.name, tagList.slice(3), (ev.topics || []).map((t) => TOPIC_LABEL[t]), ev.venue?.city]).flat().filter(Boolean).join(" ")).split(/\s+/).filter(Boolean))].join(" ");

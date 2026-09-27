@@ -48,7 +48,7 @@
     "id": "cuban-bread-trail",
     "title": "Cuban bread and the Cuban sandwich",
     "region": "tampa",
-    "lede": "La Segunda Central Bakery, founded in Ybor City in 1915, bakes Cuban bread by hand. These bakeries and restaurants in West Tampa, Seminole Heights, Ybor City, the Channel District and East Tampa sell Cuban bread or Cuban sandwiches, by their own records.",
+    "lede": "La Segunda Central Bakery, founded in Ybor City in 1915, bakes Cuban bread by hand. These bakeries and restaurants in West Tampa, Seminole Heights, Ybor City, the Channel District and East Tampa sell Cuban bread or Cuban sandwiches, according to their entries in this guide.",
     "stops": [
       {
         "kind": "place",
@@ -92,7 +92,7 @@
       }
     ],
     "checked": "2026-09-27",
-    "notes": "Passages lane, 2026-09-27: every stop's own record names Cuban bread or Cuban sandwiches."
+    "notes": "Passages lane, 2026-09-27: every stop's own record names Cuban bread or Cuban sandwiches. 2026-09-27 (review): \"by their own records\" → \"according to their entries in this guide\" (one of them cites a Visit Tampa Bay guide, not its own page)."
   },
   {
     "id": "dunedin-and-the-islands",
@@ -218,7 +218,7 @@
     "id": "gulf-beaches-clearwater-to-pass-a-grille",
     "title": "The Gulf beaches, Clearwater to Pass-a-Grille",
     "region": "beaches",
-    "lede": "Stops along Gulf Boulevard from Pier 60 on Clearwater Beach to Pass-a-Grille, where almost nothing is built on the sand. Several of these places report repairs after Hurricanes Helene and Milton in 2024; each stop shows what its source says.",
+    "lede": "Stops from Pier 60 on Clearwater Beach south to Pass-a-Grille, most of them on Gulf Boulevard; at Pass-a-Grille almost nothing is built on the sand. Several of these places report repairs after Hurricanes Helene and Milton in 2024; each stop shows what its source says.",
     "stops": [
       {
         "kind": "place",
@@ -277,7 +277,7 @@
       }
     ],
     "checked": "2026-09-27",
-    "notes": "Passages lane, 2026-09-27: built only from existing records; hurricane status notes are shown from each record."
+    "notes": "Passages lane, 2026-09-27: built only from existing records; hurricane status notes are shown from each record. 2026-09-27 (review): lede reworded (Pier 60 is on Causeway Blvd., Corey Avenue and Pass-a-Grille Beach are not on Gulf Boulevard)."
   },
   {
     "id": "historic-hotels-of-the-bay",
@@ -474,6 +474,7 @@
     "title": "The Tampa Riverwalk, end to end",
     "region": "tampa",
     "lede": "The Tampa Riverwalk runs 2.6 miles along the Hillsborough River, from just past Armature Works to Beneficial Drive at Channelside Drive. These stops follow it from north to south, with one detour across the Kennedy Boulevard Bridge.",
+    "source_url": "https://thetampariverwalk.com/who-we-are/frequent-questions.html",
     "stops": [
       {
         "kind": "place",
@@ -542,7 +543,7 @@
       }
     ],
     "checked": "2026-09-27",
-    "notes": "Passages lane, 2026-09-27: built only from existing records; the Riverwalk's own record (tampa-riverwalk) supplies the lede."
+    "notes": "Passages lane, 2026-09-27: built only from existing records; the Riverwalk's own record (tampa-riverwalk) supplies the lede. 2026-09-27 (review): source_url = the tampa-riverwalk record's source, for the lede's 2.6 miles and its two ends."
   },
   {
     "id": "tarpon-springs-sponge-docks",

@@ -44,7 +44,8 @@ const MONTH_DAYS = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 function statTile(ctx, f, { cls = "" } = {}) {
   const { h } = ctx;
   const m = /^([$]?\d(?:[\d,.]*\d)?(?:\s?(?:°F|%|in|ft|mph|miles?))?)(?=$|[\s,;(])(.*)$/.exec(f.value);
-  const v = m && m[2].trim() ? `<span class="vs-n">${h.esc(m[1])}</span> <span class="vs-u">${h.esc(m[2].replace(/^[,;:]\s*/, "").trim())}</span>`
+  // the rest keeps the value's own punctuation: "12, all storm surge drownings" stays "12, all …" (verbatim, one space)
+  const v = m && m[2].trim() ? `<span class="vs-n">${h.esc(m[1])}</span>${/^[,;:]/.test(m[2]) ? "" : " "}<span class="vs-u">${h.esc(m[2].replace(/^\s+/, ""))}</span>`
     : `<span class="vs-n${f.value.length > 16 ? " vs-long" : ""}">${h.esc(f.value)}</span>`;
   return `<div class="vs-stat${cls ? " " + cls : ""}" id="fact-${h.attr(f.id)}"><p class="vs-v">${v}</p><p class="vs-l">${h.esc(f.label)}</p>${f.as_of ? `<p class="vs-a">${h.esc(f.as_of)}</p>` : ""}${srcLine(ctx, f)}</div>`;
 }
@@ -70,15 +71,17 @@ function stopMap(ctx, root, pts, { label = "", sheet = null, minHalfM = 320, rat
   const P = pts.filter((p) => onMap(meta, p.lat, p.lng)).map((p) => ({ ...p, xy: project(p.lat, p.lng, meta) }));
   if (P.length < 2) return "";
   const xs = P.map((p) => p.xy[0]), ys = P.map((p) => p.xy[1]);
-  const spanX = Math.max(...xs) - Math.min(...xs), spanY = Math.max(...ys) - Math.min(...ys);
-  const padX = Math.max(3, spanX * 0.1), padTop = Math.max(6, spanY * 0.16), padBot = Math.max(3, spanY * 0.08); // buoys stand above their points
-  let x0 = Math.min(...xs) - padX, x1 = Math.max(...xs) + padX, y0 = Math.min(...ys) - padTop, y1 = Math.max(...ys) + padBot;
+  const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
+  // Margins as shares of the crop, because a buoy is a fixed size on screen whatever the scale: it stands about a fifth
+  // of the map's height above its point (so 22% of air on top) and is about a tenth of its width wide (10% each side),
+  // with 8% below the lowest point. The points then fill the rest (the old fixed pads let the top buoys run off the edge).
+  const TOP = 0.22, BOT = 0.08, SIDE = 0.1;
   const minU = (2 * minHalfM) / meta.mPerUnit;
-  let w = Math.max(x1 - x0, minU), hh = Math.max(y1 - y0, minU / ratio);
+  let w = Math.max((maxX - minX) / (1 - 2 * SIDE), minU), hh = Math.max((maxY - minY) / (1 - TOP - BOT), minU / ratio);
   if (w / hh > ratio) hh = w / ratio; else w = hh * ratio;
   w = Math.min(w, meta.W); hh = Math.min(hh, meta.H);
-  const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-  x0 = Math.min(Math.max(0, cx - w / 2), meta.W - w); y0 = Math.min(Math.max(0, cy - hh / 2), meta.H - hh);
+  const cx = (minX + maxX) / 2, cy = (minY - TOP * hh + maxY + BOT * hh) / 2;
+  let x0 = Math.min(Math.max(0, cx - w / 2), meta.W - w), y0 = Math.min(Math.max(0, cy - hh / 2), meta.H - hh);
   const pct = (v, a, b) => (((v - a) / b) * 100).toFixed(2);
   const pin = (p) => `<span class="pin pin-place"${sheet ? ` data-sheet="${h.attr(sheet)}"` : ""} style="left: ${pct(p.xy[0], x0, w)}%; top: ${pct(p.xy[1], y0, hh)}%"><span>${h.esc(p.n)}</span></span>`;
   return `<div class="mini-map area-map tx-map" style="--map-ratio: ${w.toFixed(1)} / ${hh.toFixed(1)}"${label ? ` role="img" aria-label="${h.attr(label)}"` : ""}><svg viewBox="${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hh.toFixed(1)}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="${root}assets/map/basemap.svg#bm"/></svg>${h.sortBy(P, (p) => p.xy[1]).map(pin).join("")}</div>`;
@@ -95,7 +98,7 @@ const FARE_LABEL = { airport: "Fees", "cruise-port": "Fees", toll: "Tolls and fe
 /** Modes where opening hours are a question a rider asks (the others never print "Hours not listed"). */
 const HOURS_MODES = new Set(["streetcar", "water-taxi", "ferry", "bus", "brt", "trolley", "microtransit", "bike-share", "scooter", "rail", "intercity-bus", "car-rental"]);
 /** What a record's stops are called (a plain list; a line only when the operator numbers every stop, see stopsBlock). */
-const STOPS_LABEL = { parking: "Lots and garages", "cruise-port": "Terminals and parking", airport: "Stations", "car-rental": "Where", rail: "Station", streetcar: "Stations" };
+const STOPS_LABEL = { parking: "Where to park", "cruise-port": "Terminals and parking", airport: "Stations", "car-rental": "Where", rail: "Station", streetcar: "Stations" };
 /** Single places (a terminal, a station): a mini map and directions. */
 const POINT_MODES = new Set(["airport", "rail", "intercity-bus", "car-rental", "rideshare"]);
 const AIRPORT_NEAR_M = 600;
@@ -126,9 +129,11 @@ const ARRIVE_FACTS = ["fact-tpa-passengers-2025", "fact-pie-nonstops", "fact-por
  *  (a launch the operator announced), else "Seasonal". */
 const seasonWord = (txt) => (!txt ? "" : /\bnot running\b/i.test(txt) && !/\bnot yet running\b/i.test(txt) ? "Not running" : /\bnot yet running\b|\blaunch/i.test(txt) ? "Not running yet" : "Seasonal");
 const pointsOf = (t) => [...(t.lat != null && t.lng != null ? [{ lat: t.lat, lng: t.lng, stop: null }] : []), ...(t.stops || []).filter((s) => s.lat != null && s.lng != null).map((s) => ({ lat: s.lat, lng: s.lng, stop: s }))];
-/** The number a stop carries in its operator's naming ("Stop 7: …", "Hattricks Station (#11), …"), else null. */
-const stopNo = (name) => { const m = /^Stop (\d+):/.exec(name) || /\(#(\d+)\)/.exec(name); return m ? Number(m[1]) : null; };
-const stopName = (name) => name.replace(/^Stop \d+:\s*/, "").replace(/\s*\(#\d+\)/, "");
+/** The number a stop carries in its operator's naming ("Stop 7: …", "Hattricks Station (#11), …", the Looper's
+ *  "14: The Dali Museum"), else null. */
+const stopNo = (name) => { const m = /^Stop (\d+):/.exec(name) || /^(\d+):\s/.exec(name) || /\(#(\d+)\)/.exec(name); return m ? Number(m[1]) : null; };
+/** The stop's name without the operator's number (printed beside it, in the line's own ring). */
+const stopName = (name) => name.replace(/^Stop \d+:\s*/, "").replace(/^\d+:\s+/, "").replace(/\s*\(#\d+\)/, "");
 
 export function pages(ctx) {
   return [gettingAround(ctx), whenToVisit(ctx)];
@@ -178,11 +183,12 @@ function gettingAround(ctx) {
   const onBase = (p) => !!meta && onMap(meta, p.lat, p.lng);
   const free = T.filter((t) => t.is_free === true && t.mode !== "toll" && t.mode !== "parking");
   const notRunning = T.filter((t) => /^Not running/.test(seasonWord(t.season_text)));
-  const sheetsLine = (t) => {
+  /** "Serves TP Tampa · SP St. Pete": each sheet linked to its page (the region's areas, places and stays). */
+  const sheetsLine = (root, t) => {
     const R = (t.regions || []).filter((r) => c.SHEET_LABELS[r]);
     if (!R.length) return "";
     if (R.length === vocab.REGION_IDS.length) return `<p class="tx-sheets"><span class="label faint">Serves</span> <span>All six sheets</span></p>`;
-    return `<p class="tx-sheets"><span class="label faint">Serves</span> ${R.map((r) => c.sheetBadge(r)).join("")}</p>`;
+    return `<p class="tx-sheets"><span class="label faint">Serves</span> ${R.map((r) => `<a class="tx-sheet" href="${root}${attr(ctx.nav.regionHref(r))}">${c.sheetBadge(r)}</a>`).join("")}</p>`;
   };
 
   /* ---------- the stops. A line (in the operator's numbering) only when the operator numbers every stop: the streetcar's
@@ -199,7 +205,8 @@ function gettingAround(ctx) {
     const place = (s) => (s.place && db.byId.place.get(s.place) ? db.byId.place.get(s.place) : null);
     const anyCoords = S.some((s) => s.lat != null);
     const li = ({ s, n }) => {
-      const p = place(s), a = areaName(s.area), label = stopName(s.name);
+      // the operator's number moves into the ring only on a line; in a plain list the name keeps it as written
+      const p = place(s), a = areaName(s.area), label = line ? stopName(s.name) : s.name;
       const nm = p ? `<a href="${root}places/${attr(p.id)}.html">${esc(label)}</a>` : `<span>${esc(label)}</span>`;
       const where = [a && !label.includes(a) ? a : "", s.lat == null && anyCoords ? "no coordinates listed" : ""].filter(Boolean).join(" · ");
       return `<li${s.lat != null && onBase(s) ? ' class="on"' : ""}><span class="tx-n" aria-hidden="true">${esc(n)}</span><span class="tx-s">${nm}${where ? `<span class="tx-sa">${esc(where)}</span>` : ""}</span></li>`;
@@ -208,9 +215,19 @@ function gettingAround(ctx) {
     const one = { Stops: "Stop", Stations: "Station" }[noun] || noun;
     const heading = line ? `${S.length} ${noun.toLowerCase()}, in the operator's numbering` : S.length > 1 ? `${noun} · ${S.length}` : one;
     const mapped = items.filter(({ s }) => s.lat != null && s.lng != null && onBase(s));
-    const html = `<div class="tx-stops-b"><h4 class="tx-h label">${esc(heading)}</h4><ol class="${line ? "tx-line" : "tx-list"}" aria-label="${attr(`${t.name}: ${heading}`)}">${items.map(li).join("")}</ol>${mapped.length && mapped.length < S.length ? `<p class="tx-note">${esc(`${mapped.length} of ${S.length} on the map; the others have no coordinates listed, or lie outside the basemap.`)}</p>` : !anyCoords && S.length > 1 ? `<p class="tx-note">No coordinates are listed for these stops, so they are not on a map.</p>` : ""}</div>`;
     const map = mapped.length >= 2 ? stopMap(ctx, root, mapped.map(({ s, n }) => ({ lat: s.lat, lng: s.lng, n })), { label: `Map of ${t.name}: ${h.plural(mapped.length, "point")}, numbered as in the list`, sheet }) : "";
+    const html = `<div class="tx-stops-b"><h4 class="tx-h label">${esc(heading)}</h4><ol class="${line ? "tx-line" : "tx-list"}" aria-label="${attr(`${t.name}: ${heading}`)}">${items.map(li).join("")}</ol>${coverage(S, mapped.length, !!map)}</div>`;
     return { html, map };
+  }
+  /** What the stop map shows, counted: "7 of 10 on the map; 3 have no coordinates listed." Said only when something is
+   *  missing, and never "on the map" when no map is drawn (one point makes no stop map). */
+  function coverage(S, onMapN, drawn) {
+    if (S.length < 2 && !drawn) return "";
+    const none = S.filter((s) => s.lat == null || s.lng == null).length, off = S.length - none - onMapN;
+    if (!drawn && none === S.length) return `<p class="tx-note">${esc(`No coordinates are listed for ${S.length === 2 ? "either stop" : "these stops"}, so there is no stop map.`)}</p>`;
+    const why = h.listJoin([none ? `${none} ${none === 1 ? "has" : "have"} no coordinates listed` : "", off ? `${off} ${off === 1 ? "lies" : "lie"} outside the basemap` : ""].filter(Boolean));
+    if (drawn) return onMapN < S.length ? `<p class="tx-note">${esc(`${onMapN} of ${S.length} on the map; ${why}.`)}</p>` : "";
+    return `<p class="tx-note">${esc(`No stop map: ${onMapN ? `only ${onMapN} of ${S.length} ${onMapN === 1 ? "is" : "are"} on the basemap` : `none of the ${S.length} is on the basemap`}; ${why}.`)}</p>`;
   }
 
   /* ---------- one transport record ---------- */
@@ -250,7 +267,7 @@ ${c.facts(root, rows, { label: `${t.name}: fares and hours` })}
 ${conn.length ? `<div class="tx-conn"><h4 class="tx-h label">At the airport · stops within ${AIRPORT_NEAR_M} m, straight line</h4><ul>${conn.map(({ rec, stop }) => `<li><a href="#t-${attr(rec.id)}">${icon(MODE_ICON[rec.mode] || "route")}<span><b>${esc(rec.name)}</b>${stop ? `<span class="tx-sa">${esc(stopName(stop.name))}</span>` : ""}</span></a></li>`).join("")}</ul></div>` : ""}
 </div>
 ${side}
-<div class="tx-foot">${sheetsLine(t)}${acts ? `<p class="tx-acts">${acts}</p>` : ""}${srcLine(ctx, t)}</div>
+<div class="tx-foot">${sheetsLine(root, t)}${acts ? `<p class="tx-acts">${acts}</p>` : ""}${srcLine(ctx, t)}</div>
 </article>`;
   }
 
@@ -267,6 +284,8 @@ ${side}
     free.length ? c.callout("tip", `<p>${esc(h.plural(free.length, "ride", "rides"))} in the guide ${free.length === 1 ? "is" : "are"} free, as ${free.length === 1 ? "its operator says" : "their operators say"}:</p><ul class="ga-free">${free.map((t) => `<li><a href="#t-${attr(t.id)}">${esc(t.name)}</a> <span class="faint">${esc(vocab.MODE_LABEL[t.mode] || t.mode)}${(t.regions || [])[0] ? ` · ${esc(c.sheetName(t.regions[0]))}` : ""}</span></li>`).join("")}</ul>`, { flag: "Free to ride" }) : "",
     ...notRunning.map((t) => c.callout("warn", `<p><a href="#t-${attr(t.id)}"><b>${esc(t.name)}</b></a>: ${esc(t.season_text)}</p>`, { flag: seasonWord(t.season_text) })),
   ].join("");
+  /** How to read the stop maps, and the SPEC §7 credit every page with a map prints (once, above the first map). */
+  const mapNote = () => `<p class="ga-mapnote">${icon("map")}<span>In the stop lists, a solid ring marks a stop on the record's map and a dashed ring a stop without coordinates; the buoys on each map carry the same numbers. Positions are the listed coordinates, and distances on this page are straight lines. Not for navigation. Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${h.extLink("https://www.openstreetmap.org/copyright", "openstreetmap.org/copyright")}).</span></p>`;
   const secQs = (root, id) => { const l = faqsIn(id); return l.length ? `<h3 class="sub-h ga-qh">${icon("help")}<span>${esc(`Questions · ${l.length}`)}</span></h3>${questions(ctx, root, l)}` : ""; };
 
   return {
@@ -275,11 +294,15 @@ ${side}
     toc,
     body: (root) => `${c.pageHead({ num: 5, kicker: `Visit · ${h.plural(T.length, "way", "ways")} to get around`, title: "Getting around",
       lede: "Airports, the streetcar, water taxis, ferries, buses, trolleys, tolls, parking, bikes and scooters. Fares and hours are the operators' own words; where an operator gives none, this page says so." })}
-${T.length ? `${index(root)}
+${T.length ? (() => {
+      const sections = secs.map((s) => sect(ctx, { id: s.id, title: s.title, kicker: h.plural(bySec.get(s.id).length, "entry", "entries"), icon: s.icon, root, cls: "ga-sec",
+        body: `${s.lede ? `<p class="vz-lede">${esc(s.lede)}</p>` : ""}${s.id === "arriving" ? tiles(ctx, factsById(ARRIVE_FACTS), "vs-arrive") : ""}<div class="tx-grid">${bySec.get(s.id).map((t) => trCard(root, t)).join("\n")}</div>${secQs(root, s.id)}` })).join("\n");
+      return `${index(root)}
+${sections.includes('class="mini-map') ? mapNote() : ""}
 <div class="ga-notes">${notices()}</div>
 ${factsById(GA_FACTS).length ? `<div class="ga-fares"><h2 class="sub-h ga-fares-h">Fares at a glance</h2>${tiles(ctx, factsById(GA_FACTS), "vs-fares")}</div>` : ""}
-${secs.map((s) => sect(ctx, { id: s.id, title: s.title, kicker: h.plural(bySec.get(s.id).length, "entry", "entries"), icon: s.icon, root, cls: "ga-sec",
-      body: `${s.lede ? `<p class="vz-lede">${esc(s.lede)}</p>` : ""}${s.id === "arriving" ? tiles(ctx, factsById(ARRIVE_FACTS), "vs-arrive") : ""}<div class="tx-grid">${bySec.get(s.id).map((t) => trCard(root, t)).join("\n")}</div>${secQs(root, s.id)}` })).join("\n")}` : c.emptyState({ title: "No transport listed yet", body: "Airports, transit, ferries and tolls appear here once they are checked against their operators' pages.", glyph: "bus" })}
+${sections}`;
+    })() : c.emptyState({ title: "No transport listed yet", body: "Airports, transit, ferries and tolls appear here once they are checked against their operators' pages.", glyph: "bus" })}
 ${leftover.length ? sect(ctx, { id: "questions", title: "More questions about getting around", kicker: h.plural(leftover.length, "question"), icon: "help", root, body: questions(ctx, root, leftover) }) : ""}
 ${gaFaqs.length ? `<p class="vz-qmore ga-allq"><a href="${root}faq.html?topic=${attr(h.slugify("Getting around"))}">${esc(`All ${h.plural(gaFaqs.length, "getting-around question")} in the FAQ`)}${icon("arrow-r")}</a></p>` : ""}`,
   };
@@ -306,8 +329,8 @@ function whenToVisit(ctx) {
   const { esc, attr, icon } = h;
   const F = (id) => db.byId.fact.get(id) || null;
   const CITIES = [
-    { key: "tampa", name: "Tampa", sheet: "tampa" },
-    { key: "stpete", name: "St. Petersburg", sheet: "stpete" },
+    { key: "tampa", name: "Tampa", short: "Tampa", sheet: "tampa" },
+    { key: "stpete", name: "St. Petersburg", short: "St. Pete", sheet: "stpete" },
   ];
   /* ---------- the monthly normals ---------- */
   const rows = MON.map((mon, i) => {
@@ -363,8 +386,11 @@ function whenToVisit(ctx) {
       return `<li class="wv-c"><span class="wv-ct"><span class="wv-dot" style="--at: ${pct(n.f)}%"></span>${r.i === maxI || r.i === minI ? `<span class="wv-cv wv-cv-g" style="--at: ${pct(n.f)}%">${esc(n.s)}°</span>` : ""}</span><span class="wv-cm">${monthLabel(r.i)}</span><span class="wv-tip"><b>${esc(r.name)}</b> Gulf water ${esc(r.gulf.f.value)}</span></li>`;
     }).join("");
     const src = rows.map((r) => r.gulf?.f).find(Boolean);
+    const whereOf = (f) => (/\(([^()]+)\)\s*$/.exec(f.label) || [])[1] || null;
+    const wheres = [...new Set(vals.map((r) => whereOf(r.gulf.f)))];
+    const where = wheres.length === 1 && wheres[0] ? wheres[0] : null;
     return `<figure class="wv-clim wv-gulf" data-sheet="beaches">
-<figcaption class="wv-cap"><span class="wv-t">${h.bullet("beaches")}<b>Gulf water</b></span><span class="wv-s">Average water temperature at the Gulf beaches, °F${src ? ` · ${esc(src.source.replace(/\s*\(.*\)$/, ""))}` : ""}</span></figcaption>
+<figcaption class="wv-cap"><span class="wv-t">${h.bullet("beaches")}<b>Gulf water</b></span><span class="wv-s">Average Gulf water temperature${where ? `, ${esc(where)}` : ""}, °F${src ? ` · ${esc(src.source.replace(/\s*\(.*\)$/, ""))}` : ""}</span></figcaption>
 <div class="wv-body" aria-hidden="true">
 <div class="wv-ax"><span class="wv-axt">${ticks.map((v) => `<span style="--at: ${pct(v)}%">${v}°</span>`).join("")}</span></div>
 <div class="wv-plot"><span class="wv-grid">${ticks.map((v) => `<i style="--at: ${pct(v)}%"></i>`).join("")}${band}</span><svg class="wv-line" viewBox="0 0 120 100" preserveAspectRatio="none" focusable="false"><polyline points="${pts}"/></svg><ol class="wv-cols">${cols}</ol></div>
@@ -376,7 +402,7 @@ ${legend}
   const cell = (r, k, part, label) => { const x = r[k]; if (!x) return `<td data-label="${attr(label)}">${c.unk("Not listed")}</td>`; if (!x.n) return `<td data-label="${attr(label)}">${esc(x.f.value)}</td>`; return `<td class="num" data-label="${attr(label)}">${esc(part === "rain" ? `${x.n.rainS} in` : `${x.n[part + "S"]}°F`)}</td>`; };
   const table = () => `<p class="wv-tnote">On a phone, each month's values are in <a href="#year">the year at a glance</a> below; the table shows them all at a wider width.</p><div class="table-wrap wv-tablewrap"><table class="data wv-table">
 <caption>Monthly normals, 1991–2020, and the average Gulf water temperature. Each value is printed as its source states it.</caption>
-<thead><tr><th scope="col">Month</th>${CITIES.map((cty) => `<th scope="col" class="num">${esc(cty.name)} high</th><th scope="col" class="num">Low</th><th scope="col" class="num">Rain</th>`).join("")}<th scope="col" class="num">Gulf water</th></tr></thead>
+<thead><tr><th scope="col">Month</th>${CITIES.map((cty) => `<th scope="col" class="num">${esc(cty.short)} high</th><th scope="col" class="num">Low</th><th scope="col" class="num">Rain</th>`).join("")}<th scope="col" class="num">Gulf water</th></tr></thead>
 <tbody>${rows.map((r) => `<tr><th scope="row">${esc(r.name)}</th>${CITIES.map((cty) => `${cell(r, cty.key, "hi", `${cty.name} high`)}${cell(r, cty.key, "lo", `${cty.name} low`)}${cell(r, cty.key, "rain", `${cty.name} rain`)}`).join("")}<td class="num" data-label="Gulf water">${r.gulf ? esc(r.gulf.f.value) : c.unk("Not listed")}</td></tr>`).join("")}</tbody>
 </table></div>`;
   const climateFacts = rows.flatMap((r) => [...CITIES.map((cty) => r[cty.key]?.f), r.gulf?.f]).filter(Boolean);
@@ -440,7 +466,7 @@ ${rangeFacts.map((f) => `<div class="wv-sz-row${f.id === "hurricane-season" ? " 
     const list = seriesIn(mi);
     const li = (s) => `<li><a href="${root}whats-on.html#s-${attr(s.id)}">${esc(s.name)}</a>${s.area ? `<span class="wv-yr-a">${esc(db.byId.area.get(s.area)?.name || "")}</span>` : ""}</li>`;
     const wx = [
-      ...CITIES.map((cty) => [cty.name === "St. Petersburg" ? "St. Pete" : cty.name, r[cty.key]?.n ? `${esc(r[cty.key].n.hiS)}° / ${esc(r[cty.key].n.loS)}°F` : r[cty.key] ? esc(r[cty.key].f.value) : c.unk("Not listed")]),
+      ...CITIES.map((cty) => [cty.short, r[cty.key]?.n ? `${esc(r[cty.key].n.hiS)}° / ${esc(r[cty.key].n.loS)}°F` : r[cty.key] ? esc(r[cty.key].f.value) : c.unk("Not listed")]),
       ["Gulf", r.gulf ? esc(r.gulf.n ? `${r.gulf.n.s}°F` : r.gulf.f.value) : c.unk("Not listed")],
       ["Rain", CITIES.every((cty) => r[cty.key]?.n) ? `${esc(r.tampa.n.rainS)} · ${esc(r.stpete.n.rainS)} in` : c.unk("Not listed")],
     ];
@@ -475,7 +501,7 @@ ${list.length ? `<ul class="wv-yr-list">${list.slice(0, SHOW).map(li).join("")}<
 ${toc.find(([id]) => id === "climate") ? sect(ctx, { id: "climate", title: "Weather by month", kicker: "Normals, 1991–2020", icon: "sun", root, body: `${hasClimate ? `<p class="vz-lede">${esc(["One chart", "Two charts", "Three charts"][CITIES.filter((cty) => cityHas(cty.key)).length + (gulfHas ? 1 : 0) - 1] || "The charts")} on one scale: the bars run from the average low to the average high${gulfHas ? `, and the Gulf line is the average water temperature (warmest in ${esc(warmest)})` : ""}. Point at a month for its values; every value is also listed below.</p>
 <div class="wv-clims">${CITIES.filter((cty) => cityHas(cty.key)).map(cityPanel).join("")}${gulfHas ? gulfPanel() : ""}</div>
 ${table()}
-${c.sourceLine(climateFacts.map((f) => f.source_url), { note: climateSources.length ? `${climateSources.map((f) => f.source).join(" · ")}. Checked ${h.fmtDateY(climateFacts[0].checked)}` : "" })}` : ""}
+${climateFacts.length ? `${srcLine(ctx, { source_url: climateFacts[0].source_url, also_sources: climateFacts.slice(1).map((f) => f.source_url), checked: climateFacts.every((f) => f.checked === climateFacts[0].checked) ? climateFacts[0].checked : null })}<p class="vz-srcnote">${esc(climateSources.map((f) => f.source).join(" · "))}.</p>` : ""}` : ""}
 ${annual.length || coolOff.length ? `<h3 class="sub-h">The year in numbers</h3>${tiles(ctx, annual)}${coolOff.length ? `<h3 class="sub-h">When it cools off</h3>${tiles(ctx, coolOff)}` : ""}` : ""}
 ${seasonQs.length ? `<h3 class="sub-h">Questions about the seasons</h3>${questions(ctx, root, seasonQs, { more: { href: "faq.html?topic=when-to-visit", label: "These questions in the FAQ" } })}` : ""}` }) : ""}
 ${sect(ctx, { id: "year", title: "The year at a glance", kicker: `${h.plural(db.series.length, "annual event")} · 12 months`, icon: "calendar", root, more: db.series.length ? { href: "whats-on.html", label: "What's On" } : null,
@@ -485,7 +511,7 @@ ${seasonsStrip()}
 ${toc.find(([id]) => id === "hurricanes") ? sect(ctx, { id: "hurricanes", title: "Hurricane season", kicker: season ? season.value : "Storms", icon: "wave", root, body: `${strip()}
 ${tiles(ctx, seasonFacts)}
 ${hzQs.map(([t, l]) => `<h3 class="sub-h">${esc(t)}</h3>${questions(ctx, root, l)}`).join("")}
-${stormFacts.length ? `<h3 class="sub-h">Helene and Milton, 2024</h3><p class="vz-lede">The National Weather Service's numbers for the two storms that closed or damaged many Pinellas beach properties.</p>${tiles(ctx, stormFacts, "vs-storm")}` : ""}` }) : ""}
+${stormFacts.length ? `<h3 class="sub-h">Helene and Milton, 2024</h3><p class="vz-lede">${stormFacts.every((f) => h.hostOf(f.source_url) === "weather.gov") ? "The National Weather Service's numbers" : "Numbers from the sources below each figure"} for the two storms that closed or damaged many Pinellas beach properties.</p>${tiles(ctx, stormFacts, "vs-storm")}` : ""}` }) : ""}
 ${toc.find(([id]) => id === "sun-heat") ? sect(ctx, { id: "sun-heat", title: "Sun, heat and lightning", kicker: "Safety", icon: "sun", root, body: `${tiles(ctx, heatFacts)}${questions(ctx, root, heatQs, { more: db.faqs.some((f) => f.topic === "Sun & heat") ? { href: `faq.html?topic=${h.slugify("Sun & heat")}`, label: "Sun and heat in the FAQ" } : null })}` }) : ""}`,
   };
 }

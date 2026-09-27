@@ -11,7 +11,8 @@
    keys), screen-space clusters, a stack buoy for records at the very same point, the graticule margin with the
    chart's real coordinates, a scale bar, the bay and region charts, the selection panel, the in-view list and the
    URL state (?layers ?r ?k ?t ?when ?chart ?focus, build/nav.mjs PARAMS.map).
-   Places are numbered 1…n by sheet, area and name (the numbers on the buoys and in the list); historic sites,
+   Places are numbered 1…n in the list's reading order (Things to do, then Beaches & outdoors; each by sheet, area and
+   name), the numbers on the buoys and in the list; historic sites,
    stays, departures and events carry their chart symbol instead (DESIGN §9).
    Without JS the map box is a static bay chart with its neatline and minute ticks (#bm-grid) and the signature
    places, over the full list.
@@ -72,9 +73,11 @@ export function mapModel(ctx) {
   const order = (arr, name = (r) => r.name) => sortBy(arr, (r) => regIdx.get(r.region) ?? 9, (r) => areaIdx.get(r.area) ?? 99, (r) => String(name(r)).toLowerCase(), (r) => r.id);
   const items = [], off = [];
 
-  /* places: numbered buoys (things to do, beaches and outdoors) and landmarks (historic sites) */
+  /* places: numbered buoys (things to do, beaches and outdoors) and landmarks (historic sites). The numbers run in the
+     list's reading order: the Things-to-do section first, then Beaches & outdoors, each by sheet, area and name. */
+  const SEC_ORDER = { places: 0, outdoors: 1, heritage: 2 };
   let n = 0;
-  for (const p of order(db.places)) {
+  for (const p of sortBy(order(db.places), (p) => SEC_ORDER[sectionOf(p)])) {
     if (!p.ll) { off.push({ kind: "place", rec: p, name: p.name, meta: [PLACE_KIND_LABEL[p.kind], areaName(p.area)].filter(Boolean).join(" · "), href: `places/${p.id}.html` }); continue; }
     const sec = sectionOf(p), l = new Set([sec]);
     if (p.groups.some((g) => THING_GROUPS.includes(g))) l.add("places");
@@ -187,7 +190,7 @@ export function pages(ctx) {
 
   /* the no-JS chart: the whole bay chart with its neatline and minute ticks, the signature places */
   const sig = items.filter((x) => x.sig && (x.k === "place" || x.k === "heritage"));
-  const staticChart = (root) => (bay ? cards.chartMap(root, sig.map((x) => ({ lat: x.ll[0], lng: x.ll[1], kind: x.k === "heritage" ? "heritage" : "place", sheet: x.r, n: x.n, ic: x.k === "heritage" ? "landmark" : null, title: x.name })), { chart: "bay", whole: true, labels: 9, refW: 760, bare: true, label: "" }) : "");
+  const staticChart = (root) => (bay ? cards.chartMap(root, sig.map((x) => ({ lat: x.ll[0], lng: x.ll[1], kind: x.k === "heritage" ? "heritage" : "place", sheet: x.r, n: x.n, ic: x.k === "heritage" ? "landmark" : null, title: x.name })), { chart: "bay", whole: true, labels: 9, refW: 560, clusterPx: 16, bare: true, label: "" }) : "");
   const ratio = bay ? `${bay.meta.W + 48} / ${bay.meta.H + 48}` : "4 / 3";
 
   const chip = (l) => `<button class="chip" type="button" data-layer="${l.id}" aria-pressed="${l.on}">${icon(l.icon)}<span>${esc(l.label)}</span><span class="n">${fmtN(inLayer(l.id))}</span>${icon("check", "ck")}</button>`;
