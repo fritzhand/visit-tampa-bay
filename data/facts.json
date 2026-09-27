@@ -1,21 +1,1070 @@
 [
   {
-    "id": "hurricane-season-dates",
-    "label": "Atlantic hurricane season",
-    "value": "June 1 to November 30",
-    "source": "National Hurricane Center",
-    "source_url": "https://www.nhc.noaa.gov/",
+    "id": "climate-stpete-annual-rain",
+    "label": "Average yearly rainfall in St. Petersburg",
+    "value": "46.65 in",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg, Albert Whitted Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00092806&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "ANN-PRCP-NORMAL = 46.65"
   },
   {
-    "id": "fixture-fact",
-    "label": "Fixture fact",
-    "value": "Fixture value",
-    "as_of": "2026",
-    "source": "Fixture source",
-    "source_url": "https://www.tampa.gov/",
+    "id": "climate-stpete-apr",
+    "label": "St. Petersburg in April",
+    "value": "Average high 81.0°F, average low 67.3°F, 1.93 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "month=4; tmax_f=81.0; tmin_f=67.3; prcp_in=1.93; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-aug",
+    "label": "St. Petersburg in August",
+    "value": "Average high 89.8°F, average low 78.2°F, 8.39 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=8; tmax_f=89.8; tmin_f=78.2; prcp_in=8.39; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-days-90",
+    "label": "Days a year that reach 90°F in St. Petersburg",
+    "value": "70.9 days on average",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg, Albert Whitted Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00092806&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "ANN-TMAX-AVGNDS-GRTH090 = 70.9"
+  },
+  {
+    "id": "climate-stpete-dec",
+    "label": "St. Petersburg in December",
+    "value": "Average high 71.5°F, average low 58.7°F, 2.39 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=12; tmax_f=71.5; tmin_f=58.7; prcp_in=2.39; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-feb",
+    "label": "St. Petersburg in February",
+    "value": "Average high 71.9°F, average low 57.9°F, 2.02 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=2; tmax_f=71.9; tmin_f=57.9; prcp_in=2.02; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-jan",
+    "label": "St. Petersburg in January",
+    "value": "Average high 69.0°F, average low 55.3°F, 2.52 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=1; tmax_f=69.0; tmin_f=55.3; prcp_in=2.52; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-jul",
+    "label": "St. Petersburg in July",
+    "value": "Average high 89.6°F, average low 78.0°F, 7.49 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=7; tmax_f=89.6; tmin_f=78.0; prcp_in=7.49; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-jun",
+    "label": "St. Petersburg in June",
+    "value": "Average high 88.9°F, average low 76.7°F, 6.79 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=6; tmax_f=88.9; tmin_f=76.7; prcp_in=6.79; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-mar",
+    "label": "St. Petersburg in March",
+    "value": "Average high 75.9°F, average low 62.1°F, 2.58 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=3; tmax_f=75.9; tmin_f=62.1; prcp_in=2.58; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-may",
+    "label": "St. Petersburg in May",
+    "value": "Average high 86.3°F, average low 72.6°F, 2.26 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=5; tmax_f=86.3; tmin_f=72.6; prcp_in=2.26; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-nov",
+    "label": "St. Petersburg in November",
+    "value": "Average high 76.8°F, average low 64.5°F, 1.46 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=11; tmax_f=76.8; tmin_f=64.5; prcp_in=1.46; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-oct",
+    "label": "St. Petersburg in October",
+    "value": "Average high 83.3°F, average low 72.2°F, 2.16 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=10; tmax_f=83.3; tmin_f=72.2; prcp_in=2.16; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-stpete-sep",
+    "label": "St. Petersburg in September",
+    "value": "Average high 88.1°F, average low 77.0°F, 6.66 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=9; tmax_f=88.1; tmin_f=77.0; prcp_in=6.66; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+  },
+  {
+    "id": "climate-tampa-annual-mean",
+    "label": "Average yearly temperature in Tampa",
+    "value": "74.5°F",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "ANN-TAVG-NORMAL = 74.5"
+  },
+  {
+    "id": "climate-tampa-annual-rain",
+    "label": "Average yearly rainfall in Tampa",
+    "value": "49.48 in",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "ANN-PRCP-NORMAL = 49.48"
+  },
+  {
+    "id": "climate-tampa-apr",
+    "label": "Tampa in April",
+    "value": "Average high 83.0°F, average low 64.8°F, 2.55 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=4; tmax_f=83.0; tmin_f=64.8; prcp_in=2.55; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-aug",
+    "label": "Tampa in August",
+    "value": "Average high 91.2°F, average low 76.8°F, 9.03 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=8; tmax_f=91.2; tmin_f=76.8; prcp_in=9.03; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-days-90",
+    "label": "Days a year that reach 90°F in Tampa",
+    "value": "94.3 days on average",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "ANN-TMAX-AVGNDS-GRTH090 = 94.3 (average number of days with a high of 90°F or more)"
+  },
+  {
+    "id": "climate-tampa-dec",
+    "label": "Tampa in December",
+    "value": "Average high 73.9°F, average low 55.9°F, 2.56 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=12; tmax_f=73.9; tmin_f=55.9; prcp_in=2.56; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-feb",
+    "label": "Tampa in February",
+    "value": "Average high 74.0°F, average low 55.5°F, 2.62 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=2; tmax_f=74.0; tmin_f=55.5; prcp_in=2.62; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-jan",
+    "label": "Tampa in January",
+    "value": "Average high 71.3°F, average low 52.8°F, 2.65 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=1; tmax_f=71.3; tmin_f=52.8; prcp_in=2.65; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-jul",
+    "label": "Tampa in July",
+    "value": "Average high 91.0°F, average low 76.6°F, 7.75 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=7; tmax_f=91.0; tmin_f=76.6; prcp_in=7.75; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-jun",
+    "label": "Tampa in June",
+    "value": "Average high 90.5°F, average low 75.4°F, 7.37 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=6; tmax_f=90.5; tmin_f=75.4; prcp_in=7.37; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-mar",
+    "label": "Tampa in March",
+    "value": "Average high 77.8°F, average low 59.3°F, 2.52 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=3; tmax_f=77.8; tmin_f=59.3; prcp_in=2.52; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-may",
+    "label": "Tampa in May",
+    "value": "Average high 88.3°F, average low 70.6°F, 2.60 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=5; tmax_f=88.3; tmin_f=70.6; prcp_in=2.6; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-nov",
+    "label": "Tampa in November",
+    "value": "Average high 78.9°F, average low 60.7°F, 1.40 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=11; tmax_f=78.9; tmin_f=60.7; prcp_in=1.4; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-oct",
+    "label": "Tampa in October",
+    "value": "Average high 85.6°F, average low 69.2°F, 2.34 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=10; tmax_f=85.6; tmin_f=69.2; prcp_in=2.34; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "climate-tampa-rain-days",
+    "label": "Days a year with at least 0.1 in of rain in Tampa",
+    "value": "69.1 days on average",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "ANN-PRCP-AVGNDS-GE010HI = 69.1 (average number of days with 0.10 in or more of precipitation)"
+  },
+  {
+    "id": "climate-tampa-sep",
+    "label": "Tampa in September",
+    "value": "Average high 90.2°F, average low 75.3°F, 6.09 in of rain",
+    "as_of": "1991–2020 normals",
+    "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+    "quote": null,
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/newnormals"
+    ],
+    "checked": "2026-09-27",
+    "notes": "month=9; tmax_f=90.2; tmin_f=75.3; prcp_in=6.09; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+  },
+  {
+    "id": "comfortable-swim-temperature",
+    "label": "Water temperature many people find comfortable for swimming",
+    "value": "70°F to 78°F",
+    "source": "NOAA National Centers for Environmental Information, Coastal Water Temperature Guide (FAQ)",
+    "quote": "There's no real optimal temperature, but many people feel “comfortable” swimming in water that is 70° to 78° Fahrenheit.",
+    "source_url": "https://www.ncei.noaa.gov/products/coastal-water-temperature-guide",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-downtown-tampa-parking-spaces",
+    "label": "Parking spaces in downtown Tampa",
+    "value": "More than 32,000",
+    "as_of": "Sep 2026",
+    "source": "Tampa Downtown Partnership",
+    "quote": "With more than 32,000 parking spaces, there is always somewhere to park in Tampa's Downtown!",
+    "source_url": "https://www.tampasdowntown.com/getting-around/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-hart-fare",
+    "label": "HART bus fare",
+    "value": "$2.00 (daily cap $4.00)",
+    "as_of": "Sep 2026",
+    "source": "Hillsborough Area Regional Transit (HART)",
+    "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-pie-nonstops",
+    "label": "Nonstop cities from St. Pete-Clearwater International",
+    "value": "Over 60",
+    "as_of": "Sep 2026",
+    "source": "St. Pete-Clearwater International Airport",
+    "quote": "Our airlines fly non-stop to/from over 60 cities",
+    "source_url": "https://fly2pie.com/flights-and-airlines/airlines-and-destinations/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-pirate-water-taxi-pass",
+    "label": "Pirate Water Taxi all-day pass",
+    "value": "$34 adult; $24 child (2-12)",
+    "as_of": "Sep 2026",
+    "source": "Pirate Water Taxi",
+    "source_url": "https://piratewatertaxi.com/rates-and-passes/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-port-tampa-bay-cruise",
+    "label": "Cruise ships homeported at Port Tampa Bay",
+    "value": "Eight ships from five cruise lines",
+    "as_of": "Sep 2026",
+    "source": "Port Tampa Bay",
+    "quote": "Tampa homeports eight vessels from five cruise lines.",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-psta-fare",
+    "label": "PSTA bus, SunRunner and trolley fare",
+    "value": "$2.25 (daily cap $5)",
+    "as_of": "Sep 2026",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "source_url": "https://psta.net/rider-info/fares/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-psta-rides",
+    "label": "PSTA rides a year",
+    "value": "10.7 million",
+    "as_of": "June 2026 press release",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "quote": "PSTA provides 10.7 million rides annually.",
+    "source_url": "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-selmon-length",
+    "label": "Lee Roy Selmon Expressway length",
+    "value": "17 miles, all-electronic tolls",
+    "as_of": "Sep 2026",
+    "source": "Tampa Hillsborough Expressway Authority",
+    "quote": "The Lee Roy Selmon Expressway is a 17-mile all-electronic toll roadway",
+    "source_url": "https://tampa-xway.com/for-travelers/maps/selmon-expressway/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-skyway-toll",
+    "label": "Sunshine Skyway Bridge toll, 2-axle car",
+    "value": "$1.16 SunPass; $1.62 Toll-By-Plate",
+    "as_of": "Effective April 12, 2026",
+    "source": "Florida Department of Transportation toll rates",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-streetcar-1926-riders",
+    "label": "Tampa streetcar riders at the 1920s peak",
+    "value": "Almost 24 million passengers in 1926",
+    "as_of": "1926",
+    "source": "TECO Line Streetcar (history)",
+    "quote": "Reaching the peak of its popularity in the 1920s, with almost 24 million passengers in 1926, Tampa's streetcar system rolled to a stop in August 1946",
+    "source_url": "https://www.tecolinestreetcar.org/about.html",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-streetcar-fare",
+    "label": "TECO Line Streetcar fare",
+    "value": "Free",
+    "as_of": "Sep 2026",
+    "source": "TECO Line Streetcar",
+    "quote": "All TECO Line Streetcar rides are fare free!",
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-streetcar-length",
+    "label": "TECO Line Streetcar line length",
+    "value": "2.7 miles, 11 stations",
+    "as_of": "Sep 2026",
+    "source": "TECO Line Streetcar",
+    "quote": "The TECO Line Streetcar System is a 2.7-mile electric heritage streetcar line connecting Downtown Tampa, Channel District, and Ybor City.",
+    "source_url": "https://www.tecolinestreetcar.org/howtoride.html",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-streetcar-return",
+    "label": "Year electric streetcars returned to Tampa",
+    "value": "2002",
+    "source": "TECO Line Streetcar (history)",
+    "quote": "In October 2002, electric streetcars started operating again in Tampa",
+    "source_url": "https://www.tecolinestreetcar.org/about.html",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-sunpass-savings",
+    "label": "Average saving with SunPass versus Toll-By-Plate",
+    "value": "25%",
+    "as_of": "Sep 2026",
+    "source": "Florida's Turnpike Enterprise",
+    "quote": "SunPass customers always pay the lowest toll amount and can save an average of 25% on tolls when compared to TOLL-BY-PLATE.",
+    "source_url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-sunrunner",
+    "label": "SunRunner rapid bus line",
+    "value": "10 miles, 16 stops, about 35 minutes end to end",
+    "as_of": "Sep 2026",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "quote": "From St. Pete Beach to downtown St. Petersburg, the SunRunner connects some of our most beloved destinations in about 35 minutes",
+    "source_url": "https://psta.net/services/sunrunner/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-tampa-union-station-opened",
+    "label": "Tampa Union Station opened",
+    "value": "May 1912",
+    "source": "Amtrak",
+    "quote": "opened in May 1912 to serve three railroads",
+    "source_url": "https://www.amtrak.com/stations/tpa",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-toll-by-plate-fee",
+    "label": "Toll-By-Plate administrative fee",
+    "value": "$2.50 per invoice",
+    "as_of": "Sep 2026",
+    "source": "Florida's Turnpike Enterprise",
+    "quote": "A Toll Enforcement Invoice is then mailed to the registered owner of the vehicle for the toll(s) incurred over a 30-day period, plus a $2.50 administrative fee.",
+    "source_url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-tpa-international-passengers-2025",
+    "label": "Tampa International Airport international passengers, 2025",
+    "value": "1,720,094",
+    "as_of": "Calendar year 2025 (up 15.11% on 2024)",
+    "source": "Tampa International Airport, Monthly Activity Report",
+    "quote": "Total International 153,830 169,045 -9.00% 1,720,094 1,494,264 15.11%",
+    "source_url": "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fact-tpa-passengers-2025",
+    "label": "Tampa International Airport passengers, 2025",
+    "value": "24,811,253",
+    "as_of": "Calendar year 2025 (up 0.22% on 2024)",
+    "source": "Tampa International Airport, Monthly Activity Report",
+    "quote": "Total Passengers 2,177,746 2,235,662 -2.59% 24,811,253 24,756,185 0.22%",
+    "source_url": "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "first-cold-night-tampa",
+    "label": "Average date of Tampa's first night below 50°F",
+    "value": "November 10",
+    "as_of": "Updated September 14, 2026",
+    "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1890)",
+    "quote": "High humidity, with dew points in the mid 60s to mid 70s, along with high temperatures in the mid 80s to lower 90s typically persists well into October.",
+    "source_url": "https://www.weather.gov/tbw/whencool",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "first-cool-night-stpete",
+    "label": "Average date of St. Petersburg's first night below 60°F",
+    "value": "October 30",
+    "as_of": "Updated September 14, 2026",
+    "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1914)",
+    "quote": "The only exception are coastal areas, where the warm water keeps temperatures higher and therefore these areas take longer to fall below 60 degrees.",
+    "source_url": "https://www.weather.gov/tbw/whencool",
+    "checked": "2026-09-27",
+    "notes": "Table 'Date of First Low Temperature < 60°F': St. Petersburg, mean Oct 30 (records began 1914). First low < 50°F, mean Nov 28."
+  },
+  {
+    "id": "first-cool-night-tampa",
+    "label": "Average date of Tampa's first night below 60°F",
+    "value": "October 19",
+    "as_of": "Updated September 14, 2026",
+    "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1890)",
+    "quote": "The real cool down does not usually occur until November.",
+    "source_url": "https://www.weather.gov/tbw/whencool",
+    "checked": "2026-09-27",
+    "notes": "Table 'Date of First Low Temperature < 60°F': Tampa, mean Oct 19 (records began 1890). Same table: first low < 50°F, mean Nov 10."
+  },
+  {
+    "id": "gulf-water-temp-apr",
+    "label": "Average Gulf water temperature in April (St. Pete-Clearwater)",
+    "value": "73°F (22.8°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=4; water_f=73; water_c=22.8. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-aug",
+    "label": "Average Gulf water temperature in August (St. Pete-Clearwater)",
+    "value": "87°F (30.4°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=8; water_f=87; water_c=30.4. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-dec",
+    "label": "Average Gulf water temperature in December (St. Pete-Clearwater)",
+    "value": "69°F (20.3°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=12; water_f=69; water_c=20.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-feb",
+    "label": "Average Gulf water temperature in February (St. Pete-Clearwater)",
+    "value": "64°F (18°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=2; water_f=64; water_c=18. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-jan",
+    "label": "Average Gulf water temperature in January (St. Pete-Clearwater)",
+    "value": "64°F (17.7°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=1; water_f=64; water_c=17.7. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-jul",
+    "label": "Average Gulf water temperature in July (St. Pete-Clearwater)",
+    "value": "85°F (29.6°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=7; water_f=85; water_c=29.6. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-jun",
+    "label": "Average Gulf water temperature in June (St. Pete-Clearwater)",
+    "value": "82°F (28°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=6; water_f=82; water_c=28. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-mar",
+    "label": "Average Gulf water temperature in March (St. Pete-Clearwater)",
+    "value": "67°F (19.3°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=3; water_f=67; water_c=19.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-may",
+    "label": "Average Gulf water temperature in May (St. Pete-Clearwater)",
+    "value": "78°F (25.6°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=5; water_f=78; water_c=25.6. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-nov",
+    "label": "Average Gulf water temperature in November (St. Pete-Clearwater)",
+    "value": "75°F (23.8°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=11; water_f=75; water_c=23.8. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-oct",
+    "label": "Average Gulf water temperature in October (St. Pete-Clearwater)",
+    "value": "81°F (27.3°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=10; water_f=81; water_c=27.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "gulf-water-temp-sep",
+    "label": "Average Gulf water temperature in September (St. Pete-Clearwater)",
+    "value": "85°F (29.2°C)",
+    "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+    "quote": null,
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "month=9; water_f=85; water_c=29.2. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+  },
+  {
+    "id": "helene-deaths-pinellas",
+    "label": "Hurricane Helene deaths in Pinellas County",
+    "value": "12, all storm surge drownings",
+    "as_of": "Final issuance November 22, 2024",
+    "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+    "quote": "Twelve direct fatalities have been reported due to storm surge drownings.",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "helene-surge-clearwater-beach",
+    "label": "Hurricane Helene's peak water level at Clearwater Beach (Sep 26, 2024)",
+    "value": "6.67 ft above MHHW, a site record",
+    "as_of": "September 26, 2024",
+    "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+    "quote": "A peak water level of 6.67 feet above MHHW was measured at Clearwater Beach at 10:00 PM EST on September 26, surpassing the previous site record of 4.02 feet above MHHW",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+    "also_sources": [
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+      "https://www.weather.gov/tbw/TropicalEventSummary"
+    ],
+    "checked": "2026-09-27",
+    "notes": "MHHW = mean higher high water (the average height of the higher daily high tide). The previous record, 4.02 ft, was set in the March 13, 1993 Storm of the Century. St. Petersburg set a record of 6.31 ft in the same storm."
+  },
+  {
+    "id": "helene-surge-tampa",
+    "label": "Hurricane Helene's peak water level in Tampa (East Bay, Sep 26, 2024)",
+    "value": "7.2 ft above MHHW, a site record",
+    "as_of": "September 26, 2024",
+    "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+    "quote": "A peak water level of 7.2 feet above MHHW was measured at East Bay at 11:48 PM EST on September 26, surpassing the previous site record of 4.56 feet above MHHW",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+    "also_sources": [
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+      "https://www.weather.gov/tbw/TropicalEventSummary"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The previous East Bay record, 4.56 ft, was set during Hurricane Idalia on August 30, 2023."
+  },
+  {
+    "id": "hurricane-season",
+    "label": "Atlantic hurricane season",
+    "value": "June 1 to November 30",
+    "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+    "quote": "The Atlantic hurricane season runs from June 1 to November 30. The Atlantic basin includes the Atlantic Ocean, Caribbean Sea, and Gulf of America.",
+    "source_url": "https://www.nhc.noaa.gov/climo/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricane-season-average",
+    "label": "An average Atlantic hurricane season",
+    "value": "14 named storms, 7 hurricanes, 3 major hurricanes",
+    "as_of": "1991–2020 climate period",
+    "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+    "quote": "Based on a 30-year climate period from 1991 to 2020, an average Atlantic hurricane season has 14 named storms, 7 hurricanes, and 3 major hurricanes",
+    "source_url": "https://www.nhc.noaa.gov/climo/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricane-season-peak",
+    "label": "Peak of the Atlantic hurricane season",
+    "value": "September 10",
+    "as_of": "Based on 1944–2020 data",
+    "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+    "quote": "The peak of the Atlantic hurricane season is September 10, with most activity occurring between mid-August and mid-October.",
+    "source_url": "https://www.nhc.noaa.gov/climo/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "lightning-deaths-florida-2026",
+    "label": "U.S. lightning deaths in 2026 that happened in Florida",
+    "value": "6 of 16 (preliminary)",
+    "as_of": "Last updated September 22, 2026",
+    "source": "National Weather Service, Lightning Fatalities in 2026 (data from the National Lightning Safety Council)",
+    "quote": "This data is preliminary and does not necessarily represent all fatalities to date.",
+    "source_url": "https://www.weather.gov/safety/lightning-fatalities",
+    "checked": "2026-09-27",
+    "notes": "Page title 'National Weather Service Lightning Fatalities in 2026: 16'; table 'Lightning Fatalities 2026 by State' lists FL 6, WI 2, UT 2, and 1 each for IL, CO, NJ and others."
+  },
+  {
+    "id": "lightning-us-per-year",
+    "label": "Lightning deaths in the United States each year",
+    "value": "About 20",
+    "source": "National Weather Service, Lightning Safety Tips and Resources",
+    "quote": "Lightning kills about 20 people in the United States each year, and hundreds more are severely injured.",
+    "source_url": "https://www.weather.gov/safety/lightning",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "lightning-wait-30",
+    "label": "How long to wait after the last thunder before going back to the beach",
+    "value": "30 minutes",
+    "source": "National Weather Service, Lightning Safety Outdoors",
+    "quote": "Wait 30 minutes until after the last rumble of thunder before going back to the beach.",
+    "source_url": "https://www.weather.gov/safety/lightning-outdoors",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "milton-gust-st-pete",
+    "label": "Hurricane Milton's highest wind gust in Pinellas County",
+    "value": "101 mph at Albert Whitted Airport (Oct 9, 2024)",
+    "as_of": "October 9, 2024",
+    "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Milton (2024), final issuance Nov 22, 2024",
+    "quote": "Surface observations indicate peak wind gusts generally between 80 to 100 mph, with a maximum gust of 101 mph at Albert Whitted Airport at 9:29 PM EST on October 9.",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "milton-landfall-category",
+    "label": "Hurricane Milton's strength at landfall (October 2024)",
+    "value": "Category 3",
+    "source": "National Weather Service Tampa Bay, Post Tropical Cyclone Report: Hurricane Milton",
+    "quote": "Hurricane Milton made landfall along the west-central Florida peninsula coast as a category 3 hurricane and brought devastating impacts along its path.",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf",
+    "also_sources": [
+      "https://www.weather.gov/tbw/TropicalEventSummary"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "milton-rain-st-pete",
+    "label": "Rain at St. Petersburg's Albert Whitted Airport on Oct 9, 2024 (Hurricane Milton)",
+    "value": "18.54 in, the site's one-day record",
+    "as_of": "October 9, 2024",
+    "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Milton (2024), final issuance Nov 22, 2024",
+    "quote": "Albert Whitted Airport (KSPG) shattered its previous 1-day total rainfall amount with 18.54 inches recorded on October 9",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf",
+    "also_sources": [
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Previous record 6.93 in (Sep 14, 2001, Tropical Storm Gabrielle); site records date back to 1998. The NWS event summary PDF lists 18.88 in at Albert Whitted as the storm total."
+  },
+  {
+    "id": "pinellas-beach-parking-daily",
+    "label": "Daily parking at Fort De Soto, Sand Key and Fred Howard parks",
+    "value": "$6 per vehicle",
+    "as_of": "Since January 1, 2025",
+    "source": "Pinellas County, 'Fort De Soto Park fort, dog beach, fishing piers reopen' (news, January 2025)",
+    "quote": "As of Jan. 1, 2025, daily parking fees at Fort De Soto Park, Sand Key Park, Fred Howard Park and county boat ramps increased to $6 per vehicle.",
+    "source_url": "https://pinellas.gov/news/fort-de-soto-park-fort-dog-beach-fishing-piers-reopen/",
+    "also_sources": [
+      "https://pinellas.gov/parks/fort-de-soto-park/",
+      "https://pinellas.gov/parks/sand-key-park/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "pinellas-beach-parking-dec-2026",
+    "label": "Pinellas County beach parking from December 1, 2026",
+    "value": "$3.50 an hour, capped at $12 a day (plus tax)",
+    "as_of": "Announced rates effective December 1, 2026",
+    "source": "Pinellas County Parks & Conservation Resources, 'County Parks: Know Before You Go!' (last updated September 25, 2026)",
+    "quote": "Beach parking will be $3.50 per hour, capped at $12 per day.",
+    "source_url": "https://pinellas.gov/county-parks-know-before-you-go/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "population-clearwater-2025",
+    "label": "Population of the City of Clearwater",
+    "value": "114,364",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "quote": "Clearwater city,Florida,117343,117250,117079,117224,117264,116063,114364",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+    "checked": "2026-09-27",
+    "notes": "Row PLACE 12875 of sub-est2025.csv; last value = POPESTIMATE2025."
+  },
+  {
+    "id": "population-hillsborough-county-2025",
+    "label": "Population of Hillsborough County",
+    "value": "1,574,115",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+    "checked": "2026-09-27",
+    "notes": "Row 45300,45294,12057 'Hillsborough County, FL' in cbsa-est2025-alldata.csv: ESTIMATESBASE2020 1,459,773; POPESTIMATE2024 1,571,198; POPESTIMATE2025 1,574,115."
+  },
+  {
+    "id": "population-pinellas-county-2020",
+    "label": "Pinellas County population, 2020 Census",
+    "value": "959,107",
+    "as_of": "2020 Census",
+    "source": "Pinellas County government, About Pinellas: Facts",
+    "quote": "959,107 residents make Pinellas County the 7th most populous in the state.",
+    "source_url": "https://pinellas.gov/about-pinellas-facts/",
+    "checked": "2026-09-27",
+    "notes": "Under the heading '2020 Census Population' on the county's facts page."
+  },
+  {
+    "id": "population-pinellas-county-2025",
+    "label": "Population of Pinellas County",
+    "value": "948,563",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+    "checked": "2026-09-27",
+    "notes": "Row 45300,41304,12103 'Pinellas County, FL' in cbsa-est2025-alldata.csv: ESTIMATESBASE2020 959,090; POPESTIMATE2024 960,397; POPESTIMATE2025 948,563."
+  },
+  {
+    "id": "population-st-petersburg-2025",
+    "label": "Population of the City of St. Petersburg",
+    "value": "264,033",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "quote": "St. Petersburg city,Florida,258358,259305,259823,262655,264921,265855,264033",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+    "checked": "2026-09-27",
+    "notes": "Row PLACE 63000 of sub-est2025.csv; last value = POPESTIMATE2025. The estimate fell from 265,855 (2024) to 264,033 (2025)."
+  },
+  {
+    "id": "population-tampa-1880-1900",
+    "label": "Tampa's population in 1880 and 1900",
+    "value": "720 in 1880; 15,839 in 1900",
+    "as_of": "U.S. Census counts of 1880 and 1900",
+    "source": "U.S. Bureau of the Census, 1960 Census of Population, Vol. I, Part 11 (Florida), Table 5",
+    "source_url": "https://www2.census.gov/library/publications/decennial/1960/population-volume-1/vol-01-11-c.pdf",
+    "checked": "2026-09-27",
+    "notes": "Table 5 (population of places of 10,000 or more from earliest census): Tampa 1880 720 (-76, -9.5%); 1890 5,532 (+4,812, +668.3%); 1900 15,839 (+10,307, +186.3%); 1960 274,970. Read from the PDF's OCR text layer (scanned); the same figures are in history-of-tampa's cityPopulation series. No quote: the table is not prose."
+  },
+  {
+    "id": "population-tampa-2025",
+    "label": "Population of the City of Tampa",
+    "value": "413,554",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "quote": "Tampa city,Florida,385336,388655,393838,402378,410079,412981,413554",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/cities/totals/sub-est2025.csv",
+    "checked": "2026-09-27",
+    "notes": "Row SUMLEV 162, STATE 12, PLACE 71000 of sub-est2025.csv; columns ESTIMATESBASE2020, POPESTIMATE2020 ... POPESTIMATE2025 (the last value is July 1, 2025). The quote is the CSV row's name and estimate fields, verbatim. The 2020 Census count (384,959, per history-of-tampa citing data.census.gov) could not be re-read: census.gov and data.census.gov returned 403 and the Census API now requires a key."
+  },
+  {
+    "id": "population-tampa-bay-metro-2025",
+    "label": "Population of the Tampa-St. Petersburg-Clearwater metro area",
+    "value": "3,418,895",
+    "as_of": "July 1, 2025 (Census Bureau estimate)",
+    "source": "U.S. Census Bureau, Population Estimates Program (Vintage 2025)",
+    "quote": "45300,,,\"Tampa-St. Petersburg-Clearwater, FL\",Metropolitan Statistical Area,3175282,3187831,3230962,3307164,3370351,3405357,3418895",
+    "source_url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/metro/totals/cbsa-est2025-alldata.csv",
+    "checked": "2026-09-27",
+    "notes": "CBSA 45300 (Hernando, Hillsborough, Pasco and Pinellas counties) in cbsa-est2025-alldata.csv; columns ESTIMATESBASE2020 ... POPESTIMATE2025. Quote is the row's first 12 fields verbatim."
+  },
+  {
+    "id": "sales-surtax-pinellas",
+    "label": "County sales surtax in Pinellas County (the Penny for Pinellas)",
+    "value": "1%",
+    "as_of": "Calendar year 2026 (effective Feb 1, 1990; expires Dec 31, 2029)",
+    "source": "Florida Department of Revenue, Discretionary Sales Surtax Information for Calendar Year 2026 (Form DR-15DSS, R. 11/25)",
+    "quote": null,
+    "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+    "also_sources": [
+      "https://pinellas.gov/penny-for-pinellas/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "DR-15DSS row: 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'. pinellas.gov/penny-for-pinellas/ says: 'The Penny for Pinellas is a voter-approved, one-cent sales tax used to pay for projects to improve Pinellas County infrastructure. The state rate is 6% (sales-tax-florida), so the combined rate is 6% + 1%; no page read states the 7% total for Pinellas, so it is not recorded as a separate fact. Verifier 2026-09-27: moved to the calendar-2026 form (dr15dss_26.pdf, linked from floridarevenue.com/Pages/forms_index.aspx); its row reads 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'."
+  },
+  {
+    "id": "sales-tax-florida",
+    "label": "Florida state sales tax",
+    "value": "6%",
+    "source": "Florida Department of Revenue, Sales and Use Tax",
+    "quote": "Florida's general state sales tax rate is 6%",
+    "source_url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "sales-tax-hillsborough",
+    "label": "Sales tax in Hillsborough County (Tampa)",
+    "value": "7.5%",
+    "as_of": "December 1, 2025",
+    "source": "Florida Department of Revenue, Tax Information Publication 25A01-12 (December 1, 2025)",
+    "quote": "The total state and local sales and use tax rate for Hillsborough County is 7.5%.",
+    "source_url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-12.pdf",
+    "also_sources": [
+      "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+      "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-02.pdf"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Composed of the 6% state tax plus 0.5% school capital outlay, 0.5% indigent care and 0.5% local government infrastructure surtaxes (TIP 25A01-12). Two of the surtaxes were suspended Jan 1 - May 31, 2025 and resumed June 1, 2025 (TIP 24A01-15, TIP 25A01-02). Verifier 2026-09-27: the calendar-2026 DR-15DSS lists Hillsborough at a 1.5% total surtax (three 0.5% surtaxes), consistent with 7.5%."
+  },
+  {
+    "id": "tourist-tax-hillsborough",
+    "label": "Tourist development (bed) tax in Hillsborough County",
+    "value": "6%",
+    "as_of": "Form revised March 2025",
+    "source": "Florida Department of Revenue, Local Option Transient Rental Tax Rates (Form DR-15TDT, R. 03/25)",
+    "quote": "The local tax imposed is in addition to the 6% state sales tax and any applicable discretionary sales surtax.",
+    "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+    "checked": "2026-09-27",
+    "notes": "DR-15TDT row: 'Hillsborough 6.0% County' (collected by the county, not DOR). Applies to rentals of six months or less."
+  },
+  {
+    "id": "tourist-tax-pinellas",
+    "label": "Tourist development (bed) tax in Pinellas County",
+    "value": "6%",
+    "as_of": "Form revised March 2025",
+    "source": "Florida Department of Revenue, Local Option Transient Rental Tax Rates (Form DR-15TDT, R. 03/25)",
+    "quote": "The local tax imposed is in addition to the 6% state sales tax and any applicable discretionary sales surtax.",
+    "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+    "checked": "2026-09-27",
+    "notes": "DR-15TDT row: 'Pinellas 6.0% County' (collected by the county, not DOR)."
   }
 ]

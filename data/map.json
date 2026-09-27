@@ -949,52 +949,172 @@
       "minZoom": 1.6
     },
     {
-      "text": "Downtown Tampa",
-      "lat": 27.9506,
-      "lng": -82.4572,
+      "text": "Bradenton & Anna Maria Island",
+      "lat": 27.498928,
+      "lng": -82.574819,
       "kind": "area",
-      "minZoom": 4,
-      "id": "downtown-tampa"
+      "minZoom": 2.2,
+      "id": "bradenton-anna-maria"
     },
     {
-      "text": "Channel District",
-      "lat": 27.9436,
-      "lng": -82.448,
+      "text": "Channel District & Water Street",
+      "lat": 27.946907,
+      "lng": -82.446838,
       "kind": "area",
       "minZoom": 4,
       "id": "channel-district"
     },
     {
-      "text": "Hyde Park",
-      "lat": 27.9375,
-      "lng": -82.476,
+      "text": "Downtown Clearwater",
+      "lat": 27.966277,
+      "lng": -82.802664,
       "kind": "area",
-      "minZoom": 4,
-      "id": "hyde-park"
+      "minZoom": 2.8,
+      "id": "downtown-clearwater"
     },
     {
       "text": "Downtown St. Petersburg",
-      "lat": 27.771,
-      "lng": -82.638,
+      "lat": 27.772822,
+      "lng": -82.637804,
       "kind": "area",
       "minZoom": 4,
       "id": "downtown-stpete"
     },
     {
-      "text": "Old Northeast",
-      "lat": 27.788,
-      "lng": -82.631,
+      "text": "Downtown Tampa",
+      "lat": 27.94792,
+      "lng": -82.458516,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "downtown-tampa"
+    },
+    {
+      "text": "East Tampa & the Fairgrounds",
+      "lat": 27.993547,
+      "lng": -82.373013,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "east-tampa"
+    },
+    {
+      "text": "Fort De Soto & Tierra Verde",
+      "lat": 27.630054,
+      "lng": -82.735749,
+      "kind": "area",
+      "minZoom": 2.8,
+      "id": "fort-de-soto"
+    },
+    {
+      "text": "Grand Central & Warehouse Arts District",
+      "lat": 27.770951,
+      "lng": -82.665868,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "grand-central"
+    },
+    {
+      "text": "Hyde Park & SoHo",
+      "lat": 27.935343,
+      "lng": -82.473236,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "hyde-park"
+    },
+    {
+      "text": "Wesley Chapel & East Pasco",
+      "lat": 28.186601,
+      "lng": -82.366121,
+      "kind": "area",
+      "minZoom": 2.2,
+      "id": "lutz-wesley-chapel"
+    },
+    {
+      "text": "North Tampa",
+      "lat": 28.025297,
+      "lng": -82.450928,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "north-tampa"
+    },
+    {
+      "text": "Northeast St. Pete & Weedon Island",
+      "lat": 27.848309,
+      "lng": -82.604247,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "northeast-stpete"
+    },
+    {
+      "text": "Old Northeast & Snell Isle",
+      "lat": 27.787529,
+      "lng": -82.629731,
       "kind": "area",
       "minZoom": 4,
       "id": "old-northeast"
     },
     {
-      "text": "Grand Central",
-      "lat": 27.771,
-      "lng": -82.67,
+      "text": "Seminole Heights",
+      "lat": 28.000159,
+      "lng": -82.455993,
       "kind": "area",
       "minZoom": 4,
-      "id": "grand-central"
+      "id": "seminole-heights"
+    },
+    {
+      "text": "South St. Pete & Midtown",
+      "lat": 27.761539,
+      "lng": -82.663076,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "south-stpete"
+    },
+    {
+      "text": "South Tampa",
+      "lat": 27.920856,
+      "lng": -82.495373,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "south-tampa"
+    },
+    {
+      "text": "Tampa Heights",
+      "lat": 27.965161,
+      "lng": -82.45704,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "tampa-heights"
+    },
+    {
+      "text": "New Port Richey & West Pasco",
+      "lat": 28.244177,
+      "lng": -82.719267,
+      "kind": "area",
+      "minZoom": 2.2,
+      "id": "west-pasco"
+    },
+    {
+      "text": "West St. Pete",
+      "lat": 27.793383,
+      "lng": -82.732732,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "west-stpete"
+    },
+    {
+      "text": "West Tampa",
+      "lat": 27.953355,
+      "lng": -82.489262,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "west-tampa"
+    },
+    {
+      "text": "Westshore & Airport",
+      "lat": 27.954722,
+      "lng": -82.524167,
+      "kind": "area",
+      "minZoom": 4,
+      "id": "westshore"
     }
   ],
   "transit": {

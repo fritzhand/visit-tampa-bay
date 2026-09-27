@@ -105,12 +105,13 @@
         "id": "lightning-at-the-beach",
         "topic": "Weather & hurricanes",
         "q": "What if a storm comes up while I'm at the beach?",
-        "a": "Leave the water and the beach and go to your car or a building. The National Weather Service says not to shelter under beach picnic shelters and to wait 30 minutes after the last rumble of thunder before going back to the beach. It also says most lightning deaths on boats happen on small boats with no cabin.",
+        "a": "Get out of the water and off the beach, and go to your car. The National Weather Service says not to shelter under beach picnic shelters and to wait 30 minutes after the last rumble of thunder before going back to the beach. It also says most lightning injuries and deaths on boats happen on small boats with no cabin.",
         "source_url": "https://www.weather.gov/safety/lightning-outdoors",
         "also_sources": [
           "https://www.weather.gov/mfl/lightning"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: 'or a building' removed (the NWS beach section says 'Go to your car!'); 'Get out of the water, off the beach' is on weather.gov/mfl/lightning."
       },
       {
         "id": "lightning-florida",
@@ -212,9 +213,10 @@
         "id": "red-tide-seafood",
         "topic": "Beaches & water safety",
         "q": "Is seafood safe to eat during red tide?",
-        "a": "Restaurant and store-bought shellfish are generally safe, FWC says, because the government monitors them. Do not harvest or eat your own clams, oysters or mussels from affected areas, and cooking or freezing does not remove the toxin.",
+        "a": "Store-bought and restaurant shellfish are generally safe to eat during a bloom, FWC says, because the government monitors them. Recreational harvesting of clams, oysters and mussels is banned in areas closed for red tide, and cooking, heating or freezing does not get rid of the toxins.",
         "source_url": "https://myfwc.com/research/redtide/faq/",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: reworded to the FAQ's terms (recreational harvest ban during red tide closures; cooking, heating or freezing)."
       },
       {
         "id": "beach-water-quality",
@@ -299,18 +301,19 @@
         "id": "alcohol-clearwater-beach",
         "topic": "Alcohol & rules",
         "q": "Can I drink alcohol on Clearwater Beach?",
-        "a": "No. The City of Clearwater does not permit alcohol or other intoxicants on its public beaches, and smoking is not allowed there either. Fires, bonfires and unpermitted fireworks are also banned.",
+        "a": "No. The City of Clearwater says no alcohol or other intoxicants are permitted on its public beaches. Its beach rules also list no smoking and no glass, and ban fires, bonfires and unpermitted fireworks.",
         "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
         "checked": "2026-09-27",
-        "notes": "Page wording: 'No alcohol or other intoxicants are permitted on Clearwater's public beaches.' The smoking rule appears on the page as the heading 'No Smoking'."
+        "notes": "Page wording: 'No alcohol or other intoxicants are permitted on Clearwater's public beaches.' The smoking rule appears on the page as the heading 'No Smoking'. Verifier 2026-09-27: glass added (listed on the rules page); smoking is still shown only as a 'No Smoking' rule heading."
       },
       {
         "id": "alcohol-other-beaches",
         "topic": "Alcohol & rules",
         "q": "Which Pinellas beaches allow alcohol?",
-        "a": "It depends on the town. Visit St. Pete/Clearwater lists: no alcohol at Clearwater Beach, Honeymoon and Caladesi islands, Belleair Beach, Indian Rocks Beach, Fort De Soto Park or Gulfport Beach; alcohol allowed but not in glass at Madeira Beach and Treasure Island (Treasure Island bans it on some beach blocks from 8 a.m. to 4 p.m. on weekends); allowed at Redington Beach; and at St. Pete Beach only in beachfront hotels' cabana areas for registered guests.",
+        "a": "It depends on the town. Visit St. Pete/Clearwater lists: no alcohol at Clearwater Beach, Honeymoon and Caladesi islands, Belleair Beach, Indian Rocks Beach, Fort De Soto Park or Gulfport Beach; alcohol allowed but not in glass at Madeira Beach and Treasure Island (Treasure Island bans it between the 8500 and 9900 blocks from 8 a.m. to 4 p.m. on Saturdays and Sundays); allowed at Redington Beach; and at St. Pete Beach only in beachfront hotels' cabana areas for registered guests.",
         "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: Treasure Island blocks added from the same answer ('between the 8500 block and the 9900 block ... between 8 a.m. and 4 p.m. on Saturdays and Sundays')."
       },
       {
         "id": "county-park-rules",
@@ -379,12 +382,13 @@
         "topic": "Money & taxes",
         "q": "What is the sales tax in St. Petersburg and Clearwater?",
         "a": "Florida's state rate is 6%, and Pinellas County adds a 1% surtax (the Penny for Pinellas), in effect through December 31, 2029, according to the Florida Department of Revenue.",
-        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
         "also_sources": [
           "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
           "https://pinellas.gov/penny-for-pinellas/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: source moved to the calendar-2026 DR-15DSS."
       },
       {
         "id": "hotel-taxes",
@@ -410,20 +414,22 @@
         "id": "attraction-passes",
         "topic": "Money & taxes",
         "q": "Are there passes that bundle attractions?",
-        "a": "Visit Tampa Bay points to Tampa Bay CityPASS for bundled admission and to the Tampa Riverwalk Attraction Pass, which includes seven attractions for one price. It sells the Riverwalk pass at the Unlock Tampa Bay Visitors Center.",
+        "a": "Visit Tampa Bay points to Tampa Bay CityPASS for bundled admission and to the Tampa Riverwalk Attraction Pass, which it says includes seven attractions for one bundled price. Its Unlock Tampa Bay Visitors Center sells the Riverwalk pass.",
         "source_url": "https://www.visittampabay.com/media/faqs/",
         "also_sources": [
           "https://shop.visittampabay.com/pages/about-us"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: the shop page says: 'Stop in for insider knowledge and pick up a Tampa Riverwalk Attraction Pass for discounted admission to some of Tampa's most unique attractions.'"
       },
       {
         "id": "free-things",
         "topic": "Money & taxes",
         "q": "What can I do for free in Tampa?",
-        "a": "Visit Tampa Bay suggests riding the free TECO Line Streetcar through downtown and Ybor City, walking the Tampa Riverwalk or Bayshore Boulevard, seeing public art and murals, and spending time in the waterfront parks.",
+        "a": "Visit Tampa Bay suggests riding the free TECO Line Streetcar through downtown, walking the Tampa Riverwalk or Bayshore Boulevard, seeing public art and murals, spending time in the waterfront parks and watching for local wildlife.",
         "source_url": "https://www.visittampabay.com/media/faqs/",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: 'and Ybor City' removed: the FAQ answer names only downtown for the streetcar."
       },
       {
         "id": "beach-wheelchair-clearwater",
@@ -437,13 +443,13 @@
         "id": "beach-wheelchairs-pinellas",
         "topic": "Accessibility",
         "q": "Which other Pinellas beaches lend beach wheelchairs?",
-        "a": "Visit St. Pete/Clearwater's accessible beaches guide (updated August 19, 2025) lists beach wheelchairs, lent first come, first served, at Fort De Soto Park (five), Honeymoon Island State Park (four), Sand Key Park (two, near Boardwalk 4), Fred Howard Park (two, weekdays 8 a.m. to 5 p.m.), Pass-a-Grille Beach (three, at Paradise Grille), the St. Pete Beach public access (two, at Paradise Grill) and Treasure Island (one at City Hall on weekdays, two more at the concession stand). It says the chairs at Honeymoon Island, Sand Key, Pass-a-Grille and the Treasure Island concession stand are free, and its beach FAQ lists Fort De Soto among the free ones.",
+        "a": "Visit St. Pete/Clearwater's accessible beaches guide (updated August 19, 2025) lists beach wheelchairs, lent first come, first served, at Fort De Soto Park (five), Honeymoon Island State Park (four), Sand Key Park (two, near Boardwalk 4), Fred Howard Park (two, weekdays 8 a.m. to 5 p.m.), Archibald Memorial Beach Park in Madeira Beach (one), Treasure Island (one at City Hall on weekdays, two more at the concession stand), the St. Pete Beach public access at Paradise Grill (two), Upham Beach (two) and Pass-a-Grille Beach (three, at Paradise Grille). It says the chairs at Honeymoon Island, Sand Key, Pass-a-Grille and the Treasure Island concession stand are free, and its beach FAQ lists Fort De Soto among the free ones.",
         "source_url": "https://www.visitstpeteclearwater.com/article/guide-to-accessible-beaches-st-pete-clearwater",
         "also_sources": [
           "https://www.visitstpeteclearwater.com/info/beach-faqs"
         ],
         "checked": "2026-09-27",
-        "notes": "Read twice with WebFetch. The first read also gave how to request them: Fort De Soto by calling 727-582-2100 ext. 2 on weekdays or at the campground office on weekends; Honeymoon Island at the entrance kiosk; Sand Key by calling the ranger at 727-582-2100."
+        "notes": "Read twice with WebFetch. The first read also gave how to request them: Fort De Soto by calling 727-582-2100 ext. 2 on weekdays or at the campground office on weekends; Honeymoon Island at the entrance kiosk; Sand Key by calling the ranger at 727-582-2100. Verifier 2026-09-27: added Madeira Beach (Archibald Memorial Beach Park, one chair) and Upham Beach (two), both listed in the guide."
       },
       {
         "id": "beach-mats-clearwater",
@@ -457,12 +463,13 @@
         "id": "disabled-parking-beaches",
         "topic": "Accessibility",
         "q": "Do I pay to park at the beach with a disabled parking permit?",
-        "a": "Not at city-owned paid spaces in Clearwater: vehicles with handicap tags or placards park free there with no time limit, except in spaces posted with their own limit. In Pinellas County parks, a state disabled placard, disabled plate or Disabled Veterans plate lets you park free in any space.",
+        "a": "In Clearwater, vehicles with handicap tags or placards do not pay at city-owned paid or timed spaces, but the city says posted time limits and restrictions must still be followed. In Pinellas County parks, a state disabled parking placard, a disabled license plate or a Disabled Veterans plate lets you park free in any space.",
         "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Accessible-Parking",
         "also_sources": [
           "https://pinellas.gov/parks-and-preserves-frequently-asked-questions/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: corrected: the Clearwater page says 'do not have to pay for parking, but all posted time limits and restrictions must be followed' (the earlier answer said 'no time limit')."
       },
       {
         "id": "accessible-travel-tampa",
@@ -484,9 +491,10 @@
         "id": "florida-aquarium-accessibility",
         "topic": "Accessibility",
         "q": "Is the Florida Aquarium accessible?",
-        "a": "The aquarium says every habitat and exhibit is wheelchair accessible, with elevators to upper levels. It rents wheelchairs and scooters daily (limited, first come, first served), works with USF's Center for Autism and Related Disabilities, and holds Day of Discovery sessions for guests with sensory differences.",
+        "a": "The aquarium says it has wheelchair access to all habitats and exhibits and elevators to all upper levels. It rents wheelchairs ($8) and scooters ($15) daily in limited numbers, first come, first served, works with USF's Center for Autism and Related Disabilities, and holds Day of Discovery sessions for guests with sensory differences.",
         "source_url": "https://www.flaquarium.org/visit/visitor-information/accessibility/",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: prices added from the page's rental table."
       },
       {
         "id": "dali-accessibility",
@@ -562,10 +570,13 @@
         "id": "dengue-mosquitoes",
         "topic": "Safety",
         "q": "Is there a mosquito-borne illness warning?",
-        "a": "Yes, as of September 2026. On September 24, 2026, Pinellas County declared a State of Local Emergency for dengue fever; the Florida Department of Health's report that day counted 179 confirmed cases in Pinellas, Pasco and Hillsborough counties. The county advises light-colored long sleeves and closed-toe shoes outdoors and repellent with DEET, picaridin, IR3535 or oil of lemon eucalyptus.",
+        "a": "Yes, as of September 2026. On September 24, 2026, Pinellas County declared a State of Local Emergency for dengue fever; the Florida Department of Health's report that day counted 179 confirmed cases in Pinellas, Pasco and Hillsborough counties, 7 of them in Pinellas. The county advises light-colored long sleeves and closed-toe shoes outdoors and repellent with DEET, picaridin, IR3535 or oil of lemon eucalyptus, and notes that the mosquitoes that spread dengue can bite during the day.",
         "source_url": "https://pinellas.gov/news/pinellas-commission-declares-state-of-local-emergency-for-dengue-fever/",
         "checked": "2026-09-27",
-        "notes": "Time-sensitive: re-check before publishing; see pinellas.gov/dengue and pinellas.gov/mosquito."
+        "notes": "Time-sensitive: re-check before publishing; see pinellas.gov/dengue and pinellas.gov/mosquito. Verifier 2026-09-27: pinellas.gov/dengue/ (last updated Sep 24, 2026) still reads 'Pinellas County is under a mosquito-borne illness alert and a state of local emergency for dengue fever'.",
+        "also_sources": [
+          "https://pinellas.gov/dengue/"
+        ]
       },
       {
         "id": "text-911",
@@ -1196,25 +1207,25 @@
         "quote": "The total state and local sales and use tax rate for Hillsborough County is 7.5%.",
         "source_url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-12.pdf",
         "also_sources": [
-          "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+          "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
           "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-02.pdf"
         ],
         "checked": "2026-09-27",
-        "notes": "Composed of the 6% state tax plus 0.5% school capital outlay, 0.5% indigent care and 0.5% local government infrastructure surtaxes (TIP 25A01-12). Two of the surtaxes were suspended Jan 1 - May 31, 2025 and resumed June 1, 2025 (TIP 24A01-15, TIP 25A01-02)."
+        "notes": "Composed of the 6% state tax plus 0.5% school capital outlay, 0.5% indigent care and 0.5% local government infrastructure surtaxes (TIP 25A01-12). Two of the surtaxes were suspended Jan 1 - May 31, 2025 and resumed June 1, 2025 (TIP 24A01-15, TIP 25A01-02). Verifier 2026-09-27: the calendar-2026 DR-15DSS lists Hillsborough at a 1.5% total surtax (three 0.5% surtaxes), consistent with 7.5%."
       },
       {
         "id": "sales-surtax-pinellas",
         "label": "County sales surtax in Pinellas County (the Penny for Pinellas)",
         "value": "1%",
-        "as_of": "Effective Feb 1, 1990; expires Dec 31, 2029",
-        "source": "Florida Department of Revenue, Discretionary Sales Surtax Information (Form DR-15DSS, R. 11/24)",
+        "as_of": "Calendar year 2026 (effective Feb 1, 1990; expires Dec 31, 2029)",
+        "source": "Florida Department of Revenue, Discretionary Sales Surtax Information for Calendar Year 2026 (Form DR-15DSS, R. 11/25)",
         "quote": null,
-        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
         "also_sources": [
           "https://pinellas.gov/penny-for-pinellas/"
         ],
         "checked": "2026-09-27",
-        "notes": "DR-15DSS row: 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'. pinellas.gov/penny-for-pinellas/ says: 'The Penny for Pinellas is a voter-approved, one-cent sales tax used to pay for projects to improve Pinellas County infrastructure. The state rate is 6% (sales-tax-florida), so the combined rate is 6% + 1%; no page read states the 7% total for Pinellas, so it is not recorded as a separate fact."
+        "notes": "DR-15DSS row: 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'. pinellas.gov/penny-for-pinellas/ says: 'The Penny for Pinellas is a voter-approved, one-cent sales tax used to pay for projects to improve Pinellas County infrastructure. The state rate is 6% (sales-tax-florida), so the combined rate is 6% + 1%; no page read states the 7% total for Pinellas, so it is not recorded as a separate fact. Verifier 2026-09-27: moved to the calendar-2026 form (dr15dss_26.pdf, linked from floridarevenue.com/Pages/forms_index.aspx); its row reads 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'."
       },
       {
         "id": "tourist-tax-hillsborough",
@@ -1486,13 +1497,13 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.946204,
-        "lng": -82.457211,
-        "geo_source": "census",
+        "lat": 27.946672,
+        "lng": -82.456989,
+        "geo_source": "photon",
         "url": "https://www.visittampabay.com/about/",
         "phone": "(813) 223-2752",
         "hours_text": "Store hours: Monday–Friday 8 a.m.–6 p.m.; Saturday 10 a.m.–6 p.m.; Sunday 11 a.m.–5 p.m.",
-        "summary": "Visit Tampa Bay's visitor center and gift shop on the ground floor of Tampa City Center, with visitor information staff, maps and visitor guides, and the Tampa Riverwalk Attraction Pass for sale.",
+        "summary": "Visit Tampa Bay's visitor center and gift shop at the base of Tampa City Center, with visitor information counselors, maps and visitor guides, and the Tampa Riverwalk Attraction Pass for sale.",
         "quote": "When in Tampa, stop by our Visitors Center & Gift Shop for information on Tampa Bay from knowledgeable visitor information counselors and shop for unique gifts and souvenirs to commemorate your trip.",
         "quote_source": "https://www.visittampabay.com/about/",
         "accessibility": "Visit Tampa Bay says the center's team is trained in the Hidden Disabilities Sunflower program and gives out sunflower lanyards, and that EnChroma color-blindness glasses can be rented there (call ahead to confirm availability).",
@@ -1508,7 +1519,7 @@
           "https://www.visittampabay.com/media/faqs/",
           "https://www.visittampabay.com/accessible-travel/"
         ],
-        "notes": "Hours are labeled 'Store Hours' on shop.visittampabay.com/pages/about-us. The FAQ says it is 'at the bottom of Tampa City Center'. Geocode matched '201 N FRANKLIN ST, TAMPA, FL, 33602' (Census).",
+        "notes": "Hours are labeled 'Store Hours' on shop.visittampabay.com/pages/about-us. The FAQ says it is 'at the bottom of Tampa City Center'. Geocode matched '201 N FRANKLIN ST, TAMPA, FL, 33602' (Census). Verifier 2026-09-27: coordinates moved to the OpenStreetMap building 'One Tampa City Center' (W106054815), 55 m from the Census street point.",
         "checked": "2026-09-27"
       },
       {
@@ -1560,9 +1571,9 @@
         "city": "Tarpon Springs",
         "state": "FL",
         "zip": "34689",
-        "lat": 28.155469,
-        "lng": -82.75755,
-        "geo_source": "census",
+        "lat": 28.155554,
+        "lng": -82.758346,
+        "geo_source": "photon",
         "url": "https://www.tarponspringschamber.org/",
         "hours_text": "Monday–Sunday 10:30 a.m.–3:30 p.m.",
         "summary": "The Tarpon Springs Chamber of Commerce's visitor center at the Sponge Docks on Dodecanese Boulevard.",
@@ -1571,7 +1582,7 @@
           "visitor-information"
         ],
         "source_url": "https://www.tarponspringschamber.org/",
-        "notes": "Chamber page lists 'Visitor's Center: 100 Dodecanese Blvd (Sponge Docks) Monday - Sunday 10:30am - 3:30pm'. The chamber office is at 1 N. Pinellas Ave. (727-937-6109, office hours Mon–Fri 9–4); that phone is the office's, so it is not given as the visitor center's. Geocode matched '100 DODECANESE BLVD, TARPON SPRINGS, FL, 34689' (Census).",
+        "notes": "Chamber page lists 'Visitor's Center: 100 Dodecanese Blvd (Sponge Docks) Monday - Sunday 10:30am - 3:30pm'. The chamber office is at 1 N. Pinellas Ave. (727-937-6109, office hours Mon–Fri 9–4); that phone is the office's, so it is not given as the visitor center's. Geocode matched '100 DODECANESE BLVD, TARPON SPRINGS, FL, 34689' (Census). Verifier 2026-09-27: coordinates moved to the OpenStreetMap feature 'Chamber of Commerce & Visitor Center, Dodecanese Boulevard' (W1453911042, information=office), 78 m from the Census street point.",
         "checked": "2026-09-27"
       },
       {
@@ -1593,14 +1604,14 @@
         "phone": "(727) 595-4575",
         "hours_text": "In-person services Monday–Friday 10 a.m.–4 p.m.",
         "summary": "A welcome center in downtown Indian Rocks Beach, near 5th Avenue and Gulf Boulevard, that gives visitors local information and sells discounted tickets to local attractions.",
-        "quote": "We offer a wealth of knowledge and guidance to visitors and locals alike.",
+        "quote": "The Beach Welcome Center is conveniently located in Downtown Indian Rocks Beach near 5th Avenue and Gulf Boulevard.",
         "status": "open",
         "tags": [
           "visitor-information",
           "attraction-tickets"
         ],
         "source_url": "https://www.beachwelcomecenter.com/",
-        "notes": "The site also lists (800) 926-9303. It sells attraction tickets and has member businesses, so it is not a government office. Geocode matched '105 5TH AVE N, INDIAN ROCKS BEACH, FL, 33785' (Census).",
+        "notes": "The site also lists (800) 926-9303. It sells attraction tickets and has member businesses, so it is not a government office. Geocode matched '105 5TH AVE N, INDIAN ROCKS BEACH, FL, 33785' (Census). Verifier 2026-09-27: quote replaced with the page's location sentence; the old quote ('We offer a wealth of knowledge ...') is also on the page.",
         "checked": "2026-09-27"
       },
       {

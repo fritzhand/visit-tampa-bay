@@ -1,51 +1,2307 @@
 [
   {
+    "id": "airboat-line-1914",
+    "era": "boomtown",
+    "year": 1914,
+    "date": "1914-01-01",
+    "title": "The St. Petersburg-Tampa Airboat Line starts scheduled flights",
+    "text": "On Jan. 1, 1914, pilot Tony Jannus flew former St. Petersburg mayor Abram C. Pheil, who had bought the first ticket at auction for $400, across the bay to Tampa in a Benoist flying boat, the first flight of the St. Petersburg-Tampa Airboat Line, organized by Percival Fansler. The City of Tampa calls it the world's first scheduled commercial airline service; the line flew until May 1914.",
+    "places": [
+      "worlds-first-airline-monument"
+    ],
+    "area": "downtown-stpete",
+    "media": [
+      "tl-first-airline-takeoff-1914"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/St._Petersburg%E2%80%93Tampa_Airboat_Line",
+    "also_sources": [
+      "https://www.tampa.gov/info/tampa-history",
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia SPT Airboat Line: 'On January 1, 1914, the SPT Airboat Line became the first scheduled winged airline service in the United States'; in service January to May 1914 (ceased May 5, 1914); Fansler brought in Thomas Benoist; 'It was won with a final bid of $400 by the former mayor of St. Petersburg, Abram C. Pheil'; 23-minute flight. tampa.gov: 'In 1914 Percival Ellicott Fansler introduced the world's first scheduled commercial airline service'. Pilot Tony Jannus: History of Tampa (Wikipedia)."
+  },
+  {
+    "id": "angola-destroyed-1821",
+    "era": "frontier",
+    "year": 1821,
+    "date": "1821",
+    "title": "Angola, a maroon community on the Manatee River, is burned",
+    "text": "Angola was a farming community of several hundred people who had escaped slavery, along the Manatee River and Sarasota Bay. In 1821, as the United States took over Florida, Andrew Jackson ordered Creek allies to raid it and the settlement was burned; survivors fled, some as far as Andros Island in the Bahamas. Excavations at Manatee Mineral Springs Park in Bradenton, part of the National Park Service's Network to Freedom since 2019, study the site.",
+    "area": "bradenton-anna-maria",
+    "lat": 27.49762,
+    "lng": -82.549359,
+    "source_url": "https://en.wikipedia.org/wiki/Angola,_Florida",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+      "https://www.hcfl.gov/about-hillsborough/history/hillsborough-county-history"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Angola, Florida: 600-750 residents, maroons and Black Seminoles; Jackson as territorial governor in 1821 ordered Creek allies to raid; 'burned to the ground'; survivors to Cape Florida and the Bahamas (Red Bays, Andros); Manatee Mineral Springs Park excavations since the early 2000s; NPS Network to Freedom 2019. Hillsborough County: 'The United States purchased Florida from Spain in 1821 for $5 million.' Coordinates: Photon match for Manatee Mineral Springs Park, Bradenton."
+  },
+  {
+    "id": "armed-occupation-act-1842",
+    "era": "frontier",
+    "year": 1842,
+    "date": "1842",
+    "title": "The war ends and settlers take up Pinellas land",
+    "text": "The Second Seminole War ended in 1842, and the federal Armed Occupation Act of that year offered 160 acres to settlers who would bear arms and farm the land. That year Odet Philippe acquired 160 acres at today's Safety Harbor; he is described as the first permanent non-Native settler of the Pinellas peninsula, and his plantation is now Philippe Park, the oldest park in Pinellas County.",
+    "places": [
+      "philippe-park"
+    ],
+    "area": "safety-harbor",
+    "lat": 28.012553,
+    "lng": -82.684054,
+    "media": [
+      "tl-odet-philippe-grave"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Odet_Philippe",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Clearwater,_Florida",
+      "https://en.wikipedia.org/wiki/Dade_battle",
+      "https://pinellas.gov/parks/philippe-park/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Odet Philippe (Wikipedia): 'first permanent, non-native settler on the Pinellas peninsula... acquiring 160 acre of land in what is today Safety Harbor in 1842'; buried in Philippe Park, his former plantation, 1869. Clearwater (Wikipedia): 'Federal Armed Occupation Act of 1842 offered 160 acre to anyone who would bear arms and cultivate the land'. Pinellas County: 'the oldest park in Pinellas County'. Wikipedia Safety Harbor gives a conflicting 1823 date for Philippe; the 1842 date of the Philippe article is used."
+  },
+  {
+    "id": "battle-of-fort-brooke-1863",
+    "era": "frontier",
+    "year": 1863,
+    "date": "1863-10-16",
+    "title": "Union raiders burn blockade runners on the Hillsborough River",
+    "text": "On Oct. 16 to 18, 1863, the Union gunboats Tahoma and Adela shelled Fort Brooke while troops landed and marched up the Hillsborough River, where they burned James McKay's blockade runners Scottish Chief and Kate Dale near today's Lowry Park. In May 1864 Union forces returned, found the fort ungarrisoned and occupied the town briefly.",
+    "area": "north-tampa",
+    "lat": 28.014539,
+    "lng": -82.466106,
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Brooke",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Battle of Fort Brooke (Wikipedia): 'fought October 16-18, 1863'; Tahoma and Adela 'began a slow bombardment of Fort Brooke'; 'When Union forces again landed in May 1864, Fort Brooke was no longer garrisoned and the town had been virtually abandoned.' History of Tampa: troops 'headed a few miles up the Hillsborough River until they found McKay's hidden blockade runners Scottish Chief and Kate Dale near present-day Lowry Park Zoo and burned them'; occupation of May 1864 left after three days. Coordinates: Lowry Park (Photon)."
+  },
+  {
+    "id": "battle-of-tampa-1862",
+    "era": "frontier",
+    "year": 1862,
+    "date": "1862-06-30",
+    "title": "A Union gunboat shells Confederate Tampa",
+    "text": "Florida seceded on Jan. 10, 1861, Confederate troops manned Fort Brooke, and the Union Navy blockaded the mouth of Tampa Bay, using Egmont Key as a base. On June 30 and July 1, 1862, the gunboat USS Sagamore demanded the fort's surrender and then shelled the town in the inconclusive Battle of Tampa; a marker in Oaklawn Cemetery shows where a shell fell.",
+    "places": [
+      "egmont-key-state-park",
+      "oaklawn-cemetery"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.954575,
+    "lng": -82.45727,
+    "media": [
+      "tl-battle-of-tampa-marker"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Battle_of_Tampa",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+      "https://en.wikipedia.org/wiki/Egmont_Key_Light"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Battle of Tampa (Wikipedia): fought June 30-July 1, 1862; USS Sagamore steamed into Tampa Bay to demand the surrender of the Confederate garrison at Fort Brooke. History of Tampa: secession Jan 10, 1861; 'Fort Brooke was soon manned by Confederate troops'; blockade near the mouth of Tampa Bay; 'The Battle of Tampa on June 30-July 1, 1862 was inconclusive'; image caption 'Marker in Oaklawn Cemetery where a shell fell during the Battle of Tampa.' Egmont Key Light: 'Union forces captured the island in July 1861 and used it as a base'. Coordinates: Oaklawn Cemetery (Photon)."
+  },
+  {
+    "id": "belleview-hotel-opens-1896",
+    "era": "boomtown",
+    "year": 1896,
+    "date": "1896",
+    "title": "Plant opens the Hotel Belleview at Belleair",
+    "text": "Henry Plant opened the Hotel Belleview on a bluff at Belleair, south of Clearwater, overlooking Clearwater Bay. Its present owner says it opened in 1896 and, restored as The Belleview Inn, is the only Plant hotel still operating as a hotel; the other surviving Plant hotel building is the former Tampa Bay Hotel.",
+    "places": [
+      "belleview-inn"
+    ],
+    "area": "largo",
+    "lat": 27.943601,
+    "lng": -82.811336,
+    "media": [
+      "tl-belleview-hotel"
+    ],
+    "source_url": "https://www.opalcollection.com/blog/the-belleview-inn-story-part-1/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Belleview-Biltmore_Hotel",
+      "https://en.wikipedia.org/wiki/Clearwater,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Opal Collection: 'The Belleview Inn (opened in 1896 under the name The Hotel Belleview), which sits on a bluff in Belleair overlooking what is now Clearwater Bay'; 'the only Henry Plant hotel still in operation as a hotel'. Wikipedia Clearwater gives 1897, and Wikipedia Belleview-Biltmore Hotel says it 'was built in the summer of 1896 by railroad tycoon Henry B. Plant and opened January 15, 1897'; the owner's 1896 is kept, attributed, and the discrepancy is noted for the verifier (year 1896 could move to 1897). Coordinates: 25 Belleview Blvd (census)."
+  },
+  {
+    "id": "bok-tower-dedicated-1929",
+    "era": "land-boom",
+    "year": 1929,
+    "date": "1929-02-01",
+    "title": "President Coolidge dedicates Bok Tower",
+    "text": "On Feb. 1, 1929, President Calvin Coolidge dedicated Edward Bok's Singing Tower and its surrounding sanctuary near Lake Wales, a carillon tower designed by Milton B. Medary set in gardens by Frederick Law Olmsted Jr. Bok Tower Gardens is a National Historic Landmark.",
+    "places": [
+      "bok-tower-gardens"
+    ],
+    "area": "polk",
+    "lat": 27.936034,
+    "lng": -81.575816,
+    "media": [
+      "tl-bok-study-1929"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Bok_Tower_Gardens",
+    "also_sources": [
+      "https://boktowergardens.org/history/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'Outgoing President Calvin Coolidge dedicated the tower on February 1, 1929'; the dedication inscription; 'Bok Tower Gardens is a National Historic Landmark'; Medary designed the tower. Olmsted Jr. named on the official history page's menu ('Olmsted Gardens & Trails') and the around-daytrips heritage block; the official page's text did not render dates in a raw read."
+  },
+  {
+    "id": "buccaneers-first-season-1976",
+    "era": "postwar",
+    "year": 1976,
+    "date": "1976",
+    "title": "The Buccaneers play their first NFL season",
+    "text": "The Tampa Bay Buccaneers, awarded to Tampa in 1974, played their first NFL season in 1976 at Tampa Stadium under coach John McKay and did not win a game. Tampa Stadium, opened in 1967, was their home until Raymond James Stadium replaced it in 1998.",
+    "places": [
+      "raymond-james-stadium"
+    ],
+    "area": "west-tampa",
+    "lat": 27.975979,
+    "lng": -82.503354,
+    "media": [
+      "tl-tampa-stadium-1999"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/1976_Tampa_Bay_Buccaneers_season",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Stadium",
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+      "https://en.wikipedia.org/wiki/Raymond_James_Stadium"
+    ],
+    "checked": "2026-09-27",
+    "notes": "1976 season (Wikipedia): 'the franchise's first season in the National Football League'; home games at Tampa Stadium; head coach John McKay; 'one of only four winless seasons since the 1970 AFL-NFL merger'. Rays article: 'Tampa was awarded the expansion Tampa Bay Buccaneers by the National Football League in 1974'. Tampa Stadium: opened 1967. Raymond James: 'built at public expense as a replacement for Tampa Stadium', opened 1998. Coordinates: Raymond James Stadium (Tampa Stadium stood beside it; its site is now a parking lot per Wikipedia, not checked)."
+  },
+  {
+    "id": "bucs-win-super-bowl-lv-2021",
+    "era": "modern",
+    "year": 2021,
+    "date": "2021-02-07",
+    "title": "The Buccaneers win Super Bowl LV at home",
+    "text": "On Feb. 7, 2021, the Buccaneers, led by quarterback Tom Brady in his first season with the team, beat the Kansas City Chiefs 31-9 in Super Bowl LV at Raymond James Stadium, the first time a team played a Super Bowl in its home stadium.",
+    "places": [
+      "raymond-james-stadium"
+    ],
+    "area": "west-tampa",
+    "lat": 27.975979,
+    "lng": -82.503354,
+    "media": [
+      "tl-super-bowl-lv-flyover"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Super_Bowl_LV",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'defeated the defending Super Bowl and AFC champions Kansas City Chiefs, 31–9'; 'played on February 7, 2021, at Raymond James Stadium in Tampa, Florida, the home stadium of the Buccaneers, marking the first time a team played a Super Bowl in its home stadium'; Brady 'in his first season away from the New England Patriots'."
+  },
+  {
+    "id": "bucs-win-super-bowl-xxxvii-2003",
+    "era": "modern",
+    "year": 2003,
+    "date": "2003-01-26",
+    "title": "The Buccaneers win Super Bowl XXXVII",
+    "text": "On Jan. 26, 2003, in San Diego, the Buccaneers beat the Oakland Raiders 48-21 in Super Bowl XXXVII, their first Super Bowl title and the first professional sports championship won by a Tampa-based team.",
+    "places": [
+      "raymond-james-stadium"
+    ],
+    "area": "west-tampa",
+    "source_url": "https://en.wikipedia.org/wiki/Super_Bowl_XXXVII",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'played on January 26, 2003, at Qualcomm Stadium in San Diego'; 'The Buccaneers defeated the Raiders by the score of 48–21... winning their first-ever Super Bowl'; 'This was the first professional sports championship ever won by a Tampa-based team.' No coordinates: the game was in San Diego."
+  },
+  {
+    "id": "busch-gardens-opens-1959",
+    "era": "postwar",
+    "year": 1959,
+    "date": "1959",
+    "title": "Busch Gardens opens beside Anheuser-Busch's new Tampa brewery",
+    "text": "Anheuser-Busch bought 160 acres in Tampa in 1957 for a brewery, and in 1959 it opened Busch Gardens beside it as a free garden attraction with brewery tours and a hospitality house offering free beer samples. It has grown into the Busch Gardens Tampa Bay theme park.",
+    "places": [
+      "busch-gardens-tampa-bay"
+    ],
+    "area": "north-tampa",
+    "lat": 28.037082,
+    "lng": -82.421261,
+    "media": [
+      "tl-busch-brewery-escalator"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Busch_Gardens_Tampa_Bay",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'Anheuser-Busch made public on July 25, that it had purchased a 160 acre plot of land in Tampa for $320,000' (1957 section); 'the park opened on March 31, 1959' in the lead but 'The brewery and gardens officially opened to the public for tours on June 1, 1959, as an admission-free facility'; 'Hospitality House'... 'offered free samples of beer'. Because of the two dates only the year is given. History of Tampa: 'Busch Gardens theme park opened in 1959.' buschgardens.com not reached."
+  },
+  {
+    "id": "centro-espanol-founded-1891",
+    "era": "boomtown",
+    "year": 1891,
+    "date": "1891",
+    "title": "El Centro Español, Ybor City's first mutual aid society",
+    "text": "El Centro Español, founded in 1891, was the first of Ybor City's ethnic mutual aid clubs; members paid dues for social privileges and death and injury benefits. Others followed: L'Unione Italiana (1894), the Deutsch-Amerikanischer Club (1901), Centro Asturiano and El Círculo Cubano (1902) and La Unión Martí-Maceo for Afro-Cubans (1904), Centro Español and Centro Asturiano built their own hospitals, and several of the clubs' clubhouses still stand in Ybor City.",
+    "places": [
+      "ybor-city-historic-district",
+      "el-centro-espanol-de-tampa",
+      "italian-club",
+      "centro-asturiano-de-tampa",
+      "cuban-club",
+      "la-union-marti-maceo"
+    ],
+    "area": "ybor-city",
+    "lat": 27.96034,
+    "lng": -82.442486,
+    "media": [
+      "tl-centro-espanol-c1914"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "also_sources": [
+      "https://www.nps.gov/teachers/classrooms/upload/TWHP-Lessons_51ybor.pdf"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL nomination club table: Centro Asturiano 1902 (building 1913), Circulo Cubano 1902 (1907), Deutsch Amerikanisher 1901, El Centro Espanol 1891 (1912), La Union Marti-Maceo 1904, L'Unione Italiana 1894 (1918); 'El Centro Espanol, the first ethnic club of Tampa'; 'Centro Espanol's Sanatorio, completed in 1906'. NPS lesson 51: 'El Centro Espanol, founded in 1891, was the first mutual aid society in Ybor City... Members paid 25 cents a week to enjoy social privileges as well as death and injury benefits.' The lesson gives 1904 for Centro Asturiano and 1899 for the Cuban club's predecessor; the NHL table years are used. Coordinates: El Centro Español clubhouse, 1536 E 7th Ave (census)."
+  },
+  {
+    "id": "cigar-strike-1931",
+    "era": "land-boom",
+    "year": 1931,
+    "date": "1931",
+    "title": "A cigar strike ends the reign of the lectores",
+    "text": "After a major cigarworkers' strike in 1931, Ybor City's factory owners brought in lower-paid workers and removed the lectores, the readers hired to read aloud to the cigar rollers as they worked. Cigarettes, cigar-making machines and the Depression hit the hand-rolled industry hard; between 1930 and 1940 a quarter of Tampa's foreign-born whites and more than half of its Afro-Cubans left the city.",
+    "places": [
+      "ybor-city-historic-district"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961154,
+    "lng": -82.444299,
+    "media": [
+      "tl-lector-1929"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "also_sources": [
+      "https://www.nps.gov/places/ybor-city-historic-district-tampa-fl.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL: 'A major strike by cigarworkers in 1931 also contributed to change in Ybor City. The owners brought in many lower-paid native workers and removed the lectores from the factories'; 'The combined effects of the spit campaign, the Great Depression, and the popularity of cigarettes dealt Ybor City's hand-rolled cigar industry a blow from which it never recovered'; 'Between 1930 and 1940, one-quarter of the foreign-born whites, and more than one-half of the Afro-Cubans, left Tampa.' NHL: 'lectores (readers) hired to entertain workers used patriotic texts'."
+  },
+  {
+    "id": "citizens-bank-fails-1929",
+    "era": "land-boom",
+    "year": 1929,
+    "date": "1929-07-17",
+    "title": "One of Tampa's largest banks fails ahead of the crash",
+    "text": "The collapse of the Citizens Bank and Trust Company, one of Tampa's largest banks, on July 17, 1929, set off runs on the Bank of Ybor and other local banks months before the October stock market crash. Winter visitors stayed home, firms laid off workers and building stopped as the Depression began.",
+    "places": [
+      "north-franklin-street-historic-district"
+    ],
+    "area": "downtown-tampa",
+    "media": [
+      "tl-citizens-bank-1926"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/02000264_text",
+    "checked": "2026-09-27",
+    "notes": "North Franklin Street HD NRHP form: 'the collapse of one of the city's largest banks, the Citizens Bank and Trust Company on July 17, 1929 was the precursor of a financial crisis to come. A run on Tampa's banks including the Bank of Ybor, Franklin Bank... This was followed by the stock market crash in October 1929. Thousands of winter visitors remained in their northern homes. Hundreds of firms laid off employees. Building activities ceased.'"
+  },
+  {
+    "id": "city-of-tampa-charter-1855",
+    "era": "frontier",
+    "year": 1855,
+    "date": "1855-12-15",
+    "title": "Tampa receives its first city charter",
+    "text": "Citizens voted on Sept. 15, 1855 to replace the town government with a city charter, and on Dec. 15, 1855, Gov. Broome signed the act of the Florida Legislature chartering the City of Tampa. The city's modern charter dates from July 15, 1887, when it absorbed the Town of North Tampa.",
+    "area": "downtown-tampa",
+    "lat": 27.9475,
+    "lng": -82.457,
+    "source_url": "https://www.tampa.gov/city-clerk/info/archives/city-of-tampa-incorporation-history",
+    "checked": "2026-09-27",
+    "notes": "City Clerk: 'December 15, 1855 - Governor Broome signs Special Act of the Florida Legislature granting a charter for the City of Tampa.' 'July 15, 1887 - City of Tampa organizes under special act... abolishing the governments of the Town of Tampa and Town of North Tampa and establishing the charter for the City of Tampa.'"
+  },
+  {
+    "id": "clearwater-incorporated-1891",
+    "era": "boomtown",
+    "year": 1891,
+    "date": "1891",
+    "title": "Clear Water Harbor incorporates",
+    "text": "The settlement near the Seminole War outpost of Fort Harrison grew after Peter Demens's railroad arrived in 1888, and the town of Clear Water Harbor incorporated in 1891; the name Clearwater came into use in 1906. Dunedin, named by two Scotsmen who applied for its post office, incorporated in 1899.",
+    "area": "downtown-clearwater",
+    "source_url": "https://en.wikipedia.org/wiki/Clearwater,_Florida",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Dunedin,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Clearwater (Wikipedia): Fort Harrison begun 'around 1835' as a Seminole War outpost; growth prompted by 'Peter Demens' completion of the first passenger railroad line into the city in 1888'; '1891 – Town of Clear Water Harbor incorporated'; 'Prior to 1906, the area was known as Clear Water Harbor.' Dunedin (Wikipedia): 'In 1899, it was incorporated as the Town of Dunedin'. Dunedin: 'Two Scotsmen, J.O. Douglas and James Somerville, later named the settlement Dunedin after applying for the first post office in northern Pinellas County.' City sites myclearwater.com and dunedingov.com returned 403."
+  },
+  {
+    "id": "columbia-restaurant-1905",
+    "era": "boomtown",
+    "year": 1905,
+    "date": "1905",
+    "title": "Casimiro Hernandez Sr. opens the Columbia in Ybor City",
+    "text": "Casimiro Hernandez Sr., a Spanish-Cuban immigrant, founded the Columbia in 1905 as a corner bar and coffee shop on 7th Avenue, later adding dining rooms until it filled the block. The National Park Service calls it the oldest continuously operating restaurant in Ybor City; the family, now in its fifth generation, calls it Florida's oldest restaurant.",
+    "places": [
+      "columbia-restaurant-ybor-city",
+      "ybor-city-historic-district"
+    ],
+    "area": "ybor-city",
+    "lat": 27.960187,
+    "lng": -82.435344,
+    "source_url": "https://www.columbiarestaurant.com/about-us/history",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+      "https://www.nps.gov/places/ybor-city-historic-district-tampa-fl.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Columbia site (WebFetch): founded 1905 (as Columbia Saloon in 1903), Casimiro Hernandez, Sr., a Spanish-Cuban immigrant, 'Florida's Oldest Restaurant', fifth-generation family members. NHL: 'Casimirio Hernandez founded it in 1905 as a corner bar and coffee shop... by the 1930s the restaurant had taken on its present dimensions.' NPS place page: 'The oldest continuously operating restaurant in Ybor City'. Place id columbia-restaurant-ybor-city follows SCHEMA.md's example; the eat-tampa slice may use it. Coordinates: 2117 E 7th Ave (census)."
+  },
+  {
+    "id": "curtis-hixon-and-museum-2010",
+    "era": "modern",
+    "year": 2010,
+    "date": "2010-02-06",
+    "title": "A new art museum and park open on the Riverwalk",
+    "text": "In 2010 Curtis Hixon Waterfront Park, a new Tampa Museum of Art building and the Glazer Children's Museum opened together on the downtown riverfront, a milestone for the Riverwalk. The art museum, which opened its first exhibit in 1920, held its grand opening on Feb. 6, 2010.",
+    "places": [
+      "curtis-hixon-waterfront-park",
+      "tampa-museum-of-art",
+      "glazer-childrens-museum",
+      "tampa-riverwalk"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.949795,
+    "lng": -82.462006,
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Museum_of_Art",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Riverwalk"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Tampa Museum of Art (Wikipedia): 'The museum opened its first exhibit on November 22, 1920 when the institution was called the Tampa Museum of Fine Arts'; 'the grand opening of the new Tampa Museum of Art took place on February 6, 2010'. Tampa Riverwalk (Wikipedia): 'The project reached a significant milestone in 2010 when Curtis Hixon Waterfront Park, a new Tampa Museum of Art, and the Glazer Children's Museum all opened'."
+  },
+  {
+    "id": "dade-battle-1835",
+    "era": "frontier",
+    "year": 1835,
+    "date": "1835-12-28",
+    "title": "Dade's command, marching from Fort Brooke, is destroyed",
+    "text": "In December 1835 Maj. Francis Dade's column of 110 men left Fort Brooke on the military road to Fort King, near today's Ocala, and on Dec. 28 it was ambushed by Seminole warriors; 108 were killed. The battle started the Second Seminole War, which lasted until 1842, and Fort Brooke became a refuge, depot and staging area.",
+    "places": [
+      "cotanchobee-fort-brooke-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.941734,
+    "lng": -82.450829,
+    "media": [
+      "tl-death-of-major-dade"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Dade_battle",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Dade battle: date December 28, 1835; 'The battle sparked the Second Seminole War, which ended in 1842'; survivor Pvt. Sprague reached Fort Brooke on New Year's Day 1836. History of Tampa: ambush 'while they were on their way from Fort Brooke to Fort King (near present-day Ocala)'; Fort Brooke 'first served as a refuge for settlers, then as a vital military depot and staging area.' Infobox: strength 110, casualties '108 killed, 1 wounded'; 'companies of 110 men... departed from Fort Brooke... heading up the Fort King military road'. Pinned at Fort Brooke (where the march began); the battlefield is in Sumter County outside the guide's areas."
+  },
+  {
+    "id": "dali-museum-opens-1982",
+    "era": "modern",
+    "year": 1982,
+    "date": "1982",
+    "title": "The Dalí Museum opens in St. Petersburg",
+    "text": "A. Reynolds and Eleanor Morse collected Salvador Dalí's work from 1943, and when they decided in the mid-1970s to give their collection away, St. Petersburg rallied to bring it to the city. The Dalí Museum opened in St. Petersburg in 1982.",
+    "places": [
+      "dali-museum"
+    ],
+    "area": "downtown-stpete",
+    "source_url": "https://thedali.org/about-the-museum/mission-history/",
+    "checked": "2026-09-27",
+    "notes": "The Dalí: 'On March 21, 1943, the Morses bought their first Dalí painting'; 'by the mid-1970s decided to donate their entire collection. A Wall Street Journal article... caught the attention of the St. Petersburg, FL community, who rallied to bring the collection to the area. The Dalí Museum, St. Petersburg, FL opened in 1982.'  No coordinates: the 1982 building is not the current one and its site is not given."
+  },
+  {
+    "id": "dali-new-building-2011",
+    "era": "modern",
+    "year": 2011,
+    "date": "2011-01-11",
+    "title": "The Dalí Museum opens its new building",
+    "text": "The Dalí Museum opened its new building at One Dali Boulevard in St. Petersburg on Jan. 11, 2011, built to better protect and display a collection that now numbers more than 2,400 works.",
+    "places": [
+      "dali-museum"
+    ],
+    "area": "downtown-stpete",
+    "lat": 27.765987,
+    "lng": -82.631461,
+    "media": [
+      "tl-dali-museum-2011"
+    ],
+    "source_url": "https://thedali.org/about-the-museum/mission-history/",
+    "checked": "2026-09-27",
+    "notes": "The Dalí: 'The distinguished new building, which opened on January 11, 2011, enables the Museum to better protect and display the collection'; 'The collection includes over 2,400 works'. Address One Dali Blvd from the see-pinellas record (dali-museum)."
+  },
+  {
+    "id": "davis-causeway-opens-1934",
+    "era": "land-boom",
+    "year": 1934,
+    "date": "1934",
+    "title": "The Davis Causeway links Tampa and Clearwater",
+    "text": "Ben T. Davis began building a causeway across Old Tampa Bay between Tampa and Clearwater in 1927; stalled by the bust and the Depression, it opened in 1934 at a cost of $900,000, with a toll of 25 cents a car. Today it is the Courtney Campbell Causeway, carrying State Road 60.",
+    "area": "westshore",
+    "lat": 27.971464,
+    "lng": -82.611406,
+    "media": [
+      "tl-davis-causeway-1934"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Courtney_Campbell_Causeway",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Courtney Campbell Causeway: 'work began in earnest in 1927'; 'Costing $900,000 in total, the Davis Causeway was opened on January 28, 1934, with a 25¢ toll per car' in the text, but its infobox and the History of Tampa article say June 28, 1934; only the year is given here. History of Tampa: builder Ben T. Davis; construction halted by the crash of the land boom and the Depression; RFC loan 1933."
+  },
+  {
+    "id": "de-soto-lands-1539",
+    "era": "spanish",
+    "year": 1539,
+    "date": "1539-05",
+    "title": "Hernando de Soto's army lands in Tampa Bay",
+    "text": "In May 1539 Hernando de Soto's army of soldiers, hired mercenaries, craftsmen and clergy made landfall in Tampa Bay and met fierce resistance from the people defending their homelands. The expedition went on for four years and about 4,000 miles across the Southeast; De Soto National Memorial in Bradenton, created in 1948, commemorates it.",
+    "places": [
+      "de-soto-national-memorial"
+    ],
+    "area": "bradenton-anna-maria",
+    "lat": 27.523073,
+    "lng": -82.643914,
+    "media": [
+      "tl-de-soto-camp-ucita"
+    ],
+    "source_url": "https://www.nps.gov/deso/index.htm",
+    "also_sources": [
+      "https://www.nps.gov/deso/planyourvisit/basicinfo.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NPS home page: 'In May 1539, Conquistador Hernando de Soto's army of soldiers, hired mercenaries, craftsmen, and clergy made landfall in Tampa Bay... a four year, four thousand mile odyssey'. basicinfo: 'Created in 1948, the park's mission is to commemorate the 1539 expedition'. The exact landing site is not stated by NPS; the point is the memorial."
+  },
+  {
+    "id": "de-soto-memorial-and-madira-bickel-1948",
+    "era": "postwar",
+    "year": 1948,
+    "date": "1948",
+    "title": "The Spanish landing and a temple mound are set aside for visitors",
+    "text": "In 1948 Congress authorized De Soto National Memorial, where the Manatee River meets Tampa Bay, to commemorate the 1539 expedition. The same year Madira and Karl Bickel donated the land around the temple mound on Terra Ceia Island to the state; it became a state park in 1949 and was the first Native American site in Florida designated a State Archaeological Site. Pinellas County also bought back Mullet Key in 1948, the land that became Fort De Soto Park.",
+    "places": [
+      "de-soto-national-memorial",
+      "madira-bickel-mound-state-archaeological-site",
+      "fort-de-soto-park"
+    ],
+    "area": "bradenton-anna-maria",
+    "lat": 27.523073,
+    "lng": -82.643914,
+    "media": [
+      "tl-de-soto-memorial-2011"
+    ],
+    "source_url": "https://www.nps.gov/deso/planyourvisit/basicinfo.htm",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/De_Soto_National_Memorial",
+      "https://en.wikipedia.org/wiki/Madira_Bickel_Mound_State_Archaeological_Site",
+      "https://pinellas.gov/parks/fort-de-soto-park/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NPS basicinfo: 'Created in 1948, the park's mission is to commemorate the 1539 expedition'. Wikipedia De Soto National Memorial: 'authorized by Congress on March 11, 1948'; the site lies 'where the Manatee River joins Tampa Bay'. Madira Bickel (Wikipedia): 'She and her husband, Karl, purchased the land around the main mound and donated it to the state in 1948'; 'the first Native American location in Florida to be designated as a State Archaeological Site'; established March 16, 1949. Pinellas County: 'The property was repurchased from the United States in 1948 for $26,500.'"
+  },
+  {
+    "id": "deuces-peak-1960s",
+    "era": "postwar",
+    "year": 1960,
+    "title": "The Deuces thrives on 22nd Street South",
+    "text": "Through the 1940s, '50s and '60s, 22nd Street South in St. Petersburg, known as The Deuces, was a thriving downtown for African American residents, home to the Manhattan Casino, which drew leading Black musicians. The city says it peaked in the 1960s with more than 100 Black-owned or operated businesses, entertainment spots and professional offices; the Woodson African American Museum of Florida is nearby.",
+    "places": [
+      "deuces-live",
+      "woodson-african-american-museum-of-florida",
+      "manhattan-casino",
+      "african-american-heritage-trail-st-petersburg"
+    ],
+    "area": "south-stpete",
+    "lat": 27.761539,
+    "lng": -82.663076,
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "also_sources": [
+      "https://www.deuceslive.org/our-history"
+    ],
+    "checked": "2026-09-27",
+    "notes": "City of St. Petersburg: 'Through the 40s, 50s, and 60s, one such neighborhood in South St. Pete became known as The Deuces and developed into a thriving downtown area for African Americans and other minority communities. Home to the iconic Manhattan Casino, which drew America's finest African American musicians, the Deuces reached its peak in the 1960s with more than 100 Black-owned or operated businesses, entertainment spots, and professional offices'. Year 1960 stands for 'the 1960s' (no single-year event); date left empty. '22nd Street South' from the see-pinellas deuces-live record (source deuceslive.org/our-history), not the city page. Coordinates: deuces-live (see-pinellas)."
+  },
+  {
+    "id": "don-cesar-opens-1928",
+    "era": "land-boom",
+    "year": 1928,
+    "date": "1928",
+    "title": "The Don CeSar opens on St. Pete Beach",
+    "text": "Thomas Rowe opened the Don CeSar on St. Pete Beach in 1928; the hotel calls itself the Pink Palace. The Army bought it in 1942 for use as a hospital and then a convalescent center for airmen, and after the war it housed Veterans Administration offices until 1969; saved by a citizens' group, it was restored and reopened as a resort in 1973.",
+    "places": [
+      "don-cesar"
+    ],
+    "area": "st-pete-beach",
+    "lat": 27.70927,
+    "lng": -82.737277,
+    "source_url": "https://www.doncesar.com/history",
+    "checked": "2026-09-27",
+    "notes": "Don CeSar history page: 1928 'Real estate scion Thomas Rowe opens The Don CeSar on St. Pete Beach'; 1942 'The U.S. Army purchases the hotel to be used as a sub-base hospital, then a convalescent center for airmen'; VA headquarters until 1969; citizens' group 1971; Bowman restoration 1972; 'reopens as a full-service resort' 1973. Raw page: 'The Legendary Pink Palace'; 'Opened in the heyday of the Gatsby Era in 1928'. Hurricane status 2024-26: see the stays-beaches slice."
+  },
+  {
+    "id": "donaldson-germain-1868",
+    "era": "frontier",
+    "year": 1868,
+    "date": "1868",
+    "title": "St. Petersburg's first Black settlers make a homestead",
+    "text": "John Donaldson and Anna Germain, the first Black settlers in what became St. Petersburg, arrived in 1868 and built a homestead at what is now 18th Avenue South and 31st Street South. The city says that for 20 years the Donaldsons were the only African American family in present-day St. Pete.",
+    "places": [
+      "african-american-heritage-trail-st-petersburg"
+    ],
+    "area": "south-stpete",
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "checked": "2026-09-27",
+    "notes": "City of St. Petersburg history page, verbatim facts. No coordinates (an intersection only)."
+  },
+  {
+    "id": "drew-field-becomes-city-airport-1946",
+    "era": "postwar",
+    "year": 1946,
+    "date": "1946-03-01",
+    "title": "Drew Field returns to the city and becomes Tampa International",
+    "text": "The city had opened Drew Field west of downtown in 1928 and leased it to the Army in 1940. On March 1, 1946, the federal government returned it to the city, airlines began flying from it that spring, and on Oct. 15, 1947, it was renamed Tampa International Airport.",
+    "area": "westshore",
+    "lat": 27.979165,
+    "lng": -82.534928,
+    "media": [
+      "tl-drew-field-postcard"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "TPA (Wikipedia): 'In 1928, the city completed the 160 acre Drew Field'; 'In 1940, the City of Tampa leased Drew Field to the U.S. [Army]'. History of Tampa: 'on March 1, 1946, the federal government would give it to the municipal government'; 'The airport would start seeing its first airlines in it during April and May. Drew Field would be renamed on October 15, 1947, to Tampa International Airport.' tampaairport.com returned 403."
+  },
+  {
+    "id": "egmont-key-light-1858",
+    "era": "frontier",
+    "year": 1858,
+    "date": "1858",
+    "title": "The present Egmont Key lighthouse is lit",
+    "text": "After the 1848 hurricane damaged the first Egmont Key lighthouse, rebuilding began in 1857 and the present tower went into service in 1858 with a new Fresnel lens. In the 1850s the island was used to hold Seminole prisoners before they were shipped west to Indian Territory.",
+    "places": [
+      "egmont-key-state-park"
+    ],
+    "area": "fort-de-soto",
+    "lat": 27.600812,
+    "lng": -82.76067,
+    "media": [
+      "tl-egmont-key-lighthouse"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Egmont_Key_Light",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Egmont Key Light: 'The current Egmont Key Light dates from 1858'; 'In 1857 work was begun rebuilding the tower. The reconstruction was completed in 1858, and the lighthouse was placed back in service with a new third order Fresnel lens'; 'In the 1850s Egmont Key was used as a temporary holding area for Seminoles before they were shipped to the Indian Territory.' Coordinates: Photon match 'Egmont Key Light' (man_made=lighthouse)."
+  },
+  {
+    "id": "encore-the-ella-2012",
+    "era": "modern",
+    "year": 2012,
+    "date": "2012-12",
+    "title": "Encore rises on the site of the Scrub",
+    "text": "The Ella, the first building of the Encore development, opened in December 2012 on land that had been the Scrub and then the Central Park Village housing project. The City's Soulwalk markers now tell the neighborhood's history.",
+    "places": [
+      "perry-harvey-sr-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.9547,
+    "lng": -82.4534,
+    "source_url": "https://www.tampa.gov/soulwalk/historic-markers/scrub",
+    "checked": "2026-09-27",
+    "notes": "Soulwalk marker: Central Park Village replaced by Encore; 'The Ella, opened in December 2012'. Raw marker text: 'Central Park Village was itself replaced by Encore!, The first building of the new development, The Ella, opened in December 2012.' Coordinates: history-of-tampa's point for The Ella."
+  },
+  {
+    "id": "first-gasparilla-1904",
+    "era": "boomtown",
+    "year": 1904,
+    "date": "1904-05-04",
+    "title": "Ye Mystic Krewe of Gasparilla 'captures' Tampa for the first time",
+    "text": "Gasparilla began in 1904 when Tampa Tribune society editor Louise Francis Dodge and George W. Hardee organized a mock pirate attack to promote the city's May Day celebration; the first krewe of about forty rode in on horseback during the parade on May 4, 1904. The krewe first invaded by ship in 1911, and in 1954 it christened the José Gasparilla II, which it calls the only ship built for 'piratical' purposes in two hundred years.",
+    "area": "downtown-tampa",
+    "media": [
+      "tl-gasparilla-ship-1922",
+      "tl-gasparilla-ship-1959"
+    ],
+    "source_url": "https://ymkg.com/the-history-of-gasparilla/",
+    "checked": "2026-09-27",
+    "notes": "YMKG: 'Gasparilla began in 1904 when Miss Louise Francis Dodge, society editor of the Tampa Tribune, and George W. Hardee... conspired to promote the City of Tampa and its May Day celebration'; 'the first Ye Mystic Krewe of Gasparilla, whose forty members'; 'arrived on horseback and captured the city during the Festival Parade on May 4, 1904'; 'In 1911 a ship was used for the first time'; José Gasparilla II christened January 5, 1954, 'the only ship that has been constructed for piratical purposes in the past two hundred years' verified in the raw page: 'This is the only ship that has been constructed for piratical purposes in the past two hundred years.' gasparillapiratefest.com history page not opened."
+  },
+  {
+    "id": "florida-aquarium-opens-1995",
+    "era": "modern",
+    "year": 1995,
+    "date": "1995-03-31",
+    "title": "The Florida Aquarium opens in the Channel District",
+    "text": "The Florida Aquarium opened in Tampa on March 31, 1995, and says it served more than a million residents and visitors in its first year.",
+    "places": [
+      "florida-aquarium"
+    ],
+    "area": "channel-district",
+    "lat": 27.943763,
+    "lng": -82.44713,
+    "media": [
+      "tl-florida-aquarium-2013"
+    ],
+    "source_url": "https://www.flaquarium.org/about-us/",
+    "checked": "2026-09-27",
+    "notes": "Florida Aquarium About Us (WebFetch): 'The Florida Aquarium opened in Tampa on March 31, 1995'; first-year impact 'serving over one million residents and visitors'."
+  },
+  {
+    "id": "florida-boom-busts-1926",
+    "era": "land-boom",
+    "year": 1926,
+    "date": "1926",
+    "title": "The Florida land boom breaks in Tampa",
+    "text": "Tampa's real-estate boom peaked in 1925, with new subdivisions such as Davis Islands, Palma Ceia and Seminole Heights, and began to break in 1926 when financial backing for Davis Islands collapsed. Developer D. P. Davis, who had built the islands from mud dredged from the bay, was lost at sea that October, and by the winter of 1926-27 the market had reached saturation.",
+    "places": [
+      "north-franklin-street-historic-district"
+    ],
+    "area": "davis-islands",
+    "lat": 27.921967,
+    "lng": -82.45565,
+    "media": [
+      "tl-lafayette-bridge-1925",
+      "tl-villa-de-leon-davis-islands"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/02000264_text",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Davis_Islands_(Tampa)"
+    ],
+    "checked": "2026-09-27",
+    "notes": "North Franklin Street Historic District NRHP form: 'By the mid-1920s, residential developments had mushroomed... Beach Park, Davis Islands, Palma Ceia, Sunset Park, and Seminole Heights. During 1925, the Florida boom was in its heyday'; 'Early signs of an economic slow-down in Tampa were evident in 1926 with the collapse of financial backing for the Davis Islands real estate venture. By the winter of 1926-27 the saturation point for real estate development had finally been reached.' Davis Islands (Tampa) Wikipedia: 'built from mud dredged from the bottom of Tampa Bay in the 1920s'; 'Davis was mysteriously lost at sea while making a transatlantic voyage in October 1926.' Coordinates: Photon place=island."
+  },
+  {
+    "id": "florida-state-fair-begins-1904",
+    "era": "boomtown",
+    "year": 1904,
+    "date": "1904",
+    "title": "The fair that becomes the Florida State Fair begins in Tampa",
+    "text": "The South Florida Fair Association formed in Tampa in 1904 to stage an annual exhibition; it took the name Florida State Fair in 1915 and in 1977 moved to its present grounds at Interstate 4 and U.S. 301 east of the city.",
+    "places": [
+      "florida-state-fairgrounds"
+    ],
+    "area": "east-tampa",
+    "source_url": "https://en.wikipedia.org/wiki/Florida_State_Fair",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'In 1904, the South Florida Fair Association was formed'; 'The name finally changed to the present Florida State Fair in 1915'; 'By 1977, the first fair was held at its current location, at the intersection of Interstate 4 and U.S. [301]'. floridastatefair.com history URL returned 404."
+  },
+  {
+    "id": "fort-brooke-decommissioned-1883",
+    "era": "frontier",
+    "year": 1883,
+    "date": "1883",
+    "title": "Fort Brooke is decommissioned",
+    "text": "The Army decommissioned Fort Brooke in 1883, the year before the railroad arrived. Apart from two cannons recovered from the river and displayed on the University of Tampa campus, no trace of the fort remains above ground; artifacts were recovered from the site in the 1970s and 1980s.",
+    "places": [
+      "cotanchobee-fort-brooke-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.941734,
+    "lng": -82.450829,
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+    "also_sources": [
+      "https://tampabayhistorycenter.org/exhibit/replacing-fort-brooke/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "History of Tampa (Wikipedia): 'Fort Brooke was decommissioned in 1883. Except for two cannons fished from the river and displayed on the nearby University of Tampa campus, all traces of the fort are gone.' TBHC exhibit page mentions artifacts recovered from the site during the 1970s and 1980s."
+  },
+  {
+    "id": "fort-brooke-founded-1824",
+    "era": "frontier",
+    "year": 1824,
+    "date": "1824-01-22",
+    "title": "Fort Brooke is founded at the mouth of the Hillsborough River",
+    "text": "Col. George Mercer Brooke arrived at Tampa Bay with James Gadsden and four companies of infantry on Jan. 18, 1824, and the post, first called the camp on the Hillsborough River, was established on Jan. 22. The Tampa Bay History Center calls Fort Brooke the genesis of modern Tampa; the fort stood about where the Tampa Convention Center is today.",
+    "places": [
+      "tampa-convention-center",
+      "tampa-bay-history-center",
+      "cotanchobee-fort-brooke-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.941734,
+    "lng": -82.450829,
+    "media": [
+      "tl-tampa-bay-lithograph-1837"
+    ],
+    "source_url": "https://tampabayhistorycenter.org/exhibit/replacing-fort-brooke/",
+    "also_sources": [
+      "https://www.tampa.gov/city-clerk/info/archives/city-of-tampa-incorporation-history",
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "TBHC: 'Established on January 22, 1824', 'first known simply as the camp on the Hillsborough River', 'arguably the genesis of modern-day Tampa'. City Clerk: 'January 18, 1824 - Col. Brooke, along with James Gadsden and four companies of infantry, arrived in Tampa Bay.' Wikipedia History of Tampa: the fort was 'just about where today's Tampa Convention Center sits downtown'. Coordinates: Cotanchobee Fort Brooke Park (Photon), the commemorative park beside the Convention Center; history-of-tampa places the fort itself beneath the Convention Center block."
+  },
+  {
+    "id": "fort-de-soto-built-1898",
+    "era": "boomtown",
+    "year": 1898,
+    "date": "1898-11",
+    "title": "Forts rise on Mullet Key and Egmont Key",
+    "text": "The Spanish-American War brought coastal forts to the mouth of Tampa Bay: construction of Fort De Soto on Mullet Key began in November 1898 and finished in 1906, and Fort Dade was built on Egmont Key. Fort De Soto was active until 1910; its mortar battery, listed on the National Register in 1977, stands in today's county park.",
+    "places": [
+      "fort-de-soto-park",
+      "egmont-key-state-park",
+      "fort-de-soto-historic-batteries"
+    ],
+    "area": "fort-de-soto",
+    "lat": 27.630054,
+    "lng": -82.735749,
+    "media": [
+      "tl-fort-de-soto-mortars"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Fort_De_Soto_Park",
+    "also_sources": [
+      "https://pinellas.gov/parks/fort-de-soto-park/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Fort De Soto Park: 'Construction of Fort De Soto began in November 1898 and was completed in 1906'; 'Fort De Soto was active from 1898 to 1910'; named in 1900 for Hernando de Soto; Fort Dade listed in its battery table. Pinellas County: 'The 12-inch mortar battery... was listed in the National Register of Historic Places in 1977.' Fort Dade on Egmont Key (1898): the egmont-key-state-park record in the outdoors slice ('Fort Dade was built in 1898'). Coordinates: the park (Photon)."
+  },
+  {
+    "id": "fort-de-soto-park-opens-1962",
+    "era": "postwar",
+    "year": 1962,
+    "date": "1962-12-21",
+    "title": "Fort De Soto Park opens",
+    "text": "After the Pinellas Bayway toll road reached Mullet Key in 1962 and let visitors drive to the islands, Fort De Soto Park opened on Dec. 21, 1962, and was dedicated on May 11, 1963. The county park now covers several keys, beaches and the 1898 fort.",
+    "places": [
+      "fort-de-soto-park"
+    ],
+    "area": "fort-de-soto",
+    "lat": 27.630054,
+    "lng": -82.735749,
+    "source_url": "https://en.wikipedia.org/wiki/Fort_De_Soto_Park",
+    "also_sources": [
+      "https://pinellas.gov/parks/fort-de-soto-park/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'In 1962, a toll road, the Pinellas Bayway... was completed to the mainland, enabling island visitors to arrive by car'; 'On December 21, 1962, Fort De Soto Park opened'; 'On May 11, 1963, Fort De Soto Park was officially dedicated'; park keys: Madelaine Key, St. Jean Key, St. Christopher Key, Bonne Fortune Key and Mullet Key. 'covers several keys' is our summary."
+  },
+  {
+    "id": "fort-foster-1836",
+    "era": "frontier",
+    "year": 1836,
+    "date": "1836-12",
+    "title": "Fort Foster guards the Hillsborough River crossing",
+    "text": "Col. William S. Foster and 430 men built Fort Foster in 1836 to defend the bridge crossing on the Hillsborough River during the Second Seminole War; it was garrisoned on and off from December 1836 to April 1838. A reproduction stands on the original ground across U.S. 301 from Hillsborough River State Park.",
+    "places": [
+      "fort-foster-state-historic-site",
+      "hillsborough-river-state-park"
+    ],
+    "area": "plant-city",
+    "lat": 28.166703,
+    "lng": -82.200089,
+    "media": [
+      "tl-fort-foster-reconstruction"
+    ],
+    "source_url": "https://www.historyandnature.org/fort-foster",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Fort_Foster_(Florida)"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Hillsborough River State Park Preservation Society: 'reproduction of a fort originally built on the same grounds in 1836 by Col. William S. Foster and his 430 men'; 'utilized during the Second Seminole War to defend the bridge crossing at the Hillsborough River'; 'garrisoned on and off from December 1836 through April 1838'; 'across from the park' on U.S. 301. Coordinates: Photon historic=archaeological_site 'Fort Foster'."
+  },
+  {
+    "id": "frank-lloyd-wright-florida-southern-1938",
+    "era": "land-boom",
+    "year": 1938,
+    "date": "1938-05-08",
+    "title": "Frank Lloyd Wright begins his Florida Southern campus",
+    "text": "Frank Lloyd Wright first walked the Florida Southern College campus in Lakeland on May 8, 1938, at the invitation of president Ludd Spivey. Over more than 20 years he produced 18 designs, 13 of which were built, starting with the chapel (1938-41); the college calls it the world's largest single-site collection of Wright's architecture for one client.",
+    "places": [
+      "florida-southern-college-architectural-district"
+    ],
+    "area": "polk",
+    "lat": 28.034307,
+    "lng": -81.949865,
+    "source_url": "https://www.flsouthern.edu/frank-lloyd-wright-home/history",
+    "checked": "2026-09-27",
+    "notes": "Florida Southern: 'On May 8, 1938, at nearly 71 years of age, Wright set foot on the Florida Southern campus for the first time'; 'he delivered 18 unique and distinctive building designs over the course of more than 20 years'; 'Thirteen of his proposed structures were funded and built'; 'This easily makes Florida Southern the world's largest single-site collection of Wright's architecture for one client'; 'Construction of the chapel lasted from 1938 to 1941.'"
+  },
+  {
+    "id": "gandy-bridge-opens-1924",
+    "era": "land-boom",
+    "year": 1924,
+    "date": "1924-11-20",
+    "title": "The Gandy Bridge links Tampa and St. Petersburg",
+    "text": "George S. Gandy's toll bridge across Old Tampa Bay opened on Nov. 20, 1924; at two and a half miles it was then the longest automobile toll bridge in the world. The City of St. Petersburg says it cut travel time to Tampa by more than half. The original span was dismantled in 1975 and the route is now carried by newer Gandy bridges.",
+    "area": "northeast-stpete",
+    "lat": 27.884981,
+    "lng": -82.562356,
+    "media": [
+      "tl-first-gandy-bridge"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Gandy_Bridge",
+    "also_sources": [
+      "https://www.stpete.org/visitors/history.php"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Gandy Bridge: 'Construction began in September 1922 and the bridge was completed for a formal opening on November 20, 1924'; 'spanned a distance of two and a half miles, making it the longest automobile toll bridge in the world at that time'; 'The original 1924 span was dismantled in 1975.' City: 'In 1924 the Gandy Bridge opened—cutting travel time to Tampa by more than half'. Area: the bridge crosses between South Tampa and NE St. Pete; area set to northeast-stpete (Gandy Beach is listed under that area in SPEC §4.1)."
+  },
+  {
+    "id": "great-gale-1848",
+    "era": "frontier",
+    "year": 1848,
+    "date": "1848-09",
+    "title": "The Great Gale of 1848 wrecks Fort Brooke and Egmont Key's new light",
+    "text": "In late September 1848 the strongest hurricane known to have struck the Tampa Bay area made landfall near today's Clearwater. Every building in Tampa was damaged or destroyed, including most of Fort Brooke, and the storm covered Egmont Key with about six feet of water, damaging the lighthouse built there that year.",
+    "places": [
+      "egmont-key-state-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.941734,
+    "lng": -82.450829,
+    "source_url": "https://en.wikipedia.org/wiki/1848_Tampa_Bay_hurricane",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+      "https://en.wikipedia.org/wiki/Egmont_Key_Light"
+    ],
+    "checked": "2026-09-27",
+    "notes": "1848 Tampa Bay hurricane (Wikipedia): 'the strongest known hurricane to impact the Tampa Bay area'; landfall 'near modern-day Clearwater in Pinellas County on September 24' (the infobox runs Sept 23-28). History of Tampa: 'Every building in Tampa was either damaged or destroyed, including most of Fort Brooke.' Egmont Key Light: 'In September 1848 a hurricane covered the island with six feet of water and damaged the new lighthouse.'"
+  },
+  {
+    "id": "greek-sponge-divers-1905",
+    "era": "boomtown",
+    "year": 1905,
+    "date": "1905",
+    "title": "Greek sponge divers transform Tarpon Springs",
+    "text": "Experienced divers from Greece came to Tarpon Springs with rubber diving suits and helmets that increased the harvest, and by 1905 more than 500 Greek sponge divers were working from 50 boats. Sponge buyers built the Sponge Exchange in 1907, where catches were stored for auctions twice a week.",
+    "places": [
+      "sponge-docks-tarpon-springs"
+    ],
+    "area": "tarpon-springs",
+    "lat": 28.155506,
+    "lng": -82.760911,
+    "media": [
+      "tl-sponge-harvest-2007"
+    ],
+    "source_url": "https://spongedocks.net/tarpon-springs-history/",
+    "checked": "2026-09-27",
+    "notes": "spongedocks.net: 'experienced divers from Greece were brought to Tarpon Springs. By using rubberized diving suits and helmets, they increased harvests. By 1905, over 500 Greek sponge divers were at work using 50 boats.' 'Sponge buyers created the Sponge Exchange in 1907. A building with a courtyard was erected in which each sponger could store his catch while awaiting the auctions that took place twice a week.' Other accounts give 1908 for the exchange; the page's 1907 is used."
+  },
+  {
+    "id": "hillsborough-bay-renamed-1763",
+    "era": "spanish",
+    "year": 1763,
+    "date": "1763",
+    "title": "Florida becomes British, and the bay is renamed Hillsborough",
+    "text": "Great Britain acquired Florida in 1763 at the end of the Seven Years' War, and under British rule the bay was renamed Hillsborough Bay for Lord Hillsborough, secretary of state for the colonies; the name survives in the Hillsborough River and County. Spain regained Florida in 1783. Cuban fishermen kept a seasonal camp at the mouth of Spanish Town Creek in today's Hyde Park, smoking mullet to sell in Cuba.",
+    "area": "hyde-park",
+    "media": [
+      "tl-celi-map-1757"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+    "checked": "2026-09-27",
+    "notes": "All from Wikipedia History of Tampa, section 'English rule'. No coordinates: the Spanish Town Creek mouth is not geocodable reliably."
+  },
+  {
+    "id": "hillsborough-county-created-1834",
+    "era": "frontier",
+    "year": 1834,
+    "date": "1834-01-25",
+    "title": "Hillsborough County is organized",
+    "text": "On Jan. 25, 1834, the Legislative Council of the Territory of Florida organized Hillsborough as Florida's 19th county, named for Wills Hill, Lord Hillsborough. At statehood in 1845 it still covered what are now Pinellas, Polk, Manatee, Sarasota and several other counties, with only 836 residents counted, not including soldiers or Native Americans.",
+    "area": "downtown-tampa",
+    "media": [
+      "tl-first-county-courthouse"
+    ],
+    "source_url": "https://www.hcfl.gov/about-hillsborough/history/hillsborough-county-history",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "County history page: 'takes its name from Wills Hill, British Secretary of State to the Colonies from 1768-1772'; 'On Jan. 25, 1834, the U.S. Legislative Council for the Territory of Florida approved an act organizing Hillsborough as Florida's 19th county'; statehood 1845 extent; population 836. 'Lord Hillsborough' from Wikipedia History of Tampa."
+  },
+  {
+    "id": "hillsborough-river-state-park-1938",
+    "era": "land-boom",
+    "year": 1938,
+    "date": "1938",
+    "title": "The CCC builds one of Florida's first state parks",
+    "text": "Hillsborough River State Park, built by the Civilian Conservation Corps, was one of the eight original Florida state parks created in 1938. CCC buildings, a suspension bridge and a section of fence survive on a stretch of river known for small rapids, and the park's interpretive center tells the story of Fort Foster across the road.",
+    "places": [
+      "hillsborough-river-state-park",
+      "fort-foster-state-historic-site"
+    ],
+    "area": "plant-city",
+    "lat": 28.147935,
+    "lng": -82.235249,
+    "source_url": "https://en.wikipedia.org/wiki/Hillsborough_River_State_Park",
+    "also_sources": [
+      "https://www.historyandnature.org/fort-foster"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'one of the eight original Florida State Parks created in 1938'; 'originally built by the Civilian Conservation Corps (CCC), and some of the original structures remain, including the buildings that now house the administrative offices and Interpretive Center, the suspension bridge, and a section of fence'. Infobox 'established = 1935'. Wikipedia: 'This section of the river is noted for having several clusters of small rapids'. Preservation Society: the Interpretive Center 'hosts over 100 artifacts that were found at the Fort Foster Historic Site'. floridastateparks.org returns 403."
+  },
+  {
+    "id": "hurricane-helene-surge-2024",
+    "era": "modern",
+    "year": 2024,
+    "date": "2024-09-26",
+    "title": "Hurricane Helene's surge floods the Pinellas beaches",
+    "text": "Hurricane Helene made landfall far to the north in Florida's Big Bend on the night of Sept. 26, 2024, but its storm surge flooded the Tampa Bay coast with 5 to 7 feet of water above ground, setting a record at St. Petersburg's tide gauge. Twelve people drowned in Pinellas County, most on the barrier islands from St. Pete Beach to Indian Rocks Beach, and at least 419 homes were destroyed in Pinellas and Hillsborough counties.",
+    "area": "madeira-beach",
+    "lat": 27.798081,
+    "lng": -82.797325,
+    "source_url": "https://www.nhc.noaa.gov/data/tcr/AL092024_Helene.pdf",
+    "checked": "2026-09-27",
+    "notes": "NHC Tropical Cyclone Report (Helene): landfall 'about 10 n mi southwest of Perry, Florida, around 0310 UTC 27 September' (the night of Sept. 26 local time); 'Maximum storm surge inundation of 5 to 7 ft AGL occurred from the Anclote River southward to Longboat Key'; 'Within Tampa Bay, maximum storm surge inundation of 5 to 7 ft AGL occurred'; the St. Petersburg tide station's 6.31 ft above MHHW 'surpassed the previous record of 3.97 ft during Hurricane Elena (1985)'; 'In Pinellas County, 12 people drowned in the surge. Media reports indicate that 9 of these 12 victims were located on the barrier islands on Pinellas County's west coast from St. Pete Beach to Indian Rocks Beach'; 'Helene destroyed at least 419 homes in Pinellas and Hillsborough Counties combined'. The report gives Madeira Beach 7.26 ft above MHHW. Coordinates: Madeira Beach (Photon)."
+  },
+  {
+    "id": "hurricane-milton-2024",
+    "era": "modern",
+    "year": 2024,
+    "date": "2024-10-09",
+    "title": "Hurricane Milton strikes Siesta Key and tears the roof off the Trop",
+    "text": "Two weeks after Helene, Hurricane Milton made landfall on Siesta Key near Sarasota on the night of Oct. 9, 2024, as a Category 3 storm, causing major damage in the Sarasota and Tampa Bay areas. Its winds ripped off most of Tropicana Field's fabric roof, and more than 20 inches of rain fell near St. Petersburg, bringing record crests on the Hillsborough River.",
+    "places": [
+      "tropicana-field"
+    ],
+    "area": "grand-central",
+    "lat": 27.768056,
+    "lng": -82.653275,
+    "media": [
+      "tl-tropicana-after-milton"
+    ],
+    "source_url": "https://www.nhc.noaa.gov/data/tcr/AL142024_Milton.pdf",
+    "also_sources": [
+      "https://www.wusf.org/sports/2026-04-05/after-18-months-away-the-rays-embrace-their-return-to-a-repaired-tropicana-field"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHC TCR (Milton): 'made landfall on the west coast of the Florida peninsula as a category 3 hurricane, causing major damage in the Sarasota and Tampa Bay areas'; 'landfall on Siesta Key, Florida, at 0030 UTC 10 October' (8:30 p.m. Oct. 9 EDT); 'the Tropicana Field stadium in St. Petersburg, where the fabric roof was ripped off by high winds'; 'the area of the Florida west coast most affected by Milton had also been affected by Hurricane Helene two weeks before'; 'rainfall was 20.40 inches at a CoCoRaHS site near St. Petersburg'; 'widespread river and urban flooding, particularly in the St. Petersburg-Tampa area where record-high crests were recorded on the Hillsborough River'. WUSF: 'The winds ripped off most of the roof'."
+  },
+  {
+    "id": "ice-palace-opens-1996",
+    "era": "modern",
+    "year": 1996,
+    "date": "1996",
+    "title": "The Ice Palace arena opens downtown",
+    "text": "The county-owned arena in downtown Tampa opened in 1996 as the Ice Palace, home of the Lightning. Later called the St. Pete Times Forum, Tampa Bay Times Forum and Amalie Arena, it took the name Benchmark International Arena in 2025.",
+    "places": [
+      "benchmark-international-arena"
+    ],
+    "area": "channel-district",
+    "lat": 27.942704,
+    "lng": -82.45189,
+    "media": [
+      "tl-arena-2004"
+    ],
+    "source_url": "https://www.tampa.gov/sites/default/files/proclamation/2025/20250813_benchmark_international_arena_day.pdf",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning"
+    ],
+    "checked": "2026-09-27",
+    "notes": "City of Tampa proclamation (Aug 13, 2025): 'formally known first as the Ice Palace, then the St. Pete Times Forum, Tampa Bay Times Forum and Amalie Arena, has served as the heart of Tampa's vibrant downtown since its opening in 1996'; 'a county-owned facility'; home of the Lightning's regular-season games. Renaming year 2025 from the proclamation's date and subject."
+  },
+  {
+    "id": "inverted-pyramid-pier-1973",
+    "era": "postwar",
+    "year": 1973,
+    "date": "1973",
+    "title": "St. Petersburg's inverted-pyramid Pier opens",
+    "text": "The inverted-pyramid Pier replaced the Million Dollar Pier and opened in 1973; for four decades it was a symbol of St. Petersburg's waterfront.",
+    "places": [
+      "st-pete-pier"
+    ],
+    "area": "downtown-stpete",
+    "lat": 27.77291,
+    "lng": -82.627746,
+    "source_url": "https://stpetepier.org/history/",
+    "also_sources": [
+      "https://www.stpete.org/visitors/history.php"
+    ],
+    "checked": "2026-09-27",
+    "notes": "St. Pete Pier: 'It opened in 1973 and became a symbol of St. Petersburg's waterfront for four decades.' City: the 'Inverted Pyramid pier, a successor to the popular Million Dollar Pier'."
+  },
+  {
+    "id": "juan-ortiz-found-1539",
+    "era": "spanish",
+    "year": 1539,
+    "date": "1539",
+    "title": "De Soto's men find Juan Ortiz",
+    "text": "Juan Ortiz came to Tampa Bay in 1528 on a ship searching for the missing Narváez expedition and was captured by the people of Uzita, a Safety Harbor culture chiefdom on the bay's south shore near the mouth of the Little Manatee River. After escaping to the neighboring chiefdom of Mocoso he lived there until the de Soto expedition found him in 1539; he then served the Spanish as an interpreter.",
+    "area": "apollo-beach",
+    "source_url": "https://en.wikipedia.org/wiki/Juan_Ortiz_(captive)",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Uzita_(Florida)"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Juan Ortiz (captive): 'In 1528 Juan Ortiz was on a ship searching Tampa Bay for any sign of the Narváez expedition'; 'found by the de Soto Expedition when they landed in Tampa Bay in 1539'; 'Ortiz could speak the languages of both Uzita and Mocoso'. Uzita (Florida): chief town near the mouth of the Little Manatee River, in the Ruskin area; part of the Safety Harbor culture. No coordinates: the town site is not fixed by the sources."
+  },
+  {
+    "id": "jungle-prada-village",
+    "era": "indigenous",
+    "year": 1000,
+    "title": "A Tocobaga village on Boca Ciega Bay",
+    "text": "People of the Safety Harbor culture lived at the Jungle Prada Site on Boca Ciega Bay in today's west St. Petersburg for about 600 years, from about 1000 to 1600 CE. Most of the mounds that once lined the bay here were used as fill in the 20th century; a plaza mound and a long midden mound survive, partly in the city's Jungle Prada de Narvaez park.",
+    "places": [
+      "jungle-prada-site"
+    ],
+    "area": "west-stpete",
+    "lat": 27.788529,
+    "lng": -82.752666,
+    "media": [
+      "tl-jungle-prada-park"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Jungle_Prada_Site",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia (citing Simpson 1998 and the 2002 NRHP registration form by Robert Austin): Tocobaga inhabited the site 'from 1000 to 1600 CE'; NRHP listed Feb 4, 2003 (ref 03000007). Coordinates: census match for 1700 Park St N (the park's address area), checked against the Photon match 'Jungle Prada' park (27.787904,-82.753495). No place record for the park exists in other slices yet."
+  },
+  {
+    "id": "lightning-first-game-1992",
+    "era": "modern",
+    "year": 1992,
+    "date": "1992-10-07",
+    "title": "The Lightning play their first NHL game",
+    "text": "The Tampa Bay Lightning, founded as an NHL expansion team in 1990, played their first regular-season game on Oct. 7, 1992, in Expo Hall at the Florida State Fairgrounds, before moving to the ThunderDome in St. Petersburg in 1993 and to their downtown Tampa arena in 1996.",
+    "places": [
+      "florida-state-fairgrounds"
+    ],
+    "area": "east-tampa",
+    "lat": 27.988197,
+    "lng": -82.366067,
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tropicana_Field"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Lightning (Wikipedia): 'founded as an expansion team on December 6, 1990, and began play in the 1992–93 NHL season'; 'The Lightning played their first regular season game on October 7, 1992, in Tampa's Expo Hall at the Florida State Fairgrounds.' Tropicana Field: ThunderDome 1993-1996."
+  },
+  {
+    "id": "lightning-win-stanley-cup-2004",
+    "era": "modern",
+    "year": 2004,
+    "date": "2004-06-07",
+    "title": "The Lightning win their first Stanley Cup",
+    "text": "The Lightning beat the Calgary Flames in seven games to win their first Stanley Cup on June 7, 2004, clinching Game 7 at home, 2-1; they were then the southernmost team ever to win it.",
+    "places": [
+      "benchmark-international-arena"
+    ],
+    "area": "channel-district",
+    "lat": 27.942704,
+    "lng": -82.45189,
+    "source_url": "https://en.wikipedia.org/wiki/2004_Stanley_Cup_Final",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: dates May 25 - June 7, 2004; 'defeated the Western Conference champion Calgary Flames in seven games for their first Stanley Cup in franchise history, becoming the southernmost team to win the Stanley Cup until... Florida Panthers won the Cup in 2024.' Game 7 was played at the St. Pete Times Forum in Tampa (game box stadium1), where the Cup was presented after the Lightning's 2-1 win."
+  },
+  {
+    "id": "lightning-win-stanley-cup-2020",
+    "era": "modern",
+    "year": 2020,
+    "date": "2020-09-28",
+    "title": "The Lightning win the Stanley Cup in the Edmonton bubble",
+    "text": "Playing the entire Final without fans in Edmonton because of the COVID-19 pandemic, the Lightning beat the Dallas Stars and won their second Stanley Cup on Sept. 28, 2020.",
+    "area": "channel-district",
+    "source_url": "https://en.wikipedia.org/wiki/2020_Stanley_Cup_Final",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'Due to the COVID-19 pandemic, the entire series was played behind closed doors at Rogers Place in Edmonton'; dates September 19-28, 2020; Vasilevskiy shutout clinched in Game 6. No coordinates (played in Edmonton)."
+  },
+  {
+    "id": "lightning-win-stanley-cup-2021",
+    "era": "modern",
+    "year": 2021,
+    "date": "2021-07-07",
+    "title": "The Lightning repeat as champions at home",
+    "text": "On July 7, 2021, the Lightning beat the Montreal Canadiens 1-0 in Game 5 at their home arena in Tampa to win their second straight Stanley Cup and third overall.",
+    "places": [
+      "benchmark-international-arena"
+    ],
+    "area": "channel-district",
+    "lat": 27.942704,
+    "lng": -82.45189,
+    "source_url": "https://en.wikipedia.org/wiki/2021_Stanley_Cup_Final",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Lightning"
+    ],
+    "checked": "2026-09-27",
+    "notes": "2021 Final (Wikipedia): Game 5 July 7 at Amalie Arena (the game box lists stadium1=Amalie Arena, Tampa Bay home); 'The Stanley Cup was presented to Lightning captain Steven Stamkos... following the Lightning's 1–0 win in Game 5.' Lightning: Cups in 2004, 2020 and 2021."
+  },
+  {
+    "id": "macdill-field-1939",
+    "era": "land-boom",
+    "year": 1939,
+    "date": "1939",
+    "title": "The Army builds MacDill Field on Catfish Point",
+    "text": "The Army established Southeast Air Base, Tampa, on Catfish Point in 1939, named it MacDill Field for Col. Leslie MacDill and dedicated it on April 16, 1941. MacDill and Drew Field, the city airport the Army leased in 1940, drew tens of thousands of soldiers and workers, and by war's end 25,000 soldiers had been trained locally to crew B-17 and B-29 bombers.",
+    "area": "south-tampa",
+    "lat": 27.843641,
+    "lng": -82.502872,
+    "media": [
+      "tl-macdill-field-postcard"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/MacDill_Air_Force_Base",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+      "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+      "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/02000264_text"
+    ],
+    "checked": "2026-09-27",
+    "notes": "MacDill AFB (Wikipedia): 'originally established in 1939 as Southeast Air Base, Tampa'; 'named in honor of Colonel Leslie MacDill (1889–1938)'. History of Tampa: base announced July 15, 1939 at Catfish Point; named MacDill Field on November 30; 'MacDill Field would be dedicated on April 16, 1941.' TPA (Wikipedia): 'In 1940, the City of Tampa leased Drew Field to the U.S. [Army]'. North Franklin NRHP form: 'Tens of thousands of soldiers and workers supported the war effort at Tampa's revitalized shipyards and at MacDill and Drew Fields... By war's end, 25,000 soldiers had been trained locally to man the nation's B-17 and B-29 bomber fleets.' 'Interbay Peninsula' tip: base location (Photon); macdill.af.mil returned 403."
+  },
+  {
+    "id": "manasota-culture",
+    "era": "indigenous",
+    "year": -500,
+    "title": "Manasota people fish and hunt the bay",
+    "text": "Archaeologists call the people who lived on the central Gulf coast of the Florida peninsula from about 500 BCE the Manasota culture; around 900 CE it developed into the Safety Harbor culture. Weedon Island Preserve says Manasota people hunted and fished the bay and left shell mounds along the coast, and it shows a 39.9-foot pine dugout canoe, about 1,100 years old, that was excavated from its shoreline in 2011.",
+    "places": [
+      "weedon-island-preserve"
+    ],
+    "area": "northeast-stpete",
+    "lat": 27.849602,
+    "lng": -82.608149,
+    "media": [
+      "tl-weedon-island-preserve-2006"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Manasota_culture",
+    "also_sources": [
+      "https://www.weedonislandpreserve.org/prehistoric-canoe.htm",
+      "https://www.weedonislandpreserve.org/history-archaeology.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Year -500 = 'about 500 BCE' (Wikipedia, Manasota culture). Canoe facts (Manasota makers, 12.17 m / 39.9 ft pine dugout, excavated 2011, 1,100 years old, shown in the Welcome Center) from the Pinellas County preserve page; its radiocarbon line is garbled on the page ('AD 690 l 1010') so no radiocarbon date is given here."
+  },
+  {
+    "id": "marti-in-ybor-1891",
+    "era": "boomtown",
+    "year": 1891,
+    "date": "1891-11-26",
+    "title": "José Martí rallies Ybor City for Cuban independence",
+    "text": "On Nov. 26 and 27, 1891, José Martí gave two speeches in Ybor City, 'With All and For All' and 'The New Growth', that set out the goals of the Cuban Revolutionary Party. In 1893 he spoke from the steps of the V. M. Ybor factory to a crowd of more than 10,000, and afterward workers pledged a day's pay a week to the revolution; the site of the home of Ruperto and Paulina Pedroso, Black Cubans who sheltered him when Spanish assassins came looking for him, is now Parque Amigos de José Martí.",
+    "places": [
+      "ybor-city-historic-district",
+      "ybor-factory-building",
+      "parque-amigos-de-jose-marti"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961053,
+    "lng": -82.445403,
+    "media": [
+      "tl-marti-ybor-1893"
+    ],
+    "source_url": "https://www.nps.gov/teachers/classrooms/upload/TWHP-Lessons_51ybor.pdf",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NPS Teaching with Historic Places lesson 51: 'On November 26 and 27, 1891, he delivered two speeches there—Con Todos Y Para Todos (With All and For All), and Los Pinos Nuevos (The New Growth)—which outlined the goals of the United Cuban Revolutionary Party'; 'In 1893... More than 10,000 Cubans jammed into a small outdoor area in front of the V.M. Ybor Cigar Factory'; 'workers from all the factories pledged to give one day's pay a week'. NHL: 'In 1893 Cuban patriot Jose Marti delivered a speech from the steps' (portico later taken to Havana; present one a reproduction). Pedroso site = Parque Amigos de José Martí at 1300 E. 8th Ave per history-of-tampa's reading of the NHL nomination ('two Black Cubans who sheltered Marti when Spanish assassins were sent'); Coordinates: 1300 E 8th Ave (census)."
+  },
+  {
+    "id": "menendez-at-tocobaga-1567",
+    "era": "spanish",
+    "year": 1567,
+    "date": "1567",
+    "title": "Menéndez visits Tocobaga and leaves a garrison",
+    "text": "In 1567 Pedro Menéndez de Avilés visited the Tocobaga town that was almost certainly the Safety Harbor Site and left about 30 soldiers there. When Spanish boats brought supplies in January 1568 they found the town deserted and the soldiers dead.",
+    "places": [
+      "philippe-park"
+    ],
+    "area": "safety-harbor",
+    "lat": 28.012553,
+    "lng": -82.684054,
+    "source_url": "https://en.wikipedia.org/wiki/Tocobaga",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000270_text"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Tocobaga: 'The name Tocobaga first appears in Spanish documents in 1567, when Pedro Menéndez de Avilés visited what was almost certainly the Safety Harbor site'; 'Leaving a garrison of 30 men at Tocobaga'; 'In January 1568... found the town deserted, and all the Spanish soldiers dead.' NHL nomination: 'visited in 1567 by Pedro Menendez who left a small detail of soldiers there for several months.'"
+  },
+  {
+    "id": "million-dollar-pier-1926",
+    "era": "land-boom",
+    "year": 1926,
+    "date": "1926",
+    "title": "St. Petersburg opens the Million Dollar Pier",
+    "text": "The Million Dollar Pier, with its casino, opened in 1926 and quickly became one of St. Petersburg's main gathering places. It followed the 1889 Railroad Pier, the Electric Pier of 1906 and the 1913 Municipal Recreation Pier, the city's first built for automobiles.",
+    "places": [
+      "st-pete-pier"
+    ],
+    "area": "downtown-stpete",
+    "lat": 27.77291,
+    "lng": -82.627746,
+    "source_url": "https://stpetepier.org/history/",
+    "checked": "2026-09-27",
+    "notes": "St. Pete Pier history: 1889 Railroad Pier (Peter Demens); 1906 Electric Pier; 'Opened in 1913, the Municipal Recreation Pier was St. Petersburg's first automobile-friendly pier'; 'Opened in 1926, the Million Dollar Pier (and its casino) quickly became one of St. Petersburg's premier gathering places.' Coordinates: the St. Pete Pier (see-pinellas slice point)."
+  },
+  {
     "id": "narvaez-lands-1528",
     "era": "spanish",
     "year": 1528,
-    "title": "Narváez expedition reaches Tampa Bay",
-    "text": "Fixture timeline text.",
-    "source_url": "https://www.nps.gov/",
+    "date": "1528-04",
+    "title": "Narváez expedition lands on Boca Ciega Bay",
+    "text": "In April 1528 Pánfilo de Narváez sailed into Boca Ciega Bay, north of the entrance to Tampa Bay, and landed about 300 men, traditionally at the Jungle Prada Site in St. Petersburg. After about a week they left their camp to search northward for riches; a dozen years later Hernando de Soto's expedition rescued a survivor, Juan Ortiz.",
+    "places": [
+      "jungle-prada-site"
+    ],
+    "area": "west-stpete",
+    "lat": 27.788529,
+    "lng": -82.752666,
+    "source_url": "https://en.wikipedia.org/wiki/Narv%C3%A1ez_expedition",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Jungle_Prada_Site",
+      "https://pinellas.gov/about-pinellas-facts/",
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Wikipedia: spotted land April 12, 1528; 'Narváez landed with 300 men in Boca Ciega Bay at what is known as the Jungle Prada Site'; split into land and sea contingents May 1, 1528. Pinellas County facts page: the area 'was discovered by Panfilo de Narvaez in 1528'. The exact landing place is traditional, hence 'traditionally'. History of Tampa (Wikipedia): 'they abandoned their camp after only a week... A dozen years later, a surviving member of the expedition named Juan Ortiz was rescued by Hernando de Soto's expedition.'"
   },
   {
-    "id": "ybor-cigar-factory-1886",
-    "era": "boomtown",
-    "year": 1886,
-    "title": "Cigar making begins in Ybor City",
-    "text": "Fixture timeline text.",
+    "id": "new-st-pete-pier-2020",
+    "era": "modern",
+    "year": 2020,
+    "date": "2020-07-06",
+    "title": "The new St. Pete Pier opens",
+    "text": "The inverted-pyramid Pier closed in 2013, and the new 26-acre St. Pete Pier district opened on July 6, 2020, with restaurants, public art, green space and a 1,380-foot pier.",
     "places": [
-      "ybor-city-museum-state-park"
+      "st-pete-pier"
     ],
-    "source_url": "https://www.floridastateparks.org/",
+    "area": "downtown-stpete",
+    "lat": 27.77291,
+    "lng": -82.627746,
+    "source_url": "https://stpetepier.org/history/",
+    "also_sources": [
+      "https://www.stpete.org/visitors/history.php"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "St. Pete Pier (raw page): 'The structure closed in 2013 to make way for a new St. Petersburg Pier'; 'The new 26-acre Pier District opened on July 6, 2020. Today, it is home to seven restaurants, public art installations... that stretch across the 1,380-foot pier.'"
+  },
+  {
+    "id": "new-sunshine-skyway-1987",
+    "era": "modern",
+    "year": 1987,
+    "date": "1987",
+    "title": "The new Sunshine Skyway opens",
+    "text": "A new Sunshine Skyway, with a tall cable-stayed center span and safety features added because of the 1980 disaster to protect it from ship collisions, opened in 1987. The old bridge was partly demolished and converted into two long fishing piers, now Skyway Fishing Pier State Park.",
+    "places": [
+      "skyway-fishing-pier-state-park"
+    ],
+    "area": "bradenton-anna-maria",
+    "lat": 27.617565,
+    "lng": -82.653519,
+    "media": [
+      "tl-skyway-old-and-new"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The current Sunshine Skyway opened in 1987 and is the second bridge of that name on the site'; 'Owing to the 1980 disaster, the current bridge incorporates numerous safety features to protect the structure from ship collisions'; the text gives both January 11, 1987 (opened to runners) and an April 30, 1987 opening ceremony, so only the year is used. Same article: 'a pair of long beam bridges with a central tall cable-stayed bridge'; 'the old bridge was partially demolished and converted into two long fishing piers'; 'converted into a long pier for newly created Skyway Fishing Pier State Park'."
+  },
+  {
+    "id": "orange-belt-reaches-st-pete-1888",
+    "era": "boomtown",
+    "year": 1888,
+    "date": "1888",
+    "title": "The Orange Belt Railway reaches St. Petersburg",
+    "text": "Peter Demens, an exiled Russian aristocrat, extended his Orange Belt Railroad down the Pinellas peninsula to John C. Williams's settlement in exchange for land, and the first train arrived in 1888 carrying empty freight cars and a single passenger. Legend says the two men flipped a coin to name the town; Demens won and named it for Saint Petersburg, Russia, and Williams named the first hotel the Detroit. Demens built the city's first pier, a railroad pier, in 1889.",
+    "places": [
+      "st-pete-pier",
+      "detroit-hotel"
+    ],
+    "area": "downtown-stpete",
+    "media": [
+      "tl-st-pete-railroad-pier-1896"
+    ],
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "also_sources": [
+      "https://stpetepier.org/history/",
+      "https://en.wikipedia.org/wiki/Dunedin,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "City of St. Petersburg history page (verbatim facts). St. Pete Pier: 'The city's first pier dates back to 1889, built by railroad entrepreneur Peter Demens.' The Dunedin article notes the Orange Belt was the first railroad in Pinellas County (1888); not stated in text."
+  },
+  {
+    "id": "performing-arts-center-opens-1987",
+    "era": "modern",
+    "year": 1987,
+    "date": "1987-07",
+    "title": "Tampa's performing arts center opens",
+    "text": "The Tampa Bay Performing Arts Center opened in July 1987 at a cost of $57 million. Renamed the Straz Center in 2009, it is owned by the City of Tampa.",
+    "places": [
+      "straz-center"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.951616,
+    "lng": -82.463985,
+    "media": [
+      "tl-straz-center-2012"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Straz_Center_for_the_Performing_Arts",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'It opened in July 1987 at a cost of $57 million as the Tampa Bay Performing Arts Center. It was renamed in 2009. The Straz Center is owned by the City of Tampa and operated by the David A. [Straz Jr. Center...]'. strazcenter.org is behind a bot wall."
+  },
+  {
+    "id": "phillies-to-clearwater-1947",
+    "era": "postwar",
+    "year": 1947,
+    "date": "1947",
+    "title": "The Phillies begin spring training in Clearwater",
+    "text": "The Philadelphia Phillies have trained in Clearwater since 1947, which the team says is the second-longest affiliation between a major league club and its spring training home. They have played spring games at BayCare Ballpark since it opened in 2004.",
+    "places": [
+      "baycare-ballpark"
+    ],
+    "area": "downtown-clearwater",
+    "lat": 27.972223,
+    "lng": -82.733906,
+    "source_url": "https://www.mlb.com/phillies/spring-training/ballpark",
+    "checked": "2026-09-27",
+    "notes": "MLB Phillies page: 'The Phillies have been training in Clearwater, Florida, since 1947, the second-longest affiliation between a major league club and its spring training home in baseball.' 'BayCare Ballpark opened in 2004 and is the home of Phillies Spring Training'. Coordinates: 601 N Old Coachman Rd (census)."
+  },
+  {
+    "id": "pinellas-county-formed-1912",
+    "era": "boomtown",
+    "year": 1912,
+    "date": "1912-01-01",
+    "title": "Pinellas County splits from Hillsborough",
+    "text": "After a local referendum in favor of separation from Hillsborough County, Pinellas became Florida's 48th county on Jan. 1, 1912. Its name comes from the Spanish Punta Pinal, 'point of pines'.",
+    "area": "downtown-clearwater",
+    "source_url": "https://pinellas.gov/about-pinellas-facts/",
+    "checked": "2026-09-27",
+    "notes": "Pinellas County: 'Pinellas became the state's 48th county on January 1, 1912, after a local referendum passed calling for separation from Hillsborough County.' 'Pinellas is derived from the Spanish words Punta Pinal meaning point of pines.'"
+  },
+  {
+    "id": "pinellas-trail-1990",
+    "era": "modern",
+    "year": 1990,
+    "date": "1990-12",
+    "title": "The Pinellas Trail opens on an old rail line",
+    "text": "After CSX abandoned 34 miles of track in Pinellas County in the 1980s, the state bought the corridor, and the first 5 miles of the Pinellas Trail opened in December 1990. Much of the trail follows the roadbed of the Orange Belt Railway, the county's first railroad.",
+    "places": [
+      "pinellas-trail"
+    ],
+    "area": "largo",
+    "media": [
+      "tl-pinellas-trail-2007"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Pinellas_Trail",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Dunedin,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Pinellas Trail (Wikipedia): 'After the SCL joined CSX Transportation in the 1980s, 34 mi of trackage in Pinellas County was abandoned, and purchased by the Florida Department of Transportation'; 'The first 5 mi opened in December 1990'. Dunedin (Wikipedia): 'A large portion of the trail lies on the former roadbed of the Orange Belt Railway, the first railroad in Pinellas County, which arrived in 1888.'"
+  },
+  {
+    "id": "plant-railroad-reaches-tampa-1884",
+    "era": "boomtown",
+    "year": 1884,
+    "date": "1884",
+    "title": "Henry Plant's railroad reaches Tampa",
+    "text": "In 1884 Henry B. Plant brought the railroad to Tampa, ending the town's isolation; that year the line also reached the town then called Cork, which incorporated in 1885 as Plant City in his honor. Plant began developing Port Tampa as a deepwater port in 1887, and in 1888 his system finished a nine-mile spur from Tampa to it.",
+    "area": "downtown-tampa",
+    "lat": 27.953105,
+    "lng": -82.450704,
+    "media": [
+      "tl-olivette-at-tampa-pier",
+      "tl-port-tampa-inn"
+    ],
+    "source_url": "https://www.plantmuseum.com/discover/learn/chronology",
+    "also_sources": [
+      "https://www.plantcitygov.com/explore/my_plant_city/history.php"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Plant Museum chronology: '1884 Henry Plant brings the railroad to Tampa'; '1887: Plant begins to develop Port Tampa as a deepwater port'; '1888: Plant System completes a nine-mile railroad spur connecting Tampa to Port Tampa.' Plant City: original name Ichepucksassa, renamed Cork by the postmaster; 'In 1884, Henry B. Plant extended the South Florida Railroad into the town and 1 year later, when the town was incorporated, it was once again renamed this time in honor of Henry B. Plant.' Coordinates: Tampa Union Station (history-of-tampa's anchor for this event); the 1884 depot site is not stated by the source."
+  },
+  {
+    "id": "rays-and-raymond-james-1998",
+    "era": "modern",
+    "year": 1998,
+    "date": "1998-03-31",
+    "title": "Big-league baseball arrives and the Bucs get a new stadium",
+    "text": "The Tampa Bay Devil Rays, awarded to the area in 1995 after nearly three decades of trying, played their first game on March 31, 1998, at Tropicana Field before 45,369 fans; the team became simply the Rays after the 2007 season. Raymond James Stadium, with its pirate ship in the north end zone, also opened in 1998 in Tampa as the Buccaneers' new home.",
+    "places": [
+      "tropicana-field",
+      "raymond-james-stadium"
+    ],
+    "area": "grand-central",
+    "lat": 27.768056,
+    "lng": -82.653275,
+    "media": [
+      "tl-raymond-james-pirate-ship"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Raymond_James_Stadium"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Rays (Wikipedia): 'Following nearly three decades of unsuccessfully trying... an ownership group led by Vince Naimoli was approved on March 9, 1995'; 'The Devil Rays played their first game on March 31, 1998, against the Detroit Tigers at Tropicana Field, before an opening day crowd of 45,369'; name changed to Rays after the 2007 season. Raymond James (Wikipedia): opened 1998, 'known for the replica pirate ship located behind the seating area in the north end zone'."
+  },
+  {
+    "id": "rays-play-at-steinbrenner-2025",
+    "era": "modern",
+    "year": 2025,
+    "date": "2025",
+    "title": "The Rays play a season in Tampa at Steinbrenner Field",
+    "text": "With Tropicana Field under repair, the Rays played their 2025 home games at George M. Steinbrenner Field in Tampa, the Yankees' spring training park, outdoors in the summer weather.",
+    "places": [
+      "george-m-steinbrenner-field"
+    ],
+    "area": "west-tampa",
+    "lat": 27.980165,
+    "lng": -82.506654,
+    "source_url": "https://www.wusf.org/sports/2026-04-05/after-18-months-away-the-rays-embrace-their-return-to-a-repaired-tropicana-field",
+    "also_sources": [
+      "https://www.mlb.com/yankees/spring-training/ballpark"
+    ],
+    "checked": "2026-09-27",
+    "notes": "WUSF: 'after a season in the summer elements at their temporary digs of Steinbrenner Field in Tampa'. MLB Yankees page (opened): 'Built in 1996, George M. Steinbrenner Field is a 31-acre complex... spring home to the New York Yankees'."
+  },
+  {
+    "id": "rays-reach-world-series-2008",
+    "era": "modern",
+    "year": 2008,
+    "date": "2008",
+    "title": "The Rays win their first pennant",
+    "text": "In 2008 the Rays had their first winning season, won the American League East and their first American League pennant, beating the Boston Red Sox, before losing the World Series to the Philadelphia Phillies. They won another pennant in 2020.",
+    "places": [
+      "tropicana-field"
+    ],
+    "area": "grand-central",
+    "lat": 27.768056,
+    "lng": -82.653275,
+    "media": [
+      "tl-world-series-2008"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Bay_Rays",
+    "checked": "2026-09-27",
+    "notes": "Rays (Wikipedia): 'The 2008 season saw the Rays post their first winning season, their first AL East championship, and their first American League pennant (defeating the rival Boston Red Sox in the ALCS), though they lost to the Philadelphia Phillies in that year's World Series'; 'another American League pennant again in 2020'."
+  },
+  {
+    "id": "rays-return-to-tropicana-2026",
+    "era": "modern",
+    "year": 2026,
+    "date": "2026-04-06",
+    "title": "The Rays come home to a repaired Tropicana Field",
+    "text": "After more than 18 months of repairs costing the City of St. Petersburg nearly $60 million, Tropicana Field reopened for the Rays' 2026 home opener against the Chicago Cubs. The team's lease runs through 2028, and its new owners plan a ballpark next to Steinbrenner Field on Hillsborough College's Dale Mabry campus in Tampa.",
+    "places": [
+      "tropicana-field"
+    ],
+    "area": "grand-central",
+    "lat": 27.768056,
+    "lng": -82.653275,
+    "source_url": "https://www.wusf.org/sports/2026-04-05/after-18-months-away-the-rays-embrace-their-return-to-a-repaired-tropicana-field",
+    "checked": "2026-09-27",
+    "notes": "WUSF (published April 5, 2026, a Sunday): 'Tampa Bay hosts the Chicago Cubs on Monday in the Rays' 2026 home opener' → date 2026-04-06 derived from the publication date; 'more than 18 months of repairs'; 'nearly $60 million was spent by the city to make it baseball-ready'; 'the lease running out in 2028'; 'on the clock to build a new ballpark next to Steinbrenner Field on Hillsborough College's Dale Mabry campus'."
+  },
+  {
+    "id": "ringling-museum-opens-1930",
+    "era": "land-boom",
+    "year": 1930,
+    "date": "1930",
+    "title": "The Ringling Museum of Art opens in Sarasota",
+    "text": "Circus owner John Ringling and his wife Mable finished their Sarasota mansion, Ca' d'Zan, in 1926, moved the circus's winter quarters to Sarasota in 1927, and opened the John and Mable Ringling Museum of Art to the public in 1930. On his death in 1936 Ringling left the museum and estate to the people of Florida; the state took control in 1946, and Florida State University has governed it since 2000.",
+    "places": [
+      "ringling-museum"
+    ],
+    "area": "sarasota",
+    "lat": 27.380374,
+    "lng": -82.559534,
+    "source_url": "https://www.ringling.org/about-ringling/mission-and-history/",
+    "checked": "2026-09-27",
+    "notes": "The Ringling (raw page text): Ca' d'Zan 'completed in 1926 after only two years of construction'; 'In 1927, John moved the winter quarters of the circus from Bridgeport, Connecticut to Sarasota'; 'The John and Mable Ringling Museum of Art opened to the public in 1930'; 'upon his own death in 1936, John bequeathed the museum and the rest of his estate to the people of Florida'; 'When the state prevailed and took control in 1946'; 'In 2000... the state transferred governance of the museum to Florida State University'."
+  },
+  {
+    "id": "riverwalk-reaches-water-works-2016",
+    "era": "modern",
+    "year": 2016,
+    "date": "2016",
+    "title": "The Tampa Riverwalk is completed to Water Works Park",
+    "text": "The Riverwalk grew from a 1970s boardwalk; a boardwalk under the Kennedy Boulevard bridge joined its segments into one continuous path, and a 2016 extension past the Straz Center and under I-275 to Water Works Park brought it to its present 2.6 miles, from the Channel District to Armature Works.",
+    "places": [
+      "tampa-riverwalk",
+      "water-works-park",
+      "armature-works",
+      "sparkman-wharf"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.954353,
+    "lng": -82.465467,
+    "media": [
+      "tl-riverwalk-2021"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Riverwalk",
+    "also_sources": [
+      "https://thetampariverwalk.com/who-we-are/frequent-questions.html"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'Tampa's Riverwalk has its origins in the 1970s'; 'In 2014, a federal transportation grant was used to complete a $9.2 million boardwalk under the Kennedy Boulevard bridge, connecting all existing segments into one continuous path' (history-of-tampa dates the connection to March 27, 2015 from a Tampa Bay Times article that could not be read; the year is left out); 'A further northward extension completed in 2016 stretched the path past the Straz Center... and under Interstate 275 to newly opened Waterworks Park... bringing the total length of the Riverwalk to 2.6 mile.' Riverwalk FAQ: 'extends 2.6 miles from Armature Works to Sparkman Wharf'."
+  },
+  {
+    "id": "rnc-in-tampa-2012",
+    "era": "modern",
+    "year": 2012,
+    "date": "2012-08-27",
+    "title": "Tampa hosts the Republican National Convention",
+    "text": "The 2012 Republican National Convention met at the downtown arena, then the Tampa Bay Times Forum, in the week of Aug. 27, 2012, and nominated Mitt Romney and Paul Ryan. Hurricane Isaac's approach forced organizers to recess the first day.",
+    "places": [
+      "benchmark-international-arena"
+    ],
+    "area": "channel-district",
+    "lat": 27.942704,
+    "lng": -82.45189,
+    "media": [
+      "tl-rnc-2012"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/2012_Republican_National_Convention",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The convention was held during the week of August 27, 2012, in Tampa, Florida at the Tampa Bay Times Forum (now Benchmark International Arena)'; nominated Romney and Ryan; 'the convention came to order on August 27, 2012, and then immediately recessed until the following afternoon because of the risk of Isaac hitting Tampa.'"
+  },
+  {
+    "id": "safety-harbor-culture",
+    "era": "indigenous",
+    "year": 900,
+    "title": "Safety Harbor culture takes shape around the bay",
+    "text": "From about 900 CE until after 1700, people on the central Gulf coast of Florida practiced what archaeologists call the Safety Harbor culture, named for the large platform mound at Safety Harbor. Their towns had temple mounds, plazas and shell middens; the Tocobaga who met the Spanish belonged to this culture.",
+    "places": [
+      "philippe-park"
+    ],
+    "area": "safety-harbor",
+    "lat": 28.012553,
+    "lng": -82.684054,
+    "source_url": "https://en.wikipedia.org/wiki/Safety_Harbor_culture",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000270_text",
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'from about 900 CE until after 1700'. The NHL nomination calls Safety Harbor the type site of the Safety Harbor phase. Temple mound/plaza/midden description: Wikipedia History of Tampa ('These small coastal villages contained a temple mound, a central plaza, and one or more shell middens')."
+  },
+  {
+    "id": "skyway-disaster-1980",
+    "era": "modern",
+    "year": 1980,
+    "date": "1980-05-09",
+    "title": "A freighter brings down the Sunshine Skyway",
+    "text": "On the morning of May 9, 1980, during a sudden squall, the freighter Summit Venture struck a support pier of the Sunshine Skyway's southbound span. More than 1,200 feet of the span fell, and 35 people died when vehicles, including a Greyhound bus, plunged into Tampa Bay; one driver survived the fall.",
+    "places": [
+      "skyway-fishing-pier-state-park"
+    ],
+    "area": "bradenton-anna-maria",
+    "lat": 27.617565,
+    "lng": -82.653519,
+    "media": [
+      "tl-old-skyway-remnant"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The second incident came on the morning of May 9, 1980, when the freighter MV Summit Venture allided with a support pier near the center of the bridge during a squall, resulting in the catastrophic failure of the southbound roadway and the deaths of 35 people when several vehicles, including a Greyhound bus, plunged into Tampa Bay'; 'causing the catastrophic failure of over 1200 ft of the span'; 'The only survivor of the fall was Wesley MacIntire'."
+  },
+  {
+    "id": "sparkman-wharf-opens-2018",
+    "era": "modern",
+    "year": 2018,
+    "date": "2018-11-30",
+    "title": "Sparkman Wharf opens in the old Channelside Bay Plaza",
+    "text": "Sparkman Wharf, an outdoor dining and entertainment spot on the water built in the former Channelside Bay Plaza, opened on Nov. 30, 2018. The wharf is named for Stephen M. Sparkman, the congressman who brought federal money in 1905 to dredge deep-water channels to the Channelside area.",
+    "places": [
+      "sparkman-wharf"
+    ],
+    "area": "channel-district",
+    "lat": 27.943369,
+    "lng": -82.446999,
+    "media": [
+      "tl-sparkman-opening-2018"
+    ],
+    "source_url": "https://www.tampabay.com/business/sparkman-wharf-opens-friday-with-a-new-view-on-tampas-waterfront-20181126/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Tampa Bay Times photo caption (the article body is paywalled; only the headline and caption were readable): 'the new Sparkman Wharf, formerly Channelside Bay Plaza... Strategic Property Planners, LLC, a Tampa-based real estate development company, prepare to open Tampa's newest mixed-use waterfront destination for outdoor dining and entertainment on Friday, November 30, 2018.' The see-tampa slice places Sparkman Wharf 'at Water Street Tampa' (source sparkmanwharf.com); the developer's name is left out because the caption's 'Strategic Property Planners' differs from history-of-tampa's 'Strategic Property Partners'. History of Tampa (Wikipedia): 'In 1905, Stephen M. Sparkman... brought in federal money to dig deep-water channels from Port Tampa to Channelside... In 2018, Sparkman Wharf was named for him.'"
+  },
+  {
+    "id": "spring-training-st-pete-1914",
+    "era": "boomtown",
+    "year": 1914,
+    "date": "1914",
+    "title": "Big-league spring training comes to St. Petersburg",
+    "text": "In 1914 former mayor Al Lang persuaded Branch Rickey to bring the St. Louis Browns to St. Petersburg for spring training, the start of the city's long spring-training history; the waterfront ballpark named for Lang is now the home of the Tampa Bay Rowdies. The city's first library opened on Mirror Lake in December 1915.",
+    "places": [
+      "al-lang-stadium",
+      "mirror-lake-library"
+    ],
+    "area": "downtown-stpete",
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "checked": "2026-09-27",
+    "notes": "City: 'In 1914, the rich history of spring training and Florida's love affair with baseball began when the city's former mayor, Al Lang, convinced Branch Rickey to move his St. Louis Browns to the Sunshine City for spring training.' 'the city's first library was built along Mirror Lake, opening its doors in December of 1915.' Al Lang Stadium as the Rowdies' home since 2011: venues-bay slice record al-lang-stadium (source rowdiessoccer.com)."
+  },
+  {
+    "id": "st-petersburg-incorporated-1892",
+    "era": "boomtown",
+    "year": 1892,
+    "date": "1892-02-29",
+    "title": "St. Petersburg incorporates as a town",
+    "text": "St. Petersburg incorporated as a town on Feb. 29, 1892, and reincorporated as a city in 1903, when it still had only a few hundred residents.",
+    "area": "downtown-stpete",
+    "media": [
+      "tl-st-petersburg-1906"
+    ],
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "checked": "2026-09-27",
+    "notes": "City: 'On February 29, 1892 the town of St. Petersburg was incorporated. Then in 1903, with a population of only a few hundred people, St. Petersburg reincorporated as a city.'"
+  },
+  {
+    "id": "strawberry-festival-begins-1930",
+    "era": "land-boom",
+    "year": 1930,
+    "date": "1930",
+    "title": "Plant City holds the first Strawberry Festival",
+    "text": "Members of the newly organized Plant City Lions Club started the Florida Strawberry Festival in 1930 to celebrate the strawberry harvest. It paused for six years during and after World War II and was revived in 1948; the city says more than three-quarters of the nation's midwinter strawberries come from Plant City.",
+    "places": [
+      "florida-strawberry-festival-grounds"
+    ],
+    "area": "plant-city",
+    "lat": 28.014664,
+    "lng": -82.144138,
+    "source_url": "https://flstrawberryfestival.com/history-2/",
+    "also_sources": [
+      "https://www.plantcitygov.com/explore/my_plant_city/history.php"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Festival history: 'The event began back in 1930 when members of the newly organized Plant City Lions Club conceived the idea of an event to celebrate the bountiful harvest of strawberries'; 'a six-year hiatus during and immediately following World War II'; reactivated 1948 with American Legion Post 26. City: 'over 3/4 of the nation's midwinter strawberries come from Plant City'."
+  },
+  {
+    "id": "streetcars-end-1946",
+    "era": "postwar",
+    "year": 1946,
+    "date": "1946-08-04",
+    "title": "Tampa's last streetcar goes to the barn",
+    "text": "Tampa's street railway began with steam cars to Ybor City by 1886, went electric in 1893 and at its peak ran on more than 53 miles of track. By the end of World War II only Tampa and St. Petersburg still had streetcars in Florida, and on Aug. 4, 1946, the last Tampa Electric Birney car retired to its carbarn in Tampa Heights.",
+    "area": "tampa-heights",
+    "media": [
+      "tl-birney-streetcar"
+    ],
+    "source_url": "https://tampabayhistorycenter.org/blog/tampas-historic-streetcars/",
+    "checked": "2026-09-27",
+    "notes": "TBHC blog (Rodney Kite-Powell): steam street railway between Tampa and Ybor City by 1886; electric in 1893; 'over 53 miles of tracks'; 'By the end of World War II, Tampa and St. Petersburg were the only Florida cities with streetcars'; 'the last Tampa Electric Birney car retired to its carbarn on 7th Avenue in Tampa Heights' on August 4, 1946. The see-tampa slice identifies Armature Works (1910) as Tampa Electric's former streetcar warehouse, but this page does not name the carbarn, so no place link or coordinates are given."
+  },
+  {
+    "id": "suncoast-dome-1990",
+    "era": "modern",
+    "year": 1990,
+    "date": "1990",
+    "title": "St. Petersburg's dome is finished as the city courts big-league baseball",
+    "text": "The Florida Suncoast Dome in St. Petersburg, part of the city's effort to attract Major League Baseball, was finished in 1990, before it had a tenant. The Lightning played there as the ThunderDome from 1993 to 1996, and after Major League Baseball awarded the area a franchise in 1995 the building became Tropicana Field, home of the Rays.",
+    "places": [
+      "tropicana-field"
+    ],
+    "area": "grand-central",
+    "lat": 27.768056,
+    "lng": -82.653275,
+    "media": [
+      "tl-tropicana-field-aerial"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tropicana_Field",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa_Bay_Rays"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Tropicana Field (Wikipedia): 'Tropicana Field opened in 1990 and was originally known as the Florida Suncoast Dome'; 'still had no tenants'; 'In 1993, the Tampa Bay Lightning moved to the facility and its name was changed to the ThunderDome until the team moved to its new home in downtown Tampa in 1996.' Rays: franchise approved March 9, 1995. Tropicana Field (Wikipedia): 'City officials decided early on that the city would attempt to attract Major League Baseball.'"
+  },
+  {
+    "id": "sunshine-skyway-opens-1954",
+    "era": "postwar",
+    "year": 1954,
+    "date": "1954-09-06",
+    "title": "The first Sunshine Skyway opens across the mouth of the bay",
+    "text": "The original Sunshine Skyway, a two-lane bridge across Lower Tampa Bay from St. Petersburg to Terra Ceia in Manatee County, opened to traffic on Sept. 6, 1954. A second two-lane span opened beside it in 1971.",
+    "places": [
+      "skyway-fishing-pier-state-park"
+    ],
+    "area": "bradenton-anna-maria",
+    "lat": 27.617565,
+    "lng": -82.653519,
+    "media": [
+      "tl-sunshine-skyway-postcard"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The two-lane bridge opened to traffic on September 6, 1954'; 'a second two-lane span opened in 1971'; 'Opening of the newer span was delayed until 1971'. Place skyway-fishing-pier-state-park (outdoors slice): the piers are remnants of the old bridges (per that slice; not stated in this source). Area: the bridge spans Pinellas and Manatee; bradenton-anna-maria chosen for the southern approach. FDOT pages not reached."
+  },
+  {
+    "id": "tampa-bay-history-center-opens-2009",
+    "era": "modern",
+    "year": 2009,
+    "date": "2009-01-17",
+    "title": "The Tampa Bay History Center opens on the waterfront",
+    "text": "The Tampa Bay History Center opened its museum at 801 Water Street in the Channel District on Jan. 17, 2009.",
+    "places": [
+      "tampa-bay-history-center"
+    ],
+    "area": "channel-district",
+    "lat": 27.94197,
+    "lng": -82.449991,
+    "media": [
+      "tl-history-center-2011"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Bay_History_Center",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The museum is on the waterfront at 801 Water Street in Tampa's Channelside District. It opened on January 17, 2009.'"
   },
   {
     "id": "tampa-bay-hotel-opens-1891",
     "era": "boomtown",
     "year": 1891,
-    "title": "The Tampa Bay Hotel opens",
-    "text": "Fixture timeline text.",
+    "date": "1891-02-05",
+    "title": "Plant opens the Tampa Bay Hotel",
+    "text": "Henry Plant opened the Tampa Bay Hotel, a winter resort designed in the style of a Moorish palace on the west bank of the Hillsborough River, on Feb. 5, 1891, after building it from 1888. It operated as a hotel until 1932; since 1933 the building has housed the University of Tampa, and its south wing is the Henry B. Plant Museum.",
     "places": [
       "henry-b-plant-museum"
     ],
-    "source_url": "https://www.plantmuseum.com/",
+    "area": "downtown-tampa",
+    "lat": 27.945597,
+    "lng": -82.463929,
+    "media": [
+      "tl-tampa-bay-hotel-1902",
+      "tl-tampa-bay-hotel-photochrom"
+    ],
+    "source_url": "https://www.plantmuseum.com/discover/learn/chronology",
+    "also_sources": [
+      "https://www.nps.gov/places/tampa-bay-hotel.htm"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Plant Museum: 'February 5th Tis Done! Plant opens the Tampa Bay Hotel as a winter resort'; 1932 'closes forever as a lavish winter resort hotel'; 1933 'leased to The University of Tampa by the city'. NPS: 'Constructed between 1888 and 1891'; 'operated from 1891 until 1932'; 'The Henry B. Plant Museum in the south wing'. NPS: 'Designed in the style of a Moorish palace'; 'contained over 500 rooms'."
+  },
+  {
+    "id": "tampa-bay-hurricane-1921",
+    "era": "land-boom",
+    "year": 1921,
+    "date": "1921-10-25",
+    "title": "The 1921 hurricane floods Bayshore and strikes Tarpon Springs",
+    "text": "Late on Oct. 25, 1921, a major hurricane made landfall near Tarpon Springs, the first to strike the Tampa Bay area since 1848. Storm surge flooded Tampa's Ballast Point, Hyde Park, Palmetto Beach and other neighborhoods around Bayshore Boulevard, and the storm left at least eight deaths, four of them in Tampa.",
+    "places": [
+      "bayshore-boulevard"
+    ],
+    "area": "hyde-park",
+    "lat": 27.927735,
+    "lng": -82.478916,
+    "media": [
+      "tl-1921-hurricane-edgewater",
+      "tl-1921-hurricane-yacht-club"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/1921_Tampa_Bay_hurricane",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'making landfall near Tarpon Springs, Florida, late on October 25'; 'the first to do so there since the hurricane of 1848'; 'Several neighborhoods in Tampa were inundated, especially the interbay neighborhoods of Ballast Point, DeSoto Park, Edgewater Park, Hyde Park, Palmetto Beach, and other areas in the vicinity of Bayshore Boulevard'; 'Four deaths occurred in Tampa'; 'the hurricane left at least eight deaths'. No NWS page could be reached (weather.gov/tbw URLs tried returned 404). Coordinates: Bayshore Boulevard (see-tampa slice point)."
+  },
+  {
+    "id": "tampa-embarks-army-1898",
+    "era": "boomtown",
+    "year": 1898,
+    "date": "1898-05",
+    "title": "Tampa becomes the Army's port of embarkation for Cuba",
+    "text": "In 1898 the government chose Tampa as the official port of embarkation for the Spanish-American War. About 30,000 soldiers, among them Theodore Roosevelt and his Rough Riders, arrived by late spring and camped in seven army camps, and from May the Tampa Bay Hotel served as headquarters for the officers planning the campaign; the war lasted 10 weeks.",
+    "places": [
+      "henry-b-plant-museum"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.945597,
+    "lng": -82.463929,
+    "media": [
+      "tl-rough-riders-camp-1898",
+      "tl-steamer-florida-1898"
+    ],
+    "source_url": "https://www.nps.gov/places/tampa-bay-hotel.htm",
+    "also_sources": [
+      "https://www.plantmuseum.com/discover/learn/chronology"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NPS Tampa Bay Hotel: 'chose Tampa as the official port of embarkation for American forces heading to Cuba'; '30,000 soldiers who arrived in Tampa by the late spring of 1898'; 'seven army camps in the Tampa area'; 'Colonel Roosevelt, and his Rough Riders'; 'headquarters for the Army officers planning the war campaign'; 'The war only lasted 10 weeks'. Plant Museum: 'May, Tampa Bay Hotel becomes headquarters...'. Troops actually loaded at Port Tampa (history-of-tampa note)."
+  },
+  {
+    "id": "tampa-theatre-opens-1926",
+    "era": "land-boom",
+    "year": 1926,
+    "date": "1926-10-15",
+    "title": "Tampa Theatre opens on Franklin Street",
+    "text": "John Eberson's atmospheric movie palace opened on Franklin Street on Oct. 15, 1926, and was the city's first commercial building with air conditioning. Threatened with demolition in 1973, it was rescued when the City of Tampa stepped in; it reopened in early 1978, the year it was listed on the National Register, and still shows films in a 1,238-seat auditorium.",
+    "places": [
+      "tampa-theatre"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.950053,
+    "lng": -82.458916,
+    "media": [
+      "tl-tampa-theatre-habs-1978"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Theatre",
+    "also_sources": [
+      "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-county-tampa-theatre"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'Designed as an atmospheric theatre-style movie palace by architect John Eberson, it opened on October 15, 1926'; 'In 1973, the theatre faced the same fate'; 'By the time it reopened in early 1978'; NRHP 1978. Hillsborough County marker page: 'When Tampa Theatre opened in 1926 it was the city's first commercial building to offer air conditioning'; 'the City of Tampa rescued the theater'; 1,238 seats; county page raw text: 'Today, the 1,238-seat theater is thriving' (Wikipedia gives 1,252 after the 2017 renovation; the county figure is used). tampatheatre.org serves a bot challenge (HTTP 202) and could not be read."
+  },
+  {
+    "id": "tampa-theatre-turns-100-2026",
+    "era": "modern",
+    "year": 2026,
+    "date": "2026-10-15",
+    "title": "Tampa Theatre turns 100",
+    "text": "Oct. 15, 2026, is the 100th anniversary of Tampa Theatre's opening night in 1926. The city-rescued movie palace on Franklin Street still shows films and hosts concerts and tours.",
+    "places": [
+      "tampa-theatre"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.950053,
+    "lng": -82.458916,
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Theatre",
+    "also_sources": [
+      "https://hcfl.gov/about-hillsborough/history/historical-hillsborough/historical-markers-of-hillsborough-county-tampa-theatre"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The anniversary date is arithmetic from the opening date (Oct 15, 1926, Wikipedia). No centennial program was confirmed: tampatheatre.org serves a bot challenge and returned an empty page to WebFetch, and web search was unavailable in this session. 'shows films and hosts concerts and tours': venues-bay record (the theatre's own Visit Tampa Bay listing text). Events slices should add dated centennial events if the theatre announces them."
+  },
+  {
+    "id": "tampa-union-station-1912",
+    "era": "boomtown",
+    "year": 1912,
+    "date": "1912-05-15",
+    "title": "Tampa Union Station opens",
+    "text": "Tampa Union Station opened on May 15, 1912. It was listed on the National Register of Historic Places in 1974, closed in 1984 and reopened in 1998 after restoration; Amtrak trains still use it.",
+    "places": [
+      "tampa-union-station"
+    ],
+    "area": "channel-district",
+    "lat": 27.953105,
+    "lng": -82.450704,
+    "media": [
+      "tl-union-station-2009",
+      "tl-union-station-1922"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_Union_Station",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'opened on May 15, 1912, by the Tampa Union Station Company'; 'Built in 1912, it was added to the National Register of Historic Places in 1974... closed in 1984 and reopened in 1998 after restoration'; Amtrak platform works 2020. Area: the station is at Nebraska Ave and Twiggs, on the Channel District edge; transport slice may hold it. Coordinates: Photon railway=station."
+  },
+  {
+    "id": "tampa-uprising-1967",
+    "era": "postwar",
+    "year": 1967,
+    "date": "1967-06-11",
+    "title": "Unrest in Central Park after a police shooting",
+    "text": "On June 11, 1967, a Tampa police officer fatally shot Martin Chambers, a 19-year-old unarmed Black man fleeing a burglary, and days of unrest followed in the Central Park neighborhood until June 15. The City of Tampa says the disturbance helped seal the end of the Central Avenue business corridor.",
+    "places": [
+      "perry-harvey-sr-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.9563,
+    "lng": -82.4548,
+    "source_url": "https://www.tampa.gov/CRAs/central-park/history",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/1967_Tampa_riots"
+    ],
+    "checked": "2026-09-27",
+    "notes": "City of Tampa Central Park CRA history: 'A racial disturbance in 1967 helped seal the demise of the Central Avenue business corridor.' Wikipedia 1967 Tampa riots: Martin Chambers, 19, shot by Patrolman James Calvert; 'The riots began on the night of June 11 and ended on June 15, in the neighborhood that was then known as Central Park'; Chambers 'was unarmed'. Coordinates: history-of-tampa point for the 1967 event."
+  },
+  {
+    "id": "tarpon-springs-incorporated-1887",
+    "era": "boomtown",
+    "year": 1887,
+    "date": "1887",
+    "title": "Tarpon Springs becomes Pinellas's first incorporated city",
+    "text": "Tarpon Springs incorporated in 1887 with 52 residents, the first incorporated city in what is now Pinellas County. That year John Cheney, a promoter associated with Hamilton Disston, found that sponges could be harvested from the Gulf, and in 1890 the Cheney Sponge Company sold almost a million dollars' worth.",
+    "places": [
+      "sponge-docks-tarpon-springs"
+    ],
+    "area": "tarpon-springs",
+    "lat": 28.155506,
+    "lng": -82.760911,
+    "source_url": "https://spongedocks.net/tarpon-springs-history/",
+    "also_sources": [
+      "https://pinellas.gov/about-pinellas-facts/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "spongedocks.net: 'In 1887, Tarpon Springs was incorporated. It had a population of 52 residents. John Cheney, a promoter associated with Disston, discovered money could be made by harvesting the sponges'; 'By 1890, the sponge industry was firmly established in Tarpon Springs. The Cheney Sponge Company sold almost a million dollars worth of sponges that year.' Pinellas County: 'Tarpon Springs was the first incorporated city in 1887.' Coordinates: 735 Dodecanese Blvd (census), the sponge docks."
+  },
+  {
+    "id": "tarpon-springs-settled-1876",
+    "era": "frontier",
+    "year": 1876,
+    "date": "1876",
+    "title": "Settlers arrive at Spring Bayou, soon named Tarpon Springs",
+    "text": "A. W. Ormond and his daughter Mary, the first settlers at what is now Tarpon Springs, arrived in 1876 and built a cabin near Spring Bayou; the settlement took the name Tarpon Springs in 1879. In 1880 Hamilton Disston bought four million acres of central west Florida from Florida's governor at 25 cents an acre, opening the area to development.",
+    "places": [
+      "sponge-docks-tarpon-springs"
+    ],
+    "area": "tarpon-springs",
+    "source_url": "https://spongedocks.net/tarpon-springs-history/",
+    "checked": "2026-09-27",
+    "notes": "spongedocks.net Tarpon Springs History: 'The first settlers... were A.W. Ormond and his daughter, Mary. They arrived in 1876. They built a cabin near Spring Bayou.' 'In 1879, she named the small settlement Tarpon Springs.' Disston: 'bought four million acres of the central west coast of Florida from the Governor for 25 cents an acre' (year 1880 per the page)."
+  },
+  {
+    "id": "teco-line-streetcar-2002",
+    "era": "modern",
+    "year": 2002,
+    "date": "2002-10-19",
+    "title": "Streetcars return between downtown and Ybor City",
+    "text": "The TECO Line Streetcar opened on Oct. 19, 2002, with replica Birney cars running between downtown Tampa, the Channel District and Ybor City. A 0.3-mile extension in December 2010 brought the line to 2.7 miles.",
+    "places": [
+      "ybor-city-historic-district"
+    ],
+    "area": "channel-district",
+    "media": [
+      "tl-teco-line-2008",
+      "tl-birney-163-2009"
+    ],
+    "source_url": "https://www.tampa.gov/mobility/transportation/streetcar",
+    "also_sources": [
+      "https://tampabayhistorycenter.org/blog/tampas-historic-streetcars/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "City of Tampa: 'The TECO Line Streetcar is a 2.7 mile long fixed guideway transit system... connects downtown Tampa, with the Channelside District and Ybor City Historic District. The first 2.4-mile-long segment opened for service in 2002 while a 0.3-mile-long extension opened for service in December 2010.' TBHC: 'became operational on Oct. 19, 2002'; replica Birney cars."
+  },
+  {
+    "id": "the-scrub-cleared-1959",
+    "era": "postwar",
+    "year": 1959,
+    "date": "1959",
+    "title": "Homes in the Scrub are razed for a housing project",
+    "text": "The Scrub, northeast of downtown, grew from a settlement of freed people after the Civil War into Tampa's oldest and largest African American neighborhood, with Central Avenue as its business heart. In 1959 its homes were demolished for the Central Park Village housing project, and in the 1960s construction of I-4 and urban renewal disrupted Central Avenue's businesses.",
+    "places": [
+      "perry-harvey-sr-park"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.9556,
+    "lng": -82.4555,
+    "media": [
+      "tl-scrub-aerial-1950"
+    ],
+    "source_url": "https://www.tampa.gov/soulwalk/historic-markers/scrub",
+    "checked": "2026-09-27",
+    "notes": "City of Tampa Soulwalk marker: 'The Scrub, once Tampa's oldest and largest African American neighborhood'; freed people settled a 'scrub palmetto thicket' after the Civil War; population quadrupled 1900-1930 (4,382 to 21,551); housing demolished 1959 for Central Park Village; 'Construction of I-4 and the Urban Renewal projects in the 1960s disrupted business along Central Avenue'; The Ella opened December 2012 (Encore). Coordinates: history-of-tampa's point for the Scrub clearance (27.9556, -82.4555); area: the Scrub lies just north of downtown (Encore), closest area downtown-tampa."
+  },
+  {
+    "id": "tocobaga-capital-safety-harbor",
+    "era": "indigenous",
+    "year": 1500,
+    "title": "Tocobaga's capital at Safety Harbor",
+    "text": "The Safety Harbor Site in Philippe Park, a flat-topped shell mound about 20 feet high on Old Tampa Bay, was occupied from late prehistoric times into the early Spanish period (about 1500 to 1650). It is thought to be the capital of the Tocobaga, and it was designated a National Historic Landmark in 1964; Pinellas County says the temple mound is the largest remaining mound in the Tampa Bay region.",
+    "places": [
+      "philippe-park"
+    ],
+    "area": "safety-harbor",
+    "lat": 28.012553,
+    "lng": -82.684054,
+    "media": [
+      "tl-philippe-park-temple-mound"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/66000270_text",
+    "also_sources": [
+      "https://pinellas.gov/parks/philippe-park/",
+      "https://en.wikipedia.org/wiki/Safety_Harbor_site"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL nomination (NPS, revised June 1981): 'late prehistoric site which was occupied into the early part of the Spanish period (ca. 1500-1650 A.D.)'; mound 'about 150 feet in diameter and about 20 feet in height'; 'generally thought that the Safety Harbor Site may be the Tocobago capitol'. NHL year 1964 from Wikipedia Safety Harbor site. Pinellas County page: 'largest remaining mound in the Tampa Bay region'."
+  },
+  {
+    "id": "tpa-landside-airside-1971",
+    "era": "postwar",
+    "year": 1971,
+    "date": "1971-04-15",
+    "title": "Tampa International opens its landside-airside terminal",
+    "text": "Tampa International Airport's new terminal opened to passengers on April 15, 1971, with a central landside building linked to four airside satellites, a landside-airside design described as the first of its type in the world.",
+    "area": "westshore",
+    "lat": 27.979165,
+    "lng": -82.534928,
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The terminal opened for passenger traffic on April 15, 1971 with four airside satellites (Airsides B, C, D, and E)'; 'Tampa International Airport's Landside/Airside terminal was the first of its type in the world.'"
+  },
+  {
+    "id": "usf-founded-1956",
+    "era": "postwar",
+    "year": 1956,
+    "date": "1956-12-18",
+    "title": "The University of South Florida gets its site",
+    "text": "A 1955 state law created a new state university in Hillsborough County, and on Dec. 18, 1956, the Florida Cabinet chose its site, the former Hillsborough Army Airfield on Fowler Avenue. The University of South Florida held its first classes on Sept. 26, 1960; it describes itself as the first major state university planned, built and opened in the 20th century.",
+    "area": "north-tampa",
+    "lat": 28.06,
+    "lng": -82.413836,
+    "source_url": "https://www.usf.edu/about-usf/history.aspx",
+    "checked": "2026-09-27",
+    "notes": "USF history: June 18, 1955, Gov. LeRoy Collins signs House Bill 1007 creating a new state university in Hillsborough County; 'December 18, 1956' Cabinet approves the site, 'the former Hillsborough Army Airfield property on Fowler Avenue'; first classes September 26, 1960; 'the first major state university planned, built and opened in the 20th century'. Raw page: 'USF becomes the first major state university planned, built and opened in the 20th century, as well as Florida's first university located in a major metropolitan area.'"
+  },
+  {
+    "id": "village-of-tampa-1849",
+    "era": "frontier",
+    "year": 1849,
+    "date": "1849-01-18",
+    "title": "Tampa incorporates as a village",
+    "text": "On Jan. 18, 1849, fourteen men voted unanimously to establish the Village of Tampa with a trustee government, and a week later they elected five trustees. Citizens organized the Town of Tampa on Sept. 10, 1853.",
+    "area": "downtown-tampa",
+    "lat": 27.9475,
+    "lng": -82.457,
+    "source_url": "https://www.tampa.gov/city-clerk/info/archives/city-of-tampa-incorporation-history",
+    "checked": "2026-09-27",
+    "notes": "City Clerk: 'January 18, 1849 - 14 men vote unanimously to establish Tampa Village with a trustee form of government.' 'January 25, 1849 - Village of Tampa elects 5 trustees with M.G. Sikes elected president.' 'September 10, 1853 - Citizens vote to organize as the Town of Tampa'. Coordinates: the history-of-tampa point for the incorporation event (27.9475, -82.457), the original downtown."
   },
   {
     "id": "vinoy-opens-1925",
     "era": "land-boom",
     "year": 1925,
-    "title": "The Vinoy opens",
-    "text": "Fixture timeline text.",
+    "date": "1925-12-31",
+    "title": "The Vinoy Park Hotel opens on New Year's Eve",
+    "text": "Aymer Vinoy Laughner's 375-room hotel on the St. Petersburg waterfront, designed by Henry L. Taylor, went up in just under 10 months from Feb. 5, 1925, and opened on New Year's Eve 1925. It became an Army Air Forces and Maritime Service training center in 1942, closed in 1974 and reopened in 1992 after restoration; it operates today as The Vinoy Resort & Golf Club.",
     "places": [
-      "the-vinoy"
+      "vinoy-resort-golf-club"
     ],
-    "source_url": "https://www.marriott.com/",
+    "area": "downtown-stpete",
+    "lat": 27.777674,
+    "lng": -82.627977,
+    "source_url": "https://thevinoy.com/history/",
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "The Vinoy history: construction began 'on February 5, 1925' under architect Henry L. Taylor and contractor George A. Miller, 'the 375-room hotel in just under 10 months, in time for a grand opening on New Year's Eve 1925'; 'On July 3, 1942, The Vinoy ceased operation as a hotel and was leased to the U.S. Army Air Force and subsequently the United States Maritime Service as a training center'; 'In 1974, the hotel closed its doors for good'; 'in 1992, The Vinoy reopened as a Stouffer Hotel.' Name of the current operation: stays-stpete-pinellas slice id vinoy-resort-golf-club. Coordinates from that slice."
+  },
+  {
+    "id": "wartime-shipyards-and-hotels-1942",
+    "era": "land-boom",
+    "year": 1942,
+    "date": "1942",
+    "title": "Shipyards and hotels go to war",
+    "text": "During World War II the Tampa Shipbuilding and Engineering Company and the Hooker's Point Shipyard built ships for the war effort, and Tampa's shipyard workforce reached 16,000. Across the bay St. Petersburg became a major technical training center for the Army Air Corps: more than 100,000 trainees filled the city's hotels, the Vinoy became a training center in July 1942, and the Army turned the Don CeSar into a hospital.",
+    "places": [
+      "vinoy-resort-golf-club",
+      "don-cesar"
+    ],
+    "area": "channel-district",
+    "lat": 27.927919,
+    "lng": -82.441258,
+    "source_url": "https://museumoffloridahistory.com/explore/exhibits/permanent-exhibits/world-war-ii/florida-remembers-world-war-ii/wars-impact-on-florida-shipbuilding-defense-industry-and-war-products/",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NRHP/02000264_text",
+      "https://www.stpete.org/visitors/history.php",
+      "https://thevinoy.com/history/",
+      "https://www.doncesar.com/history"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Museum of Florida History: 'Florida shipyards included the Tampa Shipbuilding and Engineering Company (later known as TASCO), the Hooker's Point Shipyard in Tampa'. NRHP North Franklin: 'The personnel at Tampa shipyards reached 16,000'. City of St. Petersburg: 'St. Pete became a major technical services training center for the Army Air Corps. More than 100,000 trainees filled every hotel in the city'. Vinoy: leased July 3, 1942. Don CeSar: Army purchase 1942, hospital. Coordinates: Hooker's Point yard (Photon railway yard name 'Hookers Point Yard'); area: Hooker's Point is the port peninsula by the Channel District."
+  },
+  {
+    "id": "weedon-island-excavation-1923",
+    "era": "land-boom",
+    "year": 1923,
+    "date": "1923",
+    "title": "A Smithsonian dig at Weedon Island names a culture",
+    "text": "Smithsonian Institution archaeologist J. Walter Fewkes excavated a mound on Weedon Island in Old Tampa Bay in 1923 and 1924, and the decorated ceremonial pottery first described there gave its name to the Weeden Island culture of the Southeast. The island, later home to homesteaders, speakeasies, a Hollywood movie studio and a 1930s airport, is now Pinellas County's Weedon Island Preserve.",
+    "places": [
+      "weedon-island-preserve"
+    ],
+    "area": "northeast-stpete",
+    "lat": 27.848309,
+    "lng": -82.604247,
+    "media": [
+      "tl-weedon-island-mound"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Weeden_Island_culture",
+    "also_sources": [
+      "https://www.weedonislandpreserve.org/history-archaeology.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Wikipedia Weeden Island culture: 'The site on Weedon Island where Weeden Island sacred ceramics were first described was excavated by Smithsonian Institution archaeologist J. Walter Fewkes in 1923 and 1924'; name 'derived from the Weedon Island site (despite the dissimilar spellings) in Old Tampa Bay in Pinellas County'. Preserve history page: 'homesteaders, speakeasies, a Hollywood movie studio and a 1930s airport'. Coordinates: Photon nature_reserve match."
+  },
+  {
+    "id": "weeki-wachee-mermaids-1947",
+    "era": "postwar",
+    "year": 1947,
+    "date": "1947",
+    "title": "Newt Perry opens Weeki Wachee's mermaid show",
+    "text": "In 1947 stunt swimmer and promoter Newt Perry created the Weeki Wachee attraction, building a theater into the limestone of the spring with windows below the water so visitors could watch 'mermaids' perform. It is now Weeki Wachee Springs State Park.",
+    "places": [
+      "weeki-wachee-springs-state-park"
+    ],
+    "area": "nature-coast",
+    "lat": 28.517125,
+    "lng": -82.574832,
+    "source_url": "https://en.wikipedia.org/wiki/Weeki_Wachee_Springs",
+    "checked": "2026-09-27",
+    "notes": "Wikipedia: 'The attraction was created in 1947 by stunt swimmer and attraction promoter Newt Perry'; 'First an 18-seat theater... were embedded in the lime rock of the spring with viewing windows below the surface of the water'; 'Officially: Weeki Wachee Springs State Park'. floridastateparks.org returns 403."
+  },
+  {
+    "id": "west-tampa-founded-1892",
+    "era": "boomtown",
+    "year": 1892,
+    "date": "1892",
+    "title": "Hugh Macfarlane founds West Tampa",
+    "text": "In 1892 Scottish businessman Hugh Macfarlane founded West Tampa across the Hillsborough River as a second cigar town; by 1900 it was one of the most populous places in Florida, mostly Cuban cigar workers. Together Ybor City and West Tampa made Tampa, in the National Park Service's words, the hand-rolled cigar capital of the world by 1900. Tampa annexed West Tampa in 1925.",
+    "area": "west-tampa",
+    "media": [
+      "tl-hine-cigarmakers-1909"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/History_of_Tampa,_Florida",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text"
+    ],
+    "checked": "2026-09-27",
+    "notes": "History of Tampa (Wikipedia): 'In 1892, Scottish businessman Hugh MacFarlane founded West Tampa... By 1900, the town already had one of the largest populations in Florida, mostly Cubans involved in the cigar industry'; 'Also in 1925... Tampa annexed the neighboring town of West Tampa.' NHL: 'By 1900 Tampa had become the hand-rolled cigar capital of the world... In addition to Ybor City, another cigar-making community, West Tampa, grew up'."
+  },
+  {
+    "id": "williams-buys-st-pete-land-1875",
+    "era": "frontier",
+    "year": 1875,
+    "date": "1875",
+    "title": "John C. Williams buys the land that becomes St. Petersburg",
+    "text": "In 1875 John Constantine Williams of Detroit bought 2,500 acres of waterfront land on the lower Pinellas peninsula. Thirteen years later he traded part of it to Peter Demens so that Demens's Orange Belt Railroad would reach his settlement.",
+    "area": "downtown-stpete",
+    "source_url": "https://www.stpete.org/visitors/history.php",
+    "checked": "2026-09-27",
+    "notes": "City of St. Petersburg: 'In 1875 John Constantine Williams of Detroit, Michigan moved to Tampa and bought 2,500 acres of warm waterfront land that would eventually become St. Petersburg. Thirteen years later, he transferred part of that land to Peter Demens... In exchange, Demens extended the Orange Belt Railroad to Williams's settlement.'"
+  },
+  {
+    "id": "woolworth-sit-in-1960",
+    "era": "postwar",
+    "year": 1960,
+    "date": "1960-02-29",
+    "title": "Students sit in at the Woolworth lunch counter",
+    "text": "On Feb. 29, 1960, about 40 students from Middleton and Blake high schools, led by Clarence Fort and the Rev. A. Leon Lowry, staged a peaceful sit-in at the F. W. Woolworth lunch counter at 901 N. Franklin St. By September 1960 Tampa's lunch counters were integrated without the violence seen in many other places.",
+    "places": [
+      "woolworth-sit-in-site"
+    ],
+    "area": "downtown-tampa",
+    "lat": 27.951488,
+    "lng": -82.459539,
+    "source_url": "https://www.tampa.gov/soulwalk/historic-markers/woolworth-sit",
+    "checked": "2026-09-27",
+    "notes": "City of Tampa Soulwalk marker (verbatim facts). Coordinates: 901 N Franklin St (census)."
+  },
+  {
+    "id": "ybor-board-of-trade-1885",
+    "era": "boomtown",
+    "year": 1885,
+    "date": "1885-10-05",
+    "title": "Vicente Martínez Ybor agrees to move his cigar business to Tampa",
+    "text": "On Oct. 5, 1885, cigar maker Vicente Martínez Ybor contracted with the Tampa Board of Trade to move his hand-rolled cigar business, Ybor & Co., from Key West to Tampa. He bought 40 acres northeast of the town, and work began that October clearing the land for a factory and 50 houses.",
+    "places": [
+      "ybor-city-historic-district",
+      "ybor-factory-building"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961154,
+    "lng": -82.444299,
+    "media": [
+      "tl-ybor-square-2007"
+    ],
+    "source_url": "https://guides.loc.gov/this-month-in-business-history/october/ybor-city",
+    "also_sources": [
+      "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text"
+    ],
+    "checked": "2026-09-27",
+    "notes": "LoC: 'contracted with the Tampa Board of Trade on October 5, 1885, to relocate his hand rolled cigar manufacturing business Ybor & Co.'; 'Ybor purchased 40 acres of land northeast of Tampa'. NHL nomination: 'began developing the land he had purchased near Tampa in October 1885... Workmen felled trees, cleared underbrush... Ybor contracted for a wooden factory and 50 houses'. Coordinates: the Ybor factory, 1916 N 14th St (census)."
+  },
+  {
+    "id": "ybor-city-annexed-1887",
+    "era": "boomtown",
+    "year": 1887,
+    "date": "1887-06",
+    "title": "Tampa annexes Ybor City",
+    "text": "Ybor City's rapid growth led Tampa to annex it in June 1887, although the cigar town kept its own identity; by 1890 it had about 6,000 residents, more than the rest of Tampa. The following month, on July 15, 1887, Tampa organized under a new city charter that also absorbed the Town of North Tampa.",
+    "places": [
+      "ybor-city-historic-district"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961739,
+    "lng": -82.438956,
+    "media": [
+      "tl-ybor-streetcar-c1900"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "also_sources": [
+      "https://www.nps.gov/places/ybor-city-historic-district-tampa-fl.htm",
+      "https://www.tampa.gov/city-clerk/info/archives/city-of-tampa-incorporation-history"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL: 'in June 1887, it became legally part of that city, although it maintained its separate identity... by 1890 it had a population of around 6,000, which outnumbered the native residents of Tampa.' City Clerk: July 15, 1887 charter abolishing the Town of Tampa and Town of North Tampa governments. Coordinates: Ybor City Museum State Park (census, 1818 E 9th Ave)."
+  },
+  {
+    "id": "ybor-city-first-cigars-1886",
+    "era": "boomtown",
+    "year": 1886,
+    "date": "1886-03",
+    "title": "Ybor City's first cigar factories open",
+    "text": "Ignacio Haya's factory went into production first, in March 1886, and Ybor's own factory followed; by the end of 1886 several hundred worker houses stood between today's 6th and 9th avenues and 12th and 14th streets, and more than 3,000 workers had come from Cuba. The 1886 V. M. Ybor factory on 14th Street, the first brick cigar factory built in Tampa, still stands.",
+    "places": [
+      "ybor-city-historic-district",
+      "ybor-factory-building"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961154,
+    "lng": -82.444299,
+    "media": [
+      "tl-ybor-factory-c1902"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "also_sources": [
+      "https://guides.loc.gov/this-month-in-business-history/october/ybor-city",
+      "https://www.nps.gov/places/ybor-city-historic-district-tampa-fl.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL nomination: 'enabled Haya to get into production first, in March 1886'; 'By the end of the year, over 3,000, some 15% of whom were Black, had arrived'; 'By the end of 1886... In the area between present 6th and 9th Avenues and from 12th to 14th Streets, the Ybor and Haya cigar factories were in full operation, several hundred worker houses completed and occupied'. LoC: 'The original building was the first brick cigar factory constructed in Tampa in 1886.'"
+  },
+  {
+    "id": "ybor-fire-1908",
+    "era": "boomtown",
+    "year": 1908,
+    "date": "1908",
+    "title": "Fire destroys 350 buildings in Ybor City",
+    "text": "A fire in 1908 destroyed 350 buildings in Ybor City between 16th and 20th streets and 12th and Michigan (now Columbus Drive) avenues. Rebuilding replaced many frame buildings with brick, and into the 1930s owners added the wrought-iron balconies, stucco and Spanish tile that give 7th Avenue its look.",
+    "places": [
+      "ybor-city-historic-district"
+    ],
+    "area": "ybor-city",
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "checked": "2026-09-27",
+    "notes": "NHL: 'many frame commercial and commercial-residential buildings were replaced with brick ones, particularly after a disastrous fire in 1908, in which 350 buildings were destroyed in the area between 16th and 20th Streets and 12th and Michigan Avenues (Columbus Drive). Also, during this period, and into the 1930s, many property owners added wrought-iron balconies, stucco, and Spanish tile'."
+  },
+  {
+    "id": "ybor-national-register-1974",
+    "era": "postwar",
+    "year": 1974,
+    "date": "1974",
+    "title": "Ybor City's historic district is listed on the National Register",
+    "text": "The Ybor City Historic District, mainly the 7th Avenue commercial corridor and its cigar factories, was listed on the National Register of Historic Places in 1974; a larger district was later designated a National Historic Landmark. The state bought the 1923 Ferlita Bakery in 1976 and opened it as the Ybor City State Museum in 1980.",
+    "places": [
+      "ybor-city-historic-district",
+      "ybor-city-museum-state-park"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961739,
+    "lng": -82.438956,
+    "media": [
+      "tl-cuban-cigar-makers-1974",
+      "tl-ferlita-bakery"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "also_sources": [
+      "https://www.nps.gov/places/ybor-city-historic-district-tampa-fl.htm"
+    ],
+    "checked": "2026-09-27",
+    "notes": "NHL nomination: 'National Register Historic District, listed in 1974, which includes mainly the 7th Avenue commercial corridor and adjoining cigar factories'; the NHL boundary adds residential areas. 'The State acquired the Ferlita Bakery in 1976, restored it, and opened it to the public as the Ybor City State Museum in 1980.' 'The bakery was built in 1923'. NPS place page: 'Designation: National Historic Landmark' (date not given)."
+  },
+  {
+    "id": "ybor-urban-renewal-1965",
+    "era": "postwar",
+    "year": 1965,
+    "date": "1965",
+    "title": "Urban renewal and I-4 cut through Ybor City",
+    "text": "In 1965 Ybor City became the target of a major urban renewal project: over the next few years 70 acres, including 660 frame houses, two ethnic club buildings, a fire station and a cigarmakers' school, were leveled, and the promised redevelopment largely never came. Construction of Interstate 4 also split the community, but the losses spurred Tampa's Latin community to preserve its culture and landmark buildings.",
+    "places": [
+      "ybor-city-historic-district"
+    ],
+    "area": "ybor-city",
+    "lat": 27.961053,
+    "lng": -82.445403,
+    "media": [
+      "tl-i4-model"
+    ],
+    "source_url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/74000641_text",
+    "checked": "2026-09-27",
+    "notes": "NHL: 'In 1965 Ybor City became the target of a major urban renewal project. During the next few years, 70 acres, including 660 frame houses, two ethnic club buildings, a fire station, and a cigarmakers' school were leveled. Although plans for redevelopment were announced, they largely came to naught because expected Federal urban renewal money did not materialize. The construction of Interstate 4 also split the community.' 'the renewal project sparked a revival of interest in the area among the Latin community to preserve its culture and most significant buildings.'"
   }
 ]

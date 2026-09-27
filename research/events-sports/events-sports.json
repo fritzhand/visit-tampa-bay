@@ -508,8 +508,31 @@
      "fitness-race"
     ],
     "source_url": "https://hyrox.com/event/hyrox-tampa/",
-    "notes": "Event page: '22. Oct. 2026 – 25. Oct. 2026'; 'Event Location: 333 S Franklin St, Tampa, FL 33602 | Tampa Convention Center'; 'Spectator Tickets & Add on'. Tampa Bay Sports Commission lists Oct. 23-25; the organizer's dates are used.",
-    "area": "downtown-tampa"
+    "notes": "Event page: '22. Oct. 2026 – 25. Oct. 2026'; 'Event Location: 333 S Franklin St, Tampa, FL 33602 | Tampa Convention Center'; 'Spectator Tickets & Add on'. Tampa Bay Sports Commission lists Oct. 23-25; the organizer's dates are used. Verifier 2026-09-27: provisional race schedule re-read (first waves 8:00 each day; last waves end 20:30 Thu., 20:20 Fri., 20:30 Sat., 19:30 Sun.); 'Enjoy a spectacular view from the Thunderdome to watch the other racers compete throughout the day'.",
+    "area": "downtown-tampa",
+    "occurrences": [
+     {
+      "date": "2026-10-22",
+      "start": "08:00",
+      "end": "20:30"
+     },
+     {
+      "date": "2026-10-23",
+      "start": "08:00",
+      "end": "20:20"
+     },
+     {
+      "date": "2026-10-24",
+      "start": "08:00",
+      "end": "20:30"
+     },
+     {
+      "date": "2026-10-25",
+      "start": "08:00",
+      "end": "19:30"
+     }
+    ],
+    "time_text": "Race waves daily from 8:00 a.m. (the organizer's provisional schedule, subject to change)"
    },
    {
     "kind": "sports",
@@ -2280,11 +2303,11 @@
     ],
     "time_text": "Fri. Feb. 19: Hot Diggity Dog Walk and the health and fitness expo (10 a.m.-8 p.m.). Sat. Feb. 20: 15K (6:45 a.m.), 5K (9:15 a.m.). Sun. Feb. 21: Half Marathon (6:00 a.m.), 8K (9:15 a.m.)",
     "place": "bayshore-boulevard",
-    "location_text": "Starts downtown (15K and 5K on Brorein Street; Half Marathon at Platt Street and Bayshore Boulevard; 8K at Bayshore Boulevard and Verne Street); out-and-back course on Bayshore Boulevard; expo at the Tampa Convention Center",
+    "location_text": "Starts downtown (15K on Brorein Street; 5K at Brorein and Ashley streets; Half Marathon at Platt Street and Bayshore Boulevard; 8K at Bayshore Boulevard and Verne Street); the 15K is out-and-back on Bayshore Boulevard and finishes at the foot of the Platt Street Bridge; expo at the Tampa Convention Center",
     "url": "https://www.rungasparilla.com/",
     "featured": true,
     "description": "The 50th running of the Publix Gasparilla Distance Classic Race Weekend will commence on Saturday, February 20, and Sunday, February 21, 2027.",
-    "summary": "Tampa's big road-race weekend, its 50th running: a 15K and 5K on Saturday and a half marathon and 8K on Sunday on an out-and-back course along Bayshore Boulevard, with a free expo at the Tampa Convention Center.",
+    "summary": "Tampa's road-race weekend, in its 50th running: a 15K and 5K on Saturday and a half marathon and 8K on Sunday, on courses along Bayshore Boulevard (the half marathon also has a Davis Islands section), with a free expo at the Tampa Convention Center.",
     "tags": [
      "running",
      "gasparilla"
@@ -2296,9 +2319,10 @@
      "https://www.rungasparilla.com/half-marathon/",
      "https://www.rungasparilla.com/5k-general-information/",
      "https://www.rungasparilla.com/8k-general-information/",
-     "https://www.rungasparilla.com/health-and-fitness-expo/"
+     "https://www.rungasparilla.com/health-and-fitness-expo/",
+     "https://www.rungasparilla.com/15k-course-information/"
     ],
-    "notes": "Future dates page: '2027 February 19 – 21' with the dog walk on Friday, 15K and 5K Saturday, Half and 8K Sunday, expo Friday and Saturday. 15K wave 1 6:45 a.m. (wheelchair 6:40); 5K 9:15 a.m.; Half 6:00 a.m.; 8K 9:15 a.m. Expo: Friday 10 a.m.-8 p.m., Saturday 6 a.m.-3 p.m., Tampa Convention Center, free and open to the public.",
+    "notes": "Future dates page: '2027 February 19 – 21' with the dog walk on Friday, 15K and 5K Saturday, Half and 8K Sunday, expo Friday and Saturday. 15K wave 1 6:45 a.m. (wheelchair 6:40); 5K 9:15 a.m.; Half 6:00 a.m.; 8K 9:15 a.m. Expo: Friday 10 a.m.-8 p.m., Saturday 6 a.m.-3 p.m., Tampa Convention Center, free and open to the public. Verifier 2026-09-27: race pages re-read (15K Feb. 20 at 6:45 a.m. wave 1 from Brorein St. & Franklin St.; 5K 9:15 a.m. from Brorein St. & Ashley St.; Half Feb. 21 at 6:00 a.m. from Platt St. & Bayshore Blvd.; 8K 9:15 a.m. from Bayshore Blvd. & Verne St.; expo free). 15K course page: 'out-and-back course along beautiful Bayshore Boulevard'; half marathon page lists a 'Davis Islands Portion'.",
     "area": "hyde-park"
    },
    {
@@ -5597,6 +5621,164 @@
     ],
     "notes": "MLB schedule data (gameType R, venue Tropicana Field, startTimeTBD true).",
     "area": "grand-central"
+   },
+   {
+    "id": "orion180-insurance-tip-off-classic-2026",
+    "title": "Orion180 Insurance Tip-off Classic",
+    "kind": "sports",
+    "topics": [
+     "sports"
+    ],
+    "date": "2026-11-02",
+    "start": "18:00",
+    "time_text": "Event starts 6:00 p.m.; doors open 60-90 minutes before",
+    "place": "benchmark-international-arena",
+    "area": "channel-district",
+    "url": "https://www.benchmarkintlarena.com/event/orion-2026/",
+    "summary": "A college basketball event at Benchmark International Arena, listed by the Tampa Bay Sports Commission as a college basketball season kickoff. The arena lists a 6:00 p.m. start; the teams are not named on its page.",
+    "status": "scheduled",
+    "tags": [
+     "college",
+     "basketball"
+    ],
+    "source_url": "https://www.benchmarkintlarena.com/event/orion-2026/",
+    "also_sources": [
+     "https://www.tampabaysports.org/events/calendar26?print=ical",
+     "https://www.benchmarkintlarena.com/events"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Arena event page: 'Orion180 Insurance Tip-off Classic', November 2, 2026, 'Event Starts 6:00PM', 'Doors Open 60 - 90 minutes prior to ticketed show time'; arena events feed categorizes it as Sports. Tampa Bay Sports Commission 2026 composite calendar: '(Basketball) College Basketball Season Kickoff, Benchmark International Arena' on 2026-11-02, linking to the Ticketmaster page for this event. Matchups not published on any page the verifier could open (Ticketmaster returned 403)."
+   },
+   {
+    "id": "wwe-raw-and-smackdown-2026-12-28",
+    "title": "WWE Raw & WWE SmackDown",
+    "kind": "sports",
+    "topics": [
+     "sports"
+    ],
+    "date": "2026-12-28",
+    "start": "18:30",
+    "time_text": "Event starts 6:30 p.m.; doors open 60-90 minutes before",
+    "place": "benchmark-international-arena",
+    "area": "channel-district",
+    "url": "https://www.benchmarkintlarena.com/event/wwe-2026/",
+    "summary": "WWE pro wrestling at Benchmark International Arena, billed as WWE Raw and WWE SmackDown. The arena lists a 6:30 p.m. start and says the lineup is subject to change.",
+    "status": "scheduled",
+    "tags": [
+     "wrestling"
+    ],
+    "source_url": "https://www.benchmarkintlarena.com/event/wwe-2026/",
+    "also_sources": [
+     "https://www.benchmarkintlarena.com/events"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Arena event page: 'WWE RAW & WWE Smackdown', December 28, 2026, 'Event Starts 6:30PM'; 'Lineup is subject to change.' Tickets via Ticketmaster."
+   },
+   {
+    "id": "pbr-unleash-the-beast-tampa-2027",
+    "title": "PBR: Unleash the Beast",
+    "kind": "sports",
+    "topics": [
+     "sports"
+    ],
+    "date": "2027-01-22",
+    "end_date": "2027-01-23",
+    "occurrences": [
+     {
+      "date": "2027-01-22",
+      "start": "19:45"
+     },
+     {
+      "date": "2027-01-23",
+      "start": "19:45"
+     }
+    ],
+    "time_text": "7:45 p.m. both nights",
+    "place": "benchmark-international-arena",
+    "area": "channel-district",
+    "url": "https://www.benchmarkintlarena.com/event/pbr-unleash-the-beast/",
+    "summary": "Professional Bull Riders' Unleash the Beast bull riding at Benchmark International Arena on two nights, Friday and Saturday.",
+    "status": "scheduled",
+    "tags": [
+     "bull-riding",
+     "rodeo"
+    ],
+    "source_url": "https://www.benchmarkintlarena.com/event/pbr-unleash-the-beast/",
+    "also_sources": [
+     "https://www.benchmarkintlarena.com/event/pbr-unleash-the-beast-2/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Arena events feed and event pages: 'PBR: Unleash the Beast', January 22, 2027 at 7:45 PM and January 23, 2027 at 7:45 PM (category Sports); tickets via Ticketmaster."
+   },
+   {
+    "id": "reliaquest-bowl-battle-of-the-bands-2026",
+    "title": "ReliaQuest Bowl Battle of the Bands at Busch Gardens",
+    "kind": "other",
+    "topics": [
+     "sports",
+     "music",
+     "family"
+    ],
+    "series": "reliaquest-bowl",
+    "date": "2026-12-30",
+    "time_text": "Date is tentative; time not yet announced",
+    "place": "busch-gardens-tampa-bay",
+    "location_text": "Gwazi Park, Busch Gardens Tampa Bay",
+    "area": "north-tampa",
+    "url": "https://www.reliaquestbowl.com/sports/2024/8/5/2024-25-reliaquest-bowl-schedule-of-events.aspx",
+    "cost": "Admission to park required",
+    "is_free": false,
+    "summary": "During bowl week the two college marching bands face off in a Battle of the Bands performance at Gwazi Park in Busch Gardens; park admission is required.",
+    "status": "tentative",
+    "tags": [
+     "bowl-game",
+     "marching-band"
+    ],
+    "source_url": "https://www.reliaquestbowl.com/sports/2024/8/5/2024-25-reliaquest-bowl-schedule-of-events.aspx",
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. 2026 ReliaQuest Bowl Schedule of Events: 'December 30th - BATTLE OF THE BANDS AT BUSCH GARDENS | Join the college marching bands at Busch Gardens as they square-off for a special \"Battle of the Bands\" performance. Admission to park required. Performance at Gwazi Park. Date is Tentative. Time TBD.'"
+   },
+   {
+    "id": "rays-alcs-home-games-2026",
+    "title": "Rays ALCS home games (if the Rays advance)",
+    "kind": "sports",
+    "topics": [
+     "sports"
+    ],
+    "series": "rays-home-games",
+    "date": "2026-10-12",
+    "end_date": "2026-10-20",
+    "occurrences": [
+     {
+      "date": "2026-10-12"
+     },
+     {
+      "date": "2026-10-13"
+     },
+     {
+      "date": "2026-10-19"
+     },
+     {
+      "date": "2026-10-20"
+     }
+    ],
+    "time_text": "Games 1 and 2 on Oct. 12 and 13; Games 6 and 7 on Oct. 19 and 20 if necessary; times TBD; TBS",
+    "place": "tropicana-field",
+    "area": "grand-central",
+    "url": "https://www.mlb.com/rays/tickets/postseason",
+    "summary": "If the Rays win their Division Series, the American League Championship Series opens at Tropicana Field on Oct. 12 and 13, with Games 6 and 7 there on Oct. 19 and 20 if needed. The Rays sell tickets for all potential home dates.",
+    "status": "tentative",
+    "tags": [
+     "mlb",
+     "baseball",
+     "postseason"
+    ],
+    "source_url": "https://www.mlb.com/rays/tickets/postseason",
+    "also_sources": [
+     "https://www.mlb.com/postseason"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Rays postseason page: 'Tickets for all potential ALDS, ALCS and World Series home games are on sale now', listing ALCS home dates Oct. 12, 13, 19 and 20. MLB tentative schedule: ALCS Games 1-2 (Oct. 12-13) and 6*-7* (Oct. 19-20) at the 'AL High' seed; the Rays have the AL's best record (clinched). Contingent on the ALDS result; World Series dates not recorded."
    }
   ],
   "series": [
@@ -5806,7 +5988,7 @@
     "place": "george-m-steinbrenner-field",
     "area": "west-tampa",
     "url": "https://www.mlb.com/yankees/spring-training",
-    "summary": "The New York Yankees hold spring training in Tampa and play their home Grapefruit League games at George M. Steinbrenner Field.",
+    "summary": "The New York Yankees hold spring training in Tampa and play their spring home games at George M. Steinbrenner Field.",
     "featured": true,
     "source_url": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=147&season=2027&gameType=S",
     "also_sources": [
@@ -5984,10 +6166,11 @@
     "also_sources": [
      "https://www.milb.com/tampa/schedule/2027-04",
      "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14",
-     "https://www.visittampabay.com/things-to-do/tampa-sports/"
+     "https://www.visittampabay.com/things-to-do/tampa-sports/",
+     "https://statsapi.mlb.com/api/v1/teams/587?season=2027"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Yankees affiliation per Visit Tampa Bay's sports page. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Yankees affiliation per Visit Tampa Bay's sports page. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule. Verifier: MLB Stats API team record (season 2027): Florida State League, Single-A, George M. Steinbrenner Field, parent organization New York Yankees."
    },
    {
     "id": "clearwater-threshers",
@@ -6009,14 +6192,15 @@
     "place": "baycare-ballpark",
     "area": "downtown-clearwater",
     "url": "https://www.milb.com/clearwater/schedule/2027-04",
-    "summary": "The Clearwater Threshers play Single-A minor league baseball in the Florida State League at BayCare Ballpark, the Philadelphia Phillies' spring training ballpark.",
+    "summary": "The Clearwater Threshers, the Philadelphia Phillies' Single-A affiliate, play Florida State League minor league baseball at BayCare Ballpark, the Phillies' spring training ballpark.",
     "source_url": "https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=566&season=2027",
     "also_sources": [
      "https://www.milb.com/clearwater/schedule/2027-04",
-     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
+     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14",
+     "https://statsapi.mlb.com/api/v1/teams/566?season=2027"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule. Verifier: MLB Stats API team record (season 2027) gives league Florida State League, level Single-A, venue BayCare Ballpark, parent organization Philadelphia Phillies."
    },
    {
     "id": "dunedin-blue-jays",
@@ -6038,14 +6222,15 @@
     "place": "td-ballpark",
     "area": "dunedin",
     "url": "https://www.milb.com/dunedin/schedule/2027-04",
-    "summary": "The Dunedin Blue Jays play Single-A minor league baseball in the Florida State League at TD Ballpark, the Toronto Blue Jays' spring training ballpark.",
+    "summary": "The Dunedin Blue Jays, the Toronto Blue Jays' Single-A affiliate, play Florida State League minor league baseball at TD Ballpark, the Blue Jays' spring training ballpark.",
     "source_url": "https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=424&season=2027",
     "also_sources": [
      "https://www.milb.com/dunedin/schedule/2027-04",
-     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
+     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14",
+     "https://statsapi.mlb.com/api/v1/teams/424?season=2027"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule. Verifier: MLB Stats API team record (season 2027) gives league Florida State League, level Single-A, venue TD Ballpark, parent organization Toronto Blue Jays."
    },
    {
     "id": "bradenton-marauders",
@@ -6067,14 +6252,15 @@
     "place": "lecom-park",
     "area": "bradenton-anna-maria",
     "url": "https://www.milb.com/bradenton/schedule/2027-04",
-    "summary": "The Bradenton Marauders play Single-A minor league baseball in the Florida State League at LECOM Park, the Pittsburgh Pirates' spring training ballpark.",
+    "summary": "The Bradenton Marauders, the Pittsburgh Pirates' Single-A affiliate, play Florida State League minor league baseball at LECOM Park, the Pirates' spring training ballpark.",
     "source_url": "https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=3390&season=2027",
     "also_sources": [
      "https://www.milb.com/bradenton/schedule/2027-04",
-     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
+     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14",
+     "https://statsapi.mlb.com/api/v1/teams/3390?season=2027"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule. Verifier: MLB Stats API team record (season 2027) gives league Florida State League, level Single-A, venue LECOM Park, parent organization Pittsburgh Pirates."
    },
    {
     "id": "lakeland-flying-tigers",
@@ -6096,14 +6282,15 @@
     "place": "publix-field-at-joker-marchant-stadium",
     "area": "polk",
     "url": "https://www.milb.com/lakeland/schedule/2027-04",
-    "summary": "The Lakeland Flying Tigers play Single-A minor league baseball in the Florida State League at Publix Field at Joker Marchant Stadium, the Detroit Tigers' spring training ballpark.",
+    "summary": "The Lakeland Flying Tigers, the Detroit Tigers' Single-A affiliate, play Florida State League minor league baseball at Publix Field at Joker Marchant Stadium, the Tigers' spring training ballpark.",
     "source_url": "https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=570&season=2027",
     "also_sources": [
      "https://www.milb.com/lakeland/schedule/2027-04",
-     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
+     "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14",
+     "https://statsapi.mlb.com/api/v1/teams/570?season=2027"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule. Verifier: MLB Stats API team record (season 2027) gives league Florida State League, level Single-A, venue Publix Field at Joker Marchant Stadium, parent organization Detroit Tigers."
    },
    {
     "id": "gasparilla-bowl",
@@ -6263,7 +6450,7 @@
     "place": "bayshore-boulevard",
     "area": "hyde-park",
     "url": "https://www.rungasparilla.com/",
-    "summary": "Tampa's signature road-running weekend on Bayshore Boulevard: 15K, 5K, half marathon and 8K races plus a dog walk and a free expo. 2027 is the 50th running.",
+    "summary": "A road-running weekend in Tampa on Bayshore Boulevard: 15K, 5K, half marathon and 8K races plus a dog walk and a free expo. 2027 is the 50th running.",
     "quote": "The Publix Gasparilla Distance Classic is the premier and city-signature road running event for the City of Tampa.",
     "featured": true,
     "source_url": "https://www.rungasparilla.com/",
@@ -6289,8 +6476,79 @@
     "summary": "A marathon, half marathon, 50K and 5K weekend based at Sand Key Park, with courses over the bridges to Clearwater Beach, downtown Clearwater and Belleair.",
     "source_url": "https://millenniumrunning.com/cw/",
     "checked": "2026-09-27"
+   },
+   {
+    "id": "sarasota-polo-club-season",
+    "name": "Sarasota Polo Club season",
+    "kind": "sports",
+    "topics": [
+     "sports",
+     "family",
+     "outdoors"
+    ],
+    "months": [
+     12,
+     1,
+     2,
+     3,
+     4
+    ],
+    "when_text": "Sundays from December to mid-April (Dec. 20, 2026 to Apr. 15, 2027), plus Sunset Polo on select Thursdays",
+    "place": "sarasota-polo-club",
+    "area": "sarasota",
+    "url": "https://www.sarasotapolo.com/",
+    "summary": "Polo matches at the Sarasota Polo Club in Lakewood Ranch every Sunday of the winter season, with Thursday Sunset Polo happy-hour matches on select dates. The club says tickets for the 2027 season go on sale in fall 2026.",
+    "source_url": "https://www.sarasotapolo.com/",
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Home page: 'Sunday, December 20th, 2026 through Thursday, April 15th, 2027'; 'Sunday Polo matches are hosted every Sunday'; 'Thursday Sunset Polo Happy Hour matches on select Thursdays during the published season'; 'Tickets will go live in the fall of 2026'. Match times and prices not posted. Place record from around-daytrips (address 8201 Polo Club Ln, Sarasota)."
+   },
+   {
+    "id": "st-pete-powerboat-grand-prix",
+    "name": "St. Pete Powerboat Grand Prix",
+    "kind": "sports",
+    "topics": [
+     "sports",
+     "water"
+    ],
+    "months": [
+     3
+    ],
+    "when_text": "A late-March weekend (March 27-29 in 2026); 2027 dates not yet published",
+    "place": "st-pete-pier",
+    "area": "downtown-stpete",
+    "url": "https://www.visitstpeteclearwater.com/event/st-pete-powerboat-grand-prix",
+    "summary": "Offshore powerboat and personal watercraft racing on the downtown St. Petersburg waterfront, with the personal watercraft course near the St. Pete Pier's Spa Beach and a Friday night pit party. Visit St. Pete/Clearwater says admission to the races is free.",
+    "quote": "Races to compete for multiple prize purses will take place across Saturday and Sunday with free admission to all.",
+    "source_url": "https://www.visitstpeteclearwater.com/event/st-pete-powerboat-grand-prix",
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27. Visit St. Pete/Clearwater listing for the 6th annual Monster Energy St. Petersburg Powerboat Grand Prix, March 27-29, 2026. No 2027 date found; the organizer link (ihra.com) returned 403."
+   },
+   {
+    "id": "clearwater-offshore-nationals",
+    "name": "Clearwater Offshore Nationals",
+    "kind": "sports",
+    "topics": [
+     "sports",
+     "water",
+     "beaches"
+    ],
+    "months": [
+     9
+    ],
+    "when_text": "Late September (Sept. 24-27 in 2026, racing Saturday and Sunday)",
+    "place": "pier-60",
+    "location_text": "Racing off Clearwater Beach; viewing from the beach, Pier 60 and Sand Key Park",
+    "area": "clearwater-beach",
+    "url": "https://www.visitstpeteclearwater.com/events-festivals/clearwater-offshore-nationals",
+    "summary": "Offshore powerboat races on a course just off Clearwater Beach, watched from the sand, Pier 60 and Sand Key Park. Visit St. Pete/Clearwater says no admission is charged.",
+    "source_url": "https://www.visitstpeteclearwater.com/events-festivals/clearwater-offshore-nationals",
+    "also_sources": [
+     "https://powerboat.news/xinsurance-clearwater-offshore-nationals-2026-everything-you-need-to-know/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Added by the verifier 2026-09-27 as a series only: the 2026 edition (XInsurance Clearwater Offshore Nationals, Sept. 24-27, 2026) ends before this guide's event window. The two pages disagree on the course length (2.5 vs 5.0 miles), so it is not stated. 'No admission is charged at any of the race events' (Visit St. Pete/Clearwater)."
    }
   ]
  },
- "report": "# events-sports: home games, races and one-off sporting events, Sep 28, 2026 to Apr 30, 2027\n\n## What is covered (204 events, 27 series)\n\n- **Tampa Bay Lightning**: all 42 regular-season home games at `benchmark-international-arena` (Oct 3, 2026 to Apr 10, 2027). The NHL's 2026-27 schedule has 84 games; both preseason home games (Sep 20, Sep 24) were before the window. Puck drops come from the NHL schedule feed, and the 26 games on the Lightning's theme-night release were cross-checked against it (date, weekday, opponent and time all match). The home opener (Oct 3, featured) includes the Blue Carpet Walk time from the Launch Week release.\n- **Buccaneers**: the 7 home games left in the window at `raymond-james-stadium` (Oct 4, Oct 18, Nov 1, Nov 30 Monday Night Football, Dec 6, Dec 20, Jan 3). Kickoffs and TV from the team's schedule hub; gate times from the stadium's events page. Week 17 (Rams) is listed by the team as Sun. Jan. 3 with kickoff TBD.\n- **USF Bulls football**: verified that 2026 home games are at Raymond James Stadium (schedule facility field and the stadium calendar). 5 home games in the window (Temple, Kent State, UAB, Memphis, Tulane; Tulane is \"Nov. 27 or 28\", stored tentative on Nov. 27).\n- **USF Bulls basketball**: 8 men's and 6 women's non-conference home games at `yuengling-center`, all \"time TBA\" (conference schedules not posted yet).\n- **Tampa Bay Rowdies**: the last 3 regular-season home matches at `al-lang-stadium` plus the Oct 30 Eastern Conference Quarterfinal the club lists at Al Lang (tentative, opponent TBD).\n- **Tampa Bay Sun FC**: 6 fall home matches at `suncoast-credit-union-field` (the club's fall 2026 schedule; spring 2027 not posted).\n- **Tampa Bay Rays**: ALDS Games 1, 2 and 5 (if necessary) at `tropicana-field` (MLB's tentative postseason schedule: \"AL 4/5 Winner plays TB\"), 3 spring games at Tropicana Field (Mar 20, 21, 23, 2027) and all 19 regular-season home games from the Mar 25, 2027 opener through Apr 29. Times not yet set.\n- **Spring training 2027** (the schedules are published): every home game for the Yankees (16, `george-m-steinbrenner-field`), Phillies (16, `baycare-ballpark`), Blue Jays (15, `td-ballpark`), Pirates (16, `lecom-park`) and Tigers (15, `publix-field-at-joker-marchant-stadium`), all \"game time not yet announced\". Orioles (`ed-smith-stadium`) and Braves (`cooltoday-park`) are series records only.\n- **Minor league (Florida State League, Single-A)**: 2027 home openers and a series record for the Tampa Tarpons, Clearwater Threshers, Dunedin Blue Jays, Bradenton Marauders and Lakeland Flying Tigers.\n- **Bowls**: Gasparilla Bowl (Dec 18, 2:30 p.m.) and ReliaQuest Bowl (Dec 31, 2026, noon; SEC vs. Big Ten; $170 club / $80 other seats), plus the ReliaQuest Bowl Parade in Ybor City (Dec 30) and Clearwater Beach Day (Dec 29), both tentative per the bowl's own caveat.\n- **Racing and motorsports**: Tampa Bay Downs Opening Day (Nov 18), Festival Preview Day 47 (Feb 6), Festival Day 47, the Tampa Bay Derby card (Mar 6, featured), Florida Cup Day (Apr 4); Firestone Grand Prix of St. Petersburg 2027 (tentative on Mar 6, the only published date) and its Race the Track 5K (Mar 4); Monster Jam at Raymond James (Feb 13 and 14).\n- **Runs**: Publix Gasparilla Distance Classic 2027 (Feb 19-21, the 50th running, per-race start times), Clearwater Marathon & Running Festival (Jan 30-31), SKECHERS Hot Chocolate Run Tampa (Dec 13).\n- **Other one-offs**: TNA Bound for Glory (Oct 11, Yuengling Center), the 32nd Tampa Am skateboarding contest (Oct 15-18), HYROX Tampa (Oct 22-25, Tampa Convention Center), A-Class Catamaran World Championships (Nov 5-14, Davis Island Yacht Club).\n- **Series (27)**: one per team season (Lightning, Bucs, USF football, USF basketball, Rowdies, Sun, Rays, 7 spring-training clubs, 5 minor league clubs) and one per annual event (Gasparilla Bowl, ReliaQuest Bowl, Grand Prix, Valspar Championship, Tampa Bay Downs season, Gasparilla Distance Classic, Clearwater Marathon, Tampa Am).\n\nCounts. By kind: sports 199, run-walk 4, parade 1. By status: scheduled 198, tentative 6. By month: Oct 23, Nov 25, Dec 21, Jan 7, Feb 38, Mar 68, Apr 22. By area: channel-district 43, west-tampa 38, grand-central 25, bradenton-anna-maria 17, downtown-clearwater 17, dunedin 16, polk 16, north-tampa 15, downtown-stpete 6, oldsmar 4, and one each in east-tampa, downtown-tampa, davis-islands, clearwater-beach, ybor-city, sand-key, hyde-park. 68 events have a published start time; the rest carry `time_text` (\"Game time not yet announced\", \"Tip time TBA\", \"Kickoff time TBA\") or per-day `occurrences`.\n\n## How candidates were found\n\nWebSearch was not available in this session (the session's search budget was already used up), so discovery ran on official pages and feeds opened directly:\n- Team and league sources: the NHL schedule feed (api-web.nhle.com) and nhl.com/lightning news releases; buccaneers.com schedule and schedule-release hub; gousfbulls.com schedule pages (data read from the page's embedded Nuxt payload); rowdiessoccer.com and tampabaysunfc.com schedules; MLB Stats API schedules (the data behind every mlb.com and milb.com schedule page) plus mlb.com team spring-training pages and the MLB postseason schedule page.\n- Venue calendars: raymondjamesstadium.com/events (Bucs, USF, bowls, Monster Jam, gate times); tampabaydowns.com (admission page, racing-calendar script, 2026-27 calendar PDF).\n- The Tampa Bay Sports Commission's composite calendars for 2026 and 2027 (tampabaysports.org), whose preview links led to TNA, Tampa Am, HYROX, the A-Class Worlds and the Hot Chocolate Run.\n- Visit Tampa Bay's sports page (confirms the team list and that the Tarpons are the Yankees' Single-A affiliate) and events page.\n- Organizer sites: gasparillabowl.com, reliaquestbowl.com, gpstpete.com, indycar.com, valsparchampionship.com, rungasparilla.com, millenniumrunning.com/cw, hotchocolate15k.com, skateparkoftampa.com, hyrox.com, aclassworlds.com, tnawrestling.com.\n- `source_url` is the page or feed that states the facts. Where the human page is rendered by script (mlb.com, milb.com, nhl.com schedules), `source_url` is the official JSON feed (statsapi.mlb.com or api-web.nhle.com) and the human schedule page is in `url` and `also_sources`.\n- Coordinates: only three events carry their own (Tampa Am, A-Class Worlds, Hot Chocolate Run: OpenStreetMap/Photon features, noted in `notes`); every other event uses a `place` id from venues-bay, outdoors, see-tampa, see-pinellas or the shared list (`ybor-city-historic-district`).\n\n## Deliberately left out, and why\n\n- Individual Orioles and Braves spring games (Sarasota County day trips): series records only. Rays home spring games at Charlotte Sports Park, Port Charlotte: outside this guide's areas.\n- The other ~58 April minor league home games: home openers and series records only, to keep What's On readable.\n- Youth and amateur tournaments on the Sports Commission calendar (soccer, lacrosse, volleyball, flag football, youth hockey, trap shooting, cheer, Tropical 7s rugby on Mar 25-28, 2027) and the American Tipoff media day (Oct 11-12, JW Marriott Tampa Water Street): not spectator events for visitors.\n- Florida Gold Coast horse show (Dec 27-31, 2026, Florida State Fairgrounds, per anequineproduction.com): a participant show with no spectator information.\n- Concerts at Raymond James (Karol G, Ed Sheeran, Usher, Kenny Chesney) belong to events-shows; Hondo Rodeo Fest (Feb 26-28) is in events-spring.\n- Valspar Championship: May 3-9, 2027, after the window; series record only. St. Pete Marathon: debuts in December 2027, outside the window.\n- USF men's basketball vs. Saint Leo (Oct 19): the schedule marks it with a non-regular game type (\"S\") and does not say whether it is a public exhibition.\n- Possible ALCS and World Series home games, the American Conference football championship (Dec 5, host TBD) and NFL/NHL playoffs: not scheduled.\n\n## Gaps and open questions for the verifier\n\n1. Benchmark International Arena and Yuengling Center event calendars returned bot challenges, and Visit St. Pete/Clearwater's events pages returned 403, so arena-only one-offs (college basketball events, WWE, figure skating, etc.) may be missing. The Sports Commission lists an \"Orion180 Insurance Tip-Off Classic\" on Nov 2, 2026 (Ticketmaster page, 403) and \"American Conference Men's/Women's Basketball Tournament\" on Mar 9-14, 2027 with no venue; neither was confirmed, so neither is recorded.\n2. Not found or not yet published: a 2027 Supercross date in Tampa (none on the Raymond James calendar through Apr 24, 2027); the Skyway 10K 2027 date; St. Anthony's Triathlon (site unreachable); St. Pete Run Fest (domain parked); spring 2027 Tampa Bay Sun dates; USF conference basketball dates; IndyCar's 2027 calendar and the Grand Prix's full 2027 weekend; USF baseball and softball 2027 (not checked).\n3. `firestone-grand-prix-of-st-petersburg-2027` is stored on Mar 6, 2027 with status tentative: the only published 2027 date is NASCAR's Truck Series race \"at the Grand Prix of St. Petersburg\" (reposted on gpstpete.com). Re-date it when the organizer posts the weekend.\n4. `tampa-bay-downs-festival-day-2027`: the 2027 calendar says \"Festival Day 47\"; that it is the Tampa Bay Derby card rests on the 2026 entry (Festival Day 46 featured the 46th Tampa Bay Derby) and the admission page's \"Tampa Bay Derby Day\" price. The 2027 stakes schedule is not posted.\n5. ReliaQuest Bowl kickoff: the bowl's about page and the stadium say 12:00 PM; the bowl's schedule-of-events page says 12:03 PM. Stored 12:00.\n6. HYROX Tampa: the organizer says Oct 22-25; the Sports Commission says Oct 23-25. Organizer used.\n7. Tampa Bay Downs Opening Day (Nov 18) is a Wednesday and the admission page says general admission is free on Wednesdays; `is_free` is left null because the track does not say so for that date.\n8. Bucs Week 17 (Jan 3) and USF-Tulane (Nov 27 or 28) dates can still move; the Rowdies' Oct 30 playoff match depends on the final standings; Rays ALDS game times are TBD and Game 5 is \"if necessary\".\n9. The Lightning `tickets_url` is empty (the release names TampaBayLightning.com/Tickets; not verified). Spring-training and Rays 2027 records have no times because the MLB feed flags every one `startTimeTBD`.\n"
+ "report": "# events-sports: home games, races and one-off sporting events, Sep 28, 2026 to Apr 30, 2027\n\n## What is covered (204 events, 27 series)\n\n- **Tampa Bay Lightning**: all 42 regular-season home games at `benchmark-international-arena` (Oct 3, 2026 to Apr 10, 2027). The NHL's 2026-27 schedule has 84 games; both preseason home games (Sep 20, Sep 24) were before the window. Puck drops come from the NHL schedule feed, and the 26 games on the Lightning's theme-night release were cross-checked against it (date, weekday, opponent and time all match). The home opener (Oct 3, featured) includes the Blue Carpet Walk time from the Launch Week release.\n- **Buccaneers**: the 7 home games left in the window at `raymond-james-stadium` (Oct 4, Oct 18, Nov 1, Nov 30 Monday Night Football, Dec 6, Dec 20, Jan 3). Kickoffs and TV from the team's schedule hub; gate times from the stadium's events page. Week 17 (Rams) is listed by the team as Sun. Jan. 3 with kickoff TBD.\n- **USF Bulls football**: verified that 2026 home games are at Raymond James Stadium (schedule facility field and the stadium calendar). 5 home games in the window (Temple, Kent State, UAB, Memphis, Tulane; Tulane is \"Nov. 27 or 28\", stored tentative on Nov. 27).\n- **USF Bulls basketball**: 8 men's and 6 women's non-conference home games at `yuengling-center`, all \"time TBA\" (conference schedules not posted yet).\n- **Tampa Bay Rowdies**: the last 3 regular-season home matches at `al-lang-stadium` plus the Oct 30 Eastern Conference Quarterfinal the club lists at Al Lang (tentative, opponent TBD).\n- **Tampa Bay Sun FC**: 6 fall home matches at `suncoast-credit-union-field` (the club's fall 2026 schedule; spring 2027 not posted).\n- **Tampa Bay Rays**: ALDS Games 1, 2 and 5 (if necessary) at `tropicana-field` (MLB's tentative postseason schedule: \"AL 4/5 Winner plays TB\"), 3 spring games at Tropicana Field (Mar 20, 21, 23, 2027) and all 19 regular-season home games from the Mar 25, 2027 opener through Apr 29. Times not yet set.\n- **Spring training 2027** (the schedules are published): every home game for the Yankees (16, `george-m-steinbrenner-field`), Phillies (16, `baycare-ballpark`), Blue Jays (15, `td-ballpark`), Pirates (16, `lecom-park`) and Tigers (15, `publix-field-at-joker-marchant-stadium`), all \"game time not yet announced\". Orioles (`ed-smith-stadium`) and Braves (`cooltoday-park`) are series records only.\n- **Minor league (Florida State League, Single-A)**: 2027 home openers and a series record for the Tampa Tarpons, Clearwater Threshers, Dunedin Blue Jays, Bradenton Marauders and Lakeland Flying Tigers.\n- **Bowls**: Gasparilla Bowl (Dec 18, 2:30 p.m.) and ReliaQuest Bowl (Dec 31, 2026, noon; SEC vs. Big Ten; $170 club / $80 other seats), plus the ReliaQuest Bowl Parade in Ybor City (Dec 30) and Clearwater Beach Day (Dec 29), both tentative per the bowl's own caveat.\n- **Racing and motorsports**: Tampa Bay Downs Opening Day (Nov 18), Festival Preview Day 47 (Feb 6), Festival Day 47, the Tampa Bay Derby card (Mar 6, featured), Florida Cup Day (Apr 4); Firestone Grand Prix of St. Petersburg 2027 (tentative on Mar 6, the only published date) and its Race the Track 5K (Mar 4); Monster Jam at Raymond James (Feb 13 and 14).\n- **Runs**: Publix Gasparilla Distance Classic 2027 (Feb 19-21, the 50th running, per-race start times), Clearwater Marathon & Running Festival (Jan 30-31), SKECHERS Hot Chocolate Run Tampa (Dec 13).\n- **Other one-offs**: TNA Bound for Glory (Oct 11, Yuengling Center), the 32nd Tampa Am skateboarding contest (Oct 15-18), HYROX Tampa (Oct 22-25, Tampa Convention Center), A-Class Catamaran World Championships (Nov 5-14, Davis Island Yacht Club).\n- **Series (27)**: one per team season (Lightning, Bucs, USF football, USF basketball, Rowdies, Sun, Rays, 7 spring-training clubs, 5 minor league clubs) and one per annual event (Gasparilla Bowl, ReliaQuest Bowl, Grand Prix, Valspar Championship, Tampa Bay Downs season, Gasparilla Distance Classic, Clearwater Marathon, Tampa Am).\n\nCounts. By kind: sports 199, run-walk 4, parade 1. By status: scheduled 198, tentative 6. By month: Oct 23, Nov 25, Dec 21, Jan 7, Feb 38, Mar 68, Apr 22. By area: channel-district 43, west-tampa 38, grand-central 25, bradenton-anna-maria 17, downtown-clearwater 17, dunedin 16, polk 16, north-tampa 15, downtown-stpete 6, oldsmar 4, and one each in east-tampa, downtown-tampa, davis-islands, clearwater-beach, ybor-city, sand-key, hyde-park. 68 events have a published start time; the rest carry `time_text` (\"Game time not yet announced\", \"Tip time TBA\", \"Kickoff time TBA\") or per-day `occurrences`.\n\n## How candidates were found\n\nWebSearch was not available in this session (the session's search budget was already used up), so discovery ran on official pages and feeds opened directly:\n- Team and league sources: the NHL schedule feed (api-web.nhle.com) and nhl.com/lightning news releases; buccaneers.com schedule and schedule-release hub; gousfbulls.com schedule pages (data read from the page's embedded Nuxt payload); rowdiessoccer.com and tampabaysunfc.com schedules; MLB Stats API schedules (the data behind every mlb.com and milb.com schedule page) plus mlb.com team spring-training pages and the MLB postseason schedule page.\n- Venue calendars: raymondjamesstadium.com/events (Bucs, USF, bowls, Monster Jam, gate times); tampabaydowns.com (admission page, racing-calendar script, 2026-27 calendar PDF).\n- The Tampa Bay Sports Commission's composite calendars for 2026 and 2027 (tampabaysports.org), whose preview links led to TNA, Tampa Am, HYROX, the A-Class Worlds and the Hot Chocolate Run.\n- Visit Tampa Bay's sports page (confirms the team list and that the Tarpons are the Yankees' Single-A affiliate) and events page.\n- Organizer sites: gasparillabowl.com, reliaquestbowl.com, gpstpete.com, indycar.com, valsparchampionship.com, rungasparilla.com, millenniumrunning.com/cw, hotchocolate15k.com, skateparkoftampa.com, hyrox.com, aclassworlds.com, tnawrestling.com.\n- `source_url` is the page or feed that states the facts. Where the human page is rendered by script (mlb.com, milb.com, nhl.com schedules), `source_url` is the official JSON feed (statsapi.mlb.com or api-web.nhle.com) and the human schedule page is in `url` and `also_sources`.\n- Coordinates: only three events carry their own (Tampa Am, A-Class Worlds, Hot Chocolate Run: OpenStreetMap/Photon features, noted in `notes`); every other event uses a `place` id from venues-bay, outdoors, see-tampa, see-pinellas or the shared list (`ybor-city-historic-district`).\n\n## Deliberately left out, and why\n\n- Individual Orioles and Braves spring games (Sarasota County day trips): series records only. Rays home spring games at Charlotte Sports Park, Port Charlotte: outside this guide's areas.\n- The other ~58 April minor league home games: home openers and series records only, to keep What's On readable.\n- Youth and amateur tournaments on the Sports Commission calendar (soccer, lacrosse, volleyball, flag football, youth hockey, trap shooting, cheer, Tropical 7s rugby on Mar 25-28, 2027) and the American Tipoff media day (Oct 11-12, JW Marriott Tampa Water Street): not spectator events for visitors.\n- Florida Gold Coast horse show (Dec 27-31, 2026, Florida State Fairgrounds, per anequineproduction.com): a participant show with no spectator information.\n- Concerts at Raymond James (Karol G, Ed Sheeran, Usher, Kenny Chesney) belong to events-shows; Hondo Rodeo Fest (Feb 26-28) is in events-spring.\n- Valspar Championship: May 3-9, 2027, after the window; series record only. St. Pete Marathon: debuts in December 2027, outside the window.\n- USF men's basketball vs. Saint Leo (Oct 19): the schedule marks it with a non-regular game type (\"S\") and does not say whether it is a public exhibition.\n- Possible ALCS and World Series home games, the American Conference football championship (Dec 5, host TBD) and NFL/NHL playoffs: not scheduled.\n\n## Gaps and open questions for the verifier\n\n1. Benchmark International Arena and Yuengling Center event calendars returned bot challenges, and Visit St. Pete/Clearwater's events pages returned 403, so arena-only one-offs (college basketball events, WWE, figure skating, etc.) may be missing. The Sports Commission lists an \"Orion180 Insurance Tip-Off Classic\" on Nov 2, 2026 (Ticketmaster page, 403) and \"American Conference Men's/Women's Basketball Tournament\" on Mar 9-14, 2027 with no venue; neither was confirmed, so neither is recorded.\n2. Not found or not yet published: a 2027 Supercross date in Tampa (none on the Raymond James calendar through Apr 24, 2027); the Skyway 10K 2027 date; St. Anthony's Triathlon (site unreachable); St. Pete Run Fest (domain parked); spring 2027 Tampa Bay Sun dates; USF conference basketball dates; IndyCar's 2027 calendar and the Grand Prix's full 2027 weekend; USF baseball and softball 2027 (not checked).\n3. `firestone-grand-prix-of-st-petersburg-2027` is stored on Mar 6, 2027 with status tentative: the only published 2027 date is NASCAR's Truck Series race \"at the Grand Prix of St. Petersburg\" (reposted on gpstpete.com). Re-date it when the organizer posts the weekend.\n4. `tampa-bay-downs-festival-day-2027`: the 2027 calendar says \"Festival Day 47\"; that it is the Tampa Bay Derby card rests on the 2026 entry (Festival Day 46 featured the 46th Tampa Bay Derby) and the admission page's \"Tampa Bay Derby Day\" price. The 2027 stakes schedule is not posted.\n5. ReliaQuest Bowl kickoff: the bowl's about page and the stadium say 12:00 PM; the bowl's schedule-of-events page says 12:03 PM. Stored 12:00.\n6. HYROX Tampa: the organizer says Oct 22-25; the Sports Commission says Oct 23-25. Organizer used.\n7. Tampa Bay Downs Opening Day (Nov 18) is a Wednesday and the admission page says general admission is free on Wednesdays; `is_free` is left null because the track does not say so for that date.\n8. Bucs Week 17 (Jan 3) and USF-Tulane (Nov 27 or 28) dates can still move; the Rowdies' Oct 30 playoff match depends on the final standings; Rays ALDS game times are TBD and Game 5 is \"if necessary\".\n9. The Lightning `tickets_url` is empty (the release names TampaBayLightning.com/Tickets; not verified). Spring-training and Rays 2027 records have no times because the MLB feed flags every one `startTimeTBD`.\n\n## Verification (2026-09-27)\n\nAdversarial re-check of every record (204 events and 27 series as delivered). WebSearch was not available to the verifier either (session search budget spent), so checks and discovery used WebFetch plus curl on official feeds.\n\n**How each group was checked**\n- Lightning (42): every date, opponent and puck drop compared programmatically with the NHL club-schedule feed (all 42 match; the two preseason home games, Sep 20 and 24, are before the window). Every theme night and giveaway re-read on the Sep 1 theme-night release (26 games, all match). Blue Carpet Walk time re-read on the Launch Week release.\n- Rays, spring training, minor league (130): compared programmatically with the MLB Stats API feeds for all 2027 home games (venue, opponent, date; every game still startTimeTBD). All match. Series counts and first/last dates match (Yankees 16, Phillies 16, Blue Jays 15, Pirates 16, Tigers 15, Orioles 15 at Ed Smith plus one at Camden Yards, Braves 15). ALDS dates re-read on mlb.com/postseason (the /postseason/schedule URL now redirects there), the Rays' postseason ticket page and the 2026 MLB feed; standings show the Rays clinched (98-63).\n- Buccaneers (7): re-read on the team's schedule hub (all weeks, kickoffs, networks) and the Raymond James Stadium events page (gates). All match.\n- USF football (5) and basketball (14): the gousfbulls.com schedule pages return only a title to WebFetch and an Incapsula block to curl, so they were re-checked against USF's official calendar feed (gousfbulls.com calendar.ics) and the stadium's events page. Dates, opponents, venues, kickoffs and TV all match.\n- Rowdies (4), Tampa Bay Sun (6), TNA, Tampa Am, HYROX, A-Class Worlds, Hot Chocolate Run, Gasparilla Bowl, ReliaQuest Bowl and its bowl-week events, Clearwater Marathon, Monster Jam, Gasparilla Distance Classic (home page, future-dates page and all four race pages plus the expo page), Grand Prix 5K, Tampa Bay Downs (calendar PDF read in full, admission page, racing-calendar page script), Valspar: each source page re-read; dates, times, prices and quotes match.\n\n**Fixed (41 records changed)**\n- USF football (5): promotion claims (Family Day, 'Jersey' bag, Homecoming, acrylic ticket, Black Out, rally towel) and 'American Conference game' removed: they came from the gousfbulls.com page payload, which could not be re-read. Salute to Service (Memphis) and TV networks kept (in USF's feed). source_url moved to the stadium events page; USF's feed and schedule page in also_sources. 'Kickoff time TBA' reworded 'not yet announced'.\n- USF basketball (14 + series): source_url moved to USF's calendar feed; 'Tip time TBA' reworded 'Tip time not yet announced'; the unverifiable 'Love Wins Classic' name removed from the Kennesaw State game.\n- Firestone Grand Prix 2027: re-dated from a single tentative Mar 6 to Mar 5-7, 2027 per Visit St. Pete/Clearwater's event page (Friday practice and qualifying, Saturday NASCAR Truck race, Sunday IndyCar); still tentative because the organizer and IndyCar have not posted 2027 dates. Series when_text and summary updated (2026 bill had five series). Noted that the Truck Series becomes the NASCAR FedEx Freight Truck Series in 2027.\n- Hot Chocolate Run: the organizer does publish start times (5K 7:00 a.m.; 10K and 15K 8:00 a.m.), added; place set to the history-tampa record cotanchobee-fort-brooke-park instead of own coordinates.\n- HYROX: provisional daily race schedule added as occurrences (first waves 8:00 a.m.); unsupported 'timed heats' wording replaced with the page's own facts.\n- Rays ALDS (3): source_url updated to the page that now serves the schedule; MLB feed added.\n- Minor league series (5): affiliations now stated from the MLB Stats API team records (Tarpons-Yankees, Threshers-Phillies, Dunedin-Blue Jays, Marauders-Pirates, Flying Tigers-Tigers); season end corrected to Sept. 5 (each team's last scheduled game).\n- Superlatives attributed: Tampa Bay Downs Festival Day ('the biggest racing day of the season', the track's words), Gasparilla Distance Classic summaries (no longer call it 'signature' in our voice; the quote carries it); Gasparilla race-course wording corrected (15K out-and-back on Bayshore; the half has a Davis Islands section).\n- Lightning Dec 17 and Dec 22 summaries reworded ('The Lightning list it as a Holiday Game'); Yankees series drops the unsourced 'Grapefruit League'; Valspar series notes that the 2026 edition was in March.\n\n**Removed:** none. Every record's event is on its organizer's or venue's own page (or official feed) for the 2026-27 edition.\n\n**Added (5 events, 3 series)**\n- orion180-insurance-tip-off-classic-2026 (Nov 2, 6:00 p.m., Benchmark International Arena; the researcher's open question, confirmed on the arena's own event page; teams not named).\n- wwe-raw-and-smackdown-2026-12-28 (Benchmark International Arena, 6:30 p.m.).\n- pbr-unleash-the-beast-tampa-2027 (Jan 22-23, 2027, 7:45 p.m. both nights, Benchmark International Arena).\n- reliaquest-bowl-battle-of-the-bands-2026 (Dec 30, Busch Gardens Gwazi Park, park admission; tentative, the bowl says date tentative and time TBD).\n- rays-alcs-home-games-2026 (tentative; Oct 12, 13, 19, 20 at Tropicana Field only if the Rays win the ALDS; the Rays sell tickets for these dates).\n- Series: sarasota-polo-club-season (Sundays Dec 20, 2026 to Apr 15, 2027), st-pete-powerboat-grand-prix (late March; 2027 date not yet published), clearwater-offshore-nationals (late September; the 2026 edition ended Sep 27, before the window).\n- Discovery lists used: the Benchmark International Arena events feed (wp-json, Sep 28 to Apr 30), the Tampa Bay Sports Commission 2026 and 2027 composite calendars (iCal feeds), Visit Tampa Bay's events API filtered to Sports and Recreation, and Visit St. Pete/Clearwater's sports page and event pages.\n\n**Updated counts:** 209 events, 30 series. By kind: sports 203, run-walk 4, parade 1, other 1. By status: scheduled 201, tentative 8. By month: Oct 24, Nov 26, Dec 23, Jan 8, Feb 38, Mar 68, Apr 22. By area: channel-district 46, west-tampa 38, grand-central 26, bradenton-anna-maria 17, downtown-clearwater 17, north-tampa 16, dunedin 16, polk 16, downtown-stpete 6, oldsmar 4, one each in east-tampa, downtown-tampa, davis-islands, clearwater-beach, ybor-city, sand-key, hyde-park. 76 events carry a start time.\n\n**Still open**\n- Yuengling Center's calendar (SiteGround captcha) and theamerican.org (403) could not be read: other USF-campus arena events and the American Conference basketball tournament site (Mar 9-14, 2027 on the Sports Commission calendar, no venue) remain unconfirmed. The Orion180 Tip-off Classic falls on the same night USF's feed lists both USF basketball openers at the Yuengling Center; the arena does not name its teams.\n- Grand Prix 2027 session times and ticket prices; IndyCar's 2027 calendar. Skyway 10K 2027 (site shows only past races), St. Anthony's Triathlon (domain no longer resolves), Super Boat / Clearwater race organizer site (503 / certificate error), IRONMAN 70.3 Florida (unreachable).\n- Small fun runs on Visit Tampa Bay (Bubble Run at the fairgrounds Oct 17, Christmas Wine Run 5K at Keel Farms Dec 13, Sheriff's Ultimate Run at The Motor Enclave Nov 21) and club or youth events (USF vs. UT club hockey, youth tournaments) were not added.\n- Rowdies Oct 30 playoff, Bucs Jan 3, USF-Tulane (Nov 27 or 28), ALDS Game 5 and the ALCS dates can still change or not happen; re-check the week before.\n"
 }

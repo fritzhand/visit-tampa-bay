@@ -1,20 +1,1011 @@
 [
   {
-    "id": "hurricane-season",
-    "topic": "Weather",
-    "q": "When is hurricane season?",
-    "a": "Fixture answer: June 1 to November 30.",
-    "source_url": "https://www.nhc.noaa.gov/",
-    "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "id": "accessible-travel-tampa",
+    "topic": "Accessibility",
+    "q": "What accessibility help does Visit Tampa Bay offer?",
+    "a": "Visit Tampa Bay says Tampa Bay is an Accessibility Verified destination with Wheel the World, whose site lists accessible hotels and activities. The Unlock Tampa Bay Visitors Center hands out Hidden Disabilities Sunflower lanyards and rents EnChroma glasses for red-green color blindness (call ahead); the Tampa Museum of Art and the Florida Museum of Photographic Arts also have them.",
+    "source_url": "https://www.visittampabay.com/accessible-travel/",
+    "checked": "2026-09-27"
   },
   {
-    "id": "streetcar-fare",
-    "topic": "Getting around",
-    "q": "Does the streetcar cost anything?",
-    "a": "Fixture answer.",
-    "source_url": "https://www.tecolinestreetcar.org/",
+    "id": "alcohol-clearwater-beach",
+    "topic": "Alcohol & rules",
+    "q": "Can I drink alcohol on Clearwater Beach?",
+    "a": "No. The City of Clearwater says no alcohol or other intoxicants are permitted on its public beaches. Its beach rules also list no smoking and no glass, and ban fires, bonfires and unpermitted fireworks.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Page wording: 'No alcohol or other intoxicants are permitted on Clearwater's public beaches.' The smoking rule appears on the page as the heading 'No Smoking'. Verifier 2026-09-27: glass added (listed on the rules page); smoking is still shown only as a 'No Smoking' rule heading."
+  },
+  {
+    "id": "alcohol-other-beaches",
+    "topic": "Alcohol & rules",
+    "q": "Which Pinellas beaches allow alcohol?",
+    "a": "It depends on the town. Visit St. Pete/Clearwater lists: no alcohol at Clearwater Beach, Honeymoon and Caladesi islands, Belleair Beach, Indian Rocks Beach, Fort De Soto Park or Gulfport Beach; alcohol allowed but not in glass at Madeira Beach and Treasure Island (Treasure Island bans it between the 8500 and 9900 blocks from 8 a.m. to 4 p.m. on Saturdays and Sundays); allowed at Redington Beach; and at St. Pete Beach only in beachfront hotels' cabana areas for registered guests.",
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: Treasure Island blocks added from the same answer ('between the 8500 block and the 9900 block ... between 8 a.m. and 4 p.m. on Saturdays and Sundays')."
+  },
+  {
+    "id": "alligators",
+    "topic": "Safety",
+    "q": "Are there alligators, and where is it safe to swim?",
+    "a": "Alligators live in all 67 Florida counties, in marshes, swamps, rivers and lakes. The Florida Fish and Wildlife Conservation Commission says never to feed one, to keep your distance, to swim only in designated swimming areas during daylight, and to keep pets leashed and away from the water. Serious injuries are rare; to report a problem alligator, call 866-392-4286.",
+    "source_url": "https://myfwc.com/conservation/you-conserve/wildlife/alligators/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "attraction-passes",
+    "topic": "Money & taxes",
+    "q": "Are there passes that bundle attractions?",
+    "a": "Visit Tampa Bay points to Tampa Bay CityPASS for bundled admission and to the Tampa Riverwalk Attraction Pass, which it says includes seven attractions for one bundled price. Its Unlock Tampa Bay Visitors Center sells the Riverwalk pass.",
+    "source_url": "https://www.visittampabay.com/media/faqs/",
+    "also_sources": [
+      "https://shop.visittampabay.com/pages/about-us"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: the shop page says: 'Stop in for insider knowledge and pick up a Tampa Riverwalk Attraction Pass for discounted admission to some of Tampa's most unique attractions.'"
+  },
+  {
+    "id": "beach-conditions-pinellas",
+    "topic": "Beaches & water safety",
+    "q": "Where can I check conditions on the St. Pete-Clearwater beaches?",
+    "a": "Visit St. Pete/Clearwater keeps a Beach Updates page with the current status (on September 27, 2026 it read: all St. Pete-Clearwater beaches are open, with no advisories), live beach webcams, an explanation of the warning flags, and a link to Mote Marine Laboratory's beach conditions map.",
+    "source_url": "https://www.visitstpeteclearwater.com/current-beach-conditions",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-forecast",
+    "topic": "Weather & hurricanes",
+    "q": "Where can I check the beach forecast?",
+    "a": "The National Weather Service's beach forecast page for the Tampa Bay area shows the rip current risk, the UV index and water temperature. Its rip current risk is Low, Moderate or High; at High, it says life-threatening rip currents are likely and the surf zone is dangerous for all swimmers.",
+    "source_url": "https://www.weather.gov/beach/tbw",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-mats-clearwater",
+    "topic": "Accessibility",
+    "q": "Are there beach access mats on Clearwater Beach?",
+    "a": "Yes, just south of Pier 60. The City of Clearwater lays 260 feet of mat from November 1 to May 14 and shortens it to 100 feet from Beach Walk during sea turtle nesting season (May 15 to October 31). The mats do not reach the water line.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Accessibility-ADA-Mats",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-parking-pinellas",
+    "topic": "Money & taxes",
+    "q": "How much is parking at Pinellas County beach parks?",
+    "a": "Since January 1, 2025, daily parking at Fort De Soto, Sand Key and Fred Howard parks has been $6 per vehicle. Pinellas County says that from December 1, 2026, beach parking will be $3.50 an hour, capped at $12 a day, plus tax. You pay at pay stations or with the Flowbird or ParkMobile apps.",
+    "source_url": "https://pinellas.gov/county-parks-know-before-you-go/",
+    "also_sources": [
+      "https://pinellas.gov/news/fort-de-soto-park-fort-dog-beach-fishing-piers-reopen/",
+      "https://pinellas.gov/parks-and-preserves-frequently-asked-questions/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-warning-flags",
+    "topic": "Beaches & water safety",
+    "q": "What do the beach warning flags mean?",
+    "a": "Florida uses one set of flags statewide. Green means low hazard (calm conditions, exercise caution). Yellow means medium hazard (moderate surf and/or currents). Red means high hazard (high surf and/or strong currents). Two red flags mean the water is closed to the public. Purple means stinging marine life, such as man o' war, jellyfish or stingrays. The state sign adds that the absence of flags does not assure safe waters.",
+    "source_url": "https://floridadep.gov/rcp/fcmp/content/beach-warning-flag-program",
+    "also_sources": [
+      "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0380/Sections/0380.276.html"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Colors and meanings read from the Florida DEP beach warning flag sign image on the program page (In-house-graphic_FCMP_Beach_Warning_Flag_sign.jpg). The DEP page says the flags give general warnings about surf conditions and do not specifically warn of rip currents. Visit St. Pete/Clearwater's current-beach-conditions page lists 'Blue' for hazardous marine life; the state sign shows purple."
+  },
+  {
+    "id": "beach-water-quality",
+    "topic": "Beaches & water safety",
+    "q": "Is the beach water tested for bacteria?",
+    "a": "Yes. The Florida Department of Health's Healthy Beaches Program samples beach water for enterococci bacteria. If a sample and a resample both exceed 70 per 100 milliliters, it issues an advisory for that site. The City of Tampa asks visitors to its four bay beaches (Ben T. Davis, Picnic Island, Cypress Point and Davis Islands) to check the Healthy Beaches results before a trip.",
+    "source_url": "https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/beach-water-quality/",
+    "also_sources": [
+      "https://www.tampa.gov/parks-and-recreation/parks-and-facilities/beaches"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-wheelchair-clearwater",
+    "topic": "Accessibility",
+    "q": "Can I borrow a beach wheelchair on Clearwater Beach?",
+    "a": "Yes, at no charge. The City of Clearwater lends manual beach wheelchairs with balloon tires at Lifeguard Tower 0 (180 S. Gulfview Blvd.) for use from 9:30 a.m. to 4:30 p.m., first come, first served, with a signed release and ID. An accompanying adult must assist, and the chairs are for the beach and shallow water only. Phone (727) 444-8580.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Check-Out-a-Beach-Wheelchair",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "beach-wheelchairs-pinellas",
+    "topic": "Accessibility",
+    "q": "Which other Pinellas beaches lend beach wheelchairs?",
+    "a": "Visit St. Pete/Clearwater's accessible beaches guide (updated August 19, 2025) lists beach wheelchairs, lent first come, first served, at Fort De Soto Park (five), Honeymoon Island State Park (four), Sand Key Park (two, near Boardwalk 4), Fred Howard Park (two, weekdays 8 a.m. to 5 p.m.), Archibald Memorial Beach Park in Madeira Beach (one), Treasure Island (one at City Hall on weekdays, two more at the concession stand), the St. Pete Beach public access at Paradise Grill (two), Upham Beach (two) and Pass-a-Grille Beach (three, at Paradise Grille). It says the chairs at Honeymoon Island, Sand Key, Pass-a-Grille and the Treasure Island concession stand are free, and its beach FAQ lists Fort De Soto among the free ones.",
+    "source_url": "https://www.visitstpeteclearwater.com/article/guide-to-accessible-beaches-st-pete-clearwater",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/info/beach-faqs"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Read twice with WebFetch. The first read also gave how to request them: Fort De Soto by calling 727-582-2100 ext. 2 on weekdays or at the campground office on weekends; Honeymoon Island at the entrance kiosk; Sand Key by calling the ranger at 727-582-2100. Verifier 2026-09-27: added Madeira Beach (Archibald Memorial Beach Park, one chair) and Upham Beach (two), both listed in the guide."
+  },
+  {
+    "id": "beaches-open-after-storms",
+    "topic": "Beaches & water safety",
+    "q": "Are the beaches open after Hurricanes Helene and Milton?",
+    "a": "Yes. Visit St. Pete/Clearwater says all beaches and beach parks are open. Some park amenities are still being repaired; Pinellas County lists them on its County Parks: Know Before You Go page, last updated September 25, 2026 (for example, the far end of Fort De Soto's bay pier is closed for hurricane repairs).",
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "also_sources": [
+      "https://pinellas.gov/county-parks-know-before-you-go/",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "best-time-to-visit",
+    "topic": "When to visit",
+    "q": "When is the best time to visit Tampa Bay?",
+    "a": "Visit Tampa Bay calls the area a year-round destination. It says many visitors prefer November through April, when temperatures are milder and humidity is lower.",
+    "source_url": "https://www.visittampabay.com/media/faqs/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "busch-gardens-accessibility",
+    "topic": "Accessibility",
+    "q": "How does Busch Gardens handle ride access for guests with disabilities?",
+    "a": "Through its Ride Accessibility Program (RAP): you enroll at Guest Relations inside the park entrance, get a list of rides that fit your abilities, and use a virtual queue for select rides. Wheelchairs and ECVs can be rented inside the park to the right of Guest Relations and reserved online.",
+    "source_url": "https://buschgardens.com/tampa/park-info/accessibility-guide/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "county-park-rules",
+    "topic": "Alcohol & rules",
+    "q": "What is not allowed in Pinellas County beach parks?",
+    "a": "Pinellas County's park rules prohibit alcohol, glass, grills and campfires on beaches, balloons of any kind, drones and other remote-controlled devices, and pets on beaches, boardwalks and fishing piers (Fort De Soto's dog beach is the exception). County parks are open 7 a.m. to sunset.",
+    "source_url": "https://pinellas.gov/park-rules/",
+    "also_sources": [
+      "https://pinellas.gov/dog-parks/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "dali-accessibility",
+    "topic": "Accessibility",
+    "q": "What access services does the Dalí Museum offer?",
+    "a": "The Dalí lends courtesy wheelchairs first come, first served, offers free ASL interpretation with two weeks' notice (727-623-4706), has induction neck loops, large-print tour booklets and a sensory-friendly guide, and holds sensory-friendly events.",
+    "source_url": "https://thedali.org/visit/accessibility/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "dengue-mosquitoes",
+    "topic": "Safety",
+    "q": "Is there a mosquito-borne illness warning?",
+    "a": "Yes, as of September 2026. On September 24, 2026, Pinellas County declared a State of Local Emergency for dengue fever; the Florida Department of Health's report that day counted 179 confirmed cases in Pinellas, Pasco and Hillsborough counties, 7 of them in Pinellas. The county advises light-colored long sleeves and closed-toe shoes outdoors and repellent with DEET, picaridin, IR3535 or oil of lemon eucalyptus, and notes that the mosquitoes that spread dengue can bite during the day.",
+    "source_url": "https://pinellas.gov/news/pinellas-commission-declares-state-of-local-emergency-for-dengue-fever/",
+    "also_sources": [
+      "https://pinellas.gov/dengue/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Time-sensitive: re-check before publishing; see pinellas.gov/dengue and pinellas.gov/mosquito. Verifier 2026-09-27: pinellas.gov/dengue/ (last updated Sep 24, 2026) still reads 'Pinellas County is under a mosquito-borne illness alert and a state of local emergency for dengue fever'."
+  },
+  {
+    "id": "disabled-parking-beaches",
+    "topic": "Accessibility",
+    "q": "Do I pay to park at the beach with a disabled parking permit?",
+    "a": "In Clearwater, vehicles with handicap tags or placards do not pay at city-owned paid or timed spaces, but the city says posted time limits and restrictions must still be followed. In Pinellas County parks, a state disabled parking placard, a disabled license plate or a Disabled Veterans plate lets you park free in any space.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Accessible-Parking",
+    "also_sources": [
+      "https://pinellas.gov/parks-and-preserves-frequently-asked-questions/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: corrected: the Clearwater page says 'do not have to pay for parking, but all posted time limits and restrictions must be followed' (the earlier answer said 'no time limit')."
+  },
+  {
+    "id": "dog-beaches-pinellas",
+    "topic": "Alcohol & rules",
+    "q": "Where are the dog beaches in Pinellas County?",
+    "a": "Fort De Soto Park is the only Pinellas County park where dogs are allowed on the beach, in a designated area, with two fenced areas for large and small dogs nearby. Visit St. Pete/Clearwater also lists the dog beach at the southern tip of Honeymoon Island State Park, where dogs must be on a six-foot handheld leash.",
+    "source_url": "https://pinellas.gov/dog-parks/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/article/dog-friendly-beaches"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "dog-beaches-tampa",
+    "topic": "Alcohol & rules",
+    "q": "Are there dog beaches in Tampa?",
+    "a": "Yes: the City of Tampa runs the Davis Islands Dog Park and Dog Beach (1002 Severn St.) and the Picnic Island Dog Beach (7409 Picnic Island Blvd.). Dogs are not permitted on other city beaches unless they are service animals.",
+    "source_url": "https://www.tampa.gov/parks-and-recreation/parks-and-facilities/dog-parks",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "dogs-clearwater-beach",
+    "topic": "Alcohol & rules",
+    "q": "Can I bring my dog to Clearwater Beach?",
+    "a": "Not on the public bathing beach, except service animals. The City of Clearwater allows leashed dogs north of Somerset Street, but says that area is not a dog beach, and suggests a walk along Beach Walk instead.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Pets-on-Clearwater-Beach",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "emergency-alerts-hillsborough",
+    "topic": "Safety",
+    "q": "How do I get emergency alerts in Hillsborough County?",
+    "a": "Sign up for HCFL Alert, the county's official notification system, for emergency alerts such as hurricane evacuations and flood warnings, and for notice of when evacuation zones are called.",
+    "source_url": "https://hcfl.gov/residents/public-safety/emergency-management/hcfl-alert",
+    "also_sources": [
+      "https://hcfl.gov/residents/public-safety/emergency-management/find-evacuation-information"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "emergency-alerts-pinellas",
+    "topic": "Safety",
+    "q": "How do I get emergency alerts in Pinellas County?",
+    "a": "Sign up for Alert Pinellas, a free service shared by the county, its cities and the Sheriff's Office. You choose phone, text or email and can follow up to five locations, such as your hotel's.",
+    "source_url": "https://pinellas.gov/alert-pinellas/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-beach-trolley",
+    "topic": "Getting around",
+    "q": "Is there a bus along the Gulf beaches?",
+    "a": "PSTA's Suncoast Beach Trolley runs daily along Gulf Boulevard from St. Pete Beach (75th Ave) through Treasure Island, John's Pass, Madeira Beach, the Redingtons, Indian Shores, Indian Rocks Beach and Sand Key to Clearwater Beach and downtown Clearwater's Park Street Terminal. On Clearwater Beach itself, the Jolley Trolley runs North Beach and South Beach routes and a Coastal Route to Dunedin, Palm Harbor and Tarpon Springs.",
+    "source_url": "https://psta.net/routes/suncoast-beach-trolley/",
+    "also_sources": [
+      "https://psta.net/routes/jolley-trolley-coastal-route/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-brightline",
+    "topic": "Getting around",
+    "q": "Does Brightline go to Tampa?",
+    "a": "No. Brightline's website describes service between Miami and Orlando with stops in Aventura, Fort Lauderdale, Boca Raton and West Palm Beach, and names no Tampa station.",
+    "source_url": "https://www.gobrightline.com/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-clearwater-beach-parking",
+    "topic": "Getting around",
+    "q": "How much is parking on Clearwater Beach?",
+    "a": "City lots cost $3.50 an hour with no time limit from 6 a.m. to 11 p.m.; on-street parking is $4.00 an hour with a 5-hour limit. Pay at pay-by-plate kiosks, with the ParkMobile app, or by texting CLEARWATER to 727563. Private garages set their own rates.",
+    "source_url": "https://www.myclearwater.com/Parking-Transportation/Beach-Parking",
+    "also_sources": [
+      "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/List-of-Beach-Parking-Lots-Garages"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-clearwater-ferry",
+    "topic": "Getting around",
+    "q": "Is there a boat to Clearwater Beach?",
+    "a": "The Clearwater Ferry runs Thursday to Sunday between downtown Clearwater, the Clearwater Beach Marina near Pier 60 and the Dunedin Marina. Reservations are recommended but not required, and walk-ons board if there is room.",
+    "source_url": "https://www.clearwaterferry.com/",
+    "also_sources": [
+      "https://www.clearwaterferry.com/schedules"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-county-beach-parking",
+    "topic": "Getting around",
+    "q": "How much does parking cost at Fort De Soto, Sand Key and other Pinellas County beach parks?",
+    "a": "Pinellas County says that from December 1, 2026, beach parking at its parks will be $3.50 an hour, capped at $12 a day, plus tax. An annual beach pass, valid at Fort De Soto, Sand Key and Fred Howard parks, costs $95 from October 1, 2026. Fort De Soto is cashless: pay at a machine, with the Flowbird or ParkMobile app, or by text.",
+    "source_url": "https://pinellas.gov/annual-parking-permits",
+    "also_sources": [
+      "https://pinellas.gov/parks-and-preserves-frequently-asked-questions"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-cross-bay-ferry",
+    "topic": "Getting around",
+    "q": "Is there a ferry between Tampa and St. Petersburg?",
+    "a": "Not as of late September 2026. PSTA is preparing a new Tampa Bay Ferry to replace the former Cross-Bay Ferry, with two vessels now being refurbished in Tarpon Springs and Hubbard's Marina as operator, and says it will announce a start date once refurbishment is nearing completion.",
+    "source_url": "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
+    "also_sources": [
+      "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-cruise-luggage",
+    "topic": "Getting around",
+    "q": "Can I store luggage before a cruise from Tampa?",
+    "a": "Not at the terminals: Port Tampa Bay says security rules leave no place to store bags for early arrivals. The port says the Florida Aquarium, next to Terminal 2 at 701 Channelside Drive, stores luggage free when you buy a discounted admission ticket.",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-cruise-terminals",
+    "topic": "Getting around",
+    "q": "Which cruise lines sail from Tampa, and where are the terminals?",
+    "a": "Port Tampa Bay lists Carnival, Royal Caribbean, Celebrity, Norwegian and Margaritaville at Sea. Its three terminals are in the Channel District: Terminal 2 at 651 Channelside Drive, Terminal 3 at 815 Channelside Drive and Terminal 6 at 1333 McKay Street. The port's parking garage is across the street from Terminal 3.",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "also_sources": [
+      "https://www.porttb.com/cruise/terminal-guide/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-dash",
+    "topic": "Getting around",
+    "q": "What is DASH in downtown Tampa?",
+    "a": "DASH (Downtown Area Shared Hubs) is an app-hailed ride service run by the Tampa Downtown Partnership between more than twenty virtual hubs downtown, in all-electric vehicles, for $2 per person. It runs Monday to Saturday 7 AM-11 PM and Sunday 12 PM-9 PM.",
+    "source_url": "https://www.tampasdowntown.com/dash/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-ezpass",
+    "topic": "Getting around",
+    "q": "Does E-ZPass work in Florida?",
+    "a": "Yes. Florida's Turnpike lists E-ZPass among the transponders accepted in electronic toll lanes, along with SunPass, E-PASS, Peach Pass, NC Quick Pass and others.",
+    "source_url": "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-intercity-bus",
+    "topic": "Getting around",
+    "q": "Where do Greyhound and FlixBus buses stop in Tampa?",
+    "a": "At the Tampa Bus Station, 1315 N Marion St, at HART's Marion Transit Center downtown, and at the University of South Florida (Holly Drive at Lot 3D). RedCoach stops at 3801 USF Holly Drive.",
+    "source_url": "https://www.greyhound.com/bus/tampa-fl",
+    "also_sources": [
+      "https://www.flixbus.com/bus/tampa-fl",
+      "https://www.redcoachusa.com/bus-stations/tampa"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-need-sunpass",
+    "topic": "Getting around",
+    "q": "Do I need a SunPass to drive around Tampa Bay?",
+    "a": "No, but it is cheaper. The Tampa-area toll roads on Florida's Turnpike list (Veterans Expressway, Suncoast Parkway, I-4 Connector, Selmon Expressway and the Sunshine Skyway Bridge) do not accept cash. With SunPass, or an accepted transponder such as E-ZPass, E-PASS or Peach Pass, you pay the lowest toll rate; without one, Toll-By-Plate photographs the plate and mails the owner an invoice with a $2.50 administrative fee. Florida's Turnpike says SunPass saves an average of 25%.",
+    "source_url": "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+    "also_sources": [
+      "https://floridasturnpike.com/tolls/toll-by-plate/",
+      "https://floridasturnpike.com/tolls/sunpass/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-pie-parking",
+    "topic": "Getting around",
+    "q": "How much does it cost to park at St. Pete-Clearwater International Airport?",
+    "a": "From October 1, 2026, long-term parking is $2.00 for the first hour, $1.00 for each additional 20 minutes, up to $16.00 a day; short-term tops out at $25.00 a day; economy parking is $12.00 a day with free shuttles. Parking is first-come, first-served with no reservations.",
+    "source_url": "https://fly2pie.com/parking-and-transportation/parking/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-pie-rideshare",
+    "topic": "Getting around",
+    "q": "Where do Uber and Lyft pick up at St. Pete-Clearwater International Airport?",
+    "a": "The airport says rideshare drivers drop off in front of the terminal at Departures and pick up in front of the terminal at Arrivals; taxis and shuttles are outside baggage claim in the Ground Transportation lot.",
+    "source_url": "https://fly2pie.com/parking-and-transportation/transportation-services/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-pie-to-clearwater-beach",
+    "topic": "Getting around",
+    "q": "How do I get from St. Pete-Clearwater airport (PIE) to Clearwater Beach?",
+    "a": "PSTA's Grouper Airport Express is a shared ride between PIE and any address on Clearwater Beach, including the Sand Key resorts, booked through grouper.psta.net or the Grouper app. PSTA lists fares of $8 for one rider, $20 for 3-4 people and $30 for 5-8; the airport's own page lists higher fares ($10, $30 and $40). The pickup at PIE is through the west baggage claim exit doors.",
+    "source_url": "https://psta.net/services/grouper/",
+    "also_sources": [
+      "https://fly2pie.com/parking-and-transportation/transportation-services/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-pirate-water-taxi-cost",
+    "topic": "Getting around",
+    "q": "How much does the Pirate Water Taxi cost, and where do I board?",
+    "a": "An all-day hop-on, hop-off pass costs $34 for adults and $24 for children 2-12 (prices can change). You can board at any of its 10 stops; the ticket booth is at Stop 7, on the Riverwalk between the Tampa Convention Center and the Marriott Water Street. The boats are cashless, and no reservation is needed.",
+    "source_url": "https://piratewatertaxi.com/rates-and-passes/",
+    "also_sources": [
+      "https://piratewatertaxi.com/faq/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-pirate-water-taxi-hours",
+    "topic": "Getting around",
+    "q": "When does the Pirate Water Taxi run?",
+    "a": "Monday to Thursday 11:30 AM-6:30 PM and Friday to Sunday 11:30 AM-9:30 PM. Service stops for lightning, heavy rain and high winds, and the operator says tides can affect the route and stops.",
+    "source_url": "https://piratewatertaxi.com/schedule-rates/",
+    "also_sources": [
+      "https://piratewatertaxi.com/faq/",
+      "https://piratewatertaxi.com/map/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-rental-car-tolls",
+    "topic": "Getting around",
+    "q": "How do tolls work in a rental car?",
+    "a": "Most rental companies bill tolls through their own programs, each with its own fees, so check your agreement. If you have a SunPass PRO or other portable transponder, add the rental car's plate and rental dates to your SunPass account and remove the transponder when you return the car. Toll-By-Plate is not available for rental cars.",
+    "source_url": "https://floridasturnpike.com/tolls/rental-vehicles/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-skyway-toll",
+    "topic": "Getting around",
+    "q": "How much is the Sunshine Skyway Bridge toll?",
+    "a": "For a two-axle car, FDOT's rate sheet (effective April 12, 2026) lists $1.16 with SunPass and $1.62 by Toll-By-Plate at the bridge's toll plazas. Cash is not accepted.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "also_sources": [
+      "https://floridasturnpike.com/tolls/electronic-toll-collection/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-stpete-free-trolleys",
+    "topic": "Getting around",
+    "q": "Are there free trolleys in downtown St. Petersburg?",
+    "a": "Yes. The Downtown Looper is free and loops downtown every 15-20 minutes (weekdays 7 AM-10 PM, weekends 8 AM-10 PM), and PSTA's Central Avenue Trolley is free between Grand Central Station and the St. Pete Pier every 30 minutes.",
+    "source_url": "https://www.loopertrolley.com/schedule",
+    "also_sources": [
+      "https://psta.net/routes/central-avenue-trolley/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-stpete-scooters",
+    "topic": "Getting around",
+    "q": "Can I rent a bike or scooter in St. Petersburg?",
+    "a": "Yes. The city's bike share uses Lime e-bikes, which you must end at a designated hub, and Spin and Lime rent e-scooters. Riders must be 18 or older, may not ride on sidewalks, and may ride to the St. Pete Pier but not on it; scooter corrals are at the base of the Pier.",
+    "source_url": "https://www.stpete.org/visitors/scooter_safety.php",
+    "also_sources": [
+      "https://www.stpete.org/visitors/bike_share.php"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-stpete-to-beach",
+    "topic": "Getting around",
+    "q": "How do I get from downtown St. Petersburg to St. Pete Beach without a car?",
+    "a": "Take PSTA's SunRunner, a rapid bus that runs every 15 minutes (every 30 minutes after 8 PM, except Friday and Saturday nights) from 6 AM to midnight daily; PSTA says the trip takes about 35 minutes. The fare is $2.25 and must be paid by tapping a card, phone or watch or with Flamingo Fares: cash is not accepted.",
+    "source_url": "https://psta.net/services/sunrunner/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-streetcar-bikes",
+    "topic": "Getting around",
+    "q": "Can I bring a bike or my dog on the streetcar?",
+    "a": "Bikes are not allowed on the TECO Line Streetcar. Service dogs may ride; other dogs must be in small carriers. Folded strollers are allowed, and every station has a ramp and every car is wheelchair accessible.",
+    "source_url": "https://www.tecolinestreetcar.org/howtoride.html",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-streetcar-extension",
+    "topic": "Getting around",
+    "q": "Is the Tampa streetcar being extended?",
+    "a": "The City of Tampa has studied extending and modernizing the streetcar: its preferred plan adds a 1.3-mile line from the current western end through downtown to Tampa Heights and replaces the replica cars with modern streetcars. The city's project page gives no construction or opening date.",
+    "source_url": "https://www.tampa.gov/mobility/transportation/projects/streetcar",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-streetcar-free",
+    "topic": "Getting around",
+    "q": "Is the TECO Line Streetcar free?",
+    "a": "Yes. The operator says all TECO Line Streetcar rides are fare free. It runs every 15 minutes between downtown Tampa, the Channel District and Ybor City: Monday to Thursday 7 AM-11 PM, Friday 7 AM-2 AM, Saturday 9 AM-2 AM and Sunday 8:30 AM-11 PM, and until midnight Sunday-Thursday on nights with a Lightning game or event at Benchmark International Arena.",
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "also_sources": [
+      "https://www.tecolinestreetcar.org/howtoride.html"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tampa-bike-share",
+    "topic": "Getting around",
+    "q": "Is there bike share or scooter share in Tampa?",
+    "a": "Coast Bike Share says it has closed all its Tampa sites and no longer operates in Florida. The City of Tampa's shared program has Lime and Spin e-bikes and e-scooters, rented in their apps; riders must be 16 or older with a driver's license or permit, and they may not ride on the Tampa Riverwalk, Bayshore Boulevard or 7th Avenue.",
+    "source_url": "https://www.tampa.gov/tss-transportation/programs/shared-micromobility-program",
+    "also_sources": [
+      "https://gohopr.com/coast/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tampa-parking",
+    "topic": "Getting around",
+    "q": "How much is parking in downtown Tampa?",
+    "a": "City of Tampa garages charge $3 an hour up to $18 a day (Fort Brooke, W.F. Poe, Pam Iorio, Convention Center) or $2 an hour up to $14 a day (Twiggs, Centro Ybor, Palm Ave.). Downtown street meters are $4 for the first hour and $3 for each hour after. You can pay with the Passport, PayByPhone, ParkMobile or Flowbird apps.",
+    "source_url": "https://www.tampa.gov/parking/info/parking-hourly-and-daily-rates",
+    "also_sources": [
+      "https://www.tampa.gov/parking/programs/pay-by-phone-parking"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tampa-to-stpete-bus",
+    "topic": "Getting around",
+    "q": "Is there a bus between downtown Tampa and downtown St. Petersburg?",
+    "a": "PSTA's Route 100 express runs Monday to Friday between the Marion Transit Center in downtown Tampa and the St. Pete Pier area (2nd Ave NE and Beach Drive), with stops at Gateway Mall and Britton Plaza. It charges the regular $2.25 PSTA fare and does not run on weekends.",
+    "source_url": "https://psta.net/routes/route-100/",
+    "also_sources": [
+      "https://psta.net/rider-info/fares/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tpa-to-downtown-tampa",
+    "topic": "Getting around",
+    "q": "How do I get from Tampa International Airport to downtown Tampa without a car?",
+    "a": "HART Routes 10 (Cypress St.) and 30 (Kennedy Blvd.) run between the airport and downtown Tampa seven days a week, and Route 32 connects the airport with the Netpark Transfer Center. The buses stop near the airport's Rental Car Center: take the SkyConnect train from the Red Baggage Claim to reach it. A HART ride costs $2.00. For a rideshare, Uber says to follow the Blue Express Pickup signs from the main terminal.",
+    "source_url": "https://www.gohart.org/Pages/services-bus.aspx",
+    "also_sources": [
+      "https://www.gohart.org/Pages/fares-cards.aspx",
+      "https://www.uber.com/global/en/r/airports/tpa/pickup/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-tpa-to-st-pete",
+    "topic": "Getting around",
+    "q": "Is there a bus from Tampa International Airport toward St. Petersburg or Pinellas County?",
+    "a": "PSTA's Route 300 express stops at the airport's Rental Car Facility on its way between the Marion Transit Center in downtown Tampa and the Ulmerton Park and Ride in Largo, Monday through Friday only. PSTA's Route 100 express links the Marion Transit Center with the St. Pete Pier area on weekdays. Both charge the regular $2.25 PSTA fare. Neither runs on weekends.",
+    "source_url": "https://psta.net/routes/route-300/",
+    "also_sources": [
+      "https://psta.net/routes/route-100/",
+      "https://psta.net/rider-info/fares/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-train",
+    "topic": "Getting around",
+    "q": "Can I take a train to Tampa?",
+    "a": "Amtrak serves Tampa Union Station (601 North Nebraska Avenue) with the Floridian, which Amtrak describes as a temporary combination of the Capitol Limited and Silver Star running daily between Chicago and Miami via Washington, DC.",
+    "source_url": "https://www.amtrak.com/floridian-train",
+    "also_sources": [
+      "https://www.amtrak.com/stations/tpa"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-transit-pass-both-counties",
+    "topic": "Getting around",
+    "q": "Is there one transit pass for both Tampa and Pinellas buses?",
+    "a": "HART sells a Month Passport for $85.00 that is valid on HART local, limited express and HARTFlex service and on PSTA buses and trolleys. Both agencies also use Flamingo Fares, with daily fare caps ($4.00 on HART, $5 on PSTA).",
+    "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
+    "also_sources": [
+      "https://psta.net/rider-info/fares/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "faq-ybor-parking",
+    "topic": "Getting around",
+    "q": "Is parking free in Ybor City?",
+    "a": "The first two hours are free in the City of Tampa's Ybor lots, then $2 an hour up to $14 a day; a $10 flat rate applies Friday and Saturday from 8 p.m. to 3 a.m. Ybor street meters charge $3 for the first hour and $2 after.",
+    "source_url": "https://www.tampa.gov/parking/info/parking-hourly-and-daily-rates",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "fireworks-beach",
+    "topic": "Alcohol & rules",
+    "q": "Can I set off fireworks on the beach?",
+    "a": "No. Visit St. Pete/Clearwater says Pinellas County bans the use and sale of fireworks that explode or project into the air; professional displays are held on July 4th and New Year's Eve.",
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "florida-aquarium-accessibility",
+    "topic": "Accessibility",
+    "q": "Is the Florida Aquarium accessible?",
+    "a": "The aquarium says it has wheelchair access to all habitats and exhibits and elevators to all upper levels. It rents wheelchairs ($8) and scooters ($15) daily in limited numbers, first come, first served, works with USF's Center for Autism and Related Disabilities, and holds Day of Discovery sessions for guests with sensory differences.",
+    "source_url": "https://www.flaquarium.org/visit/visitor-information/accessibility/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: prices added from the page's rental table."
+  },
+  {
+    "id": "free-things",
+    "topic": "Money & taxes",
+    "q": "What can I do for free in Tampa?",
+    "a": "Visit Tampa Bay suggests riding the free TECO Line Streetcar through downtown, walking the Tampa Riverwalk or Bayshore Boulevard, seeing public art and murals, spending time in the waterfront parks and watching for local wildlife.",
+    "source_url": "https://www.visittampabay.com/media/faqs/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: 'and Ybor City' removed: the FAQ answer names only downtown for the streetcar."
+  },
+  {
+    "id": "gulf-water-temperature",
+    "topic": "When to visit",
+    "q": "How warm is the Gulf?",
+    "a": "Visit St. Pete/Clearwater lists average water temperatures of 64°F in January and February, 73°F in April, 82°F in June, 87°F in August, 81°F in October and 69°F in December.",
+    "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+    "checked": "2026-09-27",
+    "notes": "The full table on the page: Jan 64°F, Feb 64°F, Mar 67°F, Apr 73°F, May 78°F, Jun 82°F, Jul 85°F, Aug 87°F, Sep 85°F, Oct 81°F, Nov 75°F, Dec 69°F. The NOAA NCEI Coastal Water Temperature Guide the brief pointed to was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide)."
+  },
+  {
+    "id": "heat-illness",
+    "topic": "Sun & heat",
+    "q": "What are the signs of heat illness?",
+    "a": "The National Weather Service lists heavy sweating, cool and clammy skin, a fast weak pulse, cramps, dizziness or nausea as signs of heat exhaustion: get to a cool place and sip water. A body temperature above 103°F, hot red skin, confusion or fainting can mean heat stroke, a medical emergency: call 911.",
+    "source_url": "https://www.weather.gov/safety/heat-illness",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "heat-index",
+    "topic": "Sun & heat",
+    "q": "Why does it feel hotter than the forecast?",
+    "a": "Humidity. The heat index is the feels-like temperature, and the National Weather Service in Tampa Bay notes that forecast heat index values are for shade: in direct sun it can be up to 15°F higher. It says the most dangerous heat here comes when winds are from the west and thunderstorms cannot form.",
+    "source_url": "https://www.weather.gov/tbw/heatindex",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "high-season-st-pete-clearwater",
+    "topic": "When to visit",
+    "q": "When is high season on the St. Pete-Clearwater beaches?",
+    "a": "Visit St. Pete/Clearwater says January through May is considered high season because of the weather. It says summer is popular with families, and that fall offers savings and fewer crowds.",
+    "source_url": "https://www.visitstpeteclearwater.com/info/weather-faqs",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hot-car",
+    "topic": "Sun & heat",
+    "q": "Can I leave a child or pet in the car for a few minutes?",
+    "a": "No. The National Weather Service says it is never safe to leave a child, disabled person or pet locked in a car, even in winter.",
+    "source_url": "https://www.weather.gov/safety/heat",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hotel-taxes",
+    "topic": "Money & taxes",
+    "q": "What taxes are added to a hotel bill?",
+    "a": "Hillsborough and Pinellas counties each charge a 6% tourist development tax on stays of six months or less. The Florida Department of Revenue says it is charged in addition to the 6% state sales tax and any county surtax.",
+    "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "how-many-days",
+    "topic": "Visitor information",
+    "q": "How many days should I plan?",
+    "a": "Visit Tampa Bay suggests three to five days, which it says is enough to see the major attractions and some local spots without rushing.",
+    "source_url": "https://www.visittampabay.com/media/faqs/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricane-during-trip",
+    "topic": "Weather & hurricanes",
+    "q": "What happens if a hurricane threatens during my trip?",
+    "a": "Follow local officials. Pinellas County orders evacuations by zone to protect people from storm surge, and everyone in a zone named in an order must leave. It lists a hotel outside the ordered area as one option, says you do not have to go far, and says Visit St. Pete/Clearwater shares accommodation information as a storm approaches. Check roads at fl511.com.",
+    "source_url": "https://pinellas.gov/evacuation/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricane-season-dates",
+    "topic": "Weather & hurricanes",
+    "q": "When is hurricane season?",
+    "a": "The Atlantic hurricane season runs from June 1 to November 30, according to the National Hurricane Center. The Atlantic basin includes the Gulf.",
+    "source_url": "https://www.nhc.noaa.gov/climo/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricane-watch-vs-warning",
+    "topic": "Weather & hurricanes",
+    "q": "What is the difference between a hurricane watch and a warning?",
+    "a": "A hurricane watch means hurricane-force winds (74 mph or more) are possible in the area; the National Hurricane Center issues it 48 hours before tropical-storm-force winds are expected. A hurricane warning means those winds are expected, and it is issued 36 hours ahead. Storm surge watches and warnings work the same way for life-threatening flooding from the sea.",
+    "source_url": "https://www.nhc.noaa.gov/aboutgloss.shtml",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "hurricanes-2024",
+    "topic": "Weather & hurricanes",
+    "q": "Did Hurricanes Helene and Milton hit Tampa Bay?",
+    "a": "Yes, both in 2024. Helene, which made landfall in the Big Bend as a Category 4 in late September, pushed record storm surge into the bay area: 6.67 feet above the normal high-tide line at Clearwater Beach and 7.2 feet at Tampa's East Bay gauge, and the National Weather Service reported 12 storm-surge drownings in Pinellas County. Milton made landfall on the west-central Florida coast as a Category 3 in October, with a 101 mph gust and 18.54 inches of rain in one day at St. Petersburg's Albert Whitted Airport.",
+    "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+    "also_sources": [
+      "https://www.weather.gov/tbw/TropicalEventSummary",
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf",
+      "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Helene figures: Helene impact narratives (source_url) and Helene summary (Category 4, Big Bend). Milton figures: Milton summary (Category 3, west-central coast) and Milton impact narratives (101 mph gust, 18.54 in). 'Normal high-tide line' paraphrases MHHW (mean higher high water)."
+  },
+  {
+    "id": "know-your-zone",
+    "topic": "Safety",
+    "q": "What is an evacuation zone?",
+    "a": "An area that may be ordered to evacuate because of storm surge. The Florida Division of Emergency Management says zones run from A to F: Zone A is usually the most vulnerable and evacuated first. Not every zone is ordered to leave in every storm, so listen for orders from local officials.",
+    "source_url": "https://www.floridadisaster.org/knowyourzone/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "know-your-zone-hillsborough",
+    "topic": "Safety",
+    "q": "How do I find the evacuation zone for a Tampa address?",
+    "a": "Use Hillsborough County's Hurricane Evacuation Assessment Tool (HEAT): enter the address on the county's Find Evacuation Information page to see which of the five evacuation zones it is in. HART runs free evacuation buses to shelters.",
+    "source_url": "https://hcfl.gov/residents/public-safety/emergency-management/find-evacuation-information",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "know-your-zone-pinellas",
+    "topic": "Safety",
+    "q": "How do I find the evacuation zone for a Pinellas address?",
+    "a": "Pinellas County's Know Your Zone app gives the evacuation zone for an address, plus the closest shelters and hotels. You can also call (727) 464-3800 for help looking up a zone.",
+    "source_url": "https://pinellas.gov/services/find-your-evacuation-zone/",
+    "also_sources": [
+      "https://pinellas.gov/frequently-asked-questions-about-disaster-preparedness-and-recovery/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "lifeguards",
+    "topic": "Beaches & water safety",
+    "q": "Are there lifeguards?",
+    "a": "On Clearwater Beach, yes: the City of Clearwater says lifeguards are on duty seven days a week from 10 a.m. to 5 p.m., with towers staffed by season and weather. Pinellas County lists seasonal lifeguards at Sand Key Park.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
+    "also_sources": [
+      "https://pinellas.gov/parks/sand-key-park/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The Sand Key page is the source for 'seasonal lifeguards'."
+  },
+  {
+    "id": "lightning-at-the-beach",
+    "topic": "Weather & hurricanes",
+    "q": "What if a storm comes up while I'm at the beach?",
+    "a": "Get out of the water and off the beach, and go to your car. The National Weather Service says not to shelter under beach picnic shelters and to wait 30 minutes after the last rumble of thunder before going back to the beach. It also says most lightning injuries and deaths on boats happen on small boats with no cabin.",
+    "source_url": "https://www.weather.gov/safety/lightning-outdoors",
+    "also_sources": [
+      "https://www.weather.gov/mfl/lightning"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: 'or a building' removed (the NWS beach section says 'Go to your car!'); 'Get out of the water, off the beach' is on weather.gov/mfl/lightning."
+  },
+  {
+    "id": "lightning-florida",
+    "topic": "Weather & hurricanes",
+    "q": "Is lightning a real risk in Florida?",
+    "a": "Yes. As of September 22, 2026, the National Weather Service counted 16 lightning deaths in the United States in 2026, and 6 of them were in Florida. The figures are preliminary.",
+    "source_url": "https://www.weather.gov/safety/lightning-fatalities",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "rainy-season",
+    "topic": "When to visit",
+    "q": "When is the rainy season?",
+    "a": "Summer. At Tampa International Airport, June through September each average more than 6 inches of rain, with August the wettest month (9.03 inches), while November averages 1.40 inches (NOAA 1991–2020 normals). The National Weather Service in Tampa Bay says the Florida peninsula tends to see thunderstorms most summer days.",
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.weather.gov/tbw/heatindex"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "red-tide-seafood",
+    "topic": "Beaches & water safety",
+    "q": "Is seafood safe to eat during red tide?",
+    "a": "Store-bought and restaurant shellfish are generally safe to eat during a bloom, FWC says, because the government monitors them. Recreational harvesting of clams, oysters and mussels is banned in areas closed for red tide, and cooking, heating or freezing does not get rid of the toxins.",
+    "source_url": "https://myfwc.com/research/redtide/faq/",
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: reworded to the FAQ's terms (recreational harvest ban during red tide closures; cooking, heating or freezing)."
+  },
+  {
+    "id": "red-tide-swimming",
+    "topic": "Beaches & water safety",
+    "q": "Can I swim during red tide?",
+    "a": "FWC says not to swim in or around red tide: it can cause skin irritation, rashes and burning, sore eyes. When the bloom is present and winds blow onshore, some people cough, sneeze or feel eye, nose and throat irritation; offshore winds usually keep those effects down.",
+    "source_url": "https://myfwc.com/research/redtide/faq/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "red-tide-what-is-it",
+    "topic": "Beaches & water safety",
+    "q": "What is red tide?",
+    "a": "A bloom of a microscopic alga, Karenia brevis, that makes toxins. Pinellas County says red tide has been noted in Florida since the 1800s. It can affect fish and marine wildlife and irritate your eyes, nose and throat; the county says symptoms should go away when you leave the area, and people with asthma or chronic lung disease should avoid areas with an active bloom.",
+    "source_url": "https://pinellas.gov/red-tide/",
+    "also_sources": [
+      "https://myfwc.com/research/redtide/general/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "red-tide-where-to-check",
+    "topic": "Beaches & water safety",
+    "q": "Where can I check for red tide before I go?",
+    "a": "The Florida Fish and Wildlife Conservation Commission (FWC) posts a statewide red tide status report on Friday afternoons, with extra information on Wednesdays, and a sampling map updated daily at 5 p.m. You can also call 866-300-9399 at any time for a recorded report. Pinellas County keeps a red tide page, and Visit St. Pete/Clearwater posts beach conditions.",
+    "source_url": "https://myfwc.com/research/redtide/statewide/",
+    "also_sources": [
+      "https://pinellas.gov/red-tide/",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "report-wildlife",
+    "topic": "Beaches & water safety",
+    "q": "Who do I call about a stranded sea turtle, manatee or a fish kill?",
+    "a": "Call FWC's Wildlife Alert Hotline at 888-404-3922 for a dead, sick or injured manatee or sea turtle. Report fish kills to FWC's Fish Kill Hotline at 800-636-0511.",
+    "source_url": "https://pinellas.gov/red-tide/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/info/red-tide-faqs"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The Wildlife Alert number is on the Pinellas page; the Fish Kill Hotline number is on the Visit St. Pete/Clearwater red tide FAQ."
+  },
+  {
+    "id": "rip-current-escape",
+    "topic": "Beaches & water safety",
+    "q": "What do I do if a rip current pulls me out?",
+    "a": "Do not fight it. NOAA says to swim parallel to the shore and then swim back to land at an angle. Rip currents can move at up to eight feet per second, faster than an Olympic swimmer, and panicked swimmers who swim straight back to shore risk drowning from fatigue.",
+    "source_url": "https://oceanservice.noaa.gov/facts/ripcurrent.html",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "rip-currents-calm-days",
+    "topic": "Beaches & water safety",
+    "q": "Can rip currents happen on calm, sunny days?",
+    "a": "Yes. The National Weather Service says rip currents often form on calm, sunny days. It advises checking the beach forecast, talking to the lifeguard, and swimming at a beach with lifeguards; it cites the U.S. Lifesaving Association's figure that the chance of drowning at a beach with lifeguards is 1 in 18 million.",
+    "source_url": "https://www.weather.gov/safety/ripcurrent",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "sales-tax-pinellas",
+    "topic": "Money & taxes",
+    "q": "What is the sales tax in St. Petersburg and Clearwater?",
+    "a": "Florida's state rate is 6%, and Pinellas County adds a 1% surtax (the Penny for Pinellas), in effect through December 31, 2029, according to the Florida Department of Revenue.",
+    "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss_26.pdf",
+    "also_sources": [
+      "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+      "https://pinellas.gov/penny-for-pinellas/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Verifier 2026-09-27: source moved to the calendar-2026 DR-15DSS."
+  },
+  {
+    "id": "sales-tax-tampa",
+    "topic": "Money & taxes",
+    "q": "What is the sales tax in Tampa?",
+    "a": "7.5% in Hillsborough County: Florida's 6% state sales tax plus three half-cent county surtaxes, according to the Florida Department of Revenue.",
+    "source_url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-12.pdf",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "st-pete-pier-accessibility",
+    "topic": "Accessibility",
+    "q": "Is the St. Pete Pier accessible?",
+    "a": "The Pier's trams carry wheelchair users and walkers, and smaller electric shuttles also take wheelchairs. The Pier says it has no wheelchair rentals at this time.",
+    "source_url": "https://stpetepier.org/faq/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "st-pete-pier-rules",
+    "topic": "Alcohol & rules",
+    "q": "Can I drink or bring my dog at the St. Pete Pier?",
+    "a": "Alcohol is allowed in the Pier District only in Pier-approved cups from its restaurants and cafes; you cannot bring your own. Leashed pets are welcome (leash six feet or less), but dogs are not allowed on Spa Beach or the splash pad. The Pier property closes at 11 p.m.",
+    "source_url": "https://stpetepier.org/faq/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "stingray-shuffle",
+    "topic": "Beaches & water safety",
+    "q": "What is the stingray shuffle?",
+    "a": "Shuffling or sliding your feet slowly through the sand as you wade. The City of Clearwater says this warns stingrays that you are there, and they will move out of your way.",
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
+    "checked": "2026-09-27",
+    "notes": "Page wording: 'To avoid stings, shuffle or slide your feet slowly through the sand to warn the stingrays of your presence, and they will move out of your way.'"
+  },
+  {
+    "id": "summer-weather",
+    "topic": "When to visit",
+    "q": "How hot is it in summer?",
+    "a": "Hot and humid. In the NOAA 1991–2020 normals for Tampa International Airport, average highs are 90.2°F to 91.2°F from June through September, and nights stay near 75°F to 77°F. Tampa averages 94.3 days a year with a high of 90°F or more.",
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "tampa-museum-of-art-accessibility",
+    "topic": "Accessibility",
+    "q": "Is the Tampa Museum of Art accessible?",
+    "a": "The museum lends wheelchairs free, first come, first served, and all galleries are reachable by elevator. The closest accessible parking is on the 4th and 5th floors of the William F. Poe Garage (802 N. Ashley Dr.). It opens early for low-sensory Art on the Spectrum visits on the last Sunday of each month.",
+    "source_url": "https://tampamuseum.org/visit/accessibility/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "text-911",
+    "topic": "Safety",
+    "q": "Can I text 911?",
+    "a": "Pinellas County says deaf and hard-of-hearing people can text 9-1-1 in an emergency. For a fire, police or medical emergency, call 9-1-1.",
+    "source_url": "https://pinellas.gov/frequently-asked-questions-about-disaster-preparedness-and-recovery/",
+    "also_sources": [
+      "https://pinellas.gov/department/emergency-management/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "thunder-go-indoors",
+    "topic": "Weather & hurricanes",
+    "q": "What should I do when I hear thunder?",
+    "a": "Go inside. The National Weather Service says there is no safe place outside when thunderstorms are in the area, and that if you hear thunder you are likely within striking distance. Its rule: When Thunder Roars, Go Indoors.",
+    "source_url": "https://www.weather.gov/safety/lightning-safety",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "uv-index",
+    "topic": "Sun & heat",
+    "q": "How strong is the sun?",
+    "a": "Strong. The National Weather Service beach forecast for the Tampa Bay area includes a daily UV index; at 11 or more (Extreme) it warns that unprotected skin can burn in minutes.",
+    "source_url": "https://www.weather.gov/beach/tbw",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "visitor-center-st-pete",
+    "topic": "Visitor information",
+    "q": "Is there a visitor center in St. Petersburg?",
+    "a": "The St. Petersburg Chamber of Commerce's website lists a St. Pete Store & Visitor's Center and a visitors and tourism email address, tourism@stpete.com. The chamber's office is at 100 2nd Ave. N., #150 (727-821-4069).",
+    "source_url": "https://www.stpete.com/st-pete-store-visitors-center/",
+    "checked": "2026-09-27",
+    "notes": "The page body has no address or hours for the store; its own site (thestpetestore.com) returned a captcha. The address and phone are the chamber's, from the page footer. Verifier: confirm the store's location and hours if a readable source turns up."
+  },
+  {
+    "id": "visitor-center-tampa",
+    "topic": "Visitor information",
+    "q": "Is there a visitor center in downtown Tampa?",
+    "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is on the ground floor of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
+    "source_url": "https://shop.visittampabay.com/pages/about-us",
+    "also_sources": [
+      "https://www.visittampabay.com/media/faqs/",
+      "https://www.visittampabay.com/about/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "visitor-center-ybor",
+    "topic": "Visitor information",
+    "q": "Is there a visitor center in Ybor City?",
+    "a": "Yes. The Ybor City Chamber of Commerce runs a visitor information center and gift shop at 1600 E. 8th Ave., Suite B104, open Monday to Saturday 10 a.m. to 4 p.m. and Sunday noon to 4 p.m.; phone (813) 241-8838.",
+    "source_url": "https://www.ybor.org/visitor-information-center-gift-shop/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "visitor-centers-pinellas",
+    "topic": "Visitor information",
+    "q": "Where can I get visitor information in Pinellas County?",
+    "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
+    "source_url": "https://www.visitstpeteclearwater.com/info/visitor-information-resources-faqs",
+    "also_sources": [
+      "https://www.tarponspringschamber.org/",
+      "https://www.beachwelcomecenter.com/"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "water-temperature-today",
+    "topic": "Beaches & water safety",
+    "q": "Where can I check today's water temperature?",
+    "a": "The National Weather Service beach forecast page for the Tampa Bay area shows water temperature, and Visit St. Pete/Clearwater points to Mote Marine Laboratory's beach conditions map (visitbeaches.org), which lists water temperature, wind, tides and UV. NOAA notes that many people find water of 70°F to 78°F comfortable for swimming.",
+    "source_url": "https://www.weather.gov/beach/tbw",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/current-beach-conditions",
+      "https://www.ncei.noaa.gov/products/coastal-water-temperature-guide"
+    ],
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "when-does-it-cool-off",
+    "topic": "When to visit",
+    "q": "When does it cool off in the fall?",
+    "a": "Usually later than the calendar suggests. The National Weather Service in Tampa Bay says highs in the mid 80s to low 90s and high humidity typically last well into October, that the first cool front brings only a day or two of relief, and that the real cool-down usually comes in November. On average Tampa sees its first night below 60°F on October 19 and St. Petersburg on October 30.",
+    "source_url": "https://www.weather.gov/tbw/whencool",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "when-is-hurricane-peak",
+    "topic": "Weather & hurricanes",
+    "q": "When is the peak of hurricane season?",
+    "a": "The National Hurricane Center puts the peak on September 10, with most activity between mid-August and mid-October. It also notes that storms sometimes form before June 1 or after November 30.",
+    "source_url": "https://www.nhc.noaa.gov/climo/",
+    "checked": "2026-09-27"
+  },
+  {
+    "id": "winter-weather",
+    "topic": "When to visit",
+    "q": "How warm is it in winter?",
+    "a": "Mild. In the NOAA 1991–2020 normals for Tampa International Airport, January averages a high of 71.3°F and a low of 52.8°F, and December and February are a few degrees warmer. St. Petersburg, on the water, averages 69.0°F and 55.3°F in January.",
+    "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+    "also_sources": [
+      "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL"
+    ],
+    "checked": "2026-09-27"
   }
 ]

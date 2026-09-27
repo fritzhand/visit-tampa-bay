@@ -1,25 +1,143 @@
 [
   {
-    "id": "tampa",
-    "name": "Tampa",
-    "lede": "Fixture lede for the Tampa sheet.",
+    "id": "around",
+    "name": "Around the Bay",
+    "lede": "The suburbs and small cities around Tampa in Hillsborough and Pasco counties: Temple Terrace and Plant City, Hillsborough's other incorporated cities; unincorporated Brandon, Riverview, Apollo Beach and Ruskin; and Pasco County's Wesley Chapel, Zephyrhills, Dade City and New Port Richey. Visitors come for the Florida Strawberry Festival, winter manatee viewing at Apollo Beach, spring and river parks, outlet and mall shopping, and Pasco's small Gulf coast towns.",
     "known_for": [
-      "the Riverwalk",
-      "Ybor City"
+      "the Florida Strawberry Festival",
+      "the Manatee Viewing Center",
+      "Lithia Springs and Alafia River parks",
+      "Tampa Premium Outlets and The Shops at Wiregrass",
+      "Dade City antiques",
+      "Skydive City"
     ],
-    "source_url": "https://www.tampa.gov/",
+    "official_url": "https://www.visittampabay.com/",
+    "source_url": "https://www.visittampabay.com/media/fast-facts/",
+    "also_sources": [
+      "https://flsportscoast.com/destination/",
+      "https://www.visittampabay.com/plant-city/",
+      "https://www.tampaelectric.com/company/mvc/",
+      "https://flsportscoast.com/destination/wesley-chapel/"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Visit Tampa Bay fast facts: 'Three incorporated cities: Tampa (398,000 population), Temple Terrace, & Plant City'; 'Major unincorporated areas: Brandon, Ruskin, Apollo Beach'. Pasco County's tourism office is Florida's Sports Coast (flsportscoast.com), which lists New Port Richey, Dade City, Zephyrhills and Wesley Chapel as its destinations."
+  },
+  {
+    "id": "beaches",
+    "name": "Gulf Beaches",
+    "lede": "A chain of barrier islands along Pinellas County's Gulf coast, from Clearwater Beach south through Sand Key, Indian Rocks Beach, Madeira Beach, Treasure Island and St. Pete Beach to Pass-a-Grille and Fort De Soto. Each beach town has its own character, from Clearwater Beach's resorts and Pier 60 to Pass-a-Grille's low-rise historic district and Fort De Soto's county park beaches. Visit St. Pete/Clearwater reported all of its beaches open, with no advisories, on Sep 27, 2026.",
+    "known_for": [
+      "white-sand Gulf beaches",
+      "Pier 60 sunsets",
+      "John's Pass Village & Boardwalk",
+      "the Don CeSar",
+      "Fort De Soto Park",
+      "dolphin and shelling tours"
+    ],
+    "official_url": "https://www.visitstpeteclearwater.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/current-beach-conditions",
+      "https://www.visitstpeteclearwater.com/communities/clearwater-beach",
+      "https://www.visitstpeteclearwater.com/communities/pass-a-grille-beach",
+      "https://pinellas.gov/parks/fort-de-soto-park/",
+      "https://en.wikipedia.org/wiki/Sand_Key_(Florida)"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Beach conditions page (read Sep 27, 2026): 'All St. Pete-Clearwater beaches are open, with no advisories.' Hurricane Helene and Milton (2024) damage and recovery are handled record by record in the stays and places slices; none of the area pages read for this slice mention it."
+  },
+  {
+    "id": "clearwater",
+    "name": "Clearwater & North Pinellas",
+    "lede": "Pinellas County's mainland north of St. Petersburg: the City of Clearwater's waterfront downtown and aquarium, and small towns up the coast and around Old Tampa Bay. Scottish-influenced Dunedin has breweries and the ferry-served island state parks, Safety Harbor has springs and a historic resort, Tarpon Springs has its Greek sponge docks, and Palm Harbor's Innisbrook hosts the Valspar Championship.",
+    "known_for": [
+      "Clearwater Marine Aquarium",
+      "Dunedin breweries",
+      "Honeymoon and Caladesi islands",
+      "the Tarpon Springs Sponge Docks",
+      "Safety Harbor Resort & Spa",
+      "Phillies and Blue Jays spring training"
+    ],
+    "official_url": "https://www.visitstpeteclearwater.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/clearwater",
+      "https://www.visitstpeteclearwater.com/communities/dunedin",
+      "https://www.visitstpeteclearwater.com/communities/safety-harbor",
+      "https://www.visitstpeteclearwater.com/communities/tarpon-springs",
+      "https://www.visitstpeteclearwater.com/communities/palm-harbor"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit St. Pete/Clearwater's communities index: 'Greek flags fly everywhere in Tarpon Springs'; 'Craft beer aficionados will find plenty to sample in this walkable town' (Dunedin). 'ferry-served island state parks': Caladesi Island is reached by ferry from Honeymoon Island (caladesiferry.org)."
+  },
+  {
+    "id": "daytrips",
+    "name": "Day Trips",
+    "lede": "Places beyond the bay that make easy day trips: the Bradenton Area with Anna Maria Island, and Sarasota, to the south; Weeki Wachee and the spring-fed rivers of Hernando and Citrus counties to the north; and Polk County's theme parks, gardens and lakes to the east, between Tampa and Orlando.",
+    "known_for": [
+      "Anna Maria Island beaches",
+      "Siesta Key and The Ringling",
+      "Weeki Wachee mermaids",
+      "manatees at Crystal River",
+      "LEGOLAND Florida and Bok Tower Gardens"
+    ],
+    "official_url": "https://www.visitflorida.com/",
+    "source_url": "https://www.bradentongulfislands.com/explore/",
+    "also_sources": [
+      "https://www.visitsarasota.com/",
+      "https://floridasadventurecoast.com/our-communities/weeki-wachee/",
+      "https://www.discovercrystalriverfl.com/",
+      "https://visitcentralflorida.org/",
+      "https://www.visitflorida.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Official URL is VISIT FLORIDA ('Official state travel, tourism and vacation website for Florida'), since the sheet spans five counties; each area record carries its own county tourism site (Bradenton Area CVB, Visit Sarasota, Florida's Adventure Coast, Visit Central Florida). Directions (south, north, east) are map geography, not quoted; drive times are deliberately not given (no source read)."
   },
   {
     "id": "stpete",
     "name": "St. Petersburg",
-    "lede": "Fixture lede for the St. Petersburg sheet.",
+    "lede": "St. Petersburg, the second-largest city in the Tampa Bay area, sits on the Pinellas peninsula between Tampa Bay and the Gulf of Mexico. Its downtown waterfront has the St. Pete Pier, the Dalí and other museums along a string of bayfront parks, and Central Avenue runs west through arts districts full of murals, galleries, bars and breweries. Gulfport, a small arts town on Boca Ciega Bay, is on this sheet too.",
     "known_for": [
-      "the St. Pete Pier"
+      "the St. Pete Pier",
+      "the Dalí Museum",
+      "murals and galleries",
+      "craft breweries",
+      "the Rays at Tropicana Field",
+      "Weedon Island Preserve"
     ],
-    "source_url": "https://www.stpete.org/",
+    "official_url": "https://www.visitstpeteclearwater.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-petersburg",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/St._Petersburg,_Florida",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/waterfront-museum-district",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/central-arts",
+      "https://www.visitstpeteclearwater.com/communities/gulfport"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Wikipedia: population 258,308 (2020), 'the second-most populous city in the Tampa Bay area', nicknamed 'The Sunshine City'. Visit St. Pete/Clearwater is Pinellas County's tourism office (Pinellas County calls it 'the county's main resource for visitors')."
+  },
+  {
+    "id": "tampa",
+    "name": "Tampa",
+    "lede": "Tampa, the county seat of Hillsborough County and the largest city in the Tampa Bay area, sits on the northern shore of Tampa Bay along the Hillsborough River. Downtown's Riverwalk links museums and parks to the Channel District's aquarium and cruise terminals, the free TECO Line Streetcar runs to Ybor City's cigar-era streets, and Busch Gardens and ZooTampa are in the north of the city.",
+    "known_for": [
+      "the Tampa Riverwalk",
+      "Ybor City and its cigar history",
+      "the Cuban sandwich",
+      "Busch Gardens Tampa Bay",
+      "cruises from Port Tampa Bay",
+      "the Buccaneers and the Lightning"
+    ],
+    "official_url": "https://www.visittampabay.com/",
+    "source_url": "https://www.visittampabay.com/media/fast-facts/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tampa,_Florida",
+      "https://www.visittampabay.com/ybor-city/",
+      "https://www.visittampabay.com/channel-district/",
+      "https://www.visittampabay.com/food-and-drink/cuban-sandwich/",
+      "https://thetampariverwalk.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit Tampa Bay fast facts: 'TECO Historic Streetcar runs between downtown and Ybor City district'; five cruise lines homeport 10 vessels; Tampa population 398,000 (Wikipedia: 403,364 in the 2020 census). The Ybor City page describes the streetcar ride into Ybor as free. Visit Tampa Bay's Cuban sandwich page says it was 'Born in Ybor City in the early 1900s'."
   }
 ]

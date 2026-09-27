@@ -312,7 +312,7 @@
      "https://pinellas.gov/county-parks-know-before-you-go/",
      "https://en.wikipedia.org/wiki/Safety_Harbor_Site"
     ],
-    "notes": "The county page calls the mound 'listed in the National Register of Historic Landmarks'; the NHL (1964) and NRHP (66000270, 1966) details are from Wikipedia's Safety Harbor Site article. history-region may hold a separate safety-harbor-site record; the merge should link them."
+    "notes": "The county page calls the mound 'listed in the National Register of Historic Landmarks'; the NHL (1964) and NRHP (66000270, 1966) details are from Wikipedia's Safety Harbor Site article (re-read by the verifier on 2026-09-27). history-region may hold a separate safety-harbor-site record; the merge should link them. Verifier: the park's own page carries two conflicting playground notices (one says construction was postponed and the current playground stays open, another says it is closed indefinitely); the status note follows the county's park updates page of Sep 25, 2026."
    },
    {
     "state": "FL",
@@ -2422,7 +2422,7 @@
      "equestrian"
     ],
     "source_url": "https://www.floridastateparks.org/parks-and-trails/withlacoochee-state-trail",
-    "notes": "Verifier (2026-09-27): re-sourced to the state trail page, read through the r.jina.ai reader on a second try (the first returned a Cloudflare challenge). Wikipedia gives 46 miles; the state page says 47. The point is the trail's listed address in Inverness (census match); the trail itself is linear.",
+    "notes": "Verifier (2026-09-27): re-sourced to the state trail page, read through the r.jina.ai reader on a second try (the first returned a Cloudflare challenge). Wikipedia gives 46 miles; the state page says 47. The point is the trail's listed address in Inverness (census match), which is also Fort Cooper State Park's address; the trail itself is linear and passes nearby.",
     "address": "3100 S. Old Floral City Road",
     "city": "Inverness",
     "zip": "34450",
@@ -2909,21 +2909,31 @@
     "lat": 27.265006,
     "lng": -82.553008,
     "geo_source": "photon",
-    "summary": "The main public beach on Siesta Key, very wide, with sand Wikipedia describes as 99 percent quartz that stays cool underfoot; Visit Sarasota notes a large public parking area, concessions and a free trolley to Siesta Key Village and downtown Sarasota. Crescent Beach continues to the south.",
-    "quote": "world-famous quartz-crystal sand, soft turquoise waters",
-    "quote_source": "https://www.visitsarasota.com/siesta-key",
+    "summary": "Sarasota County's main Siesta Key beach, where the county says the nearly all-quartz sand never gets hot; a 2016 renovation added a playground, two concession stands, more restrooms, a half-mile esplanade and pavilions, and its 950 free parking spaces are the most at any county beach. Lifeguards are on duty daily; alcohol is allowed but glass is not, and only service animals may come. The county lists U.S. News & World Report's No. 1 U.S. beach ranking for 2026.",
+    "quote": "Its nearly 100% quartz-crystal sand, dubbed the “world’s finest, whitest sand”, never gets hot under the Gulf Coast sun and tropical weather.",
     "signature": true,
     "tags": [
      "quartz-sand",
      "free-trolley",
-     "concession"
+     "concession",
+     "lifeguards",
+     "free-parking"
     ],
-    "source_url": "https://en.wikipedia.org/wiki/Siesta_Beach",
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/521/6738",
     "also_sources": [
      "https://www.visitsarasota.com/siesta-key",
+     "https://en.wikipedia.org/wiki/Siesta_Beach",
      "https://en.wikipedia.org/wiki/Siesta_Key"
     ],
-    "notes": "Sarasota County's own park page could not be found or read (scgov.net search renders by script; the old park URL returns 'page not found'), so hours, lifeguards and parking rules come from no official page. Visit Sarasota (read with WebFetch) says U.S. News & World Report ranked it the best U.S. beach for 2026. Verifier (2026-09-27): Wikipedia's 99 percent quartz and cool-underfoot claims and Visit Sarasota's parking, concession and trolley claims confirmed."
+    "notes": "Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Phone is the county's 311 line (941-861-5000) the page gives for beach wheelchair arrangements. The free trolley to Siesta Key Village and downtown Sarasota is from Visit Sarasota (read with WebFetch). Point is the OSM beach feature; the census match for 948 Beach Road is 250 m north.",
+    "address": "948 Beach Road",
+    "zip": "34242",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/521/6738",
+    "phone": "(941) 861-5000",
+    "hours_text": "Daily, 6 a.m. to 10 p.m. Sand Pavilion concession 8 a.m. to sunset; Sun Deck 10 a.m. to sunset; beach rentals 9 a.m. to 5 p.m.",
+    "price_text": "Free parking (950 spaces).",
+    "is_free": true,
+    "accessibility": "Free beach wheelchairs, signed out at the main pavilion concession stand."
    },
    {
     "state": "FL",
@@ -2941,20 +2951,25 @@
     ],
     "area": "sarasota",
     "city": "Sarasota",
-    "lat": 27.31694,
-    "lng": -82.58139,
-    "geo_source": "wikipedia",
-    "summary": "The Gulf beach of Lido Key, near St. Armands Circle, including South Lido Park with a beach and woodland trail. In 1955 about 100 Black residents of Sarasota's Newtown neighborhood held a wade-in at Lido Beach to protest its whites-only policy.",
+    "lat": 27.314872,
+    "lng": -82.579849,
+    "geo_source": "photon",
+    "summary": "The public beach on Lido Key near St. Armands Circle, owned by the City of Sarasota (which runs the facilities, pool and parking) with the county maintaining the beach and dunes; it has lifeguards, a concession, a pool, picnic shelters and restrooms. In 1955 about 100 Black residents of Sarasota's Newtown neighborhood held a wade-in at Lido Beach to protest its whites-only policy.",
     "quote": "Catch some rays or take a walk on the shore and put your toes in the soft, white sand of Lido Beach.",
     "quote_source": "https://www.visitsarasota.com/lido-key-st-armands-circle",
     "tags": [
      "civil-rights-history"
     ],
-    "source_url": "https://en.wikipedia.org/wiki/Lido_Key",
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/569/6738",
     "also_sources": [
+     "https://en.wikipedia.org/wiki/Lido_Key",
      "https://www.visitsarasota.com/lido-key-st-armands-circle"
     ],
-    "notes": "Thin source; Sarasota County and City pages could not be read. Coordinates are Wikipedia's Lido Key point. The wade-in is dated Oct. 2, 1955 on Wikipedia and was organized by Sarasota NAACP president Neil Humphrey Sr. Verifier (2026-09-27): the Visit Sarasota quote was re-read with WebFetch and confirmed."
+    "notes": "Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Point is Photon's match for Ben Franklin Drive at the park address. The wade-in is dated Oct. 2, 1955 on Wikipedia and was organized by Sarasota NAACP president Neil Humphrey Sr. The Visit Sarasota quote was re-read with WebFetch and confirmed.",
+    "address": "400 Benjamin Franklin Drive",
+    "zip": "34236",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/569/6738",
+    "hours_text": "Daily, 5 a.m. to 11 p.m."
    },
    {
     "state": "FL",
@@ -3613,6 +3628,267 @@
     "quote": "This favorite hot spot is often busy on weekends, and has restrooms and restaurants nearby.",
     "source_url": "https://www.visittampabay.com/listings/archibald-beach-park/5039/",
     "notes": "Thin source: only Visit Tampa Bay's listing (its page data gives '15100 Gulf Blvd', St. Petersburg postal city, and (727) 391-7373); the City of Madeira Beach site loads its pages by script and could not be read. Verifier (2026-09-27): renamed from 'Archibald Memorial Beach Park' (id archibald-memorial-beach-park), a name no page read supports, to the listing's name; no other slice referenced the old id."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "turtle-beach-park",
+    "name": "Turtle Beach Park",
+    "aliases": [
+     "Turtle Beach"
+    ],
+    "kind": "beach",
+    "kinds": [
+     "park"
+    ],
+    "topics": [
+     "beaches",
+     "outdoors",
+     "water",
+     "wildlife"
+    ],
+    "area": "sarasota",
+    "address": "8918 Midnight Pass Road",
+    "city": "Sarasota",
+    "state": "FL",
+    "zip": "34242",
+    "lat": 27.22001,
+    "lng": -82.515504,
+    "geo_source": "census",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/495/6738",
+    "phone": "(941) 861-5000",
+    "hours_text": "Daily, 6 a.m. to 10 p.m.",
+    "summary": "A Sarasota County beach park on the south end of Siesta Key with a mangrove lagoon, a boat ramp, an accessible kayak launch, a fishing pier, a playground, picnic shelters with grills and restrooms; the county's Turtle Beach Campground is next door.",
+    "quote": "Tucked away on Siesta Key, this site features a mangrove lagoon and beautiful beaches.",
+    "status": "open",
+    "tags": [
+     "kayak-launch",
+     "boat-ramp",
+     "fishing-pier",
+     "birding"
+    ],
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/495/6738",
+    "notes": "Added by the verifier (2026-09-27). Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Phone is the county 311 line printed on its park pages."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "nokomis-beach-park",
+    "name": "Nokomis Beach Park",
+    "aliases": [
+     "Nokomis Beach"
+    ],
+    "kind": "beach",
+    "kinds": [
+     "park"
+    ],
+    "topics": [
+     "beaches",
+     "outdoors",
+     "family"
+    ],
+    "area": "sarasota",
+    "address": "100 Casey Key Road",
+    "city": "Nokomis",
+    "state": "FL",
+    "zip": "34275",
+    "lat": 27.124991,
+    "lng": -82.470427,
+    "geo_source": "census",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/553/6738",
+    "phone": "(941) 861-5000",
+    "hours_text": "Daily, 6 a.m. to 10 p.m.; boat ramp open 24/7.",
+    "summary": "A Sarasota County beach park on Casey Key at Nokomis with lifeguards, a concession, sand volleyball, a playground, picnic shelters with grills, a fishing pier, a boat ramp and kayak launch, and a loaner life-jacket station.",
+    "status": "open",
+    "tags": [
+     "lifeguards",
+     "concession",
+     "boat-ramp",
+     "fishing-pier",
+     "volleyball"
+    ],
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/553/6738",
+    "notes": "Added by the verifier (2026-09-27). Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Phone is the county 311 line printed on its park pages."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "caspersen-beach-park",
+    "name": "Caspersen Beach Park",
+    "aliases": [
+     "Caspersen Beach"
+    ],
+    "kind": "beach",
+    "kinds": [
+     "park"
+    ],
+    "topics": [
+     "beaches",
+     "outdoors"
+    ],
+    "area": "sarasota",
+    "address": "4100 Harbor Drive S.",
+    "city": "Venice",
+    "state": "FL",
+    "zip": "34285",
+    "lat": 27.05506,
+    "lng": -82.442035,
+    "geo_source": "photon",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/603/6738",
+    "phone": "(941) 861-5000",
+    "hours_text": "Daily, 6 a.m. to 10 p.m.",
+    "summary": "A Sarasota County beach park south of Venice with an unpaved trail, a kayak launch, fishing, picnic shelters and wildlife viewing. Since the 2024 storms washed out its Harbor Drive access it can be reached only on foot or by bicycle, from South Brohard Park or the Venetian Waterway Park Trail.",
+    "status": "open",
+    "status_note": "Partly closed: the Harbor Drive access washed out in the 2024 storm season, so restrooms, vehicle parking and the playground are closed until repairs; the park is open to pedestrians and cyclists only (county page, read Sep 27, 2026).",
+    "tags": [
+     "no-parking",
+     "hurricane-repairs",
+     "kayak-launch",
+     "bike-access"
+    ],
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/603/6738",
+    "notes": "Added by the verifier (2026-09-27). Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Point is the OSM beach feature (the address census match is 600 m north, at the washed-out road)."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "legacy-trail",
+    "name": "The Legacy Trail",
+    "aliases": [
+     "Legacy Trail"
+    ],
+    "kind": "trail",
+    "topics": [
+     "outdoors"
+    ],
+    "area": "sarasota",
+    "url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/572/6738",
+    "phone": "(941) 861-5000",
+    "hours_text": "Daily, 6 a.m. to sunset.",
+    "summary": "A paved Sarasota County trail from Fruitville Road in Sarasota to the Venice Train Depot, used for cycling and birding, with restrooms and picnic shelters along the way; leashed dogs are allowed. It runs through Oscar Scherer State Park.",
+    "status": "open",
+    "tags": [
+     "paved-trail",
+     "biking",
+     "rail-trail",
+     "dog-friendly"
+    ],
+    "source_url": "https://www.scgov.net/Home/Components/FacilityDirectory/FacilityDirectory/572/6738",
+    "also_sources": [
+     "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park/experiences-amenities-0"
+    ],
+    "notes": "Added by the verifier (2026-09-27). Verifier (2026-09-27): Sarasota County's park directory page was read through the r.jina.ai reader (scgov.net blocks curl and its search renders by script; the park's directory id was found by walking the alphabetical ids). Linear trail: no coordinates. The state park page mentions 'the 12-mile paved Legacy Trail running through the park'; the county page gives no length, so none is stated."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "cockroach-bay-preserve-state-park",
+    "name": "Cockroach Bay Preserve State Park",
+    "aliases": [
+     "Cockroach Bay"
+    ],
+    "kind": "state-park",
+    "kinds": [
+     "island",
+     "nature-preserve"
+    ],
+    "topics": [
+     "outdoors",
+     "water",
+     "wildlife"
+    ],
+    "area": "apollo-beach",
+    "address": "End of Cockroach Bay Road",
+    "city": "Ruskin",
+    "state": "FL",
+    "zip": "33570",
+    "lat": 27.709375,
+    "lng": -82.456824,
+    "geo_source": "photon",
+    "url": "https://www.floridastateparks.org/parks-and-trails/cockroach-bay-preserve-state-park",
+    "phone": "(941) 723-4536",
+    "hours_text": "Daily, 8 a.m. to sunset.",
+    "price_text": "No fee.",
+    "is_free": true,
+    "summary": "A preserve of 617 acres of islands, mostly mangrove swamp, at the mouth of the Little Manatee River in southeastern Tampa Bay, reached only by private boat, canoe or kayak; two paddling trails wind through the surrounding aquatic preserve, and anglers and birders use it. The islands have no facilities; the nearest public boat ramp is at the end of Cockroach Bay Road.",
+    "quote": "Horseshoe crabs were once so abundant along the shores of Florida’s west coast that early Spanish explorers called them cockroaches, believing them to be seagoing cousins of the insects.",
+    "status": "open",
+    "tags": [
+     "boat-access-only",
+     "paddling-trail",
+     "birding",
+     "fishing",
+     "no-facilities"
+    ],
+    "source_url": "https://www.floridastateparks.org/parks-and-trails/cockroach-bay-preserve-state-park",
+    "notes": "Added by the verifier (2026-09-27); the state park page was read through the r.jina.ai reader. Point is the OSM preserve polygon (Photon)."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "colt-creek-state-park",
+    "name": "Colt Creek State Park",
+    "kind": "state-park",
+    "topics": [
+     "outdoors",
+     "wildlife"
+    ],
+    "area": "polk",
+    "address": "16000 State Road 471",
+    "city": "Lakeland",
+    "state": "FL",
+    "zip": "33809",
+    "lat": 28.282552,
+    "lng": -82.039375,
+    "geo_source": "photon",
+    "url": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
+    "phone": "(863) 316-6020",
+    "hours_text": "Daily, 8 a.m. to sunset, 365 days a year.",
+    "price_text": "$4 per vehicle.",
+    "is_free": false,
+    "summary": "A state park of more than 5,000 acres of longleaf pine flatwoods, lakes, creeks and cypress domes north of Lakeland, with more than 15 miles of trails shared by hikers, cyclists and riders, lake fishing from a 75-foot accessible dock, pavilions, and primitive, equestrian and group camping; rangers lead hikes and tram tours.",
+    "quote": "Colt Creek State Park includes more than 5,000 acres of native Central Florida habitat, a place to explore the natural communities and wildlife that make our park special.",
+    "status": "open",
+    "tags": [
+     "hiking",
+     "equestrian",
+     "fishing",
+     "camping"
+    ],
+    "source_url": "https://www.floridastateparks.org/parks-and-trails/colt-creek-state-park",
+    "notes": "Added by the verifier (2026-09-27); the state park page was read through the r.jina.ai reader. Point is the OSM park polygon (the census could not match the State Road 471 address)."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "fort-cooper-state-park",
+    "name": "Fort Cooper State Park",
+    "kind": "state-park",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "outdoors",
+     "wildlife",
+     "history"
+    ],
+    "area": "nature-coast",
+    "address": "3100 S. Old Floral City Road",
+    "city": "Inverness",
+    "state": "FL",
+    "zip": "34450",
+    "lat": 28.808448,
+    "lng": -82.304168,
+    "geo_source": "photon",
+    "url": "https://www.floridastateparks.org/parks-and-trails/fort-cooper-state-park",
+    "phone": "(352) 726-0315",
+    "hours_text": "Daily, 8 a.m. to sunset, 365 days a year.",
+    "price_text": "$3 per vehicle, paid at an honor box (correct change required).",
+    "is_free": false,
+    "summary": "A 700-acre state park near Inverness on Lake Holathlikaha, a Great Florida Birding Trail site with nearly 5 miles of self-guided trails, fishing, picnic grounds and a paved path to the Withlacoochee State Trail; the Seminole Heritage Trail's four kiosks explain the Seminole people who lived here and why Fort Cooper was built.",
+    "quote": "With over 700 acres of nature at its best, Fort Cooper offers a spot for relaxing, hiking, studying nature and learning about Florida's rich history.",
+    "status": "open",
+    "tags": [
+     "birding",
+     "hiking",
+     "fishing",
+     "connects-withlacoochee-trail"
+    ],
+    "source_url": "https://www.floridastateparks.org/parks-and-trails/fort-cooper-state-park",
+    "notes": "Added by the verifier (2026-09-27); the state park page was read through the r.jina.ai reader. history-region also has a record with this id (sourced to discovercrystalriverfl.com, giving 3102 S Old Floral City Rd and 352-726-0317); the merge unites them and should prefer this record's address, phone and fee, which are the state park page's. The park shares its address and phone with the Withlacoochee State Trail record."
    }
   ],
   "stays": [
@@ -4043,5 +4319,5 @@
    }
   ]
  },
- "report": "# outdoors slice: report (read Sep 27, 2026)\n\n## What is covered\n90 places and 12 campground/cabin records (stays, kind campground).\n\nPlaces by kind: 26 beaches, 24 parks, 14 nature preserves, 13 state parks, 6 gardens, 6 trails, 1 pier.\nPlaces by region: Day Trips 23, Gulf Beaches 16, Tampa 16, Around the Bay 15, Clearwater & North Pinellas 13, St. Petersburg 7.\nStays by region: Around the Bay 8, Day Trips 2, Gulf Beaches 1 (Fort De Soto), St. Petersburg 1 (Terry Tomalin).\n\n- **Gulf beaches, Pinellas:** Fort De Soto (shared id), Shell Key, Egmont Key, Pass-a-Grille, St. Pete Beach Access, Treasure Island Beach, Sunset Beach, St. Petersburg Municipal Beach at Treasure Island, Madeira Beach Access, Archibald, John's Pass Beach, Redington Shores Access, Tiki Gardens/Indian Shores Access, Indian Rocks Beach Access, Sand Key Park, Clearwater public beach, Caladesi, Honeymoon, Fred Howard, Anclote Key.\n- **Bay beaches:** Ben T. Davis, Cypress Point, Picnic Island, Davis Islands (with the dog beach), North Shore Park, Apollo Beach Nature Preserve, E.G. Simmons, Anna Maria Bayfront Park.\n- **Day-trip beaches:** Manatee Public Beach, Coquina Beach, Siesta Beach, Lido Beach; Nature Coast: Pine Island, Rogers Park (river beach), Fort Island Gulf Beach; Pasco: Robert K. Rees and Robert J. Strickland parks.\n- **Dog beaches** (tag `dog-beach`): Fort De Soto, Honeymoon Island, Picnic Island, Davis Islands.\n- **State parks:** Honeymoon, Caladesi, Egmont Key, Anclote Key, Skyway Fishing Pier, Hillsborough River, Alafia River, Little Manatee River, Weeki Wachee (shared id), Ellie Schiller Homosassa Springs Wildlife, Crystal River Preserve, Myakka River, Oscar Scherer, Lake Manatee. USFWS: Three Sisters Springs, Crystal River NWR, Chassahowitzka NWR.\n- **County and city parks and preserves:** Pinellas (Weedon Island, Sawgrass Lake, Brooker Creek, Philippe with the Safety Harbor mound as a heritage block, Lake Seminole, John Chesnut Sr., Wall Springs, Boca Ciega Millennium); St. Petersburg (Boyd Hill, Clam Bayou); Clearwater (Moccasin Lake); Hillsborough (Lettuce Lake, Upper Tampa Bay, Lithia Springs, Edward Medard, Alderman's Ford, Flatwoods, Morris Bridge, Eureka Springs); Tampa (Lowry Park, Al Lopez, Water Works, Ballast Point); Manatee (Robinson, Emerson Point); Polk (Circle B Bar); Pasco (Starkey, Anclote Gulf Park).\n- **Gardens:** Florida Botanical Gardens, Sunken Gardens (shared id, heritage block), USF Botanical Gardens, Eureka Springs, Marie Selby, Bok Tower Gardens (heritage block).\n- **Trails:** Pinellas Trail, Upper Tampa Bay Trail, Selmon Greenway, Courtney Campbell Causeway Trail, Suncoast Trail, Withlacoochee State Trail. Four linear trails have no single point and no coordinates.\n- **Wildlife and springs:** TECO Manatee Viewing Center (status `seasonal`: reopens Nov. 1, 2026), Three Sisters Springs, Crystal River NWR, Homosassa, Weeki Wachee, Lithia Springs, Wall Springs.\n- **Campgrounds and cabins:** Fort De Soto; Hillsborough County's E.G. Simmons, Lithia Springs, Edward Medard and Alderman's Ford primitive sites; St. Petersburg's Terry Tomalin (18 sites, 6 cabins); Starkey (cabins, tent, primitive); state parks: Hillsborough River, Alafia River, Little Manatee River, Myakka River (with palm-log cabins), Lake Manatee. The state-park campground records are thin (see below).\n\n## How candidates were found\n1. Official lists: Pinellas County's parks index and beach-access list (pinellas.gov/parks, /beaches, park updates page), Hillsborough County location pages (hcfl.gov), City of Tampa featured parks, beaches, dog parks, advisories and greenways pages, St. Petersburg Parks & Recreation (beaches, preserves, Boyd Hill), Manatee County's boat-ramps-and-beaches list, the Pasco park directory, Hernando County's parks list, Citrus County's parks and beaches pages.\n2. Visit Tampa Bay's listings API (Simpleview find endpoint for the outdoors, beaches and campground subcategories, plus a title search for park/preserve/beach/garden/trail/spring/island), and Visit St. Pete/Clearwater's beaches, outdoors, nature-preserve and beach-conditions pages (read with WebFetch).\n3. Wikipedia articles for the state parks, trails and Sarasota beaches; USFWS refuge pages.\n4. The session's WebSearch budget ran out early (200/200), so later discovery used site navigation and the lists above.\n\n## Status (Helene and Milton) findings\n- Pinellas County park updates (Sep 25, 2026): Fort De Soto Bay Pier far end closed for hurricane repairs, boat-ramp docks replaced in phases, road/trail repaving; Weedon Island Bay Boardwalk section closed to late 2026; Sand Key seawall section closed to October 2026; playground and restroom work at Philippe, Wall Springs and others. County beach parking becomes $3.50/hour (cap $12/day) on Dec. 1, 2026.\n- Clearwater: Pier 60 open only to the fishing pier; bait house and fishing pier closed (Pier 60 itself belongs to see-pinellas).\n- St. Petersburg Municipal Beach at Treasure Island: beach and lot open, building and amenities closed.\n- Tampa: Ballast Point pier closed since spring 2025. Hillsborough County: Lettuce Lake boardwalk sections, tower and kayak launch closed; Morris Bridge boat ramp and all river access from John B. Sargeant to Trout Creek closed; Medard boat ramp closed (reservoir drawdown).\n- Manatee County: Robinson Preserve tram tours cancelled after hurricane damage; Emerson Point dock closed. Citrus: Fort Island Gulf Beach open with repairs.\n- Egmont Key was closed 6+ months after the 2024 storms (Egmont Key Alliance); the Hubbard's ferry now runs daily. Hillsborough River State Park closed Oct 2024 and reopened Feb 24, 2025 (Wikipedia).\n- Visit St. Pete/Clearwater's beach-conditions page: \"All St. Pete-Clearwater beaches are open, with no advisories.\"\n\n## Left out, and why\n- floridastateparks.org (and the Guest Services concession sites weekiwachee.com, homosassaspringswildlife.com, crystalriverpreserveadventures.com) returned HTTP 403 (Cloudflare) to both WebFetch and curl. State-park records therefore rest on Wikipedia, Visit Tampa Bay / Visit St. Pete-Clearwater listings, ferry operators and county pages. Hours and fees are null for most state parks, and their `url` fields follow the site's URL pattern without having been opened.\n- Sarasota County (scgov.net), Visit Sarasota listing pages, City of Crystal River, Three Sisters Springs Center, Dunedin, Gulfport, Tarpon Springs city and Polk County park pages were blocked or script-rendered. Turtle Beach, Crescent Beach, Nokomis/Venice beaches, Hunter Springs Park, Hammock Park and the Dunedin Causeway, Gulfport Beach, Sunset Beach (Tarpon Springs), Largo Central Park Nature Preserve and the Legacy Trail were therefore not added.\n- Gandy Beach (bay beach on the Gandy Blvd causeway, named in the brief): no official or tourism page describing it was found (the Pinellas County and St. Petersburg sites have none). Beer Can Island / Pine Key: privately owned; no official page found. Both left out.\n- Skipped as low visitor interest: Walsingham, Eagle Lake, A.L. Anderson and Taylor parks (Pinellas), Werner-Boyce Salt Springs (Wikipedia outdated, official page blocked), Terra Ceia, Fort Cooper, Wolf Branch Creek, Palma Sola Causeway Park (no usable geocode), Spa Beach (part of the St. Pete Pier), Lassing and Maximo parks.\n- Left to other slices: Crystal River Archaeological State Park, Historic Spanish Point, De Soto National Memorial, Madira Bickel Mound (history-region); the Tampa Riverwalk and Bayshore Boulevard (see-tampa); Pier 60 and the St. Pete Pier (see-pinellas); ferries and kayak/manatee tours (exp-water).\n\n## Open questions for the verifier\n1. State parks: confirm current status, hours and fees on floridastateparks.org from a browser, especially Weeki Wachee (Helene flooding), Honeymoon (bathhouses), Caladesi, Little Manatee, Alafia, Myakka, Lake Manatee, Anclote Key, Oscar Scherer and the Skyway Pier. Also confirm the `url` slugs for Anclote Key, Skyway Pier, Little Manatee, Lake Manatee, Oscar Scherer, Myakka and the Withlacoochee trail.\n2. The state-park campground stays (Hillsborough River, Little Manatee, Alafia, Myakka, Lake Manatee) are thin, based on Wikipedia and one listing; drop or enrich them.\n3. Weeki Wachee NRHP year: Wikipedia's infobox says 2009 (ref 09000843), its text says 2020; no year was recorded.\n4. Florida Botanical Gardens hours conflict: the gardens page says 7 a.m. to 5 p.m.; the county hours page says 7 a.m. to sunset.\n5. Archibald Memorial Beach Park: the official name and details rest on a Visit Tampa Bay listing only.\n6. Point accuracy: USF Botanical Gardens (street match), Flatwoods (road inside the park), Hillsborough River, Myakka, Lake Manatee and Little Manatee (park centroids), Clearwater Beach (OSM place node).\n7. Shared-id records (fort-de-soto-park, sunken-gardens, weeki-wachee-springs-state-park) and bok-tower-gardens (also in around-daytrips' scope) will be merged with other slices; check that the facts agree.\n8. The Honeymoon Island and Caladesi quotes and fees came through WebFetch's reading of Visit St. Pete/Clearwater profiles; re-read those pages to confirm the wording.\n"
+ "report": "# outdoors slice: report (read Sep 27, 2026)\n\n## What is covered\n90 places and 12 campground/cabin records (stays, kind campground).\n\nPlaces by kind: 26 beaches, 24 parks, 14 nature preserves, 13 state parks, 6 gardens, 6 trails, 1 pier.\nPlaces by region: Day Trips 23, Gulf Beaches 16, Tampa 16, Around the Bay 15, Clearwater & North Pinellas 13, St. Petersburg 7.\nStays by region: Around the Bay 8, Day Trips 2, Gulf Beaches 1 (Fort De Soto), St. Petersburg 1 (Terry Tomalin).\n\n- **Gulf beaches, Pinellas:** Fort De Soto (shared id), Shell Key, Egmont Key, Pass-a-Grille, St. Pete Beach Access, Treasure Island Beach, Sunset Beach, St. Petersburg Municipal Beach at Treasure Island, Madeira Beach Access, Archibald, John's Pass Beach, Redington Shores Access, Tiki Gardens/Indian Shores Access, Indian Rocks Beach Access, Sand Key Park, Clearwater public beach, Caladesi, Honeymoon, Fred Howard, Anclote Key.\n- **Bay beaches:** Ben T. Davis, Cypress Point, Picnic Island, Davis Islands (with the dog beach), North Shore Park, Apollo Beach Nature Preserve, E.G. Simmons, Anna Maria Bayfront Park.\n- **Day-trip beaches:** Manatee Public Beach, Coquina Beach, Siesta Beach, Lido Beach; Nature Coast: Pine Island, Rogers Park (river beach), Fort Island Gulf Beach; Pasco: Robert K. Rees and Robert J. Strickland parks.\n- **Dog beaches** (tag `dog-beach`): Fort De Soto, Honeymoon Island, Picnic Island, Davis Islands.\n- **State parks:** Honeymoon, Caladesi, Egmont Key, Anclote Key, Skyway Fishing Pier, Hillsborough River, Alafia River, Little Manatee River, Weeki Wachee (shared id), Ellie Schiller Homosassa Springs Wildlife, Crystal River Preserve, Myakka River, Oscar Scherer, Lake Manatee. USFWS: Three Sisters Springs, Crystal River NWR, Chassahowitzka NWR.\n- **County and city parks and preserves:** Pinellas (Weedon Island, Sawgrass Lake, Brooker Creek, Philippe with the Safety Harbor mound as a heritage block, Lake Seminole, John Chesnut Sr., Wall Springs, Boca Ciega Millennium); St. Petersburg (Boyd Hill, Clam Bayou); Clearwater (Moccasin Lake); Hillsborough (Lettuce Lake, Upper Tampa Bay, Lithia Springs, Edward Medard, Alderman's Ford, Flatwoods, Morris Bridge, Eureka Springs); Tampa (Lowry Park, Al Lopez, Water Works, Ballast Point); Manatee (Robinson, Emerson Point); Polk (Circle B Bar); Pasco (Starkey, Anclote Gulf Park).\n- **Gardens:** Florida Botanical Gardens, Sunken Gardens (shared id, heritage block), USF Botanical Gardens, Eureka Springs, Marie Selby, Bok Tower Gardens (heritage block).\n- **Trails:** Pinellas Trail, Upper Tampa Bay Trail, Selmon Greenway, Courtney Campbell Causeway Trail, Suncoast Trail, Withlacoochee State Trail. Four linear trails have no single point and no coordinates.\n- **Wildlife and springs:** TECO Manatee Viewing Center (status `seasonal`: reopens Nov. 1, 2026), Three Sisters Springs, Crystal River NWR, Homosassa, Weeki Wachee, Lithia Springs, Wall Springs.\n- **Campgrounds and cabins:** Fort De Soto; Hillsborough County's E.G. Simmons, Lithia Springs, Edward Medard and Alderman's Ford primitive sites; St. Petersburg's Terry Tomalin (18 sites, 6 cabins); Starkey (cabins, tent, primitive); state parks: Hillsborough River, Alafia River, Little Manatee River, Myakka River (with palm-log cabins), Lake Manatee. The state-park campground records are thin (see below).\n\n## How candidates were found\n1. Official lists: Pinellas County's parks index and beach-access list (pinellas.gov/parks, /beaches, park updates page), Hillsborough County location pages (hcfl.gov), City of Tampa featured parks, beaches, dog parks, advisories and greenways pages, St. Petersburg Parks & Recreation (beaches, preserves, Boyd Hill), Manatee County's boat-ramps-and-beaches list, the Pasco park directory, Hernando County's parks list, Citrus County's parks and beaches pages.\n2. Visit Tampa Bay's listings API (Simpleview find endpoint for the outdoors, beaches and campground subcategories, plus a title search for park/preserve/beach/garden/trail/spring/island), and Visit St. Pete/Clearwater's beaches, outdoors, nature-preserve and beach-conditions pages (read with WebFetch).\n3. Wikipedia articles for the state parks, trails and Sarasota beaches; USFWS refuge pages.\n4. The session's WebSearch budget ran out early (200/200), so later discovery used site navigation and the lists above.\n\n## Status (Helene and Milton) findings\n- Pinellas County park updates (Sep 25, 2026): Fort De Soto Bay Pier far end closed for hurricane repairs, boat-ramp docks replaced in phases, road/trail repaving; Weedon Island Bay Boardwalk section closed to late 2026; Sand Key seawall section closed to October 2026; playground and restroom work at Philippe, Wall Springs and others. County beach parking becomes $3.50/hour (cap $12/day) on Dec. 1, 2026.\n- Clearwater: Pier 60 open only to the fishing pier; bait house and fishing pier closed (Pier 60 itself belongs to see-pinellas).\n- St. Petersburg Municipal Beach at Treasure Island: beach and lot open, building and amenities closed.\n- Tampa: Ballast Point pier closed since spring 2025. Hillsborough County: Lettuce Lake boardwalk sections, tower and kayak launch closed; Morris Bridge boat ramp and all river access from John B. Sargeant to Trout Creek closed; Medard boat ramp closed (reservoir drawdown).\n- Manatee County: Robinson Preserve tram tours cancelled after hurricane damage; Emerson Point dock closed. Citrus: Fort Island Gulf Beach open with repairs.\n- Egmont Key was closed 6+ months after the 2024 storms (Egmont Key Alliance); the Hubbard's ferry now runs daily. Hillsborough River State Park closed Oct 2024 and reopened Feb 24, 2025 (Wikipedia).\n- Visit St. Pete/Clearwater's beach-conditions page: \"All St. Pete-Clearwater beaches are open, with no advisories.\"\n\n## Left out, and why\n- floridastateparks.org (and the Guest Services concession sites weekiwachee.com, homosassaspringswildlife.com, crystalriverpreserveadventures.com) returned HTTP 403 (Cloudflare) to both WebFetch and curl. State-park records therefore rest on Wikipedia, Visit Tampa Bay / Visit St. Pete-Clearwater listings, ferry operators and county pages. Hours and fees are null for most state parks, and their `url` fields follow the site's URL pattern without having been opened.\n- Sarasota County (scgov.net), Visit Sarasota listing pages, City of Crystal River, Three Sisters Springs Center, Dunedin, Gulfport, Tarpon Springs city and Polk County park pages were blocked or script-rendered. Turtle Beach, Crescent Beach, Nokomis/Venice beaches, Hunter Springs Park, Hammock Park and the Dunedin Causeway, Gulfport Beach, Sunset Beach (Tarpon Springs), Largo Central Park Nature Preserve and the Legacy Trail were therefore not added.\n- Gandy Beach (bay beach on the Gandy Blvd causeway, named in the brief): no official or tourism page describing it was found (the Pinellas County and St. Petersburg sites have none). Beer Can Island / Pine Key: privately owned; no official page found. Both left out.\n- Skipped as low visitor interest: Walsingham, Eagle Lake, A.L. Anderson and Taylor parks (Pinellas), Werner-Boyce Salt Springs (Wikipedia outdated, official page blocked), Terra Ceia, Fort Cooper, Wolf Branch Creek, Palma Sola Causeway Park (no usable geocode), Spa Beach (part of the St. Pete Pier), Lassing and Maximo parks.\n- Left to other slices: Crystal River Archaeological State Park, Historic Spanish Point, De Soto National Memorial, Madira Bickel Mound (history-region); the Tampa Riverwalk and Bayshore Boulevard (see-tampa); Pier 60 and the St. Pete Pier (see-pinellas); ferries and kayak/manatee tours (exp-water).\n\n## Open questions for the verifier\n1. State parks: confirm current status, hours and fees on floridastateparks.org from a browser, especially Weeki Wachee (Helene flooding), Honeymoon (bathhouses), Caladesi, Little Manatee, Alafia, Myakka, Lake Manatee, Anclote Key, Oscar Scherer and the Skyway Pier. Also confirm the `url` slugs for Anclote Key, Skyway Pier, Little Manatee, Lake Manatee, Oscar Scherer, Myakka and the Withlacoochee trail.\n2. The state-park campground stays (Hillsborough River, Little Manatee, Alafia, Myakka, Lake Manatee) are thin, based on Wikipedia and one listing; drop or enrich them.\n3. Weeki Wachee NRHP year: Wikipedia's infobox says 2009 (ref 09000843), its text says 2020; no year was recorded.\n4. Florida Botanical Gardens hours conflict: the gardens page says 7 a.m. to 5 p.m.; the county hours page says 7 a.m. to sunset.\n5. Archibald Memorial Beach Park: the official name and details rest on a Visit Tampa Bay listing only.\n6. Point accuracy: USF Botanical Gardens (street match), Flatwoods (road inside the park), Hillsborough River, Myakka, Lake Manatee and Little Manatee (park centroids), Clearwater Beach (OSM place node).\n7. Shared-id records (fort-de-soto-park, sunken-gardens, weeki-wachee-springs-state-park) and bok-tower-gardens (also in around-daytrips' scope) will be merged with other slices; check that the facts agree.\n8. The Honeymoon Island and Caladesi quotes and fees came through WebFetch's reading of Visit St. Pete/Clearwater profiles; re-read those pages to confirm the wording.\n\n\n## Verification (2026-09-27)\n\nAdversarial verifier pass over all 102 original records (90 places, 12 campground stays). Every record's source_url was re-read: curl for county, city and federal pages (pinellas.gov, hcfl.gov, tampa.gov, stpeteparksrec.org, mymanatee.org, pascocountyfl.gov, hernandocounty.us, citruscounty.gov, fws.gov, tampaelectric.com, sunkengardens.org, usf.edu, selby.org, boktowergardens.org, Wikipedia), WebFetch for the sites that block curl (myclearwater.com, myclearwaterparks.com, Visit St. Pete/Clearwater, Visit Sarasota, hubbardsmarina.com), Visit Tampa Bay listings from the listing's own page data, and the r.jina.ai reader for floridastateparks.org, weekiwachee.com, polkfl.gov and scgov.net, which return Cloudflare 403s to curl and WebFetch but serve their full pages through the reader. Every quote was checked verbatim against the page text; every number in summaries, hours and prices was checked against the source. WebSearch was not available (the session's search budget was spent), so discovery used official directories.\n\nAfter verification the slice has 112 records: 98 places (29 beaches, 24 parks, 17 state parks, 14 nature preserves, 7 trails, 6 gardens, 1 pier) and 14 campground stays. Dog beaches tagged: Fort De Soto, Honeymoon Island, Picnic Island, Davis Islands.\n\n### Fixed (40 records)\n- **State parks re-sourced to floridastateparks.org** (the researcher could not read it): Honeymoon Island, Egmont Key, Anclote Key, Skyway Fishing Pier, Hillsborough River, Alafia River, Little Manatee River, Weeki Wachee Springs, Ellie Schiller Homosassa Springs, Crystal River Preserve, Lake Manatee, Myakka River, Oscar Scherer, Withlacoochee State Trail, and the five state-park campgrounds (Hillsborough River, Alafia, Little Manatee, Myakka, Lake Manatee), which were Wikipedia stubs and now carry site counts, hookups and rules. Hours, fees, addresses and phones filled from the park pages; quotes replaced with verbatim park text.\n- **Wrong phones corrected:** Honeymoon ((727) 469-5942 to 727-241-6106), Egmont Key ((727) 893-2627 to 727-241-6106), Hillsborough River (813-688-9500 is the park's contact line), Homosassa (park line 352-423-5600, not the concessionaire's 844 number). Phones removed where the source gives none (Ben T. Davis, Davis Islands).\n- **Wrong or unsupported facts removed or corrected:** Alafia's address (14502 to the park's 14326 S. County Road 39, re-geocoded); Weeki Wachee city (Spring Hill to Weeki Wachee) and its NRHP designation (Wikipedia's reference number 09000843 belongs to the Spring Lake Community Center in Brooksville per NPS NPGallery, and Wikipedia's text gives another year, so no listing is stated); Egmont Key's \"overgrowth\" claim (a visitor review on the Visit St. Pete/Clearwater page, not the organization); Skyway Pier's Wikipedia closure date (replaced with the park's own alerts of Oct. 27, 2025 and March 16, 2026); Myakka's Deep Hole permit count and alligator numbers (Wikipedia only); Honeymoon's trail length (the park gives 2.5 miles for the Osprey Trail); Clearwater Beach \"about three miles\", playgrounds, restrooms and a no-smoking rule (not on the city pages read); Shell Key camping (south end only, per the county); Fort De Soto campground booking window (six months, seven for county residents); Apollo Beach Preserve hours (8 a.m. to sunset); Treasure Island's 1 a.m. to 5 a.m. closure (not found); \"fenced\", \"next to it\", \"near Longboat Pass\", \"in New Tampa\" (not on the pages); unverified aliases on the Pasco beaches; Caladesi's no-dogs tag (from a customer review).\n- **Current status added from official alerts:** Honeymoon's sand-spit cut (April 2024); Hillsborough River's still-closed cafe, campsites, pavilions and trails and its reduced rental days; Alafia's closed bike trails (Aug. 5, 2026); Little Manatee's North Trail closure (since Nov. 15, 2024); Weeki Wachee's paused river cruise and Buccaneer Bay's slides closed for the season from Sep. 28, 2026; Homosassa's shuttle boats (low water) and closed cafes; Myakka's unavailable drinking water (since Oct. 28, 2025); Lake Manatee's missing kayak rentals; Lake Seminole's out-of-service shelters.\n- **Sources upgraded:** Siesta Beach and Lido Beach now rest on Sarasota County's park directory pages (hours, address, amenities, rules); Circle B Bar Reserve on Polk County's page (hours, rules).\n- **Renamed:** archibald-memorial-beach-park became archibald-beach-park (\"Archibald Beach Park\", the listing's name); no page read supports \"Memorial\" and no other slice referenced the old id.\n- **Coordinates:** Egmont Key and Anclote Key now use the lighthouse GPS points the parks publish; Alafia, Little Manatee and Lake Manatee use census matches for the park entrances; the Withlacoochee trail uses its listed Inverness address. All addresses were re-geocoded (census) and compared; remaining gaps over 400 m are explained (park polygons, county map links, an OSM beach feature). Myakka keeps the park polygon because the census match for 13207 State Road 72 falls about 10 km west of the park.\n\n### Removed\nNone closed for good were found. One record was deleted and re-added under a new id (Archibald, above).\n\n### Added (10 records, each from a page read in this pass, geocoded)\n- Places: Werner-Boyce Salt Springs State Park (Pasco), Cockroach Bay Preserve State Park (Ruskin), Colt Creek State Park (Polk), Fort Cooper State Park (Inverness), Turtle Beach Park, Nokomis Beach Park, Caspersen Beach Park (open to walkers and cyclists only since its access road washed out in 2024) and The Legacy Trail (Sarasota County).\n- Stays: Turtle Beach Campground (Sarasota County, Siesta Key) and Oscar Scherer State Park Campground.\n\n### Still open for the merge and QA\n- Caladesi Island State Park's own page and the city sites of Crystal River (Hunter Springs Park), Gulfport, Tarpon Springs (Sunset Beach), Madeira Beach and St. Pete Beach (Upham Beach) returned bot challenges even through the reader, so those beaches and Hunter Springs are still missing and Caladesi rests on its ferry operator.\n- Gandy Beach and Beer Can Island (Pine Key): no official page could be found without web search; left out.\n- Weeki Wachee's NRHP status remains unconfirmed (see above). Florida Botanical Gardens' hours conflict (7 a.m. to 5 p.m. on its page, 7 a.m. to sunset on the county hours page) is noted in the record.\n- fort-cooper-state-park also exists in history-region (sourced to a tourism directory, with 3102 S Old Floral City Rd and 352-726-0317); this slice's values come from the state park page (3100 S. Old Floral City Road, 352-726-0315, $3 honor-box fee).\n- Shared ids (fort-de-soto-park, sunken-gardens, weeki-wachee-springs-state-park) and bok-tower-gardens: facts here were re-read against the owners' pages; the merge should prefer these field values for hours, fees and status."
 }

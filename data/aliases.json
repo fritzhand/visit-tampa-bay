@@ -1,5 +1,17 @@
 {
   "places": {
-    "amalie arena": "benchmark-international-arena"
+    "1914 plant city high school community center 605 n collins street plant city": "1914-plant-city-high-school-community-center",
+    "al lopez park 4810 n himes ave tampa": "al-lopez-park",
+    "coquina beach gulf drive south bradenton beach anna maria island": "coquina-beach",
+    "corey avenue st pete beach": "corey-avenue",
+    "corey avenue st pete beach 363 corey ave": "corey-avenue",
+    "cotanchobee fort brooke park 601 water st along the riverwalk": "cotanchobee-fort-brooke-park",
+    "hillsborough county fairgrounds 215 sydney washer rd dover": "hillsborough-county-fairgrounds",
+    "hillsborough county fairgrounds 215 sydney washer road dover": "hillsborough-county-fairgrounds",
+    "hunsader farms 5500 c r 675 bradenton": "hunsader-farms",
+    "largo central park 101 central park dr largo": "largo-central-park",
+    "sims park downtown new port richey": "sims-park",
+    "st armands circle 1 st armands circle sarasota": "st-armands-circle",
+    "treasure island beach 10400 gulf blvd treasure island": "treasure-island-beach"
   }
 }

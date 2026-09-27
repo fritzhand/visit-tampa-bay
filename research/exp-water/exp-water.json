@@ -107,9 +107,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Boulevard, Slip #55.",
         "url": "https://yachtstarship.com/",
         "booking_url": "https://yachtstarship.com/event/clearwater-dinner-cruise/",
@@ -132,7 +132,8 @@
           "https://yachtstarship.com/dining-cruise-information/",
           "https://www.visitstpeteclearwater.com/profile/yacht-starship-dining-cruises-clearwater/138342"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "lost-pearl-pirate-ship",
@@ -160,7 +161,7 @@
         "price_text": "Adult: starts at $34.95; Child (ages 2-12): starts at $29.95; plus tax and fees.",
         "is_free": false,
         "schedule_text": "Public cruises Friday-Sunday, plus school holidays and special events; sunset cruises on select dates.",
-        "summary": "A 1.5-hour pirate-themed cruise from downtown Tampa for all ages, with pirate skits, games and water-cannon battles for children and a full bar for adults. The crew looks for dolphins but does not guarantee sightings.",
+        "summary": "A 1.5-hour pirate-themed cruise from downtown Tampa for all ages: children train as pirates with games and water-cannon battles while adults can use the full bar (drinks and snacks are extra). The crew looks for dolphins but does not guarantee sightings.",
         "quote": "Come aboard the Lost Pearl for a 1.5-hour pirate adventure out in Tampa Bay! Become a part of our pirate crew with swashbuckling training, water gun battles and more!",
         "quote_source": "https://tampapirateship.com/",
         "status": "open",
@@ -262,7 +263,8 @@
           "https://www.visittampabay.com/listings/paddle-pub-tampa/11529/"
         ],
         "notes": "FAQ: a 15-20 minute halfway stop, typically at docks near Armature Works and Ulele or Rick's on the River.",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "ages_text": "Children are not permitted on public cruises; they are welcome on private cruises with a parent or legal guardian over 25."
       },
       {
         "id": "eboats-tampa",
@@ -329,13 +331,18 @@
           "mini-boat",
           "pontoon"
         ],
-        "source_url": "https://reservations.waverez.com/riverwalkboating",
+        "source_url": "https://riverwalkboating.com/",
         "also_sources": [
-          "https://www.visittampabay.com/listings/riverwalk-boating-co/11404/",
-          "https://riverwalkboating.com/"
+          "https://reservations.waverez.com/riverwalkboating",
+          "https://www.visittampabay.com/listings/riverwalk-boating-co/11404/"
         ],
-        "notes": "riverwalkboating.com returned a bot challenge (HTTP 202); prices left null. Booking page lists Mini-Powerboat Rental, Retro Boat Rental (up to 4 people), Private Pontoon Boat Rental with Captain (up to 6 people).",
-        "checked": "2026-09-27"
+        "notes": "Verifier 2026-09-27: riverwalkboating.com was read with WebFetch (curl gets a bot challenge); prices, hours, durations and the age rule come from its boat cards and FAQ. Booking page (waverez) lists Mini-Powerboat Rental, Retro Boat Rental (up to 4 people), Private Pontoon Boat Rental with Captain (up to 6 people).",
+        "checked": "2026-09-27",
+        "duration_text": "Mini-powerboat and retro boat 1-2 hours; captained pontoon 2 hours",
+        "price_text": "Mini-powerboat (2 people) from $89; retro boat (4 people) from $119; private pontoon with captain (up to 6) from $399.",
+        "is_free": false,
+        "schedule_text": "Open 7 days a week, 10 AM to 30 minutes before sunset; earlier times may be available by phone.",
+        "ages_text": "Drivers must be at least 18; passengers can be any age. No boating license needed: bring a government ID and a credit card ($250 pre-authorization hold at check-in)."
       },
       {
         "id": "tampa-athletic-club-adventure-rowing",
@@ -495,11 +502,11 @@
         "geo_source": "census",
         "departs_place": "tampa-convention-center",
         "departs_text": "Planned docks: Tampa Convention Center in downtown Tampa and the Vinoy Yacht Basin in downtown St. Petersburg.",
-        "url": "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/",
+        "url": "https://tampabayferry.com/",
         "duration_text": "Expected approximately 45 to 50 minutes each way.",
         "summary": "A planned ferry between downtown Tampa and downtown St. Petersburg that succeeds the former Cross-Bay Ferry. PSTA bought two vessels, Bay Breeze and Clipper, for the service, which Hubbard's will operate.",
         "status": "opening-soon",
-        "status_note": "Not yet running as of Sep 27, 2026. PSTA (June 22, 2026): no launch date confirmed. St. Pete Rising (Aug 18, 2026): service expected to launch later in 2026 after refurbishment and inspections, seven days a week, one-way fares targeted at $10 with discounts planned for seniors and riders with disabilities; schedule not yet final.",
+        "status_note": "Not yet running as of Sep 27, 2026: the service's own site (tampabayferry.com) says 'SERVICE COMING SOON'. PSTA (June 22, 2026): no launch date confirmed. St. Pete Rising (Aug 18, 2026): launch expected later in 2026 after refurbishment and inspections, seven days a week, one-way fares targeted at $10 with discounts planned for seniors and riders with disabilities; schedule not yet final.",
         "tags": [
           "ferry",
           "commuter",
@@ -507,6 +514,7 @@
         ],
         "source_url": "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/",
         "also_sources": [
+          "https://tampabayferry.com/",
           "https://stpeterising.com/home/tampa-bay-ferry-prepares-for-launch-with-two-vessels-and-165-million-grant-for-a-third",
           "https://baynews9.com/fl/tampa/news/2026/04/27/tampa--st--pete-officials-meeting-on-ferry-developments"
         ],
@@ -607,7 +615,7 @@
         "phone": "813-808-6068",
         "duration_text": "Normally between 1½ and 2 hours",
         "schedule_text": "Daytime and evening tours 7 days per week.",
-        "ages_text": "Guests under age 18 must be accompanied by a responsible adult; must be 21 to drink alcohol (photo ID required).",
+        "ages_text": "Children may ride only on full-boat charters (not per-seat public tours), supervised by a parent or guardian over 25; children under 13 must wear their own Coast Guard-approved life jacket. Must be 21 to drink alcohol (valid photo ID).",
         "summary": "Floating tiki-bar cruises on the Hillsborough River past Curtis Hixon Park, the University of Tampa, the Straz Center and Armature Works. Book single seats (up to 6 per booking) or the whole boat for up to 13; BYOB, with a cooler, ice and a Bluetooth speaker provided.",
         "quote": "Along with an incredible time on a floating tiki bar, we will provide a cooler with ice and a Bluetooth sound system.",
         "status": "open",
@@ -777,7 +785,8 @@
           "https://www.visitstpeteclearwater.com/profile/tampa-bay-watch-discovery-center/140858"
         ],
         "notes": "Tours are wheelchair accessible on request (email 24 hours ahead). The same page lists guided kayak tours departing Tampa Bay Watch headquarters in Tierra Verde (no price given).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "st-pete-pier"
       },
       {
         "id": "pier-dolphin-cruises",
@@ -820,7 +829,8 @@
         ],
         "notes": "FAQ: not wheelchair accessible; no pets or service animals on public tours; no outside food or drink on public tours. Founded 1992 per the team page. Prices are on the booking system, not the pages read.",
         "checked": "2026-09-27",
-        "quote_source": "https://pierdolphincruises.com/"
+        "quote_source": "https://pierdolphincruises.com/",
+        "departs_place": "st-pete-pier"
       },
       {
         "id": "the-pelican-egmont-key-tour",
@@ -862,7 +872,8 @@
           "https://www.visitstpeteclearwater.com/profile/pelican-pier-to-paradise-boat-cruises/141219"
         ],
         "notes": "Alcohol, pets, drones, glass and kites are prohibited on Egmont Key (wildlife preserve), per the page. The Pelican also runs a dolphin sightseeing tour, a Sunset Skyway Bridge light show cruise and a Pine Key day trip (not separate records).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "st-pete-pier"
       },
       {
         "id": "st-pete-boat-tours",
@@ -940,10 +951,12 @@
         "source_url": "https://ecomersion.com/weedon-island-kayak-rentals/",
         "also_sources": [
           "https://ecomersion.com/tours/",
+          "https://pinellas.gov/parks/weedon-island-preserve/",
           "https://www.visitstpeteclearwater.com/profile/ecomersion-kayak-tours/140769"
         ],
-        "notes": "Sweetwater Kayaks also advertised Weedon Island rentals (sweetwaterkayaks.wordpress.com), but its main domain now shows unrelated spam and an 'Outdoor Center is Moving' notice, so its current status could not be confirmed and it was left out.",
-        "checked": "2026-09-27"
+        "notes": "Sweetwater Kayaks also advertised Weedon Island rentals (sweetwaterkayaks.wordpress.com), but its main domain now shows unrelated spam and an 'Outdoor Center is Moving' notice, so its current status could not be confirmed and it was left out. Verifier 2026-09-27: Pinellas County's preserve page says the north paddling trail 'is closed at this time' (one of the two self-guided trails).",
+        "checked": "2026-09-27",
+        "departs_place": "weedon-island-preserve"
       },
       {
         "id": "cruisin-tikis-st-petersburg",
@@ -962,22 +975,26 @@
         "lat": 27.773465,
         "lng": -82.63158,
         "geo_source": "census",
-        "departs_text": "300 2nd Ave NE (alternative pickup at 500 1st Ave SE).",
+        "departs_text": "St. Pete Pier, 300 Second Ave NE, on the pier behind Fresco's (location given on the operator's booking page).",
         "url": "https://cruisintikis.com/st-petersburg/",
         "phone": "727-477-8454",
-        "duration_text": "90-120 minutes depending on the tour",
-        "price_text": "Pier Tiki Cruise from $49.95 per person; private cruises from $299; private tiki cruise from $595.",
+        "duration_text": "St. Pete Pier Tiki Cruise 1 hour 30 minutes; private cruises 1.5 or 3 hours",
+        "price_text": null,
         "is_free": false,
-        "ages_text": "Minimum age 6; children under 10 must wear life jackets.",
-        "summary": "Floating tiki-bar cruises around downtown St. Petersburg and the St. Pete Pier with a captain, up to six passengers per boat; bring your own drinks and food (coolers and ice provided).",
+        "ages_text": "Ages 6+.",
+        "summary": "Captained floating tiki-bar cruises around the St. Pete Pier and downtown St. Petersburg: book a seat on the 90-minute pier cruise or a private boat for up to six. Bring your own drinks and food; coolers, ice and a Bluetooth radio are provided.",
         "status": "open",
         "tags": [
           "tiki-boat",
           "byob"
         ],
-        "source_url": "https://cruisintikis.com/st-petersburg/",
-        "notes": "Read with WebFetch (curl got a bot challenge); prices and ages are as the fetch tool reported them and should be re-checked in a browser.",
-        "checked": "2026-09-27"
+        "source_url": "https://fareharbor.com/embeds/book/cruisintikisstpete/items/",
+        "notes": "Verifier 2026-09-27: cruisintikis.com returns a bot challenge to curl, WebFetch and a reader proxy, so the prices and life-jacket rule reported earlier could not be confirmed and were removed. Durations, ages, capacity and the location are from the operator's own FareHarbor booking pages (company 'Cruisin' Tikis St. Petersburg').",
+        "checked": "2026-09-27",
+        "booking_url": "https://fareharbor.com/embeds/book/cruisintikisstpete/items/",
+        "also_sources": [
+          "https://cruisintikis.com/st-petersburg/"
+        ]
       },
       {
         "id": "topwater-kayak-outpost",
@@ -1128,7 +1145,7 @@
         "price_text": "Adults (13+) $26.50; children (3-12) $16.50; infants 2 and under listed without a price.",
         "is_free": false,
         "ages_text": "All ages.",
-        "summary": "A narrated cruise on a yellow, open-air boat for up to 120 passengers whose wake draws dolphins to surf and jump alongside. The operator offers a free trip if dolphins do not surf or jump in the wake.",
+        "summary": "A 1.5- to 2-hour narrated sightseeing cruise from StarLite's Corey Causeway dock whose wake draws dolphins to surf and jump alongside. The operator offers a free next trip if dolphins do not surf or jump in the wake.",
         "quote": "We're proud to offer the Dolphin Racer Guarantee: if dolphins don't surf or jump in our wake, your next trip is free.",
         "quote_source": "https://www.starlitecruises.com/dolphin-surfing/dolphin-racer-adventure/",
         "status": "open",
@@ -1196,9 +1213,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd. (the operator warns marina parking is extremely limited during construction).",
         "url": "https://www.starlitecruises.com/starlite-dining-yachts/",
         "booking_url": "https://www.starlitecruises.com/starlite-dining-yachts/starlite-infinity-dining-yacht/",
@@ -1217,7 +1234,8 @@
           "https://www.visitstpeteclearwater.com/profile/starlite-cruises/141610"
         ],
         "notes": "Visit St. Pete/Clearwater still lists a 'StarLite Majesty Dining Yacht' profile; the operator's current fleet pages name Starlite Infinity (Clearwater) and Starlite Horizon (Corey Causeway).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "calypso-queen-clearwater-beach",
@@ -1234,17 +1252,17 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd.",
         "url": "https://www.starlitecruises.com/calypso-tropical-cruises/",
         "booking_url": "https://www.starlitecruises.com/calypso-tropical-cruises/evening-cruise/queen/",
-        "duration_text": "2 hours",
+        "duration_text": "Evening cruise 2 hours; daytime cruise 90 minutes",
         "price_text": "Evening: adults with buffet $52.90, children with buffet $32.90; cruise only $27.95 adults (13+), $20.95 children (3-12). Daytime buffet cruise from $42.90.",
         "is_free": false,
         "ages_text": "All ages.",
-        "summary": "Two-hour daytime and evening cruises on the inland waters off Clearwater Beach with a DJ and an optional tropical buffet; buffet tickets include beer, wine, rum punch and soft drinks.",
+        "summary": "Two-hour evening cruises and 90-minute daytime cruises on Clearwater Harbor with a DJ in the evening, captain's narration by day and an optional tropical buffet; buffet tickets include beer, wine, rum punch and soft drinks.",
         "quote": "Step aboard for two hours of tropical fun on the water—the kind of casual evening where you can show up in shorts, kick back, and let the vacation feeling take over.",
         "status": "open",
         "tags": [
@@ -1256,7 +1274,8 @@
         "also_sources": [
           "https://www.starlitecruises.com/calypso-tropical-cruises/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "calypso-breeze-johns-pass",
@@ -1280,11 +1299,11 @@
         "departs_text": "John's Pass Village & Boardwalk; ticket window by the entrance of the parking garage.",
         "url": "https://www.starlitecruises.com/calypso-tropical-cruises/",
         "booking_url": "https://www.starlitecruises.com/calypso-tropical-cruises/evening-cruise/breeze/",
-        "duration_text": "2 hours",
+        "duration_text": "Evening cruise 2 hours",
         "price_text": "Evening: adults with buffet $52.90, children with buffet $32.90; cruise only $27.90 adults (13+), $20.95 children (3-12). Daytime buffet cruise from $42.90.",
         "is_free": false,
         "ages_text": "All ages.",
-        "summary": "Two-hour daytime and evening cruises from the John's Pass Boardwalk over Madeira Beach waters with a DJ and an optional tropical buffet; the daytime cruise adds captain's narration.",
+        "summary": "Two-hour evening cruises and daytime cruises with captain's narration from the John's Pass Boardwalk over Madeira Beach waters, with a DJ in the evening and an optional tropical buffet (beer, wine, rum punch and soft drinks included with buffet tickets).",
         "quote": "Hop aboard at the John's Pass Boardwalk for two hours of tropical fun on the water—a casual evening cruise where shorts and sandals are perfectly fine.",
         "status": "open",
         "tags": [
@@ -1315,9 +1334,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Boulevard; check in at ticket booth #4 (Calypso Queen/Tiki Island Cruises).",
         "url": "https://www.starlitecruises.com/tiki-island-cruises/",
         "booking_url": "https://www.starlitecruises.com/tiki-island-cruises/tiki-getaway-byob/",
@@ -1335,7 +1354,8 @@
           "stairs-only"
         ],
         "source_url": "https://www.starlitecruises.com/tiki-island-cruises/tiki-getaway-byob/",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "suncoast-sailing-schooner",
@@ -1358,7 +1378,7 @@
         "phone": "(727) 537-9116",
         "duration_text": "About 2½ hours",
         "ages_text": "Sunset sail recommended for ages 12 and older.",
-        "summary": "Sunset and day sails on the Suncoast Horizon, a two-masted gaff schooner, out through John's Pass into the Gulf (or Boca Ciega Bay when conditions require). Capacity is limited to about 21 guests; BYOB, free parking and a restroom on board.",
+        "summary": "Sunset and day sails on the schooner Suncoast Horizon from Treasure Island through John's Pass into the Gulf. Capacity is limited to about 21 guests; BYOB (coolers with ice available), free parking and a restroom on board.",
         "quote": "Cruise through historic John's Pass and into the open Gulf, experiencing one of the top things to do in Treasure Island, St. Pete Beach, and Madeira Beach.",
         "status": "open",
         "tags": [
@@ -1471,7 +1491,6 @@
         "summary": "A water taxi linking downtown Clearwater, Clearwater Beach Marina and Dunedin Marina, run as a partner of the county transit agency PSTA so you can reach the beach without driving and parking. Reservations are recommended; walk-ons board if there is room.",
         "quote": "Our route services Clearwater and Dunedin with stops at Downtown Clearwater, Clearwater Beach Marina (near Pier 60) and Dunedin Marina (near breweries, shops and restaurants).",
         "status": "open",
-        "status_note": "Fares went up by $1 effective Thursday, September 17, 2026, per the operator's home page; current fares are in the booking widget, not on the pages read.",
         "tags": [
           "water-taxi",
           "transit",
@@ -1481,7 +1500,7 @@
         "also_sources": [
           "https://www.clearwaterferry.com/schedules"
         ],
-        "notes": "The address 100 Drew Street, Clearwater, FL 33767 is the business location in the site's structured data; the zip as given (33767) belongs to the beach and may be an error, so no coordinates were set. Phone is the weather/text line on the schedules page. The getting-around slice may also hold this as transport.",
+        "notes": "The address 100 Drew Street, Clearwater, FL 33767 is the business location in the site's structured data; the zip as given (33767) belongs to the beach and may be an error, so no coordinates were set. Phone is the weather/text line on the schedules page. The getting-around slice may also hold this as transport. Verifier 2026-09-27: The home page says 'EFFECTIVE THURSDAY, SEPTEMBER 17TH, 2026: PSTA's Clearwater Ferry fare prices will be increased by $1.' The fare table is in a booking widget and the FAQ answers load by script, so fares and stop addresses could not be read (moved here from status_note).",
         "checked": "2026-09-27"
       },
       {
@@ -1498,9 +1517,9 @@
         "city": "Clearwater Beach",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Municipal Marina, 25 Causeway Blvd.",
         "url": "https://captainmemo.com/",
         "booking_url": "https://captainmemo.com/reservations/",
@@ -1522,7 +1541,8 @@
           "https://www.visitstpeteclearwater.com/profile/captain-memo-s-pirate-cruise/138378"
         ],
         "notes": "Parking at the marina lot is pay per plate, $1 per hour, per the operator. The page mentions champagne on '4:30pm and 7pm cruises', times not in the current schedule.",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "the-tropics-boat-tours",
@@ -1538,9 +1558,9 @@
         "city": "Clearwater Beach",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Municipal Marina, 25 Causeway Blvd; check in 45 minutes before departure.",
         "url": "https://www.thetropicsboattours.com/",
         "booking_url": "https://www.thetropicsboattours.com/dolphin-exploration-tour",
@@ -1564,7 +1584,8 @@
         ],
         "notes": "Included as an option in Tampa Bay CityPASS per the operator. Prices are in the booking widget, not on the pages read.",
         "checked": "2026-09-27",
-        "quote_source": "https://www.thetropicsboattours.com/"
+        "quote_source": "https://www.thetropicsboattours.com/",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "double-eagle-deep-sea-fishing",
@@ -1580,9 +1601,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Municipal Marina, 25 Causeway Blvd.",
         "url": "https://www.doubleeagledeepseafishing.com/",
         "booking_url": "https://www.doubleeagledeepseafishing.com/rates-reservations/half-day-fishing-trip",
@@ -1604,7 +1625,8 @@
           "https://www.doubleeagledeepseafishing.com/rates-reservations/half-day-fishing-trip"
         ],
         "notes": "Site warns of marina construction traffic (updated Jul 25, 2026). The 12-hour trip block also says 'Trips Available Coming soon', so its schedule is unclear.",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "sea-screamer",
@@ -1621,21 +1643,20 @@
         "city": "Clearwater Beach",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Boulevard.",
         "url": "https://seascreamer.com/",
         "booking_url": "https://fareharbor.com/embeds/book/ssclearwater/?full-items=yes",
         "phone": "(727) 447-7200",
         "duration_text": "Approximately 1 hour",
-        "price_text": "Adults $29.00; children 12 and under $22.00; kids 4 and under one free per adult (includes 7% sales tax).",
+        "price_text": null,
         "is_free": false,
         "schedule_text": "Departs daily at 10:00am, 12:00pm, 2:00pm and 4:00pm.",
         "summary": "A one-hour narrated ride on a 73-foot speedboat past Clearwater Harbor's waterfront homes and out into the Gulf to find dolphins, which often ride its wake. Dolphin sightings are guaranteed; there are two bathrooms and drinks for sale on board.",
         "quote": "Sea Screamer's 73ft. Deep-V design is perfect for the open waters of the Gulf of Mexico where we'll rendezvous with beautiful Atlantic Bottlenose Dolphins.",
         "status": "open",
-        "status_note": "The home page still carries a notice that the slip and booth were damaged in Hurricanes Helene and Milton and service would resume 'sometime in mid February'; the operator's FareHarbor booking system showed the 10, 12, 2 and 4 o'clock departures bookable for Oct 3, 2026 (checked Sep 27, 2026).",
         "tags": [
           "speedboat",
           "dolphins",
@@ -1645,7 +1666,9 @@
         "also_sources": [
           "https://www.visitstpeteclearwater.com/profile/sea-screamer/138558"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: the home page shows two ticket tables (Adults $29.00 / Children 12 & Under $22.00, and Adults $27.00 / Children $20.00, kids 4 and under one free per adult), so price_text is left null. The home page still carries the post-Helene/Milton notice ('ready to go find dolphins for you sometime in mid February'), but the operator's FareHarbor calendar (company SSClearwater) lists 10:00, 12:00, 14:00 and 16:00 departures bookable every day in October 2026; FareHarbor gives the location as 25 Causeway Boulevard, Slip #7, Booth #11.",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "little-toot-dolphin-adventure",
@@ -1662,16 +1685,16 @@
         "city": "Clearwater Beach",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd., Slip 12.",
         "url": "https://www.littletoot.us/",
         "phone": "727-446-5503",
         "price_text": "Adults (13+): day tours $27.10, sunset tours $31.78; children 3-12: day $19.63, sunset $24.30; plus tax. Infants 0-2 free (must be on the booking).",
         "is_free": false,
         "schedule_text": "Little Toot II daily at 11am, 1pm, 3pm, 5pm and a sunset tour; Original Little Toot select days at 10am, 12pm, 2pm and 4pm.",
-        "summary": "Tugboat-style dolphin and sightseeing tours of Clearwater Harbor and the Gulf on two boats, the Original Little Toot and Little Toot II. The operator guarantees a dolphin sighting or a free trip within a year.",
+        "summary": "Dolphin and sightseeing tours of Clearwater Harbor and the Gulf on two boats, the Original Little Toot and Little Toot II. The operator guarantees a dolphin sighting or a free trip within a year of the first.",
         "quote": "Dolphin sighting guaranteed! Or your next trip is free within 1 year of 1st trip.",
         "status": "open",
         "tags": [
@@ -1685,7 +1708,9 @@
           "https://www.visitstpeteclearwater.com/profile/little-toot-dolphin-adventure/139598"
         ],
         "notes": "littletoot.com is a parked domain for sale; the operator's site is littletoot.us. Visit St. Pete/Clearwater lists Slip No. 16; the operator's site says Slip 12. Duration not stated on the operator's page (Visit St. Pete/Clearwater: 1-2 hours).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina",
+        "duration_text": "60 to 90 minutes"
       },
       {
         "id": "st-nicholas-boat-line",
@@ -1794,14 +1819,16 @@
         "ages_text": "All ages.",
         "summary": "A one-hour eco-boat cruise in Clearwater Bay run by the aquarium, with talk about the local dolphin population and a loop around a bird sanctuary island.",
         "quote": "Explore Clearwater Bay during this 60-minute eco-boat cruise. Learn about members of our local dolphin population, travel around a bird sanctuary island, and view seasonal local wildlife.",
-        "status": "open",
+        "status": "seasonal",
         "tags": [
           "aquarium",
           "dolphins"
         ],
         "source_url": "https://www.cmaquarium.org/experiences/dolphin-wildlife-tour/",
         "notes": "Same admission contradiction as the Sea Life Safari page.",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "status_note": "The aquarium's page lists this tour's days as 'Seasonal' (page updated Feb 18, 2025); book online to see dates and times.",
+        "season_text": "Seasonal (dates on the aquarium's booking system)."
       },
       {
         "id": "hubbards-marina-deep-sea-fishing",
@@ -1817,9 +1844,9 @@
         "city": "Madeira Beach",
         "state": "FL",
         "zip": "33708",
-        "lat": 27.78636,
-        "lng": -82.780745,
-        "geo_source": "census",
+        "lat": 27.784664,
+        "lng": -82.782252,
+        "geo_source": "photon",
         "departs_place": "johns-pass-village",
         "departs_text": "Hubbard's Marina, John's Pass, Madeira Beach.",
         "url": "https://www.hubbardsmarina.com/deep-sea-fishing-trips/",
@@ -1828,7 +1855,7 @@
         "price_text": "5-hour day $84.95 (9-12 miles out); 5-hour shark $180; 10-hour $139.45; 12-hour night $184.95; 12-hour Extreme $399 + tax; 39-hour $499 + tax; 44-hour $599 + tax.",
         "is_free": false,
         "schedule_text": "Office open daily 6:00 AM to 8:00 PM; closed Easter, Thanksgiving, Christmas.",
-        "summary": "Walk-on party-boat fishing from John's Pass, from five-hour trips about 9 to 12 miles out to multi-day long-range trips 100 miles or more into the Gulf; private charters too. The family has run the marina since 1928.",
+        "summary": "Party-boat fishing from Hubbard's Marina at John's Pass, from five-hour trips 9 to 12 miles out to 39- and 44-hour long-range trips 70 to 120 miles into the Gulf; private charters too. Hubbard's says the family has run the marina since 1928.",
         "quote": "Family owned and operated since 1928, Hubbard's Marina offers deep sea fishing, dolphin watching, island adventures, private charters, and unforgettable experiences on Florida Gulf Coast.",
         "status": "open",
         "tags": [
@@ -1858,19 +1885,19 @@
         "city": "Madeira Beach",
         "state": "FL",
         "zip": "33708",
-        "lat": 27.78636,
-        "lng": -82.780745,
-        "geo_source": "census",
+        "lat": 27.784664,
+        "lng": -82.782252,
+        "geo_source": "photon",
         "departs_place": "johns-pass-village",
-        "departs_text": "Hubbard's Marina at John's Pass; arrive 30-45 minutes early.",
+        "departs_text": "Hubbard's Marina, John's Pass Village, Madeira Beach.",
         "url": "https://www.hubbardsmarina.com/dolphin-watching-cruises/",
         "phone": "(727) 393-1947",
         "duration_text": "90 mins",
-        "price_text": "Ages 12-64 $29.95; 65+ $26.50; ages 3-11 $14.95; 2 and under no charge.",
+        "price_text": "Adult (12-64) $29.95; senior (65+) $26.95; child (3-11) $14.95; infants 2 and under free (must be on the reservation).",
         "is_free": false,
-        "schedule_text": "Daily at 1pm and 3pm.",
-        "summary": "A 90-minute cruise through the back-bay waters behind John's Pass past a bird nesting island, a commercial fishing village and waterfront homes, looking for dolphins; if you see none, you ride again free.",
-        "quote": "Beautiful, calm and protected back bay waters while seeing dolphins perhaps manatees, lots of seabirds, bird nesting island, commercial fishing village, and million dollar homes",
+        "schedule_text": "11am, 1pm, 3pm and 5pm daily.",
+        "summary": "A 90-minute narrated cruise from John's Pass over Madeira Beach waters looking for bottlenose dolphins, with views of John's Pass Village and Treasure Island. Hubbard's guarantees dolphin sightings or your next trip is free.",
+        "quote": null,
         "status": "open",
         "tags": [
           "dolphins",
@@ -1880,7 +1907,8 @@
         "also_sources": [
           "https://www.visitstpeteclearwater.com/profile/hubbards-marina-dolphin-watch/139493"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verifier 2026-09-27: the page is behind a JavaScript (Sucuri) challenge for curl; read with WebFetch twice. It gives senior $26.95 (record had $26.50) and departures 11am, 1pm, 3pm, 5pm daily (record had 1pm and 3pm). The earlier quote could not be found on the page and was removed; the arrive-early instruction was not found either."
       },
       {
         "id": "hubbards-egmont-key-ferry",
@@ -1943,8 +1971,8 @@
         "duration_text": "90-minute cruise around Boca Ciega Bay",
         "price_text": "Ages 12-64 $42.00; 65+ $39.00; ages 3-11 $32.00; 2 and under $12.00. All-you-can-drink premium beverage add-on $15.",
         "is_free": false,
-        "schedule_text": "Daily cruises at 11:30 AM, 1:30 PM and 4:30 PM; Ghost Ship cruises on weekends in October.",
-        "summary": "A 90-minute cruise on a 46-foot, two-level replica pirate ship with a costumed crew, water-gun and sword play, treasure hunts and dolphin watching in Boca Ciega Bay.",
+        "schedule_text": "Departures 11:30 AM, 1:30 PM, 4:30 PM and 7:00 PM (times may vary; see the operator's calendar); Ghost Ship cruises on weekends in October.",
+        "summary": "A 90-minute cruise around Boca Ciega Bay on a 46-foot, two-level pirate ship whose crew stays in character, with a water-gun battle, a treasure hunt, pirate stories, music and dolphin watching.",
         "quote": "This bi-level, 46-foot U.S. Coast Guard-inspected pirate ship can hold up to 46 passengers.",
         "status": "open",
         "tags": [
@@ -1979,7 +2007,7 @@
         "departs_place": "johns-pass-village",
         "departs_text": "John's Pass Village, 140 Boardwalk Pl. W.",
         "url": "https://boattoursjohnspass.com/dolphin-quest-sightseeing/",
-        "phone": "727-423-7824",
+        "phone": "(727) 392-7090",
         "duration_text": "90 minutes; sunset eco-tour about 75-90 minutes",
         "price_text": "Ages 12-64 $29.95; 65+ $26.95; ages 3-11 $14.95. All-you-can-drink add-on $13.",
         "is_free": false,
@@ -2061,7 +2089,7 @@
         "schedule_text": "7 days a week; four boats go out twice a day; reservations required.",
         "summary": "A half-day boat trip that watches for dolphins riding the wake, then lands on Egmont Key to explore the lighthouse, fort ruins and beaches and snorkel in the shallows; the boat and its bathroom stay at the island.",
         "quote": "Egmont Key snorkeling is particularly well suited for the novice, because the water is so frequently clear, calm, shallow, and full of life.",
-        "status": "open",
+        "status": "temporarily-closed",
         "tags": [
           "egmont-key",
           "snorkeling",
@@ -2071,8 +2099,9 @@
         "also_sources": [
           "https://www.visitstpeteclearwater.com/profile/dolphin-snorkeling-cruise/138953"
         ],
-        "notes": "No pets (including service animals) on the island, per the page.",
-        "checked": "2026-09-27"
+        "notes": "No pets (including service animals) on the island, per the page. Verifier 2026-09-27: The home page's notice is an image (wp-content/uploads/2026/09/cpt-frank-notice.png); read by downloading and viewing it. The rest of the page still describes the 7-days-a-week schedule.",
+        "checked": "2026-09-27",
+        "status_note": "On hold: a notice image posted on the operator's home page in September 2026 says its captain, Captain Frank, died recently and 'until we get back on board all cruises are on hold and deposits refunded'. No restart date is given."
       },
       {
         "id": "makin-waves-clearwater-beach",
@@ -2098,7 +2127,7 @@
         "duration_text": "Jet ski 30 minutes-1 hour; paddleboard or kayak 1 hour",
         "price_text": "Jet ski freestyle from $70; paddleboard and kayak rental from $30; $10 off jet ski rental before 12pm.",
         "is_free": false,
-        "summary": "Beach concession on Clearwater Beach renting jet skis, paddleboards, kayaks, chairs and umbrellas; a boater test is part of the jet ski booking.",
+        "summary": "Beach concession behind Shephard's Beach Resort on Clearwater Beach renting jet skis, paddleboards, kayaks, chairs and umbrellas. Jet ski riders born after Dec 31, 1987 must show a boating safety certificate; the operator links to an online test.",
         "quote": "Take off on a Jet Ski, cruise on a Paddle Board, or explore the water by Kayak!",
         "status": "open",
         "tags": [
@@ -2115,8 +2144,8 @@
       },
       {
         "id": "pier-60-parasailing",
-        "name": "Pier 60 Parasailing",
-        "operator": "Pier 60 Parasailing (Clearwater Parasail)",
+        "name": "Clearwater Parasail (Pier 60 Parasailing)",
+        "operator": "Clearwater Parasail",
         "kind": "parasail-jetski",
         "topics": [
           "water",
@@ -2124,30 +2153,30 @@
           "beaches"
         ],
         "area": "clearwater-beach",
-        "address": "455 E Shore Dr, Clearwater Beach, FL 33767",
         "city": "Clearwater Beach",
         "state": "FL",
-        "zip": "33767",
-        "lat": 27.980434,
-        "lng": -82.825656,
-        "geo_source": "census",
-        "departs_text": "455 E Shore Dr., Clearwater Beach.",
+        "departs_text": "On the sand next to Pier 60, Clearwater Beach (per the booking page); the older pier60parasail.co site gives 455 E Shore Dr.",
         "url": "https://pier60parasail.co/",
-        "booking_url": "https://fareharbor.com/embeds/book/clearwaterparasail/?full-items=yes",
-        "phone": "(727) 383-1012",
-        "duration_text": "Flight approx. 10 minutes",
-        "price_text": "Per person: 1,200 ft $99; 1,000 ft $89; 800 ft $79. Photo service $45 per group.",
+        "booking_url": "https://fareharbor.com/embeds/book/clearwaterparasail/items/?full-items=yes",
+        "phone": "(727) 513-2979",
+        "duration_text": "About 1 hour total trip; 10-12 minutes in the air",
+        "price_text": "1,000 ft flight $89 per person (booking page). The older pier60parasail.co page also lists 1,200 ft $99, 800 ft $79 and a $45 photo service per group.",
         "is_free": false,
-        "ages_text": "Minimum age 5; under 18 need a parent's waiver signature; children under 14 must fly with someone 14 or older.",
-        "summary": "Parasail flights at 800 to 1,200 feet off Clearwater Beach from a boat carrying up to 12 passengers; you may fly with a partner, and a photo package is extra.",
+        "ages_text": "Ages 5 and up; under 14 must fly with someone 14 or older; under 18 need a parent's signature on the waiver. Minimum 2 people per flight (no solo), maximum combined weight 475 lbs.",
+        "summary": "Parasail flights off Clearwater Beach from a boat carrying up to 12 passengers, departing from the sand next to Pier 60; you fly in pairs or threes, about 10-12 minutes in the air.",
         "quote": "One Parasail Flight at your desired height will last approximately 10 minutes.",
         "status": "open",
         "tags": [
           "parasail"
         ],
-        "source_url": "https://pier60parasail.co/",
-        "notes": "The site's copyright line says 2022; its booking button goes to FareHarbor company 'Clearwater Parasail', which showed bookable departures for Oct 3, 2026 (checked Sep 27, 2026). Despite the name, the departure address is on East Shore Drive, not at Pier 60.",
-        "checked": "2026-09-27"
+        "source_url": "https://fareharbor.com/embeds/book/clearwaterparasail/items/?full-items=yes",
+        "notes": "Verifier 2026-09-27: pier60parasail.co (copyright 2022) links to two FareHarbor companies; 'pier60parasail' no longer exists and 'clearwaterparasail' (Clearwater Parasail) is the live one, with bookable departures every 45 minutes from 7:30 AM to 6:00 PM through October 2026. Its item text: 'CLEARWATER BEACH'S ONLY PARASAIL COMPANY LOCATED DIRECTLY ON THE SAND! CENTRALLY LOCATED RIGHT NEXT TO PIER 60'. The old site's 455 E Shore Dr is the Courtyard hotel at the marina, so the address and census point were dropped in favor of departs_place pier-60.",
+        "checked": "2026-09-27",
+        "departs_place": "pier-60",
+        "quote_source": "https://pier60parasail.co/",
+        "also_sources": [
+          "https://pier60parasail.co/"
+        ]
       },
       {
         "id": "paddle-pub-clearwater-beach",
@@ -2167,7 +2196,7 @@
         "lat": 27.980434,
         "lng": -82.825656,
         "geo_source": "census",
-        "departs_text": "Courtyard by Marriott Clearwater Beach Marina, 455 E Shore Dr.",
+        "departs_text": "Courtyard by Marriott Clearwater Beach Marina, 455 E Shore Dr. (the page also calls it the Papaya Street Plaza Docks).",
         "url": "https://paddlepub.com/locations/clearwater/",
         "duration_text": "2-hour scenic and sunset cruises; 3-hour sandbar tour",
         "price_text": "2-Hour Scenic Cruise $49; Daily 3-Hour Sandbar Tour from $59.",
@@ -2185,7 +2214,8 @@
         "also_sources": [
           "https://www.visitstpeteclearwater.com/profile/paddle-pub-clearwater-beach/141409"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "phone": "727-516-7977"
       },
       {
         "id": "caladesi-island-ferry",
@@ -2225,7 +2255,8 @@
           "https://caladesiferry.org/"
         ],
         "notes": "Coordinates are the census match for Honeymoon Island State Park's street address, not the ferry dock. The state park page (floridastateparks.org) returned 403, so park-level hurricane status could not be read; Google reviews on the ferry site dated July-August 2026 describe the ferry running. Honeymoon Island State Park charges its own entry fee (not stated on the pages read).",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "honeymoon-island-state-park"
       },
       {
         "id": "river-ventures-manatee-tours",
@@ -2247,7 +2278,7 @@
         "departs_text": "498 S.E. Kings Bay Drive, Crystal River.",
         "url": "https://riverventures.com/swim-with-manatee",
         "phone": "(352) 564-8687",
-        "season_text": "Year-round tours; the U.S. Fish and Wildlife Service calls November 15 - March 31 manatee season in Kings Bay.",
+        "season_text": "The U.S. Fish and Wildlife Service calls November 15 - March 31 manatee season (ranger programs at Three Sisters Springs run daily then).",
         "summary": "Guided swim-and-snorkel tours with manatees in the spring-fed waters of Kings Bay, with wetsuits, snorkel gear and in-water guides provided; private and VIP tours, viewing-only tours and an airboat tour are also offered. The operator says encounters and clear water are never guaranteed.",
         "quote": "We can never guarantee a manatee encounter. Rarely do we not find any animals, but it does happen occasionally.",
         "quote_source": "https://riverventures.com/seasonal-tour-condition",
@@ -2375,7 +2406,7 @@
         "price_text": "Adults 13 and older $39; children 3-12 $31; 2 and under free (must be added as a passenger).",
         "is_free": false,
         "schedule_text": "11:00 AM, 1:30 PM and 4:00 PM daily; sunset cruises also offered.",
-        "summary": "A marine-biologist-led pontoon cruise on Sarasota and Roberts bays with a trawl net to examine sea life, a stop on an uninhabited island and a lookout for dolphins and manatees. Boats are not wheelchair accessible.",
+        "summary": "A marine-biologist-led cruise on 45-foot pontoon boats through Sarasota and Roberts bays, with a trawl net to examine sea life from the bay floor, bird rookery islands and a lookout for dolphins and manatees. The island nature walk is suspended because of Hurricane Helene damage, per the operator; boats are not wheelchair accessible.",
         "quote": "A tour highlight includes collecting and examining marine life using a trawl net, giving guests a hands-on look at the fascinating creatures living on the bay floor.",
         "quote_source": "https://sarasotabayexplorers.com/",
         "status": "open",
@@ -2500,13 +2531,13 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd.",
         "url": "https://www.schoonerclearwater.com/",
         "phone": "(727) 366-3667",
-        "duration_text": "Afternoon and sunset sails 2 hours (a 2.5-hour sail is also listed)",
+        "duration_text": "Afternoon and sunset sails 2 hours; private charters 2.5 hours",
         "summary": "Small-group afternoon and sunset sails on a 52-foot schooner off Clearwater Beach, limited to 22 guests, with no set route or narration; bring your own drinks.",
         "quote": "No set route, no narration. Just pure wind-powered sailing.",
         "status": "open",
@@ -2520,7 +2551,8 @@
           "https://www.visitstpeteclearwater.com/profile/schooner-clearwater/139003"
         ],
         "notes": "Visit St. Pete/Clearwater gives Boat Slip #20. Prices are in the booking system.",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "sailing-satori-st-pete",
@@ -2570,18 +2602,18 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33767",
-        "lat": 27.977072,
-        "lng": -82.828642,
-        "geo_source": "census",
+        "lat": 27.976821,
+        "lng": -82.826335,
+        "geo_source": "photon",
         "departs_text": "Clearwater Beach Marina, 25 Causeway Blvd., Slip #52.",
         "url": "https://queenfleet.com/",
         "booking_url": "https://queenfleet.com/rates/",
         "phone": "(727) 446-7666",
         "duration_text": "Half day 4 hours; all day 8 hours",
-        "price_text": "Half day: adults $69, children 12 and under $44, rod rental $8. All day: $99, rod rental $15.",
+        "price_text": "Half day: adults $69, children 12 and under $44, rod rental $8. All day: adults $99, children 12 and under $69, rod rental $15.",
         "is_free": false,
         "schedule_text": "Half day 8:00 AM-12:00 PM and 1:30-5:30 PM; all day 8:30 AM-4:30 PM.",
-        "summary": "Party-boat bottom fishing from Clearwater Beach: half-day trips on the 90-foot Super Queen (up to 150 passengers) and all-day grouper trips on the 75-foot Gulf Queen; the crew helps beginners and fillets the catch.",
+        "summary": "Party-boat bottom fishing from Clearwater Beach Marina: four-hour half-day trips on the 90-foot Super Queen (licensed for up to 150 passengers) and all-day trips on the 75-foot Gulf Queen.",
         "quote": "With the ability to charter up to 150 passengers, Queen Fleet is the premiere fishing charter in the Tampa Bay area.",
         "quote_source": "https://queenfleet.com/",
         "status": "open",
@@ -2595,7 +2627,8 @@
           "https://queenfleet.com/",
           "https://queenfleet.com/contact-us/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "departs_place": "clearwater-beach-marina"
       },
       {
         "id": "wet-rentals-clearwater-beach",
@@ -2615,11 +2648,11 @@
         "lat": 27.968425,
         "lng": -82.828372,
         "geo_source": "census",
-        "departs_text": "Rental points at 521 S Gulfview Blvd, 25 Causeway Blvd (Clearwater Beach Marina) and the Sheraton Sand Key Resort.",
+        "departs_text": "Several rental points: Holiday Inn Clearwater Beach (521 S Gulfview Blvd), JW Marriott Clearwater Beach (691 S Gulfview Blvd), Chart House Suites (850 Bayway Blvd), Sheraton Sand Key (1160 Gulf Blvd), Marriott Suites on Sand Key (1201 Gulf Blvd) and the Clearwater Beach Marina, 25 Causeway Blvd (guided jet ski tours, sunset/dolphin and tiki boat tours).",
         "url": "https://getwetfl.com/jet-ski-rentals-clearwater-beach-fl/",
         "phone": "(727) 503-0700",
-        "duration_text": "Freestyle rentals 30 minutes or 1 hour; guided jet ski tours 90 minutes or 2 hours",
-        "summary": "Jet ski, JetCar and water-trike rentals and guided jet ski island tours on Clearwater Beach, plus sunset and dolphin boat tours.",
+        "duration_text": "Freestyle rentals 30 minutes or 1 hour; guided jet ski tours 90 minutes or 2 hours; sunset/dolphin and tiki boat tours 90 minutes",
+        "summary": "Jet ski, JetCar, water-trike, boat and banana-boat rentals at Clearwater Beach and Sand Key hotels, plus guided jet ski tours and 90-minute sunset, dolphin and tiki boat tours from the Clearwater Beach Marina.",
         "quote": "Wet Rentals & Tours offers the best watercraft experiences on the Gulf Coast — from freestyle jet ski rides to guided island tours and sunset cruises.",
         "status": "open",
         "tags": [
@@ -2628,7 +2661,7 @@
           "guided"
         ],
         "source_url": "https://getwetfl.com/jet-ski-rentals-clearwater-beach-fl/",
-        "notes": "Which products run from which of the three rental points is not clear on the page. Prices not on the page.",
+        "notes": "Verifier 2026-09-27: the page's location table lists seven points (it also lists 'H2O Jet Ski Rentals, 25 Causeway Blvd' among them); the point mapped is the Holiday Inn's. Prices not on the page.",
         "checked": "2026-09-27"
       },
       {
@@ -2737,19 +2770,19 @@
           "wildlife"
         ],
         "area": "nature-coast",
-        "address": "2380 NW US Highway 19, Crystal River, FL 34428",
+        "address": "2380 N Suncoast Blvd, Crystal River, FL 34428",
         "city": "Crystal River",
         "state": "FL",
         "zip": "34428",
         "lat": 28.91815,
         "lng": -82.609853,
         "geo_source": "census",
-        "departs_text": "Crystal River Watersports, 2380 NW US Highway 19, Crystal River.",
+        "departs_text": "Crystal River Watersports, 2380 N Suncoast Blvd (US 19), behind the Days Inn.",
         "url": "https://crystalriverwatersports.com/",
         "booking_url": "https://fareharbor.com/embeds/book/crystalriverwatersports/",
         "phone": "352-795-7033",
         "duration_text": "Manatee adventures 3 hours; scalloping 5 hours",
-        "schedule_text": "Open 7 AM-4 PM, 363 days a year (closed Thanksgiving and Christmas).",
+        "schedule_text": "Deluxe and private manatee adventures depart twice daily at 7:30 AM and 11:30 AM; the seasonal VIP tour once daily at 7:30 AM.",
         "season_text": "VIP semi-private manatee tour seasonal November 15 - March 31; scalloping July 1 - September 24.",
         "summary": "Dive shop and tour operator in Crystal River offering three-hour manatee snorkel tours (group, semi-private and private), scalloping trips in season, Rainbow River drift dives, sunset cruises and mermaid experiences.",
         "status": "open",
@@ -2759,12 +2792,12 @@
           "scalloping",
           "scuba"
         ],
-        "source_url": "https://crystalriverwatersports.com/",
+        "source_url": "https://fareharbor.com/embeds/book/crystalriverwatersports/",
         "also_sources": [
-          "https://fareharbor.com/embeds/book/crystalriverwatersports/",
+          "https://crystalriverwatersports.com/",
           "https://www.visittampabay.com/listings/crystal-river-watersports/20618/"
         ],
-        "notes": "Home page read with WebFetch (curl got a bot challenge); durations and seasons are from the operator's FareHarbor product list (read through FareHarbor's public items API, Sep 27, 2026). Prices not read.",
+        "notes": "Verifier 2026-09-27: crystalriverwatersports.com returns a bot challenge to curl and WebFetch, so the shop hours reported earlier could not be confirmed and were replaced by the departure times on the operator's FareHarbor items; address and phone also from FareHarbor (company record and item location 'behind the Days Inn'). Prices not read.",
         "checked": "2026-09-27"
       },
       {
@@ -2788,7 +2821,7 @@
         "departs_text": "On the water side of the Dunedin Causeway, about 1 mile past the drawbridge.",
         "url": "https://www.sailhoneymoon.com/",
         "phone": "(727) 734-0392",
-        "schedule_text": "Summer 9 AM-6 PM; winter 10 AM-5 PM; weather permitting.",
+        "schedule_text": "Open for rentals 7 days a week year round, weather and tides permitting: summer 9 AM-6 PM; winter 10 AM-5 PM.",
         "summary": "Kayak and stand-up paddleboard rentals on St. Joseph Sound at the Dunedin Causeway, a short paddle from Caladesi Island and Honeymoon Island state parks and a string of spoil islands.",
         "quote": "Only a 15 minute paddle from our location, continue to paddle along the edge of the mangrove forest where the water averages only 2 to 5 feet deep",
         "status": "open",

@@ -2176,3 +2176,172 @@
 {"k":"census:6101 johns rd, suite 7, tampa, fl 33634","v":{"lat":28.007468,"lng":-82.547476,"geo_source":"census","matched":"6101 JOHNS RD, TAMPA, FL, 33634"}}
 {"k":"census:3100 s old floral city rd, inverness, fl 34450","v":{"lat":28.810397,"lng":-82.295937,"geo_source":"census","matched":"3100 S OLD FLORAL CITY RD, INVERNESS, FL, 34450"}}
 {"k":"photon:fort cooper state park:28.81,-82.30","v":{"lat":28.808448,"lng":-82.304168,"geo_source":"photon","matched":"Fort Cooper State Park","osm":"R12524793 leisure=nature_reserve"}}
+{"k":"photon:papaya street:27.98,-82.826","v":{"lat":27.979946,"lng":-82.826995,"geo_source":"photon","matched":"Papaya Street, Clearwater, 33767","osm":"W11254545 highway=residential"}}
+{"k":"photon:courtyard clearwater beach marina:27.98,-82.826","v":{"lat":27.980441,"lng":-82.825422,"geo_source":"photon","matched":"Courtyard Clearwater Beach, 455, East Shore Drive, Clearwater Beach, 33767","osm":"W919027025 tourism=hotel"}}
+{"k":"photon:oystercatchers:27.965,-82.56","v":{"lat":27.962262,"lng":-82.549348,"geo_source":"photon","matched":"Oystercatchers, 2900, Bayport Drive, Tampa, 33607","osm":"W477364123 amenity=restaurant"}}
+{"k":"photon:council oak:27.994,-82.37","v":{"lat":28.631652,"lng":-81.538701,"geo_source":"photon","matched":"Council Oak Way, Apopka, 32704","osm":"W1134458933 highway=service"}}
+{"k":"census:800 pass a grille way, st. pete beach, fl 33706","v":{"lat":27.688046,"lng":-82.736246,"geo_source":"census","matched":"800 PASS A GRILLE WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"photon:folly farm:27.99,-82.69","v":null}
+{"k":"photon:folly farm nature preserve:27.99,-82.69","v":null}
+{"k":"census:310 west 7th avenue, tampa, fl 33602","v":{"lat":27.960468,"lng":-82.457829,"geo_source":"census","matched":"310 E 7TH AVE, TAMPA, FL, 33602"}}
+{"k":"photon:john b. sargeant sr. memorial wilderness park:28.06,-82.31","v":null}
+{"k":"photon:hubbard's marina:27.786,-82.78","v":{"lat":27.784664,"lng":-82.782252,"geo_source":"photon","matched":"Hubbard's Marina, 170, Boardwalk Place East, Madeira Beach, 33708","osm":"N7029086365 shop=fishing"}}
+{"k":"photon:sargeant park:28.06,-82.31","v":null}
+{"k":"photon:john b. sargeant park:28.06,-82.31","v":{"lat":28.351038,"lng":-82.214307,"geo_source":"photon","matched":"John S. Burks Memorial Park, 13220, Gene Nelson Road, Dade City, 33525","osm":"W279548642 leisure=park"}}
+{"k":"photon:dolphin landings:27.72,-82.74","v":null}
+{"k":"photon:weedon island preserve:27.85,-82.61","v":{"lat":27.848309,"lng":-82.604247,"geo_source":"photon","matched":"Weedon Island Preserve, Saint Petersburg","osm":"R1004552 leisure=nature_reserve"}}
+{"k":"photon:hillsborough river:28.07,-82.30","v":{"lat":28.095522,"lng":-82.309239,"geo_source":"photon","matched":"Hillsborough River","osm":"R2193512 waterway=river"}}
+{"k":"photon:flint creek:28.07,-82.30","v":{"lat":28.082231,"lng":-82.265548,"geo_source":"photon","matched":"Flint Creek, Thonotosassa","osm":"W1189102937 waterway=stream"}}
+{"k":"census:948 beach road, sarasota, fl 34242","v":{"lat":27.267236,"lng":-82.552858,"geo_source":"census","matched":"948 BEACH RD, SARASOTA, FL, 34242"}}
+{"k":"census:400 benjamin franklin drive, sarasota, fl 34236","v":null}
+{"k":"photon:400 benjamin franklin drive, sarasota, fl 34236:","v":{"lat":27.314872,"lng":-82.579849,"geo_source":"photon","matched":"Ben Franklin Drive, Sarasota, 34236","osm":"W85629424 highway=tertiary"}}
+{"k":"census:8918 midnight pass road, sarasota, fl 34242","v":{"lat":27.22001,"lng":-82.515504,"geo_source":"census","matched":"8918 MIDNIGHT PASS RD, SARASOTA, FL, 34242"}}
+{"k":"census:100 casey key road, nokomis, fl 34275","v":{"lat":27.124991,"lng":-82.470427,"geo_source":"census","matched":"100 CASEY KEY RD, NOKOMIS, FL, 34275"}}
+{"k":"census:4100 harbor drive s, venice, fl 34285","v":{"lat":27.060673,"lng":-82.445239,"geo_source":"census","matched":"4100 HARBOR DR S, VENICE, FL, 34285"}}
+{"k":"photon:siesta beach:27.265,-82.55","v":{"lat":27.265006,"lng":-82.553008,"geo_source":"photon","matched":"Siesta Beach, Siesta Key","osm":"W375950982 natural=beach"}}
+{"k":"photon:caspersen beach:27.06,-82.44","v":{"lat":27.05506,"lng":-82.442035,"geo_source":"photon","matched":"Caspersen Beach, 34285","osm":"N358693288 natural=beach"}}
+{"k":"photon:nokomis beach:27.12,-82.47","v":{"lat":27.126443,"lng":-82.47093,"geo_source":"photon","matched":"Nokomis Beach, 34274","osm":"N154133045 place=quarter"}}
+{"k":"census:7200 battlefield pkwy, bushnell, fl 33513","v":{"lat":28.652429,"lng":-82.126094,"geo_source":"census","matched":"7200 BATTLEFIELD DR, BUSHNELL, FL, 33513"}}
+{"k":"photon:dade battlefield:28.65,-82.13","v":{"lat":28.652235,"lng":-82.129062,"geo_source":"photon","matched":"Dade Battlefield Historic State Park, 7200, Battlefield Parkway, Bushnell, 33513","osm":"W317332457 leisure=park"}}
+{"k":"census:232 n dale mabry hwy, tampa, fl 33609","v":{"lat":27.946836,"lng":-82.505748,"geo_source":"census","matched":"232 N DALE MABRY HWY, TAMPA, FL, 33609"}}
+{"k":"photon:donatello:27.945,-82.506","v":{"lat":27.946955,"lng":-82.506217,"geo_source":"photon","matched":"Donatello, 232, North Dale Mabry Highway, Tampa, 33609","osm":"W1206180809 amenity=restaurant"}}
+{"k":"photon:council oak steaks:27.994,-82.373","v":null}
+{"k":"census:5840 26th st w, bradenton, fl 34207","v":{"lat":27.436931,"lng":-82.587765,"geo_source":"census","matched":"5840 26TH ST W, BRADENTON, FL, 34207"}}
+{"k":"photon:family heritage house:27.46,-82.59","v":{"lat":27.4372,"lng":-82.589748,"geo_source":"photon","matched":"Library and Family Heritage House, 60th Avenue West, South Bradenton, 34207","osm":"W243670019 building=college"}}
+{"k":"photon:temple mound park:27.70,-82.66","v":null}
+{"k":"photon:princess hirrihigua:27.70,-82.66","v":null}
+{"k":"photon:tampa city center:27.946,-82.457","v":{"lat":27.946672,"lng":-82.456989,"geo_source":"photon","matched":"One Tampa City Center, 13801, Tampa Street North, Tampa, 33613","osm":"W106054815 building=office"}}
+{"k":"photon:centro ybor:27.961,-82.442","v":{"lat":27.961083,"lng":-82.441385,"geo_source":"photon","matched":"Centro Ybor, East 8th Avenue, Tampa, 33605","osm":"N1904760778 railway=tram_stop"}}
+{"k":"photon:sponge docks:28.155,-82.757","v":{"lat":28.155818,"lng":-82.762023,"geo_source":"photon","matched":"Sponge Docks, Hope Street, Tarpon Springs, 34689","osm":"N6789382817 amenity=ferry_terminal"}}
+{"k":"photon:tarpon springs visitor center:28.155,-82.757","v":{"lat":28.155554,"lng":-82.758346,"geo_source":"photon","matched":"Chamber of Commerce & Visitor Center, Dodecanese Boulevard, Tarpon Springs, 34689","osm":"W1453911042 information=office"}}
+{"k":"photon:beach welcome center:27.884,-82.850","v":null}
+{"k":"photon:visit sarasota county:27.338,-82.531","v":{"lat":27.358432,"lng":-82.444527,"geo_source":"photon","matched":"Visit Sarasota County Water Tower, Lakewood Ranch Boulevard, 34235","osm":"W32967538 man_made=water_tower"}}
+{"k":"photon:central florida visitor information center:28.22,-81.64","v":null}
+{"k":"census:100 drew street, clearwater, fl 33767","v":null}
+{"k":"photon:100 drew street, clearwater, fl 33767:","v":{"lat":27.968028,"lng":-82.752262,"geo_source":"photon","matched":"Drew Street, Clearwater, 33765","osm":"W797326117 highway=secondary"}}
+{"k":"photon:home2 suites by hilton riverview tampa:27.9378,-82.2859","v":{"lat":27.958783,"lng":-82.53348,"geo_source":"photon","matched":"Homewood Suites by Hilton Tampa Airport/Westshore, 5325, Avion Park Drive, Tampa, 33607","osm":"W523825884 tourism=hotel"}}
+{"k":"photon:urban kai stand up paddleboard rentals, tours and lessons:27.9652,-82.4570","v":null}
+{"k":"photon:clearwater ferry:27.9663,-82.8027","v":{"lat":27.965985,"lng":-82.804465,"geo_source":"photon","matched":"PSTA Clearwater Downtown Ferry Stop, Memorial Causeway, Clearwater, 33767","osm":"N13946242263 amenity=ferry_terminal"}}
+{"k":"photon:visit central florida:28.223,-81.645","v":{"lat":27.981845,"lng":-82.027505,"geo_source":"photon","matched":"Central Florida Aerosapce Academy Staff and Visitor Parking Lot, James C. Ray Dr, Lakeland, 33811","osm":"W731221945 amenity=parking"}}
+{"k":"photon:welcome center:28.223,-81.645","v":{"lat":28.37659,"lng":-81.678886,"geo_source":"photon","matched":"Welcome Center, Splash Road, Four Corners, 34714","osm":"W1473675860 building=yes"}}
+{"k":"photon:central florida welcome center:28.223,-81.645","v":{"lat":27.771297,"lng":-82.663677,"geo_source":"photon","matched":"METRO LGBTQ Welcome Center, 2227, Central Avenue, Saint Petersburg, 33713","osm":"W525639791 information=visitor_centre"}}
+{"k":"photon:adventure court:28.223,-81.645","v":{"lat":28.223154,"lng":-81.645224,"geo_source":"photon","matched":"Adventure Court, 33896","osm":"W11267686 highway=residential"}}
+{"k":"photon:1914 plant city high school:28.019,-82.125","v":{"lat":27.992718,"lng":-82.127725,"geo_source":"photon","matched":"Plant City High School, Raider Place, Plant City, 33563","osm":"W421659102 amenity=school"}}
+{"k":"photon:plant city high school community center:28.019,-82.125","v":null}
+{"k":"photon:bing house:28.0146,-82.116","v":null}
+{"k":"photon:manhattan casino:27.7634,-82.663","v":{"lat":27.763444,"lng":-82.662821,"geo_source":"photon","matched":"The Historic Manhattan Casino Event Hall, 642, 22nd Street South, Saint Petersburg, 33712","osm":"W225042755 building=yes"}}
+{"k":"photon:andrews memorial chapel:28.033,-82.784","v":{"lat":28.034321,"lng":-82.784303,"geo_source":"photon","matched":"Saint Andrews Memorial Chapel, Buena Vista Drive, Dunedin, 34698","osm":"N358704767 amenity=place_of_worship"}}
+{"k":"photon:unitarian universalist:28.1484,-82.7588","v":{"lat":28.148911,"lng":-82.758757,"geo_source":"photon","matched":"Unitarian Universalist Church, Read Street, Tarpon Springs, 34689","osm":"N6867492531 amenity=place_of_worship"}}
+{"k":"photon:indian rocks beach:27.884,-82.850","v":{"lat":27.891338,"lng":-82.845189,"geo_source":"photon","matched":"Indian Rocks Beach","osm":"R1216729 place=village"}}
+{"k":"photon:cockroach bay preserve state park:27.68,-82.51","v":{"lat":27.709375,"lng":-82.456824,"geo_source":"photon","matched":"Cockroach Bay Preserve State Park, Ruskin","osm":"R19060340 leisure=nature_reserve"}}
+{"k":"photon:cockroach bay boat ramp:27.68,-82.51","v":{"lat":27.852052,"lng":-82.633536,"geo_source":"photon","matched":"Sunlit Cove Boat Ramp, Bay Street Northeast, Saint Petersburg, 33702","osm":"N2391007650 leisure=slipway"}}
+{"k":"census:16000 state road 471, lakeland, fl 33809","v":null}
+{"k":"photon:saint leo abbey:28.337,-82.26","v":{"lat":28.3393,"lng":-82.257759,"geo_source":"photon","matched":"Saint Leo Abbey Cemetery, Saint Leo","osm":"W1175065973 landuse=cemetery"}}
+{"k":"photon:16000 state road 471, lakeland, fl 33809:","v":{"lat":28.100442,"lng":-81.952051,"geo_source":"photon","matched":"Days Inn & Suites by Wyndham Lakeland, 4502, North Socrum Loop Road, Lakeland, 33809","osm":"W309003723 tourism=hotel"}}
+{"k":"photon:colt creek state park:28.29,-82.03","v":{"lat":28.282552,"lng":-82.039375,"geo_source":"photon","matched":"Colt Creek State Park","osm":"W84968078 boundary=protected_area"}}
+{"k":"photon:fort cooper state park:28.8,-82.3","v":{"lat":28.808448,"lng":-82.304168,"geo_source":"photon","matched":"Fort Cooper State Park","osm":"R12524793 leisure=nature_reserve"}}
+{"k":"census:3246 east bay dr, holmes beach, fl 34217","v":{"lat":27.492142,"lng":-82.70741,"geo_source":"census","matched":"3246 E BAY DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:561 bay esplanade, clearwater, fl 33767","v":{"lat":27.986463,"lng":-82.824264,"geo_source":"census","matched":"561 BAY ESPLANADE, CLEARWATER, FL, 33767"}}
+{"k":"photon:rick's on the river:27.96,-82.47","v":{"lat":27.962971,"lng":-82.47379,"geo_source":"photon","matched":"Rick's on the River, 2305, North Willow Avenue, Tampa, 33607","osm":"N365331683 amenity=restaurant"}}
+{"k":"census:307 anclote rd, tarpon springs, fl 34689","v":{"lat":28.160802,"lng":-82.765167,"geo_source":"census","matched":"307 ANCLOTE RD, TARPON SPRINGS, FL, 34689"}}
+{"k":"census:4900 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.723379,"lng":-82.74078,"geo_source":"census","matched":"4900 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:3804 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.714133,"lng":-82.738025,"geo_source":"census","matched":"3804 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:3828 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.71435,"lng":-82.738084,"geo_source":"census","matched":"3828 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:3848 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.714532,"lng":-82.738137,"geo_source":"census","matched":"3848 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:1301 gulf way, st. pete beach, fl 33706","v":{"lat":27.691404,"lng":-82.737514,"geo_source":"census","matched":"1301 GULF WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:801 gulf way, st. pete beach, fl 33706","v":{"lat":27.688142,"lng":-82.737847,"geo_source":"census","matched":"801 GULF WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:1 pass-a-grille way, st. pete beach, fl 33706","v":{"lat":27.683258,"lng":-82.736361,"geo_source":"census","matched":"1 PASS A GRILLE WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:6950 beach plaza, st. pete beach, fl 33706","v":{"lat":27.736828,"lng":-82.752045,"geo_source":"census","matched":"6950 BEACH PLZ, ST PETE BEACH, FL, 33706"}}
+{"k":"census:6801 sunset way, st. pete beach, fl 33706","v":{"lat":27.736925,"lng":-82.750169,"geo_source":"census","matched":"6801 SUNSET WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:10650 gulf blvd, treasure island, fl 33706","v":{"lat":27.768605,"lng":-82.769062,"geo_source":"census","matched":"10650 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:10500 gulf blvd, treasure island, fl 33706","v":{"lat":27.7675,"lng":-82.76879,"geo_source":"census","matched":"10500 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11780 gulf blvd, treasure island, fl 33706","v":{"lat":27.775618,"lng":-82.776271,"geo_source":"census","matched":"11780 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11605 gulf blvd, treasure island, fl 33706","v":{"lat":27.774559,"lng":-82.774831,"geo_source":"census","matched":"11605 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:12000 gulf blvd, treasure island, fl 33706","v":{"lat":27.776338,"lng":-82.778073,"geo_source":"census","matched":"12000 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11320 gulf blvd, treasure island, fl 33706","v":{"lat":27.772824,"lng":-82.773081,"geo_source":"census","matched":"11320 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11705 gulf blvd, treasure island, fl 33706","v":{"lat":27.775144,"lng":-82.775506,"geo_source":"census","matched":"11705 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11750 gulf blvd, treasure island, fl 33706","v":{"lat":27.77541,"lng":-82.775996,"geo_source":"census","matched":"11750 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:10700 gulf blvd, treasure island, fl 33706","v":{"lat":27.769085,"lng":-82.769312,"geo_source":"census","matched":"10700 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:10164 gulf blvd, treasure island, fl 33706","v":{"lat":27.762302,"lng":-82.766569,"geo_source":"census","matched":"10164 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11580 gulf blvd, treasure island, fl 33706","v":{"lat":27.774278,"lng":-82.77469,"geo_source":"census","matched":"11580 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11365 gulf blvd, treasure island, fl 33706","v":{"lat":27.773153,"lng":-82.773254,"geo_source":"census","matched":"11365 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11799 gulf blvd, treasure island, fl 33706","v":{"lat":27.775826,"lng":-82.776363,"geo_source":"census","matched":"11799 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11965 gulf blvd, treasure island, fl 33706","v":{"lat":27.776303,"lng":-82.777657,"geo_source":"census","matched":"11965 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:11205 gulf blvd, treasure island, fl 33706","v":{"lat":27.772285,"lng":-82.772247,"geo_source":"census","matched":"11205 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:15015 madeira way, madeira beach, fl 33708","v":{"lat":27.802162,"lng":-82.800168,"geo_source":"census","matched":"15015 MADEIRA WAY, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:601 american legion dr, madeira beach, fl 33708","v":{"lat":27.80959,"lng":-82.794733,"geo_source":"census","matched":"601 AMERICAN LEGION DR, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:14200 gulf blvd, madeira beach, fl 33708","v":{"lat":27.796072,"lng":-82.7952,"geo_source":"census","matched":"14200 GULF BLVD, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:13235 gulf blvd, madeira beach, fl 33708","v":{"lat":27.788638,"lng":-82.786255,"geo_source":"census","matched":"13235 GULF BLVD, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:14711 gulf blvd, madeira beach, fl 33708","v":null}
+{"k":"photon:14711 gulf blvd, madeira beach, fl 33708:","v":{"lat":27.799364,"lng":-82.798574,"geo_source":"photon","matched":"Holiday Isles Resort, 14711, Gulf Boulevard, Madeira Beach, 33708","osm":"W523396829 tourism=hotel"}}
+{"k":"census:14500 gulf blvd, madeira beach, fl 33708","v":{"lat":27.797795,"lng":-82.797323,"geo_source":"census","matched":"14500 GULF BLVD, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:17248 gulf blvd, north redington beach, fl 33708","v":{"lat":27.821,"lng":-82.826163,"geo_source":"census","matched":"17248 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708"}}
+{"k":"census:17001 gulf blvd, north redington beach, fl 33708","v":{"lat":27.818369,"lng":-82.823362,"geo_source":"census","matched":"17001 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708"}}
+{"k":"census:17120 gulf blvd, north redington beach, fl 33708","v":{"lat":27.819742,"lng":-82.82501,"geo_source":"census","matched":"17120 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708"}}
+{"k":"census:18202 gulf blvd, redington shores, fl 33708","v":{"lat":27.833592,"lng":-82.833797,"geo_source":"census","matched":"18202 GULF BLVD, REDINGTON SHORES, FL, 33708"}}
+{"k":"census:68 gulf blvd, indian rocks beach, fl 33785","v":{"lat":27.877343,"lng":-82.850272,"geo_source":"census","matched":"68 GULF BLVD, INDIAN ROCKS BEACH, FL, 33785"}}
+{"k":"census:1350 pasadena ave s, st. petersburg, fl 33707","v":{"lat":27.7562,"lng":-82.737066,"geo_source":"census","matched":"1350 PASADENA AVE S, ST PETERSBURG, FL, 33707"}}
+{"k":"census:2040 gulf blvd, belleair beach, fl 33786","v":{"lat":27.924813,"lng":-82.843006,"geo_source":"census","matched":"2040 GULF BLVD, BELLEAIR BEACH, FL, 33786"}}
+{"k":"photon:heritage village:27.90,-82.79","v":{"lat":27.882084,"lng":-82.809851,"geo_source":"photon","matched":"Heritage Village Path, 33774","osm":"W1190466208 highway=path"}}
+{"k":"census:1201 gulf blvd, clearwater beach, fl 33767","v":{"lat":27.955415,"lng":-82.826899,"geo_source":"census","matched":"1201 GULF BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:500 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.982213,"lng":-82.82698,"geo_source":"census","matched":"500 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:411 st. armands cir, sarasota, fl 34236","v":{"lat":27.318958,"lng":-82.576829,"geo_source":"census","matched":"411 SAINT ARMANDS CIR, SARASOTA, FL, 34236"}}
+{"k":"census:430 s gulfview blvd, clearwater beach, fl 33767","v":null}
+{"k":"census:447 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.979973,"lng":-82.827177,"geo_source":"census","matched":"447 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"photon:430 s gulfview blvd, clearwater beach, fl 33767:","v":{"lat":27.969606,"lng":-82.830226,"geo_source":"photon","matched":"Opal Sands Resort, 430, South Gulfview Boulevard, Clearwater, 33767","osm":"W1527629293 tourism=hotel"}}
+{"k":"census:7 rockaway st, clearwater beach, fl 33767","v":{"lat":27.983569,"lng":-82.827863,"geo_source":"census","matched":"7 ROCKAWAY ST, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:400 coronado dr, clearwater beach, fl 33767","v":{"lat":27.971214,"lng":-82.828867,"geo_source":"census","matched":"400 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:301 s gulfview blvd, clearwater beach, fl 33767","v":null}
+{"k":"photon:301 s gulfview blvd, clearwater beach, fl 33767:","v":{"lat":27.973694,"lng":-82.828807,"geo_source":"photon","matched":"Hyatt Regency, 301, South Gulfview Boulevard, Clearwater Beach, 33767","osm":"W243308177 tourism=hotel"}}
+{"k":"census:100 coronado dr, clearwater beach, fl 33767","v":null}
+{"k":"photon:100 coronado dr, clearwater beach, fl 33767:","v":{"lat":27.97326,"lng":-82.827929,"geo_source":"photon","matched":"SpringHill Suites Clearwater Beach, 309, Coronado Drive, Clearwater Beach, 33767","osm":"W920627360 tourism=hotel"}}
+{"k":"census:385 s gulfview blvd, clearwater beach, fl 33767","v":null}
+{"k":"photon:385 s gulfview blvd, clearwater beach, fl 33767:","v":{"lat":27.971701,"lng":-82.828978,"geo_source":"photon","matched":"The Hiatus Clearwater Beach, Curio Collection by Hilton, 385, South Gulfview Boulevard, Clearwater, 33767","osm":"W1245305248 tourism=hotel"}}
+{"k":"census:395 coronado dr, clearwater beach, fl 33767","v":{"lat":27.972156,"lng":-82.828522,"geo_source":"census","matched":"395 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:309 coronado dr, clearwater beach, fl 33767","v":{"lat":27.973509,"lng":-82.828288,"geo_source":"census","matched":"309 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:521 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.968425,"lng":-82.828372,"geo_source":"census","matched":"521 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:505 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.96852,"lng":-82.82853,"geo_source":"census","matched":"505 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:101 coronado dr, clearwater beach, fl 33767","v":{"lat":27.975796,"lng":-82.828049,"geo_source":"census","matched":"101 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:669 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.988931,"lng":-82.826547,"geo_source":"census","matched":"669 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:18 bay esplanade, clearwater beach, fl 33767","v":{"lat":27.984943,"lng":-82.827235,"geo_source":"census","matched":"18 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:603 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.985511,"lng":-82.826521,"geo_source":"census","matched":"603 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:24 avalon st, clearwater beach, fl 33767","v":{"lat":27.986192,"lng":-82.827636,"geo_source":"census","matched":"24 AVALON ST, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:440 e shore dr, clearwater beach, fl 33767","v":{"lat":27.979997,"lng":-82.825847,"geo_source":"census","matched":"440 E SHORE DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:655 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.966856,"lng":-82.825681,"geo_source":"census","matched":"655 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:423 e shore dr, clearwater beach, fl 33767","v":{"lat":27.979641,"lng":-82.825767,"geo_source":"census","matched":"423 E SHORE DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:231 central ave n, st. petersburg, fl 33701","v":{"lat":27.771263,"lng":-82.636044,"geo_source":"census","matched":"231 CENTRAL AVE, ST PETERSBURG, FL, 33701"}}
+{"k":"census:216 hamden dr, clearwater beach, fl 33767","v":{"lat":27.974354,"lng":-82.827463,"geo_source":"census","matched":"216 S HAMDEN DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:12306 46th ave w, cortez, fl 34215","v":{"lat":27.466215,"lng":-82.685072,"geo_source":"census","matched":"12306 46TH AVE W, CORTEZ, FL, 34215"}}
+{"k":"census:609 cyprus ave, clearwater beach, fl 33767","v":{"lat":27.985969,"lng":-82.825051,"geo_source":"census","matched":"609 CYPRUS AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:115 brightwater dr, clearwater beach, fl 33767","v":{"lat":27.971783,"lng":-82.827326,"geo_source":"census","matched":"115 BRIGHTWATER DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:657 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.988428,"lng":-82.826534,"geo_source":"census","matched":"657 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:419 poinsettia ave, clearwater beach, fl 33767","v":{"lat":27.979548,"lng":-82.826317,"geo_source":"census","matched":"419 POINSETTIA AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:11908 gulf blvd, treasure island, fl 33706","v":{"lat":27.776066,"lng":-82.777304,"geo_source":"census","matched":"11908 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:5800 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.731614,"lng":-82.744421,"geo_source":"census","matched":"5800 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:5405 shore blvd, gulfport, fl 33707","v":{"lat":27.737844,"lng":-82.706556,"geo_source":"census","matched":"5405 SHORE BLVD S, GULFPORT, FL, 33707"}}
+{"k":"census:1401 gulf way, st. pete beach, fl 33706","v":{"lat":27.692118,"lng":-82.737489,"geo_source":"census","matched":"1401 GULF WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:381 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.978876,"lng":-82.827318,"geo_source":"census","matched":"381 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:401 e shore dr, clearwater beach, fl 33767","v":{"lat":27.979363,"lng":-82.825807,"geo_source":"census","matched":"401 E SHORE DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:111 50th ave w, st. pete beach, fl 33706","v":{"lat":27.724622,"lng":-82.741401,"geo_source":"census","matched":"111 50TH AVE W, ST PETE BEACH, FL, 33706"}}
+{"k":"census:140 51st ave w, st. pete beach, fl 33706","v":{"lat":27.725067,"lng":-82.741872,"geo_source":"census","matched":"140 51ST AVE W, ST PETE BEACH, FL, 33706"}}
+{"k":"census:19204 gulf blvd, indian shores, fl 33785","v":{"lat":27.846077,"lng":-82.84238,"geo_source":"census","matched":"19204 GULF BLVD, INDIAN SHORES, FL, 33785"}}
+{"k":"census:10360 gulf blvd, treasure island, fl 33706","v":{"lat":27.76524,"lng":-82.767756,"geo_source":"census","matched":"10360 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:282 107th ave, treasure island, fl 33706","v":{"lat":27.770472,"lng":-82.766142,"geo_source":"census","matched":"282 107TH AVE, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:9630 gulf blvd, treasure island, fl 33706","v":{"lat":27.755914,"lng":-82.762671,"geo_source":"census","matched":"9630 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:229 coronado dr, clearwater beach, fl 33767","v":{"lat":27.974053,"lng":-82.828223,"geo_source":"census","matched":"229 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:214 madonna blvd, tierra verde, fl 33715","v":{"lat":27.690851,"lng":-82.721878,"geo_source":"census","matched":"214 MADONNA BLVD, TIERRA VERDE, FL, 33715"}}
+{"k":"census:12600 gulf blvd, treasure island, fl 33706","v":{"lat":27.780119,"lng":-82.781237,"geo_source":"census","matched":"12600 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"photon:wesley chapel:28.2,-82.35","v":{"lat":28.186601,"lng":-82.366121,"geo_source":"photon","matched":"Wesley Chapel, Wesley Chapel, 33559","osm":"W33612683 place=town"}}
+{"k":"photon:the shops at wiregrass:28.2,-82.35","v":{"lat":28.188304,"lng":-82.349507,"geo_source":"photon","matched":"The Shops at Wiregrass, Paseo Drive, Wesley Chapel, 33543","osm":"W116554651 shop=mall"}}
+{"k":"photon:merry pier:27.69,-82.73","v":{"lat":27.687919,"lng":-82.736084,"geo_source":"photon","matched":"Merry Pier, 801, Pass A Grille Way, Saint Pete Beach, 33706","osm":"W421131224 shop=fishing"}}
+{"k":"census:100 2nd ave n, st. petersburg, fl 33701","v":{"lat":27.773482,"lng":-82.634074,"geo_source":"census","matched":"100 2ND AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:915 n suncoast blvd, crystal river, fl 34429","v":{"lat":28.887697,"lng":-82.584113,"geo_source":"census","matched":"915 N SUNCOAST BLVD, CRYSTAL RIVER, FL, 34429"}}
+{"k":"census:6990 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.738812,"lng":-82.749393,"geo_source":"census","matched":"6990 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:5313 gulf dr, holmes beach, fl 34217","v":{"lat":27.505958,"lng":-82.713246,"geo_source":"census","matched":"5313 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"photon:discover crystal river:28.895,-82.59","v":{"lat":28.902479,"lng":-82.592601,"geo_source":"photon","matched":"Crystal River, 34429","osm":"R117519 place=village"}}
+{"k":"photon:citrus county visitors bureau:28.895,-82.59","v":null}
+{"k":"photon:tourist information center:28.895,-82.59","v":{"lat":28.459485,"lng":-81.468824,"geo_source":"photon","matched":"Tourist Information Center, 6400, International Drive, Orlando, 32819","osm":"N1541793204 tourism=information"}}
+{"k":"photon:citrus county chamber of commerce:28.895,-82.59","v":null}
+{"k":"photon:visitor center:28.895,-82.59","v":{"lat":28.651123,"lng":-82.125936,"geo_source":"photon","matched":"Visitor Center, Battlefield Drive","osm":"W317335111 information=office"}}
+{"k":"photon:st. pete store:27.773,-82.634","v":{"lat":27.776095,"lng":-82.67864,"geo_source":"photon","matched":"Store Space, 401, 34th Street North, St. Petersburg, 33713","osm":"W1260741267 shop=storage_rental"}}
+{"k":"photon:pier 60 visitor center:27.977,-82.83","v":null}

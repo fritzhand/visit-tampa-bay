@@ -1,99 +1,1093 @@
 [
   {
-    "id": "downtown-tampa",
-    "name": "Downtown Tampa",
-    "region": "tampa",
-    "lat": 27.9506,
-    "lng": -82.4572,
-    "kind": "district",
-    "summary": "Fixture summary for Downtown Tampa.",
+    "id": "apollo-beach",
+    "name": "Apollo Beach & Ruskin",
+    "region": "around",
+    "lat": 27.774155,
+    "lng": -82.40621,
+    "kind": "county-area",
+    "summary": "Unincorporated waterfront communities on Tampa Bay south of Tampa. Apollo Beach has about 55 miles of canals and Tampa Electric's Manatee Viewing Center, where manatees gather in winter in the warm discharge canal of the Big Bend Power Station; the center is open daily from November 1 to April 15. E.G. Simmons Regional Park, north of Ruskin, has a bay beach, a mangrove bird sanctuary, a fishing pier and kayak rentals. Includes Ruskin, Gibsonton and Sun City Center.",
     "known_for": [
-      "the Riverwalk",
-      "Tampa Theatre"
+      "the Manatee Viewing Center",
+      "E.G. Simmons Regional Park",
+      "boating and fishing canals",
+      "the Big Bend Power Station"
     ],
-    "source_url": "https://www.tampa.gov/",
+    "official_url": null,
+    "source_url": "https://www.tampaelectric.com/company/mvc/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Apollo_Beach,_Florida",
+      "https://hcfl.gov/locations/eg-simmons-conservation-park",
+      "https://www.visittampabay.com/media/fast-facts/"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: OSM place=town relation 'Apollo Beach' (Photon). Tampa Electric (read Sep 27, 2026): 'The Manatee Viewing Center and Florida Conservation and Technology Center are closed. We look forward to seeing you when we reopen for the season on November 1, 2026!' County page: E.G. Simmons is 'eighteen miles south of Tampa and three miles north of Ruskin on Tampa Bay'."
+  },
+  {
+    "id": "bradenton-anna-maria",
+    "name": "Bradenton & Anna Maria Island",
+    "region": "daytrips",
+    "lat": 27.498928,
+    "lng": -82.574819,
+    "kind": "county-area",
+    "summary": "The Bradenton Area pairs the city of Bradenton, with its riverwalk, the Village of the Arts and the Bishop Museum of Science and Nature, with Anna Maria Island's white-sand beaches, Pine Avenue shops and the historic Bridge Street Pier. Cortez is one of the oldest working fishing villages, the De Soto National Memorial sits on the Manatee River, and the Gulf Islands Ferry links downtown Bradenton and the island. Includes Palmetto, Ellenton and the north end of Longboat Key.",
+    "known_for": [
+      "Anna Maria Island beaches",
+      "Pine Avenue",
+      "the Cortez fishing village",
+      "the Village of the Arts",
+      "the Bishop Museum of Science and Nature",
+      "the Gulf Islands Ferry"
+    ],
+    "official_url": "https://www.bradentongulfislands.com/",
+    "source_url": "https://www.bradentongulfislands.com/explore/",
+    "also_sources": [
+      "https://www.bradentongulfislands.com/",
+      "https://www.bradentongulfislands.com/discover/beaches/",
+      "https://www.bradentongulfislands.com/beach-conditions/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place relation 'Bradenton' (Photon), downtown Bradenton; Anna Maria Island is about 13 km west. Official URL is the Bradenton Area Convention and Visitors Bureau (Bradenton, Anna Maria Island, Longboat Key). The Bishop Museum has a planetarium and the Parker Manatee Rehabilitation Habitat, per the CVB."
+  },
+  {
+    "id": "brandon",
+    "name": "Brandon & Riverview",
+    "region": "around",
+    "lat": 27.937801,
+    "lng": -82.285925,
+    "kind": "county-area",
+    "summary": "A large unincorporated suburb about 11 miles east of downtown Tampa, with the Brandon Exchange mall and its more than 140 stores. The area also takes in Lithia Springs Park, where a spring that stays at 72 degrees allows swimming all year, and Alafia River State Park, with 17 miles of mountain bike trails. Includes Riverview, Valrico and Seffner.",
+    "known_for": [
+      "Brandon Exchange mall",
+      "Lithia Springs Park",
+      "Alafia River State Park mountain biking"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Brandon,_Florida",
+    "also_sources": [
+      "https://brandonexchange.com/",
+      "https://hcfl.gov/locations/lithia-springs-park",
+      "https://www.visittampabay.com/listings/alafia-river-state-park/5254/",
+      "https://www.visittampabay.com/media/fast-facts/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=town node 'Brandon' (Photon). Wikipedia: unincorporated CDP, 114,626 people (2020). The mall formerly called Westfield Brandon now uses the name Brandon Exchange (its own site). Lithia Springs Park and Alafia River State Park are in Lithia, southeast of Brandon. Visit Tampa Bay's fast facts name Brandon as a major unincorporated area."
   },
   {
     "id": "channel-district",
-    "name": "Channel District",
+    "name": "Channel District & Water Street",
     "region": "tampa",
-    "lat": 27.9436,
-    "lng": -82.448,
+    "lat": 27.946907,
+    "lng": -82.446838,
     "kind": "district",
-    "summary": "Fixture summary for Channel District.",
-    "known_for": [],
-    "source_url": "https://www.tampa.gov/",
-    "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
-  },
-  {
-    "id": "ybor-city",
-    "name": "Ybor City",
-    "region": "tampa",
-    "lat": 27.9601,
-    "lng": -82.4386,
-    "kind": "neighborhood",
-    "summary": "Fixture summary for Ybor City.",
+    "summary": "A former port warehouse district that has become downtown Tampa's most densely residential neighborhood, home to the Florida Aquarium, Sparkman Wharf and the cruise ship terminals. Water Street Tampa, a development of more than 16 city blocks, adds hotels, Benchmark International Arena and the Tampa Bay History Center.",
     "known_for": [
-      "cigar factories",
-      "Seventh Avenue"
+      "the Florida Aquarium",
+      "Sparkman Wharf",
+      "cruise ship terminals",
+      "Benchmark International Arena",
+      "the Tampa Bay History Center",
+      "the American Victory Ship & Museum"
     ],
-    "source_url": "https://www.tampa.gov/",
+    "official_url": "https://www.tampasdowntown.com/neighborhoods/channel-district/",
+    "source_url": "https://www.tampasdowntown.com/neighborhoods/channel-district/",
+    "also_sources": [
+      "https://www.visittampabay.com/channel-district/",
+      "https://www.tampasdowntown.com/neighborhoods/water-street-tampa/",
+      "https://www.tampa.gov/CRAs/channel-district/history"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: OSM locality node 'Channel District' (Photon). TDP: 'the highest concentrated residential community in Tampa's Downtown'; city CRA history: maritime warehouse district serving the Port of Tampa. Arena and History Center are listed on TDP's Water Street Tampa page."
   },
   {
-    "id": "hyde-park",
-    "name": "Hyde Park",
-    "region": "tampa",
-    "lat": 27.9375,
-    "lng": -82.476,
-    "kind": "neighborhood",
-    "summary": "Fixture summary for Hyde Park.",
-    "known_for": [],
-    "source_url": "https://www.tampa.gov/",
+    "id": "clearwater-beach",
+    "name": "Clearwater Beach",
+    "region": "beaches",
+    "lat": 27.977213,
+    "lng": -82.828905,
+    "kind": "beach-town",
+    "summary": "The City of Clearwater's beach, on a barrier island joined to the mainland by the Clearwater Memorial Causeway, with about 2.5 miles of white quartz sand and calm, shallow water just steps from hotels and restaurants. Pier 60 anchors the beach and hosts the nightly Sunsets at Pier 60 celebration with street performers and vendors.",
+    "known_for": [
+      "white quartz sand",
+      "Pier 60 and Sunsets at Pier 60",
+      "pirate, dolphin and dinner cruises",
+      "parasailing and jet skis",
+      "beachfront resorts"
+    ],
+    "official_url": "https://www.myclearwater.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/clearwater-beach",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Clearwater_Beach,_Florida",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: Pier 60 (Photon/OSM pier). Visit St. Pete/Clearwater's beach-conditions page (read Sep 27, 2026): 'All St. Pete-Clearwater beaches are open, with no advisories.' The city lists the Clearwater Beach Marina Replacement Construction Project as ongoing. Cruise and parasail operators named on the Visit St. Pete/Clearwater page: Captain Memo's Pirate Cruise, Little Toot Dolphin Adventure, Starlite Majesty, Chute Em Up Parasail."
+  },
+  {
+    "id": "davis-islands",
+    "name": "Davis Islands",
+    "region": "tampa",
+    "lat": 27.921967,
+    "lng": -82.45565,
+    "kind": "island",
+    "summary": "Two man-made islands at the mouth of the Hillsborough River, dredged and filled in the 1920s land boom by developer D. P. Davis, with many of the original Mediterranean-style buildings still standing. East Davis Boulevard has shops and cafes, a 1.3-mile trail runs to Peter O. Knight Airport, and Tampa General Hospital fills the northern tip.",
+    "known_for": [
+      "1920s Mediterranean-style buildings",
+      "shops and cafes on East Davis Boulevard",
+      "the Davis Islands Trail",
+      "Peter O. Knight Airport and its seaplane basin",
+      "the Davis Island Yacht Club"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Davis_Islands_(Tampa)",
+    "also_sources": [],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=island node (Photon). davisislands.org did not respond when checked."
+  },
+  {
+    "id": "downtown-clearwater",
+    "name": "Downtown Clearwater",
+    "region": "clearwater",
+    "lat": 27.966277,
+    "lng": -82.802664,
+    "kind": "city",
+    "summary": "The mainland City of Clearwater, across the Clearwater Memorial Causeway from the beach, with a walkable downtown, Coachman Park and its BayCare Sound amphitheater, the Bilheimer Capitol Theatre and the Clearwater Marine Aquarium, which cares for rescued dolphins and sea turtles. The Philadelphia Phillies hold spring training here, and Ruth Eckerd Hall and the Countryside area are included in this part of the guide.",
+    "known_for": [
+      "Clearwater Marine Aquarium",
+      "Coachman Park and The BayCare Sound",
+      "the Bilheimer Capitol Theatre",
+      "Ruth Eckerd Hall",
+      "Philadelphia Phillies spring training"
+    ],
+    "official_url": "https://www.myclearwater.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/clearwater",
+    "also_sources": [
+      "https://www.myclearwater.com/",
+      "https://www.visitstpeteclearwater.com/communities/clearwater-beach",
+      "https://en.wikipedia.org/wiki/Clearwater_Beach,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Coachman Park (Photon/OSM park), on the downtown waterfront. Visit St. Pete/Clearwater: 'a state-of-the-art aquarium that's home to two of the world's most famous dolphins' and 'the Spring Training home of the Philadelphia Phillies'. The city site (WebFetch, Sep 27, 2026) has a 'Visit Coachman Park' section naming The BayCare Sound. Countryside is named from SPEC §4.1 (area definition)."
   },
   {
     "id": "downtown-stpete",
     "name": "Downtown St. Petersburg",
     "region": "stpete",
-    "lat": 27.771,
-    "lng": -82.638,
+    "lat": 27.772822,
+    "lng": -82.637804,
     "kind": "district",
-    "summary": "Fixture summary for Downtown St. Petersburg.",
-    "known_for": [],
-    "source_url": "https://www.stpete.org/",
+    "summary": "St. Petersburg's downtown on Tampa Bay, where Beach Drive and a string of bayfront parks lead to the 26-acre St. Pete Pier, and museums including the Dalí and the Museum of Fine Arts are within walking distance. Central Avenue runs west through the Central Arts and EDGE districts, with murals, galleries, bars and music venues such as Jannus Live.",
+    "known_for": [
+      "the St. Pete Pier",
+      "the Dalí Museum",
+      "the Museum of Fine Arts",
+      "Beach Drive restaurants",
+      "murals and galleries on Central Avenue",
+      "the Saturday Morning Market"
+    ],
+    "official_url": "https://www.stpetepartnership.org/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/waterfront-museum-district",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/st-pete-pier",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/central-arts",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/edge-district",
+      "https://stpetepier.org/"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: Williams Park (Photon/OSM park). Visit St. Pete/Clearwater's Waterfront Museum District runs 'between Beach Drive and 3rd St., stretching from 7th Avenue South to 7th Avenue North'; the Central Arts District covers Central Ave from 3rd to 7th Street; the EDGE District runs from Dr. Martin Luther King Jr. Street west to about 16th Street. The Pier's own site marks Janet Echelman's 'Bending Arc' as temporarily closed (Sep 27, 2026). Official URL is the St. Petersburg Downtown Partnership."
   },
   {
-    "id": "old-northeast",
-    "name": "Old Northeast",
-    "region": "stpete",
-    "lat": 27.788,
-    "lng": -82.631,
-    "kind": "neighborhood",
-    "summary": "Fixture summary for Old Northeast.",
-    "known_for": [],
-    "source_url": "https://www.stpete.org/",
+    "id": "downtown-tampa",
+    "name": "Downtown Tampa",
+    "region": "tampa",
+    "lat": 27.94792,
+    "lng": -82.458516,
+    "kind": "district",
+    "summary": "Tampa's central business district, along the Hillsborough River. The 2.6-mile Tampa Riverwalk links its parks, museums and theaters, and the University of Tampa campus in the West Riverfront neighborhood holds the Henry B. Plant Museum.",
+    "known_for": [
+      "the Tampa Riverwalk",
+      "Curtis Hixon Waterfront Park",
+      "Tampa Theatre",
+      "the Straz Center",
+      "Tampa Museum of Art",
+      "the Henry B. Plant Museum at the University of Tampa"
+    ],
+    "official_url": "https://www.tampasdowntown.com/",
+    "source_url": "https://www.tampasdowntown.com/neighborhoods/downtown-core/",
+    "also_sources": [
+      "https://www.tampasdowntown.com/neighborhoods/downtown-river-arts/",
+      "https://www.tampasdowntown.com/neighborhoods/west-riverfront/",
+      "https://thetampariverwalk.com/"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: Lykes Gaslight Park (Photon/OSM park). The Tampa Downtown Partnership divides downtown into seven neighborhoods (Downtown Core, Channel District, Tampa Heights, Central Park, Water Street Tampa, Downtown River Arts, West Riverfront); this area is the Core, River Arts and West Riverfront."
+  },
+  {
+    "id": "dunedin",
+    "name": "Dunedin",
+    "region": "clearwater",
+    "lat": 28.012034,
+    "lng": -82.789212,
+    "kind": "city",
+    "summary": "A small, Scottish-influenced city just north of Clearwater with a walkable, bike-friendly downtown of independent boutiques, cafes and breweries on the Pinellas Trail. The Dunedin Causeway leads to Honeymoon Island State Park, where a ferry leaves for Caladesi Island State Park, and the Toronto Blue Jays train each spring at TD Ballpark.",
+    "known_for": [
+      "downtown breweries, including Dunedin Brewery",
+      "Honeymoon Island State Park",
+      "Caladesi Island State Park",
+      "Scottish heritage",
+      "Toronto Blue Jays spring training at TD Ballpark",
+      "the Pinellas Trail"
+    ],
+    "official_url": "https://www.dunedin.gov/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/dunedin",
+    "also_sources": [
+      "https://www.dunedin.gov/",
+      "https://caladesiferry.org/caladesi-island/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: 350 Main St (Census address match), downtown. Visit St. Pete/Clearwater calls Dunedin Brewery 'Florida's first microbrewery' and the Pinellas Trail a 45-mile path. Caladesi Island Ferry: service 'departs from Honeymoon Island State Park' (caladesiferry.org, read Sep 27, 2026)."
+  },
+  {
+    "id": "east-tampa",
+    "name": "East Tampa & the Fairgrounds",
+    "region": "tampa",
+    "lat": 27.993547,
+    "lng": -82.373013,
+    "kind": "district",
+    "summary": "The city's East Tampa neighborhoods, north of I-4 and east of I-275, and the Orient Road and US 301 area beyond them. Visitors come here for the Seminole Hard Rock Hotel & Casino and the Florida State Fairgrounds, home of the Florida State Fair, the MIDFLORIDA Credit Union Amphitheatre and the Cracker Country living history museum.",
+    "known_for": [
+      "Seminole Hard Rock Hotel & Casino Tampa",
+      "the Florida State Fair",
+      "MIDFLORIDA Credit Union Amphitheatre",
+      "Cracker Country"
+    ],
+    "official_url": null,
+    "source_url": "https://floridastatefairgrounds.com/about-us/",
+    "also_sources": [
+      "https://casino.hardrock.com/tampa",
+      "https://www.midfloridaamp.com/visit",
+      "https://www.tampa.gov/CRAs/East-Tampa",
+      "https://www.tampa.gov/CRAs/east-tampa/history"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Seminole Hard Rock Hotel & Casino, 5223 Orient Rd (Census address match), the area's main visitor draw; the Fairgrounds and amphitheatre are about 1 km east on US 301. City CRA history: East Tampa is bounded by I-4 on the south and I-275 on the west. Hard Rock calls itself home to 'one of the largest casinos in the United States'."
+  },
+  {
+    "id": "fort-de-soto",
+    "name": "Fort De Soto & Tierra Verde",
+    "region": "beaches",
+    "lat": 27.630054,
+    "lng": -82.735749,
+    "kind": "island",
+    "summary": "Fort De Soto, the largest park in the Pinellas County park system, covers 1,136 acres on five connected islands, with beaches, a 236-site campground, a dog beach, a 6.8-mile paved trail and the fort's 12-inch mortar battery, listed on the National Register in 1977. Ferries run from the park to Egmont Key and Shell Key, and Tierra Verde, the boating community on the way in, has marinas, fishing spots and casual restaurants.",
+    "known_for": [
+      "Fort De Soto Park beaches",
+      "the historic fort and mortar battery",
+      "camping",
+      "ferries to Egmont Key and Shell Key",
+      "Tierra Verde marinas"
+    ],
+    "official_url": "https://pinellas.gov/parks/fort-de-soto-park/",
+    "source_url": "https://pinellas.gov/parks/fort-de-soto-park/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/tierra-verde",
+      "https://pinellas.gov/parks/shell-key-preserve/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Fort De Soto County Park (Photon/OSM park relation). Pinellas County: Shell Key Preserve is 1,800 acres and includes one of the county's largest undeveloped barrier islands. Egmont Key State Park's page (floridastateparks.org) refused our fetch, so Egmont Key facts beyond the ferry are not given. For current Fort De Soto closures (pier, road work) see the outdoors slice."
   },
   {
     "id": "grand-central",
-    "name": "Grand Central",
+    "name": "Grand Central & Warehouse Arts District",
     "region": "stpete",
-    "lat": 27.771,
-    "lng": -82.67,
+    "lat": 27.770951,
+    "lng": -82.665868,
     "kind": "district",
-    "summary": "Fixture summary for Grand Central.",
-    "known_for": [],
-    "source_url": "https://www.stpete.org/",
+    "summary": "West of downtown, the Grand Central District runs along Central Avenue from 16th to 31st Street with galleries, shops, breweries and bars; Visit St. Pete/Clearwater calls it the city's original gayborhood. Just south, the Warehouse Arts District fills former industrial buildings with artists' studios, galleries and breweries. The guide also files Tropicana Field here: the Rays' domed ballpark reopened on April 6, 2026, after repairs to roof damage from Hurricane Milton.",
+    "known_for": [
+      "LGBTQ+ bars and shops on Central Avenue",
+      "Warehouse Arts District studios and galleries",
+      "the Imagine Museum",
+      "craft breweries",
+      "Tropicana Field"
+    ],
+    "official_url": null,
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/grand-central",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/warehouse-arts",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/edge-district",
+      "https://en.wikipedia.org/wiki/Tropicana_Field",
+      "https://www.mlb.com/rays/ballpark"
+    ],
     "checked": "2026-09-27",
-    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+    "notes": "Center: 2400 Central Ave (Census address match), mid-district. Visit St. Pete/Clearwater: Grand Central lies 'between 1st Avenues North and South, running from 16th Street to 31st Street'; the Warehouse Arts District lies 'between 16th Street and 31st Street, from 10th Avenue South to 1st Avenue North'. Tropicana Field (1 Tropicana Dr) is listed on Visit St. Pete/Clearwater's EDGE District page; SPEC §4.1 files it here. Not cited as official: grandcentralstpete.com did not respond; warehouseartsdistrictstpete.com now serves an unrelated gambling site."
+  },
+  {
+    "id": "gulfport",
+    "name": "Gulfport",
+    "region": "stpete",
+    "lat": 27.737731,
+    "lng": -82.707131,
+    "kind": "city",
+    "summary": "A small city on Boca Ciega Bay bordering St. Petersburg, with a walkable waterfront district of independent boutiques, galleries and restaurants along Beach and Shore boulevards. The Gulfport Casino, rebuilt in the 1930s at the end of the dock, is on the National Register, and the Gulfport Tuesday Fresh Market runs year-round.",
+    "known_for": [
+      "independent boutiques and galleries",
+      "the Gulfport Casino",
+      "the Gulfport Tuesday Fresh Market",
+      "the Gulfport Night Market",
+      "Clam Bayou Nature Preserve"
+    ],
+    "official_url": "https://visitgulfportflorida.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/gulfport",
+    "also_sources": [
+      "https://visitgulfportflorida.com/",
+      "https://en.wikipedia.org/wiki/Gulfport,_Florida",
+      "https://en.wikipedia.org/wiki/Gulfport_Casino"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Gulfport Casino, 5500 Shore Blvd S (Census address match), in the waterfront district. Visit St. Pete/Clearwater still mentions a twice-monthly Art Walk; the Gulfport Merchants Chamber site says 'Art Walk and IndieFaire are now the Gulfport Night Market.' Official URL is the Gulfport Merchants Chamber's visitor site; the city site (mygulfport.us) returned an empty page to our fetchers."
+  },
+  {
+    "id": "harbour-island",
+    "name": "Harbour Island",
+    "region": "tampa",
+    "lat": 27.938387,
+    "lng": -82.451741,
+    "kind": "island",
+    "summary": "A 177-acre island across the Garrison Channel from downtown, once a rail-served phosphate terminal and developed since 1985 with homes, offices and the Westin Tampa Waterside hotel. The Tampa Convention Center is across the Harbour Island Bridge, and the Channel District is within walking distance.",
+    "known_for": [
+      "the Westin Tampa Waterside",
+      "The Pointe at Harbour Island",
+      "the Harbour Island Bridge to the Tampa Convention Center"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Harbour_Island_(Tampa)",
+    "also_sources": [],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node (Photon). No official neighborhood site found (harbourislandtampa.com redirects to an apparel shop). Westin Tampa Waterside status is for the stays slice to confirm."
+  },
+  {
+    "id": "hyde-park",
+    "name": "Hyde Park & SoHo",
+    "region": "tampa",
+    "lat": 27.935343,
+    "lng": -82.473236,
+    "kind": "neighborhood",
+    "summary": "A historic neighborhood of homes and bungalows first built in the 1880s, next to the University of Tampa and bounded by Bayshore Boulevard and its 4.5-mile waterfront sidewalk. It includes Hyde Park Village, a shopping district of local shops and restaurants, and SoHo, the bar and restaurant strip on South Howard Avenue.",
+    "known_for": [
+      "Bayshore Boulevard",
+      "Hyde Park Village",
+      "SoHo bars and restaurants on South Howard Avenue",
+      "historic homes and bungalows"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Hyde_Park_(Tampa)",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Bayshore_Boulevard",
+      "https://hydeparkvillage.com/",
+      "https://www.tampa.gov/parks-and-recreation/programs/parks-and-facilities/greenways-and-trails/trail-maps/bayshore-trail"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=neighbourhood node 'Hyde Park' (Photon). Hyde Park Village describes itself as 'six city blocks of beloved local shops, restaurants and indie brands'. No neighborhood tourism site; hydeparkvillage.com is the shopping district's site."
+  },
+  {
+    "id": "indian-rocks-beach",
+    "name": "Indian Rocks Beach & Indian Shores",
+    "region": "beaches",
+    "lat": 27.891338,
+    "lng": -82.845189,
+    "kind": "beach-town",
+    "summary": "A long, quieter stretch of beach towns between Clearwater Beach and Madeira Beach, with mom-and-pop shops, small motels and vacation rentals along Gulf Boulevard and miles of beach for shelling and dolphin watching. Indian Shores has the Seaside Seabird Sanctuary, and this area also covers North Redington Beach and Redington Shores.",
+    "known_for": [
+      "quiet beaches for shelling",
+      "small motels and vacation rentals",
+      "the Seaside Seabird Sanctuary",
+      "the Indian Rocks Historical Museum",
+      "beach bars and restaurants on Gulf Boulevard"
+    ],
+    "official_url": "https://www.indian-rocks-beach.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/north-redington-beach-redington-shores",
+      "https://www.visitstpeteclearwater.com/communities/",
+      "https://seasideseabirdsanctuary.org/visit/",
+      "https://www.myindianshores.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place node 'Indian Rocks Beach' (Photon). Visit St. Pete/Clearwater's communities index: 'Mom & pop shops, small motels and vacation rentals abound along three miles'. Seaside Seabird Sanctuary (18328 Gulf Blvd, Indian Shores) lists daily hours, 9 am to 5 pm, free admission (read Sep 27, 2026). Official URL is the City of Indian Rocks Beach; Indian Shores is myindianshores.com."
+  },
+  {
+    "id": "largo",
+    "name": "Largo & Mid-Pinellas",
+    "region": "clearwater",
+    "lat": 27.914918,
+    "lng": -82.785511,
+    "kind": "city",
+    "summary": "Largo is a largely residential city with a natural side: the Florida Botanical Gardens and Heritage Village, Largo Central Park with the Largo Central Railroad, and parks, trails and public golf courses. This area also covers Seminole, a gateway to Madeira Beach and Indian Shores with Lake Seminole Park; Pinellas Park, with the Tampa Bay Automobile Museum and nearby Sawgrass Lake Park; and Belleair and Kenneth City.",
+    "known_for": [
+      "Florida Botanical Gardens",
+      "Heritage Village",
+      "Largo Central Park",
+      "Lake Seminole Park",
+      "Sawgrass Lake Park",
+      "the Pinellas Trail"
+    ],
+    "official_url": "https://www.largo.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/largo",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/seminole",
+      "https://www.visitstpeteclearwater.com/communities/pinellas-park",
+      "https://pinellas.gov/parks/sawgrass-lake-park/",
+      "https://www.largo.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Largo Central Park (Photon/OSM park). Visit St. Pete/Clearwater: 'Largo is Sunshine State suburbia, with residential neighborhoods and small businesses aplenty'; it names Largo Central Railroad. Pinellas County places Sawgrass Lake Park in the unincorporated Lealman community; Visit St. Pete/Clearwater lists it under Pinellas Park. 'central Pinellas' is our description (Visit St. Pete/Clearwater puts Pinellas Park 'about halfway between downtown St. Pete and downtown Clearwater')."
+  },
+  {
+    "id": "lutz-wesley-chapel",
+    "name": "Wesley Chapel & East Pasco",
+    "region": "around",
+    "lat": 28.186601,
+    "lng": -82.366121,
+    "kind": "county-area",
+    "summary": "South and east Pasco County, north of Tampa. Wesley Chapel has The Shops at Wiregrass, the Epperson Lagoon swimming complex and Saddlebrook Resort, with Tampa Premium Outlets to the west; Zephyrhills is known for Skydive City and its World War II airfield museum, and Dade City for a historic downtown around its courthouse and for antique shopping. Includes Lutz, Land O' Lakes and Odessa.",
+    "known_for": [
+      "The Shops at Wiregrass",
+      "Tampa Premium Outlets",
+      "Saddlebrook Resort",
+      "Skydive City in Zephyrhills",
+      "Dade City's historic downtown and antiques",
+      "the Pioneer Florida Museum"
+    ],
+    "official_url": "https://flsportscoast.com/",
+    "source_url": "https://flsportscoast.com/destination/wesley-chapel/",
+    "also_sources": [
+      "https://flsportscoast.com/destination/zephyrhills/",
+      "https://flsportscoast.com/destination/dade-city/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place node 'Wesley Chapel' (Photon). Florida's Sports Coast is Pasco County's tourism office. It calls Dade City 'one of the best antique shopping destinations in Florida' and describes Saddlebrook as spreading across 480 acres. Lutz lies partly in Hillsborough County."
+  },
+  {
+    "id": "madeira-beach",
+    "name": "Madeira Beach & John's Pass",
+    "region": "beaches",
+    "lat": 27.785867,
+    "lng": -82.78227,
+    "kind": "beach-town",
+    "summary": "A barrier island town that Visit St. Pete/Clearwater likens to an Old Florida fishing village crossed with a beach town, with about two miles of beach. John's Pass Village & Boardwalk, on the waterfront at John's Pass, has more than 100 shops and restaurants, the local fishing fleet, and dolphin, shelling, parasail and jet ski outfitters; Redington Beach, a small residential town, is included here.",
+    "known_for": [
+      "John's Pass Village & Boardwalk",
+      "fishing charters and the local fishing fleet",
+      "dolphin and shelling tours",
+      "Hubbard's Marina"
+    ],
+    "official_url": "https://madeirabeachfl.gov/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/madeira-beach",
+    "also_sources": [
+      "https://johnspass.com/",
+      "https://madeirabeachfl.gov/",
+      "https://townofredingtonbeach.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: John's Pass Village (Photon/OSM retail area), which Visit St. Pete/Clearwater calls 'the centerpiece of Mad Beach'. City site: 'two miles long'. John's Pass Village's site says 'Open daily!' and 'Over one hundred merchants'; the see-pinellas slice reports a Visit St. Pete/Clearwater listing that says some areas are still recovering from the 2024 hurricanes (not re-read here)."
+  },
+  {
+    "id": "nature-coast",
+    "name": "Weeki Wachee & the Nature Coast",
+    "region": "daytrips",
+    "lat": 28.515648,
+    "lng": -82.573566,
+    "kind": "county-area",
+    "summary": "The spring country north of Tampa in Hernando and Citrus counties. At Weeki Wachee Springs State Park, mermaids have performed underwater shows in a first-magnitude spring since 1947, next to Buccaneer Bay, Florida's only spring-fed water park; farther north, Crystal River, which calls itself the Manatee Capital of the World, and Homosassa Springs Wildlife State Park are known for manatees. Brooksville, the Hernando County seat founded in 1856, has brick streets, murals and mermaid statues.",
+    "known_for": [
+      "Weeki Wachee mermaid shows",
+      "Buccaneer Bay",
+      "kayaking the Weeki Wachee River",
+      "swimming with manatees in Crystal River",
+      "Homosassa Springs Wildlife State Park",
+      "Brooksville's historic downtown"
+    ],
+    "official_url": "https://floridasadventurecoast.com/",
+    "source_url": "https://floridasadventurecoast.com/our-communities/weeki-wachee/",
+    "also_sources": [
+      "https://floridasadventurecoast.com/attractions/weeki-wachee-springs-state-park/",
+      "https://floridasadventurecoast.com/our-communities/brooksville/",
+      "https://www.discovercrystalriverfl.com/",
+      "https://en.wikipedia.org/wiki/Homosassa_Springs_Wildlife_State_Park"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place node 'Weeki Wachee' (Photon), at the springs. Official URL is Florida's Adventure Coast (Hernando County tourism); Citrus County's is Discover Crystal River (discovercrystalriverfl.com). Wikipedia: Lu the hippo, long a Homosassa Springs resident, died in 2025. Weeki Wachee's own site (weekiwachee.com) and Florida State Parks pages refused our fetch."
+  },
+  {
+    "id": "north-tampa",
+    "name": "North Tampa",
+    "region": "tampa",
+    "lat": 28.025297,
+    "lng": -82.450928,
+    "kind": "district",
+    "summary": "The northern part of the city and its suburbs, where most of Tampa's large family attractions are: ZooTampa at Lowry Park, Busch Gardens Tampa Bay and the Adventure Island water park, and MOSI next to the University of South Florida. Includes the historic Sulphur Springs neighborhood, New Tampa and Carrollwood.",
+    "known_for": [
+      "Busch Gardens Tampa Bay",
+      "Adventure Island",
+      "ZooTampa at Lowry Park",
+      "MOSI and its planetarium",
+      "the University of South Florida"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Sulphur_Springs_(Tampa)",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Busch_Gardens_Tampa_Bay",
+      "https://en.wikipedia.org/wiki/ZooTampa_at_Lowry_Park",
+      "https://en.wikipedia.org/wiki/Museum_of_Science_%26_Industry_(Tampa)",
+      "https://en.wikipedia.org/wiki/New_Tampa",
+      "https://en.wikipedia.org/wiki/Carrollwood,_Florida",
+      "https://www.visittampabay.com/things-to-do/tampa-attractions/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node 'Sulphur Springs' (Photon), roughly between ZooTampa and Busch Gardens. Wikipedia: MOSI adopted the name Museum of Science & Innovation in January 2026 and its former IMAX dome reopened in 2025 as the Saunders Planetarium. A grouping of neighborhoods for this guide, not an official district."
+  },
+  {
+    "id": "northeast-stpete",
+    "name": "Northeast St. Pete & Weedon Island",
+    "region": "stpete",
+    "lat": 27.848309,
+    "lng": -82.604247,
+    "kind": "district",
+    "summary": "The northeast corner of St. Petersburg on Tampa Bay, including Gateway, Carillon and the St. Petersburg end of the Gandy Bridge to Tampa. Its main draw is Weedon Island Preserve, a 3,000-acre county preserve with more than 4.7 miles of boardwalks and trails, paddling trails, a fishing pier and a cultural and natural history center, on a site where Indigenous peoples lived for thousands of years.",
+    "known_for": [
+      "Weedon Island Preserve",
+      "boardwalks and paddling trails",
+      "the Weedon Island Preserve Cultural and Natural History Center",
+      "the Gandy Bridge to Tampa"
+    ],
+    "official_url": null,
+    "source_url": "https://pinellas.gov/parks/weedon-island-preserve/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Gandy_Bridge"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Weedon Island Preserve (Photon, OSM nature reserve). Pinellas County page (Sep 27, 2026): the north paddling trail is closed. Gateway and Carillon are named from SPEC §4.1 (area definition), not from a source."
+  },
+  {
+    "id": "old-northeast",
+    "name": "Old Northeast & Snell Isle",
+    "region": "stpete",
+    "lat": 27.787529,
+    "lng": -82.629731,
+    "kind": "neighborhood",
+    "summary": "The North Shore Historic District, known as Historic Old Northeast, is a mostly residential neighborhood next to downtown with nearly 3,000 historic buildings between 4th Street North and Tampa Bay. It holds Sunken Gardens, a botanical garden more than a century old that the city now runs, and bayfront parks; Snell Isle, developed on a mangrove island in the 1920s, and Crescent Lake are included here.",
+    "known_for": [
+      "historic homes of the North Shore Historic District",
+      "Sunken Gardens",
+      "North Shore Park and its beach",
+      "Snell Isle"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/North_Shore_Historic_District_(St._Petersburg,_Florida)",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Sunken_Gardens_(Florida)",
+      "https://en.wikipedia.org/wiki/Snell_Isle",
+      "https://www.stpeteparksrec.org/parks___facilities/beaches.php",
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/waterfront-museum-district"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=neighbourhood node 'Historic Old Northeast' (Photon). Wikipedia: district bounded by 4th Street N, 5th Avenue N, Tampa Bay and 30th Ave N; NRHP-listed 2003; 2,975 historic buildings. historicoldnortheast.com now redirects to a realtor, so no official URL."
+  },
+  {
+    "id": "oldsmar",
+    "name": "Oldsmar",
+    "region": "clearwater",
+    "lat": 28.034185,
+    "lng": -82.665099,
+    "kind": "city",
+    "summary": "A small city at the top of Old Tampa Bay that Visit St. Pete/Clearwater says has more parks per square mile than any other city in Florida, including Mobbly Bayou Wilderness Preserve and R.E. Olds Park. The Tampa Bay Downs thoroughbred racetrack is in Oldsmar, as is the Oldsmar Flea Market.",
+    "known_for": [
+      "Tampa Bay Downs",
+      "Mobbly Bayou Wilderness Preserve",
+      "R.E. Olds Park",
+      "the Oldsmar Flea Market"
+    ],
+    "official_url": "https://www.myoldsmar.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/oldsmar",
+    "also_sources": [
+      "https://www.tampabaydowns.com/",
+      "https://www.myoldsmar.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM city relation 'Oldsmar' (Photon). Visit St. Pete/Clearwater: 'Nestled at the juncture of Old Tampa Bay and Lake Tarpon'. Tampa Bay Downs' site gives 'Oldsmar, Florida 34677'."
+  },
+  {
+    "id": "palm-harbor",
+    "name": "Palm Harbor & Innisbrook",
+    "region": "clearwater",
+    "lat": 28.078072,
+    "lng": -82.763713,
+    "kind": "county-area",
+    "summary": "An unincorporated community about 20 minutes north of Clearwater, with a small downtown of shops, eateries and historic buildings. Innisbrook Golf Resort's Copperhead course hosts the PGA Tour's annual Valspar Championship, and John Chesnut Sr. Park in the East Lake area and Wall Springs Park are its best-known parks.",
+    "known_for": [
+      "Innisbrook Golf Resort",
+      "the Valspar Championship on the Copperhead course",
+      "downtown Palm Harbor and the Palm Harbor Museum",
+      "John Chesnut Sr. Park",
+      "Wall Springs Park"
+    ],
+    "official_url": null,
+    "source_url": "https://www.visitstpeteclearwater.com/communities/palm-harbor",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Palm_Harbor,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=town node 'Palm Harbor' (Photon), at the old downtown. Wikipedia: 'a census-designated place (CDP) and unincorporated community in Pinellas County', so no city site. The venues-bay slice notes Copperhead restrictions through the 2027 Valspar Championship."
+  },
+  {
+    "id": "pass-a-grille",
+    "name": "Pass-a-Grille",
+    "region": "beaches",
+    "lat": 27.687919,
+    "lng": -82.736084,
+    "kind": "beach-town",
+    "summary": "The historic southern tip of St. Pete Beach and one of the area's quietest beach communities, where Visit St. Pete/Clearwater notes there is almost no building directly on the sand. 8th Avenue has pastel-colored shops, galleries and restaurants, the Merry Pier is a historic fishing spot, and a shuttle runs to the undeveloped Shell Key Preserve.",
+    "known_for": [
+      "sunsets on the beach",
+      "8th Avenue shops and galleries",
+      "the Merry Pier",
+      "the Shell Key Shuttle"
+    ],
+    "official_url": null,
+    "source_url": "https://www.visitstpeteclearwater.com/communities/pass-a-grille-beach",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/st-pete-beach",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Merry Pier, 801 Pass-a-Grille Way, at the foot of 8th Avenue (Photon/OSM). Pass-a-Grille is part of the City of St. Pete Beach (stpetebeach.org). Visit St. Pete/Clearwater: 'Sunsets here are legendary'."
+  },
+  {
+    "id": "plant-city",
+    "name": "Plant City",
+    "region": "around",
+    "lat": 28.01633,
+    "lng": -82.12348,
+    "kind": "city",
+    "summary": "A small city between Tampa and Orlando, founded in 1885 as the railroad arrived and named for Henry B. Plant, known for its strawberry industry. The Florida Strawberry Festival is held here each spring, and the historic downtown hosts events such as Oktoberfest, Last Friday and the Strawberry Drop. Includes Dover and Thonotosassa, home of Hillsborough River State Park.",
+    "known_for": [
+      "strawberries",
+      "the Florida Strawberry Festival",
+      "historic downtown",
+      "Dinosaur World",
+      "Hillsborough River State Park"
+    ],
+    "official_url": "https://www.plantcitygov.com/",
+    "source_url": "https://www.visittampabay.com/plant-city/",
+    "also_sources": [
+      "https://www.flstrawberryfestival.com/",
+      "https://www.plantcitymainstreet.org/about",
+      "https://www.dinosaurworld.com/florida",
+      "https://www.visittampabay.com/listings/hillsborough-river-state-park/5284/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place relation 'Plant City' (Photon). Dinosaur World: 5145 Harvey Tew Road, Plant City. Hillsborough River State Park: 15402 U.S. 301 N, Thonotosassa (Visit Tampa Bay listing). Official URL is the City of Plant City."
+  },
+  {
+    "id": "polk",
+    "name": "Lakeland, Winter Haven & Polk County",
+    "region": "daytrips",
+    "lat": 28.039465,
+    "lng": -81.949804,
+    "kind": "county-area",
+    "summary": "Polk County, between Tampa and Orlando, with LEGOLAND Florida Resort, Bok Tower Gardens, Frank Lloyd Wright's 13 structures at Florida Southern College and 554 freshwater lakes for fishing, airboat tours and water sports. Includes Lakeland, Winter Haven and Lake Wales.",
+    "known_for": [
+      "LEGOLAND Florida Resort",
+      "Bok Tower Gardens",
+      "Frank Lloyd Wright buildings at Florida Southern College",
+      "lakes and airboat tours",
+      "Westgate River Ranch"
+    ],
+    "official_url": "https://visitcentralflorida.org/",
+    "source_url": "https://visitcentralflorida.org/",
+    "also_sources": [],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place relation 'Lakeland' (Photon), downtown Lakeland, the county's largest city and the closest to Tampa. Visit Central Florida (Polk County's tourism office) calls Westgate River Ranch 'the Southeast's largest dude ranch' and describes 'a region of 17 charming communities, including Lakeland and Winter Haven'."
+  },
+  {
+    "id": "safety-harbor",
+    "name": "Safety Harbor",
+    "region": "clearwater",
+    "lat": 27.989936,
+    "lng": -82.688241,
+    "kind": "city",
+    "summary": "A small city on Old Tampa Bay with brick streets under moss-draped oaks, a Main Street of restaurants and shops, and the historic Safety Harbor Resort & Spa; its natural springs drew 20th-century visitors seeking rejuvenation. Philippe Park, the oldest park in Pinellas County, holds the Tocobaga Temple Mound, the largest remaining mound in the Tampa Bay region.",
+    "known_for": [
+      "the Safety Harbor Resort & Spa",
+      "its natural springs",
+      "Main Street restaurants and craft beer",
+      "the Tocobaga Temple Mound at Philippe Park",
+      "the Safety Harbor Museum & Cultural Center"
+    ],
+    "official_url": "https://www.cityofsafetyharbor.com/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/safety-harbor",
+    "also_sources": [
+      "https://pinellas.gov/parks/philippe-park/",
+      "https://www.cityofsafetyharbor.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: 105 N Bayshore Dr, the resort at the foot of Main Street (Census match '105 BAYSHORE BLVD'). Visit St. Pete/Clearwater: 'a landmark resort crowns the main thoroughfare'. Pinellas County (Philippe Park, 92 acres, in Safety Harbor): the Temple Mound 'is the largest remaining mound in the Tampa Bay region'."
+  },
+  {
+    "id": "sand-key",
+    "name": "Sand Key & Belleair Beach",
+    "region": "beaches",
+    "lat": 27.959838,
+    "lng": -82.82741,
+    "kind": "island",
+    "summary": "Sand Key is the barrier island that runs from Clearwater south to Madeira Beach; this area covers its northern end, joined to Clearwater Beach by a short bridge. The 95-acre Sand Key Park in Clearwater has a white sand beach with seasonal lifeguards and sea turtle nesting from April to October, and the small cities of Belleair Beach and Belleair Shore lie to its south.",
+    "known_for": [
+      "Sand Key Park",
+      "sea turtle nesting",
+      "salt marsh views"
+    ],
+    "official_url": null,
+    "source_url": "https://pinellas.gov/parks/sand-key-park/",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Sand_Key_(Florida)",
+      "https://en.wikipedia.org/wiki/Clearwater_Beach,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Sand Key Park (Photon/OSM park). Pinellas County: a repaired seawall section stays closed 'until August 2026' for staging for the City of Clearwater's beach marina project (page not yet updated on Sep 27, 2026). The Belleair Beach city site (cityofbelleairbeach.com) refused our fetch, so no official URL."
+  },
+  {
+    "id": "sarasota",
+    "name": "Sarasota",
+    "region": "daytrips",
+    "lat": 27.336581,
+    "lng": -82.530854,
+    "kind": "city",
+    "summary": "A Gulf Coast city and county known for the white-sand beaches of Siesta Key and Lido Key, the shops and restaurants of St. Armands Circle, an active arts scene and The Ringling, the John and Mable Ringling Museum of Art. Visit Sarasota's area also covers Longboat Key, Casey Key, Venice, Englewood, North Port and Lakewood Ranch.",
+    "known_for": [
+      "Siesta Key beach",
+      "Lido Key",
+      "St. Armands Circle",
+      "The Ringling museum",
+      "arts and theater",
+      "Myakka parks and trails"
+    ],
+    "official_url": "https://www.visitsarasota.com/",
+    "source_url": "https://www.visitsarasota.com/",
+    "also_sources": [],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place relation 'Sarasota' (Photon), downtown. Visit Sarasota (read via WebFetch; curl is refused): 'Set along Florida's Gulf Coast, the Sarasota area is a lively coastal community with award-winning beaches, a vibrant arts and culture scene, and year-round sunshine.'"
+  },
+  {
+    "id": "seminole-heights",
+    "name": "Seminole Heights",
+    "region": "tampa",
+    "lat": 28.000159,
+    "lng": -82.455993,
+    "kind": "neighborhood",
+    "summary": "A streetcar suburb begun in 1911 about three miles north of downtown, known for its early 20th-century Craftsman bungalows and a local and national historic district. Restaurants, brewpubs and independent shops have opened here in recent years, and its parks give it the city's longest stretch of Hillsborough River parkland.",
+    "known_for": [
+      "Craftsman bungalows",
+      "restaurants and brewpubs",
+      "riverfront parks on the Hillsborough River",
+      "the two-headed alligator statue on Nebraska Avenue"
+    ],
+    "official_url": "https://www.oldseminoleheights.org/",
+    "source_url": "https://en.wikipedia.org/wiki/Seminole_Heights",
+    "also_sources": [
+      "https://www.oldseminoleheights.org/",
+      "https://www.tampa.gov/historic-preservation"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Seminole Heights Garden Center, 5800 N Central Ave (Photon/OSM park; Census match within 60 m). Official URL is the Old Seminole Heights Neighborhood Association (South and Southeast Seminole Heights have their own associations). The City of Tampa lists a Seminole Heights Historic District map on its historic preservation page."
+  },
+  {
+    "id": "south-stpete",
+    "name": "South St. Pete & Midtown",
+    "region": "stpete",
+    "lat": 27.761539,
+    "lng": -82.663076,
+    "kind": "district",
+    "summary": "The south side of St. Petersburg includes Midtown and 22nd Street South, known as The Deuces, once the city's Black Main Street, where the Dr. Carter G. Woodson African American Museum and the Historic Manhattan Casino stand. Farther south, Boyd Hill Nature Preserve covers 400 acres connected to Lake Maggiore, with trails through habitat for gopher tortoises and alligators.",
+    "known_for": [
+      "The Deuces on 22nd Street South",
+      "the Woodson African American Museum",
+      "the Historic Manhattan Casino",
+      "Boyd Hill Nature Preserve",
+      "Lake Maggiore"
+    ],
+    "official_url": null,
+    "source_url": "https://www.deuceslive.org/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/deuces-live",
+      "https://www.stpeteparksrec.org/parks___facilities/boyd_hill.php"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: 833 22nd St S, the Deuces Live office (Census address match). Deuces Live: 'Once the city's bustling Black Main Street'; legends like Duke Ellington and Billie Holiday played there. City page (Sep 27, 2026): Boyd Hill's nature center exhibits are closed for renovations; the preserve and trails remain open."
+  },
+  {
+    "id": "south-tampa",
+    "name": "South Tampa",
+    "region": "tampa",
+    "lat": 27.920856,
+    "lng": -82.495373,
+    "kind": "district",
+    "summary": "The south end of the city below Hyde Park, reached along Bayshore Boulevard, whose waterfront path runs to Gandy Boulevard. Ballast Point Park looks across Hillsborough Bay to downtown, Palma Ceia has brick streets named for streets in Havana, and Picnic Island Park in Port Tampa, at the city's southwestern tip, has a sand beach, a dog beach and a kayak launch nearby.",
+    "known_for": [
+      "Ballast Point Park",
+      "Picnic Island Park and its beach",
+      "Palma Ceia's brick streets",
+      "the Bayshore Boulevard greenway"
+    ],
+    "official_url": null,
+    "source_url": "https://www.tampa.gov/parks-and-recreation/featured-parks/ballast-point",
+    "also_sources": [
+      "https://www.tampa.gov/parks-and-recreation/featured-parks/picnic-island-park",
+      "https://www.tampa.gov/parks-and-recreation/programs/parks-and-facilities/greenways-and-trails/trail-maps/bayshore-trail",
+      "https://en.wikipedia.org/wiki/Palma_Ceia",
+      "https://en.wikipedia.org/wiki/Port_Tampa_(neighborhood)"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node 'Palma Ceia' (Photon). City of Tampa: Ballast Point Park's 600-foot pier (and, until its return, the fitness center) closed as of spring 2025 for Helene/Milton repairs; the pier is still listed as closed. A grouping of neighborhoods for this guide."
+  },
+  {
+    "id": "st-pete-beach",
+    "name": "St. Pete Beach",
+    "region": "beaches",
+    "lat": 27.741685,
+    "lng": -82.750862,
+    "kind": "beach-town",
+    "summary": "A beach city on seven miles of Gulf shoreline just west of downtown St. Petersburg, with wide sandy beaches, warm shallow water, beachfront resorts and the landmark Don CeSar hotel. Corey Avenue is its shopping street, and the historic Pass-a-Grille district is at its southern tip.",
+    "known_for": [
+      "the Don CeSar",
+      "Upham Beach Park",
+      "Corey Avenue",
+      "beachfront resorts",
+      "water sports outfitters"
+    ],
+    "official_url": "https://www.stpetebeach.org/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-pete-beach",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/",
+      "https://www.stpetebeach.org/",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Corey Avenue (Photon/OSM street). Visit St. Pete/Clearwater's communities index: 'St. Pete Beach is easy to find. Just look for the landmark Don CeSar'. Pass-a-Grille has its own area record."
+  },
+  {
+    "id": "tampa-heights",
+    "name": "Tampa Heights",
+    "region": "tampa",
+    "lat": 27.965161,
+    "lng": -82.45704,
+    "kind": "neighborhood",
+    "summary": "Founded in the 1880s as Tampa's first suburb, Tampa Heights lies just north of downtown between I-275, the Hillsborough River and Martin Luther King Jr. Boulevard. Its riverfront has Armature Works, a restored historic building with a food hall and restaurants, and Water Works Park.",
+    "known_for": [
+      "Armature Works",
+      "Water Works Park",
+      "bungalow-lined streets",
+      "coffee shops and breweries"
+    ],
+    "official_url": "https://www.tampaheights.org/",
+    "source_url": "https://www.tampaheights.org/",
+    "also_sources": [
+      "https://www.tampasdowntown.com/neighborhoods/tampa-heights/",
+      "https://armatureworks.com/about/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node 'Tampa Heights' (Photon). Official URL is the Tampa Heights Civic Association."
+  },
+  {
+    "id": "tarpon-springs",
+    "name": "Tarpon Springs",
+    "region": "clearwater",
+    "lat": 28.155818,
+    "lng": -82.762023,
+    "kind": "city",
+    "summary": "A city on the Anclote River whose sponge industry, worked by more than 500 Greek sponge divers by 1905, built the Greek community it is known for. The Sponge Docks along pedestrian-friendly Dodecanese Boulevard still draw visitors to sponge boats, shops and Greek restaurants; Visit St. Pete/Clearwater says the city has the largest Greek community per capita in the United States.",
+    "known_for": [
+      "the Sponge Docks",
+      "Greek restaurants on Dodecanese Boulevard",
+      "natural sea sponges",
+      "Fred Howard Park",
+      "Anclote Key Preserve State Park"
+    ],
+    "official_url": "https://www.ctsfl.us/",
+    "source_url": "https://spongedocks.net/tarpon-springs-history/",
+    "also_sources": [
+      "https://www.visitstpeteclearwater.com/communities/tarpon-springs",
+      "https://www.ctsfl.us/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Sponge Docks (Photon/OSM ferry terminal node on Dodecanese Blvd). spongedocks.net: first settlers 1876, named 1879, incorporated 1887, 'By 1905, over 500 Greek sponge divers were at work using 50 boats.' Visit St. Pete/Clearwater's page says the city 'was founded in the early 1900s by Greek sponge divers', which conflicts with the incorporation date, so it is not used. Fred Howard Park and Anclote Key Preserve State Park are named on the Visit St. Pete/Clearwater page."
+  },
+  {
+    "id": "temple-terrace",
+    "name": "Temple Terrace",
+    "region": "around",
+    "lat": 28.035296,
+    "lng": -82.38926,
+    "kind": "city",
+    "summary": "A small city next to Tampa in northeastern Hillsborough County, planned in the 1920s as one of the first Mediterranean Revival golf course communities in the United States and named for the Temple orange. The Hillsborough River runs through the city, and Florida College occupies some of its oldest buildings.",
+    "known_for": [
+      "1920s Mediterranean Revival architecture",
+      "its historic golf course",
+      "the Hillsborough River and Riverhills Drive",
+      "Florida College"
+    ],
+    "official_url": "https://www.templeterrace.gov/",
+    "source_url": "https://en.wikipedia.org/wiki/Temple_Terrace,_Florida",
+    "also_sources": [
+      "https://www.templeterrace.com/554/History-Overview",
+      "https://www.templeterrace.gov/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place node 'Temple Terrace' (Photon). City history page: Bertha Palmer's hunting preserve; two corporations developed 'the golf course and residential areas'; Riverhills Drive laid along the Hillsborough River in 1921. Visit Tampa Bay's fast facts list Temple Terrace as one of Hillsborough County's three incorporated cities."
+  },
+  {
+    "id": "treasure-island",
+    "name": "Treasure Island",
+    "region": "beaches",
+    "lat": 27.769194,
+    "lng": -82.768991,
+    "kind": "beach-town",
+    "summary": "A barrier island city between St. Pete Beach and Madeira Beach with nearly four miles of extra-wide white-sand beach in three main areas: Sunshine Beach, Municipal Beach and Sunset Beach. Visit St. Pete/Clearwater describes it as a more residential, laid-back stretch of coast; a beach trail runs along the sand, and an international sand sculpting festival is held every fall.",
+    "known_for": [
+      "extra-wide white-sand beaches",
+      "Sunset Beach",
+      "the Treasure Island Beach Trail",
+      "a fall sand sculpting festival",
+      "ADA beach mats"
+    ],
+    "official_url": "https://www.mytreasureisland.org/",
+    "source_url": "https://www.visitstpeteclearwater.com/communities/treasure-island",
+    "also_sources": [
+      "https://www.mytreasureisland.org/",
+      "https://www.visitstpeteclearwater.com/current-beach-conditions"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place node 'Treasure Island' (Photon). The city site (read via WebFetch Sep 27, 2026) announces Sanding Ovations' sand sculpting event on Treasure Island Beach this November."
+  },
+  {
+    "id": "west-pasco",
+    "name": "New Port Richey & West Pasco",
+    "region": "around",
+    "lat": 28.244177,
+    "lng": -82.719267,
+    "kind": "county-area",
+    "summary": "Pasco County's Gulf coast, centered on New Port Richey, whose walkable downtown on the Cotee River has Sims Park, the restored Hacienda hotel where Hollywood stars once stayed, and the 1925 Richey Suncoast Theatre. Kayak rentals run through the river's mangrove tunnels. Includes Port Richey, Holiday and Hudson.",
+    "known_for": [
+      "The Hacienda",
+      "Sims Park",
+      "kayaking the Cotee River",
+      "the Richey Suncoast Theatre"
+    ],
+    "official_url": "https://flsportscoast.com/",
+    "source_url": "https://flsportscoast.com/destination/new-port-richey/",
+    "also_sources": [
+      "https://flsportscoast.com/destination/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place relation 'New Port Richey' (Photon), downtown. Florida's Sports Coast: The Hacienda was 'visited by Hollywood legends like Shirley Temple, Gloria Swanson, and Babe Ruth'; Sims Park was 'donated by George Sims in 1913'. The City of New Port Richey site (cityofnewportrichey.org) refused our fetch, so the county tourism site is the official URL."
+  },
+  {
+    "id": "west-stpete",
+    "name": "West St. Pete",
+    "region": "stpete",
+    "lat": 27.793383,
+    "lng": -82.732732,
+    "kind": "district",
+    "summary": "St. Petersburg's western neighborhoods, including Tyrone, around the Tyrone Square mall, Azalea and Jungle Prada, where a city park holds part of an archaeological site with Tocobaga mounds, listed on the National Register in 2003 and identified as the landing place of the Narváez expedition. freeFall Theatre stages plays and musicals on Central Avenue, and St. Petersburg College's Gibbs Campus planetarium gives free public shows on Wednesday and Friday evenings while the college is in session.",
+    "known_for": [
+      "Tyrone Square mall",
+      "the Jungle Prada mound site",
+      "freeFall Theatre",
+      "free shows at the SPC Planetarium"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Jungle_Prada_Site",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Tyrone_Square_Mall",
+      "https://freefalltheatre.com/",
+      "https://www.spcollege.edu/friends-partners/about/locations/community-enrichment-facilities/planetarium"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Tyrone Square Mall (Photon/OSM mall). freeFall Theatre: 6099 Central Ave, St. Petersburg 33710 (Census match at 27.7709, -82.7182). SPC Planetarium: Natural Science Building, St. Petersburg/Gibbs Campus, 69th Street North at 5th Avenue. No neighborhood tourism page found; a grouping of neighborhoods for this guide."
+  },
+  {
+    "id": "west-tampa",
+    "name": "West Tampa",
+    "region": "tampa",
+    "lat": 27.953355,
+    "lng": -82.489262,
+    "kind": "neighborhood",
+    "summary": "Founded in 1892 as a cigar-making town and settled mostly by Cuban immigrants, West Tampa was its own city until Tampa annexed it in 1925; it lies west of the Hillsborough River about a mile from downtown. This area of the guide also takes in Raymond James Stadium, home of the Buccaneers, and George M. Steinbrenner Field, the Yankees' spring training ballpark, which face each other across Dale Mabry Highway.",
+    "known_for": [
+      "cigar-era history",
+      "Cuban food",
+      "Raymond James Stadium and its pirate ship",
+      "George M. Steinbrenner Field",
+      "the 1914 West Tampa Free Public Library"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/West_Tampa",
+    "also_sources": [
+      "https://www.tampa.gov/CRAs/West-Tampa",
+      "https://www.tampasdowntown.com/neighborhoods/",
+      "https://en.wikipedia.org/wiki/Raymond_James_Stadium",
+      "https://en.wikipedia.org/wiki/George_M._Steinbrenner_Field"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node 'West Tampa' (Photon); matches Wikipedia's coordinates. 'Cuban food': the Tampa Downtown Partnership neighborhoods page says West Tampa gives 'daily access to plenty of incredible Cuban food' (the blurb sits under its Water Street heading). The stadiums are on Dale Mabry Highway in the Drew Park area; SPEC §4.1 files them here."
+  },
+  {
+    "id": "westshore",
+    "name": "Westshore & Airport",
+    "region": "tampa",
+    "lat": 27.954722,
+    "lng": -82.524167,
+    "kind": "district",
+    "summary": "Tampa's principal business district, next to Tampa International Airport, with office towers, many hotels, and two major malls, International Plaza and WestShore Plaza. Includes Rocky Point, with hotels and restaurants at the Tampa end of the Courtney Campbell Causeway to Clearwater, and Town 'n' Country.",
+    "known_for": [
+      "Tampa International Airport",
+      "International Plaza",
+      "WestShore Plaza",
+      "airport-area hotels",
+      "Rocky Point on the Courtney Campbell Causeway"
+    ],
+    "official_url": null,
+    "source_url": "https://en.wikipedia.org/wiki/Westshore_(Tampa)",
+    "also_sources": [
+      "https://en.wikipedia.org/wiki/Rocky_Point_(Tampa)",
+      "https://en.wikipedia.org/wiki/Town_%27n%27_Country,_Florida"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: Wikipedia's coordinates for Westshore (between International Plaza and WestShore Plaza). Wikipedia counts 32 hotels, two major malls and more than 200 restaurants and bars. The Westshore Alliance site (westshorealliance.org) returned 503/no response when checked, so it is not cited."
+  },
+  {
+    "id": "ybor-city",
+    "name": "Ybor City",
+    "region": "tampa",
+    "lat": 27.960048,
+    "lng": -82.44116,
+    "kind": "district",
+    "summary": "Tampa's historic cigar-making district and a National Historic Landmark District, where converted brick cigar factories hold restaurants, cigar shops, museums and 7th Avenue's bars and music venues. The TECO Line Streetcar runs here from downtown, and free-roaming chickens have walked its streets for over a century.",
+    "known_for": [
+      "cigar factories and hand-rolled cigars",
+      "the Columbia Restaurant",
+      "the Ybor City Museum State Park",
+      "nightlife on 7th Avenue",
+      "the free-roaming Ybor chickens",
+      "the TECO Line Streetcar"
+    ],
+    "official_url": "https://www.ybor.org/vic/",
+    "source_url": "https://www.ybor.org/vic/",
+    "also_sources": [
+      "https://www.ybor.org/",
+      "https://www.visittampabay.com/ybor-city/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Center: OSM place=suburb node 'Ybor City' (Photon), near Centro Ybor. Visit Tampa Bay calls the Columbia Restaurant 'The oldest restaurant in Florida'. Official URL is the Ybor City Chamber of Commerce's Visitor Information Center page (in Centro Ybor, 1600 E 8th Ave)."
   }
 ]
