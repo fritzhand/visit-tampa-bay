@@ -1,0 +1,3276 @@
+{
+  "slice": "history-region",
+  "checked": "2026-09-27",
+  "records": {
+    "places": [
+      {
+        "id": "snell-arcade",
+        "name": "Snell Arcade",
+        "aliases": [
+          "Rutland Building"
+        ],
+        "kind": "landmark",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "405 Central Ave",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.771268,
+        "lng": -82.638608,
+        "geo_source": "census",
+        "summary": "A 1928 arcade building on Central Avenue developed by C. Perry Snell and designed by Richard Kiehnel of Kiehnel and Elliott. It is on the National Register and is a city landmark.",
+        "heritage": {
+          "built": "1928",
+          "architect": "Richard Kiehnel and M. Leo Elliott (Kiehnel and Elliott)",
+          "style": "Late 19th and 20th Century Revivals (NRIS category)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "82001037",
+              "year": 1982,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/82001037"
+            },
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #86-08",
+              "year": 1986,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Landowner and developer C. Perry Snell built the arcade at 405 Central Avenue in 1928 to a design by Richard Kiehnel of the firm Kiehnel and Elliott. It is also known as the Rutland Building. It was listed in the National Register of Historic Places on November 4, 1982, and the city added it to its local register in 1986.",
+          "visiting": "Seen from the sidewalk on the 400 block of Central Avenue downtown; it stands inside the Downtown St. Petersburg Historic District.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Snell_Arcade",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/82001037",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/82001037",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Snell_Arcade",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        ],
+        "notes": "No official site for the building was found (snellarcade.com redirects to an unrelated film site). Wikipedia's text says built 1928 while its category says 1926; NRIS gives 1928 as the significant year, used here. Local register year read from the city's register PDF (column order in the PDF makes the month uncertain, so only the year is given).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "open-air-post-office",
+        "name": "Open Air Post Office",
+        "aliases": [
+          "U.S. Post Office (St. Petersburg, Florida)",
+          "United States Post Office"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "400 1st Ave N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.772013,
+        "lng": -82.638548,
+        "geo_source": "census",
+        "summary": "St. Petersburg's 1916–1917 post office at First Avenue North and Fourth Street, known as the Open Air Post Office. It is on the National Register and was among the first city landmarks, designated in 1986.",
+        "heritage": {
+          "built": "1916–1917",
+          "architect": "George W. Stewart; M. C. Holliday (per NRIS)",
+          "style": "Classical Revival with Spanish Colonial elements",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "75000564",
+              "year": 1975,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/75000564"
+            },
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #86-03",
+              "year": 1986,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The federal post office at the southwest corner of First Avenue North and Fourth Street North was built in 1916 and 1917 and is known as the Open Air Post Office. The National Park Service record names George W. Stewart and M. C. Holliday as its architects. It was listed in the National Register of Historic Places on April 4, 1975, and designated a city landmark in 1986.",
+          "visiting": "On the southwest corner of First Avenue North and Fourth Street North, downtown.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_States_Post_Office_(St._Petersburg,_Florida)",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/75000564",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/75000564",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/United_States_Post_Office_(St._Petersburg,_Florida)",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        ],
+        "notes": "Whether it still operates as a USPS retail counter was not confirmed on a readable page (the USPS locator is script-rendered); the record claims only the building.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "detroit-hotel",
+        "name": "Detroit Hotel",
+        "aliases": [
+          "The Detroit"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "201–215 Central Ave",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.771262,
+        "lng": -82.635814,
+        "geo_source": "census",
+        "summary": "The building on the 200 block of Central Avenue that the city marks as the site of St. Petersburg's first hotel, the Detroit. It is a local historic landmark.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #09-04",
+              "year": 2010,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "boomtown",
+          "story": "A bronze centennial plaque set in the Central Avenue sidewalk in 1988 says St. Petersburg's first hotel, the Detroit, was built on this site. The city's Demens Landing marker credits Peter Demens, who extended the Orange Belt railroad to St. Petersburg in 1888, with building the Detroit. The city added the Detroit Hotel at 201–215 Central Avenue to its local register in March 2010.",
+          "visiting": "Seen from Central Avenue; look for the centennial plaque in the sidewalk on the north side of the 200 block.",
+          "sources": [
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf",
+        "also_sources": [
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        ],
+        "notes": "Source is the City of St. Petersburg's Markers and Monuments list (updated Sep 19, 2017) and the city's local register PDF. No built year is given because neither city page states one. The current use of the building (condominiums, shops) was not confirmed on a readable page. Geocoded to 215 Central Ave.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "worlds-first-airline-monument",
+        "name": "World's First Airline Monument",
+        "aliases": [
+          "Benoist Centennial Plaza",
+          "St. Petersburg–Tampa Airboat Line marker"
+        ],
+        "kind": "landmark",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "St. Pete Pier approach, 2nd Ave NE",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "summary": "A stone monument with bronze plaques at the St. Pete Pier marking where the St. Petersburg–Tampa Airboat Line began scheduled flights across Tampa Bay on January 1, 1914. The Pier map lists it in Benoist Centennial Plaza.",
+        "heritage": {
+          "built": "1938 (first plaque); 1953 (second plaque)",
+          "era": "boomtown",
+          "story": "On January 1, 1914, the St. Petersburg–Tampa Airboat Line began what Wikipedia describes as the first scheduled airline service in the United States using a fixed-wing aircraft, with pilot Tony Jannus flying a Benoist airboat from St. Petersburg to Tampa in about 23 minutes. Former mayor Abram C. Pheil bought the first ticket at auction for 400 dollars, and the service ran from January to May 1914. The city's markers list records two bronze plaques on a stone monument on 2nd Avenue NE: one erected January 1, 1938, and one dedicated December 4, 1953, reading 'From this site, the St. Petersburg - Tampa Airboat Line, the world's first scheduled airline, began regular flights.' The St. Pete Pier now lists the spot as Benoist Centennial Plaza featuring the World's First Airline Monument.",
+          "visiting": "On the St. Pete Pier approach (Pier map item 17). The St. Petersburg Museum of History, also in the Pier District, shows a working replica of the Benoist XIV airboat, per the Pier.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/St._Petersburg%E2%80%93Tampa_Airboat_Line",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf",
+            "https://stpetepier.org/visit-pier/",
+            "https://www.stpete.org/visitors/history.php"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://stpetepier.org/visit-pier/",
+        "also_sources": [
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf",
+          "https://en.wikipedia.org/wiki/St._Petersburg%E2%80%93Tampa_Airboat_Line",
+          "https://www.stpete.org/visitors/history.php"
+        ],
+        "notes": "The Pier's visit page and map legend (read Sep 27, 2026) name item 17 'Benoist Centennial Plaza featuring the World's First Airline Monument'. The city's markers list (updated 2017, before the new Pier opened) places the plaques on '2nd Avenue NE, s. side of the street, s. of Spa Beach'. No coordinates: neither geocoder has the plaza; the St. Petersburg Museum of History (OSM, 27.773968,-82.630552) is in the same Pier District but the exact plaza point was not confirmed. The city's history page says Jannus flew 'across Tampa Bay in 23 minutes'.",
+        "checked": "2026-09-27",
+        "url": "https://stpetepier.org/visit-pier/"
+      },
+      {
+        "id": "historic-old-northeast",
+        "name": "Historic Old Northeast",
+        "aliases": [
+          "North Shore Historic District",
+          "Old Northeast"
+        ],
+        "kind": "historic-district",
+        "topics": [
+          "history"
+        ],
+        "area": "old-northeast",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33704",
+        "lat": 27.787529,
+        "lng": -82.629731,
+        "geo_source": "photon",
+        "url": "https://honna.org/",
+        "summary": "A residential historic district north of downtown St. Petersburg, listed in the National Register as the North Shore Historic District in 2003. It runs from 5th Avenue North to 30th Avenue North between 4th Street and Tampa Bay.",
+        "heritage": {
+          "style": "Bungalow/Craftsman; Colonial Revival (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (North Shore Historic District)",
+              "ref": "03000040",
+              "year": 2003,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/03000040"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The North Shore Historic District, commonly known as Old Northeast or Historic Old Northeast, is bounded by 4th Street North, 5th Avenue North, Tampa Bay and 30th Avenue North. It was listed in the National Register of Historic Places on February 20, 2003, with 2,975 historic buildings. The National Park Service record gives its periods of significance as 1900 to 1949 and its main styles as Bungalow/Craftsman and Colonial Revival.",
+          "visiting": "Mostly homes, with some shops, restaurants, parks and city landmarks; walk or bike its streets north of downtown.",
+          "sources": [
+            "https://npgallery.nps.gov/AssetDetail/NRIS/03000040",
+            "https://en.wikipedia.org/wiki/North_Shore_Historic_District_(St._Petersburg,_Florida)"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/03000040",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/North_Shore_Historic_District_(St._Petersburg,_Florida)",
+          "https://honna.org/"
+        ],
+        "notes": "The neighborhood association site (honna.org) is script-rendered; its home page only names the Historic Old Northeast Neighborhood Association. Point is the OSM neighbourhood node. Era set from the NRIS significant year 1910. Some blocks are also city local historic districts (North Shore sections, 2017–2018, per the city register PDF) but the PDF's column layout made the section names hard to pair with dates, so they are not listed as designations.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "roser-park-historic-district",
+        "name": "Roser Park Historic District",
+        "aliases": [
+          "Historic Roser Park"
+        ],
+        "kind": "historic-district",
+        "topics": [
+          "history"
+        ],
+        "area": "south-stpete",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.75992,
+        "lng": -82.643868,
+        "geo_source": "photon",
+        "url": "https://www.historicroserpark.org/",
+        "summary": "An early 20th-century neighborhood on the hills along Booker Creek, south of downtown St. Petersburg, developed by Charles Roser. Its Historic Outdoor Museum is a route of 28 markers on the neighborhood's history.",
+        "heritage": {
+          "style": "Bungalow/Craftsman; Prairie School; Late 19th and 20th Century Revivals (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "98000295",
+              "year": 1998,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/98000295"
+            },
+            {
+              "name": "St. Petersburg local historic district",
+              "ref": "HPC #87-01",
+              "year": 1987,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Charles Roser came to St. Petersburg in 1910 and broke ground on the Roser Park development in 1911. The city made Roser Park a local historic district in 1987, and it was listed in the National Register of Historic Places on April 1, 1998, with 146 historic buildings, bounded by 5th and 9th Streets South and 6th and 11th Avenues South. The neighborhood's Historic Outdoor Museum opened on April 25, 1999, first along Booker Creek from Fourth Street South to Martin Luther King Jr. Street South.",
+          "visiting": "Walk the Historic Outdoor Museum: 28 markers on 3-foot wrought-iron poles describe homes and history. The association says (2025 update) it is restoring the markers with the St. Petersburg Museum of History.",
+          "sources": [
+            "https://www.historicroserpark.org/outdoormuseum",
+            "https://en.wikipedia.org/wiki/Roser_Park_Historic_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/98000295",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "quote": "The plaques, mounted on 3-foot tall wrought-iron poles, describe historic homes, and some show early 20th-century views of the neighborhood",
+        "source_url": "https://www.historicroserpark.org/outdoormuseum",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Roser_Park_Historic_District",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/98000295",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        ],
+        "notes": "Point is the OSM neighbourhood node for Roser Park. Wikipedia repeats a rumor that Roser invented the Fig Newton and notes Nabisco has no record of him; left out.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "manhattan-casino",
+        "name": "Historic Manhattan Casino",
+        "aliases": [
+          "Manhattan Casino",
+          "Jordan Dance Hall"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history",
+          "black-history",
+          "music"
+        ],
+        "area": "south-stpete",
+        "address": "642 22nd St S",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.763403,
+        "lng": -82.662958,
+        "geo_source": "census",
+        "url": "https://www.historicmanhattancasino.org/",
+        "phone": "727-892-5400",
+        "hours_text": "Office Monday–Friday 9 am–4 pm; tours by appointment",
+        "summary": "A 1925 dance hall on 22nd Street South that was the center of Black St. Petersburg's entertainment during segregation. Restored and reopened, it is rented for events and can be toured by appointment.",
+        "quote": "Founded in 1925, the Manhattan Casino stands as a beacon of cultural significance in St. Petersburg’s history.",
+        "heritage": {
+          "built": "1925",
+          "designations": [
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #94-05",
+              "year": 1994,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "land-boom",
+          "story": "In 1925 African American entrepreneur Elder Jordan Sr. contracted with R. L. Sharpe to build a 12,000-square-foot, two-story entertainment hall on 22nd Street South; the city says it first opened as the Jordan Dance Hall in 1931 and later became the Manhattan Casino. It was part of 'The Deuces,' the business and entertainment hub of the African American community in segregation-era St. Pete, and a stop on the Chitlin' Circuit. Performers included Louis Armstrong, Duke Ellington, Count Basie, Cab Calloway, Ray Charles, Nat King Cole, Fats Domino and James Brown. It closed in 1968 and the city designated it a local landmark in 1994.",
+          "visiting": "Tours by appointment through the venue; its Jordan Ballroom and Legacy Room are rented for events. It is a stop on the city's African American Heritage Trail.",
+          "sources": [
+            "https://www.stpete.org/visitors/attractions/manhattan_casino.php",
+            "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
+            "https://www.historicmanhattancasino.org/",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.historicmanhattancasino.org/",
+        "also_sources": [
+          "https://www.stpete.org/visitors/attractions/manhattan_casino.php",
+          "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+        ],
+        "notes": "The official site (copyright City of St. Petersburg, contact manhattancasino@stpete.org) says 'after careful restoration, we're proud to reopen our doors' and 'tours are available by appointment'. The city's attractions page says 'Built in 1925' and 'first opened as the Jordan Dance Hall in 1931'; the heritage trail page says it was 'constructed in 1925 by Elder Jordan Sr. ... and his sons'. The city attractions page phone is 727-892-5496; the venue site's main number 727-892-5400 is used.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "weedon-island-preserve",
+        "name": "Weedon Island Preserve",
+        "kind": "nature-preserve",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "wildlife"
+        ],
+        "area": "northeast-stpete",
+        "address": "1800 Weedon Dr NE",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33702",
+        "lat": 27.849602,
+        "lng": -82.608149,
+        "geo_source": "census",
+        "url": "https://www.weedonislandpreserve.org/",
+        "is_free": true,
+        "price_text": "Free admission to the preserve and the Cultural and Natural History Center; donations welcome",
+        "summary": "A 3,000-acre county preserve on Tampa Bay in north St. Petersburg where Indigenous people lived for thousands of years. Its Cultural and Natural History Center has exhibits and a dugout canoe more than 1,000 years old.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Weeden Island Site)",
+              "ref": "72000347",
+              "year": 1972,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/72000347"
+            },
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #86-01",
+              "year": 1986,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "indigenous",
+          "story": "Indigenous peoples lived at the site for thousands of years; the preserve says their descendants developed the Weeden Island culture (an alternate spelling), which lasted some 800 years and is known for ceremonial pottery and burials with grave goods. The Weeden Island Site was listed in the National Register of Historic Places in 1972. In 2011 archaeologists and volunteers excavated a pine dugout canoe 39.9 feet long from the shoreline; radiocarbon dating placed it between AD 690 and 1010, and it is attributed to the Manasota culture. Later island history includes homesteaders, speakeasies, a Hollywood movie studio and a 1930s airport.",
+          "visiting": "The Cultural and Natural History Center has exhibits, programs and tours; the preserve says the public can view the 1,100-year-old canoe in the Welcome Center. More than 4.7 miles of boardwalks and trails cross the preserve.",
+          "sources": [
+            "https://www.weedonislandpreserve.org/history-archaeology.htm",
+            "https://www.weedonislandpreserve.org/prehistoric-canoe.htm",
+            "https://pinellas.gov/parks/weedon-island-preserve/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/72000347",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.weedonislandpreserve.org/history-archaeology.htm",
+        "also_sources": [
+          "https://www.weedonislandpreserve.org/",
+          "https://www.weedonislandpreserve.org/prehistoric-canoe.htm",
+          "https://pinellas.gov/parks/weedon-island-preserve/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/72000347"
+        ],
+        "notes": "Shared id with the outdoors slice (which owns the park record); this record adds the heritage block. The county page says the north paddling trail is closed at this time. The canoe page also says the canoe will be reassembled and displayed once conservation is complete; its first line says the public can now view it in the Welcome Center.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "african-american-heritage-trail-st-petersburg",
+        "name": "African American Heritage Trail",
+        "aliases": [
+          "St. Pete African American Heritage Trail"
+        ],
+        "kind": "trail",
+        "kinds": [
+          "historic-district"
+        ],
+        "topics": [
+          "history",
+          "black-history"
+        ],
+        "area": "south-stpete",
+        "address": "Starts at the Carter G. Woodson African American Museum, 2240 9th Ave S",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.761019,
+        "lng": -82.663243,
+        "geo_source": "census",
+        "url": "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
+        "summary": "A self-guided walking tour of 19 markers in two corridors, 22nd Street South and 9th Avenue South, on the history of St. Petersburg's African American community. Both routes start at the Carter G. Woodson African American Museum.",
+        "heritage": {
+          "story": "The city says John and Anna Donaldson, the first African American settlers on the Pinellas peninsula, arrived in 1868. Under Jim Crow laws Black residents built their own commercial, professional and entertainment street along 22nd Street South; the 1931 City Charter set separate residential districts by race. The 22nd Street trail covers businesses, the Manhattan Casino, the 1948 Royal Theater and Mercy Hospital (opened 1923); the 9th Avenue trail covers churches, Jordan Elementary School, the Fannye Ayer Ponder Council House and the Jordan Park housing complex, which opened in 1941 with 446 apartments.",
+          "visiting": "Each corridor is about 1.25 miles with ten stops. Groups and classes can arrange a guided walking or trolley tour through the African American Heritage Association, per the city.",
+          "sources": [
+            "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
+            "https://www.stpete.org/visitors/history.php"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.stpete.org/residents/parks___recreation/african_american_heritage_trail.php",
+        "also_sources": [
+          "https://www.stpete.org/visitors/history.php"
+        ],
+        "notes": "Point is the trail start (Woodson museum, 2240 9th Ave S). The heritage trail's own site (afamheritagestpete.com) did not respond (connection reset / HTTP 503) on Sep 27, 2026. The city page says 'nineteen markers' and also 'ten trail stops' per corridor; both are reported as the city states them.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gulfport-casino-ballroom",
+        "name": "Gulfport Casino Ballroom",
+        "aliases": [
+          "Gulfport Casino"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "history",
+          "music"
+        ],
+        "area": "gulfport",
+        "address": "5500 Shore Blvd S",
+        "city": "Gulfport",
+        "state": "FL",
+        "zip": "33707",
+        "lat": 27.737485,
+        "lng": -82.70786,
+        "geo_source": "photon",
+        "summary": "Gulfport's waterfront casino ballroom on Boca Ciega Bay, first built in 1906 at the end of a dock and rebuilt in the 1930s. It is on the National Register.",
+        "heritage": {
+          "built": "1906 (first building); 1930s (current building)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Gulfport Casino)",
+              "ref": "14000477",
+              "year": 2014,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/14000477"
+            }
+          ],
+          "era": "land-boom",
+          "story": "The first casino was built in 1906 at the end of the dock into Boca Ciega Bay as a station and ticket office, with a post office and a refreshment stand. The current building dates from a reconstruction in the 1930s. It was listed in the National Register of Historic Places on August 8, 2014. The Gulfport Merchants Chamber calls it the original casino ballroom that still hosts swing dances.",
+          "visiting": "On Shore Boulevard at the foot of Beach Boulevard on the Gulfport waterfront.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Gulfport_Casino",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/14000477",
+            "https://visitgulfportflorida.com/about-gulfport/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Gulfport_Casino",
+        "also_sources": [
+          "https://visitgulfportflorida.com/about-gulfport/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/14000477"
+        ],
+        "notes": "STATUS NOT CONFIRMED BY THE OWNER: the City of Gulfport site (mygulfport.us), which runs the Casino, returned a bot check to both curl and WebFetch on Sep 27, 2026. Status 'open' rests on the Gulfport Merchants Chamber's About page (copyright 2026) saying 'the original casino ballroom that still hosts swing dances today'. Counter-signal: the chamber's 2026 Gecko Ball (Aug 29, 2026) was held at Stetson University, not the Casino. Gulfport's waterfront flooded in Hurricane Helene (2024); verifier, please confirm on the city's Casino page. 'Foot of Beach Boulevard': the see-pinellas slice's note places the Casino there (OSM); Shore Blvd address from Wikipedia and NRIS.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "jungle-prada-site",
+        "name": "Jungle Prada Site",
+        "aliases": [
+          "Jungle Prada de Narvaez Park",
+          "Anderson-Narváez Site",
+          "Jungle Mound"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "park"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "west-stpete",
+        "address": "Park Street North at Elbow Lane",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "lat": 27.787904,
+        "lng": -82.753495,
+        "geo_source": "photon",
+        "summary": "An archaeological site on Boca Ciega Bay with remains of Tocobaga mounds, partly inside a small city park. It is also identified as the landing place of the Narváez expedition.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "03000007",
+              "year": 2003,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/03000007"
+            }
+          ],
+          "era": "indigenous",
+          "story": "The Tocobaga inhabited the site for about 600 years, from roughly 1000 to 1600 CE, in a village complex whose mounds once stretched more than 3 miles along Boca Ciega Bay; most were removed for fill during 20th-century development. The remaining mounds include a 12-foot plaza mound and a long midden mound running from the city park onto private property. The site is identified with the landing of the Narváez expedition, and the Diocese of St. Petersburg placed a marker there for what it calls the first Catholic Mass in Florida. It was listed in the National Register of Historic Places on February 4, 2003.",
+          "visiting": "The public part is the city's Jungle Prada de Narvaez park, with picnic tables, a fishing pier and a boat launch; the better-preserved mounds are on private land.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Jungle_Prada_Site",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/03000007"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Jungle_Prada_Site",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/03000007"
+        ],
+        "notes": "No city page for Jungle Prada park was found; facts are from Wikipedia and the NPS NRIS record. Wikipedia says the private mounds and a small museum are 'accessible by guided tour'; not repeated because no current tour page was found. Point is the OSM park (leisure=park 'Jungle Prada').",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "historic-kenwood",
+        "name": "Historic Kenwood",
+        "aliases": [
+          "Kenwood Historic District"
+        ],
+        "kind": "historic-district",
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "area": "grand-central",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "lat": 27.775863,
+        "lng": -82.670273,
+        "geo_source": "photon",
+        "url": "https://www.historickenwood.org/about",
+        "summary": "A National Register district of bungalows just north of St. Petersburg's Grand Central District, developed from 1912. The neighborhood association calls it St. Pete's first suburb.",
+        "heritage": {
+          "style": "Bungalow/Craftsman (NRIS); frame and masonry vernacular, Tudor, Mediterranean and Colonial Revival also present",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Kenwood Historic District)",
+              "ref": "03000729",
+              "year": 2003,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/03000729"
+            }
+          ],
+          "era": "land-boom",
+          "story": "In 1912 Philadelphia developer Charles Hall bought 160 acres of avocado groves about two miles northwest of downtown and began selling building lots; his first model home, built in 1918, is now the Craftsman House Gallery. Most homes were built between the 1920s and the 1950s, and 170 were moved here from other neighborhoods in the 1930s. The district, with 2,203 historic buildings, was listed in the National Register of Historic Places in 2003; St. Petersburg High School (1926) stands in it on 5th Avenue North.",
+          "visiting": "A residential neighborhood; walk its brick avenues and hexagon-paver sidewalks among bungalows. Several sections are also city local historic districts.",
+          "sources": [
+            "https://www.historickenwood.org/about",
+            "https://en.wikipedia.org/wiki/Kenwood_Historic_District_(St._Petersburg,_Florida)",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/03000729"
+          ]
+        },
+        "status": "open",
+        "quote": "Kenwood was St. Pete’s first suburb and its first neighborhood for year-round residents",
+        "source_url": "https://www.historickenwood.org/about",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Kenwood_Historic_District_(St._Petersburg,_Florida)",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/03000729"
+        ],
+        "notes": "Wikipedia says homes were built 1912–1945; the association says 1920s–1950s; the association wording is used. Point is the OSM neighbourhood node.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "downtown-st-petersburg-historic-district",
+        "name": "Downtown St. Petersburg Historic District",
+        "kind": "historic-district",
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.773448,
+        "lng": -82.637549,
+        "geo_source": "census",
+        "summary": "The National Register district covering much of downtown St. Petersburg between 5th Avenue North, Beach Drive, Central Avenue and 9th Street, with 367 historic buildings. Many carry bronze plaques that mark them as part of the district.",
+        "heritage": {
+          "style": "Late Victorian; Late 19th and 20th Century Revivals (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "04000364",
+              "year": 2004,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/04000364"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The district was listed in the National Register of Historic Places on April 30, 2004, and is bounded by 5th Avenue North, Beach Drive NE, Central Avenue and 9th Street North. It contains 367 historic buildings and 7 objects, including the Snell Arcade, the Coliseum, the Princess Martha Hotel and First United Methodist Church. The National Park Service record gives 1888, the year the railroad arrived, as a significant year and lists architecture, community planning, commerce and entertainment as its areas of significance.",
+          "visiting": "Walk Central Avenue and the streets around Williams Park. Buildings in the district carry bronze 'contributing structure' plaques (awarded in 2004), and small 1988 centennial plaques set in the sidewalks mark vanished landmarks.",
+          "sources": [
+            "https://npgallery.nps.gov/AssetDetail/NRIS/04000364",
+            "https://en.wikipedia.org/wiki/Downtown_St._Petersburg_Historic_District",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/04000364",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Downtown_St._Petersburg_Historic_District",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf"
+        ],
+        "notes": "Point is Williams Park (330 2nd Ave N), a representative spot inside the district. 'the year the railroad arrived': the city's Demens Landing marker (markers PDF) says Demens extended the Orange Belt railroad to St. Petersburg in 1888; verifier may drop the clause if the pairing is judged editorial.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "mirror-lake-library",
+        "name": "Mirror Lake Community Library",
+        "aliases": [
+          "Carnegie Mirror Lake Library",
+          "Mirror Lake Library"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "280 5th St N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.774857,
+        "lng": -82.639847,
+        "geo_source": "census",
+        "url": "https://www.splibraries.org/visit/locations",
+        "phone": "727-893-7268",
+        "is_free": true,
+        "summary": "St. Petersburg's Carnegie library, opened on Mirror Lake in 1915 and still a branch of the city library system. It is on the National Register.",
+        "heritage": {
+          "built": "1915",
+          "architect": "Henry D. Whitfield",
+          "style": "Beaux-Arts",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (St. Petersburg Public Library)",
+              "ref": "86001259",
+              "year": 1986,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/86001259"
+            },
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "HPC #90-02",
+              "year": 1990,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The city won a 17,500 dollar grant from the Carnegie Corporation in 1913 and in 1914 chose a site on the banks of the city reservoir, now Mirror Lake. The Beaux-Arts library by Henry D. Whitfield opened in December 1915 as the first permanent home of the city's public library. The city refused Black residents access when it opened and began admitting them to the basement in 1944. It was listed in the National Register of Historic Places in 1986.",
+          "visiting": "A working city library branch; the city says it remains in operation today.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Mirror_Lake_Library",
+            "https://www.stpete.org/visitors/history.php",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/86001259",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.splibraries.org/visit/locations",
+        "also_sources": [
+          "https://www.stpete.org/visitors/history.php",
+          "https://en.wikipedia.org/wiki/Mirror_Lake_Library",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/86001259"
+        ],
+        "notes": "Library hours not captured (the locations page lists address and phone only). NRIS spells the architect 'Whitefield, Henry'; Wikipedia gives Henry D. Whitfield, used here. is_free: public library (no admission).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "huggins-stengel-field",
+        "name": "Huggins-Stengel Field",
+        "aliases": [
+          "Crescent Lake Field",
+          "Miller Huggins Field"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "sports"
+        ],
+        "topics": [
+          "history",
+          "sports"
+        ],
+        "area": "old-northeast",
+        "address": "1320 5th St N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.785495,
+        "lng": -82.640135,
+        "geo_source": "census",
+        "summary": "A baseball field in Crescent Lake Park built in 1925 for New York Yankees spring training and later used by the Mets and Orioles. It is on the National Register and is a city landmark.",
+        "heritage": {
+          "built": "1925",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "100004348",
+              "year": 2019,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/100004348"
+            },
+            {
+              "name": "St. Petersburg Register of Historic Places (local landmark)",
+              "ref": "18-90300005",
+              "year": 2018,
+              "url": "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf"
+            }
+          ],
+          "era": "land-boom",
+          "story": "The field in Crescent Lake Park was built in 1925 as the New York Yankees' spring training practice field under manager Miller Huggins, and was renamed Miller Huggins Field in 1931. Babe Ruth, Lou Gehrig and Joe DiMaggio trained here, and later Casey Stengel's Yankees; after Stengel took over the new New York Mets, the Mets trained here and the field was renamed Huggins-Stengel Field in 1963. The Baltimore Orioles used it from 1992 to 1995. It was listed in the National Register of Historic Places in 2019.",
+          "visiting": "In Crescent Lake Park; two bronze plaques honor Miller Huggins and Casey Stengel. The field now hosts high school and college games, per Wikipedia.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Huggins-Stengel_Field",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/100004348",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf",
+            "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Huggins-Stengel_Field",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/100004348",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/St-Petersburg-Register-of-Historic-Places.pdf",
+          "https://www.stpete.org/Business/Planning%20%26%20Zoning/Historic%20Preservation/Markers-and-Monuments.pdf"
+        ],
+        "notes": "No city parks page for the field was found (stpeteparksrec.org pages are script-rendered). The NRHP list gives the listing date Aug 27, 2019.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pass-a-grille-historic-district",
+        "name": "Pass-a-Grille Historic District",
+        "aliases": [
+          "Old Town of Pass-a-Grille"
+        ],
+        "kind": "historic-district",
+        "topics": [
+          "history",
+          "beaches"
+        ],
+        "area": "pass-a-grille",
+        "city": "St. Pete Beach",
+        "state": "FL",
+        "zip": "33706",
+        "lat": 27.688039,
+        "lng": -82.736356,
+        "geo_source": "census",
+        "url": "https://www.stpetebeach.org/571/Historic-Tours",
+        "summary": "The old beach town at the southern tip of St. Pete Beach, listed in the National Register in 1989 and expanded in 2003. The city publishes a self-guided walking tour of 21 of its historic buildings.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "89001734",
+              "year": 1989,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/89001734"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Zephaniah Phillips, Pass-a-Grille's first homesteader, claimed 79 acres here in 1886; the city's tour says the house at 101 Eighth Avenue incorporates part of his cabin. Residents voted to incorporate at a town meeting on February 2, 1911, and in 1957 Pass-a-Grille was consolidated with Don CeSar, Belle Vista and St. Petersburg Beach into the City of St. Petersburg Beach. The Pass-a-Grille Community Church was dedicated on Christmas Day 1917; its later owner, Joan Haley, left it to Pinellas County in 1989 for a museum of the barrier islands. The district was listed in the National Register of Historic Places on October 19, 1989, with 97 historic buildings, and expanded in 2003.",
+          "visiting": "Follow the city's self-guided walking tour (an online story map of 21 buildings). Eighth Avenue keeps early commercial buildings such as the 1912 Merry store at 107 Eighth Avenue.",
+          "sources": [
+            "https://storymaps.arcgis.com/stories/fc43a93a44c64a0e8047b4c2cb9280e8",
+            "https://www.stpetebeach.org/260/Community-History",
+            "https://en.wikipedia.org/wiki/Pass-a-Grille_Historic_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/89001734"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://storymaps.arcgis.com/stories/fc43a93a44c64a0e8047b4c2cb9280e8",
+        "also_sources": [
+          "https://www.stpetebeach.org/571/Historic-Tours",
+          "https://www.stpetebeach.org/260/Community-History",
+          "https://en.wikipedia.org/wiki/Pass-a-Grille_Historic_District",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/89001734"
+        ],
+        "notes": "The tour (City of St. Pete Beach, compiled by Barbara Baker Smith, historian of the Pass-a-Grille Community Church) was read through the ArcGIS item data API (arcgis.com/sharing/rest/content/items/fc43a93a44c64a0e8047b4c2cb9280e8/data). Point is 107 8th Ave, a building on the tour. The former church is the Gulf Beaches Historical Museum per Wikipedia; its own site (gulfbeachesmuseum.org) returned a bot check, so the museum has no record here and its hours/status are unconfirmed.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "fort-de-soto-historic-batteries",
+        "name": "Fort De Soto Batteries",
+        "aliases": [
+          "Historic Fort De Soto",
+          "Battery Laidley"
+        ],
+        "kind": "historic-site",
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "fort-de-soto",
+        "address": "Fort De Soto Park, Mullet Key",
+        "state": "FL",
+        "lat": 27.615543,
+        "lng": -82.736051,
+        "geo_source": "photon",
+        "url": "https://pinellas.gov/parks/fort-de-soto-park/",
+        "is_free": false,
+        "price_text": "County parking fee of 6 dollars to enter the park",
+        "summary": "The Spanish–American War coastal fort on Mullet Key that gave Fort De Soto Park its name, with its 12-inch mortar battery, brick roads and a small museum. The battery is on the National Register.",
+        "heritage": {
+          "built": "1898–1906",
+          "architect": "U.S. Army",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Fort Desoto Batteries)",
+              "ref": "77000407",
+              "year": 1977,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/77000407"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Mullet Key was declared a military reservation in 1849 after an Army engineers' survey. Construction of Fort De Soto, a subpost of Fort Dade on Egmont Key, began in November 1898 and was completed in 1906; its Batteries Laidley and Bigelow, with 12-inch coast defense mortars, guarded the entrance to Tampa Bay, and the post was active until 1910. Pinellas County bought the land in 1938, sold it back to the federal government in 1941 for a World War II gunnery and bombing range, and repurchased it in 1948. The mortar battery was listed in the National Register of Historic Places in 1977.",
+          "visiting": "Inside Fort De Soto Park: the battery with its remaining 12-inch mortars, two British rapid-fire rifles of 1890 vintage installed in 1982, markers where the post's buildings stood, and the Quartermaster Storehouse Museum. A 6.8-mile paved trail links the campground and beaches to the fort.",
+          "sources": [
+            "https://pinellas.gov/parks/fort-de-soto-park/",
+            "https://en.wikipedia.org/wiki/Fort_De_Soto_Park",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/77000407"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://pinellas.gov/parks/fort-de-soto-park/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Fort_De_Soto_Park",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/77000407"
+        ],
+        "notes": "Separate record for the fort inside the outdoors slice's fort-de-soto-park. Point is the OSM building 'Battery Laidly, Original Brick Road 1898'. The county page gives the 6 dollar parking fee (plus a 0.35 dollar app/text convenience fee).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "egmont-key-state-park",
+        "name": "Egmont Key State Park",
+        "kind": "state-park",
+        "kinds": [
+          "historic-site",
+          "island"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "beaches",
+          "wildlife"
+        ],
+        "area": "fort-de-soto",
+        "state": "FL",
+        "lat": 27.59366,
+        "lng": -82.761768,
+        "geo_source": "photon",
+        "url": "https://www.floridastateparks.org/parks-and-trails/egmont-key-state-park",
+        "summary": "An island at the mouth of Tampa Bay, reached only by boat, with the 1858 Egmont Key Lighthouse and the ruins of Fort Dade. It is a state park and national wildlife refuge.",
+        "heritage": {
+          "built": "1858 (lighthouse); 1898 (Fort Dade)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Egmont Key)",
+              "ref": "78000946",
+              "year": 1978,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/78000946"
+            }
+          ],
+          "era": "frontier",
+          "story": "The lighthouse that stands today replaced an earlier light in 1858 and is maintained by the U.S. Coast Guard. At the end of the Third Seminole War the island held a camp for captured Seminoles, and Union forces occupied it during the Civil War. Fort Dade was built in 1898 for the Spanish–American War and housed 300 residents; Egmont Key stayed a military reservation until 1923. The Egmont Key Alliance says the island has lost more than half its land since 1898 to storms and rising seas, and that in 2024 Hurricanes Helene and Milton pushed surge 15 feet up the lighthouse and closed the island for more than six months.",
+          "visiting": "Reached only by boat or ferry. Visitors walk the Fort Dade ruins, batteries and brick roads; the south end and part of the east beach are closed year-round for nesting birds.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Egmont_Key_State_Park_and_National_Wildlife_Refuge",
+            "https://www.egmontkey.info/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/78000946"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Egmont_Key_State_Park_and_National_Wildlife_Refuge",
+        "also_sources": [
+          "https://www.egmontkey.info/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/78000946"
+        ],
+        "notes": "Shared id with the outdoors slice (which owns the park record and checked the ferry). floridastateparks.org returned HTTP 403 to WebFetch and bot-checks curl. 'Walk the Fort Dade ruins, batteries and brick roads' rests on the Alliance's note that volunteers 'helped restore brick trails, lighthouse surroundings, and Fort Dade structures' and on Wikipedia; the outdoors record states it directly. Status open: the Alliance describes the post-2024 closure in the past tense.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "old-pinellas-county-courthouse",
+        "name": "Old Pinellas County Courthouse",
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-clearwater",
+        "address": "315 Court St",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33756",
+        "lat": 27.962264,
+        "lng": -82.801577,
+        "geo_source": "census",
+        "summary": "Pinellas County's Classical Revival courthouse in downtown Clearwater, designed by Francis J. Kennard, with its 1917 building and 1920s additions. It is on the National Register.",
+        "heritage": {
+          "built": "1917, 1924, 1926",
+          "architect": "Francis J. Kennard",
+          "style": "Classical Revival",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Pinellas County Courthouse, Old)",
+              "ref": "92000828",
+              "year": 1992,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/92000828"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Designed by Francis J. Kennard, the courthouse replaced a hastily built structure that had been put up to help establish Clearwater as the county seat. The National Park Service record lists 1917, 1924 and 1926 as its significant years, for the original building and its additions. It was listed in the National Register of Historic Places on June 25, 1992.",
+          "visiting": "Seen from Court Street in downtown Clearwater.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Old_Pinellas_County_Courthouse",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/92000828"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/92000828",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Old_Pinellas_County_Courthouse"
+        ],
+        "notes": "Wikipedia's text says 'constructed in 1918' while its infobox and NRIS give 1917, 1924, 1926; NRIS used. Current use of the building (county offices) not confirmed on a county page; the record claims only the exterior.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "harbor-oaks-historic-district",
+        "name": "Harbor Oaks Residential District",
+        "aliases": [
+          "Harbor Oaks"
+        ],
+        "kind": "historic-district",
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-clearwater",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33756",
+        "lat": 27.958266,
+        "lng": -82.803451,
+        "geo_source": "census",
+        "summary": "An early 20th-century residential district on Clearwater Harbor just south of downtown Clearwater, developed by Dean Alvord. It is on the National Register.",
+        "heritage": {
+          "style": "Colonial Revival; Late 19th and 20th Century Revivals; Prairie School (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "87002133",
+              "year": 1988,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/87002133"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Developer Dean Alvord built Harbor Oaks in the early 20th century. Its residents included Brooklyn Dodgers owner Charles Ebbets, writer Rex Beach and engineer Donald Roebling, whose estate at 700 Orange Avenue is also separately listed in the National Register. Bounded by Druid Road, South Fort Harrison Avenue, Lotus Path and Clearwater Harbor, the district has 81 historic buildings and was listed in the National Register of Historic Places on March 15, 1988.",
+          "visiting": "A residential neighborhood; the homes are seen from the street.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Harbor_Oaks_Residential_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/87002133"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/87002133",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Harbor_Oaks_Residential_District"
+        ],
+        "notes": "Point is the Donald Roebling Estate (700 Orange Ave), which Wikipedia lists as a notable property in the district. No City of Clearwater page on the district was read.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "andrews-memorial-chapel",
+        "name": "Andrews Memorial Chapel",
+        "kind": "historic-site",
+        "kinds": [
+          "house-of-worship"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "dunedin",
+        "address": "1899 San Mateo Dr",
+        "city": "Dunedin",
+        "state": "FL",
+        "zip": "34698",
+        "lat": 28.033374,
+        "lng": -82.784472,
+        "geo_source": "census",
+        "url": "https://dunedinmuseum.org/venue-rental/support-the-chapel/",
+        "phone": "727-281-1846",
+        "summary": "An 1888 Carpenter Gothic church built by Dunedin's pioneer families, saved and moved to Hammock Park by the Dunedin Historical Society. The Dunedin History Museum runs it for weddings and community events.",
+        "quote": "Historic Andrews Memorial Chapel was built by Dunedin’s Pioneer families in 1888 and rescued from demolition by the Dunedin Historical Society in 1970.",
+        "heritage": {
+          "built": "1888",
+          "style": "Carpenter Gothic",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "72000346",
+              "year": 1972,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/72000346"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Built in 1888 as Andrews Memorial Church at Scotland Street and Highland Avenue, the building was renamed Andrews Memorial Chapel and moved in 1926 to make way for what is now the First Presbyterian Church of Dunedin. The Dunedin Historical Society bought it in 1970 to save it from demolition, cut it in half and moved it to Hammock Park, where restoration began in 1974. It was listed in the National Register of Historic Places on July 31, 1972.",
+          "visiting": "Next to Hammock Park. The Dunedin History Museum operates the chapel for weddings, christenings, memorials and community events; contact the chapel manager for access.",
+          "sources": [
+            "https://dunedinmuseum.org/venue-rental/support-the-chapel/",
+            "https://en.wikipedia.org/wiki/Andrews_Memorial_Chapel_(Dunedin,_Florida)",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/72000346"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://dunedinmuseum.org/venue-rental/support-the-chapel/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Andrews_Memorial_Chapel_(Dunedin,_Florida)",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/72000346"
+        ],
+        "notes": "Wikipedia says it is open for visits on Sundays from 2 to 4 PM; the museum's page does not say so, so no public hours are given.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sponge-docks-tarpon-springs",
+        "name": "Tarpon Springs Sponge Docks",
+        "aliases": [
+          "Sponge Exchange",
+          "Tarpon Springs Greektown Historic District"
+        ],
+        "kind": "district",
+        "kinds": [
+          "historic-district"
+        ],
+        "topics": [
+          "history",
+          "food",
+          "shopping"
+        ],
+        "area": "tarpon-springs",
+        "address": "Dodecanese Blvd",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.154995,
+        "lng": -82.760826,
+        "geo_source": "photon",
+        "url": "https://spongedocks.net/",
+        "summary": "The Anclote River waterfront along Dodecanese Boulevard where Greek divers built Tarpon Springs' sponge industry. It is the core of the Greektown Historic District, with the 1907 Sponge Exchange, sponge boats, shops and Greek restaurants.",
+        "heritage": {
+          "built": "1907 (Sponge Exchange)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Tarpon Springs Sponge Exchange)",
+              "ref": "72000348",
+              "year": 1972,
+              "url": "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Pinellas_County,_Florida"
+            },
+            {
+              "name": "National Register of Historic Places (Tarpon Springs Greektown Historic District, a Traditional Cultural Property)",
+              "ref": "14000321",
+              "year": 2014,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/14000321"
+            }
+          ],
+          "era": "boomtown",
+          "story": "After Tarpon Springs was incorporated in 1887, John Cheney, a promoter associated with Hamilton Disston, began harvesting sponges from the Gulf, and by 1890 the industry was established. Experienced divers from Greece followed, using rubberized suits and helmets; by 1905 more than 500 Greek sponge divers worked from 50 boats. Sponge buyers built the Sponge Exchange in 1907, a courtyard building where catches were stored for twice-weekly auctions. The Greektown Historic District, about 140 acres around the docks, was listed in 2014 as the first Traditional Cultural Property in Florida.",
+          "visiting": "Walk Dodecanese Boulevard past docked sponge boats, sponge shops, Greek restaurants and bakeries; the Sponge Exchange now holds more than 30 shops and restaurants, and SpongeDocks.net says sponge auctions are held weekly.",
+          "sources": [
+            "https://spongedocks.net/tarpon-springs-history/",
+            "https://en.wikipedia.org/wiki/Tarpon_Springs_Greektown_Historic_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/14000321",
+            "https://exploretarponsprings.com/day-in-tarpon-springs/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://spongedocks.net/tarpon-springs-history/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Tarpon_Springs_Greektown_Historic_District",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/14000321",
+          "https://exploretarponsprings.com/day-in-tarpon-springs/"
+        ],
+        "notes": "Shared id with see-pinellas (which owns the place record); this record adds the heritage block. The Sponge Exchange's NRHP ref 72000348 (listed 1972) comes from Wikipedia's Pinellas NRHP list; its NPGallery page returned no metadata. Four sponge boats (Duchess, George N. Cretekos, N. K. Symi, St. Nicholas III and VI) are also separately listed (1990) per the same list. SpongeDocks.net says 'For 30 years, the sponge industry was the largest industry in Florida'; not repeated as fact. Point is the OSM 'The Sponge Exchange' (see-pinellas uses 28.155818,-82.762023).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-nicholas-greek-orthodox-cathedral",
+        "name": "St. Nicholas Greek Orthodox Cathedral",
+        "aliases": [
+          "Saint Nicholas Greek Orthodox Cathedral"
+        ],
+        "kind": "house-of-worship",
+        "kinds": [
+          "historic-site",
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "tarpon-springs",
+        "address": "36 N Pinellas Ave",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.1466,
+        "lng": -82.756576,
+        "geo_source": "census",
+        "url": "https://www.stnicholastarpon.org/",
+        "hours_text": "Typically open for prayer on weekdays 9:00 a.m.–3:00 p.m., subject to services",
+        "summary": "The domed 1943 cathedral of Tarpon Springs' Greek Orthodox parish, paid for in part by sponge divers' harvests. It leads the city's Epiphany celebration each January 6.",
+        "quote": "When the need for a larger building arose, the sponge divers funded the new cathedral by donating a portion of each sponge harvest to St. Nicholas.",
+        "heritage": {
+          "built": "1943",
+          "architect": "Eugene Brothers of Chicago",
+          "style": "Neo-Byzantine",
+          "era": "land-boom",
+          "story": "Greek immigrants built the parish's first church, a frame building, in 1907 and named it for Saint Nicholas, protector of seafaring people. The current cathedral was completed in 1943; its marble from Mount Penteli, a gift of the Greek government, had first been shipped to New York for the 1939 World's Fair. The church was elevated to a cathedral in January 1979. Each January 6 the parish holds its Epiphany celebration, when young men dive into Spring Bayou to retrieve a cross.",
+          "visiting": "Visitors are welcome; the cathedral is typically open for prayer on weekdays from 9 a.m. to 3 p.m. Public parking lots are a block away.",
+          "sources": [
+            "https://www.stnicholastarpon.org/about-st-nicholas-cathedral",
+            "https://www.stnicholastarpon.org/visitor-information",
+            "https://en.wikipedia.org/wiki/St._Nicholas_Greek_Orthodox_Cathedral_(Tarpon_Springs,_Florida)"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.stnicholastarpon.org/about-st-nicholas-cathedral",
+        "also_sources": [
+          "https://www.stnicholastarpon.org/visitor-information",
+          "https://en.wikipedia.org/wiki/St._Nicholas_Greek_Orthodox_Cathedral_(Tarpon_Springs,_Florida)"
+        ],
+        "notes": "Architect (Eugene Brothers of Chicago), 'Neo-Byzantine' and the Epiphany description are from Wikipedia; the rest from the cathedral's pages. The parish's page says services are in Greek and English and asks for modest dress.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tarpon-springs-historic-district",
+        "name": "Tarpon Springs Historic District",
+        "kind": "historic-district",
+        "topics": [
+          "history"
+        ],
+        "area": "tarpon-springs",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.148638,
+        "lng": -82.759261,
+        "geo_source": "census",
+        "summary": "The late 19th-century resort town around Spring Bayou in Tarpon Springs, with 145 historic buildings. It is on the National Register.",
+        "heritage": {
+          "style": "Bungalow/Craftsman (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "90001762",
+              "year": 1990,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/90001762"
+            }
+          ],
+          "era": "boomtown",
+          "story": "A. W. Ormond and his daughter Mary built a cabin near Spring Bayou in 1876, and Mary Ormond named the settlement Tarpon Springs in 1879. Hamilton Disston's 1880 purchase of four million acres of Florida's west coast included the town, which Disston's investment turned into a winter resort for wealthy Northerners; it was incorporated in 1887 with 52 residents. The district around Spring Bayou, bounded by Read, Hibiscus, Orange and Lemon Streets and Levis Avenue, has 145 historic buildings and was listed in the National Register of Historic Places on December 6, 1990.",
+          "visiting": "Walk the winding streets around Spring Bayou; the Safford House Museum is in the district.",
+          "sources": [
+            "https://spongedocks.net/tarpon-springs-history/",
+            "https://en.wikipedia.org/wiki/Tarpon_Springs_Historic_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/90001762",
+            "https://tarponarts.org/event-location/safford-house-museum/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/90001762",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Tarpon_Springs_Historic_District",
+          "https://spongedocks.net/tarpon-springs-history/"
+        ],
+        "notes": "Point is the Safford House (23 Parkin Ct), which Tarpon Arts says is in the historic district. SpongeDocks.net notes the fish Mary Ormond saw were actually mullet, not tarpon.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "safford-house-museum",
+        "name": "Safford House Museum",
+        "aliases": [
+          "Safford House"
+        ],
+        "kind": "museum",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "tarpon-springs",
+        "address": "23 Parkin Ct",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.148638,
+        "lng": -82.759261,
+        "geo_source": "census",
+        "url": "https://tarponarts.org/event-location/safford-house-museum/",
+        "phone": "727-942-5605",
+        "hours_text": "Wednesday–Friday 11 AM–3 PM; docent tours start 11:15 AM, 12:15, 1:15 and 2:15 PM",
+        "price_text": "Adults 5 dollars; Tarpon Springs residents 3 dollars (ID required)",
+        "is_free": false,
+        "parking_text": "Free lot next to the house",
+        "summary": "The 1883 home of Anson P. K. Safford, a former Arizona territorial governor and early developer of Tarpon Springs, restored and run by the city as a Victorian house museum with docent tours.",
+        "quote": "Visiting the home of one of the city’s original developers is a journey back in time.",
+        "heritage": {
+          "built": "1883",
+          "style": "Late Victorian (NRIS); Florida vernacular (per Tarpon Arts)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "74000654",
+              "year": 1974,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/74000654"
+            }
+          ],
+          "era": "frontier",
+          "story": "The house was home to Anson P. K. Safford, former territorial governor of Arizona and one of Tarpon Springs' original developers, his wife Soledad, and his sister Dr. Mary Jane Safford, the town's first doctor. It was listed in the National Register of Historic Places in 1974 and donated to the city in 1994; restoration was funded by the state Division of Historical Resources and the city, and it is furnished with period pieces and original family possessions.",
+          "visiting": "Docent-led tours of about 40 minutes, Wednesday to Friday; arrive 15 to 20 minutes early for a short video on the Safford family.",
+          "sources": [
+            "https://tarponarts.org/event-location/safford-house-museum/",
+            "https://en.wikipedia.org/wiki/Safford_House",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/74000654"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://tarponarts.org/event-location/safford-house-museum/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Safford_House",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/74000654"
+        ],
+        "notes": "Tarpon Arts is the City of Tarpon Springs' cultural and civic services arm (the city site links to it). Era 'frontier' because the house dates from 1883 (the era table ends frontier at 1883).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "unitarian-universalist-church-of-tarpon-springs",
+        "name": "Unitarian Universalist Church of Tarpon Springs",
+        "aliases": [
+          "Inness paintings"
+        ],
+        "kind": "house-of-worship",
+        "kinds": [
+          "historic-site",
+          "gallery"
+        ],
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "area": "tarpon-springs",
+        "address": "230 Grand Blvd",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.148402,
+        "lng": -82.758816,
+        "geo_source": "census",
+        "url": "https://www.uutarpon.org/tour-the-inness-paintings/",
+        "phone": "727-937-4682",
+        "hours_text": "Sunday services 10:30 a.m.; tours of the Inness paintings by appointment",
+        "summary": "A 1908 church on Spring Bayou that holds the largest public collection of paintings by landscape painter George Inness Jr., shown in its restored sanctuary. Tours are by appointment.",
+        "quote": "Come experience the largest single collection of the beautiful paintings George Inness Jr. created for our Church; now displayed in our recently restored sanctuary.",
+        "heritage": {
+          "built": "1908",
+          "era": "boomtown",
+          "story": "Fourteen Universalists formed a congregation in Tarpon Springs in 1885 on land donated by Anson P. K. Safford. After fire destroyed its first building, the present church was built in 1908 at Grand Boulevard and Read Street. When a tropical storm broke sanctuary windows on September 28, 1918, George Inness Jr. and his family donated paintings to fill the openings, the start of the church's Inness collection. Sinkhole damage closed the buildings late in 2013; after nearly six years of work the church was rededicated on September 29, 2019.",
+          "visiting": "Call or email the church to schedule a tour of the paintings; Sunday services are at 10:30 a.m.",
+          "sources": [
+            "https://www.uutarpon.org/church-history/",
+            "https://www.uutarpon.org/inness-paintings/",
+            "https://www.uutarpon.org/tour-the-inness-paintings/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.uutarpon.org/church-history/",
+        "also_sources": [
+          "https://www.uutarpon.org/inness-paintings/",
+          "https://www.uutarpon.org/tour-the-inness-paintings/"
+        ],
+        "notes": "'Largest public collection' is the church's own claim ('the largest public collection of George Inness, Jr.'s paintings anywhere'). No NRHP designation of its own was found (it may be a contributing building of the Tarpon Springs Historic District; not verified).",
+        "checked": "2026-09-27",
+        "quote_source": "https://www.uutarpon.org/tour-the-inness-paintings/"
+      },
+      {
+        "id": "anclote-key-lighthouse",
+        "name": "Anclote Key Lighthouse",
+        "aliases": [
+          "Anclote Keys Light"
+        ],
+        "kind": "landmark",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "water"
+        ],
+        "area": "tarpon-springs",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "lat": 28.167021,
+        "lng": -82.844674,
+        "geo_source": "photon",
+        "url": "https://www.floridastateparks.org/parks-and-trails/anclote-key-preserve-state-park",
+        "summary": "An 1887 cast-iron skeletal lighthouse on the southern end of Anclote Key, about three miles off Tarpon Springs, restored and relit inside Anclote Key Preserve State Park. The island is reached only by boat.",
+        "heritage": {
+          "built": "1887",
+          "architect": "U.S. Lighthouse Service",
+          "style": "Cast-iron skeletal square pyramidal tower",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Anclote Keys Light)",
+              "ref": "99000410",
+              "year": 1999,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/99000410"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The lighthouse was built in 1887 on Anclote Key, the largest of the Anclote Keys. After it was automated in 1952 the tower and other buildings were often vandalized, and the Coast Guard deactivated the light in 1984; the site passed to the State of Florida and became part of Anclote Key Preserve State Park. It was listed in the National Register of Historic Places in 1999 and, by 2003, had been restored and relit with a reproduction fourth-order Fresnel lens.",
+          "visiting": "Anclote Key is reached only by private charter boat or ferry; Visit St. Pete/Clearwater names Odyssey Cruises, Private Island Charters and Spongeorama Cruise Lines, leaving from the Sponge Docks.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Anclote_Keys_Light",
+            "https://www.visitstpeteclearwater.com/article/explore-anclote-key",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/99000410"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Anclote_Keys_Light",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/article/explore-anclote-key",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/99000410"
+        ],
+        "notes": "floridastateparks.org blocks both tools (HTTP 403), so whether the tower can be climbed or toured is not stated; the outdoors slice owns anclote-key-preserve-state-park. Point is the OSM lighthouse node.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "1914-plant-city-high-school-community-center",
+        "name": "1914 Plant City High School Community Center",
+        "aliases": [
+          "Plant City High School (1914)",
+          "Old Plant City High School"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "plant-city",
+        "address": "605 N Collins St",
+        "city": "Plant City",
+        "state": "FL",
+        "zip": "33563",
+        "lat": 28.019109,
+        "lng": -82.12398,
+        "geo_source": "census",
+        "summary": "Plant City's original 1914 high school building on North Collins Street, now a community center. It is on the National Register.",
+        "heritage": {
+          "built": "1914",
+          "architect": "Willis R. Biggers (NRIS also lists Dudley and Carlton)",
+          "style": "Georgian Revival",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Plant City High School)",
+              "ref": "81000194",
+              "year": 1981,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/81000194"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Tampa architect Willis R. Biggers designed the original Plant City High School, built in 1914 at 605 North Collins Street. The high school later moved to a new building completed in 1972, and the 1914 building became a community center. It was listed in the National Register of Historic Places on February 4, 1981.",
+          "visiting": "A community center on North Collins Street; the city history page says the East Hillsborough Historical Society is on its first floor.",
+          "sources": [
+            "https://www.plantcitygov.com/explore/my_plant_city/history.php",
+            "https://en.wikipedia.org/wiki/Plant_City_High_School",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/81000194"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.plantcitygov.com/explore/my_plant_city/history.php",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Plant_City_High_School",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/81000194",
+          "https://www.visittampabay.com/listings/plant-city-history-and-photo-archives/23333/"
+        ],
+        "notes": "Conflict to check: the city's history page places the East Hillsborough Historical Society (2,000+ books and files) on the first floor of this building, but Visit Tampa Bay's listing for the Plant City History and Photo Archives says it is 'Now located at 110 East Reynolds St., Suite 90'. The record does not claim public hours.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "bing-rooming-house-museum",
+        "name": "Bing Rooming House Museum",
+        "aliases": [
+          "Bing Rooming House",
+          "Bing-Washington House"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "museum"
+        ],
+        "topics": [
+          "history",
+          "black-history"
+        ],
+        "area": "plant-city",
+        "address": "205 S Allen St",
+        "city": "Plant City",
+        "state": "FL",
+        "zip": "33563",
+        "lat": 28.014629,
+        "lng": -82.115992,
+        "geo_source": "census",
+        "summary": "A boarding house built about 1928 in Plant City, run by Janie Wheeler Bing for African American travelers barred from segregated hotels; now an African American history museum. It is on the National Register and is closed for hurricane repairs.",
+        "heritage": {
+          "built": "about 1928",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "02001009",
+              "year": 2002,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/02001009"
+            }
+          ],
+          "era": "land-boom",
+          "story": "The house was built about 1928 as a boarding house and was operated by Janie Wheeler Bing for African Americans who were not allowed to stay in segregated white hotels or eat in white restaurants. The National Park Service lists its area of significance as Black heritage, with periods from 1925 to 1974. It was listed in the National Register of Historic Places on September 14, 2002, and has since been renovated as a museum.",
+          "sources": [
+            "https://plantcitybinghouse.com/",
+            "https://en.wikipedia.org/wiki/Bing_Rooming_House",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/02001009"
+          ],
+          "visiting": "Closed for repairs after Hurricane Milton; the museum offers limited private tours by phone and says it presents Plant City African American history from an African American perspective."
+        },
+        "status": "temporarily-closed",
+        "source_url": "https://plantcitybinghouse.com/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Bing_Rooming_House",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/02001009"
+        ],
+        "notes": "Shared id with around-daytrips (its verifier also found the closure). Status from plantcitybinghouse.com read Sep 27, 2026: THE MUSEUM IS CLOSED THRU DECEMBER 2025 plus a fundraising total as of December 1, 2025; no reopening date is given, so the record stays temporarily-closed. The site also describes a Plant City African American Historic Tour of over 27 places.",
+        "checked": "2026-09-27",
+        "status_note": "Closed after major damage from Hurricane Milton (October 2024). The museum site (copyright 2026) says it is closed while repairs and a fundraising campaign continue (raising the foundation 4 feet, repairing water damage); its banner still reads closed thru December 2025. Limited private tours by phone; a free veterans assistance program runs Wednesdays 10 a.m. to 2 p.m.",
+        "url": "https://plantcitybinghouse.com/",
+        "phone": "813-757-6760"
+      },
+      {
+        "id": "pasco-county-courthouse",
+        "name": "Historic Pasco County Courthouse",
+        "aliases": [
+          "Pasco County Courthouse",
+          "Old Pasco County Courthouse"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "lutz-wesley-chapel",
+        "address": "37918 Meridian Ave",
+        "city": "Dade City",
+        "state": "FL",
+        "zip": "33525",
+        "lat": 28.364444,
+        "lng": -82.188611,
+        "geo_source": "wikipedia",
+        "summary": "Pasco County's 1909 courthouse in downtown Dade City, designed by Edward Columbus Hosford. It is on the National Register and the city's historic register.",
+        "heritage": {
+          "built": "1909",
+          "architect": "Edward Columbus Hosford (built by the Mutual Construction Company)",
+          "style": "Classical Revival (NRIS; Wikipedia describes it as Beaux-Arts)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "06000843",
+              "year": 2006,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/06000843"
+            },
+            {
+              "name": "Dade City Historic Register (Old Pasco County Courthouse and Bandstand)",
+              "url": "https://www.dadecityfl.com/our_government/departments/community___economic_development/historic_dade_city/index.php"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Georgia architect Edward Columbus Hosford designed the courthouse, which the Mutual Construction Company built in 1909 on Meridian Avenue; the National Park Service record gives 1909 and 1920 as its significant years. It was listed in the National Register of Historic Places on September 20, 2006, and Dade City's municipal historic register includes the old courthouse and its bandstand. In recent years the county clerk has held free Valentine's Day weddings on its steps.",
+          "visiting": "In downtown Dade City at 37918 Meridian Avenue; seen from the street.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Pasco_County_Courthouse",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/06000843",
+            "https://www.dadecityfl.com/our_government/departments/community___economic_development/historic_dade_city/index.php"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/06000843",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Pasco_County_Courthouse",
+          "https://www.dadecityfl.com/our_government/departments/community___economic_development/historic_dade_city/index.php"
+        ],
+        "notes": "Separate record for the courthouse; around-daytrips' historic-downtown-dade-city covers the district. Coordinates from Wikipedia (28°21′52″N 82°11′19″W); Photon matched the address to an OSM school node at the same spot, and Census found no match.",
+        "checked": "2026-09-27",
+        "url": "https://www.dadecityfl.com/our_government/departments/community___economic_development/historic_dade_city/index.php"
+      },
+      {
+        "id": "saint-leo-abbey",
+        "name": "Saint Leo Abbey",
+        "aliases": [
+          "St. Leo Abbey Historic District",
+          "Church of the Holy Cross"
+        ],
+        "kind": "house-of-worship",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "lutz-wesley-chapel",
+        "address": "33701 State Road 52",
+        "city": "St. Leo",
+        "state": "FL",
+        "zip": "33574",
+        "lat": 28.337222,
+        "lng": -82.26,
+        "geo_source": "wikipedia",
+        "url": "https://saintleoabbey.org/",
+        "summary": "A Benedictine monastery founded in 1889 beside what is now Saint Leo University, with the Romanesque Church of the Holy Cross, consecrated in 1948. Its historic district is on the National Register.",
+        "heritage": {
+          "built": "1889 (founded); 1935–1948 (Church of the Holy Cross)",
+          "architect": "Frank Parziole (Church of the Holy Cross)",
+          "style": "Romanesque",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (St. Leo Abbey Historic District)",
+              "ref": "97001637",
+              "year": 1998,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/97001637"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Judge Edmund F. Dunne founded the Catholic Colony of San Antonio in 1882, and Father Gerard Pilz arrived in 1886 as the first Benedictine in Florida. On June 4, 1889, Saint Leo College (now Saint Leo University) and the Benedictine mission that became Saint Leo Abbey were founded on land Dunne conveyed to the order; it was raised to an abbey on September 25, 1902. Abbot Francis Sadlier commissioned the Church of the Holy Cross in 1935; designed by Tampa architect Frank Parziole, it was consecrated on January 29, 1948. The abbey's historic district was listed in the National Register of Historic Places in 1998.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saint_Leo_Abbey",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/97001637"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Saint_Leo_Abbey",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/97001637"
+        ],
+        "notes": "The abbey's own site (saintleoabbey.org) returned HTTP 403 to both curl and WebFetch, so visiting hours, Mass times and retreat-house details are not given. NRIS names Bro. Anthony Poiger as an architect and gives 1912, 1936 and 1941 as significant years for the district. Address is the NRIS address (33701 FL 52); coordinates from Wikipedia.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "temple-terrace-golf-and-country-club",
+        "name": "Temple Terrace Golf and Country Club",
+        "aliases": [
+          "Temple Terrace Golf Course"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "sports"
+        ],
+        "topics": [
+          "history",
+          "sports"
+        ],
+        "area": "temple-terrace",
+        "address": "200 Inverness Ave",
+        "city": "Temple Terrace",
+        "state": "FL",
+        "zip": "33617",
+        "lat": 28.042909,
+        "lng": -82.375872,
+        "geo_source": "photon",
+        "summary": "The 1922 golf course around which Temple Terrace was built as one of the country's early golf communities, on land that was Bertha Palmer's hunting preserve. The course is on the National Register.",
+        "heritage": {
+          "built": "1922",
+          "architect": "Tom Bendelow (course); M. Leo Elliott (clubhouse)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Temple Terrace Golf Course)",
+              "ref": "12000888",
+              "year": 2012,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/12000888"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Chicago businesswoman Bertha Palmer bought the land early in the 1900s as a hunting preserve; after her death in 1918 investors formed two companies to build a golf course and homes and a 5,000-acre orange grove, which the city says was the largest in the world in the 1920s. Tom Bendelow's course opened in 1922 with a clubhouse by M. Leo Elliott, three years before the city was incorporated; the clubhouse became part of Florida College in the 1930s, and the course hosted the first Florida Open in 1925. It was listed in the National Register of Historic Places in 2012. The city calls Temple Terrace one of the first golfing communities in the United States and adopted a local historic preservation program in 2023.",
+          "visiting": "The course and club are on Inverness Avenue in Temple Terrace; Riverhills Drive along the Hillsborough River dates from 1921.",
+          "sources": [
+            "https://www.templeterrace.com/554/History-Overview",
+            "https://www.templeterrace.com/796/Historic-Preservation-Office",
+            "https://en.wikipedia.org/wiki/Temple_Terrace_Golf_and_Country_Club",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/12000888"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.templeterrace.com/554/History-Overview",
+        "also_sources": [
+          "https://www.templeterrace.com/796/Historic-Preservation-Office",
+          "https://en.wikipedia.org/wiki/Temple_Terrace_Golf_and_Country_Club",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/12000888",
+          "https://www.visittampabay.com/listings/city-of-temple-terrace/19064/"
+        ],
+        "notes": "Chosen as the Temple Terrace heritage record because it is the city's only NRHP listing and the core of its 1920s golf-community plan. Wikipedia's Temple Terrace article describes Mediterranean Revival villas, but that section is tagged unreferenced, so 'Mediterranean Revival' is not claimed. Whether the course is open to non-members was not confirmed (no club page read); the record does not say it is public. The city's History Map page reset the connection.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "el-retiro-bok-tower-gardens",
+        "name": "El Retiro",
+        "aliases": [
+          "Pinewood Estate",
+          "El Retiro at Bok Tower Gardens"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "garden"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "polk",
+        "address": "Bok Tower Gardens, 1151 Tower Blvd",
+        "city": "Lake Wales",
+        "state": "FL",
+        "lat": 27.937744,
+        "lng": -81.579112,
+        "geo_source": "photon",
+        "url": "https://boktowergardens.org/el-retiro/",
+        "phone": "863-676-1408",
+        "is_free": false,
+        "price_text": "El Retiro tour 10 dollars per adult, 5 dollars ages 6–17, plus Bok Tower Gardens admission (adults 25 dollars from Oct 1)",
+        "hours_text": "Docent-led tours; El Retiro is closed Mondays (gardens open daily 8 a.m.–6 p.m.)",
+        "summary": "A 20-room Mediterranean-style winter house built about 1930 for Bethlehem Steel executive Charles Austin Buck, with gardens by the Olmsted firm, inside Bok Tower Gardens. It is on the National Register and is seen on docent-led tours.",
+        "heritage": {
+          "built": "1929–1932",
+          "architect": "Charles R. Wait (house); William Lyman Phillips of the Olmsted firm (gardens)",
+          "style": "Mediterranean Revival",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "85003331",
+              "year": 1985,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/85003331"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Charles Austin Buck, a Bethlehem Steel vice president, hired the Olmsted firm to design his winter estate next to Mountain Lake; William Lyman Phillips began the gardens in 1929, and architect Charles Wait was engaged in 1930 to design the 12,900-square-foot house with barrel-tile roofs, carved doors and wrought iron. The family used it six to twelve weeks a year. In 1970 an effort led by Nellie Lee Holt Bok, daughter-in-law of Edward W. Bok, brought the home into Bok Tower Gardens, and landscape architect Rudy Favretti restored it with volunteers. It was listed in the National Register of Historic Places in 1985.",
+          "visiting": "Buy the tour at the Entrance Gate or Visitor Center before walking to the house. Stairs lead to the second floor and there is no elevator; food and drink are not allowed inside.",
+          "sources": [
+            "https://boktowergardens.org/el-retiro/",
+            "https://boktowergardens.org/admission/",
+            "https://en.wikipedia.org/wiki/El_Retiro_(Lake_Wales,_Florida)",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/85003331"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://boktowergardens.org/el-retiro/",
+        "also_sources": [
+          "https://boktowergardens.org/admission/",
+          "https://en.wikipedia.org/wiki/El_Retiro_(Lake_Wales,_Florida)",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/85003331"
+        ],
+        "notes": "Id chosen to avoid a clash with any other 'el-retiro'. The admission page also offers a combined garden plus El Retiro tour at 35 dollars per adult and 17 dollars ages 6–17. Built years: gardens begun 1929, architect hired 1930, NRIS significant years 1930 and 1932; Wikipedia says work was completed 1929–1930; '1929–1932' spans the sources. Point is the OSM feature 'El Retiro' (historic=heritage); Wikipedia's coordinate is about 1 km east.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "frances-langford-promenade",
+        "name": "Frances Langford Promenade",
+        "aliases": [
+          "Lake Mirror Promenade",
+          "First Civic Center"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "polk",
+        "address": "Between Lemon Street and Lake Mirror Drive",
+        "city": "Lakeland",
+        "state": "FL",
+        "lat": 28.043889,
+        "lng": -81.951667,
+        "geo_source": "wikipedia",
+        "summary": "A 1920s Classical Revival promenade and civic center on the shore of Lake Mirror in downtown Lakeland, designed by Charles Wellford Leavitt. It is on the National Register.",
+        "heritage": {
+          "built": "1926–1928",
+          "architect": "Charles Wellford Leavitt (designer); H. B. Trauger",
+          "style": "Classical Revival",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Lake Mirror Promenade)",
+              "ref": "83001437",
+              "year": 1983,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/83001437"
+            }
+          ],
+          "era": "land-boom",
+          "story": "The promenade, also called the First Civic Center, was built in two phases and completed in 1928 to a design by Charles Wellford Leavitt of New York. In 1946 the city of Lakeland dedicated it to Lakeland native Frances Langford for her work with the USO and her singing and acting career, and it was rededicated with a new marker in 2013. It was listed in the National Register of Historic Places on January 27, 1983.",
+          "visiting": "A public lakefront walk in downtown Lakeland, next to Hollis Garden on Lake Mirror.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Frances_Langford_Promenade",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/83001437",
+            "https://visitcentralflorida.org/blog/50-ways-to-be-a-tourist-in-central-floridas-polk-county/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Frances_Langford_Promenade",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/83001437",
+          "https://visitcentralflorida.org/blog/50-ways-to-be-a-tourist-in-central-floridas-polk-county/",
+          "https://visitcentralflorida.org/blog/top-things-to-do-in-lakeland-while-visiting-for-sun-n-fun/"
+        ],
+        "notes": "No City of Lakeland page was readable (its site search returned nothing). Visit Central Florida places Hollis Garden 'on the shores of Lake Mirror' and mentions Lake Mirror 'surrounded by scenic promenades'. Coordinates from Wikipedia (28°2′38″N 81°57′6″W).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "braden-castle-park-historic-district",
+        "name": "Braden Castle Park Historic District",
+        "aliases": [
+          "Braden Castle ruins"
+        ],
+        "kind": "historic-district",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "bradenton-anna-maria",
+        "city": "Bradenton",
+        "state": "FL",
+        "lat": 27.496428,
+        "lng": -82.530374,
+        "geo_source": "photon",
+        "summary": "A small Bradenton neighborhood at the meeting of the Manatee and Braden rivers that holds the tabby ruins of Joseph Braden's 1850 house. It is on the National Register.",
+        "heritage": {
+          "built": "1850 (Braden House); 1924 (park development)",
+          "style": "Late 19th and 20th Century Revivals; Bungalow/Craftsman (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "83001428",
+              "year": 1983,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/83001428"
+            }
+          ],
+          "era": "frontier",
+          "story": "The district contains the ruins of the 1850 Braden House, a tabby house owned by Joseph Braden. The National Park Service record gives 1850 and 1924 as significant years, the house and the later development of the park. Bounded by the Manatee and Braden rivers, Ponce de Leon Street and Pelot Avenue, the district has 192 historic buildings and 3 structures and was listed in the National Register of Historic Places on May 9, 1983.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Braden_Castle_Park_Historic_District",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/83001428"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://npgallery.nps.gov/AssetDetail/NRIS/83001428",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Braden_Castle_Park_Historic_District"
+        ],
+        "notes": "Thin sourcing: only NRIS and Wikipedia were read; no page says how the public may view the ruins, so 'visiting' is left empty. Verifier: confirm public access (the district is a residential community) before publishing, or drop. Point is the OSM hamlet node 'Braden Castle'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "palmetto-historical-park",
+        "name": "Palmetto Historical Park",
+        "aliases": [
+          "Heritage Park"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "museum"
+        ],
+        "topics": [
+          "history",
+          "family"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "515 10th Ave W",
+        "city": "Palmetto",
+        "state": "FL",
+        "zip": "34221",
+        "lat": 27.515419,
+        "lng": -82.575692,
+        "geo_source": "census",
+        "url": "https://palmettohistoricalpark.com/",
+        "phone": "941-723-4991",
+        "is_free": true,
+        "price_text": "Free; donations welcome",
+        "hours_text": "Carnegie Library open Tuesday–Friday and the 1st and 3rd Saturdays, 10 am–12 pm and 1–4 pm; free guided tours of the other buildings at 11 am",
+        "parking_text": "Street parking, and a lot behind the buildings at 1037 6th St W",
+        "summary": "A county-run history park on Palmetto's Old Main Street with the 1914 Carnegie Library, an 1880 post office, a schoolhouse, a cottage museum, a military museum and a replica chapel. Admission and guided tours are free.",
+        "heritage": {
+          "built": "c. 1880 (post office); 1914 (Carnegie Library)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Palmetto Historic District)",
+              "ref": "86003166",
+              "year": 1986,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/86003166"
+            }
+          ],
+          "era": "boomtown",
+          "story": "In 1982 a group led by Josephine Harrison organized to save Palmetto's original post office, built about 1880 for postmaster Mary Nettles, and moved it to the corner of 10th Avenue and 6th Street West, the former site of the town's first city hall and school; it was dedicated as Heritage Station in 1983. Andrew Carnegie contributed 10,000 dollars toward the 1914 Carnegie Library, which later served as town hall and school library and now holds the local history archives. A 1984 survey led to the listing of the surrounding Palmetto Historic District in the National Register in 1986.",
+          "visiting": "Start upstairs in the Carnegie Library; the other buildings are kept locked and are seen on the free 11 am guided tour. The Manatee County Agricultural Museum is also in the park.",
+          "sources": [
+            "https://palmettohistoricalpark.com/our-story/",
+            "https://palmettohistoricalpark.com/buildings/",
+            "https://palmettohistoricalpark.com/guided-tours/",
+            "https://palmettohistoricalpark.com/faqs/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/86003166"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://palmettohistoricalpark.com/faqs/",
+        "also_sources": [
+          "https://palmettohistoricalpark.com/our-story/",
+          "https://palmettohistoricalpark.com/buildings/",
+          "https://palmettohistoricalpark.com/guided-tours/",
+          "https://www.manateeclerk.com/departments/historical-resources/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/86003166"
+        ],
+        "notes": "Run under an interlocal agreement involving the Manatee County Clerk's Historical Resources Department. The tours page gives two schedules: 'Tuesdays, Fridays & the 1st and 3rd Saturdays of the month at 11:00 AM due to school programming' (Sept–May) and '11:00 AM every day that the park is open'. The park's story page says the district was listed Dec 30, 1986; NRIS gives Nov 6, 1986; only the year is used. Shared id with around-daytrips (added by its verifier the same day).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "old-manatee-county-courthouse",
+        "name": "Old Manatee County Courthouse",
+        "aliases": [
+          "1860 Courthouse"
+        ],
+        "kind": "historic-site",
+        "topics": [
+          "history"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "Manatee Village Historical Park, 1404 Manatee Ave E",
+        "city": "Bradenton",
+        "state": "FL",
+        "zip": "34208",
+        "lat": 27.495254,
+        "lng": -82.548571,
+        "geo_source": "census",
+        "url": "https://www.manateevillage.org/buildings-and-exhibits",
+        "summary": "Manatee County's first courthouse, a small wood-frame building from 1860, now one of the historic buildings at Manatee Village Historical Park. It is on the National Register.",
+        "heritage": {
+          "built": "1860",
+          "architect": "Ezekiel Glazier (per NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Manatee County Courthouse, Original)",
+              "ref": "76000601",
+              "year": 1976,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/76000601"
+            }
+          ],
+          "era": "frontier",
+          "story": "Manatee County was formed in 1855, and five years later the community built this small wood-framed courthouse; all government business for the county's 5,000 square miles took place in its courtroom. The building later belonged to the Manatee United Methodist congregation, and when it and the congregation's 1887 church were slated for demolition in 1974, the Manatee County Historical Commission moved both to the new museum in December 1975. It was listed in the National Register of Historic Places in 1976.",
+          "visiting": "Seen at Manatee Village Historical Park, open Monday–Friday and the 2nd and 4th Saturdays, 9 AM–4 PM; admission is free.",
+          "sources": [
+            "https://www.manateevillage.org/buildings-and-exhibits",
+            "https://www.manateevillage.org/our-history",
+            "https://www.manateevillage.org/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/76000601"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.manateevillage.org/buildings-and-exhibits",
+        "also_sources": [
+          "https://www.manateevillage.org/our-history",
+          "https://www.manateevillage.org/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/76000601"
+        ],
+        "notes": "Separate record for the NRHP-listed 1860 courthouse inside around-daytrips' manatee-village-historical-park (whose record lists no designations); could instead be merged into it as a designation. Hours and admission read from manateevillage.org (via WebFetch).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "fort-cooper-state-park",
+        "name": "Fort Cooper State Park",
+        "kind": "state-park",
+        "kinds": [
+          "historic-site",
+          "trail"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "wildlife"
+        ],
+        "area": "nature-coast",
+        "address": "3102 S Old Floral City Rd",
+        "city": "Inverness",
+        "state": "FL",
+        "zip": "34450",
+        "lat": 28.810229,
+        "lng": -82.295907,
+        "geo_source": "census",
+        "url": "https://www.discovercrystalriverfl.com/directory/fort-cooper-state-park-historical-sites/",
+        "phone": "352-726-0317",
+        "is_free": false,
+        "price_text": "Park entrance fee required",
+        "summary": "A 700-acre state park near Inverness on the site of a Second Seminole War outpost, with a reconstructed palisade, Lake Holathlikaha and five miles of woodland trails. A battle reenactment is held each March.",
+        "heritage": {
+          "built": "1836",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Fort Cooper)",
+              "ref": "72000304",
+              "year": 1972,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/72000304"
+            }
+          ],
+          "era": "frontier",
+          "story": "During the Second Seminole War the U.S. Army set up a temporary outpost here, in the Cove of the Withlacoochee, for a detachment of sick and wounded soldiers early in 1836. Forces led by Osceola attacked the makeshift fort repeatedly in indecisive skirmishes until the main army under General Winfield Scott relieved it. The fort site was listed in the National Register of Historic Places in 1972.",
+          "visiting": "A reconstructed palisade marks the fort site; trails connect with the Withlacoochee State Trail, and a reenactment of the battles is held each March.",
+          "sources": [
+            "https://www.discovercrystalriverfl.com/directory/fort-cooper-state-park-historical-sites/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/72000304"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.discovercrystalriverfl.com/directory/fort-cooper-state-park-historical-sites/",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/72000304"
+        ],
+        "notes": "Source is Citrus County's tourism listing; floridastateparks.org blocks automated reads. Not in the outdoors slice. The listing gives the park number (352) 726-0317.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "de-soto-national-memorial",
+        "name": "De Soto National Memorial",
+        "kind": "historic-site",
+        "kinds": [
+          "park"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "8300 De Soto Memorial Hwy",
+        "city": "Bradenton",
+        "state": "FL",
+        "lat": 27.523073,
+        "lng": -82.643914,
+        "geo_source": "photon",
+        "url": "https://www.nps.gov/deso/index.htm",
+        "phone": "941-792-0458",
+        "is_free": true,
+        "hours_text": "Visitor welcome area daily 9:00am–4:45pm; grounds dawn to dusk; parking lot gates close at 5:00pm; closed New Year's Day, Thanksgiving and Christmas",
+        "summary": "A National Park Service site where the Manatee River meets Tampa Bay that commemorates Hernando de Soto's 1539 landing and expedition. It has a monument, a coastal nature trail and ranger programs.",
+        "heritage": {
+          "built": "1539 (event commemorated); 1948 (memorial authorized)",
+          "designations": [
+            {
+              "name": "National Memorial (authorized by Congress)",
+              "year": 1948,
+              "url": "https://en.wikipedia.org/wiki/De_Soto_National_Memorial"
+            },
+            {
+              "name": "National Register of Historic Places (DeSoto National Memorial)",
+              "ref": "66000078",
+              "year": 1966,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/66000078"
+            },
+            {
+              "name": "National Register of Historic Places (Shaw's Point Archeological District)",
+              "ref": "01000342",
+              "year": 2001,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/01000342"
+            }
+          ],
+          "era": "spanish",
+          "story": "In May 1539 Hernando de Soto's army of soldiers, hired mercenaries, craftsmen and clergy made landfall in Tampa Bay and met fierce resistance from Indigenous people defending their homelands; the expedition became a four-year, 4,000-mile march across the Southeast. Congress authorized the memorial on March 11, 1948, and it was placed on the National Register of Historic Places in 1966. The National Register inventory notes that historians do not agree this was the actual landing site.",
+          "visiting": "Walk the grounds and nature trail along 3,000 feet of shoreline; the park says winter activities are on hold while it adjusts staffing, so call ahead for ranger programs.",
+          "sources": [
+            "https://www.nps.gov/deso/index.htm",
+            "https://www.nps.gov/deso/planyourvisit/hours.htm",
+            "https://en.wikipedia.org/wiki/De_Soto_National_Memorial",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/66000078",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/01000342"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.nps.gov/deso/planyourvisit/hours.htm",
+        "also_sources": [
+          "https://www.nps.gov/deso/index.htm",
+          "https://www.nps.gov/deso/learn/historyculture/index.htm",
+          "https://en.wikipedia.org/wiki/De_Soto_National_Memorial"
+        ],
+        "notes": "Shared id with around-daytrips. DESIGNATION CORRECTION: NRIS lists ref 66000078 as 'DeSoto National Memorial' (1966, exploration/settlement, significant year 1539) and ref 01000342 as 'Shaw's Point Archeological District' (published 2001). Wikipedia (and the around-daytrips record) say the 1966 listing was named Shaw's Point Archeological District. is_free: around-daytrips read the NPS fees page ('no entrance pass required'); the home page read here does not state a fee. Coordinates are the OSM protected-area feature; Census had no match for the address.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gamble-plantation-historic-state-park",
+        "name": "Judah P. Benjamin Confederate Memorial at Gamble Plantation Historic State Park",
+        "aliases": [
+          "Gamble Plantation",
+          "Gamble Mansion"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "state-park"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "3708 Patten Ave",
+        "city": "Ellenton",
+        "state": "FL",
+        "zip": "34222",
+        "lat": 27.523415,
+        "lng": -82.527075,
+        "geo_source": "census",
+        "url": "https://www.floridastateparks.org/parks-and-trails/judah-p-benjamin-confederate-memorial-gamble-plantation-historic-state-park",
+        "summary": "The tabby mansion of Robert Gamble's sugar plantation on the Manatee River, worked by enslaved people, later donated to the state as a Confederate memorial. It is a state park seen on guided tours.",
+        "heritage": {
+          "built": "1845–1850",
+          "style": "Greek Revival (NRIS)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Benjamin, Judah P., Memorial / Robert Gamble House)",
+              "ref": "70000189",
+              "year": 1970,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/70000189"
+            }
+          ],
+          "era": "frontier",
+          "story": "Major Robert Gamble built the mansion between about 1845 and 1850 as the center of a sugar plantation that at its height covered 3,500 acres; he likely enslaved more than 200 people to work the land and process the cane. Its columns and two-foot-thick walls are tabby, a mix used in place of brick. Confederate cabinet officer Judah P. Benjamin stayed there in May 1865 while fleeing Union forces. In 1925 the United Daughters of the Confederacy bought the house and grounds and gave them to the state as a memorial to Benjamin; the mansion was listed in the National Register in 1970, and the state added the ruins of the sugar mill to the park in 2002.",
+          "visiting": "The mansion is seen on guided tours; the grounds include a 40,000-gallon cistern and the 1872 Patten House.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Judah_P._Benjamin_Confederate_Memorial_at_Gamble_Plantation_Historic_State_Park",
+            "https://www.bradentongulfislands.com/listing/gamble-plantation-historic-state-park/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/70000189"
+          ]
+        },
+        "status": "open",
+        "quote": "This antebellum mansion was home to Major Robert Gamble and is the only surviving plantation house in South Florida.",
+        "quote_source": "https://www.bradentongulfislands.com/listing/gamble-plantation-historic-state-park/",
+        "source_url": "https://www.bradentongulfislands.com/listing/gamble-plantation-historic-state-park/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Judah_P._Benjamin_Confederate_Memorial_at_Gamble_Plantation_Historic_State_Park",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/70000189"
+        ],
+        "notes": "Shared id with around-daytrips. Described plainly: the enslaved labor and the 1925 Confederate-memorial donation are both stated. floridastateparks.org blocks automated reads, so tour times and fees are not given; the county tourism listing invites visitors to 'join us for a tour'. NRIS title is 'Benjamin, Judah P., Memorial'; Wikipedia gives 'Robert Gamble House'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "madira-bickel-mound-state-archaeological-site",
+        "name": "Madira Bickel Mound State Archaeological Site",
+        "kind": "historic-site",
+        "kinds": [
+          "state-park"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "955 Bayshore Dr, Terra Ceia Island",
+        "state": "FL",
+        "lat": 27.565278,
+        "lng": -82.592778,
+        "geo_source": "wikipedia",
+        "summary": "A 10-acre state archaeological site on Terra Ceia Island with a 20-foot flat-topped temple mound built of shell and sand over some 2,000 years of Indigenous occupation.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Madira Bickel Mounds)",
+              "ref": "70000190",
+              "year": 1970,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/70000190"
+            }
+          ],
+          "era": "indigenous",
+          "story": "Excavations show Indigenous occupation reaching back about 2,000 years across the Manasota, Weedon Island and Safety Harbor cultures, whose people raised a ceremonial mound of shell, sand and village debris about 20 feet high on a base about 100 by 170 feet, with a ramp on its western side. Madira Bickel of Sarasota and her husband Karl bought the land around the mound and donated it to the state in 1948; it was the first Native American site in Florida designated a State Archaeological Site and was listed in the National Register in 1970. The remains of the Prine Burial Mound are also in the park.",
+          "visiting": "Stairs lead to a fenced overlook on top of the mound.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Madira_Bickel_Mound_State_Archaeological_Site",
+            "https://www.bradentongulfislands.com/listing/madira-bickel-mound-state-archaeological-site/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/70000190"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Madira_Bickel_Mound_State_Archaeological_Site",
+        "also_sources": [
+          "https://www.bradentongulfislands.com/listing/madira-bickel-mound-state-archaeological-site/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/70000190"
+        ],
+        "notes": "Shared id with around-daytrips. The county listing's text was truncated ('The primary feature is a flat-topped ceremonial mound composed of sand, shell and village debris...'). No official page gave hours. Coordinates from Wikipedia (27°33′55″N 82°35′34″W); neither geocoder matched.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "crystal-river-archaeological-state-park",
+        "name": "Crystal River Archaeological State Park",
+        "kind": "historic-site",
+        "kinds": [
+          "state-park",
+          "museum"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "nature-coast",
+        "address": "3400 N Museum Pt",
+        "city": "Crystal River",
+        "state": "FL",
+        "zip": "34428",
+        "lat": 28.909609,
+        "lng": -82.627991,
+        "geo_source": "photon",
+        "hours_text": "Open daily 8 am to sunset; museum Thursday–Monday 9am–5pm",
+        "summary": "A 61-acre Native American ceremonial site on the Crystal River with burial mounds, temple mounds, a plaza and a shell midden, used for about 1,600 years. It is a National Historic Landmark.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Crystal River Indian Mounds)",
+              "ref": "70000178",
+              "year": 1970,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/70000178"
+            },
+            {
+              "name": "National Historic Landmark (Crystal River Site)",
+              "url": "https://www.discovercrystalriverfl.com/directory/crystal-river-archaeological-state-park-historical-sites/"
+            }
+          ],
+          "era": "indigenous",
+          "story": "For about 1,600 years the six-mound complex served as a ceremonial center, and it was active and abandoned before Europeans arrived; it holds burial mounds, temple or platform mounds, a plaza and a large midden. Temple Mound A remains the highest point in Crystal River. The site was listed in the National Register of Historic Places in 1970 and is a National Historic Landmark.",
+          "visiting": "Walk the grounds daily from 8 am to sunset; the museum is open Thursday to Monday.",
+          "sources": [
+            "https://www.discovercrystalriverfl.com/directory/crystal-river-archaeological-state-park-historical-sites/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/70000178",
+            "https://en.wikipedia.org/wiki/Crystal_River_Archaeological_State_Park"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.discovercrystalriverfl.com/directory/crystal-river-archaeological-state-park-historical-sites/",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/70000178",
+          "https://en.wikipedia.org/wiki/Crystal_River_Archaeological_State_Park"
+        ],
+        "notes": "Shared id with around-daytrips (which gives the NHL year as 1990 from Wikipedia; not re-checked here, so no year). NRIS periods run from 0 BC to 1499 AD.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-southern-college-architectural-district",
+        "name": "Frank Lloyd Wright Architecture at Florida Southern College",
+        "aliases": [
+          "Child of the Sun",
+          "Florida Southern College Architectural District"
+        ],
+        "kind": "historic-district",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "history",
+          "arts"
+        ],
+        "area": "polk",
+        "address": "840 Johnson Ave (Sharp Family Tourism and Education Center)",
+        "city": "Lakeland",
+        "state": "FL",
+        "zip": "33801",
+        "lat": 28.030881,
+        "lng": -81.948654,
+        "geo_source": "photon",
+        "url": "https://www.flsouthern.edu/frank-lloyd-wright-home",
+        "phone": "863-680-4597",
+        "hours_text": "Visitor center closed Thanksgiving, Christmas and New Year's Day; daily guided walking tours (reservations suggested 24 hours ahead)",
+        "summary": "Thirteen buildings Frank Lloyd Wright designed for Florida Southern College in Lakeland from 1938, which the college calls the largest single-site collection of his architecture. Docent-led walking tours start at the Sharp Family Tourism and Education Center.",
+        "heritage": {
+          "built": "1938–1958 (Usonian Faculty House completed later)",
+          "architect": "Frank Lloyd Wright",
+          "style": "Organic architecture (NRIS: Modern Movement)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Florida Southern College Architectural District)",
+              "ref": "75000568",
+              "year": 1975,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/75000568"
+            },
+            {
+              "name": "National Historic Landmark (Florida Southern College Historic District)",
+              "year": 2012,
+              "url": "https://www.flsouthern.edu/frank-lloyd-wright-home"
+            }
+          ],
+          "era": "land-boom",
+          "story": "College president Ludd Spivey asked Frank Lloyd Wright to design a new campus in 1938, and Wright first walked the grounds, a citrus-covered hill above Lake Hollingsworth, on May 8, 1938, envisioning buildings growing 'out of the ground and into the light – a Child of the Sun.' Over more than 20 years he delivered 18 designs, and 13 were built, beginning with the Annie Pfeiffer Chapel (1938–1941); students supplied labor for the first five, and during World War II the crew was almost entirely women. The buildings are linked by more than a mile of covered walkways, the Esplanade. The campus was designated a National Historic Landmark in 2012.",
+          "visiting": "A 90-minute Basic Campus Tour visits the Pfeiffer Chapel, the E. T. Roux Library and the Usonian Faculty House; a 2.5-hour In-depth Tour adds Danforth Chapel, the Ordway Arts Building and the Polk County Science Building with Wright's only planetarium. Tickets are sold at the GEICO Gift Shop, 840 Johnson Avenue.",
+          "sources": [
+            "https://www.flsouthern.edu/frank-lloyd-wright-home",
+            "https://www.flsouthern.edu/frank-lloyd-wright-home/history",
+            "https://www.flsouthern.edu/frank-lloyd-wright-home/tours",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/75000568"
+          ]
+        },
+        "status": "open",
+        "quote": "This easily makes Florida Southern the world’s largest single-site collection of Wright’s architecture for one client, as well as his only executed design for a college campus.",
+        "quote_source": "https://www.flsouthern.edu/frank-lloyd-wright-home/history",
+        "source_url": "https://www.flsouthern.edu/frank-lloyd-wright-home",
+        "also_sources": [
+          "https://www.flsouthern.edu/frank-lloyd-wright-home/history",
+          "https://www.flsouthern.edu/frank-lloyd-wright-home/tours",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/75000568"
+        ],
+        "notes": "Shared id with around-daytrips. Point is the Annie Pfeiffer Chapel (OSM); tours depart from 840 Johnson Ave. The Behind the Scenes tour is paused for new bookings. 'Built 1938–1958': chapel begun 1938; around-daytrips' reading gives the Polk County Science Building as 1952–1958; the history page here says 'one of them posthumously'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "bok-tower-gardens",
+        "name": "Bok Tower Gardens",
+        "aliases": [
+          "Bok Mountain Lake Sanctuary and Singing Tower"
+        ],
+        "kind": "garden",
+        "kinds": [
+          "historic-site",
+          "landmark"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "music"
+        ],
+        "area": "polk",
+        "address": "1151 Tower Blvd",
+        "city": "Lake Wales",
+        "state": "FL",
+        "zip": "33853",
+        "lat": 27.935333,
+        "lng": -81.5775,
+        "geo_source": "wikipedia",
+        "url": "https://boktowergardens.org/",
+        "is_free": false,
+        "hours_text": "Gardens daily 8:00 a.m.–6:00 p.m., last admission 5:00 p.m.; closed Thanksgiving and Christmas",
+        "price_text": "From Oct 1: adults 25 dollars, children 6–17 12 dollars, 5 and under free",
+        "summary": "Edward Bok's garden and bird sanctuary on the Lake Wales Ridge, with the 205-foot Singing Tower and its 60-bell carillon, dedicated in 1929. It is a National Historic Landmark.",
+        "heritage": {
+          "built": "1924–1928 (gardens); 1927–1929 (tower)",
+          "architect": "Milton B. Medary (tower); Frederick Law Olmsted Jr. (gardens)",
+          "style": "Gothic Revival with Art Deco detailing",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Bok Mountain Lake Sanctuary and Singing Tower)",
+              "ref": "72000350",
+              "year": 1972,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/72000350"
+            },
+            {
+              "name": "National Historic Landmark",
+              "year": 1993,
+              "url": "https://en.wikipedia.org/wiki/Bok_Tower_Gardens"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Editor Edward W. Bok created the sanctuary on one of the highest points of peninsular Florida; Frederick Law Olmsted Jr. designed the gardens and Milton B. Medary the Singing Tower, built from 1927 to 1929 with sculpture by Lee Lawrie and ironwork by Samuel Yellin. President Calvin Coolidge dedicated the tower on February 1, 1929. The sanctuary was listed in the National Register of Historic Places in 1972 and designated a National Historic Landmark on April 19, 1993.",
+          "visiting": "Garden admission includes the 3.5-mile Pine Ridge Preserve trail; the El Retiro estate is a separate docent-led tour.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Bok_Tower_Gardens",
+            "https://boktowergardens.org/admission/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/72000350"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://boktowergardens.org/admission/",
+        "also_sources": [
+          "https://boktowergardens.org/",
+          "https://en.wikipedia.org/wiki/Bok_Tower_Gardens",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/72000350"
+        ],
+        "notes": "Shared id with the outdoors slice (owner). Coordinates from Wikipedia (27°56′07.2″N 81°34′39″W); the outdoors slice has 27.936034,-81.575816 (about 200 m away). The admission page price change reads Beginning Oct 1 (2026).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "philippe-park",
+        "name": "Philippe Park",
+        "kind": "park",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history",
+          "outdoors"
+        ],
+        "area": "safety-harbor",
+        "address": "2525 Philippe Pkwy",
+        "city": "Safety Harbor",
+        "state": "FL",
+        "zip": "34695",
+        "lat": 28.012553,
+        "lng": -82.684054,
+        "geo_source": "census",
+        "url": "https://pinellas.gov/parks/philippe-park/",
+        "phone": "727-582-2100",
+        "summary": "Pinellas County's oldest park, 92 acres on Old Tampa Bay in Safety Harbor, built around the Tocobaga temple mound of the Safety Harbor Site, a National Historic Landmark.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Historic Landmark (Safety Harbor Site)",
+              "year": 1964,
+              "url": "https://en.wikipedia.org/wiki/Safety_Harbor_site"
+            },
+            {
+              "name": "National Register of Historic Places (Safety Harbor Site)",
+              "ref": "66000270",
+              "year": 1966,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/66000270"
+            }
+          ],
+          "era": "indigenous",
+          "story": "The park holds the Safety Harbor Site, identified with Tocobaga, the 16th-century capital of the Tocobaga people, and the type site of the Safety Harbor culture. Its temple mound, about 150 feet across and 20 feet high, is built of alternating layers of shell and sand; the county calls it the largest remaining mound in the Tampa Bay region. Spanish explorers described the town as the Tocobaga capital, and the site was probably abandoned by 1700. The county acquired the property in 1948, and the site was designated a National Historic Landmark in 1964.",
+          "visiting": "The mound is in the park, with walking paths, picnic areas and a boat ramp; the site is open in daylight hours.",
+          "sources": [
+            "https://pinellas.gov/parks/philippe-park/",
+            "https://en.wikipedia.org/wiki/Safety_Harbor_site",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/66000270"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://pinellas.gov/parks/philippe-park/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Safety_Harbor_site",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/66000270"
+        ],
+        "notes": "Shared id with the outdoors slice (owner), which already carries an equivalent heritage block; this one adds the NRIS link. The county page (Sep 27, 2026) says the main playground is closed indefinitely pending a new one (also says construction was postponed and the current playground remains open) and restrooms 5 and 8 are closed for repairs through about October.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "emerson-point-preserve",
+        "name": "Emerson Point Preserve",
+        "kind": "nature-preserve",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history",
+          "outdoors",
+          "water"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "5801 17th St W",
+        "city": "Palmetto",
+        "state": "FL",
+        "zip": "34221",
+        "lat": 27.531187,
+        "lng": -82.624786,
+        "geo_source": "census",
+        "url": "https://www.mymanatee.org/connect/locations/location-details/emerson-point-preserve",
+        "hours_text": "Open daily sunrise to sunset; visitor center open when volunteers are available",
+        "summary": "A Manatee County preserve at the west end of Snead Island, where the Manatee River meets Terra Ceia Bay, with trails and the Portavant Mound, a Native American temple mound on the National Register.",
+        "heritage": {
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Portavant Mound Site)",
+              "ref": "94001475",
+              "year": 1994,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/94001475"
+            }
+          ],
+          "era": "indigenous",
+          "story": "The Portavant Mound Site in the preserve was listed in the National Register of Historic Places in 1994; the National Park Service record gives periods of use from about 500 BC into the 19th century, covering prehistoric, historic Native American and later settlement. Manatee County says the ancient and historic remains of the point's inhabitants are accessible and interpreted along the trails.",
+          "visiting": "Walk the hiking trails to the mound and interpretive signs. The county says the preserve dock is closed until further notice because of hurricane damage.",
+          "sources": [
+            "https://www.mymanatee.org/connect/locations/location-details/emerson-point-preserve",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/94001475"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.mymanatee.org/connect/locations/location-details/emerson-point-preserve",
+        "also_sources": [
+          "https://npgallery.nps.gov/AssetDetail/NRIS/94001475"
+        ],
+        "notes": "Shared id with the outdoors slice (owner); this record adds the heritage block for the Portavant Mound. The county page does not name the mound; the NRIS address (5801 17th St W) matches the preserve address. Thin: the mound's height and builders were not stated on a page read here.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "old-courthouse-heritage-museum",
+        "name": "Old Courthouse Heritage Museum",
+        "aliases": [
+          "Old Citrus County Courthouse"
+        ],
+        "kind": "museum",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history"
+        ],
+        "area": "nature-coast",
+        "address": "1 Courthouse Square",
+        "city": "Inverness",
+        "state": "FL",
+        "zip": "34450",
+        "lat": 28.835975,
+        "lng": -82.330219,
+        "geo_source": "photon",
+        "url": "https://cccourthouse.org/",
+        "is_free": true,
+        "hours_text": "Tuesday–Saturday 10 a.m.–4 p.m.",
+        "summary": "Citrus County's 1912 courthouse on the Inverness town square, now a free history museum run by the Citrus County Historical Society with a restored second-floor courtroom. It is on the National Register.",
+        "heritage": {
+          "built": "1912",
+          "architect": "Willis R. Biggers (Read–Parker Construction, builder)",
+          "style": "Classical Revival and Mission/Spanish Revival (NRIS); the museum says it draws on four styles",
+          "designations": [
+            {
+              "name": "National Register of Historic Places (Citrus County Courthouse, Old)",
+              "ref": "92000340",
+              "year": 1992,
+              "url": "https://npgallery.nps.gov/AssetDetail/NRIS/92000340"
+            }
+          ],
+          "era": "boomtown",
+          "story": "Tampa architect Willis R. Biggers designed the courthouse, built in 1912, and it was listed in the National Register of Historic Places in 1992. The historical society says it draws on four architectural styles, two European and two American, and that it sits at a 45-degree angle on the downtown square so each of its four doorways faces a compass point. Today it is the Old Courthouse Heritage Museum, with exhibits on 12,000 years of Citrus County and Florida history.",
+          "visiting": "Free; the first floor has exhibitions and the restored courtroom on the second floor is open to visitors. An elevator and ramp make it accessible, and there is free parking around the square.",
+          "sources": [
+            "https://cccourthouse.org/about/",
+            "https://cccourthouse.org/visit/",
+            "https://npgallery.nps.gov/AssetDetail/NRIS/92000340"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://cccourthouse.org/visit/",
+        "also_sources": [
+          "https://cccourthouse.org/about/",
+          "https://npgallery.nps.gov/AssetDetail/NRIS/92000340"
+        ],
+        "notes": "Shared id with around-daytrips (owner, no heritage block); this record adds heritage. 'Tampa architect': Wikipedia's Plant City High School article calls Willis R. Biggers 'Tampa-based'; NRIS names him for this building. Museum hours differ from the around-daytrips record (which did not state hours); the visit page read Sep 27, 2026 says Tuesday–Saturday 10–4.",
+        "checked": "2026-09-27"
+      }
+    ],
+    "media": [
+      {
+        "id": "snell-arcade-photo",
+        "title": "Snell Arcade, St Petersburg Florida, August 2019",
+        "creator": "Paul Sableman",
+        "year": "2019",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.0",
+        "credit": "Paul Sableman / Wikimedia Commons (CC BY 2.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Snell_Arcade%2C_St_Petersburg_Florida%2C_August_2019.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Snell_Arcade,_St_Petersburg_Florida,_August_2019.jpg",
+        "subject_kind": "place",
+        "subject": "snell-arcade",
+        "alt": "The Snell Arcade, a cream-colored building with an ornate stepped tower, on a downtown St. Petersburg street corner.",
+        "width": 2887,
+        "height": 4330
+      },
+      {
+        "id": "open-air-post-office-photo",
+        "title": "St. Pete old post office01",
+        "creator": "Ebyabe",
+        "year": "2008",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/St._Pete_old_post_office01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St._Pete_old_post_office01.jpg",
+        "subject_kind": "place",
+        "subject": "open-air-post-office",
+        "alt": "The arcaded, open-air loggia of the St. Petersburg post office, with columns, round arches and rows of post office boxes.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "historic-old-northeast-palladium-photo",
+        "title": "St. Pete North Shore Hist Dist Palladium FCCS01",
+        "creator": "Ebyabe",
+        "year": "2008",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/St._Pete_North_Shore_Hist_Dist_Palladium_FCCS01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St._Pete_North_Shore_Hist_Dist_Palladium_FCCS01.jpg",
+        "subject_kind": "place",
+        "subject": "historic-old-northeast",
+        "alt": "The Palladium Theater, a tan brick building with a five-arch columned entrance, in the North Shore Historic District of St. Petersburg.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "roser-park-historic-district-photo",
+        "title": "St. Petersburg FL Roser Park HD street05",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/St._Petersburg_FL_Roser_Park_HD_street05.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St._Petersburg_FL_Roser_Park_HD_street05.jpg",
+        "subject_kind": "place",
+        "subject": "roser-park-historic-district",
+        "alt": "A brick-paved street with granite curbs and lamp posts crossing a small bridge under oak trees in Roser Park, St. Petersburg.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "weedon-island-preserve-photo",
+        "title": "Weeden Island01",
+        "creator": "Ebyabe",
+        "year": "2006",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Weeden_Island01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Weeden_Island01.jpg",
+        "subject_kind": "place",
+        "subject": "weedon-island-preserve",
+        "alt": "View from the top of an observation tower in Weedon Island Preserve, St. Petersburg.",
+        "width": 978,
+        "height": 675
+      },
+      {
+        "id": "gulfport-casino-ballroom-photo",
+        "title": "Gulfport Florida Casino",
+        "creator": "Jennywest1600",
+        "year": "2014",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Jennywest1600 / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gulfport_Florida_Casino.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Gulfport_Florida_Casino.jpg",
+        "subject_kind": "place",
+        "subject": "gulfport-casino-ballroom",
+        "alt": "The Gulfport Casino building in Gulfport, Florida.",
+        "width": 1024,
+        "height": 683
+      },
+      {
+        "id": "jungle-prada-site-photo",
+        "title": "Jungle Prada 09",
+        "creator": "Mikereichold",
+        "year": "2008",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Mikereichold / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Jungle_Prada_09.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Jungle_Prada_09.jpg",
+        "subject_kind": "place",
+        "subject": "jungle-prada-site",
+        "alt": "Jungle Prada de Narvaez Park in St. Petersburg, part of the Jungle Prada archaeological site.",
+        "width": 1904,
+        "height": 1355
+      },
+      {
+        "id": "historic-kenwood-photo",
+        "title": "Historic Kenwood Streetscape 2",
+        "creator": "Newt82",
+        "year": "2014",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Newt82 / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Historic_Kenwood_Streetscape_2.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Historic_Kenwood_Streetscape_2.JPG",
+        "subject_kind": "place",
+        "subject": "historic-kenwood",
+        "alt": "Craftsman bungalows with front porches behind oak trees along a brick street in Historic Kenwood, St. Petersburg.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "downtown-st-petersburg-historic-district-photo",
+        "title": "Historic Pennsylvania Hotel, St. Petersburg, Florida",
+        "creator": "Myotus",
+        "year": "2024",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/4.0",
+        "credit": "Myotus / Wikimedia Commons (CC BY 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Historic_Pennsylvania_Hotel%2C_St._Petersburg%2C_Florida.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Historic_Pennsylvania_Hotel,_St._Petersburg,_Florida.jpg",
+        "subject_kind": "place",
+        "subject": "downtown-st-petersburg-historic-district",
+        "alt": "The brick Pennsylvania Hotel building, now a Courtyard by Marriott, at 4th Street North in downtown St. Petersburg.",
+        "width": 3749,
+        "height": 2748
+      },
+      {
+        "id": "mirror-lake-library-photo",
+        "title": "St. Pete Mirror Lake Library02",
+        "creator": "Ebyabe",
+        "year": "2008",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/St._Pete_Mirror_Lake_Library02.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St._Pete_Mirror_Lake_Library02.jpg",
+        "subject_kind": "place",
+        "subject": "mirror-lake-library",
+        "alt": "The front of the Mirror Lake Library, a one-story buff brick building with a red tile roof, white trim and a central stairway.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "huggins-stengel-field-photo",
+        "title": "FL St Petersburg Huggins-Stengel Field01",
+        "creator": "Ebyabe",
+        "year": "2020",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/FL_St_Petersburg_Huggins-Stengel_Field01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:FL_St_Petersburg_Huggins-Stengel_Field01.jpg",
+        "subject_kind": "place",
+        "subject": "huggins-stengel-field",
+        "alt": "Huggins-Stengel Field in St. Petersburg, with a tall backstop, a batting cage and the infield seen through a chain-link fence.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "pass-a-grille-historic-district-photo",
+        "title": "St Pete Beach FL Pass-a-Grille HD01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/St_Pete_Beach_FL_Pass-a-Grille_HD01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St_Pete_Beach_FL_Pass-a-Grille_HD01.jpg",
+        "subject_kind": "place",
+        "subject": "pass-a-grille-historic-district",
+        "alt": "A white frame cottage with a hipped brown roof and a screened porch on a street corner in the Pass-a-Grille Historic District.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "fort-de-soto-historic-batteries-photo",
+        "title": "2018 Fort De Soto - 12-inch steel coastal defense mortars",
+        "creator": "Beyond My Ken",
+        "year": "2018",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Beyond My Ken / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/2018_Fort_De_Soto_-_12-inch_steel_coastal_defense_mortars.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:2018_Fort_De_Soto_-_12-inch_steel_coastal_defense_mortars.jpg",
+        "subject_kind": "place",
+        "subject": "fort-de-soto-historic-batteries",
+        "alt": "Two 12-inch coast defense mortars in a pit of Battery Laidley at Fort De Soto Park.",
+        "width": 4429,
+        "height": 3456
+      },
+      {
+        "id": "egmont-key-fort-dade-photo",
+        "title": "Abandoned building at Fort Dade",
+        "creator": "HVANMALDEN",
+        "year": "2015",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "HVANMALDEN / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Abandoned_building_at_Fort_Dade.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Abandoned_building_at_Fort_Dade.jpg",
+        "subject_kind": "place",
+        "subject": "egmont-key-state-park",
+        "alt": "The weathered concrete walls and openings of an abandoned Fort Dade building on Egmont Key.",
+        "width": 2738,
+        "height": 1825,
+        "notes": "The image carries a small copyright watermark from the photographer; the file is licensed CC BY-SA 4.0 on Commons."
+      },
+      {
+        "id": "old-pinellas-county-courthouse-photo",
+        "title": "Clearwater Pinellas cty crths01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Clearwater_Pinellas_cty_crths01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Clearwater_Pinellas_cty_crths01.jpg",
+        "subject_kind": "place",
+        "subject": "old-pinellas-county-courthouse",
+        "alt": "The Old Pinellas County Courthouse in Clearwater, seen from the street.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "harbor-oaks-historic-district-photo",
+        "title": "Clearwater Harbor Oaks Res Dist01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Clearwater_Harbor_Oaks_Res_Dist01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Clearwater_Harbor_Oaks_Res_Dist01.jpg",
+        "subject_kind": "place",
+        "subject": "harbor-oaks-historic-district",
+        "alt": "A two-story stucco house with a red tile roof, a balustraded balcony and a gated front stair in the Harbor Oaks district of Clearwater, photographed in the rain.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "andrews-memorial-chapel-photo",
+        "title": "Dunedin Andr Mem Chapel01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Dunedin_Andr_Mem_Chapel01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Dunedin_Andr_Mem_Chapel01.jpg",
+        "subject_kind": "place",
+        "subject": "andrews-memorial-chapel",
+        "alt": "Andrews Memorial Chapel in Dunedin, seen from outside.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "sponge-docks-tarpon-springs-photo",
+        "title": "Tarpon Springs Greektown Historic District",
+        "creator": "LittleT889",
+        "year": "2023",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "LittleT889 / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Tarpon_Springs_Greektown_Historic_District.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Tarpon_Springs_Greektown_Historic_District.jpg",
+        "subject_kind": "place",
+        "subject": "sponge-docks-tarpon-springs",
+        "alt": "The Tarpon Springs sponge docks, with a green Florida historical marker titled Tarpon Springs Sponge Industry beside a docked fishing boat and shops along the sidewalk.",
+        "width": 4032,
+        "height": 3024
+      },
+      {
+        "id": "st-nicholas-greek-orthodox-cathedral-photo",
+        "title": "Tarpon Springs hist dist St Nich Cath01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Tarpon_Springs_hist_dist_St_Nich_Cath01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Tarpon_Springs_hist_dist_St_Nich_Cath01.jpg",
+        "subject_kind": "place",
+        "subject": "st-nicholas-greek-orthodox-cathedral",
+        "alt": "St. Nicholas Greek Orthodox Cathedral in Tarpon Springs, seen from the street.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "tarpon-springs-historic-district-photo",
+        "title": "Tarpon Springs hist dist01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Tarpon_Springs_hist_dist01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Tarpon_Springs_hist_dist01.jpg",
+        "subject_kind": "place",
+        "subject": "tarpon-springs-historic-district",
+        "alt": "A large two-story house with dark shingle siding, dormers, a wraparound porch and four tall brick chimneys in the Tarpon Springs Historic District.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "safford-house-museum-photo",
+        "title": "Tarpon Springs Safford House01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Tarpon_Springs_Safford_House01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Tarpon_Springs_Safford_House01.jpg",
+        "subject_kind": "place",
+        "subject": "safford-house-museum",
+        "alt": "The Safford House, a Victorian house museum in Tarpon Springs, seen from outside.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "anclote-key-lighthouse-photo",
+        "title": "USCG Anclote Keys Lighthouse",
+        "creator": "United States Coast Guard, PA2 Tasha Tully",
+        "year": "2005",
+        "license": "public-domain",
+        "credit": "United States Coast Guard, PA2 Tasha Tully / Wikimedia Commons (Public domain)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/USCG_Anclote_Keys_Lighthouse.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:USCG_Anclote_Keys_Lighthouse.jpg",
+        "subject_kind": "place",
+        "subject": "anclote-key-lighthouse",
+        "alt": "The Anclote Key Lighthouse, an iron skeletal tower, at the southern tip of Anclote Key.",
+        "width": 1485,
+        "height": 2009,
+        "notes": "U.S. Coast Guard photograph; Commons marks it public domain."
+      },
+      {
+        "id": "plant-city-1914-high-school-photo",
+        "title": "Plant City FL old high school03",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Plant_City_FL_old_high_school03.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Plant_City_FL_old_high_school03.JPG",
+        "subject_kind": "place",
+        "subject": "1914-plant-city-high-school-community-center",
+        "alt": "The 1914 Plant City High School building on North Collins Street, Plant City.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "bing-rooming-house-museum-photo",
+        "title": "Plant City FL Bing Rmng House01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Plant_City_FL_Bing_Rmng_House01.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Plant_City_FL_Bing_Rmng_House01.JPG",
+        "subject_kind": "place",
+        "subject": "bing-rooming-house-museum",
+        "alt": "The Bing Rooming House in Plant City, seen from the street.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "pasco-county-courthouse-photo",
+        "title": "01 Pasco County Courthouse",
+        "creator": "Jacobalexander89",
+        "year": "2026",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Jacobalexander89 / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/01_Pasco_County_Courthouse.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:01_Pasco_County_Courthouse.jpg",
+        "subject_kind": "place",
+        "subject": "pasco-county-courthouse",
+        "alt": "The red brick Pasco County Courthouse in Dade City, with tall white columns, a domed clock tower and a fountain in front.",
+        "width": 4200,
+        "height": 2800,
+        "notes": "The photographer's name and a caption are printed in the top corners of the image."
+      },
+      {
+        "id": "saint-leo-abbey-church-photo",
+        "title": "Saint Leo Abbey Church seen from Saint Leo University",
+        "creator": "Tupelo the typo fixer",
+        "year": "2014",
+        "license": "cc0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "Tupelo the typo fixer / Wikimedia Commons (CC0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Saint_Leo_Abbey_Church_seen_from_Saint_Leo_University.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Saint_Leo_Abbey_Church_seen_from_Saint_Leo_University.JPG",
+        "subject_kind": "place",
+        "subject": "saint-leo-abbey",
+        "alt": "The Saint Leo Abbey church seen from the Saint Leo University main campus.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "temple-terrace-golf-club-photo",
+        "title": "FL Temple Terrace Golf Course clubhouse01",
+        "creator": "Ebyabe",
+        "year": "2020",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/FL_Temple_Terrace_Golf_Course_clubhouse01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:FL_Temple_Terrace_Golf_Course_clubhouse01.jpg",
+        "subject_kind": "place",
+        "subject": "temple-terrace-golf-and-country-club",
+        "alt": "A low stone-and-stucco clubhouse building with wide overhanging eaves at the Temple Terrace Golf and Country Club.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "el-retiro-courtyard-photo",
+        "title": "Lake Wales El Retiro pano01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Lake_Wales_El_Retiro_pano01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Lake_Wales_El_Retiro_pano01.jpg",
+        "subject_kind": "place",
+        "subject": "el-retiro-bok-tower-gardens",
+        "alt": "The stucco courtyard facade of El Retiro, with a tile roof, a round tower, an arched doorway and a small fountain among palms and oaks.",
+        "width": 4802,
+        "height": 1747
+      },
+      {
+        "id": "frances-langford-promenade-photo",
+        "title": "Lakeland Lake Mirror Promenade05",
+        "creator": "Ebyabe",
+        "year": "2009",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Lakeland_Lake_Mirror_Promenade05.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Lakeland_Lake_Mirror_Promenade05.jpg",
+        "subject_kind": "place",
+        "subject": "frances-langford-promenade",
+        "alt": "Classical columns and a balustraded seawall with lamp posts and benches along Lake Mirror in Lakeland.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "braden-castle-park-photo",
+        "title": "Bradenton FL Braden Castle Park HD01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Bradenton_FL_Braden_Castle_Park_HD01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Bradenton_FL_Braden_Castle_Park_HD01.jpg",
+        "subject_kind": "place",
+        "subject": "braden-castle-park-historic-district",
+        "alt": "A lane of small white cottages with metal roofs and awnings in the Braden Castle Park Historic District, Bradenton.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "old-manatee-county-courthouse-photo",
+        "title": "Bradenton FL MVHP old crths01",
+        "creator": "Ebyabe",
+        "year": "2010",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Bradenton_FL_MVHP_old_crths01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Bradenton_FL_MVHP_old_crths01.jpg",
+        "subject_kind": "place",
+        "subject": "old-manatee-county-courthouse",
+        "alt": "The 1860 Old Manatee County Courthouse, a small wood-frame building, at Manatee Village Historical Park.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "fort-cooper-state-park-photo",
+        "title": "Fort Cooper Inverness02",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Fort_Cooper_Inverness02.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Fort_Cooper_Inverness02.jpg",
+        "subject_kind": "place",
+        "subject": "fort-cooper-state-park",
+        "alt": "A roofed interpretive sign about Fort Cooper under live oaks, with the reconstructed log palisade in the background.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "de-soto-national-memorial-photo",
+        "title": "Bradenton FL DeSoto Natl Mem01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Bradenton_FL_DeSoto_Natl_Mem01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Bradenton_FL_DeSoto_Natl_Mem01.jpg",
+        "subject_kind": "place",
+        "subject": "de-soto-national-memorial",
+        "alt": "A log palisade gate flying two white flags with red crosses, opening onto a path toward the water at De Soto National Memorial.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "gamble-plantation-mansion-photo",
+        "title": "Gamble Plantation SP mansion01",
+        "creator": "Ebyabe",
+        "year": "2010",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Gamble_Plantation_SP_mansion01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Gamble_Plantation_SP_mansion01.jpg",
+        "subject_kind": "place",
+        "subject": "gamble-plantation-historic-state-park",
+        "alt": "The white two-story Gamble mansion, with tall round columns and an upper-floor veranda.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "madira-bickel-mound-photo",
+        "title": "Terra Ceia FL Madira Bickel SP01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Terra_Ceia_FL_Madira_Bickel_SP01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Terra_Ceia_FL_Madira_Bickel_SP01.jpg",
+        "subject_kind": "place",
+        "subject": "madira-bickel-mound-state-archaeological-site",
+        "alt": "A paved path winding through a grove of cabbage palms at Madira Bickel Mound State Archaeological Site.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "crystal-river-mound-a-photo",
+        "title": "Crystal River Mound A09",
+        "creator": "Operator 16",
+        "year": "2026",
+        "license": "cc0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "credit": "Operator 16 / Wikimedia Commons (CC0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Crystal_River_Mound_A09.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Crystal_River_Mound_A09.jpg",
+        "subject_kind": "place",
+        "subject": "crystal-river-archaeological-state-park",
+        "alt": "Temple Mound A at Crystal River Archaeological State Park, a grassy mound with a stairway and an overlook deck on top.",
+        "width": 8064,
+        "height": 4536
+      },
+      {
+        "id": "fsc-pfeiffer-chapel-photo",
+        "title": "Lakeland FSC Pfeiffer Chapel01",
+        "creator": "Ebyabe",
+        "year": "2009",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Lakeland_FSC_Pfeiffer_Chapel01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Lakeland_FSC_Pfeiffer_Chapel01.jpg",
+        "subject_kind": "place",
+        "subject": "florida-southern-college-architectural-district",
+        "alt": "Frank Lloyd Wright's Annie Pfeiffer Chapel at Florida Southern College in Lakeland.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "bok-tower-reflection-photo",
+        "title": "Bok Tower at Work",
+        "creator": "Milesb1217",
+        "year": "2020",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Milesb1217 / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Bok_Tower_at_Work.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Bok_Tower_at_Work.jpg",
+        "subject_kind": "place",
+        "subject": "bok-tower-gardens",
+        "alt": "The pink and gray Singing Tower at Bok Tower Gardens, reflected in a lily pond framed by palms and oaks.",
+        "width": 3024,
+        "height": 4032
+      },
+      {
+        "id": "philippe-park-mound-view-photo",
+        "title": "Safety Harbor Site top-down 01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Safety_Harbor_Site_top-down_01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Safety_Harbor_Site_top-down_01.jpg",
+        "subject_kind": "place",
+        "subject": "philippe-park",
+        "alt": "View from the top of the Safety Harbor temple mound in Philippe Park, down stone steps toward the bay through palms and oaks.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "emerson-point-portavant-mound-photo",
+        "title": "Palmetto FL Emerson Point Portavant Mound01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Palmetto_FL_Emerson_Point_Portavant_Mound01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Palmetto_FL_Emerson_Point_Portavant_Mound01.jpg",
+        "subject_kind": "place",
+        "subject": "emerson-point-preserve",
+        "alt": "A wooden boardwalk ramp leading up into the trees at the Portavant Mound, with a state archaeological site sign.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "old-citrus-county-courthouse-photo",
+        "title": "Citrus Cty Crths Inverness01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Citrus_Cty_Crths_Inverness01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Citrus_Cty_Crths_Inverness01.jpg",
+        "subject_kind": "place",
+        "subject": "old-courthouse-heritage-museum",
+        "alt": "The Old Citrus County Courthouse on the town square in Inverness.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "don-cesar-photo",
+        "title": "St Pete Beach FL Don Ce Sar01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/St_Pete_Beach_FL_Don_Ce_Sar01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:St_Pete_Beach_FL_Don_Ce_Sar01.jpg",
+        "subject_kind": "stay",
+        "subject": "don-cesar",
+        "alt": "The Don CeSar hotel in St. Pete Beach.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "vinoy-park-hotel-photo",
+        "title": "Historic Vinoy Park Hotel, St. Petersburgh, FL",
+        "creator": "Elisa.rolle",
+        "year": "2017",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Elisa.rolle / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Historic_Vinoy_Park_Hotel%2C_St._Petersburgh%2C_FL.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Historic_Vinoy_Park_Hotel,_St._Petersburgh,_FL.jpg",
+        "subject_kind": "stay",
+        "subject": "vinoy-resort-golf-club",
+        "alt": "The Vinoy Park Hotel in St. Petersburg.",
+        "width": 3872,
+        "height": 2592
+      },
+      {
+        "id": "fenway-hotel-photo",
+        "title": "FL Dunedin Fenway Hotel01",
+        "creator": "Ebyabe",
+        "year": "2020",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 4.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/FL_Dunedin_Fenway_Hotel01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:FL_Dunedin_Fenway_Hotel01.jpg",
+        "subject_kind": "stay",
+        "subject": "fenway-hotel",
+        "alt": "The Fenway Hotel in Dunedin.",
+        "width": 4288,
+        "height": 3216
+      },
+      {
+        "id": "hacienda-hotel-photo",
+        "title": "N-P-R Hacienda Hotel01",
+        "creator": "Ebyabe",
+        "year": "2007",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/N-P-R_Hacienda_Hotel01.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:N-P-R_Hacienda_Hotel01.jpg",
+        "subject_kind": "stay",
+        "subject": "hacienda-hotel",
+        "alt": "The Hacienda Hotel on Main Street in New Port Richey.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "plant-city-union-depot-photo",
+        "title": "Plant City FL Union Depot01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Plant_City_FL_Union_Depot01.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Plant_City_FL_Union_Depot01.JPG",
+        "subject_kind": "place",
+        "subject": "robert-w-willaford-railroad-museum",
+        "alt": "The Plant City Union Depot, now the Robert W. Willaford Railroad Museum.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "downtown-plant-city-photo",
+        "title": "Plant City FL Downtown Comm Dist01",
+        "creator": "Ebyabe",
+        "year": "2011",
+        "license": "cc-by-sa",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Plant_City_FL_Downtown_Comm_Dist01.JPG",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Plant_City_FL_Downtown_Comm_Dist01.JPG",
+        "subject_kind": "place",
+        "subject": "historic-downtown-plant-city",
+        "alt": "Buildings in the Downtown Plant City Commercial District.",
+        "width": 3264,
+        "height": 2448
+      },
+      {
+        "id": "pasco-courthouse-dade-city-photo",
+        "title": "Pasco Cty Courthouse Dade City",
+        "creator": "Ebyabe",
+        "year": "2009",
+        "license": "cc-by",
+        "license_url": "https://creativecommons.org/licenses/by/2.5",
+        "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+        "file_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Pasco_Cty_Courthouse_Dade_City.jpg",
+        "page_url": "https://commons.wikimedia.org/wiki/File:Pasco_Cty_Courthouse_Dade_City.jpg",
+        "subject_kind": "place",
+        "subject": "historic-downtown-dade-city",
+        "alt": "The Pasco County Courthouse in downtown Dade City.",
+        "width": 3215,
+        "height": 2410
+      }
+    ]
+  },
+  "report": "## history-region: historic sites and districts outside Tampa (47 places, 48 media; checked Sep 27, 2026)\n\n### What is covered\nEvery record carries a full `heritage` block (built, architect, style where a source states them; designations with NRHP reference numbers and NPS NPGallery links; era; a 2–5 sentence story; visiting notes; per-claim sources).\n- **St. Petersburg & Gulfport (15):** Snell Arcade, Open Air Post Office, Detroit Hotel, World's First Airline Monument (Benoist Centennial Plaza, 1914 Airboat Line), Historic Old Northeast (North Shore HD), Roser Park HD, Historic Manhattan Casino, African American Heritage Trail, Weedon Island Preserve (heritage for the outdoors id), Gulfport Casino Ballroom, Jungle Prada Site, Historic Kenwood, Downtown St. Petersburg HD, Mirror Lake Library, Huggins-Stengel Field.\n- **Gulf Beaches (3):** Pass-a-Grille HD, Fort De Soto Batteries (separate record `fort-de-soto-historic-batteries`), Egmont Key (Fort Dade, lighthouse; outdoors id).\n- **Clearwater & North Pinellas (10):** Old Pinellas County Courthouse, Harbor Oaks, Andrews Memorial Chapel, Philippe Park / Safety Harbor Site (outdoors id), Tarpon Springs Sponge Docks (heritage for the see-pinellas id; Sponge Exchange + Greektown TCP), St. Nicholas Greek Orthodox Cathedral, Tarpon Springs HD, Safford House Museum, Unitarian Universalist Church (Inness paintings), Anclote Key Lighthouse.\n- **Around the Bay (5):** 1914 Plant City High School Community Center, Bing Rooming House Museum (Black history; temporarily closed after Hurricane Milton; shared id with around-daytrips), Historic Pasco County Courthouse (Dade City), Saint Leo Abbey, Temple Terrace Golf and Country Club (the 1920s golf-community core; the city's only NRHP listing).\n- **Day Trips (14):** De Soto National Memorial, Gamble Plantation (described plainly: sugar plantation worked by enslaved people; later a UDC Confederate memorial), Madira Bickel Mound, Palmetto Historical Park (county-run, free tours; around-daytrips added the same id later the same day), Old Manatee County Courthouse (1860, at Manatee Village), Braden Castle Park HD, Emerson Point / Portavant Mound (outdoors id), Crystal River Archaeological SP (NHL), Fort Cooper SP (new), Old Citrus County Courthouse (heritage for around-daytrips' `old-courthouse-heritage-museum`), Florida Southern College FLW district, Bok Tower Gardens (NHL; outdoors id), El Retiro at Bok Tower Gardens, Frances Langford (Lake Mirror) Promenade.\n- Counts by kind: historic-site 22, historic-district 9, landmark 3, house-of-worship 3, museum 2, state-park 2, nature-preserve 2, district 1, trail 1, garden 1, park 1. Region: SP 15, GB 3, CW 10, AB 5, DT 14. 41 records carry an NRHP designation; 12 carry a local-register designation (St. Petersburg register file numbers, Dade City register); NHLs: Crystal River, Bok Tower, Safety Harbor Site, FSC.\n- **Media (48, all Wikimedia Commons, license read from each file page's metadata via the Commons API):** CC BY-SA 31, CC BY 14, CC0 2, public domain 1 (USCG). 41 of my places have an image; 7 images illustrate other slices' records (don-cesar, vinoy-resort-golf-club, fenway-hotel, hacienda-hotel, robert-w-willaford-railroad-museum, historic-downtown-plant-city, historic-downtown-dade-city). Alt text was written after viewing each image where the thumbnail could be downloaded (about 35); for the rest (rate-limited) alt text restates only the Commons description. No image for: detroit-hotel, worlds-first-airline-monument, manhattan-casino, the heritage trail, the UU church, Palmetto Historical Park.\n\n### How candidates were found\n1. Wikipedia NRHP county lists (Pinellas, Hillsborough, Pasco, Manatee, Polk, Citrus, Hernando) read as raw wikitext for reference numbers, dates and image names; then the NPS NPGallery NRIS record for every ref (architects, styles, significant years, listing dates).\n2. City of St. Petersburg: historic preservation page, its St. Petersburg Register of Historic Places PDF (local designations and file numbers) and Markers and Monuments PDF (1914 airline plaques, Detroit Hotel plaque, Huggins/Stengel plaques), the visitors history page and the African American Heritage Trail page.\n3. Official owners' pages: St. Pete Pier, historicmanhattancasino.org, Weedon Island Preserve center, historicroserpark.org, historickenwood.org, splibraries.org, pinellas.gov parks, stpetebeach.org + its ArcGIS walking-tour story map (read via the ArcGIS item-data API), dunedinmuseum.org, stnicholastarpon.org, uutarpon.org, tarponarts.org (Safford House), spongedocks.net, plantcitygov.com, templeterrace.com, dadecityfl.com, palmettohistoricalpark.com, manateevillage.org, nps.gov/deso, flsouthern.edu, boktowergardens.org, cccourthouse.org, mymanatee.org; county tourism listings (Bradenton Gulf Islands, Discover Crystal River, Visit Central Florida, Visit Tampa Bay sitemap) where the owner's site was blocked.\n4. The other slices' files, to reuse shared ids (weedon-island-preserve, philippe-park, egmont-key-state-park, bok-tower-gardens, emerson-point-preserve, sponge-docks-tarpon-springs, and around-daytrips' day-trip ids) and avoid duplicating records they already cover.\nThe session's WebSearch budget was exhausted before this slice started, and Bing/DuckDuckGo via curl returned unusable results, so discovery relied on the lists above rather than open web search.\n\n### Deliberately left out, and why\n- **Historic hotels as stays:** stays-stpete-pinellas and stays-beaches already carry full heritage blocks for the Vinoy, Don CeSar, Belleview Inn, Safety Harbor Resort and Fenway; stays-tampa-outer has the Hacienda. I added Commons images for them instead of duplicate stays records (so `stays` is empty here).\n- Already covered with heritage by other slices: St. Petersburg Coliseum, Williams Park, Palladium (venues-bay); Sunken Gardens (outdoors); Heritage Village, St. Petersburg Museum of History, Dunedin/Tarpon depots (see-pinellas); Fort Foster, Cortez, Historic Spanish Point, Ringling, Yulee Sugar Mill, Chinsegut, May-Stringer, Munn Park, Polk Theatre, Polk County History Center, Manatee Village, Willaford depot, downtown Plant City and Dade City (around-daytrips).\n- **Pinellas Point (Princess) temple mound:** only the city register line and a Commons caption tie it to NRHP 'Princess Mound Site' (NRIS page empty); no descriptive source read. Gulf Beaches Historical Museum (site bot-checked; see-pinellas also left it out). Pinewood/Cypress Gardens inside Legoland (no Legoland page on it). USS Narcissus underwater preserve (FPAN page 404). Old Tarpon Springs City Hall (open only for events). Private houses and small NRHP listings with no public access (Casa Coe da Sol, Veillard, Blatchley, Roebling Estate, Ingleside, etc.).\n\n### Open questions for the verifier\n1. **Gulfport Casino Ballroom status** rests on the Gulfport Merchants Chamber's 2026 About page (\"still hosts swing dances today\"); mygulfport.us blocked both tools and the 2026 Gecko Ball moved to Stetson. Confirm post-Helene status.\n2. **Designation corrections for other slices (from NRIS):** De Soto National Memorial: 66000078 is 'DeSoto National Memorial' (1966); Shaw's Point Archeological District is 01000342 (2001) — around-daytrips labels 66000078 as Shaw's Point. Weeki Wachee Springs is 100004890 (2020); outdoors' 09000843 is the Spring Lake Community Center. Manatee Village's 1860 courthouse is NRHP 76000601 (around-daytrips lists none). Polk County Courthouse (Bartow) is 89001055; Spook Hill 100003585.\n3. Thin records: braden-castle-park-historic-district (NRIS + Wikipedia only; public access to the ruins unconfirmed), jungle-prada-site and huggins-stengel-field (Wikipedia + NRIS; no city page readable), frances-langford-promenade (no Lakeland city page readable), saint-leo-abbey (abbey site 403).\n4. worlds-first-airline-monument has no coordinates (neither geocoder knows Benoist Centennial Plaza; the Pier map lists it as item 17).\n5. 1914 Plant City High School: the city says the East Hillsborough Historical Society is on its first floor, but Visit Tampa Bay says the Plant City History & Photo Archives moved to 110 E Reynolds St.\n6. Local-register years were read from a PDF whose columns extract out of order; only years (not months) are used, and North Shore/Kenwood sub-district designations were left out for that reason.\n7. Quotes: all 9 were string-checked against the fetched page text.\n"
+}

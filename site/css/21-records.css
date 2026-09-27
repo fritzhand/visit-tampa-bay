@@ -1,58 +1,227 @@
 /* ======================================================================
-   site/css/21-records.css · OWNER: E1 (engine; minimal styles for the destination components so the stub
-   pages read; the design agent and the page lanes re-skin them)
-   Cards (.card.place .card.stay .card.exp .card.area), the typographic plate (.plate-type), .photo and
-   .photo-fig, compact rows (ul.rows > li.row), the coordinate line, head actions, heritage blocks and the
-   timeline. Read only tokens (var(--…)); no color literal may appear here.
+   site/css/21-records.css · OWNER: the design system ("Chart & Label", design/DESIGN.md §8)
+   One card grammar for the record kinds (.card.place .card.stay .card.exp .card.area): the plate (or a
+   rights-cleared photo) inset 6px with concave corners, a caps kicker with the sheet badge, the title in
+   Bodoni, a 3-line summary, a tabular meta line, the star as a paper medallion on the plate.
+   The plate (.plate-type): a cigar-label panel in the sheet's tint (double rule, compass watermark, the
+   chart code in a medallion, the name in Bodoni italic, a ripple foot). Never a stock photo.
+   Also: .photo .photo-fig, compact rows (ul.rows > li.row), .coord-line, .head-actions, the heritage block
+   (gold double rule, designation boxes), the timeline, route stops, the signature seal, the date box.
+   Tokens only; no color literal.
    ====================================================================== */
-.card.place, .card.stay, .card.exp, .card.area { display: flex; flex-direction: column; gap: var(--sp-2); padding: 0; border-top: var(--rule-heavy) solid var(--ink-edge); }
-.card-body { display: flex; flex-direction: column; gap: 6px; padding: var(--sp-3) var(--sp-4) var(--sp-4); }
-.card-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; font-size: var(--fs-xs); color: var(--text-muted); }
-.card-title { font-size: var(--fs-md); }
-.card-title a { color: var(--text); }
-.card-sum { font-size: var(--fs-sm); }
-.card-meta, .card-op, .card-departs, .card-brand, .card-feats, .card-known { font-size: var(--fs-xs); color: var(--text-muted); }
-.card-more { position: relative; z-index: 1; font-size: var(--fs-sm); }
-.card-more > summary { min-height: var(--tap); display: flex; align-items: center; cursor: pointer; color: var(--link); }
-.card-quote { margin: var(--sp-2) 0; padding-left: var(--sp-3); border-left: var(--rule-mid) solid var(--ink-edge); }
-.card .star { position: absolute; top: 6px; right: 6px; z-index: 1; }
-.card .card-more, .card a:not(.stretched) { position: relative; z-index: 1; }
 
-/* the typographic plate: a record without a rights-cleared image gets its chart code and name, never a stock photo */
-.plate-type {
-  display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; aspect-ratio: 3 / 2; padding: var(--sp-3) var(--sp-4);
-  background: var(--ink-tint); color: var(--ink-text); border-bottom: 1px solid var(--border);
+/* ---------- record cards ---------- */
+.card.place, .card.stay, .card.exp, .card.area { display: flex; flex-direction: column; padding: 0; }
+.card.place:has(.stretched:hover) .plate-type, .card.stay:has(.stretched:hover) .plate-type, .card.area:has(.stretched:hover) .plate-type { filter: saturate(1.1); }
+.card > .plate-type, .card > .photo { margin: 6px 6px 0; }
+.card-body { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; padding: 12px 16px 16px; }
+.card-kicker {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; min-height: 24px; color: var(--text-muted);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1.3;
 }
-.plate-type .pt-code { font-size: var(--fs-label); font-weight: var(--wght-strong); letter-spacing: 0.2em; }
-.plate-type .pt-name { font-family: var(--font-display); font-size: var(--fs-lg); line-height: var(--lh-snug); }
-.plate-type.lg { aspect-ratio: 16 / 7; }
-.photo { display: block; aspect-ratio: 3 / 2; overflow: hidden; background: var(--surface-sunken); }
-.photo img { width: 100%; height: 100%; object-fit: cover; }
-.photo-fig { margin: var(--sp-4) 0; }
-.photo-fig img { width: 100%; height: auto; }
-.photo-fig figcaption { margin-top: 6px; font-size: var(--fs-xs); color: var(--text-muted); }
+.card-kicker .sheet-badge { margin-right: 2px; }
+.card-kicker .sym, .card-kicker > .i { width: 18px; height: 18px; color: var(--ink-text); }
+.card-title { font-size: var(--fs-md); line-height: var(--lh-snug); }
+.card-title a { color: var(--text); text-decoration: none; }
+.card-title a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.14em; }
+.card-title a[data-open-experience]::after { content: ""; position: absolute; inset: 0; z-index: 1; }   /* the whole card opens the dialog */
+.card-status { margin: 2px 0; }
+.card-sum { font-size: var(--fs-sm); color: var(--text-muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+.card-meta, .card-op, .card-departs, .card-brand, .card-feats, .card-known { font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; line-height: 1.45; }
+.card-op { color: var(--text); font-weight: var(--wght-strong); }
+.card-feats { color: var(--text); }
+.card-meta { margin-top: auto; padding-top: 6px; }
+.card-meta .unk { font-size: inherit; }
+.card-departs a, .card-meta a { position: relative; z-index: 2; }
+.card-more { position: relative; z-index: 2; font-size: var(--fs-sm); margin-top: 2px; }
+.card-more > summary { display: inline-flex; min-height: var(--tap); align-items: center; gap: 6px; cursor: pointer; color: var(--link); font-weight: var(--wght-strong); list-style: none; }
+.card-more > summary::-webkit-details-marker { display: none; }
+.card-more > summary::after { content: "+"; font-weight: var(--wght-strong); }
+.card-more[open] > summary::after { content: "–"; }
+.card-more .facts { margin: var(--sp-2) 0; }
+.js .card.exp .card-more { display: none; }                  /* with JS the experience dialog shows the details */
+.card-quote { margin: var(--sp-2) 0; padding-left: var(--sp-3); border-left: var(--rule-mid) solid var(--ink-edge); font-family: var(--font-display); font-style: italic; font-weight: 520; }
+.card-quote cite { display: block; margin-top: 4px; font-family: var(--font-body); font-style: normal; font-size: var(--fs-xs); color: var(--text-muted); }
+/* the star: a paper medallion on the plate's top-right corner (44px target) */
+.card > .star { position: absolute; top: 12px; right: 12px; z-index: 3; background: var(--surface); box-shadow: 0 0 0 1px var(--border), var(--shadow-1); border-radius: 50%; }
+.card > .star:hover { background: var(--surface-alt); }
+.card .card-more, .card a:not(.stretched):not([data-open-experience]) { position: relative; z-index: 2; }
+.card[data-st="closed"] .card-title a, .card[data-st="temporarily-closed"] .card-title a { color: var(--text-muted); }
+/* signature places: a gold rule on the card's top edge, and the seal where the lane prints it */
+.card[data-sig="1"] { border-top: 3px solid var(--gold); }
+/* historic places and hotels: the label's double gold rule */
+.card.place[data-era], .card.stay[data-h="1"] { border-top: 3px double var(--gold-ink); }
 
-/* compact rows */
-ul.rows { list-style: none; padding: 0; border-top: 1px solid var(--border); }
+/* ---------- the plate: the typographic stand-in for a picture ----------
+   images.mjs plate(): <span class="plate-type [lg]" data-sheet aria-hidden="true"><span class="pt-code">TP</span><span class="pt-name">…</span></span> */
+.plate-type {
+  --n: 12px;
+  --pr1: color-mix(in srgb, var(--ink-edge) 70%, transparent);
+  --pr2: color-mix(in srgb, var(--ink-edge) 42%, transparent);
+  position: relative; display: grid; align-content: center; justify-items: center; gap: 8px;
+  aspect-ratio: 16 / 9; overflow: hidden; padding: 18px 26px 28px; text-align: center;
+  color: var(--ink-text);
+  background:
+    linear-gradient(var(--pr1) 0 0) 7px 7px / calc(100% - 14px) 1px no-repeat,
+    linear-gradient(var(--pr1) 0 0) 7px calc(100% - 7px) / calc(100% - 14px) 1px no-repeat,
+    linear-gradient(var(--pr1) 0 0) 7px 7px / 1px calc(100% - 14px) no-repeat,
+    linear-gradient(var(--pr1) 0 0) calc(100% - 7px) 7px / 1px calc(100% - 14px) no-repeat,
+    linear-gradient(var(--pr2) 0 0) 11px 11px / calc(100% - 22px) 1px no-repeat,
+    linear-gradient(var(--pr2) 0 0) 11px calc(100% - 11px) / calc(100% - 22px) 1px no-repeat,
+    linear-gradient(var(--pr2) 0 0) 11px 11px / 1px calc(100% - 22px) no-repeat,
+    linear-gradient(var(--pr2) 0 0) calc(100% - 11px) 11px / 1px calc(100% - 22px) no-repeat,
+    var(--ink-tint);
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+}
+.plate-type::after {                        /* the compass-rose watermark */
+  content: ""; position: absolute; width: 62%; aspect-ratio: 1; right: -16%; top: -26%; pointer-events: none;
+  z-index: -1; background: var(--ink-edge); opacity: 0.1;
+  -webkit-mask: var(--mask-rose) 0 0 / 100% 100% no-repeat; mask: var(--mask-rose) 0 0 / 100% 100% no-repeat;
+}
+/* the medallion: a paper disc, the sheet's keyline, a paper gap, a second keyline, holding the chart code */
+.plate-type .pt-code {
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; padding-left: 0.16em;
+  background: var(--surface); color: var(--ink-text);
+  box-shadow: 0 0 0 1.5px var(--ink-edge), 0 0 0 4px var(--surface), 0 0 0 5px color-mix(in srgb, var(--ink-edge) 55%, transparent);
+  font-family: var(--font-label); font-stretch: var(--label-stretch-wide); font-size: var(--fs-label); font-weight: 780;
+  letter-spacing: 0.16em; line-height: 1;
+}
+.plate-type .pt-name {
+  max-width: 28ch; font-family: var(--font-display); font-style: italic; font-weight: 640;
+  font-size: clamp(1.25rem, 1rem + 0.9vw, 1.5rem); line-height: 1.1; color: var(--text); text-wrap: balance;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; padding-bottom: 0.08em;
+}
+.plate-type .pt-name::after {               /* the ripple foot (positioned against the plate) */
+  content: ""; position: absolute; left: 16px; right: 16px; bottom: 15px; height: 6px; pointer-events: none;
+  background: var(--ink-edge); opacity: 0.45;
+  -webkit-mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x;
+}
+.plate-type.lg { aspect-ratio: 3 / 2; padding: 28px 32px 40px; gap: 12px; }
+.plate-type.lg[data-sheet]::before {        /* "Sheet 1" over the medallion on the big plate */
+  content: "Sheet " var(--ink-n); color: var(--ink-text);
+  font-family: var(--font-label); font-stretch: var(--label-stretch-wide); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label-wide); text-transform: uppercase; line-height: 1.2;
+}
+.plate-type.lg .pt-code { width: 64px; height: 64px; font-size: var(--fs-sm); }
+.plate-type.lg .pt-name { font-size: clamp(1.625rem, 1.15rem + 2vw, 2.5rem); -webkit-line-clamp: 3; line-clamp: 3; }
+.plate-type.lg .pt-name::after { bottom: 20px; left: 22px; right: 22px; }
+@media (max-width: 559px) { .plate-type.lg { aspect-ratio: 4 / 3; } }
+
+/* a rights-cleared photo takes the plate's place: the same inset and concave corners, its credit nearby */
+.photo {
+  --n: 10px; display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--surface-sunken);
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+}
+.photo.lg { aspect-ratio: 3 / 2; }
+.photo img { width: 100%; height: 100%; object-fit: cover; filter: var(--photo-filter); }
+.photo-fig { margin: var(--sp-4) 0; }
+.photo-fig img { width: 100%; height: auto; filter: var(--photo-filter); }
+.photo-fig figcaption { margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-muted); }
+.photo-fig .credit { color: var(--text-faint); }
+.photo-fig figcaption a { color: var(--text-muted); }
+
+/* ---------- compact rows (placeRow, stayRow, experienceRow; My Trip) ---------- */
+ul.rows { list-style: none; padding: 2px 0 0; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; }
 li.row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--sp-3); padding: 6px 0; border-bottom: 1px solid var(--border); }
-li.row > a, li.row > span { display: flex; align-items: center; gap: 10px; min-height: var(--tap); flex: 1 1 260px; min-width: 0; color: var(--text); text-decoration: none; }
+li.row > a, li.row > span { display: flex; align-items: center; gap: 12px; min-height: var(--tap); flex: 1 1 260px; min-width: 0; color: var(--text); text-decoration: none; }
 li.row .t { font-weight: var(--wght-strong); line-height: 1.35; }
 li.row > a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
 li.row .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
 li.row > p { flex-basis: 100%; font-size: var(--fs-sm); }
+li.row .star { margin-left: auto; }
 
 .coord-line { display: flex; align-items: center; gap: 6px; font-size: var(--fs-sm); color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: var(--sp-3); }
+.coord-line .i { width: 16px; height: 16px; }
+.head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: var(--sp-4); }
 
-/* heritage and the timeline */
-.heritage { margin-top: var(--sp-7); padding-top: var(--sp-4); border-top: var(--rule-heavy) solid var(--ink-edge); }
-.heritage h2 { margin-bottom: var(--sp-3); }
-.designations { margin: var(--sp-3) 0; padding-left: 1.2em; }
-.heritage-visit { margin-top: var(--sp-3); }
-ol.timeline { list-style: none; padding: 0; border-left: var(--rule-mid) solid var(--rule-ink); }
-.tl-item, ol.timeline > li { position: relative; padding: 0 0 var(--sp-5) var(--sp-4); }
-.tl-year { font-weight: var(--wght-strong); color: var(--ink-text); }
-.tl-title { font-size: var(--fs-md); }
-.tl-places { font-size: var(--fs-sm); color: var(--text-muted); }
-ol.stops { padding-left: 1.4em; }
-ol.stops li { min-height: var(--tap); display: list-item; }
+/* ---------- heritage: the label's double gold rule, designation boxes ---------- */
+.heritage { margin-top: var(--sp-7); padding-top: var(--sp-5); border-top: 4px double var(--gold-ink); }
+.heritage > h2, .heritage > h3 { display: flex; align-items: center; gap: 10px; margin-bottom: var(--sp-3); }
+.heritage > h2::before, .heritage > h3::before {
+  content: ""; flex: none; width: 0.62em; height: 0.62em; border: 2px solid var(--gold-ink); border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-ink) 0 2px, transparent 2.5px);
+}
+.designations { list-style: none; padding: 0; margin: var(--sp-4) 0; display: grid; gap: var(--sp-2); }
+.designations li {
+  display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px; background: var(--gold-tint); color: var(--text);
+  font-size: var(--fs-sm); line-height: 1.4; max-width: 72ch;
+}
+.designations li::before {
+  content: ""; flex: none; width: 14px; height: 14px; margin-top: 2px; border: 2px solid var(--gold-ink); border-radius: 50%;
+  background: radial-gradient(circle, var(--gold-ink) 0 1.5px, transparent 2px);
+}
+.designations a { color: var(--text); font-weight: var(--wght-strong); }
+.heritage-visit { margin-top: var(--sp-4); max-width: var(--measure); }
+
+/* ---------- the timeline: a coast line with a landmark at each date ---------- */
+ol.timeline { list-style: none; padding: 0; margin: 0; background: linear-gradient(var(--rule-ink) 0 0) 7px 0 / 2px 100% no-repeat; }
+.tl-item, ol.timeline > li { position: relative; padding: 0 0 var(--sp-6) calc(var(--sp-5) + 8px); }
+ol.timeline > li::before {
+  content: ""; position: absolute; left: 0; top: 0.35em; width: 16px; height: 16px; border-radius: 50%;
+  background: radial-gradient(circle, var(--ink-fill) 0 2.5px, var(--bg) 3px); border: 2px solid var(--ink-fill);
+}
+.tl-year { font-family: var(--font-display); font-weight: 800; font-size: var(--fs-lg); line-height: 1.1; color: var(--ink-text); font-variant-numeric: lining-nums; }
+.tl-title { margin-top: 2px; font-size: var(--fs-md); }
+.tl-text { margin-top: 6px; max-width: var(--measure); }
+.tl-places { margin-top: 6px; font-size: var(--fs-sm); color: var(--text-muted); }
+.tl-item .source-line { margin-top: var(--sp-3); }
+
+/* ---------- route stops (Passages): the course line, magenta as on a chart ---------- */
+ol.stops { list-style: none; padding: 0; counter-reset: stop; background: repeating-linear-gradient(to bottom, var(--magenta) 0 6px, transparent 6px 11px) 13px 14px / 2px calc(100% - 28px) no-repeat; }
+ol.stops > li { position: relative; counter-increment: stop; min-height: var(--tap); padding: 6px 0 var(--sp-4) 44px; }
+ol.stops > li::before {
+  content: counter(stop); position: absolute; left: 0; top: 4px; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+  background: var(--surface); color: var(--magenta-ink); border: 2px solid var(--magenta);
+  font-family: var(--font-label); font-size: var(--fs-label); font-weight: 780; font-variant-numeric: tabular-nums;
+}
+
+/* ---------- the signature seal: gold leaf, a word, sparingly (never more than one per card) ---------- */
+.seal {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 24px; padding: 3px 12px 3px 9px; width: fit-content;
+  background: var(--gold-leaf); color: var(--gold-leaf-ink);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1;
+  --n: 5px;
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+}
+.seal .i { width: 15px; height: 15px; }
+
+/* ---------- the date box: weekday and month in caps over a Bodoni day numeral (a tide-table day) ----------
+   <div class="datebox" aria-hidden="true"><span class="dw">Wed</span><span class="d">6</span><span class="mo">Jan</span></div> */
+.datebox {
+  flex: none; width: 60px; display: grid; justify-items: center; align-content: start; gap: 3px; padding: 8px 0 9px;
+  border-top: 2px solid var(--ink-fill); border-bottom: 1px solid var(--ink-fill); background: var(--ink-tint); color: var(--ink-text); text-align: center;
+}
+.datebox .mo, .datebox .dw {
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1;
+}
+.datebox .d { font-family: var(--font-display); font-weight: 800; font-size: 2.125rem; line-height: 0.95; font-variant-numeric: lining-nums; color: var(--text); }

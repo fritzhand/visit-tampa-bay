@@ -1,0 +1,123 @@
+/* ======================================================================
+   site/css/22-ornaments.css · OWNER: the design system ("Chart & Label", design/DESIGN.md §7)
+   The label ornaments as reusable classes (drawn with tokens, never texture images) and the masthead recipe:
+     .frame        a cigar-label frame (outer rule, gold hairline, corner stars). The page head already is one:
+                   use .frame only where a page shows no page head frame (one frame per page).
+     .ribbon       <span class="ribbon"><span>Sheet 1 · Tampa</span></span>: a band with gold hairlines and notched
+                   tails; inside [data-sheet] it takes the sheet's fill. A ribbon never holds a sheet badge.
+     .ripple       one engraved wave, tiled (under a masthead dek, plate feet)
+     .grat > .grat-in   the chart neatline: a band of alternating ink and paper ticks (the masthead, map boxes)
+     .cartouche    concave corners (--n); plates, the seal, a section number
+     .rose         the compass rose (h: rose(root) → <svg class="rose"><use …brand.svg#compass>), decorative
+     .wm-art       the outlined wordmark (wordmarkArt(root, { variant })), ink currentColor, TAMPA BAY in the house ink
+     .mast …       the home masthead: .mast.grat > .grat-in.mast-in > .mast-line + .mast-title (rose · wordmark · rose)
+                   + .mast-dek + .ripple + .mast-index (the six sheets). See design/specimen.html.
+   Tokens only; no color literal.
+   ====================================================================== */
+
+/* ---------- frame ---------- */
+.frame {
+  position: relative; isolation: isolate;
+  border: var(--frame-w) solid var(--frame-outer);
+  outline: var(--frame-inner-w) solid var(--frame-inner);
+  outline-offset: calc(-1 * (var(--frame-w) + var(--frame-gap) + var(--frame-inner-w)));
+  background: var(--surface);
+}
+.frame::after {
+  content: ""; position: absolute; pointer-events: none; z-index: 1;
+  inset: calc(-1 * (var(--frame-w) / 2 + var(--corner) / 2));
+  background: var(--corner-ink);
+  -webkit-mask: var(--mask-corner) 0 0 / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 0 / var(--corner) var(--corner) no-repeat,
+                var(--mask-corner) 0 100% / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 100% / var(--corner) var(--corner) no-repeat;
+          mask: var(--mask-corner) 0 0 / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 0 / var(--corner) var(--corner) no-repeat,
+                var(--mask-corner) 0 100% / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 100% / var(--corner) var(--corner) no-repeat;
+}
+
+/* ---------- ribbon ---------- */
+.ribbon {
+  --rb: var(--ribbon-bg); --ri: var(--ribbon-ink); --rf: var(--ribbon-fold); --rr: var(--ribbon-rule);
+  position: relative; isolation: isolate; display: inline-flex; max-width: calc(100% - 2 * var(--ribbon-tail));
+  margin: 0 var(--ribbon-tail);
+}
+[data-sheet] .ribbon, .ribbon[data-sheet] { --rb: var(--ink-fill); --ri: var(--ink-on); --rf: color-mix(in oklab, var(--ink-fill) 62%, var(--fold-shade)); }
+.ribbon > span {
+  position: relative; display: inline-flex; align-items: center; gap: 9px; min-height: var(--ribbon-h); padding: 3px 16px;
+  background:
+    linear-gradient(var(--rr) 0 0) 0 3px / 100% 1px no-repeat,
+    linear-gradient(var(--rr) 0 0) 0 calc(100% - 3px) / 100% 1px no-repeat,
+    var(--rb);
+  color: var(--ri);
+  font-family: var(--font-label); font-stretch: var(--label-stretch-wide); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label-wide); text-transform: uppercase; line-height: 1.2; text-align: center;
+}
+.ribbon::before, .ribbon::after {
+  content: ""; position: absolute; z-index: -1; top: 7px; bottom: -7px; width: calc(var(--ribbon-tail) + 8px);
+}
+.ribbon::before { left: calc(-1 * var(--ribbon-tail)); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, var(--ribbon-notch) 50%); background: linear-gradient(to top right, var(--rf) 50%, transparent 50%) 100% 100% / 8px 7px no-repeat, linear-gradient(var(--rb) 0 0) 0 0 / calc(100% - 8px) 100% no-repeat; }
+.ribbon::after { right: calc(-1 * var(--ribbon-tail)); clip-path: polygon(0 0, 100% 0, calc(100% - var(--ribbon-notch)) 50%, 100% 100%, 0 100%); background: linear-gradient(to top left, var(--rf) 50%, transparent 50%) 0 100% / 8px 7px no-repeat, linear-gradient(var(--rb) 0 0) 100% 0 / calc(100% - 8px) 100% no-repeat; }
+@media (max-width: 559px) { .ribbon > span { letter-spacing: var(--track-label); text-wrap: balance; } }
+
+/* ---------- ripple, graticule, cartouche ---------- */
+.ripple { height: 6px; background: var(--water-line); -webkit-mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; }
+.grat {
+  --g: var(--grat-step); --w: var(--grat-w);
+  padding: calc(var(--w) + 1px); border: 1px solid var(--grat-ink);
+  background:
+    repeating-linear-gradient(90deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 0 / 100% var(--w) no-repeat,
+    repeating-linear-gradient(90deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 100% / 100% var(--w) no-repeat,
+    repeating-linear-gradient(180deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 0 / var(--w) 100% no-repeat,
+    repeating-linear-gradient(180deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 100% 0 / var(--w) 100% no-repeat,
+    var(--grat-paper);
+}
+.grat > .grat-in { border: 1px solid var(--grat-ink); background: var(--surface); min-width: 0; }
+.cartouche {
+  --n: var(--notch);
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+}
+
+/* ---------- the rose and the outlined wordmark ---------- */
+.rose { width: 132px; height: auto; aspect-ratio: 1; color: var(--text); --compass-dark: var(--text); --compass-north: var(--magenta); --compass-light: var(--surface); --compass-hub: var(--gold); }
+.wm-art { display: block; width: 100%; height: auto; color: var(--text); --wordmark-accent: var(--accent); }
+
+/* ---------- the masthead (home): a neatline box, the date line, rose · wordmark · rose, the dek, the sheets ---------- */
+.mast { margin-bottom: var(--sp-7); }
+.mast-in { position: relative; overflow: hidden; padding: clamp(18px, 3vw, 32px) clamp(16px, 4vw, 48px) clamp(20px, 3vw, 30px); text-align: center; }
+.mast-line {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline; gap: 4px 16px; padding-bottom: 10px; color: var(--text-muted);
+  background: linear-gradient(var(--rule-ink) 0 0) 0 100% / 100% 1px no-repeat;
+}
+.mast-line .mid { color: var(--text); }
+.mast-line .side:first-child { text-align: left; } .mast-line .side:last-child { text-align: right; }
+.mast-title { position: relative; display: grid; grid-template-columns: 1fr minmax(0, 620px) 1fr; align-items: center; gap: clamp(8px, 3vw, 40px); margin: clamp(18px, 3vw, 30px) 0 10px; }
+.mast-title .wm-art { color: var(--text); --wordmark-accent: var(--accent); }
+.mast-rose { justify-self: center; width: clamp(64px, 11vw, 132px); }
+.mast-rose.r { transform: scaleX(-1); }
+.mast-dek { max-width: 46ch; margin: 6px auto 0; font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: clamp(1.0625rem, 0.9rem + 0.7vw, 1.4375rem); line-height: var(--lh-snug); color: var(--text-muted); }
+.mast .ripple { margin: 18px auto 0; max-width: 520px; }
+.mast-index { display: grid; grid-template-columns: repeat(3, max-content); justify-content: center; gap: 2px 28px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+.mast-index a { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 0 8px; color: var(--ink-text); text-decoration: none; font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.mast-index a:hover { background: var(--ink-tint); color: var(--ink-text); }
+@media (max-width: 699px) {
+  .mast-title { grid-template-columns: minmax(0, 1fr); }
+  .mast-rose { display: none; }
+  .mast-line { grid-template-columns: minmax(0, 1fr); text-align: center; }
+  .mast-line .side { display: none; }
+  .mast-index { grid-template-columns: max-content; }
+}
+@media (min-width: 700px) and (max-width: 1099px) { .mast-index { grid-template-columns: repeat(2, max-content); } }
+
+/* ---------- the sheet index: a numbered list of the six sheets (numeral · name · badge) ---------- */
+.sheet-index { display: grid; gap: 0; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; padding-top: 2px; }
+.sheet-index > * { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 4px 14px; padding: 12px 10px 12px 0; border-bottom: 1px solid var(--border); }
+.sheet-index .no { font-family: var(--font-display); font-weight: 800; font-size: 2.25rem; line-height: 1; width: 1.1em; text-align: center; color: var(--ink-text); font-variant-numeric: lining-nums; }
+.sheet-index h3 { font-size: var(--fs-md); }
+.sheet-index p { font-size: var(--fs-xs); color: var(--text-muted); }

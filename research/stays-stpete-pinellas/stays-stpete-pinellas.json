@@ -19,9 +19,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.777674,
-        "lng": -82.627977,
-        "geo_source": "census",
+        "lat": 27.778414,
+        "lng": -82.629802,
+        "geo_source": "photon",
         "url": "https://thevinoy.com/",
         "phone": "727-894-1000",
         "rooms": 354,
@@ -91,9 +91,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.775574,
-        "lng": -82.632102,
-        "geo_source": "census",
+        "lat": 27.77602,
+        "lng": -82.632227,
+        "geo_source": "photon",
         "url": "https://thebirchwood.com/",
         "phone": "727-896-1080",
         "rooms": 18,
@@ -166,7 +166,8 @@
           "https://www.visitstpeteclearwater.com/article/best-downtown-hotels-st-petersburg-florida"
         ],
         "checked": "2026-09-27",
-        "notes": "Address and 75 units from the Visit St. Pete/Clearwater listing; the hotel's own pages do not print an address. The tourism office's 'Best Downtown Hotels' article dates the building to about 1933 (not on the hotel's site); left out of heritage."
+        "notes": "Address and 75 units from the Visit St. Pete/Clearwater listing; the hotel's own pages do not print an address. Quote from hollanderhotel.com. Common Grounds coffee shop per hollanderhotel.com/coffee-house. The tourism office's Best Downtown Hotels article calls it a renovated c.1933 building (not on the hotel's site); left out of heritage. Verifier 2026-09-27: a 21-story apartment tower approved in Jan 2026 would share the block and keep garage spaces for the hotel; the hotel is not being demolished (St Pete Rising, Jan 9, 2026).",
+        "quote_source": "https://www.hollanderhotel.com/"
       },
       {
         "id": "avalon-hotel-st-petersburg",
@@ -189,7 +190,7 @@
         "features": [
           "free-parking"
         ],
-        "summary": "A small Art Deco-styled boutique hotel next to the Hollander, its sister hotel; guests use the Hollander's pool, bar and restaurant. Parking is free.",
+        "summary": "A small boutique hotel with Art Deco roots next to the Hollander, its sister hotel; guests use the Hollander's pool, bar and restaurant. Parking is free.",
         "quote": "The Avalon, the sister Hotel to The Hollander and a few steps away, offers an array of room types and access to all the Hollander Hotel amenities",
         "status": "open",
         "tags": [
@@ -217,9 +218,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.773591,
-        "lng": -82.636383,
-        "geo_source": "census",
+        "lat": 27.773795,
+        "lng": -82.636718,
+        "geo_source": "photon",
         "url": "https://www.cordovainnstpete.com/",
         "phone": "727-822-7500",
         "opened": "1921",
@@ -260,9 +261,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.771284,
-        "lng": -82.633395,
-        "geo_source": "census",
+        "lat": 27.771425,
+        "lng": -82.633691,
+        "geo_source": "photon",
         "url": "https://www.poncedeleonhotel.com/",
         "phone": "727-550-9300",
         "rooms": 78,
@@ -271,7 +272,7 @@
           "restaurant",
           "historic"
         ],
-        "summary": "A six-story Mission Revival hotel on Central Avenue downtown, built in 1922, with a tapas and ceviche restaurant on the ground floor. Parking is on the street or in a garage across the street.",
+        "summary": "A six-story Mission Revival hotel on Central Avenue downtown, built in 1922, with a Spanish tapas restaurant, Tapas at Ponce, on the ground floor. Guests park in a garage across the street.",
         "quote": "In the heart of Downtown St. Petersburg, Florida, the PONCE DE LEON HOTEL sits with the best views of downtown, offering modern rooms in a building built in the early 1920's.",
         "heritage": {
           "built": "1922",
@@ -319,7 +320,7 @@
           "free-parking"
         ],
         "summary": "A small self-check-in suite hotel downtown with full kitchens and free parking. There is no front desk or elevator; staff are reached by text.",
-        "quote": "A historic boutique hotel nestled in the heart of Downtown St. Petersburg Florida.",
+        "quote": "The 1888 Hotel is a historic boutique hotel nestled in the heart of Downtown St. Petersburg Florida.",
         "status": "open",
         "tags": [
           "suites"
@@ -378,9 +379,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.768087,
-        "lng": -82.634044,
-        "geo_source": "census",
+        "lat": 27.767487,
+        "lng": -82.634744,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/sptshhf-hilton-st-petersburg-bayfront/",
         "phone": "727-894-5000",
         "rooms": 333,
@@ -389,7 +390,6 @@
           "fitness",
           "restaurant",
           "meeting-space",
-          "pet-friendly",
           "accessible-rooms"
         ],
         "summary": "A 15-story Hilton across from the Dali Museum and Al Lang Stadium with a heated pool in a palm courtyard, Tangerine restaurant and the Dali Lounge. It has 30,000 square feet of meeting space.",
@@ -397,10 +397,11 @@
         "source_url": "https://www.visitstpeteclearwater.com/profile/hilton-st-petersburg-bayfront/138073",
         "also_sources": [
           "https://www.visitstpeteclearwater.com/article/best-downtown-hotels-st-petersburg-florida",
-          "https://www.hilton.com/en/locations/usa/florida/st-petersburg/"
+          "https://www.hilton.com/en/locations/usa/florida/st-petersburg/",
+          "https://stpeterising.com/home/hilton-bayfront-in-downtown-st-pete-to-be-sold-to-prominent-developer-for-96-million"
         ],
         "checked": "2026-09-27",
-        "notes": "hilton.com hotel pages refuse automated readers (403); facts from the tourism office listing and article. Listed on Hilton's St. Petersburg locator page (Sep 27, 2026)."
+        "notes": "hilton.com hotel pages refuse automated readers (403); facts from the tourism office listing and its Best Downtown Hotels article (15-story). Listed and bookable on Hilton St. Petersburg and Pinellas Park locator pages (Sep 27, 2026). Verifier 2026-09-27: Kolter Group agreed to buy the hotel for $96 million (sale expected to close Q1 2026); St Pete Rising (Feb 24, 2026) says it is expected to remain open for now and no redevelopment plan was announced. Removed pet-friendly (not on any page read)."
       },
       {
         "id": "hampton-inn-suites-st-petersburg-downtown",
@@ -416,9 +417,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.771925,
-        "lng": -82.633307,
-        "geo_source": "census",
+        "lat": 27.771814,
+        "lng": -82.633691,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/piehshx-hampton-suites-st-petersburg-downtown/",
         "phone": "727-892-9900",
         "rooms": 91,
@@ -526,9 +527,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33712",
-        "lat": 27.771051,
-        "lng": -82.655585,
-        "geo_source": "census",
+        "lat": 27.770814,
+        "lng": -82.655908,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/piedtru-tru-st-petersburg-downtown-central-ave/",
         "phone": "727-550-2200",
         "rooms": 132,
@@ -562,9 +563,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33705",
-        "lat": 27.771084,
-        "lng": -82.651063,
-        "geo_source": "census",
+        "lat": 27.770693,
+        "lng": -82.651214,
+        "geo_source": "photon",
         "url": "https://www.marriott.com/en-us/hotels/tpasx-moxy-st-petersburg-downtown/overview/",
         "phone": "727-677-2000",
         "rooms": 163,
@@ -576,7 +577,7 @@
           "pet-friendly",
           "accessible-rooms"
         ],
-        "summary": "A Moxy hotel on Central Avenue near Tropicana Field with a rooftop pool, the Sparrow rooftop lounge, Bar Moxy and a podcast studio. Parking is valet only.",
+        "summary": "A Moxy hotel on Central Avenue near Tropicana Field with a rooftop pool, the Sparrow rooftop lounge, Bar Moxy and a podcast studio. Overnight parking is valet.",
         "quote": "The stylish Moxy St. Pete invites free spirits and visionaries to explore the city like never before.",
         "status": "open",
         "tags": [
@@ -701,9 +702,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.774892,
-        "lng": -82.63772,
-        "geo_source": "census",
+        "lat": 27.774663,
+        "lng": -82.638114,
+        "geo_source": "photon",
         "url": "https://www.theinnonthird.com/",
         "phone": "727-894-3248",
         "rooms": 20,
@@ -722,7 +723,7 @@
           "https://www.theinnonthird.com/"
         ],
         "checked": "2026-09-27",
-        "notes": "Own site confirms operation and phone but prints no address; details from the tourism office listing."
+        "notes": "Own site confirms operation (booking open) and phone but prints no address; details from the tourism office listing. Verifier 2026-09-27: St Pete Catalyst reported the inn listed for sale (Mar 12, 2026); its site still takes bookings."
       },
       {
         "id": "beach-drive-inn",
@@ -736,9 +737,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.777848,
-        "lng": -82.631412,
-        "geo_source": "census",
+        "lat": 27.778236,
+        "lng": -82.631543,
+        "geo_source": "photon",
         "url": "https://vinoyhouse.com/",
         "phone": "727-822-2244",
         "rooms": 6,
@@ -752,7 +753,10 @@
         ],
         "source_url": "https://www.visitstpeteclearwater.com/profile/beach-drive-inn-vinoy-house-inn/137993",
         "checked": "2026-09-27",
-        "notes": "Own site (vinoyhouse.com) returned 503 on Sep 27, 2026; operating status rests on the tourism office listing. Verifier: re-check."
+        "notes": "Own site (vinoyhouse.com) returned 503 on Sep 27, 2026 (and to curl a near-empty page); operating status rests on the tourism office listing, which still describes the Vinoy as the Renaissance Vinoy (an old listing). Verifier 2026-09-27: St Pete Catalyst (Jul 2, 2026) says 'The Beach Drive Inn, a bed and breakfast at 532 Beach Drive NE' listed for sale at $2.7 million (built 1910, seven bedrooms); Creative Loafing reported the 'Vinoy House' on the market in Mar 2025. Kept as open because the latest source still calls it a bed and breakfast; re-check before publishing.",
+        "also_sources": [
+          "https://stpetecatalyst.com/places-this-week-1941-belleair-estate-lists-for-6-5-million/"
+        ]
       },
       {
         "id": "mansion-inn-st-petersburg",
@@ -800,9 +804,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.771456,
-        "lng": -82.635477,
-        "geo_source": "census",
+        "lat": 27.771744,
+        "lng": -82.635161,
+        "geo_source": "photon",
         "url": "https://www.hyatt.com/hyatt-place/en-US/piezd-hyatt-place-st-petersburg-downtown",
         "phone": "727-220-0950",
         "rooms": 175,
@@ -833,9 +837,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33716",
-        "lat": 27.891416,
-        "lng": -82.666397,
-        "geo_source": "census",
+        "lat": 27.890559,
+        "lng": -82.665662,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/piecahf-hilton-st-petersburg-carillon-park/",
         "phone": "727-540-0050",
         "rooms": 227,
@@ -867,9 +871,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33716",
-        "lat": 27.887305,
-        "lng": -82.670551,
-        "geo_source": "census",
+        "lat": 27.886113,
+        "lng": -82.670485,
+        "geo_source": "photon",
         "phone": "727-572-7800",
         "rooms": 197,
         "features": [
@@ -877,14 +881,13 @@
           "fitness",
           "restaurant",
           "meeting-space",
-          "free-parking",
           "accessible-rooms"
         ],
         "summary": "A full-service Marriott next to the Carillon office park, 4.5 miles from St. Pete-Clearwater International Airport and 12 miles from Tampa International Airport. It has an outdoor pool, a restaurant and more than 30,000 square feet of event space.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/st-petersburg-marriott-clearwater/139909",
         "checked": "2026-09-27",
-        "notes": "marriott.com refuses automated readers. Listing gives website as www.marriott.com/tpasb (not stored: no scheme)."
+        "notes": "marriott.com refuses automated readers. Listing gives website as www.marriott.com/tpasb (not stored: no scheme). Verifier 2026-09-27: free-parking removed (only a guest review on the listing mentions it)."
       },
       {
         "id": "karol-hotel",
@@ -901,9 +904,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894106,
-        "lng": -82.670476,
-        "geo_source": "census",
+        "lat": 27.894727,
+        "lng": -82.669798,
+        "geo_source": "photon",
         "url": "https://www.thekarolhotel.com/",
         "phone": "727-273-7850",
         "rooms": 123,
@@ -916,7 +919,7 @@
           "free-parking"
         ],
         "summary": "A 123-room hotel on Ulmerton Road in Clearwater, part of Marriott's Tribute Portfolio, with the K Club Bar & Bistro, the Vantage rooftop bar overlooking Tampa Bay, a pool and 7,340 square feet of event space.",
-        "quote": "Every room feels like it was waiting for you to arrive.",
+        "quote": "At The Karol Hotel, St. Petersburg Clearwater, a Tribute Portfolio Hotel, every room feels like it was waiting for you to arrive.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/karol-hotel-tribute-portfolio/138972",
         "also_sources": [
@@ -1062,9 +1065,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894113,
-        "lng": -82.666731,
-        "geo_source": "census",
+        "lat": 27.894638,
+        "lng": -82.663769,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/clwflhw-homewood-suites-st-petersburg-clearwater/",
         "phone": "727-573-1500",
         "rooms": 112,
@@ -1113,7 +1116,7 @@
           "free-breakfast",
           "pet-friendly"
         ],
-        "summary": "A Hampton Inn & Suites on Ulmerton Road near St. Pete-Clearwater International Airport with free hot breakfast and an outdoor pool.",
+        "summary": "A Hampton Inn & Suites on Ulmerton Road in the Gateway area between Clearwater and St. Petersburg, with free hot breakfast and an outdoor pool.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/hampton-inn-suites-clearwater-st-petersburg/138070",
         "also_sources": [
@@ -1194,9 +1197,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.893912,
-        "lng": -82.682339,
-        "geo_source": "census",
+        "lat": 27.895129,
+        "lng": -82.682409,
+        "geo_source": "photon",
         "url": "https://www.theclearwaterhotel.com/",
         "phone": "727-577-9100",
         "rooms": 173,
@@ -1240,7 +1243,7 @@
           "free-breakfast",
           "pet-friendly"
         ],
-        "summary": "A Sleep Inn about five minutes from St. Pete-Clearwater International Airport with breakfast included, a heated outdoor pool and coin laundry.",
+        "summary": "A Sleep Inn on Ulmerton Road, five minutes from St. Pete-Clearwater International Airport per the tourism office, with breakfast included, a heated outdoor pool and coin laundry.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/sleep-inn-clearwater/138098",
         "also_sources": [
@@ -1354,9 +1357,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33760",
-        "lat": 27.89526,
-        "lng": -82.715125,
-        "geo_source": "census",
+        "lat": 27.895946,
+        "lng": -82.714817,
+        "geo_source": "photon",
         "phone": "727-536-7275",
         "rooms": 127,
         "features": [
@@ -1422,9 +1425,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33714",
-        "lat": 27.821173,
-        "lng": -82.662911,
-        "geo_source": "census",
+        "lat": 27.822454,
+        "lng": -82.66246,
+        "geo_source": "photon",
         "phone": "727-520-7800",
         "rooms": 76,
         "features": [
@@ -1453,24 +1456,24 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33714",
-        "lat": 27.821152,
-        "lng": -82.668345,
-        "geo_source": "census",
+        "lat": 27.822134,
+        "lng": -82.668451,
+        "geo_source": "photon",
         "url": "https://www.marriott.com/en-us/hotels/tpasn-fairfield-inn-and-suites-st-petersburg-north/overview/",
         "phone": "727-685-1555",
         "features": [
           "pool",
           "free-breakfast"
         ],
-        "summary": "A Fairfield Inn & Suites just off I-275 in north St. Petersburg with a pool and breakfast.",
+        "summary": "A Fairfield Inn & Suites on 54th Avenue North in north St. Petersburg with a pool and breakfast.",
         "quote": "Fairfield Inn & Suites St. Petersburg North: Your Stress-Free Haven near Downtown.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/fairfield-inn-suites-st-petersburg-north/142187",
         "checked": "2026-09-27"
       },
       {
-        "id": "comfort-inn-ne-gateway",
-        "name": "Comfort Inn NE Gateway",
+        "id": "comfort-inn-suites-northeast-gateway",
+        "name": "Comfort Inn & Suites Northeast Gateway",
         "kind": "hotel",
         "brand": "Choice Hotels",
         "collection": "Comfort Inn",
@@ -1491,14 +1494,18 @@
           "free-breakfast",
           "meeting-space"
         ],
-        "summary": "A small Comfort Inn on 94th Avenue North in northeast St. Petersburg with breakfast included, an outdoor pool and a 40-person meeting room.",
+        "summary": "A small Comfort Inn & Suites on 94th Avenue North in northeast St. Petersburg with breakfast included, an outdoor pool, a fitness room and a meeting room for up to 40.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/comfort-inn-ne-gateway/138551",
         "also_sources": [
           "https://hotelguides.com/florida/pinellas-park-us-19-hotels.html"
         ],
         "checked": "2026-09-27",
-        "notes": "hotelguides.com lists this address as 'Comfort Inn & Suites St Petersburg'; the current name could not be confirmed on choicehotels.com (unreachable). Verifier: check."
+        "notes": "The tourism office listing now titles it 'Comfort Inn & Suites (Northeast Gateway)', matching hotelguides.com's 'Comfort Inn & Suites St Petersburg' at this address; 53 units incl. 19 suites. choicehotels.com unreachable to the fetcher.",
+        "aliases": [
+          "Comfort Inn NE Gateway",
+          "Comfort Inn & Suites St. Petersburg"
+        ]
       },
       {
         "id": "quality-inn-suites-tropicana-field",
@@ -1605,9 +1612,9 @@
         "city": "Safety Harbor",
         "state": "FL",
         "zip": "34695",
-        "lat": 27.989936,
-        "lng": -82.688241,
-        "geo_source": "census",
+        "lat": 27.990888,
+        "lng": -82.687354,
+        "geo_source": "photon",
         "url": "https://www.safetyharborspa.com/",
         "phone": "727-726-1161",
         "rooms": 172,
@@ -1621,7 +1628,7 @@
           "meeting-space",
           "historic"
         ],
-        "summary": "A resort and spa on 22 acres overlooking Tampa Bay in Safety Harbor, built at the Espiritu Santo mineral springs. It has a 50,000-square-foot spa, pools that include natural mineral-spring pools and the Fountain Grille restaurant.",
+        "summary": "A resort and spa on 22 acres overlooking Tampa Bay in Safety Harbor, built on the Espiritu Santo mineral springs. It has a 50,000-square-foot spa, three pools that use the mineral springs and the Fountain Grille restaurant.",
         "quote": "Classic and charming, pampering and luxurious, we offer guests timeless elegance and personalized service.",
         "heritage": {
           "built": "1925",
@@ -1645,7 +1652,8 @@
           "https://tampahistorical.org/items/show/224"
         ],
         "checked": "2026-09-27",
-        "notes": "Street address, 172 rooms, 1925 founding and 22 acres per the tourism office listing; the resort's site prints no address to the fetcher. The listing's safetyharborresort.com domain does not resolve; the live site is safetyharborspa.com. Census matched '105 Bayshore Blvd'."
+        "notes": "Street address, 172 rooms, 1925 founding and 22 acres per the tourism office listing; the resort's site prints no address to the fetcher. The listing's safetyharborresort.com domain does not resolve; the live site is safetyharborspa.com. Point: the OpenStreetMap resort feature (verifier 2026-09-27).",
+        "quote_source": "https://www.safetyharborspa.com/"
       },
       {
         "id": "belleview-inn",
@@ -1662,9 +1670,9 @@
         "city": "Belleair",
         "state": "FL",
         "zip": "33756",
-        "lat": 27.943601,
-        "lng": -82.811336,
-        "geo_source": "census",
+        "lat": 27.943724,
+        "lng": -82.809737,
+        "geo_source": "photon",
         "url": "https://www.opalcollection.com/belleview-inn/",
         "phone": "727-441-1774",
         "rooms": 35,
@@ -1710,7 +1718,7 @@
           "https://en.wikipedia.org/wiki/Belleview-Biltmore_Hotel"
         ],
         "checked": "2026-09-27",
-        "notes": "The operator's page says the building was moved about 250 feet; Wikipedia says 375 feet (used in story, attributed to Wikipedia in sources). belleviewinn.com is a parked domain; the hotel's page is on opalcollection.com. Belleair is in the largo area per SPEC."
+        "notes": "The operator's page describes the move as roughly the length of a football field (and elsewhere about 100 yards); Wikipedia says 375 feet (used in story, attributed to Wikipedia in sources). belleviewinn.com is a parked domain; the hotel's page is on opalcollection.com. Belleair is in the largo area per SPEC."
       },
       {
         "id": "innisbrook-resort",
@@ -1768,9 +1776,9 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.005805,
-        "lng": -82.791999,
-        "geo_source": "census",
+        "lat": 28.006236,
+        "lng": -82.791268,
+        "geo_source": "photon",
         "url": "https://www.marriott.com/en-us/hotels/tpadu-fenway-hotel-autograph-collection/overview/",
         "phone": "727-683-5999",
         "rooms": 83,
@@ -1826,11 +1834,10 @@
         "phone": "727-424-4091",
         "opened": "1910",
         "features": [
-          "historic",
-          "kitchens"
+          "historic"
         ],
         "summary": "A Queen Anne-style house from 1910 in downtown Tarpon Springs, half a block from St. Nicholas Greek Orthodox Cathedral and near Spring Bayou, run as a bed and breakfast with apartments and an event garden.",
-        "quote": "A Bed & Breakfast Inn, Apartments, and a Special Event Venue listed on the Historic Register of Tarpon Springs, Florida.",
+        "quote": "a Bed & Breakfast Inn, Apartments, and a Special Event Venue listed on the Historic Register of Tarpon Springs, Florida.",
         "heritage": {
           "built": "1910",
           "style": "Queen Anne",
@@ -1867,9 +1874,9 @@
         "city": "Tarpon Springs",
         "state": "FL",
         "zip": "34689",
-        "lat": 28.138839,
-        "lng": -82.740396,
-        "geo_source": "census",
+        "lat": 28.138635,
+        "lng": -82.740996,
+        "geo_source": "photon",
         "phone": "727-938-2483",
         "rooms": 51,
         "features": [
@@ -1878,11 +1885,15 @@
           "accessible-rooms"
         ],
         "summary": "A 51-room motel on US 19 a few minutes from downtown Tarpon Springs with a heated outdoor pool, an indoor hot tub and a sauna. Some rooms have kitchens.",
-        "quote": "A Tarpon Springs Motel conveniently located minutes from Downtown Tarpon Springs",
+        "quote": "A Tarpon Springs Motel conveniently located minutes from Downtown Tarpon Springs.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/tarpon-shores-inn/138208",
         "checked": "2026-09-27",
-        "notes": "Listing's website is http://www.tarponshoresinn.com (not stored). Verifier: confirm current operation."
+        "notes": "Verifier 2026-09-27: the motel's own site (https works) is live, lists standard, efficiency and accessible rooms, a heated pool, Jacuzzi and sauna.",
+        "url": "https://www.tarponshoresinn.com/",
+        "also_sources": [
+          "https://www.tarponshoresinn.com/"
+        ]
       },
       {
         "id": "hampton-inn-suites-tarpon-springs",
@@ -1895,9 +1906,9 @@
         "city": "Tarpon Springs",
         "state": "FL",
         "zip": "34689",
-        "lat": 28.129053,
-        "lng": -82.740337,
-        "geo_source": "census",
+        "lat": 28.128585,
+        "lng": -82.740805,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/tpatshx-hampton-suites-tarpon-springs/",
         "phone": "727-945-7755",
         "rooms": 84,
@@ -1957,9 +1968,9 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.012571,
-        "lng": -82.791896,
-        "geo_source": "census",
+        "lat": 28.013136,
+        "lng": -82.792308,
+        "geo_source": "photon",
         "phone": "727-733-4121",
         "rooms": 54,
         "features": [
@@ -1986,9 +1997,9 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.013199,
-        "lng": -82.787494,
-        "geo_source": "census",
+        "lat": 28.013478,
+        "lng": -82.787368,
+        "geo_source": "photon",
         "url": "https://www.thegrantstreetinn.com/",
         "phone": "727-733-8989",
         "rooms": 22,
@@ -2048,19 +2059,22 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.050226,
-        "lng": -82.782804,
-        "geo_source": "census",
+        "lat": 28.05015,
+        "lng": -82.783445,
+        "geo_source": "photon",
         "phone": "727-315-4311",
         "features": [
           "pool",
           "ev-charging"
         ],
-        "summary": "A small hotel on Causeway Boulevard in Dunedin near the causeway, with a pool, covered parking, an EV charger and guest laundry.",
+        "summary": "A hotel on Causeway Boulevard in Dunedin, near the Dunedin Causeway, with a pool, covered parking, an EV charger and guest laundry. It was built to house Toronto Blue Jays players and, per city officials in 2022, to be open to the public at certain times of the year.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/j-hotel-suites/142933",
         "checked": "2026-09-27",
-        "notes": "The listing's website (thejdunedin.com) returned 404 on Sep 27, 2026. Recently added to the tourism office listings. Verifier: confirm."
+        "notes": "The listing's website (thejdunedin.com) returned 404 on Sep 27, 2026; the tourism office profile is recent (id 142933). Verifier 2026-09-27: St Pete Catalyst (Dec 2022) describes the J Hotel at 491 Causeway Blvd as a hotel developed by Doug Anderson for Toronto Blue Jays players, 'open to the public at certain times of the year'. Public availability outside spring training is not confirmed on a readable page.",
+        "also_sources": [
+          "https://stpetecatalyst.com/blue-jays-hotel-developer-secures-14m-financing-deal/"
+        ]
       },
       {
         "id": "holiday-inn-express-suites-clearwater-north-dunedin",
@@ -2073,9 +2087,9 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.015241,
-        "lng": -82.789728,
-        "geo_source": "census",
+        "lat": 28.015324,
+        "lng": -82.789232,
+        "geo_source": "photon",
         "phone": "727-450-1200",
         "rooms": 76,
         "features": [
@@ -2128,9 +2142,9 @@
         "city": "Dunedin",
         "state": "FL",
         "zip": "34698",
-        "lat": 28.040465,
-        "lng": -82.783633,
-        "geo_source": "census",
+        "lat": 28.040395,
+        "lng": -82.784176,
+        "geo_source": "photon",
         "phone": "727-736-0441",
         "rooms": 16,
         "features": [
@@ -2155,9 +2169,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33755",
-        "lat": 27.992001,
-        "lng": -82.795365,
-        "geo_source": "census",
+        "lat": 27.991818,
+        "lng": -82.794665,
+        "geo_source": "photon",
         "url": "https://www.choicehotels.com/florida/clearwater/comfort-suites-hotels/fl636",
         "phone": "727-489-5000",
         "rooms": 47,
@@ -2214,9 +2228,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33765",
-        "lat": 27.960606,
-        "lng": -82.730926,
-        "geo_source": "census",
+        "lat": 27.961123,
+        "lng": -82.730715,
+        "geo_source": "photon",
         "phone": "727-797-6300",
         "rooms": 105,
         "features": [
@@ -2247,9 +2261,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33759",
-        "lat": 27.960729,
-        "lng": -82.714989,
-        "geo_source": "census",
+        "lat": 27.961279,
+        "lng": -82.715264,
+        "geo_source": "photon",
         "phone": "727-799-0100",
         "rooms": 90,
         "features": [
@@ -2310,9 +2324,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33759",
-        "lat": 28.011513,
-        "lng": -82.708786,
-        "geo_source": "census",
+        "lat": 28.011578,
+        "lng": -82.711785,
+        "geo_source": "photon",
         "url": "https://www.ihg.com/candlewood/hotels/us/en/safety-harbor/tpash/hoteldetail",
         "phone": "727-386-5257",
         "rooms": 72,
@@ -2336,9 +2350,9 @@
         "city": "Safety Harbor",
         "state": "FL",
         "zip": "34695",
-        "lat": 27.990754,
-        "lng": -82.699898,
-        "geo_source": "census",
+        "lat": 27.990558,
+        "lng": -82.700067,
+        "geo_source": "photon",
         "phone": "727-726-1563",
         "rooms": 13,
         "features": [
@@ -2361,9 +2375,9 @@
         "city": "Largo",
         "state": "FL",
         "zip": "33770",
-        "lat": 27.916736,
-        "lng": -82.78669,
-        "geo_source": "census",
+        "lat": 27.917146,
+        "lng": -82.786341,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/clwlghx-hampton-suites-largo/",
         "phone": "727-585-3333",
         "rooms": 120,
@@ -2397,14 +2411,20 @@
           "free-parking",
           "pool"
         ],
-        "summary": "An all-suite Home2 Suites in Largo. Hilton lists free breakfast, free parking and an outdoor pool.",
+        "summary": "An all-suite Home2 Suites on Ulmerton Road in Largo. Hilton lists free breakfast, free parking and an outdoor pool.",
         "status": "open",
         "source_url": "https://www.hilton.com/en/locations/usa/florida/largo/",
         "also_sources": [
-          "https://www.hilton.com/en/locations/usa/florida/pinellas-park/"
+          "https://www.hilton.com/en/locations/usa/florida/pinellas-park/",
+          "https://www.openstreetmap.org/way/980506545"
         ],
         "checked": "2026-09-27",
-        "notes": "Only Hilton's locator pages could be read; street address not found on a readable page. Left without coordinates for the verifier."
+        "notes": "Hilton's locator pages confirm the hotel (Sep 27, 2026); hilton.com hotel pages refuse automated readers. Verifier 2026-09-27: street address and point from the OpenStreetMap hotel feature (way 980506545, tagged ref TPAURHT, the same code as the Hilton URL); OSM also gives phone +1 727-501-0001 (not stored: no hotel or tourism page confirms it).",
+        "address": "10145 Ulmerton Rd",
+        "zip": "33771",
+        "lat": 27.895932,
+        "lng": -82.779337,
+        "geo_source": "photon"
       },
       {
         "id": "holiday-inn-express-suites-largo",
@@ -2428,6 +2448,7 @@
         "features": [
           "pool",
           "fitness",
+          "free-breakfast",
           "pet-friendly",
           "meeting-space"
         ],
@@ -2438,8 +2459,8 @@
         "notes": "ihg.com refuses automated readers. OpenStreetMap names it 'Holiday Inn Express & Suites Largo-Clearwater'."
       },
       {
-        "id": "la-quinta-pinellas-park-clearwater",
-        "name": "La Quinta Inn by Wyndham Tampa Bay Pinellas Park Clearwater",
+        "id": "la-quinta-st-petersburg-clearwater",
+        "name": "La Quinta by Wyndham St Petersburg-Clearwater",
         "kind": "hotel",
         "brand": "Wyndham",
         "collection": "La Quinta by Wyndham",
@@ -2448,24 +2469,31 @@
         "city": "Pinellas Park",
         "state": "FL",
         "zip": "33781",
-        "lat": 27.840196,
-        "lng": -82.684586,
-        "geo_source": "census",
-        "phone": "727-545-5611",
+        "lat": 27.839888,
+        "lng": -82.685109,
+        "geo_source": "photon",
+        "phone": "727-513-5200",
         "rooms": 115,
         "features": [
           "pool",
           "free-breakfast",
           "pet-friendly"
         ],
-        "summary": "A La Quinta on US 19 in Pinellas Park with an outdoor pool and breakfast included.",
+        "summary": "A La Quinta on US 19 in Pinellas Park, between St. Petersburg and Clearwater, with an outdoor pool and free breakfast. It is pet-friendly.",
         "status": "open",
-        "source_url": "https://www.visitstpeteclearwater.com/profile/la-quinta-inn-wyndham-tampa-bay-pinellas-park-clearwater/139567",
+        "source_url": "https://www.wyndhamhotels.com/laquinta/pinellas-park-florida/la-quinta-st-petersburg-clearwater/overview",
         "also_sources": [
+          "https://www.visitstpeteclearwater.com/profile/la-quinta-inn-wyndham-tampa-bay-pinellas-park-clearwater/139567",
           "https://hotelguides.com/florida/pinellas-park-us-19-hotels.html"
         ],
         "checked": "2026-09-27",
-        "notes": "Verifier: confirm on wyndhamhotels.com (URL unknown to us)."
+        "notes": "Verifier 2026-09-27: Wyndham now names this hotel (7500 US Hwy 19 N) La Quinta by Wyndham St Petersburg-Clearwater, phone +1-727-513-5200; the tourism office listing still uses the older name and phone 727-545-5611. 115 units per that older listing. Id renamed from la-quinta-pinellas-park-clearwater to match the current name.",
+        "aliases": [
+          "La Quinta Inn by Wyndham Tampa Bay Pinellas Park Clearwater",
+          "La Quinta Inn Pinellas Park"
+        ],
+        "url": "https://www.wyndhamhotels.com/laquinta/pinellas-park-florida/la-quinta-st-petersburg-clearwater/overview",
+        "quote": "Relax and recharge at our pet-friendly hotel, featuring comfortable accommodations, convenient amenities, and our signature Here for You service."
       },
       {
         "id": "country-inn-suites-pinellas-park",
@@ -2510,9 +2538,9 @@
         "city": "Largo",
         "state": "FL",
         "zip": "33770",
-        "lat": 27.926681,
-        "lng": -82.796159,
-        "geo_source": "census",
+        "lat": 27.926401,
+        "lng": -82.797239,
+        "geo_source": "photon",
         "url": "https://www.belleairlargohotel.com/",
         "phone": "727-584-7131",
         "rooms": 40,
@@ -2537,22 +2565,27 @@
         "city": "Largo",
         "state": "FL",
         "zip": "33771",
-        "lat": 27.893619,
-        "lng": -82.727885,
-        "geo_source": "census",
+        "lat": 27.892772,
+        "lng": -82.726328,
+        "geo_source": "photon",
         "url": "https://tampabayextendedstay.com/",
-        "phone": "727-658-5500",
+        "phone": "727-532-4800",
         "rooms": 132,
         "features": [
           "kitchens",
           "free-parking",
-          "fitness"
+          "fitness",
+          "pet-friendly"
         ],
-        "summary": "A three-story extended-stay hotel on Ulmerton Road in Largo with studios and efficiencies that all have kitchenettes, sold by the night or the week.",
+        "summary": "A three-story extended-stay hotel on Ulmerton Road in Largo with studios and efficiencies that all have kitchenettes, free parking and coin laundry.",
         "quote": "A 3-story extended stay hotel with studio and efficiencies.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/suburban-extended-stay-hotel/138099",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "also_sources": [
+          "https://tampabayextendedstay.com/"
+        ],
+        "notes": "Formerly Suburban Extended Stay (the tourism office profile slug). Verifier 2026-09-27: the operator's site gives +1 727-532-4800 as its contact number (used); the tourism listing gives 727-658-5500. Pet-friendly and coin laundry per the operator's site; fitness per the listing. Removed the unsourced 'by the night or the week' claim."
       },
       {
         "id": "courtyard-tampa-oldsmar",
@@ -2593,9 +2626,9 @@
         "city": "Oldsmar",
         "state": "FL",
         "zip": "34677",
-        "lat": 28.035333,
-        "lng": -82.653579,
-        "geo_source": "census",
+        "lat": 28.034732,
+        "lng": -82.65503,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/tpanwgi-hilton-garden-inn-tampa-northwest-oldsmar/",
         "phone": "813-891-9990",
         "rooms": 83,
@@ -2706,14 +2739,15 @@
           "pet-friendly",
           "restaurant"
         ],
-        "summary": "A historic boutique hotel from 1905 on Gulfport's Beach Boulevard where each room is themed on a classic cocktail. It has a lobby bar, brunch and a French restaurant, and some rooms take dogs.",
-        "quote": "each room within our establishment is a tasteful homage to iconic cocktails from around the globe.",
+        "summary": "A 16-room historic hotel from 1905 on Gulfport's Beach Boulevard where each room is themed on a classic cocktail. It has a lobby bar, brunch and a French restaurant, Mademoiselle Paris, and it is dog-friendly.",
+        "quote": "Each room within our establishment is a tasteful homage to iconic cocktails from around the globe.",
         "heritage": {
           "built": "1905",
           "era": "boomtown",
-          "story": "The hotel says the building dates to 1905. It reopened under new ownership as a cocktail-themed boutique hotel.",
-          "visiting": "Operates as a hotel with a public lobby bar.",
+          "story": "St Pete Rising reports that the yellow hotel at 2937 Beach Boulevard South was built in 1905. New owners bought the 16-room inn in 2022, renovated it for a year and a half and reopened it as the Peninsula Bed & Cocktails, with a grand opening on January 15, 2024.",
+          "visiting": "Operates as a hotel with a lobby bar open to the public.",
           "sources": [
+            "https://stpeterising.com/home/118-year-old-peninsula-inn-reopens-after-extensive-renovations-in-gulfport",
             "https://peninsulabnc.com/"
           ]
         },
@@ -2725,10 +2759,11 @@
         "source_url": "https://peninsulabnc.com/",
         "also_sources": [
           "https://www.visitstpeteclearwater.com/profile/the-peninsula-bed-and-cocktails/142401",
-          "https://www.visitstpeteclearwater.com/places-to-stay/bed-breakfasts"
+          "https://stpeterising.com/home/118-year-old-peninsula-inn-reopens-after-extensive-renovations-in-gulfport"
         ],
         "checked": "2026-09-27",
-        "notes": "Mostly stair access to the 2nd and 3rd floors; the elevator is sometimes out of service, per the hotel. French restaurant (Mademoiselle Paris) per the tourism office listing."
+        "notes": "Mostly stair access to the 2nd and 3rd floors; the elevator may occasionally be out of service, per the hotel. French restaurant (Mademoiselle Paris) per the tourism office listing. Verifier 2026-09-27: 1905 and 16 rooms confirmed by St Pete Rising (Jan 2024); the hotel's own page does not print a year.",
+        "rooms": 16
       },
       {
         "id": "sea-breeze-manor-inn",
@@ -2781,9 +2816,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33765",
-        "lat": 27.966184,
-        "lng": -82.730323,
-        "geo_source": "census",
+        "lat": 27.96654,
+        "lng": -82.731068,
+        "geo_source": "photon",
         "url": "https://www.wyndhamhotels.com/laquinta/clearwater-florida/la-quinta-inn-clearwater-central/overview",
         "phone": "727-799-1565",
         "features": [

@@ -1,18 +1,17 @@
 /* ======================================================================
-   site/css/99-print.css · OWNER: E1 (a MECHANICAL port of Cincy Week's CSS so the build passes; the design agent re-skins it)
-   Print and reduced motion. Kept last so it wins the cascade.
-   From the final "Interchange" design (design/final/css). Partials are concatenated in lexical
-   order into docs/assets/site.css. Read only tokens (var(--…)); no color literal may appear here
-   (the build fails on one). Prefix new classes with your domain (see CLAUDE.md).
+   site/css/99-print.css · OWNER: the design system ("Chart & Label")
+   Print (the Day chart on paper: no shell, no ornament that wastes ink) and reduced motion. Kept last so it wins.
+   Tokens only; no color literal.
    ====================================================================== */
-/* ---------- print: the plan and the schedule print as a timetable ---------- */
 @media print {
-  .topbar, .sidebar, .dock, .scrim, .to-top, .toast, .sched-bar, .filter-row, .star, .map-zoom, .ticker, .modal { display: none !important; }
+  .topbar, .sidebar, .dock, .scrim, .to-top, .toast, .star, .map-zoom, .modal, .toc, .toc-mobile, .pagenav, .js-only, .skip-link { display: none !important; }
   .layout { display: block; background: none; }
   .content { max-width: none; padding: 0; }
   body { background: none; color: var(--text); font-size: 11pt; }
-  .ev, .plan-item { break-inside: avoid; }
-  details.earlier { display: none; }
+  .page-head { background: none; }
+  .page-head::after, .plate-type::after { display: none; }
+  .ev, .card, .trip-item, details.faq { break-inside: avoid; }
+  .footer { padding-left: 0; background: none; }
   a { text-decoration: none; }
 }
 

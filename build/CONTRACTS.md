@@ -31,7 +31,7 @@ code and this file disagree, the code wins: report the mismatch.** Contracts are
 | Owner | Files |
 |---|---|
 | **E1** engine | `build.mjs`, `build/core/*`, `build/nav.mjs`, `build/components/*` (lanes may extend their card additively), `build/pages/_stub.mjs`, `build/CONTRACTS.md`, `site.config.json`, `package.json`, `tests/{build,time,filters,search,share,schema,minimap}.test.mjs`, `tests/helpers.mjs`, `tests/fixtures/mini/*`, `scripts/{serve,shots}.mjs`, `.github/workflows/*`, the pure libs `site/js/lib/{time,text,share,search,filters,geo}.js` (the build imports them; E2 may extend them additively, with tests) |
-| **E2** client | `site/js/main.js`, `site/js/core/*`, `site/js/features/*`, other `site/js/lib/*` |
+| **E2** client | `site/js/main.js`, `site/js/core/*`, `site/js/views/*`, `site/js/lib/{status,facets,trip,ics}.js`, `tests/{client,status,facets,trip,ics}.test.mjs`, `CLAUDE.md`; `site/js/features/*` are the page lanes' (one per page that needs one) |
 | **Design** | `site/css/tokens.css`, every `site/css/NN-*.css` re-skin (today a mechanical port of Cincy Week's CSS), `site/fonts/*`, `site/favicon.svg`, `site/img/brand/*`, `site/og*.png`; `wordmark()` and `MARK` in `build/core/icons.mjs` (markup only; keep the names) |
 | **Basemap** | `site/map/basemap.svg` (a `<g id="bm">`), `data/map.json` (§5) |
 | **Merge / images** | `data/*.json`, `scripts/merge-research.mjs`, `data/images.json` + `site/img/{p,s,a,t,x}/` |
@@ -52,7 +52,7 @@ export function pages(ctx) {                  // required; returns an array (may
     toc: [["id", "Label"], …],                // optional: TOC rail ≥ 1280px (≥ 2 items), collapsed list (≥ 5)
     crumbs: [["Overview", "index.html"], ["Label", null]],   // optional; default Overview / <nav label>; [] = none
     pagenav: { prev: { href, label }, next } | null,  // optional; default = neighbors in NAV order (detail pages: set null)
-    features: ["whats-on"],                   // client modules: site/js/features/<name>.js must exist (E2)
+    features: ["whats-on"],                   // client modules: site/js/features/<name>.js must exist (the lane writes it; §8)
     head: "<link …>", modals: (root) => html, // optional extra <head> HTML; dialogs rendered after the dock
     jsonld: {…}, og: "og-tampa.png",          // optional; og must be a file site/og*.png (else og.png when it exists)
     noindex: false, pageClass: "",
@@ -304,39 +304,140 @@ when `map.json` has one), the dock (`What's On · Map · Trip [data-trip-count] 
 `<body data-features="a b">` (each → `site/js/features/<name>.js`, which must exist). `assets/js/main.js` is included only when
 `site/js/main.js` exists; `assets/favicon.svg` only when `site/favicon.svg` exists.
 
-**The client wires (E2), by attribute:**
-- Stars: every `button.star[data-star="<id>"][data-star-kind="e|x|p|s"]` (aria-pressed, label "Add “…” to My Trip" / "Remove …"),
-  `[data-trip-count]` badges, the trip card, the toast. Storage keys: `tbc-theme tbc-rail tbc-trip tbc-prefs tbc-seen-shared tbc-debug`
-  (`tbc-trip` holds `{ v, e: [], x: [], p: [], s: [] }`). Share: `trip.html#e=<codes>;x=…;p=…;s=…` (`site/js/lib/share.js tripHash / decode`).
-- Dialogs: `[data-open-event="<id>"]` → `#event-dialog` (push `?e=`; `?e=` on load of whats-on.html opens it); `[data-open-experience="<id>"]`
-  → `#experience-dialog` (`?x=` on experiences.html). Links keep their deep-link hrefs, so without JS they land on the card.
-- Live states: any element with `data-s`/`data-e` gets `data-status` (`upcoming soon live started past`) and a word in its child
-  `[data-status]`; `data-inst` = several days; `data-end-unknown="1"` never "Now" ("Started"); `data-time-unknown="1"` gets no state;
-  **`data-run` (a long run) never "Now"** (say "On through <date>" or nothing); `data-cancelled="1"` gets no state.
-- Search palette on `[data-search-open]`, ⌘K, Ctrl K, `/`; filters on `input[data-filter-q]`, `select[data-filter]`, `[data-result-count]`,
-  `[data-view]` (from `c.toolbar`). The clock honors `<html data-now>`.
+**The client** (`site/js/main.js`, an ES module; `site/js/core/*` wired by attribute on every page, so a page works with no
+feature module at all; `site/js/views/*` are core-provided, page-specific modules main.js imports on demand, outside the 30 KB
+boot budget the crawler checks on `main.js + core/`). It boots the core, then imports each name in `<body data-features>` from `site/js/features/<name>.js` and calls
+`init(app)`. Pages must be served over http(s) (`npm run dev`): ES modules do not load from `file://`.
 
-**Pure libraries** (`site/js/lib/`, no DOM, shared by the build, the client and node:test):
+```js
+app = {                                  // window.tbc in the console and in Playwright checks
+  root, page,                            // "" | "../" ("/visit-tampa-bay/" on 404) ; <html data-page> ("whats-on", "places/florida-aquarium")
+  now(), today(), isSimulated(),         // epoch ms (honors ?now=) · New York date "2026-10-24" · true under ?now=
+  onTick(fn) → unsubscribe,              // fn(now) at once, every 60 s, and when the tab comes back
+  when(name) → [firstDate, lastDate],    // today | weekend | week | month (lib/time.js whenRange at now())
+  data(name) → Promise<json>,            // assets/data/<name>, memoized, cache-busted with <html data-v>; rejects offline / file://
+  store, pref(key[, value]),             // { get(k, fallback), set(k, v), del(k), blocked } for tbc-* keys · tbc-prefs "<page>.<name>"
+  trip: { has(id), kindOf(id) → "e"|"x"|"p"|"s"|null, toggle(id, kind) → on, add(ids, kind), remove(ids), replace({ e, x, p, s }),
+          clear(), list() → { e, x, p, s }, count(kind?), subscribe(fn) → unsubscribe, refresh(rootEl?) },   // refresh re-labels new stars
+  modal: { show(el, { trigger, focus, onClose }), hide(restoreFocus = true), current() },
+  toast(text, { link: href | true (= trip.html), linkText = "View", ms }),
+  status: { update(now, rootEl), stateOf(elOrDataset, now) → { st, label }, statusOf(s, e, now, endUnknown) },
+  filter: { mount(listEl, { tests, facets, items, root }) → controller, get(listEl) → controller | null },
+  share({ title, text, url }) → "shared" | "copied" | "failed", copyText(text) → bool, download(text, filename, type),
+  openEvent(id, { trigger, push = true }), openExperience(id, { trigger, push = true }), openSearch(trigger, q),
+}
+```
+- **Feature modules:** `export function init(app) {}` in `site/js/features/<name>.js`, listed in the page's `features` (the build fails on a
+  missing file). Features import `../lib/*.js` and each other, never `../core/*` (use `app`). `tests/client.test.mjs` checks every import resolves.
+
+**Wired everywhere by the core (don't re-implement):**
+- **Stars** (`core/trip-store.js`): every `button.star[data-star="<id>"][data-star-kind="e|x|p|s"]` (a missing kind means `e`) toggles,
+  sets `aria-pressed`, and relabels "Add “…” to My Trip" ⇄ "Remove “…” from My Trip" (keep the build's label shape: `c.starButton`). Every
+  `[data-trip-count]` shows the count (hidden at 0); the sidebar card `[data-trip-card]` gets `.is-empty`, `[data-trip-card-title]` "4 in My Trip"
+  and `[data-trip-card-next]` "Next: Sat, Oct 24 · 4:00 PM · Guavaween" ("Now: …" once it has started, "Through Jan 10, 2027 · …" for a long run
+  under way, else "3 places · 1 place to stay"), every minute and across tabs (storage event). A toast says "Added to My Trip · View".
+  Stars a feature renders later: call `app.trip.refresh(el)`. Ids are unique across the four kinds, so `has(id)` needs no kind.
+- **Dialogs** (`core/event-dialog.js`, `core/experience-dialog.js`): a click on `[data-open-event="<id>"]` / `[data-open-experience="<id>"]`
+  (modifier clicks keep the link) renders `#event-dialog` / `#experience-dialog` from `events.json` (+ `event-text.json`) / `experiences.json`,
+  pushes `?e=<id>` / `?x=<id>` onto the current URL (Back closes it; closing by button or Esc goes back), focuses `#evd-title` / `#xd-title`
+  and returns focus to the trigger. `?e=` / `?x=` on load opens the dialog on any page (the deep links are `whats-on.html?e=<id>#e-<id>` and
+  `experiences.html?x=<id>#x-<id>`; the card with `id="e-<id>"` / `id="x-<id>"` becomes the focus target). Without JS or data the links land on the card.
+  The event dialog: sheet badge, kind + status badge, title, `.evd-when` (ET; every day listed when hours differ or the days are not
+  consecutive; "Through Jan 10, 2027 · from Sat, Oct 3 · 10:00 AM–5:00 PM ET daily" for a run) with its live word, where (place page + address +
+  area, or the source's location text, or "Place not listed"), `.evd-sum` (our summary), the verbatim description in a `blockquote.evd-desc`
+  with `.evd-cite` ("From <host>"), facts (Cost, Tickets, Official page, Every year (series), As listed (time_text), Topics), a mini map with
+  Apple/Google directions and "On the map" (`map.html?focus=event:<id>`), the source line with "Checked …", and actions: Add to My Trip,
+  Add to calendar (.ics), Google Calendar (one timed day only), Share. The experience dialog: the image with its credit (`im`) or the
+  `.plate-type.lg` plate, kind + status badge, `h2#xd-title`, `.xd-op` operator, `.xd-status` (the status note), departs, `.evd-sum`, the
+  operator's quote (`blockquote.evd-desc.xd-quote` + cite), facts (Duration, Price, Schedule, Season, Ages, Phone, Area, Topics), `.xd-links`
+  (Book with the operator, Official site), mini map + directions + "On the map" (`focus=experience:<id>`), sources, actions: Add to My Trip, Share.
+  The mini map (`core/places.js mapBlock`) uses the same markup as `ctx.cards.miniMap` (no basemap labels); off the basemap it is the
+  coordinate line, without coordinates "Not on the map: no coordinates listed" (plus Google directions by address when there is one).
+- **Live states** (`core/status.js` → `site/js/lib/status.js liveState`): every `[data-s][data-e]` element, every minute, gets `data-status`
+  and the word in its child `[data-status]` (the first one without its own `data-s`):
+
+  | Element | `data-status` · word |
+  |---|---|
+  | timed (both ends published) | `upcoming` "" / "Today" / "Tonight" (an after-midnight start ≤ 6 h away) / "Tomorrow" / "This weekend" · `soon` "In 20 min" (≤ 30 min) · `live` "Now" (+ `.ev-progress` bar on `.ev`) · `past` "Ended" |
+  | `data-end-unknown="1"` | `soon` · `started` "Started" until the end of its calendar day (never "Now") · then `past` "Ended" |
+  | `data-time-unknown="1"` | day words only: `upcoming` "Tomorrow"… · `today` "Today" · `past` "Ended" once its last day (`data-days`, else the day of `data-s`) is over |
+  | all day (`data-all-day="1"`, or a card's `data-t="allday"` without the time-unknown and run flags) | `upcoming` (day word, no countdown) · `today` "Today" · `past` |
+  | `data-run` (a long run; `s..e` span it) | `upcoming` / `soon` (only when its hours are listed) · `running` "" (never "Now": the card prints "Through …") · `past` "Ended" |
+  | `data-cancelled="1"` | no `data-status`, no word |
+
+  `data-inst="s:e,…"` follows the current day, else the next, else the last; `data-days="2026-10-03 …"` lists the days of an item. Day words use the
+  New York calendar at `app.now()`; "This weekend" is `whenRange("weekend")` (Fri–Sun, from today on a Fri, Sat or Sun).
+- **The pill** (`core/live.js`): `[data-live-pill]` shows "On today · n" (`[data-live-text]`) when n > 0 live events have an instance listed today
+  that has not ended (runs, cancelled and postponed left out); `events.json` is fetched when the browser is idle.
+- **Search** (`core/search.js`): `[data-search-open]`, ⌘K, Ctrl K, `/` open `#search`; the index loads on intent, on open, or when idle on the index
+  and list pages. The empty query shows "On today" (from `events.json`), the six sheets and the pages in sidebar order. Hits for events and
+  experiences carry `data-open-event` / `data-open-experience`, so they open the dialog in place; other hits navigate. "See all n" → the list
+  page's `?q=`. Each hit leads with its kind's icon (pl pin · st anchor · ex daymark · ev flag · se calendar · ar hood · rg the sheet mark ·
+  pg info / route · fq help · tr bus · tl landmark).
+- **Filters** (`core/filter.js`, pure part `site/js/lib/facets.js`): every `[data-filter-list]` (except `data-filter-list="manual"`) is filtered by
+  the controls in its nearest `[data-filter-root]` (else the page): `input[data-filter-q]`, `select[data-filter="<key>"]`,
+  `input[type=checkbox][data-filter="<key>"]`, `button[data-filter-chip="<key>=<value>"]` (aria-pressed), `[data-filter-clear]` (hidden when
+  nothing is set), `[data-result-count]` ("Showing <b>n</b> of N <data-noun>"), `[data-filter-empty]` (shown at 0), and `[data-view]` +
+  `[data-view-pane="<v>"]` (List / Map: `?view=` kept, remembered in tbc-prefs, event `tbc:view`). Items are the list's `[data-q]` descendants
+  (or `data-filter-items="<selector>"`); `[data-filter-group]` elements inside hide when empty. Keys read card attributes: `q` the card's text +
+  `data-q` (every term) · `r` data-r/data-sheet · `a` · `k` data-k/ks/kg/g · `t` · `tag` data-tag/data-t · `f` · `era` · `month` · `series` data-se ·
+  `topic` · `day` (data-days, else data-day; a run covers data-day…data-run) · `when` (today weekend week month) · `free` data-free="1" · `star`
+  (in My Trip) · any other key data-<key>. List keys match ANY value; keys combine with AND. The state round-trips through the URL (other
+  keys such as `e`, `x`, `view` are kept), so a filtered view is a link, and `?when=today` (the pill) or `?star=1` work with no control on the
+  page. After each pass the list dispatches `tbc:filter` (`detail { state, shown, total, visible }`). Custom logic: mount it yourself,
+  `app.filter.mount(list, { tests: { key: (item, value, state) => bool } })` → `{ state(), set(key, value), reset(), apply(), refresh(), visible() }`.
+- **My Trip** (`views/trip.js`, loaded on demand by main.js only where there is a `[data-trip-root]`): `[data-trip-root]` on trip.html (except `data-trip-root="manual"`) is rendered from tbc-trip and the four client
+  files: `.trip-summary`, `.trip-actions` (Share my trip → `trip.html#e=<codes>;x=…;p=…;s=…`; Add n events to a calendar (.ics); Clear my trip, asks
+  twice), `.trip-gone` (saved ids no longer in the guide, with Remove), then `section.trip-group` per kind (Events by their next date with
+  live words, then Experiences and tours, Places, Where to stay) of `ul.rows.trip-list > li.row.trip-item[data-trip-id]` (a link, the sheet
+  mark, `.t`, `.w` meta + status, the star). Unstarring keeps the row, `.is-removed`, until the page is left. A shared hash shows
+  `.callout.trip-shared` ("A shared trip": Add n to my trip · Replace my trip (asks twice) · Just look · My trip) over the shared list; the answer is
+  remembered in `tbc-seen-shared`. An empty trip shows an `.empty-state` with links to the list pages.
+- **Shell** (`core/theme.js drawer.js dock.js modal.js toast.js toc.js anchors.js`): the edition toggle ("Switch to the Night chart" / "Day chart",
+  `tbc-theme`, follows the system until chosen), the rail/drawer (`tbc-rail`; focus loop, inert background, Esc), the dock hiding under the
+  keyboard, the one modal (focus trap, inert, Esc, `[data-close]`, focus return), the toast, the TOC scroll-spy, `[data-to-top]`, `.h-anchor` copy links.
+- **Clock:** `<html data-now>` (the boot script sets it from `?now=YYYY-MM-DDTHH:MM`, New York time, on localhost or with `tbc-debug=1`) makes
+  `now()` start there and run forward.
+- **Storage keys** (all through `core/store.js`, try/catch, in-memory fallback): `tbc-theme` · `tbc-rail` · `tbc-trip` `{ v: 1, e, x, p, s, t }` ·
+  `tbc-prefs` `{ "<page>.<name>": value }` · `tbc-seen-shared` · `tbc-debug`. New keys start with `tbc-` and are documented in `core/store.js`
+  (`tests/client.test.mjs` fails otherwise).
+- **Classes the client adds** (for the CSS partials; tokens only): `.evd-sum .evd-cite .xd-media .xd-op .xd-status .xd-quote .xd-links
+  .trip-summary .trip-actions .trip-gone .trip-group .trip-list .trip-item .is-removed .trip-shared`, `html.tbc-ready` once features ran,
+  `body.nav-open .modal-open .kb-open`, `.modal.open`, `.toast.show`, `.to-top.show`, `.ev-progress > i` (`--p`).
+
+**Pure libraries** (`site/js/lib/`, no DOM, shared by the build, the client and node:test; `tests/client.test.mjs` keeps them DOM-free):
 - `time.js`: `nyToEpoch nyParts offsetAt expand (RUN_MAX_DAYS = 14) festivalDay bucket status relTime STATUS_LABEL BUCKETS SOON
   fmtTime fmtRange fmtRangeCompact fmtDay fmtDayLong fmtDate fmtDateY fmtDateRange fmtDowRange fmtMonth fmtMonthShort fmtThrough isoLocal
   monthKey isWeekend WHEN whenRange(when, now) → [firstDate, lastDate] (today · weekend = Fri–Sun, from today when it is Fri–Sun · week =
-  today + 6 · month = to the month's end) addDays dateRange daysBetween weekday toMinutes`.
+  today + 6 · month = to the month's end) addDays dateRange daysBetween weekday toMinutes dowShort dowLong monthLong`.
 - `share.js`: `code encode tripHash({ e, x, p, s }) decode(hash, codeToId) → { e, x, p, s, unknown } codeTable TRIP_KINDS TRIP_KIND_LABEL CODE_RE fnv1a`.
 - `search.js`: `norm terms prepare score search group mark KINDS GROUP_ORDER SEE_ALL`.
 - `filters.js`: `parse serialize matches activeCount defaults` (unchanged from Cincy Week).
 - `text.js`: `esc paras parasHtml initials truncate hostOf slugify aliasKey roomText`. `geo.js`: `haversine walkMinutes METERS_PER_DEG_LAT
   project unproject metaOf bboxContains onMap crop compass cluster fitScale clampView` (verbatim from Cincy Week).
+- **E2:** `status.js`: `liveState(x, now) → { st, label, s, e }`, `stateInput(dataset)`, `dayWord(s, now)`, `dateWord(date, now)`, `inMinutes`,
+  `STATES` (tests/status.test.mjs). `facets.js`: `FACETS NOT_FACETS schemaFor(keys, extra) itemOf(dataset, text, starId) matchItem(item, state,
+  { now, inTrip, tests }) inDays` (tests/facets.test.mjs). `trip.js`: `normalize total countText kindOf merge missing sameTrip codeMap nextUp
+  plural TRIP_WORDS TRIP_HEADINGS ID_RE F` (tests/trip.test.mjs). `ics.js`: `vcalendar vevent eventItems(ev, eventsJson, { base }) gcalUrl
+  icsFilename fold escText utc ymd nextDay consecutive APP_NAME` (tests/ics.test.mjs): timed days one VEVENT each (no invented DTEND),
+  untimed days all-day spans per run of consecutive days, a long run one all-day span to its real `end_date`, cancelled `STATUS:CANCELLED`,
+  postponed and tentative `STATUS:TENTATIVE`.
 
 ## 9. JSON outputs, deep links and search entries
 
 **Core JSON** (`build/core/client-data.mjs`; exact shapes in its header; all `v: 1`, fetched lazily with `app.data(name)`):
-- `assets/data/events.json` `{ v, tz, window, regions: { id: { n, s, c, no } }, areas: { id: { n, r } }, places: { id: { n, a, ll } },
-  series: { id: { n, w } }, events: [{ id, x, t, k, kg, r, a, pl, lt, ll, se, c, f, u, tk, src, st, fe, tg, tp, tt, sm, ck, ed, i: [[day, s, e, flags]] }] }`,
+- `assets/data/events.json` `{ v, tz, window, regions: { id: { n, s, c, no } }, areas: { id: { n, r } }, places: { id: { n, a, ll, ad } },
+  series: { id: { n, w } }, lb: { k, kg, st, tp }, map, events: [{ id, x, t, k, kg, r, a, pl, lt, ll, se, c, f, u, tk, src, st, fe, tg, tp, tt, sm, ck, ed, i: [[day, s, e, flags]] }] }`,
   flags `1 endUnknown · 2 timeUnknown · 4 allDay · 8 ongoing · 16 lateNight · 32 run`.
 - `assets/data/event-text.json` `{ v, d: { eventId: description } }` (verbatim; load on first dialog or .ics).
-- `assets/data/experiences.json` `{ v, experiences: [{ id, x, n, op, k, kg, r, a, tp, dp, dt, ad, ll, u, bu, ph, du, pr, f, sc, ss, ag, sm, q, qs, st, sn, src, as, ck, i }], places: { id: { n, u } } }`.
-- `assets/data/places-lite.json` `{ v, regions, areas, places: [{ id, x, n, k, ks, g, tp, r, a, ll, st, sg, h, f, u, i }] }`.
-- `assets/data/stays-lite.json` `{ v, stays: [{ id, x, n, k, b, co, r, a, ll, ft, st, h, u, i }] }`.
+- `assets/data/experiences.json` `{ v, regions, areas, lb: { k, kg, st, tp }, map, experiences: [{ id, x, n, op, k, kg, r, a, tp, dp, dt, ad, ll, u, bu, ph, du, pr, f, sc, ss, ag, sm, q, qs, st, sn, src, as, ck, i, im }], places: { id: { n, u } } }`.
+- `assets/data/places-lite.json` `{ v, regions, areas, lb: { k, g, st, tp, era }, places: [{ id, x, n, k, ks, g, tp, r, a, ll, st, sg, h, f, u, i }] }`.
+- `assets/data/stays-lite.json` `{ v, regions, areas, lb: { k, ft, st }, stays: [{ id, x, n, k, b, co, r, a, ll, ft, st, h, u, i }] }`.
+- E2 additions (additive): `lb` = the vocab labels the client prints (`EVENT_KIND_LABEL`, `EVENT_GROUP_LABEL`, `EVENT_STATUS_LABEL`, `TOPIC_LABEL`,
+  `EXPERIENCE_KIND_LABEL`, `EXPERIENCE_GROUP_LABEL`, `STATUS_LABEL`, `PLACE_KIND_LABEL`, `PLACE_GROUP_LABEL`, `ERA_NAME`, `STAY_KIND_LABEL`,
+  `FEATURE_LABEL`); `map` = `lib/geo.js metaOf(data/map.json)` (null without the basemap) for the dialogs' mini maps; `ad` = the address line
+  "600 N Ashley Dr, Tampa, FL 33602" (`client-data.mjs addressLine`, also the experiences' `ad`); `im` = `{ f, w, h, a, cr, pg }` (the image,
+  its alt, credit and Commons page) or null.
 - `assets/data/search.json` `{ v: 1, items: [{ k, id, t, s, u, r?, g?, i?, st?, en? }] }`.
 A page module's `data(ctx)` keys must be unique (`assets/data/<lane>-<name>.json`); the five above and `search.json` are reserved.
 
@@ -380,7 +481,17 @@ keywords, `i` an image path.
   card contracts, the client JSON, a byte-identical double build, a failed build leaving `docs/` untouched, `TBC_OUT`, missing optional
   assets, and the BROKEN table (47 mutations that must each fail with a named message and write nothing). `tests/schema.test.mjs` checks
   the build accepts every research shape; `tests/minimap.test.mjs` builds with a synthetic basemap.
+- E2: `tests/client.test.mjs` (every client file parses; every import resolves to an export; core never imports features; libs stay pure;
+  every hook in §8 is wired and the fixture build emits the shell's; storage keys; the palette's page order), `tests/{status,facets,trip,ics}.test.mjs`
+  (the pure libs). The browser itself: `TBC_OUT=.cache/out-me NODE_PATH=/opt/node22/lib/node_modules node scripts/shots.mjs --states`.
 
 ## Changelog
 
 - **2026-09-27 · E1** first version (fork of Cincy Week's engine, destination domain).
+- **2026-09-27 · E2** the client runtime (§8): `site/js/main.js` + `core/*` (theme, drawer, dock, modal, toast, store, search, toc, anchors,
+  clock, status, live pill, trip store, share, event and experience dialogs, generic filters, history), `views/trip.js` (My Trip, loaded
+  on demand), pure libs
+  `status facets trip ics` with tests. Build-side (additive, `build/core/client-data.mjs`): `lb` labels, `map` projection, place and
+  experience address lines (`ad`), experience images (`im`), `regions`/`areas` in experiences.json and stays-lite.json. Live-state rules
+  made explicit: "Started" lasts to the end of its day (Cincy Week said "Ended" an hour after an unknown end), all-day and time-unknown items
+  say "Today", runs say nothing while they run (`running`).

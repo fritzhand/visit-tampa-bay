@@ -14,7 +14,7 @@
    site/favicon.svg, site/js/main.js, site/og*.png.
    ============================================================ */
 import { esc, attr, extLink, plural } from "./util.mjs";
-import { icon, bullet, wordmark, mark, sprite } from "./icons.mjs";
+import { icon, bullet, wordmark, wordmarkArt, mark, sprite } from "./icons.mjs";
 import { crumbs as crumbsHtml, pagenav, toc as tocAside, tocMobile } from "./components.mjs";
 import { NAV, REGION_PAGES, NAV_SLUGS, NAV_LABEL, DOCK } from "../nav.mjs";
 
@@ -90,8 +90,8 @@ ${groups}
   const footer = (root) => `<footer class="footer">
 <div class="footer-inner">
 <div class="footer-grid">
-<div>
-${wordmark("wm")}
+<div class="footer-brand">
+${wordmarkArt(root, { cls: "wm-art footer-wm" })}
 <p class="motto">${esc(config.siteTagline)}.</p>
 <p class="footer-indep"><b>${esc(INDEPENDENCE)}</b> ${esc(SOURCED)}</p>
 <div class="footer-author"><span>Built and maintained by <b>${esc(author.name || "")}</b><br>${author.github ? extLink(author.github, "GitHub") : ""}${author.github && author.linkedin ? " · " : ""}${author.linkedin ? extLink(author.linkedin, "LinkedIn") : ""}</span></div>

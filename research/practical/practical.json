@@ -1,0 +1,1672 @@
+{
+  "slice": "practical",
+  "checked": "2026-09-27",
+  "records": {
+    "faqs": [
+      {
+        "id": "best-time-to-visit",
+        "topic": "When to visit",
+        "q": "When is the best time to visit Tampa Bay?",
+        "a": "Visit Tampa Bay calls the area a year-round destination. It says many visitors prefer November through April, when temperatures are milder and humidity is lower.",
+        "source_url": "https://www.visittampabay.com/media/faqs/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "high-season-st-pete-clearwater",
+        "topic": "When to visit",
+        "q": "When is high season on the St. Pete-Clearwater beaches?",
+        "a": "Visit St. Pete/Clearwater says January through May is considered high season because of the weather. It says summer is popular with families, and that fall offers savings and fewer crowds.",
+        "source_url": "https://www.visitstpeteclearwater.com/info/weather-faqs",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "winter-weather",
+        "topic": "When to visit",
+        "q": "How warm is it in winter?",
+        "a": "Mild. In the NOAA 1991–2020 normals for Tampa International Airport, January averages a high of 71.3°F and a low of 52.8°F, and December and February are a few degrees warmer. St. Petersburg, on the water, averages 69.0°F and 55.3°F in January.",
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "summer-weather",
+        "topic": "When to visit",
+        "q": "How hot is it in summer?",
+        "a": "Hot and humid. In the NOAA 1991–2020 normals for Tampa International Airport, average highs are 90.2°F to 91.2°F from June through September, and nights stay near 75°F to 77°F. Tampa averages 94.3 days a year with a high of 90°F or more.",
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "rainy-season",
+        "topic": "When to visit",
+        "q": "When is the rainy season?",
+        "a": "Summer. At Tampa International Airport, June through September each average more than 6 inches of rain, with August the wettest month (9.03 inches), while November averages 1.40 inches (NOAA 1991–2020 normals). The National Weather Service in Tampa Bay says the Florida peninsula tends to see thunderstorms most summer days.",
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/heatindex"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "when-does-it-cool-off",
+        "topic": "When to visit",
+        "q": "When does it cool off in the fall?",
+        "a": "Usually later than the calendar suggests. The National Weather Service in Tampa Bay says highs in the mid 80s to low 90s and high humidity typically last well into October, that the first cool front brings only a day or two of relief, and that the real cool-down usually comes in November. On average Tampa sees its first night below 60°F on October 19 and St. Petersburg on October 30.",
+        "source_url": "https://www.weather.gov/tbw/whencool",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gulf-water-temperature",
+        "topic": "When to visit",
+        "q": "How warm is the Gulf?",
+        "a": "Visit St. Pete/Clearwater lists average water temperatures of 64°F in January and February, 73°F in April, 82°F in June, 87°F in August, 81°F in October and 69°F in December.",
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "The full table on the page: Jan 64°F, Feb 64°F, Mar 67°F, Apr 73°F, May 78°F, Jun 82°F, Jul 85°F, Aug 87°F, Sep 85°F, Oct 81°F, Nov 75°F, Dec 69°F. The NOAA NCEI Coastal Water Temperature Guide the brief pointed to was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide)."
+      },
+      {
+        "id": "hurricane-season-dates",
+        "topic": "Weather & hurricanes",
+        "q": "When is hurricane season?",
+        "a": "The Atlantic hurricane season runs from June 1 to November 30, according to the National Hurricane Center. The Atlantic basin includes the Gulf.",
+        "source_url": "https://www.nhc.noaa.gov/climo/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "when-is-hurricane-peak",
+        "topic": "Weather & hurricanes",
+        "q": "When is the peak of hurricane season?",
+        "a": "The National Hurricane Center puts the peak on September 10, with most activity between mid-August and mid-October. It also notes that storms sometimes form before June 1 or after November 30.",
+        "source_url": "https://www.nhc.noaa.gov/climo/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricane-during-trip",
+        "topic": "Weather & hurricanes",
+        "q": "What happens if a hurricane threatens during my trip?",
+        "a": "Follow local officials. Pinellas County orders evacuations by zone to protect people from storm surge, and everyone in a zone named in an order must leave. It lists a hotel outside the ordered area as one option, says you do not have to go far, and says Visit St. Pete/Clearwater shares accommodation information as a storm approaches. Check roads at fl511.com.",
+        "source_url": "https://pinellas.gov/evacuation/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "thunder-go-indoors",
+        "topic": "Weather & hurricanes",
+        "q": "What should I do when I hear thunder?",
+        "a": "Go inside. The National Weather Service says there is no safe place outside when thunderstorms are in the area, and that if you hear thunder you are likely within striking distance. Its rule: When Thunder Roars, Go Indoors.",
+        "source_url": "https://www.weather.gov/safety/lightning-safety",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lightning-at-the-beach",
+        "topic": "Weather & hurricanes",
+        "q": "What if a storm comes up while I'm at the beach?",
+        "a": "Leave the water and the beach and go to your car or a building. The National Weather Service says not to shelter under beach picnic shelters and to wait 30 minutes after the last rumble of thunder before going back to the beach. It also says most lightning deaths on boats happen on small boats with no cabin.",
+        "source_url": "https://www.weather.gov/safety/lightning-outdoors",
+        "also_sources": [
+          "https://www.weather.gov/mfl/lightning"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lightning-florida",
+        "topic": "Weather & hurricanes",
+        "q": "Is lightning a real risk in Florida?",
+        "a": "Yes. As of September 22, 2026, the National Weather Service counted 16 lightning deaths in the United States in 2026, and 6 of them were in Florida. The figures are preliminary.",
+        "source_url": "https://www.weather.gov/safety/lightning-fatalities",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-forecast",
+        "topic": "Weather & hurricanes",
+        "q": "Where can I check the beach forecast?",
+        "a": "The National Weather Service's beach forecast page for the Tampa Bay area shows the rip current risk, the UV index and water temperature. Its rip current risk is Low, Moderate or High; at High, it says life-threatening rip currents are likely and the surf zone is dangerous for all swimmers.",
+        "source_url": "https://www.weather.gov/beach/tbw",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-warning-flags",
+        "topic": "Beaches & water safety",
+        "q": "What do the beach warning flags mean?",
+        "a": "Florida uses one set of flags statewide. Green means low hazard (calm conditions, exercise caution). Yellow means medium hazard (moderate surf and/or currents). Red means high hazard (high surf and/or strong currents). Two red flags mean the water is closed to the public. Purple means stinging marine life, such as man o' war, jellyfish or stingrays. The state sign adds that the absence of flags does not assure safe waters.",
+        "source_url": "https://floridadep.gov/rcp/fcmp/content/beach-warning-flag-program",
+        "also_sources": [
+          "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0380/Sections/0380.276.html"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Colors and meanings read from the Florida DEP beach warning flag sign image on the program page (In-house-graphic_FCMP_Beach_Warning_Flag_sign.jpg). The DEP page says the flags give general warnings about surf conditions and do not specifically warn of rip currents. Visit St. Pete/Clearwater's current-beach-conditions page lists 'Blue' for hazardous marine life; the state sign shows purple."
+      },
+      {
+        "id": "rip-current-escape",
+        "topic": "Beaches & water safety",
+        "q": "What do I do if a rip current pulls me out?",
+        "a": "Do not fight it. NOAA says to swim parallel to the shore and then swim back to land at an angle. Rip currents can move at up to eight feet per second, faster than an Olympic swimmer, and panicked swimmers who swim straight back to shore risk drowning from fatigue.",
+        "source_url": "https://oceanservice.noaa.gov/facts/ripcurrent.html",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "rip-currents-calm-days",
+        "topic": "Beaches & water safety",
+        "q": "Can rip currents happen on calm, sunny days?",
+        "a": "Yes. The National Weather Service says rip currents often form on calm, sunny days. It advises checking the beach forecast, talking to the lifeguard, and swimming at a beach with lifeguards; it cites the U.S. Lifesaving Association's figure that the chance of drowning at a beach with lifeguards is 1 in 18 million.",
+        "source_url": "https://www.weather.gov/safety/ripcurrent",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "stingray-shuffle",
+        "topic": "Beaches & water safety",
+        "q": "What is the stingray shuffle?",
+        "a": "Shuffling or sliding your feet slowly through the sand as you wade. The City of Clearwater says this warns stingrays that you are there, and they will move out of your way.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
+        "checked": "2026-09-27",
+        "notes": "Page wording: 'To avoid stings, shuffle or slide your feet slowly through the sand to warn the stingrays of your presence, and they will move out of your way.'"
+      },
+      {
+        "id": "lifeguards",
+        "topic": "Beaches & water safety",
+        "q": "Are there lifeguards?",
+        "a": "On Clearwater Beach, yes: the City of Clearwater says lifeguards are on duty seven days a week from 10 a.m. to 5 p.m., with towers staffed by season and weather. Pinellas County lists seasonal lifeguards at Sand Key Park.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
+        "also_sources": [
+          "https://pinellas.gov/parks/sand-key-park/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "The Sand Key page is the source for 'seasonal lifeguards'."
+      },
+      {
+        "id": "red-tide-what-is-it",
+        "topic": "Beaches & water safety",
+        "q": "What is red tide?",
+        "a": "A bloom of a microscopic alga, Karenia brevis, that makes toxins. Pinellas County says red tide has been noted in Florida since the 1800s. It can affect fish and marine wildlife and irritate your eyes, nose and throat; the county says symptoms should go away when you leave the area, and people with asthma or chronic lung disease should avoid areas with an active bloom.",
+        "source_url": "https://pinellas.gov/red-tide/",
+        "also_sources": [
+          "https://myfwc.com/research/redtide/general/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "red-tide-where-to-check",
+        "topic": "Beaches & water safety",
+        "q": "Where can I check for red tide before I go?",
+        "a": "The Florida Fish and Wildlife Conservation Commission (FWC) posts a statewide red tide status report on Friday afternoons, with extra information on Wednesdays, and a sampling map updated daily at 5 p.m. You can also call 866-300-9399 at any time for a recorded report. Pinellas County keeps a red tide page, and Visit St. Pete/Clearwater posts beach conditions.",
+        "source_url": "https://myfwc.com/research/redtide/statewide/",
+        "also_sources": [
+          "https://pinellas.gov/red-tide/",
+          "https://www.visitstpeteclearwater.com/current-beach-conditions"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "red-tide-swimming",
+        "topic": "Beaches & water safety",
+        "q": "Can I swim during red tide?",
+        "a": "FWC says not to swim in or around red tide: it can cause skin irritation, rashes and burning, sore eyes. When the bloom is present and winds blow onshore, some people cough, sneeze or feel eye, nose and throat irritation; offshore winds usually keep those effects down.",
+        "source_url": "https://myfwc.com/research/redtide/faq/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "red-tide-seafood",
+        "topic": "Beaches & water safety",
+        "q": "Is seafood safe to eat during red tide?",
+        "a": "Restaurant and store-bought shellfish are generally safe, FWC says, because the government monitors them. Do not harvest or eat your own clams, oysters or mussels from affected areas, and cooking or freezing does not remove the toxin.",
+        "source_url": "https://myfwc.com/research/redtide/faq/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-water-quality",
+        "topic": "Beaches & water safety",
+        "q": "Is the beach water tested for bacteria?",
+        "a": "Yes. The Florida Department of Health's Healthy Beaches Program samples beach water for enterococci bacteria. If a sample and a resample both exceed 70 per 100 milliliters, it issues an advisory for that site. The City of Tampa asks visitors to its four bay beaches (Ben T. Davis, Picnic Island, Cypress Point and Davis Islands) to check the Healthy Beaches results before a trip.",
+        "source_url": "https://www.floridahealth.gov/community-environmental-public-health/environmental-public-health/water-quality/beach-water-quality/",
+        "also_sources": [
+          "https://www.tampa.gov/parks-and-recreation/parks-and-facilities/beaches"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beaches-open-after-storms",
+        "topic": "Beaches & water safety",
+        "q": "Are the beaches open after Hurricanes Helene and Milton?",
+        "a": "Yes. Visit St. Pete/Clearwater says all beaches and beach parks are open. Some park amenities are still being repaired; Pinellas County lists them on its County Parks: Know Before You Go page, last updated September 25, 2026 (for example, the far end of Fort De Soto's bay pier is closed for hurricane repairs).",
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "also_sources": [
+          "https://pinellas.gov/county-parks-know-before-you-go/",
+          "https://www.visitstpeteclearwater.com/current-beach-conditions"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "water-temperature-today",
+        "topic": "Beaches & water safety",
+        "q": "Where can I check today's water temperature?",
+        "a": "The National Weather Service beach forecast page for the Tampa Bay area shows water temperature, and Visit St. Pete/Clearwater points to Mote Marine Laboratory's beach conditions map (visitbeaches.org), which lists water temperature, wind, tides and UV. NOAA notes that many people find water of 70°F to 78°F comfortable for swimming.",
+        "source_url": "https://www.weather.gov/beach/tbw",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/current-beach-conditions",
+          "https://www.ncei.noaa.gov/products/coastal-water-temperature-guide"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "report-wildlife",
+        "topic": "Beaches & water safety",
+        "q": "Who do I call about a stranded sea turtle, manatee or a fish kill?",
+        "a": "Call FWC's Wildlife Alert Hotline at 888-404-3922 for a dead, sick or injured manatee or sea turtle. Report fish kills to FWC's Fish Kill Hotline at 800-636-0511.",
+        "source_url": "https://pinellas.gov/red-tide/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/info/red-tide-faqs"
+        ],
+        "checked": "2026-09-27",
+        "notes": "The Wildlife Alert number is on the Pinellas page; the Fish Kill Hotline number is on the Visit St. Pete/Clearwater red tide FAQ."
+      },
+      {
+        "id": "heat-index",
+        "topic": "Sun & heat",
+        "q": "Why does it feel hotter than the forecast?",
+        "a": "Humidity. The heat index is the feels-like temperature, and the National Weather Service in Tampa Bay notes that forecast heat index values are for shade: in direct sun it can be up to 15°F higher. It says the most dangerous heat here comes when winds are from the west and thunderstorms cannot form.",
+        "source_url": "https://www.weather.gov/tbw/heatindex",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "heat-illness",
+        "topic": "Sun & heat",
+        "q": "What are the signs of heat illness?",
+        "a": "The National Weather Service lists heavy sweating, cool and clammy skin, a fast weak pulse, cramps, dizziness or nausea as signs of heat exhaustion: get to a cool place and sip water. A body temperature above 103°F, hot red skin, confusion or fainting can mean heat stroke, a medical emergency: call 911.",
+        "source_url": "https://www.weather.gov/safety/heat-illness",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hot-car",
+        "topic": "Sun & heat",
+        "q": "Can I leave a child or pet in the car for a few minutes?",
+        "a": "No. The National Weather Service says it is never safe to leave a child, disabled person or pet locked in a car, even in winter.",
+        "source_url": "https://www.weather.gov/safety/heat",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "uv-index",
+        "topic": "Sun & heat",
+        "q": "How strong is the sun?",
+        "a": "Strong. The National Weather Service beach forecast for the Tampa Bay area includes a daily UV index; at 11 or more (Extreme) it warns that unprotected skin can burn in minutes.",
+        "source_url": "https://www.weather.gov/beach/tbw",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "alcohol-clearwater-beach",
+        "topic": "Alcohol & rules",
+        "q": "Can I drink alcohol on Clearwater Beach?",
+        "a": "No. The City of Clearwater does not permit alcohol or other intoxicants on its public beaches, and smoking is not allowed there either. Fires, bonfires and unpermitted fireworks are also banned.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Clearwater-Beach-Rules-Information",
+        "checked": "2026-09-27",
+        "notes": "Page wording: 'No alcohol or other intoxicants are permitted on Clearwater's public beaches.' The smoking rule appears on the page as the heading 'No Smoking'."
+      },
+      {
+        "id": "alcohol-other-beaches",
+        "topic": "Alcohol & rules",
+        "q": "Which Pinellas beaches allow alcohol?",
+        "a": "It depends on the town. Visit St. Pete/Clearwater lists: no alcohol at Clearwater Beach, Honeymoon and Caladesi islands, Belleair Beach, Indian Rocks Beach, Fort De Soto Park or Gulfport Beach; alcohol allowed but not in glass at Madeira Beach and Treasure Island (Treasure Island bans it on some beach blocks from 8 a.m. to 4 p.m. on weekends); allowed at Redington Beach; and at St. Pete Beach only in beachfront hotels' cabana areas for registered guests.",
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "county-park-rules",
+        "topic": "Alcohol & rules",
+        "q": "What is not allowed in Pinellas County beach parks?",
+        "a": "Pinellas County's park rules prohibit alcohol, glass, grills and campfires on beaches, balloons of any kind, drones and other remote-controlled devices, and pets on beaches, boardwalks and fishing piers (Fort De Soto's dog beach is the exception). County parks are open 7 a.m. to sunset.",
+        "source_url": "https://pinellas.gov/park-rules/",
+        "also_sources": [
+          "https://pinellas.gov/dog-parks/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dogs-clearwater-beach",
+        "topic": "Alcohol & rules",
+        "q": "Can I bring my dog to Clearwater Beach?",
+        "a": "Not on the public bathing beach, except service animals. The City of Clearwater allows leashed dogs north of Somerset Street, but says that area is not a dog beach, and suggests a walk along Beach Walk instead.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Pets-on-Clearwater-Beach",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dog-beaches-pinellas",
+        "topic": "Alcohol & rules",
+        "q": "Where are the dog beaches in Pinellas County?",
+        "a": "Fort De Soto Park is the only Pinellas County park where dogs are allowed on the beach, in a designated area, with two fenced areas for large and small dogs nearby. Visit St. Pete/Clearwater also lists the dog beach at the southern tip of Honeymoon Island State Park, where dogs must be on a six-foot handheld leash.",
+        "source_url": "https://pinellas.gov/dog-parks/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/article/dog-friendly-beaches"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dog-beaches-tampa",
+        "topic": "Alcohol & rules",
+        "q": "Are there dog beaches in Tampa?",
+        "a": "Yes: the City of Tampa runs the Davis Islands Dog Park and Dog Beach (1002 Severn St.) and the Picnic Island Dog Beach (7409 Picnic Island Blvd.). Dogs are not permitted on other city beaches unless they are service animals.",
+        "source_url": "https://www.tampa.gov/parks-and-recreation/parks-and-facilities/dog-parks",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "fireworks-beach",
+        "topic": "Alcohol & rules",
+        "q": "Can I set off fireworks on the beach?",
+        "a": "No. Visit St. Pete/Clearwater says Pinellas County bans the use and sale of fireworks that explode or project into the air; professional displays are held on July 4th and New Year's Eve.",
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-pier-rules",
+        "topic": "Alcohol & rules",
+        "q": "Can I drink or bring my dog at the St. Pete Pier?",
+        "a": "Alcohol is allowed in the Pier District only in Pier-approved cups from its restaurants and cafes; you cannot bring your own. Leashed pets are welcome (leash six feet or less), but dogs are not allowed on Spa Beach or the splash pad. The Pier property closes at 11 p.m.",
+        "source_url": "https://stpetepier.org/faq/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sales-tax-tampa",
+        "topic": "Money & taxes",
+        "q": "What is the sales tax in Tampa?",
+        "a": "7.5% in Hillsborough County: Florida's 6% state sales tax plus three half-cent county surtaxes, according to the Florida Department of Revenue.",
+        "source_url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-12.pdf",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sales-tax-pinellas",
+        "topic": "Money & taxes",
+        "q": "What is the sales tax in St. Petersburg and Clearwater?",
+        "a": "Florida's state rate is 6%, and Pinellas County adds a 1% surtax (the Penny for Pinellas), in effect through December 31, 2029, according to the Florida Department of Revenue.",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+        "also_sources": [
+          "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+          "https://pinellas.gov/penny-for-pinellas/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hotel-taxes",
+        "topic": "Money & taxes",
+        "q": "What taxes are added to a hotel bill?",
+        "a": "Hillsborough and Pinellas counties each charge a 6% tourist development tax on stays of six months or less. The Florida Department of Revenue says it is charged in addition to the 6% state sales tax and any county surtax.",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-parking-pinellas",
+        "topic": "Money & taxes",
+        "q": "How much is parking at Pinellas County beach parks?",
+        "a": "Since January 1, 2025, daily parking at Fort De Soto, Sand Key and Fred Howard parks has been $6 per vehicle. Pinellas County says that from December 1, 2026, beach parking will be $3.50 an hour, capped at $12 a day, plus tax. You pay at pay stations or with the Flowbird or ParkMobile apps.",
+        "source_url": "https://pinellas.gov/county-parks-know-before-you-go/",
+        "also_sources": [
+          "https://pinellas.gov/news/fort-de-soto-park-fort-dog-beach-fishing-piers-reopen/",
+          "https://pinellas.gov/parks-and-preserves-frequently-asked-questions/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "attraction-passes",
+        "topic": "Money & taxes",
+        "q": "Are there passes that bundle attractions?",
+        "a": "Visit Tampa Bay points to Tampa Bay CityPASS for bundled admission and to the Tampa Riverwalk Attraction Pass, which includes seven attractions for one price. It sells the Riverwalk pass at the Unlock Tampa Bay Visitors Center.",
+        "source_url": "https://www.visittampabay.com/media/faqs/",
+        "also_sources": [
+          "https://shop.visittampabay.com/pages/about-us"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "free-things",
+        "topic": "Money & taxes",
+        "q": "What can I do for free in Tampa?",
+        "a": "Visit Tampa Bay suggests riding the free TECO Line Streetcar through downtown and Ybor City, walking the Tampa Riverwalk or Bayshore Boulevard, seeing public art and murals, and spending time in the waterfront parks.",
+        "source_url": "https://www.visittampabay.com/media/faqs/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-wheelchair-clearwater",
+        "topic": "Accessibility",
+        "q": "Can I borrow a beach wheelchair on Clearwater Beach?",
+        "a": "Yes, at no charge. The City of Clearwater lends manual beach wheelchairs with balloon tires at Lifeguard Tower 0 (180 S. Gulfview Blvd.) for use from 9:30 a.m. to 4:30 p.m., first come, first served, with a signed release and ID. An accompanying adult must assist, and the chairs are for the beach and shallow water only. Phone (727) 444-8580.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Check-Out-a-Beach-Wheelchair",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-wheelchairs-pinellas",
+        "topic": "Accessibility",
+        "q": "Which other Pinellas beaches lend beach wheelchairs?",
+        "a": "Visit St. Pete/Clearwater's accessible beaches guide (updated August 19, 2025) lists beach wheelchairs, lent first come, first served, at Fort De Soto Park (five), Honeymoon Island State Park (four), Sand Key Park (two, near Boardwalk 4), Fred Howard Park (two, weekdays 8 a.m. to 5 p.m.), Pass-a-Grille Beach (three, at Paradise Grille), the St. Pete Beach public access (two, at Paradise Grill) and Treasure Island (one at City Hall on weekdays, two more at the concession stand). It says the chairs at Honeymoon Island, Sand Key, Pass-a-Grille and the Treasure Island concession stand are free, and its beach FAQ lists Fort De Soto among the free ones.",
+        "source_url": "https://www.visitstpeteclearwater.com/article/guide-to-accessible-beaches-st-pete-clearwater",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/info/beach-faqs"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Read twice with WebFetch. The first read also gave how to request them: Fort De Soto by calling 727-582-2100 ext. 2 on weekdays or at the campground office on weekends; Honeymoon Island at the entrance kiosk; Sand Key by calling the ranger at 727-582-2100."
+      },
+      {
+        "id": "beach-mats-clearwater",
+        "topic": "Accessibility",
+        "q": "Are there beach access mats on Clearwater Beach?",
+        "a": "Yes, just south of Pier 60. The City of Clearwater lays 260 feet of mat from November 1 to May 14 and shortens it to 100 feet from Beach Walk during sea turtle nesting season (May 15 to October 31). The mats do not reach the water line.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Accessibility-ADA-Mats",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "disabled-parking-beaches",
+        "topic": "Accessibility",
+        "q": "Do I pay to park at the beach with a disabled parking permit?",
+        "a": "Not at city-owned paid spaces in Clearwater: vehicles with handicap tags or placards park free there with no time limit, except in spaces posted with their own limit. In Pinellas County parks, a state disabled placard, disabled plate or Disabled Veterans plate lets you park free in any space.",
+        "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Accessibility/Accessible-Parking",
+        "also_sources": [
+          "https://pinellas.gov/parks-and-preserves-frequently-asked-questions/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "accessible-travel-tampa",
+        "topic": "Accessibility",
+        "q": "What accessibility help does Visit Tampa Bay offer?",
+        "a": "Visit Tampa Bay says Tampa Bay is an Accessibility Verified destination with Wheel the World, whose site lists accessible hotels and activities. The Unlock Tampa Bay Visitors Center hands out Hidden Disabilities Sunflower lanyards and rents EnChroma glasses for red-green color blindness (call ahead); the Tampa Museum of Art and the Florida Museum of Photographic Arts also have them.",
+        "source_url": "https://www.visittampabay.com/accessible-travel/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "busch-gardens-accessibility",
+        "topic": "Accessibility",
+        "q": "How does Busch Gardens handle ride access for guests with disabilities?",
+        "a": "Through its Ride Accessibility Program (RAP): you enroll at Guest Relations inside the park entrance, get a list of rides that fit your abilities, and use a virtual queue for select rides. Wheelchairs and ECVs can be rented inside the park to the right of Guest Relations and reserved online.",
+        "source_url": "https://buschgardens.com/tampa/park-info/accessibility-guide/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-aquarium-accessibility",
+        "topic": "Accessibility",
+        "q": "Is the Florida Aquarium accessible?",
+        "a": "The aquarium says every habitat and exhibit is wheelchair accessible, with elevators to upper levels. It rents wheelchairs and scooters daily (limited, first come, first served), works with USF's Center for Autism and Related Disabilities, and holds Day of Discovery sessions for guests with sensory differences.",
+        "source_url": "https://www.flaquarium.org/visit/visitor-information/accessibility/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dali-accessibility",
+        "topic": "Accessibility",
+        "q": "What access services does the Dalí Museum offer?",
+        "a": "The Dalí lends courtesy wheelchairs first come, first served, offers free ASL interpretation with two weeks' notice (727-623-4706), has induction neck loops, large-print tour booklets and a sensory-friendly guide, and holds sensory-friendly events.",
+        "source_url": "https://thedali.org/visit/accessibility/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-museum-of-art-accessibility",
+        "topic": "Accessibility",
+        "q": "Is the Tampa Museum of Art accessible?",
+        "a": "The museum lends wheelchairs free, first come, first served, and all galleries are reachable by elevator. The closest accessible parking is on the 4th and 5th floors of the William F. Poe Garage (802 N. Ashley Dr.). It opens early for low-sensory Art on the Spectrum visits on the last Sunday of each month.",
+        "source_url": "https://tampamuseum.org/visit/accessibility/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-pier-accessibility",
+        "topic": "Accessibility",
+        "q": "Is the St. Pete Pier accessible?",
+        "a": "The Pier's trams carry wheelchair users and walkers, and smaller electric shuttles also take wheelchairs. The Pier says it has no wheelchair rentals at this time.",
+        "source_url": "https://stpetepier.org/faq/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "know-your-zone",
+        "topic": "Safety",
+        "q": "What is an evacuation zone?",
+        "a": "An area that may be ordered to evacuate because of storm surge. The Florida Division of Emergency Management says zones run from A to F: Zone A is usually the most vulnerable and evacuated first. Not every zone is ordered to leave in every storm, so listen for orders from local officials.",
+        "source_url": "https://www.floridadisaster.org/knowyourzone/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "know-your-zone-hillsborough",
+        "topic": "Safety",
+        "q": "How do I find the evacuation zone for a Tampa address?",
+        "a": "Use Hillsborough County's Hurricane Evacuation Assessment Tool (HEAT): enter the address on the county's Find Evacuation Information page to see which of the five evacuation zones it is in. HART runs free evacuation buses to shelters.",
+        "source_url": "https://hcfl.gov/residents/public-safety/emergency-management/find-evacuation-information",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "know-your-zone-pinellas",
+        "topic": "Safety",
+        "q": "How do I find the evacuation zone for a Pinellas address?",
+        "a": "Pinellas County's Know Your Zone app gives the evacuation zone for an address, plus the closest shelters and hotels. You can also call (727) 464-3800 for help looking up a zone.",
+        "source_url": "https://pinellas.gov/services/find-your-evacuation-zone/",
+        "also_sources": [
+          "https://pinellas.gov/frequently-asked-questions-about-disaster-preparedness-and-recovery/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "emergency-alerts-hillsborough",
+        "topic": "Safety",
+        "q": "How do I get emergency alerts in Hillsborough County?",
+        "a": "Sign up for HCFL Alert, the county's official notification system, for emergency alerts such as hurricane evacuations and flood warnings, and for notice of when evacuation zones are called.",
+        "source_url": "https://hcfl.gov/residents/public-safety/emergency-management/hcfl-alert",
+        "also_sources": [
+          "https://hcfl.gov/residents/public-safety/emergency-management/find-evacuation-information"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "emergency-alerts-pinellas",
+        "topic": "Safety",
+        "q": "How do I get emergency alerts in Pinellas County?",
+        "a": "Sign up for Alert Pinellas, a free service shared by the county, its cities and the Sheriff's Office. You choose phone, text or email and can follow up to five locations, such as your hotel's.",
+        "source_url": "https://pinellas.gov/alert-pinellas/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dengue-mosquitoes",
+        "topic": "Safety",
+        "q": "Is there a mosquito-borne illness warning?",
+        "a": "Yes, as of September 2026. On September 24, 2026, Pinellas County declared a State of Local Emergency for dengue fever; the Florida Department of Health's report that day counted 179 confirmed cases in Pinellas, Pasco and Hillsborough counties. The county advises light-colored long sleeves and closed-toe shoes outdoors and repellent with DEET, picaridin, IR3535 or oil of lemon eucalyptus.",
+        "source_url": "https://pinellas.gov/news/pinellas-commission-declares-state-of-local-emergency-for-dengue-fever/",
+        "checked": "2026-09-27",
+        "notes": "Time-sensitive: re-check before publishing; see pinellas.gov/dengue and pinellas.gov/mosquito."
+      },
+      {
+        "id": "text-911",
+        "topic": "Safety",
+        "q": "Can I text 911?",
+        "a": "Pinellas County says deaf and hard-of-hearing people can text 9-1-1 in an emergency. For a fire, police or medical emergency, call 9-1-1.",
+        "source_url": "https://pinellas.gov/frequently-asked-questions-about-disaster-preparedness-and-recovery/",
+        "also_sources": [
+          "https://pinellas.gov/department/emergency-management/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visitor-center-tampa",
+        "topic": "Visitor information",
+        "q": "Is there a visitor center in downtown Tampa?",
+        "a": "Yes. The Unlock Tampa Bay Visitors Center, run by Visit Tampa Bay, is on the ground floor of Tampa City Center at 201 N. Franklin St., Suite 102. Its listed hours are 8 a.m. to 6 p.m. Monday to Friday, 10 a.m. to 6 p.m. Saturday and 11 a.m. to 5 p.m. Sunday; phone (813) 223-2752. It has maps, visitor guides and a gift shop.",
+        "source_url": "https://shop.visittampabay.com/pages/about-us",
+        "also_sources": [
+          "https://www.visittampabay.com/media/faqs/",
+          "https://www.visittampabay.com/about/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visitor-center-ybor",
+        "topic": "Visitor information",
+        "q": "Is there a visitor center in Ybor City?",
+        "a": "Yes. The Ybor City Chamber of Commerce runs a visitor information center and gift shop at 1600 E. 8th Ave., Suite B104, open Monday to Saturday 10 a.m. to 4 p.m. and Sunday noon to 4 p.m.; phone (813) 241-8838.",
+        "source_url": "https://www.ybor.org/visitor-information-center-gift-shop/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visitor-centers-pinellas",
+        "topic": "Visitor information",
+        "q": "Where can I get visitor information in Pinellas County?",
+        "a": "Visit St. Pete/Clearwater, the county's tourism office, works from an office in Largo (8200 Bryan Dairy Road, Suite 200; 727-464-7200) and offers a free Destination Magazine you can order online. Walk-in centers include the Tarpon Springs Chamber's visitor center at the Sponge Docks (100 Dodecanese Blvd., daily 10:30 a.m. to 3:30 p.m.) and the Beach Welcome Center in Indian Rocks Beach (105 5th Ave. N., weekdays 10 a.m. to 4 p.m.).",
+        "source_url": "https://www.visitstpeteclearwater.com/info/visitor-information-resources-faqs",
+        "also_sources": [
+          "https://www.tarponspringschamber.org/",
+          "https://www.beachwelcomecenter.com/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "how-many-days",
+        "topic": "Visitor information",
+        "q": "How many days should I plan?",
+        "a": "Visit Tampa Bay suggests three to five days, which it says is enough to see the major attractions and some local spots without rushing.",
+        "source_url": "https://www.visittampabay.com/media/faqs/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricane-watch-vs-warning",
+        "topic": "Weather & hurricanes",
+        "q": "What is the difference between a hurricane watch and a warning?",
+        "a": "A hurricane watch means hurricane-force winds (74 mph or more) are possible in the area; the National Hurricane Center issues it 48 hours before tropical-storm-force winds are expected. A hurricane warning means those winds are expected, and it is issued 36 hours ahead. Storm surge watches and warnings work the same way for life-threatening flooding from the sea.",
+        "source_url": "https://www.nhc.noaa.gov/aboutgloss.shtml",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricanes-2024",
+        "topic": "Weather & hurricanes",
+        "q": "Did Hurricanes Helene and Milton hit Tampa Bay?",
+        "a": "Yes, both in 2024. Helene, which made landfall in the Big Bend as a Category 4 in late September, pushed record storm surge into the bay area: 6.67 feet above the normal high-tide line at Clearwater Beach and 7.2 feet at Tampa's East Bay gauge, and the National Weather Service reported 12 storm-surge drownings in Pinellas County. Milton made landfall on the west-central Florida coast as a Category 3 in October, with a 101 mph gust and 18.54 inches of rain in one day at St. Petersburg's Albert Whitted Airport.",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+        "also_sources": [
+          "https://www.weather.gov/tbw/TropicalEventSummary",
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf",
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Helene figures: Helene impact narratives (source_url) and Helene summary (Category 4, Big Bend). Milton figures: Milton summary (Category 3, west-central coast) and Milton impact narratives (101 mph gust, 18.54 in). 'Normal high-tide line' paraphrases MHHW (mean higher high water)."
+      },
+      {
+        "id": "alligators",
+        "topic": "Safety",
+        "q": "Are there alligators, and where is it safe to swim?",
+        "a": "Alligators live in all 67 Florida counties, in marshes, swamps, rivers and lakes. The Florida Fish and Wildlife Conservation Commission says never to feed one, to keep your distance, to swim only in designated swimming areas during daylight, and to keep pets leashed and away from the water. Serious injuries are rare; to report a problem alligator, call 866-392-4286.",
+        "source_url": "https://myfwc.com/conservation/you-conserve/wildlife/alligators/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visitor-center-st-pete",
+        "topic": "Visitor information",
+        "q": "Is there a visitor center in St. Petersburg?",
+        "a": "The St. Petersburg Chamber of Commerce's website lists a St. Pete Store & Visitor's Center and a visitors and tourism email address, tourism@stpete.com. The chamber's office is at 100 2nd Ave. N., #150 (727-821-4069).",
+        "source_url": "https://www.stpete.com/st-pete-store-visitors-center/",
+        "checked": "2026-09-27",
+        "notes": "The page body has no address or hours for the store; its own site (thestpetestore.com) returned a captcha. The address and phone are the chamber's, from the page footer. Verifier: confirm the store's location and hours if a readable source turns up."
+      },
+      {
+        "id": "beach-conditions-pinellas",
+        "topic": "Beaches & water safety",
+        "q": "Where can I check conditions on the St. Pete-Clearwater beaches?",
+        "a": "Visit St. Pete/Clearwater keeps a Beach Updates page with the current status (on September 27, 2026 it read: all St. Pete-Clearwater beaches are open, with no advisories), live beach webcams, an explanation of the warning flags, and a link to Mote Marine Laboratory's beach conditions map.",
+        "source_url": "https://www.visitstpeteclearwater.com/current-beach-conditions",
+        "checked": "2026-09-27"
+      }
+    ],
+    "facts": [
+      {
+        "id": "climate-tampa-jan",
+        "label": "Tampa in January",
+        "value": "Average high 71.3°F, average low 52.8°F, 2.65 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=1; tmax_f=71.3; tmin_f=52.8; prcp_in=2.65; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-feb",
+        "label": "Tampa in February",
+        "value": "Average high 74.0°F, average low 55.5°F, 2.62 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=2; tmax_f=74.0; tmin_f=55.5; prcp_in=2.62; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-mar",
+        "label": "Tampa in March",
+        "value": "Average high 77.8°F, average low 59.3°F, 2.52 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=3; tmax_f=77.8; tmin_f=59.3; prcp_in=2.52; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-apr",
+        "label": "Tampa in April",
+        "value": "Average high 83.0°F, average low 64.8°F, 2.55 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=4; tmax_f=83.0; tmin_f=64.8; prcp_in=2.55; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-may",
+        "label": "Tampa in May",
+        "value": "Average high 88.3°F, average low 70.6°F, 2.60 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=5; tmax_f=88.3; tmin_f=70.6; prcp_in=2.6; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-jun",
+        "label": "Tampa in June",
+        "value": "Average high 90.5°F, average low 75.4°F, 7.37 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=6; tmax_f=90.5; tmin_f=75.4; prcp_in=7.37; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-jul",
+        "label": "Tampa in July",
+        "value": "Average high 91.0°F, average low 76.6°F, 7.75 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=7; tmax_f=91.0; tmin_f=76.6; prcp_in=7.75; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-aug",
+        "label": "Tampa in August",
+        "value": "Average high 91.2°F, average low 76.8°F, 9.03 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=8; tmax_f=91.2; tmin_f=76.8; prcp_in=9.03; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-sep",
+        "label": "Tampa in September",
+        "value": "Average high 90.2°F, average low 75.3°F, 6.09 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=9; tmax_f=90.2; tmin_f=75.3; prcp_in=6.09; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-oct",
+        "label": "Tampa in October",
+        "value": "Average high 85.6°F, average low 69.2°F, 2.34 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=10; tmax_f=85.6; tmin_f=69.2; prcp_in=2.34; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-nov",
+        "label": "Tampa in November",
+        "value": "Average high 78.9°F, average low 60.7°F, 1.40 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=11; tmax_f=78.9; tmin_f=60.7; prcp_in=1.4; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-tampa-dec",
+        "label": "Tampa in December",
+        "value": "Average high 73.9°F, average low 55.9°F, 2.56 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00012842&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=12; tmax_f=73.9; tmin_f=55.9; prcp_in=2.56; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: TAMPA INTL AP, FL US."
+      },
+      {
+        "id": "climate-stpete-jan",
+        "label": "St. Petersburg in January",
+        "value": "Average high 69.0°F, average low 55.3°F, 2.52 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=1; tmax_f=69.0; tmin_f=55.3; prcp_in=2.52; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-feb",
+        "label": "St. Petersburg in February",
+        "value": "Average high 71.9°F, average low 57.9°F, 2.02 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=2; tmax_f=71.9; tmin_f=57.9; prcp_in=2.02; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-mar",
+        "label": "St. Petersburg in March",
+        "value": "Average high 75.9°F, average low 62.1°F, 2.58 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=3; tmax_f=75.9; tmin_f=62.1; prcp_in=2.58; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-apr",
+        "label": "St. Petersburg in April",
+        "value": "Average high 81.0°F, average low 67.3°F, 1.93 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=4; tmax_f=81.0; tmin_f=67.3; prcp_in=1.93; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-may",
+        "label": "St. Petersburg in May",
+        "value": "Average high 86.3°F, average low 72.6°F, 2.26 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=5; tmax_f=86.3; tmin_f=72.6; prcp_in=2.26; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-jun",
+        "label": "St. Petersburg in June",
+        "value": "Average high 88.9°F, average low 76.7°F, 6.79 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=6; tmax_f=88.9; tmin_f=76.7; prcp_in=6.79; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-jul",
+        "label": "St. Petersburg in July",
+        "value": "Average high 89.6°F, average low 78.0°F, 7.49 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=7; tmax_f=89.6; tmin_f=78.0; prcp_in=7.49; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-aug",
+        "label": "St. Petersburg in August",
+        "value": "Average high 89.8°F, average low 78.2°F, 8.39 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=8; tmax_f=89.8; tmin_f=78.2; prcp_in=8.39; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-sep",
+        "label": "St. Petersburg in September",
+        "value": "Average high 88.1°F, average low 77.0°F, 6.66 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=9; tmax_f=88.1; tmin_f=77.0; prcp_in=6.66; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-oct",
+        "label": "St. Petersburg in October",
+        "value": "Average high 83.3°F, average low 72.2°F, 2.16 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=10; tmax_f=83.3; tmin_f=72.2; prcp_in=2.16; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-nov",
+        "label": "St. Petersburg in November",
+        "value": "Average high 76.8°F, average low 64.5°F, 1.46 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=11; tmax_f=76.8; tmin_f=64.5; prcp_in=1.46; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-stpete-dec",
+        "label": "St. Petersburg in December",
+        "value": "Average high 71.5°F, average low 58.7°F, 2.39 in of rain",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA National Centers for Environmental Information, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg (Albert Whitted Airport))",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00092806&format=json&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL,MLY-TAVG-NORMAL",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "month=12; tmax_f=71.5; tmin_f=58.7; prcp_in=2.39; NCEI fields MLY-TMAX-NORMAL, MLY-TMIN-NORMAL, MLY-PRCP-NORMAL. Station name in NCEI: ST PETERSBURG AP, FL US."
+      },
+      {
+        "id": "climate-tampa-annual-rain",
+        "label": "Average yearly rainfall in Tampa",
+        "value": "49.48 in",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-PRCP-NORMAL = 49.48"
+      },
+      {
+        "id": "climate-stpete-annual-rain",
+        "label": "Average yearly rainfall in St. Petersburg",
+        "value": "46.65 in",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg, Albert Whitted Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00092806&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-PRCP-NORMAL = 46.65"
+      },
+      {
+        "id": "climate-tampa-annual-mean",
+        "label": "Average yearly temperature in Tampa",
+        "value": "74.5°F",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-TAVG-NORMAL = 74.5"
+      },
+      {
+        "id": "climate-tampa-days-90",
+        "label": "Days a year that reach 90°F in Tampa",
+        "value": "94.3 days on average",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-TMAX-AVGNDS-GRTH090 = 94.3 (average number of days with a high of 90°F or more)"
+      },
+      {
+        "id": "climate-stpete-days-90",
+        "label": "Days a year that reach 90°F in St. Petersburg",
+        "value": "70.9 days on average",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00092806 (St. Petersburg, Albert Whitted Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00092806&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-TMAX-AVGNDS-GRTH090 = 70.9"
+      },
+      {
+        "id": "climate-tampa-rain-days",
+        "label": "Days a year with at least 0.1 in of rain in Tampa",
+        "value": "69.1 days on average",
+        "as_of": "1991–2020 normals",
+        "source": "NOAA NCEI, U.S. Climate Normals 1991–2020, station USW00012842 (Tampa International Airport)",
+        "quote": null,
+        "source_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-annualseasonal-1991-2020&stations=USW00012842&format=json&dataTypes=ANN-TMAX-NORMAL,ANN-TMIN-NORMAL,ANN-TAVG-NORMAL,ANN-PRCP-NORMAL,ANN-TMAX-AVGNDS-GRTH090,ANN-TMIN-AVGNDS-LSTH032,ANN-PRCP-AVGNDS-GE010HI&includeStationName=true",
+        "also_sources": [
+          "https://www.weather.gov/tbw/newnormals"
+        ],
+        "checked": "2026-09-27",
+        "notes": "ANN-PRCP-AVGNDS-GE010HI = 69.1 (average number of days with 0.10 in or more of precipitation)"
+      },
+      {
+        "id": "first-cool-night-tampa",
+        "label": "Average date of Tampa's first night below 60°F",
+        "value": "October 19",
+        "as_of": "Updated September 14, 2026",
+        "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1890)",
+        "quote": "The real cool down does not usually occur until November.",
+        "source_url": "https://www.weather.gov/tbw/whencool",
+        "checked": "2026-09-27",
+        "notes": "Table 'Date of First Low Temperature < 60°F': Tampa, mean Oct 19 (records began 1890). Same table: first low < 50°F, mean Nov 10."
+      },
+      {
+        "id": "first-cool-night-stpete",
+        "label": "Average date of St. Petersburg's first night below 60°F",
+        "value": "October 30",
+        "as_of": "Updated September 14, 2026",
+        "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1914)",
+        "quote": "The only exception are coastal areas, where the warm water keeps temperatures higher and therefore these areas take longer to fall below 60 degrees.",
+        "source_url": "https://www.weather.gov/tbw/whencool",
+        "checked": "2026-09-27",
+        "notes": "Table 'Date of First Low Temperature < 60°F': St. Petersburg, mean Oct 30 (records began 1914). First low < 50°F, mean Nov 28."
+      },
+      {
+        "id": "first-cold-night-tampa",
+        "label": "Average date of Tampa's first night below 50°F",
+        "value": "November 10",
+        "as_of": "Updated September 14, 2026",
+        "source": "National Weather Service Tampa Bay, 'When Does It Usually Cool Off' (long-term mean since records began in 1890)",
+        "quote": "High humidity, with dew points in the mid 60s to mid 70s, along with high temperatures in the mid 80s to lower 90s typically persists well into October.",
+        "source_url": "https://www.weather.gov/tbw/whencool",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricane-season",
+        "label": "Atlantic hurricane season",
+        "value": "June 1 to November 30",
+        "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+        "quote": "The Atlantic hurricane season runs from June 1 to November 30. The Atlantic basin includes the Atlantic Ocean, Caribbean Sea, and Gulf of America.",
+        "source_url": "https://www.nhc.noaa.gov/climo/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricane-season-peak",
+        "label": "Peak of the Atlantic hurricane season",
+        "value": "September 10",
+        "as_of": "Based on 1944–2020 data",
+        "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+        "quote": "The peak of the Atlantic hurricane season is September 10, with most activity occurring between mid-August and mid-October.",
+        "source_url": "https://www.nhc.noaa.gov/climo/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hurricane-season-average",
+        "label": "An average Atlantic hurricane season",
+        "value": "14 named storms, 7 hurricanes, 3 major hurricanes",
+        "as_of": "1991–2020 climate period",
+        "source": "NOAA National Hurricane Center, Tropical Cyclone Climatology",
+        "quote": "Based on a 30-year climate period from 1991 to 2020, an average Atlantic hurricane season has 14 named storms, 7 hurricanes, and 3 major hurricanes",
+        "source_url": "https://www.nhc.noaa.gov/climo/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lightning-deaths-florida-2026",
+        "label": "U.S. lightning deaths in 2026 that happened in Florida",
+        "value": "6 of 16 (preliminary)",
+        "as_of": "Last updated September 22, 2026",
+        "source": "National Weather Service, Lightning Fatalities in 2026 (data from the National Lightning Safety Council)",
+        "quote": "This data is preliminary and does not necessarily represent all fatalities to date.",
+        "source_url": "https://www.weather.gov/safety/lightning-fatalities",
+        "checked": "2026-09-27",
+        "notes": "Page title 'National Weather Service Lightning Fatalities in 2026: 16'; table 'Lightning Fatalities 2026 by State' lists FL 6, WI 2, UT 2, and 1 each for IL, CO, NJ and others."
+      },
+      {
+        "id": "lightning-us-per-year",
+        "label": "Lightning deaths in the United States each year",
+        "value": "About 20",
+        "source": "National Weather Service, Lightning Safety Tips and Resources",
+        "quote": "Lightning kills about 20 people in the United States each year, and hundreds more are severely injured.",
+        "source_url": "https://www.weather.gov/safety/lightning",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lightning-wait-30",
+        "label": "How long to wait after the last thunder before going back to the beach",
+        "value": "30 minutes",
+        "source": "National Weather Service, Lightning Safety Outdoors",
+        "quote": "Wait 30 minutes until after the last rumble of thunder before going back to the beach.",
+        "source_url": "https://www.weather.gov/safety/lightning-outdoors",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sales-tax-florida",
+        "label": "Florida state sales tax",
+        "value": "6%",
+        "source": "Florida Department of Revenue, Sales and Use Tax",
+        "quote": "Florida's general state sales tax rate is 6%",
+        "source_url": "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sales-tax-hillsborough",
+        "label": "Sales tax in Hillsborough County (Tampa)",
+        "value": "7.5%",
+        "as_of": "December 1, 2025",
+        "source": "Florida Department of Revenue, Tax Information Publication 25A01-12 (December 1, 2025)",
+        "quote": "The total state and local sales and use tax rate for Hillsborough County is 7.5%.",
+        "source_url": "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-12.pdf",
+        "also_sources": [
+          "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+          "https://floridarevenue.com/taxes/tips/Documents/TIP_25A01-02.pdf"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Composed of the 6% state tax plus 0.5% school capital outlay, 0.5% indigent care and 0.5% local government infrastructure surtaxes (TIP 25A01-12). Two of the surtaxes were suspended Jan 1 - May 31, 2025 and resumed June 1, 2025 (TIP 24A01-15, TIP 25A01-02)."
+      },
+      {
+        "id": "sales-surtax-pinellas",
+        "label": "County sales surtax in Pinellas County (the Penny for Pinellas)",
+        "value": "1%",
+        "as_of": "Effective Feb 1, 1990; expires Dec 31, 2029",
+        "source": "Florida Department of Revenue, Discretionary Sales Surtax Information (Form DR-15DSS, R. 11/24)",
+        "quote": null,
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+        "also_sources": [
+          "https://pinellas.gov/penny-for-pinellas/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "DR-15DSS row: 'Pinellas 1% Feb 1, 1990 Dec 31, 2029'. pinellas.gov/penny-for-pinellas/ says: 'The Penny for Pinellas is a voter-approved, one-cent sales tax used to pay for projects to improve Pinellas County infrastructure. The state rate is 6% (sales-tax-florida), so the combined rate is 6% + 1%; no page read states the 7% total for Pinellas, so it is not recorded as a separate fact."
+      },
+      {
+        "id": "tourist-tax-hillsborough",
+        "label": "Tourist development (bed) tax in Hillsborough County",
+        "value": "6%",
+        "as_of": "Form revised March 2025",
+        "source": "Florida Department of Revenue, Local Option Transient Rental Tax Rates (Form DR-15TDT, R. 03/25)",
+        "quote": "The local tax imposed is in addition to the 6% state sales tax and any applicable discretionary sales surtax.",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+        "checked": "2026-09-27",
+        "notes": "DR-15TDT row: 'Hillsborough 6.0% County' (collected by the county, not DOR). Applies to rentals of six months or less."
+      },
+      {
+        "id": "tourist-tax-pinellas",
+        "label": "Tourist development (bed) tax in Pinellas County",
+        "value": "6%",
+        "as_of": "Form revised March 2025",
+        "source": "Florida Department of Revenue, Local Option Transient Rental Tax Rates (Form DR-15TDT, R. 03/25)",
+        "quote": "The local tax imposed is in addition to the 6% state sales tax and any applicable discretionary sales surtax.",
+        "source_url": "https://floridarevenue.com/Forms_library/current/dr15tdt.pdf",
+        "checked": "2026-09-27",
+        "notes": "DR-15TDT row: 'Pinellas 6.0% County' (collected by the county, not DOR)."
+      },
+      {
+        "id": "gulf-water-temp-jan",
+        "label": "Average Gulf water temperature in January (St. Pete-Clearwater)",
+        "value": "64°F (17.7°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=1; water_f=64; water_c=17.7. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-feb",
+        "label": "Average Gulf water temperature in February (St. Pete-Clearwater)",
+        "value": "64°F (18°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=2; water_f=64; water_c=18. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-mar",
+        "label": "Average Gulf water temperature in March (St. Pete-Clearwater)",
+        "value": "67°F (19.3°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=3; water_f=67; water_c=19.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-apr",
+        "label": "Average Gulf water temperature in April (St. Pete-Clearwater)",
+        "value": "73°F (22.8°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=4; water_f=73; water_c=22.8. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-may",
+        "label": "Average Gulf water temperature in May (St. Pete-Clearwater)",
+        "value": "78°F (25.6°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=5; water_f=78; water_c=25.6. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-jun",
+        "label": "Average Gulf water temperature in June (St. Pete-Clearwater)",
+        "value": "82°F (28°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=6; water_f=82; water_c=28. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-jul",
+        "label": "Average Gulf water temperature in July (St. Pete-Clearwater)",
+        "value": "85°F (29.6°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=7; water_f=85; water_c=29.6. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-aug",
+        "label": "Average Gulf water temperature in August (St. Pete-Clearwater)",
+        "value": "87°F (30.4°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=8; water_f=87; water_c=30.4. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-sep",
+        "label": "Average Gulf water temperature in September (St. Pete-Clearwater)",
+        "value": "85°F (29.2°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=9; water_f=85; water_c=29.2. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-oct",
+        "label": "Average Gulf water temperature in October (St. Pete-Clearwater)",
+        "value": "81°F (27.3°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=10; water_f=81; water_c=27.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-nov",
+        "label": "Average Gulf water temperature in November (St. Pete-Clearwater)",
+        "value": "75°F (23.8°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=11; water_f=75; water_c=23.8. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "gulf-water-temp-dec",
+        "label": "Average Gulf water temperature in December (St. Pete-Clearwater)",
+        "value": "69°F (20.3°C)",
+        "source": "Visit St. Pete/Clearwater, Beaches FAQs ('Average Water Temperatures' table)",
+        "quote": null,
+        "source_url": "https://www.visitstpeteclearwater.com/info/beach-faqs",
+        "checked": "2026-09-27",
+        "notes": "month=12; water_f=69; water_c=20.3. The page gives no station or period for the averages. NOAA NCEI's Coastal Water Temperature Guide, the preferred source, was decommissioned on May 5, 2025 (https://www.ncei.noaa.gov/products/coastal-water-temperature-guide); read twice with WebFetch (the site returns 403 to curl)."
+      },
+      {
+        "id": "comfortable-swim-temperature",
+        "label": "Water temperature many people find comfortable for swimming",
+        "value": "70°F to 78°F",
+        "source": "NOAA National Centers for Environmental Information, Coastal Water Temperature Guide (FAQ)",
+        "quote": "There's no real optimal temperature, but many people feel “comfortable” swimming in water that is 70° to 78° Fahrenheit.",
+        "source_url": "https://www.ncei.noaa.gov/products/coastal-water-temperature-guide",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pinellas-beach-parking-daily",
+        "label": "Daily parking at Fort De Soto, Sand Key and Fred Howard parks",
+        "value": "$6 per vehicle",
+        "as_of": "Since January 1, 2025",
+        "source": "Pinellas County, 'Fort De Soto Park fort, dog beach, fishing piers reopen' (news, January 2025)",
+        "quote": "As of Jan. 1, 2025, daily parking fees at Fort De Soto Park, Sand Key Park, Fred Howard Park and county boat ramps increased to $6 per vehicle.",
+        "source_url": "https://pinellas.gov/news/fort-de-soto-park-fort-dog-beach-fishing-piers-reopen/",
+        "also_sources": [
+          "https://pinellas.gov/parks/fort-de-soto-park/",
+          "https://pinellas.gov/parks/sand-key-park/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pinellas-beach-parking-dec-2026",
+        "label": "Pinellas County beach parking from December 1, 2026",
+        "value": "$3.50 an hour, capped at $12 a day (plus tax)",
+        "as_of": "Announced rates effective December 1, 2026",
+        "source": "Pinellas County Parks & Conservation Resources, 'County Parks: Know Before You Go!' (last updated September 25, 2026)",
+        "quote": "Beach parking will be $3.50 per hour, capped at $12 per day.",
+        "source_url": "https://pinellas.gov/county-parks-know-before-you-go/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "helene-surge-clearwater-beach",
+        "label": "Hurricane Helene's peak water level at Clearwater Beach (Sep 26, 2024)",
+        "value": "6.67 ft above MHHW, a site record",
+        "as_of": "September 26, 2024",
+        "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+        "quote": "A peak water level of 6.67 feet above MHHW was measured at Clearwater Beach at 10:00 PM EST on September 26, surpassing the previous site record of 4.02 feet above MHHW",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+        "also_sources": [
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+          "https://www.weather.gov/tbw/TropicalEventSummary"
+        ],
+        "checked": "2026-09-27",
+        "notes": "MHHW = mean higher high water (the average height of the higher daily high tide). The previous record, 4.02 ft, was set in the March 13, 1993 Storm of the Century. St. Petersburg set a record of 6.31 ft in the same storm."
+      },
+      {
+        "id": "helene-surge-tampa",
+        "label": "Hurricane Helene's peak water level in Tampa (East Bay, Sep 26, 2024)",
+        "value": "7.2 ft above MHHW, a site record",
+        "as_of": "September 26, 2024",
+        "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+        "quote": "A peak water level of 7.2 feet above MHHW was measured at East Bay at 11:48 PM EST on September 26, surpassing the previous site record of 4.56 feet above MHHW",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+        "also_sources": [
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_Summary.pdf",
+          "https://www.weather.gov/tbw/TropicalEventSummary"
+        ],
+        "checked": "2026-09-27",
+        "notes": "The previous East Bay record, 4.56 ft, was set during Hurricane Idalia on August 30, 2023."
+      },
+      {
+        "id": "helene-deaths-pinellas",
+        "label": "Hurricane Helene deaths in Pinellas County",
+        "value": "12, all storm surge drownings",
+        "as_of": "Final issuance November 22, 2024",
+        "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Helene (2024), final issuance Nov 22, 2024",
+        "quote": "Twelve direct fatalities have been reported due to storm surge drownings.",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL09_Helene_ImpactNarratives.pdf",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "milton-landfall-category",
+        "label": "Hurricane Milton's strength at landfall (October 2024)",
+        "value": "Category 3",
+        "source": "National Weather Service Tampa Bay, Post Tropical Cyclone Report: Hurricane Milton",
+        "quote": "Hurricane Milton made landfall along the west-central Florida peninsula coast as a category 3 hurricane and brought devastating impacts along its path.",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf",
+        "also_sources": [
+          "https://www.weather.gov/tbw/TropicalEventSummary"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "milton-rain-st-pete",
+        "label": "Rain at St. Petersburg's Albert Whitted Airport on Oct 9, 2024 (Hurricane Milton)",
+        "value": "18.54 in, the site's one-day record",
+        "as_of": "October 9, 2024",
+        "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Milton (2024), final issuance Nov 22, 2024",
+        "quote": "Albert Whitted Airport (KSPG) shattered its previous 1-day total rainfall amount with 18.54 inches recorded on October 9",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf",
+        "also_sources": [
+          "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_Summary.pdf"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Previous record 6.93 in (Sep 14, 2001, Tropical Storm Gabrielle); site records date back to 1998. The NWS event summary PDF lists 18.88 in at Albert Whitted as the storm total."
+      },
+      {
+        "id": "milton-gust-st-pete",
+        "label": "Hurricane Milton's highest wind gust in Pinellas County",
+        "value": "101 mph at Albert Whitted Airport (Oct 9, 2024)",
+        "as_of": "October 9, 2024",
+        "source": "National Weather Service Tampa Bay, County Impacts Associated with Hurricane Milton (2024), final issuance Nov 22, 2024",
+        "quote": "Surface observations indicate peak wind gusts generally between 80 to 100 mph, with a maximum gust of 101 mph at Albert Whitted Airport at 9:29 PM EST on October 9.",
+        "source_url": "https://www.weather.gov/media/tbw/TropicalEventSummary/PSHTBW_2024AL14_Milton_ImpactNarratives.pdf",
+        "checked": "2026-09-27"
+      }
+    ],
+    "places": [
+      {
+        "id": "unlock-tampa-bay-visitors-center",
+        "name": "Unlock Tampa Bay Visitors Center",
+        "aliases": [
+          "Visit Tampa Bay Visitors Center",
+          "Tampa Bay Visitor Information Center"
+        ],
+        "kind": "visitor-center",
+        "kinds": [
+          "shopping"
+        ],
+        "topics": [],
+        "area": "downtown-tampa",
+        "address": "201 N. Franklin St., Suite 102",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.946204,
+        "lng": -82.457211,
+        "geo_source": "census",
+        "url": "https://www.visittampabay.com/about/",
+        "phone": "(813) 223-2752",
+        "hours_text": "Store hours: Monday–Friday 8 a.m.–6 p.m.; Saturday 10 a.m.–6 p.m.; Sunday 11 a.m.–5 p.m.",
+        "summary": "Visit Tampa Bay's visitor center and gift shop on the ground floor of Tampa City Center, with visitor information staff, maps and visitor guides, and the Tampa Riverwalk Attraction Pass for sale.",
+        "quote": "When in Tampa, stop by our Visitors Center & Gift Shop for information on Tampa Bay from knowledgeable visitor information counselors and shop for unique gifts and souvenirs to commemorate your trip.",
+        "quote_source": "https://www.visittampabay.com/about/",
+        "accessibility": "Visit Tampa Bay says the center's team is trained in the Hidden Disabilities Sunflower program and gives out sunflower lanyards, and that EnChroma color-blindness glasses can be rented there (call ahead to confirm availability).",
+        "status": "open",
+        "tags": [
+          "visitor-information",
+          "maps",
+          "gift-shop"
+        ],
+        "source_url": "https://shop.visittampabay.com/pages/about-us",
+        "also_sources": [
+          "https://www.visittampabay.com/about/",
+          "https://www.visittampabay.com/media/faqs/",
+          "https://www.visittampabay.com/accessible-travel/"
+        ],
+        "notes": "Hours are labeled 'Store Hours' on shop.visittampabay.com/pages/about-us. The FAQ says it is 'at the bottom of Tampa City Center'. Geocode matched '201 N FRANKLIN ST, TAMPA, FL, 33602' (Census).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "ybor-city-visitor-information-center",
+        "name": "Ybor City Visitor Information Center",
+        "aliases": [
+          "Ybor City Chamber of Commerce Visitor Information Center & Gift Shop"
+        ],
+        "kind": "visitor-center",
+        "kinds": [
+          "shopping"
+        ],
+        "topics": [
+          "history",
+          "latin-heritage"
+        ],
+        "area": "ybor-city",
+        "address": "1600 E. 8th Ave., Suite B104",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33605",
+        "lat": 27.96105,
+        "lng": -82.44167,
+        "geo_source": "census",
+        "url": "https://www.ybor.org/visitor-information-center-gift-shop/",
+        "phone": "(813) 241-8838",
+        "hours_text": "Monday–Saturday 10 a.m.–4 p.m.; Sunday noon–4 p.m.",
+        "summary": "The Ybor City Chamber of Commerce's visitor information center and gift shop, selling Ybor City-themed souvenirs, collectibles and apparel.",
+        "status": "open",
+        "tags": [
+          "visitor-information",
+          "gift-shop"
+        ],
+        "source_url": "https://www.ybor.org/visitor-information-center-gift-shop/",
+        "notes": "The chamber's business office is separate (1800 E. 9th Ave., 813-248-3712). Geocode matched '1600 E 8TH AVE, TAMPA, FL, 33605' (Census).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tarpon-springs-visitors-center",
+        "name": "Tarpon Springs Chamber of Commerce Visitor's Center",
+        "aliases": [
+          "Tarpon Springs Visitor's Center",
+          "Sponge Docks Visitor Center"
+        ],
+        "kind": "visitor-center",
+        "topics": [],
+        "area": "tarpon-springs",
+        "address": "100 Dodecanese Blvd.",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.155469,
+        "lng": -82.75755,
+        "geo_source": "census",
+        "url": "https://www.tarponspringschamber.org/",
+        "hours_text": "Monday–Sunday 10:30 a.m.–3:30 p.m.",
+        "summary": "The Tarpon Springs Chamber of Commerce's visitor center at the Sponge Docks on Dodecanese Boulevard.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.tarponspringschamber.org/",
+        "notes": "Chamber page lists 'Visitor's Center: 100 Dodecanese Blvd (Sponge Docks) Monday - Sunday 10:30am - 3:30pm'. The chamber office is at 1 N. Pinellas Ave. (727-937-6109, office hours Mon–Fri 9–4); that phone is the office's, so it is not given as the visitor center's. Geocode matched '100 DODECANESE BLVD, TARPON SPRINGS, FL, 34689' (Census).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "beach-welcome-center-indian-rocks-beach",
+        "name": "Beach Welcome Center",
+        "kind": "visitor-center",
+        "topics": [
+          "beaches"
+        ],
+        "area": "indian-rocks-beach",
+        "address": "105 5th Ave. N.",
+        "city": "Indian Rocks Beach",
+        "state": "FL",
+        "zip": "33785",
+        "lat": 27.884079,
+        "lng": -82.850471,
+        "geo_source": "census",
+        "url": "https://www.beachwelcomecenter.com/",
+        "phone": "(727) 595-4575",
+        "hours_text": "In-person services Monday–Friday 10 a.m.–4 p.m.",
+        "summary": "A welcome center in downtown Indian Rocks Beach, near 5th Avenue and Gulf Boulevard, that gives visitors local information and sells discounted tickets to local attractions.",
+        "quote": "We offer a wealth of knowledge and guidance to visitors and locals alike.",
+        "status": "open",
+        "tags": [
+          "visitor-information",
+          "attraction-tickets"
+        ],
+        "source_url": "https://www.beachwelcomecenter.com/",
+        "notes": "The site also lists (800) 926-9303. It sells attraction tickets and has member businesses, so it is not a government office. Geocode matched '105 5TH AVE N, INDIAN ROCKS BEACH, FL, 33785' (Census).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visit-sarasota-downtown-visitor-center",
+        "name": "Visit Sarasota County Visitor Center (Downtown Sarasota)",
+        "kind": "visitor-center",
+        "topics": [],
+        "area": "sarasota",
+        "address": "1945 Fruitville Rd.",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34236",
+        "lat": 27.338879,
+        "lng": -82.531725,
+        "geo_source": "census",
+        "url": "https://www.visitsarasota.com/visitor-information",
+        "phone": "941-706-1253",
+        "hours_text": "Monday–Friday 10 a.m.–4 p.m.",
+        "summary": "Visit Sarasota County's downtown Sarasota visitor center, one of the county tourism office's visitor centers.",
+        "status": "open",
+        "tags": [
+          "visitor-information"
+        ],
+        "source_url": "https://www.visitsarasota.com/visitor-information",
+        "notes": "Read with WebFetch (curl gets 403). The page also lists a Venice center (597 S Tamiami Trail, Mon–Fri 10–4) and the Sarasota Bradenton International Airport Welcome Center (6000 Airport Circle, 'Accessible 24/7'), not recorded here. Geocode matched '1945 FRUITVILLE RD, SARASOTA, FL, 34236' (Census).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "visit-central-florida-welcome-center",
+        "name": "Visit Central Florida Welcome Center",
+        "aliases": [
+          "Central Florida's Welcome Center"
+        ],
+        "kind": "visitor-center",
+        "kinds": [
+          "shopping"
+        ],
+        "topics": [
+          "family"
+        ],
+        "area": "polk",
+        "address": "101 Adventure Court",
+        "city": "Davenport",
+        "state": "FL",
+        "zip": "33837",
+        "lat": 28.223154,
+        "lng": -81.645224,
+        "geo_source": "photon",
+        "url": "https://visitcentralflorida.org/visitor-services/",
+        "phone": "800-828-7655",
+        "hours_text": "8 a.m.–5 p.m., 7 days a week",
+        "summary": "Polk County's main welcome center, on U.S. 27 half a mile south of I-4 Exit 55, with free maps and brochures, discount attraction tickets, a gift shop and fresh orange juice samples.",
+        "status": "open",
+        "tags": [
+          "visitor-information",
+          "attraction-tickets",
+          "gift-shop"
+        ],
+        "source_url": "https://visitcentralflorida.org/visitor-services/visitor-information-center-locations/",
+        "also_sources": [
+          "https://visitcentralflorida.org/visitor-services/"
+        ],
+        "notes": "Coordinates are the OpenStreetMap street 'Adventure Court' (Photon matched 'Adventure Court, 33896', way W11267686), not the building; the Census geocoder matched a different street (101 Adventure Ave), so it was not used. The location description (Hwy 27, 1/2 mile south of I-4 at Exit 55), OJ samples and free maps/Wi-Fi/restrooms are on visitcentralflorida.org/visitor-services/. Polk also has kiosks at Lakeland Linder International Airport, LEGOLAND Florida Resort and the RP Funding Center (not recorded).",
+        "checked": "2026-09-27"
+      }
+    ]
+  },
+  "report": "## practical slice: what a first-time visitor needs to know (checked Sep 27, 2026)\n\n### Covered\n- **71 faqs** in nine topics:\n\n  | Topic | FAQs |\n  |---|---|\n  | Beaches & water safety | 14 |\n  | Accessibility | 10 |\n  | Weather & hurricanes | 9 |\n  | Alcohol & rules | 8 |\n  | Safety | 8 |\n  | When to visit | 7 |\n  | Money & taxes | 6 |\n  | Visitor information | 5 |\n  | Sun & heat | 4 |\n\n  Every answer is our plain wording of what `source_url` states. `also_sources` hold supporting pages, and `notes` say which page gives which detail when an answer draws on two.\n- **65 facts**:\n  - **Monthly climate (24).** Average high, low and rain for each month, as `climate-<tampa|stpete>-<mon>`. They come from the NOAA NCEI 1991-2020 U.S. Climate Normals data service, for Tampa International Airport (USW00012842) and St. Petersburg/Albert Whitted Airport (USW00092806). The raw numbers are repeated in `notes` (`month=; tmax_f=; tmin_f=; prcp_in=`) for charts.\n  - **Annual normals (6).**\n  - **First cool nights (3).** From the NWS Tampa Bay page on when it usually cools off.\n  - **Hurricane season (3).** From the NHC climatology page.\n  - **2024 hurricanes (6).** From the NWS Tampa Bay post-storm reports: Helene's record surge at Clearwater Beach and East Bay, 12 surge deaths in Pinellas, Milton's Category 3 landfall, and the 101 mph gust and 18.54 in one-day rain at Albert Whitted.\n  - **Lightning (3).** All from NWS pages.\n  - **Taxes (5).** From the Florida Department of Revenue: the 6% state rate; Hillsborough's 7.5% per TIP 25A01-12 (Dec 1, 2025); the Pinellas 1% surtax; and the 6% tourist development tax in each county.\n  - **Gulf water temperature (13).** Twelve monthly figures, as `gulf-water-temp-<mon>`, plus NOAA's statement that 70-78 F is comfortable.\n  - **Pinellas beach parking (2).** $6 a day now; $3.50 an hour capped at $12 a day from Dec 1, 2026.\n- **6 places** (`visitor-center`, all geocoded):\n  - Unlock Tampa Bay Visitors Center (downtown Tampa)\n  - Ybor City Visitor Information Center\n  - Tarpon Springs Chamber Visitor's Center (Sponge Docks)\n  - Beach Welcome Center (Indian Rocks Beach)\n  - Visit Sarasota County's downtown visitor center (day trips)\n  - Visit Central Florida Welcome Center in Davenport (Polk, day trips)\n\n### How candidates were found\n- **Official tourism sites.**\n  - Visit Tampa Bay: media FAQ, fast facts, About, accessible travel, and its shop's About page, which gives the visitor center hours.\n  - Visit St. Pete/Clearwater: the FAQ hub and its weather, beach, red tide, visitor resources and pets FAQs, plus the current beach conditions page, the accessible beaches guide and the dog-friendly beaches article.\n- **Federal and state agencies.**\n  - NOAA NCEI: the normals data service and the Coastal Water Temperature Guide page.\n  - NWS Tampa Bay: 1991-2020 normals, the cool-off page, heat index, beach forecast and tropical event summaries (PDFs).\n  - NWS safety pages on rip currents, lightning and heat.\n  - NHC: climatology and glossary.\n  - NOAA Ocean Service: rip currents.\n  - Florida DEP: the beach warning flag program and its sign image; also s. 380.276 F.S.\n  - FWC: red tide status, general and FAQ pages; alligators.\n  - Florida Department of Revenue: DR-15DSS, DR-15TDT and the TIP indexes for 2025 and 2026.\n  - Florida DEM: Know Your Zone.\n  - Florida DOH: Healthy Beaches.\n- **Counties.**\n  - Hillsborough County: the HEAT evacuation zone lookup and HCFL Alert.\n  - Pinellas County, searched with the site's own search API: evacuation, Alert Pinellas, the disaster FAQ, park rules, dog parks, the parks FAQ, Fort De Soto and Sand Key, the Know Before You Go park updates, the red tide page and the dengue emergency news.\n- **Cities and venues.**\n  - City of Clearwater: beach rules, pets, beach wheelchairs, beach mats and accessible parking.\n  - City of Tampa: beaches and dog parks.\n  - St. Pete Pier: its FAQ.\n- **Attraction accessibility pages.** Busch Gardens, Florida Aquarium, the Dali and the Tampa Museum of Art.\n- **Visitor centers.** We went through chamber and CVB sites for Ybor, St. Pete, Clearwater, Tarpon Springs, Tampa Bay Beaches, Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando, Citrus, Polk, Sarasota and Bradenton.\n- **No web search.** The session's WebSearch budget was already used up when this slice started. Discovery went through official site navigation, sitemaps and site search APIs.\n\n### Left out on purpose\n- **NOAA water temperatures.** The NCEI Coastal Water Temperature Guide the brief named was decommissioned on May 5, 2025 (its NCEI page says so), and web.archive.org is unreachable from here. The monthly Gulf water temperatures therefore come from Visit St. Pete/Clearwater's beach FAQ table, which names no station or period. We did not compute averages from raw NOAA gauge data.\n- **Visitor centers not recorded.**\n  - **St. Petersburg.** The St. Pete Store & Visitor's Center page on stpete.com has no address or hours, and thestpetestore.com serves a captcha. It is covered by the FAQ `visitor-center-st-pete`, which gives the chamber's address, not a place.\n  - **Clearwater Beach.** clearwaterflorida.org fails TLS or returns 503, and no other page names a walk-in center.\n  - **Tampa Bay Beaches Chamber** (6990 Gulf Blvd.). Its site never calls its office a visitor center.\n  - **Dunedin, Safety Harbor, Plant City, Gulfport, Anna Maria, East Pasco, Hernando and Citrus.** No readable page gives a walk-in center with hours.\n  - **Venice and the airport kiosks** listed by Sarasota and Polk.\n- **Facts no official page states.** Tipping, the time zone and any combined hotel-tax total. Taxes are given as parts only: Pinellas is 6% + 1%, never \"7%\".\n- **Sea turtle nesting-season rules.** County pages disagree on the months (Sand Key: April-October; Fort De Soto: April-September).\n- **Pages we could not read.**\n  - floridastateparks.org returns 403, so the Honeymoon Island dog beach and beach wheelchair details come from Visit St. Pete/Clearwater.\n  - The ZooTampa accessibility page serves a captcha, and the Clearwater Marine Aquarium accessibility URL was not found.\n\n### Open questions for the verifier\n1. **Dengue FAQ** (`dengue-mosquitoes`). It rests on the Pinellas County news item of Sep 24, 2026, so it is time-sensitive. Re-check before publishing.\n2. **Marine-life flag color.** Visit St. Pete/Clearwater's current-conditions page says 'Blue' for hazardous marine life. The DEP state sign, read from the image on the DEP program page, shows purple for stinging marine life. We follow DEP.\n3. **Clearwater smoking ban.** The Clearwater beach rules page shows smoking only as a 'No Smoking' heading. Confirm the wording.\n4. **Hillsborough and Pinellas sales tax.** The DR-15DSS at /Forms_library/current/ is still R. 11/24 (calendar 2025). Hillsborough's 7.5% rests on TIP 25A01-12 (Dec 1, 2025). We found no 2026 TIP that changes Hillsborough or Pinellas.\n5. **St. Petersburg normals station.** We used USW00092806 (St. Petersburg AP/Albert Whitted ASOS). The co-located COOP station USC00087886 has slightly different normals, and the PIE station USW00012873 differs more.\n6. **Davenport welcome center coordinates.** They are the OSM street Adventure Court, not the building. The Census geocoder matched a different street.\n7. **Pinellas beach parking.** The Dec 1, 2026 change comes from the Sep 25, 2026 park updates page. Re-check after Dec 1.\n8. **Pages read only through WebFetch.** myclearwater.com, visitstpeteclearwater.com, visitsarasota.com and buschgardens.com return 403 or a captcha to curl. Key wording was re-fetched with copy-exactly prompts, but a human check of exact wording is worthwhile.\n"
+}

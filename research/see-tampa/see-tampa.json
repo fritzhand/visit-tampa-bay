@@ -28,20 +28,20 @@
         "geo_source": "photon",
         "url": "https://buschgardens.com/tampa/",
         "phone": "(813) 884-4386",
-        "hours_text": "Opening and closing times vary by season; see the park's hours calendar.",
-        "price_text": "Single-day tickets online; the park advertised tickets from $61.99 (limited-time offer, Sep 2026).",
+        "hours_text": "Opening and closing times change by season; the park publishes a daily hours calendar.",
+        "price_text": "Tickets advertised from $61.99 online (Sep 27, 2026).",
         "summary": "A theme park that combines roller coasters and thrill rides with a zoo of more than 200 animal species, safaris, animal encounters and live shows. Seasonal events include Howl-O-Scream and Christmas Town.",
         "quote": "Busch Gardens Tampa Bay is Florida's ultimate theme park, blending world-class thrill rides, award-winning roller coasters, and one of North America's largest zoos with over 200 species.",
         "signature": true,
         "status": "open",
         "accessibility": "Manual wheelchairs ($37) and four-wheel electric wheelchairs ($115) can be reserved before your visit; the park publishes an accessibility guide.",
-        "parking_text": "Paid parking. The park's FAQ says general parking starts at $32 plus tax and preferred parking at $35, with rates varying by day; the add-ons page listed $35 general and $48 preferred.",
+        "parking_text": "Paid parking. The FAQ lists general parking from $32 plus tax and preferred parking from $35; the online add-ons page showed $35 general and $48 preferred for the date checked. Rates change with the season.",
         "source_url": "https://buschgardens.com/tampa/",
         "also_sources": [
           "https://buschgardens.com/tampa/faq/",
           "https://buschgardens.com/tampa/upgrades/more-add-ons/"
         ],
-        "notes": "Parking prices differ between the FAQ and the add-ons page (both read Sep 27, 2026); the park says rates are seasonal.",
+        "notes": "Parking prices differ between the FAQ and the add-ons page (both read Sep 27, 2026); the park says rates are seasonal. Verified 2026-09-27: quote, 200+ species, Howl-O-Scream and Christmas Town, $61.99 ('Tickets as low as $61.99'), wheelchair $37 and ECV $115 (add-ons page), parking figures and phone re-read. hours_text reworded from the FAQ ('Opening and closing times vary by season').",
         "checked": "2026-09-27"
       },
       {
@@ -65,18 +65,18 @@
         "lng": -82.413526,
         "geo_source": "photon",
         "url": "https://adventureisland.com/",
-        "hours_text": "Seasonal. In fall 2026 the park opens Fridays to Sundays (plus Monday, Oct 12); check the hours calendar.",
+        "hours_text": "10:30 AM–5 PM on operating days (Sep 27, 2026). Fall 2026 operating days are Fridays to Sundays plus Monday, Oct 12.",
         "price_text": "The park advertised tickets from $41.99 online (limited-time offer, Sep 2026).",
         "summary": "A seasonal water park with water slides, pools, a lazy river and children's attractions, on McKinley Drive next to Busch Gardens Tampa Bay.",
         "status": "seasonal",
-        "status_note": "Adventure Island says it is a seasonal water park. Its hours calendar lists operating dates through Sunday, Oct 25, 2026 and resumes in March 2027 (checked Sep 27, 2026).",
+        "status_note": "Adventure Island says it is a seasonal water park. Its hours calendar offers no months between October 2026 and March 2027; Main Street Magic (Sep 9, 2026) reads the calendar as Friday–Sunday operation plus Monday, Oct 12, ending Sunday, Oct 25, 2026.",
         "source_url": "https://adventureisland.com/park-info/water-park-hours/",
         "also_sources": [
           "https://adventureisland.com/",
           "https://adventureisland.com/park-info/ride-attraction-schedule/",
           "https://www.mainstmagic.com/adventure-island-hours-fall-2026/"
         ],
-        "notes": "Official calendar month picker jumps from October 2026 to March 2027. The Oct 25 last day and Fri-Sun pattern are from Main Street Magic's reading of the official calendar. The rides page listed Wahoo Remix as closed (Sep 27, 2026). 'Next to Busch Gardens': both parks are on N McKinley Dr (10001 and 10165).",
+        "notes": "Official calendar month picker jumps from October 2026 to March 2027. The Oct 25 last day and Fri-Sun pattern are from Main Street Magic's reading of the official calendar. The rides page listed Wahoo Remix as closed (Sep 27, 2026). 'Next to Busch Gardens': both parks are on N McKinley Dr (10001 and 10165). Verified 2026-09-27: the official calendar's day-by-day October dates do not render in WebFetch or the reader; 'Open today 10:30 AM to 5:00 PM', 'Tickets as low as $41.99' and 'Adventure Island is a seasonal water park' were read on the official pages. The Oct 12 and Oct 25 dates are attributed to Main Street Magic.",
         "checked": "2026-09-27"
       },
       {
@@ -96,25 +96,24 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33604",
-        "lat": 28.010803,
-        "lng": -82.471742,
-        "geo_source": "census",
+        "lat": 28.015011,
+        "lng": -82.46993,
+        "geo_source": "photon",
         "url": "https://zootampa.org/",
         "phone": "(813) 935-8552",
         "hours_text": "9:30 AM–5:00 PM, seven days a week.",
         "price_text": "Same-day tickets $51.95 adults (12+), $41.95 children (3–11); $3 less when bought in advance.",
-        "summary": "A zoo on West Sligh Avenue in Lowry Park. Its new Florida Waters exhibit features manatees, otters, jellies, reptiles and amphibians.",
-        "quote": "ZooTampa offers one-of-a-kind experiences that connect people to wildlife and each other in fun and immersive ways.",
+        "summary": "A zoo in Lowry Park on West Sligh Avenue, open daily. Wikipedia describes it as a 63-acre zoo with more than 1,300 animals; its Florida section includes West Indian manatees.",
         "signature": true,
         "status": "open",
         "parking_text": "A daily parking fee of $7 (paid through ParkMobile) applies to non-members; parking is free for members.",
         "source_url": "https://zootampa.org/visit/",
         "also_sources": [
-          "https://zootampa.org/",
-          "https://zootampa.org/visit/admissions/"
+          "https://zootampa.org/visit/admissions/",
+          "https://en.wikipedia.org/wiki/ZooTampa_at_Lowry_Park"
         ],
         "checked": "2026-09-27",
-        "quote_source": "https://zootampa.org/"
+        "notes": "Verified 2026-09-27: hours (9:30 AM-5 PM, 7 days), prices ($51.95/$41.95 same day, $3 less in advance), $7 ParkMobile parking and phone (813-935-8552, on the visit page) confirmed. zootampa.org's home page is now behind a bot check, so the earlier quote and the 'Florida Waters' exhibit claim could not be re-read: both removed; summary rebuilt from Wikipedia. Coordinates moved from the Census street point to the OSM tourism=zoo feature (about 500 m)."
       },
       {
         "id": "florida-aquarium",
@@ -133,9 +132,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.943763,
-        "lng": -82.44713,
-        "geo_source": "census",
+        "lat": 27.944072,
+        "lng": -82.44488,
+        "geo_source": "photon",
         "url": "https://www.flaquarium.org/",
         "phone": "(813) 273-4000",
         "hours_text": "9 AM–5 PM most of the year (9 AM–6 PM June–July); closed Thanksgiving and Christmas; hours may vary on holidays.",
@@ -143,14 +142,15 @@
         "quote": "Immerse yourself in diverse ecosystems from tree level to sea level at The Florida Aquarium.",
         "signature": true,
         "status": "open",
-        "parking_text": "Valet $20 for up to 3 hours, $40 for more (not available when a cruise is at Terminal 2); public garages nearby include the Channelside garage and the Cumberland garage.",
+        "parking_text": "Valet $20 for up to 3 hours, $40 for longer (not offered on days when a cruise ship is at Terminal 2). Nearby: the Channelside garage (369 S 12th St), a City of Tampa lot (864 Channelside Dr) and the Cumberland garage (1045 E Cumberland Ave).",
         "source_url": "https://www.flaquarium.org/visit/visitor-information/plan-your-visit/",
         "also_sources": [
           "https://www.flaquarium.org/",
           "https://www.flaquarium.org/visit/visitor-information/parking/"
         ],
         "checked": "2026-09-27",
-        "quote_source": "https://www.flaquarium.org/"
+        "quote_source": "https://www.flaquarium.org/",
+        "notes": "Verified 2026-09-27: hours by season, holiday closures, phone, AZA accreditation, nonprofit, 72-foot catamaran, penguin and stingray encounters, valet prices and quote re-read (WebFetch). Parking garages corrected to the three the parking page names. Coordinates moved to the OSM tourism=aquarium feature (about 220 m from the Census street point)."
       },
       {
         "id": "tampa-museum-of-art",
@@ -168,15 +168,15 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.949795,
-        "lng": -82.462006,
-        "geo_source": "census",
+        "lat": 27.949471,
+        "lng": -82.462362,
+        "geo_source": "photon",
         "url": "https://tampamuseum.org/",
         "phone": "(813) 274-8130",
-        "hours_text": "Daily 10 AM–5 PM; Thursday until 8 PM.",
-        "price_text": "Adults $25; 65+ $15; K-12 students $5; children 6 and under and college students with ID free. Thursday 4–8 PM is pay-as-you-will.",
+        "hours_text": "Daily 10 AM–5 PM; Thursday until 8 PM. Closed Gasparilla day, Thanksgiving and Christmas.",
+        "price_text": "Adults $25; 65+, Florida educators and professional artists $15; K-12 students $5; children 6 and under, college students with ID and SNAP EBT participants free. Thursday 4–8 PM is pay-as-you-will.",
         "summary": "The city's art museum, founded in 1920, in a 2010 building by architect Stanley Saitowitz in Curtis Hixon Waterfront Park. It shows Greek and Roman antiquities alongside modern and contemporary art.",
-        "quote": "It proudly houses one of the most significant collections of Greek and Roman antiquities in the southeastern United States, as well as a vivid collection of modern and contemporary art.",
+        "quote": "It proudly houses one of the most significant collections of Greek and Roman antiquities in the southeastern United States, as well as a vivid collection of modern and contemporary art encompassing sculpture, photography, painting, textiles, and new media.",
         "quote_source": "https://tampamuseum.org/about/",
         "status": "open",
         "accessibility": "The museum says it is committed to making its building and programs accessible to visitors with disabilities.",
@@ -185,7 +185,7 @@
         "also_sources": [
           "https://tampamuseum.org/about/"
         ],
-        "notes": "The museum says it is preparing an expansion that will more than double the building's size; it stays open (Sep 2026).",
+        "notes": "The museum says it is preparing an expansion that will more than double the building's size; it stays open (Sep 2026). Verified 2026-09-27: prices, hours, closures, parking, boat slips and the 1920 founding / 2010 Saitowitz building re-read. Quote extended to the end of the source's sentence (it had been cut mid-sentence). Coordinates moved to the OSM museum feature.",
         "checked": "2026-09-27"
       },
       {
@@ -208,13 +208,13 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33606",
-        "lat": 27.945597,
-        "lng": -82.463929,
-        "geo_source": "census",
+        "lat": 27.946213,
+        "lng": -82.464182,
+        "geo_source": "photon",
         "url": "https://www.plantmuseum.com/",
         "phone": "(813) 254-1891",
-        "hours_text": "Tuesday–Saturday 10 AM–5 PM; Sunday noon–5 PM; closed Monday.",
-        "price_text": "Adults $12; seniors (65+) $10; students $9; youth (4–12) $7; infants free.",
+        "hours_text": "Tuesday–Saturday 10 AM–5 PM; Sunday noon–5 PM; closed Monday (the museum's regular hours, January–November).",
+        "price_text": "Adults $12; seniors (65+) $10; students $9; youth (4–12) $7; infants and members free.",
         "summary": "A museum in the former Tampa Bay Hotel, Henry B. Plant's winter resort of 1891–1932, a building it shares with the University of Tampa. Its rooms show the furnishings used by the hotel's first guests.",
         "quote": "The Henry B. Plant Museum is housed in the former Tampa Bay Hotel, an opulent winter resort that operated from 1891 - 1932.",
         "signature": true,
@@ -242,14 +242,15 @@
             "https://en.wikipedia.org/wiki/Tampa_Bay_Hotel"
           ]
         },
-        "accessibility": "Ramps at the north end and west side of the building; a free wheelchair (first come, first served); multilingual audio guides, large-print materials and White Glove Tours for visitors who are blind or have low vision.",
+        "accessibility": "Ramps at the north end and west side of the building; a free wheelchair (first come, first served); a free self-guided audio tour in English and Spanish with large-print transcripts; White Glove Tours for visitors who are blind or partially sighted (two weeks' notice).",
         "parking_text": "Free parking in front of the museum; overflow in the free Thomas Parking Garage, 820 W North A St, about a five-minute walk.",
         "source_url": "https://www.plantmuseum.com/",
         "also_sources": [
           "https://www.plantmuseum.com/discover/visit-accessibility",
           "https://en.wikipedia.org/wiki/Tampa_Bay_Hotel"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verified 2026-09-27: quote, 1891-1932 hotel dates, National Historic Landmark and furnishings claim re-read on plantmuseum.com; hours, prices, ramps, wheelchair, audio tour and parking re-read on the visit/accessibility page (hours there are labeled January-November; December hours are set for the Victorian Christmas Stroll). Heritage facts (1888-1891, John A. Wood, Moorish Revival, NRHP 72000322 in 1972, NHL 1976, Rough Riders, 1933, 1974 renaming) confirmed on Wikipedia. 'Multilingual audio guides' corrected to English and Spanish. Coordinates moved to the OSM museum node."
       },
       {
         "id": "tampa-bay-history-center",
@@ -265,23 +266,26 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.94197,
-        "lng": -82.449991,
+        "lat": 27.942253,
+        "lng": -82.449906,
         "geo_source": "photon",
         "url": "https://tampabayhistorycenter.org/",
         "phone": "(813) 228-0097",
         "hours_text": "Daily 10 AM–5 PM.",
         "price_text": "Adults $18.95; seniors (60+) $16.95; youth (7–17) $14.95; children 6 and under free.",
-        "summary": "A regional history museum on the Riverwalk whose permanent galleries include the Treasure Seekers gallery and the Touchton Map Library of more than 8,000 maps, charts and logs. The Columbia Cafe inside serves Spanish- and Cuban-inspired dishes.",
+        "summary": "A regional history museum on the Riverwalk whose galleries include Treasure Seekers and the Touchton Map Library, which holds thousands of maps, charts and other documents. The Columbia Cafe inside serves Spanish- and Cuban-inspired dishes.",
         "quote": "Located on Tampa's Riverwalk, the museum is nationally accredited by the American Alliance of Museums and affiliated with the Smithsonian Institution.",
         "quote_source": "https://tampabayhistorycenter.org/",
         "status": "open",
-        "parking_text": "Garages and lots within walking distance: the Garrison lot (615 Channelside Dr), East Cumberland Garage (1045 E Cumberland Ave) and Channelside garage (369 S 12th St); ParkWhiz pre-booking.",
+        "parking_text": "Garages and lots within walking distance: the Sparkman Parking Lot (615 Channelside Dr), the East Cumberland garage (1045 E Cumberland Ave) and the Channelside garage (369 S 12th St).",
         "source_url": "https://tampabayhistorycenter.org/visit/",
         "also_sources": [
-          "https://tampabayhistorycenter.org/"
+          "https://tampabayhistorycenter.org/",
+          "https://tampabayhistorycenter.org/exhibit/touchton-map-library/",
+          "https://tampabayhistorycenter.org/columbia-cafe/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verified 2026-09-27: hours, prices, phone and quote re-read. The Touchton library's '8,000 maps' is not on its page ('thousands of maps, charts, and other documents'), so the number was removed. The 615 Channelside Dr lot is the 'Sparkman Parking Lot' on the visit page (not 'Garrison lot'); ParkWhiz is not mentioned there. The college price is printed as '$16.9', so it is left out. Coordinates moved from the Columbia Cafe node to the museum's OSM building."
       },
       {
         "id": "mosi",
@@ -320,7 +324,8 @@
           "https://mosi.org/hours-directions-parking/",
           "https://www.wusf.org/science-space/2026-01-28/tampas-mosi-gets-a-new-name-and-an-expanded-learning-space"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verified 2026-09-27: hours, prices ($20 adults 18+, $15 ages 3-17, planetarium show included), free parking and the January 2026 renaming (WUSF, Jan 28, 2026) re-read."
       },
       {
         "id": "glazer-childrens-museum",
@@ -335,23 +340,26 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.949805,
-        "lng": -82.461883,
-        "geo_source": "census",
+        "lat": 27.949604,
+        "lng": -82.46152,
+        "geo_source": "photon",
         "url": "https://glazermuseum.org/",
         "phone": "(813) 443-3861",
         "hours_text": "Tuesday–Sunday 9:30 AM–5 PM after Labor Day until Memorial Day (daily in summer).",
-        "price_text": "General admission $27.95; Florida residents $22.95; babies under 1 free.",
-        "summary": "A children's museum with 35,000 square feet of interactive play exhibits, next door to the Tampa Museum of Art on Gasparilla Plaza.",
-        "quote": "With 35,000 square feet of interactive exhibits, there's always something new to discover.",
+        "price_text": "General admission $27.95; Florida residents $22.95 (Florida ID required); babies under 1 and members free.",
+        "summary": "A children's museum with 35,000 square feet of hands-on play exhibits, next door to the Tampa Museum of Art on Gasparilla Plaza.",
+        "quote": "Our thoughtfully curated exhibits invite children to splash, climb, build, pretend, create, and discover at their own pace.",
         "status": "open",
         "accessibility": "Accessible entrances and parking, sensory-friendly experiences and Social Stories; van-accessible spaces on levels 1, 2 and 4 of the Poe Garage.",
         "parking_text": "The William F. Poe Garage next to the museum (ParkMobile).",
         "source_url": "https://glazermuseum.org/visit/",
         "also_sources": [
-          "https://glazermuseum.org/"
+          "https://glazermuseum.org/",
+          "https://glazermuseum.org/exhibits/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "quote_source": "https://glazermuseum.org/exhibits/",
+        "notes": "Verified 2026-09-27: hours, prices, Poe Garage parking and accessible spaces re-read. The earlier quote ('With 35,000 square feet of interactive exhibits...') is not on any page read; replaced with a sentence from the exhibits page, whose heading is '35,000 square feet of play.' Coordinates moved to the OSM museum feature."
       },
       {
         "id": "ybor-city-museum-state-park",
@@ -374,35 +382,42 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.961739,
-        "lng": -82.438956,
-        "geo_source": "census",
+        "lat": 27.961926,
+        "lng": -82.438611,
+        "geo_source": "photon",
         "url": "https://www.floridastateparks.org/parks-and-trails/ybor-city-museum-state-park",
         "phone": "(813) 247-6323",
-        "hours_text": "Wednesday–Sunday 9 AM–4 PM; closed on major holidays.",
-        "price_text": "$4 per person.",
-        "summary": "A state museum in a former Cuban bread bakery, with exhibits on the founders of Ybor City, the cigar industry and the immigrant groups who worked in it. A ranger or docent tour of a restored cigar worker's casita and the garden is part of the visit.",
-        "quote": "Exhibits are housed in an historic bakery featuring displays on the founders of Ybor City, the cigar industry, information on all the nationalities involved, a cigar work station, and information about the lifestyles of residents.",
+        "hours_text": "Wednesday–Sunday 9 AM–4 PM; closed Thanksgiving, Christmas and New Year's Day.",
+        "price_text": "$4 per person; children 5 and younger free.",
+        "summary": "A state museum in the former Ferlita Bakery, with self-guided exhibits, audio and a video on the founding of Ybor City, the cigar industry and the immigrant groups who worked in it. The grounds include an ornamental garden and a restored cigar worker's house, La Casita, with guided tours on request.",
+        "quote": "The museum, housed in the historic Ferlita Bakery, traces the rich cultural history of Ybor City and the cigar-making industry.",
         "signature": true,
         "status": "open",
         "heritage": {
-          "built": "1923",
-          "era": "land-boom",
-          "story": "The museum occupies the Ferlita Bakery building; the bakery, first called La Joven Francesca, was founded in 1896 by Francisco Ferlita and baked Cuban bread until it closed in 1973. The building was then converted into the state museum, and its original bread ovens are on display. The grounds include restored casitas, the small houses of cigar workers' families.",
-          "visiting": "Museum galleries, the garden and a guided visit to a furnished casita are included in admission.",
+          "era": "boomtown",
+          "designations": [
+            {
+              "name": "National Register of Historic Places"
+            }
+          ],
+          "story": "Francisco Ferlita, a Sicilian-born baker, founded La Joven Francesca bakery in Ybor City in 1896, and it baked Cuban bread for the neighborhood. After a fire in 1922 the bakery was rebuilt with a second brick oven, and it made bread until 1973. The building was acquired in 1976 and opened as a museum in September 1980; the brick ovens are still inside. The Ybor City Chamber says the Ferlita Bakery building is listed in the National Register of Historic Places.",
+          "visiting": "Self-guided exhibits with written and audio information and a video; guided tours of La Casita on request; the ornamental garden.",
           "sources": [
             "https://en.wikipedia.org/wiki/Ybor_City_Museum_State_Park",
-            "https://www.florida-backroads-travel.com/ybor-city-museum-state-park.html"
+            "https://www.floridastateparks.org/learn/ferlita-bakery-ybor-city",
+            "https://www.ybor.org/vic/ybor-museums/"
           ]
         },
         "parking_text": "Street parking is limited; the TECO Line Streetcar stops in Ybor City.",
-        "source_url": "https://www.ybor.org/vic/ybor-museums/",
+        "source_url": "https://www.floridastateparks.org/parks-and-trails/ybor-city-museum-state-park",
         "also_sources": [
+          "https://www.floridastateparks.org/parks-and-trails/ybor-city-museum-state-park/hours-fees",
+          "https://www.floridastateparks.org/learn/ferlita-bakery-ybor-city",
+          "https://www.ybor.org/vic/ybor-museums/",
           "https://en.wikipedia.org/wiki/Ybor_City_Museum_State_Park",
-          "https://www.florida-backroads-travel.com/ybor-city-museum-state-park.html",
           "https://www.ybormuseum.org/"
         ],
-        "notes": "floridastateparks.org returned 403 to WebFetch and curl (Cloudflare), so it is only the url, not a source. Built 1923 comes from Florida Backroads Travel (secondary); verifier please confirm against the state park or NRHP.",
+        "notes": "Verified 2026-09-27: floridastateparks.org now reads through the reader proxy; hours, closures, fee (children 5 and under free), phone and address come from the park's own pages. Built year removed: Florida State Parks' Ferlita page says the bakery was built in 1835 (it also says 1922 fire, rebuilt), Wikipedia says established 1896, and the earlier '1923' came from a travel site, so the year is left out; era is set from the 1896 founding. 'Ranger or docent tour ... part of the visit' was not supported (the Chamber says La Casita tours are 'available upon request'). Wikipedia says the building was converted to a museum soon after 1973; the Chamber's 1976 acquisition / 1980 opening is used. Coordinates moved to the OSM park feature.",
         "checked": "2026-09-27"
       },
       {
@@ -424,23 +439,23 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.96033,
-        "lng": -82.441302,
-        "geo_source": "census",
+        "lat": 27.96049,
+        "lng": -82.4407,
+        "geo_source": "photon",
         "url": "https://www.fmopa.org/",
         "phone": "(813) 221-2222",
-        "summary": "A photography museum on Seventh Avenue in Ybor City that collects and exhibits historic and contemporary photographs. It was founded in 2001 as the Tampa Gallery of Photographic Arts.",
+        "summary": "A photography museum on Seventh Avenue in Ybor City that collects, preserves and exhibits historic and contemporary photographs. It was founded in 2001 as the Tampa Gallery of Photographic Arts.",
         "quote": "dedicated to exhibiting important photographic art as central to contemporary life and culture",
         "status": "open",
-        "accessibility": "Service animals welcome; staff will assist guests who call ahead (813-221-2222). Disabled permit holders park free for up to four hours at city meters and Ybor lots 3, 5 and 6.",
-        "source_url": "https://www.visittampabay.com/listings/florida-museum-of-photographic-arts/5456/",
+        "source_url": "https://www.fmopa.org/",
         "also_sources": [
-          "https://www.fmopa.org/visit/",
           "https://www.fmopa.org/about/",
+          "https://www.visittampabay.com/listings/florida-museum-of-photographic-arts/5456/",
           "https://www.artsaxisfl.org/florida-museum-of-photographic-arts"
         ],
-        "notes": "fmopa.org sits behind a bot check; its visit and about pages were read through a reader proxy (r.jina.ai). Hours and prices left null: the Visit Tampa Bay listing (Mon-Thu 11-6, Fri 11-7, Sat-Sun noon-5; adults $10) and search snippets of fmopa.org/visit (Tue-Sat 10-5, Sun 12-5; adults $12) disagree.",
-        "checked": "2026-09-27"
+        "notes": "Verified 2026-09-27: fmopa.org's home and about pages read through the reader proxy (address 1630 E 7th Avenue, 813-221-2222; founded 2001 as the Tampa Gallery of Photographic Arts; 'Exposure: 25 Years of FMoPA' on view through Dec 6, 2026). fmopa.org/visit now returns a bot-check page, so hours, prices and the accessibility text (read by the researcher through a proxy) could not be re-read: accessibility removed, hours and prices stay null. The quote is on the Visit Tampa Bay listing (quote_source). Coordinates moved to the OSM museum feature.",
+        "checked": "2026-09-27",
+        "quote_source": "https://www.visittampabay.com/listings/florida-museum-of-photographic-arts/5456/"
       },
       {
         "id": "tampa-firefighters-museum",
@@ -473,12 +488,12 @@
         "also_sources": [
           "https://www.tampafirefightersmuseum.org/"
         ],
-        "notes": "Admission price not stated on the museum's pages (search snippets say free; not verified).",
+        "notes": "Admission price not stated on the museum's pages (search snippets say free; not verified). Verified 2026-09-27: address, hours (Tuesday-Friday 10-2, by appointment), phone, 'Serving Tampa since 1911', the March 2026 children's play area and event rentals re-read. Heritage story rewritten to hold history only.",
         "checked": "2026-09-27",
         "heritage": {
           "era": "boomtown",
-          "story": "The museum occupies Tampa's historic Fire Station No. 1, which the museum says has served Tampa since 1911. The building is also rented out as an event venue, and a children's interactive play area opened in March 2026.",
-          "visiting": "Visits Tuesday to Friday, 10 AM to 2 PM, by appointment; tours of the apparatus floor can be booked.",
+          "story": "The museum occupies Tampa's historic Fire Station No. 1. The museum says the firehouse has served Tampa since 1911 and calls it a century-old landmark; it keeps antique fire engines, vintage gear and stories of Tampa firefighters.",
+          "visiting": "Visits Tuesday to Friday, 10 AM to 2 PM, by appointment; tours of the apparatus floor are booked online.",
           "sources": [
             "https://www.tampafirefightersmuseum.org/",
             "https://www.tampafirefightersmuseum.org/contact"
@@ -500,19 +515,19 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.947822,
-        "lng": -82.457935,
-        "geo_source": "census",
+        "lat": 27.948381,
+        "lng": -82.45775,
+        "geo_source": "photon",
         "url": "https://tampapolicememorial.org/museum/",
         "phone": "(813) 276-3258",
-        "hours_text": "Monday–Saturday 10 AM–3 PM (per the memorial's page).",
+        "hours_text": "Monday–Saturday 10 AM–3 PM, according to the Tampa Police Memorial's museum page (posted in 2019).",
         "summary": "A small museum on the ground floor of the Tampa Police Department headquarters that honors officers killed in the line of duty and displays department records, books and equipment. The entrance is on the west side of the building, on North Franklin Street.",
         "status": "open",
         "source_url": "https://tampapolicememorial.org/museum/",
         "also_sources": [
           "https://www.visittampabay.com/listings/tampa-police-museum/8792/"
         ],
-        "notes": "The memorial's museum page is dated 2019; search snippets give Mon-Fri 10-3, so call ahead. The City of Tampa offered the HQ building for sale in Dec 2025 (no bids by Feb 2026); the museum's future after any move is not stated.",
+        "notes": "The memorial's museum page is dated 2019; search snippets give Mon-Fri 10-3, so call ahead. The City of Tampa offered the HQ building for sale in Dec 2025 (no bids by Feb 2026); the museum's future after any move is not stated. Verified 2026-09-27: the memorial's page (dated 2019-07-18) still gives Mon-Sat 10-3, the ground-floor location and the west entrance on N Franklin St; the Visit Tampa Bay description matches the summary. No newer source was found; call ahead. Coordinates moved to the OSM Tampa Police Department building.",
         "checked": "2026-09-27"
       },
       {
@@ -521,7 +536,7 @@
         "aliases": [
           "CAM",
           "USF CAM",
-          "USF Graphicstudio"
+          "USFCAM"
         ],
         "kind": "museum",
         "kinds": [
@@ -550,9 +565,11 @@
         "parking_text": "Visitor parking in lot 3B in front of the museum; pay with the ParkMobile app or a card at the pay station; timed short-term spaces next to the pay station.",
         "source_url": "https://www.ira.usf.edu/cam/cam_contact.html",
         "also_sources": [
-          "https://cam.usf.edu/"
+          "https://cam.usf.edu/",
+          "https://graphicstudio.usf.edu/"
         ],
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "notes": "Verified 2026-09-27: address, hours, 'CAM is free and open to all.', lot 3B parking and accessibility re-read on the contact page; PICTURE(SQUE) dates re-read on cam.usf.edu. Alias 'USF Graphicstudio' removed: Graphicstudio is a separate studio with its own address (now its own record, usf-graphicstudio)."
       },
       {
         "id": "american-victory-ship-mariners-museum",
@@ -588,7 +605,7 @@
         "heritage": {
           "built": "1945",
           "era": "land-boom",
-          "story": "The SS American Victory was built in 55 days at the California Shipbuilding yard in Los Angeles and delivered to the U.S. War Shipping Administration on May 24, 1945. She carried supplies in the Korean War (1951–1953) and the Vietnam War (1966–1969). The ship arrived in Tampa, her new home port, in September 1999, and made her first passenger voyage on September 20, 2003. The museum says the ship is on the National Register of Historic Places.",
+          "story": "The SS American Victory was built in 55 days at the California Shipbuilding yard in Los Angeles and delivered to the U.S. War Shipping Administration on May 24, 1945. She carried military cargo in the Korean War (from 1951) and the Vietnam War (from 1966). She arrived in Tampa, her new home port, on September 16, 1999, and after four years of volunteer restoration sailed on a shakedown cruise with 497 passengers and crew on September 20, 2003. The museum says the ship is on the National Register of Historic Places.",
           "visiting": "The ship is open to visitors during museum hours.",
           "designations": [
             {
@@ -605,7 +622,7 @@
           "https://www.americanvictory.org/",
           "https://www.americanvictory.org/about/mission-and-history/"
         ],
-        "notes": "'Next to the Florida Aquarium': both at 701/705 Channelside Dr. Accessibility (ladders/stairs) not stated on the hours page.",
+        "notes": "'Next to the Florida Aquarium': both at 701/705 Channelside Dr. Accessibility (ladders/stairs) not stated on the hours page. Verified 2026-09-27: hours (Mon noon-5, Tue-Sun 10-5), prices, 705 Channelside Dr, quote and the 455-foot length re-read. Heritage story adjusted to the history page's wording (Korean War service from 1951, Vietnam from 1966, arrival Sept 16, 1999, 2003 'Shakedown Cruise'). Coordinates are the OSM tourism=museum feature for the ship.",
         "checked": "2026-09-27"
       },
       {
@@ -629,23 +646,23 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.961746,
-        "lng": -82.43791,
-        "geo_source": "census",
+        "lat": 27.961995,
+        "lng": -82.437793,
+        "geo_source": "photon",
         "url": "https://www.tampabaseballmuseum.org/",
         "phone": "(813) 400-2353",
-        "hours_text": "Thursday–Saturday 10 AM–4 PM; Sunday 11 AM–5 PM; group tours other days by reservation.",
-        "price_text": "Adults $12; military, seniors 65+ and students 18+ $10; children $6; 5 and under free.",
+        "hours_text": "Thursday–Saturday 10 AM–4 PM; Sunday 11 AM–5 PM during spring training and the MLB season; closed Monday–Wednesday, Thanksgiving, Christmas and New Year's Day.",
+        "price_text": "Adults $12; seniors 65+, military, first responders, educators and students 18+ $10; children $6; 5 and under free.",
         "summary": "A museum of Tampa's baseball history in the Ybor City childhood home of Hall of Famer Al López, the first Tampa native to play and manage in the major leagues. The house was moved near the Ybor City Museum State Park in 2013 and the museum opened in 2021.",
         "quote": "set in the former Ybor City home of Tampa icon and baseball hall-of-famer Al Lopez",
         "status": "open",
-        "source_url": "https://www.tampabaseballmuseum.org/",
+        "source_url": "https://www.tampabaseballmuseum.org/visit",
         "also_sources": [
-          "https://members.ybor.org/list/member/tampa-baseball-museum-at-the-al-lopez-house-2998",
+          "https://www.tampabaseballmuseum.org/",
           "https://en.wikipedia.org/wiki/Tampa_Baseball_Museum",
-          "https://www.tampabaseballmuseum.org/memberships"
+          "https://members.ybor.org/list/member/tampa-baseball-museum-at-the-al-lopez-house-2998"
         ],
-        "notes": "Prices from the Ybor City Chamber member listing (which omits Sunday hours); hours from the museum's own site. Operated by the Ybor City Museum Society (ybormuseum.org about page).",
+        "notes": "Prices from the Ybor City Chamber member listing (which omits Sunday hours); hours from the museum's own site. Operated by the Ybor City Museum Society (ybormuseum.org about page). Verified 2026-09-27: hours, prices, accessibility and parking now come from the museum's own visit page (Sunday hours apply during spring training and the MLB season). Coordinates moved to the OSM museum feature.",
         "checked": "2026-09-27",
         "heritage": {
           "story": "The museum is in the childhood home of Al López, the first Tampa native to play and manage in the major leagues and the first Tampa native inducted into the Baseball Hall of Fame. The house was moved several blocks to a lot near the Ybor City Museum State Park in 2013, and the museum opened in 2021. It is run by the Ybor City Museum Society.",
@@ -655,7 +672,10 @@
             "https://www.tampabaseballmuseum.org/",
             "https://www.ybormuseum.org/about-us"
           ]
-        }
+        },
+        "quote_source": "https://www.tampabaseballmuseum.org/",
+        "accessibility": "The museum says it is ADA compliant, including the restrooms, with a ramp to the right of the building.",
+        "parking_text": "City of Tampa lots at 1812 and 1813 N 19th St (Ybor lots 5 and 6), first two hours free when you enter your tag number; pay-by-plate street parking; the TECO Line Streetcar's Centennial Park station is nearby."
       },
       {
         "id": "cracker-country",
@@ -686,7 +706,7 @@
         "quote": "a rural Florida living history museum located on the Florida State Fairgrounds",
         "status": "open",
         "source_url": "https://floridastatefairgrounds.com/visit/cracker-country/",
-        "notes": "crackercountry.org redirects to the fairgrounds page. Status 'open' with restricted access; check the events list before going.",
+        "notes": "crackercountry.org redirects to the fairgrounds page. Status 'open' with restricted access; check the events list before going. Verified 2026-09-27: quote ('Cracker Country is a rural Florida living history museum located on the Florida State Fairgrounds.'), access rule, phone and the Dec 12 Christmas in the Country listing re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -717,7 +737,7 @@
         "summary": "A Hillsborough County park and veterans museum with memorials to the Spanish-American War, both world wars, Korea, Vietnam, Iraq and Afghanistan, plus a Gold Star Family memorial and walking trails. It is used for regional ceremonies.",
         "status": "open",
         "source_url": "https://hcfl.gov/locations/veterans-memorial-park-and-museum",
-        "notes": "Coordinates are the OSM park polygon (Photon name match; the Census address lookup failed). Admission not stated; the county page lists it as a park.",
+        "notes": "Coordinates are the OSM park polygon (Photon name match; the Census address lookup failed). Admission not stated; the county page lists it as a park. Verified 2026-09-27: address, phone, park and museum hours and the list of memorials re-read (WebFetch).",
         "checked": "2026-09-27"
       },
       {
@@ -772,7 +792,7 @@
           "https://www.jcnewman.com/book-a-tour/",
           "https://www.ybor.org/vic/ybor-museums/"
         ],
-        "notes": "Tours and classes are experiences (exp-land slice); this place record is the free museum and factory. Smoking not allowed on tours or in public spaces; cigars allowed in Cigar Workers Park across the street.",
+        "notes": "Tours and classes are experiences (exp-land slice); this place record is the free museum and factory. Smoking not allowed on tours or in public spaces; cigars allowed in Cigar Workers Park across the street. Verified 2026-09-27: hours (Mon-Fri 9-5 per the company's know-before-you-go page; the Ybor Chamber page says 9-5:30), free admission, parking, 60-minute tour and class, quote (a substring of 'Today, J.C. Newman's iconic 1910 cigar factory is...') and the 1910/1954/Cleveland history (Chamber page) re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -811,7 +831,7 @@
           "https://thetampariverwalk.com/",
           "https://thetampariverwalk.com/visit/historical-monument-trail.html"
         ],
-        "notes": "Fishing is not permitted from the Riverwalk. Coordinates: the OSM Riverwalk path near the Straz Center (a point along a linear feature).",
+        "notes": "Fishing is not permitted from the Riverwalk. Coordinates: the OSM Riverwalk path near the Straz Center (a point along a linear feature). Verified 2026-09-27: 2.6 miles, open 24 hours, start at Beneficial Dr and Channelside Dr, no fishing, 30 monument-trail honorees and quote re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -850,7 +870,7 @@
         "tags": [
           "public-art"
         ],
-        "notes": "Address is the Visit Tampa Bay listing's. The developer's 'What's Next' page describes a planned second phase with a 3,500+ seat music venue and entertainment district (not open as of Sep 2026). Coordinates: Water Street itself (OSM).",
+        "notes": "Address is the Visit Tampa Bay listing's. The developer's 'What's Next' page describes a planned second phase with a 3,500+ seat music venue and entertainment district (not open as of Sep 2026). Coordinates: Water Street itself (OSM). Verified 2026-09-27: hotel list, 'Enjoy live music Friday and Saturday evenings', Night Market (Thursday, Oct 1) and the 971 Water St listing address re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -878,18 +898,18 @@
         "geo_source": "photon",
         "url": "https://sparkmanwharf.com/",
         "hours_text": "Sunday–Thursday 11 AM–9 PM; Friday–Saturday 11 AM–11 PM (individual vendors may differ).",
-        "summary": "An outdoor dining garden on the Garrison Channel at Water Street Tampa, with food and drink vendors, the LightHaus Beer Garden, restaurants, fitness studios, a lawn and a stage used for public events such as movie nights.",
+        "summary": "An outdoor dining garden on the Garrison Channel at Water Street Tampa, with food and drink vendors, the LightHaus Beer Garden, restaurants, shops, fitness studios and a lawn used for classes, trivia nights and other free events.",
         "quote": "Situated along Garrison Channel in downtown Tampa, Sparkman Wharf features waterfront views, craft beer, live music and exceptional dining.",
         "quote_source": "https://www.visittampabay.com/listings/sparkman-wharf/2681/",
         "status": "open",
-        "parking_text": "Garrison Street parking lot (ParkMobile); the free TECO Line Streetcar stops nearby at Benchmark International Arena station (#8, Beneficial Dr and Channelside Dr); Pirate Water Taxi stop #2.",
+        "parking_text": "The Garrison Street parking lot. The free TECO Line Streetcar stops nearby at Beneficial Dr and Channelside Dr (station #8), and the Pirate Water Taxi and Cross Bay Ferry also serve Sparkman Wharf.",
         "source_url": "https://sparkmanwharf.com/find-us/",
         "also_sources": [
           "https://sparkmanwharf.com/",
           "https://sparkmanwharf.com/explore/",
           "https://www.visittampabay.com/listings/sparkman-wharf/2681/"
         ],
-        "notes": "The find-us page calls the streetcar stop 'Amalie Arena Station #8'; the arena is now Benchmark International Arena. Vendor list read from sparkmanwharf.com/explore on Sep 27, 2026 (e.g. Gallito Taqueria, Ziki's Greek Street Food, Jeni's Ice Creams, LightHaus Beer Garden, Splitsville).",
+        "notes": "The find-us page calls the streetcar stop 'Amalie Arena Station #8'; the arena is now Benchmark International Arena. Vendor list read from sparkmanwharf.com/explore on Sep 27, 2026 (e.g. Gallito Taqueria, Ziki's Greek Street Food, Jeni's Ice Creams, LightHaus Beer Garden, Splitsville). Verified 2026-09-27: hours (Sun-Thu 11-9, Fri-Sat 11-11), address and transport re-read. 'Movie nights' and 'Pirate Water Taxi stop #2' are not on the pages read: replaced with the lawn events its feed lists (fitness classes, trivia, craft happy hour); ParkMobile removed (not stated).",
         "checked": "2026-09-27"
       },
       {
@@ -914,9 +934,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33602",
-        "lat": 27.96059,
-        "lng": -82.463573,
-        "geo_source": "census",
+        "lat": 27.961231,
+        "lng": -82.464059,
+        "geo_source": "photon",
         "url": "https://armatureworks.com/",
         "hours_text": "Monday–Thursday 7:30 AM–10 PM; Friday 7:30 AM–midnight; Saturday 8 AM–midnight; Sunday 9 AM–9 PM.",
         "summary": "A restored 1910 Tampa Electric streetcar warehouse on the Hillsborough River that now holds the Heights Public Market food hall, restaurants, a rooftop event space and event halls. The Riverwalk ends just past it, and it has public boat docks and a Pirate Water Taxi stop.",
@@ -935,7 +955,7 @@
             "https://armatureworks.com/faqs"
           ]
         },
-        "parking_text": "Four surface lots: free Monday–Friday until 4 PM, then from $10 (event days vary); the Heights District garage one block away; metered street parking from $1.50 an hour. Public boat docks between Armature Works and the North Boulevard bridge (ParkMobile).",
+        "parking_text": "Four surface lots, free Monday–Friday until 4 PM except the 220 lot (event and holiday rates vary); the Heights District garage a block away; metered street parking from $1.50 an hour, enforced 8 AM–midnight. Public boat docks on the river between Armature Works and the North Boulevard bridge (paid through ParkMobile).",
         "source_url": "https://armatureworks.com/location/armature-works/",
         "also_sources": [
           "https://armatureworks.com/about/",
@@ -943,7 +963,7 @@
           "https://armatureworks.com/team-member/by-boat/",
           "https://www.visittampabay.com/listings/armature-works-at-the-heights/9521/"
         ],
-        "notes": "A 3% venue fee is added to all checks (per the site). Pets allowed on the outdoor perimeter only, not inside the market (service animals excepted).",
+        "notes": "A 3% venue fee is added to all checks (per the site). Pets allowed on the outdoor perimeter only, not inside the market (service animals excepted). Verified 2026-09-27: hours, 1910 Tampa Electric streetcar warehouse (Visit Tampa Bay listing), 3% venue fee, pets rule, boat docks and Pirate Water Taxi re-read. 'then from $10' after 4 PM is not stated on the parking page: removed. Coordinates moved to the OSM marketplace feature.",
         "checked": "2026-09-27"
       },
       {
@@ -963,9 +983,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33606",
-        "lat": 27.935944,
-        "lng": -82.476053,
-        "geo_source": "census",
+        "lat": 27.936286,
+        "lng": -82.475802,
+        "geo_source": "photon",
         "url": "https://www.hydeparkvillage.com/",
         "phone": "(813) 251-3500",
         "hours_text": "Monday–Saturday 10 AM–7 PM; Sunday 11 AM–5 PM (individual businesses set their own hours).",
@@ -982,7 +1002,7 @@
         "tags": [
           "pet-friendly-patios"
         ],
-        "notes": "That's So Tampa's market guide lists the Fresh Market at Hyde Park Village on the first Sunday of each month, 10 AM-3 PM (secondary source; not on the Village's own page read). Outdoor spaces and patios are pet-friendly per the about page.",
+        "notes": "That's So Tampa's market guide lists the Fresh Market at Hyde Park Village on the first Sunday of each month, 10 AM-3 PM (secondary source; not on the Village's own page read). Outdoor spaces and patios are pet-friendly per the about page. Verified 2026-09-27: hours, 1602 W Snow Ave, phone, quote, Fresh Market mention, boutique hotel, parking and pet-friendly patios re-read. Coordinates moved to the OSM retail area.",
         "checked": "2026-09-27"
       },
       {
@@ -1001,17 +1021,23 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33607",
-        "lat": 27.960796,
-        "lng": -82.52398,
-        "geo_source": "census",
-        "url": "https://www.shopinternationalplaza.com/",
-        "phone": "(813) 342-3790",
-        "hours_text": "Monday–Saturday 10 AM–9 PM; Sunday 11 AM–6 PM; closed Thanksgiving and Christmas. Department store and restaurant hours vary.",
-        "summary": "A shopping mall about a mile from Tampa International Airport with about 170 stores and 16 restaurants, including Neiman Marcus, Nordstrom, Dillard's, Louis Vuitton and Gucci, and the adjoining Bay Street. Valet parking is offered.",
+        "lat": 27.964266,
+        "lng": -82.520784,
+        "geo_source": "photon",
+        "url": "https://www.simon.com/mall/international-plaza",
+        "phone": "(813) 877-7988",
+        "hours_text": "Monday–Saturday 10 AM–9 PM; Sunday 11 AM–6 PM; closed Thanksgiving and Christmas Day.",
+        "summary": "A shopping mall in the Westshore district next to Tampa International Airport, with more than 170 stores and 30 places to eat, anchored by Neiman Marcus, Nordstrom and Dillard's. The adjoining open-air Bay Street has restaurants, cafes and nightlife.",
         "status": "open",
-        "source_url": "https://www.visittampabay.com/listings/international-plaza-and-bay-street/2891/",
-        "notes": "The mall's own site (shopinternationalplaza.com) did not resolve from the research box on Sep 27, 2026, so the Visit Tampa Bay listing is the source.",
-        "checked": "2026-09-27"
+        "source_url": "https://www.simon.com/mall/international-plaza/about",
+        "notes": "Verified 2026-09-27: shopinternationalplaza.com no longer resolves and internationalplaza.com is a parked domain; the mall's official page is now on simon.com (about and hours pages read). Replaced the Visit Tampa Bay figures (about 170 stores, 16 restaurants; phone 813-342-3790) with the mall's own (more than 170 brands, 30 restaurant options; 813-877-7988). Louis Vuitton and Gucci removed from the summary (not on the pages read). Coordinates moved to the OSM shop=mall feature (about 500 m from the Census street point).",
+        "checked": "2026-09-27",
+        "also_sources": [
+          "https://www.simon.com/mall/international-plaza/hours",
+          "https://www.visittampabay.com/listings/international-plaza-and-bay-street/2891/"
+        ],
+        "quote": "Just steps away, Bay Street extends the experience outdoors with restaurants, cafés and nightlife",
+        "parking_text": "Three parking garages (at Dillard's and Neiman Marcus, at Nordstrom and under Bay Street). Valet $10 a car Monday–Thursday and $12 Friday–Sunday. The mall says select area hotels run free shuttles."
       },
       {
         "id": "westshore-plaza",
@@ -1038,7 +1064,7 @@
         "also_sources": [
           "https://www.visittampabay.com/listings/westshore-plaza/3112/"
         ],
-        "notes": "Hours and store names read from the mall site's structured data and directory on Sep 27, 2026 (WebFetch got 403; curl worked). Macy's and Sears named on the older Visit Tampa Bay listing are not in the current directory.",
+        "notes": "Hours and store names read from the mall site's structured data and directory on Sep 27, 2026 (WebFetch got 403; curl worked). Macy's and Sears named on the older Visit Tampa Bay listing are not in the current directory. Verified 2026-09-27: hours (structured data: Mon-Thu 11-8, Fri-Sat 10-9, Sun 12-6), phone and the named tenants (JCPenney, H&M, Old Navy, AMC, Maggiano's, Seasons 52, P.F. Chang's) re-read via curl; Macy's and Sears are not in the directory. Coordinates are the OSM shop=mall feature.",
         "checked": "2026-09-27"
       },
       {
@@ -1069,7 +1095,7 @@
         "also_sources": [
           "https://en.wikipedia.org/wiki/Westfield_Citrus_Park"
         ],
-        "notes": "Anchors and the 2020 name change are from Wikipedia (read Sep 27, 2026). Area: Citrus Park sits north of Town 'n' Country and west of Carrollwood; filed under north-tampa.",
+        "notes": "Anchors and the 2020 name change are from Wikipedia (read Sep 27, 2026). Area: Citrus Park sits north of Town 'n' Country and west of Carrollwood; filed under north-tampa. Verified 2026-09-27: hours, address and phone re-read (WebFetch); anchors (Dillard's, JCPenney, Macy's, NCG Cinemas, Dick's, Elev8 Fun) and the December 2020 return to the old name confirmed on Wikipedia.",
         "checked": "2026-09-27"
       },
       {
@@ -1089,8 +1115,8 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33607",
-        "lat": 27.952932,
-        "lng": -82.502593,
+        "lat": 27.952833,
+        "lng": -82.503556,
         "geo_source": "photon",
         "url": "https://midtowntampa.com/",
         "phone": "(813) 738-4120",
@@ -1100,7 +1126,7 @@
         "also_sources": [
           "https://www.visittampabay.com/listings/aloft-tampa-midtown/17871/"
         ],
-        "notes": "Coordinates: the Aloft hotel at 3650 Midtown Dr (Photon), inside the district.",
+        "notes": "Coordinates: the Aloft hotel at 3650 Midtown Dr (Photon), inside the district. Verified 2026-09-27: tenants (REI Co-op, Ballard Designs, Whole Foods Market, True Food Kitchen, Sunda), 3659 Midtown Drive, phone and Midtown Markets re-read. Coordinates moved from the Aloft hotel to the OSM 'Midtown Tampa' retail area.",
         "checked": "2026-09-27"
       },
       {
@@ -1122,9 +1148,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33606",
-        "lat": 27.945304,
-        "lng": -82.464391,
-        "geo_source": "census",
+        "lat": 27.944948,
+        "lng": -82.464597,
+        "geo_source": "photon",
         "url": "https://oxfordexchange.com/",
         "phone": "(813) 253-0222",
         "hours_text": "Monday–Friday 7:30 AM–5:30 PM; Saturday–Sunday 8 AM–5:30 PM.",
@@ -1138,7 +1164,7 @@
           "https://oxfordexchange.com/pages/our-story",
           "https://www.visittampabay.com/listings/oxford-exchange/9134/"
         ],
-        "notes": "Also a restaurant: the eat-tampa slice may hold the same id. Area: across from the University of Tampa / Plant Museum, filed downtown-tampa like Plant Hall (SPEC 4.1).",
+        "notes": "Also a restaurant: the eat-tampa slice may hold the same id. Area: across from the University of Tampa / Plant Museum, filed downtown-tampa like Plant Hall (SPEC 4.1). Verified 2026-09-27: hours, parking, the 1891 building, 1920s arcade, Casper and Adams and the Sept 24, 2012 opening re-read. Coordinates moved to the OSM feature.",
         "checked": "2026-09-27",
         "heritage": {
           "built": "1891",
@@ -1168,9 +1194,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33610",
-        "lat": 27.993547,
-        "lng": -82.373013,
-        "geo_source": "census",
+        "lat": 27.993378,
+        "lng": -82.371462,
+        "geo_source": "photon",
         "url": "https://casino.hardrock.com/tampa",
         "phone": "(866) 502-7529",
         "hours_text": "Casino open 24 hours, every day.",
@@ -1181,7 +1207,7 @@
         "also_sources": [
           "https://www.visittampabay.com/listings/seminole-hard-rock-hotel-%26-casino-tampa/3843/"
         ],
-        "notes": "The hotel is a stay record in another slice; the Hard Rock Event Center is a venue (venues-bay). Visit Tampa Bay lists 245,000 sq ft of gaming space.",
+        "notes": "The hotel is a stay record in another slice; the Hard Rock Event Center is a venue (venues-bay). Visit Tampa Bay lists 245,000 sq ft of gaming space. Verified 2026-09-27: 'Open 24/7/365', age rules (21, 18 for poker), live craps and roulette, address and quote re-read. The phone is the resort's Customer Care line as the page labels it. Coordinates moved to the OSM amenity=casino feature.",
         "checked": "2026-09-27"
       },
       {
@@ -1220,7 +1246,7 @@
           "https://butterflytampa.com/",
           "https://www.visittampabay.com/listings/butterfly-tampa/21191/"
         ],
-        "notes": "Paid admission (tickets at the nursery registers); price not stated on the pages read. Visit Tampa Bay's listing says releases are at 2 PM; the foundation's own page says noon.",
+        "notes": "Paid admission (tickets at the nursery registers); price not stated on the pages read. Visit Tampa Bay's listing says releases are at 2 PM; the foundation's own page says noon. Verified 2026-09-27: hours (Living Exhibit & Butterfly Garden, last admission 4 PM), closures, Saturday and Sunday noon releases, bug zoo, reptiles, amphibians and turtles, and tickets at the Little Red Wagon registers re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -1239,8 +1265,8 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.961011,
-        "lng": -82.437174,
+        "lat": 27.961345,
+        "lng": -82.438606,
         "geo_source": "photon",
         "url": "https://ybormarket.com/",
         "hours_text": "Every Saturday, year-round, rain or shine: 9 AM–3 PM October–April; 9 AM–1 PM May–September.",
@@ -1254,7 +1280,7 @@
           "https://ybormarket.com/",
           "https://thatssotampa.com/tampa-bay-farmers-market-guide/"
         ],
-        "notes": "Address (1901 N 19th St, Centennial Park) from That's So Tampa's market guide; the market's own map embed only names the market. Coordinates: the Centennial Park streetcar stop on E 8th Ave, next to the park. The market says to check its social accounts when lightning or storms are forecast.",
+        "notes": "Address (1901 N 19th St, Centennial Park) from That's So Tampa's market guide; the market's own map embed only names the market. Coordinates: the Centennial Park streetcar stop on E 8th Ave, next to the park. The market says to check its social accounts when lightning or storms are forecast. Verified 2026-09-27: hours by season, rain or shine, free admission, pets, vendor types and quote re-read. Coordinates moved from the streetcar stop to the OSM Centennial Park feature (leisure=park). The market's page gives no street address; the venues-bay slice files Centennial Park at 1800 E 8th Ave.",
         "checked": "2026-09-27",
         "quote_source": "https://ybormarket.com/"
       },
@@ -1288,7 +1314,7 @@
         "also_sources": [
           "https://www.visittampabay.com/listings/pirate-water-taxi-bayshore-blvd-(%239-stop)/21173/"
         ],
-        "notes": "No City of Tampa page for Bayshore was found (tampa.gov URLs tried returned 404), so Wikipedia is the source. Coordinates: a point on Bayshore Blvd (OSM way) in Hyde Park; the boulevard continues south through South Tampa to Gandy Blvd. Pirate Water Taxi stop #9 is at 320 Bayshore Blvd.",
+        "notes": "No City of Tampa page for Bayshore was found (tampa.gov URLs tried returned 404), so Wikipedia is the source. Coordinates: a point on Bayshore Blvd (OSM way) in Hyde Park; the boulevard continues south through South Tampa to Gandy Blvd. Pirate Water Taxi stop #9 is at 320 Bayshore Blvd. Verified 2026-09-27: 4.5-mile, 10-foot sidewalk, second-longest continuous sidewalk, bike lane, linear park, benches, water fountain and workout stations re-read on Wikipedia.",
         "checked": "2026-09-27"
       },
       {
@@ -1310,14 +1336,14 @@
         "geo_source": "census",
         "url": "https://www.drewmarcgallery.com/",
         "phone": "(813) 294-3638",
-        "hours_text": "Wednesday–Saturday 11 AM–7 PM; Monday–Tuesday by appointment.",
+        "hours_text": "Wednesday–Saturday 11 AM–7 PM; Sunday 11 AM–4 PM; Monday–Tuesday by appointment.",
         "summary": "A contemporary art gallery in South Tampa showing paintings, sculpture and mixed media by national and local artists, with exhibitions that rotate regularly.",
         "status": "open",
         "source_url": "https://www.drewmarcgallery.com/",
         "also_sources": [
           "https://www.visittampabay.com/listings/drew-marc-gallery/22904/"
         ],
-        "notes": "A commercial gallery (works for sale). Sunday hours not stated.",
+        "notes": "A commercial gallery (works for sale). Sunday hours not stated. Verified 2026-09-27: the gallery's site lists Sunday 11 AM-4 PM (the record had said Sunday hours were not stated); address, suite and phone re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -1335,8 +1361,8 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33606",
-        "lat": 27.946656,
-        "lng": -82.468933,
+        "lat": 27.946723,
+        "lng": -82.468692,
         "geo_source": "photon",
         "url": "https://www.ut.edu/academics/college-of-arts-and-letters/department-of-art-and-design-degrees/scarfone-hartley-gallery",
         "phone": "(813) 253-6217",
@@ -1344,7 +1370,7 @@
         "summary": "The University of Tampa's art gallery in the R.K. Bailey Art Studios, showing contemporary national, international and regional artists as well as work by the college's faculty, alumni and students.",
         "status": "open",
         "source_url": "https://www.ut.edu/academics/college-of-arts-and-letters/department-of-art-and-design-degrees/scarfone-hartley-gallery",
-        "notes": "Admission not stated on the page. Between-exhibition closures likely; check the page before going.",
+        "notes": "Admission not stated on the page. Between-exhibition closures likely; check the page before going. Verified 2026-09-27: address (R.K. Bailey Art Studios, 310 N Boulevard), Mon-Fri 10-4, phone and mission re-read. Coordinates moved to the OSM tourism=gallery node.",
         "checked": "2026-09-27"
       },
       {
@@ -1380,7 +1406,7 @@
         "also_sources": [
           "https://www.visittampabay.com/ybor-city/"
         ],
-        "notes": "Wikipedia calls 7th Avenue 'Ybor City's main commercial thoroughfare' and says it was recognized as one of the '10 Great Streets in America'. Overlaps the ybor-city-historic-district record (history-tampa slice): this record is the shopping and nightlife street; the merge should keep both or fold this into the district. 'Cigar shops' rests on the Visit Tampa Bay listings for King Corona Cigars (1523 E 7th Ave) and Tabanero Cigars (1601 E 7th Ave). Coordinates: 1700 E 7th Ave (Census).",
+        "notes": "Wikipedia calls 7th Avenue 'Ybor City's main commercial thoroughfare' and says it was recognized as one of the '10 Great Streets in America'. Overlaps the ybor-city-historic-district record (history-tampa slice): this record is the shopping and nightlife street; the merge should keep both or fold this into the district. 'Cigar shops' rests on the Visit Tampa Bay listings for King Corona Cigars (1523 E 7th Ave) and Tabanero Cigars (1601 E 7th Ave). Coordinates: 1700 E 7th Ave (Census). Verified 2026-09-27: Wikipedia's 'main commercial thoroughfare' and the 2008 APA '10 Great Streets' recognition and the Visit Tampa Bay quote re-read. The history-tampa slice now holds ybor-city-historic-district (the National Historic Landmark district); this record is the street.",
         "checked": "2026-09-27"
       },
       {
@@ -1410,7 +1436,7 @@
         "summary": "A small community museum on the social, cultural and natural history of Sulphur Springs and its historically African American neighborhood, Spring Hill. It runs changing exhibits, a speaker series and an annual Pumpkin Festival in October.",
         "status": "open",
         "source_url": "https://www.sulphurspringsmuseum.org/",
-        "notes": "The fall 2026 program is a six-month series on immigrant heritage funded by Florida Humanities (per the home page).",
+        "notes": "The fall 2026 program is a six-month series on immigrant heritage funded by Florida Humanities (per the home page). Verified 2026-09-27: address, hours, free admission, mission (Spring Hill), immigrant-heritage program and October Pumpkin Festival re-read.",
         "checked": "2026-09-27"
       },
       {
@@ -1439,11 +1465,10 @@
         "lng": -82.482998,
         "geo_source": "photon",
         "summary": "The South Howard Avenue strip in Hyde Park, known for bars, nightclubs, boutiques and restaurants.",
-        "quote": "Many of the region's top-rated bars, nightclubs, boutiques and restaurants are in this district.",
         "is_free": true,
         "status": "open",
         "source_url": "https://en.wikipedia.org/wiki/Hyde_Park,_Tampa",
-        "notes": "No official district website found; Wikipedia is the source. Coordinates: a point on S Howard Ave (OSM). Individual bars and restaurants belong to the eat-tampa slice.",
+        "notes": "No official district website found; Wikipedia is the source. Coordinates: a point on S Howard Ave (OSM). Individual bars and restaurants belong to the eat-tampa slice. Verified 2026-09-27: summary supported by Wikipedia's Hyde Park article. The quote was Wikipedia's wording, not an official page's, so it was removed.",
         "checked": "2026-09-27"
       },
       {
@@ -1462,9 +1487,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.959488,
-        "lng": -82.441624,
-        "geo_source": "census",
+        "lat": 27.959349,
+        "lng": -82.441366,
+        "geo_source": "photon",
         "url": "https://www.tampasweethearts.com/",
         "phone": "(813) 247-3880",
         "hours_text": "Monday–Friday 9 AM–5 PM (closed on some holidays).",
@@ -1474,7 +1499,7 @@
         "also_sources": [
           "https://www.tampasweethearts.com/"
         ],
-        "notes": "The store's site (mostly an online shop) gives the address 1603 E. 6th Ave (corner of 6th Avenue and 16th Street) but no hours; hours and the 1995 date come from the Visit Tampa Bay listing.",
+        "notes": "The store's site (mostly an online shop) gives the address 1603 E. 6th Ave (corner of 6th Avenue and 16th Street) but no hours; hours and the 1995 date come from the Visit Tampa Bay listing. Verified 2026-09-27: hours, 1995, brands and casita re-read on the Visit Tampa Bay listing (WebFetch). Coordinates moved to the OSM building.",
         "checked": "2026-09-27"
       },
       {
@@ -1498,9 +1523,9 @@
         "city": "Tampa",
         "state": "FL",
         "zip": "33605",
-        "lat": 27.960227,
-        "lng": -82.44265,
-        "geo_source": "census",
+        "lat": 27.960173,
+        "lng": -82.442169,
+        "geo_source": "photon",
         "url": "https://www.kingcoronacigars.com/",
         "phone": "(813) 923-7982",
         "summary": "A cigar shop and lounge on 7th Avenue in Ybor City, open since 1998, with a walk-in humidor, a full bar and Cuban coffee. It is opening a larger 7th Avenue location in November 2026.",
@@ -1509,10 +1534,73 @@
         "also_sources": [
           "https://www.visittampabay.com/listings/king-corona-cigars/9721/"
         ],
-        "notes": "The site lists (813) 923-7982 for the 7th Ave store; the older Visit Tampa Bay listing gives (813) 247-6738. Cuban coffee is from the Visit Tampa Bay listing. The new 12,000 sq ft location ('Opening November 2026') includes a members-only floor. The eat-tampa slice may also list it as a bar.",
+        "notes": "The site lists (813) 923-7982 for the 7th Ave store; the older Visit Tampa Bay listing gives (813) 247-6738. Cuban coffee is from the Visit Tampa Bay listing. The new 12,000 sq ft location ('Opening November 2026') includes a members-only floor. The eat-tampa slice may also list it as a bar. Verified 2026-09-27: 1523 E 7th Ave, since 1998, full bar and walk-in humidor, phone and the King Corona 1902 location (12,000 sq ft, opening November 2026) re-read; Cuban coffee on the Visit Tampa Bay listing. Coordinates moved to the OSM node.",
         "checked": "2026-09-27"
+      },
+      {
+        "id": "tampas-black-history-museum",
+        "name": "Tampa's Black History Museum",
+        "aliases": [
+          "TBHM"
+        ],
+        "kind": "museum",
+        "topics": [
+          "history",
+          "black-history"
+        ],
+        "area": "downtown-tampa",
+        "address": "1213 N Central Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.956584,
+        "lng": -82.455766,
+        "geo_source": "census",
+        "url": "https://tampabayhistorycenter.org/tampas-black-history-museum/",
+        "phone": "(813) 945-2077",
+        "hours_text": "By appointment and for special programs; the permanent exhibit and gallery are scheduled to open in June 2027.",
+        "summary": "A museum of the history and culture of Tampa's African American community, in a historic red brick building on Central Avenue, run by the Tampa Bay History Center with the Tampa Housing Authority. Until its permanent exhibit opens (scheduled for June 2027) it welcomes visitors by appointment and for talks, a book club and other programs.",
+        "quote": "Tampa’s Black History Museum preserves, shares and celebrates the cultural heritage and contributions of Tampa’s African American community.",
+        "status": "open",
+        "source_url": "https://tampabayhistorycenter.org/tampas-black-history-museum/",
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27 (found in the Tampa Bay History Center's locations menu). Area: 1213 N Central Ave is in the Central Park neighborhood just north of downtown; filed under downtown-tampa like the history-tampa slice's nearby Perry Harvey Sr. Park. Programs listed on Sep 27, 2026: Oct 2 (80 Years of Omega Brotherhood and Service, free) and Oct 26 (Black History Book Club). Status open because the page says it welcomes visitors by appointment and for programs; the permanent exhibit is not open yet. Coordinates: Census address match."
+      },
+      {
+        "id": "usf-graphicstudio",
+        "name": "USF Graphicstudio",
+        "aliases": [
+          "Graphicstudio"
+        ],
+        "kind": "gallery",
+        "topics": [
+          "arts"
+        ],
+        "area": "north-tampa",
+        "address": "3702 Spectrum Blvd, Suite 100",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33612",
+        "lat": 28.056486,
+        "lng": -82.417828,
+        "geo_source": "census",
+        "url": "https://graphicstudio.usf.edu/",
+        "phone": "(813) 974-3503",
+        "hours_text": "Monday–Friday 10 AM–5 PM; closed Saturday, Sunday and university holidays.",
+        "price_text": "Free.",
+        "is_free": true,
+        "summary": "The University of South Florida's print production studio, which publishes editions by invited artists and holds free exhibitions; it is part of USF's College of Design, Art & Performance with the Contemporary Art Museum. Its fall 2026 show is Jim Dine: Swaying in the Florida Night (Sept 8–Dec 18).",
+        "quote": "Guided tours of Graphicstudio provide visitors with the opportunity to better understand how a print production facility functions.",
+        "status": "open",
+        "parking_text": "Metered parking spaces, or a USF Research Park permit.",
+        "source_url": "https://www.ira.usf.edu/gs/gs_contact.html",
+        "also_sources": [
+          "https://graphicstudio.usf.edu/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. Hours, free admission, parking, phone, tours (on request, two weeks' notice) and the address (given as its mailing address: 3702 Spectrum Blvd. Suite 100) from the contact page (read with curl; WebFetch summary agreed). The Jim Dine exhibition dates and the shared CAM + Graphicstudio college affiliation from graphicstudio.usf.edu. 'Publishes editions by invited artists' rests on the site's New Editions and Artists sections and the contact page's staff of printers. Coordinates: Census address match in the USF Research Park."
       }
     ]
   },
-  "report": "# see-tampa — Tampa attractions and points of interest (checked Sep 27, 2026)\n\n## What this slice covers\n40 place records in the Tampa region (sheet 1): theme and water parks, the zoo, the aquarium, 15 museums (art, history, science, children's, maritime, baseball, cigar, firefighting, police, veterans, living history, a community museum), 2 galleries, districts and waterfronts (Tampa Riverwalk, Bayshore Boulevard, Water Street Tampa, Sparkman Wharf, Armature Works, Hyde Park Village, Ybor City's 7th Avenue, SoHo, Midtown Tampa), one weekly market, malls and notable shops, and the Seminole Hard Rock casino. Every record was filled from a page opened during this task (WebFetch or curl); coordinates come from the Census geocoder or Photon (OSM) via research/tools/geocode.mjs, each match checked against the address.\n\n## Counts\n- By kind: museum 15, shopping 7, district 4, waterfront 2, food-hall 2, gallery 2, theme-park 1, water-park 1, zoo 1, aquarium 1, science-center 1, casino 1, attraction 1, market 1.\n- By area: downtown-tampa 8, ybor-city 8, north-tampa 7, channel-district 5, east-tampa 3, hyde-park 3, westshore 3, south-tampa 2, tampa-heights 1. (No attraction records in harbour-island, davis-islands, west-tampa or seminole-heights: what is there is parks, venues, restaurants or history, owned by other slices.)\n- Status: 39 open, 1 seasonal (Adventure Island, last 2026 operating day Oct 25 per its calendar). 8 records carry a heritage block (Plant Museum, Ybor City Museum State Park, American Victory, El Reloj / J.C. Newman, Armature Works, Firefighters Museum, Tampa Baseball Museum, Oxford Exchange). 8 are marked signature.\n- Shared ids used: busch-gardens-tampa-bay, adventure-island, zootampa-at-lowry-park, florida-aquarium, mosi, glazer-childrens-museum, tampa-museum-of-art, henry-b-plant-museum, tampa-bay-history-center, ybor-city-museum-state-park, tampa-riverwalk, armature-works, sparkman-wharf, water-street-tampa, bayshore-boulevard, hyde-park-village, international-plaza, seminole-hard-rock-casino-tampa.\n\n## How candidates were found\n1. Visit Tampa Bay's listings API (the Simpleview endpoint behind visittampabay.com's category pages): all 339 PLAY [Things to Do] listings, reviewed by neighborhood and subcategory (Museums, Attractions, Arts & Culture, Aquariums & Zoos, Theme Parks, Shops, Casinos, Only in Tampa Bay, Family Fun).\n2. Wikipedia's List of museums in Florida (raw wikitext, Tampa rows): every Tampa museum on it is covered except the USF student-run Centre Gallery.\n3. OpenStreetMap via Photon with tourism=museum/gallery/attraction/theme_park/zoo/aquarium inside a Tampa bounding box.\n4. WebSearch by kind (galleries, markets, museums) until the session's search budget ran out, then direct site navigation.\n5. Official pages for every record (park, museum, mall, city/county pages); Visit Tampa Bay listings only where the business's own site could not be read.\n\n## Deliberately left out (and why)\n- Performing-arts and event venues, arenas, the State Fairgrounds, Centennial Park, Curtis Hixon and Julian B. Lane parks, Tampa Theatre, Straz Center, Hard Rock Event Center, Tampa Bay Downs, The Motor Enclave (racetrack): venues-bay.\n- Parks, preserves, gardens, beaches (Lettuce Lake, Water Works Park, Kiley Garden, Ballast Point, USF Botanical Gardens): outdoors. Butterfly Tampa is kept here because it is a paid bug zoo and butterfly exhibit, not a park.\n- Historic buildings and districts that are not museums (Ybor City Historic District, Cuban Club, Italian Club, Centro Asturiano, José Martí Park, Sulphur Springs Water Tower, Tampa Union Station, Sacred Heart): history-tampa.\n- Restaurants, bars, breweries, food halls other than Armature Works and Sparkman Wharf (Hall on Franklin, Columbia, Cigar City Brewing): eat-tampa. Tours, cigar-rolling classes, the Tabanero Cigars lounge experiences, Pirate Water Taxi, streetcar: exp-land, exp-water, getting-around.\n- Visitor centers (Ybor City Visitor Center, Unlock Tampa Bay): practical.\n- Outside the Tampa region: Carnival World Museum (Riverview), Dinosaur World, Robert W. Willaford Railroad Museum, TECO Manatee Viewing Center, Westfield Brandon, Tampa Premium Outlets: around-daytrips / outdoors.\n- Closed or gone: Big Cat Rescue was not researched or included (it is widely reported to have ended public tours; verifier may confirm). CASS Contemporary's site now lists only a Nashville gallery address, so it is left out.\n- Minor or unverifiable: Topgolf, K1 Speed, escape rooms, elev8 Fun as a stand-alone (named inside Citrus Park Town Center); by-appointment galleries (Michael Murphy Gallery, Marcolina's), galleries whose sites did not load (Tempus Projects, Dysfunctional Grace, Dean Street Fine Art); monthly markets (Fresh Market at Hyde Park Village, Water Street Market, Midtown markets, Seminole Heights Sunday Market) are mentioned in their host records and left to the event slices.\n\n## Open questions for the verifier\n- florida-museum-of-photographic-arts: fmopa.org is behind a bot check; hours and prices left null because Visit Tampa Bay (Mon–Thu 11–6, $10) and fmopa.org snippets (Tue–Sat 10–5, $12) disagree. Please read fmopa.org/visit in a browser.\n- ybor-city-museum-state-park: floridastateparks.org returns 403 here; hours ($4, Wed–Sun 9–4) come from the Ybor City Chamber page; 'built 1923' comes from Florida Backroads Travel. Confirm on the state park page.\n- tampa-police-museum: the memorial's page (2019) says Mon–Sat 10–3; a snippet said Mon–Fri. The city tried to sell the HQ building (no bids, Feb 2026).\n- tampa-firefighters-museum: admission not stated on its site.\n- busch-gardens-tampa-bay: parking prices differ between the FAQ ($32+tax / $35) and the add-ons page ($35 / $48).\n- adventure-island: 'last day Oct 25, 2026' is Main Street Magic's reading of the official calendar; the official calendar shows no dates between November 2026 and March 2027.\n- international-plaza: the mall's domain did not resolve; the Visit Tampa Bay listing is the only source (hours, 170 stores/16 restaurants).\n- tampa-baseball-museum: prices from the Ybor Chamber listing; hours (incl. Sunday 11–5) from the museum's own site.\n- king-corona-cigars: two phone numbers (site vs Visit Tampa Bay); a new location opens November 2026.\n- Possible cross-slice duplicates: henry-b-plant-museum vs a history-tampa 'plant-hall' / 'tampa-bay-hotel' record; ybor-city-7th-avenue vs ybor-city-historic-district; armature-works and oxford-exchange vs eat-tampa; j-c-newman-cigar-company vs an exp-land factory-tour experience (this record is the free museum and factory store).\n- Coordinates that are points on linear features: tampa-riverwalk, bayshore-boulevard, soho-tampa, water-street-tampa (OSM ways); ybor-city-saturday-market uses the Centennial Park streetcar stop next to the park; midtown-tampa uses a hotel inside the district.\n"
+  "report": "# see-tampa — Tampa attractions and points of interest (checked Sep 27, 2026)\n\n## What this slice covers\n40 place records in the Tampa region (sheet 1): theme and water parks, the zoo, the aquarium, 15 museums (art, history, science, children's, maritime, baseball, cigar, firefighting, police, veterans, living history, a community museum), 2 galleries, districts and waterfronts (Tampa Riverwalk, Bayshore Boulevard, Water Street Tampa, Sparkman Wharf, Armature Works, Hyde Park Village, Ybor City's 7th Avenue, SoHo, Midtown Tampa), one weekly market, malls and notable shops, and the Seminole Hard Rock casino. Every record was filled from a page opened during this task (WebFetch or curl); coordinates come from the Census geocoder or Photon (OSM) via research/tools/geocode.mjs, each match checked against the address.\n\n## Counts\n- By kind: museum 15, shopping 7, district 4, waterfront 2, food-hall 2, gallery 2, theme-park 1, water-park 1, zoo 1, aquarium 1, science-center 1, casino 1, attraction 1, market 1.\n- By area: downtown-tampa 8, ybor-city 8, north-tampa 7, channel-district 5, east-tampa 3, hyde-park 3, westshore 3, south-tampa 2, tampa-heights 1. (No attraction records in harbour-island, davis-islands, west-tampa or seminole-heights: what is there is parks, venues, restaurants or history, owned by other slices.)\n- Status: 39 open, 1 seasonal (Adventure Island, last 2026 operating day Oct 25 per its calendar). 8 records carry a heritage block (Plant Museum, Ybor City Museum State Park, American Victory, El Reloj / J.C. Newman, Armature Works, Firefighters Museum, Tampa Baseball Museum, Oxford Exchange). 8 are marked signature.\n- Shared ids used: busch-gardens-tampa-bay, adventure-island, zootampa-at-lowry-park, florida-aquarium, mosi, glazer-childrens-museum, tampa-museum-of-art, henry-b-plant-museum, tampa-bay-history-center, ybor-city-museum-state-park, tampa-riverwalk, armature-works, sparkman-wharf, water-street-tampa, bayshore-boulevard, hyde-park-village, international-plaza, seminole-hard-rock-casino-tampa.\n\n## How candidates were found\n1. Visit Tampa Bay's listings API (the Simpleview endpoint behind visittampabay.com's category pages): all 339 PLAY [Things to Do] listings, reviewed by neighborhood and subcategory (Museums, Attractions, Arts & Culture, Aquariums & Zoos, Theme Parks, Shops, Casinos, Only in Tampa Bay, Family Fun).\n2. Wikipedia's List of museums in Florida (raw wikitext, Tampa rows): every Tampa museum on it is covered except the USF student-run Centre Gallery.\n3. OpenStreetMap via Photon with tourism=museum/gallery/attraction/theme_park/zoo/aquarium inside a Tampa bounding box.\n4. WebSearch by kind (galleries, markets, museums) until the session's search budget ran out, then direct site navigation.\n5. Official pages for every record (park, museum, mall, city/county pages); Visit Tampa Bay listings only where the business's own site could not be read.\n\n## Deliberately left out (and why)\n- Performing-arts and event venues, arenas, the State Fairgrounds, Centennial Park, Curtis Hixon and Julian B. Lane parks, Tampa Theatre, Straz Center, Hard Rock Event Center, Tampa Bay Downs, The Motor Enclave (racetrack): venues-bay.\n- Parks, preserves, gardens, beaches (Lettuce Lake, Water Works Park, Kiley Garden, Ballast Point, USF Botanical Gardens): outdoors. Butterfly Tampa is kept here because it is a paid bug zoo and butterfly exhibit, not a park.\n- Historic buildings and districts that are not museums (Ybor City Historic District, Cuban Club, Italian Club, Centro Asturiano, José Martí Park, Sulphur Springs Water Tower, Tampa Union Station, Sacred Heart): history-tampa.\n- Restaurants, bars, breweries, food halls other than Armature Works and Sparkman Wharf (Hall on Franklin, Columbia, Cigar City Brewing): eat-tampa. Tours, cigar-rolling classes, the Tabanero Cigars lounge experiences, Pirate Water Taxi, streetcar: exp-land, exp-water, getting-around.\n- Visitor centers (Ybor City Visitor Center, Unlock Tampa Bay): practical.\n- Outside the Tampa region: Carnival World Museum (Riverview), Dinosaur World, Robert W. Willaford Railroad Museum, TECO Manatee Viewing Center, Westfield Brandon, Tampa Premium Outlets: around-daytrips / outdoors.\n- Closed or gone: Big Cat Rescue was not researched or included (it is widely reported to have ended public tours; verifier may confirm). CASS Contemporary's site now lists only a Nashville gallery address, so it is left out.\n- Minor or unverifiable: Topgolf, K1 Speed, escape rooms, elev8 Fun as a stand-alone (named inside Citrus Park Town Center); by-appointment galleries (Michael Murphy Gallery, Marcolina's), galleries whose sites did not load (Tempus Projects, Dysfunctional Grace, Dean Street Fine Art); monthly markets (Fresh Market at Hyde Park Village, Water Street Market, Midtown markets, Seminole Heights Sunday Market) are mentioned in their host records and left to the event slices.\n\n## Open questions for the verifier\n- florida-museum-of-photographic-arts: fmopa.org is behind a bot check; hours and prices left null because Visit Tampa Bay (Mon–Thu 11–6, $10) and fmopa.org snippets (Tue–Sat 10–5, $12) disagree. Please read fmopa.org/visit in a browser.\n- ybor-city-museum-state-park: floridastateparks.org returns 403 here; hours ($4, Wed–Sun 9–4) come from the Ybor City Chamber page; 'built 1923' comes from Florida Backroads Travel. Confirm on the state park page.\n- tampa-police-museum: the memorial's page (2019) says Mon–Sat 10–3; a snippet said Mon–Fri. The city tried to sell the HQ building (no bids, Feb 2026).\n- tampa-firefighters-museum: admission not stated on its site.\n- busch-gardens-tampa-bay: parking prices differ between the FAQ ($32+tax / $35) and the add-ons page ($35 / $48).\n- adventure-island: 'last day Oct 25, 2026' is Main Street Magic's reading of the official calendar; the official calendar shows no dates between November 2026 and March 2027.\n- international-plaza: the mall's domain did not resolve; the Visit Tampa Bay listing is the only source (hours, 170 stores/16 restaurants).\n- tampa-baseball-museum: prices from the Ybor Chamber listing; hours (incl. Sunday 11–5) from the museum's own site.\n- king-corona-cigars: two phone numbers (site vs Visit Tampa Bay); a new location opens November 2026.\n- Possible cross-slice duplicates: henry-b-plant-museum vs a history-tampa 'plant-hall' / 'tampa-bay-hotel' record; ybor-city-7th-avenue vs ybor-city-historic-district; armature-works and oxford-exchange vs eat-tampa; j-c-newman-cigar-company vs an exp-land factory-tour experience (this record is the free museum and factory store).\n- Coordinates that are points on linear features: tampa-riverwalk, bayshore-boulevard, soho-tampa, water-street-tampa (OSM ways); ybor-city-saturday-market uses the Centennial Park streetcar stop next to the park; midtown-tampa uses a hotel inside the district.\n\n## Verification (2026-09-27)\n\nAdversarial pass by a second agent. **42 records now (40 checked, 0 removed, 2 added), validator clean** (3 warnings: bayshore-boulevard, ybor-city-7th-avenue and soho-tampa have no official url, which is correct).\n\n### How it was checked\n- Every record's source_url, quote_source, url, also_sources and heritage sources (110 URLs) were read again: through a reader proxy (r.jina.ai) for the raw text, with WebFetch for pages that render by script, and with curl for structured data (WestShore Plaza, Graphicstudio). Every quote was compared word for word with the page text; the ones the reader text splits with markup (aquarium, CAM, Cracker Country, J.C. Newman, Ybor market) were confirmed with WebFetch.\n- Each record was checked for current operation: 2026 hours, events, exhibitions or posts on its own page. Big Cat Rescue confirms it moved its cats to Turpentine Creek in 2024 and no longer runs a sanctuary, so it stays out.\n- Coordinates: every address was re-geocoded (Census) and every name looked up in OpenStreetMap (Photon). Following SPEC §7, 18 records moved from a Census street point, a hotel or a streetcar stop to the OSM feature for the place itself: the zoo (about 500 m), the aquarium (220 m), International Plaza (500 m), the History Center (from the Columbia Cafe node), Ybor Saturday Market (from the streetcar stop to Centennial Park), Midtown (from the Aloft to the district), and 12 moves under 100 m. All areas were confirmed against SPEC §4.1.\n- WebSearch was not available (the session's search budget was used up), so closures were checked on each place's own page and the discovery pass used Visit Tampa Bay's cached listings feed (339 things-to-do listings, compared by name with every slice), the History Center's and USF's own sites, and direct navigation.\n\n### What was fixed\n- **zootampa-at-lowry-park**: zootampa.org's home page is now behind a bot check. The quote and the \"new Florida Waters exhibit\" claim could not be re-read, so both were removed and the summary rebuilt from Wikipedia (63 acres, 1,300+ animals, manatees). Hours, prices, parking and phone were confirmed on the visit page.\n- **ybor-city-museum-state-park**: floridastateparks.org now reads, so it is the source. Hours now include the holiday closures, and the price notes children 5 and under are free. The quote now comes from the state page. The built year was removed: sources disagree (Florida State Parks says 1835, Wikipedia says the bakery was founded in 1896, a travel site says 1923). The heritage story was rewritten from sourced facts (1896, the 1922 fire and rebuild, bread until 1973, acquired 1976, museum opened 1980). The claim that a ranger tour is part of the visit was corrected to \"La Casita tours on request\".\n- **international-plaza**: the mall's domain is dead and its official page is now on simon.com, which is now the source. Phone changed to 813-877-7988. Store and restaurant counts changed to more than 170 brands and 30 places to eat, from the mall's own page. Hours, valet prices, garages and a quote were added. Louis Vuitton and Gucci were removed (not on the pages read).\n- **florida-museum-of-photographic-arts**: source_url is now fmopa.org (home and about pages read). The accessibility text, which only the bot-checked /visit page stated, was removed. Hours and prices stay null.\n- **tampa-baseball-museum**: moved to the museum's own visit page. Hours now note that Sunday opening applies in spring training and the MLB season, and list the closed days. Prices now include first responders and educators. Accessibility and parking were added.\n- **tampa-bay-history-center**: the \"8,000 maps\" figure is not on the library's page (\"thousands\"), so it was removed. The 615 Channelside lot is named \"Sparkman Parking Lot\", and the ParkWhiz mention was dropped.\n- **glazer-childrens-museum**: the quote was not on any page, so it was replaced with a sentence from the exhibits page.\n- **tampa-museum-of-art**: the quote had been cut mid-sentence and now runs to the end of the sentence. Closures and the other free categories were added.\n- **henry-b-plant-museum**: the hours are labeled January to November by the museum. \"Multilingual audio guides\" was corrected to an English and Spanish audio tour. Infants and members free was added.\n- **adventure-island**: the Oct 12 and Oct 25 dates are now attributed to Main Street Magic, because the official calendar's day grid does not render. The hours text is now from the official page.\n- **busch-gardens-tampa-bay**: price, parking and hours wording were tightened to the source's words.\n- **sparkman-wharf**: \"movie nights\", \"Pirate Water Taxi stop #2\" and ParkMobile were not on its pages and were removed.\n- **armature-works**: the \"from $10 after 4 PM\" parking figure was removed (not stated).\n- **florida-aquarium**: the garage list was corrected to the three the parking page names.\n- **drew-marc-gallery**: Sunday hours (11–4) were added from its site.\n- **usf-contemporary-art-museum**: the wrong alias \"USF Graphicstudio\" was removed (it is a separate place, now its own record).\n- **american-victory-ship-mariners-museum**: the heritage dates were aligned with the history page (arrived Sept 16, 1999; 2003 shakedown cruise).\n- **tampa-firefighters-museum**: the heritage story now holds history only.\n- **tampa-police-museum**: the hours are attributed to the memorial's 2019 page.\n- **soho-tampa**: the quote was Wikipedia's wording, not an official page's, and was removed.\n- Every other record was confirmed as written and has a \"Verified 2026-09-27\" line in notes.\n\n### Added (2)\n- **tampas-black-history-museum**: the Tampa Bay History Center's Black history museum at 1213 N Central Ave, run with the Tampa Housing Authority. It is open by appointment and for programs, and its permanent exhibit is scheduled for June 2027.\n- **usf-graphicstudio**: USF's print production studio at 3702 Spectrum Blvd. It has free exhibitions on weekdays; the fall 2026 show is Jim Dine: Swaying in the Florida Night (Sept 8–Dec 18).\n\n### Considered and left out\n- Centro Ybor: its site gives no address, hours or tenants, and its building is history-tampa's el-centro-espanol-de-tampa.\n- Michael Murphy Gallery: by appointment only during a move (mmgart.com).\n- Tempus Projects: 503 error. Dysfunctional Grace: domain does not resolve.\n- Sweetwater Organic Community Farm: its market notice is stale (\"Starting October 27th\", not a Sunday in 2026).\n- The Motor Enclave: public driving experiences belong in exp-land.\n- Tabanero Cigars: its lounge is exp-land's tabanero-leaf-and-learn departure.\n- Big Cat Rescue: closed as a sanctuary in 2024.\n- Horse Power for Kids: a motorsports nonprofit, not an animal sanctuary.\n- Chain entertainment venues and escape rooms.\n\n### Open questions for the merge\n- tampa-police-museum: the only hours source is dated 2019. Keep it open, but it deserves a phone check.\n- florida-museum-of-photographic-arts: hours and prices are still null. fmopa.org/visit sits behind a bot check.\n- ybor-city-7th-avenue (the street) and history-tampa's ybor-city-historic-district (the landmark district) are separate records by design.\n- riverwalk-historical-monument-trail (history-tampa) sits inside tampa-riverwalk.\n- The Oxford Exchange and King Corona records may also appear in eat-tampa.\n- ybor-city-saturday-market's address (1901 N 19th St, from That's So Tampa) differs from venues-bay's Centennial Park address (1800 E 8th Ave). Both are on the park's edges."
 }

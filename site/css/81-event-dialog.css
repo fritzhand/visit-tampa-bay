@@ -1,42 +1,56 @@
 /* ======================================================================
-   site/css/81-event-dialog.css · OWNER: E1 (a MECHANICAL port of Cincy Week's CSS so the build passes; the design agent re-skins it)
-   The event dialog body (.evd, ?e=): kind, title, when (ET) with its state word, place with the
-   stall number, address, mini-map and directions, the description, people, facts, source, actions.
-   The modal frame is .modal in 80-dialogs.css (A). The work dialog (F) reuses .evd, .evd-actions,
-   .ev-where and .source-line, so those names stay. Tokens only; no color literal.
+   site/css/81-event-dialog.css · OWNER: the design system ("Chart & Label", design/DESIGN.md)
+   The event dialog (#event-dialog, ?e=) and the experience dialog (#experience-dialog, ?x=), both rendered by the
+   client (site/js/core/event-dialog.js, experience-dialog.js) inside .modal-body.evd / .evd.xd: kind line, the
+   title in Bodoni, when (ET) with its state word, where, our summary, the source's words (Bodoni italic, with
+   "From <host>"), facts, the mini map and directions, the source line, the actions (Add to My Trip in the house
+   ink). The modal frame is .modal in 80-dialogs.css. Tokens only; no color literal.
    ====================================================================== */
+.modal-head .sheet-badge { font-size: var(--fs-label); }
 .evd h2 { font-size: var(--fs-xl); margin-top: var(--sp-1); text-wrap: balance; }
-.evd h2:focus { outline: none; }
-.evd h2:focus-visible { outline: none; }                          /* programmatic focus on the title: no ring (it is not a control) */
+.evd h2:focus, .evd h2:focus-visible { outline: none; }          /* programmatic focus on the title: not a control */
 .evd-kind { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; color: var(--text-muted); }
-.evd-when { margin-top: var(--sp-3); font-weight: var(--wght-strong); font-variant-numeric: tabular-nums; line-height: 1.8; }
+.evd-kind .i { width: 16px; height: 16px; color: var(--text); }
+.evd-kind .badge { margin-left: 4px; }
+.evd-when { margin-top: var(--sp-3); padding: 8px 12px; background: var(--surface-alt); border-left: 3px solid var(--rule-ink); font-weight: var(--wght-strong); font-variant-numeric: tabular-nums; line-height: 1.8; }
 .evd-when .faint { font-weight: var(--wght-body); }
 .evd-when .ev-status, .evd-when .unk { margin-left: 8px; }
 .evd-when .unk { font-weight: var(--wght-body); }
+.evd-when .nw { white-space: nowrap; }
 .evd-days { list-style: none; padding: 0; margin-top: var(--sp-2); font-size: var(--fs-sm); color: var(--text-muted); }
-.evd-days li { padding: 4px 0; border-top: 1px solid var(--border); }
+.evd-days li { padding: 5px 0; border-top: 1px solid var(--border); }
 .evd-days .tnum { display: inline-block; min-width: 10ch; color: var(--text); font-weight: var(--wght-strong); }
-.evd-grid { display: grid; gap: var(--sp-4); grid-template-columns: minmax(0, 1fr); margin-top: var(--sp-4); }
-@media (min-width: 700px) { .evd-grid { grid-template-columns: minmax(0, 1fr) 240px; } }
-.evd-where { padding-right: 0; font-size: var(--fs-sm); }
+.evd-grid { display: grid; gap: var(--sp-4) var(--sp-5); grid-template-columns: minmax(0, 1fr); margin-top: var(--sp-4); }
+@media (min-width: 700px) { .evd-grid { grid-template-columns: minmax(0, 1fr) 250px; } }
+.evd-main { min-width: 0; }
+.evd-where { display: flex; align-items: baseline; gap: 8px; font-size: var(--fs-sm); color: var(--text-muted); }
+.evd-where > .i { width: 16px; height: 16px; align-self: center; flex: none; color: var(--text); }
 .evd-where > span { min-width: 0; }
 .evd-where a { font-weight: var(--wght-strong); color: var(--text); }
 .evd-addr { display: block; margin-top: 2px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
-.evd-desc { margin-top: var(--sp-4); }
-.evd-people { list-style: none; padding: 0; display: grid; gap: var(--sp-2); grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); }
-.evd-people a { display: flex; align-items: center; gap: 12px; min-height: var(--tap); color: var(--text); text-decoration: none; }
-.evd-people a:hover b { text-decoration: underline; }
-.evd-people span span { display: block; font-size: var(--fs-xs); color: var(--text-muted); line-height: 1.35; }
+.evd-sum { margin-top: var(--sp-3); }
+/* the source's own words: Bodoni italic under a rule in the sheet's ink, always with where they come from */
+.evd-desc { margin-top: var(--sp-4); padding-left: var(--sp-4); border-left: var(--rule-mid) solid var(--ink-edge); font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: 1.0625rem; line-height: var(--lh-snug); }
+.evd-desc p + p { margin-top: var(--sp-2); }
+.evd-desc.unk { font-family: var(--font-body); font-style: normal; font-size: var(--fs-sm); border-left-style: dashed; }
+.evd-cite { margin-top: 6px; padding-left: var(--sp-4); font-size: var(--fs-xs); }
 .evd-facts { margin: var(--sp-5) 0 0; }
 .evd-facts .fact { flex-basis: 150px; }
-.evd-side .mini-map { margin: 0; }
+.evd-side { min-width: 0; }
+.evd-side .mini-map { margin: 4px 4px 0; }
 .evd-side > .unk { font-size: var(--fs-sm); }
-.evd-dir { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-2); }
+.evd-dir { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-3); }
 .evd-actions { display: flex; flex-wrap: wrap; gap: var(--sp-2); margin-top: var(--sp-5); padding-top: var(--sp-4); border-top: 1px solid var(--border); }
-.evd-actions .btn-river[aria-pressed="true"] { background: var(--accent-strong); }
 @media (max-width: 559px) {
   .evd-actions .btn { flex: 1 1 auto; }
-  .evd-actions .btn-river { flex-basis: 100%; }
+  .evd-actions .btn-river, .evd-actions .btn-house { flex-basis: 100%; }
 }
-.evd-credits { font-size: var(--fs-sm); line-height: 1.5; max-width: var(--measure); }
-.evd-when .nw { white-space: nowrap; }   /* QA: "4:00 PM ET" stays on one line */
+/* the experience dialog: its picture (or the big plate), the operator, the status note, the booking links */
+.xd-media { margin: 0 0 var(--sp-4); }
+.plate-type.xd-media { width: 100%; }
+@media (min-width: 700px) { .plate-type.xd-media { aspect-ratio: 21 / 8; } }
+.xd-op { margin-top: 4px; font-size: var(--fs-sm); font-weight: var(--wght-strong); color: var(--text-muted); }
+.xd-status { margin-top: var(--sp-3); padding: 8px 12px; background: var(--warning-tint); color: var(--warning); border-left: 3px solid var(--warning-edge); }
+.xd-status > span { color: var(--text); }
+.xd-quote { font-size: var(--fs-md); }
+.xd-links { margin-top: var(--sp-4); }

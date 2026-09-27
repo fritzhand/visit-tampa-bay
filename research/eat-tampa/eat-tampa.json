@@ -1,0 +1,2664 @@
+{
+ "slice": "eat-tampa",
+ "checked": "2026-09-27",
+ "records": {
+  "places": [
+   {
+    "id": "rocca",
+    "name": "Rocca",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "tampa-heights",
+    "address": "323 W Palm Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.962357,
+    "lng": -82.465146,
+    "geo_source": "census",
+    "url": "https://roccatampa.com/",
+    "phone": "(813) 906-5445",
+    "hours_text": "Sunday–Thursday 5–9 PM; Friday–Saturday 5–10 PM.",
+    "summary": "Chef Bryce Bonsack's Italian restaurant in the Heights District, known for house-made pasta. The 2026 MICHELIN Guide gives it one star.",
+    "quote": "Italian cuisine inspired by the old and the new",
+    "status": "open",
+    "tags": [
+     "michelin-star",
+     "italian",
+     "pasta"
+    ],
+    "source_url": "https://roccatampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/rocca",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/rocca/19044/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Site header says Michelin Guide and 'Tampa Bay Times #1 2024'."
+   },
+   {
+    "id": "kosen",
+    "name": "Kōsen",
+    "aliases": [
+     "Kosen"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "tampa-heights",
+    "address": "307 W Palm Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.962359,
+    "lng": -82.464428,
+    "geo_source": "census",
+    "url": "https://www.kosentampa.com/",
+    "phone": "(813) 999-1720",
+    "summary": "A Japanese omakase restaurant in Tampa Heights serving a tasting menu of more than 20 courses at a 12-seat chef's counter, with the Tantō cocktail lounge alongside. The 2026 MICHELIN Guide gives it one star.",
+    "quote": "Immerse yourself in a 20+ course Omakase Experience, blending tradition and innovation at our 12-seat Chef’s Counter.",
+    "status": "open",
+    "tags": [
+     "michelin-star",
+     "japanese",
+     "omakase",
+     "sushi",
+     "reservations-required"
+    ],
+    "source_url": "https://www.kosentampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/kosen",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.kosentampa.com/about"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The About page says Kosen translates to 'ray of light'; executive chef Andrew Huang."
+   },
+   {
+    "id": "koya",
+    "name": "Koya",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "hyde-park",
+    "address": "807 W Platt St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.941777,
+    "lng": -82.467747,
+    "geo_source": "census",
+    "url": "https://www.koyatampa.com/",
+    "hours_text": "Typical service days are Thursday–Saturday; reservation only.",
+    "summary": "An eight-seat, tasting-menu-only Japanese counter in Hyde Park from the owners of Noble Rice and Kinjo; seats are booked a month ahead through Tock. The 2026 MICHELIN Guide gives it one star, which the restaurant lists for 2023 to 2026.",
+    "quote": "Koya is an intimate 8-seat tasting-menu-only experience by Noble Rice.",
+    "status": "open",
+    "tags": [
+     "michelin-star",
+     "japanese",
+     "tasting-menu",
+     "reservations-required"
+    ],
+    "source_url": "https://www.koyatampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/koya",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.koyatampa.com/team"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Reservations open on the 15th at 10 AM for the following month (per the site). Owners/chefs Eric and Adriana Fralick (team page). Phone (813) 284-7423 per the Michelin data; not on the site."
+   },
+   {
+    "id": "ebbe",
+    "name": "Ebbe",
+    "aliases": [
+     "EBBE"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "downtown-tampa",
+    "address": "1202 N Franklin St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.953553,
+    "lng": -82.460271,
+    "geo_source": "census",
+    "url": "https://www.chefebbe.com/",
+    "price_text": "Discovery menu $225; Prestige menu $340 (as listed on the restaurant's site).",
+    "summary": "A chef's counter on North Franklin Street downtown serving multi-course tasting menus built on East Coast seafood and produce with Nordic technique. The 2026 MICHELIN Guide gives it one star.",
+    "quote": "A multi-course tasting menu from Chef Ebbe, built on the best the East Coast gives us that week.",
+    "status": "open",
+    "tags": [
+     "michelin-star",
+     "tasting-menu",
+     "nordic",
+     "reservations-required"
+    ],
+    "source_url": "https://www.chefebbe.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/ebbe",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Phone +1 813-284-8276 per the Michelin data."
+   },
+   {
+    "id": "psomi",
+    "name": "Psomi",
+    "kind": "restaurant",
+    "kinds": [
+     "cafe-bakery"
+    ],
+    "topics": [
+     "food"
+    ],
+    "area": "hyde-park",
+    "address": "701 N Howard Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.949947,
+    "lng": -82.482923,
+    "geo_source": "census",
+    "url": "https://www.eatpsomi.com/",
+    "phone": "(813) 841-5555",
+    "hours_text": "Wednesday–Sunday 8 AM–3 PM.",
+    "summary": "A Greek bakery and restaurant on North Howard Avenue serving breakfast, lunch and brunch with house-made bread, Greek wines and cocktails. The 2026 MICHELIN Guide lists it as a Bib Gourmand.",
+    "quote": "bread is the cornerstone of every meal at psomi, it's where every meal starts and how every dish is built.",
+    "status": "open",
+    "parking_text": "Overflow lot one block north at Howard and Cypress; valet off Cass St Friday–Sunday (per the site).",
+    "tags": [
+     "michelin-bib-gourmand",
+     "greek",
+     "bakery",
+     "brunch"
+    ],
+    "source_url": "https://www.eatpsomi.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/psomi",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/psomi/19161/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions."
+   },
+   {
+    "id": "streetlight-taco",
+    "name": "Streetlight Taco",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "4004 Henderson Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33629",
+    "lat": 27.930096,
+    "lng": -82.510051,
+    "geo_source": "census",
+    "url": "https://www.streetlighttaco.com/",
+    "phone": "(813) 217-9158",
+    "hours_text": "Sunday–Thursday 11:30 AM–9 PM; Friday–Saturday 11:30 AM–10 PM.",
+    "summary": "A Mexican restaurant on Henderson Boulevard led by chef Michael Brannock, who grinds heirloom corn on a stone molino for its masa and tortillas. The 2026 MICHELIN Guide lists it as a Bib Gourmand.",
+    "status": "open",
+    "tags": [
+     "michelin-bib-gourmand",
+     "mexican",
+     "tacos"
+    ],
+    "source_url": "https://www.streetlighttaco.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/streetlight-taco",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/streetlight-taco/20557/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Chef and molino details from the Visit Tampa Bay listing."
+   },
+   {
+    "id": "rooster-and-the-till",
+    "name": "Rooster & the Till",
+    "aliases": [
+     "Rooster and the Till"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "seminole-heights",
+    "address": "6500 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33604",
+    "lat": 28.006678,
+    "lng": -82.459548,
+    "geo_source": "census",
+    "url": "https://www.roosterandthetill.com/",
+    "phone": "(813) 374-8940",
+    "hours_text": "Dinner Wednesday–Thursday 5–9 PM, Friday–Saturday 5–10 PM (bar only 10 PM–midnight).",
+    "summary": "A Seminole Heights restaurant by chef Ferrell Alvarez that opened in 2013 and serves an always-changing menu, a tasting menu and a guest-chef dinner series. The 2026 MICHELIN Guide lists it as a Bib Gourmand; the restaurant says it has received the award four times.",
+    "quote": "What started in 2013 as a 37-seat restaurant with a few induction burners has evolved into a 72 seat, award-winning establishment",
+    "status": "open",
+    "parking_text": "Lot next to the restaurant at the NW corner of Diane St and Florida Ave (per the site).",
+    "tags": [
+     "michelin-bib-gourmand",
+     "new-american",
+     "tasting-menu"
+    ],
+    "source_url": "https://www.roosterandthetill.com/contact",
+    "also_sources": [
+     "https://www.roosterandthetill.com/",
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/rooster-and-the-till",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The site says Alvarez was a 2017 James Beard semifinalist (Best Chef South) and the restaurant was No. 1 on the Tampa Bay Times Top 50 of 2018."
+   },
+   {
+    "id": "gorkhali-kitchen",
+    "name": "Gorkhali Kitchen",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "north-tampa",
+    "address": "10044 Cross Creek Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33647",
+    "lat": 28.142155,
+    "lng": -82.327587,
+    "geo_source": "census",
+    "url": "https://gorkhalikitchentampa.com/",
+    "phone": "(813) 388-6404",
+    "hours_text": "Monday, Wednesday–Thursday 11 AM–2:30 PM and 5–9:30 PM; Friday–Sunday 11 AM–2:30 PM and 5–10 PM; closed Tuesday.",
+    "summary": "A locally owned Nepali restaurant in New Tampa, opened in 2022 by four friends, serving Himalayan dishes from Kathmandu for lunch and dinner. The 2026 MICHELIN Guide lists it as a Bib Gourmand.",
+    "quote": "We are locally owned and dedicated to serving up great Himalayan-inspired, authentic flavors of Kathmandu City for lunch and dinner.",
+    "status": "open",
+    "tags": [
+     "michelin-bib-gourmand",
+     "nepali",
+     "indian"
+    ],
+    "source_url": "https://gorkhalikitchentampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/gorkhali-kitchen",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Page read rendered in a browser (the site is script-built)."
+   },
+   {
+    "id": "kinjo",
+    "name": "Kinjo",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "hyde-park",
+    "address": "224 S Boulevard",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.94197,
+    "lng": -82.468455,
+    "geo_source": "manual",
+    "url": "https://www.kinjotampa.com/",
+    "phone": "(813) 304-0000",
+    "summary": "A small Hyde Park restaurant from the Koya and Noble Rice team serving itameshi, Italian food made with Japanese ingredients and technique. Reservations are strongly recommended. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Kinjo means neighbor in Japanese.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "japanese",
+     "italian"
+    ],
+    "source_url": "https://www.kinjotampa.com/about-us",
+    "also_sources": [
+     "https://www.kinjotampa.com/",
+     "https://www.kinjotampa.com/location",
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/kinjo-1243932",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Coordinates are the MICHELIN Guide point for the restaurant (census and Photon did not match 224 S Boulevard; it sits beside Koya at Platt St and Boulevard). Address 224 S. Blvd per the restaurant's location page and Michelin; Visit Tampa Bay lists 226 S Blvd."
+   },
+   {
+    "id": "restaurant-bt",
+    "name": "Restaurant BT",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "2507 S MacDill Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33629",
+    "lat": 27.923075,
+    "lng": -82.493645,
+    "geo_source": "census",
+    "url": "https://www.restaurantbt.com/",
+    "phone": "(813) 258-1916",
+    "summary": "Chef BT Nguyen's French-Vietnamese restaurant on South MacDill Avenue. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Located in the heart of South Tampa, Restaurant BT offers an updated take on classic French-Vietnamese cuisine.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "vietnamese",
+     "french"
+    ],
+    "source_url": "https://www.restaurantbt.com/about-the-restaurant",
+    "also_sources": [
+     "https://www.restaurantbt.com/about-bt",
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/restaurant-bt",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Phone from the Michelin data. The chef's page says she came to the US as a refugee after the fall of Saigon."
+   },
+   {
+    "id": "bistro-bt",
+    "name": "Bistro BT",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "4267 Henderson Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33629",
+    "lat": 27.925436,
+    "lng": -82.515561,
+    "geo_source": "census",
+    "url": "https://www.bistro-bt.com/",
+    "phone": "(813) 513-8402",
+    "hours_text": "Monday–Saturday 11 AM–3 PM and 5–9 PM (to 9:30 PM Friday–Saturday); closed Sunday.",
+    "summary": "The casual sister of Restaurant BT, serving French bistro dishes and Vietnamese pho, bun and banh mi. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "A small French restaurant serving modestly priced, home style meals, wine and coffee.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "vietnamese",
+     "french"
+    ],
+    "source_url": "https://www.bistro-bt.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/bistro-bt",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions."
+   },
+   {
+    "id": "bar-terroir",
+    "name": "Bar Terroir",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "south-tampa",
+    "address": "3636 Henderson Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33609",
+    "lat": 27.936813,
+    "lng": -82.502354,
+    "geo_source": "census",
+    "url": "https://www.barterroir.co/",
+    "phone": "(813) 535-7922",
+    "hours_text": "Sunday–Monday 5–10 PM; closed Tuesday; Wednesday–Thursday 5–10 PM; Friday–Saturday 5–11 PM.",
+    "summary": "A French bistro on Henderson Boulevard. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "a francophiles’ celebration of french cooking and service",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "french",
+     "wine"
+    ],
+    "source_url": "https://www.barterroir.co/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/bar-terroir",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/bar-terroir/21417/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The site gives ZIP 33606; Michelin gives 33609 (kept)."
+   },
+   {
+    "id": "lilac",
+    "name": "Lilac",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "channel-district",
+    "address": "500 Channelside Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.943596,
+    "lng": -82.451239,
+    "geo_source": "census",
+    "url": "https://www.lilacrestauranttampa.com/",
+    "phone": "(813) 771-8022",
+    "summary": "Chef John Fraser's modern Mediterranean restaurant on the main floor of The Tampa EDITION at Water Street. It held one MICHELIN star from 2023 to 2025; the 2026 guide lists it as a recommended restaurant.",
+    "quote": "Tucked within the lush foliage of The Tampa EDITION’s main floor, Lilac presents an experience rooted in Chef Fraser’s Mediterranean mastery",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "mediterranean",
+     "hotel-restaurant"
+    ],
+    "source_url": "https://www.lilacrestauranttampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/lilac-1205642",
+     "https://www.visittampabay.com/michelin/",
+     "https://en.wikipedia.org/wiki/List_of_Michelin-starred_restaurants_in_Florida",
+     "https://www.visittampabay.com/listings/lilac/20554/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The restaurant's site still calls it 'the three-time recipient of a coveted Michelin Star'; the Wikipedia list shows a star 2023–2025 and none in 2026, matching the 2026 guide data (selected). Inside the tampa-edition stay."
+   },
+   {
+    "id": "berns-steak-house",
+    "name": "Bern's Steak House",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "history"
+    ],
+    "area": "hyde-park",
+    "address": "1208 S Howard Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.931551,
+    "lng": -82.482824,
+    "geo_source": "photon",
+    "url": "https://bernssteakhouse.com/",
+    "phone": "(813) 251-2421",
+    "summary": "A steakhouse on South Howard Avenue open since 1956, known for steaks dry-aged in house, a wine collection of more than half a million bottles and the upstairs Harry Waugh Dessert Room. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Perfectly aged steaks. One of the largest wine collections in the world. An internationally famous dessert room. These elements have combined since 1956",
+    "signature": true,
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "steakhouse",
+     "wine",
+     "dessert-room",
+     "james-beard-award",
+     "historic-restaurant"
+    ],
+    "source_url": "https://bernssteakhouse.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/bern%E2%80%99s",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/berns-steak-house/2638/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The site says the collection holds over half a million bottles and 6,500 labels, and cites the 2016 James Beard Award for Outstanding Wine Program. Bern and Gert (Laxer) built it in a former business block with a grocery, barber shop and dime store (site). Next to the epicurean-hotel stay."
+   },
+   {
+    "id": "mad-dogs-and-englishmen",
+    "name": "Mad Dogs & Englishmen",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "south-tampa",
+    "address": "4914 S MacDill Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33611",
+    "lat": 27.893472,
+    "lng": -82.493792,
+    "geo_source": "census",
+    "url": "https://maddogs.com/",
+    "phone": "(813) 832-3037",
+    "hours_text": "Monday–Thursday 11 AM–11 PM; Friday 11 AM–midnight; Saturday 10 AM–midnight; Sunday 10 AM–11 PM.",
+    "summary": "A British gastropub on South MacDill Avenue founded in 1991. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "british",
+     "gastropub"
+    ],
+    "source_url": "https://maddogs.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/mad-dogs-englishmen",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/mad-dogs-%26-englishmen/21122/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Founding year 1991 (Wilton Morley and Colonel Rick Craig) from the Visit Tampa Bay listing."
+   },
+   {
+    "id": "mise-en-place",
+    "name": "Mise en Place",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "ybor-city",
+    "address": "1229 E 8th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960941,
+    "lng": -82.446336,
+    "geo_source": "census",
+    "url": "https://www.miseonline.com/",
+    "phone": "(813) 254-5373",
+    "hours_text": "Dinner Tuesday–Thursday 5–10 PM, Friday–Saturday 5–11 PM; cocktail hour Tuesday–Saturday 4–6 PM.",
+    "summary": "A chef-driven restaurant established in 1986, now on East 8th Avenue in Ybor City, serving French-inspired modern cuisine. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "french",
+     "contemporary"
+    ],
+    "source_url": "https://www.miseonline.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/mise-en-place",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/mise-en-place/2479/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. 'Established in 1986' from the Visit Tampa Bay listing, which still shows the old address 442 W Grand Central Blvd; the restaurant's site and Michelin give 1229 E 8th Ave."
+   },
+   {
+    "id": "olivia",
+    "name": "Olivia",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "3601 W Swann Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33609",
+    "lat": 27.937585,
+    "lng": -82.501697,
+    "geo_source": "census",
+    "url": "https://www.oliviafl.com/",
+    "phone": "(813) 328-8866",
+    "summary": "A modern Italian restaurant on West Swann Avenue with a working dough room where the kitchen makes pizza dough, mozzarella, pasta and ravioli; a second location is in St. Petersburg. The 2026 MICHELIN Guide lists the Tampa restaurant as recommended.",
+    "quote": "Watch as you dine while our team makes authentic Italian pizza dough, fresh mozzarella, pasta & ravioli in our working dough room.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "italian"
+    ],
+    "source_url": "https://www.oliviafl.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/olivia-1200059",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Page read rendered in a browser (SiteGround bot check)."
+   },
+   {
+    "id": "ponte",
+    "name": "Ponte",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "westshore",
+    "address": "1010 Gramercy Ln",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.952432,
+    "lng": -82.503614,
+    "geo_source": "photon",
+    "url": "https://www.pontetampa.com/",
+    "phone": "(813) 582-7755",
+    "summary": "Chef Chris Ponte's restaurant in Midtown Tampa serving modern American cuisine with French and Italian influences, including steaks and seafood, from a glass-enclosed kitchen. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Ponte is a restaurant in Midtown Tampa that serves an elegant array of Modern American cuisine with French and Italian influences.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "new-american",
+     "midtown"
+    ],
+    "source_url": "https://www.pontetampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/ponte-1206505",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Page read rendered in a browser (SiteGround bot check)."
+   },
+   {
+    "id": "predalina",
+    "name": "Predalina",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "channel-district",
+    "address": "1001 E Cumberland Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.944948,
+    "lng": -82.449038,
+    "geo_source": "census",
+    "url": "https://predalina.com/",
+    "phone": "(813) 344-3442",
+    "hours_text": "Monday–Wednesday 3–11 PM; Thursday 3 PM–midnight; Friday 3 PM–1 AM; Saturday 10:30 AM–1 AM; Sunday 10:30 AM–10 PM.",
+    "summary": "A Mediterranean seafood restaurant and lounge at Water Street with an in-house shop, serving dinner, weekend brunch and late-night lounge service. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "mediterranean",
+     "seafood",
+     "water-street"
+    ],
+    "source_url": "https://predalina.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/predalina",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/predalina/19139/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions."
+   },
+   {
+    "id": "the-pearl-tampa",
+    "name": "The Pearl",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "channel-district",
+    "address": "823 Water St, Suite C-100",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.94326,
+    "lng": -82.450177,
+    "geo_source": "photon",
+    "url": "https://thepearlrestaurant.com/locations-menus/tampa/",
+    "phone": "(813) 709-7776",
+    "summary": "A restaurant, tavern and oyster bar at Water Street, part of a small group with locations in Ohio. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "The Pearl Tampa is honored to be included in the 2024 – 2026 MICHELIN Guide",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "seafood",
+     "oysters",
+     "gastropub",
+     "water-street"
+    ],
+    "source_url": "https://thepearlrestaurant.com/locations-menus/tampa/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/the-pearl",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/the-pearl/19063/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Visit Tampa Bay's Cuban sandwich page names its version (pork confit, smoked gouda). Valet at Water Street and Raybon Court (site)."
+   },
+   {
+    "id": "noble-rice",
+    "name": "Noble Rice",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "channel-district",
+    "address": "615 Channelside Dr, Suite 112",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.94352,
+    "lng": -82.447996,
+    "geo_source": "census",
+    "url": "https://www.noblericeco.com/",
+    "phone": "(813) 542-2021",
+    "hours_text": "Tuesday–Thursday 5–10 PM; Friday–Saturday 5–11 PM; closed Sunday and Monday.",
+    "summary": "A modern Japanese restaurant at Sparkman Wharf serving sushi, ramen, small plates and omakase, with a bar focused on Japanese whisky and sake; it is the sister of Koya and Kinjo. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "japanese",
+     "sushi",
+     "sparkman-wharf"
+    ],
+    "source_url": "https://www.noblericeco.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/noble-rice",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/noble-rice/11585/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Event parking: $5 flat rate at the Channelside garage (12th and Channelside) with a reservation, per the site."
+   },
+   {
+    "id": "the-brisket-shoppe",
+    "name": "The Brisket Shoppe",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "west-tampa",
+    "address": "3501 N Armenia Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.970419,
+    "lng": -82.484781,
+    "geo_source": "census",
+    "url": "https://www.thebrisketshoppe.com/",
+    "phone": "(813) 879-4647",
+    "summary": "A small-batch barbecue restaurant in West Tampa opened in 2021 by Danny Hernandez, whose family ran Pipo's Cuban Café and who built the Holy Hog BBQ brand. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "barbecue"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/the-brisket-shoppe/23336/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/the-brisket-shoppe",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The restaurant's own site sits behind a SiteGround captcha that neither curl nor a browser passed; facts from the Visit Tampa Bay listing (API) and the Michelin data (address, phone)."
+   },
+   {
+    "id": "flaming-mountain",
+    "name": "Flaming Mountain",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "north-tampa",
+    "address": "13520 University Plaza St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33613",
+    "lat": 28.069898,
+    "lng": -82.429589,
+    "geo_source": "census",
+    "url": "https://www.flamingmountaintampa.com/",
+    "phone": "(813) 609-8888",
+    "summary": "A regional Chinese restaurant on University Plaza Street in North Tampa. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "chinese"
+    ],
+    "source_url": "https://guide.michelin.com/us/en/florida/tampa/restaurant/flaming-mountain",
+    "also_sources": [
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The restaurant's website (flamingmountaintampa.com) did not resolve on Sep 27, 2026 (DNS failure through both curl and a browser), so hours and current operation are NOT confirmed from an official page; the address, phone and cuisine ('Chinese, Regional Cuisine') come from the Michelin data. Verifier: please confirm it is open."
+   },
+   {
+    "id": "supernatural-food-and-wine",
+    "name": "Supernatural Food & Wine",
+    "kind": "restaurant",
+    "kinds": [
+     "cafe-bakery"
+    ],
+    "topics": [
+     "food",
+     "drink"
+    ],
+    "area": "downtown-tampa",
+    "address": "305 E Polk St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.950633,
+    "lng": -82.459154,
+    "geo_source": "census",
+    "url": "https://www.supernaturaltpa.com/",
+    "phone": "(813) 202-3324",
+    "summary": "A downtown breakfast and lunch counter and natural-wine shop at North Franklin and East Polk streets, known for sourdough doughnuts made in house daily. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Think of us as your neighborhood natural wine bodega.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "sandwiches",
+     "doughnuts",
+     "natural-wine"
+    ],
+    "source_url": "https://www.supernaturaltpa.com/about-us",
+    "also_sources": [
+     "https://www.supernaturaltpa.com/",
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/supernatural-food-wine",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions."
+   },
+   {
+    "id": "cousin-vinnys-sandwich-co",
+    "name": "Cousin Vinny's Sandwich Co.",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "hyde-park",
+    "address": "1331 W Cass St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.94983,
+    "lng": -82.472959,
+    "geo_source": "census",
+    "url": "https://www.cousinvinnystampa.com/",
+    "summary": "A New York-style sandwich shop on West Cass Street in the North Hyde Park area. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Cousin Vinny's sandwiches are made from scratch and always live up to our motto. Good Mood, Good Food!",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "sandwiches",
+     "italian-american"
+    ],
+    "source_url": "https://www.cousinvinnystampa.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/cousin-vinny-s-sandwich-co",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Visit Tampa Bay's Michelin page places it in the NoHo neighborhood."
+   },
+   {
+    "id": "big-rays-fish-camp",
+    "name": "Big Ray's Fish Camp",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "6116 Interbay Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33611",
+    "lat": 27.879557,
+    "lng": -82.495073,
+    "geo_source": "census",
+    "url": "https://www.bigraysfishcamp.com/",
+    "phone": "(813) 605-3615",
+    "hours_text": "Tuesday 11 AM–4 PM; Wednesday–Saturday 11 AM–9 PM; Sunday 11 AM–8 PM; closed Monday.",
+    "summary": "A seafood shack in the Ballast Point neighborhood serving grouper sandwiches, fried shrimp, deviled crab and a pressed Cuban sandwich. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "quote": "Chef Raymond \"Nick\" Cruz grew up watching and learning about fishing from Grandpa Cruz a few blocks away at Ballast Point Pier.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "seafood",
+     "grouper-sandwich",
+     "cuban-sandwich"
+    ],
+    "source_url": "https://www.bigraysfishcamp.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/big-ray-s-fish-camp",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Visit Tampa Bay's Cuban sandwich page lists a Big Ray's at 333 S Franklin St (downtown); this record is the Interbay Blvd restaurant the Michelin Guide lists."
+   },
+   {
+    "id": "yummy-house-tampa",
+    "name": "Yummy House",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "east-tampa",
+    "address": "2620 E Hillsborough Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33610",
+    "lat": 27.99612,
+    "lng": -82.430929,
+    "geo_source": "census",
+    "url": "https://yummyhouseflorida.com/tampa/",
+    "phone": "(813) 237-3838",
+    "hours_text": "Monday–Saturday 11 AM–2:30 PM and 5–9:30 PM; Sunday 11 AM–2:30 PM and 5–9 PM; dim sum at lunch only.",
+    "summary": "A Chinese restaurant on East Hillsborough Avenue that serves dim sum at lunch. The 2026 MICHELIN Guide lists it as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "chinese",
+     "dim-sum"
+    ],
+    "source_url": "https://yummyhouseflorida.com/tampa/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/yummy-house",
+     "https://www.visittampabay.com/michelin/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. Also has locations in Sarasota and Gainesville."
+   },
+   {
+    "id": "fat-beet-farm",
+    "name": "Fat Beet Farm Kitchen and Bakery",
+    "kind": "restaurant",
+    "kinds": [
+     "cafe-bakery"
+    ],
+    "topics": [
+     "food",
+     "family"
+    ],
+    "area": "westshore",
+    "address": "13830 W Hillsborough Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33635",
+    "lat": 28.032427,
+    "lng": -82.644989,
+    "geo_source": "census",
+    "url": "https://www.fatbeetfarm.com/",
+    "phone": "(813) 922-2338",
+    "summary": "A farm on West Hillsborough Avenue with a kitchen and bakery that bakes in house, plus weekend farm tours and events. The 2026 MICHELIN Guide lists its kitchen and bakery as a recommended restaurant.",
+    "status": "open",
+    "tags": [
+     "michelin-recommended",
+     "farm-to-table",
+     "bakery"
+    ],
+    "source_url": "https://www.fatbeetfarm.com/",
+    "also_sources": [
+     "https://guide.michelin.com/us/en/florida/tampa/restaurant/fat-beet-farm-kitchen-and-bakery",
+     "https://www.visittampabay.com/michelin/",
+     "https://www.visittampabay.com/listings/fat-beet-farm/20355/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Michelin distinction read on Sep 27, 2026 from the MICHELIN Guide's own listing data (guide_year 2026, published 2026-05-28) behind guide.michelin.com (the HTML pages sit behind a bot challenge that WebFetch cannot pass) and cross-checked with visittampabay.com/michelin/, which lists the same 28 Tampa restaurants and distinctions. The site's homepage (rendered) shows 'Farm • Kitchen & Bakery • Private Events'; the farm tours and in-house baking come from the Visit Tampa Bay listing. Inner pages are behind a Cloudflare check. Area: Town 'n' Country is filed under westshore (SPEC 4.1)."
+   },
+   {
+    "id": "columbia-restaurant-ybor-city",
+    "name": "Columbia Restaurant",
+    "aliases": [
+     "Columbia Restaurant Ybor City",
+     "The Columbia"
+    ],
+    "kind": "restaurant",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "food",
+     "history",
+     "latin-heritage",
+     "music"
+    ],
+    "area": "ybor-city",
+    "address": "2117 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960187,
+    "lng": -82.435344,
+    "geo_source": "census",
+    "url": "https://www.columbiarestaurant.com/ybor-city-tampa",
+    "hours_text": "Sunday–Thursday 11 AM–9 PM; Friday–Saturday 11 AM–10 PM. Gift shop Monday–Saturday 11 AM–8 PM, Sunday 11 AM–6 PM.",
+    "summary": "The Columbia began as a corner saloon opened in 1903 and became a restaurant in 1905; it now fills a city block of Ybor City with 15 dining rooms and seating for up to 1,700. It serves Spanish-Cuban food from family recipes and stages flamenco shows, and it calls itself Florida's oldest restaurant.",
+    "quote": "For more than 120 years, the Columbia Restaurant has served Spanish-Cuban cuisine to the state of Florida, using family recipes and tradition.",
+    "quote_source": "https://www.columbiarestaurant.com/",
+    "heritage": {
+     "built": "1903–1905",
+     "era": "boomtown",
+     "story": "Spanish-Cuban immigrant Casimiro Hernandez Sr. helped open the Columbia Saloon on Dec. 17, 1903, and it became the Columbia Restaurant in 1905. The 1903 corner saloon is today's Cafe Dining Room, still using the original bar. Dining rooms were added over the century: the Don Quixote Room of 1935 was Tampa's first air-conditioned dining room, El Patio followed in 1937 and the Siboney Room opened on New Year's Eve 1955. The restaurant is still owned and run by the founder's descendants.",
+     "visiting": "Open daily for lunch and dinner; flamenco shows are booked through the restaurant's website.",
+     "sources": [
+      "https://www.columbiarestaurant.com/our-story",
+      "https://www.columbiarestaurant.com/ybor-city-tampa",
+      "https://www.1905familyofrestaurants.com/"
+     ]
+    },
+    "signature": true,
+    "status": "open",
+    "tags": [
+     "historic-restaurant",
+     "spanish",
+     "cuban",
+     "cuban-sandwich",
+     "flamenco",
+     "wine"
+    ],
+    "source_url": "https://www.columbiarestaurant.com/ybor-city-tampa",
+    "also_sources": [
+     "https://www.columbiarestaurant.com/our-story",
+     "https://www.visittampabay.com/listings/columbia-restaurant-ybor-city/2706/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Phone (813) 248-4961 per the Visit Tampa Bay listing (not printed on the location page). Visit Tampa Bay's Cuban sandwich page says the Columbia uses a 1915 recipe and La Segunda bread, and that 'flamenco dance performances nightly Mon.-Sat.' (listing). The location page says it earned the Distinguished Restaurants of North America Award of Excellence 2005–2008 and has been named 'One of Florida's Top Restaurants' since 1967. History-tampa may also hold this id.",
+    "phone": "(813) 248-4961"
+   },
+   {
+    "id": "columbia-cafe-tampa-bay-history-center",
+    "name": "Columbia Cafe at the Tampa Bay History Center",
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "latin-heritage",
+     "history"
+    ],
+    "area": "channel-district",
+    "address": "801 Water St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.94197,
+    "lng": -82.449991,
+    "geo_source": "photon",
+    "url": "https://www.columbiarestaurant.com/columbia-cafe-at-the-tbhc",
+    "phone": "(813) 229-5511",
+    "hours_text": "Sunday–Thursday 11 AM–9 PM; Friday–Saturday 11 AM–10 PM.",
+    "summary": "The Columbia's riverfront cafe inside the Tampa Bay History Center on the Riverwalk, serving Spanish-Cuban tapas, Spanish bean soup and Cuban sandwiches. Since October 2024 it has also served Goody Goody's P.O.X. burger and butterscotch pie, recipes from the Tampa burger stand founded in 1925.",
+    "quote": "Waterfront dining on the Tampa Riverwalk in the downtown Water Street neighborhood.",
+    "status": "open",
+    "tags": [
+     "cuban",
+     "spanish",
+     "riverwalk",
+     "goody-goody-burger"
+    ],
+    "source_url": "https://www.columbiarestaurant.com/columbia-cafe-at-the-tbhc",
+    "also_sources": [
+     "https://www.goodygoodyburgers.com/",
+     "https://www.visittampabay.com/listings/columbia-cafe-at-the-tampa-bay-history-center-riverwalk-tampa/7275/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Goody Goody's site: the Hyde Park Village location closed on Sept. 29, 2024; the P.O.X. burger, cheeseburger, Hyde Park Burger and butterscotch pie moved to this cafe from Oct. 1, and Goody Goody remains at Tampa International Airport Airside C. Phone from the Visit Tampa Bay listing. Inside the tampa-bay-history-center place (see-tampa)."
+   },
+   {
+    "id": "la-segunda-central-bakery",
+    "name": "La Segunda Central Bakery",
+    "aliases": [
+     "La Segunda Bakery"
+    ],
+    "kind": "cafe-bakery",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "food",
+     "history",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "2512 N 15th St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.965328,
+    "lng": -82.443021,
+    "geo_source": "census",
+    "url": "https://www.lasegundabakery.com/",
+    "phone": "(813) 248-1531",
+    "hours_text": "Ybor City bakery: 6:30 AM–3 PM daily.",
+    "summary": "An Ybor City bakery founded in 1915 by Juan Moré that bakes Cuban bread by hand, scoring each loaf with a palmetto leaf, and supplies restaurants across the region; it also sells pastries, café con leche and Cuban sandwiches. The family now runs four shops (Ybor, Kennedy Boulevard, Seminole Heights and St. Petersburg).",
+    "quote": "One of our most important time-honored customs is placing a freshly cut palmetto leaf across the top of each loaf to create the signature split down the middle.",
+    "heritage": {
+     "built": "1915",
+     "era": "boomtown",
+     "story": "Juan Moré, a Catalan who had fought in the Spanish-American War in Cuba, joined a co-op of bakers and cigar makers around the start of World War I that opened three Ybor City bakeries: La Primera, La Segunda and La Tercera. When the other two folded, he bought La Segunda from his partners. The bakery says it is run by the fourth generation of the family and bakes about 20,000 loaves a day.",
+     "visiting": "The Ybor City bakery counter is open 6:30 AM–3 PM daily.",
+     "sources": [
+      "https://www.lasegundabakery.com/our-story",
+      "https://www.lasegundabakery.com/locations"
+     ]
+    },
+    "status": "open",
+    "tags": [
+     "cuban-bread",
+     "cuban-sandwich",
+     "bakery",
+     "historic-restaurant"
+    ],
+    "source_url": "https://www.lasegundabakery.com/our-story",
+    "also_sources": [
+     "https://www.lasegundabakery.com/",
+     "https://www.lasegundabakery.com/locations",
+     "https://www.visittampabay.com/listings/la-segunda-central-bakery/2915/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The homepage says '18,000+ loaves baked daily'; the story page says 20,000 (story kept in the heritage block with 'about'). Visit Tampa Bay's Cuban sandwich page calls it the 'cornerstone of Cuban bread in Tampa Bay'. Other shops: 4015 W Kennedy Blvd (813-540-9119), 5150 N Florida Ave (813-237-2377), 2424 4th St N, St. Petersburg (727-388-4983)."
+   },
+   {
+    "id": "alessi-bakery",
+    "name": "Alessi Bakeries Food Market",
+    "aliases": [
+     "Alessi Bakery"
+    ],
+    "kind": "cafe-bakery",
+    "topics": [
+     "food",
+     "latin-heritage"
+    ],
+    "area": "west-tampa",
+    "address": "3003 W Cypress St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33609",
+    "lat": 27.952095,
+    "lng": -82.491595,
+    "geo_source": "census",
+    "url": "https://www.alessibakeries.com/",
+    "phone": "(813) 879-4544",
+    "summary": "A family-owned Italian bakery and food market on West Cypress Street selling pastries, breads, custom cakes and Italian and Cuban dishes.",
+    "quote": "Alessi Bakeries Food Market is a cherished Tampa Bay staple, family-owned for generations and known for its rich baking tradition.",
+    "status": "open",
+    "tags": [
+     "bakery",
+     "italian",
+     "cuban"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/alessi-bakeries-food-market/3208/",
+    "checked": "2026-09-27",
+    "notes": "The bakery's own site (alessibakeries.com) returned 502/503 through every route on Sep 27, 2026, so the facts come from the Visit Tampa Bay listing (partner-supplied text; categories Cuban, Italian, Pizza). The founding year commonly given (1912) was NOT confirmed on a page read and is left out. Verifier: please re-check the official site for hours and founding year."
+   },
+   {
+    "id": "la-teresita",
+    "name": "La Teresita",
+    "aliases": [
+     "La Teresita Restaurant",
+     "La Teresita Cuban Restaurant"
+    ],
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "latin-heritage"
+    ],
+    "area": "west-tampa",
+    "address": "3248 W Columbus Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.966667,
+    "lng": -82.496639,
+    "geo_source": "census",
+    "url": "https://lateresitarestaurant.com/",
+    "phone": "(813) 879-9704",
+    "hours_text": "As posted: service hours 6 AM–9 PM; Friday and Sunday 6 AM–midnight.",
+    "summary": "A Cuban restaurant on West Columbus Drive run by the Capdevila family since 1972, serving ropa vieja, roast pork, Cuban sandwiches and other Cuban staples from early morning. It began as a grocery store and sandwich shop.",
+    "status": "open",
+    "tags": [
+     "cuban",
+     "cuban-sandwich",
+     "historic-restaurant"
+    ],
+    "source_url": "https://lateresitarestaurant.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/la-teresita-restaurant/11004/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "'Est. 1972' from the site; the grocery-store origin and founders Maximino and Coralia Capdevila from the Visit Tampa Bay listing. The site's hours line reads 'SERVICE HOURS: 06:00AM-09:00pm FRI & SUN 06:00AM-12:00AM' (Saturday not stated separately)."
+   },
+   {
+    "id": "wrights-gourmet-house",
+    "name": "Wright's Gourmet House",
+    "kind": "cafe-bakery",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "1200 S Dale Mabry Hwy",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33629",
+    "lat": 27.932013,
+    "lng": -82.505745,
+    "geo_source": "census",
+    "url": "https://www.wrightsgourmet.com/",
+    "phone": "(813) 253-3838",
+    "hours_text": "Monday–Friday 7 AM–5:30 PM; Saturday 8 AM–4 PM; closed Sunday and major holidays.",
+    "summary": "A South Tampa deli and bakery operating since 1963, known for sandwiches, salads and cakes; a second shop is at Tampa General Hospital.",
+    "status": "open",
+    "tags": [
+     "deli",
+     "sandwiches",
+     "bakery",
+     "historic-restaurant"
+    ],
+    "source_url": "https://www.wrightsgourmet.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/wrights-gourmet-house/7875/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Read with WebFetch (curl gets a 403): 'Since 1963' and 'for over 60 years'. Visit Tampa Bay's listing calls its cakes 'long celebrated as some of Tampa's most iconic and sought-after desserts'."
+   },
+   {
+    "id": "carmines-ybor-city",
+    "name": "Carmine's Restaurant & Bar",
+    "aliases": [
+     "Carmine's"
+    ],
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1802 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.96032,
+    "lng": -82.439144,
+    "geo_source": "census",
+    "url": "https://carminesybor.com/",
+    "phone": "(813) 248-3834",
+    "summary": "A 7th Avenue restaurant and bar in Ybor City established in 1948, serving Cuban and Italian dishes including Cuban sandwiches, deviled crabs and Spanish bean soup.",
+    "quote": "Whether you’re here for our famous Devil Crabs or a classic Cuban sandwich, we promise a dining experience full of history, heart, and unforgettable flavors.",
+    "status": "open",
+    "tags": [
+     "cuban-sandwich",
+     "deviled-crab",
+     "italian",
+     "historic-restaurant"
+    ],
+    "source_url": "https://carminesybor.com/about/",
+    "also_sources": [
+     "https://carminesybor.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Address on the site is '1802 E 7th Ave #3808'. The site spells the owner both 'Carmine Lavarone' and 'Carmine Iavarone'."
+   },
+   {
+    "id": "brocatos-sandwich-shop",
+    "name": "Brocato's Sandwich Shop",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "east-tampa",
+    "address": "5021 E Columbus Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33619",
+    "lat": 27.966773,
+    "lng": -82.400493,
+    "geo_source": "census",
+    "url": "https://brocatossandwich.com/",
+    "phone": "(813) 248-9977",
+    "hours_text": "Monday–Wednesday and Friday 8 AM–5:30 PM; Thursday 8 AM–5 PM; Saturday 8 AM–4 PM; closed Sunday.",
+    "summary": "A sandwich shop on East Columbus Drive that has operated since 1948, known for Cuban sandwiches, Italian subs, deviled crabs and stuffed potatoes.",
+    "quote": "A Tampa Tradition Since 1948",
+    "quote_source": "https://brocatossandwich.com/",
+    "status": "open",
+    "tags": [
+     "cuban-sandwich",
+     "deviled-crab",
+     "historic-restaurant"
+    ],
+    "source_url": "https://brocatossandwich.com/contact-us/",
+    "also_sources": [
+     "https://brocatossandwich.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Caution: on Sep 27, 2026 the shop's homepage carried injected spam links (casino sites), a sign the site is compromised; the facts used (tagline, menu items, address, hours, phone) are the shop's own text. The site should not be linked prominently until it is cleaned."
+   },
+   {
+    "id": "kojaks-house-of-ribs",
+    "name": "Kojak's House of Ribs",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "brandon",
+    "address": "1809 S Parsons Ave",
+    "city": "Seffner",
+    "state": "FL",
+    "zip": "33584",
+    "lat": 27.980733,
+    "lng": -82.285989,
+    "geo_source": "census",
+    "url": "https://kojaksbbq.net/",
+    "phone": "(813) 324-8371",
+    "hours_text": "Tuesday–Friday 11 AM–8 PM; Saturday 11:30 AM–8 PM; Sunday noon–8 PM; closed Monday.",
+    "summary": "A family-owned barbecue restaurant that served South Tampa from 1978 and moved to Seffner in 2022.",
+    "quote": "moved from South Tampa to Seffner in 2022, continuing its long history while bringing the same trusted flavors to a new home.",
+    "status": "open",
+    "tags": [
+     "barbecue",
+     "ribs",
+     "historic-restaurant"
+    ],
+    "source_url": "https://kojaksbbq.net/",
+    "checked": "2026-09-27",
+    "notes": "Read with WebFetch (curl and a headless browser get a Cloudflare check). The restaurant is no longer at its long-time South Tampa house; area brandon covers Seffner (SPEC 4.1)."
+   },
+   {
+    "id": "ulele",
+    "name": "Ulele",
+    "kind": "restaurant",
+    "kinds": [
+     "brewery"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "history",
+     "water"
+    ],
+    "area": "tampa-heights",
+    "address": "1810 N Highland Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.960028,
+    "lng": -82.462453,
+    "geo_source": "census",
+    "url": "https://ulele.com/",
+    "phone": "(813) 999-4952",
+    "hours_text": "Sunday–Thursday 11 AM–10 PM; Friday–Saturday 11 AM–11 PM.",
+    "summary": "A restaurant and brewery on the Riverwalk in Tampa Heights, next to Ulele Spring and Water Works Park, serving Florida ingredients cooked on a 10-foot barbacoa grill. It opened in August 2014 and is run by the Columbia Restaurant's family; beer is brewed on site at Ulele Spring Brewery.",
+    "quote": "Ulele (pronounced You-lay-lee) celebrates the vibrant fusion of ingredients from Florida waters and land once home to many Native Americans, including the young princess Ulele.",
+    "status": "open",
+    "tags": [
+     "native-inspired",
+     "seafood",
+     "brewery",
+     "riverwalk",
+     "pirate-water-taxi-stop"
+    ],
+    "source_url": "https://ulele.com/",
+    "also_sources": [
+     "https://ulele.com/home/about/",
+     "https://www.visittampabay.com/listings/ulele/9159/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Opening date, Ulele Spring and Water Works Park, Ulele Spring Brewery and Columbia Restaurant Group ownership from Richard Gonzmart's 'Our Inspiration' text on ulele.com. The site FAQ: about 7,000 sq ft, 240 seats inside, 95 in the beer garden, 50 on the rooftop terrace. The building's history as the city water works was NOT stated on a page read, so no heritage block; the history slices may add it. Visit Tampa Bay: boaters can dock next door at Water Works Park; Riverwalk to-go cups. Pirate Water Taxi stop #16 (Armature Works / Ulele) per a Visit Tampa Bay listing."
+   },
+   {
+    "id": "mels-hot-dogs",
+    "name": "Mel's Hot Dogs",
+    "kind": "restaurant",
+    "topics": [
+     "food"
+    ],
+    "area": "north-tampa",
+    "address": "4136 E Busch Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33617",
+    "lat": 28.032675,
+    "lng": -82.413562,
+    "geo_source": "census",
+    "url": "https://melshotdogs.com/",
+    "phone": "(813) 985-8000",
+    "hours_text": "Monday–Sunday 11 AM–8 PM.",
+    "summary": "A hot dog restaurant on East Busch Boulevard in North Tampa that says it has served Chicago-style hot dogs for more than 50 years.",
+    "quote": "For over 50 years, Mel's has been serving up Chicago-style hot dogs, jumbo slices, and comfort food",
+    "status": "open",
+    "tags": [
+     "hot-dogs",
+     "historic-restaurant"
+    ],
+    "source_url": "https://melshotdogs.com/",
+    "checked": "2026-09-27",
+    "notes": "Read with WebFetch (Cloudflare blocks curl)."
+   },
+   {
+    "id": "soul-de-cuba-cafe",
+    "name": "Soul de Cuba Cafe",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "latin-heritage",
+     "black-history"
+    ],
+    "area": "seminole-heights",
+    "address": "6428 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33604",
+    "lat": 28.005957,
+    "lng": -82.459544,
+    "geo_source": "census",
+    "url": "https://www.souldecuba.com/",
+    "phone": "(813) 367-2225",
+    "summary": "A Cuban restaurant and bar on North Florida Avenue serving Cuban sandwiches, slow-roasted dishes and Sunday brunch; it presents itself as preserving Ybor City's Afro-Cuban culture through food, music and art.",
+    "quote": "Inspired by the rich culinary traditions of Cuba, our menu blends authentic family recipes, fresh ingredients, and bold flavors",
+    "status": "open",
+    "tags": [
+     "cuban",
+     "cuban-sandwich",
+     "afro-cuban"
+    ],
+    "source_url": "https://www.souldecuba.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/soul-de-cuba-cafe/20461/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Afro-Cuban framing from the Visit Tampa Bay listing ('promoting and preserving Ybor City Afro-Cuban culture'). Visit Tampa Bay's Cuban sandwich page notes its mustard-mayo spread. Phone from the listing."
+   },
+   {
+    "id": "flor-fina",
+    "name": "Flor Fina",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1412 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960342,
+    "lng": -82.444033,
+    "geo_source": "census",
+    "url": "https://hotelhaya.com/food-drink/flor-fina/",
+    "phone": "(813) 462-9660",
+    "hours_text": "Brunch Tuesday–Sunday 10 AM–3 PM; dinner Tuesday–Saturday 5–10 PM; bar Sunday 11 AM–10 PM, Monday 3–10 PM, Tuesday–Thursday 11 AM–11 PM, Friday–Saturday 11 AM–midnight.",
+    "summary": "The restaurant and bar of Hotel Haya on 7th Avenue, serving modern Florida food built on Ybor City's Spanish-Cuban heritage, Gulf seafood and wood-fire cooking, with brunch, dinner and cocktails.",
+    "quote": "Flor Fina brings modern Florida cuisine built on Ybor's Spanish-Cuban heritage, Gulf seafood, and wood-fire cooking.",
+    "status": "open",
+    "tags": [
+     "hotel-restaurant",
+     "latin",
+     "seafood",
+     "cocktails"
+    ],
+    "source_url": "https://hotelhaya.com/food-drink/flor-fina/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/flor-fina/18959/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Inside the hotel-haya stay. Live music Friday–Saturday 8–11 PM (site)."
+   },
+   {
+    "id": "gaspars-grotto",
+    "name": "Gaspar's Grotto",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "nightlife",
+     "food"
+    ],
+    "area": "ybor-city",
+    "address": "1805 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960206,
+    "lng": -82.439122,
+    "geo_source": "census",
+    "url": "https://gasparsgrotto.com/",
+    "phone": "(813) 248-5900",
+    "hours_text": "Monday–Saturday 7 AM–2 AM; Sunday 11 AM–2 AM (Sunday brunch 11 AM–3 PM).",
+    "summary": "A pirate-themed bar and restaurant on 7th Avenue named for the legendary pirate Jose Gaspar, with an indoor bar, two patios, live entertainment and Sunday brunch.",
+    "quote": "Gaspar’s pays homage to the legendary local pirate Jose Gaspar and celebrates Tampa’s immigrant past.",
+    "status": "open",
+    "tags": [
+     "pirate",
+     "gasparilla",
+     "live-music",
+     "brunch"
+    ],
+    "source_url": "https://gasparsgrotto.com/",
+    "checked": "2026-09-27",
+    "notes": "The site also lists 'The Plank' with Monday–Saturday 5 PM–midnight and Sunday noon–midnight, apparently a separate bar area."
+   },
+   {
+    "id": "cws-gin-joint",
+    "name": "CW's Gin Joint",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "nightlife"
+    ],
+    "area": "downtown-tampa",
+    "address": "633 N Franklin St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.949454,
+    "lng": -82.458652,
+    "geo_source": "census",
+    "url": "https://cwginjoint.com/",
+    "phone": "(813) 816-1446",
+    "summary": "A gin-focused cocktail bar and restaurant on North Franklin Street downtown, styled as a throwback to classic cocktail bars.",
+    "quote": "CW’s Gin Joint is a throwback to a time when fine spirits were savored in an atmosphere that exuded style and gentility.",
+    "status": "open",
+    "tags": [
+     "gin",
+     "cocktails",
+     "cuban-sandwich"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/cws-gin-joint/12180/",
+    "also_sources": [
+     "https://cwginjoint.com/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The bar's site (rendered) shows only the address and sections (beverages, food, gin matrix). Visit Tampa Bay's Cuban sandwich page lists its version (braised pulled pork, gruyere, dijon, cornichons)."
+   },
+   {
+    "id": "four-green-fields-riverwalk",
+    "name": "Four Green Fields Riverwalk",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "nightlife",
+     "music"
+    ],
+    "area": "downtown-tampa",
+    "address": "702 N Ashley Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.949239,
+    "lng": -82.460702,
+    "geo_source": "census",
+    "url": "https://www.fourgreenfieldsriverwalk.com/",
+    "phone": "(813) 254-4444",
+    "hours_text": "Monday 4–10 PM; Tuesday–Thursday 11 AM–10 PM; Friday–Saturday 11 AM–midnight (or later); Sunday 11 AM–10 PM.",
+    "summary": "An Irish pub at Curtis Hixon Park by the Riverwalk, opened in 2018 by the owners of the thatched-roof Four Green Fields pub that ran near the Platt Street bridge from 1992 until 2020. It serves Guinness, whiskey and Irish pub food, with live music on Saturdays.",
+    "quote": "The original Four Green Fields Pub opened just west of the Platt Street bridge in 1992 as the country’s only authentic thatched roof Irish pub",
+    "status": "open",
+    "tags": [
+     "irish-pub",
+     "guinness",
+     "riverwalk"
+    ],
+    "source_url": "https://www.fourgreenfieldsriverwalk.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/four-green-fields-riverwalk/3416/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The site says it was voted one of the top 10 Irish pubs in the world by 'Ireland of the Welcomes' and named one of Imbibe's top 100 places in America to drink beer. The original pub closed in 2020 (site)."
+   },
+   {
+    "id": "cru-cellars",
+    "name": "Cru Cellars",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food"
+    ],
+    "area": "south-tampa",
+    "address": "2506 S MacDill Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33629",
+    "lat": 27.923074,
+    "lng": -82.493515,
+    "geo_source": "census",
+    "url": "https://www.crucellars.com/",
+    "phone": "(813) 831-1117",
+    "hours_text": "Kitchen: Monday 3–9 PM; Tuesday–Friday 3–10 PM; Saturday 11 AM–10 PM; Sunday 11 AM–9 PM.",
+    "summary": "A wine bar and retail wine shop on South MacDill Avenue, established in 2010, that specializes in small-production wines and serves food.",
+    "quote": "Cru Cellars is Tampa's wine bar and retail shop specializing in small-production bottles and amazing food.",
+    "status": "open",
+    "tags": [
+     "wine-bar",
+     "cuban-sandwich"
+    ],
+    "source_url": "https://www.crucellars.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/cru-cellars/10455/",
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit Tampa Bay's listing says it has been voted Tampa's 'Best Wine Bar' for many years, and its Cuban sandwich page lists Cru's version. Phone from the listing."
+   },
+   {
+    "id": "cigar-city-brewing",
+    "name": "Cigar City Brewing",
+    "kind": "brewery",
+    "topics": [
+     "drink"
+    ],
+    "area": "channel-district",
+    "address": "375 Channelside Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.943471,
+    "lng": -82.450031,
+    "geo_source": "census",
+    "url": "https://cigarcitybrewing.com/",
+    "phone": "(813) 301-6712",
+    "summary": "The Tampa brewery founded in 2009 that makes Jai Alai IPA. Its original Spruce Street brewery taproom in West Tampa has closed while a new Ybor City location is built; for now its beer is poured at its downtown taproom at Benchmark International Arena and at its Tampa International Airport brewpub.",
+    "quote": "Our Spruce Street Tap Room is now closed. We’re excited to be building our new Cigar City Brewing location in Ybor City and look forward to welcoming you later this year.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "jai-alai",
+     "taproom"
+    ],
+    "source_url": "https://cigarcitybrewing.com/",
+    "also_sources": [
+     "https://cigarcitybrewing.com/our-story/",
+     "https://cigarcitybrewing.com/location/taproom/",
+     "https://www.visittampabay.com/listings/cigar-city-brewing/7332/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Record placed at the brewery's 'Taproom Downtown' (375 Channelside Dr, phone (813) 301-6712). The closure notice names taprooms 'at Benchmark International Arena and Tampa International Airport', so the downtown taproom is taken to be the arena one (an inference: the site does not say so in one sentence); its opening hours were not stated on a page read (it may follow arena events). The former Spruce Street Brewery & Taproom is at 3924 W Spruce St (all days listed 'closed'). The Ybor City location's address and opening date were not published. Airport brewpub: Airside C, bar in Airside F. Update this record when the Ybor taproom opens."
+   },
+   {
+    "id": "coppertail-brewing",
+    "name": "Coppertail Brewing Co.",
+    "kind": "brewery",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "history"
+    ],
+    "area": "ybor-city",
+    "address": "2601 E 2nd Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.956578,
+    "lng": -82.430573,
+    "geo_source": "census",
+    "url": "https://coppertailbrewing.com/",
+    "phone": "(813) 247-1500",
+    "hours_text": "Monday–Thursday 11 AM–11 PM; Friday–Saturday 11 AM–midnight; Sunday 11 AM–9 PM (kitchen closes an hour before the bar).",
+    "summary": "A craft brewery and tasting room in a century-old Ybor City building, pouring about 20 rotating beers with a kitchen, brewery tours and live music.",
+    "quote": "Our bar is reclaimed wood from the Arturo Fuente building. Rail cars were used to transport mayonnaise and olives from our building in the 1920’s.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "taproom",
+     "brewery-tours"
+    ],
+    "source_url": "https://coppertailbrewing.com/main-page",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/coppertail-brewing-co/10265/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The site calls the building 'our 100 year old Ybor City building'."
+   },
+   {
+    "id": "hidden-springs-ale-works",
+    "name": "Hidden Springs Ale Works",
+    "kind": "brewery",
+    "topics": [
+     "drink"
+    ],
+    "area": "tampa-heights",
+    "address": "1631 N Franklin St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.958757,
+    "lng": -82.460113,
+    "geo_source": "census",
+    "url": "https://hiddenspringsaleworks.com/",
+    "phone": "(813) 226-2739",
+    "hours_text": "Monday–Tuesday 2–8 PM; Wednesday–Thursday 3–9 PM; Friday–Saturday noon–10 PM; Sunday noon–6 PM.",
+    "summary": "A family-run craft brewery and tasting room on North Franklin Street in Tampa Heights, brewing since 2015 and known for pastry sours, lagers and stouts. Dogs and children are welcome.",
+    "quote": "Creating the best tasty, nostalgic, & fun craft beverage experience in the heart of Tampa, Florida.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "taproom",
+     "dog-friendly"
+    ],
+    "source_url": "https://hiddenspringsaleworks.com/home",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/hidden-springs-ale-works/19153/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "'Since 2015' and 'family-owned' from the Visit Tampa Bay listing."
+   },
+   {
+    "id": "barriehaus-beer-co",
+    "name": "BarrieHaus Beer Co.",
+    "kind": "brewery",
+    "topics": [
+     "drink"
+    ],
+    "area": "ybor-city",
+    "address": "1403 E 5th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.958776,
+    "lng": -82.444152,
+    "geo_source": "census",
+    "url": "https://barriehaus.com/",
+    "phone": "(813) 242-2739",
+    "hours_text": "Monday–Thursday 3–10 PM; Friday–Sunday noon–11 PM (the biergarten closes for some private events).",
+    "summary": "A lager-focused microbrewery and biergarten a short walk from 7th Avenue in Ybor City, pouring from side-pull faucets, with food and weekly trivia; a second taproom is in Trinity.",
+    "quote": "With 150-years of brewing history, we serve unique craft lagers and ales to families and friends in a one-of-a-kind historic environment in Ybor City.",
+    "quote_source": "https://barriehaus.com/",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "lager",
+     "biergarten",
+     "dog-friendly"
+    ],
+    "source_url": "https://barriehaus.com/tampa-2-2-2-2/",
+    "also_sources": [
+     "https://barriehaus.com/",
+     "https://www.visittampabay.com/listings/barriehaus-beer-co/18177/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Dogs welcome in the biergarten (site)."
+   },
+   {
+    "id": "angry-chair-brewing",
+    "name": "Angry Chair Brewing",
+    "kind": "brewery",
+    "topics": [
+     "drink"
+    ],
+    "area": "seminole-heights",
+    "address": "4101 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33603",
+    "lat": 27.982345,
+    "lng": -82.45934,
+    "geo_source": "census",
+    "url": "https://angrychairbrewing.com/",
+    "phone": "(813) 238-1122",
+    "hours_text": "Monday–Thursday 11 AM–10 PM; Friday–Saturday 11 AM–11 PM; Sunday 11 AM–8 PM.",
+    "summary": "A Seminole Heights craft brewery and taproom on North Florida Avenue with a food menu; the brewery says its stouts are what it is most known for.",
+    "quote": "You’re probably here for the stouts, that’s what we are most known for.",
+    "quote_source": "https://angrychairbrewing.com/about/",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "stouts",
+     "taproom"
+    ],
+    "source_url": "https://angrychairbrewing.com/",
+    "also_sources": [
+     "https://angrychairbrewing.com/about/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "No flights; 5 oz pours (site)."
+   },
+   {
+    "id": "florida-avenue-brewing-liquid-garden",
+    "name": "Florida Avenue Brewing Co. Liquid Garden",
+    "aliases": [
+     "Florida Avenue Brewing Co. - Tampa"
+    ],
+    "kind": "brewery",
+    "topics": [
+     "drink"
+    ],
+    "area": "seminole-heights",
+    "address": "4315 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33603",
+    "lat": 27.984473,
+    "lng": -82.459348,
+    "geo_source": "census",
+    "url": "https://floridaavebrewing.com/location/tampa/",
+    "phone": "(813) 358-2927",
+    "hours_text": "Thursday 4–10 PM; Friday 4–11 PM; Saturday noon–11 PM; Sunday noon–8 PM; closed Monday–Wednesday.",
+    "summary": "Florida Avenue Brewing's Tampa location on North Florida Avenue, a 4,000-square-foot small-batch brewery and taproom with a patio and full bar that specializes in experimental releases.",
+    "quote": "Florida Avenue Brewing Co. - Tampa is a 4,000 sq. ft. innovation brewing facility with an outdoor patio, 16 beers on tap, and a full liquor bar, specializing in experimental beer releases.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "taproom"
+    ],
+    "source_url": "https://floridaavebrewing.com/location/tampa/",
+    "also_sources": [
+     "https://floridaavebrewing.com/",
+     "https://www.visittampabay.com/listings/florida-avenue-brewing-co/11056/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "florida-avenue-brewing-wesley-chapel",
+    "name": "Florida Avenue Brewing Co. Wesley Chapel",
+    "kind": "brewery",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food"
+    ],
+    "area": "lutz-wesley-chapel",
+    "address": "2029 Arrowgrass Dr",
+    "city": "Wesley Chapel",
+    "state": "FL",
+    "zip": "33544",
+    "lat": 28.186661,
+    "lng": -82.366772,
+    "geo_source": "census",
+    "url": "https://floridaavebrewing.com/location/wesley-chapel/",
+    "phone": "(813) 452-6333",
+    "hours_text": "Monday–Thursday 11 AM–10 PM; Friday–Saturday 11 AM–11 PM; Sunday 11 AM–9 PM.",
+    "summary": "Florida Avenue Brewing's production brewery in Wesley Chapel, with a taproom, restaurant, beer garden and brewery tours.",
+    "quote": "Take a tour of our state of the art production facility and learn about how we put grain to glass and make each of our award winning beers.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "brewery-tours",
+     "beer-garden"
+    ],
+    "source_url": "https://floridaavebrewing.com/location/wesley-chapel/",
+    "also_sources": [
+     "https://floridaavebrewing.com/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "yuengling-draft-haus-and-kitchen",
+    "name": "Yuengling Draft Haus & Kitchen",
+    "kind": "brewery",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "history"
+    ],
+    "area": "north-tampa",
+    "address": "11109 N 30th St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33612",
+    "lat": 28.047414,
+    "lng": -82.426118,
+    "geo_source": "census",
+    "url": "https://www.yuengling.com/tampa/",
+    "phone": "(813) 488-6444",
+    "hours_text": "Wednesday–Thursday 11 AM–10 PM; Friday–Saturday 11 AM–11 PM; Sunday 11 AM–10 PM; closed Monday–Tuesday.",
+    "summary": "The restaurant and taproom at Yuengling's Tampa brewery, the Pennsylvania brewer's Florida plant bought from Stroh's in 1999; the Draft Haus opened in 2023 and offers brewery tours.",
+    "status": "open",
+    "tags": [
+     "brewery",
+     "brewery-tours",
+     "lager"
+    ],
+    "source_url": "https://www.yuengling.com/tampa/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/yuengling-draft-haus-%26-kitchen/20653/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "History (oldest brewery in America, still family owned; 1999 purchase of the Stroh's brewery in Tampa; Draft Haus opened 2023; 42,000 sq ft) from the Visit Tampa Bay listing (partner text). The exp-land slice has the brewery tour as an experience (yuengling-tampa-brewery-tour)."
+   },
+   {
+    "id": "gamblers-bay-distillery",
+    "name": "Gamblers Bay Distillery",
+    "kind": "distillery-winery",
+    "topics": [
+     "drink"
+    ],
+    "area": "westshore",
+    "address": "6101 Johns Rd, Suite 7",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33634",
+    "lat": 28.007468,
+    "lng": -82.547476,
+    "geo_source": "census",
+    "url": "https://www.gamblersbaydistillery.com/",
+    "hours_text": "Friday 4–8:30 PM; Saturday 3–8:30 PM.",
+    "summary": "A family-run grain-to-glass distillery founded in Tampa in 2019, making rums, vodka and other spirits with local ingredients such as Florida molasses and strawberries; it offers tours and tastings on limited weekend hours.",
+    "quote": "We are a fully operational distillery, making every drop of our award winning products in house. We have limited weekend hours due to production.",
+    "status": "open",
+    "tags": [
+     "distillery",
+     "rum",
+     "tastings"
+    ],
+    "source_url": "https://www.gamblersbaydistillery.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/gamblers-bay-distillery/20234/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Founders Mark and Kerri Paun; family recipes 'date back 120 years' (site). Area: Johns Rd is in the Town 'n' Country/airport area, filed westshore."
+   },
+   {
+    "id": "vista-gin",
+    "name": "Vista Gin",
+    "kind": "distillery-winery",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "drink",
+     "nightlife"
+    ],
+    "area": "ybor-city",
+    "address": "2102 E 4th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.958143,
+    "lng": -82.435433,
+    "geo_source": "census",
+    "url": "https://vistagin.com/",
+    "phone": "(813) 433-0824",
+    "hours_text": "Tasting room: Thursday–Friday 5–10 PM; Saturday noon–10 PM; Sunday noon–6 PM.",
+    "summary": "A Tampa gin distillery whose tasting room and cocktail bar in Ybor City pours flights and cocktails of its gins and runs classes.",
+    "status": "open",
+    "tags": [
+     "distillery",
+     "gin",
+     "cocktails",
+     "tastings"
+    ],
+    "source_url": "https://vistagin.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/vista-gin/21692/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The site names the tasting room 'Gasparilla Distillery & Cocktail Bar'; Visit Tampa Bay describes it as pirate-themed. Awards (site): Sakura gold, Spring 2024 John Barleycorn Awards; Soleil gold, Bartender Spirits Awards."
+   },
+   {
+    "id": "beacon-tampa",
+    "name": "Beacon",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "nightlife",
+     "food"
+    ],
+    "area": "channel-district",
+    "address": "510 Water St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.941906,
+    "lng": -82.453668,
+    "geo_source": "photon",
+    "url": "https://www.beacontampa.com/",
+    "phone": "(813) 221-4950",
+    "hours_text": "Sunday–Thursday 5 PM–midnight; Friday–Saturday 5 PM–1 AM; Saturday 11 AM–2 PM.",
+    "summary": "A rooftop cocktail bar and small-plates restaurant on the 27th floor of the JW Marriott Tampa Water Street, with views over the city and the water.",
+    "quote": "Perched on the JW Marriott's 27th floor, Beacon is Tampa's highest (and second highest in Florida) public rooftop cocktail and dining destination",
+    "status": "open",
+    "tags": [
+     "rooftop-bar",
+     "cocktails",
+     "hotel-bar",
+     "water-street"
+    ],
+    "source_url": "https://www.beacontampa.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/beacon/20393/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Inside the jw-marriott-tampa-water-street stay. The quote is the bar's own claim."
+   },
+   {
+    "id": "edge-rooftop-epicurean",
+    "name": "EDGE Rooftop",
+    "aliases": [
+     "EDGE Rooftop Cocktail Lounge"
+    ],
+    "kind": "bar",
+    "topics": [
+     "drink",
+     "nightlife"
+    ],
+    "area": "hyde-park",
+    "address": "1207 S Howard Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.930194,
+    "lng": -82.483267,
+    "geo_source": "census",
+    "url": "https://www.epicureanhotel.com/taste/edge/",
+    "phone": "(813) 999-8731",
+    "hours_text": "Tuesday–Thursday 5 PM–midnight; Friday–Saturday 5 PM–1 AM; closed Sunday–Monday.",
+    "summary": "The rooftop cocktail bar of the Epicurean Hotel on South Howard Avenue, serving cocktails, wine, craft beer and small plates.",
+    "quote": "A place on top of it all. Crafted cocktails using the freshest fruits, herbs and spices.",
+    "status": "open",
+    "tags": [
+     "rooftop-bar",
+     "cocktails",
+     "hotel-bar",
+     "soho"
+    ],
+    "source_url": "https://www.epicureanhotel.com/taste/edge/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/edge-rooftop-cocktail-lounge/9684/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Inside the epicurean-hotel stay. Valet is complimentary before 7 PM and $10 after (site)."
+   },
+   {
+    "id": "m-bird-armature-works",
+    "name": "M.Bird",
+    "kind": "bar",
+    "kinds": [
+     "restaurant",
+     "nightlife"
+    ],
+    "topics": [
+     "drink",
+     "nightlife",
+     "food"
+    ],
+    "area": "tampa-heights",
+    "address": "1903 Market St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.961231,
+    "lng": -82.464059,
+    "geo_source": "photon",
+    "url": "https://www.mbirdtampa.com/",
+    "phone": "(813) 578-0506",
+    "summary": "A rooftop restaurant and bar above Armature Works on the Riverwalk, with views of downtown and the Hillsborough River, Caribbean-inspired small plates, weekend brunch and DJs.",
+    "quote": "M.Bird is Tampa's rooftop restaurant and venue perched above historic Armature Works on the Riverwalk",
+    "status": "open",
+    "tags": [
+     "rooftop-bar",
+     "cocktails",
+     "dj",
+     "riverwalk"
+    ],
+    "source_url": "https://www.mbirdtampa.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/m-bird-restaurant-bar-%26-djs/20761/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "On top of the armature-works place (see-tampa); coordinates are the Armature Works building (OSM). Visit Tampa Bay: live DJs Thursday night to Sunday."
+   },
+   {
+    "id": "sal-y-mar-rooftop",
+    "name": "Sal Y Mar Rooftop Bar",
+    "kind": "bar",
+    "kinds": [
+     "restaurant"
+    ],
+    "topics": [
+     "drink",
+     "nightlife",
+     "food"
+    ],
+    "area": "westshore",
+    "address": "3650 Midtown Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33607",
+    "lat": 27.952932,
+    "lng": -82.502593,
+    "geo_source": "photon",
+    "url": "https://www.salymarrooftop.com/",
+    "phone": "(813) 692-3330",
+    "hours_text": "Lunch Wednesday–Friday 11 AM–3 PM; brunch Saturday–Sunday 11 AM–3 PM; dinner Sunday–Thursday 5–10 PM, Friday–Saturday 5–11 PM; bar Sunday–Thursday 4–11 PM, Friday–Saturday 4 PM–midnight.",
+    "summary": "A Latin-influenced rooftop bar and restaurant above the Aloft and Element hotel in Midtown Tampa, with views of the Tampa, Westshore and St. Petersburg skylines.",
+    "quote": "Perched above Tampa’s skyline, Sal Y Mar Rooftop Bar brings the essence of coastal sophistication to the heart of Midtown.",
+    "status": "open",
+    "tags": [
+     "rooftop-bar",
+     "cocktails",
+     "latin",
+     "midtown"
+    ],
+    "source_url": "https://www.salymarrooftop.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/sal-y-mar-rooftop-bar-%26-events-venue/21053/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Hotel and skyline-view details from the Visit Tampa Bay listing. Midtown Tampa is filed under westshore, as see-tampa does."
+   },
+   {
+    "id": "the-dan-tampa",
+    "name": "The Dan",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "nightlife",
+     "music"
+    ],
+    "area": "downtown-tampa",
+    "address": "905 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.951794,
+    "lng": -82.458706,
+    "geo_source": "census",
+    "url": "https://dineatthedan.com/",
+    "phone": "(813) 318-9719",
+    "summary": "A speakeasy-style restaurant and lounge in downtown's Hotel Flor, inspired by the 1920s and the hotel's original Sapphire Lounge, serving Gulf Coast food with cocktails and jazz.",
+    "quote": "Inspired by the spirit of the Roaring Twenties and Hotel Flor’s original Sapphire Lounge, a new restaurant comes to Tampa Bay as a modern take on old-school speakeasies.",
+    "status": "open",
+    "tags": [
+     "speakeasy",
+     "cocktails",
+     "jazz",
+     "hotel-restaurant"
+    ],
+    "source_url": "https://dineatthedan.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/the-dan/8930/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Inside the hotel-flor-tampa-downtown stay."
+   },
+   {
+    "id": "jekyll-hyde-park",
+    "name": "Jekyll",
+    "kind": "bar",
+    "topics": [
+     "drink",
+     "nightlife"
+    ],
+    "area": "hyde-park",
+    "address": "1500 W Swann Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33606",
+    "lat": 27.937257,
+    "lng": -82.474844,
+    "geo_source": "census",
+    "url": "https://jekyllhydepark.com/",
+    "phone": "(813) 358-2037",
+    "summary": "A Hyde Park cocktail bar built around molecular cocktails, some smoked or brewed at the table, in a velvet-and-dim-light setting; it also hosts high tea.",
+    "quote": "Drinks like the \"Lost in Translation\" are brewed and smoked at your table, transforming the art of mixology into a dramatic display of alchemy.",
+    "status": "open",
+    "tags": [
+     "cocktails",
+     "hyde-park-village"
+    ],
+    "source_url": "https://jekyllhydepark.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/jekyll/20758/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Phone from the Visit Tampa Bay listing."
+   },
+   {
+    "id": "castle-ybor",
+    "name": "The Castle",
+    "aliases": [
+     "Castle Ybor"
+    ],
+    "kind": "nightlife",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "nightlife",
+     "music",
+     "drink"
+    ],
+    "area": "ybor-city",
+    "address": "2004 N 16th St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.961784,
+    "lng": -82.441774,
+    "geo_source": "census",
+    "url": "https://castleybor.com/",
+    "summary": "An Ybor City dance club on 16th Street, with rooms it calls the Saloon, Main Hall, Tower, Courtyard and Dungeon, that opened on Guavaween in 1992 as a small saloon; it runs themed dance nights and special events.",
+    "quote": "The Castle opened on Guavaween in 1992 as a small saloon with a determined goal: create a great place that all of our friends would like to visit.",
+    "status": "open",
+    "tags": [
+     "dance-club",
+     "dj",
+     "goth",
+     "18-plus-nights"
+    ],
+    "source_url": "https://castleybor.com/",
+    "checked": "2026-09-27",
+    "notes": "Entrance on 16th St between 9th Ave and Palm Ave (site). The site lists cover charges for 21+ and 18–20 on some nights. 'goth' tag from its event names (e.g. Tropical Goth, Midnight Mass); verifier may drop it."
+   },
+   {
+    "id": "independent-bar-and-cafe",
+    "name": "Independent Bar & Cafe",
+    "aliases": [
+     "The Indie"
+    ],
+    "kind": "bar",
+    "kinds": [
+     "cafe-bakery"
+    ],
+    "topics": [
+     "drink",
+     "food",
+     "music"
+    ],
+    "area": "seminole-heights",
+    "address": "5016 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33603",
+    "lat": 27.991597,
+    "lng": -82.459481,
+    "geo_source": "census",
+    "url": "https://www.independentbartampa.com/",
+    "phone": "(813) 341-4883",
+    "summary": "A Seminole Heights neighborhood bar and cafe known for its craft beer and wine list, cafe food and live music; Visit Tampa Bay's Cuban sandwich guide lists its Habana Cuban with spicy German mustard.",
+    "quote": "\"The Indie\" is known for its relaxed atmosphere, world class beer and wine selection, european cafe fare, and live music events.",
+    "status": "open",
+    "tags": [
+     "craft-beer",
+     "cuban-sandwich",
+     "live-music"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/independent-bar-%26-cafe/10727/",
+    "also_sources": [
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The bar's own site is behind a Cloudflare check (curl, browser and WebFetch); facts from the Visit Tampa Bay listing and its Cuban sandwich page."
+   },
+   {
+    "id": "jacksons-bistro-bar-sushi",
+    "name": "Jackson's Bistro, Bar & Sushi",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "water"
+    ],
+    "area": "harbour-island",
+    "address": "601 S Harbour Island Blvd",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.938888,
+    "lng": -82.45413,
+    "geo_source": "census",
+    "url": "https://www.jacksonsbistro.com/",
+    "phone": "(813) 277-0112",
+    "summary": "A waterfront restaurant and bar on Harbour Island, open since 1997, with views of the downtown skyline; Visit Tampa Bay's Cuban sandwich guide lists its lunch-only Cuban.",
+    "quote": "Since 1997, Jackson’s has been committed to offering only the highest quality food and beverage offerings in an upbeat & relaxing atmosphere",
+    "status": "open",
+    "tags": [
+     "waterfront",
+     "sushi",
+     "cuban-sandwich"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/jacksons-bistro-bar-%26-sushi/2897/",
+    "also_sources": [
+     "https://www.visittampabay.com/food-and-drink/cuban-sandwich/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The restaurant's own site shows a Cloudflare 'Just a moment' check; facts from the Visit Tampa Bay listing (partner text) and its Cuban sandwich page."
+   },
+   {
+    "id": "casa-santo-stefano",
+    "name": "Casa Santo Stefano",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "history",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1607 N 22nd St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.958898,
+    "lng": -82.434678,
+    "geo_source": "census",
+    "url": "https://casasantostefano.com/",
+    "phone": "(813) 248-1925",
+    "hours_text": "Daily lunch 11 AM–4 PM, dinner 4–10 PM; Santo's Drinkeria Friday–Saturday 5–10 PM.",
+    "summary": "A Sicilian restaurant in a former 1925 Ybor City macaroni factory, run by the Columbia Restaurant's family as a tribute to Tampa's Sicilian immigrants, many of whom came from the villages of Santo Stefano Quisquina and Alessandria della Rocca; it serves pasta, seafood, scacciata and Sicilian wines.",
+    "quote": "Housed In A Former 1925 Ybor City Macaroni Factory, Casa Santo Stefano Pays Fond Tribute To The Sicilian Food I Ate Every Sunday With My Best Friend Vincent Palori.",
+    "status": "open",
+    "tags": [
+     "sicilian",
+     "italian",
+     "historic-building",
+     "1905-family"
+    ],
+    "source_url": "https://casasantostefano.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/casa-santo-stefano/18084/",
+     "https://www.1905familyofrestaurants.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The village link (Santo Stefano Quisquina and Alessandria della Rocca) is from the Visit Tampa Bay listing; the site says the restaurant honors the Sicilian immigrants who, with the Cubans and Spanish, helped build Tampa and Ybor City. Quote capitalization is the site's."
+   },
+   {
+    "id": "malios-prime-steakhouse",
+    "name": "Malio's Prime Steakhouse",
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "history"
+    ],
+    "area": "downtown-tampa",
+    "address": "400 N Ashley Dr",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.947137,
+    "lng": -82.459742,
+    "geo_source": "census",
+    "url": "https://maliosprime.com/",
+    "phone": "(813) 223-7746",
+    "hours_text": "Monday–Tuesday 11:30 AM–9:30 PM; Wednesday–Thursday 11:30 AM–10 PM; Friday 11:30 AM–10:30 PM; Saturday 5–10:30 PM; closed Sunday.",
+    "summary": "A downtown steakhouse on North Ashley Drive that continues Malio's Steakhouse, which Malio Iavarone opened in 1969; it serves prime beef, seafood and a wine list.",
+    "quote": "The original Malio's Steakhouse was opened in 1969 by Malio Iavarone, whose immigrant parents had owned and operated their own restaurant since 1945.",
+    "status": "open",
+    "tags": [
+     "steakhouse",
+     "historic-restaurant"
+    ],
+    "source_url": "https://maliosprime.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/malios-prime-steakhouse/5612/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit Tampa Bay lists Creekstone prime beef and over 200 wines."
+   },
+   {
+    "id": "steelbach",
+    "name": "Steelbach",
+    "kind": "restaurant",
+    "topics": [
+     "food",
+     "history"
+    ],
+    "area": "tampa-heights",
+    "address": "1902 N Ola Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.960516,
+    "lng": -82.463572,
+    "geo_source": "census",
+    "url": "https://www.steelbach.com/",
+    "phone": "(813) 535-4974",
+    "summary": "A Southern-inspired chophouse at the southeast corner of Armature Works, in the restored brick streetcar warehouse, cooking Florida grass-fed beef aged four to seven weeks over an oak-fired grill.",
+    "quote": "Steelbach is a Southern-inspired kitchen and chophouse offering innovative food paired with timeless flair.",
+    "status": "open",
+    "tags": [
+     "steakhouse",
+     "southern",
+     "armature-works",
+     "riverwalk"
+    ],
+    "source_url": "https://www.steelbach.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/steelbach/13086/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "'Restored brick streetcar warehouse' and 'southeast corner of Armature Works' from the Visit Tampa Bay listing; inside the armature-works place (see-tampa)."
+   },
+   {
+    "id": "sal-rosa",
+    "name": "Sal Rosa",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "latin-heritage",
+     "history"
+    ],
+    "area": "downtown-tampa",
+    "address": "601 N Florida Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.949541,
+    "lng": -82.457705,
+    "geo_source": "census",
+    "url": "https://www.salrosatampa.com/",
+    "summary": "A Latin-American restaurant and bar on the second floor of Le Méridien Tampa, in downtown's historic courthouse building, serving breakfast, brunch, dinner and a cafe counter with coffee and gelato.",
+    "quote": "Sal Rosa offers Latin-American dishes and craft cocktails.",
+    "status": "open",
+    "tags": [
+     "latin",
+     "hotel-restaurant",
+     "brunch",
+     "historic-building"
+    ],
+    "source_url": "https://www.salrosatampa.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/sal-rosa/10220/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "'Inside Tampa's historic Courthouse' and 'Located on the 2nd floor of the Le [Méridien]' from the Visit Tampa Bay listing; inside the le-meridien-tampa stay. The site lists Creative Loafing Best of the Bay awards (Best Hotel Restaurant, 2025; Critic's Pick Best Meal, 2025). Phone (813) 999-8214 per the listing (not added: not on the page read)."
+   },
+   {
+    "id": "blind-tiger-coffee-ybor",
+    "name": "Blind Tiger Coffee Roasters (Ybor City)",
+    "aliases": [
+     "Blind Tiger Cafe"
+    ],
+    "kind": "cafe-bakery",
+    "topics": [
+     "food",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1823 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960206,
+    "lng": -82.438918,
+    "geo_source": "census",
+    "url": "https://blindtigercoffeeroasters.com/",
+    "phone": "(813) 540-2233",
+    "summary": "A Tampa coffee roaster founded in 2014 whose 7th Avenue cafe in Ybor City is styled as a 1920s speakeasy and sells pastries inspired by the Cuban, Italian, German and Spanish communities of Ybor.",
+    "quote": "We are a 1920's speakeasy style coffee shop.",
+    "status": "open",
+    "tags": [
+     "coffee",
+     "roaster",
+     "vegan-pastries"
+    ],
+    "source_url": "https://www.visittampabay.com/listings/blind-tiger-coffee-roasters/10305/",
+    "also_sources": [
+     "https://blindtigercoffeeroasters.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The roaster's site (blindtigercafe.com redirects there) says 'Tampa, FL since 2014' and nine locations across Tampa; the Ybor cafe details are from the Visit Tampa Bay listing."
+   },
+   {
+    "id": "cafe-quiquiriqui",
+    "name": "Café Quiquiriquí",
+    "kind": "cafe-bakery",
+    "topics": [
+     "food",
+     "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1412 E 7th Ave",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33605",
+    "lat": 27.960342,
+    "lng": -82.444033,
+    "geo_source": "census",
+    "url": "https://hotelhaya.com/food-drink/cafe-quiquiriqui/",
+    "phone": "(813) 568-1200",
+    "hours_text": "Monday–Sunday 7 AM–4 PM.",
+    "summary": "Hotel Haya's Cuban-inspired coffee shop on 7th Avenue, serving Cuban coffee, café con leche, empanadas, pastelitos and a Cubano.",
+    "quote": "Here, you can sip a Cuban coffee or a café con leche, and grab snacks like empanadas, pastelitos, or our signature Cubano.",
+    "status": "open",
+    "tags": [
+     "cuban-coffee",
+     "coffee",
+     "hotel-cafe"
+    ],
+    "source_url": "https://hotelhaya.com/food-drink/cafe-quiquiriqui/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/cafe-quiquiriqui/18958/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Inside the hotel-haya stay."
+   },
+   {
+    "id": "parkesdale-market",
+    "name": "Parkesdale Market",
+    "aliases": [
+     "Parkesdale Farm Market",
+     "Parkesdale Farms"
+    ],
+    "kind": "market",
+    "kinds": [
+     "cafe-bakery"
+    ],
+    "topics": [
+     "food",
+     "family"
+    ],
+    "area": "plant-city",
+    "address": "3702 W Baker St",
+    "city": "Plant City",
+    "state": "FL",
+    "zip": "33563",
+    "lat": 28.019816,
+    "lng": -82.161525,
+    "geo_source": "census",
+    "url": "https://parkesdale.com/",
+    "hours_text": "As posted Sep 27, 2026: open Wednesday–Sunday 9 AM–6 PM.",
+    "summary": "A family farm market off I-4 exit 17 in Plant City, opened in 1969, selling strawberries, citrus, produce and preserves; it is known for its strawberry shortcake and strawberry milkshakes and is busiest November through April.",
+    "quote": "Parkesdale Market is Home to the World Famous Strawberry Shortcake",
+    "quote_source": "https://parkesdale.com/",
+    "status": "open",
+    "tags": [
+     "strawberry-shortcake",
+     "strawberries",
+     "farm-market"
+    ],
+    "source_url": "https://parkesdale.com/pages/plan-your-visit",
+    "also_sources": [
+     "https://parkesdale.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Same id as the around-daytrips record (merge unites them); kind kept as market to match. The plan-your-visit page says Cheryl and Jim Meeks opened the market in February 1969; the homepage banner says 'Family owned since 1968'. The farm itself dates to 1956, when the Parke family planted its first 10 acres of strawberries in Plant City (site)."
+   },
+   {
+    "id": "spain-restaurant-toma-bar",
+    "name": "Spain Restaurant & Toma Bar",
+    "kind": "restaurant",
+    "kinds": [
+     "bar"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "latin-heritage"
+    ],
+    "area": "downtown-tampa",
+    "address": "513 N Tampa St",
+    "city": "Tampa",
+    "state": "FL",
+    "zip": "33602",
+    "lat": 27.948302,
+    "lng": -82.459098,
+    "geo_source": "census",
+    "url": "https://tomaspain.com/",
+    "phone": "(813) 223-2831",
+    "hours_text": "Lunch buffet Monday–Friday 11 AM–2:30 PM; dinner Tuesday–Thursday 4–9 PM, Friday–Saturday 4–10 PM; happy hour daily 4–7 PM.",
+    "summary": "A downtown Spanish restaurant founded in 1980 by the Castro family, serving Galician-style tapas, seafood and paella a few blocks from the Straz Center and Tampa Theatre, with a weekday lunch buffet and daily happy hour.",
+    "quote": "The Castro family, who emigrated from Spain, established the Spain restaurant in downtown Tampa in 1980.",
+    "status": "open",
+    "tags": [
+     "spanish",
+     "tapas",
+     "paella",
+     "historic-restaurant"
+    ],
+    "source_url": "https://tomaspain.com/",
+    "also_sources": [
+     "https://www.visittampabay.com/listings/spain-restaurant-%26-toma-bar/3428/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit Tampa Bay: live music Friday and Saturday 6:30–9:30 PM."
+   }
+  ]
+ },
+ "report": "# eat-tampa: where to eat and drink in Tampa and Around the Bay\n\nChecked Sep 27, 2026. 72 places, all `status: open` on the page read, all geocoded (64 census address matches, 7 Photon/OSM name matches checked by hand, 1 manual).\n\n## What is covered\n\n- **The complete 2026 MICHELIN Guide selection for the city of Tampa (28):** 4 one-star (Rocca, Kōsen, Koya, Ebbe), 4 Bib Gourmand (Psomi, Streetlight Taco, Rooster & the Till, Gorkhali Kitchen) and all 20 recommended restaurants (Bern's, Lilac, Kinjo, Restaurant BT, Bistro BT, Bar Terroir, Mad Dogs & Englishmen, Mise en Place, Olivia, Ponte, Predalina, The Pearl, Noble Rice, The Brisket Shoppe, Flaming Mountain, Supernatural Food & Wine, Cousin Vinny's, Big Ray's Fish Camp, Yummy House, Fat Beet Farm). Each carries exactly one of the tags `michelin-star`, `michelin-bib-gourmand`, `michelin-recommended`. Lilac lost its star in 2026 and is tagged recommended; its record says so.\n- **Historic, signature and Latin-heritage places (17 + 8):** Columbia Restaurant (heritage block, `signature`), Columbia Cafe at the Tampa Bay History Center (now serving the Goody Goody burger and pie), La Segunda Central Bakery (heritage block), Alessi, La Teresita, Wright's Gourmet House, Carmine's, Brocato's, Kojak's House of Ribs, Ulele, Mel's Hot Dogs, Soul de Cuba, Flor Fina, Café Quiquiriquí, Casa Santo Stefano, Malio's, Spain Restaurant & Toma Bar, Steelbach, Sal Rosa, Blind Tiger Coffee (Ybor), Parkesdale Market (strawberry shortcake).\n- **Breweries and distilleries (10):** Cigar City, Coppertail, Hidden Springs, BarrieHaus, Angry Chair, Florida Avenue Brewing (Seminole Heights and Wesley Chapel), Yuengling Draft Haus & Kitchen, Gamblers Bay Distillery, Vista Gin; Ulele Spring Brewery is inside the Ulele record (`kinds: brewery`).\n- **Bars, rooftops and nightlife (13):** Beacon, EDGE, M.Bird, Sal Y Mar (rooftops), The Dan, Jekyll, CW's Gin Joint, Four Green Fields, Gaspar's Grotto, Cru Cellars, Independent Bar & Cafe, Jackson's Bistro, The Castle.\n\nCounts by kind: restaurant 45, bar 10, brewery 8, cafe-bakery 5, distillery-winery 2, nightlife 1, market 1.\nCounts by area: ybor-city 13, south-tampa 9, downtown-tampa 8, hyde-park 7, channel-district 7, tampa-heights 6, seminole-heights 5, north-tampa 4, westshore 4, west-tampa 3, east-tampa 2, harbour-island 1, brandon 1 (Kojak's, Seffner), lutz-wesley-chapel 1, plant-city 1.\nTags used for the eat page: `cuban-sandwich` (11 places), `historic-restaurant`, `rooftop-bar`, `craft-beer`, cuisine tags.\n\n## How candidates were found\n\n1. **MICHELIN Guide data.** guide.michelin.com HTML pages sit behind an AWS bot challenge (curl, WebFetch and a browser all fail), so the Tampa selection was read from the guide's own public search index (the Algolia index the site queries; every hit says `guide_year: 2026`, published 2026-05-28, updated July 2026) and cross-checked against https://www.visittampabay.com/michelin/, which lists the same 28 restaurants with the same distinctions. The Wikipedia list of Florida starred restaurants confirms the star history (Lilac 2023–2025 only). Each Michelin record lists its guide.michelin.com restaurant URL in `also_sources` for the verifier.\n2. **Visit Tampa Bay listings.** Paged through all 262 EAT listings plus Breweries & Distilleries, Nightlife, Entertainment & Nightlife, Bakeries/Desserts, Coffee Shops, Multicultural and \"Only in Tampa Bay\" through the site's listings API, and read its Cuban sandwich guide (https://www.visittampabay.com/food-and-drink/cuban-sandwich/) and Michelin page.\n3. **Names from the brief and local knowledge**, each confirmed on its own site.\n4. **Official sites** were read with curl, WebFetch or a headless browser (for script-built sites, SiteGround captchas and age gates). 65 of 72 records cite the business's own page as `source_url`; 6 cite the Visit Tampa Bay listing because the official site was blocked or down (Alessi, The Brisket Shoppe, CW's Gin Joint, Independent Bar, Jackson's Bistro, Blind Tiger Ybor), and 1 cites the Michelin page (Flaming Mountain).\n\n## Closures and changes found (recorded, and why things are missing)\n\n- **Cigar City Brewing's Spruce Street taproom is closed**; the brewery says a new Ybor City location is being built. The record is placed at its downtown taproom (375 Channelside Dr), with the closure quoted.\n- **Kojak's House of Ribs moved from South Tampa to Seffner in 2022** (record in `brandon`).\n- **Goody Goody's Hyde Park Village restaurant closed Sept. 29, 2024**; its burgers and pie are now served at the Columbia Cafe (recorded there) and at TPA Airside C. No separate Goody Goody record.\n- **Left out as closed or unverifiable:** Hall on Franklin food hall (its domain now redirects to an unrelated film festival), Datz Tampa (the Datz site lists only St. Petersburg), Ciro's Speakeasy (site says goodbye; the address is now another bar), 7venth Sun's Tampa taproom (site lists only Dunedin), West Tampa Sandwich Shop (domain lapsed), Ella's Americana Folk Art Cafe (domain lapsed), Tampa Bay Brewing Co. (domain parked), Big Storm Brewing (site \"not published\"), Arco Iris and Silver Ring Cafe (sites do not resolve), Wild Rover Brewing, Mandarin Heights, Roast on 7th, Whiskey Joe's and The Hub (official sites down or blocked, so open status could not be confirmed).\n- **Owned by other slices, not duplicated:** Armature Works (Heights Public Market) and Sparkman Wharf (see-tampa, shared ids), Oxford Exchange (see-tampa, which already carries restaurant/cafe kinds), Skipper's Smokehouse (venues-bay), King Corona Cigars (see-tampa), the Tampa Bay Ale Trail and the Yuengling brewery tour (experiences). **Parkesdale Market** reuses the around-daytrips id on purpose (the merge unites them; kind kept `market`).\n- **Michelin outside this slice:** Nineteen61 (Lakeland, recommended) and the St. Petersburg / Safety Harbor selections belong to eat-pinellas (day trips and Pinellas).\n\n## Open questions for the verifier\n\n1. **Flaming Mountain**: the MICHELIN 2026 data lists it, but flamingmountaintampa.com did not resolve on Sep 27; please confirm it is operating.\n2. **Alessi Bakery**: the official site returned 502/503; hours and the founding year (often given as 1912) are left null/out.\n3. **Cigar City downtown taproom**: the site gives address and phone but no hours; the link to the arena is an inference from the closure notice.\n4. **Brocato's** homepage has injected spam links (compromised site); consider not linking it prominently.\n5. **Ulele**: the building's Water Works history is not stated on any page read, so there is no heritage block; the history slices may supply it.\n6. Minor conflicts noted in records' `notes`: Bar Terroir ZIP (33606 on site, 33609 Michelin), Kinjo address (224 vs 226 S Boulevard), La Segunda loaves (18,000+ vs 20,000), Parkesdale founding (1968 banner vs Feb 1969 story), Mise en Place's old address on Visit Tampa Bay.\n7. Phones for The Columbia (Ybor), Columbia Cafe, Soul de Cuba, CW's, Cru Cellars and Jekyll come from Visit Tampa Bay listings, not the official pages.\n"
+}

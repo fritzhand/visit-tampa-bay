@@ -29,7 +29,7 @@ test("the fixture builds: every page, asset, link, index entry and card contract
     for (const p of places) assert.ok(fs.existsSync(path.join(docs, "places", `${p.id}.html`)), `missing places/${p.id}.html`);
     for (const s of stays) assert.ok(fs.existsSync(path.join(docs, "stays", `${s.id}.html`)), `missing stays/${s.id}.html`);
     for (const a of AREA_IDS) assert.ok(fs.existsSync(path.join(docs, "areas", `${a}.html`)), `missing areas/${a}.html (every fixed area has a page)`);
-    for (const f of ["404.html", "sitemap.xml", "robots.txt", ".nojekyll", "assets/tokens.css", "assets/site.css", "assets/fonts/newsreader-roman-latin.woff2",
+    for (const f of ["404.html", "sitemap.xml", "robots.txt", ".nojekyll", "assets/tokens.css", "assets/site.css", "assets/fonts/figtree-roman-latin.woff2",
       "assets/data/search.json", "assets/data/events.json", "assets/data/event-text.json", "assets/data/experiences.json", "assets/data/places-lite.json", "assets/data/stays-lite.json"]) {
       assert.ok(fs.existsSync(path.join(docs, f)), `missing docs/${f}`);
     }
@@ -244,7 +244,7 @@ const BROKEN = [
   ["a color in a style attribute", extraPage("<h1>X</h1><p style=\"color: #c00\">x</p>"), "color literal in style"],
   ["an unknown feature module", extraPage("<h1>X</h1>", `features: ["nope"]`), "has no site/js/features/nope.js"],
   ["a broken srcset", extraPage("<h1>X</h1><img src=\"../assets/tokens.css\" srcset=\"../assets/img/p/nope-960.webp 960w\" alt=\"\" width=\"1\" height=\"1\">"), "broken link ../assets/img/p/nope-960.webp"],
-  ["a font url() that does not resolve", edit("site/css/tokens.css", (s) => s.replace(/url\((['"]?)fonts\/public-sans-roman-latin\.woff2/, "url($1fonts/nope.woff2")), "does not resolve"],
+  ["a font url() that does not resolve", edit("site/css/tokens.css", (s) => s.replace(/url\((['"]?)fonts\/archivo-roman-latin\.woff2/, "url($1fonts/nope.woff2")), "does not resolve"],
   ["a search entry that does not resolve", (dir) => write(dir, "build/pages/zz-search.mjs", `export function pages() { return []; }\nexport function search() { return [{ k: "pg", id: "zz", t: "ZZ", u: "zz-nowhere.html" }]; }\n`), "assets/data/search.json"],
   ["an image manifest entry without its file", (dir) => write(dir, "data/images.json", JSON.stringify({ "p/tampa-theatre": { file: "img/p/tampa-theatre.webp", w: 640, h: 427, credit: "X / Wikimedia Commons (CC BY 4.0)", license: "cc-by" } })), "site/img/p/tampa-theatre.webp does not exist"],
 ];

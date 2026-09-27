@@ -1,0 +1,2106 @@
+{
+ "slice": "getting-around",
+ "checked": "2026-09-27",
+ "records": {
+  "transport": [
+   {
+    "id": "teco-line-streetcar",
+    "name": "TECO Line Streetcar",
+    "mode": "streetcar",
+    "operator": "HART, under contract to Tampa Historic Streetcar, Inc.",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tecolinestreetcar.org/",
+    "fare_text": "Free: all rides are fare free.",
+    "is_free": true,
+    "hours_text": "Every 15 minutes. Mon-Thu 7:00 AM-11:00 PM; Fri 7:00 AM-2:00 AM; Sat 9:00 AM-2:00 AM; Sun 8:30 AM-11:00 PM. Runs until midnight Sun-Thu when there is a Lightning game or evening event at Benchmark International Arena.",
+    "summary": "A free electric heritage streetcar on a 2.7-mile line with 11 covered, wheelchair-accessible stations linking downtown Tampa, the Channel District and Ybor City; an end-to-end trip takes about 25 minutes. Pull the overhead cord to request your stop; bikes are not allowed on board.",
+    "stops": [
+     {
+      "name": "Hattricks Station (#11), Franklin St & Whiting St",
+      "lat": 27.945365,
+      "lng": -82.456804,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Dick Greco Plaza Station (#10), Franklin St & Old Water St",
+      "lat": 27.941498,
+      "lng": -82.454879,
+      "area": "downtown-tampa",
+      "place": "tampa-convention-center"
+     },
+     {
+      "name": "HSBC Station (#9), Morgan St & Old Water St",
+      "lat": 27.941915,
+      "lng": -82.451974,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Water Street Station (#8), Beneficial Dr & Channelside Dr",
+      "lat": 27.943419,
+      "lng": -82.448532,
+      "area": "channel-district",
+      "place": "benchmark-international-arena"
+     },
+     {
+      "name": "The Florida Aquarium Station (#7), Cumberland Ave & Channelside Dr",
+      "lat": 27.945992,
+      "lng": -82.445597,
+      "area": "channel-district",
+      "place": "florida-aquarium"
+     },
+     {
+      "name": "York Street Station (#6), York St & Channelside Dr",
+      "lat": 27.948156,
+      "lng": -82.445324,
+      "area": "channel-district"
+     },
+     {
+      "name": "Port Tampa Bay Station (#5), McKay St & Channelside Dr",
+      "lat": 27.951363,
+      "lng": -82.445223,
+      "area": "channel-district"
+     },
+     {
+      "name": "Cadrecha Plaza Station (#4), 13th St & 7th Ave",
+      "lat": 27.960683,
+      "lng": -82.445507,
+      "area": "ybor-city"
+     },
+     {
+      "name": "Streetcar Society Station (#3), 15th St & 8th Ave",
+      "lat": 27.961063,
+      "lng": -82.443269,
+      "area": "ybor-city"
+     },
+     {
+      "name": "Centro Ybor Station (#2), 16th St & 8th Ave",
+      "lat": 27.961063,
+      "lng": -82.441234,
+      "area": "ybor-city"
+     },
+     {
+      "name": "Centennial Park Station (#1), 20th St & 8th Ave",
+      "lat": 27.961054,
+      "lng": -82.437214,
+      "area": "ybor-city",
+      "place": "centennial-park-ybor"
+     }
+    ],
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "also_sources": [
+     "https://www.tecolinestreetcar.org/howtoride.html",
+     "https://www.tecolinestreetcar.org/about.html",
+     "https://www.gohart.org/Pages/fares-cards.aspx",
+     "https://www.tampa.gov/mobility/transportation/projects/streetcar",
+     "https://www.gohart.org/google/google_transit.zip"
+    ],
+    "notes": "Stop coordinates are HART's own (GTFS feed version 2608.4, stops.txt, route 800), i.e. operator-published. Service change effective June 22, 2025: a consistent 15-minute frequency 7 days a week (12-minute peak service discontinued). Pets: service dogs; non-service dogs in small carriers. Extension: the City of Tampa's InVision: Tampa Streetcar page describes a preferred alternative with modern vehicles and a 1.3-mile extension from the western end through downtown to Tampa Heights, in project development; the page gives no construction or opening date, so nothing is scheduled as far as the pages read show. A rider alert on the home page (Sant' Yago Knight Parade) is event-specific and not recorded. The How to Ride page still lists Coast Bike Share among connections; see the bike-share record.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pirate-water-taxi-route",
+    "name": "Pirate Water Taxi",
+    "mode": "water-taxi",
+    "operator": "Pirate Water Taxi",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://piratewatertaxi.com/",
+    "fare_text": "All-Day Pass: adult $34, child (ages 2-12) $24; Annual Membership $199.95. Cashless on the boat; tickets online or at the booth at Stop 7.",
+    "is_free": false,
+    "hours_text": "Mon-Thu 11:30 AM-6:30 PM; Fri-Sun 11:30 AM-9:30 PM. On weekdays boats leave Stop 7 toward Stop 16 at 11:30 AM, 1:00, 2:30, 4:00 and 5:30 PM; departures are more frequent Friday-Sunday.",
+    "summary": "A hop-on, hop-off water taxi on the Hillsborough River and the Channel District waterfront with 10 numbered stops from the Florida Aquarium to Armature Works; an all-day pass covers unlimited rides. Boats are covered and wheelchair accessible, though not every dock is; bikes and luggage are not allowed on board, and service stops for lightning, heavy rain and high winds.",
+    "stops": [
+     {
+      "name": "Stop 7: Convention Center / Marriott Water Street (home dock and ticket booth, 333 S Franklin St)",
+      "lat": 27.941967,
+      "lng": -82.456618,
+      "area": "downtown-tampa",
+      "place": "tampa-convention-center"
+     },
+     {
+      "name": "Stop 8: Tampa General Hospital",
+      "lat": 27.937501,
+      "lng": -82.4589,
+      "area": "davis-islands"
+     },
+     {
+      "name": "Stop 11: Arabelle Riverwalk",
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Stop 12: Curtis Hixon Waterfront Park",
+      "lat": 27.949047,
+      "lng": -82.461887,
+      "area": "downtown-tampa",
+      "place": "curtis-hixon-waterfront-park"
+     },
+     {
+      "name": "Stop 15: Julian B. Lane Riverfront Park",
+      "lat": 27.953268,
+      "lng": -82.467136,
+      "area": "west-tampa",
+      "place": "julian-b-lane-riverfront-park"
+     },
+     {
+      "name": "Stop 16: Armature Works / Ulele",
+      "lat": 27.96059,
+      "lng": -82.463573,
+      "area": "tampa-heights",
+      "place": "armature-works"
+     },
+     {
+      "name": "Stop 4: Harbour Island",
+      "area": "harbour-island"
+     },
+     {
+      "name": "Stop 3: Benchmark International Arena / Tampa History Center",
+      "lat": 27.94197,
+      "lng": -82.449991,
+      "area": "channel-district",
+      "place": "tampa-bay-history-center"
+     },
+     {
+      "name": "Stop 2: Sparkman Wharf / Yacht StarShip / Craft",
+      "lat": 27.943369,
+      "lng": -82.446999,
+      "area": "channel-district",
+      "place": "sparkman-wharf"
+     },
+     {
+      "name": "Stop 1: Florida Aquarium / American Victory Ship",
+      "lat": 27.943763,
+      "lng": -82.44713,
+      "area": "channel-district",
+      "place": "florida-aquarium"
+     }
+    ],
+    "lat": 27.941967,
+    "lng": -82.456618,
+    "address": "333 S Franklin St, Tampa, FL 33602",
+    "source_url": "https://piratewatertaxi.com/schedule-rates/",
+    "also_sources": [
+     "https://piratewatertaxi.com/rates-and-passes/",
+     "https://piratewatertaxi.com/faq/",
+     "https://piratewatertaxi.com/parking-directions/",
+     "https://piratewatertaxi.com/map/"
+    ],
+    "notes": "Same service as the exp-water experience pirate-water-taxi (kept under a separate id here because this is the transport record). Stops are listed in the order the schedule serves them (7, 8, 11, 12, 15, 16, then 4, 3, 2, 1 and back to 7). Stop coordinates are the named landmark (the place records' points: census or OpenStreetMap), not the dock itself; Stop 11 (Arabelle Riverwalk) and Stop 4 (Harbour Island) have no point because no source placed the dock. The map page says route schedule and stop availability may be affected by low or high tides. FAQ: no reservations needed (first-come, first-served); children 13 and under must ride with someone 14 or older; the boats do not go to St. Pete; the zoo route was discontinued in 2017; parking is not included (the FAQ suggests the Tampa Convention Center, Pam Iorio and Fort Brooke garages).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "dash-tampa",
+    "name": "DASH (Downtown Area Shared Hubs)",
+    "mode": "microtransit",
+    "operator": "Tampa Downtown Partnership",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tampasdowntown.com/dash/",
+    "fare_text": "$2 per person, requested and paid through the DASH Tampa app.",
+    "is_free": false,
+    "hours_text": "Mon-Sat 7 AM-11 PM; Sun 12 PM-9 PM.",
+    "summary": "An app-hailed, hub-to-hub ride service in downtown Tampa using all-electric vehicles, with more than twenty virtual hubs; each ride costs $2 per person. Wheelchair-accessible rides are provided by partner Wheelchair Transport Service (813-540-3333).",
+    "source_url": "https://www.tampasdowntown.com/dash/",
+    "also_sources": [
+     "https://www.tampasdowntown.com/getting-around/",
+     "https://www.visittampabay.com/stay/transportation/"
+    ],
+    "notes": "DASH drivers are part of the Partnership's Downtown Ambassadors team. The Partnership says hubs may be adjusted and the app has day-to-day changes. The Tampa Downtown Partnership page links the rider app 'DASH Tampa Microtransit' (package com.ridewithvia.dashtamparider); Visit Tampa Bay's page still links an older app listing. The Downtowner name no longer appears on these Tampa pages; no page read describes a Downtowner service in St. Pete or Clearwater in 2026 (not verified either way).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tampa-shared-scooters-ebikes",
+    "name": "Shared e-scooters and e-bikes (Tampa)",
+    "mode": "scooter",
+    "operator": "Lime and Spin, under the City of Tampa Shared Micromobility Program",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tampa.gov/tss-transportation/programs/shared-micromobility-program",
+    "summary": "Lime and Spin rent e-scooters and e-bikes across the City of Tampa through their apps; riders must be 16 or older with a valid driver's license or permit, and helmets are encouraged but not required. The city bars them from the Tampa Riverwalk, Bayshore Boulevard and 7th Avenue in Ybor City, and asks riders to park upright in designated corrals.",
+    "source_url": "https://www.tampa.gov/tss-transportation/programs/shared-micromobility-program",
+    "also_sources": [
+     "https://www.tampasdowntown.com/getting-around/"
+    ],
+    "notes": "City page (updated 05/07/2025) names two vendors, Lime (www.li.me, 1-888-LIME-345) and Spin (www.spin.app, 1-888-262-5189); vehicles travel up to about 15 mph and 15-20 miles per charge. Fares are set in the vendors' apps and are not on the city page. Visit Tampa Bay's transportation page also names Bird; the city page does not, so Bird is not listed here. The page's '7th Avenue' is read as Ybor City's 7th Avenue (the page does not say which).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "central-avenue-trolley",
+    "name": "Central Avenue Trolley",
+    "mode": "trolley",
+    "operator": "PSTA",
+    "regions": [
+     "stpete"
+    ],
+    "url": "https://psta.net/routes/central-avenue-trolley/",
+    "fare_text": "Free.",
+    "is_free": true,
+    "hours_text": "Daily. Eastbound from Grand Central Station every 30 minutes, 6:33 AM-9:33 PM; westbound from 2nd Ave NE and Beach Drive 6:14 AM-9:39 PM (last arrival 10:01 PM).",
+    "summary": "A free PSTA trolley along Central Avenue between Grand Central Station and the St. Pete Pier (2nd Ave NE and Beach Drive), running every 30 minutes daily.",
+    "stops": [
+     {
+      "name": "Grand Central Station",
+      "area": "grand-central"
+     },
+     {
+      "name": "2nd Ave NE and Beach Drive (St. Pete Pier)",
+      "area": "downtown-stpete",
+      "place": "st-pete-pier"
+     }
+    ],
+    "source_url": "https://psta.net/routes/central-avenue-trolley/",
+    "notes": "Hours and frequency are read from the posted Sunday-Saturday timetable (eastbound departures at :03 and :33). PSTA's home page listed a Central Avenue Trolley detour for sewer work near Central Avenue and Beach Boulevard on Sep 27, 2026.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hart-bus",
+    "name": "HART buses",
+    "mode": "bus",
+    "operator": "Hillsborough Area Regional Transit (HART)",
+    "regions": [
+     "tampa",
+     "around"
+    ],
+    "url": "https://www.gohart.org/",
+    "fare_text": "Local and Limited Express: $2.00 a trip, capped at $4.00 a day and $65.00 a month when you pay with the Flamingo Fares app or card, a contactless bank card or a phone wallet. Discount fare $1.00 (cap $2.00 a day). 1 Day Family Pass $12.50 (up to 5 people, Flamingo app only). Month Passport $85.00 (HART and PSTA). HARTFlex $1.00.",
+    "is_free": false,
+    "hours_text": "Varies by route; routes 10, 30 and 32 serve Tampa International Airport seven days a week.",
+    "summary": "Hillsborough County's bus system, with local routes, limited-express commuter routes and HARTFlex, meeting at the Marion Transit Center downtown. Routes 10 (Cypress St.) and 30 (Kennedy Blvd./Town 'N Country) link downtown Tampa with the Tampa International Airport Rental Car Center, reached from the terminal by the SkyConnect train.",
+    "stops": [
+     {
+      "name": "Marion Transit Center, 1211 N Marion St (downtown hub; Greyhound/FlixBus; PSTA 100 and 300)",
+      "lat": 27.955086,
+      "lng": -82.45843,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Tampa International Airport Rental Car Center (routes 10, 30, 32; PSTA 300)",
+      "lat": 27.962434,
+      "lng": -82.535856,
+      "area": "westshore"
+     }
+    ],
+    "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
+    "also_sources": [
+     "https://www.gohart.org/Pages/services-bus.aspx",
+     "https://www.gohart.org/Pages/maps-schedules.aspx",
+     "https://gohart.org/Style%20Library/goHART/pdfs/service/HART_Schedule_Book_081626.pdf",
+     "https://www.gohart.org/google/google_transit.zip"
+    ],
+    "notes": "Fare caps apply to Flamingo app/card and to contactless cards or wallets used the same way each time. HART's bus page says routes 10, 30 and 32 can be picked up near the Rental Car Center (take SkyConnect from the Red Baggage Claim); the same page also still describes the In-Towner (Route 96) and names Amalie Arena, so parts of it are dated and its hours for routes 10/30 are not repeated here. The schedule book effective Aug 16, 2026 lists Route 30 (Kennedy Blvd./Town 'N Country, via the airport to the Northwest Transfer Center) and Route 10 (Cypress St.) to the Rental Car Center; Route 32 (Dr. Martin Luther King Jr. Blvd.) runs from the Netpark Transfer Center to the airport. The schedules page also lists MetroRapid (Downtown Tampa to UATC/Hidden River Park-n-Ride via Nebraska Ave.). Stop coordinates are from HART's GTFS stops.txt (feed 2608.4). HARTInfo line: 813-254-4278.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "psta-bus",
+    "name": "PSTA buses",
+    "mode": "bus",
+    "operator": "Pinellas Suncoast Transit Authority (PSTA)",
+    "regions": [
+     "stpete",
+     "beaches",
+     "clearwater"
+    ],
+    "url": "https://psta.net/",
+    "fare_text": "$2.25 a ride; with Flamingo Fares or tap-to-pay the most you pay is $5 a day and $85 a calendar month. Reduced fare $1.10 (cap $2.50 a day). Cash (exact change, no pennies) is accepted on all routes except the SunRunner, without fare caps. Children 8 and under ride free. 1 Day Flamingo Fares Group Pass $5 for up to 4 people.",
+    "is_free": false,
+    "summary": "Pinellas County's transit agency: fixed-route buses, the SunRunner rapid bus, the Suncoast Beach Trolley along the Gulf beaches, and express routes 100 and 300 to downtown Tampa. Tap a contactless card (not American Express), Apple Pay, Google Pay or the Flamingo Fares app to get the daily and monthly fare caps.",
+    "source_url": "https://psta.net/rider-info/fares/",
+    "also_sources": [
+     "https://psta.net/rider-info/schedules-maps/",
+     "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/"
+    ],
+    "notes": "PSTA's own description (press releases, 2026): 41 fixed-route bus routes, two express routes to downtown Tampa, the Suncoast Beach Trolley, the Jolley Trolley and the Looper, and 10.7 million rides a year. US military veterans ride free with a PSTA veterans pass (fares page). Customer information: (727) 540-1900 (per the Looper site). The PSTA site listed many route detours on Sep 27, 2026; they are not recorded.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "psta-route-100-express",
+    "name": "PSTA Route 100 Express (St. Petersburg to Tampa)",
+    "mode": "bus",
+    "operator": "PSTA",
+    "regions": [
+     "stpete",
+     "tampa"
+    ],
+    "url": "https://psta.net/routes/route-100/",
+    "fare_text": "Regular PSTA fare ($2.25).",
+    "is_free": false,
+    "hours_text": "Monday-Friday only. First eastbound trip leaves 2nd Ave NE and Beach Drive at 4:47 AM; last westbound trip leaves the Marion Transit Center at 7:18 PM.",
+    "summary": "A weekday express bus between the St. Pete Pier area (2nd Ave NE and Beach Drive) and the Marion Transit Center in downtown Tampa, stopping at Gateway Mall and Britton Plaza.",
+    "stops": [
+     {
+      "name": "2nd Ave NE and Beach Drive (St. Pete Pier)",
+      "area": "downtown-stpete",
+      "place": "st-pete-pier"
+     },
+     {
+      "name": "Gateway Mall",
+      "area": "northeast-stpete"
+     },
+     {
+      "name": "Britton Plaza Station",
+      "area": "south-tampa"
+     },
+     {
+      "name": "Marion Transit Center",
+      "lat": 27.955086,
+      "lng": -82.45843,
+      "area": "downtown-tampa"
+     }
+    ],
+    "source_url": "https://psta.net/routes/route-100/",
+    "also_sources": [
+     "https://psta.net/rider-info/fares/"
+    ],
+    "notes": "Times read from the posted Monday-Friday timetable (eastbound and westbound). The route page does not state a separate express fare; the fares page gives $2.25 for PSTA rides. A detour at Central Avenue and Bayshore Blvd (sewer work) was posted on Sep 27, 2026.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "psta-route-300-express",
+    "name": "PSTA Route 300 Express (Largo to Tampa Airport and downtown Tampa)",
+    "mode": "bus",
+    "operator": "PSTA",
+    "regions": [
+     "clearwater",
+     "tampa"
+    ],
+    "url": "https://psta.net/routes/route-300/",
+    "fare_text": "Regular PSTA fare ($2.25).",
+    "is_free": false,
+    "hours_text": "Monday-Friday only.",
+    "summary": "A weekday limited-stop express from the Ulmerton Park and Ride in Largo via Feather Sound and the Tampa International Airport Rental Car Center to the Marion Transit Center in downtown Tampa.",
+    "stops": [
+     {
+      "name": "Ulmerton Park and Ride",
+      "lat": 27.893904,
+      "lng": -82.760071,
+      "area": "largo"
+     },
+     {
+      "name": "PSTA 34th St layby",
+      "area": "largo"
+     },
+     {
+      "name": "Tampa International Airport Rental Car Facility",
+      "lat": 27.962434,
+      "lng": -82.535856,
+      "area": "westshore"
+     },
+     {
+      "name": "Marion Transit Center",
+      "lat": 27.955086,
+      "lng": -82.45843,
+      "area": "downtown-tampa"
+     }
+    ],
+    "source_url": "https://psta.net/routes/route-300/",
+    "notes": "First eastbound trip leaves Ulmerton Park and Ride at 6:10 AM; last westbound trip leaves the Marion Transit Center at 7:42 PM (posted timetable). The Ulmerton Park and Ride point is the OpenStreetMap bus stop 'Ulmerton Park North Ride Lot'; the airport and Marion points are HART's GTFS stops. The PSTA 34th St layby stop has no point.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunrunner",
+    "name": "SunRunner",
+    "mode": "brt",
+    "operator": "PSTA",
+    "regions": [
+     "stpete",
+     "beaches"
+    ],
+    "url": "https://psta.net/services/sunrunner/",
+    "fare_text": "Same as regular PSTA service: $2.25 a ride (reduced fares available). Cashless: tap a contactless Visa, Mastercard or Discover card, phone or watch, or use Flamingo Fares; American Express and cash are not accepted.",
+    "is_free": false,
+    "hours_text": "Seven days a week, 6 AM to midnight. Every 15 minutes until 8 PM, then every 30 minutes until midnight; every 15 minutes until midnight on Fridays and Saturdays (SunRunner After Dark).",
+    "summary": "Tampa Bay's first bus rapid transit line, a 10-mile, 16-stop route with dedicated bus lanes between downtown St. Petersburg and St. Pete Beach via the Grand Central and EDGE districts and South Pasadena; PSTA says the trip takes about 35 minutes. Buses have level boarding, three interior bike racks, free Wi-Fi and charging at every seat.",
+    "stops": [
+     {
+      "name": "Downtown St. Petersburg",
+      "area": "downtown-stpete"
+     },
+     {
+      "name": "Grand Central District",
+      "area": "grand-central"
+     },
+     {
+      "name": "St. Pete Beach",
+      "area": "st-pete-beach"
+     }
+    ],
+    "source_url": "https://psta.net/services/sunrunner/",
+    "also_sources": [
+     "https://psta.net/routes/sunrunner/",
+     "https://psta.net/rider-info/fares/"
+    ],
+    "notes": "PSTA lists destinations served: downtown St. Petersburg, USF St. Pete, Tropicana Field, TradeWinds Island Resort, the Grand Central and EDGE business districts, Bayfront, Johns Hopkins All Children's Hospital, South Pasadena and St. Pete Beach. The page says 31 stations (both directions) and a 10-mile, 16-stop line; station names and points were not published in the pages read, so stops are the three areas only. Rental bikes and scooters and tandem bikes are not allowed on board; small pets in carriers are. The page links bike share at gohopr.com/coast, which now says Coast Bike Share has closed (see the bike-share records).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "downtown-looper",
+    "name": "Downtown Looper",
+    "mode": "trolley",
+    "operator": "The Looper Group, Inc. (funded in part by PSTA)",
+    "regions": [
+     "stpete"
+    ],
+    "url": "https://www.loopertrolley.com/",
+    "fare_text": "Free.",
+    "is_free": true,
+    "hours_text": "Mon-Fri 7:00 AM-10:00 PM; Sat-Sun 8:00 AM-10:00 PM; every 15-20 minutes. Not running on Thanksgiving Day, Christmas Day and Dr. Martin Luther King Jr. Day.",
+    "summary": "A free trolley loop around downtown St. Petersburg connecting the Pier, the Museum of Fine Arts and Beach Drive, the Dali Museum, USF St. Petersburg, hotels and parking. All trolleys have a wheelchair lift; PSTA's Central Avenue Trolley connects with it on Bayshore Drive near the Pier approach.",
+    "stops": [
+     {
+      "name": "The Pier",
+      "area": "downtown-stpete",
+      "place": "st-pete-pier"
+     },
+     {
+      "name": "Renaissance Vinoy Resort",
+      "area": "downtown-stpete"
+     },
+     {
+      "name": "Museum of Fine Arts / Beach Dr.",
+      "area": "downtown-stpete",
+      "place": "museum-of-fine-arts-st-petersburg"
+     },
+     {
+      "name": "Florida Holocaust Museum",
+      "area": "downtown-stpete",
+      "place": "florida-holocaust-museum"
+     },
+     {
+      "name": "USF St. Petersburg",
+      "area": "downtown-stpete"
+     },
+     {
+      "name": "Dali Museum",
+      "lat": 27.765987,
+      "lng": -82.631461,
+      "area": "downtown-stpete",
+      "place": "dali-museum"
+     }
+    ],
+    "source_url": "https://www.loopertrolley.com/schedule",
+    "also_sources": [
+     "https://www.loopertrolley.com/",
+     "https://psta.net/routes/downtown-looper/",
+     "https://www.stpete.org/visitors/getting_around.php"
+    ],
+    "notes": "Stops are a selection from PSTA's route page list (Mon-Sun: The Pier, Museum of History/Dolphin Parking, Renaissance Vinoy Resort, Museum of Fine Arts/Beach Dr., BayWalk, St. Petersburg College, Courtyard Marriott, Open Air Post Office, Florida Holocaust Museum, USF St. Petersburg, Dali Museum, Hilton St. Petersburg, Hampton Inn & Suites, Chamber Visitor Center/BayWalk, Pelican Parking, 'Cross Bay Ferry at Port St. Pete'); the ferry stop name is out of date because that ferry is not running. Non-service pets ride only in a secured carrier. Contact (727) 821-5166.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "suncoast-beach-trolley",
+    "name": "Suncoast Beach Trolley",
+    "mode": "trolley",
+    "operator": "PSTA",
+    "regions": [
+     "beaches",
+     "clearwater"
+    ],
+    "url": "https://psta.net/routes/suncoast-beach-trolley/",
+    "fare_text": "PSTA fares apply: $2.25 a ride; $5 daily cap with Flamingo Fares or tap-to-pay.",
+    "is_free": false,
+    "hours_text": "Daily including holidays. Northbound trips leave 75th Ave and Gulf Blvd from 5:12 AM, generally every 30 minutes; the southbound timetable runs until about 10:20 PM.",
+    "summary": "A PSTA trolley route along Gulf Boulevard linking the Gulf beach towns from St. Pete Beach (75th Ave) through Treasure Island, John's Pass, Madeira Beach, the Redingtons, Indian Shores, Indian Rocks Beach and Sand Key to Clearwater Beach and the Park Street Terminal in downtown Clearwater.",
+    "stops": [
+     {
+      "name": "75th Ave and Gulf Blvd (St. Pete Beach)",
+      "area": "st-pete-beach"
+     },
+     {
+      "name": "Treasure Island",
+      "area": "treasure-island"
+     },
+     {
+      "name": "John's Pass Village",
+      "area": "madeira-beach",
+      "place": "johns-pass-village"
+     },
+     {
+      "name": "Gulf Blvd and 130th Ave (Madeira Beach)",
+      "area": "madeira-beach"
+     },
+     {
+      "name": "Gulf Blvd and 150th Ave",
+      "area": "madeira-beach"
+     },
+     {
+      "name": "Gulf Blvd and 180th Ave",
+      "area": "indian-rocks-beach"
+     },
+     {
+      "name": "Indian Rocks Beach",
+      "area": "indian-rocks-beach"
+     },
+     {
+      "name": "Sand Key",
+      "area": "sand-key",
+      "place": "sand-key-park"
+     },
+     {
+      "name": "Clearwater Beach Transit Center South (Pier 60)",
+      "lat": 27.977312,
+      "lng": -82.825155,
+      "area": "clearwater-beach",
+      "place": "pier-60"
+     },
+     {
+      "name": "Island Estates Plaza (intermittent service)",
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "Park Street Terminal (Garden Ave and Park St, downtown Clearwater)",
+      "lat": 27.964251,
+      "lng": -82.799051,
+      "area": "downtown-clearwater"
+     }
+    ],
+    "source_url": "https://psta.net/routes/suncoast-beach-trolley/",
+    "also_sources": [
+     "https://psta.net/rider-info/fares/"
+    ],
+    "notes": "The route page lists: St. Pete Beach, 75th Ave and Gulf Blvd, Treasure Island, John's Pass Village, Madeira Beach, Redington Beach, North Redington Beach, Redington Shores, Park Blvd Boat Ramp, Indian Shores, Indian Rocks Beach, Bay Park, Clearwater Sailing Center, Sand Key, Pier 60, Clearwater Beach, Mandalay Park, Island Estates (intermittent) and Park Street Terminal. The route page does not state a fare; the trolley is a PSTA route and PSTA's fares page applies $2.25 to PSTA rides (inference from the fares page, not stated on the route page). Transit-center points are OpenStreetMap bus stops.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "jolley-trolley",
+    "name": "Jolley Trolley",
+    "mode": "trolley",
+    "operator": "Jolley Trolley (PSTA partner)",
+    "regions": [
+     "beaches",
+     "clearwater"
+    ],
+    "url": "https://psta.net/routes/jolley-trolley-coastal-route/",
+    "hours_text": "Posted timetables: North Beach Route Sun-Thu 9:41 AM-10:01 PM, Fri-Sat until about 11:50 PM; South Beach Route Sun-Thu northbound 9:48 AM-10:10 PM; Coastal Route northbound trips from 8:21 AM (Dunedin), the last reaching downtown Clearwater at 9:27 PM.",
+    "summary": "Trolleys on Clearwater Beach (North Beach and South Beach routes around the beach, Island Estates and Sand Key) and a Coastal Route from Clearwater Beach and downtown Clearwater to Dunedin, Palm Harbor and the Tarpon Springs Sponge Docks. PSTA lists all three routes on its schedules page.",
+    "stops": [
+     {
+      "name": "Clearwater Beach Transit Center (North and South)",
+      "lat": 27.977713,
+      "lng": -82.825468,
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "Island Estates Plaza",
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "Gulf Blvd and Bayside Gardens (Sand Key)",
+      "area": "sand-key"
+     },
+     {
+      "name": "Garden and Park Street (downtown Clearwater)",
+      "lat": 27.964251,
+      "lng": -82.799051,
+      "area": "downtown-clearwater"
+     },
+     {
+      "name": "Main St and Pinellas Trail (Dunedin)",
+      "area": "dunedin",
+      "place": "downtown-dunedin"
+     },
+     {
+      "name": "Safford St and Tarpon Ave (Tarpon Springs)",
+      "area": "tarpon-springs"
+     },
+     {
+      "name": "Dodecanese Blvd and Sponge Docks",
+      "lat": 28.155818,
+      "lng": -82.762023,
+      "area": "tarpon-springs",
+      "place": "sponge-docks-tarpon-springs"
+     }
+    ],
+    "source_url": "https://psta.net/routes/jolley-trolley-coastal-route/",
+    "also_sources": [
+     "https://psta.net/routes/jolley-trolley-north-beach-route/",
+     "https://psta.net/routes/jolley-trolley-south-beach-route/",
+     "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/Alternative-Transportation-Clearwater-Beach",
+     "https://www.clearwaterferry.com/gettingthere"
+    ],
+    "notes": "Fares are not stated on the pages read; jolleytrolley.com did not resolve (DNS error) on Sep 27, 2026, so fare_text is null. The City of Clearwater points riders to jolleytrolleytracker.com for schedules. Hours are read from PSTA's timetables (North Beach clockwise Sun-Thu 9:41 AM-10:01 PM; Coastal Route Sun-Thu first northbound departure 8:21 AM from Clearwater Beach area, last trips about 9:27 PM). Clearwater Ferry says the Jolley Trolley added a stop at its downtown Clearwater dock. The Sponge Docks point is the see-pinellas place record; transit center points are OpenStreetMap bus stops.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "grouper-airport-express",
+    "name": "Grouper Airport Express (PIE to Clearwater Beach)",
+    "mode": "microtransit",
+    "operator": "PSTA",
+    "regions": [
+     "clearwater",
+     "beaches"
+    ],
+    "url": "https://psta.net/services/grouper/",
+    "fare_text": "One-way: $8 single rider (seniors 65+ $4); $20 total for groups of 3-4; $30 total for groups of 5-8. The airport's own page lists higher fares ($10 single, $30 for four, $40 for five to eight).",
+    "is_free": false,
+    "hours_text": "Every day and time the airport has inbound or outbound flights; book on demand or up to 2 months ahead.",
+    "summary": "A shared, bookable shuttle between St. Pete-Clearwater International Airport (PIE) and any address on Clearwater Beach, including the Sheraton and Marriott Sand Key resorts; book through grouper.psta.net or the Grouper app. At PIE the pickup is through the west baggage claim exit doors; drivers help with luggage and the service is wheelchair accessible.",
+    "stops": [
+     {
+      "name": "St. Pete-Clearwater International Airport, west baggage claim exit",
+      "lat": 27.909943,
+      "lng": -82.687718,
+      "area": "largo"
+     },
+     {
+      "name": "Any location on Clearwater Beach (including Sand Key resorts)",
+      "area": "clearwater-beach"
+     }
+    ],
+    "source_url": "https://psta.net/services/grouper/",
+    "also_sources": [
+     "https://fly2pie.com/parking-and-transportation/transportation-services/",
+     "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/Alternative-Transportation-Clearwater-Beach"
+    ],
+    "notes": "Fare conflict: PSTA's Grouper page and the City of Clearwater page say $8/$20/$30; PIE's transportation page says 'Fares begin at $10 for single riders, $30 for group of four, and $40 for groups of five to eight.' The verifier should check which is current. Rides must start and end at PIE or Clearwater Beach; no service within Clearwater Beach or to other Tampa Bay places. Some rides are provided by taxi. Booking needs the web booker or app and a phone that receives texts; no cancellation fees. The PIE point is the OpenStreetMap airfield, not the exit door.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "clearwater-ferry-route",
+    "name": "Clearwater Ferry",
+    "mode": "water-taxi",
+    "operator": "Clearwater Ferry (official PSTA partner)",
+    "regions": [
+     "clearwater",
+     "beaches"
+    ],
+    "url": "https://www.clearwaterferry.com/",
+    "fare_text": "The operator's schedule sheet lists Red Line (Downtown Clearwater-Clearwater Beach Marina) $5.00 regular, $2.50 reduced; Blue Line (Downtown Clearwater-Dunedin) $8.00 regular, $4.00 reduced; 8 and under free. The home page says fares rose by $1 effective Sep 17, 2026, so the sheet may predate the increase.",
+    "is_free": false,
+    "hours_text": "Thursday-Sunday. Red Line 10 a.m.-8:30 p.m.; Blue Line (Dunedin) 10 a.m.-7:00 p.m.",
+    "summary": "A passenger ferry linking downtown Clearwater (Coachman Park), the Clearwater Beach Marina near Pier 60 and the Dunedin Marina, so you can reach the beach without driving and parking. Reservations are recommended but not required; walk-ons board if there is room, and service can be suspended in bad weather.",
+    "stops": [
+     {
+      "name": "Downtown Clearwater (Memorial Causeway dock)",
+      "lat": 27.965985,
+      "lng": -82.804465,
+      "area": "downtown-clearwater"
+     },
+     {
+      "name": "Clearwater Beach Marina (near Pier 60)",
+      "lat": 27.9768,
+      "lng": -82.824503,
+      "area": "clearwater-beach",
+      "place": "clearwater-beach-marina"
+     },
+     {
+      "name": "Dunedin Marina",
+      "lat": 28.012791,
+      "lng": -82.793549,
+      "area": "dunedin"
+     }
+    ],
+    "source_url": "https://www.clearwaterferry.com/",
+    "also_sources": [
+     "https://www.clearwaterferry.com/schedules",
+     "https://www.clearwaterferry.com/_files/ugd/7e76b1_5ac10cb1772646029e62c5aa6e1c85b9.pdf",
+     "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/Alternative-Transportation-Clearwater-Beach"
+    ],
+    "notes": "Same service as the exp-water experience clearwater-ferry (separate id for the transport record). Stop points are OpenStreetMap ferry-terminal nodes named 'PSTA Clearwater Downtown Ferry Stop', 'PSTA Clearwater Beach Marina Ferry Stop' and 'PSTA Dunedin Marina Ferry Stop'. The schedule PDF shows Red Line departures on the hour from Downtown Clearwater (10:00 AM-8:00 PM) and on the half hour from Clearwater Beach Marina (10:30 AM-7:30 PM), and Blue Line trips every two hours; it carries no date. Weather/text line 727-643-1832. FAQ answers on the site load by script and could not be read.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tampa-st-pete-ferry",
+    "name": "Tampa Bay Ferry (St. Petersburg-Tampa)",
+    "mode": "ferry",
+    "operator": "PSTA, operated by Hubbard's Marina",
+    "regions": [
+     "stpete",
+     "tampa"
+    ],
+    "url": "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
+    "season_text": "Not running as of Sep 27, 2026. PSTA says it will announce a start date once refurbishment of its two vessels is nearing completion.",
+    "summary": "There is no passenger ferry across the bay between downtown St. Petersburg and Tampa right now: PSTA is preparing a new Tampa Bay Ferry service to replace the former Cross-Bay Ferry, with two vessels (Bay Breeze and Clipper) being refurbished in Tarpon Springs and a permanent dock planned in downtown St. Petersburg.",
+    "source_url": "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
+    "also_sources": [
+     "https://psta.net/press_releases/u-s-rep-anna-paulina-luna-gets-up-close-look-at-pstas-new-ferry/",
+     "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/"
+    ],
+    "notes": "PSTA press releases of June 22, Sep 4 and Sep 8, 2026. The June release says no launch date is confirmed and calls the old service 'the previous Cross-Bay Ferry model'; the Sep 4 release says PSTA will announce a start date once refurbishment is nearing completion. crossbayferry.com showed only a parked/consent page on Sep 27, 2026. PSTA also received a $16.5 million FTA grant to buy a new vessel. Same subject as the exp-water experience tampa-bay-ferry (opening-soon). No docks, fares or schedule are published, so none are recorded; the Looper and PSTA pages still name a 'Cross Bay Ferry at Port St. Pete' stop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tampa-international-airport",
+    "name": "Tampa International Airport",
+    "mode": "airport",
+    "code": "TPA",
+    "operator": "Hillsborough County Aviation Authority",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tampaairport.com/",
+    "summary": "Tampa's airport, about 6 miles west of downtown Tampa, has a central Landside Terminal linked by automated shuttles to Airsides A, C, E and F. The SkyConnect train runs from the main terminal to the Economy Parking garage and the Rental Car Center, where HART buses (routes 10, 30 and 32) and PSTA's Route 300 express stop.",
+    "lat": 27.979165,
+    "lng": -82.534928,
+    "address": "4100 George J. Bean Parkway, Tampa, FL 33607",
+    "stops": [
+     {
+      "name": "Main (Landside) Terminal - SkyConnect Passenger Terminal Station",
+      "lat": 27.97996,
+      "lng": -82.533327,
+      "area": "westshore"
+     },
+     {
+      "name": "SkyConnect Economy Parking Station",
+      "lat": 27.966599,
+      "lng": -82.53557,
+      "area": "westshore"
+     },
+     {
+      "name": "SkyConnect Rental Car Center Station (HART and PSTA bus platform)",
+      "lat": 27.963827,
+      "lng": -82.535557,
+      "area": "westshore"
+     }
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+    "also_sources": [
+     "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+     "https://www.gohart.org/Pages/services-bus.aspx",
+     "https://www.uber.com/global/en/r/airports/tpa/pickup/",
+     "https://psta.net/routes/route-300/",
+     "https://www.gohart.org/google/google_transit.zip"
+    ],
+    "notes": "tampaairport.com HTML pages returned Cloudflare 403 to both curl and WebFetch on Sep 27, 2026 (its PDF files were readable), so Wikipedia is the source for the terminal layout, SkyConnect and the Rental Car Center bus platform; the airport's own ground-transportation page should be checked by the verifier. Address is the OpenStreetMap record for the airport (Photon). Airport point is the OpenStreetMap aerodrome; station points are HART's GTFS (route 'Sky', 'SkyConnect operated by Tampa International Airport'). Wikipedia: the Rental Car Center opened Feb 14, 2018 with space for 5,300 vehicles; most domestic passengers can check bags there; a new Airside D (16 gates) broke ground in December 2024 and is scheduled to open in 2028. 2025 passengers: 24,811,253 (airport activity report, see facts).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tpa-rideshare-pickup",
+    "name": "Rideshare pickup at Tampa International Airport",
+    "mode": "rideshare",
+    "operator": "Uber and Lyft",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.uber.com/global/en/r/airports/tpa/pickup/",
+    "summary": "Uber says TPA rideshare pickups are in the rideshare zone reached by following the 'Blue Express Pickup' signs from the main terminal; with bags, take the elevator from baggage claim to level 3, and follow the app for your exact zone.",
+    "lat": 27.979165,
+    "lng": -82.534928,
+    "source_url": "https://www.uber.com/global/en/r/airports/tpa/pickup/",
+    "also_sources": [
+     "https://www.uber.com/global/en/r/airports/tpa/"
+    ],
+    "notes": "Source is Uber's own airport page (the airport's pages could not be read). Lyft's TPA page URL tried returned 404. The point is the airport, not the pickup zone. Uber notes the map and zones can change with construction and airport rules.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-clearwater-international-airport",
+    "name": "St. Pete-Clearwater International Airport",
+    "mode": "airport",
+    "code": "PIE",
+    "regions": [
+     "clearwater",
+     "stpete",
+     "beaches"
+    ],
+    "url": "https://fly2pie.com/",
+    "fare_text": "Parking (new rates effective 10/1/26): Long Term $2.00 first hour, $1.00 each additional 20 minutes, $16.00 daily maximum; Short Term $25.00 daily maximum; Economy $12.00 per day.",
+    "summary": "The airport on Roosevelt Blvd (SR 686), 4 miles north of St. Petersburg, served by Allegiant and Sun Country (domestic) and BermudAir (international), with nonstops to more than 60 cities. Rideshare pickup is in front of the terminal at Arrivals; taxis and shuttles wait in the Ground Transportation lot outside baggage claim; PSTA's Grouper runs to Clearwater Beach.",
+    "lat": 27.909943,
+    "lng": -82.687718,
+    "address": "14700 Terminal Blvd., Clearwater, FL 33762",
+    "source_url": "https://fly2pie.com/parking-and-transportation/transportation-services/",
+    "also_sources": [
+     "https://fly2pie.com/parking-and-transportation/parking/",
+     "https://fly2pie.com/parking-and-transportation/directions/",
+     "https://fly2pie.com/flights-and-airlines/airlines-and-destinations/",
+     "https://fly2pie.com/parking-and-transportation/rental-cars/"
+    ],
+    "notes": "Airlines page (Sep 27, 2026): Allegiant and Sun Country (domestic), BermudAir (Anguilla, Turks and Caicos, Belize), plus casino charters. Parking is first-come, first-served (no reservations); Economy lots Key Lime (across Roosevelt Blvd on 46th Street) and Strawberry (Fairchild Drive, opens as needed) with free shuttles. On-site rental cars: Alamo/National, Avis, Budget, Enterprise (counters in baggage claim). Taxi: United Taxi and Yellow Cab (727) 777-7777. The directions page says the Gateway Expressway toll road is now open. Point is the OpenStreetMap airfield (the census geocoder returned the same feature). The airport's owner/operator is not named on the pages read, so operator is null.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sarasota-bradenton-international-airport",
+    "name": "Sarasota Bradenton International Airport",
+    "mode": "airport",
+    "code": "SRQ",
+    "regions": [
+     "daytrips"
+    ],
+    "url": "https://flysrq.com/",
+    "summary": "The airport serving Sarasota and Bradenton; Uber and Lyft pick up at the far west end of the ticket wing in the Ground Transportation area, taxis must be called ahead, and Sarasota County Breeze Transit and Manatee County Area Transit (MCAT) buses stop there.",
+    "lat": 27.395988,
+    "lng": -82.554074,
+    "address": "6000 Rick Piccolo Circle, Sarasota, FL 34243",
+    "source_url": "https://flysrq.com/ground-transportation/",
+    "also_sources": [
+     "https://flysrq.com/"
+    ],
+    "notes": "Read through WebFetch (flysrq.com blocks curl with a Cloudflare check), so wording was checked twice but not against raw HTML. Airlines named on the home page: Southwest, Allegiant, American, United, Breeze, Avelo, Frontier, Sun Country. Point is the OpenStreetMap airfield (it lists the street as 6000 Airport Circle). The airport's operator is not named on the pages read, so operator is null.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "amtrak-tampa-union-station",
+    "name": "Amtrak at Tampa Union Station",
+    "mode": "rail",
+    "code": "TPA",
+    "operator": "Amtrak",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.amtrak.com/stations/tpa",
+    "summary": "Tampa's Amtrak station, an Italian Renaissance-style building that opened in May 1912, is served by the Floridian, which Amtrak describes as a temporary combination of the Capitol Limited and Silver Star running daily between Chicago and Miami via Washington, DC.",
+    "lat": 27.952666,
+    "lng": -82.450546,
+    "address": "601 North Nebraska Avenue, Tampa, FL 33602",
+    "stops": [
+     {
+      "name": "Tampa Union Station",
+      "lat": 27.952666,
+      "lng": -82.450546,
+      "area": "downtown-tampa"
+     }
+    ],
+    "source_url": "https://www.amtrak.com/stations/tpa",
+    "also_sources": [
+     "https://www.amtrak.com/floridian-train",
+     "https://www.amtrak.com/silver-star-train",
+     "https://www.tampasdowntown.com/getting-around/"
+    ],
+    "notes": "Amtrak's pages were read through WebFetch only (amtrak.com refuses curl). The Floridian page carries an alert headed 'Service Adjustments South of Washington, DC' marked 'Effective October 16 - 26, 2026' whose details were not readable; riders should check Amtrak for those dates. Station hours were not shown on the page read. Visit Tampa Bay's transportation page says the train connects Tampa with New York, Philadelphia, Washington, Orlando and Miami, but the Amtrak pages read describe the Floridian as Chicago-Miami, so that claim is not repeated. Point is the OpenStreetMap station building.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "greyhound-flixbus-tampa",
+    "name": "Greyhound and FlixBus (Tampa Bus Station)",
+    "mode": "intercity-bus",
+    "operator": "Greyhound and FlixBus",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.greyhound.com/bus/tampa-fl",
+    "summary": "Greyhound and FlixBus intercity buses use the Tampa Bus Station at HART's Marion Transit Center downtown, with a second stop on the USF campus (Holly Drive at Lot 3D, the Fine Arts Bull Runner stop); both sites list 28 cities reachable directly from Tampa, among them Orlando, Miami, Tallahassee, Atlanta, Fort Myers and Jacksonville.",
+    "lat": 27.955086,
+    "lng": -82.45843,
+    "address": "1315 N Marion St, Tampa, FL 33602",
+    "stops": [
+     {
+      "name": "Tampa Bus Station, 1315 N Marion St (Marion Transit Center; Greyhound gates on the North Platform)",
+      "lat": 27.955086,
+      "lng": -82.45843,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "University of South Florida, Holly Drive at Lot 3D",
+      "area": "north-tampa"
+     }
+    ],
+    "source_url": "https://www.greyhound.com/bus/tampa-fl",
+    "also_sources": [
+     "https://www.flixbus.com/bus/tampa-fl",
+     "https://www.tampasdowntown.com/getting-around/"
+    ],
+    "notes": "Read through WebFetch. Greyhound's page says: 'Greyhound loading gates has relocated From the West Platform to the North Platform.' FlixBus lists the cheapest fares from $6.98 (a promotional 'from' price, not recorded as a fare). The point is HART's GTFS Marion Transit Center stop (the census match for 1315 N Marion St is 27.956948,-82.458706, about 200 m north). HART's schedule book marks Greyhound/FlixBus at the Marion Transit Center.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "redcoach-tampa",
+    "name": "RedCoach (Tampa stop at USF)",
+    "mode": "intercity-bus",
+    "operator": "RedCoach",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.redcoachusa.com/bus-stations/tampa",
+    "summary": "RedCoach intercity buses stop on the USF campus (3801 USF Holly Drive) and run from Tampa to Miami, Fort Lauderdale, Fort Myers, Naples, Gainesville, Ocala and Tallahassee (FSU).",
+    "address": "3801 USF Holly Drive, Tampa, FL 33620",
+    "stops": [
+     {
+      "name": "USF, 3801 USF Holly Drive",
+      "area": "north-tampa"
+     }
+    ],
+    "source_url": "https://www.redcoachusa.com/bus-stations/tampa",
+    "also_sources": [
+     "https://www.redcoachusa.com/"
+    ],
+    "notes": "Read through WebFetch. The page carried a one-day notice that on Saturday 09/26 buses would use another stop because of games on campus. Route prices shown on the home page are promotional 'from' prices and are not recorded. No coordinates: the geocoder matched only the street (USF Holly Drive), not the stop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "port-tampa-bay-cruise-terminals",
+    "name": "Port Tampa Bay cruise terminals",
+    "mode": "cruise-port",
+    "operator": "Port Tampa Bay (Tampa Port Authority)",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.porttb.com/cruise/cruise-overview/",
+    "fare_text": "Cruise parking is prepaid online through the port's parking link (rates not shown on the pages read); valet upgrade $20.",
+    "summary": "Tampa homeports eight ships from five cruise lines (Carnival, Royal Caribbean, Celebrity, Norwegian and Margaritaville at Sea) at three terminals along Channelside Drive in the Channel District; the port's garage is across the street from Terminal 3. The terminals have no luggage storage for early arrivals; the port says the Florida Aquarium next to Terminal 2 stores luggage free with a discounted admission ticket.",
+    "lat": 27.9455,
+    "lng": -82.444207,
+    "address": "815 Channelside Drive, Tampa, FL 33602",
+    "stops": [
+     {
+      "name": "Cruise Terminal 2, 651 Channelside Drive",
+      "lat": 27.943418,
+      "lng": -82.445806,
+      "area": "channel-district"
+     },
+     {
+      "name": "Cruise Terminal 3, 815 Channelside Drive (parking garage across the street)",
+      "lat": 27.9455,
+      "lng": -82.444207,
+      "area": "channel-district"
+     },
+     {
+      "name": "Cruise Terminal 6, 1333 McKay Street",
+      "lat": 27.94977,
+      "lng": -82.443821,
+      "area": "channel-district"
+     },
+     {
+      "name": "Channelside Parking Garage, 810 Channelside Drive",
+      "lat": 27.945245,
+      "lng": -82.445784,
+      "area": "channel-district"
+     }
+    ],
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "also_sources": [
+     "https://www.porttb.com/cruise/terminal-guide/",
+     "https://www.porttb.com/cruise/cruise-parking/"
+    ],
+    "notes": "Terminal points are OpenStreetMap buildings (Photon); the garage point is a census address match. Drop-off and valet follow the BLUE ROUTE, self-parking the RED ROUTE (terminal guide). Disabled-veteran plates and certain modified vehicles park free under Florida law at 810 Channelside Drive and 1331 McKay Street when a ship is in port. The port says Tampa International Airport is a 15-minute drive from the Channelside District. The TECO Line Streetcar's Port Tampa Bay Station (#5) and York Street Station (#6) are nearby. Visit Tampa Bay's page names Holland America instead of Celebrity and Margaritaville at Sea; the port's own list is used.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-lime-bike-share",
+    "name": "St. Pete bike share (Lime e-bikes)",
+    "mode": "bike-share",
+    "operator": "Lime, in partnership with the City of St. Petersburg",
+    "regions": [
+     "stpete"
+    ],
+    "url": "https://www.stpete.org/visitors/bike_share.php",
+    "summary": "St. Petersburg's downtown bike share uses Lime Gen4 e-bikes rented in the Lime app; you must be 18 or older, may not ride on sidewalks, and must end the ride at a designated bike-share hub.",
+    "source_url": "https://www.stpete.org/visitors/bike_share.php",
+    "also_sources": [
+     "https://www.stpete.org/visitors/getting_around.php"
+    ],
+    "notes": "Prices are set in the Lime app and not stated on the city page; the city's scooter page lists a Lime 'St. Pete Pass' ($40.99 for 250 minutes plus free unlocks) for Lime vehicles. Lime Access offers discounts to eligible riders.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-shared-scooters",
+    "name": "Shared e-scooters (St. Petersburg)",
+    "mode": "scooter",
+    "operator": "Spin and Lime, under the City of St. Petersburg program",
+    "regions": [
+     "stpete"
+    ],
+    "url": "https://www.stpete.org/visitors/scooter_safety.php",
+    "fare_text": "Spin: $1 to unlock + $0.42/min (St. Pete resident rate $1 + $0.34/min; or $1.50 per mile + $1 unlock). Lime: per-minute pricing that varies by demand; St. Pete Pass $40.99 for 250 minutes with free unlocks.",
+    "is_free": false,
+    "summary": "Spin and Lime rent standing and seated e-scooters in St. Petersburg through their apps. The city's rules: no sidewalk riding, one rider per scooter, riders 18 and older with a license or photo ID, ride in bike lanes or on streets of 30 mph or less, not along the waterfront trails or on the Pier (corrals are at the base of the Pier), and park in designated corrals.",
+    "source_url": "https://www.stpete.org/visitors/scooter_safety.php",
+    "also_sources": [
+     "https://www.stpete.org/visitors/getting_around.php"
+    ],
+    "notes": "The city's Transportation Options page names only Spin for e-scooters, while the scooter page lists both Spin and Lime as vendors. The scooter page also says 'Wear a helmet' in its rules list. Spin support 1-888-249-9698.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tampa-city-parking",
+    "name": "City of Tampa parking (downtown, Ybor City and neighborhoods)",
+    "mode": "parking",
+    "operator": "City of Tampa Parking Division",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tampa.gov/parking",
+    "fare_text": "Garages: $3 an hour, $18 daily max (Ft. Brooke, W.F. Poe, Pam Iorio, Convention Center); $2 an hour, $14 daily max (Twiggs, Centro Ybor, Palm Ave.). On-street: downtown $4 first hour, $3 each hour after; Hyde Park, Ybor, Armature Works, Channel District, Davis Islands and Grand Central $3 first hour, $2 after. Ybor lots: first two hours free, then $2 an hour, $14 max ($10 flat Fri-Sat 8 p.m.-3 a.m.). Florida Aquarium lot $5 an hour, no daily max.",
+    "is_free": false,
+    "summary": "The City of Tampa runs garages and lots downtown and in Ybor City plus metered on-street parking; pay at pay stations or with the Passport, PayByPhone, ParkMobile or Flowbird apps using the zone number on the sign (a convenience fee applies). Special-event rates apply until 6 a.m., and next-day charges start at 6 a.m.",
+    "stops": [
+     {
+      "name": "Fort Brooke Garage",
+      "lat": 27.945632,
+      "lng": -82.456508,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "William F. Poe Garage",
+      "lat": 27.95016,
+      "lng": -82.46211,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Pam Iorio Garage",
+      "lat": 27.942628,
+      "lng": -82.453853,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Convention Center Garage",
+      "lat": 27.942525,
+      "lng": -82.457234,
+      "area": "downtown-tampa",
+      "place": "tampa-convention-center"
+     },
+     {
+      "name": "Twiggs Garage",
+      "lat": 27.950977,
+      "lng": -82.452134,
+      "area": "downtown-tampa"
+     },
+     {
+      "name": "Centro Ybor Garage",
+      "lat": 27.959256,
+      "lng": -82.442338,
+      "area": "ybor-city"
+     },
+     {
+      "name": "Palm Ave. Garage",
+      "area": "ybor-city"
+     }
+    ],
+    "source_url": "https://www.tampa.gov/parking/info/parking-hourly-and-daily-rates",
+    "also_sources": [
+     "https://www.tampa.gov/parking",
+     "https://www.tampa.gov/parking/programs/pay-by-phone-parking",
+     "https://www.tampa.gov/parking/how-park-tampa",
+     "https://www.tampasdowntown.com/getting-around/"
+    ],
+    "notes": "Rates page updated 10/13/2025; the city may charge a flat rate at its discretion. The Tampa Downtown Partnership says downtown has more than 32,000 parking spaces. Garage addresses were not on the pages read; garage points are OpenStreetMap parking features matched by name (Fort Brooke, William F. Poe, Pam Iorio, Twiggs Street at 901 E Twiggs St, Centro Ybor, Convention Center). The Palm Ave. garage has no point (the name search matched a garage in Sarasota) and its Ybor City area is our reading of the name, not stated. Ben T. Davis Beach lot: $2 an hour, $14 max.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-downtown-parking",
+    "name": "St. Petersburg downtown parking",
+    "mode": "parking",
+    "operator": "City of St. Petersburg",
+    "regions": [
+     "stpete"
+    ],
+    "url": "https://www.stpete.org/residents/parking___transportation/where_to_park.php",
+    "fare_text": "Meters $1 to $1.50 an hour (card, coins or ParkMobile). SouthCore Garage $2 an hour, $16 a day. Al Lang surface lot $5 a day. 800 1st Ave S lot $3 a day. Event rates vary.",
+    "is_free": false,
+    "summary": "St. Petersburg has metered, time-limited and free on-street parking plus city garages and lots downtown; pay meters by card, coins or the ParkMobile app, and read the meter for enforcement hours. The SouthCore Garage (entrance at 101 1st Ave. S) has more than 1,124 spaces, EV charging on level 7 and a 6 ft 10 in height limit.",
+    "stops": [
+     {
+      "name": "SouthCore Parking Garage, entrance at 101 1st Ave. S",
+      "lat": 27.770405,
+      "lng": -82.635312,
+      "area": "downtown-stpete"
+     },
+     {
+      "name": "Al Lang / Progress Energy Park surface lot, 1st Ave. S between 1st St. and Bayshore Dr. (328 spaces, open 24/7)",
+      "area": "downtown-stpete",
+      "place": "al-lang-stadium"
+     },
+     {
+      "name": "800 1st Avenue South Lot (293 spaces)",
+      "lat": 27.770216,
+      "lng": -82.644892,
+      "area": "downtown-stpete"
+     },
+     {
+      "name": "Lot 2, 6th St. N between 1st Ave. N and Mirror Lake Dr (64 spaces)",
+      "area": "downtown-stpete"
+     }
+    ],
+    "source_url": "https://www.stpete.org/residents/parking___transportation/where_to_park.php",
+    "also_sources": [
+     "https://www.stpete.org/visitors/getting_around.php"
+    ],
+    "notes": "ParkMobile fee per the city: $0.35 per transaction (or $1.75 a month plus $0.25 per transaction). SouthCore: floors 3, 4, 7 and 8 for visitors; next-day rate begins at 5 a.m.; $5 flat Saturday mornings October to May; lost ticket $25; operator SP Plus 727-896-2256. For Pier parking the city points to the St. Pete Pier website (not read). The same city page says PSTA's Central Avenue Trolley runs 'to Pass-A-Grille on St. Pete Beach'; PSTA's current route page shows it running only between Grand Central Station and the Pier, so that line is treated as out of date. SouthCore and 800 1st Ave S points are census address matches; the Al Lang lot uses the al-lang-stadium place.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "clearwater-beach-parking",
+    "name": "Clearwater Beach parking",
+    "mode": "parking",
+    "operator": "City of Clearwater",
+    "regions": [
+     "beaches"
+    ],
+    "url": "https://www.myclearwater.com/Parking-Transportation/Beach-Parking",
+    "fare_text": "City lots $3.50 an hour, no time limit, 6 a.m.-11 p.m. (Clearwater Beach Marina lot $3.50 an hour with a 2-hour limit). On-street $4.00 an hour, 5-hour limit. Pay at pay-by-plate kiosks, with ParkMobile, or by texting CLEARWATER to 727563.",
+    "is_free": false,
+    "summary": "The City of Clearwater runs public parking lots on Clearwater Beach, including the Pier 60 lot (160 S. Gulfview Blvd., 141 spaces) and the Municipal Marina lot (25 Causeway Blvd., 346 spaces); private garages such as the North Beach Parking Plaza (700 spaces), Hyatt, Surf Style and Opal Sol also sell public parking.",
+    "stops": [
+     {
+      "name": "Pier 60 Parking Lot, 160 S. Gulfview Blvd. (141 spaces)",
+      "lat": 27.977213,
+      "lng": -82.828905,
+      "area": "clearwater-beach",
+      "place": "pier-60"
+     },
+     {
+      "name": "Municipal Marina Parking Lot, 25 Causeway Blvd. (346 spaces; 2-hour limit)",
+      "lat": 27.977072,
+      "lng": -82.828642,
+      "area": "clearwater-beach",
+      "place": "clearwater-beach-marina"
+     },
+     {
+      "name": "Parking lot at 4 Rockaway St. (146 spaces)",
+      "lat": 27.983684,
+      "lng": -82.827914,
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "Parking lot at 420 S. Gulfview Blvd. (65 spaces)",
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "Beach Recreation Center and Library lot, 51 Bay Esplanade (72 spaces)",
+      "lat": 27.984825,
+      "lng": -82.825919,
+      "area": "clearwater-beach"
+     },
+     {
+      "name": "North Beach Parking Plaza (private), 490 Poinsettia Ave. (700 spaces)",
+      "lat": 27.981734,
+      "lng": -82.826152,
+      "area": "clearwater-beach"
+     }
+    ],
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/List-of-Beach-Parking-Lots-Garages",
+    "also_sources": [
+     "https://www.myclearwater.com/Parking-Transportation/Beach-Parking",
+     "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/Alternative-Transportation-Clearwater-Beach"
+    ],
+    "notes": "myclearwater.com refuses curl (403); pages were read through WebFetch and the rates cross-checked on two pages. The Municipal Marina lot (zone #9413) has a 2-hour limit; each lot has a zone number on the listing (Pier 60 lot #9414). Two readings of the listing counted nine and ten public lots, so no count is given. Parking System Hotline (727) 562-4094, 8 a.m.-4 p.m. weekdays. The city lists designated rideshare drop-off points (near Baymont Street, San Marco Street, Pier 60 and along Gulfview Blvd). Lot points: census address matches (25 Causeway Blvd., 4 Rockaway St., 51 Bay Esplanade, 490 Poinsettia Ave.); the Pier 60 lot uses the pier-60 place point because the geocoder matched only the street for 160 S. Gulfview Blvd.; 420 S. Gulfview Blvd. likewise matched only the street, so it is not listed.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunpass",
+    "name": "SunPass",
+    "mode": "toll",
+    "operator": "Florida Department of Transportation (Florida's Turnpike Enterprise)",
+    "regions": [
+     "tampa",
+     "stpete",
+     "beaches",
+     "clearwater",
+     "around",
+     "daytrips"
+    ],
+    "url": "https://www.sunpass.com/",
+    "fare_text": "Transponders: SunPass Mini $4.99 + tax (sticks to the windshield; Florida, Georgia, Kansas, North Carolina, Oklahoma, Texas); SunPass PRO $14.95 + tax (movable between cars; also works where E-ZPass is accepted). A prepaid balance is required.",
+    "summary": "Florida's prepaid electronic toll account; SunPass users pay the lowest toll rate and, per Florida's Turnpike, save an average of 25% compared with Toll-By-Plate. Tampa Bay's toll roads are cashless, and they also accept E-ZPass, E-PASS, Peach Pass, NC Quick Pass and several other transponders.",
+    "source_url": "https://floridasturnpike.com/tolls/sunpass/",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+     "https://floridasturnpike.com/tolls/interoperability/"
+    ],
+    "notes": "Accepted in electronic toll lanes (Turnpike's list): SunPass, E-PASS, E-ZPass, LeeWay, ExpressToll, Peach Pass and NC Quick Pass, PIKEPASS, K-TAG, EZTAG and TollTag. Tampa-area electronic toll locations on the Turnpike's list: Veterans Expressway, Suncoast Parkway, I-4 Connector, Selmon Expressway (THEA) and Sunshine Skyway Bridge. The Toll Relief Program ran April 1, 2024-March 31, 2025 and has ended. sunpass.com itself is a script-driven site that returned no readable text.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "toll-by-plate",
+    "name": "Toll-By-Plate",
+    "mode": "toll",
+    "operator": "Florida Department of Transportation (Florida's Turnpike Enterprise)",
+    "regions": [
+     "tampa",
+     "stpete",
+     "beaches",
+     "clearwater",
+     "around",
+     "daytrips"
+    ],
+    "url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "fare_text": "Higher per-toll rates than SunPass, plus a $2.50 administrative fee on each invoice (tolls billed over a 30-day period).",
+    "summary": "If a car without a SunPass or other accepted transponder goes through a cashless toll point, a camera photographs the plate and a toll invoice covering 30 days of tolls plus a $2.50 administrative fee is mailed to the registered owner. Toll-By-Plate cannot be used in Florida's managed (express) lanes and is not available to renters: tolls in a rental car go to the rental company.",
+    "source_url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+     "https://floridasturnpike.com/tolls/rental-vehicles/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "rental-car-tolls",
+    "name": "Tolls in a rental car",
+    "mode": "toll",
+    "operator": "Rental car companies; SunPass",
+    "regions": [
+     "tampa",
+     "stpete",
+     "beaches",
+     "clearwater",
+     "around",
+     "daytrips"
+    ],
+    "url": "https://floridasturnpike.com/tolls/rental-vehicles/",
+    "summary": "Most rental companies include tolls through their own programs (plate photos or transponders), each with its own fees, so read the rental agreement. If you have a SunPass PRO or other portable transponder, add the rental car's plate and dates to your SunPass account (online or 1-888-865-5352) and remove the transponder when you return the car.",
+    "source_url": "https://floridasturnpike.com/tolls/rental-vehicles/",
+    "notes": "The page says Toll-By-Plate is not available for customers in rental cars because invoices go to the registered owner. SunPass Customer Service hours given: 7:00 A.M.-7:00 P.M. Monday-Friday, closed weekends. The page calls the movable transponder 'SunPass Portable'; the SunPass page names the SunPass PRO as the movable one.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "selmon-expressway",
+    "name": "Lee Roy Selmon Expressway",
+    "mode": "toll",
+    "operator": "Tampa Hillsborough Expressway Authority (THEA)",
+    "regions": [
+     "tampa",
+     "around"
+    ],
+    "url": "https://tampa-xway.com/for-travelers/maps/selmon-expressway/",
+    "fare_text": "2-axle car, SunPass / Toll-By-Plate: Reversible Express Lanes $2.18 / $2.54; East Main Plaza (78th St.) $2.18 / $2.54; West Main Plaza (Hyde Park) $1.44 / $1.80; Willow Ave. and Selmon West Extension $1.07 / $1.43; 22nd St. and Plant Ave. $0.75 / $1.11. I-4 Connector to the Selmon adds $0.57-$1.13 (SunPass).",
+    "is_free": false,
+    "summary": "A 17-mile all-electronic toll road that, with the Selmon West Extension, runs from the south end of the Gandy Bridge through downtown Tampa to I-75 in Brandon without a stoplight. Its upper deck of Reversible Express Lanes carries westbound traffic in the morning and eastbound traffic in the evening and on weekends.",
+    "source_url": "https://tampa-xway.com/for-travelers/maps/selmon-expressway/",
+    "also_sources": [
+     "https://tampa-xway.com/for-travelers/tolls/toll-map-calculator/",
+     "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf"
+    ],
+    "notes": "Rates are THEA's toll table (2-axle). The I-4 Connector (FDOT, rates effective July 1, 2023) links I-4 with the Selmon and the port: SunPass $1.13 ('S' move, to/from the west on the Selmon) or $0.57 ('Z' move, to/from the east); Toll-By-Plate $1.41 / $0.84. The Pirate Water Taxi's directions page routes drivers from the Selmon (exit 7, Brorein St.) to downtown.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "veterans-expressway",
+    "name": "Veterans Expressway (SR 589)",
+    "mode": "toll",
+    "operator": "Florida's Turnpike Enterprise (FDOT)",
+    "regions": [
+     "tampa",
+     "around"
+    ],
+    "url": "https://floridasturnpike.com/tolls/toll-rates/",
+    "fare_text": "2-axle car at the mainline plazas, SunPass / Toll-By-Plate: Anderson Plaza $1.16 / $1.45; Sugarwood Plaza $0.86 / $1.16. Ramp tolls $0.28-$1.16 (SunPass). Rates effective July 1, 2023.",
+    "is_free": false,
+    "summary": "A cashless toll road running north from SR 60 (exit 2A, toward Clearwater) through northwest Hillsborough County to the Suncoast Parkway (exit 13) and Dale Mabry Highway (exit 16); the Suncoast Parkway continues north through Pasco, Hernando and Citrus counties.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/toll-rates/",
+     "https://floridasturnpike.com/tolls/electronic-toll-collection/"
+    ],
+    "notes": "From the West Central Florida toll-rate sheet (dated 4-2026). Exit list on the map page: 2A Clearwater (SR 60 West), 2B Independence Pkwy., 3 Memorial Hwy., 4 Hillsborough Ave., 6A Waters Ave., 6B Anderson Rd., 7 Linebaugh Ave., 8 Wilsky Blvd., 9 Gunn Hwy., 10 Ehrlich Rd., 12 Hutchison Rd., 13 Suncoast Parkway, 16 Dale Mabry Hwy. Suncoast Parkway mainline plazas (effective Aug 25, 2025), SunPass/Toll-By-Plate: Anclote, Spring Hill, Oak Hammock and Lecanto $1.16/$1.45; Sugarmill $0.86/$1.16.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunshine-skyway-bridge-toll",
+    "name": "Sunshine Skyway Bridge toll (I-275)",
+    "mode": "toll",
+    "operator": "Florida Department of Transportation",
+    "regions": [
+     "stpete",
+     "daytrips"
+    ],
+    "url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "fare_text": "2-axle car: $1.16 with SunPass, $1.62 by Toll-By-Plate, at each of the North Plaza and the South Plaza (rates effective April 12, 2026). Cash is not accepted.",
+    "is_free": false,
+    "summary": "The I-275 bridge across the mouth of Tampa Bay between St. Petersburg and Manatee County (Palmetto and Bradenton) is a cashless toll: pay with SunPass or another accepted transponder, or be billed by Toll-By-Plate.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/electronic-toll-collection/"
+    ],
+    "notes": "The rate sheet lists the same rates at '15 - NORTH PLAZA' and '6 - SOUTH PLAZA' without saying which direction each charges, so we do not say whether a one-way crossing passes one or both plazas. The Turnpike's electronic toll collection page lists the Sunshine Skyway Bridge among Tampa-area locations where cash is not accepted.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pinellas-bayway-toll",
+    "name": "Pinellas Bayway tolls (SR 682 and SR 679)",
+    "mode": "toll",
+    "operator": "Florida Department of Transportation",
+    "regions": [
+     "beaches",
+     "stpete"
+    ],
+    "url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "fare_text": "2-axle car, SunPass / Toll-By-Plate: West Plaza (Bayway II) $0.58 / $1.08; East Plaza (Bayway I) $0.58 / $1.08; South Plaza (Bayway IV, SR 679) $0.28 / $0.81. Commuter pass $50 a year for unlimited 2-axle passage (expires each Sept. 30). Rates effective September 22, 2023.",
+    "is_free": false,
+    "summary": "The Pinellas Bayway system (SR 682 and SR 679) is the tolled causeway route between I-275 in south St. Petersburg and St. Pete Beach, with three cashless plazas: the East Plaza charges westbound, the West Plaza eastbound, and the South Plaza on SR 679 southbound.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "notes": "Directions per plaza are from the sheet's map (East Plaza: westbound tolls; West Plaza: eastbound; South Plaza: southbound). The map labels St. Pete Beach, South Pasadena and Gulfport around the system; it does not name Tierra Verde or Fort De Soto, so the summary does not either (SR 679 runs south from the Bayway; the verifier may add where it leads from another source).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gateway-expressway",
+    "name": "Gateway Expressway (SR 690 and SR 686A)",
+    "mode": "toll",
+    "operator": "Florida Department of Transportation",
+    "regions": [
+     "clearwater",
+     "stpete"
+    ],
+    "url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "fare_text": "2-axle car, SunPass / Toll-By-Plate: Gateway Plaza $0.86 / $1.16; Roosevelt Blvd. $0.28 / $0.58 (rates dated May 3, 2024).",
+    "is_free": false,
+    "summary": "A cashless toll road in Pinellas County; St. Pete-Clearwater International Airport's directions page notes that the Gateway Expressway toll road is now open.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "also_sources": [
+     "https://fly2pie.com/parking-and-transportation/directions/"
+    ],
+    "notes": "The rate sheet heads the page 'Gateway Expressway (SR 690 and SR 686A), Pinellas County' but its table header repeats 'PINELLAS BAYWAY SYSTEM (SR 690 and SR 686A)', an apparent typo on the sheet. The sheet does not describe the road's endpoints, so none are given here.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pinellas-county-beach-park-parking",
+    "name": "Pinellas County beach park parking (Fort De Soto, Sand Key, Fred Howard)",
+    "mode": "parking",
+    "operator": "Pinellas County Parks & Conservation Resources",
+    "regions": [
+     "beaches",
+     "clearwater"
+    ],
+    "url": "https://pinellas.gov/annual-parking-permits",
+    "fare_text": "From December 1, 2026: beach parking $3.50 an hour, capped at $12 a day, plus tax; boat ramp parking $12 a day. Annual Beach Pass $95 from October 1, 2026 (was $75); 6-month pass $60 (was $45); disabled U.S. veterans free. Pay at pay stations, with the Flowbird or ParkMobile apps, or by text ($0.35 convenience fee for app or text).",
+    "is_free": false,
+    "summary": "Pinellas County charges for parking at its beach parks; an annual beach pass is valid at Fort De Soto Park, Sand Key Park and Fred Howard Park Beach. The county's rates change on October 1, 2026 (passes) and December 1, 2026 (hourly and daily parking), and Fort De Soto Park is cashless: pay at a machine or by app, not at the entry booth.",
+    "stops": [
+     {
+      "name": "Fort De Soto Park",
+      "lat": 27.630054,
+      "lng": -82.735749,
+      "area": "fort-de-soto",
+      "place": "fort-de-soto-park"
+     },
+     {
+      "name": "Sand Key Park",
+      "lat": 27.959838,
+      "lng": -82.82741,
+      "area": "sand-key",
+      "place": "sand-key-park"
+     },
+     {
+      "name": "Fred Howard Park Beach",
+      "lat": 28.158486,
+      "lng": -82.791599,
+      "area": "tarpon-springs",
+      "place": "fred-howard-park"
+     }
+    ],
+    "source_url": "https://pinellas.gov/annual-parking-permits",
+    "also_sources": [
+     "https://pinellas.gov/beach-and-boat-ramp-parking/",
+     "https://pinellas.gov/parks-and-preserves-frequently-asked-questions"
+    ],
+    "notes": "The pages read (updated Sep 25, 2026) give the new rates but not the hourly or daily beach parking rate in effect before December 1, 2026, so the current rate is unknown here. Passes: explore.pinellas.gov, 727-582-2100 (Option 2), or 12520 Ulmerton Road, Largo. Park points are the outdoors slice's place records.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "treasure-island-parking",
+    "name": "Treasure Island beach parking",
+    "mode": "parking",
+    "operator": "City of Treasure Island",
+    "regions": [
+     "beaches"
+    ],
+    "url": "https://www.mytreasureisland.org/general_parking_information.php",
+    "fare_text": "City lots and spaces: $5.00 an hour Mon-Fri, $5.50 an hour weekends and holidays. Sunset Beach side streets: $6.00 an hour Mon-Fri, $6.50 weekends and holidays. Pay by text or with ParkMobile.",
+    "is_free": false,
+    "summary": "Treasure Island has 24 public parking areas with almost 600 spaces along nearly four miles of beach; beach accesses are marked with blue and orange seagull signs. License-plate readers enforce payment, so backing into spaces is not allowed.",
+    "stops": [
+     {
+      "name": "Gulf Front Park Lot, 104th Avenue and Gulf Boulevard (77 spaces)",
+      "area": "treasure-island"
+     },
+     {
+      "name": "Downtown (Community Center) Lot, 106th Avenue and Park Place (104 spaces)",
+      "area": "treasure-island"
+     },
+     {
+      "name": "New City Hall, 10451 Gulf Boulevard (62 spaces)",
+      "lat": 27.766866,
+      "lng": -82.768419,
+      "area": "treasure-island"
+     },
+     {
+      "name": "Tern Lot, West Gulf Boulevard and 77th Avenue, Sunset Beach (55 spaces)",
+      "area": "treasure-island"
+     }
+    ],
+    "source_url": "https://www.mytreasureisland.org/general_parking_information.php",
+    "also_sources": [
+     "https://www.mytreasureisland.org/parking.php"
+    ],
+    "notes": "Lots are a selection of the city's list. The New City Hall point is a census address match; the others have none. Parking administration 727-547-4575.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-beach-parking",
+    "name": "St. Pete Beach public beach parking",
+    "mode": "parking",
+    "operator": "City of St. Pete Beach",
+    "regions": [
+     "beaches"
+    ],
+    "url": "https://www.stpetebeach.org/738/Public-Beach-Parking-Locations",
+    "summary": "St. Pete Beach lists its public beach parking: Pass-a-Grille Beach (541 spaces on Gulf Way and 186 on Pass-a-Grille Way), Upham Beach (183 spaces at Beach Plaza and 67th Ave, plus smaller lots on Sunset Way and 75th Ave) and the county Beach Access Park at 4700 Gulf Blvd (223 spaces).",
+    "stops": [
+     {
+      "name": "Pass-a-Grille Beach: Gulf Way (541 spaces) and Pass-a-Grille Way (186 spaces)",
+      "area": "pass-a-grille",
+      "place": "pass-a-grille-beach"
+     },
+     {
+      "name": "Upham Beach, 6850 Beach Plaza (Beach Plaza and 67th Ave: 183 spaces)",
+      "lat": 27.736293,
+      "lng": -82.751148,
+      "area": "st-pete-beach"
+     },
+     {
+      "name": "County Beach Access Park, 4700 Gulf Blvd (223 spaces)",
+      "lat": 27.721682,
+      "lng": -82.740218,
+      "area": "st-pete-beach",
+      "place": "st-pete-beach-access"
+     }
+    ],
+    "source_url": "https://www.stpetebeach.org/738/Public-Beach-Parking-Locations",
+    "also_sources": [
+     "https://www.stpetebeach.org/FindParking"
+    ],
+    "notes": "Read through WebFetch (the city site reset curl connections). Rates, enforcement hours and payment methods are on a separate 'how to pay' page that was not read, so fare_text is null. Shared parking 0.5 mile from Upham Beach is listed at 6800 Gulf Blvd and 575 75th Ave. Points are census address matches.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "anna-maria-island-trolley",
+    "name": "Anna Maria Island Trolley (MCAT Route 5)",
+    "mode": "trolley",
+    "operator": "Manatee County Area Transit (MCAT)",
+    "regions": [
+     "daytrips"
+    ],
+    "url": "https://www.mymanatee.org/services-and-amenities/service-listing/service-details/ride-route-5-anna-maria-island-trolley",
+    "fare_text": "Free.",
+    "is_free": true,
+    "hours_text": "6:00 a.m.-10:30 p.m. every day, 365 days a year; every 20 minutes.",
+    "summary": "A free Manatee County trolley along Gulf Drive on Anna Maria Island between the Anna Maria City Pier and Coquina Beach, every 20 minutes from 6 a.m. to 10:30 p.m. daily. MCAT trolleys are wheelchair accessible and carry bike racks.",
+    "stops": [
+     {
+      "name": "Anna Maria City Pier",
+      "lat": 27.533143,
+      "lng": -82.731677,
+      "area": "bradenton-anna-maria",
+      "place": "anna-maria-city-pier"
+     },
+     {
+      "name": "Coquina Beach",
+      "lat": 27.45111,
+      "lng": -82.692183,
+      "area": "bradenton-anna-maria",
+      "place": "coquina-beach"
+     }
+    ],
+    "source_url": "https://www.mymanatee.org/services-and-amenities/service-listing/service-details/ride-route-5-anna-maria-island-trolley",
+    "also_sources": [
+     "https://www.mymanatee.org/manatee-county-area-transit",
+     "https://www.bradentongulfislands.com/gulf-islands-ferry/"
+    ],
+    "notes": "Real-time arrivals are in Manatee County's MyStop app. Stop points are OpenStreetMap features (the Anna Maria City Pier and the 'COQUINA BEACH' bus stop).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulf-islands-ferry-route",
+    "name": "Gulf Islands Ferry (Bradenton-Anna Maria Island)",
+    "mode": "ferry",
+    "operator": "Gulf Islands Ferry",
+    "regions": [
+     "daytrips"
+    ],
+    "url": "https://www.bradentongulfislands.com/gulf-islands-ferry/",
+    "fare_text": "Riverwalk-Bridge Street: adult $7 one way, $11 round trip; seniors 60-79, military and children 4-18 $5 one way, $7 round trip; under 3 and 80+ free. Coquina Beach stop: adult $5 one way, $9 round trip. Service fees may apply.",
+    "is_free": false,
+    "hours_text": "FAQ: year-round, Wednesday through Sunday, 7:30 a.m.-9:00 p.m. Bradenton departures 9:30 AM, 10:00 AM, 1:00, 3:00, 4:00, 5:30 and 7:00 PM; Bridge Street departures 11:30 AM, 1:00, 2:30, 5:30, 6:30 and 8:30 PM.",
+    "summary": "A passenger ferry between the Bradenton Riverwalk Pier in downtown Bradenton and the Historic Bridge Street Pier on Anna Maria Island (about 50 minutes), with a 20-minute hop to Coquina Beach; on the island the free trolley connects the beaches. Free parking for the ferry is at the City Centre Parking Facility in downtown Bradenton, a five-minute walk from the pier.",
+    "stops": [
+     {
+      "name": "Bradenton Riverwalk Pier",
+      "lat": 27.499715,
+      "lng": -82.570246,
+      "area": "bradenton-anna-maria",
+      "place": "bradenton-riverwalk"
+     },
+     {
+      "name": "Historic Bridge Street Pier, Bradenton Beach",
+      "lat": 27.465941,
+      "lng": -82.695169,
+      "area": "bradenton-anna-maria",
+      "place": "bridge-street-pier"
+     },
+     {
+      "name": "Coquina Beach",
+      "lat": 27.45111,
+      "lng": -82.692183,
+      "area": "bradenton-anna-maria",
+      "place": "coquina-beach"
+     }
+    ],
+    "source_url": "https://www.bradentongulfislands.com/gulf-islands-ferry/",
+    "notes": "Same service as the exp-water experience gulf-islands-ferry (separate id for the transport record). The source is the Bradenton Area Convention and Visitors Bureau page. It contradicts itself: a banner says the ferry operates 'Thursdays thru Sundays', while the FAQ says 'year-round Wednesday through Sunday from 7:30 a.m. to 9:00 p.m.'; the verifier should confirm. Stop points are OpenStreetMap ferry-terminal nodes (and the Coquina Beach bus stop). Contact 727-200-6487.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tpa-rental-car-center",
+    "name": "Tampa International Airport Rental Car Center",
+    "mode": "car-rental",
+    "operator": "Hillsborough County Aviation Authority",
+    "regions": [
+     "tampa"
+    ],
+    "url": "https://www.tampaairport.com/",
+    "summary": "TPA's rental car companies are in a Rental Car Center on the south side of the airport, reached from the main terminal by the SkyConnect train; it opened in February 2018 with space for 5,300 vehicles, and the HART and PSTA bus platform is next to its SkyConnect station.",
+    "lat": 27.963827,
+    "lng": -82.535557,
+    "stops": [
+     {
+      "name": "SkyConnect Rental Car Center Station",
+      "lat": 27.963827,
+      "lng": -82.535557,
+      "area": "westshore"
+     }
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Tampa_International_Airport",
+    "also_sources": [
+     "https://www.gohart.org/Pages/services-bus.aspx",
+     "https://www.gohart.org/google/google_transit.zip"
+    ],
+    "notes": "Wikipedia is the source because tampaairport.com blocked automated reading (Cloudflare 403). Wikipedia also says most domestic passengers can check bags at the Rental Car Center. Which rental brands operate there was not verified. The point is the SkyConnect station from HART's GTFS.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pie-rental-cars",
+    "name": "Rental cars at St. Pete-Clearwater International Airport",
+    "mode": "car-rental",
+    "regions": [
+     "clearwater",
+     "stpete",
+     "beaches"
+    ],
+    "url": "https://fly2pie.com/parking-and-transportation/rental-cars/",
+    "hours_text": "Alamo/National, Avis and Budget 6:30 AM-11:00 PM daily; Enterprise 6:00 AM-11:00 PM daily; counters stay open 30 minutes after the last arriving flight.",
+    "summary": "Alamo/National, Avis, Budget and Enterprise have on-site counters at PIE; after hours some serve customers from the rental car parking lot rather than the counter in baggage claim.",
+    "lat": 27.909943,
+    "lng": -82.687718,
+    "source_url": "https://fly2pie.com/parking-and-transportation/rental-cars/",
+    "notes": "The airport advises late-night arrivals to book the latest reservation time available and note the flight number. Point is the OpenStreetMap airfield.",
+    "checked": "2026-09-27"
+   }
+  ],
+  "faqs": [
+   {
+    "id": "faq-tpa-to-downtown-tampa",
+    "topic": "Getting around",
+    "q": "How do I get from Tampa International Airport to downtown Tampa without a car?",
+    "a": "HART Routes 10 (Cypress St.) and 30 (Kennedy Blvd.) run between the airport and downtown Tampa seven days a week, and Route 32 connects the airport with the Netpark Transfer Center. The buses stop near the airport's Rental Car Center: take the SkyConnect train from the Red Baggage Claim to reach it. A HART ride costs $2.00. For a rideshare, Uber says to follow the Blue Express Pickup signs from the main terminal.",
+    "source_url": "https://www.gohart.org/Pages/services-bus.aspx",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.gohart.org/Pages/fares-cards.aspx",
+     "https://www.uber.com/global/en/r/airports/tpa/pickup/"
+    ]
+   },
+   {
+    "id": "faq-tpa-to-st-pete",
+    "topic": "Getting around",
+    "q": "Is there a bus from Tampa International Airport toward St. Petersburg or Pinellas County?",
+    "a": "PSTA's Route 300 express stops at the airport's Rental Car Facility on its way between the Marion Transit Center in downtown Tampa and the Ulmerton Park and Ride in Largo, Monday through Friday only. PSTA's Route 100 express links the Marion Transit Center with the St. Pete Pier area on weekdays. Both charge the regular $2.25 PSTA fare. Neither runs on weekends.",
+    "source_url": "https://psta.net/routes/route-300/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/routes/route-100/",
+     "https://psta.net/rider-info/fares/"
+    ]
+   },
+   {
+    "id": "faq-pie-to-clearwater-beach",
+    "topic": "Getting around",
+    "q": "How do I get from St. Pete-Clearwater airport (PIE) to Clearwater Beach?",
+    "a": "PSTA's Grouper Airport Express is a shared ride between PIE and any address on Clearwater Beach, including the Sand Key resorts, booked through grouper.psta.net or the Grouper app. PSTA lists fares of $8 for one rider, $20 for 3-4 people and $30 for 5-8; the airport's own page lists higher fares ($10, $30 and $40). The pickup at PIE is through the west baggage claim exit doors.",
+    "source_url": "https://psta.net/services/grouper/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://fly2pie.com/parking-and-transportation/transportation-services/"
+    ]
+   },
+   {
+    "id": "faq-pie-rideshare",
+    "topic": "Getting around",
+    "q": "Where do Uber and Lyft pick up at St. Pete-Clearwater International Airport?",
+    "a": "The airport says rideshare drivers drop off in front of the terminal at Departures and pick up in front of the terminal at Arrivals; taxis and shuttles are outside baggage claim in the Ground Transportation lot.",
+    "source_url": "https://fly2pie.com/parking-and-transportation/transportation-services/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-streetcar-free",
+    "topic": "Getting around",
+    "q": "Is the TECO Line Streetcar free?",
+    "a": "Yes. The operator says all TECO Line Streetcar rides are fare free. It runs every 15 minutes between downtown Tampa, the Channel District and Ybor City: Monday to Thursday 7 AM-11 PM, Friday 7 AM-2 AM, Saturday 9 AM-2 AM and Sunday 8:30 AM-11 PM, and until midnight Sunday-Thursday on nights with a Lightning game or event at Benchmark International Arena.",
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.tecolinestreetcar.org/howtoride.html"
+    ]
+   },
+   {
+    "id": "faq-streetcar-bikes",
+    "topic": "Getting around",
+    "q": "Can I bring a bike or my dog on the streetcar?",
+    "a": "Bikes are not allowed on the TECO Line Streetcar. Service dogs may ride; other dogs must be in small carriers. Folded strollers are allowed, and every station has a ramp and every car is wheelchair accessible.",
+    "source_url": "https://www.tecolinestreetcar.org/howtoride.html",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-streetcar-extension",
+    "topic": "Getting around",
+    "q": "Is the Tampa streetcar being extended?",
+    "a": "The City of Tampa has studied extending and modernizing the streetcar: its preferred plan adds a 1.3-mile line from the current western end through downtown to Tampa Heights and replaces the replica cars with modern streetcars. The city's project page gives no construction or opening date.",
+    "source_url": "https://www.tampa.gov/mobility/transportation/projects/streetcar",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-cross-bay-ferry",
+    "topic": "Getting around",
+    "q": "Is there a ferry between Tampa and St. Petersburg?",
+    "a": "Not as of late September 2026. PSTA is preparing a new Tampa Bay Ferry to replace the former Cross-Bay Ferry, with two vessels now being refurbished in Tarpon Springs and Hubbard's Marina as operator, and says it will announce a start date once refurbishment is nearing completion.",
+    "source_url": "https://psta.net/press_releases/850000-federal-investment-moves-tampa-bay-ferry-dock-plans-forward/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/"
+    ]
+   },
+   {
+    "id": "faq-pirate-water-taxi-cost",
+    "topic": "Getting around",
+    "q": "How much does the Pirate Water Taxi cost, and where do I board?",
+    "a": "An all-day hop-on, hop-off pass costs $34 for adults and $24 for children 2-12 (prices can change). You can board at any of its 10 stops; the ticket booth is at Stop 7, on the Riverwalk between the Tampa Convention Center and the Marriott Water Street. The boats are cashless, and no reservation is needed.",
+    "source_url": "https://piratewatertaxi.com/rates-and-passes/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://piratewatertaxi.com/faq/"
+    ]
+   },
+   {
+    "id": "faq-pirate-water-taxi-hours",
+    "topic": "Getting around",
+    "q": "When does the Pirate Water Taxi run?",
+    "a": "Monday to Thursday 11:30 AM-6:30 PM and Friday to Sunday 11:30 AM-9:30 PM. Service stops for lightning, heavy rain and high winds, and the operator says tides can affect the route and stops.",
+    "source_url": "https://piratewatertaxi.com/schedule-rates/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://piratewatertaxi.com/faq/",
+     "https://piratewatertaxi.com/map/"
+    ]
+   },
+   {
+    "id": "faq-dash",
+    "topic": "Getting around",
+    "q": "What is DASH in downtown Tampa?",
+    "a": "DASH (Downtown Area Shared Hubs) is an app-hailed ride service run by the Tampa Downtown Partnership between more than twenty virtual hubs downtown, in all-electric vehicles, for $2 per person. It runs Monday to Saturday 7 AM-11 PM and Sunday 12 PM-9 PM.",
+    "source_url": "https://www.tampasdowntown.com/dash/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-stpete-to-beach",
+    "topic": "Getting around",
+    "q": "How do I get from downtown St. Petersburg to St. Pete Beach without a car?",
+    "a": "Take PSTA's SunRunner, a rapid bus that runs every 15 minutes (every 30 minutes after 8 PM, except Friday and Saturday nights) from 6 AM to midnight daily; PSTA says the trip takes about 35 minutes. The fare is $2.25 and must be paid by tapping a card, phone or watch or with Flamingo Fares: cash is not accepted.",
+    "source_url": "https://psta.net/services/sunrunner/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-stpete-free-trolleys",
+    "topic": "Getting around",
+    "q": "Are there free trolleys in downtown St. Petersburg?",
+    "a": "Yes. The Downtown Looper is free and loops downtown every 15-20 minutes (weekdays 7 AM-10 PM, weekends 8 AM-10 PM), and PSTA's Central Avenue Trolley is free between Grand Central Station and the St. Pete Pier every 30 minutes.",
+    "source_url": "https://www.loopertrolley.com/schedule",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/routes/central-avenue-trolley/"
+    ]
+   },
+   {
+    "id": "faq-beach-trolley",
+    "topic": "Getting around",
+    "q": "Is there a bus along the Gulf beaches?",
+    "a": "PSTA's Suncoast Beach Trolley runs daily along Gulf Boulevard from St. Pete Beach (75th Ave) through Treasure Island, John's Pass, Madeira Beach, the Redingtons, Indian Shores, Indian Rocks Beach and Sand Key to Clearwater Beach and downtown Clearwater's Park Street Terminal. On Clearwater Beach itself, the Jolley Trolley runs North Beach and South Beach routes and a Coastal Route to Dunedin, Palm Harbor and Tarpon Springs.",
+    "source_url": "https://psta.net/routes/suncoast-beach-trolley/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/routes/jolley-trolley-coastal-route/"
+    ]
+   },
+   {
+    "id": "faq-clearwater-ferry",
+    "topic": "Getting around",
+    "q": "Is there a boat to Clearwater Beach?",
+    "a": "The Clearwater Ferry runs Thursday to Sunday between downtown Clearwater, the Clearwater Beach Marina near Pier 60 and the Dunedin Marina. Reservations are recommended but not required, and walk-ons board if there is room.",
+    "source_url": "https://www.clearwaterferry.com/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.clearwaterferry.com/schedules"
+    ]
+   },
+   {
+    "id": "faq-clearwater-beach-parking",
+    "topic": "Getting around",
+    "q": "How much is parking on Clearwater Beach?",
+    "a": "City lots cost $3.50 an hour with no time limit from 6 a.m. to 11 p.m.; on-street parking is $4.00 an hour with a 5-hour limit. Pay at pay-by-plate kiosks, with the ParkMobile app, or by texting CLEARWATER to 727563. Private garages set their own rates.",
+    "source_url": "https://www.myclearwater.com/Parking-Transportation/Beach-Parking",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.myclearwater.com/Visit-the-Beach/Beach-Parking/List-of-Beach-Parking-Lots-Garages"
+    ]
+   },
+   {
+    "id": "faq-county-beach-parking",
+    "topic": "Getting around",
+    "q": "How much does parking cost at Fort De Soto, Sand Key and other Pinellas County beach parks?",
+    "a": "Pinellas County says that from December 1, 2026, beach parking at its parks will be $3.50 an hour, capped at $12 a day, plus tax. An annual beach pass, valid at Fort De Soto, Sand Key and Fred Howard parks, costs $95 from October 1, 2026. Fort De Soto is cashless: pay at a machine, with the Flowbird or ParkMobile app, or by text.",
+    "source_url": "https://pinellas.gov/annual-parking-permits",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://pinellas.gov/parks-and-preserves-frequently-asked-questions"
+    ]
+   },
+   {
+    "id": "faq-tampa-parking",
+    "topic": "Getting around",
+    "q": "How much is parking in downtown Tampa?",
+    "a": "City of Tampa garages charge $3 an hour up to $18 a day (Fort Brooke, W.F. Poe, Pam Iorio, Convention Center) or $2 an hour up to $14 a day (Twiggs, Centro Ybor, Palm Ave.). Downtown street meters are $4 for the first hour and $3 for each hour after. You can pay with the Passport, PayByPhone, ParkMobile or Flowbird apps.",
+    "source_url": "https://www.tampa.gov/parking/info/parking-hourly-and-daily-rates",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.tampa.gov/parking/programs/pay-by-phone-parking"
+    ]
+   },
+   {
+    "id": "faq-ybor-parking",
+    "topic": "Getting around",
+    "q": "Is parking free in Ybor City?",
+    "a": "The first two hours are free in the City of Tampa's Ybor lots, then $2 an hour up to $14 a day; a $10 flat rate applies Friday and Saturday from 8 p.m. to 3 a.m. Ybor street meters charge $3 for the first hour and $2 after.",
+    "source_url": "https://www.tampa.gov/parking/info/parking-hourly-and-daily-rates",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-need-sunpass",
+    "topic": "Getting around",
+    "q": "Do I need a SunPass to drive around Tampa Bay?",
+    "a": "No, but it is cheaper. The Tampa-area toll roads on Florida's Turnpike list (Veterans Expressway, Suncoast Parkway, I-4 Connector, Selmon Expressway and the Sunshine Skyway Bridge) do not accept cash. With SunPass, or an accepted transponder such as E-ZPass, E-PASS or Peach Pass, you pay the lowest toll rate; without one, Toll-By-Plate photographs the plate and mails the owner an invoice with a $2.50 administrative fee. Florida's Turnpike says SunPass saves an average of 25%.",
+    "source_url": "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/toll-by-plate/",
+     "https://floridasturnpike.com/tolls/sunpass/"
+    ]
+   },
+   {
+    "id": "faq-rental-car-tolls",
+    "topic": "Getting around",
+    "q": "How do tolls work in a rental car?",
+    "a": "Most rental companies bill tolls through their own programs, each with its own fees, so check your agreement. If you have a SunPass PRO or other portable transponder, add the rental car's plate and rental dates to your SunPass account and remove the transponder when you return the car. Toll-By-Plate is not available for rental cars.",
+    "source_url": "https://floridasturnpike.com/tolls/rental-vehicles/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-ezpass",
+    "topic": "Getting around",
+    "q": "Does E-ZPass work in Florida?",
+    "a": "Yes. Florida's Turnpike lists E-ZPass among the transponders accepted in electronic toll lanes, along with SunPass, E-PASS, Peach Pass, NC Quick Pass and others.",
+    "source_url": "https://floridasturnpike.com/tolls/electronic-toll-collection/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-skyway-toll",
+    "topic": "Getting around",
+    "q": "How much is the Sunshine Skyway Bridge toll?",
+    "a": "For a two-axle car, FDOT's rate sheet (effective April 12, 2026) lists $1.16 with SunPass and $1.62 by Toll-By-Plate at the bridge's toll plazas. Cash is not accepted.",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://floridasturnpike.com/tolls/electronic-toll-collection/"
+    ]
+   },
+   {
+    "id": "faq-tampa-bike-share",
+    "topic": "Getting around",
+    "q": "Is there bike share or scooter share in Tampa?",
+    "a": "Coast Bike Share says it has closed all its Tampa sites and no longer operates in Florida. The City of Tampa's shared program has Lime and Spin e-bikes and e-scooters, rented in their apps; riders must be 16 or older with a driver's license or permit, and they may not ride on the Tampa Riverwalk, Bayshore Boulevard or 7th Avenue.",
+    "source_url": "https://www.tampa.gov/tss-transportation/programs/shared-micromobility-program",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://gohopr.com/coast/"
+    ]
+   },
+   {
+    "id": "faq-stpete-scooters",
+    "topic": "Getting around",
+    "q": "Can I rent a bike or scooter in St. Petersburg?",
+    "a": "Yes. The city's bike share uses Lime e-bikes, which you must end at a designated hub, and Spin and Lime rent e-scooters. Riders must be 18 or older, may not ride on sidewalks, and may ride to the St. Pete Pier but not on it; scooter corrals are at the base of the Pier.",
+    "source_url": "https://www.stpete.org/visitors/scooter_safety.php",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.stpete.org/visitors/bike_share.php"
+    ]
+   },
+   {
+    "id": "faq-train",
+    "topic": "Getting around",
+    "q": "Can I take a train to Tampa?",
+    "a": "Amtrak serves Tampa Union Station (601 North Nebraska Avenue) with the Floridian, which Amtrak describes as a temporary combination of the Capitol Limited and Silver Star running daily between Chicago and Miami via Washington, DC.",
+    "source_url": "https://www.amtrak.com/floridian-train",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.amtrak.com/stations/tpa"
+    ]
+   },
+   {
+    "id": "faq-brightline",
+    "topic": "Getting around",
+    "q": "Does Brightline go to Tampa?",
+    "a": "No. Brightline's website describes service between Miami and Orlando with stops in Aventura, Fort Lauderdale, Boca Raton and West Palm Beach, and names no Tampa station.",
+    "source_url": "https://www.gobrightline.com/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-intercity-bus",
+    "topic": "Getting around",
+    "q": "Where do Greyhound and FlixBus buses stop in Tampa?",
+    "a": "At the Tampa Bus Station, 1315 N Marion St, at HART's Marion Transit Center downtown, and at the University of South Florida (Holly Drive at Lot 3D). RedCoach stops at 3801 USF Holly Drive.",
+    "source_url": "https://www.greyhound.com/bus/tampa-fl",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.flixbus.com/bus/tampa-fl",
+     "https://www.redcoachusa.com/bus-stations/tampa"
+    ]
+   },
+   {
+    "id": "faq-cruise-terminals",
+    "topic": "Getting around",
+    "q": "Which cruise lines sail from Tampa, and where are the terminals?",
+    "a": "Port Tampa Bay lists Carnival, Royal Caribbean, Celebrity, Norwegian and Margaritaville at Sea. Its three terminals are in the Channel District: Terminal 2 at 651 Channelside Drive, Terminal 3 at 815 Channelside Drive and Terminal 6 at 1333 McKay Street. The port's parking garage is across the street from Terminal 3.",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://www.porttb.com/cruise/terminal-guide/"
+    ]
+   },
+   {
+    "id": "faq-cruise-luggage",
+    "topic": "Getting around",
+    "q": "Can I store luggage before a cruise from Tampa?",
+    "a": "Not at the terminals: Port Tampa Bay says security rules leave no place to store bags for early arrivals. The port says the Florida Aquarium, next to Terminal 2 at 701 Channelside Drive, stores luggage free when you buy a discounted admission ticket.",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "faq-tampa-to-stpete-bus",
+    "topic": "Getting around",
+    "q": "Is there a bus between downtown Tampa and downtown St. Petersburg?",
+    "a": "PSTA's Route 100 express runs Monday to Friday between the Marion Transit Center in downtown Tampa and the St. Pete Pier area (2nd Ave NE and Beach Drive), with stops at Gateway Mall and Britton Plaza. It charges the regular $2.25 PSTA fare and does not run on weekends.",
+    "source_url": "https://psta.net/routes/route-100/",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/rider-info/fares/"
+    ]
+   },
+   {
+    "id": "faq-transit-pass-both-counties",
+    "topic": "Getting around",
+    "q": "Is there one transit pass for both Tampa and Pinellas buses?",
+    "a": "HART sells a Month Passport for $85.00 that is valid on HART local, limited express and HARTFlex service and on PSTA buses and trolleys. Both agencies also use Flamingo Fares, with daily fare caps ($4.00 on HART, $5 on PSTA).",
+    "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
+    "checked": "2026-09-27",
+    "also_sources": [
+     "https://psta.net/rider-info/fares/"
+    ]
+   },
+   {
+    "id": "faq-pie-parking",
+    "topic": "Getting around",
+    "q": "How much does it cost to park at St. Pete-Clearwater International Airport?",
+    "a": "From October 1, 2026, long-term parking is $2.00 for the first hour, $1.00 for each additional 20 minutes, up to $16.00 a day; short-term tops out at $25.00 a day; economy parking is $12.00 a day with free shuttles. Parking is first-come, first-served with no reservations.",
+    "source_url": "https://fly2pie.com/parking-and-transportation/parking/",
+    "checked": "2026-09-27"
+   }
+  ],
+  "facts": [
+   {
+    "id": "fact-tpa-passengers-2025",
+    "label": "Tampa International Airport passengers, 2025",
+    "value": "24,811,253",
+    "source": "Tampa International Airport, Monthly Activity Report",
+    "source_url": "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+    "checked": "2026-09-27",
+    "as_of": "Calendar year 2025 (up 0.22% on 2024)",
+    "quote": "Total Passengers 2,177,746 2,235,662 -2.59% 24,811,253 24,756,185 0.22%"
+   },
+   {
+    "id": "fact-tpa-international-passengers-2025",
+    "label": "Tampa International Airport international passengers, 2025",
+    "value": "1,720,094",
+    "source": "Tampa International Airport, Monthly Activity Report",
+    "source_url": "https://www.tampaairport.com/sites/default/files/2026-01/1.%20%20DEC%2025%20Airline%20Activity.pdf",
+    "checked": "2026-09-27",
+    "as_of": "Calendar year 2025 (up 15.11% on 2024)",
+    "quote": "Total International 153,830 169,045 -9.00% 1,720,094 1,494,264 15.11%"
+   },
+   {
+    "id": "fact-streetcar-fare",
+    "label": "TECO Line Streetcar fare",
+    "value": "Free",
+    "source": "TECO Line Streetcar",
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "All TECO Line Streetcar rides are fare free!"
+   },
+   {
+    "id": "fact-streetcar-length",
+    "label": "TECO Line Streetcar line length",
+    "value": "2.7 miles, 11 stations",
+    "source": "TECO Line Streetcar",
+    "source_url": "https://www.tecolinestreetcar.org/howtoride.html",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "The TECO Line Streetcar System is a 2.7-mile electric heritage streetcar line connecting Downtown Tampa, Channel District, and Ybor City."
+   },
+   {
+    "id": "fact-streetcar-1926-riders",
+    "label": "Tampa streetcar riders at the 1920s peak",
+    "value": "Almost 24 million passengers in 1926",
+    "source": "TECO Line Streetcar (history)",
+    "source_url": "https://www.tecolinestreetcar.org/about.html",
+    "checked": "2026-09-27",
+    "as_of": "1926",
+    "quote": "Reaching the peak of its popularity in the 1920s, with almost 24 million passengers in 1926, Tampa's streetcar system rolled to a stop in August 1946"
+   },
+   {
+    "id": "fact-streetcar-return",
+    "label": "Year electric streetcars returned to Tampa",
+    "value": "2002",
+    "source": "TECO Line Streetcar (history)",
+    "source_url": "https://www.tecolinestreetcar.org/about.html",
+    "checked": "2026-09-27",
+    "quote": "In October 2002, electric streetcars started operating again in Tampa"
+   },
+   {
+    "id": "fact-hart-fare",
+    "label": "HART bus fare",
+    "value": "$2.00 (daily cap $4.00)",
+    "source": "Hillsborough Area Regional Transit (HART)",
+    "source_url": "https://www.gohart.org/Pages/fares-cards.aspx",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026"
+   },
+   {
+    "id": "fact-psta-fare",
+    "label": "PSTA bus, SunRunner and trolley fare",
+    "value": "$2.25 (daily cap $5)",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "source_url": "https://psta.net/rider-info/fares/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026"
+   },
+   {
+    "id": "fact-psta-rides",
+    "label": "PSTA rides a year",
+    "value": "10.7 million",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "source_url": "https://psta.net/press_releases/psta-purchases-bay-breeze-and-clipper-for-new-tampa-bay-ferry-service/",
+    "checked": "2026-09-27",
+    "as_of": "June 2026 press release",
+    "quote": "PSTA provides 10.7 million rides annually."
+   },
+   {
+    "id": "fact-sunrunner",
+    "label": "SunRunner rapid bus line",
+    "value": "10 miles, 16 stops, about 35 minutes end to end",
+    "source": "Pinellas Suncoast Transit Authority (PSTA)",
+    "source_url": "https://psta.net/services/sunrunner/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "From St. Pete Beach to downtown St. Petersburg, the SunRunner connects some of our most beloved destinations in about 35 minutes"
+   },
+   {
+    "id": "fact-downtown-tampa-parking-spaces",
+    "label": "Parking spaces in downtown Tampa",
+    "value": "More than 32,000",
+    "source": "Tampa Downtown Partnership",
+    "source_url": "https://www.tampasdowntown.com/getting-around/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "With more than 32,000 parking spaces, there is always somewhere to park in Tampa's Downtown!"
+   },
+   {
+    "id": "fact-port-tampa-bay-cruise",
+    "label": "Cruise ships homeported at Port Tampa Bay",
+    "value": "Eight ships from five cruise lines",
+    "source": "Port Tampa Bay",
+    "source_url": "https://www.porttb.com/cruise/cruise-overview/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "Tampa homeports eight vessels from five cruise lines."
+   },
+   {
+    "id": "fact-pie-nonstops",
+    "label": "Nonstop cities from St. Pete-Clearwater International",
+    "value": "Over 60",
+    "source": "St. Pete-Clearwater International Airport",
+    "source_url": "https://fly2pie.com/flights-and-airlines/airlines-and-destinations/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "Our airlines fly non-stop to/from over 60 cities"
+   },
+   {
+    "id": "fact-selmon-length",
+    "label": "Lee Roy Selmon Expressway length",
+    "value": "17 miles, all-electronic tolls",
+    "source": "Tampa Hillsborough Expressway Authority",
+    "source_url": "https://tampa-xway.com/for-travelers/maps/selmon-expressway/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "The Lee Roy Selmon Expressway is a 17-mile all-electronic toll roadway"
+   },
+   {
+    "id": "fact-skyway-toll",
+    "label": "Sunshine Skyway Bridge toll, 2-axle car",
+    "value": "$1.16 SunPass; $1.62 Toll-By-Plate",
+    "source": "Florida Department of Transportation toll rates",
+    "source_url": "https://floridasturnpike.com/wp-content/uploads/2026/04/West-Central-Florida-4-2026.pdf",
+    "checked": "2026-09-27",
+    "as_of": "Effective April 12, 2026"
+   },
+   {
+    "id": "fact-sunpass-savings",
+    "label": "Average saving with SunPass versus Toll-By-Plate",
+    "value": "25%",
+    "source": "Florida's Turnpike Enterprise",
+    "source_url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "SunPass customers always pay the lowest toll amount and can save an average of 25% on tolls when compared to TOLL-BY-PLATE."
+   },
+   {
+    "id": "fact-toll-by-plate-fee",
+    "label": "Toll-By-Plate administrative fee",
+    "value": "$2.50 per invoice",
+    "source": "Florida's Turnpike Enterprise",
+    "source_url": "https://floridasturnpike.com/tolls/toll-by-plate/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026",
+    "quote": "A Toll Enforcement Invoice is then mailed to the registered owner of the vehicle for the toll(s) incurred over a 30-day period, plus a $2.50 administrative fee."
+   },
+   {
+    "id": "fact-pirate-water-taxi-pass",
+    "label": "Pirate Water Taxi all-day pass",
+    "value": "$34 adult; $24 child (2-12)",
+    "source": "Pirate Water Taxi",
+    "source_url": "https://piratewatertaxi.com/rates-and-passes/",
+    "checked": "2026-09-27",
+    "as_of": "Sep 2026"
+   },
+   {
+    "id": "fact-tampa-union-station-opened",
+    "label": "Tampa Union Station opened",
+    "value": "May 1912",
+    "source": "Amtrak",
+    "source_url": "https://www.amtrak.com/stations/tpa",
+    "checked": "2026-09-27",
+    "quote": "opened in May 1912 to serve three railroads"
+   }
+  ]
+ },
+ "report": "# getting-around: research report (Sep 27, 2026)\n\n## What this slice covers\n44 transport records, 33 FAQs (topic \"Getting around\") and 19 facts for visitors moving around Tampa Bay:\n\n- **Airports (3):** Tampa International (TPA), St. Pete-Clearwater International (PIE), Sarasota Bradenton International (SRQ), with codes, addresses, points and ground transport. Plus TPA rideshare pickup, the TPA Rental Car Center (SkyConnect) and PIE rental cars.\n- **Tampa transit:** TECO Line Streetcar (fare-free, hours, all 11 stations with HART's own GTFS coordinates, extension status), HART buses (Flamingo fares and caps, airport routes 10/30/32), DASH (the Tampa Downtown Partnership's $2 app-hailed service, which has replaced the Downtowner on the Partnership's pages), Pirate Water Taxi (10 stops as a route), and Lime/Spin e-scooters and e-bikes.\n- **Pinellas transit:** PSTA buses (fares, caps, cash rules), SunRunner BRT, Route 100 and Route 300 express buses to Tampa and TPA, Central Avenue Trolley (free), Downtown Looper (free), Suncoast Beach Trolley, Jolley Trolley (beach and Coastal routes), Grouper Airport Express (PIE to Clearwater Beach), Clearwater Ferry, St. Pete Lime bike share and Spin/Lime scooters.\n- **Across the bay:** the Tampa Bay Ferry (St. Pete-Tampa) is recorded as not running, with PSTA's Sep 2026 status.\n- **Day trips:** Anna Maria Island Trolley (free, MCAT Route 5) and the Gulf Islands Ferry (Bradenton-Anna Maria).\n- **Rail and intercity bus:** Amtrak at Tampa Union Station (the Floridian), Greyhound and FlixBus (Marion Transit Center and USF), RedCoach (USF).\n- **Cruise:** Port Tampa Bay terminals 2, 3 and 6 with the five homeported lines, the garage and luggage rules.\n- **Parking (6 records):** City of Tampa garages/meters, St. Pete downtown, Clearwater Beach, Pinellas County beach parks (new rates Oct 1 and Dec 1, 2026), Treasure Island, St. Pete Beach, plus PIE parking inside the PIE record.\n- **Tolls (8):** SunPass, Toll-By-Plate, rental-car tolls, Selmon Expressway (THEA rate table), Veterans Expressway (with Suncoast Parkway in notes), Sunshine Skyway, Pinellas Bayway, Gateway Expressway (FDOT West Central Florida rate sheet, Apr 2026).\n\nCounts by mode: airport 3, car-rental 2, rideshare 1, streetcar 1, bus 4, brt 1, trolley 5, microtransit 2, water-taxi 2, ferry 2, rail 1, intercity-bus 2, cruise-port 1, bike-share 1, scooter 2, parking 6, toll 8.\nCounts by region (a record can list several): tampa 21, stpete 17, beaches 16, clearwater 13, around 6, daytrips 7. Every stop that names a place id points at a record that exists in another slice.\n\n## How candidates were found\nWebSearch was unavailable (the session's search budget was already used up by other agents), and Bing/DuckDuckGo scraping returned generic or captcha pages, so discovery ran through official sites and their own link structure:\nVisit Tampa Bay's transportation page (visittampabay.com/stay/transportation/), the Tampa Downtown Partnership's Ways to Get Around page, the City of St. Petersburg's Transportation Options page, the City of Clearwater's Alternative Transportation page, PSTA's full route list (psta.net/rider-info/schedules-maps/), HART's schedules page and schedule book (Aug 16, 2026), HART's GTFS feed (gohart.org/google/google_transit.zip, version 2608.4: streetcar, SkyConnect and transit-center coordinates), Florida's Turnpike toll pages and the FDOT West Central Florida toll-rate PDF, the THEA site, fly2pie.com, the airport statistics PDF, Port Tampa Bay's cruise pages, and county/city parking pages. Pages were read with curl plus an HTML-to-text converter where sites allowed it, and with WebFetch where they did not (amtrak.com, greyhound.com, flixbus.com, redcoachusa.com, flysrq.com, myclearwater.com, stpetebeach.org); WebFetch-only facts are flagged in each record's notes. One WebFetch summary was caught being wrong (it said the Central Avenue Trolley runs every 22 minutes; the raw timetable shows every 30), so numbers were taken from raw text wherever possible.\n\n## Left out, and why\n- **Coast Bike Share:** its site says it closed all Tampa sites and no longer operates in Florida; covered in a FAQ, no record. The streetcar's How to Ride page and PSTA's SunRunner page still mention it (dated).\n- **Downtowner in St. Pete or Clearwater:** no current official page names one (St. Pete's and Clearwater's transport pages list other options), so no record. Tampa's is DASH.\n- **Brightline:** no Tampa service on Brightline's site; a FAQ only (no transport record for a service that does not serve the region).\n- **Megabus, taxis in Tampa, TPA taxi and parking rates, cruise parking prices, St. Pete Pier parking, Madeira Beach and Indian Rocks parking rates:** no readable official source (tampaairport.com HTML is behind a Cloudflare block; the cruise parking prepay site shows no rates).\n- **Caladesi, Egmont Key and other excursion ferries:** these are experiences in exp-water, not transport.\n- **Trails (Pinellas Trail, Selmon Greenway, Riverwalk):** already places in the outdoors/see slices.\n- **Snapper and HARTFlex on-demand zones, USF Bull Runner, paratransit:** local services of little use to visitors.\n\n## Open questions for the verifier\n1. **TPA:** tampaairport.com pages were unreadable (403). TPA's terminal, SkyConnect and Rental Car Center facts come from Wikipedia and HART; please confirm against the airport's ground-transportation page, and check the TPA rideshare wording (from Uber's page).\n2. **Grouper fares conflict:** PSTA and the City of Clearwater say $8/$20/$30; PIE's page says $10/$30/$40.\n3. **Clearwater Ferry fares:** the undated schedule PDF shows $5/$8 regular; the home page says fares rose by $1 on Sep 17, 2026.\n4. **Gulf Islands Ferry days:** banner says Thursday-Sunday, FAQ says Wednesday-Sunday.\n5. **Jolley Trolley fare:** jolleytrolley.com did not resolve; fare is null.\n6. **Amtrak:** the Floridian page shows an alert \"Service Adjustments South of Washington, DC, Effective October 16 - 26, 2026\" whose details were not readable.\n7. **Pinellas County beach parks:** the pre-December 1, 2026 hourly/daily rate was not on the pages read.\n8. **Sunshine Skyway:** the rate sheet lists the same rate at the North and South plazas; whether a one-way trip pays once is not stated.\n9. **St. Pete city parking page** says the Central Avenue Trolley runs to Pass-a-Grille; PSTA's current page says Grand Central Station to the Pier only (PSTA used).\n10. Ids for services that are also experiences in exp-water use a suffix (pirate-water-taxi-route, clearwater-ferry-route, gulf-islands-ferry-route) and the cross-bay ferry is tampa-st-pete-ferry (exp-water: tampa-bay-ferry), so the merge does not unite records across collections.\n"
+}

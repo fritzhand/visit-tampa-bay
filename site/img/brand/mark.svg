@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Tampa Bay Chartbook"><title>Tampa Bay Chartbook</title><style>svg{--mk-ink:#12264c;--mk-paper:#fcf8eb;--mk-gold:#c5953b;--mk-gold-hi:#e4c87c;--mk-north:#a7186f}
+.ink{fill:var(--mk-ink)}.paper{fill:var(--mk-paper)}.gold{fill:var(--mk-gold)}.hi{fill:var(--mk-gold-hi)}
+.ring{fill:none;stroke:var(--mk-gold);stroke-width:1.1}.keyline{fill:none;stroke:var(--mk-gold);stroke-width:1.2}
+.dk{fill:var(--mk-ink)}.dk.n{fill:var(--mk-north)}.lt{fill:var(--mk-paper);stroke:var(--mk-ink);stroke-width:.85;stroke-linejoin:round}
+.hub{fill:var(--mk-gold);stroke:var(--mk-ink);stroke-width:.9}</style>
+<rect class="ink" x=".6" y="21.6" width="62.8" height="20.8" rx="1.2"/>
+<rect class="gold" x="1.8" y="22.8" width="60.4" height="18.4" rx=".6"/>
+<path class="ink" d="M1.8 25.4h60.4v.9H1.8zM1.8 37.7h60.4v.9H1.8z"/>
+<path class="ink" d="M5.6 32 7.6 29.2 9.6 32 7.6 34.8zM54.4 32l2-2.8 2 2.8-2 2.8z"/>
+<ellipse class="gold" cx="32" cy="32" rx="23.4" ry="31.2"/>
+<ellipse class="ink" cx="32" cy="32" rx="22.3" ry="30.1"/>
+<ellipse class="gold" cx="32" cy="32" rx="20.3" ry="28.1"/>
+<ellipse class="paper" cx="32" cy="32" rx="19" ry="26.8"/>
+<ellipse class="ring" cx="32" cy="32" rx="17.1" ry="24.9"/>
+<path class="dk" d="M32 32L39.42 24.58L33.63 33.63Z"/><path class="lt" d="M32 32L39.42 24.58L30.37 30.37Z"/><path class="dk" d="M32 32L39.42 39.42L30.37 33.63Z"/><path class="lt" d="M32 32L39.42 39.42L33.63 30.37Z"/><path class="dk" d="M32 32L24.58 39.42L30.37 30.37Z"/><path class="lt" d="M32 32L24.58 39.42L33.63 33.63Z"/><path class="dk" d="M32 32L24.58 24.58L33.63 30.37Z"/><path class="lt" d="M32 32L24.58 24.58L30.37 33.63Z"/><path class="dk" d="M32 32L47 32L32 35.5Z"/><path class="lt" d="M32 32L47 32L32 28.5Z"/><path class="dk" d="M32 32L17 32L32 28.5Z"/><path class="lt" d="M32 32L17 32L32 35.5Z"/><path class="dk" d="M32 32L32 53L28.5 32Z"/><path class="lt" d="M32 32L32 53L35.5 32Z"/><path class="dk n" d="M32 32L32 10.5L35.5 32Z"/><path class="lt" d="M32 32L32 10.5L28.5 32Z"/>
+<circle class="hub" cx="32" cy="32" r="2.4"/></svg>
