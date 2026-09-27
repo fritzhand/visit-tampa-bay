@@ -1,0 +1,51 @@
+[
+  {
+    "id": "narvaez-lands-1528",
+    "era": "spanish",
+    "year": 1528,
+    "title": "Narváez expedition reaches Tampa Bay",
+    "text": "Fixture timeline text.",
+    "source_url": "https://www.nps.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "ybor-cigar-factory-1886",
+    "era": "boomtown",
+    "year": 1886,
+    "title": "Cigar making begins in Ybor City",
+    "text": "Fixture timeline text.",
+    "places": [
+      "ybor-city-museum-state-park"
+    ],
+    "source_url": "https://www.floridastateparks.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "tampa-bay-hotel-opens-1891",
+    "era": "boomtown",
+    "year": 1891,
+    "title": "The Tampa Bay Hotel opens",
+    "text": "Fixture timeline text.",
+    "places": [
+      "henry-b-plant-museum"
+    ],
+    "source_url": "https://www.plantmuseum.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "vinoy-opens-1925",
+    "era": "land-boom",
+    "year": 1925,
+    "title": "The Vinoy opens",
+    "text": "Fixture timeline text.",
+    "places": [
+      "the-vinoy"
+    ],
+    "source_url": "https://www.marriott.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

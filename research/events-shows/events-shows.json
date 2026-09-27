@@ -1,0 +1,1178 @@
+{
+ "slice": "events-shows",
+ "checked": "2026-09-27",
+ "records": {
+  "events": [
+   {
+    "id": "tfo-opening-night-1812-overture-2026-10-02",
+    "title": "The Florida Orchestra: Opening Night! Tchaikovsky's 1812 Overture",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-10-02",
+    "end_date": "2026-10-04",
+    "start": "19:30",
+    "occurrences": [
+     {
+      "date": "2026-10-02",
+      "start": "19:30"
+     },
+     {
+      "date": "2026-10-04",
+      "start": "14:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/opening-night-tchalkovskys-1812-overture-2/",
+    "tickets_url": "https://www.ticketmaster.com/tchaikovskys-1812-overture-st-petersburg-florida-10-02-2026/event/0D0064E2ADE66D37",
+    "description": "Cannons roar. Drums thunder. For Opening Weekend, Michael Francis is not holding back – setting the tone for a season of bold, high-voltage music.",
+    "summary": "The Florida Orchestra opens its Masterworks season at the Mahaffey with Rossini's William Tell Overture, Theofanidis' The Gift with tenor Anthony Dean Griffey, Beethoven's Wellington's Victory and Tchaikovsky's 1812 Overture with the Master Chorale of Tampa Bay.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/opening-night-tchalkovskys-1812-overture-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Two Mahaffey performances, each on its own show page: Fri Oct 2 at 7:30pm (opening-night-tchalkovskys-1812-overture-2) and Sun Oct 4 at 2pm (opening-night-tchalkovskys-1812-overture; tickets https://www.ticketmaster.com/tchaikovskys-1812-overture-st-petersburg-florida-10-04-2026/event/0D0064E2ADE86D3D). Series label on the page: Hough Family Foundation Masterworks."
+   },
+   {
+    "id": "caamp-2026-10-03",
+    "title": "Caamp with special guest Whitney",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-10-03",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/caamp/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006495CDCF4BF9",
+    "description": "CAAMP is an American folk band known for their warm harmonies, driving rhythms, and heartfelt songwriting.",
+    "summary": "The Ohio folk band Caamp plays the Mahaffey Theater with special guest Whitney.",
+    "status": "scheduled",
+    "tags": [
+     "folk",
+     "americana"
+    ],
+    "source_url": "https://themahaffey.com/show/caamp/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "nurse-john-2026-10-09",
+    "title": "Nurse John: Against Medical Advice Tour",
+    "kind": "comedy",
+    "date": "2026-10-09",
+    "start": "19:00",
+    "occurrences": [
+     {
+      "date": "2026-10-09",
+      "start": "19:00"
+     },
+     {
+      "date": "2026-10-09",
+      "start": "21:30"
+     }
+    ],
+    "time_text": "Two shows: 7pm and 9:30pm (the 7pm show was moved from 7:30pm)",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/nurse-john/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064A6D98526C9",
+    "description": "With Against Medical Advice, Nurse John returns with all-new material, offering fans an even deeper look into the chaos, comedy, and camaraderie of healthcare life delivered in his signature style that feels like venting with your work bestie after a long shift.",
+    "summary": "Stand-up comedian Nurse John brings his healthcare-themed tour to the Mahaffey for two shows.",
+    "status": "changed",
+    "tags": [
+     "stand-up"
+    ],
+    "source_url": "https://themahaffey.com/show/nurse-john/",
+    "also_sources": [
+     "https://themahaffey.com/show/nurse-john-2/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The 7pm show page says: 'The event's original time was 7:30pm. The time has changed to 7pm.' The 9:30pm show (nurse-john-2, listed as NEW SHOW ADDED) has tickets at https://www.ticketmaster.com/event/0D006502CFC181AD. The tour name is spelled 'AGAINST MEDCIAL ADVICE' in the page header and correctly in the body."
+   },
+   {
+    "id": "tfo-revolution-music-of-the-beatles-2026-10-10",
+    "title": "The Florida Orchestra: Revolution, The Music of the Beatles",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-10-10",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/revolution-the-music-of-the-beatles/",
+    "tickets_url": "https://www.ticketmaster.com/revolution-the-music-of-the-beatles-st-petersburg-florida-10-10-2026/event/0D0064E2B11F71B4",
+    "description": "It's a ticket to ride through the history of The Beatles as told through Grammy winner Jeff Tyzik's arrangements – based on the original Abbey Road recordings.",
+    "summary": "A Raymond James Pops concert: The Florida Orchestra, conducted by Chelsea Gallo, plays Jeff Tyzik's Beatles arrangements with vocalists, photos and video.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops"
+    ],
+    "source_url": "https://themahaffey.com/show/revolution-the-music-of-the-beatles/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "tfo-scheherazade-2026-10-17",
+    "title": "The Florida Orchestra: Scheherazade",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-10-17",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/scheherazade/",
+    "tickets_url": "https://www.ticketmaster.com/scheherazade-st-petersburg-florida-10-17-2026/event/0D0064E2B16071EE",
+    "description": "For this program led by Michael Francis, courage wears many faces.",
+    "summary": "Michael Francis conducts Karen LeFrak's American Promise, Florence Price's Piano Concerto in One Movement with pianist Jeneba Kanneh-Mason, and Rimsky-Korsakov's Scheherazade.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/scheherazade/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Pre-concert conversation one hour before, included with the ticket (page)."
+   },
+   {
+    "id": "tfo-a-star-to-remember-2026-10-25",
+    "title": "The Florida Orchestra: A Star to Remember",
+    "kind": "family",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-10-25",
+    "start": "14:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/a-star-to-remember/",
+    "tickets_url": "https://www.ticketmaster.com/a-star-to-remember-st-petersburg-florida-10-25-2026/event/0D00651B9BAC53F7",
+    "description": "Step into a magical world where lost stars, forgotten dreams and treasured memories come to life.",
+    "summary": "A family concert with conductor Chelsea Gallo, a vocalist and dancers, built around a story set in a night market, with music from E.T. and Coco, Smetana's The Moldau and Brahms' Hungarian Dance No. 1.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "family-concert"
+    ],
+    "source_url": "https://themahaffey.com/show/a-star-to-remember/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "sonic-live-in-concert-2026-10-30",
+    "title": "Sonic Live in Concert",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-10-30",
+    "start": "20:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/sonic-live-in-concert/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064A79792839F",
+    "description": "Celebrate 35 years of one of the most iconic video game franchises of all time: Sonic the Hedgehog. This new in concert experience brings together, live on stage, the most iconic music and incredible moments of the beloved Sonic video games.",
+    "summary": "A live ensemble with rock musicians and vocalists plays music from the Sonic the Hedgehog video games.",
+    "status": "scheduled",
+    "tags": [
+     "video-game-music"
+    ],
+    "source_url": "https://themahaffey.com/show/sonic-live-in-concert/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-john-williams-at-95-2026-11-01",
+    "title": "The Florida Orchestra: John Williams @ 95",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-11-01",
+    "start": "14:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/john-williams-95/",
+    "tickets_url": "https://www.ticketmaster.com/john-williams-95-st-petersburg-florida-11-01-2026/event/0D0064E2B33773EF",
+    "description": "For nearly seven decades, John Williams has made us believe in movie magic.",
+    "summary": "A Raymond James Pops concert of John Williams film music, from Star Wars to Harry Potter, conducted by Larry Loh.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops",
+     "film-music"
+    ],
+    "source_url": "https://themahaffey.com/show/john-williams-95/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "tfo-ginastera-harp-concerto-2026-11-07",
+    "title": "The Florida Orchestra: Ginastera's Harp Concerto",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts",
+     "latin-heritage"
+    ],
+    "date": "2026-11-07",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/ginasteras-harp-concerto/",
+    "tickets_url": "https://www.ticketmaster.com/ginasteras-harp-concerto-st-petersburg-florida-11-07-2026/event/0D0064E2B3FF74CC",
+    "description": "World-renowned guest conductor Carlos Miguel Prieto takes the podium for a rhythmically explosive program celebrating the vibrant sounds of Latin America and Spain.",
+    "summary": "Carlos Miguel Prieto conducts Chávez's Sinfonia India, Ginastera's Harp Concerto with TFO principal harp Anna Kate Mackle, and de Falla's The Three-Cornered Hat.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/ginasteras-harp-concerto/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "qyk-guitar-pull-2026-11-08",
+    "title": "99.5 QYK Guitar Pull",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-11-08",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/99-5-qyk-guitar-pull/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006521D78BC13F",
+    "description": "Witness some of Nashville's New Country hit makers play acoustically together while swapping stories on stage for a truly unforgettable, intimate evening!",
+    "summary": "Country radio station 99.5 QYK's acoustic songwriter round with Carly Pearce, Greylan James, Jacob Hackworth, Vincent Mason and Zach John King.",
+    "status": "scheduled",
+    "tags": [
+     "country"
+    ],
+    "source_url": "https://themahaffey.com/show/99-5-qyk-guitar-pull/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The show page calls it the '11 th Annual' Guitar Pull; the listing page says '10th annual'."
+   },
+   {
+    "id": "mannheim-steamroller-christmas-2026-11-11",
+    "title": "Mannheim Steamroller Christmas by Chip Davis",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-11-11",
+    "start": "19:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/mannheim-steamroller-christmas/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064A6CB17EFC2",
+    "description": "Grammy Award winner Chip Davis has created a show that features Mannheim Steamroller Christmas classics in the distinctive Mannheim sound.",
+    "summary": "Mannheim Steamroller's touring Christmas show: 15 musicians playing Christmas music from the group's holiday albums with multimedia effects.",
+    "status": "scheduled",
+    "tags": [
+     "holiday"
+    ],
+    "source_url": "https://themahaffey.com/show/mannheim-steamroller-christmas/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "david-foster-katharine-mcphee-2026-11-13",
+    "title": "An Intimate Evening with David Foster & Katharine McPhee",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-11-13",
+    "start": "20:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/david-foster-katharine-mcphee/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D00632CA78C251D",
+    "description": "David Foster & Katharine McPhee join forces for one unforgettable performance in St. Petersburg!",
+    "summary": "Composer and producer David Foster performs with singer and actress Katharine McPhee.",
+    "status": "scheduled",
+    "tags": [
+     "pop"
+    ],
+    "source_url": "https://themahaffey.com/show/david-foster-katharine-mcphee/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The listing marks this show 'NEW DATE'; the show page gives Friday, November 13 at 8pm. The earlier date is not stated."
+   },
+   {
+    "id": "ub40-2026-11-14",
+    "title": "UB40: The Unstoppable Tour",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-11-14",
+    "start": "20:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/ub40-the-unstoppable-tour-2/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006435D170A87C",
+    "description": "Four-time Grammy nominated UB40, one of the most successful and influential British groups of all time with more than 100 million albums sold worldwide, with trademark global #1 hits “Red Red Wine” and “(I Can't Help) Falling in Love With You”",
+    "summary": "The British reggae band UB40 plays the Mahaffey Theater on its Unstoppable Tour.",
+    "status": "scheduled",
+    "tags": [
+     "reggae"
+    ],
+    "source_url": "https://themahaffey.com/show/ub40-the-unstoppable-tour-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "a-magical-cirque-christmas-2026-11-20",
+    "title": "A Magical Cirque Christmas",
+    "kind": "family",
+    "topics": [
+     "family"
+    ],
+    "date": "2026-11-20",
+    "start": "20:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/a-magical-cirque-christmas/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064E2B4D575C9",
+    "description": "Loaded with nostalgia, comedy, music, and breathtaking cirque artistry, A Magical Cirque Christmas immerses audiences in the spirit of the season with a feel-good holiday soundtrack featuring modern takes on beloved Christmas classics.",
+    "summary": "A touring holiday variety show with acrobats, aerialists, contortionists, jugglers and a magician host, set to Christmas music.",
+    "status": "scheduled",
+    "tags": [
+     "holiday",
+     "circus"
+    ],
+    "source_url": "https://themahaffey.com/show/a-magical-cirque-christmas/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-blue-danube-and-beyond-2026-11-21",
+    "title": "The Florida Orchestra: The Blue Danube & Beyond",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-11-21",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/the-blue-danube-beyond/",
+    "tickets_url": "https://www.ticketmaster.com/the-blue-danube-beyond-st-petersburg-florida-11-21-2026/event/0D0064E2B4707547",
+    "description": "Sweep into the elegance and drama of Vienna with Assistant Conductor Chelsea Gallo.",
+    "summary": "Chelsea Gallo conducts Johann Strauss Jr.'s On the Beautiful Blue Danube, Bloch's Schelomo with TFO principal cello Yoni Draiblate, and Richard Strauss' Suite from Der Rosenkavalier.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/the-blue-danube-beyond/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "professor-brian-cox-emergence-2026-11-22",
+    "title": "Professor Brian Cox: Emergence",
+    "kind": "talk",
+    "date": "2026-11-22",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/professor-brian-cox/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D00648F9D5194AB",
+    "description": "I've loved creating Emergence – it's the most ambitious live show I've ever written.",
+    "summary": "Physicist and BBC science presenter Brian Cox presents Emergence, a live show on cosmology, biology, philosophy and history with large LED screens.",
+    "status": "scheduled",
+    "tags": [
+     "science"
+    ],
+    "source_url": "https://themahaffey.com/show/professor-brian-cox/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The description is Brian Cox's own words as quoted on the Mahaffey page."
+   },
+   {
+    "id": "beat-king-crimson-2026-11-24",
+    "title": "BEAT: Performing the Music of King Crimson",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-11-24",
+    "start": "20:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/beat/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064FE983643AD",
+    "description": "Former King Crimson members Adrian Belew and Tony Levin are joined by guitar virtuoso Steve Vai and legendary drummer Terry Bozzio to perform the music of the three landmark 1980s King Crimson albums—Discipline, Beat, and Three of a Perfect Pair.",
+    "summary": "Adrian Belew, Tony Levin, Steve Vai and Terry Bozzio play King Crimson's 1980s albums on what the page calls BEAT's last North American tour.",
+    "status": "scheduled",
+    "tags": [
+     "rock",
+     "progressive-rock"
+    ],
+    "source_url": "https://themahaffey.com/show/beat/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-nightmare-before-christmas-in-concert-2026-12-05",
+    "title": "The Florida Orchestra: Disney Tim Burton's The Nightmare Before Christmas in Concert",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-12-05",
+    "end_date": "2026-12-06",
+    "start": "19:30",
+    "occurrences": [
+     {
+      "date": "2026-12-05",
+      "start": "19:30"
+     },
+     {
+      "date": "2026-12-06",
+      "start": "14:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/disney-tim-burtons-the-nightmare-before-christmas-in-concert/",
+    "tickets_url": "https://www.ticketmaster.com/nightmare-before-christmas-st-petersburg-florida-12-05-2026/event/0D0065149FE16BDE",
+    "description": "Experience the contemporary holiday classic on the big screen in full symphonic glory with GRAMMY-winning composer Danny Elfman's musical score performed live to the film by The Florida Orchestra.",
+    "summary": "The 1993 film is screened while The Florida Orchestra plays Danny Elfman's score live.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "film-concert",
+     "holiday",
+     "film-music"
+    ],
+    "source_url": "https://themahaffey.com/show/disney-tim-burtons-the-nightmare-before-christmas-in-concert/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Sat Dec 5 at 7:30pm and Sun Dec 6 at 2pm, each on its own show page (the Dec 6 page ends in -2; tickets https://www.ticketmaster.com/nightmare-before-christmas-st-petersburg-florida-12-06-2026/event/0D006514A06A6D12)."
+   },
+   {
+    "id": "vienna-light-orchestra-christmas-2026-12-10",
+    "title": "Vienna Light Orchestra: Christmas Tour 2026",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-12-10",
+    "end_date": "2026-12-11",
+    "start": "15:00",
+    "occurrences": [
+     {
+      "date": "2026-12-10",
+      "start": "15:00"
+     },
+     {
+      "date": "2026-12-10",
+      "start": "19:00"
+     },
+     {
+      "date": "2026-12-11",
+      "start": "15:00"
+     },
+     {
+      "date": "2026-12-11",
+      "start": "19:00"
+     }
+    ],
+    "time_text": "Dec 10 and 11 at 3pm and 7pm",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/vienna-light-orchestra/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064A8BF67C179",
+    "description": "The Vienna Light Orchestra blends sweeping symphonic sound with theatrical beauty and thousands of flickering candles.",
+    "summary": "A touring candlelit Christmas concert with soprano vocalists and orchestral arrangements of holiday music; four performances over two days.",
+    "status": "scheduled",
+    "tags": [
+     "holiday",
+     "candlelight"
+    ],
+    "source_url": "https://themahaffey.com/show/vienna-light-orchestra/",
+    "also_sources": [
+     "https://themahaffey.com/show/vienna-light-orchestra-2/",
+     "https://themahaffey.com/show/vienna-light-orchestra-3/",
+     "https://themahaffey.com/show/vienna-light-orchestra-4/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Four show pages: Dec 10 3pm and 7pm, Dec 11 3pm and 7pm. The one-line description is from the Mahaffey listing page."
+   },
+   {
+    "id": "tfo-holiday-pops-2026-12-12",
+    "title": "The Florida Orchestra: Holiday Pops",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-12-12",
+    "start": "14:00",
+    "occurrences": [
+     {
+      "date": "2026-12-12",
+      "start": "14:00"
+     },
+     {
+      "date": "2026-12-12",
+      "start": "19:30"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/holiday-pops/",
+    "tickets_url": "https://www.ticketmaster.com/holiday-pops-st-petersburg-florida-12-12-2026/event/0D0064E2B6D57808",
+    "description": "Celebrate the season with family, friends, and The Florida Orchestra! Featuring holiday classics, joyful sing-alongs, and favorite festive tunes led by Chelsea Gallo.",
+    "summary": "The Florida Orchestra's holiday pops concert with sing-alongs, conducted by Chelsea Gallo; two performances.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops",
+     "holiday"
+    ],
+    "source_url": "https://themahaffey.com/show/holiday-pops/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Two show pages: 2pm (holiday-pops) and 7:30pm (holiday-pops-2; tickets https://www.ticketmaster.com/holiday-pops-st-petersburg-florida-12-12-2026/event/0D0064E2B6D7780D)."
+   },
+   {
+    "id": "jodeci-2026-12-13",
+    "title": "Jodeci: 35th Anniversary Tour of Forever My Lady",
+    "kind": "concert",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-12-13",
+    "start": "19:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/jodeci/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064F6BA6272D5",
+    "description": "Celebrating 35 years as one of the most influential R&B groups of all time, JODECI established themselves as a trendsetting force throughout the culture with their signature style, soulful harmonies, and chart-topping hits.",
+    "summary": "The R&B group Jodeci marks 35 years of its album Forever My Lady.",
+    "status": "scheduled",
+    "tags": [
+     "r-and-b"
+    ],
+    "source_url": "https://themahaffey.com/show/jodeci/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "josh-johnson-comedy-band-camp-2026-12-16",
+    "title": "Josh Johnson's Comedy Band Camp",
+    "kind": "comedy",
+    "topics": [
+     "music"
+    ],
+    "date": "2026-12-16",
+    "end_date": "2026-12-18",
+    "start": "19:00",
+    "occurrences": [
+     {
+      "date": "2026-12-16",
+      "start": "19:00"
+     },
+     {
+      "date": "2026-12-17",
+      "start": "19:00"
+     },
+     {
+      "date": "2026-12-18",
+      "start": "19:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/josh-johnson/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006489DEBEEC5C",
+    "description": "Josh Johnson's Comedy Band Camp is a stand up and live music experience that brings together all the community of being in one big band and all the nostalgia of summer camp.",
+    "summary": "Comedian Josh Johnson, a writer and rotating host on The Daily Show, performs stand-up with live music on three nights.",
+    "status": "scheduled",
+    "tags": [
+     "stand-up"
+    ],
+    "source_url": "https://themahaffey.com/show/josh-johnson/",
+    "also_sources": [
+     "https://themahaffey.com/show/josh-johnson-2/",
+     "https://themahaffey.com/show/josh-johnson-3/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Three show pages: Wed Dec 16 (josh-johnson-3), Thu Dec 17 (josh-johnson-2), Fri Dec 18 (josh-johnson), all at 7pm."
+   },
+   {
+    "id": "tfo-classical-christmas-2026-12-19",
+    "title": "The Florida Orchestra: Classical Christmas",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-12-19",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/classical-christmas/",
+    "tickets_url": "https://www.ticketmaster.com/classical-christmas-st-petersburg-florida-12-19-2026/event/0D006513CCBDCB43",
+    "description": "Michael Francis leads The Florida Orchestra in a celebration filled with joy, wonder and the timeless music of the holidays.",
+    "summary": "Holiday concert with baritone Alex Boyd, the Master Chorale of Tampa Bay and Lumina Youth Choir: Bach's Christmas Oratorio, Handel's Hallelujah Chorus, The Nutcracker and carols.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "family-concert",
+     "holiday"
+    ],
+    "source_url": "https://themahaffey.com/show/classical-christmas/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "a-very-broadway-christmas-2026-12-20",
+    "title": "A Very Broadway Christmas",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2026-12-20",
+    "start": "13:00",
+    "occurrences": [
+     {
+      "date": "2026-12-20",
+      "start": "13:00"
+     },
+     {
+      "date": "2026-12-20",
+      "start": "17:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/a-very-broadway-christmas/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064C3A7689481",
+    "description": "Celebrate the season with A Very Broadway Christmas, a high-energy theatrical production featuring stars from some of Broadway's most iconic shows, including Wicked, Matilda, Annie, Motown, The Phantom of the Opera, The Book of Mormon, Beautiful, and more.",
+    "summary": "A holiday revue presented by Broadway on the Bay, with Broadway vocalists, a live band, dancers and an appearance by Santa Claus; shows at 1pm and 5pm.",
+    "status": "scheduled",
+    "tags": [
+     "holiday",
+     "broadway"
+    ],
+    "source_url": "https://themahaffey.com/show/a-very-broadway-christmas/",
+    "also_sources": [
+     "https://themahaffey.com/show/a-very-broadway-christmas-2/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "nutcracker-magical-christmas-ballet-2026-12-27",
+    "title": "Nutcracker! Magical Christmas Ballet",
+    "kind": "dance",
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "date": "2026-12-27",
+    "start": "12:00",
+    "occurrences": [
+     {
+      "date": "2026-12-27",
+      "start": "12:00"
+     },
+     {
+      "date": "2026-12-27",
+      "start": "16:00"
+     },
+     {
+      "date": "2026-12-27",
+      "start": "20:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/nutcracker-12-2/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006473A3D4C2D2",
+    "description": "Make this the Christmas they'll never forget with NUTCRACKER! Magical Christmas Ballet.",
+    "summary": "A touring Nutcracker with international dancers, acrobatics and large puppets; three performances on Dec 27.",
+    "status": "scheduled",
+    "tags": [
+     "holiday",
+     "ballet"
+    ],
+    "source_url": "https://themahaffey.com/show/nutcracker-12-2/",
+    "also_sources": [
+     "https://themahaffey.com/show/nutcracker-4-2/",
+     "https://themahaffey.com/show/nutcracker-8-2/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The page calls it 'the largest Nutcracker production in North America' (promoter claim, not repeated in the summary)."
+   },
+   {
+    "id": "john-oliver-2026-12-29",
+    "title": "John Oliver Live",
+    "kind": "comedy",
+    "date": "2026-12-29",
+    "start": "19:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/john-oliver/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D006506A79855F3",
+    "description": "On his occasional breaks from television, John returns to his first love of stand-up, performing to sold-out venues around the world.",
+    "summary": "Stand-up from John Oliver, host of HBO's Last Week Tonight.",
+    "status": "scheduled",
+    "tags": [
+     "stand-up"
+    ],
+    "source_url": "https://themahaffey.com/show/john-oliver/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "cinderella-united-european-ballet-2027-01-03",
+    "title": "Cinderella by The United European Ballet Company",
+    "kind": "dance",
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "date": "2027-01-03",
+    "start": "16:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/cinderella-2/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064B6D044CB65",
+    "description": "This enchanting production by the United European Ballet tells the timeless story of a kind and gentle young woman whose courage, grace, and belief in love lead her from a life of hardship to a royal ball and a dream come true.",
+    "summary": "A touring ballet of Cinderella set to Prokofiev's score.",
+    "status": "scheduled",
+    "tags": [
+     "ballet"
+    ],
+    "source_url": "https://themahaffey.com/show/cinderella-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-soul-sisters-2027-01-08",
+    "title": "The Florida Orchestra: Soul Sisters",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-01-08",
+    "end_date": "2027-01-09",
+    "start": "19:30",
+    "occurrences": [
+     {
+      "date": "2027-01-08",
+      "start": "19:30"
+     },
+     {
+      "date": "2027-01-09",
+      "start": "19:30"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/soul-sisters/",
+    "tickets_url": "https://www.ticketmaster.com/soul-sisters-st-petersburg-florida-01-08-2027/event/0D0064E2B75178A6",
+    "description": "All hail the legendary divas of soul and blues who defined a generation, including Whitney Houston, Chaka Khan, Aretha Franklin, Mariah Carey and more.",
+    "summary": "A Raymond James Pops concert of songs by Aretha Franklin, Whitney Houston and other soul and R&B singers, with vocalist Shayna Steele and conductor Herb Smith.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops"
+    ],
+    "source_url": "https://themahaffey.com/show/soul-sisters/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Two show pages: Fri Jan 8 and Sat Jan 9, both 7:30pm (the Jan 9 header reads 'SATURDAY, JANUARY SAT 7:30PM'; its body says Saturday, January 9 at 7:30pm)."
+   },
+   {
+    "id": "tfo-tchaikovsky-romeo-and-juliet-2027-01-16",
+    "title": "The Florida Orchestra: Tchaikovsky's Romeo and Juliet",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-01-16",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/tchalkovskys-romeo-juliet/",
+    "tickets_url": "https://www.ticketmaster.com/tchaikovskys-romeo-and-juliet-st-petersburg-florida-01-16-2027/event/0D0064E2B7C4793D",
+    "description": "Love can make you crazy — in the best and worst ways.",
+    "summary": "JoAnn Falletta conducts Wagner's Prelude and Liebestod, Joan Tower's Piano Concerto with Joyce Yang, Schmitt's Antoine et Cléopâtre and Tchaikovsky's Romeo and Juliet.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/tchalkovskys-romeo-juliet/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "kathleen-madigan-2027-01-23",
+    "title": "Kathleen Madigan: Flying Cats Tour",
+    "kind": "comedy",
+    "date": "2027-01-23",
+    "start": "16:00",
+    "occurrences": [
+     {
+      "date": "2027-01-23",
+      "start": "16:00"
+     },
+     {
+      "date": "2027-01-23",
+      "start": "19:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/kathleen-madigan/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D00650C98BF4A67",
+    "description": "Coming from a long line of Midwestern union workers, Madigan has always approached stand-up as a job, and by doing so has established herself as one of the most successful road comics ever as her career continues to explode.",
+    "summary": "Stand-up comedian Kathleen Madigan plays two shows, at 4pm and 7pm.",
+    "status": "scheduled",
+    "tags": [
+     "stand-up"
+    ],
+    "source_url": "https://themahaffey.com/show/kathleen-madigan/",
+    "also_sources": [
+     "https://themahaffey.com/show/kathleen-madigan-2/",
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The 4pm show (kathleen-madigan-2) was added later; tickets https://www.ticketmaster.com/event/0D00651FCC6693F8."
+   },
+   {
+    "id": "tfo-wonderful-music-of-oz-2027-01-24",
+    "title": "The Florida Orchestra: The Wonderful Music of Oz",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "family"
+    ],
+    "date": "2027-01-24",
+    "start": "14:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/the-wonderul-music-of-oz/",
+    "tickets_url": "https://www.ticketmaster.com/music-of-oz-st-petersburg-florida-01-24-2027/event/0D0064E2B7F97999",
+    "description": "Relive all the music of Oz in one concert, including Broadway (Wicked, The Wiz), Hollywood (The Wizard of Oz) and radio hits (Goodbye Yellow Brick Road).",
+    "summary": "A Raymond James Pops concert of music from Wicked, The Wiz and The Wizard of Oz, conducted by Chelsea Gallo.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops"
+    ],
+    "source_url": "https://themahaffey.com/show/the-wonderul-music-of-oz/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "shen-yun-mahaffey-2027-01-29",
+    "title": "Shen Yun",
+    "kind": "dance",
+    "topics": [
+     "arts"
+    ],
+    "date": "2027-01-29",
+    "end_date": "2027-01-31",
+    "start": "19:30",
+    "occurrences": [
+     {
+      "date": "2027-01-29",
+      "start": "19:30"
+     },
+     {
+      "date": "2027-01-30",
+      "start": "14:00"
+     },
+     {
+      "date": "2027-01-30",
+      "start": "19:30"
+     },
+     {
+      "date": "2027-01-31",
+      "start": "14:00"
+     }
+    ],
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/shen-yun/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D00651FCDBB9646",
+    "description": "These profound narratives are brought to life through classical Chinese dance—an ancient art form preserved among the people and refined over millennia within imperial courts and classical drama.",
+    "summary": "The New York-based Shen Yun company performs classical Chinese dance with a live orchestra and projected backdrops; four performances.",
+    "status": "scheduled",
+    "tags": [
+     "chinese-dance"
+    ],
+    "source_url": "https://themahaffey.com/show/shen-yun/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-come-swing-with-me-2027-02-13",
+    "title": "The Florida Orchestra: Come Swing With Me",
+    "kind": "concert",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-02-13",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/come-swing-with-me/",
+    "tickets_url": "https://www.ticketmaster.com/come-swing-with-me-st-petersburg-florida-02-13-2027/event/0D0064E2B8977A7C",
+    "description": "Hit the Vegas strip of the 1950s – where swing is the thing and a well-poured martini is never far away.",
+    "summary": "A Raymond James Pops concert of Great American Songbook standards from Frank Sinatra to Bobby Darin, with crooner Paul Loren and conductor Jeff Tyzik.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "pops"
+    ],
+    "source_url": "https://themahaffey.com/show/come-swing-with-me/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "tfo-mahler-symphony-1-2027-02-20",
+    "title": "The Florida Orchestra: Mahler's Symphony No. 1",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-02-20",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/mahlers-symphony-no-1/",
+    "tickets_url": "https://www.ticketmaster.com/mahlers-symphony-no-1-st-petersburg-florida-02-20-2027/event/0D0064E2B9147B30",
+    "description": "Under Michael Francis, this program goes from light and playful to truly epic.",
+    "summary": "Michael Francis conducts Mozart's Abduction from the Seraglio overture, Noah Bendix-Balgley's Klezmer concerto with the composer as soloist, and Mahler's Symphony No. 1.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/mahlers-symphony-no-1/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "tfo-brahms-piano-concerto-2-2027-02-27",
+    "title": "The Florida Orchestra: Brahms' Piano Concerto No. 2",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-02-27",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/brahhms-piano-concerto-no-2/",
+    "tickets_url": "https://www.ticketmaster.com/brahms-piano-concerto-no-2-st-petersburg-florida-02-27-2027/event/0D0064E2B9417B77",
+    "description": "Michael Francis leads music that flexes its muscles and shows its heart.",
+    "summary": "Michael Francis conducts Beethoven's complete Egmont music with soprano Yulia Van Doren and Brahms' Piano Concerto No. 2 with pianist Tzimon Barto.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/brahhms-piano-concerto-no-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "swan-lake-international-ballet-stars-2027-03-01",
+    "title": "Swan Lake by International Ballet Stars",
+    "kind": "dance",
+    "topics": [
+     "arts"
+    ],
+    "date": "2027-03-01",
+    "start": "19:00",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/swan-lake-2/",
+    "tickets_url": "https://www.ticketmaster.com/event/0D0064ADB0779C12",
+    "description": "International Ballet Stars returns with a breathtaking production set to Tchaikovsky's iconic score and performed by a world-class international cast representing four continents.",
+    "summary": "A touring Swan Lake in two acts, about 2 hours 15 minutes with one intermission, directed by former San Francisco Ballet principal Artem Yachmennikov.",
+    "status": "scheduled",
+    "tags": [
+     "ballet"
+    ],
+    "source_url": "https://themahaffey.com/show/swan-lake-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tfo-beethoven-fidelio-in-concert-2027-03-20",
+    "title": "The Florida Orchestra: Beethoven's Fidelio in Concert",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-03-20",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/beethovens-fidelio-in-concert/",
+    "tickets_url": "https://www.ticketmaster.com/beethovens-fidelio-in-concert-st-petersburg-florida-03-20-2027/event/0D0064E2B9757BCE",
+    "description": "No sets. No costumes. Just music. And it's more than enough. Michael Francis leads Beethoven's Fidelio in concert, stripping the opera down to its core.",
+    "summary": "A concert performance of Beethoven's only opera with tenor Stuart Skelton, soprano Christina Major, other soloists and the Master Chorale of Tampa Bay, conducted by Michael Francis.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks",
+     "opera"
+    ],
+    "source_url": "https://themahaffey.com/show/beethovens-fidelio-in-concert/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "tfo-rachmaninoff-symphony-2-2027-04-17",
+    "title": "The Florida Orchestra: Rachmaninoff's Symphony No. 2",
+    "kind": "classical",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2027-04-17",
+    "start": "19:30",
+    "place": "mahaffey-theater",
+    "area": "downtown-stpete",
+    "url": "https://themahaffey.com/show/rachmaninoffs-symphony-no-2/",
+    "tickets_url": "https://www.ticketmaster.com/rachmaninoffs-symphony-no2-st-petersburg-florida-04-17-2027/event/0D0064E2BA377CA7",
+    "description": "Michael Francis leads a night that stretches from front-porch energy to full-on symphonic sweep.",
+    "summary": "Violinist Tessa Lark plays Michael Torke's Sky Violin Concerto, then Michael Francis conducts Rachmaninoff's Symphony No. 2.",
+    "status": "scheduled",
+    "tags": [
+     "florida-orchestra",
+     "masterworks"
+    ],
+    "source_url": "https://themahaffey.com/show/rachmaninoffs-symphony-no-2/",
+    "also_sources": [
+     "https://themahaffey.com/shows-and-events/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   }
+  ]
+ },
+ "report": "Work in progress: concerts, Broadway and theater seasons, orchestra, comedy and touring shows at the major Tampa Bay venues, Sep 28, 2026 - Apr 30, 2027. The full report is written at the end of the slice."
+}

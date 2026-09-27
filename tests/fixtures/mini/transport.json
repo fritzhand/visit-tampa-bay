@@ -1,0 +1,46 @@
+[
+  {
+    "id": "teco-line-streetcar",
+    "name": "TECO Line Streetcar",
+    "mode": "streetcar",
+    "operator": "HART",
+    "regions": [
+      "tampa"
+    ],
+    "is_free": true,
+    "summary": "Fixture transport record.",
+    "stops": [
+      {
+        "name": "Centennial Park",
+        "area": "ybor-city"
+      },
+      {
+        "name": "Channelside",
+        "place": "florida-aquarium"
+      }
+    ],
+    "source_url": "https://www.tecolinestreetcar.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "cross-bay-ferry",
+    "name": "Cross-Bay Ferry",
+    "mode": "ferry",
+    "regions": [
+      "tampa",
+      "stpete"
+    ],
+    "season_text": "Fixture: seasonal",
+    "summary": "Fixture transport record.",
+    "stops": [
+      {
+        "name": "St. Pete Pier",
+        "place": "st-pete-pier"
+      }
+    ],
+    "source_url": "https://crossbayferry.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "status": "open",
+    "summary": "Fixture record: Pirate Water Taxi.",
+    "id": "pirate-water-taxi",
+    "name": "Pirate Water Taxi",
+    "operator": "Pirate Water Taxi",
+    "kind": "water-taxi",
+    "topics": [
+      "water"
+    ],
+    "area": "downtown-tampa",
+    "departs_place": "tampa-riverwalk",
+    "departs_text": "Stops along the Tampa Riverwalk",
+    "price_text": "Fixture price text",
+    "source_url": "https://www.piratewatertaxi.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "open",
+    "summary": "Fixture record: Ybor City walking tour.",
+    "id": "ybor-city-walking-tour",
+    "name": "Ybor City walking tour",
+    "operator": "Ybor City Museum State Park",
+    "kind": "walking-tour",
+    "topics": [
+      "history",
+      "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "departs_place": "ybor-city-museum-state-park",
+    "duration_text": "Fixture duration text",
+    "source_url": "https://www.floridastateparks.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "seasonal",
+    "summary": "Fixture record: Pier dolphin cruise.",
+    "id": "st-pete-pier-dolphin-cruise",
+    "name": "Pier dolphin cruise",
+    "operator": "Fixture Cruises",
+    "kind": "dolphin-tour",
+    "topics": [
+      "water",
+      "wildlife"
+    ],
+    "area": "downtown-stpete",
+    "departs_place": "st-pete-pier",
+    "status_note": "Fixture: runs in season.",
+    "source_url": "https://stpetepier.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

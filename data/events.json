@@ -1,0 +1,168 @@
+[
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Riverwalk Evening Concert.",
+    "id": "riverwalk-concert-2026-10-02",
+    "title": "Riverwalk Evening Concert",
+    "kind": "concert",
+    "topics": [
+      "music"
+    ],
+    "place": "curtis-hixon-waterfront-park",
+    "date": "2026-10-02",
+    "start": "18:00",
+    "end": "21:00",
+    "is_free": true,
+    "featured": true,
+    "description": "Fixture description, quoted from the source.",
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Lightning home game.",
+    "id": "lightning-home-game-2026-10-10",
+    "title": "Lightning home game",
+    "kind": "sports",
+    "topics": [
+      "sports"
+    ],
+    "location_text": "Amalie Arena",
+    "date": "2026-10-10",
+    "start": "19:00",
+    "cost": "Fixture cost text",
+    "is_free": false,
+    "tickets_url": "https://www.nhl.com/lightning/tickets",
+    "source_url": "https://www.nhl.com/lightning/schedule",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Guavaween.",
+    "id": "guavaween-2026",
+    "title": "Guavaween",
+    "kind": "festival",
+    "topics": [
+      "nightlife"
+    ],
+    "location_text": "Seventh Avenue, Ybor City",
+    "area": "ybor-city",
+    "date": "2026-10-24",
+    "start": "16:00",
+    "end": "23:00",
+    "time_text": "Fixture: gates open at 4 p.m.",
+    "source_url": "https://www.ybor.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Saturday Morning Market.",
+    "id": "saturday-morning-market-2026-10",
+    "title": "Saturday Morning Market",
+    "kind": "market",
+    "topics": [
+      "food",
+      "shopping"
+    ],
+    "series": "saturday-morning-market",
+    "location_text": "Downtown St. Petersburg",
+    "area": "downtown-stpete",
+    "date": "2026-10-03",
+    "end_date": "2026-10-17",
+    "occurrences": [
+      {
+        "date": "2026-10-03",
+        "start": "09:00",
+        "end": "14:00"
+      },
+      {
+        "date": "2026-10-10",
+        "start": "09:00",
+        "end": "14:00"
+      },
+      {
+        "date": "2026-10-17",
+        "start": "09:00",
+        "end": "14:00"
+      }
+    ],
+    "is_free": true,
+    "source_url": "https://saturdaymorningmarket.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Florida State Fair.",
+    "id": "florida-state-fair-2027",
+    "title": "Florida State Fair",
+    "kind": "fair",
+    "topics": [
+      "family",
+      "food"
+    ],
+    "location_text": "Florida State Fairgrounds",
+    "area": "east-tampa",
+    "lat": 27.9855,
+    "lng": -82.3665,
+    "date": "2027-02-05",
+    "end_date": "2027-02-16",
+    "start": "10:00",
+    "end": "22:00",
+    "featured": true,
+    "source_url": "https://www.floridastatefair.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Fixture exhibition at the Dalí.",
+    "id": "dali-fixture-exhibition-2026",
+    "title": "Fixture exhibition at the Dalí",
+    "kind": "exhibition",
+    "topics": [
+      "arts"
+    ],
+    "place": "dali-museum",
+    "date": "2026-10-03",
+    "end_date": "2027-01-10",
+    "time_text": "During museum hours",
+    "source_url": "https://thedali.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "scheduled",
+    "summary": "Fixture event: Gasparilla Pirate Fest.",
+    "id": "gasparilla-pirate-fest-2027",
+    "title": "Gasparilla Pirate Fest",
+    "kind": "parade",
+    "topics": [
+      "family"
+    ],
+    "series": "gasparilla-pirate-fest",
+    "place": "bayshore-boulevard",
+    "date": "2027-01-30",
+    "start": "14:00",
+    "featured": true,
+    "source_url": "https://gasparillapiratefest.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "status": "cancelled",
+    "summary": "Fixture event: Riverwalk holiday boat parade.",
+    "id": "riverwalk-boat-parade-2026-12-12",
+    "title": "Riverwalk holiday boat parade",
+    "kind": "holiday",
+    "place": "tampa-riverwalk",
+    "date": "2026-12-12",
+    "start": "18:30",
+    "source_url": "https://thetampariverwalk.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: The Vinoy Resort & Golf Club, Autograph Collection.",
+    "id": "the-vinoy",
+    "name": "The Vinoy Resort & Golf Club, Autograph Collection",
+    "aliases": [
+      "The Vinoy"
+    ],
+    "kind": "historic-hotel",
+    "brand": "Marriott",
+    "collection": "Autograph Collection",
+    "area": "downtown-stpete",
+    "address": "501 5th Ave NE",
+    "city": "St. Petersburg",
+    "zip": "33701",
+    "lat": 27.7784,
+    "lng": -82.6297,
+    "features": [
+      "waterfront",
+      "pool",
+      "spa",
+      "golf",
+      "marina",
+      "historic"
+    ],
+    "heritage": {
+      "built": "1925",
+      "era": "land-boom",
+      "designations": [
+        {
+          "name": "National Register of Historic Places",
+          "year": 1978
+        }
+      ],
+      "story": "Fixture heritage story for a historic hotel.",
+      "sources": [
+        "https://www.marriott.com/"
+      ]
+    },
+    "source_url": "https://www.marriott.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Tampa Marriott Water Street.",
+    "id": "tampa-marriott-water-street",
+    "name": "Tampa Marriott Water Street",
+    "kind": "hotel",
+    "brand": "Marriott",
+    "area": "channel-district",
+    "address": "505 Water St",
+    "city": "Tampa",
+    "zip": "33602",
+    "lat": 27.9423,
+    "lng": -82.4545,
+    "features": [
+      "pool",
+      "fitness",
+      "restaurant",
+      "bay-view"
+    ],
+    "source_url": "https://www.marriott.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Hotel Haya.",
+    "id": "hotel-haya",
+    "name": "Hotel Haya",
+    "kind": "boutique-hotel",
+    "area": "ybor-city",
+    "address": "1412 E 7th Ave",
+    "city": "Tampa",
+    "zip": "33605",
+    "lat": 27.9603,
+    "lng": -82.4436,
+    "features": [
+      "pool",
+      "restaurant"
+    ],
+    "source_url": "https://www.hotelhaya.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Epicurean Hotel.",
+    "id": "epicurean-hotel",
+    "name": "Epicurean Hotel",
+    "kind": "boutique-hotel",
+    "brand": "Marriott",
+    "collection": "Autograph Collection",
+    "area": "hyde-park",
+    "address": "1207 S Howard Ave",
+    "city": "Tampa",
+    "zip": "33606",
+    "lat": 27.9337,
+    "lng": -82.4829,
+    "features": [
+      "rooftop-bar",
+      "restaurant",
+      "spa"
+    ],
+    "source_url": "https://www.epicureanhotel.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

@@ -1,0 +1,351 @@
+[
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Tampa Theatre.",
+    "id": "tampa-theatre",
+    "name": "Tampa Theatre",
+    "kind": "performing-arts",
+    "kinds": [
+      "historic-site"
+    ],
+    "topics": [
+      "arts",
+      "history"
+    ],
+    "area": "downtown-tampa",
+    "address": "711 N Franklin St",
+    "city": "Tampa",
+    "zip": "33602",
+    "lat": 27.9497,
+    "lng": -82.4588,
+    "url": "https://tampatheatre.org/",
+    "heritage": {
+      "built": "1926",
+      "architect": "John Eberson",
+      "style": "Atmospheric theatre",
+      "era": "land-boom",
+      "designations": [
+        {
+          "name": "National Register of Historic Places",
+          "year": 1978
+        }
+      ],
+      "story": "Fixture heritage story for the build tests.",
+      "visiting": "Fixture: films and tours.",
+      "sources": [
+        "https://tampatheatre.org/"
+      ]
+    },
+    "source_url": "https://tampatheatre.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Henry B. Plant Museum.",
+    "id": "henry-b-plant-museum",
+    "name": "Henry B. Plant Museum",
+    "kind": "museum",
+    "kinds": [
+      "historic-site"
+    ],
+    "topics": [
+      "history"
+    ],
+    "area": "downtown-tampa",
+    "address": "401 W Kennedy Blvd",
+    "city": "Tampa",
+    "zip": "33606",
+    "lat": 27.946,
+    "lng": -82.464,
+    "url": "https://www.plantmuseum.com/",
+    "heritage": {
+      "built": "1888–1891",
+      "era": "boomtown",
+      "designations": [
+        {
+          "name": "National Historic Landmark",
+          "year": 1976,
+          "url": "https://www.nps.gov/subjects/nationalhistoriclandmarks/index.htm"
+        }
+      ],
+      "story": "Fixture heritage story: the former Tampa Bay Hotel.",
+      "sources": [
+        "https://www.plantmuseum.com/"
+      ]
+    },
+    "source_url": "https://www.plantmuseum.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: The Florida Aquarium.",
+    "id": "florida-aquarium",
+    "name": "The Florida Aquarium",
+    "aliases": [
+      "Florida Aquarium"
+    ],
+    "kind": "aquarium",
+    "topics": [
+      "family",
+      "wildlife",
+      "water"
+    ],
+    "area": "channel-district",
+    "address": "701 Channelside Dr",
+    "city": "Tampa",
+    "zip": "33602",
+    "lat": 27.944,
+    "lng": -82.4453,
+    "signature": true,
+    "url": "https://www.flaquarium.org/",
+    "hours_text": "Fixture hours text",
+    "price_text": "Fixture price text",
+    "source_url": "https://www.flaquarium.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Benchmark International Arena.",
+    "id": "benchmark-international-arena",
+    "name": "Benchmark International Arena",
+    "aliases": [
+      "Amalie Arena"
+    ],
+    "kind": "arena-stadium",
+    "topics": [
+      "sports",
+      "music"
+    ],
+    "area": "channel-district",
+    "address": "401 Channelside Dr",
+    "city": "Tampa",
+    "zip": "33602",
+    "lat": 27.9427,
+    "lng": -82.4519,
+    "source_url": "https://www.benchmarkintlarena.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Tampa Riverwalk.",
+    "id": "tampa-riverwalk",
+    "name": "Tampa Riverwalk",
+    "kind": "waterfront",
+    "kinds": [
+      "trail"
+    ],
+    "topics": [
+      "outdoors",
+      "water"
+    ],
+    "area": "downtown-tampa",
+    "city": "Tampa",
+    "lat": 27.9486,
+    "lng": -82.461,
+    "is_free": true,
+    "source_url": "https://thetampariverwalk.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Curtis Hixon Waterfront Park.",
+    "id": "curtis-hixon-waterfront-park",
+    "name": "Curtis Hixon Waterfront Park",
+    "kind": "park",
+    "topics": [
+      "outdoors",
+      "family"
+    ],
+    "area": "downtown-tampa",
+    "address": "600 N Ashley Dr",
+    "city": "Tampa",
+    "zip": "33602",
+    "lat": 27.951,
+    "lng": -82.461,
+    "is_free": true,
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Columbia Restaurant.",
+    "id": "columbia-restaurant-ybor-city",
+    "name": "Columbia Restaurant",
+    "kind": "restaurant",
+    "topics": [
+      "food",
+      "latin-heritage",
+      "history"
+    ],
+    "tags": [
+      "historic-restaurant"
+    ],
+    "area": "ybor-city",
+    "address": "2117 E 7th Ave",
+    "city": "Tampa",
+    "zip": "33605",
+    "lat": 27.9602,
+    "lng": -82.4368,
+    "url": "https://www.columbiarestaurant.com/",
+    "source_url": "https://www.columbiarestaurant.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Ybor City Museum State Park.",
+    "id": "ybor-city-museum-state-park",
+    "name": "Ybor City Museum State Park",
+    "kind": "museum",
+    "kinds": [
+      "state-park"
+    ],
+    "topics": [
+      "history",
+      "latin-heritage"
+    ],
+    "area": "ybor-city",
+    "address": "1818 E 9th Ave",
+    "city": "Tampa",
+    "zip": "33605",
+    "lat": 27.9622,
+    "lng": -82.4387,
+    "source_url": "https://www.floridastateparks.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Bayshore Boulevard.",
+    "id": "bayshore-boulevard",
+    "name": "Bayshore Boulevard",
+    "kind": "trail",
+    "topics": [
+      "outdoors"
+    ],
+    "area": "hyde-park",
+    "city": "Tampa",
+    "lat": 27.929,
+    "lng": -82.487,
+    "is_free": true,
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: The Dalí Museum.",
+    "id": "dali-museum",
+    "name": "The Dalí Museum",
+    "aliases": [
+      "Dali Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+      "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "1 Dali Blvd",
+    "city": "St. Petersburg",
+    "zip": "33701",
+    "lat": 27.7659,
+    "lng": -82.6314,
+    "signature": true,
+    "source_url": "https://thedali.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: St. Pete Pier.",
+    "id": "st-pete-pier",
+    "name": "St. Pete Pier",
+    "kind": "pier",
+    "topics": [
+      "outdoors",
+      "water",
+      "family"
+    ],
+    "area": "downtown-stpete",
+    "address": "600 2nd Ave NE",
+    "city": "St. Petersburg",
+    "zip": "33701",
+    "lat": 27.7735,
+    "lng": -82.623,
+    "is_free": true,
+    "source_url": "https://stpetepier.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "open",
+    "summary": "Fixture record: Sunken Gardens.",
+    "id": "sunken-gardens",
+    "name": "Sunken Gardens",
+    "kind": "garden",
+    "topics": [
+      "outdoors"
+    ],
+    "area": "old-northeast",
+    "address": "1825 4th St N",
+    "city": "St. Petersburg",
+    "zip": "33704",
+    "lat": 27.7894,
+    "lng": -82.6383,
+    "source_url": "https://www.stpete.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "state": "FL",
+    "geo_source": "manual",
+    "status": "temporarily-closed",
+    "summary": "Fixture record: Tropicana Field.",
+    "id": "tropicana-field",
+    "name": "Tropicana Field",
+    "kind": "arena-stadium",
+    "topics": [
+      "sports"
+    ],
+    "area": "grand-central",
+    "address": "1 Tropicana Dr",
+    "city": "St. Petersburg",
+    "zip": "33705",
+    "lat": 27.7682,
+    "lng": -82.6534,
+    "status_note": "Fixture status note: roof damaged by Hurricane Milton (October 2024).",
+    "source_url": "https://www.mlb.com/rays",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

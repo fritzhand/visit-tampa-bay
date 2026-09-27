@@ -1,0 +1,2063 @@
+{
+  "slice": "venues-bay",
+  "checked": "2026-09-27",
+  "records": {
+    "places": [
+      {
+        "id": "benchmark-international-arena",
+        "name": "Benchmark International Arena",
+        "aliases": [
+          "Amalie Arena",
+          "Tampa Bay Times Forum",
+          "St. Pete Times Forum",
+          "Ice Palace"
+        ],
+        "kind": "arena-stadium",
+        "kinds": [
+          "music-venue"
+        ],
+        "topics": [
+          "sports",
+          "music"
+        ],
+        "area": "channel-district",
+        "address": "401 Channelside Drive",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.942704,
+        "lng": -82.45189,
+        "geo_source": "photon",
+        "url": "https://www.benchmarkintlarena.com/",
+        "summary": "Indoor arena in Tampa's Channel District and the home of the Tampa Bay Lightning (NHL); it also books arena concerts and touring shows. It opened in 1996 as the Ice Palace and was called Amalie Arena from 2014 until it was renamed in August 2025.",
+        "status": "open",
+        "signature": true,
+        "source_url": "https://www.benchmarkintlarena.com/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Benchmark_International_Arena",
+          "https://www.espn.com/nhl/story/_/id/45967335/lightning-home-renamed-benchmark-international-arena"
+        ],
+        "notes": "Official site gives the address and the event calendar; the history (opened Oct 20, 1996; names Ice Palace 1996-2002, St. Pete Times Forum, Tampa Bay Times Forum, Amalie Arena 2014-2025; renamed Aug 13, 2025) is from Wikipedia. The arena-info pages returned a bot challenge (HTTP 202) to curl and an empty page to WebFetch.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "raymond-james-stadium",
+        "name": "Raymond James Stadium",
+        "aliases": [
+          "Ray Jay"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports",
+          "music"
+        ],
+        "area": "west-tampa",
+        "address": "4201 N Dale Mabry Highway",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33607",
+        "lat": 27.975979,
+        "lng": -82.503354,
+        "geo_source": "photon",
+        "url": "https://raymondjamesstadium.com/",
+        "summary": "Open-air stadium on North Dale Mabry Highway, home of the Tampa Bay Buccaneers and USF Bulls football, and host of the ReliaQuest Bowl, the Gasparilla Bowl, Monster Jam and stadium concerts. It is managed by the Tampa Sports Authority and has a replica pirate ship in the north end zone.",
+        "status": "open",
+        "signature": true,
+        "source_url": "https://raymondjamesstadium.com/stadium-info",
+        "also_sources": [
+          "https://raymondjamesstadium.com/tampasportsauthority",
+          "https://en.wikipedia.org/wiki/Raymond_James_Stadium"
+        ],
+        "notes": "Official pages list tenants and events (Buccaneers, USF Bulls, ReliaQuest Bowl, Gasparilla Bowl, Monster Jam, Breakaway Music Festival) and that TSA manages it; address, opening (Sep 20, 1998), Super Bowls XXXV, XLIII, LV and the 103-ft pirate ship are from Wikipedia. The official site offers stadium tours (/stadiumtours).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "george-m-steinbrenner-field",
+        "name": "George M. Steinbrenner Field",
+        "aliases": [
+          "Steinbrenner Field",
+          "Legends Field"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports",
+          "music"
+        ],
+        "area": "west-tampa",
+        "address": "1 Steinbrenner Drive",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33614",
+        "lat": 27.980165,
+        "lng": -82.506654,
+        "geo_source": "photon",
+        "url": "https://www.mlb.com/yankees/spring-training/ballpark",
+        "summary": "Baseball park on North Dale Mabry Highway, the spring training home of the New York Yankees and the summer home of their minor-league affiliate, the Tampa Tarpons. The Tampa Bay Rays played their 2025 home games here while Tropicana Field was repaired.",
+        "quote": "Steinbrenner Field is also a year round special events venue hosting concerts, baseball tournaments, corporate events, and more.",
+        "status": "open",
+        "parking_text": "Event parking is in the General lot east of Dale Mabry Highway, entered from Martin Luther King Jr. Boulevard; fans cross Dale Mabry at the crosswalk.",
+        "source_url": "https://www.mlb.com/yankees/spring-training/ballpark",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/George_M._Steinbrenner_Field"
+        ],
+        "notes": "Official page: built in 1996, 31-acre complex, spring home of the Yankees, summer home of the Tampa Tarpons, address. Rays 2025 season from Wikipedia (and the WUSF article cited on tropicana-field). Former name Legends Field (1996-2008) from Wikipedia.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tropicana-field",
+        "name": "Tropicana Field",
+        "aliases": [
+          "The Trop"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "grand-central",
+        "address": "1 Tropicana Drive",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33705",
+        "lat": 27.768056,
+        "lng": -82.653275,
+        "geo_source": "photon",
+        "url": "https://www.mlb.com/rays/ballpark",
+        "summary": "Domed ballpark in St. Petersburg and the home of the Tampa Bay Rays. Hurricane Milton tore off most of its roof in October 2024; the Rays played 2025 at Steinbrenner Field in Tampa and returned to the repaired Trop for the 2026 season.",
+        "status": "open",
+        "status_note": "Reopened for the 2026 MLB season after roof repairs following Hurricane Milton (Oct 2024), per WUSF (Apr 5, 2026) and Wikipedia.",
+        "signature": true,
+        "source_url": "https://www.mlb.com/rays/ballpark",
+        "also_sources": [
+          "https://www.wusf.org/sports/2026-04-05/after-18-months-away-the-rays-embrace-their-return-to-a-repaired-tropicana-field",
+          "https://en.wikipedia.org/wiki/Tropicana_Field"
+        ],
+        "notes": "MLB page gives the address. WUSF: winds ripped off most of the roof; city spent nearly $60 million on repairs; the Rays' new ownership plans a new ballpark on Hillsborough College's Dale Mabry campus; the Trop lease runs through 2028. Opened March 3, 1990 (Wikipedia).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "suncoast-credit-union-field",
+        "name": "Suncoast Credit Union Field",
+        "aliases": [
+          "Riverfront Stadium"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "west-tampa",
+        "address": "1701 N Boulevard",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33607",
+        "lat": 27.958499,
+        "lng": -82.466263,
+        "geo_source": "photon",
+        "url": "https://www.tampabaysunfc.com/matchday/parking-directions/",
+        "summary": "Soccer and football stadium on the Hillsborough River at Blake High School, the home ground of the Tampa Bay Sun, the region's USL Super League women's pro soccer team. It was called Riverfront Stadium before the naming-rights deal.",
+        "price_text": "Match day parking $20 (cashless); lots open 3 hours before kickoff.",
+        "parking_text": "Match day parking is $20, cashless, in lots that open 3 hours before kickoff; passes can be bought in advance in the SeatGeek app.",
+        "status": "open",
+        "source_url": "https://www.tampabaysunfc.com/matchday/parking-directions/",
+        "also_sources": [
+          "https://www.tampabaysunfc.com/schedule/",
+          "https://en.wikipedia.org/wiki/Suncoast_Credit_Union_Field"
+        ],
+        "notes": "Sun FC site gives the address and parking; the 2026 schedule lists home matches here. Wikipedia: formerly Riverfront Stadium (2024-2025), capacity 5,000 after a 2024 expansion, tenants Blake High School, Tampa Bay Sun, Tampa Bay Mutiny; described as a temporary home while a permanent facility is built. Coordinates are the Blake High School grounds (OSM), which hold the stadium.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "yuengling-center",
+        "name": "Yuengling Center",
+        "aliases": [
+          "USF Sun Dome",
+          "Sun Dome"
+        ],
+        "kind": "arena-stadium",
+        "kinds": [
+          "music-venue"
+        ],
+        "topics": [
+          "sports",
+          "music"
+        ],
+        "area": "north-tampa",
+        "address": "12499 USF Bull Run Drive",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33620",
+        "lat": 28.059244,
+        "lng": -82.406624,
+        "geo_source": "photon",
+        "url": "https://www.yuenglingcenter.com/",
+        "phone": "(813) 974-3004",
+        "summary": "Indoor arena on the University of South Florida's Tampa campus, home of USF Bulls basketball and volleyball, which also hosts concerts. It opened in 1980 as the USF Sun Dome and has carried the Yuengling name since 2018.",
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Yuengling_Center",
+        "also_sources": [
+          "https://www.livenation.com/venue/KovZpZAEkAvA/yuengling-center-events"
+        ],
+        "notes": "The official site (yuenglingcenter.com) returned a bot challenge to curl and an empty page to WebFetch, so the facts are from Wikipedia (opened Nov 29, 1980; USF Sun Dome 1980-2018; 10,500 seats; $35.6M renovation 2011-12; Yuengling naming rights from July 1, 2018). Live Nation's venue page gives the box office phone (813) 974-3004 and the university mailing address 4202 East Fowler Ave, 33620, and lists 2026 concerts. Street address 12499 USF Bull Run Drive is from Wikipedia.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "straz-center",
+        "name": "David A. Straz Jr. Center for the Performing Arts",
+        "aliases": [
+          "Straz Center",
+          "Tampa Bay Performing Arts Center"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "downtown-tampa",
+        "address": "1010 N W.C. MacInnes Place",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.951616,
+        "lng": -82.463985,
+        "geo_source": "photon",
+        "url": "https://www.strazcenter.org/",
+        "phone": "(813) 229-7827",
+        "summary": "Downtown Tampa's performing arts center on the Hillsborough River, with five theaters (the largest, Carol Morsani Hall, seats 2,610) for touring Broadway shows, opera, dance, concerts, comedy and theater. It opened in 1987 as the Tampa Bay Performing Arts Center and is home to Opera Tampa, Jobsite Theater and the Patel Conservatory.",
+        "quote": "Tampa Bay's home for buzzed-about Broadway tours, grand opera and top-notch performers in music, comedy, dance, theater and more.",
+        "status": "open",
+        "signature": true,
+        "source_url": "https://www.visittampabay.com/listings/straz-center-for-the-performing-arts/3009/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Straz_Center_for_the_Performing_Arts"
+        ],
+        "notes": "strazcenter.org is behind an Incapsula bot wall (curl and WebFetch both got an empty page), so the Visit Tampa Bay listing (address, phone, five theaters seating 130, 250, 268, 1,100 and 2,610 on nine acres along the river) is the source; the quote is the Straz's own listing text there. Wikipedia: opened July 1987 at $57 million as the Tampa Bay Performing Arts Center, renamed 2009; halls Carol Morsani Hall 2,610, Ferguson Hall 1,042, Jaeb Theater 268, Shimberg Playhouse 130, TECO Theater; resident companies Opera Tampa, Jobsite Theater, Next Generation Ballet. Jobsite Theater is a resident company here, not a separate venue.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-theatre",
+        "name": "Tampa Theatre",
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site",
+          "landmark"
+        ],
+        "topics": [
+          "arts",
+          "history",
+          "music"
+        ],
+        "area": "downtown-tampa",
+        "address": "711 N Franklin St",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.950053,
+        "lng": -82.458916,
+        "geo_source": "census",
+        "url": "https://tampatheatre.org/",
+        "phone": "(813) 274-8286",
+        "summary": "A 1926 movie palace on Franklin Street that now shows new and classic films and hosts concerts, educational programs and tours. Its listing says it holds more than 600 events a year.",
+        "quote": "Built in 1926, Tampa's majestic movie palace hosts 600+ events each year, including contemporary films, classic movies, concerts, corporate events, educational programs, weddings and tours.",
+        "hours_text": "Franklin Street box office: 10:00 a.m.-6:00 p.m. Monday-Friday; evenings and weekends it opens when doors open for the first show.",
+        "price_text": "Admission varies by film or event.",
+        "heritage": {
+          "built": "1926",
+          "architect": "John Eberson",
+          "style": "Atmospheric movie palace (Mediterranean Revival)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "78000945",
+              "year": 1978
+            }
+          ],
+          "era": "land-boom",
+          "story": "Tampa Theatre opened on October 15, 1926, an atmospheric movie palace designed by John Eberson. Facing demolition in 1973, it was saved by citizen advocacy: the City of Tampa took over the leases and the Arts Council of Hillsborough County took over programming. It reopened in early 1978, the year it was listed on the National Register of Historic Places. A $6 million renovation in 2017 added new seats and restored the lobby.",
+          "visiting": "The theatre offers guided building tours as well as films and concerts; buy tickets through the theatre.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Tampa_Theatre",
+            "https://www.visittampabay.com/listings/tampa-theatre/8911/"
+          ]
+        },
+        "status": "open",
+        "signature": true,
+        "source_url": "https://www.visittampabay.com/listings/tampa-theatre/8911/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Tampa_Theatre"
+        ],
+        "notes": "tampatheatre.org returned a bot challenge (HTTP 202) to curl and an empty page to WebFetch; the VTB listing (the theatre's own text) is the source. The listing carries two versions of its blurb (1,000+ and 600+ events a year); the summary uses 600+. Wikipedia: opened Oct 15, 1926; architect John Eberson; NRHP #78000945 added Jan 3, 1978; seats 1,252 after the 2017 renovation; city owns the building. Tour offering is from the listing ('weddings and tours').",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-convention-center",
+        "name": "Tampa Convention Center",
+        "kind": "attraction",
+        "topics": [],
+        "area": "downtown-tampa",
+        "address": "333 S. Franklin Street",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.941967,
+        "lng": -82.456618,
+        "geo_source": "photon",
+        "url": "https://www.tampa.gov/tcc",
+        "summary": "The City of Tampa's convention center in downtown Tampa, with 600,000 square feet of event space for conventions, trade shows and public events such as Tampa Bay Comic Convention.",
+        "quote": "Located in the heart of Downtown Tampa, the award-winning Tampa Convention Center offers 600,000 square feet of flexible event space, state-of-the-art amenities, and stunning waterfront views -- all under the Florida sun.",
+        "status": "open",
+        "source_url": "https://www.tampa.gov/tcc",
+        "notes": "kind: no convention-center kind exists; 'attraction' used. The page (tampa.gov/tcc) gives the address, the 600,000 sq ft figure and news of Tampa Bay Comic Convention 2026 (Sept 4-6) and the Prince Hall Shriners 2026 Imperial Session.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "curtis-hixon-waterfront-park",
+        "name": "Curtis Hixon Waterfront Park",
+        "kind": "park",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "outdoors",
+          "family",
+          "music"
+        ],
+        "area": "downtown-tampa",
+        "address": "600 N Ashley Drive",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.949047,
+        "lng": -82.461887,
+        "geo_source": "photon",
+        "url": "https://www.tampa.gov/parks-and-recreation/featured-parks/curtis-hixon",
+        "phone": "(813) 274-8615",
+        "summary": "Downtown Tampa waterfront park whose great lawn, with sloped and terraced edges, is the city's main outdoor space for festivals and concerts. It also has two splash pads, a playground, a dog park, a boat dock and a Pirate Water Taxi stop.",
+        "quote": "Curtis Hixon Waterfront Park attracts over one million people annually to its special events.",
+        "status": "open",
+        "source_url": "https://www.tampa.gov/parks-and-recreation/featured-parks/curtis-hixon",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/curtis-hixon-waterfront-park/7676/"
+        ],
+        "notes": "City page: great lawn with sloped and terraced edges for festivals and concerts; over one million people a year at its special events; two splash pads; playground; fenced dog park; boat dock and Pirate Water Taxi. 8 acres per the VTB listing.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "julian-b-lane-riverfront-park",
+        "name": "Julian B. Lane Riverfront Park",
+        "aliases": [
+          "Riverfront Park",
+          "JBL Riverfront Park"
+        ],
+        "kind": "park",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "outdoors",
+          "family",
+          "music"
+        ],
+        "area": "west-tampa",
+        "address": "1001 N Boulevard",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33606",
+        "lat": 27.953268,
+        "lng": -82.467136,
+        "geo_source": "photon",
+        "url": "https://www.tampa.gov/parks-and-recreation/featured-parks/riverfrontpark",
+        "phone": "(813) 274-8615",
+        "summary": "A 25-acre city park on the west bank of the Hillsborough River, across from the Straz Center, with a festival lawn for large concerts and festivals, a smaller performance lawn, and the Bob Buckhorn River Center event space. It also has a boathouse for rowing teams, kayak launches, a water taxi stop, a splash pad and a dog park.",
+        "quote": "The Festival Lawn is designed to offer public event space for large festivals, music concerts, and much more.",
+        "status": "open",
+        "source_url": "https://www.tampa.gov/parks-and-recreation/featured-parks/riverfrontpark",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/julian-b-lane-riverfront-park/13143/"
+        ],
+        "notes": "City page: 25 acres, north of the University of Tampa, across the river from the Straz; Bob Buckhorn River Center (2,880 sq ft event space) on the west bank; boathouse (13,320 sq ft); performance lawn; festival lawn; dog park; transient dock, water taxi stops, kayak launches.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "centennial-park-ybor",
+        "name": "Centennial Park",
+        "aliases": [
+          "Centennial Park Ybor City"
+        ],
+        "kind": "park",
+        "topics": [
+          "outdoors",
+          "shopping",
+          "history"
+        ],
+        "area": "ybor-city",
+        "address": "1800 E 8th Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33605",
+        "lat": 27.961039,
+        "lng": -82.439164,
+        "geo_source": "census",
+        "url": "https://www.ybormarket.com/",
+        "phone": "(813) 274-8615",
+        "summary": "A 2.5-acre park in Ybor City, home of the Ybor City Saturday Market, with picnic tables and public restrooms.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/centennial-park/5260/",
+        "also_sources": [
+          "https://www.ybormarket.com/"
+        ],
+        "notes": "VTB listing: 1800 E 8th Ave, 2.5-acre park, Saturday morning farmers market, picnic tables and restrooms; city parks phone. Ybor market site: the Ybor City Saturday Market has operated since 2000. No tampa.gov page for the park was found (two URLs tried, 404); url is the market's site.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "water-works-park",
+        "name": "Water Works Park",
+        "kind": "park",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "outdoors",
+          "family",
+          "music"
+        ],
+        "area": "tampa-heights",
+        "address": "1710 N Highland Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.959633,
+        "lng": -82.462446,
+        "geo_source": "census",
+        "url": "https://www.tampa.gov/parks-and-recreation/featured-parks/waterworks",
+        "is_free": true,
+        "summary": "Riverfront city park in Tampa Heights with a festival lawn and an amphitheater pavilion for small and mid-sized concerts and events, plus a splash pad, playground, dog park and a Pirate Water Taxi stop. There is no admission fee.",
+        "quote": "An intimate, open space for festivals and concerts, the Waterworks festival lawn park is the perfect spot for small or medium-sized concerts or performances.",
+        "status": "open",
+        "source_url": "https://www.tampa.gov/parks-and-recreation/featured-parks/waterworks",
+        "notes": "City page: 'a City park (not a water park)'; no admission fee; amphitheater pavilion; festival lawn; splash pad; Queenie's Dog Park; Pirate Water Taxi.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "ritz-ybor",
+        "name": "The RITZ Ybor",
+        "aliases": [
+          "Ritz Theatre",
+          "Rivoli Theatre"
+        ],
+        "kind": "music-venue",
+        "kinds": [
+          "nightlife"
+        ],
+        "topics": [
+          "music",
+          "nightlife",
+          "history"
+        ],
+        "area": "ybor-city",
+        "address": "1503 East 7th Avenue",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33605",
+        "lat": 27.96023,
+        "lng": -82.442881,
+        "geo_source": "census",
+        "url": "https://www.theritzybor.com/",
+        "phone": "(813) 690-0938",
+        "summary": "Standing-room concert and dance-music venue on Ybor City's 7th Avenue, in a building that opened in 1917 as the Rivoli Theatre. It is run by Sunset Events and books touring bands and DJs.",
+        "quote": "Originally constructed in 1917 as the Rivoli Theatre, the RITZ Ybor underwent various renovations in the 1930s to expand and become the Ritz Theatre.",
+        "accessibility": "No designated ADA section, but the venue says it is fully wheelchair accessible.",
+        "heritage": {
+          "built": "1917",
+          "era": "boomtown",
+          "story": "The building opened in 1917 as the Rivoli Theatre, a silent movie house, and was renovated and expanded in the 1930s as the Ritz Theatre. It later served as a playhouse and a nightclub before reopening as the RITZ Ybor concert venue in 2008.",
+          "visiting": "Open for ticketed concerts and events; general admission is standing room.",
+          "sources": [
+            "https://www.theritzybor.com/about/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.theritzybor.com/about/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/the-ritz-ybor/6738/"
+        ],
+        "tags": [
+          "standing-room",
+          "cashless"
+        ],
+        "notes": "About page: standing room venue; cashless; 15% service gratuity on checks; Sunset Events headquarters since 2016; reopened 2008. VTB listing: 17,000 sq ft, three rooms; phone.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hard-rock-event-center",
+        "name": "Hard Rock Event Center",
+        "kind": "music-venue",
+        "kinds": [
+          "casino"
+        ],
+        "topics": [
+          "music",
+          "nightlife"
+        ],
+        "area": "east-tampa",
+        "address": "5223 Orient Rd",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33610",
+        "lat": 27.993378,
+        "lng": -82.371462,
+        "geo_source": "photon",
+        "url": "https://casino.hardrock.com/tampa/entertainment/hard-rock-event-center",
+        "phone": "(813) 627-7757",
+        "summary": "A 1,500-seat concert and event hall on the second level of the Seminole Hard Rock Hotel & Casino Tampa casino complex, used for concerts, comedy, conventions and poker tournaments.",
+        "quote": "This 1,500-seat venue is on the second level of the casino complex.",
+        "status": "open",
+        "source_url": "https://casino.hardrock.com/tampa/entertainment/hard-rock-event-center",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/hard-rock-event-center/19128/"
+        ],
+        "notes": "Coordinates are the Seminole Hard Rock Hotel & Casino Tampa (OSM), which contains the event center. Phone from the VTB listing. seminolehardrocktampa.com redirects to casino.hardrock.com/tampa. Comedy: VTB listing names Gabriel Iglesias among past acts.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "midflorida-credit-union-amphitheatre",
+        "name": "MIDFLORIDA Credit Union Amphitheatre",
+        "aliases": [
+          "MidFlorida Amphitheatre",
+          "The Amp"
+        ],
+        "kind": "music-venue",
+        "topics": [
+          "music"
+        ],
+        "area": "east-tampa",
+        "address": "4802 US Highway 301 North",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33610",
+        "lat": 27.993378,
+        "lng": -82.364817,
+        "geo_source": "photon",
+        "url": "https://www.midfloridaamp.com/",
+        "phone": "(813) 740-2446",
+        "summary": "Live Nation's open-air amphitheater at the Florida State Fairgrounds, with reserved seats and a lawn; Live Nation says it holds up to 17,800 people (the lawn up to 12,000). It hosts touring concerts booked by Live Nation.",
+        "parking_text": "Parking is sold separately: general parking $20 per vehicle (plus tax) online in advance, $25 on the event day; lots open two hours before gates. Enter via US-301 or MLK Blvd for general parking; accessible parking via the Orient Road entrance.",
+        "status": "open",
+        "status_note": "The venue's FAQ says its roof reconstruction is taking longer than expected; shows continue, with free water stations and sunscreen offered meanwhile.",
+        "source_url": "https://www.midfloridaamp.com/visit",
+        "also_sources": [
+          "https://floridastatefairgrounds.com/visit/midflorida-ampitheatre/",
+          "https://specialevents.livenation.com/venues/midflorida-credit-union-amphitheatre-at-the-florida-state-fair-grounds"
+        ],
+        "notes": "Address from the venue's visit page and the fairgrounds page; Live Nation customer service phone from the fairgrounds page; capacity 17,800 and lawn 12,000 from Live Nation Special Events. MIDFLORIDA has held naming rights since 2013 (fairgrounds page and VTB listing).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-state-fairgrounds",
+        "name": "Florida State Fairgrounds",
+        "aliases": [
+          "The Fairgrounds"
+        ],
+        "kind": "attraction",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "family",
+          "history",
+          "food"
+        ],
+        "area": "east-tampa",
+        "address": "4800 US Highway 301 North",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33610",
+        "lat": 27.988197,
+        "lng": -82.366067,
+        "geo_source": "photon",
+        "url": "https://floridastatefairgrounds.com/",
+        "phone": "(813) 621-7821",
+        "summary": "State-run fairgrounds off Interstate 4 in east Tampa, home of the Florida State Fair every February and of year-round expos, boat and car shows, horse shows and festivals. Its halls include the Expo Hall, and the grounds hold Cracker Country, a living history museum of 1800s Florida buildings, and the MIDFLORIDA Credit Union Amphitheatre.",
+        "quote": "What began with a small start in 1904, at Henry B. Plant's Tampa Bay Hotel, has grown to encompass a family of brands across our sprawling property, offering year-round entertainment, equestrian events, and a rural living history museum.",
+        "heritage": {
+          "era": "postwar",
+          "story": "The first fair was held in 1904 at Henry B. Plant's Tampa Bay Hotel in downtown Tampa. In 1915 it combined with Tampa's Gasparilla Carnival and became the Florida State Fair. The Florida Legislature created the Florida State Fair Authority in 1975, and the fair moved to the present grounds off Interstate 4.",
+          "visiting": "Open for scheduled events; Cracker Country is on the grounds.",
+          "sources": [
+            "https://floridastatefairgrounds.com/about-us/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://floridastatefairgrounds.com/about-us/",
+        "also_sources": [
+          "https://floridastatefairgrounds.com/event-rentals/venues/",
+          "https://www.visittampabay.com/listings/florida-state-fairgrounds/2798/"
+        ],
+        "notes": "About page: 1904 first fair at the Tampa Bay Hotel; 1915 merged with the Gasparilla Carnival; 1975 Florida State Fair Authority; over 1.5 million visitors a year. Venues page: halls from 5,000 to 87,000+ sq ft; Expo Hall with 45-foot ceilings; TECO Arena and 471 stalls; 52,000 sq ft covered arena. VTB listing: the fair is always in February; phone. kind 'attraction' (no fairgrounds kind). 'State-run': the Florida State Fair Authority was created by the Legislature (about page).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-downs",
+        "name": "Tampa Bay Downs",
+        "aliases": [
+          "Tampa Downs",
+          "Florida Downs"
+        ],
+        "kind": "sports",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "sports",
+          "history"
+        ],
+        "area": "oldsmar",
+        "address": "11225 Race Track Rd",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33626",
+        "lat": 28.048038,
+        "lng": -82.6403,
+        "geo_source": "photon",
+        "url": "https://www.tampabaydowns.com/",
+        "phone": "(813) 855-4401",
+        "summary": "Thoroughbred racetrack near Oldsmar at the top of Tampa Bay, first opened in 1926. The live racing season runs November 18, 2026 to May 2, 2027; the track also offers simulcast wagering, poker in the Silks Poker Room and a golf practice facility.",
+        "hours_text": "Race days: gates open 11:00 a.m.; first post 12:15 p.m. unless noted. Live racing Nov 18, 2026 - May 2, 2027.",
+        "price_text": "General admission $3.00 Friday, Saturday and Sunday; free on Wednesdays. General parking free; valet $10.",
+        "parking_text": "General parking is free every day; valet parking is $10.",
+        "heritage": {
+          "built": "1926",
+          "era": "land-boom",
+          "story": "Kentucky Derby promoter Matt J. Winn and Ohio investor Harvey Myers Jr. brought racing to the top of the bay in 1926; the track opened as Tampa Downs on February 18, 1926, with Babe Ruth, Jack Dempsey, Gene Sarazen and John Ringling at the first card. A group led by Chester Ferguson bought it in 1965 and renamed it Florida Downs; it later became Tampa Bay Downs, and it has stayed with the Ferguson family.",
+          "visiting": "Open on race days (and year-round for simulcast and poker).",
+          "sources": [
+            "https://www.tampabaydowns.com/visitor-info/history/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.tampabaydowns.com/visitor-info/admission-info/",
+        "also_sources": [
+          "https://www.tampabaydowns.com/visitor-info/about-tbd/",
+          "https://www.tampabaydowns.com/visitor-info/history/",
+          "https://www.visittampabay.com/listings/tampa-bay-downs/3003/"
+        ],
+        "notes": "Admission page: 'Live Racing Returns November 18, 2026 – May 2, 2027'. About page: gates 11:00 a.m., first post 12:15 p.m., admission $3.00 Fri-Sun and free Wednesdays, general parking free, valet $10 (other race days' admission not stated in the lines read). History page: opened as Tampa Downs Feb 18, 1926; 1965 Florida Downs; informally 'the Oldsmar oval'; the track is preparing for its 100th anniversary season. VTB listing: the only thoroughbred track on Florida's West Coast; phone. Area oldsmar (the track's mailing city is Tampa; it sits in Hillsborough County near Oldsmar).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "funny-bone-tampa",
+        "name": "Tampa Funny Bone Comedy Club",
+        "aliases": [
+          "Tampa Improv",
+          "Funny Bone Comedy Club"
+        ],
+        "kind": "nightlife",
+        "kinds": [
+          "performing-arts"
+        ],
+        "topics": [
+          "nightlife"
+        ],
+        "area": "ybor-city",
+        "address": "1600 E 8th Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33605",
+        "lat": 27.96105,
+        "lng": -82.44167,
+        "geo_source": "census",
+        "url": "https://tampa.funnybone.com/",
+        "summary": "Stand-up comedy club with a restaurant in the Centro Ybor complex, booking touring headliners four to five nights a week. It was the Tampa Improv until it took the Funny Bone name in December 2023, under the same management.",
+        "quote": "Tampa Funny Bone Comedy Club brings premier stand-up comedy entertainment to the heart of Centro Ybor, featuring nationally touring headliners and top-tier comedians four to five nights a week.",
+        "status": "open",
+        "source_url": "https://www.centroybor.com/tenant-list/funny-bone-comedy-club-restaurant",
+        "also_sources": [
+          "https://www.tampabay.com/life-culture/entertainment/2023/12/20/tampa-improv-comedy-club-funny-bone/"
+        ],
+        "notes": "improvtampa.com 301-redirects to tampa.funnybone.com, which returned 403 to both curl and WebFetch; facts from the Centro Ybor tenant page (address, 'Formerly the Tampa Improv Comedy Club') and the Tampa Bay Times (Dec 20, 2023: same management, name change). The scope list called it 'Tampa Improv (Ybor)'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "side-splitters-comedy-club",
+        "name": "Side Splitters Comedy Club",
+        "kind": "nightlife",
+        "kinds": [
+          "performing-arts"
+        ],
+        "topics": [
+          "nightlife"
+        ],
+        "area": "north-tampa",
+        "address": "12938 N Dale Mabry Hwy",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33618",
+        "lat": 28.064122,
+        "lng": -82.504475,
+        "geo_source": "census",
+        "url": "https://sidesplitterscomedy.com/",
+        "phone": "(813) 960-1197",
+        "summary": "Stand-up comedy club on North Dale Mabry Highway in north Tampa. The club says it has been in the entertainment business since 1992, and its site announces a second location at The Grove in Wesley Chapel.",
+        "status": "open",
+        "source_url": "https://sidesplitterscomedy.com/",
+        "also_sources": [
+          "https://www.sidesplitterscomedy.com/about"
+        ],
+        "notes": "Homepage (WebFetch): 12938 North Dale Mabry Highway; phone 813-960-1197; 'Tampa's premier comedy showplace is opening in two location - one Tampa & second The Grove in Wesley Chapel.' About page: 'in the business of providing entertainment since 1992'. Wesley Chapel location not researched (status unknown); 'Carrollwood area' is our geography (north Tampa per SPEC includes Carrollwood).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "orpheum-tampa",
+        "name": "The Orpheum",
+        "kind": "music-venue",
+        "kinds": [
+          "nightlife"
+        ],
+        "topics": [
+          "music",
+          "nightlife"
+        ],
+        "area": "north-tampa",
+        "address": "14802 North Nebraska Avenue",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33613",
+        "lat": 28.084178,
+        "lng": -82.451365,
+        "geo_source": "census",
+        "url": "https://www.theorpheum.com/",
+        "phone": "(813) 248-9500",
+        "summary": "Small live-music club that moved from Ybor City to North Nebraska Avenue in north Tampa, near the University of South Florida. It hosts live music and other events.",
+        "quote": "The Orpheum has been showcasing live music and events for the better part of two decades.",
+        "status": "open",
+        "source_url": "https://www.theorpheum.com/",
+        "notes": "Official site: 'Formerly located in the Historic Ybor City entertainment district of Tampa, Florida. The Orpheum has now taken up residence in North Tampa. Minutes away from the University of South Florida.' Shows listed into mid-October 2026. The scope list placed it in Ybor; it is no longer there.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "skippers-smokehouse",
+        "name": "Skipper's Smokehouse",
+        "kind": "music-venue",
+        "kinds": [
+          "restaurant"
+        ],
+        "topics": [
+          "music",
+          "food",
+          "nightlife"
+        ],
+        "area": "north-tampa",
+        "address": "910 Skipper Road",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33613",
+        "lat": 28.080508,
+        "lng": -82.451043,
+        "geo_source": "census",
+        "url": "https://skipperssmokehouse.com/",
+        "phone": "(813) 977-6474",
+        "summary": "North Tampa bar and restaurant with a live-music stage that books touring and local acts; its site calls it Tampa's iconic live music venue.",
+        "quote": "Tampa's Iconic Live Music Venue, Bar & Restaurant",
+        "status": "open",
+        "source_url": "https://skipperssmokehouse.com/",
+        "also_sources": [
+          "https://www.prekindle.com/events/skippers-smokehouse"
+        ],
+        "notes": "Official homepage (WebFetch; curl got 403): address, phone 813-977-6474, the tagline quoted. Prekindle ticketing lists shows Oct 25 - Nov 13, 2026 (Drivin N Cryin, Freaker's Ball with Damon Fowler, Sam Morrow). The quote was read through WebFetch (curl blocked), so its exact punctuation should be rechecked.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "stageworks-theatre",
+        "name": "Stageworks Theatre",
+        "kind": "performing-arts",
+        "topics": [
+          "arts"
+        ],
+        "area": "channel-district",
+        "address": "1120 East Kennedy Blvd, Suite 151",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33602",
+        "lat": 27.950619,
+        "lng": -82.447613,
+        "geo_source": "census",
+        "url": "https://stageworkstheatre.org/",
+        "phone": "(813) 374-2416",
+        "summary": "Professional theater company with its own theater on East Kennedy Boulevard, producing a season of plays and running acting classes and youth outreach. It calls itself Tampa's longest running professional theatre.",
+        "quote": "As Tampa's longest running professional theatre, we are an integral part of the cultural landscape in Tampa, bringing intellectuality and emotionally challenging, socially relevant theatre to our area.",
+        "hours_text": "Box office: Tuesday-Friday 12-5 p.m.",
+        "status": "open",
+        "source_url": "https://stageworkstheatre.org/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/stageworks-theatre/5449/"
+        ],
+        "notes": "Official homepage: address, box office phone and hours, 2026-27 season subscriptions on sale, eight-week acting class; outreach program for at-risk kids per the VTB listing. Area: 1120 E Kennedy Blvd is at the east end of downtown by the Channel District (Grand Central at Kennedy complex, not named on the page).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "carrollwood-players",
+        "name": "Carrollwood Players Theatre",
+        "aliases": [
+          "Carrollwood Players"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts"
+        ],
+        "area": "north-tampa",
+        "address": "4333 Gunn Highway",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33618",
+        "lat": 28.04476,
+        "lng": -82.514307,
+        "geo_source": "census",
+        "url": "https://carrollwoodplayers.org/",
+        "summary": "Theater on Gunn Highway in Carrollwood that stages a season of shows; its 2026-27 season opened with The Wizard of Oz (Sept 18 - Oct 3).",
+        "status": "open",
+        "source_url": "https://carrollwoodplayers.org/",
+        "notes": "Official homepage: street address 4333 Gunn Highway; 2026/2027 season; The Wizard of Oz Sept 18 - Oct 3; Rhinestone Hoedown Gala Oct 4.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "mahaffey-theater",
+        "name": "Duke Energy Center for the Arts - Mahaffey Theater",
+        "aliases": [
+          "The Mahaffey",
+          "Mahaffey Theater",
+          "Bayfront Center"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "downtown-stpete",
+        "address": "400 First Street South",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.767088,
+        "lng": -82.631976,
+        "geo_source": "photon",
+        "url": "https://themahaffey.com/",
+        "phone": "(727) 300-2000",
+        "summary": "A 2,031-seat theater on the downtown St. Petersburg waterfront for touring Broadway, classical, pop, rock, comedy and family shows and concerts by the Florida Orchestra. It opened in 1965 as part of the Bayfront Center and took the Mahaffey name after a 1987-88 renovation.",
+        "quote": "Located in the heart of beautiful Downtown St. Petersburg, The Mahaffey Theater is a 2,031-seat cultural jewel featuring elegant ballroom space, spectacular waterfront views, and European box-style seating.",
+        "status": "open",
+        "signature": true,
+        "source_url": "https://themahaffey.com/about/history/",
+        "also_sources": [
+          "https://themahaffey.com/",
+          "https://www.stpete.org/visitors/attractions/museums_galleries_and_theaters.php"
+        ],
+        "notes": "History page: Bayfront Center opened 1965 (first tapings Jan 1965, official opening May 6, 1965); $23M renovation 1987-88 renamed it The Mahaffey Theater for the Performing Arts; Bayfront arena demolished after the complex closed in Dec 2004; 2006 Progress Energy naming partnership; renamed Mahaffey Theater in 2012; Big3 Entertainment management from 2011. Homepage: order by phone (727) 300-2000; address; Florida Orchestra season listed.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "palladium-theater",
+        "name": "Palladium at St. Petersburg College",
+        "aliases": [
+          "Palladium Theater",
+          "The Palladium"
+        ],
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "music",
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "253 Fifth Avenue North",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.777628,
+        "lng": -82.636405,
+        "geo_source": "census",
+        "url": "https://mypalladium.org/",
+        "phone": "(727) 822-3590",
+        "summary": "St. Petersburg College's downtown performing arts venue in a 1925 church building, with a concert hall (Hough Hall) and the Side Door Cabaret for jazz, blues, classical, theater, opera and comedy. It is closed for a major renovation and expects to reopen in fall 2027.",
+        "quote": "The Palladium at SPC is currently undergoing a major renovation and anticipates reopening in fall 2027.",
+        "heritage": {
+          "built": "1925",
+          "architect": "Howard Lovewell Cheney",
+          "style": "Arts and Crafts details, with tilework by Ernest A. Batchelder",
+          "era": "land-boom",
+          "story": "The building was constructed in 1925 as the First Church of Christ, Scientist, designed by Howard Lovewell Cheney. In the late 1990s arts philanthropists turned it into a performing arts center, keeping much of its historic character, and it opened as the Palladium Theater in 1998. It became part of St. Petersburg College in 2007. The current renovation replaces Hough Hall's original 1925 seats while preserving the building's character.",
+          "visiting": "Closed for renovation until an expected fall 2027 reopening; Palladium programs continue at other locations.",
+          "sources": [
+            "https://mypalladium.org/about-2/",
+            "https://mypalladium.org/hough-hall-seating-chart/"
+          ]
+        },
+        "status": "temporarily-closed",
+        "status_note": "Closed for a major renovation; the Palladium says it anticipates reopening in fall 2027 and the box office has no walk-up service (checked Sep 27, 2026).",
+        "source_url": "https://mypalladium.org/about-2/",
+        "also_sources": [
+          "https://mypalladium.org/contact-us/",
+          "https://mypalladium.org/contact-us/directions-parking-nearby-lodging/"
+        ],
+        "notes": "Contact page: 253 Fifth Avenue North; box office (727) 822-3590; no walk-up service during renovations. The about page mentions its 'historical designation' without naming it; no designation record was found, so none is listed.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "jannus-live",
+        "name": "Jannus Live",
+        "kind": "music-venue",
+        "topics": [
+          "music",
+          "nightlife"
+        ],
+        "area": "downtown-stpete",
+        "address": "200 1st Avenue N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.771922,
+        "lng": -82.63607,
+        "geo_source": "photon",
+        "url": "https://www.jannuslive.com/",
+        "phone": "(727) 688-5708",
+        "summary": "Open-air, standing-room courtyard concert venue in downtown St. Petersburg that books national touring acts. It says it has hosted shows for over 40 years.",
+        "quote": "Welcome to Jannus Live—St. Pete's iconic standing room only outdoor music venue. Hosting world-class talent and unforgettable shows for over 40 years.",
+        "status": "open",
+        "source_url": "https://www.jannuslive.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/things-to-do/arts-culture"
+        ],
+        "notes": "Read with WebFetch (curl got connection resets): address, phone 727-688-5708, 'hosting world-class talent and unforgettable shows for over 40 years', shows listed Sep 27 - Oct 1, 2026. VSPC arts page calls it a courtyard venue hosting national touring acts. Quote re-read with WebFetch asking for the exact sentence.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-coliseum",
+        "name": "The Coliseum",
+        "aliases": [
+          "St. Petersburg Coliseum",
+          "St. Pete's Historic Ballroom"
+        ],
+        "kind": "historic-site",
+        "kinds": [
+          "music-venue"
+        ],
+        "topics": [
+          "history",
+          "music"
+        ],
+        "area": "downtown-stpete",
+        "address": "535 Fourth Ave. N.",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.776431,
+        "lng": -82.64054,
+        "geo_source": "census",
+        "url": "https://www.stpete.org/visitors/attractions/coliseum.php",
+        "phone": "(727) 892-5202",
+        "summary": "City-owned 1924 ballroom in downtown St. Petersburg used for dances, trade shows, maker markets, banquets and private events; it seats 1,100 for a banquet without a dance floor.",
+        "quote": "The historic Coliseum was built in 1924, and purchased by the City of St. Petersburg in 1989.",
+        "parking_text": "More than 800 parking spaces within walking distance, per the city.",
+        "heritage": {
+          "built": "1924",
+          "era": "land-boom",
+          "designations": [
+            {
+              "name": "St. Petersburg local landmark"
+            },
+            {
+              "name": "Downtown St. Petersburg National Register Historic District (contributing location)"
+            }
+          ],
+          "story": "The Coliseum was built in 1924 and bought by the City of St. Petersburg in 1989. After extensive renovations it hosts dances, trade shows, markets, banquets and private events. The city says it is a designated local landmark and part of the Downtown St. Petersburg National Register district.",
+          "visiting": "Open for scheduled events.",
+          "sources": [
+            "https://www.stpete.org/visitors/attractions/coliseum.php"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.stpete.org/visitors/attractions/coliseum.php",
+        "notes": "City page: built 1924; bought by the city 1989; local landmark; part of the Downtown St. Petersburg National Register District; 800+ parking spaces nearby; banquet capacities 600-800 with dance floor, 1,100 without; heading 'St. Pete's Historic Ballroom'; event types include dances, trade shows, maker markets, corporate and social events.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "american-stage",
+        "name": "American Stage",
+        "aliases": [
+          "American Stage Theatre Company"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts"
+        ],
+        "area": "downtown-stpete",
+        "address": "163 3rd Street North",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.772524,
+        "lng": -82.637029,
+        "geo_source": "census",
+        "url": "https://americanstage.org/",
+        "phone": "(727) 823-7529",
+        "summary": "Professional theater company in downtown St. Petersburg that produces a season of plays and musicals in its own theater and runs classes, camps and a drama school; it has produced shows since 1977.",
+        "status": "open",
+        "source_url": "https://americanstage.org/",
+        "also_sources": [
+          "https://www.stpete.org/visitors/attractions/museums_galleries_and_theaters.php"
+        ],
+        "notes": "Official homepage: 163 3rd Street North, St. Petersburg, FL 33701; box office (727) 823-7529; 2026/2027 season (A Night with Janis Joplin); school tour, summer camp, drama school; 'Keep Park' link. City page: 'the Tampa Bay area's longest-running, most critically acclaimed professional theatre company ... since 1977' (the company's claim, not repeated in the summary). The homepage still shows a 2024 Hurricane Milton banner about Ring of Fire.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "freefall-theatre",
+        "name": "freeFall Theatre",
+        "aliases": [
+          "freeFall Theatre Company"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "west-stpete",
+        "address": "6099 Central Avenue",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33710",
+        "lat": 27.770909,
+        "lng": -82.718186,
+        "geo_source": "census",
+        "url": "https://freefalltheatre.com/",
+        "phone": "(727) 498-5205",
+        "summary": "Theater company on Central Avenue in west St. Petersburg, between downtown and the beaches, staging plays, musicals, cabarets, concerts and film screenings; it has been part of the Tampa Bay arts scene since 2008.",
+        "quote": "Events include plays, musicals, intimate concerts, cabarets, movies, and more!",
+        "status": "open",
+        "source_url": "https://freefalltheatre.com/",
+        "also_sources": [
+          "https://freefalltheatre.com/about/",
+          "https://www.stpete.org/visitors/attractions/museums_galleries_and_theaters.php"
+        ],
+        "notes": "Homepage: 6099 Central Avenue; (727) 498-5205; current shows. City page: 'Located between downtown and the beaches'; 'since 2008'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-city-theatre",
+        "name": "St. Petersburg City Theatre",
+        "kind": "performing-arts",
+        "topics": [
+          "arts"
+        ],
+        "area": "south-stpete",
+        "address": "4025 31st Street South",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.731838,
+        "lng": -82.675232,
+        "geo_source": "census",
+        "url": "https://www.spcitytheatre.org/",
+        "summary": "Community theater in south St. Petersburg with a mainstage season, youth programs and adult workshops. Founded in 1925, it says it is one of the oldest continuously operating community theatres in Florida.",
+        "quote": "Founded in 1925, St. Petersburg City Theatre is one of the oldest, continuously operating community theatres in the state of Florida.",
+        "status": "open",
+        "source_url": "https://www.spcitytheatre.org/",
+        "also_sources": [
+          "https://www.stpete.org/visitors/attractions/museums_galleries_and_theaters.php"
+        ],
+        "notes": "Read with WebFetch (curl got connection resets): address and the founding quote; the page mentions a Mainstage Season. City page: community-produced mainstage productions, children and youth programs, adult education workshops. The quote was read through WebFetch (curl blocked), so its exact punctuation should be rechecked.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "spitfire-comedy-house",
+        "name": "Spitfire Comedy House",
+        "kind": "nightlife",
+        "kinds": [
+          "performing-arts"
+        ],
+        "topics": [
+          "nightlife"
+        ],
+        "area": "grand-central",
+        "address": "1920 1st Avenue South",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.770153,
+        "lng": -82.659226,
+        "geo_source": "census",
+        "url": "https://www.spitfirecomedyhouse.com/",
+        "summary": "Comedy club in St. Petersburg with a weekly lineup of improv, sketch and stand-up shows and a training center for comedy classes; it has no drink minimum.",
+        "quote": "Our club is cool, comfortable, and features a selection of great alcoholic and non-alcoholic beverages with no drink minimum.",
+        "status": "open",
+        "source_url": "https://www.spitfirecomedyhouse.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/things-to-do/arts-culture/performing-arts"
+        ],
+        "notes": "Homepage says 'right in downtown St. Pete'; the address (1920 1st Avenue South) is west of downtown, so area grand-central (verifier: check).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "zubrick-magic-theatre",
+        "name": "Zubrick Magic Theatre",
+        "kind": "performing-arts",
+        "topics": [
+          "family"
+        ],
+        "area": "downtown-stpete",
+        "address": "1211 1st Ave. N., Suite 101",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33705",
+        "lat": 27.772062,
+        "lng": -82.650857,
+        "geo_source": "census",
+        "url": "https://www.zubrickmagic.com/",
+        "phone": "(866) 982-7425",
+        "summary": "Small magic theater where illusionists Chris and Ryan Zubrick perform a 70-minute show of sleight of hand, family-friendly comedy and stage illusions.",
+        "quote": "The Zubrick Magic Theatre is a spectacular venue that gives audiences an intimate and unforgettable evening of magical entertainment.",
+        "status": "open",
+        "source_url": "https://www.zubrickmagic.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/zubrick-magic-theatre/19126/",
+          "https://www.stpete.org/visitors/attractions/museums_galleries_and_theaters.php"
+        ],
+        "notes": "Address on the official site; phone from the VTB listing. Area: 1211 1st Ave N is in the EDGE District, which SPEC puts in downtown-stpete.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "al-lang-stadium",
+        "name": "Al Lang Stadium",
+        "aliases": [
+          "Progress Energy Park",
+          "Florida Power Park"
+        ],
+        "kind": "arena-stadium",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "sports",
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "address": "180 2nd Avenue SE",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.768364,
+        "lng": -82.633091,
+        "geo_source": "photon",
+        "url": "https://www.rowdiessoccer.com/al-lang-stadium/",
+        "summary": "City-owned stadium on the downtown St. Petersburg waterfront, home of the Tampa Bay Rowdies (USL Championship soccer) since 2011. Built in 1947 as a baseball park, it hosted spring training and minor league baseball until 2008.",
+        "quote": "Located directly on the waterfront of downtown St. Petersburg, Al Lang Stadium boasts one of the most picturesque backsdrops of any soccer venue throughout North America.",
+        "heritage": {
+          "built": "1947",
+          "era": "postwar",
+          "story": "St. Petersburg built Waterfront Park on the site in 1923, where the Yankees and Cardinals trained. After World War II the city replaced it with Al Lang Stadium, named for former mayor Al Lang, who promoted the city for spring training. The ballpark hosted spring training and minor league baseball until 2008; the Rowdies moved in for the 2011 season and converted it for soccer.",
+          "visiting": "Open for Rowdies matches and other events.",
+          "sources": [
+            "https://www.rowdiessoccer.com/al-lang-stadium/",
+            "https://en.wikipedia.org/wiki/Al_Lang_Stadium"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.rowdiessoccer.com/al-lang-stadium/",
+        "also_sources": [
+          "https://www.rowdiessoccer.com/",
+          "https://en.wikipedia.org/wiki/Al_Lang_Stadium"
+        ],
+        "notes": "Rowdies page: home since 2011; built 1947; named for Mayor Al Lang; Waterfront Park 1923 on the site; 1976 renovation to 7,227 seats; baseball until 2008; club took managing control of the city-owned stadium in late 2014. Rowdies homepage: 2026 playoffs at home on Oct 30. Wikipedia: address; Helene and Milton damage forced the Rowdies' last two 2024 home games to Bradenton.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "vinoy-park",
+        "name": "Vinoy Park",
+        "aliases": [
+          "Vinoy Waterfront Park",
+          "Vinoy Park and Mole"
+        ],
+        "kind": "park",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "outdoors",
+          "music",
+          "arts"
+        ],
+        "area": "downtown-stpete",
+        "address": "Bayshore Dr. NE & 5th Ave NE",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.781025,
+        "lng": -82.626063,
+        "geo_source": "photon",
+        "url": "https://www.stpeteparksrec.org/parks/index.php",
+        "phone": "(727) 893-7441",
+        "summary": "An 11.6-acre city park on the downtown St. Petersburg waterfront, next to the Vinoy hotel, used for big outdoor festivals such as the Mainsail Art Festival and the Tampa Bay Blues Festival, plus concerts and triathlons.",
+        "status": "open",
+        "source_url": "https://www.mainsailart.org/",
+        "also_sources": [
+          "https://www.stpeteparksrec.org/parks/index.php",
+          "https://www.tampabaybluesfest.com/",
+          "https://en.wikipedia.org/wiki/Vinoy_Park"
+        ],
+        "notes": "Mainsail: 'held annually in Vinoy Park'; 52nd festival April 3-4, 2027; main stage at the south end near the Truth sculpture. Blues Fest: returns to 'Vinoy Waterfront Park' April 9-11, 2027. City parks list: 'VINOY PARK AND MOLE', Bayshore Dr. NE & 5th Ave NE, (727) 893-7441. Wikipedia: 11.6 acres; named for the Vinoy Park Hotel (1925) adjacent; hosts Ribfest, the Blues Festival, art festivals, concerts, triathlons; operated by St. Petersburg Parks and Recreation.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "straub-park",
+        "name": "Straub Park",
+        "aliases": [
+          "North Straub Park",
+          "South Straub Park"
+        ],
+        "kind": "park",
+        "kinds": [
+          "waterfront"
+        ],
+        "topics": [
+          "outdoors"
+        ],
+        "area": "downtown-stpete",
+        "address": "400 Bayshore Dr. NE",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.776281,
+        "lng": -82.631219,
+        "geo_source": "photon",
+        "url": "https://www.stpeteparksrec.org/parks/index.php",
+        "phone": "(727) 893-7441",
+        "summary": "City park along Bayshore Drive in downtown St. Petersburg, split into North Straub Park (400 Bayshore Dr. NE) and South Straub Park (198 Bayshore Dr. NE).",
+        "status": "open",
+        "source_url": "https://www.stpeteparksrec.org/parks/index.php",
+        "notes": "Only the city parks list was read (names, addresses, phone); its detail pages carry no description. No source for events held here was read (no web search budget left); the event slices may cite one. Coordinates: North Straub Park (OSM).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "williams-park",
+        "name": "Williams Park",
+        "kind": "park",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "outdoors",
+          "history",
+          "music"
+        ],
+        "area": "downtown-stpete",
+        "address": "4th St. N. & 1st Ave N.",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33701",
+        "lat": 27.772822,
+        "lng": -82.637804,
+        "geo_source": "photon",
+        "url": "https://www.stpeteparksrec.org/parks/index.php",
+        "phone": "(727) 893-7441",
+        "summary": "St. Petersburg's first park, a full city block downtown between 3rd and 4th Streets North, with a 1954 bandshell used for outdoor concerts.",
+        "heritage": {
+          "built": "1888",
+          "architect": "William B. Harvard (1954 bandshell)",
+          "era": "frontier",
+          "story": "The park was founded in 1888 as City Park and renamed for John Constantine Williams Sr., a co-founder of St. Petersburg. A bandstand has stood in the park since 1894; the present bandshell, designed in 1954 by William B. Harvard, won an American Institute of Architects Award of Merit in 1955.",
+          "visiting": "Open city park.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Williams_Park"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://en.wikipedia.org/wiki/Williams_Park",
+        "also_sources": [
+          "https://www.stpeteparksrec.org/parks/index.php"
+        ],
+        "notes": "Wikipedia (WebFetch): block between 4th and 3rd Streets N and 2nd and 1st Avenues N; founded 1888; bandstand since 1894; 1954 bandshell by William B. Harvard; as of 2022 the bandshell needed about $780,000 in repairs. City parks list: 4th St. N. & 1st Ave N., phone. Current bandshell condition in 2026 not verified.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "ruth-eckerd-hall",
+        "name": "Ruth Eckerd Hall",
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "downtown-clearwater",
+        "address": "1111 McMullen Booth Road",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33759",
+        "lat": 27.976079,
+        "lng": -82.70469,
+        "geo_source": "photon",
+        "url": "https://www.rutheckerdhall.com/",
+        "phone": "(727) 791-7400",
+        "summary": "Performing arts hall on McMullen Booth Road in Clearwater, opened in 1983, with the smaller Murray Theatre and a cabaret theater on the same campus. Ruth Eckerd Hall also runs the Capitol Theatre and The BayCare Sound downtown and the Marcia P. Hoffman School of the Arts.",
+        "heritage": {
+          "built": "1983",
+          "architect": "Frank Lloyd Wright Foundation",
+          "era": "modern",
+          "story": "June Baumgardner Gelbart donated the land in November 1977 on condition that it be used for a performing arts center. Ground was broken in December 1979 and the $14.5 million hall, designed by the Frank Lloyd Wright Foundation, was dedicated on October 15, 1983. Renovations in 2003-04 and 2015-19 added the Murray Theatre and the Kate Tiedemann and Ellen Cotton Cabaret Theatre.",
+          "visiting": "Open for ticketed performances.",
+          "sources": [
+            "https://www.rutheckerdhall.com/plan-your-visit/ruth-eckerd-hall/ruth-eckerd-hall-history"
+          ]
+        },
+        "status": "open",
+        "signature": true,
+        "source_url": "https://www.rutheckerdhall.com/plan-your-visit/ruth-eckerd-hall/ruth-eckerd-hall-history",
+        "also_sources": [
+          "https://www.rutheckerdhall.com/"
+        ],
+        "notes": "History page read with WebFetch (curl got HTTP 406): dedicated Oct 15, 1983; Frank Lloyd Wright Foundation; $14.5M; first performance Suzuki Children of Japan; 3,500+ performances in forty years; Pollstar top-five rankings since 2005. Homepage footer: addresses of Ruth Eckerd Hall, the Capitol Theatre and The BayCare Sound; phone (727) 791-7400; Hoffman School of the Arts reaches 60,000+ students a year.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sound-at-coachman-park",
+        "name": "The BayCare Sound",
+        "aliases": [
+          "The Sound at Coachman Park",
+          "The Sound",
+          "BayCare Sound at Coachman Park",
+          "Coachman Park"
+        ],
+        "kind": "music-venue",
+        "kinds": [
+          "park"
+        ],
+        "topics": [
+          "music",
+          "outdoors"
+        ],
+        "area": "downtown-clearwater",
+        "address": "255 Drew Street",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33755",
+        "lat": 27.967496,
+        "lng": -82.802783,
+        "geo_source": "photon",
+        "url": "https://www.baycaresound.com/",
+        "phone": "(727) 791-7400",
+        "summary": "Waterfront amphitheater in Coachman Park in downtown Clearwater, opened in 2023 and managed by Ruth Eckerd Hall, with 4,000 covered seats and room for 5,000 more on the lawn. It was called The Sound until it was renamed The BayCare Sound in March 2024.",
+        "quote": "The BayCare Sound includes 4,000 covered seats plus an additional 5,000 lawn seats.",
+        "parking_text": "Public parking throughout downtown Clearwater (see the City of Clearwater's downtown parking map); the venue encourages carpooling, rideshare and public transportation.",
+        "heritage": {
+          "built": "2023",
+          "era": "modern",
+          "story": "Edward Horace Coachman donated the park land to Clearwater in 1943, and a band shell built there in November 1957 began the city's concert tradition. The 2016 Imagine Clearwater plan called for a larger permanent concert venue; Ruth Eckerd Hall was chosen to run it in May 2022, and The Sound opened with a ribbon cutting on June 28, 2023. It became The BayCare Sound on March 7, 2024.",
+          "visiting": "Open for ticketed concerts; the rest of Coachman Park is a public park.",
+          "sources": [
+            "https://www.rutheckerdhall.com/plan-your-visit/the-baycare-sound/history"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.baycaresound.com/",
+        "also_sources": [
+          "https://www.rutheckerdhall.com/plan-your-visit/the-baycare-sound/history",
+          "https://www.visitstpeteclearwater.com/things-to-do/arts-culture/performing-arts"
+        ],
+        "notes": "The shared id is sound-at-coachman-park; the venue's current name is The BayCare Sound. Official site (curl, gzip): 4,000 covered + 5,000 lawn seats; community hotline 727-712-2718; parking guidance; address in the footer. History page read with WebFetch (curl 406). Phone is Ruth Eckerd Hall's main line from the same footer.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "capitol-theatre-clearwater",
+        "name": "The Nancy and David Bilheimer Capitol Theatre",
+        "aliases": [
+          "Capitol Theatre",
+          "Bilheimer Capitol Theatre"
+        ],
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "music",
+          "history"
+        ],
+        "area": "downtown-clearwater",
+        "address": "405 Cleveland Street",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33755",
+        "lat": 27.96555,
+        "lng": -82.80112,
+        "geo_source": "census",
+        "url": "https://www.rutheckerdhall.com/plan-your-visit/the-nancy-and-david-bilheimer-capitol-theatre",
+        "phone": "(727) 791-7400",
+        "summary": "A 1921 theater on Cleveland Street in downtown Clearwater, owned by the city since 2009 and run by Ruth Eckerd Hall, with 739 fixed seats plus loge boxes, a balcony and a rooftop terrace.",
+        "heritage": {
+          "built": "1921",
+          "era": "boomtown",
+          "story": "Senator John S. Taylor built the Capitol Theatre, which opened on March 21, 1921, with the silent film Dinty and 944 seats. For seven decades it presented vaudeville, cultural events and movies. Facing foreclosure in 2009, it was bought by the City of Clearwater, which partnered with Ruth Eckerd Hall to run it; a 2013 renovation expanded it into neighboring buildings, and it was renamed for donors Nancy and David Bilheimer in 2019.",
+          "visiting": "Open for ticketed performances.",
+          "sources": [
+            "https://www.rutheckerdhall.com/plan-your-visit/the-nancy-and-david-bilheimer-capitol-theatre/venue-history-capitol"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.rutheckerdhall.com/plan-your-visit/the-nancy-and-david-bilheimer-capitol-theatre/venue-history-capitol",
+        "also_sources": [
+          "https://www.rutheckerdhall.com/plan-your-visit/the-nancy-and-david-bilheimer-capitol-theatre",
+          "https://www.rutheckerdhall.com/"
+        ],
+        "notes": "Venue history page (WebFetch): opened March 21, 1921 with 'Dinty'; built by Senator John S. Taylor; 944 seats originally, 433 after 1981, 739 fixed seats after the 2013 renovation plus six loge boxes; city bought it in 2009; renamed in 2019 after a $2.5M gift. The venue overview page (also WebFetch) says the major renovation was in 2019 and that it is 'one of Florida's oldest operating theaters'; the two pages disagree on the renovation year; the history page is used.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "baycare-ballpark",
+        "name": "BayCare Ballpark",
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "downtown-clearwater",
+        "address": "601 N. Old Coachman Road",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33765",
+        "lat": 27.971731,
+        "lng": -82.731641,
+        "geo_source": "photon",
+        "url": "https://www.milb.com/clearwater/ballpark",
+        "summary": "Clearwater ballpark, opened in 2004, that is the spring training home of the Philadelphia Phillies and the home of the Low-A Clearwater Threshers. It has 7,300 fixed seats plus grass berm seating for 1,500.",
+        "quote": "The Phillies have been training in Clearwater, Florida, since 1947, the second-longest affiliation between a Major League club and its Spring Training home in baseball.",
+        "status": "open",
+        "source_url": "https://www.milb.com/clearwater/ballpark",
+        "also_sources": [
+          "https://www.mlb.com/phillies/spring-training/ballpark"
+        ],
+        "notes": "MiLB page: opened 2004; Phillies spring training and Clearwater Threshers; 7,300 fixed seats + 1,500 berm; directions give 601 N. Old Coachman Road. MLB page: ballpark address 601 Old Coachman Road; Carpenter Complex built 1967.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "td-ballpark",
+        "name": "TD Ballpark",
+        "aliases": [
+          "Dunedin Stadium",
+          "Florida Auto Exchange Stadium",
+          "Knology Park"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "dunedin",
+        "address": "373 Douglas Avenue",
+        "city": "Dunedin",
+        "state": "FL",
+        "zip": "34698",
+        "lat": 28.003802,
+        "lng": -82.786662,
+        "geo_source": "photon",
+        "url": "https://www.milb.com/dunedin/ballpark/TDBallpark",
+        "summary": "Ballpark in Dunedin that is the spring training home of the Toronto Blue Jays and the home of the Single-A Dunedin Blue Jays in the Florida State League. It opened in 1990 and was rebuilt in 2019-20; it holds about 8,500.",
+        "status": "open",
+        "source_url": "https://www.milb.com/dunedin/ballpark/a-z-guide",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/TD_Ballpark",
+          "https://www.mlb.com/bluejays/spring-training/ballpark"
+        ],
+        "notes": "MiLB A-Z guide: address 373 Douglas Avenue, Dunedin, FL 34698; beer sold at Spring Training and Florida State League games; re-entry rules. Wikipedia (WebFetch): opened March 1, 1990; ~$102M renovation 2019-2020; capacity 8,500; former names; Blue Jays' temporary MLB home for the first two months of 2021. MLB page: 'The 2026 Blue Jays Spring Training Season has ended.'",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "central-park-performing-arts-center",
+        "name": "Central Park Performing Arts Center",
+        "aliases": [
+          "CPPAC",
+          "Largo Cultural Center"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "largo",
+        "address": "105 Central Park Drive",
+        "city": "Largo",
+        "state": "FL",
+        "zip": "33771",
+        "lat": 27.914686,
+        "lng": -82.783526,
+        "geo_source": "census",
+        "url": "https://www.largoarts.com/",
+        "phone": "(727) 587-6793",
+        "summary": "Performing arts center on Central Park Drive in Largo, opened in 1996 as the Largo Cultural Center, with a 333-seat theater that books concerts, tribute bands, dance and theater, including the Eight O'Clock Theatre series.",
+        "hours_text": "Box office: Monday-Friday 10 a.m.-4 p.m., and from one hour before each performance.",
+        "status": "open",
+        "source_url": "https://www.largoarts.com/about/history.php",
+        "also_sources": [
+          "https://www.largoarts.com/",
+          "https://www.largoarts.com/about/visitor_information.php"
+        ],
+        "notes": "History page: cultural arts programs since 1979; the 24,000 sq ft Largo Cultural Center with a 333-seat theater opened 1996; renamed Central Park Performing Arts Center in 2016 (Tonne Playhouse renovations). Visitor page: box office hours; closed on City of Largo holidays; Eight O'Clock Theatre Series subscriptions. Homepage: address; upcoming acts (Artimus Pyle Band, Oz Noy Trio, Coastal Ballet's Dracula, Theatre eXceptional).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tarpon-springs-performing-arts-center",
+        "name": "Tarpon Springs Performing Arts Center",
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "tarpon-springs",
+        "address": "324 Pine Street",
+        "city": "Tarpon Springs",
+        "state": "FL",
+        "zip": "34689",
+        "lat": 28.150807,
+        "lng": -82.753257,
+        "geo_source": "census",
+        "url": "https://tarponarts.org/",
+        "phone": "(727) 942-5605",
+        "summary": "A 295-seat theater inside Tarpon Springs City Hall, one of four venues run by Tarpon Arts, used for tribute shows, concerts and talks.",
+        "status": "open",
+        "source_url": "https://tarponarts.org/about-tarpon-springs/museums-theaters/",
+        "also_sources": [
+          "https://tarponarts.org/",
+          "https://tarponarts.org/about-tarpon-springs/us/contact-us/"
+        ],
+        "notes": "Museums & theaters page: Tarpon Arts manages and operates four venues in the city; the Performing Arts Center is at 324 Pine Street (inside City Hall), a 295-seat theater. Contact page: ticket office at 100 Beekman Lane, 727.942.5605 (M-F 10-4). Homepage lists tribute shows (CountryLIVE, Rocky Mountain Christmas, Beginnings) and Tarpon Talks.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "francis-wilson-playhouse",
+        "name": "Francis Wilson Playhouse",
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "history"
+        ],
+        "area": "downtown-clearwater",
+        "address": "302 Seminole St.",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33755",
+        "lat": 27.973874,
+        "lng": -82.800999,
+        "geo_source": "census",
+        "url": "https://www.franciswilsonplayhouse.org/",
+        "phone": "(727) 446-1360",
+        "summary": "Community theater in Clearwater that has staged plays and musicals in its own playhouse on Seminole Street since 1935; the company began in 1930 as the Little Theatre of Clearwater.",
+        "quote": "Since 1930, Francis Wilson Playhouse has been bringing performers, volunteers, and audiences together through exceptional live theatre.",
+        "heritage": {
+          "built": "1935",
+          "era": "land-boom",
+          "story": "The company started in 1930 as the Little Theatre of Clearwater, part of the national Little Theatre Movement, and built its playhouse five years later. It is named for stage star Francis Wilson, the first president of Actors' Equity, whom the playhouse credits as its founder.",
+          "visiting": "Open for performances; 2026-27 is its 97th season.",
+          "sources": [
+            "https://www.franciswilsonplayhouse.org/about"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.franciswilsonplayhouse.org/about",
+        "also_sources": [
+          "https://www.franciswilsonplayhouse.org/"
+        ],
+        "notes": "About page: at 302 Seminole St. since 1935; began 1930 as the Little Theatre of Clearwater; renamed in the 1990s for Francis Wilson; musicals since 1991. Homepage: box office 727-446-1360; 'Season 97'; 'one of Florida's oldest continuously operating community theaters' (their claim).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "innisbrook-copperhead-course",
+        "name": "Copperhead Course at Innisbrook",
+        "aliases": [
+          "Copperhead",
+          "Innisbrook Copperhead"
+        ],
+        "kind": "sports",
+        "topics": [
+          "sports",
+          "outdoors"
+        ],
+        "area": "palm-harbor",
+        "address": "36750 U.S. Highway 19 North",
+        "city": "Palm Harbor",
+        "state": "FL",
+        "zip": "34684",
+        "lat": 28.104584,
+        "lng": -82.73998,
+        "geo_source": "census",
+        "url": "https://www.innisbrookgolfresort.com/golf/courses/copperhead-course",
+        "summary": "The best known of Innisbrook resort's four golf courses and the host of the PGA Tour's Valspar Championship, a course of more than 7,200 yards whose closing stretch is called the Snake Pit. The 2027 Valspar Championship is set for May 3-9, 2027.",
+        "quote": "Copperhead is the most recognizable of Innisbrook's four courses.",
+        "status": "open",
+        "status_note": "The resort says Copperhead is cart-path-only from March 1 and closed on Monday-Thursday afternoons from March 1 through the 2027 Valspar Championship.",
+        "source_url": "https://www.innisbrookgolfresort.com/golf/courses/copperhead-course",
+        "also_sources": [
+          "https://www.innisbrookgolfresort.com/golf/",
+          "https://www.valsparchampionship.com/"
+        ],
+        "notes": "Course page: host of the Valspar Championship; the Snake Pit; more than 7,200 yards; cart-path and afternoon closures before the 2027 tournament. Golf page: four courses designed by Lawrence 'Larry' Packard. Valspar site: May 3-9, 2027, Innisbrook Golf and Spa, Palm Harbor. The resort itself (Innisbrook) belongs in the stays slices; coordinates are the resort address (census), not the course.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-strawberry-festival-grounds",
+        "name": "Florida Strawberry Festival Grounds",
+        "aliases": [
+          "Florida Strawberry Festival"
+        ],
+        "kind": "attraction",
+        "topics": [
+          "family",
+          "food",
+          "music",
+          "history"
+        ],
+        "area": "plant-city",
+        "address": "303 BerryFest Place",
+        "city": "Plant City",
+        "state": "FL",
+        "zip": "33563",
+        "lat": 28.014664,
+        "lng": -82.144138,
+        "geo_source": "manual",
+        "url": "https://flstrawberryfestival.com/",
+        "phone": "(813) 752-9194",
+        "summary": "Festival grounds in Plant City that host the Florida Strawberry Festival, an 11-day fair each spring with headline concerts, livestock shows, agricultural and craft exhibits and strawberry shortcake. The 2027 festival runs March 4-14.",
+        "quote": "Each spring, the Florida Strawberry Festival® rolls out the red carpet to welcome visitors from throughout the Sunshine State and the world.",
+        "heritage": {
+          "era": "land-boom",
+          "story": "The festival began in 1930, when members of the newly organized Plant City Lions Club conceived an event to celebrate the strawberry harvest. After a six-year pause during and just after World War II, American Legion Post 26 helped revive it in 1948. The festival says it has never been subsidized by taxpayers.",
+          "sources": [
+            "https://flstrawberryfestival.com/history-2/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://flstrawberryfestival.com/history-2/",
+        "also_sources": [
+          "https://flstrawberryfestival.com/",
+          "https://flstrawberryfestival.com/information/directions/",
+          "https://www.visittampabay.com/listings/florida-strawberry-festival/2799/"
+        ],
+        "notes": "Festival site: 'March 4 – March 14, 2027 | Plant City, FL'; address 303 BerryFest Place; history (1930 Lions Club; 1948 revival; Top 40 Fairs in North America; not taxpayer-subsidized). Directions page: the grounds are on Reynolds St. VTB listing: 11-day event; over 650,000 visitors; phone (813) 752-9194; coordinates 28.0146642,-82.1441376, used here (geo_source manual) because the census and Photon geocoders found no match for BerryFest Place. kind 'attraction' (no fairgrounds kind).",
+        "checked": "2026-09-27",
+        "quote_source": "https://flstrawberryfestival.com/history-2/"
+      },
+      {
+        "id": "richey-suncoast-theatre",
+        "name": "Richey Suncoast Theatre",
+        "aliases": [
+          "Meighan Theatre"
+        ],
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "history"
+        ],
+        "area": "west-pasco",
+        "address": "6237 Grand Blvd",
+        "city": "New Port Richey",
+        "state": "FL",
+        "zip": "34652",
+        "lat": 28.249337,
+        "lng": -82.719645,
+        "geo_source": "census",
+        "url": "https://www.richeysuncoasttheatre.com/",
+        "phone": "(727) 842-6777",
+        "summary": "A 334-seat community theater in downtown New Port Richey, in a movie house that opened in 1926 as the Meighan Theatre. It stages live productions and is rented for concerts, dance recitals and other events.",
+        "quote": "Downtown New Port Richey's Premier Performing Arts Venue",
+        "heritage": {
+          "built": "1925",
+          "era": "land-boom",
+          "story": "Built in 1925, the theater was named for silent film star Thomas Meighan and opened as the Meighan Theatre on July 1, 1926, with his film The New Klondike. Sound came in 1930; the theater closed in 1934 during the Depression and reopened in 1938 as the New Port Richey Theatre. It became the Richey Suncoast Theatre, a community theater, in 1972, opening with Fiddler on the Roof.",
+          "visiting": "Open for performances; box office 727-842-6777.",
+          "sources": [
+            "https://www.richeysuncoasttheatre.com/about"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.richeysuncoasttheatre.com/about",
+        "also_sources": [
+          "https://www.richeysuncoasttheatre.com/"
+        ],
+        "notes": "About page: built 1925; Meighan Theatre opened July 1, 1926; 334 seats (2 boxes of 4, a balcony, main floor); community theatre with live productions since 1972; rentals for dance recitals, music concerts, fundraisers, weddings. Homepage: address, box office, current show 'A Night of Poe'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "van-wezel-performing-arts-hall",
+        "name": "Van Wezel Performing Arts Hall",
+        "aliases": [
+          "Van Wezel"
+        ],
+        "kind": "performing-arts",
+        "kinds": [
+          "landmark"
+        ],
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "sarasota",
+        "address": "777 N Tamiami Trail",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34236",
+        "lat": 27.342888,
+        "lng": -82.550415,
+        "geo_source": "photon",
+        "url": "https://www.vanwezel.org/",
+        "phone": "(941) 263-6799",
+        "summary": "City of Sarasota concert hall on Sarasota Bay, a purple seashell-shaped building from 1968-69, with the 1,741-seat Roskamp Auditorium for touring Broadway, comedians, orchestras and dance, plus the Sarasota Orchestra and Sarasota Ballet.",
+        "quote": "The Van Wezel Performing Arts Hall on Sarasota Bay is the world's only purple seashell-shaped theater.",
+        "heritage": {
+          "built": "1968-1969",
+          "architect": "William Wesley Peters (Taliesin Associated Architects of the Frank Lloyd Wright Foundation)",
+          "era": "postwar",
+          "story": "The hall was built in 1968 and 1969 with money from a City of Sarasota bond referendum and a bequest from Lewis and Eugenia Van Wezel. Its architect, William Wesley Peters, was a chief architect at Taliesin Associated Architects and Frank Lloyd Wright's son-in-law; the purple color was chosen by Wright's widow Olgivanna. Taliesin Architects led the first major renovation and expansion in 2000-01.",
+          "visiting": "Open for ticketed performances; the box office is open weekdays 10 a.m.-4 p.m.",
+          "sources": [
+            "https://www.vanwezel.org/about-us/about-us-1"
+          ]
+        },
+        "hours_text": "Box office: Monday-Friday 10 a.m.-4 p.m.; Saturday 12-4 p.m. in the regular season.",
+        "status": "open",
+        "source_url": "https://www.vanwezel.org/about-us/about-us-1",
+        "also_sources": [
+          "https://www.vanwezel.org/"
+        ],
+        "notes": "About page: owned and operated by the City of Sarasota; 80,000 sq ft; 1,741-seat Roskamp Auditorium (named for a $1M gift to the 2001 renovation); more than 100 events a season; 2000 renovation by Taliesin. Homepage: address; (941) 263-6799; box office hours; 26-27 season on sale.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-opera-house",
+        "name": "Sarasota Opera House",
+        "aliases": [
+          "A.B. Edwards Theater",
+          "Edwards Theatre",
+          "Florida Theater"
+        ],
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "music",
+          "history"
+        ],
+        "area": "sarasota",
+        "address": "61 N Pineapple Ave.",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34236",
+        "lat": 27.336891,
+        "lng": -82.543352,
+        "geo_source": "census",
+        "url": "https://www.sarasotaopera.org/",
+        "phone": "(941) 328-1300",
+        "summary": "Home of Sarasota Opera in downtown Sarasota: a 1926 Mediterranean Revival theater with the 1,119-seat William E. Schmidt Opera Theatre. The company's fall opera and its winter festival (March 3-14, 2027) play here, and the house also hosts concerts, films and other shows.",
+        "hours_text": "Box office: Monday-Friday 10 a.m.-4 p.m.",
+        "heritage": {
+          "built": "1926",
+          "architect": "Roy A. Benjamin",
+          "style": "Mediterranean Revival",
+          "era": "land-boom",
+          "story": "Sarasota's first mayor, A.B. Edwards, commissioned Jacksonville architect Roy A. Benjamin, and the A.B. Edwards Theater opened on April 10, 1926, with shops, offices and apartments around the auditorium. Renamed the Florida Theater and turned into a movie house, it closed in 1973. The Asolo Opera Guild bought it in 1979 for $173,000, reopened it for opera in 1984, and restored the whole building in 2007-08.",
+          "visiting": "Open for performances; the opera company also lists building tours.",
+          "sources": [
+            "https://www.sarasotaopera.org/about-sarasota-opera-house"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.sarasotaopera.org/about-sarasota-opera-house",
+        "also_sources": [
+          "https://www.sarasotaopera.org/"
+        ],
+        "notes": "Opera House page: opened April 10, 1926; architect Roy A. Benjamin; Mediterranean Revival facade; later the Florida Theater; closed 1973; bought 1979 for $173,000; opera from 1984; 2007-08 holistic renovation; Schmidt Opera Theatre seats 1,119. Homepage: box office at 61 N. Pineapple Ave., 941-328-1300, M-F 10-4; Hansel and Gretel Oct 30 - Nov 14, 2026; 2027 Winter Opera Festival March 3-14; a link to 'sarasota-opera-house-tours'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "asolo-repertory-theatre",
+        "name": "Asolo Repertory Theatre",
+        "aliases": [
+          "Asolo Rep",
+          "FSU Center for the Performing Arts"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts"
+        ],
+        "area": "sarasota",
+        "address": "5555 N Tamiami Trail",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34243",
+        "lat": 27.382018,
+        "lng": -82.556921,
+        "geo_source": "census",
+        "url": "https://asolorep.org/",
+        "phone": "(941) 351-8000",
+        "summary": "Professional repertory theater on the grounds of The Ringling in Sarasota, staging about eight productions a season in the FSU Center for the Performing Arts, where it has played since 1989. It began in the 1950s as a summer company in the Ringling Museum's Historic Asolo Theater.",
+        "status": "open",
+        "source_url": "https://asolorep.org/about-us/history/",
+        "also_sources": [
+          "https://asolorep.org/plan-your-visit-to-asolo-rep/",
+          "https://asolorep.org/"
+        ],
+        "notes": "History page: FSU faculty founded a summer company in the Historic Asolo Theater (the interior acquired by 1949, opened as a gallery theater in 1952); first State Theatre of Florida (1965); moved into the new FSU Center for the Performing Arts in December 1989. Plan-your-visit page: box office 941.351.8000; 'located on the grounds of The Ringling, next to The Ringling Museum of Art'; address 5555 N Tamiami Trl, Sarasota, FL 34243; Mertz Theatre. Homepage: eight productions in a subscription. The Ringling itself is the around-daytrips slice's ringling-museum.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-studio-theatre",
+        "name": "Florida Studio Theatre",
+        "aliases": [
+          "FST"
+        ],
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "sarasota",
+        "address": "1241 North Palm Avenue",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34236",
+        "lat": 27.336561,
+        "lng": -82.545391,
+        "geo_source": "census",
+        "url": "https://www.floridastudiotheatre.org/",
+        "summary": "Professional theater in downtown Sarasota with five stages for plays, cabaret series and children's theatre; founded in 1973, it says it is the largest subscription theatre in Florida.",
+        "status": "open",
+        "source_url": "https://www.floridastudiotheatre.org/about-fst/our-history",
+        "also_sources": [
+          "https://www.floridastudiotheatre.org/"
+        ],
+        "notes": "History page: founded 1973 by Jon Spelman; Mainstage Series from 1980 (Richard Hopkins); 'the largest subscription theatre in the state of Florida' (their claim); five stages; over 20 professional productions a year; the Historic Women's Club Building. Homepage: 1241 North Palm Avenue, Sarasota, FL 34236; Summer and Winter Cabaret Series; Children's Theatre; Goldstein Cabaret.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "ed-smith-stadium",
+        "name": "Ed Smith Stadium",
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "sarasota",
+        "address": "2700 12th Street",
+        "city": "Sarasota",
+        "state": "FL",
+        "zip": "34237",
+        "lat": 27.347665,
+        "lng": -82.517045,
+        "geo_source": "photon",
+        "url": "https://www.mlb.com/orioles/spring-training/ballpark",
+        "summary": "Sarasota ballpark that has been the spring training home of the Baltimore Orioles since 2010. It opened in 1989 and was renovated before the 2011 season; it also hosts concerts and other special events.",
+        "status": "open",
+        "source_url": "https://www.mlb.com/orioles/spring-training/ballpark",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Ed_Smith_Stadium"
+        ],
+        "notes": "Orioles page: address 2700 12th Street, Sarasota, FL 34237; bag and food rules for spring training games, which 'do not apply to special events held at the ballpark (i.e. concerts, tours, corporate events, etc.)'. Wikipedia: built 1989; $31.2M renovation completed Feb 2011; capacity 8,500; Orioles tenant and operator since 2010; earlier White Sox and Reds.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "cooltoday-park",
+        "name": "CoolToday Park",
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "sarasota",
+        "address": "18800 S. West Villages Parkway",
+        "city": "North Port",
+        "state": "FL",
+        "zip": "34293",
+        "lat": 27.031495,
+        "lng": -82.318063,
+        "geo_source": "photon",
+        "url": "https://www.cooltodaypark.com/",
+        "summary": "Spring training home of the Atlanta Braves in North Port, in southern Sarasota County, opened in 2019. It also hosts the Braves' Florida Complex League team in summer, facility tours and special events, and its tiki bar and team store are open six days a week year-round.",
+        "quote": "Located in North Port, Florida, CoolToday Park is the Spring Training home of the Atlanta Braves, and opened in 2019, with the inaugural game being played on Sunday, March 24, 2019.",
+        "status": "open",
+        "source_url": "https://www.mlb.com/braves/spring-training/ballpark",
+        "notes": "Braves page: address 18800 S. West Villages Parkway; opened 2019; FCL Braves; tiki bar and store open six days a week year-round; facility tours. The OSM match gives the city as North Port; mailing city may be Venice (34293). It is outside the six-county core; area sarasota (Day Trips).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lecom-park",
+        "name": "LECOM Park",
+        "aliases": [
+          "McKechnie Field"
+        ],
+        "kind": "arena-stadium",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "sports",
+          "history"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "1611 9th Street West",
+        "city": "Bradenton",
+        "state": "FL",
+        "zip": "34205",
+        "lat": 27.485654,
+        "lng": -82.570373,
+        "geo_source": "photon",
+        "url": "https://www.mlb.com/pirates/spring-training/ballpark",
+        "summary": "Bradenton ballpark, first built in 1923, that is the spring training home of the Pittsburgh Pirates and home of the Bradenton Marauders; a 2013 renovation added an outfield boardwalk and raised capacity to more than 8,500.",
+        "heritage": {
+          "built": "1923",
+          "style": "Spanish mission (1990s facade)",
+          "era": "land-boom",
+          "story": "The ballpark was originally built in 1923. A 1991-93 facelift added its Spanish mission style facade and raised seating from about 4,200 to more than 6,500; lights came in 2008. A $10 million renovation in 2013 added a 19,000-square-foot boardwalk across the outfield and new seats.",
+          "visiting": "Open for spring training and Marauders games.",
+          "sources": [
+            "https://www.mlb.com/pirates/spring-training/ballpark"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.mlb.com/pirates/spring-training/ballpark",
+        "notes": "Pirates page: 'approximately 50 miles south of Tampa'; address 1611 9th Street West; built 1923; renovations; home of the Bradenton Marauders; parking lots on 6th Street West. Alias McKechnie Field: the page refers to 'Inside McKechnie'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "manatee-performing-arts-center",
+        "name": "Manatee Performing Arts Center",
+        "kind": "performing-arts",
+        "topics": [
+          "arts",
+          "music"
+        ],
+        "area": "bradenton-anna-maria",
+        "address": "502 Third Avenue W",
+        "city": "Bradenton",
+        "state": "FL",
+        "zip": "34205",
+        "lat": 27.497235,
+        "lng": -82.567583,
+        "geo_source": "census",
+        "url": "https://www.manateeperformingartscenter.com/",
+        "phone": "(941) 748-5875",
+        "summary": "Performing arts center in downtown Bradenton, run by the nonprofit Florida Cultural Group, that stages musicals and plays and books comedy and magic shows.",
+        "status": "open",
+        "source_url": "https://www.manateeperformingartscenter.com/",
+        "notes": "Homepage: box office (941) 748-5875 (M-F 9-5); 502 Third Avenue W, Bradenton, FL 34205 is given as the Florida Cultural Group's corporate office (a 501(c)3); shows including Anastasia, Guys and Dolls, The Drowsy Chaperone SR., a magic-comedy show. Directions page: free parking at 401 7th Street West, 'directly across the street from the Performing Arts Center'. The history page returned 403.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "rp-funding-center",
+        "name": "RP Funding Center",
+        "aliases": [
+          "Lakeland Center",
+          "Lakeland Civic Center"
+        ],
+        "kind": "arena-stadium",
+        "kinds": [
+          "performing-arts"
+        ],
+        "topics": [
+          "sports",
+          "music",
+          "arts"
+        ],
+        "area": "polk",
+        "address": "701 West Lime St.",
+        "city": "Lakeland",
+        "state": "FL",
+        "zip": "33815",
+        "lat": 28.039585,
+        "lng": -81.967064,
+        "geo_source": "census",
+        "url": "https://www.rpfundingcenter.com/",
+        "phone": "(863) 834-8100",
+        "summary": "City of Lakeland civic center with an arena, the Youkey Theatre and an exhibition hall, booking concerts, family shows, Broadway tours, amateur sports and expos. It opened in 1974 as the Lakeland Civic Center.",
+        "parking_text": "Cashless parking booths (card, Apple Pay or Google Pay); fees vary by event.",
+        "status": "open",
+        "source_url": "https://www.rpfundingcenter.com/contact-us/",
+        "also_sources": [
+          "https://www.rpfundingcenter.com/directions-parking/",
+          "https://www.rpfundingcenter.com/",
+          "https://en.wikipedia.org/wiki/RP_Funding_Center"
+        ],
+        "notes": "Contact page: 701 West Lime St., Lakeland, FL 33815; administration 863-834-8100. Homepage: 'amateur sporting events, concerts, & family shows'; Lakeland Holiday Expo. Directions page: Youkey Theatre drop-off at Entrance #4 on Orange Street; cashless parking. Wikipedia: opened Nov 16, 1974; Jenkins Arena 8,178; Youkey Theatre 2,236; owned by the City of Lakeland; Lakeland Center 1994-2017. The homepage navigation has a Broadway section.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "publix-field-at-joker-marchant-stadium",
+        "name": "Publix Field at Joker Marchant Stadium",
+        "aliases": [
+          "Joker Marchant Stadium"
+        ],
+        "kind": "arena-stadium",
+        "topics": [
+          "sports"
+        ],
+        "area": "polk",
+        "address": "2301 Lakeland Hills Blvd.",
+        "city": "Lakeland",
+        "state": "FL",
+        "zip": "33805",
+        "lat": 28.074622,
+        "lng": -81.950767,
+        "geo_source": "photon",
+        "url": "https://www.mlb.com/tigers/spring-training/ballpark",
+        "summary": "Lakeland ballpark that has been the Detroit Tigers' spring training home since it opened in 1966, and the home of the minor-league Lakeland Flying Tigers. It holds about 8,500.",
+        "status": "open",
+        "source_url": "https://www.mlb.com/tigers/spring-training/ballpark",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/Joker_Marchant_Stadium"
+        ],
+        "notes": "Tigers page: address 2301 Lakeland Hills Blvd., Lakeland, FL 33805; security rules. Wikipedia: opened March 12, 1966; renovations 2002, 2016-17; 8,500 seats; Flying Tigers; Publix naming rights from 2017 for 20 years.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "polk-theatre",
+        "name": "Polk Theatre",
+        "kind": "performing-arts",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "arts",
+          "history",
+          "music"
+        ],
+        "area": "polk",
+        "address": "121 South Florida Ave.",
+        "city": "Lakeland",
+        "state": "FL",
+        "zip": "33801",
+        "lat": 28.043835,
+        "lng": -81.957277,
+        "geo_source": "census",
+        "url": "https://www.polktheatre.org/",
+        "phone": "(863) 682-7553",
+        "summary": "A 1928 atmospheric movie palace in downtown Lakeland, run by a nonprofit since 1982, that shows classic films and hosts tribute concerts and live shows.",
+        "heritage": {
+          "built": "1928",
+          "architect": "J.E. Casale",
+          "style": "Atmospheric movie palace (Mediterranean village interior)",
+          "era": "land-boom",
+          "story": "Lakeland businessman John E. Melton planned the building; the unfinished theater was sold to the Publix Theatre Corporation, and architect J.E. Casale designed an interior like a Mediterranean village under a starry ceiling. It opened on December 22, 1928, with the talking picture On Trial, and later hosted vaudeville, big bands and, in 1956, Elvis Presley. In 1982 citizens formed a nonprofit and bought the theater for $300,000; a major restoration was completed in October 1999.",
+          "visiting": "Open for films and shows.",
+          "sources": [
+            "https://www.polktheatre.org/history"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.polktheatre.org/history",
+        "also_sources": [
+          "https://www.polktheatre.org/"
+        ],
+        "notes": "History page as quoted in the heritage story. Homepage: 121 South Florida Ave., Lakeland, FL 33801; Tel 863-682-7553; a Classic Films series; tribute shows (ThunderBeard, Almost ABBA).",
+        "checked": "2026-09-27"
+      }
+    ]
+  },
+  "report": "## venues-bay: event venues bay-wide (59 places, checked Sep 27, 2026)\n\n### What is covered\nEvery venue I could verify that hosts ticketed concerts, shows, games and big public events, from Pasco to Sarasota and Lakeland:\n- **Arenas, stadiums, ballparks (14):** Benchmark International Arena, Raymond James Stadium, George M. Steinbrenner Field, Yuengling Center, Suncoast Credit Union Field (Tampa Bay Sun), Tropicana Field, Al Lang Stadium, BayCare Ballpark, TD Ballpark, LECOM Park, Ed Smith Stadium, CoolToday Park, Publix Field at Joker Marchant Stadium, RP Funding Center.\n- **Theaters and halls (22 performing-arts):** Straz Center, Tampa Theatre, Stageworks, Carrollwood Players, Mahaffey, Palladium, American Stage, freeFall, St. Petersburg City Theatre, Zubrick Magic Theatre, Ruth Eckerd Hall, Bilheimer Capitol Theatre, Central Park PAC (Largo), Tarpon Springs PAC, Francis Wilson Playhouse, Richey Suncoast Theatre, Van Wezel, Sarasota Opera House, Asolo Rep, Florida Studio Theatre, Manatee PAC, Polk Theatre.\n- **Music venues and clubs (7):** The RITZ Ybor, Hard Rock Event Center, MIDFLORIDA Credit Union Amphitheatre, The Orpheum, Skipper's Smokehouse, Jannus Live, The BayCare Sound (shared id sound-at-coachman-park).\n- **Comedy (3, kind nightlife):** Tampa Funny Bone (the former Tampa Improv), Side Splitters, Spitfire Comedy House.\n- **Event parks (7):** Curtis Hixon, Julian B. Lane Riverfront Park, Centennial Park (Ybor), Water Works Park, Vinoy Park, Straub Park, Williams Park.\n- **Fairgrounds, convention, racing, golf:** Florida State Fairgrounds, Florida Strawberry Festival Grounds, Tampa Convention Center (all kind attraction, because the schema has no fairground or convention kind), The Coliseum (historic-site), Tampa Bay Downs, Copperhead Course at Innisbrook (sports).\n\nCounts by region: Tampa 22, St. Petersburg 14, Clearwater & North Pinellas 10, Around the Bay 2, Day Trips 11, Gulf Beaches 0 (no ticketed venues found there). Status: 58 open, 1 temporarily-closed (Palladium, renovating until an expected fall 2027 reopening). 18 records have a heritage block (Tampa Theatre NRHP 78000945, Capitol Theatre 1921, the Coliseum 1924, Palladium 1925, RITZ 1917, Sarasota Opera House 1926, Polk Theatre 1928, Richey Suncoast 1925/26, Francis Wilson 1935, Al Lang 1947, LECOM 1923, Van Wezel 1968-69, Williams Park 1888, Tampa Bay Downs 1926, Ruth Eckerd Hall 1983, The BayCare Sound, Florida State Fairgrounds, Strawberry Festival). Signature: the arena, Raymond James, the Trop, the Straz, Tampa Theatre, the Mahaffey, Ruth Eckerd Hall. All shared ids from research/README.md in my scope are used exactly.\n\n### How candidates were found\n1. The Visit Tampa Bay sitemap (1,012 /listings/ URLs, filtered for venue words), then each listing's page for address and phone.\n2. Visit St. Pete/Clearwater performing-arts and arts pages (read with WebFetch; curl is blocked by Cloudflare there).\n3. The City of St. Petersburg's museums-galleries-theaters page and parks list; the City of Tampa featured-parks pages.\n4. MLB/MiLB spring training ballpark pages (all seven Grapefruit League parks in the region).\n5. Wikipedia (through WebFetch) for opening years, capacities and NRHP numbers.\n6. Web searches by kind and area until the session's search budget ran out partway through.\nEach record's facts come from its own official page where it could be read (source_url); tourism listings and Wikipedia are also_sources, or the source when the official site blocked automated reads.\n\n### Changes found (worth knowing)\n- **Crowbar (Ybor) closed**: its last show was July 31, 2026, per Creative Loafing (https://www.cltampa.com/music-2/photos-crowbar-ends-20-year-run-in-ybor-city-with-a-showcase-of-tampa-hip-hop/). Left out.\n- **The Orpheum moved** from Ybor City to 14802 N Nebraska Ave (north Tampa).\n- **Tampa Improv is now Tampa Funny Bone** (same club at Centro Ybor, renamed Dec 2023); id funny-bone-tampa, alias Tampa Improv.\n- **The Sound at Coachman Park is now The BayCare Sound** (renamed March 7, 2024); kept the shared id sound-at-coachman-park.\n- **Floridian Social Club (St. Pete) left out:** its site says it moved from ticketed shows to private events.\n- **Palladium** is closed for renovation until an expected fall 2027 reopening.\n- **Tropicana Field** reopened for the 2026 season after the Milton roof repairs. The Rays played 2025 at Steinbrenner Field.\n- **MIDFLORIDA amphitheatre**: its FAQ says the roof reconstruction is behind schedule, but shows go on.\n- **Tampa Bay Sun** play at Suncoast Credit Union Field (formerly Riverfront Stadium, 1701 N Boulevard), not at a stadium named in the scope.\n\n### Deliberately left out\n- Gorilla Theatre: its domain now serves unrelated spam, so it is treated as closed.\n- Tampa Repertory Theatre: it has no permanent space and says so itself. Jobsite Theater is a resident company of the Straz; both are noted in the Straz record.\n- ShowPalace dinner theatre (Hudson): its site showed only an undated past show, so I could not confirm it is operating.\n- Gulfport Casino Ballroom: historic (NRHP 14000477), but mygulfport.us blocked both tools and I could not confirm its post-Helene status. A candidate for history-region or the verifier.\n- Cuban Club, Italian Club, Centro Asturiano (Ybor mutual-aid clubs that rent halls): left to history-tampa, so the heritage is not split across slices.\n- Manhattan Casino (St. Pete): left to history.\n- St. Pete Pier, Pier 60, Sparkman Wharf, Armature Works: see-* slices.\n- Innisbrook resort as lodging: stays slices. Only the Copperhead course is here.\n- Demens Landing, Sims Park, Largo Central Park, Robarts Arena, Nathan Benderson Park: no source read in time.\n- Crowbar: closed.\n\n### Open questions for the verifier\n- Straz Center, Tampa Theatre and Yuengling Center: the official sites are behind bot walls (Incapsula, HTTP 202). Their facts come from Visit Tampa Bay listings and Wikipedia. Please re-read the official pages in a browser.\n- Benchmark International Arena: the history comes from Wikipedia. The official arena-info page was blocked.\n- Quotes read only through WebFetch (St. Petersburg City Theatre, Skipper's Smokehouse; Jannus Live re-read): check exact punctuation.\n- Straub Park: only the city's park list (addresses) was read. Add an events source or trim.\n- Williams Park bandshell: condition in 2026 is not verified (Wikipedia notes repairs needed as of 2022).\n- Florida Strawberry Festival Grounds: the coordinates come from the Visit Tampa Bay listing (geo_source manual) because neither geocoder matched 303 BerryFest Place.\n- Coordinates for the Hard Rock Event Center are the casino complex, for Copperhead the resort address, and for Suncoast Credit Union Field the Blake High School grounds.\n- Manatee PAC: 502 Third Avenue W is given as the operator's corporate office. The directions page says free parking at 401 7th St W is directly across the street from the center. Confirm the street address.\n- Capitol Theatre: two pages on the same site disagree on the renovation year (2013 vs 2019). The history page (2013 renovation, 2019 naming) was used.\n- Side Splitters' Wesley Chapel location (The Grove) was not researched.\n"
+}

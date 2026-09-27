@@ -1,0 +1,28 @@
+[
+  {
+    "id": "downtown-tampa-waterfront",
+    "title": "Fixture passage: the downtown Tampa waterfront",
+    "region": "tampa",
+    "lede": "Fixture route for the build tests.",
+    "stops": [
+      {
+        "kind": "place",
+        "id": "tampa-riverwalk"
+      },
+      {
+        "kind": "place",
+        "id": "tampa-theatre",
+        "note": "Fixture note."
+      },
+      {
+        "kind": "experience",
+        "id": "pirate-water-taxi"
+      },
+      {
+        "kind": "stay",
+        "id": "tampa-marriott-water-street"
+      }
+    ],
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

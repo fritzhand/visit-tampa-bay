@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 180" role="img" aria-label="Label frame">
+<title>Label frame: double rule with corner blocks</title>
+<rect x="10" y="10" width="300" height="160" fill="none" style="stroke:var(--frame-outer, currentColor)" stroke-width="2"/>
+<rect x="16.5" y="16.5" width="287" height="147" fill="none" style="stroke:var(--frame-inner, currentColor)" stroke-width="1"/>
+<g style="fill:var(--corner-ink, currentColor)"><path transform="translate(0 0)" fill-rule="evenodd" d="M10 0l1.9 7.2L19.9 10l-8 2.8L10 20l-1.9-7.2L.1 10l8-2.8z M10 8.3a1.7 1.7 0 1 0 0 3.4a1.7 1.7 0 1 0 0-3.4z"/><path transform="translate(300 0)" fill-rule="evenodd" d="M10 0l1.9 7.2L19.9 10l-8 2.8L10 20l-1.9-7.2L.1 10l8-2.8z M10 8.3a1.7 1.7 0 1 0 0 3.4a1.7 1.7 0 1 0 0-3.4z"/><path transform="translate(0 160)" fill-rule="evenodd" d="M10 0l1.9 7.2L19.9 10l-8 2.8L10 20l-1.9-7.2L.1 10l8-2.8z M10 8.3a1.7 1.7 0 1 0 0 3.4a1.7 1.7 0 1 0 0-3.4z"/><path transform="translate(300 160)" fill-rule="evenodd" d="M10 0l1.9 7.2L19.9 10l-8 2.8L10 20l-1.9-7.2L.1 10l8-2.8z M10 8.3a1.7 1.7 0 1 0 0 3.4a1.7 1.7 0 1 0 0-3.4z"/></g></svg>

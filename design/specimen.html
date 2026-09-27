@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chart &amp; Label specimen · Tampa Bay Chartbook</title>
+<meta name="description" content="The design system of Tampa Bay Chartbook in both editions: type, sheet inks, ornaments, cards, plates, map styling.">
+<link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/figtree-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bodoni-moda-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-roman-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="tokens.css">
+<script>
+  /* edition: ?theme=light|dark, else the saved choice, else the system (tokens.css covers no-JS) */
+  (function () {
+    var q = new URLSearchParams(location.search).get("theme"), t = q;
+    try { t = t || localStorage.getItem("cb-theme"); } catch (e) {}
+    if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  })();
+</script>
+<style>
+/* ======================================================================
+   The specimen's CSS is the reference for the site partials: it reads ONLY tokens from tokens.css
+   (design/tools/shots.cjs fails on a color literal in this block). Class names follow the engine's
+   vocabulary where one exists (.page-head .kicker .lede .dek .facts .callout .chip .badge .btn .card
+   .star .unk .tonight .pin), and add the Chart & Label pieces: .frame .ribbon .wl .grat .cartouche
+   .sheet-badge .sheet-dot .plate .seal .buoy .cluster .datebox.
+   ====================================================================== */
+
+/* ---------- base (00-base) ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: calc(var(--topbar-h) + var(--sp-4)); }
+body {
+  font-family: var(--font-body); font-size: var(--fs-base); font-weight: var(--wght-body); line-height: var(--lh-body);
+  color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  font-synthesis-weight: none;
+}
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+button, input, select { font: inherit; color: inherit; }
+button { background: none; border: 0; padding: 0; cursor: pointer; text-align: inherit; }
+a { color: var(--link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { color: var(--link-hover); text-decoration-thickness: 2px; }
+:focus-visible, .is-focus { outline: 3px solid var(--focus); outline-offset: 2px; }
+::selection { background: var(--accent-tint); color: var(--text); }
+h1, h2, h3, h4 {
+  font-family: var(--font-display); font-weight: var(--wght-head); letter-spacing: var(--track-head);
+  line-height: var(--lh-head); color: var(--text); text-wrap: balance;
+}
+h1 { font-size: var(--fs-2xl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); line-height: var(--lh-snug); }
+h4 { font-size: var(--fs-md); line-height: var(--lh-snug); }
+p, li, dd { text-wrap: pretty; }
+strong, b { font-weight: var(--wght-strong); }
+em, i { font-style: italic; }
+kbd {
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  line-height: 1.4; background: var(--kbd-bg); color: var(--text-muted); border: 1px solid var(--border-strong);
+  border-bottom-width: 2px; border-radius: var(--radius-sm); padding: 1px 6px; white-space: nowrap;
+}
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.label {
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  line-height: 1.25; letter-spacing: var(--track-label); text-transform: uppercase;
+}
+.tnum { font-variant-numeric: tabular-nums; }
+.muted { color: var(--text-muted); }
+.faint { color: var(--text-faint); }
+.i { width: 18px; height: 18px; flex: none; }
+.unk { color: var(--text-faint); display: inline-flex; align-items: baseline; gap: 6px; }
+.unk::before { content: ""; width: 9px; height: 9px; flex: none; align-self: center; border: 1.5px dashed currentColor; border-radius: 50%; }
+
+/* ---------- sheet scope: one rule per sheet sets the local inks ---------- */
+:root { --ink-fill: var(--rule-ink); --ink-text: var(--text); --ink-on: var(--primary-contrast); --ink-tint: var(--surface-alt); --ink-edge: var(--rule-ink); --ink-shape: inset(0); }
+[data-sheet="tampa"] { --ink-fill: var(--sheet-tampa); --ink-text: var(--sheet-tampa-ink); --ink-on: var(--sheet-tampa-on); --ink-tint: var(--sheet-tampa-tint); --ink-edge: var(--sheet-tampa-edge); --ink-shape: var(--sheet-tampa-shape); }
+[data-sheet="stpete"] { --ink-fill: var(--sheet-stpete); --ink-text: var(--sheet-stpete-ink); --ink-on: var(--sheet-stpete-on); --ink-tint: var(--sheet-stpete-tint); --ink-edge: var(--sheet-stpete-edge); --ink-shape: var(--sheet-stpete-shape); }
+[data-sheet="beaches"] { --ink-fill: var(--sheet-beaches); --ink-text: var(--sheet-beaches-ink); --ink-on: var(--sheet-beaches-on); --ink-tint: var(--sheet-beaches-tint); --ink-edge: var(--sheet-beaches-edge); --ink-shape: var(--sheet-beaches-shape); }
+[data-sheet="clearwater"] { --ink-fill: var(--sheet-clearwater); --ink-text: var(--sheet-clearwater-ink); --ink-on: var(--sheet-clearwater-on); --ink-tint: var(--sheet-clearwater-tint); --ink-edge: var(--sheet-clearwater-edge); --ink-shape: var(--sheet-clearwater-shape); }
+[data-sheet="around"] { --ink-fill: var(--sheet-around); --ink-text: var(--sheet-around-ink); --ink-on: var(--sheet-around-on); --ink-tint: var(--sheet-around-tint); --ink-edge: var(--sheet-around-edge); --ink-shape: var(--sheet-around-shape); }
+[data-sheet="daytrips"] { --ink-fill: var(--sheet-daytrips); --ink-text: var(--sheet-daytrips-ink); --ink-on: var(--sheet-daytrips-on); --ink-tint: var(--sheet-daytrips-tint); --ink-edge: var(--sheet-daytrips-edge); --ink-shape: var(--sheet-daytrips-shape); }
+
+/* sheet badge (code + shape + ink, from the sprite: <svg class="sheet-badge"><use href="#sheet-tampa"/>) */
+.sheet-badge { width: 40px; height: 24px; flex: none; overflow: visible; }
+.sheet-badge.lg { width: 56px; height: 33px; }
+/* sheet dot: the silhouette alone (18 × 12), for legends and dense lists where the name is adjacent */
+.sheet-dot { display: inline-block; width: 18px; height: 12px; flex: none; background: var(--ink-fill); clip-path: var(--ink-shape); }
+/* sheet tag: badge + sheet name in the sheet's text ink */
+.sheet-tag { display: inline-flex; align-items: center; gap: 8px; color: var(--ink-text); }
+
+/* ---------- ornaments ---------- */
+/* cartouche: concave corners (the cigar-label panel), any element, --n sets the notch */
+.cartouche {
+  --n: var(--notch);
+  -webkit-mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+          mask:
+    radial-gradient(circle at 0 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 0, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 0 / 51% 51% no-repeat,
+    radial-gradient(circle at 0 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 0 100% / 51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%, transparent var(--n), var(--mask-ink) calc(var(--n) + 0.5px)) 100% 100% / 51% 51% no-repeat;
+}
+
+/* label frame: outer rule + inner hairline + a compass star on each corner */
+.frame {
+  position: relative; isolation: isolate;
+  border: var(--frame-w) solid var(--frame-outer);
+  outline: var(--frame-inner-w) solid var(--frame-inner);
+  outline-offset: calc(-1 * (var(--frame-w) + var(--frame-gap) + var(--frame-inner-w)));
+  background: var(--surface);
+}
+.frame::after {
+  content: ""; position: absolute; pointer-events: none; z-index: 1;
+  inset: calc(-1 * (var(--frame-w) / 2 + var(--corner) / 2));
+  background: var(--corner-ink);
+  -webkit-mask: var(--mask-corner) 0 0 / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 0 / var(--corner) var(--corner) no-repeat,
+                var(--mask-corner) 0 100% / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 100% / var(--corner) var(--corner) no-repeat;
+          mask: var(--mask-corner) 0 0 / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 0 / var(--corner) var(--corner) no-repeat,
+                var(--mask-corner) 0 100% / var(--corner) var(--corner) no-repeat, var(--mask-corner) 100% 100% / var(--corner) var(--corner) no-repeat;
+}
+
+/* ribbon: <span class="ribbon"><span>Sheet 1 · Tampa</span></span>; a band with gold hairlines and notched tails */
+.ribbon {
+  --rb: var(--ribbon-bg); --ri: var(--ribbon-ink); --rf: var(--ribbon-fold); --rr: var(--ribbon-rule);
+  position: relative; isolation: isolate; display: inline-flex; max-width: calc(100% - 2 * var(--ribbon-tail));
+  margin: 0 var(--ribbon-tail);
+}
+[data-sheet] .ribbon, .ribbon[data-sheet] { --rb: var(--ink-fill); --ri: var(--ink-on); --rf: color-mix(in oklab, var(--ink-fill) 62%, var(--fold-shade)); }
+.ribbon > span {
+  position: relative; display: inline-flex; align-items: center; gap: 9px; min-height: var(--ribbon-h); padding: 3px 16px;
+  background:
+    linear-gradient(var(--rr) 0 0) 0 3px / 100% 1px no-repeat,
+    linear-gradient(var(--rr) 0 0) 0 calc(100% - 3px) / 100% 1px no-repeat,
+    var(--rb);
+  color: var(--ri);
+  font-family: var(--font-label); font-stretch: var(--label-stretch-wide); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label-wide); text-transform: uppercase; line-height: 1.2; text-align: center;
+}
+.ribbon::before, .ribbon::after {
+  content: ""; position: absolute; z-index: -1; top: 7px; bottom: -7px; width: calc(var(--ribbon-tail) + 8px);
+  background: linear-gradient(var(--rf) 0 0) 0 0 / 100% 100% no-repeat;
+}
+.ribbon::before { left: calc(-1 * var(--ribbon-tail)); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, var(--ribbon-notch) 50%); background: linear-gradient(to top right, var(--rf) 50%, transparent 50%) 100% 100% / 8px 7px no-repeat, linear-gradient(var(--rb) 0 0) 0 0 / calc(100% - 8px) 100% no-repeat; }
+.ribbon::after { right: calc(-1 * var(--ribbon-tail)); clip-path: polygon(0 0, 100% 0, calc(100% - var(--ribbon-notch)) 50%, 100% 100%, 0 100%); background: linear-gradient(to top left, var(--rf) 50%, transparent 50%) 0 100% / 8px 7px no-repeat, linear-gradient(var(--rb) 0 0) 100% 0 / calc(100% - 8px) 100% no-repeat; }
+
+/* water lining: a coast line and four engraved echoes, spacing widening seaward (the section divider) */
+.wl {
+  display: block; height: var(--wl-h); border: 0; margin: var(--sp-8) 0 var(--sp-6);
+  background:
+    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
+    linear-gradient(var(--water-line) 0 0) 0 5px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 72%, transparent) 0 0) 0 9px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 46%, transparent) 0 0) 0 14px / 100% 1px no-repeat,
+    linear-gradient(color-mix(in srgb, var(--water-line) 24%, transparent) 0 0) 0 21px / 100% 1px no-repeat;
+}
+.wl.tight { margin: var(--sp-4) 0; }
+/* the ripple: a single engraved wave line, tiled (under plates, the masthead) */
+.ripple { height: 6px; background: var(--water-line); -webkit-mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; }
+
+/* graticule: a chart's neatline, alternating ink and paper ticks between two rules */
+.grat {
+  --g: var(--grat-step); --w: var(--grat-w);
+  padding: calc(var(--w) + 1px); border: 1px solid var(--grat-ink);
+  background:
+    repeating-linear-gradient(90deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 0 / 100% var(--w) no-repeat,
+    repeating-linear-gradient(90deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 100% / 100% var(--w) no-repeat,
+    repeating-linear-gradient(180deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 0 0 / var(--w) 100% no-repeat,
+    repeating-linear-gradient(180deg, var(--grat-ink) 0 var(--g), var(--grat-paper) 0 calc(var(--g) * 2)) 100% 0 / var(--w) 100% no-repeat,
+    var(--grat-paper);
+}
+.grat > .grat-in { border: 1px solid var(--grat-ink); background: var(--surface); }
+
+/* signature seal: gold leaf, a word, never color alone */
+.seal {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 24px; padding: 3px 10px 3px 6px;
+  background: var(--gold-leaf); color: var(--gold-leaf-ink);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1;
+}
+.seal .i { width: 15px; height: 15px; }
+.seal.cartouche { --n: 5px; padding-left: 9px; padding-right: 12px; }
+
+/* ---------- shell (10-shell) ---------- */
+.topbar {
+  position: sticky; top: 0; z-index: var(--z-topbar); display: flex; align-items: center; gap: var(--sp-3);
+  height: var(--topbar-h); padding: 0 var(--gutter); background: var(--topbar-bg); border-bottom: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+}
+.brand { display: inline-flex; align-items: center; gap: 10px; min-height: var(--tap); color: var(--text); text-decoration: none; }
+.brand:hover { color: var(--text); }
+.brand-mark { width: 36px; height: 36px; }
+.brand-word { width: auto; height: 23px; }
+.brand-sep { width: 1px; height: 24px; background: var(--border-strong); }
+.brand-place { color: var(--accent-strong); font-stretch: var(--label-stretch-wide); letter-spacing: var(--track-label-wide); }
+.top-search {
+  display: flex; align-items: center; gap: 10px; margin-left: auto; width: min(360px, 34vw); min-height: var(--tap); padding: 0 8px 0 12px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface); color: var(--text-faint); font-size: var(--fs-sm);
+}
+.top-search kbd { margin-left: auto; }
+.top-btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-width: var(--tap); min-height: var(--tap); padding: 0 10px; border-radius: var(--radius-md); color: var(--text); font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.top-btn.boxed { border: 1px solid var(--border-strong); background: var(--surface); }
+.top-btn:hover { background: var(--surface-alt); }
+.only-phone { display: none; }
+
+.layout { display: grid; grid-template-columns: var(--sidebar-w) minmax(0, 1fr); }
+.sidebar {
+  position: sticky; top: var(--topbar-h); align-self: start; height: calc(100vh - var(--topbar-h)); overflow: auto;
+  padding: var(--sp-5) var(--sp-3) var(--sp-7); background: var(--sidebar-bg); border-right: 1px solid var(--border);
+}
+.trip-card { display: block; margin: 0 4px var(--sp-5); padding: 12px 14px; background: var(--surface); border: 1px solid var(--border); color: var(--text); text-decoration: none; }
+.trip-card b { display: flex; align-items: center; gap: 8px; font-size: var(--fs-sm); }
+.trip-card span { display: block; margin-top: 2px; font-size: var(--fs-xs); color: var(--text-muted); }
+.nav-group + .nav-group { margin-top: var(--sp-5); }
+.nav-h { display: flex; align-items: center; gap: 8px; margin: 0 0 4px 10px; color: var(--text-muted); }
+.nav ul { list-style: none; padding: 0; }
+.nav a {
+  display: flex; align-items: center; gap: 10px; min-height: 38px; padding: 0 10px; border-left: 3px solid transparent;
+  color: var(--text); text-decoration: none; font-size: var(--fs-sm);
+}
+.nav a:hover { background: var(--surface-alt); color: var(--text); }
+.nav a[aria-current="page"] { background: var(--accent-tint); border-left-color: var(--accent); color: var(--accent-strong); font-weight: var(--wght-strong); }
+.nav a .i { color: var(--text-muted); }
+.nav a[aria-current="page"] .i { color: inherit; }
+.nav .n { margin-left: auto; font-size: var(--fs-xs); color: var(--text-faint); font-variant-numeric: tabular-nums; }
+.nav .sheet-row { gap: 10px; }
+.nav .sheet-row .sheet-badge { width: 40px; height: 24px; }
+.nav .sheet-row .nm { line-height: 1.2; }
+.nav .sheet-row small { display: block; font-size: var(--fs-xs); color: var(--text-faint); }
+.sec-num {
+  display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px;
+  background: var(--primary); color: var(--primary-contrast);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); line-height: 1;
+}
+main { min-width: 0; padding: var(--sp-6) var(--gutter) var(--sp-9); }
+.wrap { max-width: var(--content-max); }
+.dock { display: none; }
+@media (max-width: 1023px) {
+  .layout { grid-template-columns: minmax(0, 1fr); }
+  .sidebar, .top-search, .brand-sep, .brand-place.wide, .top-btn .txt { display: none; }
+  .only-phone { display: inline-flex; }
+  main { padding-bottom: calc(var(--dock-h) + var(--sp-8)); }
+  .dock {
+    position: fixed; z-index: var(--z-dock); left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: repeat(4, 1fr);
+    height: var(--dock-h); background: var(--dock-bg); border-top: 1px solid var(--border-strong);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  }
+  .dock a { display: grid; justify-items: center; align-content: center; gap: 3px; color: var(--text-muted); text-decoration: none; }
+  .dock a[aria-current="page"] { color: var(--accent-strong); }
+  .dock a[aria-current="page"] .i { color: var(--accent); }
+  .dock .i { width: 22px; height: 22px; }
+  .dock .label { font-stretch: 100%; letter-spacing: 0.06em; }
+}
+@media (max-width: 559px) { .brand-word { height: 20px; } .brand-mark { width: 32px; height: 32px; } }
+
+/* ---------- masthead (30-home) ---------- */
+.mast { margin-bottom: var(--sp-7); }
+.mast-in { position: relative; overflow: hidden; padding: clamp(18px, 3vw, 32px) clamp(16px, 4vw, 48px) clamp(20px, 3vw, 30px); text-align: center; }
+.mast-line { display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline; gap: 4px 16px; padding-bottom: 10px; color: var(--text-muted);
+  background: linear-gradient(var(--rule-ink) 0 0) 0 100% / 100% 1px no-repeat; }
+.mast-line .mid { color: var(--text); }
+.mast-line .side:first-child { text-align: left; } .mast-line .side:last-child { text-align: right; }
+.mast-title { position: relative; display: grid; grid-template-columns: 1fr minmax(0, 620px) 1fr; align-items: center; gap: clamp(8px, 3vw, 40px); margin: clamp(18px, 3vw, 30px) 0 10px; }
+.mast-wm { width: 100%; height: auto; color: var(--text); --wordmark-accent: var(--accent); }
+.mast-rose { justify-self: center; width: clamp(64px, 11vw, 132px); color: var(--text); --compass-dark: var(--text); --compass-north: var(--magenta); --compass-light: var(--surface); --compass-hub: var(--gold); }
+.mast-rose.r { transform: scaleX(-1); }
+.mast-dek { max-width: 46ch; margin: 6px auto 0; font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: clamp(1.0625rem, 0.9rem + 0.7vw, 1.4375rem); line-height: var(--lh-snug); color: var(--text-muted); }
+.mast .ripple { margin: 18px auto 0; max-width: 520px; }
+.mast-index { display: grid; grid-template-columns: repeat(3, max-content); justify-content: center; gap: 2px 28px; margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+.mast-index a { display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 0 8px; color: var(--ink-text); text-decoration: none; font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.mast-index a:hover { background: var(--ink-tint); color: var(--ink-text); }
+@media (max-width: 699px) { .mast-title { grid-template-columns: minmax(0, 1fr); } .mast-rose { display: none; } .mast-line { grid-template-columns: minmax(0, 1fr); text-align: center; } .mast-line .side { display: none; } .mast-index { grid-template-columns: max-content; } }
+@media (min-width: 700px) and (max-width: 1099px) { .mast-index { grid-template-columns: repeat(2, max-content); } }
+
+/* ---------- page anatomy (20-content) ---------- */
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; margin-bottom: var(--sp-5); font-size: var(--fs-xs); color: var(--text-faint); }
+.crumbs a { color: var(--text-muted); display: inline-flex; align-items: center; min-height: 28px; }
+.page-head.frame { margin: var(--sp-6) 0 var(--sp-7); padding: calc(var(--ribbon-h) / 2 + clamp(22px, 3.5vw, 36px)) clamp(18px, 5vw, 64px) clamp(26px, 4vw, 44px); text-align: center; }
+.page-head .ribbon { position: absolute; top: calc(-1 * var(--ribbon-h) / 2 - var(--frame-w) / 2); left: 50%; transform: translateX(-50%); margin: 0; white-space: nowrap; }
+.page-head h1 { margin: 0 auto; max-width: 18ch; font-size: clamp(2.5rem, 1.6rem + 3.8vw, 4.5rem); line-height: var(--lh-tight); }
+@media (max-width: 559px) {
+  .page-head .ribbon { white-space: normal; width: max-content; max-width: calc(100% - 2 * var(--ribbon-tail) - 24px); }
+  .ribbon > span { letter-spacing: var(--track-label); text-wrap: balance; }
+}
+.page-head .num { display: block; margin-bottom: 6px; color: var(--ink-text); }
+.page-head .dek { margin: 12px auto 0; max-width: 40ch; }
+.page-head .lede { margin: 14px auto 0; max-width: 60ch; font-size: 1.0625rem; color: var(--text-muted); }
+.page-head .head-chips { justify-content: center; margin-top: var(--sp-5); }
+.page-head .wl { margin: var(--sp-5) auto 0; max-width: 360px; }
+.kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: var(--sp-3); color: var(--accent-strong); }
+.lede { margin-top: var(--sp-3); max-width: 62ch; font-size: 1.0625rem; color: var(--text-muted); }
+.dek { font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: var(--fs-lg); line-height: var(--lh-snug); color: var(--text-muted); }
+@media (max-width: 559px) { .dek { font-size: var(--fs-md); } }
+.head-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.section { margin-top: var(--sp-8); }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px var(--sp-4); margin-bottom: var(--sp-5); }
+.sec-head .sec-kicker { display: flex; align-items: center; gap: 8px; width: 100%; color: var(--text-muted); }
+.sec-head h2 { flex: 1 1 auto; }
+.sec-head .more { display: inline-flex; align-items: center; gap: 4px; min-height: var(--tap); font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.sub-h { margin: var(--sp-6) 0 var(--sp-3); padding-bottom: 7px; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+.prose { max-width: var(--measure); }
+.prose > * + * { margin-top: var(--sp-3); }
+.source-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; margin-top: var(--sp-5); padding-top: var(--sp-3); border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-faint); }
+.source-line a { color: var(--text-muted); }
+
+/* facts: the chart's title-block table; double rule on top, hairlines between */
+.facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); gap: 1px; margin: var(--sp-5) 0;
+  padding-top: 5px; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat, linear-gradient(var(--border) 0 0) 0 5px / 100% calc(100% - 5px) no-repeat;
+  border-bottom: 1px solid var(--rule-ink);
+}
+.fact { background: var(--bg); padding: 11px 14px 13px; min-width: 0; }
+.fact dt { color: var(--text-faint); }
+.fact dd { margin-top: 5px; font-size: var(--fs-sm); line-height: 1.45; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.fact dd .big { display: block; font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-numeral); line-height: 1; color: var(--text); font-variant-numeric: lining-nums; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: var(--tap); padding: 0 18px;
+  border: 2px solid transparent; border-radius: var(--radius-md); font-size: var(--fs-sm); font-weight: var(--wght-strong); line-height: 1.1;
+  text-decoration: none; white-space: nowrap; transition: background var(--speed) var(--ease), border-color var(--speed) var(--ease), color var(--speed) var(--ease);
+}
+.btn:hover { text-decoration: none; }
+.btn .i { width: 17px; height: 17px; }
+.btn-primary { background: var(--primary); color: var(--primary-contrast); }
+.btn-primary:hover { background: var(--accent-strong); color: var(--accent-contrast); }
+.btn-house { background: var(--accent); color: var(--accent-contrast); }
+.btn-house:hover { background: var(--accent-strong); color: var(--accent-contrast); }
+.btn-secondary { background: var(--surface); color: var(--text); border-color: var(--border-strong); }
+.btn-secondary:hover { border-color: var(--text); color: var(--text); }
+.btn-ghost { color: var(--link); padding: 0 8px; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.25em; }
+.btn-sm { min-height: 36px; padding: 0 12px; font-size: var(--fs-xs); }
+@media (pointer: coarse), (max-width: 1023px) { .btn-sm { min-height: var(--tap); } }
+.btn[aria-disabled="true"] { background: var(--surface-sunken); color: var(--text-faint); border-color: var(--border); cursor: not-allowed; }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--sp-3); align-items: center; }
+
+/* star (save to My Trip): 44px */
+.star { position: relative; z-index: 2; display: inline-grid; place-items: center; flex: none; width: var(--tap); height: var(--tap); border-radius: var(--radius-md); color: var(--text-muted); }
+.star:hover { background: var(--surface-alt); color: var(--text); }
+.star .i { width: 22px; height: 22px; }
+.star[aria-pressed="true"] { color: var(--accent); }
+.star[aria-pressed="true"] .i { fill: currentColor; }
+
+/* badges: 24px, 12px expanded caps; states are words */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 24px; padding: 3px 8px; max-width: 100%;
+  border: 1px solid transparent; border-radius: var(--radius-xs);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1; background: var(--surface-sunken); color: var(--text-muted);
+}
+.badge .i { width: 13px; height: 13px; }
+.badge-live { background: var(--live-tint); color: var(--live-ink); }
+.badge-live::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 3px color-mix(in srgb, var(--live) 28%, transparent); flex: none; }
+.badge-soon { background: transparent; border-color: var(--soon); color: var(--soon); }
+.badge-free { background: transparent; border-color: var(--accent); color: var(--accent-strong); }
+.badge-trip { background: var(--success-tint); color: var(--success); }
+.badge-warn { background: var(--warning-tint); color: var(--warning); }
+.badge-closed { background: var(--danger-tint); color: var(--danger); }
+.badge-tentative { background: transparent; border: 1px dashed var(--border-strong); color: var(--text-muted); }
+.badge-sheet { background: var(--ink-tint); color: var(--ink-text); }
+
+/* chips */
+.chip-row { display: flex; flex-wrap: wrap; gap: var(--sp-2); align-items: center; }
+.chip {
+  display: inline-flex; align-items: center; gap: 8px; min-height: var(--tap); padding: 0 14px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface);
+  color: var(--text); font-size: var(--fs-sm); font-weight: var(--wght-ui); white-space: nowrap; text-decoration: none;
+}
+.chip:hover { border-color: var(--text); }
+.chip .n { color: var(--text-faint); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+.chip .ck { display: none; width: 16px; height: 16px; }
+.chip .sheet-dot { margin-left: -2px; }
+.chip[aria-pressed="true"] { background: var(--ink-tint); border: 2px solid var(--ink-edge); padding: 0 13px; color: var(--ink-text); font-weight: var(--wght-strong); }
+.chip:not([data-sheet])[aria-pressed="true"] { background: var(--accent-tint); border-color: var(--accent); color: var(--accent-strong); }
+.chip[aria-pressed="true"] .ck { display: block; }
+.chip[aria-pressed="true"] .n { color: inherit; }
+
+/* callouts: a boxed note with a flag on the top rule */
+.callout { position: relative; margin: var(--sp-6) 0 var(--sp-5); padding: 24px 18px 16px; border: 1px solid var(--border-strong); background: var(--surface); max-width: 72ch; }
+.callout > .flag {
+  position: absolute; top: 0; left: 14px; transform: translateY(-50%); display: inline-flex; align-items: center; gap: 6px; height: 26px; padding: 0 10px;
+  background: var(--primary); color: var(--primary-contrast);
+}
+.callout > .flag .i { width: 14px; height: 14px; }
+.callout p + p { margin-top: var(--sp-2); }
+.callout.tone-tip { background: var(--accent-tint); border-color: var(--accent); }
+.callout.tone-tip > .flag { background: var(--accent-strong); color: var(--accent-contrast); }
+.callout.tone-warn { background: var(--warning-tint); border-color: var(--warning-edge); }
+.callout.tone-warn > .flag { background: var(--warning); color: var(--warning-tint); }
+.callout.tone-quote { background: var(--ink-tint); border-color: var(--ink-edge); border-left: var(--rule-heavy) solid var(--ink-fill); }
+.callout.tone-quote > .flag { background: var(--surface); color: var(--ink-text); border: 1px solid var(--ink-edge); }
+.callout.tone-quote blockquote { font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: var(--fs-md); line-height: var(--lh-snug); }
+.callout.tone-quote cite { display: block; margin-top: var(--sp-2); font-style: normal; font-size: var(--fs-xs); color: var(--text-muted); }
+
+/* tables */
+.table-wrap { overflow-x: auto; margin: var(--sp-4) 0; }
+table.data { width: 100%; border-collapse: collapse; font-size: var(--fs-sm); background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat, linear-gradient(var(--rule-ink) 0 0) 0 5px / 100% 1px no-repeat; }
+table.data caption { caption-side: top; text-align: left; padding-bottom: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
+table.data th { text-align: left; vertical-align: bottom; padding: 16px 12px 8px; border-bottom: 1px solid var(--rule-ink); color: var(--text-muted); }
+table.data td { padding: 11px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+table.data td.num, table.data th.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.data tbody th { padding: 11px 12px; border-bottom: 1px solid var(--border); font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-md); letter-spacing: 0; text-transform: none; color: var(--text); }
+table.data tbody tr:hover td, table.data tbody tr:hover th { background: var(--surface-alt); }
+@media (max-width: 699px) {
+  table.data, table.data tbody, table.data tr, table.data td, table.data tbody th { display: block; }
+  table.data thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  table.data tr { padding: 8px 0; border-bottom: var(--rule-mid) solid var(--rule-ink); }
+  table.data tbody th { padding: 4px 0; border: 0; }
+  table.data td { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; padding: 4px 0; border: 0; }
+  table.data td::before { content: attr(data-label); font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-faint); padding-top: 2px; }
+  table.data td.num { text-align: left; }
+}
+
+/* ---------- cards and plates (the five record kinds) ---------- */
+.grid { display: grid; gap: var(--sp-5) var(--sp-4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.card { position: relative; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); color: var(--text); min-width: 0; }
+.card:has(.stretched:hover) { border-color: var(--border-strong); }
+.card:has(.stretched:hover) .plate { filter: saturate(1.08); }
+.stretched { color: inherit; text-decoration: none; }
+.stretched::after { content: ""; position: absolute; inset: 0; z-index: 1; }
+.stretched:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.14em; color: inherit; }
+.card-body { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px 16px; flex: 1; }
+.card-kick { display: flex; align-items: center; gap: 8px; color: var(--text-muted); min-height: 24px; }
+.card-kick .sym { width: 18px; height: 18px; color: var(--ink-text); }
+.card-kick .sheet-badge { margin-left: auto; }
+.card h3 { font-size: var(--fs-md); line-height: var(--lh-snug); }
+.card .sum { font-size: var(--fs-sm); color: var(--text-muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.card .meta { display: flex; flex-wrap: wrap; gap: 2px 10px; margin-top: auto; padding-top: 8px; font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.card .meta > * { display: inline-flex; align-items: center; gap: 5px; }
+.card .meta .i { width: 14px; height: 14px; color: var(--text-faint); }
+.card .foot { display: flex; align-items: center; gap: 8px; padding: 0 8px 8px 16px; min-height: var(--tap); }
+.card .foot .star { margin-left: auto; }
+.card .feat { font-size: var(--fs-xs); color: var(--text-muted); }
+.card .feat b { font-weight: var(--wght-strong); color: var(--text); }
+.card .desig { display: flex; align-items: flex-start; gap: 8px; padding: 8px 10px; margin-top: 4px; background: var(--gold-tint); font-size: var(--fs-xs); line-height: 1.4; color: var(--text); }
+.card .desig .i { width: 16px; height: 16px; color: var(--gold-ink); margin-top: 1px; }
+.card.kind-historic { border-top: 3px double var(--gold-ink); }
+/* the event card: a date block on the left, like a tide-table day */
+.card.kind-event .card-body { flex-direction: row; align-items: flex-start; gap: 14px; }
+.card.kind-event .ev-main { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 0; align-self: stretch; }
+.datebox {
+  flex: none; width: 60px; display: grid; justify-items: center; gap: 2px; padding: 8px 0 9px;
+  border-top: 2px solid var(--ink-fill); border-bottom: 1px solid var(--ink-fill); background: var(--ink-tint); color: var(--ink-text); text-align: center;
+}
+.datebox .mo, .datebox .dw { font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1; }
+.datebox .d { font-family: var(--font-display); font-weight: 800; font-size: 2.125rem; line-height: 0.95; font-variant-numeric: lining-nums; color: var(--text); }
+
+/* the plate: the typographic stand-in for a picture. A cigar-label panel in the sheet's tint:
+   concave corners, a double rule, a medallion with the record's chart symbol, the name set in Bodoni italic,
+   the sheet code, a compass watermark and a water-lining foot. Never a stock photo. */
+.plate {
+  --n: 12px; position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; overflow: hidden;
+  padding: 18px 20px 22px; background: var(--ink-tint); color: var(--ink-text); text-align: center;
+}
+.card > .plate { margin: 6px 6px 0; }
+.plate::before {   /* the double rule inside the cartouche */
+  content: ""; position: absolute; inset: 7px; pointer-events: none;
+  border: 1px solid color-mix(in srgb, var(--ink-edge) 70%, transparent);
+  outline: 1px solid color-mix(in srgb, var(--ink-edge) 45%, transparent); outline-offset: -4px;
+  -webkit-mask: inherit; mask: inherit;
+}
+.plate::after {    /* compass-rose watermark */
+  content: ""; position: absolute; width: 62%; aspect-ratio: 1; right: -16%; top: -26%; pointer-events: none;
+  background: var(--ink-edge); opacity: 0.1; -webkit-mask: var(--mask-rose) 0 0 / 100% 100% no-repeat; mask: var(--mask-rose) 0 0 / 100% 100% no-repeat;
+}
+.plate-in { position: relative; z-index: 1; display: grid; justify-items: center; gap: 6px; max-width: 30ch; }
+.plate .medal {
+  display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%;
+  background: var(--surface); color: var(--ink-text); box-shadow: 0 0 0 1.5px var(--ink-edge), 0 0 0 4px var(--surface), 0 0 0 5px color-mix(in srgb, var(--ink-edge) 55%, transparent);
+}
+.plate .medal .i { width: 24px; height: 24px; }
+.plate .pname { font-family: var(--font-display); font-style: italic; font-weight: 640; font-size: clamp(1.25rem, 1rem + 1vw, 1.625rem); line-height: 1.08; color: var(--text); text-wrap: balance; }
+.plate .pcode { color: var(--ink-text); font-stretch: var(--label-stretch-wide); letter-spacing: var(--track-label-wide); }
+.plate .pfoot { position: absolute; left: 14px; right: 14px; bottom: 12px; height: 6px; background: var(--ink-edge); opacity: 0.45; -webkit-mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; mask: var(--mask-ripple) 0 0 / 20px 6px repeat-x; }
+.plate.lg { aspect-ratio: 3 / 2; padding: 28px; }
+.plate.lg .medal { width: 64px; height: 64px; }
+.plate.lg .medal .i { width: 32px; height: 32px; }
+.plate.lg .pname { font-size: clamp(1.75rem, 1.2rem + 2vw, 2.5rem); }
+
+/* ---------- time-first list (the engine's .tonight) ---------- */
+.tonight { list-style: none; padding: 0; background: linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat; padding-top: 2px; }
+.tonight li { border-bottom: 1px solid var(--border); }
+.tonight a { display: grid; grid-template-columns: 74px auto minmax(0, 1fr); align-items: baseline; gap: 4px 12px; min-height: var(--tap); padding: 10px 0; color: var(--text); text-decoration: none; }
+.tonight a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+.tonight time { font-family: var(--font-label); font-stretch: var(--label-stretch); font-weight: 700; font-variant-numeric: tabular-nums; font-size: var(--fs-sm); line-height: 1.45; text-align: right; }
+.tonight time small { display: block; font-size: var(--fs-label); color: var(--text-faint); letter-spacing: var(--track-label); text-transform: uppercase; }
+.tonight .t { font-weight: var(--wght-strong); line-height: 1.35; }
+.tonight .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); font-weight: var(--wght-body); }
+
+/* ---------- map (50-map): chart styling, buoys, clusters ---------- */
+.map-box .grat-in { min-width: 0; }
+.map-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--sp-2); padding: 6px 6px 6px 12px; border-bottom: 1px solid var(--border); }
+.map-view { position: relative; overflow: hidden; aspect-ratio: 16 / 10; background: var(--map-water); }
+@media (max-width: 559px) { .map-view { aspect-ratio: 4 / 5; } }
+.map-view > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.m-water { fill: var(--map-water); }
+.m-land { fill: var(--map-land); }
+.m-coast { fill: none; stroke: var(--map-coast); stroke-width: 1.4; stroke-linejoin: round; }
+.m-wl { fill: none; stroke-linejoin: round; }
+.m-wl.l { stroke: var(--map-water-line); stroke-width: 1; }
+.m-park { fill: var(--map-park); }
+.m-sand { fill: var(--map-sand); }
+.m-road-case { fill: none; stroke: var(--map-casing); stroke-linecap: round; stroke-linejoin: round; }
+.m-road { fill: none; stroke: var(--map-road); stroke-linecap: round; stroke-linejoin: round; }
+.m-road.major { stroke: var(--map-road-major); }
+.m-road.minor { stroke: var(--map-road-minor); }
+.m-rail { fill: none; stroke: var(--map-rail); stroke-width: 1.2; stroke-dasharray: 5 4; }
+.map-label {
+  position: absolute; transform: translate(-50%, -50%); white-space: nowrap; line-height: 1; pointer-events: none;
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label-wide); text-transform: uppercase; color: var(--map-label);
+  text-shadow: 0 0 2px var(--map-label-halo), 0 0 3px var(--map-label-halo), 0 0 5px var(--map-label-halo);
+}
+.map-label.water { font-family: var(--font-display); font-style: italic; font-weight: 560; font-size: var(--fs-base); letter-spacing: 0.06em; text-transform: none; color: var(--map-label-water); text-shadow: 0 0 3px var(--map-water), 0 0 5px var(--map-water); }
+.map-label.water.big { font-size: var(--fs-lg); letter-spacing: 0.14em; }
+.map-label.park { font-family: var(--font-display); font-style: italic; font-weight: 520; font-size: var(--fs-sm); letter-spacing: 0.01em; text-transform: none; }
+/* a place is a numbered can buoy: a paper body ringed in the sheet ink with the ink as its top band, on a short
+   stem, over a position circle that sits exactly on the point. Hit area is always 44px. */
+.buoy {
+  position: absolute; z-index: 2; display: grid; justify-items: center; align-content: end; width: var(--tap); height: 50px; padding-bottom: 0;
+  transform: translate(-50%, calc(-100% + 5px)); color: var(--map-pin-ink); cursor: pointer;
+}
+.buoy > span {
+  position: relative; display: grid; place-items: center; min-width: 28px; height: 30px; padding: 7px 5px 0;
+  background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 6px no-repeat, var(--map-pin-bg);
+  border: 2px solid var(--ink-edge); border-radius: 13px 13px 4px 4px;
+  font-family: var(--font-label); font-stretch: 100%; font-size: var(--fs-label); font-weight: 780; line-height: 1; font-variant-numeric: tabular-nums;
+  box-shadow: var(--shadow-1); margin-bottom: 12px;
+}
+.buoy > span::before {  /* the stem */
+  content: ""; position: absolute; left: 50%; top: 100%; width: 2px; height: 7px; margin-top: 2px; transform: translateX(-50%); background: var(--ink-edge);
+}
+.buoy > span::after {   /* the position circle: where the place is */
+  content: ""; position: absolute; left: 50%; top: calc(100% + 8px); width: 8px; height: 8px; transform: translateX(-50%);
+  border-radius: 50%; background: var(--map-pin-bg); border: 2px solid var(--ink-edge);
+}
+.buoy:hover > span, .buoy[aria-pressed="true"] > span { background: linear-gradient(var(--ink-fill) 0 0) 0 0 / 100% 6px no-repeat, var(--primary); color: var(--primary-contrast); }
+.buoy[aria-pressed="true"] { z-index: 3; }
+.buoy[aria-pressed="true"] > span { box-shadow: 0 0 0 2px var(--map-pin-bg), 0 0 0 4px var(--map-select-ring); }
+.buoy:focus-visible { outline: 3px solid var(--focus); outline-offset: 0; border-radius: var(--radius-md); }
+/* stays, historic sites, events and departures use their chart symbol in the buoy instead of a number */
+.buoy > span .i { width: 15px; height: 15px; stroke-width: 2.4; }
+/* cluster: a gold-ringed medallion with the count in Bodoni numerals */
+.cluster { position: absolute; z-index: 2; display: grid; place-items: center; width: var(--tap); height: var(--tap); transform: translate(-50%, -50%); }
+.cluster > span {
+  display: grid; place-items: center; width: var(--map-cluster); height: var(--map-cluster); border-radius: 50%;
+  background: var(--map-cluster-bg); color: var(--map-cluster-ink);
+  box-shadow: 0 0 0 2px var(--map-cluster-bg), 0 0 0 4px var(--map-cluster-ring), 0 0 0 5px var(--map-cluster-bg), var(--shadow-2);
+  font-family: var(--font-display); font-weight: 800; font-size: 1.125rem; line-height: 1; font-variant-numeric: lining-nums tabular-nums;
+}
+.cluster:hover > span { background: var(--accent); color: var(--accent-contrast); }
+.cluster:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 50%; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 12px; border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-muted); }
+.map-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.map-legend .i { width: 16px; height: 16px; color: var(--text); }
+.map-note { position: absolute; left: 10px; bottom: 8px; z-index: 2; color: var(--text-muted); background: var(--surface); padding: 3px 7px; border: 1px solid var(--border); }
+.map-zoom { position: absolute; right: 10px; top: 10px; z-index: 2; display: grid; background: var(--surface); border: 1px solid var(--border-strong); }
+.map-zoom button { display: grid; place-items: center; width: var(--tap); height: var(--tap); }
+.map-zoom button + button { border-top: 1px solid var(--border); }
+
+/* ---------- specimen-only layout ---------- */
+.spec-note { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
+.two { display: grid; gap: var(--sp-5) var(--sp-6); grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); align-items: start; }
+.stack > * + * { margin-top: var(--sp-4); }
+.type-row { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 4px 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.type-row > .label { color: var(--text-faint); }
+@media (max-width: 559px) { .type-row { grid-template-columns: minmax(0, 1fr); } }
+.sw-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
+.sw { border: 1px solid var(--border); background: var(--surface); font-size: var(--fs-xs); }
+.sw > i { display: block; height: 44px; background: var(--c); border-bottom: 1px solid var(--border); }
+.sw > span { display: block; padding: 6px 8px; }
+.sw code { font-family: var(--font-mono); font-size: var(--fs-label); color: var(--text-muted); }
+.sheet-index { display: grid; gap: 0; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); border-top: 2px solid var(--rule-ink); }
+.sheet-index > div { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 4px 14px; padding: 12px 10px 12px 0; border-bottom: 1px solid var(--border); }
+.sheet-index .no { font-family: var(--font-display); font-weight: 800; font-size: 2.25rem; line-height: 1; width: 1.1em; text-align: center; color: var(--ink-text); font-variant-numeric: lining-nums; }
+.sheet-index h3 { font-size: var(--fs-md); }
+.sheet-index p { font-size: var(--fs-xs); color: var(--text-muted); }
+.sheet-index .sw-ink { display: flex; gap: 3px; }
+.sheet-index .sw-ink i { width: 14px; height: 24px; background: var(--c); border: 1px solid var(--border); }
+.theme-switch { display: inline-flex; border: 1px solid var(--border-strong); border-radius: var(--radius-md); overflow: hidden; }
+.theme-switch button { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); padding: 0 14px; font-size: var(--fs-sm); color: var(--text-muted); }
+.theme-switch button + button { border-left: 1px solid var(--border-strong); }
+.theme-switch button[aria-pressed="true"] { background: var(--primary); color: var(--primary-contrast); font-weight: var(--wght-strong); }
+.ornaments { display: grid; gap: var(--sp-5); grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); align-items: center; }
+.orn { display: grid; gap: 10px; justify-items: center; padding: 22px 14px 14px; border: 1px dashed var(--border); text-align: center; }
+.orn .label { color: var(--text-faint); }
+.orn-rose { width: 132px; color: var(--text); --compass-dark: var(--text); --compass-north: var(--magenta); --compass-light: var(--surface); --compass-hub: var(--gold); }
+.frame-demo { width: 100%; min-height: 110px; display: grid; place-items: center; padding: 24px; }
+.do-dont { display: grid; gap: var(--sp-4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.do-dont ul { padding-left: 1.2em; font-size: var(--fs-sm); }
+.do-dont li + li { margin-top: 6px; }
+.do-dont h3 { display: flex; align-items: center; gap: 8px; font-size: var(--fs-md); margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<!-- sprite:start -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+<symbol id="wm" viewBox="0 -2 544.2 132"><g style="fill:var(--wordmark-accent, currentColor)"><g transform="translate(164.1 13)"><path d="M6.2 0V-10.2H0.5V-13.1H15.3V-10.2H9.6V0Z M23.1 0 29.6 -13.1H33.4L39.8 0H36.2L35.1 -2.3H27.7L26.6 0ZM28.9 -4.9H33.8L32.5 -7.8Q32.4 -8 32.2 -8.4Q32.1 -8.7 31.9 -9.1Q31.8 -9.5 31.6 -9.8Q31.5 -10.2 31.4 -10.2H31.3Q31.2 -9.9 31 -9.4Q30.8 -8.9 30.6 -8.5Q30.4 -8.1 30.3 -7.8Z M51.4 0V-13.1H56.7L59.3 -6.9Q59.5 -6.6 59.7 -6Q59.9 -5.5 60.1 -4.9Q60.3 -4.3 60.5 -3.9H60.6Q60.7 -4.3 60.9 -4.8Q61.2 -5.4 61.4 -5.9Q61.6 -6.5 61.7 -6.9L64.3 -13.1H69.5V0H66.1V-7.3Q66.1 -7.7 66.1 -8.1Q66.1 -8.6 66.1 -9Q66.1 -9.5 66.2 -9.8H66Q65.9 -9.5 65.7 -9Q65.6 -8.6 65.4 -8.1Q65.3 -7.7 65.1 -7.3L62 0H58.8L55.7 -7.3Q55.5 -7.8 55.3 -8.2Q55.1 -8.7 55 -9.1Q54.9 -9.5 54.8 -9.8H54.6Q54.6 -9.5 54.6 -9.1Q54.7 -8.7 54.7 -8.3Q54.7 -7.8 54.7 -7.3V0Z M82.4 0V-13.1H92.3Q93.6 -13.1 94.5 -12.5Q95.5 -11.9 96 -11Q96.5 -10 96.5 -8.7Q96.5 -7.4 96 -6.4Q95.4 -5.4 94.5 -4.9Q93.5 -4.3 92.2 -4.3H85.8V0ZM85.8 -7H91.3Q92.2 -7 92.7 -7.4Q93.2 -7.9 93.2 -8.7Q93.2 -9.2 93 -9.6Q92.8 -10 92.3 -10.2Q91.9 -10.4 91.3 -10.4H85.8Z M105.6 0 112 -13.1H115.9L122.3 0H118.6L117.5 -2.3H110.2L109.1 0ZM111.4 -4.9H116.3L115 -7.8Q114.9 -8 114.7 -8.4Q114.6 -8.7 114.4 -9.1Q114.2 -9.5 114.1 -9.8Q114 -10.2 113.9 -10.2H113.8Q113.6 -9.9 113.4 -9.4Q113.2 -8.9 113.1 -8.5Q112.9 -8.1 112.7 -7.8Z M149.4 0V-13.1H159.8Q160.8 -13.1 161.7 -12.6Q162.5 -12.2 163 -11.5Q163.5 -10.8 163.5 -9.8Q163.5 -9 163.2 -8.4Q162.9 -7.8 162.4 -7.4Q161.9 -7 161.3 -6.8V-6.8Q162 -6.6 162.6 -6.2Q163.2 -5.8 163.5 -5.1Q163.8 -4.5 163.8 -3.6Q163.8 -2.4 163.3 -1.6Q162.8 -0.8 161.8 -0.4Q160.9 0 159.8 0ZM152.7 -2.6H158.9Q159.5 -2.6 159.9 -2.9Q160.4 -3.3 160.4 -4Q160.4 -4.4 160.2 -4.7Q160 -5.1 159.7 -5.2Q159.3 -5.4 158.8 -5.4H152.7ZM152.7 -7.9H158.5Q159 -7.9 159.3 -8Q159.7 -8.2 159.8 -8.5Q160 -8.8 160 -9.2Q160 -9.8 159.6 -10.2Q159.2 -10.5 158.6 -10.5H152.7Z M174.7 0 181.2 -13.1H185L191.4 0H187.8L186.7 -2.3H179.3L178.2 0ZM180.5 -4.9H185.4L184.1 -7.8Q184 -8 183.8 -8.4Q183.7 -8.7 183.5 -9.1Q183.4 -9.5 183.2 -9.8Q183.1 -10.2 183.1 -10.2H182.9Q182.8 -9.9 182.6 -9.4Q182.4 -8.9 182.2 -8.5Q182 -8.1 181.9 -7.8Z M205.8 0V-5.2L199.3 -13.1H203.4L207.5 -7.9H207.6L211.7 -13.1H215.6L209.2 -5.2V0Z"/></g><path d="M4 3.9H142.1v1.2H4zM4 7.1H142.1v2.6H4zM402 3.9H540.2v1.2H402zM402 7.1H540.2v2.6H402zM151.1 1.3L156.3 6.5L151.1 11.7L145.9 6.5zM393 1.3L398.2 6.5L393 11.7L387.8 6.5z"/></g><g style="fill:currentColor" transform="translate(2 116)"><path d="M41.6 1Q29.7 1 21.3 -4Q12.9 -9 8.5 -17.7Q4.1 -26.4 4.1 -37.5Q4.1 -48.7 8.5 -57.4Q12.9 -66 21.3 -71Q29.7 -76 41.6 -76Q46 -76 49.6 -74.5Q53.1 -73.1 56 -70.4L67.2 -75H67.8V-51.8H66.9Q63.9 -58.5 60.4 -63.7Q56.9 -68.9 52.5 -71.9Q48.2 -74.9 42.6 -74.9Q37.8 -74.9 34.6 -71.6Q31.4 -68.4 29.6 -63Q27.8 -57.6 27 -51Q26.3 -44.4 26.3 -37.5Q26.3 -30.7 27 -24Q27.8 -17.4 29.6 -12Q31.4 -6.6 34.6 -3.4Q37.8 -0.1 42.6 -0.1Q47.6 -0.1 51.5 -1.9Q55.4 -3.8 58.4 -6.9Q61.3 -10 63.7 -14.2Q66 -18.5 68 -23.2H68.8V0H68.2L57.9 -5.2Q54.8 -2.3 50.8 -0.6Q46.8 1 41.6 1Z M74.1 0V-0.8H81.1V-74.2H74.1V-75H99V-0.8H103.2V0ZM107.4 0V-0.8H111.6V-32.1Q111.6 -36.2 111.2 -38.4Q110.9 -40.6 110.1 -41.4Q109.2 -42.1 107.7 -42.1Q105.5 -42.1 103.8 -40.3Q102.2 -38.6 101.1 -35.6Q100 -32.7 99.5 -29.2Q99 -25.7 99 -22.3L98.3 -22.2Q98.3 -26 99 -30.3Q99.6 -34.7 101.4 -38.4Q103.2 -42.2 106.5 -44.6Q109.8 -47 115.2 -47Q120.6 -47 123.8 -45Q126.9 -43.1 128.2 -39.7Q129.5 -36.2 129.5 -31.9V-0.8H136.4V0Z M184.1 1Q180.2 1 177.2 0Q174.3 -1 172.6 -3Q170.9 -5 170.9 -8V-30.5Q170.9 -34.1 170.2 -37.6Q169.4 -41.2 167.3 -43.5Q165.2 -45.9 161.2 -45.9Q159.1 -45.9 156.4 -45.4Q153.7 -44.9 151.2 -43.7Q148.6 -42.6 147 -40.6Q145.4 -38.7 145.4 -35.7H144.6Q144.6 -39.3 147.5 -41.6Q150.4 -43.9 154.4 -43.9Q158.6 -43.9 161.6 -41.8Q164.6 -39.8 164.6 -35.9Q164.6 -31.9 161.5 -29.7Q158.5 -27.5 154.4 -27.5Q150.1 -27.5 147.3 -29.8Q144.5 -32 144.5 -35.7Q144.5 -38.9 146.2 -41Q147.9 -43.1 150.8 -44.4Q153.7 -45.7 157.2 -46.3Q160.7 -46.8 164.1 -46.8Q172.3 -46.8 177.8 -44.9Q183.3 -42.9 186.1 -39.3Q188.8 -35.6 188.8 -30.5V-5.3Q188.8 -3.7 189.7 -2.7Q190.5 -1.6 192.4 -1.6Q193.6 -1.6 195.7 -2.6Q197.7 -3.7 199.2 -6.5L199.7 -6.3Q198.1 -2.6 193.9 -0.8Q189.7 1 184.1 1ZM155.3 1Q148.8 1 144.9 -2.3Q141 -5.7 141 -11.4Q141 -18.1 146.9 -21.7Q152.7 -25.4 163.4 -25.4H175.5V-24.7H169.4Q166.1 -24.7 164 -22.8Q161.9 -20.9 161 -18.2Q160.1 -15.6 160.1 -13.3Q160.1 -11 160.6 -9.2Q161 -7.5 162.1 -6.4Q163.1 -5.4 164.7 -5.4Q166.4 -5.4 167.8 -6.8Q169.2 -8.2 170 -11Q170.9 -13.8 170.9 -18.1H171.4Q171.4 -12 169.5 -7.7Q167.6 -3.4 164 -1.2Q160.4 1 155.3 1Z M225.9 -21.6Q225.9 -27.2 226.6 -31.9Q227.3 -36.5 229 -39.8Q230.7 -43.2 233.5 -45.1Q236.3 -47 240.5 -47Q244.4 -47 247.1 -45.1Q249.8 -43.3 251.2 -40.4Q252.6 -37.5 252.6 -34.4Q252.6 -30.2 249.7 -27.1Q246.8 -23.9 242.4 -23.9Q237.9 -23.9 235 -26.8Q232 -29.7 232 -33.6Q232 -37.9 234.8 -40.9Q237.5 -43.9 242.2 -43.9Q245.2 -43.9 247.5 -42.6Q249.9 -41.2 251.2 -39Q252.5 -36.8 252.5 -34.4H251.8Q251.8 -37.3 250.5 -40Q249.1 -42.7 246.6 -44.5Q244.1 -46.2 240.4 -46.2Q236.5 -46.2 233.9 -44.4Q231.2 -42.6 229.6 -39.3Q227.9 -36 227.2 -31.5Q226.4 -27 226.4 -21.6ZM226.4 -46V-0.8H234.8V0H201.5V-0.8H208.5V-45.2H201.5V-46Z M275 0.7Q269.5 0.7 266.6 -0.8Q263.7 -2.2 262.5 -5.1Q261.4 -7.9 261.4 -12V-56Q265.6 -56 270.7 -56.6Q275.8 -57.2 279.3 -59V-9.7Q279.3 -5.9 280.2 -4.2Q281.1 -2.4 283.1 -2.4Q285.3 -2.4 288 -4.3Q290.6 -6.1 292.3 -10.4L293 -10.1Q291.2 -5.4 286.7 -2.3Q282.2 0.7 275 0.7ZM254.1 -45.2V-46H290V-45.2Z M335 1Q328.4 1 324.4 -3.6Q320.4 -8.2 319.3 -16.7V0H294.5V-0.8H301.4V-74.2H294.5V-75H319.3V-29.4Q320.4 -37.8 324.4 -42.4Q328.4 -46.9 335 -46.9Q340.4 -46.9 345.3 -44.1Q350.1 -41.2 353.1 -35.9Q356.1 -30.5 356.1 -23Q356.1 -15.5 353.1 -10.1Q350.1 -4.8 345.3 -1.9Q340.4 1 335 1ZM330.6 -1.1Q332.6 -1.1 333.7 -3.5Q334.9 -5.8 335.3 -10.7Q335.8 -15.5 335.8 -23Q335.8 -30.5 335.3 -35.3Q334.9 -40.1 333.7 -42.4Q332.6 -44.7 330.6 -44.7Q328 -44.7 325.4 -42.4Q322.8 -40 321.1 -35.2Q319.3 -30.4 319.3 -23Q319.3 -15.6 321.1 -10.8Q322.8 -5.9 325.4 -3.5Q328 -1.1 330.6 -1.1Z M387.3 1Q379.4 1 373.6 -2.3Q367.9 -5.6 364.8 -11.1Q361.7 -16.5 361.7 -23Q361.7 -29.5 364.8 -35Q367.9 -40.4 373.6 -43.7Q379.4 -47 387.3 -47Q395.2 -47 401 -43.7Q406.7 -40.4 409.8 -35Q412.9 -29.5 412.9 -23Q412.9 -16.5 409.8 -11.1Q406.7 -5.6 401 -2.3Q395.2 1 387.3 1ZM387.3 0.2Q389.1 0.2 390.3 -1.4Q391.6 -3 392.5 -6.2Q393.4 -9.3 393.9 -13.6Q394.3 -17.8 394.3 -23Q394.3 -28.2 393.9 -32.4Q393.4 -36.7 392.5 -39.8Q391.6 -43 390.3 -44.6Q389.1 -46.2 387.3 -46.2Q385.6 -46.2 384.3 -44.6Q382.9 -43 382 -39.8Q381.2 -36.7 380.7 -32.4Q380.2 -28.2 380.2 -23Q380.2 -17.8 380.7 -13.6Q381.2 -9.3 382 -6.2Q382.9 -3 384.3 -1.4Q385.6 0.2 387.3 0.2Z M444 1Q436.1 1 430.4 -2.3Q424.7 -5.6 421.6 -11.1Q418.5 -16.5 418.5 -23Q418.5 -29.5 421.6 -35Q424.7 -40.4 430.4 -43.7Q436.1 -47 444 -47Q452 -47 457.7 -43.7Q463.5 -40.4 466.6 -35Q469.7 -29.5 469.7 -23Q469.7 -16.5 466.6 -11.1Q463.5 -5.6 457.7 -2.3Q452 1 444 1ZM444.1 0.2Q445.8 0.2 447.1 -1.4Q448.4 -3 449.3 -6.2Q450.2 -9.3 450.6 -13.6Q451.1 -17.8 451.1 -23Q451.1 -28.2 450.6 -32.4Q450.2 -36.7 449.3 -39.8Q448.4 -43 447.1 -44.6Q445.8 -46.2 444 -46.2Q442.3 -46.2 441 -44.6Q439.7 -43 438.8 -39.8Q437.9 -36.7 437.4 -32.4Q437 -28.2 437 -23Q437 -17.8 437.4 -13.6Q437.9 -9.3 438.8 -6.2Q439.7 -3 441 -1.4Q442.3 0.2 444.1 0.2Z M473.7 0V-0.8H482.6V-74.2H473.7V-75H500.5V-0.8H504.9V0ZM508.2 0V-0.8H513.5L496.2 -27L523.9 -45.2H511.6V-46H533.7V-45.2H525L510.2 -35.4L535.5 -0.8H539.8V0Z"/></g></symbol>
+<symbol id="wm-word" viewBox="0 -77 541.2 91"><path style="fill:currentColor" d="M41.6 1Q29.7 1 21.3 -4Q12.9 -9 8.5 -17.7Q4.1 -26.4 4.1 -37.5Q4.1 -48.7 8.5 -57.4Q12.9 -66 21.3 -71Q29.7 -76 41.6 -76Q46 -76 49.6 -74.5Q53.1 -73.1 56 -70.4L67.2 -75H67.8V-51.8H66.9Q63.9 -58.5 60.4 -63.7Q56.9 -68.9 52.5 -71.9Q48.2 -74.9 42.6 -74.9Q37.8 -74.9 34.6 -71.6Q31.4 -68.4 29.6 -63Q27.8 -57.6 27 -51Q26.3 -44.4 26.3 -37.5Q26.3 -30.7 27 -24Q27.8 -17.4 29.6 -12Q31.4 -6.6 34.6 -3.4Q37.8 -0.1 42.6 -0.1Q47.6 -0.1 51.5 -1.9Q55.4 -3.8 58.4 -6.9Q61.3 -10 63.7 -14.2Q66 -18.5 68 -23.2H68.8V0H68.2L57.9 -5.2Q54.8 -2.3 50.8 -0.6Q46.8 1 41.6 1Z M74.1 0V-0.8H81.1V-74.2H74.1V-75H99V-0.8H103.2V0ZM107.4 0V-0.8H111.6V-32.1Q111.6 -36.2 111.2 -38.4Q110.9 -40.6 110.1 -41.4Q109.2 -42.1 107.7 -42.1Q105.5 -42.1 103.8 -40.3Q102.2 -38.6 101.1 -35.6Q100 -32.7 99.5 -29.2Q99 -25.7 99 -22.3L98.3 -22.2Q98.3 -26 99 -30.3Q99.6 -34.7 101.4 -38.4Q103.2 -42.2 106.5 -44.6Q109.8 -47 115.2 -47Q120.6 -47 123.8 -45Q126.9 -43.1 128.2 -39.7Q129.5 -36.2 129.5 -31.9V-0.8H136.4V0Z M184.1 1Q180.2 1 177.2 0Q174.3 -1 172.6 -3Q170.9 -5 170.9 -8V-30.5Q170.9 -34.1 170.2 -37.6Q169.4 -41.2 167.3 -43.5Q165.2 -45.9 161.2 -45.9Q159.1 -45.9 156.4 -45.4Q153.7 -44.9 151.2 -43.7Q148.6 -42.6 147 -40.6Q145.4 -38.7 145.4 -35.7H144.6Q144.6 -39.3 147.5 -41.6Q150.4 -43.9 154.4 -43.9Q158.6 -43.9 161.6 -41.8Q164.6 -39.8 164.6 -35.9Q164.6 -31.9 161.5 -29.7Q158.5 -27.5 154.4 -27.5Q150.1 -27.5 147.3 -29.8Q144.5 -32 144.5 -35.7Q144.5 -38.9 146.2 -41Q147.9 -43.1 150.8 -44.4Q153.7 -45.7 157.2 -46.3Q160.7 -46.8 164.1 -46.8Q172.3 -46.8 177.8 -44.9Q183.3 -42.9 186.1 -39.3Q188.8 -35.6 188.8 -30.5V-5.3Q188.8 -3.7 189.7 -2.7Q190.5 -1.6 192.4 -1.6Q193.6 -1.6 195.7 -2.6Q197.7 -3.7 199.2 -6.5L199.7 -6.3Q198.1 -2.6 193.9 -0.8Q189.7 1 184.1 1ZM155.3 1Q148.8 1 144.9 -2.3Q141 -5.7 141 -11.4Q141 -18.1 146.9 -21.7Q152.7 -25.4 163.4 -25.4H175.5V-24.7H169.4Q166.1 -24.7 164 -22.8Q161.9 -20.9 161 -18.2Q160.1 -15.6 160.1 -13.3Q160.1 -11 160.6 -9.2Q161 -7.5 162.1 -6.4Q163.1 -5.4 164.7 -5.4Q166.4 -5.4 167.8 -6.8Q169.2 -8.2 170 -11Q170.9 -13.8 170.9 -18.1H171.4Q171.4 -12 169.5 -7.7Q167.6 -3.4 164 -1.2Q160.4 1 155.3 1Z M225.9 -21.6Q225.9 -27.2 226.6 -31.9Q227.3 -36.5 229 -39.8Q230.7 -43.2 233.5 -45.1Q236.3 -47 240.5 -47Q244.4 -47 247.1 -45.1Q249.8 -43.3 251.2 -40.4Q252.6 -37.5 252.6 -34.4Q252.6 -30.2 249.7 -27.1Q246.8 -23.9 242.4 -23.9Q237.9 -23.9 235 -26.8Q232 -29.7 232 -33.6Q232 -37.9 234.8 -40.9Q237.5 -43.9 242.2 -43.9Q245.2 -43.9 247.5 -42.6Q249.9 -41.2 251.2 -39Q252.5 -36.8 252.5 -34.4H251.8Q251.8 -37.3 250.5 -40Q249.1 -42.7 246.6 -44.5Q244.1 -46.2 240.4 -46.2Q236.5 -46.2 233.9 -44.4Q231.2 -42.6 229.6 -39.3Q227.9 -36 227.2 -31.5Q226.4 -27 226.4 -21.6ZM226.4 -46V-0.8H234.8V0H201.5V-0.8H208.5V-45.2H201.5V-46Z M275 0.7Q269.5 0.7 266.6 -0.8Q263.7 -2.2 262.5 -5.1Q261.4 -7.9 261.4 -12V-56Q265.6 -56 270.7 -56.6Q275.8 -57.2 279.3 -59V-9.7Q279.3 -5.9 280.2 -4.2Q281.1 -2.4 283.1 -2.4Q285.3 -2.4 288 -4.3Q290.6 -6.1 292.3 -10.4L293 -10.1Q291.2 -5.4 286.7 -2.3Q282.2 0.7 275 0.7ZM254.1 -45.2V-46H290V-45.2Z M335 1Q328.4 1 324.4 -3.6Q320.4 -8.2 319.3 -16.7V0H294.5V-0.8H301.4V-74.2H294.5V-75H319.3V-29.4Q320.4 -37.8 324.4 -42.4Q328.4 -46.9 335 -46.9Q340.4 -46.9 345.3 -44.1Q350.1 -41.2 353.1 -35.9Q356.1 -30.5 356.1 -23Q356.1 -15.5 353.1 -10.1Q350.1 -4.8 345.3 -1.9Q340.4 1 335 1ZM330.6 -1.1Q332.6 -1.1 333.7 -3.5Q334.9 -5.8 335.3 -10.7Q335.8 -15.5 335.8 -23Q335.8 -30.5 335.3 -35.3Q334.9 -40.1 333.7 -42.4Q332.6 -44.7 330.6 -44.7Q328 -44.7 325.4 -42.4Q322.8 -40 321.1 -35.2Q319.3 -30.4 319.3 -23Q319.3 -15.6 321.1 -10.8Q322.8 -5.9 325.4 -3.5Q328 -1.1 330.6 -1.1Z M387.3 1Q379.4 1 373.6 -2.3Q367.9 -5.6 364.8 -11.1Q361.7 -16.5 361.7 -23Q361.7 -29.5 364.8 -35Q367.9 -40.4 373.6 -43.7Q379.4 -47 387.3 -47Q395.2 -47 401 -43.7Q406.7 -40.4 409.8 -35Q412.9 -29.5 412.9 -23Q412.9 -16.5 409.8 -11.1Q406.7 -5.6 401 -2.3Q395.2 1 387.3 1ZM387.3 0.2Q389.1 0.2 390.3 -1.4Q391.6 -3 392.5 -6.2Q393.4 -9.3 393.9 -13.6Q394.3 -17.8 394.3 -23Q394.3 -28.2 393.9 -32.4Q393.4 -36.7 392.5 -39.8Q391.6 -43 390.3 -44.6Q389.1 -46.2 387.3 -46.2Q385.6 -46.2 384.3 -44.6Q382.9 -43 382 -39.8Q381.2 -36.7 380.7 -32.4Q380.2 -28.2 380.2 -23Q380.2 -17.8 380.7 -13.6Q381.2 -9.3 382 -6.2Q382.9 -3 384.3 -1.4Q385.6 0.2 387.3 0.2Z M444 1Q436.1 1 430.4 -2.3Q424.7 -5.6 421.6 -11.1Q418.5 -16.5 418.5 -23Q418.5 -29.5 421.6 -35Q424.7 -40.4 430.4 -43.7Q436.1 -47 444 -47Q452 -47 457.7 -43.7Q463.5 -40.4 466.6 -35Q469.7 -29.5 469.7 -23Q469.7 -16.5 466.6 -11.1Q463.5 -5.6 457.7 -2.3Q452 1 444 1ZM444.1 0.2Q445.8 0.2 447.1 -1.4Q448.4 -3 449.3 -6.2Q450.2 -9.3 450.6 -13.6Q451.1 -17.8 451.1 -23Q451.1 -28.2 450.6 -32.4Q450.2 -36.7 449.3 -39.8Q448.4 -43 447.1 -44.6Q445.8 -46.2 444 -46.2Q442.3 -46.2 441 -44.6Q439.7 -43 438.8 -39.8Q437.9 -36.7 437.4 -32.4Q437 -28.2 437 -23Q437 -17.8 437.4 -13.6Q437.9 -9.3 438.8 -6.2Q439.7 -3 441 -1.4Q442.3 0.2 444.1 0.2Z M473.7 0V-0.8H482.6V-74.2H473.7V-75H500.5V-0.8H504.9V0ZM508.2 0V-0.8H513.5L496.2 -27L523.9 -45.2H511.6V-46H533.7V-45.2H525L510.2 -35.4L535.5 -0.8H539.8V0Z"/></symbol>
+<symbol id="compass" viewBox="0 0 200 200">
+
+<g fill="none" stroke="currentColor">
+<circle cx="100" cy="100" r="96" stroke-width="1.6"/>
+<circle cx="100" cy="100" r="92" stroke-width=".8"/>
+<path d="M100 8L100 17M108.02 8.35L107.71 11.84M115.98 9.4L114.93 15.31M123.81 11.13L122.91 14.52M131.47 13.55L129.41 19.19M138.88 16.62L137.4 19.79M146 20.33L141.5 28.12M152.77 24.64L150.76 27.51M159.14 29.52L155.28 34.12M165.05 34.95L162.58 37.42M170.48 40.86L165.88 44.72M175.36 47.23L172.49 49.24M179.67 54L171.88 58.5M183.38 61.12L180.21 62.6M186.45 68.53L180.81 70.59M188.87 76.19L185.48 77.09M190.6 84.02L184.69 85.07M191.65 91.98L188.16 92.29M192 100L183 100M191.65 108.02L188.16 107.71M190.6 115.98L184.69 114.93M188.87 123.81L185.48 122.91M186.45 131.47L180.81 129.41M183.38 138.88L180.21 137.4M179.67 146L171.88 141.5M175.36 152.77L172.49 150.76M170.48 159.14L165.88 155.28M165.05 165.05L162.58 162.58M159.14 170.48L155.28 165.88M152.77 175.36L150.76 172.49M146 179.67L141.5 171.88M138.88 183.38L137.4 180.21M131.47 186.45L129.41 180.81M123.81 188.87L122.91 185.48M115.98 190.6L114.93 184.69M108.02 191.65L107.71 188.16M100 192L100 183M91.98 191.65L92.29 188.16M84.02 190.6L85.07 184.69M76.19 188.87L77.09 185.48M68.53 186.45L70.59 180.81M61.12 183.38L62.6 180.21M54 179.67L58.5 171.88M47.23 175.36L49.24 172.49M40.86 170.48L44.72 165.88M34.95 165.05L37.42 162.58M29.52 159.14L34.12 155.28M24.64 152.77L27.51 150.76M20.33 146L28.12 141.5M16.62 138.88L19.79 137.4M13.55 131.47L19.19 129.41M11.13 123.81L14.52 122.91M9.4 115.98L15.31 114.93M8.35 108.02L11.84 107.71M8 100L17 100M8.35 91.98L11.84 92.29M9.4 84.02L15.31 85.07M11.13 76.19L14.52 77.09M13.55 68.53L19.19 70.59M16.62 61.12L19.79 62.6M20.33 54L28.12 58.5M24.64 47.23L27.51 49.24M29.52 40.86L34.12 44.72M34.95 34.95L37.42 37.42M40.86 29.52L44.72 34.12M47.23 24.64L49.24 27.51M54 20.33L58.5 28.12M61.12 16.62L62.6 19.79M68.53 13.55L70.59 19.19M76.19 11.13L77.09 14.52M84.02 9.4L85.07 15.31M91.98 8.35L92.29 11.84" stroke-width="1"/>
+<circle cx="100" cy="100" r="80" stroke-width=".8"/>
+<circle cx="100" cy="100" r="30" stroke-width=".6" stroke-dasharray="1.5 2.5"/></g>
+<path style="fill:var(--compass-dark, currentColor)" d="M100 100L106.63 66.65L103.92 100.78Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L106.63 66.65L96.08 99.22Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L116.84 59.35L105.08 102.1Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L116.84 59.35L94.92 97.9Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L118.89 71.73L103.33 102.22Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L118.89 71.73L96.67 97.78Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L128.27 81.11L102.22 103.33Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L128.27 81.11L97.78 96.67Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L140.65 83.16L102.1 105.08Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L140.65 83.16L97.9 94.92Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L133.35 93.37L100.78 103.92Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L133.35 93.37L99.22 96.08Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L133.35 106.63L99.22 103.92Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L133.35 106.63L100.78 96.08Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L140.65 116.84L97.9 105.08Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L140.65 116.84L102.1 94.92Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L128.27 118.89L97.78 103.33Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L128.27 118.89L102.22 96.67Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L118.89 128.27L96.67 102.22Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L118.89 128.27L103.33 97.78Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L116.84 140.65L94.92 102.1Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L116.84 140.65L105.08 97.9Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L106.63 133.35L96.08 100.78Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L106.63 133.35L103.92 99.22Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L93.37 133.35L96.08 99.22Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L93.37 133.35L103.92 100.78Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L83.16 140.65L94.92 97.9Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L83.16 140.65L105.08 102.1Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L81.11 128.27L96.67 97.78Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L81.11 128.27L103.33 102.22Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L71.73 118.89L97.78 96.67Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L71.73 118.89L102.22 103.33Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L59.35 116.84L97.9 94.92Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L59.35 116.84L102.1 105.08Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L66.65 106.63L99.22 96.08Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L66.65 106.63L100.78 103.92Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L66.65 93.37L100.78 96.08Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L66.65 93.37L99.22 103.92Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L59.35 83.16L102.1 94.92Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L59.35 83.16L97.9 105.08Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L71.73 81.11L102.22 96.67Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L71.73 81.11L97.78 103.33Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L81.11 71.73L103.33 97.78Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L81.11 71.73L96.67 102.22Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L83.16 59.35L105.08 97.9Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L83.16 59.35L94.92 102.1Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L93.37 66.65L103.92 99.22Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L93.37 66.65L96.08 100.78Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L141.01 58.99L105.3 105.3Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L141.01 58.99L94.7 94.7Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L141.01 141.01L94.7 105.3Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L141.01 141.01L105.3 94.7Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L58.99 141.01L94.7 94.7Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L58.99 141.01L105.3 105.3Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L58.99 58.99L105.3 94.7Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L58.99 58.99L94.7 105.3Z"/><path style="fill:var(--compass-north, currentColor)" d="M100 100L100 22L110 100Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L100 22L90 100Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L178 100L100 110Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L178 100L100 90Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L100 178L90 100Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L100 178L110 100Z"/><path style="fill:var(--compass-dark, currentColor)" d="M100 100L22 100L100 90Z"/><path style="fill:var(--compass-light, none);stroke:currentColor;stroke-width:.9;stroke-linejoin:round" d="M100 100L22 100L100 110Z"/>
+<circle style="fill:var(--compass-hub, currentColor)" cx="100" cy="100" r="4.2"/>
+</symbol>
+<symbol id="sheet-tampa" viewBox="0 0 44 26"><path d="M5.88 0H36.62A5.88 5.88 0 0 0 42.5 5.88V18.62A5.88 5.88 0 0 0 36.62 24.5H5.88A5.88 5.88 0 0 0 0 18.62V5.88A5.88 5.88 0 0 0 5.88 0Z" transform="translate(.75 .75)" style="fill:var(--sheet-tampa, currentColor);stroke:var(--sheet-tampa-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(10.56 17.46)" style="fill:var(--sheet-tampa-on, Canvas)" d="M4.2 0V-6.9H0.3V-8.9H10.6V-6.9H6.7V0Z M12.8 0V-8.9H19.7Q20.5 -8.9 21.2 -8.5Q21.8 -8.2 22.2 -7.5Q22.6 -6.8 22.6 -5.9Q22.6 -5 22.2 -4.3Q21.8 -3.7 21.2 -3.3Q20.5 -2.9 19.6 -2.9H15.3V0ZM15.3 -4.8H18.9Q19.5 -4.8 19.9 -5.1Q20.2 -5.4 20.2 -5.9Q20.2 -6.3 20 -6.5Q19.9 -6.8 19.6 -6.9Q19.3 -7.1 18.9 -7.1H15.3Z"/></symbol><symbol id="sheet-stpete" viewBox="0 0 44 26"><path d="M0 12.25A21.25 12.25 0 1 0 42.5 12.25A21.25 12.25 0 1 0 0 12.25Z" transform="translate(.75 .75)" style="fill:var(--sheet-stpete, currentColor);stroke:var(--sheet-stpete-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(10.41 17.46)" style="fill:var(--sheet-stpete-on, Canvas)" d="M5.8 0.2Q4.7 0.2 3.8 0Q2.9 -0.1 2.2 -0.4Q1.5 -0.7 1.1 -1.3Q0.7 -1.9 0.7 -2.8Q0.7 -2.8 0.7 -2.9Q0.7 -2.9 0.7 -2.9H3.1Q3.1 -2.9 3.1 -2.8Q3.1 -2.8 3.1 -2.7Q3.1 -2.3 3.4 -2.1Q3.7 -1.8 4.3 -1.7Q4.9 -1.6 5.6 -1.6Q6 -1.6 6.3 -1.7Q6.7 -1.7 7 -1.7Q7.3 -1.8 7.5 -1.9Q7.8 -2 7.9 -2.1Q8.1 -2.3 8.1 -2.5Q8.1 -2.8 7.7 -3Q7.4 -3.1 6.9 -3.2Q6.4 -3.3 5.8 -3.4Q5.2 -3.5 4.5 -3.6Q3.8 -3.7 3.2 -3.9Q2.5 -4.1 2 -4.4Q1.5 -4.7 1.2 -5.2Q0.9 -5.7 0.9 -6.4Q0.9 -7.1 1.2 -7.6Q1.6 -8.1 2.2 -8.4Q2.9 -8.8 3.7 -8.9Q4.6 -9.1 5.7 -9.1Q6.7 -9.1 7.6 -8.9Q8.4 -8.8 9 -8.4Q9.7 -8.1 10 -7.6Q10.3 -7.1 10.3 -6.4V-6.3H7.9V-6.4Q7.9 -6.7 7.6 -6.9Q7.4 -7.1 6.9 -7.2Q6.4 -7.3 5.8 -7.3Q5 -7.3 4.5 -7.2Q3.9 -7.1 3.7 -7Q3.5 -6.8 3.5 -6.6Q3.5 -6.3 3.8 -6.1Q4.1 -6 4.6 -5.9Q5.1 -5.8 5.7 -5.7Q6.4 -5.6 7 -5.5Q7.7 -5.4 8.3 -5.2Q9 -5.1 9.5 -4.7Q10 -4.4 10.3 -4Q10.6 -3.5 10.6 -2.8Q10.6 -1.7 10 -1.1Q9.4 -0.4 8.3 -0.1Q7.2 0.2 5.8 0.2Z M13.2 0V-8.9H20Q20.8 -8.9 21.5 -8.5Q22.2 -8.2 22.5 -7.5Q22.9 -6.8 22.9 -5.9Q22.9 -5 22.5 -4.3Q22.1 -3.7 21.5 -3.3Q20.8 -2.9 19.9 -2.9H15.6V0ZM15.6 -4.8H19.2Q19.8 -4.8 20.2 -5.1Q20.5 -5.4 20.5 -5.9Q20.5 -6.3 20.4 -6.5Q20.2 -6.8 19.9 -6.9Q19.6 -7.1 19.2 -7.1H15.6Z"/></symbol><symbol id="sheet-beaches" viewBox="0 0 44 26"><path d="M7.35 0H35.15L42.5 12.25L35.15 24.5H7.35L0 12.25Z" transform="translate(.75 .75)" style="fill:var(--sheet-beaches, currentColor);stroke:var(--sheet-beaches-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(9.13 17.46)" style="fill:var(--sheet-beaches-on, Canvas)" d="M6.2 0.2Q3.5 0.2 2.1 -1Q0.8 -2.1 0.8 -4.5Q0.8 -6 1.5 -7Q2.2 -8 3.5 -8.6Q4.8 -9.1 6.7 -9.1Q7.8 -9.1 8.8 -8.9Q9.8 -8.7 10.6 -8.3Q11.3 -7.8 11.7 -7.2Q12.1 -6.6 12.1 -5.7H9.7Q9.7 -6.1 9.5 -6.4Q9.2 -6.7 8.8 -6.9Q8.4 -7 7.9 -7.1Q7.4 -7.2 6.8 -7.2Q6 -7.2 5.3 -7Q4.7 -6.9 4.2 -6.6Q3.8 -6.2 3.5 -5.8Q3.3 -5.3 3.3 -4.6V-4.3Q3.3 -3.4 3.7 -2.8Q4.1 -2.3 4.8 -2Q5.5 -1.7 6.6 -1.7Q7.5 -1.7 8.2 -1.9Q8.9 -2.1 9.3 -2.4Q9.7 -2.8 9.7 -3.2V-3.3H6.4V-5H12.1V0H10.7L10.4 -1.1Q9.9 -0.7 9.3 -0.4Q8.6 -0.1 7.8 0Q7.1 0.2 6.2 0.2Z M15.1 0V-8.9H22.3Q23 -8.9 23.6 -8.7Q24.2 -8.4 24.5 -7.9Q24.9 -7.4 24.9 -6.7Q24.9 -6.2 24.7 -5.7Q24.5 -5.3 24.1 -5.1Q23.8 -4.8 23.3 -4.7V-4.6Q23.8 -4.5 24.2 -4.2Q24.6 -4 24.9 -3.5Q25.1 -3.1 25.1 -2.4Q25.1 -1.6 24.7 -1.1Q24.4 -0.6 23.7 -0.3Q23.1 0 22.3 0ZM17.6 -1.8H21.6Q22 -1.8 22.3 -2.1Q22.6 -2.3 22.6 -2.8Q22.6 -3 22.4 -3.2Q22.3 -3.5 22.1 -3.6Q21.9 -3.7 21.5 -3.7H17.6ZM17.6 -5.4H21.4Q21.7 -5.4 21.9 -5.5Q22.1 -5.6 22.2 -5.8Q22.3 -6 22.3 -6.3Q22.3 -6.7 22.1 -6.9Q21.8 -7.2 21.4 -7.2H17.6Z"/></symbol><symbol id="sheet-clearwater" viewBox="0 0 44 26"><path d="M0 0H42.5V10.29C42.5 17.64 31.45 22.05 21.25 24.5C11.05 22.05 0 17.64 0 10.29Z" transform="translate(.75 .75)" style="fill:var(--sheet-clearwater, currentColor);stroke:var(--sheet-clearwater-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(7.7 15.64)" style="fill:var(--sheet-clearwater-on, Canvas)" d="M6.3 0.2Q4.5 0.2 3.2 -0.4Q2 -0.9 1.4 -1.9Q0.8 -3 0.8 -4.5Q0.8 -6.7 2.2 -7.9Q3.6 -9.1 6.3 -9.1Q7.9 -9.1 9 -8.6Q10.2 -8.2 10.9 -7.4Q11.5 -6.5 11.5 -5.4H9.1Q9.1 -6 8.7 -6.4Q8.4 -6.8 7.8 -7Q7.1 -7.2 6.3 -7.2Q5.3 -7.2 4.7 -6.9Q4 -6.6 3.7 -6Q3.3 -5.4 3.3 -4.6V-4.3Q3.3 -3.5 3.7 -3Q4 -2.4 4.7 -2.1Q5.3 -1.7 6.3 -1.7Q7.2 -1.7 7.8 -1.9Q8.5 -2.1 8.8 -2.5Q9.1 -3 9.1 -3.5H11.5Q11.5 -2.4 10.9 -1.6Q10.2 -0.7 9.1 -0.3Q7.9 0.2 6.3 0.2Z M15.9 0 13 -8.9H15.6L17.1 -3.9Q17.2 -3.7 17.2 -3.5Q17.3 -3.2 17.4 -3Q17.4 -2.7 17.5 -2.5H17.5Q17.6 -2.7 17.6 -2.9Q17.7 -3.1 17.7 -3.3Q17.7 -3.5 17.8 -3.6Q17.8 -3.8 17.9 -3.9L19.3 -8.9H22.5L23.9 -3.9Q23.9 -3.8 24 -3.5Q24 -3.3 24.1 -3Q24.1 -2.7 24.2 -2.5H24.2Q24.3 -2.7 24.3 -2.9Q24.4 -3.1 24.4 -3.2Q24.5 -3.4 24.5 -3.6Q24.6 -3.8 24.6 -3.9L26.1 -8.9H28.5L25.6 0H22.7L21.1 -5.5Q21 -5.7 21 -5.9Q20.9 -6.2 20.9 -6.4Q20.8 -6.6 20.8 -6.8H20.7Q20.7 -6.6 20.6 -6.3Q20.6 -6.1 20.5 -5.9Q20.5 -5.7 20.4 -5.5L18.9 0Z"/></symbol><symbol id="sheet-around" viewBox="0 0 44 26"><path d="M7.35 0H42.5L35.15 24.5H0Z" transform="translate(.75 .75)" style="fill:var(--sheet-around, currentColor);stroke:var(--sheet-around-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(9.68 17.46)" style="fill:var(--sheet-around-on, Canvas)" d="M0.2 0 4.6 -8.9H7.4L11.8 0H9.1L8.4 -1.5H3.5L2.8 0ZM4.4 -3.4H7.5L6.7 -5.3Q6.6 -5.4 6.5 -5.6Q6.4 -5.9 6.3 -6.1Q6.2 -6.4 6.1 -6.6Q6.1 -6.8 6 -6.9H5.9Q5.8 -6.7 5.7 -6.4Q5.6 -6 5.4 -5.7Q5.3 -5.4 5.2 -5.3Z M14 0V-8.9H21.2Q21.9 -8.9 22.5 -8.7Q23.1 -8.4 23.4 -7.9Q23.8 -7.4 23.8 -6.7Q23.8 -6.2 23.6 -5.7Q23.4 -5.3 23 -5.1Q22.7 -4.8 22.2 -4.7V-4.6Q22.7 -4.5 23.1 -4.2Q23.5 -4 23.8 -3.5Q24 -3.1 24 -2.4Q24 -1.6 23.6 -1.1Q23.3 -0.6 22.6 -0.3Q22 0 21.2 0ZM16.5 -1.8H20.5Q20.9 -1.8 21.2 -2.1Q21.5 -2.3 21.5 -2.8Q21.5 -3 21.3 -3.2Q21.2 -3.5 21 -3.6Q20.8 -3.7 20.4 -3.7H16.5ZM16.5 -5.4H20.2Q20.6 -5.4 20.8 -5.5Q21 -5.6 21.1 -5.8Q21.2 -6 21.2 -6.3Q21.2 -6.7 21 -6.9Q20.7 -7.2 20.3 -7.2H16.5Z"/></symbol><symbol id="sheet-daytrips" viewBox="0 0 44 26"><path d="M0 0H42.5L34.17 12.25L42.5 24.5H0Z" transform="translate(.75 .75)" style="fill:var(--sheet-daytrips, currentColor);stroke:var(--sheet-daytrips-edge, currentColor);stroke-width:1.5;stroke-linejoin:round"/><path transform="translate(7.62 17.46)" style="fill:var(--sheet-daytrips-on, Canvas)" d="M1.1 0V-8.9H6.1Q7.7 -8.9 8.9 -8.4Q10.1 -7.9 10.7 -6.9Q11.4 -5.9 11.4 -4.5Q11.4 -3 10.7 -2Q10.1 -1 8.9 -0.5Q7.7 0 6.1 0ZM3.6 -1.9H5.9Q6.6 -1.9 7.1 -2.1Q7.6 -2.2 8 -2.5Q8.4 -2.8 8.6 -3.3Q8.8 -3.7 8.8 -4.3V-4.6Q8.8 -5.2 8.6 -5.7Q8.4 -6.1 8 -6.4Q7.6 -6.7 7.1 -6.9Q6.6 -7.1 5.9 -7.1H3.6Z M16.8 0V-6.9H12.9V-8.9H23.2V-6.9H19.3V0Z"/></symbol>
+<symbol id="i-anchor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.6" r="2"/><path d="M12 6.6V21M8.3 9.8h7.4M4.3 13.4c.5 4.2 3.7 7.6 7.7 7.6s7.2-3.4 7.7-7.6M2.8 15.3l1.5-1.9 2 1.2M21.2 15.3l-1.5-1.9-2 1.2"/></symbol>
+<symbol id="i-landmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="1.1"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 21.5V2.8M5.5 3.8h12.8l-2.9 4.4 2.9 4.4H5.5"/></symbol>
+<symbol id="i-daymark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5v-8.8"/><path d="M12 2.8 18.4 12.7H5.6z"/></symbol>
+<symbol id="i-buoy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 16.2 9.6 7.6h4.8l1.2 8.6M5.8 16.2h12.4M12 7.6V4.2M10 4.2h4"/><path d="M2.5 20.4c1.6 0 1.6-2 3.2-2s1.6 2 3.1 2 1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.1-2 1.6 2 3.2 2"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 5.2 14 12l-2 6.8L10 12z"/><path d="M5.2 12h1.6M17.2 12h1.6"/></symbol>
+<symbol id="i-lighthouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.2 21.5 10.4 9.2h3.2l1.2 12.3M8.6 9.2h6.8M10.4 6.6h3.2v2.6h-3.2zM12 4v2.6M6.5 21.5h11M4.4 6.3l2.5.7M19.6 6.3l-2.5.7"/></symbol>
+<symbol id="i-ferry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14.4h18l-2.4 5.1H5.4z"/><path d="M6.2 14.4V10.2h10.6l1.4 4.2M9 10.2V7.3h5v2.9"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 9.5c1.6 0 1.6-2 3.2-2s1.6 2 3.1 2 1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.1-2 1.6 2 3.2 2"/><path d="M2.5 15.5c1.6 0 1.6-2 3.2-2s1.6 2 3.1 2 1.6-2 3.2-2 1.6 2 3.2 2 1.6-2 3.1-2 1.6 2 3.2 2"/></symbol>
+<symbol id="i-beach" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 11.6a8.4 8.4 0 0 1 16.8 0z"/><path d="M12 11.6v8.6M8 20.6h8"/></symbol>
+<symbol id="i-palm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.6 21.5c.3-4.7 0-8.5-1.3-12"/><path d="M11.3 9.5C9.7 6.8 6.1 6 3.6 7.6M11.3 9.5c1-3 4.4-4.4 7.3-3.2M11.3 9.5c2.8-.4 6 1.4 7.2 4.3M11.3 9.5c-2.5.8-4.8 3.4-4.9 6.4"/></symbol>
+<symbol id="i-course" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5 19.5 4.5" stroke-dasharray="2.6 3.2"/><path d="M13 4.5h6.5V11"/></symbol>
+<symbol id="i-seal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l1.9 1.4 2.3-.4.9 2.2 2.2.9-.4 2.3 1.4 1.9-1.4 1.9.4 2.3-2.2.9-.9 2.2-2.3-.4L12 21.2l-1.9-1.4-2.3.4-.9-2.2-2.2-.9.4-2.3L3.7 12l1.4-1.9-.4-2.3 2.2-.9.9-2.2 2.3.4z"/><circle cx="12" cy="12" r="3.2"/></symbol>
+<symbol id="i-trolley" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.5" width="14" height="12" rx="2"/><path d="M5 10.5h14M9 20.5l1.5-4M15 20.5l-1.5-4M8.5 2.5h7"/></symbol>
+<symbol id="i-cigar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 16.9 16.4 6.8a2.4 2.4 0 0 1 3 3.7L6.2 20.6a2.4 2.4 0 0 1-3-3.7z"/><path d="M12.6 9.7l3 3.9M19.6 4.4l1.6-1.6"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M5.3 18.7l1.4-1.4M17.3 6.7l1.4-1.4"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M16.2 16.2 21 21"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 17l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.6A8 8 0 0 1 9.4 4a7.6 7.6 0 1 0 10.6 10.6z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 10.5 12 3.5l8.5 7V20a1 1 0 0 1-1 1h-5v-6h-5v6h-5a1 1 0 0 1-1-1z"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4.5 3.5 6.5v13l5.5-2 6 2 5.5-2v-13l-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.9-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 15.1 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+<symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="i-arrow-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13.5 6.5 19 12l-5.5 5.5"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8h.01"/></symbol>
+<symbol id="i-warn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 2.5 20h19z"/><path d="M12 10v4.5M12 17.2h.01"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19V6.5M3 15.5h18V19M21 15.5v-3.2a3 3 0 0 0-3-3h-7v6.2"/><circle cx="7" cy="11.5" r="1.8"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3v7.5M4.5 3v4.5a2 2 0 0 0 4 0V3M6.5 10.5V21M17.5 21V3.2c-2 .9-3.5 3.4-3.5 7.3h3.5"/></symbol>
+<symbol id="i-help" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .9-1 1.6v.6M12 17h.01"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5.5v13M5.5 12h13"/></symbol>
+<symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 12h13"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+</svg>
+<!-- sprite:end -->
+<a class="sr-only" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <button class="top-btn only-phone" type="button" aria-label="Menu"><svg class="i"><use href="#i-menu"/></svg></button>
+  <a class="brand" href="#top" aria-label="Tampa Bay Chartbook, home">
+    <img class="brand-mark" src="brand/mark.svg" alt="" width="36" height="36">
+    <svg class="brand-word" viewBox="0 0 541.2 91" aria-hidden="true"><use href="#wm-word"/></svg>
+    <span class="brand-sep" aria-hidden="true"></span>
+    <span class="label brand-place wide">Tampa Bay</span>
+  </a>
+  <div class="top-search" role="search"><svg class="i"><use href="#i-search"/></svg><span>Search places, stays, events</span><kbd>Ctrl K</kbd></div>
+  <button class="top-btn only-phone" type="button" aria-label="Search"><svg class="i"><use href="#i-search"/></svg></button>
+  <a class="top-btn boxed" href="#trip"><svg class="i"><use href="#i-star"/></svg><span class="txt">My Trip</span></a>
+  <button class="top-btn" type="button" id="theme-btn" aria-label="Switch to the Night chart"><svg class="i"><use href="#i-moon"/></svg></button>
+</header>
+
+<div class="layout" id="top">
+  <aside class="sidebar" aria-label="Sections">
+    <a class="trip-card" href="#trip"><b><svg class="i"><use href="#i-star"/></svg>My Trip</b><span>Star places, stays and events to build your trip</span></a>
+    <nav class="nav" aria-label="Guide">
+      <div class="nav-group"><p class="nav-h label"><span class="sec-num">1</span>Plan</p>
+        <ul><li><a href="#top" aria-current="page"><svg class="i"><use href="#i-home"/></svg>Overview</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-calendar"/></svg>What's On</a></li>
+        <li><a href="#map"><svg class="i"><use href="#i-map"/></svg>Map</a></li>
+        <li><a href="#trip"><svg class="i"><use href="#i-star"/></svg>My Trip</a></li></ul></div>
+      <div class="nav-group"><p class="nav-h label"><span class="sec-num">2</span>Sheets</p>
+        <ul>
+        <li data-sheet="tampa"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-tampa"/></svg><span class="nm">Tampa<small>Sheet 1 · 13 areas</small></span></a></li>
+        <li data-sheet="stpete"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-stpete"/></svg><span class="nm">St. Petersburg<small>Sheet 2 · 7 areas</small></span></a></li>
+        <li data-sheet="beaches"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-beaches"/></svg><span class="nm">Gulf Beaches<small>Sheet 3 · 8 areas</small></span></a></li>
+        <li data-sheet="clearwater"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-clearwater"/></svg><span class="nm">Clearwater &amp; North Pinellas<small>Sheet 4 · 7 areas</small></span></a></li>
+        <li data-sheet="around"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-around"/></svg><span class="nm">Around the Bay<small>Sheet 5 · 6 areas</small></span></a></li>
+        <li data-sheet="daytrips"><a class="sheet-row" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-daytrips"/></svg><span class="nm">Day Trips<small>Sheet 6 · 4 areas</small></span></a></li>
+        </ul></div>
+      <div class="nav-group"><p class="nav-h label"><span class="sec-num">3</span>Explore</p>
+        <ul><li><a href="#cards"><svg class="i"><use href="#i-buoy"/></svg>Things to do</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-daymark"/></svg>Experiences &amp; tours</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-beach"/></svg>Beaches &amp; outdoors</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-landmark"/></svg>History &amp; heritage</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-utensils"/></svg>Eat &amp; drink</a></li>
+        <li><a href="#cards"><svg class="i"><use href="#i-course"/></svg>Passages</a></li></ul></div>
+      <div class="nav-group"><p class="nav-h label"><span class="sec-num">4</span>Stay</p>
+        <ul><li><a href="#cards"><svg class="i"><use href="#i-anchor"/></svg>Where to stay</a></li>
+        <li><a href="#sheets"><svg class="i"><use href="#i-compass"/></svg>Areas</a></li></ul></div>
+      <div class="nav-group"><p class="nav-h label"><span class="sec-num">5</span>Visit</p>
+        <ul><li><a href="#map"><svg class="i"><use href="#i-ferry"/></svg>Getting around</a></li>
+        <li><a href="#type"><svg class="i"><use href="#i-sun"/></svg>When to visit</a></li>
+        <li><a href="#type"><svg class="i"><use href="#i-help"/></svg>FAQ</a></li>
+        <li><a href="#type"><svg class="i"><use href="#i-info"/></svg>About &amp; sources</a></li></ul></div>
+    </nav>
+  </aside>
+
+  <main id="main">
+   <div class="wrap">
+
+    <!-- ============ masthead ============ -->
+    <section class="mast grat" aria-labelledby="mast-h">
+      <div class="grat-in mast-in">
+        <div class="mast-line label"><span class="side">Sheets 1–6 · Tampa Bay</span><span class="mid tnum" id="today">Sunday, September 27, 2026</span><span class="side">Not for navigation</span></div>
+        <div class="mast-title">
+          <svg class="mast-rose" viewBox="0 0 200 200" aria-hidden="true"><use href="#compass"/></svg>
+          <svg class="mast-wm" viewBox="0 0 544.2 132" role="img" aria-labelledby="mast-h"><use href="#wm"/></svg>
+          <svg class="mast-rose r" viewBox="0 0 200 200" aria-hidden="true"><use href="#compass"/></svg>
+        </div>
+        <h1 class="sr-only" id="mast-h">Tampa Bay Chartbook</h1>
+        <p class="mast-dek">Where to stay, what to see, what is on and where the history happened, from Tampa to the Gulf beaches. Every record links to its source.</p>
+        <div class="ripple" aria-hidden="true"></div>
+        <nav class="mast-index" aria-label="The six sheets">
+          <a data-sheet="tampa" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-tampa"/></svg>Tampa</a>
+          <a data-sheet="stpete" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-stpete"/></svg>St. Petersburg</a>
+          <a data-sheet="beaches" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-beaches"/></svg>Gulf Beaches</a>
+          <a data-sheet="clearwater" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-clearwater"/></svg>Clearwater &amp; North Pinellas</a>
+          <a data-sheet="around" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-around"/></svg>Around the Bay</a>
+          <a data-sheet="daytrips" href="#sheets"><svg class="sheet-badge" aria-hidden="true"><use href="#sheet-daytrips"/></svg>Day Trips</a>
+        </nav>
+      </div>
+    </section>
+
+    <div class="btn-row" style="justify-content:space-between">
+      <p class="label muted">Design system “Chart &amp; Label” · specimen</p>
+      <div class="theme-switch" role="group" aria-label="Edition">
+        <button type="button" data-set-theme="light" aria-pressed="true"><svg class="i"><use href="#i-sun"/></svg>Day chart</button>
+        <button type="button" data-set-theme="dark" aria-pressed="false"><svg class="i"><use href="#i-moon"/></svg>Night chart</button>
+      </div>
+    </div>
+
+    <!-- ============ page head: label frame + ribbon kicker (a sheet page) ============ -->
+    <header class="page-head frame" data-sheet="tampa">
+      <span class="ribbon"><span>Sheet 1 · Tampa</span></span>
+      <h1>Tampa</h1>
+      <p class="dek">From Ybor City and the Channel District to Westshore and North Tampa.</p>
+      <p class="lede">Thirteen areas on this sheet. Each place, stay, experience and event below links to the page that states its facts.</p>
+      <div class="head-chips chip-row">
+        <a class="chip" href="#cards"><svg class="i"><use href="#i-buoy"/></svg>Places</a>
+        <a class="chip" href="#cards"><svg class="i"><use href="#i-anchor"/></svg>Stays</a>
+        <a class="chip" href="#cards"><svg class="i"><use href="#i-flag"/></svg>What's on</a>
+        <a class="chip" href="#cards"><svg class="i"><use href="#i-landmark"/></svg>History</a>
+      </div>
+      <div class="wl tight" aria-hidden="true" style="max-width:320px;margin:24px auto 0"></div>
+    </header>
+
+    <!-- ============ the six sheets ============ -->
+    <section class="section" id="sheets" aria-labelledby="sheets-h">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">2</span>Sheets · six regions, one code each</p><h2 id="sheets-h">Every sheet is a code, a shape and an ink</h2></div>
+      <div class="sheet-index">
+        <div data-sheet="tampa"><span class="no">1</span><div><h3 class="sheet-tag">Tampa</h3><p>TP · cartouche · Ybor brick</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-tampa"/></svg></div>
+        <div data-sheet="stpete"><span class="no">2</span><div><h3 class="sheet-tag">St. Petersburg</h3><p>SP · roundel · sunshine orange</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-stpete"/></svg></div>
+        <div data-sheet="beaches"><span class="no">3</span><div><h3 class="sheet-tag">Gulf Beaches</h3><p>GB · lozenge · Gulf turquoise</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-beaches"/></svg></div>
+        <div data-sheet="clearwater"><span class="no">4</span><div><h3 class="sheet-tag">Clearwater &amp; North Pinellas</h3><p>CW · shield · sponge-dock blue</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-clearwater"/></svg></div>
+        <div data-sheet="around"><span class="no">5</span><div><h3 class="sheet-tag">Around the Bay</h3><p>AB · slant · palmetto green</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-around"/></svg></div>
+        <div data-sheet="daytrips"><span class="no">6</span><div><h3 class="sheet-tag">Day Trips</h3><p>DT · burgee · sunset violet</p></div><svg class="sheet-badge lg" aria-hidden="true"><use href="#sheet-daytrips"/></svg></div>
+      </div>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ controls ============ -->
+    <section class="section" id="controls" aria-labelledby="controls-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">3</span>Controls · 44px targets, words for every state</p><h2 id="controls-h">Buttons, chips and badges</h2></div>
+      <div class="stack">
+        <div class="btn-row">
+          <a class="btn btn-house" href="#trip"><svg class="i"><use href="#i-star"/></svg>Add to My Trip</a>
+          <a class="btn btn-primary" href="#map"><svg class="i"><use href="#i-map"/></svg>Show on the map</a>
+          <a class="btn btn-secondary" href="#map"><svg class="i"><use href="#i-pin"/></svg>Directions</a>
+          <a class="btn btn-ghost" href="#cards">All places on Sheet 1</a>
+          <a class="btn btn-secondary btn-sm" href="#cards">Small</a>
+          <span class="btn btn-secondary is-focus">Focus ring</span>
+          <span class="btn btn-primary" aria-disabled="true">Sold out</span>
+        </div>
+        <div class="chip-row" role="group" aria-label="Filter by sheet">
+          <button class="chip" type="button" aria-pressed="true"><svg class="ck"><use href="#i-check"/></svg>All sheets <span class="n">6</span></button>
+          <button class="chip" type="button" data-sheet="tampa" aria-pressed="true"><svg class="ck"><use href="#i-check"/></svg><span class="sheet-dot"></span>Tampa</button>
+          <button class="chip" type="button" data-sheet="stpete" aria-pressed="false"><span class="sheet-dot"></span>St. Petersburg</button>
+          <button class="chip" type="button" data-sheet="beaches" aria-pressed="true"><svg class="ck"><use href="#i-check"/></svg><span class="sheet-dot"></span>Gulf Beaches</button>
+          <button class="chip" type="button" data-sheet="clearwater" aria-pressed="false"><span class="sheet-dot"></span>Clearwater</button>
+          <button class="chip" type="button" data-sheet="around" aria-pressed="false"><span class="sheet-dot"></span>Around the Bay</button>
+          <button class="chip" type="button" data-sheet="daytrips" aria-pressed="false"><span class="sheet-dot"></span>Day Trips</button>
+          <button class="chip" type="button" aria-pressed="false">Free <span class="n">24</span></button>
+          <button class="chip" type="button" aria-pressed="false">This weekend</button>
+        </div>
+        <div class="chip-row">
+          <span class="badge-live badge">Live now</span>
+          <span class="badge badge-soon">Starts in 20 min</span>
+          <span class="badge badge-free">Free</span>
+          <span class="badge badge-trip"><svg class="i"><use href="#i-check"/></svg>In your trip</span>
+          <span class="badge badge-tentative">Tentative</span>
+          <span class="badge badge-warn"><svg class="i"><use href="#i-warn"/></svg>Seasonal</span>
+          <span class="badge badge-warn">Temporarily closed</span>
+          <span class="badge badge-closed">Cancelled</span>
+          <span class="badge">Opening soon</span>
+          <span class="badge badge-sheet" data-sheet="beaches">Sheet 3 · GB</span>
+          <span class="seal cartouche"><svg class="i"><use href="#i-seal"/></svg>Signature</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ cards ============ -->
+    <section class="section" id="cards" aria-labelledby="cards-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">4</span>Records · five kinds, one card grammar</p><h2 id="cards-h">Place, stay, experience, event, historic site</h2><a class="more" href="#plate">The plate<svg class="i"><use href="#i-arrow-r"/></svg></a></div>
+      <div class="grid">
+
+        <article class="card kind-place" data-sheet="stpete">
+          <div class="plate cartouche" aria-hidden="true"><div class="plate-in"><span class="medal"><svg class="i"><use href="#i-buoy"/></svg></span><span class="pname">The Dalí Museum</span><span class="label pcode">Sheet 2 · SP · Museum</span></div><span class="pfoot"></span></div>
+          <div class="card-body">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-buoy"/></svg>Museum · Downtown St. Pete<svg class="sheet-badge" role="img" aria-label="Sheet 2, St. Petersburg"><use href="#sheet-stpete"/></svg></p>
+            <h3><a class="stretched" href="#cards">The Dalí Museum</a></h3>
+            <p class="sum">Museum devoted to Salvador Dalí, built on the collection of A. Reynolds and Eleanor Morse; the museum says it holds over 2,400 works in every medium.</p>
+            <p class="meta"><span><svg class="i"><use href="#i-clock"/></svg>Daily 10am–6pm, Thursdays until 8pm</span><span class="seal cartouche"><svg class="i"><use href="#i-seal"/></svg>Signature</span></p>
+          </div>
+          <div class="foot"><span class="label faint">thedali.org</span><button class="star" type="button" aria-pressed="false" aria-label="Add The Dalí Museum to My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+        <article class="card kind-stay" data-sheet="stpete">
+          <div class="plate cartouche" aria-hidden="true"><div class="plate-in"><span class="medal"><svg class="i"><use href="#i-anchor"/></svg></span><span class="pname">The Birchwood</span><span class="label pcode">Sheet 2 · SP · Boutique hotel</span></div><span class="pfoot"></span></div>
+          <div class="card-body">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-anchor"/></svg>Boutique hotel · 18 rooms<svg class="sheet-badge" role="img" aria-label="Sheet 2, St. Petersburg"><use href="#sheet-stpete"/></svg></p>
+            <h3><a class="stretched" href="#cards">The Birchwood</a></h3>
+            <p class="sum">An 18-room hotel on Beach Drive in a 1924 Spanish Mission-style building that began as the Lantern Lane Apartments.</p>
+            <p class="feat"><b>Has</b> restaurant · rooftop bar · historic building · meeting space</p>
+            <p class="meta"><span><svg class="i"><use href="#i-pin"/></svg>340 Beach Dr NE, St. Petersburg</span></p>
+          </div>
+          <div class="foot"><span class="label faint">thebirchwood.com</span><button class="star" type="button" aria-pressed="true" aria-label="Remove The Birchwood from My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+        <article class="card kind-experience" data-sheet="tampa">
+          <div class="plate cartouche" aria-hidden="true"><div class="plate-in"><span class="medal"><svg class="i"><use href="#i-daymark"/></svg></span><span class="pname">Pirate Water Taxi</span><span class="label pcode">Sheet 1 · TP · Water taxi</span></div><span class="pfoot"></span></div>
+          <div class="card-body">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-daymark"/></svg>Water taxi · Downtown Tampa<svg class="sheet-badge" role="img" aria-label="Sheet 1, Tampa"><use href="#sheet-tampa"/></svg></p>
+            <h3><a class="stretched" href="#cards">Pirate Water Taxi</a></h3>
+            <p class="sum">Hop-on, hop-off water taxi on the Hillsborough River and the Channel District waterfront, with 10 numbered stops from the Florida Aquarium to Armature Works.</p>
+            <p class="meta"><span><svg class="i"><use href="#i-daymark"/></svg>Departs Stop 7, Convention Center</span><span>All-Day Pass: Adult $34</span></p>
+          </div>
+          <div class="foot"><span class="label faint">piratewatertaxi.com</span><button class="star" type="button" aria-pressed="false" aria-label="Add Pirate Water Taxi to My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+        <article class="card kind-event" data-sheet="clearwater">
+          <div class="card-body">
+            <div class="datebox" aria-hidden="true"><span class="dw">Wed</span><span class="d">6</span><span class="mo">Jan</span></div>
+            <div class="ev-main">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-flag"/></svg>Cultural · Tarpon Springs<svg class="sheet-badge" role="img" aria-label="Sheet 4, Clearwater and North Pinellas"><use href="#sheet-clearwater"/></svg></p>
+            <h3><a class="stretched" href="#cards">Epiphany Celebration and Cross Dive</a></h3>
+            <p class="sum">Tarpon Springs' Greek Orthodox community marks Epiphany with a liturgy at St. Nicholas Cathedral, a procession to Spring Bayou, the blessing of the waters and a dive for a cross.</p>
+            <p class="meta"><time class="tnum" datetime="2027-01-06">Wed, Jan 6, 2027</time><span class="unk">Time not listed</span><span class="badge badge-tentative">Tentative</span></p>
+            </div>
+          </div>
+          <div class="foot"><span class="label faint">stnicholastarpon.org</span><button class="star" type="button" aria-pressed="false" aria-label="Add Epiphany Celebration and Cross Dive to My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+        <article class="card kind-historic" data-sheet="around">
+          <div class="plate cartouche" aria-hidden="true"><div class="plate-in"><span class="medal"><svg class="i"><use href="#i-landmark"/></svg></span><span class="pname">Fort Foster</span><span class="label pcode">Sheet 5 · AB · Built 1836</span></div><span class="pfoot"></span></div>
+          <div class="card-body">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-landmark"/></svg>Historic site · Frontier era<svg class="sheet-badge" role="img" aria-label="Sheet 5, Around the Bay"><use href="#sheet-around"/></svg></p>
+            <h3><a class="stretched" href="#cards">Fort Foster State Historic Site</a></h3>
+            <p class="sum">A reconstruction of a Second Seminole War fort built in 1836 to guard the bridge over the Hillsborough River. You see it on a guided tour.</p>
+            <p class="desig"><svg class="i"><use href="#i-landmark"/></svg><span><b>National Register of Historic Places</b>, 1972 · ref. 72000324</span></p>
+          </div>
+          <div class="foot"><span class="label faint">historyandnature.org</span><button class="star" type="button" aria-pressed="false" aria-label="Add Fort Foster State Historic Site to My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+        <article class="card kind-place" data-sheet="beaches">
+          <div class="plate cartouche" aria-hidden="true"><div class="plate-in"><span class="medal"><svg class="i"><use href="#i-beach"/></svg></span><span class="pname">Sand Key Park</span><span class="label pcode">Sheet 3 · GB · Beach</span></div><span class="pfoot"></span></div>
+          <div class="card-body">
+            <p class="card-kick label"><svg class="sym" aria-hidden="true"><use href="#i-beach"/></svg>Beach · Sand Key<svg class="sheet-badge" role="img" aria-label="Sheet 3, Gulf Beaches"><use href="#sheet-beaches"/></svg></p>
+            <h3><a class="stretched" href="#cards">Sand Key Park</a></h3>
+            <p class="sum">A 95-acre county beach park at the north end of Sand Key in Clearwater, with a Gulf beach with seasonal lifeguards and a boardwalk nature trail by a salt marsh.</p>
+            <p class="meta"><span><svg class="i"><use href="#i-clock"/></svg>Daily, 7 a.m. to sunset</span><span>$6 daily beach parking</span></p>
+          </div>
+          <div class="foot"><span class="label faint">pinellas.gov</span><button class="star" type="button" aria-pressed="false" aria-label="Add Sand Key Park to My Trip"><svg class="i"><use href="#i-star"/></svg></button></div>
+        </article>
+
+      </div>
+      <p class="spec-note">Specimen copy is taken from the research slices (research/, Sep 27, 2026), unedited. On the site every card also carries its source link on the detail page.</p>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ the plate, callouts, facts ============ -->
+    <section class="section" id="plate" aria-labelledby="plate-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">5</span>No picture · no stock photo</p><h2 id="plate-h">The plate</h2></div>
+      <div class="two">
+        <div class="plate lg cartouche" data-sheet="daytrips" role="img" aria-label="Plate for a record without a cleared image">
+          <div class="plate-in"><span class="label pcode">Sheet 6 · DT · Day Trips</span><span class="medal"><svg class="i"><use href="#i-lighthouse"/></svg></span><span class="pname">A record with no cleared image</span><span class="label pcode">Landmark</span></div><span class="pfoot"></span>
+        </div>
+        <div class="prose">
+          <p>When a record has no rights-cleared image, its card and page show a <b>plate</b>: a cigar-label panel in the sheet's tint with concave corners, a double rule, a medallion holding the record's chart symbol, the name in Bodoni italic and the sheet code.</p>
+          <p>The plate is typography, not a picture: it is never a stock photo, a screenshot of a map or an image from an operator's website.</p>
+          <div class="callout tone-tip"><span class="flag label"><svg class="i"><use href="#i-info"/></svg>Tip</span><p>Ride the Pirate Water Taxi between its 10 numbered stops, from the Florida Aquarium to Armature Works.</p></div>
+        </div>
+      </div>
+
+      <div class="two" style="margin-top:var(--sp-6)">
+        <div>
+          <p class="sub-h label">At a glance · The Dalí Museum</p>
+          <dl class="facts">
+            <div class="fact"><dt class="label">Hours</dt><dd>Daily 10am–6pm, Thursdays until 8pm</dd></div>
+            <div class="fact"><dt class="label">Admission</dt><dd>Adults (18–64) $32; ages 6–12 $12; 5 and under free</dd></div>
+            <div class="fact"><dt class="label">Where</dt><dd>One Dali Blvd, St. Petersburg</dd></div>
+            <div class="fact"><dt class="label">Parking</dt><dd><span class="unk">Not listed</span></dd></div>
+          </dl>
+          <div class="callout tone-quote" data-sheet="stpete"><span class="flag label"><svg class="i"><use href="#i-info"/></svg>In their words</span>
+            <blockquote>“The Dalí Museum celebrates the life and work of Salvador Dalí (1904-1989) and features works from the artist’s entire career.”</blockquote>
+            <cite>The Dalí Museum, <a href="https://thedali.org/about-the-museum/mission-history/">thedali.org</a> (opens in a new tab)</cite></div>
+        </div>
+        <div>
+          <p class="sub-h label">Status notes are facts too</p>
+          <div class="callout tone-warn" style="margin-top:var(--sp-5)"><span class="flag label"><svg class="i"><use href="#i-warn"/></svg>Check before you go</span>
+            <p><b>Sand Key Park is open.</b> A repaired seawall section stays closed until October 2026 as equipment staging for the City of Clearwater's marina construction.</p>
+            <p class="faint" style="font-size:var(--fs-xs)">Pinellas County park updates, updated Sep 25, 2026</p></div>
+          <p class="sub-h label">Today · a time-first list</p>
+          <ol class="tonight">
+            <li data-sheet="tampa"><a href="#cards"><time>11:30<small>AM</small></time><span class="sheet-dot" aria-hidden="true"></span><span><span class="t">Pirate Water Taxi, first weekday departure</span><span class="w">Stop 7, Convention Center · runs to 6:30 PM</span></span></a></li>
+            <li data-sheet="stpete"><a href="#cards"><time>10:00<small>AM</small></time><span class="sheet-dot" aria-hidden="true"></span><span><span class="t">The Dalí Museum opens</span><span class="w">One Dali Blvd · until 6:00 PM</span></span></a></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data">
+          <caption>The six sheets and their areas (SPEC.md §4.1)</caption>
+          <thead><tr><th class="label">Sheet</th><th class="label">Code</th><th class="label num">Areas</th><th class="label">Ink</th></tr></thead>
+          <tbody>
+            <tr data-sheet="tampa"><th scope="row">1 · Tampa</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="TP"><use href="#sheet-tampa"/></svg></td><td class="num" data-label="Areas">13</td><td data-label="Ink"><span class="sheet-tag label">Ybor brick</span></td></tr>
+            <tr data-sheet="stpete"><th scope="row">2 · St. Petersburg</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="SP"><use href="#sheet-stpete"/></svg></td><td class="num" data-label="Areas">7</td><td data-label="Ink"><span class="sheet-tag label">Sunshine orange</span></td></tr>
+            <tr data-sheet="beaches"><th scope="row">3 · Gulf Beaches</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="GB"><use href="#sheet-beaches"/></svg></td><td class="num" data-label="Areas">8</td><td data-label="Ink"><span class="sheet-tag label">Gulf turquoise</span></td></tr>
+            <tr data-sheet="clearwater"><th scope="row">4 · Clearwater &amp; North Pinellas</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="CW"><use href="#sheet-clearwater"/></svg></td><td class="num" data-label="Areas">7</td><td data-label="Ink"><span class="sheet-tag label">Sponge-dock blue</span></td></tr>
+            <tr data-sheet="around"><th scope="row">5 · Around the Bay</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="AB"><use href="#sheet-around"/></svg></td><td class="num" data-label="Areas">6</td><td data-label="Ink"><span class="sheet-tag label">Palmetto green</span></td></tr>
+            <tr data-sheet="daytrips"><th scope="row">6 · Day Trips</th><td data-label="Code"><svg class="sheet-badge" role="img" aria-label="DT"><use href="#sheet-daytrips"/></svg></td><td class="num" data-label="Areas">4</td><td data-label="Ink"><span class="sheet-tag label">Sunset violet</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ map ============ -->
+    <section class="section" id="map" aria-labelledby="map-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">6</span>Map · land, water lining, buoys</p><h2 id="map-h">The chart</h2></div>
+      <div class="map-box grat">
+        <div class="grat-in">
+        <div class="map-bar"><span class="label muted">Specimen coast · not to scale</span><div class="view-toggle theme-switch"><button type="button" aria-pressed="true"><svg class="i"><use href="#i-map"/></svg>Map</button><button type="button" aria-pressed="false">List</button></div></div>
+        <div class="map-view">
+          <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <path id="land-a" d="M330 0H800V500H560C548 470 520 452 492 446C458 438 430 418 426 388C422 356 452 336 446 304C440 272 404 262 392 232C380 200 404 172 392 140C380 108 344 96 336 64C330 40 340 20 330 0Z"/>
+              <path id="land-b" d="M92 0C104 70 120 150 138 232C154 306 170 380 190 500H168C150 384 132 310 116 236C98 152 80 72 66 0Z"/>
+              <path id="land-c" d="M262 356C282 346 312 352 320 372C328 392 312 410 288 412C264 414 248 400 250 382C251 370 254 362 262 356Z"/>
+            </defs>
+            <rect class="m-water" width="800" height="500"/>
+            <!-- water lining: coast strokes, widest first, each line cleared by a slightly thinner water stroke -->
+            <g class="m-wl">
+              <use href="#land-a" class="m-wl l" style="stroke-width:40"/><use href="#land-a" style="stroke:var(--map-water);stroke-width:38.2"/>
+              <use href="#land-a" class="m-wl l" style="stroke-width:27"/><use href="#land-a" style="stroke:var(--map-water);stroke-width:25.3"/>
+              <use href="#land-a" class="m-wl l" style="stroke-width:16"/><use href="#land-a" style="stroke:var(--map-water);stroke-width:14.4"/>
+              <use href="#land-a" class="m-wl l" style="stroke-width:8;stroke:var(--map-water-edge)"/>
+              <use href="#land-b" class="m-wl l" style="stroke-width:27"/><use href="#land-b" style="stroke:var(--map-water);stroke-width:25.3"/>
+              <use href="#land-b" class="m-wl l" style="stroke-width:16"/><use href="#land-b" style="stroke:var(--map-water);stroke-width:14.4"/>
+              <use href="#land-b" class="m-wl l" style="stroke-width:8;stroke:var(--map-water-edge)"/>
+              <use href="#land-c" class="m-wl l" style="stroke-width:16"/><use href="#land-c" style="stroke:var(--map-water);stroke-width:14.4"/>
+              <use href="#land-c" class="m-wl l" style="stroke-width:8;stroke:var(--map-water-edge)"/>
+            </g>
+            <use href="#land-a" class="m-land"/><use href="#land-b" class="m-land"/><use href="#land-c" class="m-land"/>
+            <path class="m-sand" d="M66 0C80 72 98 152 116 236C132 310 150 384 168 500H176C158 384 140 308 124 234C106 150 88 70 74 0Z"/>
+            <path class="m-park" d="M640 300C680 290 720 300 740 330C752 350 740 380 708 384C672 388 642 370 632 344C626 326 628 306 640 300Z"/>
+            <use href="#land-a" class="m-coast"/><use href="#land-b" class="m-coast"/><use href="#land-c" class="m-coast"/>
+            <!-- roads: casing under, fill over; the causeway in label gold -->
+            <g>
+              <path class="m-road-case" style="stroke-width:5" d="M800 110H560C520 110 500 140 470 160M560 110C560 180 580 260 600 330C612 372 640 420 680 500M470 160C440 180 420 214 404 226"/>
+              <path class="m-road minor" style="stroke-width:3" d="M800 110H560C520 110 500 140 470 160M560 110C560 180 580 260 600 330C612 372 640 420 680 500M470 160C440 180 420 214 404 226"/>
+              <path class="m-road-case" style="stroke-width:9" d="M800 250H520C470 250 430 262 404 270L150 330"/>
+              <path class="m-road major" style="stroke-width:6" d="M800 250H520C470 250 430 262 404 270L150 330"/>
+              <path class="m-rail" d="M800 200C700 196 640 180 600 150C570 128 540 60 530 0"/>
+            </g>
+          </svg>
+          <span class="map-label water big" style="left:25%;top:50%">Open water</span>
+          <span class="map-label water" style="left:37%;top:14%">The bay</span>
+          <span class="map-label" style="left:79%;top:10%">Mainland</span>
+          <span class="map-label" style="left:16%;top:84%;transform:translate(-50%,-50%) rotate(78deg)">Barrier island</span>
+          <span class="map-label park" style="left:86%;top:69%">A park</span>
+          <button class="buoy" type="button" data-sheet="tampa" style="left:62%;top:38%" aria-label="1, a place on Sheet 1"><span>1</span></button>
+          <button class="buoy" type="button" data-sheet="tampa" style="left:73%;top:32%" aria-pressed="true" aria-label="2, selected"><span>2</span></button>
+          <button class="buoy" type="button" data-sheet="beaches" style="left:17.5%;top:58%" aria-label="A stay on Sheet 3"><span><svg class="i"><use href="#i-anchor"/></svg></span></button>
+          <button class="buoy" type="button" data-sheet="stpete" style="left:59%;top:79%" aria-label="A historic site on Sheet 2"><span><svg class="i"><use href="#i-landmark"/></svg></span></button>
+          <button class="buoy" type="button" data-sheet="daytrips" style="left:86%;top:52%" aria-label="14, a place on Sheet 6"><span>14</span></button>
+          <button class="cluster" type="button" style="left:88%;top:26%" aria-label="12 places here, zoom in"><span>12</span></button>
+          <div class="map-zoom"><button type="button" aria-label="Zoom in"><svg class="i"><use href="#i-plus"/></svg></button><button type="button" aria-label="Zoom out"><svg class="i"><use href="#i-minus"/></svg></button></div>
+          <span class="map-note label">Not for navigation</span>
+        </div>
+        <div class="map-legend">
+          <span><svg class="i"><use href="#i-buoy"/></svg>Numbered buoy: a place</span>
+          <span><svg class="i"><use href="#i-anchor"/></svg>Anchor: a stay</span>
+          <span><svg class="i"><use href="#i-landmark"/></svg>Landmark: a historic site</span>
+          <span><svg class="i"><use href="#i-flag"/></svg>Flag: an event</span>
+          <span><svg class="i"><use href="#i-daymark"/></svg>Daymark: a departure</span>
+          <span><svg class="i"><use href="#i-course"/></svg>Course: a passage</span>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ type ============ -->
+    <section class="section" id="type" aria-labelledby="type-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">7</span>Type · three OFL families, 12px floor</p><h2 id="type-h">Bodoni Moda, Figtree, Archivo</h2></div>
+      <div class="type-row"><span class="label">Display · h1</span><h1 style="font-size:var(--fs-2xl)">Ybor City <i>&amp;</i> the cigar trade</h1></div>
+      <div class="type-row"><span class="label">h2 · h3 · card</span><div><h2>Where to stay on the Gulf</h2><h3>Hotels on Sheet 3</h3><h4>The Birchwood · <i>Beach Drive</i></h4></div></div>
+      <div class="type-row"><span class="label">Dek</span><p class="dek">From Ybor City and the Channel District to Westshore and North Tampa.</p></div>
+      <div class="type-row"><span class="label">Text · 16/1.6</span><p class="prose">A hop-on, hop-off water taxi on the Hillsborough River with 10 numbered stops. Tickets are sold online and at the booth at Stop 7. <a href="#cards">A link reads like this</a>, and <b>strong text like this</b>. 0O 1lI · 11:30 AM · $34</p></div>
+      <div class="type-row"><span class="label">Meta · 13</span><p style="font-size:var(--fs-xs)" class="muted">Downtown St. Pete · Daily 10am–6pm · <span class="unk">Price not listed</span></p></div>
+      <div class="type-row"><span class="label">Label · 12 caps</span><p class="label">Sheet 1 · Tampa · 13 areas · TP SP GB CW AB DT</p></div>
+      <div class="type-row"><span class="label">Numerals</span><p><span style="font-family:var(--font-display);font-weight:800;font-size:var(--fs-numeral);line-height:1">1836 · 1924 · 13</span> &nbsp; <span class="label tnum" style="font-size:var(--fs-sm)">11:30 · 13:00 · 18:30</span></p></div>
+    </section>
+
+    <hr class="wl">
+
+    <!-- ============ ornaments + color ============ -->
+    <section class="section" id="ornament" aria-labelledby="orn-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">8</span>Ornament · drawn, never a texture</p><h2 id="orn-h">Rose, frame, ribbon, lining, neatline</h2></div>
+      <div class="ornaments">
+        <div class="orn"><svg class="orn-rose" viewBox="0 0 200 200" aria-hidden="true"><use href="#compass"/></svg><span class="label">Compass rose</span></div>
+        <div class="orn"><div class="frame frame-demo"><span class="label">Label frame</span></div><span class="label">Double rule · corner stars</span></div>
+        <div class="orn"><span class="ribbon"><span>Ribbon kicker</span></span><span class="ribbon" data-sheet="beaches" style="margin-top:14px"><span>Sheet 3 · Gulf Beaches</span></span><span class="label">Ribbon</span></div>
+        <div class="orn"><div style="width:100%"><div class="wl tight"></div><div class="ripple" style="margin-top:12px"></div></div><span class="label">Water lining · ripple</span></div>
+        <div class="orn"><div class="grat" style="width:100%"><div class="grat-in" style="height:70px"></div></div><span class="label">Graticule neatline</span></div>
+        <div class="orn"><span class="seal cartouche"><svg class="i"><use href="#i-seal"/></svg>Signature</span><span class="sec-num">4</span><span class="label">Seal · section number</span></div>
+      </div>
+      <p class="sub-h label">Inks of this edition</p>
+      <div class="sw-grid" id="swatches"></div>
+    </section>
+
+    <hr class="wl">
+
+    <section class="section" id="trip" aria-labelledby="dd-h" style="margin-top:0">
+      <div class="sec-head"><p class="sec-kicker label"><span class="sec-num">9</span>Rules of use</p><h2 id="dd-h">Do and don't</h2></div>
+      <div class="do-dont">
+        <div><h3><svg class="i"><use href="#i-check"/></svg>Do</h3><ul>
+          <li>Show a sheet as code + shape + ink, with its name in text nearby.</li>
+          <li>Use gold for ornament and the signature seal; use magenta for links, focus, courses and the live flare.</li>
+          <li>Print unknowns as unknowns: “Time not listed”, with the dashed-circle mark.</li>
+          <li>Keep one label frame per page (the page head) and one ribbon per frame.</li>
+        </ul></div>
+        <div><h3><svg class="i"><use href="#i-x"/></svg>Don't</h3><ul>
+          <li>Draw soundings, depth contours, buoys or coordinates that read as navigation data.</li>
+          <li>Set text in gold on cream, or any text under 12px.</li>
+          <li>Use a paper, parchment or wood texture image. Every ornament is SVG or CSS on tokens.</li>
+          <li>Use a sheet ink for anything but that sheet's identity.</li>
+        </ul></div>
+      </div>
+    </section>
+
+   </div>
+  </main>
+</div>
+
+<nav class="dock" aria-label="Quick">
+  <a href="#cards"><svg class="i"><use href="#i-calendar"/></svg><span class="label">What's On</span></a>
+  <a href="#map" aria-current="page"><svg class="i"><use href="#i-map"/></svg><span class="label">Map</span></a>
+  <a href="#trip"><svg class="i"><use href="#i-star"/></svg><span class="label">Trip</span></a>
+  <a href="#top"><svg class="i"><use href="#i-search"/></svg><span class="label">Search</span></a>
+</nav>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  function current() { return root.getAttribute("data-theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); }
+  function sync() {
+    var t = current();
+    document.querySelectorAll("[data-set-theme]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-set-theme") === t)); });
+    var btn = document.getElementById("theme-btn");
+    btn.setAttribute("aria-label", t === "dark" ? "Switch to the Day chart" : "Switch to the Night chart");
+    btn.querySelector("use").setAttribute("href", t === "dark" ? "#i-sun" : "#i-moon");
+    swatches();
+  }
+  function set(t) { root.setAttribute("data-theme", t); try { localStorage.setItem("cb-theme", t); } catch (e) {} sync(); }
+  document.querySelectorAll("[data-set-theme]").forEach(function (b) { b.addEventListener("click", function () { set(b.getAttribute("data-set-theme")); }); });
+  document.getElementById("theme-btn").addEventListener("click", function () { set(current() === "dark" ? "light" : "dark"); });
+  var SW = ["bg", "surface", "surface-alt", "text", "text-muted", "text-faint", "accent", "link", "magenta", "gold", "gold-ink", "water-line",
+    "sheet-tampa", "sheet-stpete", "sheet-beaches", "sheet-clearwater", "sheet-around", "sheet-daytrips",
+    "map-land", "map-water", "map-water-line", "map-coast", "map-road-major", "map-park"];
+  function swatches() {
+    var cs = getComputedStyle(root), host = document.getElementById("swatches");
+    host.innerHTML = SW.map(function (k) {
+      var v = cs.getPropertyValue("--" + k).trim();
+      return '<div class="sw"><i style="--c:var(--' + k + ')"></i><span>--' + k + '<br><code>' + v + '</code></span></div>';
+    }).join("");
+  }
+  sync();
+})();
+</script>
+</body>
+</html>

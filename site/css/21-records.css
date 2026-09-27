@@ -1,0 +1,58 @@
+/* ======================================================================
+   site/css/21-records.css · OWNER: E1 (engine; minimal styles for the destination components so the stub
+   pages read; the design agent and the page lanes re-skin them)
+   Cards (.card.place .card.stay .card.exp .card.area), the typographic plate (.plate-type), .photo and
+   .photo-fig, compact rows (ul.rows > li.row), the coordinate line, head actions, heritage blocks and the
+   timeline. Read only tokens (var(--…)); no color literal may appear here.
+   ====================================================================== */
+.card.place, .card.stay, .card.exp, .card.area { display: flex; flex-direction: column; gap: var(--sp-2); padding: 0; border-top: var(--rule-heavy) solid var(--ink-edge); }
+.card-body { display: flex; flex-direction: column; gap: 6px; padding: var(--sp-3) var(--sp-4) var(--sp-4); }
+.card-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; font-size: var(--fs-xs); color: var(--text-muted); }
+.card-title { font-size: var(--fs-md); }
+.card-title a { color: var(--text); }
+.card-sum { font-size: var(--fs-sm); }
+.card-meta, .card-op, .card-departs, .card-brand, .card-feats, .card-known { font-size: var(--fs-xs); color: var(--text-muted); }
+.card-more { position: relative; z-index: 1; font-size: var(--fs-sm); }
+.card-more > summary { min-height: var(--tap); display: flex; align-items: center; cursor: pointer; color: var(--link); }
+.card-quote { margin: var(--sp-2) 0; padding-left: var(--sp-3); border-left: var(--rule-mid) solid var(--ink-edge); }
+.card .star { position: absolute; top: 6px; right: 6px; z-index: 1; }
+.card .card-more, .card a:not(.stretched) { position: relative; z-index: 1; }
+
+/* the typographic plate: a record without a rights-cleared image gets its chart code and name, never a stock photo */
+.plate-type {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; aspect-ratio: 3 / 2; padding: var(--sp-3) var(--sp-4);
+  background: var(--ink-tint); color: var(--ink-text); border-bottom: 1px solid var(--border);
+}
+.plate-type .pt-code { font-size: var(--fs-label); font-weight: var(--wght-strong); letter-spacing: 0.2em; }
+.plate-type .pt-name { font-family: var(--font-display); font-size: var(--fs-lg); line-height: var(--lh-snug); }
+.plate-type.lg { aspect-ratio: 16 / 7; }
+.photo { display: block; aspect-ratio: 3 / 2; overflow: hidden; background: var(--surface-sunken); }
+.photo img { width: 100%; height: 100%; object-fit: cover; }
+.photo-fig { margin: var(--sp-4) 0; }
+.photo-fig img { width: 100%; height: auto; }
+.photo-fig figcaption { margin-top: 6px; font-size: var(--fs-xs); color: var(--text-muted); }
+
+/* compact rows */
+ul.rows { list-style: none; padding: 0; border-top: 1px solid var(--border); }
+li.row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px var(--sp-3); padding: 6px 0; border-bottom: 1px solid var(--border); }
+li.row > a, li.row > span { display: flex; align-items: center; gap: 10px; min-height: var(--tap); flex: 1 1 260px; min-width: 0; color: var(--text); text-decoration: none; }
+li.row .t { font-weight: var(--wght-strong); line-height: 1.35; }
+li.row > a:hover .t { text-decoration: underline; text-underline-offset: 0.16em; }
+li.row .w { display: block; font-size: var(--fs-xs); color: var(--text-muted); }
+li.row > p { flex-basis: 100%; font-size: var(--fs-sm); }
+
+.coord-line { display: flex; align-items: center; gap: 6px; font-size: var(--fs-sm); color: var(--text-muted); font-variant-numeric: tabular-nums; }
+.head-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: var(--sp-3); }
+
+/* heritage and the timeline */
+.heritage { margin-top: var(--sp-7); padding-top: var(--sp-4); border-top: var(--rule-heavy) solid var(--ink-edge); }
+.heritage h2 { margin-bottom: var(--sp-3); }
+.designations { margin: var(--sp-3) 0; padding-left: 1.2em; }
+.heritage-visit { margin-top: var(--sp-3); }
+ol.timeline { list-style: none; padding: 0; border-left: var(--rule-mid) solid var(--rule-ink); }
+.tl-item, ol.timeline > li { position: relative; padding: 0 0 var(--sp-5) var(--sp-4); }
+.tl-year { font-weight: var(--wght-strong); color: var(--ink-text); }
+.tl-title { font-size: var(--fs-md); }
+.tl-places { font-size: var(--fs-sm); color: var(--text-muted); }
+ol.stops { padding-left: 1.4em; }
+ol.stops li { min-height: var(--tap); display: list-item; }

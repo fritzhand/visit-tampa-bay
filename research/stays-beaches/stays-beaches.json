@@ -1,0 +1,4204 @@
+{
+ "slice": "stays-beaches",
+ "checked": "2026-09-27",
+ "records": {
+  "stays": [
+   {
+    "id": "don-cesar",
+    "name": "The Don CeSar",
+    "aliases": [
+     "Don CeSar Hotel",
+     "Don Ce-Sar",
+     "The Pink Palace"
+    ],
+    "kind": "historic-hotel",
+    "area": "st-pete-beach",
+    "address": "3400 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.70927,
+    "lng": -82.737277,
+    "geo_source": "osm",
+    "url": "https://www.doncesar.com/",
+    "phone": "(844) 338-1501",
+    "opened": "1928",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "restaurant",
+     "meeting-space",
+     "accessible-rooms",
+     "historic"
+    ],
+    "summary": "A beachfront resort hotel at the south end of St. Pete Beach that opened in 1928 and calls itself the Pink Palace. It closed for repairs after Hurricanes Helene and Milton in fall 2024 and reopened in March 2025.",
+    "quote": "Perched atop the windswept dunes of St. Pete Beach, The Don CeSar, since its inception in 1928, stands as a shining monument of glamor and leisure.",
+    "heritage": {
+     "built": "1925–1928",
+     "architect": "Henry H. Dupont",
+     "style": "Mediterranean and Moorish revival",
+     "designations": [
+      {
+       "name": "National Register of Historic Places",
+       "ref": "75000563",
+       "year": 1975,
+       "url": "https://npgallery.nps.gov/AssetDetail/NRIS/75000563"
+      }
+     ],
+     "era": "land-boom",
+     "story": "Developer Thomas Rowe opened the Don Ce-Sar on January 16, 1928. During World War II the Army bought the hotel and reopened it as a military hospital in December 1942; from February 1944 it was a convalescent center for the Army Air Corps, and by the end of 1945 it housed a Veterans Administration regional office. It was added to the National Register of Historic Places on April 3, 1975.",
+     "visiting": "It operates as a resort hotel with restaurants, a spa and pools; the hotel is a member of Historic Hotels of America.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Don_CeSar",
+      "https://npgallery.nps.gov/AssetDetail/NRIS/75000563",
+      "https://www.doncesar.com/"
+     ]
+    },
+    "status": "open",
+    "tags": [
+     "historic-hotels-of-america",
+     "landmark"
+    ],
+    "source_url": "https://www.doncesar.com/",
+    "also_sources": [
+     "https://en.wikipedia.org/wiki/Don_CeSar",
+     "https://npgallery.nps.gov/AssetDetail/NRIS/75000563",
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market",
+     "https://business.tampabaybeaches.com/list/member/don-cesar-hotel-390"
+    ],
+    "notes": "Closed for hurricane repairs Sep 2024 to Mar 2025 (HVS, Jul 1, 2026; Wikipedia). Room count not stated on the hotel's site (Wikipedia: 277 rooms and 40 suites; Visit St. Pete-Clearwater: 277 rooms and 36 suites), left null. NPS NRIS lists the architect as unknown; Wikipedia names Henry H. Dupont.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "beach-house-suites-by-the-don-cesar",
+    "name": "Beach House Suites by The Don CeSar",
+    "aliases": [
+     "Beach House Suites"
+    ],
+    "kind": "hotel",
+    "area": "st-pete-beach",
+    "address": "3860 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.716126,
+    "lng": -82.738898,
+    "geo_source": "osm",
+    "url": "https://www.doncesar.com/beach-house-suites/",
+    "phone": "(844) 338-1501",
+    "features": [
+     "pool",
+     "restaurant",
+     "kitchens",
+     "all-suites",
+     "accessible-rooms"
+    ],
+    "summary": "An all-suite sister property of The Don CeSar, half a mile up the beach, with kitchenettes, a heated pool and pool bar, and a shuttle to The Don. It shared The Don CeSar's hurricane closure from September 2024 to March 2025.",
+    "quote": "Our coastal cool Beach House Suites combine all the benefits of a vacation rental with all the luxury amenities of a resort.",
+    "status": "open",
+    "source_url": "https://www.doncesar.com/beach-house-suites/",
+    "also_sources": [
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market",
+     "https://business.tampabaybeaches.com/list/member/beach-house-suites-by-the-don-cesar-389"
+    ],
+    "notes": "Quote begins 'Just a half mile up the beach from the legendary Pink Palace® itself, our coastal cool…' on the page; capitalized here.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "island-grand-at-tradewinds",
+    "name": "Island Grand at TradeWinds",
+    "aliases": [
+     "TradeWinds Island Grand",
+     "TradeWinds Resort"
+    ],
+    "kind": "resort",
+    "area": "st-pete-beach",
+    "address": "5500 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.72986,
+    "lng": -82.74354,
+    "geo_source": "census",
+    "url": "https://www.tradewindsresort.com/island-grand-beach-resort",
+    "phone": "(727) 367-6461",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "accessible-rooms"
+    ],
+    "summary": "The larger of the two TradeWinds resorts on St. Pete Beach: 28 beachfront acres with five pools, several restaurants and bars, a spa and fitness center, and meeting space. Its sister resort, RumFish Beach, is a few blocks north.",
+    "quote": "Island Grand at TradeWinds is the perfect place for your entire crew to just let go and enjoy all the sun and fun Florida has to offer.",
+    "status": "open",
+    "tags": [
+     "tradewinds"
+    ],
+    "source_url": "https://www.tradewindsresort.com/island-grand-beach-resort",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/tradewinds-resort-1195",
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market"
+    ],
+    "notes": "Page lists '381 Rooms + Villas' (rooms left null because the figure combines rooms and villas). HVS (Jul 2026): undergoing Phase I of a multi-year renovation.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "rumfish-beach-at-tradewinds",
+    "name": "RumFish Beach at TradeWinds",
+    "aliases": [
+     "RumFish Beach",
+     "RumFish Beach Resort"
+    ],
+    "kind": "resort",
+    "area": "st-pete-beach",
+    "address": "6000 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.732138,
+    "lng": -82.746451,
+    "geo_source": "osm",
+    "url": "https://www.tradewindsresort.com/rumfish",
+    "phone": "(727) 360-5551",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A TradeWinds resort on 12 beachfront acres at St. Pete Beach with four pools (one for adults only), several restaurants and bars, and a 33,500-gallon aquarium at the RumFish Grill.",
+    "quote": "Located right on the sands of St. Pete Beach, RumFish Beach offers lovely rooms, fantastic dining, beachfront bars, and endless activities.",
+    "status": "open",
+    "tags": [
+     "tradewinds"
+    ],
+    "source_url": "https://www.tradewindsresort.com/rumfish",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/rumfish-beach-at-tradewinds-1196"
+    ],
+    "notes": "Page lists '352 Rooms + Villas' (rooms left null). The former Alden Suites URL (aldenbeachresort.com, tradewindsresort.com/rumfish/alden-suites) now redirects to this page.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bellwether-beach-resort",
+    "name": "Bellwether Beach Resort",
+    "kind": "resort",
+    "area": "st-pete-beach",
+    "address": "5250 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.726766,
+    "lng": -82.742028,
+    "geo_source": "census",
+    "url": "https://www.bellwetherbeachresort.com/",
+    "phone": "(727) 360-1811",
+    "summary": "A retro-styled beachfront resort on St. Pete Beach that has been closed since the 2024 hurricanes for restoration.",
+    "status": "temporarily-closed",
+    "status_note": "Closed after the 2024 hurricanes; the resort's site (checked Sep 27, 2026) says it 'remains closed as we complete essential restorations' and gives no reopening date. HVS (Jul 2026) also lists it as temporarily closed.",
+    "source_url": "https://www.bellwetherbeachresort.com/",
+    "also_sources": [
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market",
+     "https://baynews9.com/fl/tampa/news/2025/09/16/pinellas-hotels-closed-beach"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "beachcomber-beach-resort",
+    "name": "The Beachcomber Beach Resort & Hotel",
+    "aliases": [
+     "The Beachcomber",
+     "Beachcomber Beach Resort and Hotel"
+    ],
+    "kind": "resort",
+    "area": "st-pete-beach",
+    "address": "6200 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.733338,
+    "lng": -82.747192,
+    "geo_source": "osm",
+    "url": "https://www.beachcomberflorida.com/",
+    "phone": "(727) 367-1902",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A resort on almost six landscaped acres with direct beach access at St. Pete Beach, known for Jimmy B's Beach Bar and its daily live music. It reopened in October 2025 after hurricane repairs.",
+    "quote": "The Beachcomber Beach Resort and Hotel located directly on St Pete Beach provides a resort style atmosphere on almost 6 acres of lush tropical landscaped gardens on our own private beach.",
+    "status": "open",
+    "source_url": "https://www.beachcomberflorida.com/",
+    "also_sources": [
+     "https://baynews9.com/fl/tampa/news/2025/09/16/pinellas-hotels-closed-beach",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
+     "https://business.tampabaybeaches.com/list/member/beachcomber-beach-resort-hotel-160"
+    ],
+    "notes": "Closed after the 2024 hurricanes; Bay News 9 (Sep 16, 2025) reported it would reopen Oct 30 (2025); Visit St. Pete-Clearwater says it reopened in October 2025.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hotel-zamora",
+    "name": "The Hotel Zamora",
+    "aliases": [
+     "Hotel Zamora"
+    ],
+    "kind": "boutique-hotel",
+    "brand": "Independent",
+    "area": "st-pete-beach",
+    "address": "3701 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.713552,
+    "lng": -82.737234,
+    "geo_source": "osm",
+    "url": "https://www.thehotelzamora.com/",
+    "features": [
+     "waterfront",
+     "pool",
+     "restaurant",
+     "rooftop-bar"
+    ],
+    "summary": "A Mediterranean-styled boutique hotel on the bay side of Gulf Boulevard at the south end of St. Pete Beach, with a pool bar, the Azura restaurant and a rooftop lounge.",
+    "quote": "A luxurious Mediterranean inspired hotel located right on the water in St. Pete beach with a rooftop restaurant and lounge.",
+    "status": "open",
+    "source_url": "https://www.thehotelzamora.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/hotel-zamora-10052",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "Brand 'Independent': no chain affiliation on its site (not an explicit claim; verifier may prefer null). Visit St. Pete-Clearwater: $7.5 million renovation completed January 2025.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "plaza-beach-hotel",
+    "name": "Plaza Beach Hotel – Beachfront Resort",
+    "aliases": [
+     "Plaza Beach Hotel",
+     "Plaza Beach Resorts"
+    ],
+    "kind": "hotel",
+    "area": "st-pete-beach",
+    "address": "4506 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.72032,
+    "lng": -82.740259,
+    "geo_source": "osm",
+    "url": "https://www.plazabeachresorts.com/",
+    "phone": "(800) 257-8998",
+    "rooms": 39,
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "kitchens",
+     "all-suites",
+     "free-parking",
+     "ev-charging"
+    ],
+    "summary": "A family-owned beachfront hotel of 39 suites with kitchenettes on St. Pete Beach, with a Gulf-front heated pool, a tiki bar and mini-golf. It is the check-in office for its two small bayside sister resorts.",
+    "quote": "Limited to 39 spacious suites, each with a kitchenette, it offers an intimate beachfront escape with timeless flair.",
+    "status": "open",
+    "source_url": "https://www.plazabeachresorts.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/plaza-beach-hotel-beachfront-resort-860"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bayview-plaza-waterfront-resort",
+    "name": "Bayview Plaza Waterfront Resort",
+    "kind": "boutique-hotel",
+    "area": "st-pete-beach",
+    "address": "4321 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.718112,
+    "lng": -82.738761,
+    "geo_source": "osm",
+    "url": "https://www.plazabeachresorts.com/our-resorts/bayview-plaza-waterfront-resort/",
+    "rooms": 7,
+    "features": [
+     "waterfront",
+     "bay-view",
+     "pool",
+     "fitness",
+     "kitchens",
+     "all-suites",
+     "free-parking",
+     "ev-charging"
+    ],
+    "summary": "A seven-suite resort on Boca Ciega Bay across the street from the beach, with a heated pool, a fitness room and a fishing pier; guests check in at the Plaza Beach Hotel.",
+    "quote": "Bayview Plaza Waterfront Resort – St Pete Beach is an award winning boutique resort of only seven suites located on Boca Ciega Bay.",
+    "status": "open",
+    "source_url": "https://www.plazabeachresorts.com/our-resorts/bayview-plaza-waterfront-resort/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bayview-plaza-waterfront-resort-st-pete-beach-1314"
+    ],
+    "notes": "Street address from the Tampa Bay Beaches Chamber listing; the resort page gives only the check-in address (4506 Gulf Blvd).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bay-palms-waterfront-resort",
+    "name": "Bay Palms Waterfront Resort – Hotel and Marina",
+    "aliases": [
+     "Bay Palms Waterfront Resort"
+    ],
+    "kind": "boutique-hotel",
+    "area": "st-pete-beach",
+    "address": "4237 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.717775,
+    "lng": -82.738747,
+    "geo_source": "osm",
+    "url": "https://www.plazabeachresorts.com/our-resorts/bay-palms-waterfront-resort-hotel-marina/",
+    "rooms": 15,
+    "features": [
+     "waterfront",
+     "bay-view",
+     "pool",
+     "fitness",
+     "kitchens",
+     "marina",
+     "pet-friendly",
+     "free-parking",
+     "ev-charging"
+    ],
+    "summary": "A 15-room resort on Boca Ciega Bay about 200 feet from the beach, with a large private fishing pier, boat docking, a bayside pool and pet-friendly suites; guests check in at the Plaza Beach Hotel.",
+    "quote": "Bay Palms Waterfront Resort – Hotel and Marina is an award winning boutique resort of only 15 rooms located directly on Boca Ciega Bay.",
+    "status": "open",
+    "source_url": "https://www.plazabeachresorts.com/our-resorts/bay-palms-waterfront-resort-hotel-marina/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bay-palms-waterfront-resort-hotel-and-marina-110"
+    ],
+    "notes": "Street address from the Tampa Bay Beaches Chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bon-aire-resort",
+    "name": "Bon-Aire Resort",
+    "aliases": [
+     "Bon Aire Resort"
+    ],
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "address": "4350 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.718463,
+    "lng": -82.740079,
+    "geo_source": "osm",
+    "url": "https://www.bonaireresort.com/",
+    "phone": "(727) 360-5596",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A family resort motel with more than 400 feet of beachfront on St. Pete Beach, offering efficiencies and apartments with kitchens, two pools, shuffleboard and a tiki bar.",
+    "quote": "Located directly on the shores of the Gulf of Mexico, our resort offers over 400 feet of beachfront property on one of Florida's most beautiful beaches.",
+    "status": "open",
+    "source_url": "https://www.bonaireresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bon-aire-resort-184"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulf-strand-resort",
+    "name": "Gulf Strand Resort",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "address": "4510 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.720586,
+    "lng": -82.740437,
+    "geo_source": "osm",
+    "url": "https://www.gulfstrand.com/",
+    "phone": "(727) 367-2878",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A beachfront condominium resort on St. Pete Beach renting privately owned apartments with full kitchens by the night or week; it has a pool and spa and shuffleboard.",
+    "quote": "Gulf Strand Resort is situated in St. Pete Beach, FL, directly on the Gulf of Mexico with miles of white sandy beaches and a relaxing view of sky-blue water.",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.gulfstrand.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/gulf-strand-resort-by-trs-1378"
+    ],
+    "notes": "Managed by Travel Resort Services (TRS) per the chamber listing. 'Spa' on the page is a hot tub ('enjoy the pool and spa'), so the spa feature is not set.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulf-winds-resort",
+    "name": "Gulf Winds Resort",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "address": "6800 Sunset Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.736863,
+    "lng": -82.750712,
+    "geo_source": "osm",
+    "url": "https://www.gulfwindsresort.com/",
+    "phone": "(727) 367-2131",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A condominium resort in a quiet corner of northern St. Pete Beach renting privately owned units with full kitchens around a pool and landscaped courtyards, near the beach.",
+    "quote": "Gulf Winds Resort welcomes you to relax in the sun by our sparkling pool, the landscaped courtyards or on miles of exquisite white sand beaches.",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.gulfwindsresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/gulfwinds-resort-by-trs-549"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "luce-st-pete-beach",
+    "name": "The Luce, St. Pete Beach, a Tribute Portfolio Hotel",
+    "aliases": [
+     "The Luce",
+     "Postcard Inn on the Beach"
+    ],
+    "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "Tribute Portfolio",
+    "area": "st-pete-beach",
+    "address": "6300 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.733837,
+    "lng": -82.747057,
+    "geo_source": "osm",
+    "url": "https://www.thelucehotel.com/",
+    "phone": "(727) 632-3300",
+    "rooms": 200,
+    "opened": "2026",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "pet-friendly"
+    ],
+    "summary": "A 200-room beachfront Marriott Tribute Portfolio hotel on the former Postcard Inn site at St. Pete Beach, with the Sundrop restaurant, a pool bar and a nightly Sunset Social. It opened in June 2026.",
+    "quote": "The Luce is a beachfront Tribute Portfolio hotel on St. Pete Beach with 200 rooms, the largest pool on the beach, modern dining, and nightly Sunset Social.",
+    "status": "open",
+    "source_url": "https://www.thelucehotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-luce-a-tribute-portfolio-hotel/138372",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market"
+    ],
+    "notes": "Formerly Postcard Inn on the Beach (closed after the 2024 hurricanes; Bay News 9, Sep 2025). HVS: reopened June 2026 as The Luce. Pet-friendly per the Visit St. Pete-Clearwater profile ('pet-friendly (pets on leash)'), not the hotel's own page; verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sirata-beach-resort",
+    "name": "Sirata Beach Resort",
+    "aliases": [
+     "Sirata Hilton Tapestry Beach Resort",
+     "Sirata Beach Resort, Tapestry Collection by Hilton"
+    ],
+    "kind": "resort",
+    "brand": "Hilton",
+    "collection": "Tapestry Collection by Hilton",
+    "area": "st-pete-beach",
+    "address": "5300 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.727078,
+    "lng": -82.743201,
+    "geo_source": "osm",
+    "url": "https://www.sirata.com/",
+    "phone": "(727) 363-5100",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "restaurant",
+     "kitchens",
+     "pet-friendly",
+     "meeting-space"
+    ],
+    "summary": "A large family beach resort and conference center on St. Pete Beach with beachside pools, kids' programs, several bars and restaurants, and rooms, studios and suites, some with kitchenettes. It completed a renovation and joined Hilton's Tapestry Collection in January 2026.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/sirata-hilton-tapestry-beach-resort/138263",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sirata-hilton-tapestry-1039",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "The resort's own site (sirata.com) and hilton.com could not be read on Sep 27, 2026 (503/403); facts from the Visit St. Pete-Clearwater profile and the Tampa Bay Beaches Chamber listing. Visit St. Pete-Clearwater's new-hotels list: $25 million renovation completed January 2026, 228 renovated rooms including 80 suites; its profile still says 382 rooms, so rooms is left null.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "dolphin-beach-resort",
+    "name": "Dolphin Beach Resort",
+    "kind": "resort",
+    "area": "st-pete-beach",
+    "address": "4900 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.722387,
+    "lng": -82.741032,
+    "geo_source": "osm",
+    "url": "https://www.dolphinbeach.com/",
+    "phone": "(727) 360-7011",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "meeting-space",
+     "free-parking"
+    ],
+    "summary": "A beach resort on St. Pete Beach's stretch of Gulf Boulevard it calls the Miracle Mile, with a pool, the Boca Sands Grille and Flippers Beach Bar, and event space.",
+    "quote": "Relax at Dolphin Beach Resort on St. Pete Beach's Miracle Mile. Spacious rooms, sun-soaked activities, and incredible sunsets await.",
+    "status": "open",
+    "source_url": "https://www.dolphinbeach.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/dolphin-beach-resort-385",
+     "https://baynews9.com/fl/tampa/news/2025/09/16/pinellas-hotels-closed-beach"
+    ],
+    "notes": "OPEN QUESTION: Bay News 9 (Sep 16, 2025) listed it as closed after the 2024 hurricanes with reopening expected in 2026. On Sep 27, 2026 the resort's own site takes bookings and shows no closure notice, so status is open; no dated reopening announcement was found. Amenities per the resort's site (free parking listed there).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hideaway-sands-resort",
+    "name": "Hideaway Sands Resort",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "address": "3804 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.713888,
+    "lng": -82.738883,
+    "geo_source": "osm",
+    "url": "https://hideawaysands.com/",
+    "phone": "(727) 367-2781",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A beachfront timeshare condominium resort on St. Pete Beach that rents units with full kitchens by the night; it has a heated pool and hot tub. Its site says it has reopened.",
+    "quote": "We've re-opened. Call to reserve your stay today.",
+    "status": "open",
+    "source_url": "https://hideawaysands.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/hideaway-sands-560"
+    ],
+    "notes": "Part of the Bay and Beach Club group of resorts (site organization name). Reopening date not stated.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "long-key-beach-resort",
+    "name": "Long Key Beach Resort",
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "address": "3828 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.71513,
+    "lng": -82.738595,
+    "geo_source": "osm",
+    "url": "https://longkeybeachresort.com/",
+    "phone": "(727) 360-1748",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small beachfront resort motel on St. Pete Beach with hotel rooms, Gulf-view and Gulf-front suites, and one- and two-bedroom apartments with full kitchens, around a heated waterfall pool.",
+    "status": "open",
+    "source_url": "https://longkeybeachresort.com/home/amenities-2-2/",
+    "also_sources": [
+     "https://longkeybeachresort.com/",
+     "https://business.tampabaybeaches.com/list/member/long-key-beach-resort-696"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "palm-crest-resort-motel",
+    "name": "Palm Crest Resort Motel",
+    "aliases": [
+     "Palm Crest Motel"
+    ],
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "address": "3848 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.715366,
+    "lng": -82.738952,
+    "geo_source": "osm",
+    "url": "https://www.palmcrest.net/",
+    "phone": "(727) 360-9327",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A family beachfront motel on St. Pete Beach with courtyard and Gulf-front studios and suites, each with a kitchenette or full kitchen, and a heated pool.",
+    "status": "open",
+    "source_url": "https://www.palmcrest.net/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/palm-crest-resort-motel-807"
+    ],
+    "notes": "Phone from the chamber listing; the site shows 1-888-558-1247.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "mariner-beach-club",
+    "name": "Mariner Beach Club",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "address": "4220 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.717924,
+    "lng": -82.739109,
+    "geo_source": "census",
+    "url": "https://www.marinerbeachclub.com/",
+    "phone": "(727) 367-3721",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A beachfront vacation-ownership (timeshare) resort on St. Pete Beach with one- and two-bedroom condominiums that can also be reserved by the public; it has a pool, hot tubs and a beachfront patio.",
+    "quote": "Mariner Beach Club is a beachfront vacation ownership (timeshare) resort in St Pete Beach, Florida featuring one and two bedroom condominiums",
+    "status": "open",
+    "source_url": "https://www.marinerbeachclub.com/",
+    "also_sources": [
+     "https://www.marinerbeachclub.com/amenities",
+     "https://business.tampabaybeaches.com/list/member/mariner-beach-club-722"
+    ],
+    "notes": "'kitchens' inferred from 'condominiums'; not explicitly stated on the pages read. Verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bella-sirena-inn",
+    "name": "Bella Sirena Inn",
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "address": "635 Corey Ave",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.740648,
+    "lng": -82.752934,
+    "geo_source": "census",
+    "url": "https://bellasirenainn.com/",
+    "phone": "(727) 360-8400",
+    "features": [
+     "pool",
+     "kitchens",
+     "free-parking",
+     "accessible-rooms"
+    ],
+    "summary": "A motel of studio efficiencies and one-bedroom suites with full kitchens on Corey Avenue, St. Pete Beach's shopping street, under an eight-minute walk from the beach; it has a heated pool and no pets.",
+    "status": "open",
+    "source_url": "https://bellasirenainn.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bella-sirena-inn-motel-17870"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "havana-inn",
+    "name": "Havana Inn",
+    "kind": "inn",
+    "area": "pass-a-grille",
+    "address": "1007 Gulf Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.689329,
+    "lng": -82.737783,
+    "geo_source": "census",
+    "url": "https://www.pagbeachresorts.com/havana-inn",
+    "phone": "(727) 367-1305",
+    "features": [
+     "beachfront",
+     "kitchens",
+     "pet-friendly",
+     "free-parking"
+    ],
+    "summary": "A restored Gulf-front inn in Pass-a-Grille with one- to three-bedroom suites with kitchens; guests use the pool at its sister property, the Sabal Palms Inn, and dogs are allowed for a fee.",
+    "quote": "Havana Inn is a beautifully restored Gulf-front hotel in Pass-a-Grille, offering spacious 1, 2, and 3-bedroom suites with fully equipped kitchens and stunning beach views.",
+    "quote_source": "https://www.pagbeachresorts.com/",
+    "status": "open",
+    "tags": [
+     "st-pete-beach-boutique-hotel-collection"
+    ],
+    "source_url": "https://www.pagbeachresorts.com/havana-inn",
+    "also_sources": [
+     "https://www.pagbeachresorts.com/",
+     "https://business.tampabaybeaches.com/list/member/havana-inn-10047"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sabal-palms-inn",
+    "name": "Sabal Palms Inn",
+    "aliases": [
+     "Sabal Palms Motel"
+    ],
+    "kind": "inn",
+    "area": "pass-a-grille",
+    "address": "1301 Gulf Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.691499,
+    "lng": -82.737366,
+    "geo_source": "osm",
+    "url": "https://www.pagbeachresorts.com/sabal-palms-inn",
+    "phone": "(727) 367-1305",
+    "opened": "1926",
+    "features": [
+     "pool",
+     "kitchens",
+     "pet-friendly",
+     "free-parking"
+    ],
+    "summary": "A small inn across Gulf Way from the beach in Pass-a-Grille with a heated pool and rooms with kitchens or kitchenettes; its owners say it was built in 1926 and is one of the first lodgings on the barrier beaches.",
+    "quote": "Sabal Palms Inn—originally built in 1926—has stood as one of the first lodging properties on the barrier beaches.",
+    "quote_source": "https://www.pagbeachresorts.com/our-story",
+    "status": "open",
+    "tags": [
+     "st-pete-beach-boutique-hotel-collection"
+    ],
+    "source_url": "https://www.pagbeachresorts.com/sabal-palms-inn",
+    "also_sources": [
+     "https://www.pagbeachresorts.com/our-story",
+     "https://business.tampabaybeaches.com/list/member/sabal-palms-inn-959"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "wander-residences",
+    "name": "Wander Residences",
+    "kind": "condo-hotel",
+    "area": "fort-de-soto",
+    "address": "1515 Pinellas Bayway",
+    "city": "Tierra Verde",
+    "state": "FL",
+    "zip": "33715",
+    "lat": 27.674118,
+    "lng": -82.725669,
+    "geo_source": "census",
+    "url": "https://www.pagbeachresorts.com/wander-residences",
+    "phone": "(727) 367-1305",
+    "features": [
+     "pool",
+     "fitness",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "One- and two-bedroom condo suites with full kitchens on the Pinellas Bayway in Tierra Verde, near Fort De Soto Park, with a pool, hot tub, tennis court and fitness center; run by the owners of Pass-a-Grille's Sabal Palms Inn and Havana Inn.",
+    "status": "open",
+    "tags": [
+     "st-pete-beach-boutique-hotel-collection"
+    ],
+    "source_url": "https://www.pagbeachresorts.com/wander-residences",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "coconut-inn",
+    "name": "Coconut Inn",
+    "aliases": [
+     "Coconut Inn Pass-a-Grille Beach"
+    ],
+    "kind": "inn",
+    "area": "pass-a-grille",
+    "address": "113 11th Ave",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.689931,
+    "lng": -82.736473,
+    "geo_source": "census",
+    "url": "https://www.coconutinnflorida.com/",
+    "phone": "(727) 367-3030",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "An inn covering a block of Pass-a-Grille, one block from the Gulf beach, whose rooms all have full kitchens; it lends beach cruiser bicycles and has a heated spa pool and an outdoor kitchen.",
+    "quote": "Just steps away from the water, indulge in many charming accommodations including fully equipped kitchens, complimentary beach cruiser bicycles, and a heated spa pool.",
+    "status": "open",
+    "source_url": "https://www.coconutinnflorida.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/coconut-inn-6383"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "keystone-motel",
+    "name": "Keystone Motel",
+    "kind": "motel",
+    "area": "pass-a-grille",
+    "address": "801 Gulf Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.688299,
+    "lng": -82.737545,
+    "geo_source": "osm",
+    "url": "https://keystonemotel.com/",
+    "phone": "(727) 360-1313",
+    "summary": "A family-run motel on Gulf Way in Pass-a-Grille facing the Gulf beach; the family says it has served visitors since 1945.",
+    "quote": "We at the Keystone Motel are proud that our family has been serving the resort visitor since 1945.",
+    "status": "open",
+    "source_url": "https://keystonemotel.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/keystone-motel-8736"
+    ],
+    "notes": "Street address from the chamber listing (the motel's page gives none).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "islands-end-resort",
+    "name": "Island's End Resort",
+    "kind": "inn",
+    "area": "pass-a-grille",
+    "address": "1 Pass-a-Grille Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.682721,
+    "lng": -82.736835,
+    "geo_source": "official",
+    "url": "https://www.islandsend.com/",
+    "phone": "(727) 360-5023",
+    "features": [
+     "beachfront",
+     "waterfront",
+     "pet-friendly",
+     "free-parking"
+    ],
+    "summary": "A cluster of waterfront cottages at the southern tip of Pass-a-Grille, between the Gulf and the Intracoastal Waterway, with a private beach and a fishing dock; well-behaved dogs are welcome.",
+    "quote": "Welcome to Island's End, an oasis of real peace and quiet where the crystal blue waters of the Gulf of Mexico and the Intercoastal Waterway surround your very own private hideaway.",
+    "status": "open",
+    "source_url": "https://www.islandsend.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/island-s-end-resort-604"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "caprice-resort",
+    "name": "Caprice Resort",
+    "aliases": [
+     "Caprice Resort by TRS"
+    ],
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "address": "6950 Beach Plaza",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.736692,
+    "lng": -82.752481,
+    "geo_source": "osm",
+    "url": "https://www.capricestpetebeach.com/",
+    "phone": "(727) 360-6199",
+    "features": [
+     "beachfront",
+     "pool"
+    ],
+    "summary": "A beachfront condominium resort at St. Pete Beach renting one- and two-bedroom condos, with a heated pool, hot tub and a beachfront lawn; rentals are handled by Travel Resort Services' on-site office.",
+    "quote": "Caprice Resort has a spectacular location directly on St. Pete Beach.",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://business.tampabaybeaches.com/list/member/caprice-resort-by-trs-14432",
+    "notes": "Own site (capricestpetebeach.com) is behind a bot challenge; facts from the chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-pete-beach-suites",
+    "name": "St. Pete Beach Suites",
+    "kind": "hotel",
+    "area": "st-pete-beach",
+    "address": "6801 Sunset Way",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.737197,
+    "lng": -82.750153,
+    "geo_source": "osm",
+    "url": "https://www.stpetebeachsuites.com/",
+    "phone": "(727) 360-7233",
+    "rooms": 27,
+    "opened": "1948",
+    "features": [
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "A 27-suite hotel a few steps from the beach at the north end of St. Pete Beach; every suite has self-catering facilities. It opened in 1948 as the Dolphin Hotel and was remodeled in 2017.",
+    "quote": "Our hotel has been receiving guests since 1948 as the Dolphin Hotel, a piece of Florida history.",
+    "status": "open",
+    "source_url": "https://business.tampabaybeaches.com/list/member/st-pete-beach-suites-10833",
+    "notes": "Own site is behind a bot challenge; facts from the chamber listing ('27 beautifully appointed suites … each one boasting full self-catering amenities').",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hilton-garden-inn-st-pete-beach",
+    "name": "Hilton Garden Inn St. Pete Beach",
+    "kind": "hotel",
+    "brand": "Hilton",
+    "collection": "Hilton Garden Inn",
+    "area": "st-pete-beach",
+    "address": "6100 Gulf Blvd",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.732954,
+    "lng": -82.746469,
+    "geo_source": "osm",
+    "url": "https://www.hilton.com/en/hotels/piespgi-hilton-garden-inn-st-pete-beach/",
+    "phone": "(727) 360-7041",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant"
+    ],
+    "summary": "A beachfront Hilton Garden Inn on St. Pete Beach with a heated outdoor pool and Coconut Charlie's beach bar.",
+    "quote": "Stay steps away from the crystal waters of the Gulf of Mexico when you stay at Hilton Garden Inn St. Pete Beach.",
+    "status": "open",
+    "source_url": "https://business.tampabaybeaches.com/list/member/hilton-garden-inn-st-pete-beach-576",
+    "notes": "hilton.com blocks automated reading; facts from the chamber listing. Status after the 2024 hurricanes not independently confirmed; verifier should check.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bilmar-beach-resort",
+    "name": "Bilmar Beach Resort",
+    "kind": "resort",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10650 Gulf Blvd",
+    "lat": 27.768083,
+    "lng": -82.76962,
+    "geo_source": "osm",
+    "url": "https://www.bilmarbeachresort.com/",
+    "phone": "(727) 360-5531",
+    "rooms": 166,
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A 166-room beachfront resort on Treasure Island, most of whose rooms, suites and penthouses face the Gulf; it has two heated pools, a whirlpool and a rooftop sun deck. Renovations to its lobby, 30-plus rooms and Waves Beach Bar debuted in September 2025.",
+    "quote": "Come discover our one-of-a-kind blend of relaxation and exhilaration, from our 166 well-appointed rooms, suites and penthouses – 90% of which are beachfront.",
+    "status": "open",
+    "source_url": "https://www.bilmarbeachresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bilmar-beach-resort-treasure-island-170",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "Phone from the chamber listing; the resort site shows 877.834.0441. 'restaurant' and 'meeting-space' from the site's dining and Meetings & Events sections; Waves Beach Bar named by Visit St. Pete-Clearwater.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "treasure-island-beach-resort",
+    "name": "Treasure Island Beach Resort",
+    "kind": "resort",
+    "brand": "Opal Collection",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10800 Gulf Blvd",
+    "lat": 27.769922,
+    "lng": -82.76999,
+    "geo_source": "census",
+    "url": "https://www.opalcollection.com/treasure-island/",
+    "phone": "(727) 322-7022",
+    "rooms": 77,
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "restaurant",
+     "kitchens"
+    ],
+    "summary": "A 77-room beachfront resort on Treasure Island, part of the Opal Collection, with a beachfront pool and sundeck, on-site dining, a fitness center, and rooms with kitchenettes and balconies.",
+    "quote": "Find your home away from home in one of 77 luxurious Florida hotel rooms and suites",
+    "status": "open",
+    "source_url": "https://www.opalcollection.com/treasure-island/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/treasure-island-beach-resort-13007"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "page-terrace-beachfront-hotel",
+    "name": "Page Terrace Beachfront Hotel",
+    "kind": "hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10500 Gulf Blvd",
+    "lat": 27.767241,
+    "lng": -82.769021,
+    "geo_source": "osm",
+    "url": "https://pageterrace.com/",
+    "phone": "(727) 367-1997",
+    "features": [
+     "beachfront",
+     "pool"
+    ],
+    "summary": "A family-owned, family-run beachfront hotel on Treasure Island with a Gulf-front patio and a heated pool; the owners have run it for about 30 years.",
+    "quote": "Page Terrace Beachfront Hotel offers a comfortable, spacious, affordable place with a Gulf-front patio and more.",
+    "status": "open",
+    "source_url": "https://pageterrace.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/page-terrace-beachfront-hotel-802"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sea-chest-motel",
+    "name": "Sea Chest Motel",
+    "aliases": [
+     "The Sea Chest Beach Resort",
+     "Sea Chest of Treasure Island"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11780 Gulf Blvd",
+    "lat": 27.775171,
+    "lng": -82.776362,
+    "geo_source": "osm",
+    "url": "https://www.theseachest.com/",
+    "phone": "(727) 360-5501",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small motel directly on the beach at Treasure Island with studios, one-bedroom apartments and guest rooms, some with complete kitchens, and a heated freshwater pool.",
+    "quote": "We're pleased to announce that the Sea Chest Motel is open and ready to welcome our guests!",
+    "status": "open",
+    "source_url": "https://www.theseachest.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sea-chest-motel-1006"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "crystal-palms-beach-resort",
+    "name": "Crystal Palms Beach Resort",
+    "kind": "resort",
+    "brand": "Provident Resorts",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11605 Gulf Blvd",
+    "lat": 27.774987,
+    "lng": -82.774878,
+    "geo_source": "osm",
+    "url": "https://www.providentresorts.com/crystal-palms-tampa-and-treasure-island/",
+    "phone": "(844) 367-7087",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "An all-suite boutique resort run by Provident Resorts on Treasure Island, steps from the beach, with suites that have full kitchens.",
+    "quote": "Discover our all-suite Treasure Island boutique hotel, just steps from some of the best beaches in Florida at Crystal Palms Beach Resort.",
+    "status": "open",
+    "source_url": "https://www.providentresorts.com/crystal-palms-tampa-and-treasure-island/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/crystal-palms-beach-resort-5923"
+    ],
+    "notes": "'kitchens' and 'pool' appear in guest reviews on the page; verifier may want the rooms page.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunset-vistas-beachfront-suites",
+    "name": "Sunset Vistas Beachfront Suites",
+    "kind": "condo-hotel",
+    "brand": "Provident Resorts",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "12000 Gulf Blvd",
+    "lat": 27.776052,
+    "lng": -82.778806,
+    "geo_source": "osm",
+    "url": "https://www.providentresorts.com/sunset-vistas-beachfront-suites-tampa-and-treasure-island/",
+    "phone": "(888) 965-5330",
+    "rooms": 154,
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "kitchens",
+     "all-suites",
+     "fitness"
+    ],
+    "summary": "A Provident Resorts beachfront tower on Treasure Island with 154 two- and three-bedroom condo-size suites, each with a full kitchen and a balcony over the beach, plus pools, whirlpools and a cafe and beach bar.",
+    "quote": "Enjoy condo-sized suites & resort amenities in the heart of sunny Treasure Island, FL, when you stay at Sunset Vistas Beachfront Suites.",
+    "status": "open",
+    "source_url": "https://www.providentresorts.com/sunset-vistas-beachfront-suites-tampa-and-treasure-island/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sunset-vistas-beachfront-suites-3370"
+    ],
+    "notes": "'fitness' from a guest review on the page ('Small but good gym'); verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "provident-oceana-beachfront-suites",
+    "name": "Provident Oceana Beachfront Suites",
+    "aliases": [
+     "Oceana Beachfront Suites"
+    ],
+    "kind": "condo-hotel",
+    "brand": "Provident Resorts",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10091 Gulf Blvd",
+    "lat": 27.761059,
+    "lng": -82.766053,
+    "geo_source": "census",
+    "url": "https://www.providentresorts.com/provident-oceana-beachfront-suites-tampa-and-treasure-island/",
+    "phone": "(877) 870-4225",
+    "features": [
+     "beachfront",
+     "waterfront",
+     "marina",
+     "pool",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "An all-suite resort on Treasure Island that runs from the Gulf beach to the bay, with multi-bedroom suites that have full kitchens and washer-dryers, two pools, two whirlpools and a private marina.",
+    "quote": "Discover Oceana Beachfront Suites, Treasure Island's newest all-suite beachfront & bayfront resort with condo-sized accommodations & resort amenities.",
+    "status": "open",
+    "source_url": "https://www.providentresorts.com/provident-oceana-beachfront-suites-tampa-and-treasure-island/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/provident-oceana-beachfront-suites-16730"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "ocean-club-treasure-island-hotel",
+    "name": "Ocean Club Treasure Island Hotel",
+    "kind": "boutique-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11500 Gulf Blvd",
+    "lat": 27.773831,
+    "lng": -82.774194,
+    "geo_source": "census",
+    "url": "https://oceanclubtihotel.com/",
+    "phone": "(800) 351-9520",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "all-suites",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront boutique suite hotel on Treasure Island with a Gulf-front pool and spa, a bar and a gym.",
+    "quote": "This Treasure Island Hotel, located on the breathtakingly beautiful beaches of Treasure Island, Florida, offers guests a luxurious way to enjoy their vacation.",
+    "status": "open",
+    "source_url": "https://oceanclubtihotel.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/ocean-club-treasure-island-hotel-17795"
+    ],
+    "notes": "'all-suites' from the accommodations menu (Suites, Corner Suites, Accessible Suites).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tahitian-beach-resort",
+    "name": "Tahitian Beach Resort",
+    "aliases": [
+     "Tahitian Resort",
+     "Tahitian Beach Motel"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11320 Gulf Blvd",
+    "lat": 27.772742,
+    "lng": -82.773499,
+    "geo_source": "osm",
+    "url": "https://www.tahitianresort.com/",
+    "phone": "(727) 360-6264",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A retro-style beachfront motel resort on Treasure Island with two heated pools and rooms, suites and apartments, many with full kitchens. Its website says it is closed for repairs.",
+    "status": "temporarily-closed",
+    "status_note": "The resort's website (checked Sep 27, 2026) says 'WE ARE CLOSED FOR REPAIRS'; no reopening date is given.",
+    "source_url": "https://www.tahitianresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/tahitian-resort-1137"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "cheri-lyn-motel",
+    "name": "Cheri Lyn Motel",
+    "aliases": [
+     "Cheri Lyn Motel and Apartments"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11705 Gulf Blvd",
+    "lat": 27.775467,
+    "lng": -82.77545,
+    "geo_source": "osm",
+    "url": "https://cherilynmotel.com/",
+    "phone": "(727) 367-3791",
+    "opened": "1952",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A motel of rooms, efficiencies and apartments built in 1952 across Gulf Boulevard from the Treasure Island beach, about a mile from John's Pass.",
+    "quote": "The Cheri Lyn Motel and Apartments was built in 1952.",
+    "status": "open",
+    "source_url": "https://cherilynmotel.com/",
+    "notes": "'pool' from a guest review on the page ('nice pool'); verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "treasure-island-beach-club",
+    "name": "Treasure Island Beach Club",
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11750 Gulf Blvd",
+    "lat": 27.774993,
+    "lng": -82.776045,
+    "geo_source": "osm",
+    "url": "https://tibeachclub.com/",
+    "phone": "(727) 360-7096",
+    "features": [
+     "beachfront",
+     "pool"
+    ],
+    "summary": "A timeshare resort on the Treasure Island beach that also rents units by the night, with a beachfront pool and deck.",
+    "quote": "Treasure Island Beach Club is a rental and timeshare vacation resort located on Treasure Island, St Petersburg FL, overlooking the Gulf of Mexico.",
+    "status": "open",
+    "source_url": "https://tibeachclub.com/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "roth-hotel",
+    "name": "The Roth Hotel",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "7963 Bayshore Dr",
+    "lat": 27.744418,
+    "lng": -82.757942,
+    "geo_source": "census",
+    "url": "https://therothhotel.com/",
+    "phone": "(727) 360-6362",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small hotel of studios and one-bedroom apartments on Sunset Beach, the southern end of Treasure Island, some with kitchens and views of the Intracoastal Waterway; it has a heated pool. Visit St. Pete-Clearwater says its 14 rooms were renovated in May 2025.",
+    "status": "open",
+    "source_url": "https://therothhotel.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/the-roth-hotel-17618",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "Room count (14) is from Visit St. Pete-Clearwater, not the hotel's page, so rooms is left null.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "thunderbird-beach-resort",
+    "name": "Thunderbird Beach Resort",
+    "kind": "resort",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10700 Gulf Blvd",
+    "lat": 27.769032,
+    "lng": -82.769746,
+    "geo_source": "osm",
+    "url": "https://www.thunderbirdflorida.com/",
+    "phone": "(727) 367-1961",
+    "summary": "A beachfront resort on Treasure Island that has been closed since the 2024 hurricanes.",
+    "status": "temporarily-closed",
+    "status_note": "Closed after the 2024 hurricanes. HVS (July 1, 2026) reports it 'remains closed with no definitive plans for reopening' while the owners seek approval to add height and 78 rooms. Its website still shows contact details.",
+    "source_url": "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market",
+    "also_sources": [
+     "https://www.thunderbirdflorida.com/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "molloy",
+    "name": "The Molloy",
+    "aliases": [
+     "The Molloy – A Boutique Beach Resort"
+    ],
+    "kind": "boutique-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10164 Gulf Blvd",
+    "lat": 27.762208,
+    "lng": -82.766857,
+    "geo_source": "osm",
+    "url": "https://themolloy.com/",
+    "phone": "(727) 367-1053",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "A boutique beachfront resort of renovated suites and private cottages on Treasure Island, each with a full kitchen, with a pool.",
+    "quote": "Our spacious suites and private cottages—each with a full kitchen—offer the perfect blend of comfort and convenience for your Florida beach vacation.",
+    "status": "open",
+    "source_url": "https://themolloy.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/the-molloy-a-boutique-beach-resort-748"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "arvilla-resort",
+    "name": "The Arvilla",
+    "aliases": [
+     "Arvilla Resort Motel"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11580 Gulf Blvd",
+    "lat": 27.773929,
+    "lng": -82.774835,
+    "geo_source": "osm",
+    "url": "https://arvilla.com/",
+    "phone": "(727) 761-4274",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small beachfront motel on Treasure Island with rooms renovated in 2025, an outdoor pool and kitchens in some rooms; its site says it is open.",
+    "quote": "We're Open | New Renovated Palm Beachfront Rooms available",
+    "status": "open",
+    "source_url": "https://arvilla.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/arvilla-resort-motel/138112"
+    ],
+    "notes": "Phone from the site; Visit St. Pete-Clearwater lists 727-360-0598. Site footer shares branding with Oasis Palms Resort (atm-brands.com emails).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bayside-inn-and-marina",
+    "name": "Bayside Inn & Marina",
+    "kind": "inn",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11365 Gulf Blvd",
+    "lat": 27.773535,
+    "lng": -82.772983,
+    "geo_source": "osm",
+    "url": "https://thebaysideinnandmarina.com/",
+    "phone": "(727) 367-6456",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small bayside inn on Treasure Island near John's Pass with remodeled suites with kitchenettes, a 12-slip deep-water marina, a pool and a barbecue deck, steps from the Gulf beach.",
+    "quote": "The hotel features newly remodeled suites with kitchenettes, a deep water 12 boat slip marina with water and electric, outdoor deck and barbeque area, pool, and is only steps from the sparkling Gulf of Mexico.",
+    "status": "open",
+    "source_url": "https://thebaysideinnandmarina.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/bayside-inn-marina/138116"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "oasis-palms-resort",
+    "name": "Oasis Palms Resort",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11799 Gulf Blvd",
+    "lat": 27.775906,
+    "lng": -82.775964,
+    "geo_source": "osm",
+    "url": "https://oasispalmsresort.com/",
+    "phone": "(727) 580-1273",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small resort motel steps from Treasure Island Beach with rooms renovated in 2025, an outdoor pool and kitchens in some suites; its site says it is open.",
+    "quote": "We're Open | New Renovated Palm Premiere Rooms available",
+    "status": "open",
+    "source_url": "https://oasispalmsresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/oasis-palms-resort/138359"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "boutique-beach-retreat",
+    "name": "Boutique Beach Retreat",
+    "kind": "boutique-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11965 Gulf Blvd",
+    "lat": 27.776551,
+    "lng": -82.777611,
+    "geo_source": "osm",
+    "url": "https://boutiquebeachretreat.com/",
+    "phone": "(727) 900-5263",
+    "rooms": 11,
+    "features": [
+     "pool"
+    ],
+    "summary": "An 11-room boutique hotel across the street from Treasure Island Beach, between John's Pass and St. Pete Beach, with a heated pool, free beach chairs and a guest grill; the whole hotel can be rented for events.",
+    "quote": "We are a Boutique Hotel, Retreat, in Treasure Island, FL. Just steps from the beach, we are nestled between John's Pass and St. Pete Beach.",
+    "status": "open",
+    "source_url": "https://boutiquebeachretreat.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/boutique-beach-retreat/138160"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "satellite-motel",
+    "name": "Satellite Motel",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11205 Gulf Blvd",
+    "lat": 27.772623,
+    "lng": -82.772069,
+    "geo_source": "osm",
+    "url": "https://satelliteflorida.com/",
+    "phone": "(727) 367-1939",
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens",
+     "free-parking",
+     "marina"
+    ],
+    "summary": "A small motel on the bay side of Gulf Boulevard at Treasure Island, across the street from the beach, with a pool, a private fishing dock, boat slips and renovated suites with kitchenettes.",
+    "quote": "Come enjoy relaxing times with us while being just across the street from the clear blue waters of the Gulf of Mexico and directly on the bay.",
+    "status": "open",
+    "source_url": "https://satelliteflorida.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/satellite-motel/138189"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "cambria-hotel-st-petersburg-madeira-beach-marina",
+    "name": "Cambria Hotel St. Petersburg-Madeira Beach Marina",
+    "aliases": [
+     "Cambria Hotel Madeira Beach"
+    ],
+    "kind": "hotel",
+    "brand": "Choice Hotels",
+    "collection": "Cambria Hotels",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "15015 Madeira Way",
+    "lat": 27.802576,
+    "lng": -82.802763,
+    "geo_source": "official",
+    "url": "https://www.cambriamadeirabeach.com/",
+    "phone": "(727) 350-7300",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool",
+     "fitness",
+     "restaurant",
+     "rooftop-bar",
+     "meeting-space"
+    ],
+    "summary": "A waterfront hotel beside the Madeira Beach marina, a short walk or bike ride from the beach, with the Ember rooftop bar and infinity pool, the Prime Waters restaurant, a fitness center and event space.",
+    "quote": "Cambria Hotel St. Petersburg-Madeira Beach is a waterfront hotel in Madeira Beach, Florida offering guest rooms and suites, on-site dining, a rooftop bar, outdoor pool, fitness center, marina access, meeting and event spaces, and complimentary Wi-Fi.",
+    "status": "open",
+    "source_url": "https://www.cambriamadeirabeach.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/cambria-hotel-st-petersburg-madeira-beach-marina-madeira-beach-16846"
+    ],
+    "checked": "2026-09-27",
+    "opened": "2020",
+    "notes": "Opened June 2020 per the hotel's Tampa Bay Beaches Chamber listing ('Newly Opened June 2020!')."
+   },
+   {
+    "id": "courtyard-st-petersburg-clearwater-madeira-beach",
+    "name": "Courtyard St. Petersburg Clearwater/Madeira Beach",
+    "aliases": [
+     "Courtyard by Marriott Madeira Beach"
+    ],
+    "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "Courtyard by Marriott",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "601 American Legion Dr",
+    "lat": 27.8095,
+    "lng": -82.794572,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/tpamb",
+    "phone": "(727) 392-8088",
+    "features": [
+     "waterfront",
+     "pool",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "accessible-rooms"
+    ],
+    "summary": "A Courtyard hotel on the Intracoastal Waterway at the Madeira Beach causeway, with a pool and hot tub, a bistro, boat slips, a fitness center and a function room; guests can arrive by car or boat.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/courtyard-by-marriott-madeira-beach/138603",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/courtyard-st-petersburg-clearwater-madeira-beach-10442"
+    ],
+    "notes": "marriott.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile (which gives 96 units, 91 sunset-view rooms; rooms left null).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "shoreline-island-resort",
+    "name": "Shoreline Island Resort",
+    "kind": "resort",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "14200 Gulf Blvd",
+    "lat": 27.796239,
+    "lng": -82.795746,
+    "geo_source": "osm",
+    "url": "https://www.shorelineislandresort.com/",
+    "phone": "(727) 397-6641",
+    "features": [
+     "beachfront",
+     "adults-only"
+    ],
+    "summary": "A family-owned beachfront resort on Madeira Beach that accepts adults 21 and over only, with guest rooms, suites and a penthouse.",
+    "quote": "This all adult (21+) resort perfectly blends comfortable conveniences and leisure amenities with the relaxing personal atmosphere of a family-owned beachfront resort.",
+    "status": "open",
+    "source_url": "https://www.shorelineislandresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/shoreline-island-resort-madeira-beach-1029"
+    ],
+    "notes": "Adults-only per the home page ('Exclusively Adult (21+)'). Phone from the chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "madeira-bay-resort-and-marina",
+    "name": "Madeira Bay Resort & Marina",
+    "aliases": [
+     "Madeira Bay Resort"
+    ],
+    "kind": "condo-hotel",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "13235 Gulf Blvd",
+    "lat": 27.789056,
+    "lng": -82.786324,
+    "geo_source": "osm",
+    "url": "https://www.madeirabayresort.com/",
+    "phone": "(727) 342-7800",
+    "features": [
+     "waterfront",
+     "pool",
+     "restaurant"
+    ],
+    "summary": "A Mediterranean-style condominium resort on the Intracoastal side of Gulf Boulevard in Madeira Beach, steps from the Gulf beach, renting apartment-style suites; it has a heated pool and the Mad Beach Cantina House restaurant, and transient boat dockage is available next door.",
+    "quote": "The Madeira Bay Resort & Marina overlooks Florida's scenic Intracoastal Waterways and is steps from pristine white-sand beaches of the Gulf of Mexico.",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.madeirabayresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/madeira-bay-resort-ii-by-trs-3443",
+     "https://business.tampabaybeaches.com/list/member/madeira-bay-resort-l-by-trs-17498"
+    ],
+    "notes": "Two condominium buildings (Madeira Bay Resort I at 13101 and II at 13235 Gulf Blvd per the chamber) are rented together by Travel Resort Services.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "barefoot-beach-club",
+    "name": "The Barefoot Beach Club",
+    "aliases": [
+     "Barefoot Beach Club"
+    ],
+    "kind": "hotel",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "13238 Gulf Blvd",
+    "lat": 27.788596,
+    "lng": -82.786386,
+    "geo_source": "census",
+    "url": "https://www.barefootbeachclub.com/",
+    "phone": "(727) 393-6133",
+    "features": [
+     "beachfront",
+     "pool",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront hotel in Madeira Beach within walking distance of John's Pass, with beachfront and poolside studios and two-bedroom units, two pools, a hot tub and a rooftop lounge.",
+    "status": "open",
+    "source_url": "https://www.barefootbeachclub.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/barefoot-beach-club-3368"
+    ],
+    "notes": "Street address from the chamber listing (OSM maps it at 13220 Gulf Lane). The site says 'ALL AMENITIES ARE ADA ACCESIBLE'.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "holiday-isles-resort",
+    "name": "Holiday Isles Resort",
+    "kind": "motel",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "14711 Gulf Blvd",
+    "lat": 27.799364,
+    "lng": -82.798574,
+    "geo_source": "osm",
+    "url": "https://holiday-isles.com/",
+    "phone": "(727) 394-0751",
+    "features": [
+     "pool",
+     "pet-friendly",
+     "free-parking"
+    ],
+    "summary": "An Old Florida-style motel across the street from the beach in Madeira Beach with studios, bungalows, villas and two-bedroom apartments and a pool; it reopened with renovated rooms after Hurricane Helene and allows pets under 43 pounds.",
+    "quote": "Reopened and better than ever: come and enjoy the new Holiday Isles Resort.",
+    "status": "open",
+    "source_url": "https://holiday-isles.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/holiday-isles-resort/138149"
+    ],
+    "notes": "Reopening date not stated on the site.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "schooner-hotel",
+    "name": "Schooner Hotel",
+    "kind": "motel",
+    "area": "madeira-beach",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "14500 Gulf Blvd",
+    "lat": 27.79781,
+    "lng": -82.797857,
+    "geo_source": "osm",
+    "phone": "(727) 392-5167",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small beachfront motel in Madeira Beach with brick courtyards, motel rooms, efficiencies and one- and two-bedroom units, and a heated pool.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/schooner-hotel/138190",
+    "notes": "Facts from the Visit St. Pete-Clearwater profile. The website it links (schoonerhotelmadeirabeach.xyz) is a generic booking page, so url is null. Current operation not independently confirmed; verifier should check.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sails-resort-motel",
+    "name": "The Sails Resort and Apartment Motel",
+    "aliases": [
+     "Sails Resort Apartment Motel",
+     "The Sails Resort Motel"
+    ],
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "North Redington Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17004 Gulf Blvd",
+    "lat": 27.818338,
+    "lng": -82.823508,
+    "geo_source": "census",
+    "url": "https://sailsresortmotel.com/",
+    "phone": "(727) 391-6000",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A family-owned beachfront apartment motel in North Redington Beach with motel rooms, efficiencies and apartments with kitchens and a heated pool. It reopened in March 2026 after an 18-month rebuild following the 2024 storms.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/sails-resort-apartment-motel/137986",
+    "also_sources": [
+     "https://sailsresortmotel.com/",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "Visit St. Pete-Clearwater's new-hotels list: reopened March 2026 after an 18-month rebuild (it calls the location Redington Beach; the profile address is North Redington Beach).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "far-horizons-condo-resort",
+    "name": "Far Horizons Condo Resort",
+    "aliases": [
+     "Far Horizons Motel",
+     "Far Horizons"
+    ],
+    "kind": "condo-hotel",
+    "area": "indian-rocks-beach",
+    "city": "North Redington Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17248 Gulf Blvd",
+    "lat": 27.820686,
+    "lng": -82.826725,
+    "geo_source": "osm",
+    "url": "https://www.farhorizonsfla.com/",
+    "phone": "(727) 393-8791",
+    "rooms": 25,
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A 25-room beachfront condo resort in North Redington Beach; each room is individually owned, managed by the resort staff and has a kitchenette, and there is a pool.",
+    "quote": "Located directly on the beautiful white sand beaches of the Gulf of Mexico. Our resort will remind you of the beach vacations you had as a kid—calm, content, and familiar.",
+    "status": "open",
+    "source_url": "https://www.farhorizonsfla.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/far-horizons-motel/138142"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "malibu-resort-motel",
+    "name": "Malibu Resort Motel",
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "North Redington Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17001 Gulf Blvd",
+    "lat": 27.818709,
+    "lng": -82.823324,
+    "geo_source": "osm",
+    "url": "https://www.themaliburesortmotel.com/",
+    "features": [
+     "pool",
+     "free-parking",
+     "kitchens",
+     "restaurant"
+    ],
+    "summary": "A value motel in North Redington Beach, across Gulf Boulevard from the beach, with an outdoor pool, free parking, kitchenettes in some rooms, and the Crusty Pelican restaurant attached.",
+    "status": "open",
+    "source_url": "https://www.themaliburesortmotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/malibu-resort-motel/138158"
+    ],
+    "notes": "Site gives reservations@coastalgetaway.com and 386.270.4108 (a Coastal Collection central line); Visit St. Pete-Clearwater gives (877) 350-0053; phone left null.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "doubletree-beach-resort-tampa-bay-north-redington-beach",
+    "name": "DoubleTree Beach Resort by Hilton Tampa Bay – North Redington Beach",
+    "aliases": [
+     "DoubleTree Beach Resort North Redington Beach"
+    ],
+    "kind": "resort",
+    "brand": "Hilton",
+    "collection": "DoubleTree by Hilton",
+    "area": "indian-rocks-beach",
+    "city": "North Redington Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17120 Gulf Blvd",
+    "lat": 27.819544,
+    "lng": -82.825692,
+    "geo_source": "osm",
+    "url": "https://www.hilton.com/en/hotels/nornhdt-doubletree-beach-resort-tampa-bay-north-redington-beach/",
+    "phone": "(727) 391-4000",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront DoubleTree resort in North Redington Beach, between Clearwater and St. Pete Beach, with balcony rooms, a pool, Coconut Charlie's restaurant and a tiki bar with live music.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/doubletree-beach-resort-by-hilton-tampa-bay-north-redington-beach/138062",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/doubletree-beach-resort-by-hilton-tampa-bay-north-redington-beach-561"
+    ],
+    "notes": "hilton.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile. VSPC gives 125 rooms (left null). Post-2024 status not independently confirmed.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "carousel-suites",
+    "name": "Carousel Suites",
+    "aliases": [
+     "Carousel Motel"
+    ],
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "Redington Shores",
+    "state": "FL",
+    "zip": "33708",
+    "address": "18202 Gulf Blvd",
+    "lat": 27.833629,
+    "lng": -82.834357,
+    "geo_source": "osm",
+    "url": "https://www.carouselsuites.com/",
+    "phone": "(727) 397-5944",
+    "summary": "A small renovated motel in Redington Shores, formerly the Carousel Motel, steps from the Gulf beach, with contactless electronic check-in.",
+    "status": "open",
+    "source_url": "https://www.carouselsuites.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/carousel-motel/138128"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Site read through WebFetch only (direct connection reset); no verbatim quote kept. Visit St. Pete-Clearwater lists 9 units with kitchens (as Carousel Motel)."
+   },
+   {
+    "id": "fold-indian-shores",
+    "name": "The Fold Indian Shores",
+    "aliases": [
+     "The Fold Hotels Indian Shores"
+    ],
+    "kind": "hotel",
+    "brand": "The Fold Hotels",
+    "area": "indian-rocks-beach",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "address": "19607 Gulf Blvd",
+    "lat": 27.854697,
+    "lng": -82.84584,
+    "geo_source": "census",
+    "url": "https://www.thefoldhotels.com/indian-shores-fl/",
+    "phone": "(727) 596-7719",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool",
+     "fitness",
+     "kitchens",
+     "ev-charging",
+     "all-suites"
+    ],
+    "summary": "A suite hotel on the Intracoastal side of Gulf Boulevard in Indian Shores with studios and one- and two-bedroom suites with full kitchens, boat slips and a dock, pools, a hot tub and a fitness center, near Indian Shores Beach.",
+    "status": "open",
+    "source_url": "https://www.thefoldhotels.com/indian-shores-fl/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-fold-hotels-indian-shores/137957"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sand-glo-villas",
+    "name": "Sand Glo Villas",
+    "kind": "inn",
+    "area": "indian-rocks-beach",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "address": "19316 Gulf Blvd",
+    "lat": 27.847918,
+    "lng": -82.843251,
+    "geo_source": "census",
+    "url": "https://sandgloresort.com/",
+    "phone": "(727) 320-9720",
+    "features": [
+     "beachfront"
+    ],
+    "summary": "Newly renovated beachfront villas and cottages in Indian Shores with on-site parking and beach access.",
+    "quote": "Beachside Villas with Old Florida Charm With Modern Conveniences And Comfort.",
+    "status": "open",
+    "source_url": "https://sandgloresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sand-glo-villas-indian-shores-17658"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "barefoot-beach-resort-indian-shores",
+    "name": "Barefoot Beach Resort",
+    "kind": "condo-hotel",
+    "area": "indian-rocks-beach",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "address": "19417 Gulf Blvd",
+    "lat": 27.850466,
+    "lng": -82.844172,
+    "geo_source": "census",
+    "url": "https://www.barefootbeachresort.com/",
+    "phone": "(727) 593-5303",
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A condominium resort on five waterfront acres on the Intracoastal Waterway in Indian Shores, across Gulf Boulevard from the beach, renting furnished suites with full kitchens around a waterfront pool.",
+    "quote": "Set out on five-acres of waterfront property overlooking the Intracoastal, and right across Gulf Boulevard from the Gulf of Mexico and Indian Shores Beach.",
+    "status": "open",
+    "source_url": "https://www.barefootbeachresort.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/barefoot-beach-resort-indian-shores-3369"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bay-and-beach-club-resort",
+    "name": "Bay & Beach Club Resort",
+    "kind": "condo-hotel",
+    "area": "indian-rocks-beach",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "address": "19508 Gulf Blvd",
+    "lat": 27.852571,
+    "lng": -82.845214,
+    "geo_source": "census",
+    "url": "https://bayandbeach.com/",
+    "phone": "(727) 595-3751",
+    "features": [
+     "beachfront",
+     "waterfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A timeshare condominium resort in Indian Shores with beachfront and bayside units with full kitchens that are also rented by the night, a heated pool, a hot tub and an Intracoastal dock.",
+    "quote": "Stay at Bay & Beach Club Resort in Indian Shores, Florida for beachfront and bayside vacation condos, poolside relaxation, and an easy Gulf Coast getaway.",
+    "status": "open",
+    "source_url": "https://bayandbeach.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/bay-beach-club-7187"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "holiday-inn-hotel-and-suites-clearwater-beach-s-harbourside",
+    "name": "Holiday Inn Hotel & Suites Clearwater Beach S-Harbourside",
+    "aliases": [
+     "Holiday Inn Harbourside",
+     "Holiday Inn Hotel & Suites Harbourside"
+    ],
+    "kind": "hotel",
+    "brand": "IHG",
+    "collection": "Holiday Inn",
+    "area": "indian-rocks-beach",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "address": "401 2nd St",
+    "lat": 27.88262,
+    "lng": -82.848927,
+    "geo_source": "census",
+    "url": "https://www.hiharbourside.com/",
+    "phone": "(727) 595-9484",
+    "features": [
+     "waterfront",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A Holiday Inn on the Intracoastal Waterway in Indian Rocks Beach, south of Clearwater Beach, with Jimmy Guana's restaurant and meeting and wedding space.",
+    "quote": "The Holiday Inn Hotel & Suites Clearwater Beach S-Harbourside in Indian Rocks Beach, FL offers a west style ambiance amidst the Intracoastal Waterway.",
+    "status": "open",
+    "tags": [
+     "clearwater-beach-collection"
+    ],
+    "source_url": "https://www.hiharbourside.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/holiday-inn-harbourside-hotel-suites-clearwater-beach-collection-564"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "great-heron-inn",
+    "name": "Great Heron Inn",
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "address": "68 Gulf Blvd",
+    "lat": 27.876927,
+    "lng": -82.850615,
+    "geo_source": "osm",
+    "url": "https://www.heroninn.com/",
+    "phone": "(727) 595-2589",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small family-owned motel directly on the beach in Indian Rocks Beach, with a heated pool and a fishing dock across the street on the Intracoastal Waterway.",
+    "quote": "Directly on the beach, with a dock right across the street on the Intracoastal Waterway. We are a family owned and operated motel where cleanliness, our guests' comfort and a friendly atmosphere are our trademarks!",
+    "status": "open",
+    "source_url": "https://www.heroninn.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/great-heron-inn/138146",
+     "https://business.tampabaybeaches.com/list/member/great-heron-inn-522"
+    ],
+    "notes": "Visit St. Pete-Clearwater profile: 16 units, heated pool, kitchens, and 'fully recovered from last years hurricanes'.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulfside-resorts",
+    "name": "Gulfside Resorts",
+    "kind": "inn",
+    "area": "indian-rocks-beach",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "address": "810 Gulf Blvd",
+    "lat": 27.890399,
+    "lng": -82.849757,
+    "geo_source": "census",
+    "url": "https://www.gulfsideresorts.com/",
+    "phone": "(727) 596-8063",
+    "features": [
+     "beachfront"
+    ],
+    "summary": "Restored 20th-century beach cottages on the Gulf front in Indian Rocks Beach, rented by the night or week by independent owners.",
+    "quote": "Luxury & historic cottage rentals located in coastal village of Indian Rocks Beach, Florida.",
+    "status": "open",
+    "source_url": "https://www.gulfsideresorts.com/about/",
+    "also_sources": [
+     "https://www.gulfsideresorts.com/",
+     "https://business.tampabaybeaches.com/list/member/gulfside-resorts-9"
+    ],
+    "checked": "2026-09-27",
+    "quote_source": "https://www.gulfsideresorts.com/"
+   },
+   {
+    "id": "belleair-beach-resort-motel",
+    "name": "Belleair Beach Resort Motel",
+    "kind": "motel",
+    "area": "sand-key",
+    "city": "Belleair Beach",
+    "state": "FL",
+    "zip": "33786",
+    "address": "2040 Gulf Blvd",
+    "lat": 27.925276,
+    "lng": -82.843245,
+    "geo_source": "osm",
+    "phone": "(727) 595-1696",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A 42-unit beachfront motel in Belleair Beach, south of Sand Key, with a pool and kitchens in some units. It was rebuilt after the 2024 hurricanes and reopened in February 2026.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/belleair-beach-resort-motel/138119",
+    "also_sources": [
+     "https://www.hvs.com/article/10498-from-recovery-to-reinvestment-evolution-of-the-pinellas-beachfront-hotel-market"
+    ],
+    "notes": "HVS (Jul 2026): closed for repairs Sep 2024 through Feb 2026 (42 keys). The motel's own site (belleairbeachresort.com) failed TLS on Sep 27, 2026; the .xyz site the tourism profile links is a generic booking page, so url is null. Room count 42 from HVS and the tourism profile; rooms left null pending a hotel source.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sheraton-sand-key-resort",
+    "name": "Sheraton Sand Key Resort",
+    "aliases": [
+     "Clearwater Beach Sheraton Resort on Sand Key"
+    ],
+    "kind": "resort",
+    "brand": "Marriott",
+    "collection": "Sheraton",
+    "area": "sand-key",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "1160 Gulf Blvd",
+    "lat": 27.953969,
+    "lng": -82.828556,
+    "geo_source": "census",
+    "url": "https://www.marriott.com/hotels/travel/tpasi-sheraton-sand-key-resort/",
+    "phone": "(727) 595-1611",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront Sheraton on Sand Key, south of Clearwater Beach, with renovated rooms on a 13-acre beach, a pool, restaurants and two ballrooms.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/clearwater-beach-sheraton-resort-on-sand-key/138095",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sheraton-sand-key-resort-1028"
+    ],
+    "notes": "marriott.com and sheratonsandkey.com block automated reading; facts from the Visit St. Pete-Clearwater profile (390 rooms per VSPC, left null).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "clearwater-beach-marriott-resort-on-sand-key",
+    "name": "Clearwater Beach Marriott Resort on Sand Key",
+    "aliases": [
+     "Clearwater Beach Marriott Suites on Sand Key"
+    ],
+    "kind": "resort",
+    "brand": "Marriott",
+    "collection": "Marriott Hotels",
+    "area": "sand-key",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "1201 Gulf Blvd",
+    "lat": 27.953505,
+    "lng": -82.828303,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/en-us/hotels/tpams-clearwater-beach-marriott-resort-on-sand-key/overview/",
+    "phone": "(727) 596-1100",
+    "features": [
+     "pool",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "all-suites"
+    ],
+    "summary": "An all-suite Marriott resort on Sand Key across Gulf Boulevard from Sand Key Beach and Park, with waterfront dining, a pool and hot tub, water sports and event space.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/clearwater-beach-marriott-resort-on-sand-key/138054",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/clearwater-beach-marriott-resort-on-sand-key-6465"
+    ],
+    "notes": "Own site and marriott.com unreadable on Sep 27, 2026 (503/403); facts from the Visit St. Pete-Clearwater profile (220 rooms per VSPC, left null).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sandpearl-resort",
+    "name": "Sandpearl Resort",
+    "kind": "resort",
+    "brand": "Opal Collection",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "500 Mandalay Ave",
+    "lat": 27.982818,
+    "lng": -82.827382,
+    "geo_source": "osm",
+    "url": "https://www.opalcollection.com/sandpearl/",
+    "phone": "(727) 441-2425",
+    "rooms": 253,
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "restaurant",
+     "kitchens",
+     "marina"
+    ],
+    "summary": "A 253-room Opal Collection resort on the beach at the north end of Clearwater Beach, with a zero-entry pool, the Opal Spa, the Caretta on the Gulf restaurant and suites with full kitchens. Its rooms were renovated in October 2024.",
+    "quote": "Our recently renovated 253 guest rooms and suites evoke the relaxed essence of our Gulf Coast setting.",
+    "status": "open",
+    "source_url": "https://www.opalcollection.com/sandpearl/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sandpearl-resort-1292",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "'marina' from the site's Marina menu item; verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "opal-sands-resort",
+    "name": "Opal Sands Resort",
+    "kind": "resort",
+    "brand": "Opal Collection",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "430 S Gulfview Blvd",
+    "lat": 27.969606,
+    "lng": -82.830226,
+    "geo_source": "osm",
+    "url": "https://www.opalcollection.com/opal-sands/",
+    "phone": "(727) 450-0380",
+    "rooms": 230,
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "restaurant"
+    ],
+    "summary": "A 230-room Opal Collection resort on the beach in south Clearwater Beach, every room facing the Gulf, with a zero-entry pool and a spa; a sky bridge links it to its newer sister, Opal Sol.",
+    "quote": "Our 230 gulf-front guest rooms and suites invite you to savor expansive views of the shimmering Florida Gulf.",
+    "status": "open",
+    "source_url": "https://www.opalcollection.com/opal-sands/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/opal-sands-resort/138628"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "opal-sol",
+    "name": "Opal Sol",
+    "kind": "resort",
+    "brand": "Opal Collection",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "400 Coronado Dr",
+    "lat": 27.97052,
+    "lng": -82.829375,
+    "geo_source": "osm",
+    "url": "https://www.opalcollection.com/opal-sol/",
+    "phone": "(727) 229-8171",
+    "opened": "2025",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "restaurant",
+     "kitchens",
+     "meeting-space",
+     "all-suites"
+    ],
+    "summary": "An all-suite Opal Collection resort that opened in 2025 next to Opal Sands on Clearwater Beach, with four restaurants, a full-service spa, and suites with full kitchens; guests share the amenities of both resorts via a sky bridge.",
+    "quote": "Suites with Florida Gulf views, four innovative restaurants, and a full-service spa make Opal Sol your dream Clearwater Beach getaway.",
+    "status": "open",
+    "source_url": "https://www.opalcollection.com/opal-sol/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/opal-sol/142384",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "Opening: Visit St. Pete-Clearwater says it 'opened in March 2025' (a Travel press item says Feb 14, 2025); only the year is recorded. The quoted meta description continues ', coming 2025' on the page. 'all-suites' per VSPC ('nearly 250 luxury balcony-view suites').",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hilton-clearwater-beach-resort-and-spa",
+    "name": "Hilton Clearwater Beach Resort & Spa",
+    "kind": "resort",
+    "brand": "Hilton",
+    "collection": "Hilton Hotels & Resorts",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "400 Mandalay Ave",
+    "lat": 27.979873,
+    "lng": -82.827322,
+    "geo_source": "census",
+    "url": "https://www.hiltonclearwaterbeach.com/",
+    "phone": "(727) 461-3222",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A large beachfront resort on 10 acres of Clearwater Beach with four places to eat, a spa, a fitness center and extensive ballroom and meeting space.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/hilton-clearwater-beach-resort-spa/138253",
+    "notes": "Own site and hilton.com unreadable on Sep 27, 2026 (503/403); facts from the Visit St. Pete-Clearwater profile (418 rooms per VSPC, left null).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hyatt-regency-clearwater-beach-resort-and-spa",
+    "name": "Hyatt Regency Clearwater Beach Resort & Spa",
+    "kind": "resort",
+    "brand": "Hyatt",
+    "collection": "Hyatt Regency",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "301 S Gulfview Blvd",
+    "lat": 27.973694,
+    "lng": -82.828807,
+    "geo_source": "osm",
+    "url": "https://www.hyattregencyclearwater.com/",
+    "phone": "(727) 373-1234",
+    "rooms": 286,
+    "features": [
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "kitchens"
+    ],
+    "summary": "A 286-room Hyatt Regency across the street from Clearwater Beach near Pier 60, with oversized rooms with balconies and kitchens, an eighth-floor pool deck, the Sandava Spa and the SHOR seafood grill.",
+    "quote": "Nestled along the white sugar sands of Clearwater Beach, our award-winning beachfront resort offers an unforgettable escape—from rooftop poolside lounging to ocean view dining curated for coastal indulgence.",
+    "quote_source": "https://business.tampabaybeaches.com/list/member/hyatt-regency-clearwater-beach-resort-suites-18306",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/hyatt-regency-clearwater-beach-resort-spa/138356",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/hyatt-regency-clearwater-beach-resort-suites-18306"
+    ],
+    "notes": "hyatt.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile (286 rooms) and the chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "wyndham-grand-clearwater-beach",
+    "name": "Wyndham Grand Clearwater Beach",
+    "kind": "resort",
+    "brand": "Wyndham",
+    "collection": "Wyndham Grand",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "100 Coronado Dr",
+    "lat": 27.97501,
+    "lng": -82.828508,
+    "geo_source": "osm",
+    "url": "https://www.wyndhamgrandclearwater.com/",
+    "phone": "(727) 281-9500",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A Wyndham Grand resort at the north end of the Clearwater Beach roundabout, steps from the beach and Pier 60 and across the street from the Clearwater Beach Marina, with a pool bar, several restaurants, a spa and meeting and wedding space.",
+    "quote": "The premier Clearwater Beach hotel, Wyndham Grand Clearwater is a top destination with chic accommodations, meeting space and wedding venues.",
+    "status": "open",
+    "source_url": "https://www.wyndhamgrandclearwater.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/wyndham-grand-clearwater-beach-13961"
+    ],
+    "notes": "The site lists a 'Pool Renovation' information page (checked Sep 27, 2026).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "jw-marriott-clearwater-beach-resort-and-spa",
+    "name": "JW Marriott Clearwater Beach Resort & Spa",
+    "kind": "resort",
+    "brand": "Marriott",
+    "collection": "JW Marriott",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "691 S Gulfview Blvd",
+    "lat": 27.966401,
+    "lng": -82.82432,
+    "geo_source": "census",
+    "url": "https://www.marriott.com/en-us/hotels/tpajw-jw-marriott-clearwater-beach-resort-and-spa/overview/",
+    "phone": "(727) 677-6000",
+    "features": [
+     "beachfront",
+     "pool",
+     "spa",
+     "fitness",
+     "restaurant",
+     "meeting-space",
+     "pet-friendly"
+    ],
+    "summary": "A JW Marriott resort on the Gulf at the south end of Clearwater Beach with the Spa by JW, a rooftop restaurant and more than 17,000 square feet of event space.",
+    "quote": "Located steps from the sugar white sand and warm, tranquil waters of the Gulf of Mexico, JW Marriott Hotel Clearwater Beach Resort & Spa creates an oasis of coastal elegance along a exclusive stretch of America's most beautiful beach.",
+    "quote_source": "https://business.tampabaybeaches.com/list/member/jw-marriott-clearwater-beach-resort-spa-17757",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/jw-marriott-clearwater-beach/141529",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/jw-marriott-clearwater-beach-resort-spa-17757"
+    ],
+    "notes": "marriott.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile and chamber listing. Pet-friendly per VSPC ('pets on leash').",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hiatus-clearwater-beach",
+    "name": "The Hiatus Clearwater Beach, Curio Collection by Hilton",
+    "aliases": [
+     "The Hiatus Clearwater Beach"
+    ],
+    "kind": "boutique-hotel",
+    "brand": "Hilton",
+    "collection": "Curio Collection by Hilton",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "385 S Gulfview Blvd",
+    "lat": 27.971701,
+    "lng": -82.828978,
+    "geo_source": "osm",
+    "url": "https://www.hilton.com/en/hotels/tparkqq-the-hiatus-clearwater-beach/",
+    "phone": "(727) 441-1110",
+    "opened": "2024",
+    "features": [
+     "pool",
+     "rooftop-bar",
+     "restaurant",
+     "fitness",
+     "accessible-rooms"
+    ],
+    "summary": "An 88-room Curio Collection hotel across the street from Clearwater Beach, a 10-minute walk from Pier 60, with a seventh-floor rooftop pool, pool bar and the Ocean Seven restaurant. It opened in April 2024.",
+    "quote": "Our seventh-floor features unobstructed gulf views, as well as a rooftop pool, pool bar, lounge, and Ocean Seven, our fine dining restaurant.",
+    "quote_source": "https://business.tampabaybeaches.com/list/member/the-hiatus-clearwater-beach-curio-collection-by-hilton-17901",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/the-hiatus-clearwater-beach-curio-collection-by-hilton/142014",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/the-hiatus-clearwater-beach-curio-collection-by-hilton-17901",
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+    ],
+    "notes": "hilton.com blocks automated reading. 88 rooms per the Visit St. Pete-Clearwater profile (rooms left null). Opened April 2024 per the VSPC new-hotels list. Phone differs: VSPC/OSM (727) 441-1110, chamber (727) 441-8067.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "ac-hotel-clearwater-beach",
+    "name": "AC Hotel Clearwater Beach",
+    "aliases": [
+     "AC by Marriott Clearwater"
+    ],
+    "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "AC Hotels by Marriott",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "395 Coronado Dr",
+    "lat": 27.971524,
+    "lng": -82.828297,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/en-us/hotels/tpaab-ac-hotel-clearwater-beach/overview",
+    "phone": "(727) 441-4443",
+    "features": [
+     "pool"
+    ],
+    "summary": "A European-styled AC Hotel by Marriott on Coronado Drive in Clearwater Beach, a short walk from the beach and Pier 60, with an outdoor pool.",
+    "quote": "Brand new among Clearwater Beach hotels, AC Hotel Clearwater Beach brings European sophistication and modern design to the island.",
+    "status": "open",
+    "source_url": "https://business.tampabaybeaches.com/list/member/ac-by-marriott-clearwater-17765",
+    "notes": "marriott.com blocks automated reading; facts from the Tampa Bay Beaches Chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "residence-inn-clearwater-beach",
+    "name": "Residence Inn Clearwater Beach",
+    "kind": "extended-stay",
+    "brand": "Marriott",
+    "collection": "Residence Inn by Marriott",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "309 Coronado Dr",
+    "lat": 27.972699,
+    "lng": -82.827871,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/tpayr",
+    "phone": "(727) 218-1088",
+    "features": [
+     "pool",
+     "fitness",
+     "kitchens",
+     "all-suites",
+     "free-breakfast",
+     "pet-friendly",
+     "meeting-space"
+    ],
+    "summary": "An all-suite Residence Inn on Coronado Drive, walking distance from Clearwater Beach, with full kitchens in every suite, a pool, a fitness room and a lobby bar; it shares a building with the SpringHill Suites.",
+    "quote": "Kick back in home-inspired suites complete with full kitchens and expansive dining bars.",
+    "quote_source": "https://business.tampabaybeaches.com/list/member/residence-inn-by-marriott-clearwater-beach-17132",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/residence-inn-clearwater-beach/141700",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/residence-inn-by-marriott-clearwater-beach-17132"
+    ],
+    "notes": "marriott.com blocks automated reading. VSPC: 140 units; continental breakfast; pets on leash. 'Shares a building' inferred from the identical street address (309 Coronado Dr) of both hotels.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "springhill-suites-clearwater-beach",
+    "name": "SpringHill Suites Clearwater Beach",
+    "kind": "hotel",
+    "brand": "Marriott",
+    "collection": "SpringHill Suites by Marriott",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "309 Coronado Dr",
+    "lat": 27.97326,
+    "lng": -82.827929,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/tpays",
+    "phone": "(727) 218-1090",
+    "features": [
+     "all-suites"
+    ],
+    "summary": "An all-suite SpringHill Suites on Coronado Drive in Clearwater Beach with views of Clearwater Bay; it shares its address with the Residence Inn.",
+    "quote": "Our all-new hotel will inspire you with vibrant beach colors, tropical accents and stunning views of Clearwater Bay.",
+    "status": "open",
+    "source_url": "https://business.tampabaybeaches.com/list/member/springhill-suites-by-marriott-clearwater-beach-14836",
+    "notes": "marriott.com blocks automated reading; facts from the chamber listing.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "holiday-inn-and-suites-clearwater-beach",
+    "name": "Holiday Inn & Suites Clearwater Beach",
+    "kind": "hotel",
+    "brand": "IHG",
+    "collection": "Holiday Inn",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "521 S Gulfview Blvd",
+    "lat": 27.967631,
+    "lng": -82.828015,
+    "geo_source": "osm",
+    "url": "https://www.clearwaterbeachhi.com/",
+    "phone": "(727) 447-6461",
+    "features": [
+     "waterfront",
+     "restaurant",
+     "meeting-space"
+    ],
+    "summary": "A Mediterranean-styled Holiday Inn on the Intracoastal side of South Gulfview Boulevard, steps from Clearwater Beach, with Jimmy's Fish House & Iguana Bar and the Duval Center event space.",
+    "quote": "Holiday Inn Hotel & Suites Clearwater Beach offers you luxurious Mediterranean styled accommodations & amenities in a stunning location.",
+    "status": "open",
+    "tags": [
+     "clearwater-beach-collection"
+    ],
+    "source_url": "https://www.clearwaterbeachhi.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/holiday-inn-clearwater-beach-clearwater-beach-collection-7360",
+     "https://clearwaterbeachcollection.com/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "edge-hotel-clearwater-beach",
+    "name": "Edge Hotel Clearwater Beach",
+    "kind": "boutique-hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "505 S Gulfview Blvd",
+    "lat": 27.968113,
+    "lng": -82.828724,
+    "geo_source": "osm",
+    "url": "https://edgehotelclearwaterbeach.com/",
+    "phone": "(727) 281-3100",
+    "features": [
+     "pool",
+     "rooftop-bar",
+     "restaurant",
+     "fitness",
+     "free-breakfast"
+    ],
+    "summary": "A boutique hotel on South Gulfview Boulevard in Clearwater Beach with a glass-walled pool and the Jimmy's on the Edge rooftop bar; its daily amenity fee covers continental breakfast, parking and fitness center use.",
+    "quote": "The only hotel in Clearwater Beach with a GLASS WALL POOL and the LARGEST Rooftop Bar!",
+    "status": "open",
+    "tags": [
+     "clearwater-beach-collection"
+    ],
+    "source_url": "https://edgehotelclearwaterbeach.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/edge-hotel-clearwater-beach/138720",
+     "https://clearwaterbeachcollection.com/"
+    ],
+    "notes": "Breakfast and parking are included in a daily amenity fee, not free; free-breakfast kept because breakfast is included in the stay; verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pier-house-60-clearwater-beach-marina-hotel",
+    "name": "Pier House 60 Clearwater Beach Marina Hotel",
+    "aliases": [
+     "Pier House 60"
+    ],
+    "kind": "hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "101 Coronado Dr",
+    "lat": 27.975465,
+    "lng": -82.827875,
+    "geo_source": "osm",
+    "url": "https://pierhouse60.com/",
+    "phone": "(727) 683-0002",
+    "features": [
+     "waterfront",
+     "rooftop-bar",
+     "restaurant"
+    ],
+    "summary": "A hotel on the Clearwater Beach Marina at the center of Clearwater Beach with rooms facing the Gulf or the Intracoastal Waterway, topped by the Jimmy's Crow's Nest rooftop bar.",
+    "quote": "Discover Pier House 60 in Clearwater Beach, offering oceanfront rooms, vibrant dining, and unbeatable views.",
+    "status": "open",
+    "tags": [
+     "clearwater-beach-collection"
+    ],
+    "source_url": "https://pierhouse60.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/pier-house-60-clearwater-beach-marina-hotel-clearwater-beach-collection-9355",
+     "https://clearwaterbeachcollection.com/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "charthouse-hotel-clearwater-beach-marina",
+    "name": "ChartHouse Hotel Clearwater Beach Marina",
+    "aliases": [
+     "ChartHouse Marina Hotel",
+     "The Chart House Hotel Clearwater Beach Marina"
+    ],
+    "kind": "hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "40 Devon Dr",
+    "lat": 27.97422,
+    "lng": -82.826555,
+    "geo_source": "census",
+    "url": "https://charthousemarinahotel.com/",
+    "phone": "(727) 601-4420",
+    "opened": "2026",
+    "features": [
+     "waterfront",
+     "pool",
+     "rooftop-bar",
+     "restaurant"
+    ],
+    "summary": "A marina-front hotel two minutes' walk from Clearwater Beach with a waterfall pool, a rooftop bar and Jimmy's Island Grill; it opened in February 2026.",
+    "quote": "Experience the perfect getaway at ChartHouse Marina Hotel in Clearwater Beach. Enjoy elegant rooms, stunning marina views, rooftop bar, and fresh coastal dining.",
+    "status": "open",
+    "tags": [
+     "clearwater-beach-collection"
+    ],
+    "source_url": "https://charthousemarinahotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
+     "https://business.tampabaybeaches.com/list/member/the-charthouse-at-cwb-marina-clearwater-beach-collection-18166",
+     "https://clearwaterbeachcollection.com/"
+    ],
+    "notes": "Opened February 2026 per the Visit St. Pete-Clearwater new-hotels list.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "shephards-beach-resort",
+    "name": "Shephard's Beach Resort",
+    "kind": "resort",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "619 S Gulfview Blvd",
+    "lat": 27.967507,
+    "lng": -82.826929,
+    "geo_source": "census",
+    "url": "https://www.shephards.com/",
+    "phone": "(727) 442-5107",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "kitchens"
+    ],
+    "summary": "A family-owned beachside resort in Clearwater Beach, owned by the same family since 1977, known for live entertainment: it has two restaurants, a heated pool, tiki bars and a nightclub.",
+    "quote": "Shephard's Beach Resort is an iconic destination on beautiful Clearwater Beach.",
+    "status": "open",
+    "source_url": "https://www.shephards.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/shephard-s-beach-resort-1027"
+    ],
+    "notes": "'Family owned since 1977' on the site. Kitchens: studio rooms have studio-style kitchens.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hotel-cabana-clearwater-beach",
+    "name": "Hotel Cabana Clearwater Beach",
+    "aliases": [
+     "Hotel Cabana"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "669 Mandalay Ave",
+    "lat": 27.988844,
+    "lng": -82.826317,
+    "geo_source": "osm",
+    "url": "https://hotelcabanacwb.com/",
+    "phone": "(727) 266-0399",
+    "opened": "1947",
+    "features": [
+     "pool",
+     "kitchens",
+     "accessible-rooms"
+    ],
+    "summary": "A renovated motel-style boutique hotel on North Mandalay Avenue, across from the beach in north Clearwater Beach, with rooms, suites and full-kitchen vacation rentals and a heated pool; it says it has hosted guests since 1947.",
+    "quote": "Just steps from the Gulf Coast, Hotel Cabana has been part of the Clearwater Beach story since 1947.",
+    "status": "open",
+    "source_url": "https://hotelcabanacwb.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/hotel-cabana-clearwater-beach-14338"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "palm-pavilion-inn",
+    "name": "Palm Pavilion Inn",
+    "kind": "inn",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "18 Bay Esplanade",
+    "lat": 27.984899,
+    "lng": -82.827416,
+    "geo_source": "official",
+    "url": "https://palmpavilioninn.com/",
+    "phone": "(727) 446-6777",
+    "features": [
+     "pool",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A small inn steps from the beach on Bay Esplanade in north Clearwater Beach with rooms, efficiencies and apartments, a heated pool and a rooftop terrace; parking and Wi-Fi are free and there are no resort fees.",
+    "quote": "Complimentary Wi-Fi and parking for inn guests; no resort fees.",
+    "status": "open",
+    "source_url": "https://palmpavilioninn.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/palm-pavilion-inn/138171"
+    ],
+    "notes": "Pool and kitchens from the Visit St. Pete-Clearwater profile (heated pool; kitchens in select units).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "camelot-beach-suites",
+    "name": "Camelot Beach Suites",
+    "aliases": [
+     "Camelot Resort",
+     "Camelot Beach Resort"
+    ],
+    "kind": "boutique-hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "603 Mandalay Ave",
+    "lat": 27.98538,
+    "lng": -82.8262,
+    "geo_source": "osm",
+    "url": "https://camelotbeachsuites.com/",
+    "phone": "(727) 467-4310",
+    "features": [
+     "pool",
+     "kitchens",
+     "pet-friendly"
+    ],
+    "summary": "A boutique hotel half a block from the Gulf in north Clearwater Beach whose suites all have kitchenettes; it has a heated pool and accepts pets for a fee.",
+    "quote": "Every Suite at Camelot has a modern, fully equipped kitchenettes and small dining areas.",
+    "status": "open",
+    "source_url": "https://camelotbeachsuites.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/camelot-resort/138006"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "avalon-club-hotel",
+    "name": "The Avalon Club Hotel",
+    "aliases": [
+     "Avalon Club Hotel"
+    ],
+    "kind": "boutique-hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "24 Avalon St",
+    "lat": 27.986473,
+    "lng": -82.82704,
+    "geo_source": "osm",
+    "url": "https://theavalonclubhotel.com/",
+    "phone": "(800) 636-2080",
+    "features": [
+     "pool",
+     "rooftop-bar",
+     "fitness",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "An eight-story boutique hotel of two- and three-bedroom suites with Gulf-view balconies steps from Clearwater Beach, with a rooftop bar, pool lounge and gym.",
+    "quote": "Simplified Elegance with Breathtaking Gulf Views",
+    "status": "open",
+    "source_url": "https://theavalonclubhotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-avalon-club-hotel/142914"
+    ],
+    "notes": "Suite types and kitchens per the VSPC profile (34 two- and three-bedroom suites).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "blue-wave-suites",
+    "name": "Blue Wave Suites",
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "440 E Shore Dr",
+    "lat": 27.980077,
+    "lng": -82.826045,
+    "geo_source": "osm",
+    "url": "https://www.bluewavesuites.com/",
+    "phone": "(727) 442-5100",
+    "features": [
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "A small group of renovated condo-style suites on East Shore Drive by the Clearwater Beach marina, each with a full kitchen, a short walk from the beach and Pier 60.",
+    "status": "open",
+    "source_url": "https://www.bluewavesuites.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/blue-wave-suites/137955"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "winter-the-dolphins-beach-club",
+    "name": "Winter the Dolphin's Beach Club, Ascend Hotel Collection",
+    "aliases": [
+     "Winter the Dolphin's Beach Club",
+     "Dolphin Sands Clearwater Beach"
+    ],
+    "kind": "hotel",
+    "brand": "Choice Hotels",
+    "collection": "Ascend Hotel Collection",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "655 S Gulfview Blvd",
+    "lat": 27.966444,
+    "lng": -82.825752,
+    "geo_source": "osm",
+    "url": "https://www.dolphinsandsclearwater.com/",
+    "phone": "(727) 228-8575",
+    "features": [
+     "beachfront",
+     "pool",
+     "restaurant",
+     "fitness",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront hotel at the south end of Clearwater Beach named for Winter the Dolphin of the Clearwater Marine Aquarium; the listing says room proceeds support the aquarium's marine animal care.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/dolphin-sands-clearwater-beach/139001",
+    "notes": "Own site returned 403 on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (91 units per VSPC; name shown there as Winter the Dolphin's Beach Club under the URL slug dolphin-sands-clearwater-beach). Collection name from OSM; verifier should confirm the current name and flag.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "frenchys-oasis-motel",
+    "name": "Frenchy's Oasis Motel",
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "423 E Shore Dr",
+    "lat": 27.979466,
+    "lng": -82.825538,
+    "geo_source": "osm",
+    "url": "https://frenchysoasismotel.com/",
+    "phone": "(727) 446-6835",
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens",
+     "restaurant"
+    ],
+    "summary": "A small motel on East Shore Drive overlooking the Intracoastal Waterway in Clearwater Beach, with a pool and kitchens in some units; the listing notes on-site dining.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/frenchy-s-oasis-motel/138561",
+    "notes": "Own site behind a bot challenge on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (15 units).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "east-shore-resort",
+    "name": "East Shore Resort",
+    "aliases": [
+     "East Shore Resort Motel"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "473 E Shore Dr",
+    "lat": 27.98111,
+    "lng": -82.825562,
+    "geo_source": "census",
+    "url": "https://www.eastshoreresort.com/",
+    "phone": "(727) 442-3636",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A waterfront resort of 11 units with complete kitchens on Clearwater Bay, with a heated pool and a large fishing and boat dock, a walk from Clearwater Beach.",
+    "quote": "East Shore Resort features 11 unique units all with complete kitchens, heated pool, patio area with gas grills, huge fishing/boat dock on Clearwater Bay.",
+    "status": "open",
+    "source_url": "https://www.eastshoreresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/east-shore-resort-motel/138136"
+    ],
+    "rooms": 11,
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "echo-sails-motel",
+    "name": "Echo Sails Motel",
+    "aliases": [
+     "Echo Sails Motel & Apartments"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "216 Hamden Dr",
+    "lat": 27.974387,
+    "lng": -82.827755,
+    "geo_source": "osm",
+    "url": "https://echosailsmotel.com/",
+    "phone": "(727) 442-6962",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small family-friendly motel of one- and two-bedroom units with kitchens on Hamden Drive in south Clearwater Beach, near the marina and the beach, with a heated pool.",
+    "quote": "We are a quiet, family-friendly place to stay on your trip to Clearwater Beach.",
+    "status": "open",
+    "source_url": "https://echosailsmotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/echo-sails-motel-apartments/138138"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "porpoise-inn-and-suites",
+    "name": "Porpoise Inn & Suites",
+    "aliases": [
+     "Porpoise Inn"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "609 Cyprus Ave",
+    "lat": 27.986178,
+    "lng": -82.824863,
+    "geo_source": "osm",
+    "url": "https://www.porpoiseinnandsuites.com/",
+    "phone": "(727) 442-2022",
+    "features": [
+     "kitchens"
+    ],
+    "summary": "A small boutique motel of renovated one-bedroom suites with full kitchens in the quiet North Beach area of Clearwater Beach, a short walk from the beach.",
+    "status": "open",
+    "source_url": "https://www.porpoiseinnandsuites.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/porpoise-inn/138175"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "parker-manor-resort",
+    "name": "Parker Manor Resort",
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "115 Brightwater Dr",
+    "lat": 27.971582,
+    "lng": -82.826974,
+    "geo_source": "osm",
+    "phone": "(727) 446-6562",
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A family-owned waterfront resort on the Intracoastal side of Brightwater Drive, about a block and a half from Clearwater Beach, with a heated pool, fishing piers and units with full kitchens.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/parker-manor-resort/138173",
+    "notes": "The tourism profile's website link points to an Airbnb page, so url is null. Current operation not independently confirmed.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "royal-north-beach",
+    "name": "Royal North Beach",
+    "kind": "condo-hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "657 Mandalay Ave",
+    "lat": 27.988405,
+    "lng": -82.826213,
+    "geo_source": "osm",
+    "url": "https://www.royalnorthbeach.com/",
+    "phone": "(727) 441-9700",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A group of apartment-style rentals on North Mandalay Avenue in Clearwater Beach with full kitchens, a heated pool and beach gear for guests.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/royal-north-beach/139813",
+    "notes": "Own site had an expired TLS certificate on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile (16 units).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "fusion-resort-treasure-island",
+    "name": "FUSION Resort",
+    "aliases": [
+     "Fusion Resort in Treasure Island"
+    ],
+    "kind": "resort",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "290 107th Ave",
+    "lat": 27.770513,
+    "lng": -82.766052,
+    "geo_source": "census",
+    "url": "https://www.fusiontreasureisland.com/",
+    "phone": "(727) 300-6866",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool",
+     "rooftop-bar",
+     "kitchens",
+     "all-suites",
+     "free-parking",
+     "restaurant"
+    ],
+    "summary": "An all-suite waterfront resort on the bay side of Treasure Island, steps from the beach and near John's Pass, with 18 boat slips for guests, a pool and a rooftop Skyview Terrace.",
+    "quote": "Discover a waterfront hotel in Treasure Island FL just steps from Treasure Island Beach and John's Pass Village & Boardwalk.",
+    "status": "open",
+    "source_url": "https://www.fusiontreasureisland.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/fusion-resort-in-treasure-island/138955"
+    ],
+    "notes": "Slips, rooftop terrace, kitchens, parking and on-site restaurant (Vibes Restaurant & Bar) per the Visit St. Pete-Clearwater profile; 'rooftop-bar' interprets the Skyview Terrace, verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "residence-inn-st-petersburg-treasure-island",
+    "name": "Residence Inn St. Petersburg Treasure Island",
+    "aliases": [
+     "Residence Inn by Marriott St. Petersburg Treasure Island"
+    ],
+    "kind": "extended-stay",
+    "brand": "Marriott",
+    "collection": "Residence Inn by Marriott",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11908 Gulf Blvd",
+    "lat": 27.775327,
+    "lng": -82.777795,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/en-us/hotels/tpati-residence-inn-st-petersburg-treasure-island/overview/",
+    "phone": "(727) 367-2761",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "kitchens",
+     "all-suites",
+     "free-breakfast",
+     "pet-friendly"
+    ],
+    "summary": "A beachfront all-suite Residence Inn on Treasure Island with studios to three-bedroom suites that have full kitchens and balconies, a pool and free breakfast.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/residence-inn-by-marriott-st-petersburg-treasure-island/139794",
+    "notes": "marriott.com blocks automated reading; facts from the Visit St. Pete-Clearwater profile (105 suites per VSPC, left null). Post-2024 status not independently confirmed; the profile is live on the VSPC dog-friendly list.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunset-inn-and-cabanas",
+    "name": "Sunset Inn & Cabanas",
+    "aliases": [
+     "Sunset Inn & Cottages"
+    ],
+    "kind": "inn",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "7925 W Gulf Blvd",
+    "lat": 27.74421,
+    "lng": -82.75884,
+    "geo_source": "osm",
+    "url": "https://www.sunsetinnti.com/",
+    "phone": "(727) 420-8788",
+    "rooms": 4,
+    "features": [
+     "pool",
+     "adults-only"
+    ],
+    "summary": "A retro inn with four adults-only rooms and four day-use poolside cabanas across from Sunset Beach at the south end of Treasure Island; after hurricane repairs it added an in-ground pool and cabanas in 2026.",
+    "quote": "Four adults-only guest rooms and four day-use poolside cabanas, steps from Sunset Beach in Treasure Island, Florida.",
+    "status": "open",
+    "source_url": "https://www.sunsetinnti.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/sunset-inn-cabanas/138982"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "coral-reef-beach-resort",
+    "name": "Coral Reef Beach Resort",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "5800 Gulf Blvd",
+    "lat": 27.731156,
+    "lng": -82.746208,
+    "geo_source": "osm",
+    "url": "https://coralreefflorida.com/",
+    "phone": "(888) 711-4422",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "An interval-ownership (timeshare) resort directly on St. Pete Beach whose one- and two-bedroom condominiums with full kitchens are also rented; it has two heated pools and hot tubs.",
+    "quote": "We are an interval ownership resort located directly on the beach overlooking the Gulf of America offering deeded vacation ownership.",
+    "status": "open",
+    "source_url": "https://coralreefflorida.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/coral-reef-beach-resort/138009"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "saint-hotel",
+    "name": "The Saint Hotel",
+    "kind": "boutique-hotel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "7201 Sunset Way",
+    "lat": 27.738982,
+    "lng": -82.752725,
+    "geo_source": "census",
+    "phone": "(727) 360-0120",
+    "rooms": 17,
+    "features": [
+     "pool",
+     "restaurant",
+     "accessible-rooms"
+    ],
+    "summary": "A 17-room boutique hotel on Sunset Way at the north end of St. Pete Beach with a pool, a hot tub, bicycles and beach gear for guests, and the 82 Degrees restaurant.",
+    "quote": "The Saint Hotel provides an individualized experience where you can lose yourself in the ultimate seaside paradise.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/the-saint-hotel/141091",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/best-boutique-hotels"
+    ],
+    "notes": "Its only web presence is a Facebook page (not readable without login), so url is null. Room count (17) and amenities from the Visit St. Pete-Clearwater profile.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "berkeley-beach-club",
+    "name": "Berkeley Beach Club",
+    "kind": "boutique-hotel",
+    "area": "pass-a-grille",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "109 8th Ave",
+    "lat": 27.688043,
+    "lng": -82.736388,
+    "geo_source": "census",
+    "url": "https://www.berkeleybeachclub.com/",
+    "phone": "(727) 228-1000",
+    "features": [
+     "kitchens",
+     "rooftop-bar",
+     "pet-friendly",
+     "free-parking",
+     "all-suites"
+    ],
+    "summary": "A boutique suite hotel in Pass-a-Grille with multi-bedroom suites with full kitchens, restaurants and a rooftop lounge; leashed pets are allowed.",
+    "quote": "Berkeley Beach Club is inspired by all that is Pass-A-Grille.",
+    "status": "open",
+    "source_url": "https://www.berkeleybeachclub.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/berkeley-beach-club/138948",
+     "https://www.visitstpeteclearwater.com/best-boutique-hotels"
+    ],
+    "notes": "Own site is partly behind a bot challenge; suites, kitchens, parking and pets from the Visit St. Pete-Clearwater profile. Phone from VSPC; the site shows 727-383-1380.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "inn-on-the-beach-pass-a-grille",
+    "name": "Inn on the Beach",
+    "kind": "inn",
+    "area": "pass-a-grille",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "1401 Gulf Way",
+    "lat": 27.69222,
+    "lng": -82.737279,
+    "geo_source": "osm",
+    "url": "https://www.innonbeach.com/",
+    "phone": "(727) 360-8844",
+    "features": [
+     "beachfront",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A small adult-focused inn on Gulf Way in Pass-a-Grille, steps from the beach, with renovated rooms, suites with full kitchens and a cottage; all amenities, including parking, are complimentary.",
+    "quote": "All amenities are complimentary, including parking. No hidden charges or fees.",
+    "status": "open",
+    "source_url": "https://www.innonbeach.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/inn-on-the-beach/138150"
+    ],
+    "notes": "The site says its policies are 'adult-focused' (not adults-only), so the adults-only feature is not set.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "barefoot-bay-resort-and-marina",
+    "name": "Barefoot Bay Resort & Marina",
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "401 E Shore Dr",
+    "lat": 27.978024,
+    "lng": -82.825462,
+    "geo_source": "osm",
+    "url": "https://barefootbayresort.com/",
+    "phone": "(727) 447-3316",
+    "features": [
+     "waterfront",
+     "marina",
+     "pool"
+    ],
+    "summary": "A 16-unit resort motel on Clearwater Bay across the street from Clearwater Beach and Pier 60, with a large pool, a bayside deck and boat slips.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/barefoot-bay-resort-marina/138114",
+    "notes": "Own site reset the connection on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "surf-beach-resort",
+    "name": "Surf Beach Resort",
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11040 Gulf Blvd",
+    "lat": 27.771189,
+    "lng": -82.771399,
+    "geo_source": "census",
+    "url": "https://www.sunsational.com/",
+    "phone": "(727) 360-1611",
+    "features": [
+     "beachfront"
+    ],
+    "summary": "A beachfront condo-style resort on Treasure Island rented by Sunsational Beach Rentals.",
+    "quote": "Surf Beach Resort and South Beach Condo Hotel are right on the beach on Treasure Island, and feature condo-style living for the entire family.",
+    "status": "open",
+    "tags": [
+     "sunsational-beach-rentals"
+    ],
+    "source_url": "https://www.sunsational.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/surf-beach-resort-by-sunsational-6701"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "south-beach-condo-hotel",
+    "name": "South Beach Condo Hotel",
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11360 Gulf Blvd",
+    "lat": 27.773051,
+    "lng": -82.773324,
+    "geo_source": "census",
+    "url": "https://www.sunsational.com/",
+    "phone": "(727) 367-1991",
+    "features": [
+     "beachfront"
+    ],
+    "summary": "A beachfront condo hotel on Treasure Island with condo-style units, rented by Sunsational Beach Rentals and also by Travel Resort Services.",
+    "quote": "Surf Beach Resort and South Beach Condo Hotel are right on the beach on Treasure Island, and feature condo-style living for the entire family.",
+    "status": "open",
+    "tags": [
+     "sunsational-beach-rentals",
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.sunsational.com/",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/south-beach-condo-hotel-by-sunsational-6083",
+     "https://business.tampabaybeaches.com/list/member/south-beach-condo-hotel-by-trs-17881"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "pelican-pointe-hotel-and-resort",
+    "name": "Pelican Pointe Hotel & Resort",
+    "aliases": [
+     "Pelican Pointe Suites"
+    ],
+    "kind": "hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "445 S Gulfview Blvd",
+    "lat": 27.966683,
+    "lng": -82.826442,
+    "geo_source": "photon",
+    "url": "https://www.sunsational.com/",
+    "phone": "(727) 441-4902",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A hotel of remodeled studio suites on South Gulfview Boulevard in Clearwater Beach, across the street from the water and walking distance from Pier 60, with a heated pool and in-room kitchen facilities.",
+    "quote": "Pelican Pointe Hotel & Resort, on Clearwater Beach, offers spacious rooms in a hotel setting.",
+    "status": "open",
+    "tags": [
+     "sunsational-beach-rentals"
+    ],
+    "source_url": "https://www.sunsational.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/pelican-pointe-suites/138090"
+    ],
+    "notes": "Pool and kitchens per the Visit St. Pete-Clearwater profile (61 units).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "island-inn-beach-resort",
+    "name": "Island Inn Beach Resort",
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "9980 Gulf Blvd",
+    "lat": 27.758945,
+    "lng": -82.765582,
+    "geo_source": "census",
+    "url": "https://www.islandinnresort.com/",
+    "phone": "(727) 367-1926",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens",
+     "restaurant",
+     "accessible-rooms"
+    ],
+    "summary": "A beachfront condo resort at the south end of the main Treasure Island beach with one- to three-bedroom units, all with efficiency kitchens, a Gulf-front heated pool and a tiki bar; the front desk is open 24 hours.",
+    "quote": "Island Inn Beach Resort, directly on the Gulf in Treasure Island, Fl offers beachfront condos with kitchens, private balconies, heated pool, and Tiki Bar.",
+    "status": "open",
+    "source_url": "https://www.islandinnresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/island-inn-beach-resort/138086"
+    ],
+    "notes": "'restaurant' reflects the tiki bar; 'accessible-rooms' from 'All rooms are accessible by Wheelchair'.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "beach-house-treasure-island",
+    "name": "The Beach House",
+    "aliases": [
+     "The Beach House Treasure Island"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "12100 Gulf Blvd",
+    "lat": 27.776909,
+    "lng": -82.778806,
+    "geo_source": "census",
+    "url": "https://www.beachhouseti.com/",
+    "phone": "(727) 275-7130",
+    "features": [
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "Budget beach suites and cottages with kitchenettes at the north end of Treasure Island, steps from a beach access and walking distance from John's Pass; each suite includes one parking space.",
+    "status": "open",
+    "source_url": "https://www.beachhouseti.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-beach-house-treasure-island/137975"
+    ],
+    "notes": "The site lists (727) 275-7130 in the contact block and (727) 360-1153 in its structured data.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "palms-of-treasure-island",
+    "name": "The Palms of Treasure Island",
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10315 Gulf Blvd",
+    "lat": 27.764935,
+    "lng": -82.767468,
+    "geo_source": "census",
+    "url": "https://www.itrip.net/vacation-rentals/usa/fl/st-petersburg-beaches/treasure-island/palms-of-treasure-island",
+    "phone": "(888) 944-8747",
+    "rooms": 36,
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "A 36-suite condo hotel on the bay side of Gulf Boulevard on Treasure Island, steps from a public beach access, with a waterfront pool and a fishing dock; units are rented through iTrip.",
+    "quote": "Gulf and Intercoastal views from its 36 luxury suites featuring granite counter tops, stainless appliances, washers/dryers and hot tubs.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/the-palms-of-treasure-island/138027",
+    "notes": "Kitchens inferred from 'stainless appliances' in the profile; verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulf-gate-resort",
+    "name": "Gulf Gate Resort",
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "111 50th Ave W",
+    "lat": 27.724502,
+    "lng": -82.741912,
+    "geo_source": "osm",
+    "url": "https://www.gulfgateresortfl.com/",
+    "phone": "(727) 367-5696",
+    "features": [
+     "beachfront",
+     "pool",
+     "fitness",
+     "kitchens"
+    ],
+    "summary": "A beachfront condominium resort on St. Pete Beach renting 40 one- and two-bedroom units with full kitchens and balconies, with a pool, hot tub and fitness room.",
+    "quote": "Walk out your front door to fish, walk the sandy beaches, swim, travel the crystal clear waters",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/gulf-gate-resort/138015",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/gulf-gate-resort-by-trs-17499"
+    ],
+    "notes": "Own site behind a bot challenge; facts from the Visit St. Pete-Clearwater profile.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulf-beach-resort",
+    "name": "Gulf Beach Resort",
+    "aliases": [
+     "The Gulf Beach Resort"
+    ],
+    "kind": "condo-hotel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "140 51st Ave W",
+    "lat": 27.724647,
+    "lng": -82.742273,
+    "geo_source": "osm",
+    "url": "https://www.thegulfbeachresort.com/",
+    "phone": "(727) 367-7070",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A small beachfront condominium resort on St. Pete Beach renting 19 units with full kitchens, with a pool.",
+    "quote": "the convenience, privacy and spaciousness of your own home with the gentle warm waters of the Gulf",
+    "status": "open",
+    "tags": [
+     "travel-resort-services"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/gulf-beach-resort/138013",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/gulf-beach-resort-by-trs-17882"
+    ],
+    "notes": "Own site returned 503 on Sep 27, 2026; facts from the Visit St. Pete-Clearwater profile; the chamber lists it under Travel Resort Services.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "trade-winds-motel-treasure-island",
+    "name": "Trade Winds Motel",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10300 Gulf Blvd",
+    "lat": 27.764679,
+    "lng": -82.767486,
+    "geo_source": "census",
+    "phone": "(727) 360-0490",
+    "summary": "A 21-unit beachfront motel on Treasure Island listed as temporarily closed.",
+    "status": "temporarily-closed",
+    "status_note": "Visit St. Pete-Clearwater marks the listing 'temporarily closed' (checked Sep 27, 2026); no reopening date given.",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/trade-winds-motel/138213",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunburst-inn",
+    "name": "Sunburst Inn",
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "address": "19204 Gulf Blvd",
+    "lat": 27.845785,
+    "lng": -82.842602,
+    "geo_source": "osm",
+    "phone": "(727) 596-2500",
+    "summary": "A small retro-styled beachfront motel in Indian Shores with rooms with kitchens, listed as temporarily closed because of hurricane damage.",
+    "status": "temporarily-closed",
+    "status_note": "Visit St. Pete-Clearwater marks the listing 'TEMPORARILY CLOSED' due to hurricane damage (checked Sep 27, 2026); its website (sunburstinn.com) returned errors.",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/sunburst-inn/138201",
+    "also_sources": [
+     "https://business.tampabaybeaches.com/list/member/sunburst-inn-indian-shores-17772"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "penthouse-beach-club-resort",
+    "name": "Penthouse Beach Club Resort",
+    "aliases": [
+     "Penthouse Beach Club"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10182 Gulf Blvd",
+    "lat": 27.762614,
+    "lng": -82.766672,
+    "geo_source": "census",
+    "url": "https://pbcresort.com/",
+    "phone": "(727) 360-0827",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens",
+     "fitness"
+    ],
+    "summary": "A 30-unit beachfront resort on Treasure Island with units with full kitchens, a heated pool and a fitness room.",
+    "status": "open",
+    "source_url": "https://pbcresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/penthouse-beach-club/138028"
+    ],
+    "notes": "The resort's site is sparse (name, address, phone, rooms); unit count and amenities from the Visit St. Pete-Clearwater profile.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "gulfside-resort-st-pete-beach",
+    "name": "Gulfside Resort",
+    "aliases": [
+     "Gulfside Resort St. Pete Beach"
+    ],
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "565 70th Ave",
+    "lat": 27.738571,
+    "lng": -82.750165,
+    "geo_source": "census",
+    "url": "https://gulfsideresort.com/",
+    "phone": "(727) 360-7640",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A family-owned boutique property in a quiet residential block of northern St. Pete Beach, a short walk from the Gulf, with 10 one-bedroom and studio suites and a three-bedroom cottage around a heated pool; every unit has a full kitchen.",
+    "quote": "This charming property features 10 one-bedroom and studio-size suites plus a newly renovated 3 bedroom/2 bath cottage, all surrounding a large swimming pool.",
+    "status": "open",
+    "source_url": "https://gulfsideresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/gulfside-resort-st-pete-beach/138018",
+     "https://business.tampabaybeaches.com/list/member/gulfside-resort-551"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "redington-ambassador-resort",
+    "name": "The Redington Ambassador Resort",
+    "aliases": [
+     "Redington Ambassador Resort"
+    ],
+    "kind": "condo-hotel",
+    "area": "indian-rocks-beach",
+    "city": "North Redington Beach",
+    "state": "FL",
+    "zip": "33708",
+    "address": "16900 Gulf Blvd",
+    "lat": 27.817779,
+    "lng": -82.82294,
+    "geo_source": "census",
+    "url": "https://redingtonambassador.com/",
+    "phone": "(727) 391-9646",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A beachfront timeshare condominium resort in North Redington Beach renting two- and three-bedroom condos of at least 1,200 square feet, with a heated pool and hot tub.",
+    "quote": "Stay at Redington Ambassador Resort in North Redington Beach and enjoy beachfront vacation condos, Gulf views, a heated pool, and easy beach access.",
+    "status": "open",
+    "source_url": "https://redingtonambassador.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/redington-ambassador-resort/138030"
+    ],
+    "notes": "Unit sizes and kitchens per the Visit St. Pete-Clearwater profile. Part of the same four-resort group as Bay & Beach Club, Hideaway Sands and Treasure Island Beach Club (shared site template).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "treasure-shores-beach-club",
+    "name": "Treasure Shores Beach Club",
+    "aliases": [
+     "Treasure Shores"
+    ],
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10360 Gulf Blvd",
+    "lat": 27.765792,
+    "lng": -82.768182,
+    "geo_source": "osm",
+    "phone": "(727) 360-6969",
+    "summary": "A 17-unit beachfront resort on Treasure Island with kitchens and a pool, listed as temporarily closed.",
+    "status": "temporarily-closed",
+    "status_note": "Visit St. Pete-Clearwater marks the listing 'TEMPORARILY CLOSED' (checked Sep 27, 2026); its website (tsbcresorts.com) did not respond.",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/treasure-shores-beach-club/138041",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "malyn-resort",
+    "name": "Malyn Resort",
+    "aliases": [
+     "Malyn Condo Motel"
+    ],
+    "kind": "condo-hotel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "282 107th Ave",
+    "lat": 27.770925,
+    "lng": -82.765934,
+    "geo_source": "osm",
+    "url": "https://www.malynresort.com/",
+    "phone": "(727) 748-2848",
+    "features": [
+     "waterfront",
+     "pool",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A condo motel on Boca Ciega Bay on the back side of Treasure Island, a walk from the Gulf beaches, with a heated pool, fishing docks, a waterfront cabana and one free parking space per condo.",
+    "quote": "Malyn Resort boasts a relaxing atmosphere in a lush tropical setting on the Boca Ciega Bay.",
+    "status": "open",
+    "source_url": "https://www.malynresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/malyn-resort/138159"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunrise-motel-treasure-island",
+    "name": "Sunrise Motel",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "9630 Gulf Blvd",
+    "lat": 27.756195,
+    "lng": -82.763066,
+    "geo_source": "osm",
+    "url": "https://www.visitsunrisefl.com/",
+    "phone": "(727) 793-4727",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A 20-unit motel on Gulf Boulevard at the south end of Treasure Island, a short walk from the beach, with a heated pool and kitchens in some units.",
+    "status": "open",
+    "source_url": "https://www.visitsunrisefl.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/sunrise-motel/138204"
+    ],
+    "notes": "Unit count, pool and kitchens per the Visit St. Pete-Clearwater profile; the motel's site lists rooms 102–212. Phone from the site; VSPC gives 727-360-9210.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "blind-pass-resort-motel",
+    "name": "Blind Pass Resort Motel",
+    "aliases": [
+     "Blind Pass Resort"
+    ],
+    "kind": "motel",
+    "area": "st-pete-beach",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "address": "7901 Blind Pass Rd",
+    "lat": 27.745853,
+    "lng": -82.752396,
+    "geo_source": "census",
+    "url": "https://www.blindpassresort.com/",
+    "phone": "(727) 605-5352",
+    "rooms": 25,
+    "features": [
+     "pool",
+     "free-parking",
+     "kitchens",
+     "pet-friendly"
+    ],
+    "summary": "A 25-room motel on Blind Pass Road at the north end of St. Pete Beach, steps from the sand, with a pool, free parking and kitchenettes in some rooms.",
+    "quote": "Blind Pass provides 25 comfortable and reliable guest rooms, including an outdoor swimming pool, free parking and BBQ facilities.",
+    "status": "open",
+    "source_url": "https://www.blindpassresort.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/blind-pass-resort/138123"
+    ],
+    "notes": "Pet-friendly per the Visit St. Pete-Clearwater profile ('Pets on leash allowed with applicable fees'). Run by the same Coastal Collection group as the Malibu Resort Motel.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "hotel-sol-redington-shores",
+    "name": "Hotel Sol",
+    "aliases": [
+     "The Hotel Sol"
+    ],
+    "kind": "boutique-hotel",
+    "area": "indian-rocks-beach",
+    "city": "Redington Shores",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17566 Gulf Blvd",
+    "lat": 27.82513,
+    "lng": -82.828817,
+    "geo_source": "census",
+    "url": "https://www.thehotelsol.com/",
+    "phone": "(727) 397-4747",
+    "features": [
+     "beachfront",
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A beachfront hotel in Redington Shores with suites (some with kitchenettes) around a palm courtyard, a pool with a waterfall, a rooftop deck and breakfast.",
+    "quote": "TRUE BEACH FRONT HOTEL. YOUR HOME AWAY FROM HOME",
+    "status": "open",
+    "source_url": "https://www.thehotelsol.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-hotel-sol/138083"
+    ],
+    "notes": "The site contains template leftovers naming other hotels ('rancho caymus inn', a wheatleighhotel.com email); address and phone match the Visit St. Pete-Clearwater profile (40 units). OSM labels this address 'Isis'. Verifier should confirm operation.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "ivory-sands-beach-suites",
+    "name": "Ivory Sands Beach Suites",
+    "kind": "boutique-hotel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "433 Coronado Dr",
+    "lat": 27.970616,
+    "lng": -82.828871,
+    "geo_source": "census",
+    "url": "https://ivorysandsclearwater.com/",
+    "phone": "(727) 446-5608",
+    "summary": "A small boutique suite hotel on Coronado Drive in south Clearwater Beach, steps from the beach, with a large heated pool and a tropical courtyard.",
+    "quote": "Just steps to the sugar white sandy beach and spectacular sunsets along the Gulf of Mexico.",
+    "quote_source": "https://www.visitstpeteclearwater.com/profile/ivory-sands-beach-suites/138188",
+    "status": "open",
+    "source_url": "https://ivorysandsclearwater.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/ivory-sands-beach-suites/138188"
+    ],
+    "notes": "Visit St. Pete-Clearwater lists 12 units.",
+    "checked": "2026-09-27",
+    "features": [
+     "pool"
+    ]
+   },
+   {
+    "id": "sea-jay-motel",
+    "name": "Sea Jay Motel",
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "11240 1st St E",
+    "lat": 27.773403,
+    "lng": -82.771336,
+    "geo_source": "census",
+    "url": "https://seajaymotel.net/",
+    "phone": "(727) 367-9600",
+    "features": [
+     "pool",
+     "kitchens",
+     "free-parking"
+    ],
+    "summary": "A small motel on the bay side of Treasure Island, steps from the Gulf, with studios and suites with kitchenettes or kitchens, free parking and a pool.",
+    "quote": "Update: Rooms available and our Pool is Now Open !!",
+    "status": "open",
+    "source_url": "https://seajaymotel.net/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/sea-jay-motel/138193"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sand-vista-motel",
+    "name": "Sand Vista Motel",
+    "kind": "motel",
+    "area": "indian-rocks-beach",
+    "city": "Redington Shores",
+    "state": "FL",
+    "zip": "33708",
+    "address": "17495 Gulf Blvd",
+    "lat": 27.824538,
+    "lng": -82.828379,
+    "geo_source": "census",
+    "url": "https://sandvistamotel.com/",
+    "phone": "(727) 393-5781",
+    "features": [
+     "waterfront",
+     "pool",
+     "pet-friendly",
+     "kitchens"
+    ],
+    "summary": "A small waterfront motel on an inlet of Boca Ciega Bay in Redington Shores, 190 feet from the Gulf beach, with a fishing and boat dock and a heated pool; pets are welcome.",
+    "quote": "Sand Vista Motel in Redington Shores, FL offers waterfront rentals with a fishing and boat dock.",
+    "status": "open",
+    "source_url": "https://sandvistamotel.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/sand-vista-motel/138186"
+    ],
+    "notes": "Kitchens from a guest review on the page ('bedroom, kitchenette and pull-out couch'); verifier may drop.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "sunrise-resort-clearwater-beach",
+    "name": "Sunrise Resort",
+    "aliases": [
+     "Sunrise Resort South",
+     "Sunrise Resort Motel"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "229 Coronado Dr",
+    "lat": 27.973919,
+    "lng": -82.82785,
+    "geo_source": "osm",
+    "url": "https://www.sunriseresortclearwater.com/",
+    "phone": "(727) 446-9911",
+    "summary": "A small family-owned motel on Coronado Drive in south Clearwater Beach, less than 100 yards from the beach and a block and a half from the marina and Pier 60, with rooms and one-bedroom apartments and a heated pool.",
+    "quote": "one of the few remaining truly family-owned motels on Clearwater Beach",
+    "quote_source": "https://www.visitstpeteclearwater.com/profile/sunrise-resort-south/138205",
+    "status": "open",
+    "source_url": "https://www.sunriseresortclearwater.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/sunrise-resort-south/138205"
+    ],
+    "notes": "Visit St. Pete-Clearwater lists 22 units.",
+    "checked": "2026-09-27",
+    "features": [
+     "pool",
+     "free-parking"
+    ]
+   },
+   {
+    "id": "gulf-breeze-inn",
+    "name": "Gulf Breeze Inn",
+    "kind": "inn",
+    "area": "indian-rocks-beach",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "address": "2008 Gulf Blvd",
+    "lat": 27.902355,
+    "lng": -82.847779,
+    "geo_source": "census",
+    "url": "https://www.gulfbreezeinn.com/",
+    "phone": "(727) 595-6104",
+    "opened": "1950",
+    "features": [
+     "kitchens"
+    ],
+    "summary": "A small boutique inn of apartments and a cottage, all with full kitchens, a few steps from the beach in Indian Rocks Beach; it says it has been part of the town since 1950 and does not accept pets.",
+    "quote": "a charming boutique hotel that has been a part of the Indian Rocks Beach community since 1950",
+    "status": "open",
+    "source_url": "https://www.gulfbreezeinn.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/gulf-breeze-inn/137981"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "residence-inn-st-petersburg-tierra-verde",
+    "name": "Residence Inn St. Petersburg Tierra Verde",
+    "aliases": [
+     "Residence Inn by Marriott St. Petersburg Tierra Verde"
+    ],
+    "kind": "extended-stay",
+    "brand": "Marriott",
+    "collection": "Residence Inn by Marriott",
+    "area": "fort-de-soto",
+    "address": "214 Madonna Blvd",
+    "city": "Tierra Verde",
+    "state": "FL",
+    "zip": "33715",
+    "lat": 27.689943,
+    "lng": -82.721095,
+    "geo_source": "osm",
+    "url": "https://www.marriott.com/tpavr",
+    "phone": "(727) 864-4868",
+    "features": [
+     "waterfront",
+     "free-breakfast",
+     "restaurant",
+     "kitchens",
+     "all-suites"
+    ],
+    "summary": "An extended-stay Residence Inn on the waterfront in Tierra Verde, near the Tierra Verde marina and Fort De Soto Park, with free breakfast and the Vista at the Top rooftop restaurant.",
+    "quote": "Located along the waterfront and near the Tierra Verde Resort Marina, Residence Inn St. Petersburg Tierra Verde boasts an ideal location for exploring the all the area has to offer.",
+    "status": "open",
+    "source_url": "https://business.tampabaybeaches.com/list/member/residence-inn-by-marriott-st-petersburg-tierra-verde-14975",
+    "notes": "marriott.com blocks automated reading; facts from the Tampa Bay Beaches Chamber listing ('apartment-inspired hotel suites, featuring full-size kitchens'; complimentary breakfast; rooftop restaurant Vista at the Top).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tropical-breeze-resort-motel",
+    "name": "Tropical Breeze",
+    "aliases": [
+     "Tropical Breeze Resort Motel"
+    ],
+    "kind": "motel",
+    "area": "clearwater-beach",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "address": "333 Hamden Dr",
+    "lat": 27.971941,
+    "lng": -82.827665,
+    "geo_source": "census",
+    "url": "https://tropical.holidayfuture.com/",
+    "phone": "(727) 442-6865",
+    "features": [
+     "pool",
+     "kitchens"
+    ],
+    "summary": "A retro motel on the bay side of south Clearwater Beach, about 100 yards from the beach, with studios, suites and apartments (some with kitchens and bay-view balconies) around a pool.",
+    "quote": "Stay at Tropical Breeze, a laid-back retro motel in Clearwater Beach with a pool, colorful Florida style, and a convenient location close to the beach.",
+    "status": "open",
+    "source_url": "https://tropical.holidayfuture.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/tropical-breeze-resort-motel/138218"
+    ],
+    "notes": "Street address and phone from the Visit St. Pete-Clearwater profile (20 units).",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "suncoast-beach-villas",
+    "name": "Suncoast Beach Villas",
+    "aliases": [
+     "Suncoast Motel"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "10232 Gulf Blvd",
+    "lat": 27.763513,
+    "lng": -82.767015,
+    "geo_source": "census",
+    "url": "https://suncoastbeachvillas.com/",
+    "phone": "(727) 360-9256",
+    "summary": "A beachfront motel on Treasure Island with motel rooms, small apartments and villas.",
+    "quote": "Imagine you're on a sunny beach overlooking the beautiful Gulf of Mexico, with warm waves crashing gently nearby and the sea breeze helping you throw your cares away.",
+    "status": "open",
+    "source_url": "https://suncoastbeachvillas.com/",
+    "notes": "Room types from a guest review quoted on the site; the site also calls itself the Suncoast Motel. Pools and kitchens appear only in reviews, so no features are set.",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "johns-pass-beach-motel",
+    "name": "John's Pass Beach Motel",
+    "aliases": [
+     "John's Pass Motel"
+    ],
+    "kind": "motel",
+    "area": "treasure-island",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "address": "12600 Gulf Blvd",
+    "lat": 27.780125,
+    "lng": -82.78162,
+    "geo_source": "osm",
+    "url": "https://www.johnspassmotel.com/",
+    "phone": "(727) 360-1139",
+    "features": [
+     "beachfront",
+     "pool"
+    ],
+    "summary": "A family-owned motel directly on the beach at the north end of Treasure Island, a walk from John's Pass Village, with a heated pool, a beach-view patio and one free parking space per reservation.",
+    "quote": "We are a family owned motel located directly on the Treasure Island Beach that stretches for almost three miles",
+    "status": "open",
+    "source_url": "https://www.johnspassmotel.com/",
+    "checked": "2026-09-27"
+   }
+  ]
+ },
+ "report": ""
+}

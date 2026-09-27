@@ -1,0 +1,45 @@
+[
+  {
+    "id": "gasparilla-pirate-fest",
+    "name": "Gasparilla Pirate Fest",
+    "kind": "parade",
+    "topics": [
+      "family"
+    ],
+    "months": [
+      1
+    ],
+    "when_text": "Fixture: late January",
+    "place": "bayshore-boulevard",
+    "featured": true,
+    "summary": "Fixture series record.",
+    "source_url": "https://gasparillapiratefest.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "saturday-morning-market",
+    "name": "Saturday Morning Market",
+    "kind": "market",
+    "topics": [
+      "food"
+    ],
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "when_text": "Fixture: Saturdays in season",
+    "location_text": "Downtown St. Petersburg",
+    "area": "downtown-stpete",
+    "summary": "Fixture series record.",
+    "source_url": "https://saturdaymorningmarket.com/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

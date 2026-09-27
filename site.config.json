@@ -1,0 +1,11 @@
+{
+  "siteName": "Tampa Bay Chartbook",
+  "siteTagline": "An independent guide to Tampa Bay, every entry linked to its source",
+  "siteBase": "https://fritzhand.github.io/visit-tampa-bay/",
+  "pathPrefix": "/visit-tampa-bay/",
+  "repo": "https://github.com/fritzhand/visit-tampa-bay",
+  "author": { "name": "Jeremy Fritzhand", "github": "https://github.com/fritzhand", "linkedin": "https://www.linkedin.com/in/fritzhand/" },
+  "timezone": "America/New_York",
+  "dataWindow": { "start": "2026-09-28", "end": "2027-04-30" },
+  "analyticsId": ""
+}

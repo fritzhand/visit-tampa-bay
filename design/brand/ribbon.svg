@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 37" role="img" aria-label="Ribbon">
+<title>Kicker ribbon: band, folds and swallowtail tails</title>
+<path style="fill:var(--ribbon-bg, currentColor)" d="M0 7h14v30H0l7-15z M228 7h-14v30h14l-7-15z"/>
+<path style="fill:var(--ribbon-fold, currentColor)" d="M14 30h8l-8 7z M214 30h-8l8 7z"/>
+<rect x="14" y="0" width="200" height="30" style="fill:var(--ribbon-bg, currentColor)"/>
+<path style="fill:var(--ribbon-rule, currentColor)" d="M14 3h200v1H14z M14 26h200v1H14z"/></svg>

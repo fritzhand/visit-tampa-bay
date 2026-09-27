@@ -1,0 +1,25 @@
+[
+  {
+    "id": "tampa",
+    "name": "Tampa",
+    "lede": "Fixture lede for the Tampa sheet.",
+    "known_for": [
+      "the Riverwalk",
+      "Ybor City"
+    ],
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "stpete",
+    "name": "St. Petersburg",
+    "lede": "Fixture lede for the St. Petersburg sheet.",
+    "known_for": [
+      "the St. Pete Pier"
+    ],
+    "source_url": "https://www.stpete.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]

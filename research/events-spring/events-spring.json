@@ -1,0 +1,3470 @@
+{
+  "slice": "events-spring",
+  "checked": "2026-09-27",
+  "records": {
+    "events": [
+      {
+        "id": "corey-area-winter-art-craft-festival-2027",
+        "title": "Corey Area Winter Art & Craft Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "series": "corey-area-art-craft-festival",
+        "date": "2027-01-02",
+        "end_date": "2027-01-03",
+        "start": "10:00",
+        "end": "17:00",
+        "location_text": "Corey Avenue, St. Pete Beach (363 Corey Ave.)",
+        "area": "st-pete-beach",
+        "lat": 27.742433,
+        "lng": -82.749514,
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A two-day outdoor art and craft show on Corey Avenue in St. Pete Beach, in its 33rd season; exhibitors sell work they made themselves.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "craft-fair"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/winter/corey-area-art-and-craft-festival-january",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer (SIK Promotions) applicant page: 'Corey Area Winter Art & Craft Festival ~ 33rd Season Location: 363 Corey Avenue, St. Pete Beach, FL 33706 Date: January 2-3, 10:00 am - 5:00 pm'; the home schedule lists 'JAN 2-3, 2027'. Admission not stated. Coordinates: census match for 363 Corey Ave.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-fine-art-festival-2027",
+        "title": "Sarasota Fine Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-01-02",
+        "end_date": "2027-01-03",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "J.D. Hamel Park, Bayfront Drive, Sarasota",
+        "area": "sarasota",
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/sarasota-fine-art-festival-2027/",
+        "description": "Explore an outdoor gallery featuring original work by artisans from Florida and across the country, including painting, sculpture, jewelry, photography, glass, ceramics, fiber art, mixed media, metalwork, woodworking, and more.",
+        "summary": "A free weekend outdoor fine art festival on the Sarasota bayfront at J.D. Hamel Park, produced by Paragon Festivals.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/sarasota-fine-art-festival-2027/",
+        "notes": "Page: 'Celebrate creativity at the Sarasota Fine Art Festival on January 2-3, 2027 at J.D. Hamel Park, Bayfront Drive, Sarasota ... Saturday from 10am-5pm, Sunday from 10am-5pm, with free admission.' No coordinates: the geocoder did not match J.D. Hamel Park.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "epiphany-tarpon-springs-2027",
+        "title": "Epiphany Celebration and Cross Dive",
+        "kind": "cultural",
+        "topics": [
+          "history",
+          "water"
+        ],
+        "series": "epiphany-tarpon-springs",
+        "date": "2027-01-06",
+        "start": null,
+        "end": null,
+        "time_text": "Held on January 6 (the Feast of Epiphany). The 2027 schedule has not been posted; in 2026 the liturgy began at 8 am, the procession at 9 am and the blessing, dove release and dive for the cross at 1-2 pm.",
+        "location_text": "St. Nicholas Greek Orthodox Cathedral (36 N. Pinellas Ave.) and Spring Bayou, Tarpon Springs",
+        "area": "tarpon-springs",
+        "lat": 28.147651,
+        "lng": -82.761671,
+        "url": "https://stnicholastarpon.org/epiphany",
+        "description": "After the dove is released, the Archbishop casts a cross into the bayou and young men dive into the waters. The one diver who retrieves the cross is considered blessed for the entire year.",
+        "summary": "Tarpon Springs' Greek Orthodox community marks Epiphany with a liturgy at St. Nicholas Cathedral, a procession to Spring Bayou, the blessing of the waters and a dive for a cross by young men aged 16 to 18.",
+        "status": "tentative",
+        "featured": true,
+        "tags": [
+          "greek-heritage",
+          "religious"
+        ],
+        "source_url": "https://stnicholastarpon.org/epiphany",
+        "also_sources": [
+          "https://stnicholastarpon.org/",
+          "https://spongedocks.net/event/tarpon-springs-epiphany/"
+        ],
+        "notes": "Date is the fixed feast: the cathedral home page says visitors 'celebrate the Feast of Epiphany on January 6th'. No 2027-specific schedule is posted yet (status tentative). The 2026 times come from spongedocks.net ('The 120th annual Epiphany will take place on Jan 6, 2026'; 2 pm - 6 pm Epiphany Glendi-Festival). Coordinates are Spring Bayou (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-seafood-music-festival-2027",
+        "title": "Sarasota Seafood & Music Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "date": "2027-01-08",
+        "end_date": "2027-01-10",
+        "occurrences": [
+          {
+            "date": "2027-01-08",
+            "start": "16:30",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-01-09",
+            "start": "11:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-01-10",
+            "start": "11:00",
+            "end": "18:00"
+          }
+        ],
+        "location_text": "Sarasota Fairgrounds, 3000 Ringling Blvd., Sarasota",
+        "area": "sarasota",
+        "lat": 27.336397,
+        "lng": -82.509835,
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/sarasota-seafood-music-festival-2027/",
+        "summary": "A three-day seafood and live music festival at the Sarasota Fairgrounds with free admission; leashed pets are allowed.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "seafood",
+          "music-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/sarasota-seafood-music-festival-2027/",
+        "notes": "Page: 'Sarasota Seafood & Music Festival on January 8-10, 2027 at Sarasota Fairgrounds, Ringling Boulevard ... Friday from 4:30pm-10pm, Saturday from 11am-10pm, Sunday from 11am-6pm'; 'Admission Free'; pet friendly (leashed). 'Bands, performance times, vendors, admission details, and event information are subject to change.' Street number from the Sarasota Fair site footer; coordinates census.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-fine-art-show-2027-01-09",
+        "title": "Sarasota Fine Art Show (St. Armands Circle)",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-01-09",
+        "end_date": "2027-01-10",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday & Sunday, 10am-5pm daily",
+        "location_text": "St. Armands Circle, 1 St. Armands Circle, Sarasota",
+        "area": "sarasota",
+        "lat": 27.317751,
+        "lng": -82.577971,
+        "url": "https://hotworks.org/art-show/sarasota-fine-art-show-january-9-10-2027/",
+        "summary": "A weekend outdoor juried fine art show on St. Armands Circle in Sarasota, produced by Hot Works.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-show"
+        ],
+        "source_url": "https://hotworks.org/art-show/sarasota-fine-art-show-january-9-10-2027/",
+        "notes": "Page: 'January 9, 2027 - January 10, 2027 Saturday & Sunday, 10am-5pm daily At St. Armands Circle 1 St. Armands Circle Sarasota, FL 34236'. Admission not stated on this page. Coordinates: a business on the circle (photon), approximate.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-rv-supershow-2027",
+        "title": "2027 Florida RV SuperShow",
+        "kind": "convention",
+        "topics": [
+          "outdoors"
+        ],
+        "series": "florida-rv-supershow",
+        "date": "2027-01-13",
+        "end_date": "2027-01-17",
+        "occurrences": [
+          {
+            "date": "2027-01-13",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-14",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-15",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-16",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-17",
+            "start": "09:00",
+            "end": "16:00"
+          }
+        ],
+        "time_text": "Public days Wednesday-Saturday 9:00 AM - 6:00 PM, Sunday 9:00 AM - 4:00 PM (Tuesday, January 12 is an industry-only day)",
+        "place": "florida-state-fairgrounds",
+        "area": "east-tampa",
+        "cost": "Adults: $15.00 per person (2 day pass); children under 16 free",
+        "is_free": false,
+        "url": "https://www.frvta.org/show/florida-rv-supershow/",
+        "description": "The Florida RV SuperShow is the ultimate destination to see all the latest RV models being released for the new year.",
+        "summary": "A five-day public RV show at the Florida State Fairgrounds run by the Florida RV Trade Association, showing new-year RV models; leashed dogs are welcome.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "rv",
+          "expo"
+        ],
+        "source_url": "https://www.frvta.org/show/florida-rv-supershow/",
+        "notes": "Page: 'Public Days January 13 - 17, 2027'; 'Wednesday, January 13 - Saturday, January 16; 9:00 AM - 6:00 PM Sunday, January 17; 9:00 AM - 4:00 PM'; 'Tickets available for purchase at entrance gate'; '2026 Attendance - 70,635'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-power-sailboat-show-2027",
+        "title": "St. Petersburg Power and Sailboat Show",
+        "kind": "boat-show",
+        "topics": [
+          "water"
+        ],
+        "series": "st-petersburg-power-sailboat-show",
+        "date": "2027-01-14",
+        "end_date": "2027-01-17",
+        "occurrences": [
+          {
+            "date": "2027-01-14",
+            "start": "10:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-15",
+            "start": "10:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-16",
+            "start": "10:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-01-17",
+            "start": "10:00",
+            "end": "16:00"
+          }
+        ],
+        "time_text": "Thursday-Saturday 10AM-6PM; Sunday 10AM-4PM",
+        "location_text": "Duke Energy Center for the Arts Mahaffey Theater Yacht Basin and Albert Whitted Park, downtown St. Petersburg",
+        "area": "downtown-stpete",
+        "lat": 27.766491,
+        "lng": -82.629542,
+        "url": "https://www.stpeteboatshow.com/",
+        "description": "The show will feature an impressive lineup of powerboats and sailboats in water and on land, including a 40,000-square-foot tent housing an extensive selection of marine gear, accessories, and equipment.",
+        "summary": "A four-day boat show on the downtown St. Petersburg waterfront with new and brokerage powerboats and sailboats in the water and on land, a marine gear tent, seminars and kids' fishing clinics.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "boats"
+        ],
+        "source_url": "https://www.stpeteboatshow.com/attend/show-overview/",
+        "notes": "Show overview: '2027 SHOW SCHEDULE THURSDAY (1/14) 10AM - 6PM ... SUNDAY (1/17) 10AM - 4PM'. The page calls it 'the largest boat show on the Gulf Coast' (organizer claim). Ticket prices not found (tickets page 404). Coordinates: Albert Whitted Park (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "plant-city-mlk-festival-2027",
+        "title": "Plant City Dr. Martin Luther King Jr. Festival and Parade",
+        "kind": "parade",
+        "topics": [
+          "black-history",
+          "music",
+          "family"
+        ],
+        "series": "plant-city-mlk-festival",
+        "date": "2027-01-15",
+        "end_date": "2027-01-18",
+        "start": null,
+        "end": null,
+        "time_text": "Festival January 15-18, 2027; the parade through downtown Plant City and the MLK Expo are on Saturday (January 16). Visit Tampa Bay lists the Saturday parade and festival from 10:00 a.m. to 7:00 p.m.",
+        "location_text": "Sadye Gibbs Martin Community Center, 302 S. Maryland Ave., and downtown Plant City",
+        "area": "plant-city",
+        "lat": 28.013975,
+        "lng": -82.109033,
+        "url": "https://www.plantcitymlkfestival.com/",
+        "description": "Saturday Parade thru downtown Plant City featuring floats, marching bands, civic groups, churches, and Tampa Bay Posse Corvette Club.",
+        "summary": "A four-day Martin Luther King Jr. festival in Plant City, presented by the Improvement League of Plant City: a Saturday parade and Corvette stroll downtown, a battle of school drumlines, an expo with vendors and health screenings, and a leadership breakfast.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "mlk-day",
+          "parade"
+        ],
+        "source_url": "https://www.plantcitymlkfestival.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/plant-city-mlk-parade-%26-festival/101976/"
+        ],
+        "notes": "Festival site: 'January 15 - 18, 2027'; 'Leadership Breakfast Sunday 7:30 a.m. @ HCC Trinkle Center. Tickets are $45.' Visit Tampa Bay listing: Jan 16, 2027, 10:00-19:00, Sadye Gibbs Martin Community Center, 302 S Maryland Ave. Coordinates: census match for that address.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-mlk-parade-2027",
+        "title": "40th Annual St. Pete MLK Parade",
+        "kind": "parade",
+        "topics": [
+          "black-history",
+          "music"
+        ],
+        "series": "st-pete-mlk-parade",
+        "date": "2027-01-18",
+        "start": null,
+        "end": null,
+        "time_text": "Monday, January 18, 2027 (start time not yet posted for 2027)",
+        "location_text": "Downtown St. Petersburg; the lineup begins at 4th Avenue South and 1st Street South",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetemlkparade.com/",
+        "description": "On Monday, January 18, 2027, thousands will unite through music, culture, service, and community pride under the theme \"40 Years Strong, the Legacy Lives On.\"",
+        "summary": "St. Petersburg's Martin Luther King Jr. Day parade marks its 40th year with bands, floats and community groups in downtown St. Pete.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "mlk-day",
+          "parade"
+        ],
+        "source_url": "https://www.stpetemlkparade.com/",
+        "also_sources": [
+          "https://www.stpetemlkparade.com/faq",
+          "https://www.stpetemlkparade.com/history-of-the-parade"
+        ],
+        "notes": "Home page: '2027 St Pete MLK Parade ... commemorates its historic 40th anniversary! On Monday, January 18, 2027'. The FAQ (still for 2026) gave an 11:00 AM start, a route of approximately 1.5 miles and lineup at 4th Avenue South & 1st Street South; the 2027 start time is not posted, so start is null. Presented by Tampa Bay Collard Green Festival Inc. (TBCGF) as part of its '45 Days of Excellence'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "coquina-beach-seafood-music-festival-2027",
+        "title": "Coquina Beach Seafood & Music Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "date": "2027-01-22",
+        "end_date": "2027-01-24",
+        "occurrences": [
+          {
+            "date": "2027-01-22",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-01-23",
+            "start": "11:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-01-24",
+            "start": "11:00",
+            "end": "18:00"
+          }
+        ],
+        "location_text": "Coquina Beach, Gulf Drive South, Bradenton Beach (Anna Maria Island)",
+        "area": "bradenton-anna-maria",
+        "lat": 27.45111,
+        "lng": -82.692183,
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/coquina-beach-seafood-music-festival-2027/",
+        "summary": "A three-day seafood and live music festival at Coquina Beach on Anna Maria Island with free admission.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "seafood",
+          "music-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/coquina-beach-seafood-music-festival-2027/",
+        "notes": "Page: 'Coquina Beach Seafood & Music Festival on January 22-24, 2027 at Coquina Beach, Gulf Drive South, Bradenton Beach ... Friday from 4pm-10pm, Saturday from 11am-10pm, Sunday from 11am-6pm'; 'Admission Free'. Details subject to change per the page. Coordinates: the Coquina Beach bus stop on Gulf Drive (photon), approximate.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "childrens-gasparilla-2027",
+        "title": "Ashley Children's Gasparilla",
+        "kind": "parade",
+        "topics": [
+          "family",
+          "history"
+        ],
+        "series": "childrens-gasparilla",
+        "date": "2027-01-23",
+        "start": "12:00",
+        "end": "19:30",
+        "time_text": "Bicycle and pedestrian safety rodeo 12-2 p.m.; Air Invasion 12-3:30 p.m.; Preschooler's Stroll 1:30-2:30 p.m.; Children's Gasparilla Parade 3:30-6 p.m.; Nighttime Air Invasion 6:15-7 p.m.; Piratechnic Finale 7-7:30 p.m. Times are subject to change.",
+        "place": "bayshore-boulevard",
+        "location_text": "Bayshore Boulevard, from Bay to Bay Boulevard north to Edison Avenue",
+        "area": "hyde-park",
+        "cost": "Free to attend; reserved seating available",
+        "is_free": true,
+        "url": "https://gasparillapiratefest.com/childrens/",
+        "tickets_url": "https://www.gasparillatreasures.com",
+        "description": "A true family-friendly atmosphere, the Ashley Children's Gasparilla presented by Chick-fil-A Tampa Bay, is an alcohol-free event, creating a fun and memorable experience for all ye little mates. The adventure steps off from Bay to Bay Boulevard & Bayshore Boulevard and continues north along Bayshore for 1.5 miles before ending at Edison Avenue.",
+        "summary": "An alcohol-free day of Gasparilla events for children on Bayshore Boulevard: a bike safety rodeo, an airshow, a preschoolers' stroll, the children's parade and a fireworks finale.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "gasparilla",
+          "free",
+          "fireworks",
+          "airshow"
+        ],
+        "source_url": "https://gasparillapiratefest.com/childrens-schedule-of-events/",
+        "also_sources": [
+          "https://gasparillapiratefest.com/childrens/"
+        ],
+        "notes": "Schedule page: 'Saturday, January 23, 2027 12:00 P.M. - 7:30 P.M. FREE TO ATTEND! *Times are subject to change'. Preschooler's Stroll requires pre-registration.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lakewood-ranch-fine-art-festival-2027",
+        "title": "Lakewood Ranch Fine Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-01-23",
+        "end_date": "2027-01-24",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "Main Street at Lakewood Ranch, 8100 Lakewood Main St.",
+        "area": "bradenton-anna-maria",
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/lakewood-ranch-fine-art-festival-january-2027/",
+        "description": "Explore an outdoor gallery featuring original work by artisans from Florida and across the country, including painting, sculpture, jewelry, photography, glass, ceramics, fiber art, mixed media, metalwork, woodworking, and more.",
+        "summary": "A free weekend outdoor fine art festival on Main Street at Lakewood Ranch, produced by Paragon Festivals.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/lakewood-ranch-fine-art-festival-january-2027/",
+        "notes": "Page: 'Lakewood Ranch Fine Art Festival on January 23-24, 2027 at 8100 Lakewood Main St, Bradenton, FL 34202 ... Saturday from 10am-5pm, Sunday from 10am-5pm, with free admission.' Coordinates: census match for that address.",
+        "lat": 27.395211,
+        "lng": -82.434372,
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pinellas-tacofest-2027",
+        "title": "Pinellas TacoFest",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "family"
+        ],
+        "date": "2027-01-23",
+        "end_date": "2027-01-24",
+        "occurrences": [
+          {
+            "date": "2027-01-23",
+            "start": "10:00",
+            "end": "19:00"
+          },
+          {
+            "date": "2027-01-24",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "time_text": "Sat 10:00 AM - 7:00 PM / Sun 10:00 AM - 5:00 PM",
+        "location_text": "England Brothers Park, 5010 Dave McKay Way, Pinellas Park",
+        "area": "largo",
+        "lat": 27.84525,
+        "lng": -82.702409,
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A two-day taco festival in Pinellas Park's England Brothers Park, now in its sixth year, with food vendors each offering a taco special.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "tacos",
+          "food-festival"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/winter/pinellas-taco-fest",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: 'Pinellas TacoFest ~ 6th Annual Location: England Brothers Park - 5010 Dave McKay Way, Pinellas Park, Florida 33781 Date: January 23-24, 2027 Time: Sat 10:00 AM - 7:00 PM / Sun 10:00 AM - 5:00 PM'. The page is written for vendors; admission not stated. Pinellas Park falls in the largo area (SPEC). Coordinates: England Brothers Park (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-pirate-fest-2027",
+        "title": "Seminole Hard Rock Gasparilla Pirate Fest: Invasion and Parade of Pirates",
+        "kind": "parade",
+        "topics": [
+          "history",
+          "music",
+          "water"
+        ],
+        "series": "gasparilla-pirate-fest",
+        "date": "2027-01-30",
+        "start": "10:00",
+        "end": "20:00",
+        "time_text": "Gasparilla Invasion 11:30 a.m.-1 p.m. (the ship docks at 1 p.m.); Parade of Pirates 2-6 p.m.; stage performances 10 a.m.-8 p.m. Times are subject to change.",
+        "place": "bayshore-boulevard",
+        "location_text": "Invasion at the Tampa Convention Center; parade along Bayshore Boulevard into downtown Tampa; stages at Curtis Hixon Waterfront Park and MacDill Park",
+        "area": "hyde-park",
+        "cost": "Free to attend; reserved seats for the parade sold in advance",
+        "is_free": true,
+        "url": "https://gasparillapiratefest.com/pirate-fest/",
+        "tickets_url": "https://www.gasparillatreasures.com",
+        "description": "The City of Tampa is under our control! Our merry pirates have once again conquered the city with a triumphant invasion, and now it's time to celebrate! Join us as we march down Bayshore Blvd for a victory parade that follows a 4.5-mile journey along the beautiful Hillsborough Bay through downtown Tampa.",
+        "summary": "The Jose Gasparilla II and a flotilla sail up Seddon Channel to the Tampa Convention Center, then Ye Mystic Krewe of Gasparilla leads a 4.5-mile parade of floats, krewes and bands along Bayshore Boulevard, with music stages downtown.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "gasparilla",
+          "free",
+          "pirates"
+        ],
+        "source_url": "https://gasparillapiratefest.com/pirate-fest-schedule-of-events/",
+        "also_sources": [
+          "https://gasparillapiratefest.com/pirate-fest/",
+          "https://gasparillapiratefest.com/gasparilla-history/"
+        ],
+        "notes": "Schedule page: 'Saturday, January 30, 2027 10:00 A.M. - 8:00 P.M.'. Pirate Fest page: parade 'features approximately 140 units of krewes, floats, marching bands, and social organizations.' The Gasparilla Distance Classic is in the events-sports slice.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "kumquat-festival-2027",
+        "title": "30th Annual Kumquat Festival",
+        "kind": "festival",
+        "topics": [
+          "food",
+          "family",
+          "shopping"
+        ],
+        "series": "kumquat-festival",
+        "date": "2027-01-30",
+        "start": "09:00",
+        "end": "17:00",
+        "location_text": "Historic Downtown Dade City",
+        "area": "lutz-wesley-chapel",
+        "lat": 28.364725,
+        "lng": -82.195918,
+        "cost": "FREE Admission; FREE Downtown Parking",
+        "is_free": true,
+        "url": "https://www.eastpascochamber.org/annual-kumquat-festival/",
+        "description": "Every year, thousands of people come together for one incredible day filled with fun, flavor, and family memories at the heart of our charming downtown. With over 300 vendors and sponsors, our streets come alive with activity, creativity, and the unmistakable citrusy charm of Pasco County's beloved kumquat!",
+        "summary": "A one-day street festival in downtown Dade City built around the kumquat, with kumquat foods and drinks, arts and crafts vendors, a car and truck show, a farmers market and a kumquat quilt exhibit at the historic courthouse.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "kumquat",
+          "free",
+          "old-florida"
+        ],
+        "source_url": "https://www.eastpascochamber.org/annual-kumquat-festival/",
+        "notes": "Page: '30th Annual Kumquat Festival in \"Historic Downtown Dade City\" Sat., Jan 30, 2027 - 9am-5pm (the Last Sat in Jan)'. Hosted by the Greater East Pasco Chamber of Commerce. Coordinates: Dade City center (photon), approximate for the downtown festival area.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-state-fair-2027",
+        "title": "2027 Florida State Fair",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "food",
+          "thrills"
+        ],
+        "series": "florida-state-fair",
+        "date": "2027-02-04",
+        "end_date": "2027-02-15",
+        "occurrences": [
+          {
+            "date": "2027-02-04",
+            "start": "11:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-05",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-06",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-07",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-08",
+            "start": "11:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-09",
+            "start": "11:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-10",
+            "start": "11:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-11",
+            "start": "11:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-12",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-13",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-14",
+            "start": "10:00",
+            "end": "21:00"
+          },
+          {
+            "date": "2027-02-15",
+            "start": "10:00",
+            "end": "21:00"
+          }
+        ],
+        "time_text": "11:00am-9:00pm on Feb 4 and Feb 8-11; 10:00am-9:00pm on the other days",
+        "place": "florida-state-fairgrounds",
+        "area": "east-tampa",
+        "url": "https://www.floridastatefair.com/",
+        "description": "Get ready for 12 unforgettable days of thrills, entertainment, and mouthwatering delights at the 2027 Florida State Fair! From can't-miss attractions to beloved traditions, the Fair brings together the best of Florida for a one-of-a-kind experience filled with excitement, flavor, and fun.",
+        "summary": "Twelve days of rides, fair food, livestock shows, agriculture exhibits and entertainment at the Florida State Fairgrounds off Interstate 4.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "fair",
+          "rides",
+          "agriculture"
+        ],
+        "source_url": "https://floridastatefairgrounds.com/event/2027-florida-state-fair/2027-02-04/",
+        "also_sources": [
+          "https://www.floridastatefair.com/",
+          "https://floridastatefairgrounds.com/about-us/"
+        ],
+        "notes": "Hours list on the event page; its last line reads 'February 15, 2026: 10:00am - 9:00pm' (a typo: the listing above it gives February 15, 2027 @ 10:00 am). Page says 'Ticket information coming this fall!' so no price is recorded.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "bay-area-renaissance-festival-2027",
+        "title": "Bay Area Renaissance Festival",
+        "kind": "festival",
+        "topics": [
+          "history",
+          "family",
+          "arts"
+        ],
+        "series": "bay-area-renaissance-festival",
+        "date": "2027-02-06",
+        "end_date": "2027-03-21",
+        "start": null,
+        "end": null,
+        "time_text": "A run of theme weekends; daily hours not confirmed from the organizer",
+        "location_text": "Bay Area Renaissance Festival grounds, 12838 Auton Rd., Dade City",
+        "area": "lutz-wesley-chapel",
+        "url": "https://www.bayarearenfest.com",
+        "description": "Join the Villagers of Fittleworth as they invite one and all to the magical 16th Century European village featuring numerous stages of exciting entertainment including: musicians, magicians, jugglers and mimes.",
+        "summary": "A Renaissance fair in a 16th-century-style village near Dade City with stage shows, costumed characters, full-contact armored jousting and an artisan marketplace, held over several theme weekends.",
+        "status": "tentative",
+        "featured": false,
+        "tags": [
+          "renaissance-faire",
+          "jousting"
+        ],
+        "source_url": "https://www.therenlist.com/fairs/bay-area-renaissance-festival",
+        "also_sources": [
+          "https://www.renfest.org/festivals/bay-area-renaissance-festival",
+          "https://www.visitflorida.com/listing/bay-area-renaissance-festival/31710/"
+        ],
+        "notes": "The organizer's site (bayarearenfest.com) returns a captcha to automated readers and could not be read, so status is tentative. Two independent fair directories give the same 2027 run: therenlist.com '2027 Dates: February 6 - March 21' (its 'Official Description' is quoted) and renfest.org 'February 6, 2027 - March 21, 2027', both at 12838 Auton Rd, Dade City (Visit Florida's listing gives the same address). The weekend-only schedule and daily hours were not confirmed from a page we could read; therenlist mentions '7 theme weekends'. No coordinates: the geocoder did not match the address to the site.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pigz-in-zhills-bbq-blues-festival-2027",
+        "title": "17th Annual Pigz in Z'Hills BBQ & Blues Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music",
+          "family"
+        ],
+        "series": "pigz-in-zhills-bbq-blues-festival",
+        "date": "2027-02-06",
+        "start": "10:00",
+        "end": "16:00",
+        "time_text": "10:00 AM to 4:00 PM; blues concert at the Clock Plaza 11 am - 5 pm",
+        "location_text": "Downtown 5th Avenue, Zephyrhills",
+        "area": "lutz-wesley-chapel",
+        "lat": 28.234115,
+        "lng": -82.179549,
+        "url": "https://www.eastpascochamber.org/pigz-in-zhills-bbq-blues-festival/",
+        "description": "The 17th Annual Pigz in Z'Hills BBQ & Blues Festival is the Greater East Pasco Chamber of Commerce signature event. As the name suggests, BBQ & Blues features a friendly Kidz Grillin' competition amidst a background of the blues music, hog calling contest, and a wing eating contest!",
+        "summary": "A downtown Zephyrhills barbecue and blues festival with a kids' grilling competition, hog calling and wing eating contests, and blues bands at the Clock Plaza.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "bbq",
+          "blues"
+        ],
+        "source_url": "https://www.eastpascochamber.org/pigz-in-zhills-bbq-blues-festival/",
+        "also_sources": [
+          "https://www.visitflorida.com/event/17th-annual-pigz-in-zhills-bbq-%26-blues-festival/5032/"
+        ],
+        "notes": "Page: 'DOWNTOWN 5TH AVENUE, ZEPHYRHILLS, FL - FEBRUARY 6, 2027 FROM 10:00 AM TO 4:00 PM'; later 'Live Blues Concert from 11 am - 5 pm' (runs past the listed end). No admission price stated. Coordinates: Clock Plaza (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-fine-art-festival-2027",
+        "title": "St. Petersburg Fine Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-02-06",
+        "end_date": "2027-02-07",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "South Straub Park, Bayshore Drive NE, St. Petersburg",
+        "area": "downtown-stpete",
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/st-petersburg-fine-art-festival-2027/",
+        "description": "Explore an outdoor gallery featuring original work by artisans from Florida and across the country, including painting, sculpture, jewelry, photography, glass, ceramics, fiber art, mixed media, metalwork, woodworking, and more.",
+        "summary": "A free weekend outdoor fine art festival in South Straub Park on the downtown St. Petersburg waterfront, produced by Paragon Festivals and co-sponsored by the City of St. Petersburg.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/st-petersburg-fine-art-festival-2027/",
+        "notes": "2027 page: 'Celebrate creativity at the St. Petersburg Fine Art Festival on February 6-7, 2027 at South Straub Park ... Saturday from 10am-5pm, Sunday from 10am-5pm, with free admission.' City co-sponsorship is stated on the 2026 festival page (https://www.paragonfestivals.com/festival/st-petersburg-fine-art-festival/).",
+        "place": "straub-park",
+        "also_sources": [
+          "https://www.paragonfestivals.com/festival/st-petersburg-fine-art-festival/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "run-for-us-5k-2027",
+        "title": "Run For Us 5K (Tampa Bay Black Heritage Festival)",
+        "kind": "run-walk",
+        "topics": [
+          "black-history",
+          "outdoors"
+        ],
+        "series": "tampa-bay-black-heritage-festival",
+        "date": "2027-02-07",
+        "start": null,
+        "end": null,
+        "location_text": "Al Lopez Park, 4810 N. Himes Ave., Tampa",
+        "area": "west-tampa",
+        "lat": 27.986439,
+        "lng": -82.503204,
+        "cost": "5K Fee: $40; ages 12-17: $20; kids under 12: free",
+        "is_free": false,
+        "url": "https://tampablackheritage.org/runforus/",
+        "tickets_url": "https://tampablackheritage.org/runforus/",
+        "description": "The purpose of the run/walk is to emphasize healthy living while educating the community about health disparities among African-Americans.",
+        "summary": "A 5K run and walk in Al Lopez Park, a signature event of the Tampa Bay Black Heritage Festival; day-of registration is available.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "5k",
+          "black-heritage-festival"
+        ],
+        "source_url": "https://tampablackheritage.org/runforus/",
+        "also_sources": [
+          "https://tampablackheritage.org/"
+        ],
+        "notes": "Run For Us page: 'Sunday, February 7, 2027'; the home page lists it at Al Lopez Park as a 'Signature Event'. No start time posted. Coordinates: Al Lopez Park (photon); area west-tampa is the nearest fixed area (the park is in north-central Tampa near Raymond James Stadium) - verifier may prefer north-tampa.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-seafood-music-festival-2027",
+        "title": "St. Petersburg Seafood & Music Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "date": "2027-02-19",
+        "end_date": "2027-02-21",
+        "occurrences": [
+          {
+            "date": "2027-02-19",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-02-20",
+            "start": "11:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-02-21",
+            "start": "11:00",
+            "end": "18:00"
+          }
+        ],
+        "location_text": "Derby Lane, 10490 Gandy Blvd. N, St. Petersburg",
+        "area": "northeast-stpete",
+        "lat": 27.866437,
+        "lng": -82.628895,
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/st-petersburg-seafood-music-festival-2027/",
+        "summary": "A three-day seafood and live music festival at Derby Lane, the former St. Petersburg Kennel Club on Gandy Boulevard, with free admission and free parking.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "seafood",
+          "music-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/st-petersburg-seafood-music-festival-2027/",
+        "notes": "Page: 'Exciting new location and FREE admission! Join us for the St. Petersburg Seafood & Music Festival on February 19-21, 2027 at its new home, Derby Lane, 10490 Gandy Blvd N ... Friday from 4pm-10pm, Saturday from 11am-10pm, and Sunday from 11am-6pm.' Coordinates: census.",
+        "description": "Located beside Gandy Boulevard at the historic former St. Petersburg Kennel Club and dog track, Derby Lane offers a convenient, easy-to-access setting for a weekend of fresh seafood, live music, cold drinks, and family-friendly fun.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "localtopia-2027",
+        "title": "Localtopia",
+        "kind": "festival",
+        "topics": [
+          "shopping",
+          "food",
+          "family"
+        ],
+        "series": "localtopia",
+        "date": "2027-02-20",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday, February 20, 2027, 10 AM - 5 PM; rain date February 27, 2027",
+        "place": "williams-park",
+        "location_text": "Williams Park, 330 2nd Ave N, St. Petersburg, plus surrounding closed streets",
+        "area": "downtown-stpete",
+        "cost": "Free admission",
+        "is_free": true,
+        "url": "https://localtopia.keepsaintpetersburglocal.org/",
+        "description": "St. Pete's largest \"Community Celebration of All Things Local\" showcasing OVER 300 of your favorite independent businesses and community organizations.",
+        "summary": "A free one-day street fair in Williams Park where more than 300 independent St. Petersburg businesses and community groups set up booths; it is the 13th edition.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "local-business",
+          "free",
+          "market"
+        ],
+        "source_url": "https://localtopia.keepsaintpetersburglocal.org/",
+        "notes": "Read with WebFetch (curl blocked): 'SATURDAY, FEBRUARY 20, 2027 | 10 AM - 5 PM', 'RAIN DATE: FEBRUARY 27, 2027', 'WILLIAMS PARK | 330 2ND AVE N, 33701'; page title calls it the 13th annual. Organizer: Keep St. Petersburg Local.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hondo-rodeo-fest-tampa-2027",
+        "title": "The Hondo Rodeo Fest",
+        "kind": "festival",
+        "topics": [
+          "music",
+          "sports"
+        ],
+        "date": "2027-02-26",
+        "end_date": "2027-02-28",
+        "start": "12:00",
+        "end": "23:00",
+        "time_text": "Free street fest daily noon-6 PM; rodeo 6-8 PM; two-act concert 8:30-11 PM",
+        "place": "raymond-james-stadium",
+        "area": "west-tampa",
+        "cost": "Street fest free to attend, no ticket required; rodeo and concert by reserved-seat ticket",
+        "is_free": false,
+        "url": "https://www.thehondorodeofest.com/tampa",
+        "tickets_url": "https://www.thehondorodeofest.com/tampa",
+        "description": "The Hondo Street Fest opens daily at 12PM and is free to attend for all - no ticket required, with food vendors, shopping, brand activations and live music.",
+        "summary": "Three nights of an invite-only pro rodeo competition and country and rock concerts at Raymond James Stadium, with a free street festival outside each afternoon; 2027 headliners include Cody Johnson, Jon Pardi, Nickelback and Jason Aldean.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "rodeo",
+          "country-music"
+        ],
+        "source_url": "https://www.thehondorodeofest.com/tampa",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/the-hondo-rodeo-fest/102586/"
+        ],
+        "notes": "Organizer page lists February 26 (Cody Johnson + Jon Pardi), February 27 (Nickelback + Dexter & The Moonrocks) and February 28 (Jason Aldean + The Red Clay Strays) without a year; the Visit Tampa Bay listing gives 2027-02-26 to 2027-02-28 at 4201 N. Dale Mabry Highway ('comes to Raymond James Stadium February 26-28'). Could overlap with the events-shows slice.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-outbound-voyage-2027",
+        "title": "Gasparilla Outbound Voyage",
+        "kind": "cultural",
+        "topics": [
+          "history",
+          "water",
+          "family"
+        ],
+        "series": "gasparilla-pirate-fest",
+        "date": "2027-02-27",
+        "start": "16:00",
+        "end": null,
+        "time_text": "Starting at 4:00 PM",
+        "place": "sparkman-wharf",
+        "area": "channel-district",
+        "url": "https://gasparillapiratefest.com/outbound-voyage/",
+        "description": "Before returning to sea, Ye Mystic Krewe of Gasparilla boards the Jose Gasparilla II, the world's only fully-rigged pirate ship, for a final Outbound Voyage. Join us in downtown Tampa to welcome the Krewe and local pediatric cancer survivors as the ship docks from one last adventurous sail around Davis and Harbor Islands.",
+        "summary": "The pirate ship Jose Gasparilla II makes a last sail of the season around Davis and Harbour Islands with pediatric cancer survivors aboard, then docks at Sparkman Wharf.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "gasparilla",
+          "pirates"
+        ],
+        "source_url": "https://gasparillapiratefest.com/outbound-voyage/",
+        "notes": "Page: 'Join the excitement at Sparkman Wharf on February 27 starting at 4:00 PM'. No cost is stated on the page; is_free left null.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gulfport-get-rescued-2027",
+        "title": "Gulfport's Get Rescued Animal Rescue Festival",
+        "kind": "festival",
+        "topics": [
+          "family",
+          "wildlife"
+        ],
+        "series": "gulfport-get-rescued",
+        "date": "2027-02-27",
+        "start": "10:00",
+        "end": "17:00",
+        "location_text": "Downtown Gulfport waterfront, Beach Blvd. S. (3000 Beach Blvd. S. in 2026)",
+        "area": "gulfport",
+        "lat": 27.740106,
+        "lng": -82.707758,
+        "cost": "There is no admission fee to attend",
+        "is_free": true,
+        "url": "https://visitgulfportflorida.com/event/get-rescued/",
+        "description": "The Animal Rescue Festival & Fun-raiser hosts up to 50 animal rescue groups, pet friendly vendors featuring animal related products, crafts, artwork and other curious treats.",
+        "summary": "A free pet adoption and rescue festival in downtown Gulfport with up to 50 rescue groups, pet vendors, training demos and the Florida Weiner Dog Derby; leashed pets are welcome.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "pets",
+          "free"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/winter/applicants-get-rescued",
+        "also_sources": [
+          "https://visitgulfportflorida.com/event/get-rescued/",
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: '23rd Annual Gulfport's Get Rescued Date/Time: Saturday, February 27, 2027 10 am - 5 pm'; says the festival is 'always the last Saturday in February'. The Gulfport Merchants Chamber page (still for Saturday, February 28, 2026) gives the address 3000 Beach Blvd. S., the description and 'There is no admission fee to attend'. Coordinates: census match for 3000 Beach Blvd S.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-festival-of-the-arts-2027",
+        "title": "Sarasota Festival of the Arts",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-02-27",
+        "end_date": "2027-02-28",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "J.D. Hamel Park, Bayfront Drive, Sarasota",
+        "area": "sarasota",
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/sarasota-festival-of-the-arts-2027/",
+        "description": "Explore an outdoor gallery featuring original work by artisans from Florida and across the country, including painting, sculpture, jewelry, photography, glass, ceramics, fiber art, mixed media, metalwork, woodworking, and more.",
+        "summary": "A free weekend outdoor art festival on the Sarasota bayfront at J.D. Hamel Park, produced by Paragon Festivals.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/sarasota-festival-of-the-arts-2027/",
+        "notes": "Page: 'Sarasota Festival of the Arts on February 27-28, 2027 at J.D. Hamel Park ... Saturday from 10am-5pm, Sunday from 10am-5pm, with free admission.' No coordinates (park not matched by the geocoder).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-fine-art-show-2027",
+        "title": "Tampa Fine Art Show",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-02-27",
+        "end_date": "2027-02-28",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "Cotanchobee Fort Brooke Park, 601 Water St., along the Riverwalk",
+        "area": "channel-district",
+        "lat": 27.941734,
+        "lng": -82.450829,
+        "cost": "Free Admission",
+        "is_free": true,
+        "url": "https://hotworks.org/art-show/tampa-fine-art-show-february-27-28-2027/",
+        "summary": "A free weekend juried fine art show in Cotanchobee Fort Brooke Park on the downtown Tampa Riverwalk, across from Benchmark International Arena, produced by Hot Works.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-show",
+          "free"
+        ],
+        "source_url": "https://hotworks.org/art-show/tampa-fine-art-show-february-27-28-2027/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/tampa-fine-art-show-by-hot-works/102463/"
+        ],
+        "notes": "Page: 'February 27, 2027 - February 28, 2027 Saturday 10am-5pm - Sunday 10am-5pm Cotanchobee Fort Brooke Park Downtown Tampa along Riverwalk 601 Water St Tampa, FL 33602 Free Admission - All Welcome'. Coordinates: Cotanchobee Fort Brooke Park (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-strawberry-festival-2027",
+        "title": "Florida Strawberry Festival",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "food",
+          "music"
+        ],
+        "series": "florida-strawberry-festival",
+        "date": "2027-03-04",
+        "end_date": "2027-03-14",
+        "start": "10:00",
+        "end": "23:00",
+        "time_text": "Main ticket gate open daily 10 a.m. to 11 p.m.",
+        "place": "florida-strawberry-festival-grounds",
+        "area": "plant-city",
+        "cost": "Gate admission: adults (13+) $15, children (6-12) $5, children 5 and under free with paid adult admission; discounted gate tickets at participating Publix stores Feb 1-Mar 14",
+        "is_free": false,
+        "url": "https://flstrawberryfestival.com/",
+        "tickets_url": "https://flstrawberryfestival.com/tickets/",
+        "description": "Each spring, the Florida Strawberry Festival rolls out the red carpet to welcome visitors from throughout the Sunshine State and the world. Guests come from near and far to enjoy exhibits of agriculture, commerce, industry, livestock, fine arts, horticulture, and crafts.",
+        "summary": "An 11-day agricultural fair in Plant City celebrating the strawberry harvest, with exhibits, livestock shows, a midway, parades and headline concerts.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "fair",
+          "strawberries",
+          "agriculture",
+          "concerts"
+        ],
+        "source_url": "https://flstrawberryfestival.com/information/admission/",
+        "also_sources": [
+          "https://flstrawberryfestival.com/",
+          "https://flstrawberryfestival.com/history-2/"
+        ],
+        "notes": "Admission page: 'Experience the fun of the Florida Strawberry Festival for 11 days and nights. March 4th - March 14th, 2027 in Plant City, Florida.' The hours heading on the same page still says '(March 4 - March 14, 2026)', an unedited label; gate hours read 'Open Daily. 10 a.m. to 11 p.m.' Headline concert tickets are extra (not recorded). Grounds: 303 BerryFest Place, Plant City.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "spiffs-international-folk-fair-2027",
+        "title": "SPIFFS International Folk Fair",
+        "kind": "cultural",
+        "topics": [
+          "food",
+          "music",
+          "arts"
+        ],
+        "series": "spiffs-international-folk-fair",
+        "date": "2027-03-04",
+        "end_date": "2027-03-06",
+        "start": null,
+        "end": null,
+        "time_text": "March 4-6, 2027; which days are school days and which are open to the public is not yet posted (in the previous fair, the first two days were for schools and the last was the public day)",
+        "location_text": "England Brothers Park, 5010 Dave McKay Way, Pinellas Park",
+        "area": "largo",
+        "lat": 27.84525,
+        "lng": -82.702409,
+        "url": "https://www.spiffs.org/",
+        "summary": "The St. Petersburg International Folk Fair Society's folk fair, with food, music, dance and crafts from the region's ethnic and cultural groups; the society says it is planning its 50th fair.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "folk-fair",
+          "multicultural"
+        ],
+        "source_url": "https://www.spiffs.org/",
+        "notes": "Home page: 'looking forward to March 4-6,2027 At England bros. Park'; 'We are planning our 50th International Folk Fair right now.' An older paragraph on the same page says 'March 5th is for elementary & middle schools; March 6th is for middle and high schools; March 7th is the public day' (the previous fair's schedule). Coordinates: England Brothers Park (photon); the street address comes from the SIK Promotions pages for events at the same park.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-festival-of-the-arts-2027",
+        "title": "57th Annual Raymond James Gasparilla Festival of the Arts",
+        "kind": "festival",
+        "topics": [
+          "arts"
+        ],
+        "series": "gasparilla-festival-of-the-arts",
+        "date": "2027-03-06",
+        "end_date": "2027-03-07",
+        "occurrences": [
+          {
+            "date": "2027-03-06",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-03-07",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "time_text": "Saturday 9 a.m. to 6 p.m.; Sunday 10 a.m. to 5 p.m.",
+        "place": "julian-b-lane-riverfront-park",
+        "area": "downtown-tampa",
+        "cost": "FREE!",
+        "is_free": true,
+        "url": "https://gasparillaarts.com/",
+        "summary": "A juried outdoor fine art and fine craft show run by volunteers, held on the Hillsborough River at Julian B. Lane Riverfront Park. The organizer estimates attendance at 30,000.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://gasparillaarts.com/about-the-festival/",
+        "also_sources": [
+          "https://www.tampa.gov/special-events-coordination/news-and-events/featured-events/gasparilla-festival-of-the-arts"
+        ],
+        "notes": "Event Details on the About page: 'Saturday, March 6, 2027, 9 a.m. to 6 p.m. Sunday, March 7, 2027, 10 a.m. to 5 p.m. Julian B. Lane Riverfront Park Downtown Tampa. Admission FREE! Estimated Attendance 30,000. Prize Money Up to $92,000'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "lakewood-ranch-festival-of-the-arts-2027",
+        "title": "Lakewood Ranch Festival of the Arts",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-03-06",
+        "end_date": "2027-03-07",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "Main Street at Lakewood Ranch, 8100 Lakewood Main St.",
+        "area": "bradenton-anna-maria",
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/lakewood-ranch-festival-of-the-arts-2027/",
+        "description": "Explore an outdoor gallery featuring original work by artisans from Florida and across the country, including painting, sculpture, jewelry, photography, glass, ceramics, fiber art, mixed media, metalwork, woodworking, and more.",
+        "summary": "A free weekend outdoor art festival on Main Street at Lakewood Ranch, produced by Paragon Festivals.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/lakewood-ranch-festival-of-the-arts-2027/",
+        "notes": "Page: 'Lakewood Ranch Festival of the Arts on March 6-7, 2027 at 8100 Lakewood Main St, Bradenton, FL 34202 ... Saturday from 10am-5pm, Sunday from 10am-5pm, with free admission.'",
+        "lat": 27.395211,
+        "lng": -82.434372,
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-fine-art-show-2027-03-06",
+        "title": "Sarasota Fine Art Show (JD Hamel Park)",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2027-03-06",
+        "end_date": "2027-03-07",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Saturday 10am-5pm, Sunday 10am-5pm",
+        "location_text": "JD Hamel Park (on Gulfstream Avenue), 199 Bayfront Drive, Sarasota",
+        "area": "sarasota",
+        "cost": "Free Admission",
+        "is_free": true,
+        "url": "https://hotworks.org/art-show/sarasota-fine-art-show-march-6-7-2027/",
+        "summary": "A free weekend juried fine art show on the downtown Sarasota bayfront, produced by Hot Works.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-show",
+          "free"
+        ],
+        "source_url": "https://hotworks.org/art-show/sarasota-fine-art-show-march-6-7-2027/",
+        "notes": "Page: 'March 6, 2027 - March 7, 2027 Saturday 10am-5pm - Sunday 10am-5pm JD Hamel Park (on Gulfstream Avenue) 199 Bayfront Drive Sarasota, FL 34236 Free Admission - All Welcome'. No coordinates: the geocoder did not match the park.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "manatee-county-seafood-music-festival-2027",
+        "title": "Manatee County Seafood & Music Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "date": "2027-03-12",
+        "end_date": "2027-03-14",
+        "occurrences": [
+          {
+            "date": "2027-03-12",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-03-13",
+            "start": "11:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-03-14",
+            "start": "11:00",
+            "end": "18:00"
+          }
+        ],
+        "location_text": "2910 51st St. W, Bradenton",
+        "area": "bradenton-anna-maria",
+        "lat": 27.497474,
+        "lng": -82.612074,
+        "cost": "Admission: Free",
+        "is_free": true,
+        "url": "https://www.paragonfestivals.com/festival/manatee-county-seafood-music-festival-2027/",
+        "summary": "A three-day seafood and live music festival in west Bradenton with free admission.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "seafood",
+          "music-festival",
+          "free"
+        ],
+        "source_url": "https://www.paragonfestivals.com/festival/manatee-county-seafood-music-festival-2027/",
+        "notes": "Page: 'Manatee County Seafood & Music Festival on March 12-14, 2027 at 2910 51st St West, Bradenton, FL 34209 ... Friday from 4pm-10pm, Saturday from 11am-10pm, Sunday from 11am-6pm'; 'Admission Free'. The venue name is not given. Coordinates: 51st Street West (photon street match), approximate.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sponge-docks-march-craft-art-festival-2027",
+        "title": "Sponge Docks March Craft Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "series": "sponge-docks-craft-art-festival",
+        "date": "2027-03-13",
+        "end_date": "2027-03-14",
+        "occurrences": [
+          {
+            "date": "2027-03-13",
+            "start": "10:00",
+            "end": "19:00"
+          },
+          {
+            "date": "2027-03-14",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "sponge-docks-tarpon-springs",
+        "location_text": "Tarpon Springs Sponge Docks, 735 Dodecanese Blvd.",
+        "area": "tarpon-springs",
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A weekend outdoor craft and art show along Dodecanese Boulevard at the Tarpon Springs Sponge Docks, in its 27th season.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "craft-fair"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/winter/sponge-docks-art-craft-festival-march",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: 'Mar 13-14, 2027 - SPONGE DOCKS MARCH CRAFT ART FESTIVAL ... 27th Season ... Saturday, March 13 10:00 am - 7:00 pm Sunday, March 14 10:00 am - 5:00 pm'. Admission not stated.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "desoto-childrens-parade-2027",
+        "title": "De Soto Children's Parade and Party in the Park",
+        "kind": "parade",
+        "topics": [
+          "family",
+          "history",
+          "latin-heritage"
+        ],
+        "series": "desoto-heritage-festival",
+        "date": "2027-03-26",
+        "start": "10:00",
+        "end": null,
+        "location_text": "Palmetto: from the Manatee County Fairgrounds south on 10th Avenue West and along Fifth Street West to Lamb Park; party at Sutton and Lamb Parks",
+        "area": "bradenton-anna-maria",
+        "lat": 27.517029,
+        "lng": -82.57634,
+        "url": "https://desotohq.com/childrens-parade/",
+        "description": "One of the most adorable and heart-warming events you'll ever see, this Parade puts the kids in charge. It's pure and wholesome fun as floats engineered and built in schoolrooms and at home parade along the historic avenues of Palmetto",
+        "summary": "A children's parade of school- and home-built floats through Palmetto, followed by games and food at Sutton and Lamb Parks; part of the Hernando de Soto Historical Society's festival season.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "desoto",
+          "parade",
+          "kids"
+        ],
+        "source_url": "https://desotohq.com/childrens-parade/",
+        "also_sources": [
+          "https://desotohq.com/"
+        ],
+        "notes": "Page: 'FRIDAY MARCH 26, 2027 10AM SUTTON PARK, PALMETTO'. Coordinates: Sutton Park (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pier-60-sugar-sand-festival-2027",
+        "title": "Pier 60 Sugar Sand Festival",
+        "kind": "festival",
+        "topics": [
+          "arts",
+          "beaches",
+          "family"
+        ],
+        "series": "pier-60-sugar-sand-festival",
+        "date": "2027-03-26",
+        "end_date": "2027-04-11",
+        "start": null,
+        "end": null,
+        "time_text": "17 days. In 2026 the Sugar Sand Walk Exhibit was open Sunday-Thursday 10 am - 9 pm and Friday-Saturday 10 am - 10 pm; 2027 hours not yet posted.",
+        "place": "pier-60",
+        "area": "clearwater-beach",
+        "cost": "Beach activities free; the Sugar Sand Walk Exhibit is ticketed (general admission $16 plus tax per the festival FAQ; free for children 5 and under)",
+        "is_free": false,
+        "url": "https://www.sugarsandfestival.com/",
+        "description": "Pier 60 Sugar Sand Festival is a 17-day sand sculpting festival that pays tribute to Tampa Bay's two most valuable assets: our sugar sand and our sunsets!",
+        "summary": "A sand sculpture festival on Clearwater Beach at Pier 60: a ticketed walk-through exhibit of sculptures made from beach sand in a 24,000-square-foot tent, plus free beach concerts, fireworks, sculpting classes and a Pro-Am competition.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "sand-sculpture",
+          "beach"
+        ],
+        "source_url": "https://www.sugarsandfestival.com/p/festival-info",
+        "also_sources": [
+          "https://www.sugarsandfestival.com/",
+          "https://www.sugarsandfestival.com/p/theexhibit/about-us"
+        ],
+        "notes": "Site banner: 'The Pier 60 Sugar Sand Festival Returns to Clearwater Beach March 26 - April 11, 2027!'. The festival-info page body still carries the 2026 dates (March 27 - April 12, 2026) with the exhibit hours; the FAQ price ($16 plus tax) is not labeled with a year.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pinellas-plant-festival-2027",
+        "title": "Pinellas Plant Festival",
+        "kind": "market",
+        "topics": [
+          "outdoors",
+          "shopping",
+          "food"
+        ],
+        "date": "2027-03-27",
+        "end_date": "2027-03-28",
+        "start": "10:00",
+        "end": "17:00",
+        "time_text": "Sat & Sun 10:00 AM - 5:00 PM",
+        "location_text": "England Brothers Park, 5010 Dave McKay Way, Pinellas Park",
+        "area": "largo",
+        "lat": 27.84525,
+        "lng": -82.702409,
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A weekend plant and garden market in Pinellas Park's England Brothers Park with plant vendors, garden art and brunch food vendors; 2027 is its fourth year.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "plants",
+          "market"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/spring/pinellas-plant-festival",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: 'Pinellas Plant Festival~ 4th Annual Location: England Brothers Park - 5010 Dave McKay Way, Pinellas Park, Florida 33781 Date: March 27-28, 2027 Time: Sat & Sun 10:00 AM - 5:00 PM'. Admission not stated.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-international-film-festival-2027",
+        "title": "Gasparilla International Film Festival (GIFF)",
+        "kind": "film",
+        "topics": [
+          "arts"
+        ],
+        "series": "gasparilla-international-film-festival",
+        "date": "2027-04-01",
+        "end_date": "2027-04-04",
+        "start": null,
+        "end": null,
+        "location_text": "Tampa (screening venues not yet announced)",
+        "area": null,
+        "url": "https://www.gasparillafilmfestival.com/",
+        "description": "The Gasparilla International Film Festival is Tampa Bay's largest celebration of independent film held annually in Tampa, Florida.",
+        "summary": "An independent film festival in Tampa with features, documentaries, shorts and international films, run by the nonprofit Tampa Film Institute.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "film-festival",
+          "gasparilla-season"
+        ],
+        "source_url": "https://www.gasparillafilmfestival.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/gasparilla-season/gasparilla-film-festival/"
+        ],
+        "notes": "Home page: 'APRIL 1 - 4, 2027'; film submissions open. The page mentions AMC locations for assistive listening but names no 2027 venue. Founded in 2006 per the home page.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "mainsail-art-festival-2027",
+        "title": "52nd Annual Mainsail Art Festival",
+        "kind": "festival",
+        "topics": [
+          "arts"
+        ],
+        "series": "mainsail-art-festival",
+        "date": "2027-04-03",
+        "end_date": "2027-04-04",
+        "occurrences": [
+          {
+            "date": "2027-04-03",
+            "start": "09:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2027-04-04",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "time_text": "April 3rd 9:00am to 6:00pm; April 4th 10:00am to 5:00pm",
+        "place": "vinoy-park",
+        "area": "downtown-stpete",
+        "cost": "Free admission",
+        "is_free": true,
+        "url": "https://www.mainsailart.org/",
+        "description": "Each year, more than 100,000 visitors attend the festival to enjoy and purchase quality art and to listen to live musical entertainment. The Mainsail committee of hard-working volunteers produces this annual fine arts festival exhibiting artists competing for $60,000 in prize money.",
+        "summary": "A volunteer-run juried fine art festival in Vinoy Park on the St. Petersburg waterfront, with artists' booths, live music and a student art show; admission is free.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "art-festival",
+          "free"
+        ],
+        "source_url": "https://www.mainsailart.org/festival-info-2-2/",
+        "also_sources": [
+          "https://www.mainsailart.org/"
+        ],
+        "notes": "Home page: '52 nd Annual Mainsail Art Festival APRIL - 3rd & 4th - 2027'. The festival-info page says 'The 51st Annual Mainsail Art Festival will be held ... on April 3rd & 4th, 2027' in one paragraph and '52nd Annual' in another: the edition number is inconsistent on the organizer's own site; the title follows the home page. 'Free admission' and paid parking at the SouthCore garage per the festival-info page.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sun-n-fun-aerospace-expo-2027",
+        "title": "SUN 'n FUN Aerospace Expo",
+        "kind": "convention",
+        "topics": [
+          "thrills",
+          "family"
+        ],
+        "series": "sun-n-fun-aerospace-expo",
+        "date": "2027-04-06",
+        "end_date": "2027-04-11",
+        "start": null,
+        "end": null,
+        "time_text": "Exhibits daily 9 AM - 5 PM; main entrance ticket office from 7 or 8 AM depending on the day; daily airshow schedule not yet posted",
+        "location_text": "SUN 'n FUN campus, south side of Lakeland Linder International Airport, Lakeland",
+        "area": "polk",
+        "lat": 27.983521,
+        "lng": -82.024328,
+        "url": "https://flysnf.org/",
+        "tickets_url": "https://flysnf.org/",
+        "description": "What began in 1974 as a fly-in for sport aviation enthusiasts has grown into one of the largest and most successful aviation events in the world.",
+        "summary": "A six-day aviation convention and fly-in at Lakeland Linder International Airport with daily airshows, aircraft exhibits, forums and workshops.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "airshow",
+          "aviation"
+        ],
+        "source_url": "https://flysnf.org/plan-your-visit/hours/",
+        "also_sources": [
+          "https://flysnf.org/",
+          "https://flysnf.org/about-us/about-sun-n-fun/"
+        ],
+        "notes": "Site header: 'April 6-11, 2027'; the home page mentions 'Behind the Poster: A World to SEA at 53' (53rd edition). About page: 'SUN 'n FUN Aerospace Expo is Florida's largest annual convention of any kind, welcoming more than 200,000 guests each year' (organizer claim). Footer address: 3875 W Pipkin Rd, Lakeland. Coordinates: Sun-N-Fun Road on the campus (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "chasco-fiesta-2027",
+        "title": "Chasco Fiesta",
+        "kind": "festival",
+        "topics": [
+          "history",
+          "music",
+          "family"
+        ],
+        "series": "chasco-fiesta",
+        "date": "2027-04-09",
+        "end_date": "2027-04-17",
+        "occurrences": [
+          {
+            "date": "2027-04-09",
+            "start": "17:00",
+            "end": "23:00"
+          },
+          {
+            "date": "2027-04-10",
+            "start": "11:00",
+            "end": "23:00"
+          },
+          {
+            "date": "2027-04-11",
+            "start": "11:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-12",
+            "start": "17:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-13",
+            "start": "17:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-14",
+            "start": "17:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-15",
+            "start": "17:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-16",
+            "start": "17:00",
+            "end": "23:00"
+          },
+          {
+            "date": "2027-04-17",
+            "start": "11:00",
+            "end": "23:00"
+          }
+        ],
+        "time_text": "Festival hours at Sims Park vary by day (see occurrences)",
+        "location_text": "Sims Park, downtown New Port Richey",
+        "area": "west-pasco",
+        "lat": 28.251431,
+        "lng": -82.72083,
+        "url": "https://chascofiesta.com/",
+        "description": "A 100+ year New Port Richey tradition celebrating culture, music, and community. Chasco Fiesta is a nonprofit organization dedicated to enhancing lives through cultural education and the performing arts. Each spring, Sims Park comes alive with nine days of events in the heart of downtown New Port Richey that bring our community together and welcome visitors from across the region.",
+        "summary": "Nine days of music, a Native American program, parades and events in Sims Park and downtown New Port Richey.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "festival",
+          "native-american",
+          "parade"
+        ],
+        "source_url": "https://chascofiesta.com/",
+        "notes": "Home page section 'Chasco Fiesta 2027 April 9 thru April 17 2027' with 'Festival Hours - Sims Park April 9: 5:00 PM - 11:00 PM April 10: 11:00 AM - 11:00 PM April 11: 11:00 AM - 10:00 PM (April 12-15: 5:00 PM - 10:00 PM) April 16: 5:00 PM - 11:00 PM April 17: 11:00 AM - 11:00 PM'. The rest of the site still shows the 2026 schedule. Coordinates: Sims Park (photon).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-film-festival-2027",
+        "title": "Sarasota Film Festival",
+        "kind": "film",
+        "topics": [
+          "arts"
+        ],
+        "series": "sarasota-film-festival",
+        "date": "2027-04-09",
+        "end_date": "2027-04-18",
+        "start": null,
+        "end": null,
+        "location_text": "Sarasota (2027 venues not yet announced)",
+        "area": "sarasota",
+        "url": "https://www.sarasotafilmfestival.com/",
+        "description": "The Sarasota Film Festival returns April 9th to April 18th, 2027. Film submissions are open now through FilmFreeway.",
+        "summary": "A ten-day film festival in Sarasota with narrative, documentary and short film competitions and audience awards.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "film-festival"
+        ],
+        "source_url": "https://www.sarasotafilmfestival.com/",
+        "notes": "Home page section '2027 Festival Dates'. The site remains a 2026 archive of films, schedule and venues.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-blues-festival-2027",
+        "title": "Tampa Bay Blues Festival",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "series": "tampa-bay-blues-festival",
+        "date": "2027-04-09",
+        "end_date": "2027-04-11",
+        "occurrences": [
+          {
+            "date": "2027-04-09",
+            "start": "12:30",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-10",
+            "start": "12:30",
+            "end": "22:00"
+          },
+          {
+            "date": "2027-04-11",
+            "start": "13:00",
+            "end": "22:00"
+          }
+        ],
+        "time_text": "Gates on Friday and Saturday open at approx. 11am, Sunday at approx. noon. A kick-off party is held Thursday, April 8, at the Palladium (doors 6:30 p.m.). Artists and times subject to change.",
+        "place": "vinoy-park",
+        "area": "downtown-stpete",
+        "is_free": false,
+        "url": "https://www.tampabaybluesfest.com/",
+        "tickets_url": "https://www.tampabaybluesfest.com/",
+        "description": "We are celebrating our 31st year with a huge lineup of incredible blues and roots music!",
+        "summary": "A three-day blues and roots music festival in Vinoy Park on the St. Petersburg waterfront; the 2027 lineup includes Trombone Shorty, JJ Grey & Mofro, Tab Benoit and Shemekia Copeland.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "blues",
+          "music-festival"
+        ],
+        "source_url": "https://www.tampabaybluesfest.com/",
+        "notes": "Home page: 'The Tampa Bay Blues Festival returns to Vinoy Waterfront Park, St Petersburg, Florida on April 9, 10, & 11, 2027'. Daily start/end from the first and last set times listed (Fri 12:30-10:00 p.m., Sat 12:30-10:00 p.m., Sun 1:00-10:00 p.m.). Ticketed (tickets and VIP passes sold on the site); prices not recorded.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "corey-area-spring-art-craft-festival-2027",
+        "title": "Corey Area Spring Art & Craft Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "series": "corey-area-art-craft-festival",
+        "date": "2027-04-10",
+        "end_date": "2027-04-11",
+        "start": "10:00",
+        "end": "17:00",
+        "location_text": "Corey Avenue, St. Pete Beach (363 Corey Ave.)",
+        "area": "st-pete-beach",
+        "lat": 27.742433,
+        "lng": -82.749514,
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A two-day outdoor art and craft show on Corey Avenue in St. Pete Beach; exhibitors sell work they made themselves.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "craft-fair"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/spring/corey-area-art-and-craft-festival-april",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: 'Corey Area Spring Art & Craft Festival ~ 33rd Season Location: 363 Corey Avenue, St. Pete Beach, FL 33706 Date: April 10-11, 10:00 am - 5:00 pm'; the home schedule lists 'APR 10-11, 2027'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "desoto-grand-parade-2027",
+        "title": "De Soto Grand Parade",
+        "kind": "parade",
+        "topics": [
+          "history",
+          "family",
+          "latin-heritage"
+        ],
+        "series": "desoto-heritage-festival",
+        "date": "2027-04-24",
+        "start": "19:30",
+        "end": null,
+        "time_text": "Parade steps off at 7:30 PM; pre-parade block party on Old Main Street from 3:30 PM",
+        "location_text": "Manatee Avenue West, downtown Bradenton (1.75-mile route west toward 43rd Street West)",
+        "area": "bradenton-anna-maria",
+        "lat": 27.495508,
+        "lng": -82.57425,
+        "url": "https://desotohq.com/grand-parade/",
+        "description": "With over 150 entries, the De Soto Grand Parade is one of the largest and oldest parades in the Southeastern United States. Over 100,000 people line the streets of Bradenton to view the illuminated floats and catch a glimpse of our new Hernando de Soto, Captain of the Crewe and their newly crowned Queen and Princess.",
+        "summary": "An evening parade of illuminated floats along Manatee Avenue in Bradenton, the closing event of the Hernando de Soto Historical Society's heritage festival week.",
+        "status": "scheduled",
+        "featured": true,
+        "tags": [
+          "desoto",
+          "parade"
+        ],
+        "source_url": "https://desotohq.com/grand-parade/",
+        "also_sources": [
+          "https://desotohq.com/"
+        ],
+        "notes": "Page: 'SATURDAY APRIL 24, 2027 7:30PM MANATEE AVENUE'. Society calendar: 04/21/2027 Queen Selection Program, 04/22 Dignitary Reception, 04/23 Coronation Ball, 04/24 Grand Parade; 04/17/2027 City Capture. Coordinates: 1300 Manatee Ave W (census), on the route near the staging area.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sponge-docks-april-craft-art-festival-2027",
+        "title": "Sponge Docks April Craft Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "series": "sponge-docks-craft-art-festival",
+        "date": "2027-04-24",
+        "end_date": "2027-04-25",
+        "occurrences": [
+          {
+            "date": "2027-04-24",
+            "start": "10:00",
+            "end": "19:00"
+          },
+          {
+            "date": "2027-04-25",
+            "start": "10:00",
+            "end": "17:00"
+          }
+        ],
+        "place": "sponge-docks-tarpon-springs",
+        "location_text": "Tarpon Springs Sponge Docks, 735 Dodecanese Blvd.",
+        "area": "tarpon-springs",
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A weekend outdoor craft and art show at the Tarpon Springs Sponge Docks.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "craft-fair"
+        ],
+        "source_url": "https://www.sikpromotions.com/applicants/spring/sponge-docks-april-art-craft-festival",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Organizer applicant page: 'Apr 24-25, 2027 - SPONGE DOCKS APRIL CRAFT ART FESTIVAL ... Saturday, April 24 10:00 am - 7:00 pm Sunday, April 25 10:00 am - 5:00 pm'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-riverfest-2027",
+        "title": "Tampa Riverfest",
+        "kind": "festival",
+        "topics": [
+          "music",
+          "family",
+          "water",
+          "food"
+        ],
+        "series": "tampa-riverfest",
+        "date": "2027-04-30",
+        "end_date": "2027-05-01",
+        "start": null,
+        "end": null,
+        "place": "tampa-riverwalk",
+        "area": "downtown-tampa",
+        "is_free": true,
+        "url": "https://thetampariverwalk.com/events/riverfest.html",
+        "description": "Tampa Riverfest is a free, family-friendly celebration along the Tampa Riverwalk featuring live music, local food and drinks, outdoor activities, entertainment and fun for all ages.",
+        "summary": "A two-day free festival along the Tampa Riverwalk run by the Friends of the Riverwalk, with music, food trucks and activities; in 2026 it included a lantern parade from Water Works Park to Curtis Hixon Park.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "riverwalk",
+          "free"
+        ],
+        "source_url": "https://thetampariverwalk.com/events/riverfest.html",
+        "also_sources": [
+          "https://www.visitflorida.com/event/tampa-riverfest/5077/",
+          "https://thetampariverwalk.com/events/lantern-parade-at-riverfest.html"
+        ],
+        "notes": "Friends of the Riverwalk page: 'We can't wait to celebrate with you again on April 30 & May 1 for Riverfest 2027!' The description (and 'free') is from the Visit Florida listing (2027-04-30 to 2027-05-01). May 1 falls after the data window; the record starts inside it.",
+        "checked": "2026-09-27"
+      }
+    ],
+    "series": [
+      {
+        "id": "childrens-gasparilla",
+        "name": "Ashley Children's Gasparilla",
+        "kind": "parade",
+        "topics": [
+          "family",
+          "history"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "Held annually on the second to last Saturday of January",
+        "place": "bayshore-boulevard",
+        "area": "hyde-park",
+        "since": "1947",
+        "url": "https://gasparillapiratefest.com/childrens/",
+        "summary": "The children's edition of Gasparilla on Bayshore Boulevard: a bike rodeo, preschoolers' stroll, airshow, an alcohol-free children's parade and a fireworks finale, one week before the Pirate Fest.",
+        "quote": "Family-friendly festivities include a Bicycle Safety Rodeo, Preschoolers' Stroll, Pirate-technics fireworks extravaganza, and the largest children's parade in the United States.",
+        "quote_source": "https://gasparillapiratefest.com/gasparilla-history/",
+        "featured": true,
+        "source_url": "https://gasparillapiratefest.com/gasparilla-history/",
+        "also_sources": [
+          "https://gasparillapiratefest.com/childrens/"
+        ],
+        "notes": "History page timeline: '1947 - The first Gasparilla Children's Festival is held'; '2002 - Children's Gasparilla is held on a Saturday for the first time'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "corey-area-art-craft-festival",
+        "name": "Corey Area Art & Craft Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "months": [
+          1,
+          4,
+          6,
+          10,
+          12
+        ],
+        "when_text": "Several weekends a year: early January, April, June, October and December",
+        "location_text": "Corey Avenue, St. Pete Beach",
+        "area": "st-pete-beach",
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A recurring outdoor art and craft show on St. Pete Beach's Corey Avenue run by SIK Promotions.",
+        "featured": false,
+        "source_url": "https://www.sikpromotions.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "epiphany-tarpon-springs",
+        "name": "Epiphany in Tarpon Springs",
+        "kind": "cultural",
+        "topics": [
+          "history",
+          "water"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "January 6th (the Feast of Epiphany)",
+        "location_text": "St. Nicholas Greek Orthodox Cathedral and Spring Bayou, Tarpon Springs",
+        "area": "tarpon-springs",
+        "url": "https://stnicholastarpon.org/epiphany",
+        "summary": "The Greek Orthodox Epiphany in Tarpon Springs: a liturgy at St. Nicholas Cathedral, a procession to Spring Bayou, the blessing of the waters, a dove release and young men diving for a cross thrown by the Archbishop.",
+        "quote": "Our community has commemorated the Christ's Baptism with the ceremonial cross dive for close to a century.",
+        "featured": true,
+        "source_url": "https://stnicholastarpon.org/epiphany",
+        "also_sources": [
+          "https://stnicholastarpon.org/",
+          "https://spongedocks.net/event/tarpon-springs-epiphany/"
+        ],
+        "notes": "spongedocks.net: 'The 120th annual Epiphany will take place on Jan 6, 2026.' No founding year stated on the cathedral page, so since is null.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-rv-supershow",
+        "name": "Florida RV SuperShow",
+        "kind": "convention",
+        "topics": [
+          "outdoors"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "Mid-January (public days January 13-17 in 2027)",
+        "place": "florida-state-fairgrounds",
+        "area": "east-tampa",
+        "url": "https://www.frvta.org/show/florida-rv-supershow/",
+        "summary": "The Florida RV Trade Association's January RV show at the Florida State Fairgrounds, where manufacturers show new models; 2026 attendance was 70,635 per the organizer.",
+        "featured": false,
+        "source_url": "https://www.frvta.org/show/florida-rv-supershow/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-pirate-fest",
+        "name": "Gasparilla Pirate Fest (Invasion and Parade of Pirates)",
+        "kind": "parade",
+        "topics": [
+          "history",
+          "music",
+          "water"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "On the last Saturday of January",
+        "place": "bayshore-boulevard",
+        "location_text": "Tampa Convention Center (invasion), Bayshore Boulevard and downtown Tampa (parade)",
+        "area": "hyde-park",
+        "since": "1904",
+        "url": "https://gasparillapiratefest.com/",
+        "summary": "Tampa's pirate festival: Ye Mystic Krewe of Gasparilla sails the Jose Gasparilla II into downtown to take the key to the city, then parades along Bayshore Boulevard. An Outbound Voyage in late February or early March ends the season.",
+        "quote": "Gasparilla is Tampa's signature event, celebrated annually since 1904 and hosted by Ye Mystic Krewe of Gasparilla.",
+        "quote_source": "https://gasparillapiratefest.com/gasparilla-history/",
+        "featured": true,
+        "source_url": "https://gasparillapiratefest.com/gasparilla-history/",
+        "also_sources": [
+          "https://gasparillapiratefest.com/pirate-fest/",
+          "https://www.tampa.gov/special-events-coordination/news-and-events/featured-events/gasparilla"
+        ],
+        "notes": "History page: '2001 - The Gasparilla Invasion and Parade of Pirates moves to the last Saturday in January'; the page says more than 300,000 attend and calls it 'the third-largest parade in the United States' (organizer claim, not repeated in summary).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gulfport-tuesday-fresh-market",
+        "name": "Gulfport Tuesday Fresh Market",
+        "kind": "market",
+        "topics": [
+          "food",
+          "shopping"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Every Tuesday, year round, 9am - 2pm",
+        "location_text": "Beach Boulevard below 28th Avenue South, Gulfport's historic Waterfront District",
+        "area": "gulfport",
+        "url": "https://visitgulfportflorida.com/event/gulfport-fresh-market/",
+        "summary": "A weekly market in Gulfport's waterfront district with produce, prepared foods, artisan goods, crafts and local musicians; parking in the village is free.",
+        "quote": "The Gulfport Tuesday Fresh Market is open year-round.",
+        "featured": false,
+        "source_url": "https://visitgulfportflorida.com/event/gulfport-fresh-market/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hyde-park-village-fresh-market",
+        "name": "Hyde Park Village Fresh Market",
+        "kind": "market",
+        "topics": [
+          "food",
+          "shopping"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Every first Sunday of the month, 10am-2pm",
+        "place": "hyde-park-village",
+        "area": "hyde-park",
+        "url": "https://hydeparkvillage.com/events/",
+        "summary": "A monthly farmers market in Hyde Park Village with more than 80 local vendors of produce, handmade goods and plants, and live music in Village Circle; pets are welcome.",
+        "quote": "Fresh Market is a monthly farmers market featuring over 80 local vendors including produce, handcrafted goods, plants and more.",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/tampa-events/details/hyde-park-village-fresh-market/101422/",
+        "also_sources": [
+          "https://hydeparkvillage.com/events/"
+        ],
+        "notes": "Visit Tampa Bay listing: 'every first Sunday of the month from 10am-2pm', 1602 W Swann Ave; 'Recurring monthly on the 1st Sunday'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "kumquat-festival",
+        "name": "Kumquat Festival",
+        "kind": "festival",
+        "topics": [
+          "food",
+          "family",
+          "shopping"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "The last Saturday in January",
+        "location_text": "Historic Downtown Dade City",
+        "area": "lutz-wesley-chapel",
+        "url": "https://www.eastpascochamber.org/annual-kumquat-festival/",
+        "summary": "Dade City's one-day festival for the kumquat, grown nearby in St. Joseph, with food, crafts, a car show and a farmers market; admission and downtown parking are free.",
+        "quote": "With nearby St. Joseph known as the \"Kumquat Capital of the World,\" the Chamber, along with local kumquat families and growers turned this tiny, tangy fruit into the star of a unique annual family tradition.",
+        "featured": false,
+        "source_url": "https://www.eastpascochamber.org/annual-kumquat-festival/",
+        "notes": "2027 is the 30th annual festival; the founding year is not stated.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "plant-city-mlk-festival",
+        "name": "Plant City Dr. Martin Luther King Jr. Festival",
+        "kind": "parade",
+        "topics": [
+          "black-history",
+          "music",
+          "family"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "Martin Luther King Jr. holiday weekend (January 15-18 in 2027)",
+        "location_text": "Sadye Gibbs Martin Community Center and downtown Plant City",
+        "area": "plant-city",
+        "since": "1986",
+        "url": "https://www.plantcitymlkfestival.com/",
+        "summary": "Plant City's MLK weekend festival with a downtown parade, a battle of drumlines, an expo and a leadership breakfast, presented by the Improvement League of Plant City.",
+        "quote": "Founded in 1986 by the late Mr. Jerry Bailey.",
+        "featured": false,
+        "source_url": "https://www.plantcitymlkfestival.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "safety-harbor-sunday-market",
+        "name": "Sunday Market on Main Street (Safety Harbor)",
+        "kind": "market",
+        "topics": [
+          "food",
+          "shopping"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Each Sunday, 10:00 AM - 3:00 PM",
+        "location_text": "John Wilson Park and Gazebo, Main Street, Safety Harbor",
+        "area": "safety-harbor",
+        "url": "https://www.cityofsafetyharbor.com/calendar.aspx?EID=22914",
+        "summary": "A weekly Sunday market at the gazebo in John Wilson Park on Safety Harbor's Main Street with fresh-market, craft and food vendors.",
+        "quote": "Come out to the Gazebo each Sunday for fresh market vendors, craft vendors and food vendors.",
+        "featured": false,
+        "source_url": "https://www.cityofsafetyharbor.com/calendar.aspx?EID=22914",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "safety-harbor-third-friday",
+        "name": "Safety Harbor 3rd Friday Street Celebration",
+        "kind": "festival",
+        "topics": [
+          "food",
+          "drink",
+          "music",
+          "shopping"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Monthly on the third Friday, 6:00 PM - 10:00 PM (per the city calendar listing for December 18, 2026)",
+        "location_text": "Nine blocks of Main Street, downtown Safety Harbor",
+        "area": "safety-harbor",
+        "url": "https://www.cityofsafetyharbor.com/calendar.aspx?EID=22318",
+        "summary": "A monthly street party on nine blocks of Main Street in Safety Harbor with entertainment and late shop hours; the street is wet-zoned so drinks bought from local bars can be carried within the event area.",
+        "quote": "This much-loved monthly community event benefits the Safety Harbor business community and brings people to the town we all love.",
+        "featured": false,
+        "source_url": "https://www.cityofsafetyharbor.com/calendar.aspx?EID=22318",
+        "also_sources": [
+          "https://www.cityofsafetyharbor.com/72/Special-Events"
+        ],
+        "notes": "Read from the City of Safety Harbor calendar iCal feed (catID 18), which lists the event on 2026-12-18 18:00-22:00 with this description. 'Every month' is the page's 'monthly'; whether it runs every month of the year is not stated, so months lists all twelve by that wording.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-mlk-parade",
+        "name": "St. Pete MLK Parade (MLK Dream Big Weekend)",
+        "kind": "parade",
+        "topics": [
+          "black-history",
+          "music"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "Martin Luther King Jr. Day (Monday, January 18, 2027)",
+        "location_text": "Downtown St. Petersburg",
+        "area": "downtown-stpete",
+        "since": "1985",
+        "url": "https://www.stpetemlkparade.com/",
+        "summary": "St. Petersburg's parade on Martin Luther King Jr. Day, with marching bands, floats and community groups downtown; the organizer counts it among the largest and longest-running MLK Day parades in the nation.",
+        "quote": "Since its start in 1985, the MLK Parade has drawn an estimated 2.5 million spectators to the streets of St. Petersburg",
+        "quote_source": "https://www.stpetemlkparade.com/history-of-the-parade",
+        "featured": true,
+        "source_url": "https://www.stpetemlkparade.com/history-of-the-parade",
+        "also_sources": [
+          "https://www.stpetemlkparade.com/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-saturday-morning-market",
+        "name": "St. Pete Saturday Morning Market",
+        "kind": "market",
+        "topics": [
+          "food",
+          "shopping"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Every Saturday from October through August (closed in September): 9:00 am - 2:00 pm October-May, 9:00 am - 1:00 pm June-August",
+        "location_text": "Al Lang Stadium lot, 100 1st Ave. SE (October-May); Williams Park, 350 2nd Ave. N (June-August)",
+        "area": "downtown-stpete",
+        "url": "https://saturdaymorningmarket.com/",
+        "summary": "A free weekly open-air market in downtown St. Petersburg with farm produce, artisan foods, food trucks and arts and crafts; it moves to shaded Williams Park in summer.",
+        "featured": true,
+        "source_url": "https://www.visitstpeteclearwater.com/event/st-pete-saturday-morning-market/2061",
+        "notes": "Visit St. Pete-Clearwater listing: 'October 3, 2026 - August 28, 2027 (closed Septembers)', hours and locations as above, 'Free admission'. The market's own site returned a captcha.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-petersburg-power-sailboat-show",
+        "name": "St. Petersburg Power and Sailboat Show",
+        "kind": "boat-show",
+        "topics": [
+          "water"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "January, four days (Jan 14-17 in 2027)",
+        "location_text": "Mahaffey Theater Yacht Basin and Albert Whitted Park, St. Petersburg",
+        "area": "downtown-stpete",
+        "url": "https://www.stpeteboatshow.com/",
+        "summary": "An annual boat show on the downtown St. Petersburg waterfront with boats in the water and on land and a marine gear tent.",
+        "quote": "The St. Petersburg Power and Sailboat Show, Presented by Progressive, is the largest boat show on the Gulf Coast.",
+        "featured": false,
+        "source_url": "https://www.stpeteboatshow.com/attend/show-overview/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sunsets-at-pier-60",
+        "name": "Sunsets at Pier 60",
+        "kind": "festival",
+        "topics": [
+          "beaches",
+          "music",
+          "family"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "when_text": "Nightly, year-round, around sunset",
+        "place": "pier-60",
+        "area": "clearwater-beach",
+        "since": "1995",
+        "url": "https://www.sugarsandfestival.com/p/theexhibit/about-us",
+        "summary": "A free nightly sunset celebration at Pier 60 on Clearwater Beach with local musicians, street performers and craft sellers, run by a nonprofit that also produces the Sugar Sand Festival.",
+        "quote": "Sunsets at Pier 60 debuted on March 17, 1995 as a year-round nightly sunset celebration on the iconic Pier 60.",
+        "featured": true,
+        "source_url": "https://www.sugarsandfestival.com/p/theexhibit/about-us",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/events-festivals/summer"
+        ],
+        "notes": "Activities (live music from local artists, street performers, souvenirs) are from the Visit St. Pete-Clearwater summer page ('daily festival commemorating the sunset over the Gulf in Clearwater Beach'). The about page calls it 'a free, family-friendly destination'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-black-heritage-festival",
+        "name": "Tampa Bay Black Heritage Festival",
+        "kind": "festival",
+        "topics": [
+          "black-history",
+          "music",
+          "arts"
+        ],
+        "months": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "when_text": "Traditionally begins the weekend before the Dr. Martin Luther King, Jr. holiday and extends through the month of April; The Fest @ Tampa Bay music festival is in April",
+        "location_text": "Tampa (events across the city; The Fest @ Tampa Bay at Curtis Hixon Waterfront Park)",
+        "area": "downtown-tampa",
+        "url": "https://tampablackheritage.org/",
+        "summary": "A season of Black heritage events in Tampa from January to April: business seminars, the Run For Us 5K and The Fest @ Tampa Bay, two days of live music, art and community at Curtis Hixon Waterfront Park.",
+        "quote": "The Tampa Bay Black Heritage Festival is the largest African-American event in the bay area and has been selected as one of the Top 20 Events by the Southeast Tourism Society six times",
+        "quote_source": "https://tampablackheritage.org/about-tbbhf/",
+        "featured": true,
+        "source_url": "https://tampablackheritage.org/about-tbbhf/",
+        "also_sources": [
+          "https://tampablackheritage.org/",
+          "https://tampabayfest.org/"
+        ],
+        "notes": "The Fest @ Tampa Bay (the renamed Tampa Bay Black Heritage Music Fest) is listed for 'April 2027 (Event details subject to change)' at Curtis Hixon Waterfront Park; no exact 2027 date yet, so no dated event record. Business Seminar Series Jan 19 - Apr 13, 2027 (Tuesdays 9-11 am) not recorded as an event.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-mlk-parade",
+        "name": "Tampa Martin Luther King Jr. Parade",
+        "kind": "parade",
+        "topics": [
+          "black-history",
+          "family"
+        ],
+        "months": [
+          1
+        ],
+        "when_text": "Annually on the Martin Luther King Jr. national holiday (third Monday of January)",
+        "location_text": "Tampa",
+        "url": "https://www.tampa.gov/info/feature-events",
+        "summary": "Tampa's parade on the Martin Luther King Jr. holiday, listed by the City of Tampa among the city's yearly events.",
+        "quote": "A fun, exciting and family friendly event occurring annually on the national holiday commemorating the birth of one of our greatest American heroes, Dr. Martin Luther King, Jr.",
+        "featured": false,
+        "source_url": "https://www.tampa.gov/info/feature-events",
+        "notes": "The City of Tampa yearly-events page gives no route, organizer or 2027 details; area left null (route not stated). 'Third Monday of January' is the federal holiday's rule, not the page's wording; the page says 'on the national holiday'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "bay-area-renaissance-festival",
+        "name": "Bay Area Renaissance Festival",
+        "kind": "festival",
+        "topics": [
+          "history",
+          "family",
+          "arts"
+        ],
+        "months": [
+          2,
+          3
+        ],
+        "when_text": "Theme weekends from February into March (February 6 - March 21 in 2027, per fair directories)",
+        "location_text": "12838 Auton Rd., Dade City",
+        "area": "lutz-wesley-chapel",
+        "since": "1979",
+        "url": "https://www.bayarearenfest.com",
+        "summary": "A seasonal Renaissance fair near Dade City with jousting, stage shows, costumed characters and an artisan marketplace.",
+        "featured": false,
+        "source_url": "https://www.therenlist.com/fairs/bay-area-renaissance-festival",
+        "also_sources": [
+          "https://www.renfest.org/festivals/bay-area-renaissance-festival",
+          "https://www.visitflorida.com/listing/bay-area-renaissance-festival/31710/"
+        ],
+        "notes": "since '1979' is from therenlist.com ('Founded in 1979'); the organizer's own site could not be read (captcha).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "clearwater-sea-blues-festival",
+        "name": "Clearwater Sea-Blues Festival",
+        "kind": "festival",
+        "topics": [
+          "music",
+          "food"
+        ],
+        "months": [
+          2,
+          3
+        ],
+        "when_text": "Last weekend of February into the beginning of March (February 28 - March 1 in 2026)",
+        "location_text": "Coachman Park, 255 Drew St., downtown Clearwater",
+        "area": "downtown-clearwater",
+        "url": "https://www.visitstpeteclearwater.com/event/clearwater-sea-blues-festival/52346",
+        "summary": "A weekend blues festival at Coachman Park in downtown Clearwater with national recording artists, local market vendors, seafood, craft beer and wine; general admission is free, with VIP and reserved seating sold.",
+        "featured": false,
+        "source_url": "https://www.visitstpeteclearwater.com/event/clearwater-sea-blues-festival/52346",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/events-festivals/winter"
+        ],
+        "notes": "Organizer pages unavailable: clearwaterseablues.com now hosts an unrelated gambling site, and the City of Clearwater parks page (myclearwaterparks.com/Parks-Events/Clearwater-Sea-Blues-Festival) returned 404/403. Facts from the Visit St. Pete-Clearwater listing (2026 edition). No 2027 date published.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "fiesta-day-ybor-city",
+        "name": "Fiesta Day (Ybor City)",
+        "kind": "cultural",
+        "topics": [
+          "history",
+          "latin-heritage",
+          "food"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "February",
+        "place": "ybor-city-historic-district",
+        "area": "ybor-city",
+        "url": "https://www.tampa.gov/info/feature-events",
+        "summary": "A February celebration in Ybor City of the immigrant communities that settled the neighborhood, listed by the City of Tampa among its yearly events.",
+        "quote": "Fiesta Day honors the Cuban, German, Italian, African-Cuban, Jewish and Spanish immigrants who first settled in Ybor in 1886.",
+        "featured": false,
+        "source_url": "https://www.tampa.gov/info/feature-events",
+        "notes": "Only source read is the City of Tampa yearly-events list; no organizer page, date or 2027 details found.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-state-fair",
+        "name": "Florida State Fair",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "food",
+          "thrills"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "12 days in February (Feb 4-15 in 2027)",
+        "place": "florida-state-fairgrounds",
+        "area": "east-tampa",
+        "since": "1904",
+        "url": "https://www.floridastatefair.com/",
+        "summary": "Florida's state fair: rides, fair food, livestock and agriculture shows and Cracker Country's living history village, held at the fairgrounds east of Tampa.",
+        "quote": "What began with a small start in 1904, at Henry B. Plant's Tampa Bay Hotel, has grown to encompass a family of brands across our sprawling property",
+        "featured": true,
+        "source_url": "https://floridastatefairgrounds.com/about-us/",
+        "also_sources": [
+          "https://floridastatefairgrounds.com/event/2027-florida-state-fair/2027-02-04/"
+        ],
+        "notes": "About page: first fair 1904 at the Tampa Bay Hotel; combined with the Gasparilla Carnival in 1915; the Florida State Fair Authority was created in 1975 and the fair moved to the current grounds off I-4.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-music-festival",
+        "name": "Gasparilla Music Festival",
+        "kind": "concert",
+        "topics": [
+          "music",
+          "food"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "Held each February during Gasparilla season per Visit Tampa Bay; the 2027 date is listed as \"DATE TBD\"",
+        "place": "julian-b-lane-riverfront-park",
+        "area": "downtown-tampa",
+        "url": "https://gasparillamusic.com/",
+        "summary": "A nonprofit multi-stage music festival in downtown Tampa's Julian B. Lane Riverfront Park whose proceeds support youth music education.",
+        "quote": "Proceeds from GMF benefit youth music education!",
+        "quote_source": "https://gasparillamusic.com/",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/tampa-events/gasparilla-season/gasparilla-music-festival/",
+        "also_sources": [
+          "https://gasparillamusic.com/"
+        ],
+        "notes": "Visit Tampa Bay page: 'GASPARILLA MUSIC FESTIVAL DATE TBD'; says the Gasparilla Music Foundation was founded in 2011 and the festival takes place in Julian B. Lane Park. The Tampa music page says 'Music lovers flock to GMF each February'. The festival's own site lists a 2026 lineup and schedule (the 2025 edition is absent from its lineup archive). No 2027 event record.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gulfport-get-rescued",
+        "name": "Gulfport's Get Rescued",
+        "kind": "festival",
+        "topics": [
+          "family",
+          "wildlife"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "Always the last Saturday in February",
+        "location_text": "Beach Blvd. S., downtown Gulfport",
+        "area": "gulfport",
+        "url": "https://visitgulfportflorida.com/event/get-rescued/",
+        "summary": "A free animal rescue and adoption festival in downtown Gulfport run with the Gulfport Merchants Chamber.",
+        "featured": false,
+        "source_url": "https://www.sikpromotions.com/applicants/winter/applicants-get-rescued",
+        "also_sources": [
+          "https://visitgulfportflorida.com/event/get-rescued/"
+        ],
+        "notes": "Applicant page: 'The city hosts the annual \"Get Rescued\" festival (always the last Saturday in February)'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "localtopia",
+        "name": "Localtopia",
+        "kind": "festival",
+        "topics": [
+          "shopping",
+          "food",
+          "family"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "A Saturday in February (February 20 in 2027)",
+        "place": "williams-park",
+        "area": "downtown-stpete",
+        "since": "2014",
+        "url": "https://localtopia.keepsaintpetersburglocal.org/",
+        "summary": "A free street fair of St. Petersburg's independent businesses and community organizations in Williams Park, run by Keep St. Petersburg Local.",
+        "quote": "The first LOCALTOPIA took place on February 1, 2014.",
+        "featured": false,
+        "source_url": "https://localtopia.keepsaintpetersburglocal.org/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pigz-in-zhills-bbq-blues-festival",
+        "name": "Pigz in Z'Hills BBQ & Blues Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "A Saturday in early February (February 6 in 2027)",
+        "location_text": "Downtown 5th Avenue, Zephyrhills",
+        "area": "lutz-wesley-chapel",
+        "since": "2010",
+        "url": "https://www.eastpascochamber.org/pigz-in-zhills-bbq-blues-festival/",
+        "summary": "The Greater East Pasco Chamber of Commerce's barbecue and blues festival in downtown Zephyrhills.",
+        "quote": "Since 2010, BBQ & Blues has pulled more than 3 million dollars into the Zephyrhills area.",
+        "quote_source": "https://www.visitflorida.com/event/17th-annual-pigz-in-zhills-bbq-%26-blues-festival/5032/",
+        "featured": false,
+        "source_url": "https://www.eastpascochamber.org/pigz-in-zhills-bbq-blues-festival/",
+        "also_sources": [
+          "https://www.visitflorida.com/event/17th-annual-pigz-in-zhills-bbq-%26-blues-festival/5032/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sant-yago-knight-parade",
+        "name": "Krewe of Sant' Yago Illuminated Knight Parade",
+        "kind": "parade",
+        "topics": [
+          "history",
+          "latin-heritage",
+          "nightlife"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "Every February, beginning around 7pm (February 14 in 2026; the 2027 date is not yet posted)",
+        "location_text": "7th Avenue, Ybor City",
+        "area": "ybor-city",
+        "since": "1974",
+        "url": "https://krewesantyago.org/knight-parade-2",
+        "summary": "A night parade of illuminated floats, marching bands and krewes on Ybor City's 7th Avenue, hosted by the Krewe of the Knights of Sant' Yago as part of Gasparilla season.",
+        "quote": "The Krewe of the Knights of Sant' Yago have hosted the Illuminated Knight Parade every year since 1974.",
+        "featured": true,
+        "source_url": "https://krewesantyago.org/knight-parade-2",
+        "also_sources": [
+          "https://www.tampa.gov/special-events-coordination/news-and-events/featured-events/sant-yago-knight-parade"
+        ],
+        "notes": "Krewe page (checked 2026-09-27) still shows the 2026 parade: 'February 14th, 2026. The parade begins around 7pm on 7th Avenue in Ybor City.' No 2027 event record until the krewe posts the date.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-collard-green-festival",
+        "name": "Tampa Bay Collard Green Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "black-history",
+          "music"
+        ],
+        "months": [
+          2
+        ],
+        "when_text": "A Saturday in February (February 14 in 2026, 9:00 am - 4:00 pm)",
+        "location_text": "2240 9th Ave. S., St. Petersburg",
+        "area": "south-stpete",
+        "url": "https://linktr.ee/tbcgf",
+        "summary": "A free block-party festival in south St. Petersburg celebrating soul food and collard greens, with a farmers market, food trucks, artisans, live music and a collard cook-off; its organizer also presents the St. Pete MLK Parade.",
+        "featured": false,
+        "source_url": "https://www.visitstpeteclearwater.com/event/tampa-bay-collard-green-festival/48911",
+        "also_sources": [
+          "https://www.stpetemlkparade.com/"
+        ],
+        "notes": "Visit St. Pete-Clearwater listing (2026 edition): 'Saturday, February 14, 2026 - 9:00 am - 4:00 pm', '2240 9th Ave S. St. Petersburg, FL 33712', 'Admission is free.' The organizer's own site (tampabaycollardfestival.org) did not respond; its link-in-bio page was not read. No 2027 date found.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "busch-gardens-food-wine-garden-festival",
+        "name": "Busch Gardens Food, Wine & Garden Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "drink",
+          "music",
+          "thrills"
+        ],
+        "months": [
+          3,
+          4,
+          5
+        ],
+        "when_text": "Select dates in spring (March 6 - May 10 in 2026), 12pm to park close",
+        "place": "busch-gardens-tampa-bay",
+        "area": "north-tampa",
+        "url": "https://buschgardens.com/tampa/events/food-and-wine-festival/",
+        "summary": "A spring festival at Busch Gardens Tampa Bay with food and drink booths across the park and weekend concerts, included with park admission.",
+        "featured": false,
+        "source_url": "https://buschgardens.com/tampa/events/food-and-wine-festival/",
+        "notes": "Read with WebFetch (curl gets 403). Page states the 2026 run 'March 6, 2026 through May 10, 2026', '12pm to park close', 'Free with park admission', over 100 culinary flavors and concerts by 20 acts. No 2027 dates, so no event record.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "chasco-fiesta",
+        "name": "Chasco Fiesta",
+        "kind": "festival",
+        "topics": [
+          "history",
+          "music",
+          "family"
+        ],
+        "months": [
+          3,
+          4
+        ],
+        "when_text": "Each spring, nine days (March 20-28 in 2026; April 9-17 in 2027)",
+        "location_text": "Sims Park and downtown New Port Richey",
+        "area": "west-pasco",
+        "url": "https://chascofiesta.com/",
+        "summary": "New Port Richey's spring festival of music, parades, a Native American program and community events in Sims Park.",
+        "quote": "A 100+ year New Port Richey tradition celebrating culture, music, and community.",
+        "featured": false,
+        "source_url": "https://chascofiesta.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "desoto-heritage-festival",
+        "name": "De Soto Heritage Festival",
+        "kind": "parade",
+        "topics": [
+          "history",
+          "family",
+          "latin-heritage"
+        ],
+        "months": [
+          3,
+          4
+        ],
+        "when_text": "A season of events ending with the Grand Parade in late April (April 24 in 2027); the Children's Parade is in late March",
+        "location_text": "Bradenton and Palmetto",
+        "area": "bradenton-anna-maria",
+        "url": "https://desotohq.com/",
+        "summary": "The Hernando de Soto Historical Society's festival of Manatee County's Spanish-American heritage: a children's parade in Palmetto, a City Capture, a coronation ball and an illuminated Grand Parade on Manatee Avenue in Bradenton.",
+        "quote": "The Hernando de Soto Historical Society is a not-for-profit organization founded in 1939 and consists of volunteer members who foster and facilitate an appreciation of Manatee County's Spanish - American heritage.",
+        "featured": true,
+        "source_url": "https://desotohq.com/",
+        "also_sources": [
+          "https://desotohq.com/grand-parade/"
+        ],
+        "notes": "since left null: 1939 is the society's founding year, not stated as the festival's first year.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "florida-strawberry-festival",
+        "name": "Florida Strawberry Festival",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "food",
+          "music"
+        ],
+        "months": [
+          3
+        ],
+        "when_text": "Each spring, 11 days and nights (March 4-14 in 2027)",
+        "place": "florida-strawberry-festival-grounds",
+        "area": "plant-city",
+        "since": "1930",
+        "url": "https://flstrawberryfestival.com/",
+        "summary": "Plant City's harvest fair for the local strawberry crop: agriculture and livestock exhibits, a midway, parades, strawberry shortcake and headline country and pop concerts.",
+        "quote": "The event began back in 1930 when members of the newly organized Plant City Lions Club conceived the idea of an event to celebrate the bountiful harvest of strawberries.",
+        "featured": true,
+        "source_url": "https://flstrawberryfestival.com/history-2/",
+        "also_sources": [
+          "https://flstrawberryfestival.com/information/admission/"
+        ],
+        "notes": "History page: reactivated in 1948 after a six-year hiatus during and after World War II.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-festival-of-the-arts",
+        "name": "Raymond James Gasparilla Festival of the Arts",
+        "kind": "festival",
+        "topics": [
+          "arts"
+        ],
+        "months": [
+          3
+        ],
+        "when_text": "The first weekend of March",
+        "place": "julian-b-lane-riverfront-park",
+        "area": "downtown-tampa",
+        "since": "1971",
+        "url": "https://gasparillaarts.com/",
+        "summary": "A volunteer-run juried outdoor fine art festival in downtown Tampa, begun as a sidewalk art festival; admission is free and artists compete for prize money.",
+        "quote": "The time of year was changed from the sometimes blustery February to the first weekend of March.",
+        "featured": true,
+        "source_url": "https://gasparillaarts.com/about-the-festival/",
+        "notes": "About page: 'In 1970, a group of downtown business people conceived the notion of a sidewalk art festival'; 'To jury the first show in 1971'. 2027 is billed as the 57th annual, consistent with a first show in 1971.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "pier-60-sugar-sand-festival",
+        "name": "Pier 60 Sugar Sand Festival",
+        "kind": "festival",
+        "topics": [
+          "arts",
+          "beaches",
+          "family"
+        ],
+        "months": [
+          3,
+          4
+        ],
+        "when_text": "17 days in late March and April (March 26 - April 11 in 2027)",
+        "place": "pier-60",
+        "area": "clearwater-beach",
+        "since": "2013",
+        "url": "https://www.sugarsandfestival.com/",
+        "summary": "An annual sand sculpture festival on Clearwater Beach, created by Sunsets at Pier 60 with the City of Clearwater: a ticketed sculpture exhibit and free beach activities.",
+        "quote": "Master sand sculptors use 1,000 tons of Clearwater Beach sand to create a walk-through art exhibit housed in a 24,000-square-foot structure.",
+        "quote_source": "https://www.sugarsandfestival.com/p/theexhibit/about-us",
+        "featured": true,
+        "source_url": "https://www.sugarsandfestival.com/p/theexhibit/about-us",
+        "notes": "About page: 'In 2013, the nightly sunset celebration created a new destination event in partnership with the city of Clearwater called the Pier 60 Sugar Sand Festival.'",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "river-o-green-fest",
+        "name": "River O'Green Fest",
+        "kind": "festival",
+        "topics": [
+          "water",
+          "family",
+          "music"
+        ],
+        "months": [
+          3
+        ],
+        "when_text": "March, for Saint Patrick's Day",
+        "place": "curtis-hixon-waterfront-park",
+        "area": "downtown-tampa",
+        "url": "https://www.tampa.gov/info/feature-events",
+        "summary": "The City of Tampa's Saint Patrick's Day festival in Curtis Hixon Waterfront Park, when the Hillsborough River is dyed green.",
+        "quote": "The River O'Green Fest is the City of Tampa's official annual Saint Patrick's Day event that takes place in beautiful Curtis Hixon Waterfront Park.",
+        "featured": true,
+        "source_url": "https://www.tampa.gov/info/feature-events",
+        "notes": "Same page: 'The party is centered around the Hillsborough River, which will be transformed into a bright shade of green for the occasion.' No 2027 date found.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "spiffs-international-folk-fair",
+        "name": "SPIFFS International Folk Fair",
+        "kind": "cultural",
+        "topics": [
+          "food",
+          "music",
+          "arts"
+        ],
+        "months": [
+          3
+        ],
+        "when_text": "Early March (March 4-6 in 2027)",
+        "location_text": "England Brothers Park, Pinellas Park",
+        "area": "largo",
+        "since": "1975",
+        "url": "https://www.spiffs.org/",
+        "summary": "A multicultural folk fair run by the St. Petersburg International Folk Fair Society, with ethnic food, music, dance, artisan markets and school education days.",
+        "quote": "Celebrating Tampa Bay's diverse cultural heritages since 1975!",
+        "featured": false,
+        "source_url": "https://www.spiffs.org/",
+        "notes": "since = the society's stated start ('dedicated to preserving and celebrating cultural heritages since 1975').",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sponge-docks-craft-art-festival",
+        "name": "Sponge Docks Craft Art Festival",
+        "kind": "market",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "months": [
+          3,
+          4,
+          6,
+          7,
+          9,
+          10
+        ],
+        "when_text": "Several weekends a year at the Sponge Docks (March, April, June, July, September and October)",
+        "place": "sponge-docks-tarpon-springs",
+        "area": "tarpon-springs",
+        "url": "https://www.sikpromotions.com/",
+        "summary": "A recurring weekend craft and art show at the Tarpon Springs Sponge Docks run by SIK Promotions.",
+        "featured": false,
+        "source_url": "https://www.sikpromotions.com/",
+        "notes": "Months from the organizer's schedule list (2026-27 season, plus the September 2025 entry still shown).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-pride",
+        "name": "Tampa Pride Street Festival and Diversity Parade",
+        "kind": "parade",
+        "topics": [
+          "lgbtq",
+          "music"
+        ],
+        "months": [
+          3
+        ],
+        "when_text": "A Saturday in late March (March 29 in 2025)",
+        "place": "ybor-city-historic-district",
+        "area": "ybor-city",
+        "url": "https://www.tampapride.org/",
+        "summary": "Tampa's LGBTQ+ Pride street festival and Diversity Parade in Ybor City, one of the City of Tampa's featured events; in 2025 the main stage ran from noon and the parade stepped off at 4 p.m.",
+        "featured": false,
+        "source_url": "https://thatssotampa.com/tampa-pride-street-festival-parade-ybor-city/",
+        "also_sources": [
+          "https://www.tampa.gov/info/feature-events"
+        ],
+        "notes": "tampapride.org blocks automated reads (captcha), so the organizer page was not read. The news article (published March 27, 2025) describes the 10th annual Diversity Parade on Saturday, March 29, 2025 in Ybor City (main stage 1320 E. 9th Ave). Whether the parade was held in 2026 and the 2027 plans are unverified.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "dunedin-highland-games",
+        "name": "Dunedin Highland Games & Festival",
+        "kind": "festival",
+        "topics": [
+          "history",
+          "music",
+          "sports"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "A Saturday in April (April 11 in 2026), with a kick-off party in Pioneer Park the Friday before",
+        "location_text": "Highlander Park, 1920 Pinehurst Rd., Dunedin",
+        "area": "dunedin",
+        "url": "https://www.dunedinsafoundation.com/highland-games/",
+        "summary": "Dunedin's Scottish games: heavy athletics, piping and drumming and Highland dancing competitions, a pipe band march, clan tents and Scottish food; parking is remote with free shuttles.",
+        "quote": "Join us for a thunderous celebration of heritage featuring world-class piping, elite heavy athletics, and the grace of Highland dance.",
+        "featured": true,
+        "source_url": "https://www.dunedinsafoundation.com/highland-games/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/event/dunedin-highland-games-festival/42066",
+          "https://www.dunedinsafoundation.com/history/"
+        ],
+        "notes": "Organizer page (checked 2026-09-27) still shows 'Saturday, April 11, 2026' and a kick-off party 'Friday, April 10th'; no 2027 date, so no event record. Visit St. Pete-Clearwater: the 2026 games were the 58th annual, 8:00 am - 6:30 pm, $20 in advance or $25 at the gate, children 12 and under free with a paying adult. History page: the Dunedin Highland Games and Festival Committee was formed in 1967.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "gasparilla-international-film-festival",
+        "name": "Gasparilla International Film Festival",
+        "kind": "film",
+        "topics": [
+          "arts"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "Annually in Tampa (April 1-4 in 2027)",
+        "location_text": "Tampa",
+        "since": "2006",
+        "url": "https://www.gasparillafilmfestival.com/",
+        "summary": "Tampa's independent film festival, run by the nonprofit Tampa Film Institute, screening features, documentaries, shorts and international films.",
+        "quote": "The Gasparilla International Film Festival is Tampa Bay's largest celebration of independent film held annually in Tampa, Florida.",
+        "featured": false,
+        "source_url": "https://www.gasparillafilmfestival.com/",
+        "notes": "Home page: 'Founded in 2006'; 'It's GIFF's 20th Anniversary!'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "mainsail-art-festival",
+        "name": "Mainsail Art Festival",
+        "kind": "festival",
+        "topics": [
+          "arts"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "A weekend in April (April 3-4 in 2027)",
+        "place": "vinoy-park",
+        "area": "downtown-stpete",
+        "since": "1976",
+        "url": "https://www.mainsailart.org/",
+        "summary": "A free, volunteer-run juried fine art festival in Vinoy Park, St. Petersburg, with live music and a student art show.",
+        "quote": "Mainsail Art Festival is held annually in Vinoy Park in St. Petersburg, Florida.",
+        "featured": true,
+        "source_url": "https://www.mainsailart.org/festival-info-2-2/",
+        "also_sources": [
+          "https://www.mainsailart.org/"
+        ],
+        "notes": "Festival-info page: 'Mainsail Art Festival started in 1976 when the city's Bicentennial Committee, the Saint Petersburg Recreation Department and the new Saint Petersburg Arts Commission joined forces'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-film-festival",
+        "name": "Sarasota Film Festival",
+        "kind": "film",
+        "topics": [
+          "arts"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "Ten days in April (April 9-18 in 2027)",
+        "location_text": "Sarasota",
+        "area": "sarasota",
+        "url": "https://www.sarasotafilmfestival.com/",
+        "summary": "Sarasota's annual spring film festival of narrative features, documentaries and shorts.",
+        "quote": "We look forward to welcoming filmmakers and audiences back to Sarasota in April 2027.",
+        "featured": false,
+        "source_url": "https://www.sarasotafilmfestival.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sun-n-fun-aerospace-expo",
+        "name": "SUN 'n FUN Aerospace Expo",
+        "kind": "convention",
+        "topics": [
+          "thrills",
+          "family"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "Six days in April (April 6-11 in 2027)",
+        "location_text": "Lakeland Linder International Airport, Lakeland",
+        "area": "polk",
+        "since": "1974",
+        "url": "https://flysnf.org/",
+        "summary": "A week-long aviation fly-in and expo in Lakeland with airshows, aircraft displays, exhibits and forums.",
+        "quote": "Today, the SUN 'n FUN Aerospace Expo is Florida's largest annual convention of any kind, welcoming more than 200,000 guests each year to what has become known as \"Aviation's Season Opener\" and \"Spring Break for Pilots.\"",
+        "quote_source": "https://flysnf.org/about-us/about-sun-n-fun/",
+        "featured": false,
+        "source_url": "https://flysnf.org/about-us/about-sun-n-fun/",
+        "also_sources": [
+          "https://flysnf.org/"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-blues-festival",
+        "name": "Tampa Bay Blues Festival",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "months": [
+          4
+        ],
+        "when_text": "Three days in April (April 9-11 in 2027), with a Thursday kick-off party",
+        "place": "vinoy-park",
+        "area": "downtown-stpete",
+        "url": "https://www.tampabaybluesfest.com/",
+        "summary": "A three-day ticketed blues and roots festival on the St. Petersburg waterfront at Vinoy Park.",
+        "quote": "America's finest waterfront blues festival, with great food vendors, full liquor bars, craft beers and wines.",
+        "featured": false,
+        "source_url": "https://www.tampabaybluesfest.com/",
+        "notes": "2027 is billed as the festival's 31st year; no founding year stated.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-riverfest",
+        "name": "Tampa Riverfest",
+        "kind": "festival",
+        "topics": [
+          "music",
+          "family",
+          "water"
+        ],
+        "months": [
+          4,
+          5
+        ],
+        "when_text": "Late April or early May (Saturday, May 2 in 2026; April 30 and May 1 in 2027)",
+        "place": "tampa-riverwalk",
+        "area": "downtown-tampa",
+        "url": "https://thetampariverwalk.com/events/riverfest.html",
+        "summary": "The Friends of the Riverwalk's free spring festival on the Tampa Riverwalk, including a lantern parade on the Riverwalk from Water Works Park to Curtis Hixon Park.",
+        "quote": "The Riverfest Lantern Parade is an annual event where participants decorate their own paper lanterns and join a 1-mile parade that illuminates the Riverwalk!",
+        "quote_source": "https://thetampariverwalk.com/events/lantern-parade-at-riverfest.html",
+        "featured": false,
+        "source_url": "https://thetampariverwalk.com/events/riverfest.html",
+        "also_sources": [
+          "https://thetampariverwalk.com/events/lantern-parade-at-riverfest.html"
+        ],
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "st-pete-pride",
+        "name": "St. Pete Pride",
+        "kind": "festival",
+        "topics": [
+          "lgbtq",
+          "music"
+        ],
+        "months": [
+          6
+        ],
+        "when_text": "A month of events in June, with the Pride parade and street festival on the last weekend of June (June 26-28 in 2026); a few events in late May",
+        "location_text": "St. Petersburg (waterfront parade; events citywide)",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepride.org/",
+        "summary": "St. Petersburg's LGBTQ+ Pride celebration: a month of events in June anchored by a waterfront parade and street festival, run by a volunteer-led nonprofit; admission is free.",
+        "quote": "We are honored to host Florida's largest Pride event, anchored by our historic waterfront parade and a tradition of advocacy that shines year-round in the Sunshine City.",
+        "quote_source": "https://www.stpetepride.org/2026-events",
+        "featured": true,
+        "source_url": "https://www.visitstpeteclearwater.com/event/st-pete-pride-festival/2011",
+        "also_sources": [
+          "https://www.stpetepride.org/2026-events",
+          "https://www.stpete.org/visitors/attractions/major_events.php"
+        ],
+        "notes": "Visit St. Pete-Clearwater listing: 'May 29, 2026 - Jun 28, 2026', 'Free Admission', 'celebrating its 24th year in 2026', parade weekend 'Friday June 26 - Sunday, June 28, 2026'. The organizer's events page lists only fall 2026 fundraisers.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "boom-by-the-bay",
+        "name": "Boom by the Bay (Independence Day fireworks)",
+        "kind": "fireworks",
+        "topics": [
+          "family",
+          "water"
+        ],
+        "months": [
+          7
+        ],
+        "when_text": "July 4 (Independence Day)",
+        "place": "bayshore-boulevard",
+        "area": "hyde-park",
+        "url": "https://www.tampa.gov/info/feature-events",
+        "summary": "Tampa's Fourth of July fireworks, listed by the City of Tampa among its yearly events; the display is viewable along Bayshore Boulevard.",
+        "quote": "An annual fireworks display is normally viewable all along Bayshore Blvd.",
+        "featured": true,
+        "source_url": "https://www.tampa.gov/info/feature-events",
+        "also_sources": [
+          "https://thetampariverwalk.com/events/fourth-of-july-boat-parade.html"
+        ],
+        "notes": "The Friends of the Riverwalk also hold a July 4th boat parade on the Riverwalk (2026 edition branded 'Liberty By The Bay 2026').",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "the-fourth-st-pete",
+        "name": "The Fourth at the St. Pete Pier",
+        "kind": "holiday",
+        "topics": [
+          "family",
+          "water"
+        ],
+        "months": [
+          7
+        ],
+        "when_text": "July 4th",
+        "place": "st-pete-pier",
+        "area": "downtown-stpete",
+        "url": "https://www.thefourthstpete.com/",
+        "summary": "St. Petersburg's Fourth of July celebration at the St. Pete Pier, with a family zone, beer garden, food trucks, vendors and live music; reserved tickets are sold.",
+        "featured": false,
+        "source_url": "https://www.thefourthstpete.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/events-festivals/summer"
+        ],
+        "notes": "Organizer page (Pier Events, LLC): 'July 4th, 2026 St Pete Pier', 'Buy Reserved Tickets'. The activity list is from the Visit St. Pete-Clearwater summer page ('celebration with activities for all ages, including a family fun zone, craft beer garden, food trucks, vendors and live music'). Fireworks are not mentioned on the pages read.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "geckofest",
+        "name": "GeckoFest (Gulfport)",
+        "kind": "festival",
+        "topics": [
+          "arts",
+          "music",
+          "family"
+        ],
+        "months": [
+          9
+        ],
+        "when_text": "A Saturday in early September, the finale of the Gecko World series (September 5 in 2026, 10am - 8pm)",
+        "location_text": "3101 Beach Blvd. S., Gulfport",
+        "area": "gulfport",
+        "url": "https://visitgulfportflorida.com/event/gecko-fest/",
+        "summary": "Gulfport's free end-of-summer street festival with live music, street performers, art and craft vendors and a costumed walking parade; proceeds fund local nonprofit grants.",
+        "quote": "Known as one of the most vibrant street festivals on Florida's Gulf Coast, GeckoFest is a free, family-friendly event that brings the community together with an unforgettable mix of live music, street performances, art, and local flavor.",
+        "featured": false,
+        "source_url": "https://visitgulfportflorida.com/event/gecko-fest/",
+        "also_sources": [
+          "https://visitgulfportflorida.com/event/gecko-world/"
+        ],
+        "notes": "2026 was the 26th annual GeckoFest; organized by the Gulfport Merchants Chamber.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "howl-o-scream",
+        "name": "Howl-O-Scream at Busch Gardens Tampa Bay",
+        "kind": "holiday",
+        "topics": [
+          "thrills"
+        ],
+        "months": [
+          9,
+          10
+        ],
+        "when_text": "Select nights, Sept. 11 - Oct. 31 in 2026, 7 PM to park close",
+        "place": "busch-gardens-tampa-bay",
+        "area": "north-tampa",
+        "url": "https://buschgardens.com/tampa/events/howl-o-scream/",
+        "summary": "A separately ticketed Halloween night event at Busch Gardens Tampa Bay with haunted houses, scare zones, shows and rides in the dark; the park says it is intended for a mature audience.",
+        "quote": "Howl-O-Scream is intended for a mature audience. This event contains intense adult content such as violence, gore, and blood.",
+        "featured": false,
+        "source_url": "https://buschgardens.com/tampa/events/howl-o-scream/",
+        "notes": "Read with WebFetch (curl blocked). 'Howl-O-Scream is a separately-ticketed night event'; gates open at 5 p.m.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-bay-comic-convention",
+        "name": "Tampa Bay Comic Convention",
+        "kind": "convention",
+        "topics": [
+          "arts",
+          "family"
+        ],
+        "months": [
+          9
+        ],
+        "when_text": "Early September (September 4-6 in 2026)",
+        "place": "tampa-convention-center",
+        "area": "channel-district",
+        "url": "https://www.tampabaycomicconvention.com/",
+        "summary": "A fan convention at the Tampa Convention Center with a vendor hall, cosplay, celebrity meet-and-greets and panels on comics, anime, gaming and science fiction.",
+        "quote": "The Tampa Bay Comic Convention, Florida's top fandom event, features a large vendor hall, excellent cosplay, meet-and-greets with globally recognized celebrities, and panels covering all aspects of comic books, anime, gaming, and sci-fi!",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/tampa-events/september/",
+        "notes": "Visit Tampa Bay September round-up: 'Tampa Convention Center Tampa Bay Comic Convention September 4 - 6'. The organizer's site returned 403 to both curl and WebFetch.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "clearwater-jazz-holiday",
+        "name": "Clearwater Jazz Holiday",
+        "kind": "concert",
+        "topics": [
+          "music"
+        ],
+        "months": [
+          10
+        ],
+        "when_text": "Four days in mid-October (October 15-18 in 2026)",
+        "location_text": "Coachman Park, downtown Clearwater",
+        "area": "downtown-clearwater",
+        "url": "https://clearwaterjazz.com/",
+        "summary": "A four-day jazz festival on the downtown Clearwater waterfront, run by the nonprofit Clearwater Jazz Holiday Foundation, with ticketed VIP, reserved and lawn seating; 2026 is its 47th edition.",
+        "featured": true,
+        "source_url": "https://clearwaterjazz.com/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/events-festivals/fall"
+        ],
+        "notes": "Home page: 'October 15-18, 2026 47th Clearwater Jazz Holiday'; gates open at 4PM Thursday and Friday; ticket options VIP Reserve & Table Seating, Premium & Reserved Seating and Main Lawn GA. The venue (Coachman Park) comes from the Visit St. Pete-Clearwater fall page.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "halloween-on-central",
+        "name": "Halloween on Central",
+        "kind": "holiday",
+        "topics": [
+          "family"
+        ],
+        "months": [
+          10
+        ],
+        "when_text": "A Sunday in late October (October 25, 2026, noon-5PM)",
+        "location_text": "Central Avenue, Grand Central District and EDGE District, St. Petersburg",
+        "area": "grand-central",
+        "url": "https://www.halloweenoncentral.com/",
+        "summary": "A car-free Halloween street festival along 22 blocks of Central Avenue in St. Petersburg, with costumes, candy, vendors and live music.",
+        "quote": "This event is the largest street festival in St. Pete, Florida, transforming two business districts and 22 blocks of Central Avenue into a vibrant, family-friendly, car-free celebration.",
+        "featured": false,
+        "source_url": "https://www.halloweenoncentral.com/",
+        "notes": "Home page: 'Sunday, October 25th, 2026 Noon-5PM'; 'We are very excited to return for a 6th year in 2026.' The two districts are not named on the page; the page lists 'Grand Central District Vendors'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-pig-jig",
+        "name": "Tampa Pig Jig on the River",
+        "kind": "food-drink",
+        "topics": [
+          "music",
+          "food",
+          "drink"
+        ],
+        "months": [
+          10
+        ],
+        "when_text": "Each fall (Saturday, October 17 in 2026)",
+        "place": "julian-b-lane-riverfront-park",
+        "area": "downtown-tampa",
+        "since": "2011",
+        "url": "https://www.tampapigjig.com/",
+        "summary": "A one-day waterfront fundraiser in Julian B. Lane Riverfront Park with country and rock concerts, food, beer and a corporate barbecue competition, raising money for the kidney disease charity NephCure.",
+        "quote": "Each Fall, the Tampa Pig Jig brings incredible live music, delicious food, ice-cold beer, and a fierce corporate barbecue competition to downtown Tampa's waterfront.",
+        "featured": false,
+        "source_url": "https://www.tampapigjig.com/",
+        "notes": "Home page: 'Saturday, October 17, 2026 Julian B. Lane Park, Tampa, FL'; 'Since its inception in 2011'.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "christmas-town-busch-gardens",
+        "name": "Christmas Town at Busch Gardens Tampa Bay",
+        "kind": "holiday",
+        "topics": [
+          "family"
+        ],
+        "months": [
+          11,
+          12,
+          1
+        ],
+        "when_text": "Select dates from November 13, 2026 through January 4, 2027",
+        "place": "busch-gardens-tampa-bay",
+        "area": "north-tampa",
+        "url": "https://buschgardens.com/tampa/events/christmas-town/",
+        "summary": "Busch Gardens Tampa Bay's holiday event, with lights, holiday shows and seasonal food across the park; included with park admission.",
+        "featured": false,
+        "source_url": "https://buschgardens.com/tampa/events/christmas-town/",
+        "notes": "Read with WebFetch (curl blocked): 'November 13, 2026, through January 4, 2027' (select dates), 'Park Open to Park Close', 'Included with Park Admission'. The 2026-27 run starts in the fall, so its dated record belongs to events-fall.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "hillsborough-county-fair",
+        "name": "Hillsborough County Fair",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "food",
+          "thrills"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "11 days in November (November 5-15 in 2026)",
+        "location_text": "Hillsborough County Fairgrounds, 215 Sydney Washer Rd., Dover",
+        "area": "plant-city",
+        "url": "https://www.hillsboroughcountyfair.com/",
+        "summary": "An 11-day county fair in Dover with rides, fair food, grandstand events, a rodeo and a large youth livestock program.",
+        "quote": "Experience exciting rides, delicious fair food, thrilling entertainment, and one of Florida's premier youth livestock programs as thousands of young exhibitors proudly showcase their hard work, dedication, and agricultural skills.",
+        "quote_source": "https://www.hillsboroughcountyfair.com/p/fair",
+        "featured": false,
+        "source_url": "https://www.hillsboroughcountyfair.com/p/fair",
+        "also_sources": [
+          "https://www.hillsboroughcountyfair.com/p/fair/fair-hours"
+        ],
+        "notes": "Page: '2026 Hillsborough County Fair, November 5-15 in Dover, Florida'. Weekday gates 5 pm - 10 pm; weekends from noon (fair-hours page).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sanding-ovations",
+        "name": "Sanding Ovations Master's Cup",
+        "kind": "festival",
+        "topics": [
+          "arts",
+          "beaches",
+          "family"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "Late November (Nov. 19-22 and Nov. 28-29 in 2026)",
+        "location_text": "10400 Gulf Blvd., Treasure Island",
+        "area": "treasure-island",
+        "url": "https://sandingovationsmasterscup.com/",
+        "summary": "A free sand sculpting exhibition and competition on the beach at Treasure Island, with a food court, beer garden, craft market, bands and Saturday fireworks.",
+        "quote": "Florida Governor Jeb Bush proclaimed Treasure Island as the Sand Sculpture Capital of Florida in 2001.",
+        "featured": false,
+        "source_url": "https://sandingovationsmasterscup.com/",
+        "notes": "Page: '2026 Sanding Ovations event scheduled Nov. 19-22, 2026 ... this year's event will extend into a second weekend, Nov. 28 & 29, 2026'; 'Sanding Ovations is free and open to the public.' Contact at the City of Treasure Island recreation department.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "sarasota-medieval-fair",
+        "name": "Sarasota Medieval Fair",
+        "kind": "fair",
+        "topics": [
+          "family",
+          "history"
+        ],
+        "months": [
+          11,
+          12
+        ],
+        "when_text": "Saturdays and Sundays over five weekends in November and early December (Nov. 7 - Dec. 6 in 2026)",
+        "location_text": "The Woods of Mallaranny at Mallaranny Farms, Sarasota County",
+        "area": "sarasota",
+        "url": "https://www.sarasotamedievalfair.com/",
+        "summary": "A weekend medieval fair with full-contact jousting, shows on 14 stages, rides, games and an artisan marketplace; each weekend has its own theme.",
+        "quote": "Step back in time & watch full-contact jousting, human combat chess matches & other fantastic shows on 14 stages!",
+        "featured": false,
+        "source_url": "https://www.sarasotamedievalfair.com/",
+        "notes": "Home page: '21st anniversary of the Sarasota Medieval Fair ... Saturdays & Sundays, Nov. 7 - Dec. 6, 2026 at our permanent home, the Woods of Mallarranny at Mallaranny Farms' (spelling varies on the page). Exact address not stated on the page read.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "savor-st-pete",
+        "name": "SAVOR St. Pete",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "drink"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "A weekend in November (November 7-8, 2026)",
+        "place": "vinoy-park",
+        "area": "downtown-stpete",
+        "url": "https://savortheburg.com/",
+        "summary": "A ticketed food and wine festival in Vinoy Park with tastings from chefs, restaurants, wineries, craft brewers and spirits makers.",
+        "quote": "SAVOR St. Pete brings together chefs, restaurants, wines, craft beers, and premium spirits for an afternoon of unlimited tastings and live culinary experiences.",
+        "featured": false,
+        "source_url": "https://savortheburg.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "shine-mural-festival",
+        "name": "SHINE St. Petersburg Mural Festival",
+        "kind": "festival",
+        "topics": [
+          "arts"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "Ten days; November 6-15 in 2026",
+        "location_text": "Downtown St. Petersburg and the surrounding arts districts",
+        "area": "downtown-stpete",
+        "since": "2015",
+        "url": "https://shinestpete.com/",
+        "summary": "An annual mural festival produced by the St. Petersburg Arts Alliance in which local, national and international artists paint large murals on walls downtown and in the arts districts.",
+        "quote": "Produced by the St. Petersburg Arts Alliance, SHINE has created nearly 200 murals throughout downtown and the surrounding arts districts since 2015.",
+        "featured": true,
+        "source_url": "https://shinestpete.com/",
+        "also_sources": [
+          "https://www.stpete.org/visitors/attractions/major_events.php"
+        ],
+        "notes": "Home page: 'returning November 6-15, 2026'. The 2026 festival itself belongs to the events-fall slice.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "siesta-key-crystal-classic",
+        "name": "Siesta Key Crystal Classic Sandsculpting Festival",
+        "kind": "festival",
+        "topics": [
+          "arts",
+          "beaches"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "Four days in November (November 13-16, 2026)",
+        "location_text": "Siesta Beach, Siesta Key",
+        "area": "sarasota",
+        "since": "2010",
+        "url": "https://www.siestakeycrystalclassic.com/",
+        "summary": "A four-day master sand sculpting competition on Siesta Beach with live music, food and drink, and sculpting demonstrations; tickets are sold.",
+        "quote": "Since 2010, this four-day event has brought together talented master sand sculptors from around the world to transform Siesta's famous sand into stunning, large-scale works of art.",
+        "featured": false,
+        "source_url": "https://www.siestakeycrystalclassic.com/",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-greek-festival",
+        "name": "Tampa Greek Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "music"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "Early November (November 6-7 in 2026)",
+        "location_text": "St. John the Baptist Greek Orthodox Church, 2418 W. Swann Ave., Tampa",
+        "area": "hyde-park",
+        "url": "https://www.tampagreekfestival.com/",
+        "summary": "A two-day Greek food, music and dance festival at St. John the Baptist Greek Orthodox Church in South Tampa, with takeout available.",
+        "featured": false,
+        "source_url": "https://www.tampagreekfestival.com/",
+        "notes": "Home page: 'November 6, 2026 4PM-10PM November 7, 2026 11AM-10PM'; live music by John Demas & the Omega Project. 2418 W. Swann Ave. is between Hyde Park and South Tampa; area hyde-park chosen.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tarpon-springs-seafood-festival",
+        "name": "Tarpon Springs Seafood Festival",
+        "kind": "food-drink",
+        "topics": [
+          "food",
+          "water"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "A weekend in November (November 7-8 in 2026)",
+        "place": "sponge-docks-tarpon-springs",
+        "location_text": "Tarpon Springs Sponge Docks, 600 Hill St. and Dodecanese Blvd.",
+        "area": "tarpon-springs",
+        "url": "https://spongedocks.net/event/tarpon-springs-seafood-festival/",
+        "summary": "A free weekend seafood festival at the Sponge Docks with seafood and other food vendors, arts and crafts and a chefs competition.",
+        "featured": false,
+        "source_url": "https://spongedocks.net/event/tarpon-springs-seafood-festival/",
+        "also_sources": [
+          "https://www.sikpromotions.com/"
+        ],
+        "notes": "Page: 'FREE Admission, Pet & Family Friendly!'; 'Sat 11/7: 10 AM to 9 PM Sun 11/8: 10 AM to 5:30 PM'; organizer SIK Promotions, whose schedule calls the 2026 edition the 38th annual.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "alafia-lighted-boat-parade",
+        "name": "Alafia Lighted Boat Parade",
+        "kind": "parade",
+        "topics": [
+          "water",
+          "family"
+        ],
+        "months": [
+          12
+        ],
+        "when_text": "A Saturday in early December (December 5, 2026, 4 - 7 PM)",
+        "location_text": "Alafia River at the Riverview Civic Center, 11020 Park Dr., Riverview",
+        "area": "brandon",
+        "url": "https://www.alafiaboatparade.com/",
+        "summary": "A holiday parade of decorated boats up the Alafia River in Riverview, presented by the FishHawk-Riverview Rotary; 2026 is its 42nd year.",
+        "quote": "Celebrate with us and cheer on your favorite decorated boats decked out for the holidays as they travel up the beautiful Alafia River!",
+        "featured": false,
+        "source_url": "https://www.visittampabay.com/tampa-events/details/42nd-annual-alafia-lighted-boat-parade/102320/",
+        "notes": "Visit Tampa Bay listing: '42nd Annual Alafia Lighted Boat Parade', 'Saturday, December 5, 2026, 4 - 7 PM Riverview Civic Center, 11020 Park Dr, Riverview'. Riverview falls in the brandon area (SPEC).",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "santa-fest-tampa",
+        "name": "Tampa's Santa Fest and Tree Lighting",
+        "kind": "holiday",
+        "topics": [
+          "family"
+        ],
+        "months": [
+          12
+        ],
+        "when_text": "A Saturday in early December (December 6 in 2025)",
+        "place": "curtis-hixon-waterfront-park",
+        "area": "downtown-tampa",
+        "url": "https://www.tampa.gov/santafest",
+        "summary": "A downtown Tampa holiday parade followed by the city's tree lighting and a free outdoor movie at Curtis Hixon Waterfront Park.",
+        "quote": "The parade steps off at 1 p.m. beginning at Morgan Street and Madison Street.",
+        "featured": false,
+        "source_url": "https://www.tampa.gov/santafest",
+        "also_sources": [
+          "https://www.tampa.gov/info/feature-events"
+        ],
+        "notes": "City page (updated 12/02/2025) describes the 2025 edition: parade at 1 p.m. along Madison Street to Ashley Drive, tree lighting at 6 pm, admission free.",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "tampa-riverwalk-lighted-boat-parade",
+        "name": "Tampa Riverwalk Holiday Lighted Boat Parade",
+        "kind": "parade",
+        "topics": [
+          "water",
+          "family"
+        ],
+        "months": [
+          12
+        ],
+        "when_text": "A Saturday evening in December (December 19, 2026, from 6:15 PM)",
+        "place": "tampa-riverwalk",
+        "location_text": "Hillsborough River and Garrison Channel, from near the lighthouse off Davis Islands past Sparkman Wharf, Harbour Island and the Tampa Convention Center",
+        "area": "downtown-tampa",
+        "url": "https://thetampariverwalk.com/events/holiday-lighted-boat-parade.html",
+        "summary": "A parade of boats decorated with holiday lights on the downtown Tampa waterfront, organized by the Friends of the Riverwalk.",
+        "quote": "Tampa's largest lighted boat parade will take place on Saturday, December 19, 2026, lighting up the Hillsborough River in Downtown Tampa with a dazzling display of holiday cheer.",
+        "featured": false,
+        "source_url": "https://thetampariverwalk.com/events/holiday-lighted-boat-parade.html",
+        "checked": "2026-09-27"
+      },
+      {
+        "id": "winter-village-tampa",
+        "name": "Winter Village at Curtis Hixon Park",
+        "kind": "holiday",
+        "topics": [
+          "family"
+        ],
+        "months": [
+          12
+        ],
+        "when_text": "December (the holiday season)",
+        "place": "curtis-hixon-waterfront-park",
+        "area": "downtown-tampa",
+        "url": "https://www.tampa.gov/info/feature-events",
+        "summary": "A seasonal holiday village in Curtis Hixon Waterfront Park on the Tampa Riverwalk, listed by the City of Tampa among its yearly events.",
+        "quote": "Located along the Tampa Riverwalk, Curtis Hixon Waterfront Park is transformed with the sights, sounds and activities of the holidays for children and adults of all ages.",
+        "featured": false,
+        "source_url": "https://www.tampa.gov/info/feature-events",
+        "notes": "The City of Tampa yearly-events page lists Winter Village under December; no organizer page with the season's run was read.",
+        "checked": "2026-09-27"
+      }
+    ]
+  },
+  "report": "# events-spring: dated events Jan 1 - Apr 30, 2027 and the annual signature calendar\n\nChecked 2026-09-27. 47 dated events (Jan 15, Feb 12, Mar 10, Apr 10) and 66 series records. Validator clean.\n\n## What is covered\n\n**Dated events (only where the organizer, or a producer/listing named below, publishes a 2027 date):**\n- Gasparilla season: Ashley Children's Gasparilla (Jan 23), Seminole Hard Rock Gasparilla Pirate Fest invasion and Parade of Pirates (Jan 30), Outbound Voyage (Feb 27), 57th Gasparilla Festival of the Arts (Mar 6-7), Gasparilla International Film Festival (Apr 1-4).\n- Fairs: Florida State Fair (Feb 4-15, per-day hours as occurrences), Florida Strawberry Festival (Mar 4-14), Florida RV SuperShow (Jan 13-17).\n- Heritage and community: Epiphany in Tarpon Springs (Jan 6, tentative), St. Pete MLK Parade (40th, Jan 18), Plant City MLK Festival (Jan 15-18), Kumquat Festival (Dade City, Jan 30), Tampa Bay Black Heritage Festival's Run For Us 5K (Feb 7), Localtopia (Feb 20), Gulfport Get Rescued (Feb 27), SPIFFS International Folk Fair (Mar 4-6), De Soto Children's Parade (Mar 26) and Grand Parade (Apr 24, Bradenton), Chasco Fiesta (Apr 9-17, New Port Richey), Tampa Riverfest (Apr 30-May 1).\n- Festivals: Bay Area Renaissance Festival (Feb 6-Mar 21, tentative), Pigz in Z'Hills BBQ & Blues (Feb 6), Hondo Rodeo Fest (Feb 26-28, Raymond James Stadium), Pier 60 Sugar Sand Festival (Mar 26-Apr 11), SUN 'n FUN Aerospace Expo (Apr 6-11, Lakeland), Tampa Bay Blues Festival (Apr 9-11), Sarasota Film Festival (Apr 9-18), St. Petersburg Power and Sailboat Show (Jan 14-17), Pinellas TacoFest, four Paragon seafood and music festivals (Sarasota, Coquina Beach, St. Petersburg at Derby Lane, Manatee County).\n- Art and craft shows: Mainsail (Apr 3-4), St. Petersburg Fine Art Festival, Tampa Fine Art Show (Hot Works), Sarasota and Lakewood Ranch art festivals (Paragon, Hot Works), Corey Avenue and Sponge Docks craft festivals, Pinellas Plant Festival.\n\n**Series (the annual calendar), incl. summer and fall:** Gasparilla Pirate Fest, Children's Gasparilla, Sant' Yago Knight Parade, Gasparilla Festival of the Arts, Gasparilla International Film Festival, Gasparilla Music Festival, Epiphany, Florida State Fair, Florida Strawberry Festival, Tampa Bay Black Heritage Festival, Tampa, St. Pete and Plant City MLK parades, Fiesta Day (Ybor), River O'Green Fest (St. Patrick's), Tampa Pride, St. Pete Pride, Localtopia, Mainsail, Dunedin Highland Games, Clearwater Sea-Blues, Tampa Bay Collard Green Festival, Busch Gardens Food, Wine & Garden Festival, Sugar Sand, SUN 'n FUN, Chasco Fiesta, De Soto Heritage Festival, Tampa Bay Blues Festival, Tampa Riverfest, Boom by the Bay, The Fourth at the St. Pete Pier, Tampa Bay Comic Convention, GeckoFest, Clearwater Jazz Holiday, Tampa Pig Jig, Halloween on Central, Howl-O-Scream, Hillsborough County Fair, Tampa Greek Festival, SAVOR St. Pete, Tarpon Springs Seafood Festival, SHINE Mural Festival, Sanding Ovations, Siesta Key Crystal Classic, Sarasota Medieval Fair, Christmas Town, Santa Fest, Winter Village, Tampa Riverwalk and Alafia lighted boat parades, Sunsets at Pier 60, and markets (St. Pete Saturday Morning Market, Hyde Park Village Fresh Market, Gulfport Tuesday Fresh Market, Safety Harbor Sunday Market and 3rd Friday).\n\n## How candidates were found\n- Official tourism lists: Visit Tampa Bay Gasparilla-season, music-festival, Halloween and September pages, plus its public events API (Simpleview plugins_events_events/find with window and title filters; it rate-limited once); Visit St. Pete-Clearwater winter/spring/summer/fall festival pages and event listings (read with WebFetch; curl gets 403); Visit Florida's events API (statewide, filtered to the region).\n- City lists: City of Tampa \"City Yearly Events\" (tampa.gov/info/feature-events) and Special Events pages; St. Petersburg \"Major Events\"; City of Safety Harbor calendar iCal feed; Clearwater parks events (JS, little usable).\n- Festival producers' 2027 schedules: SIK Promotions (Pinellas craft and food festivals), Paragon Festivals (art and seafood festivals), Hot Works (art shows), Florida RV Trade Association, East Pasco Chamber, Friends of the Riverwalk; fair directories (renfest.org, therenlist.com) for the Renaissance festival.\n- The Events Calendar REST API probed on about 25 local WordPress sites (Florida State Fairgrounds and St. Pete Pier answered; nothing major beyond the State Fair).\n- WebSearch until the shared search budget ran out (about a third of the way in); after that, direct organizer URLs and the listings above.\n- Every record's facts come from its source_url page, read on 2026-09-27; also_sources are pages used for secondary facts, named in notes. Coordinates from the research geocoder (census for addresses, photon for parks), checked against the matched text; approximate points are flagged in notes. 40 of 47 events have a place id or coordinates.\n\n## Counts\n- Events by kind: market 13, festival 10, parade 6, food-drink 6, cultural 3, fair 2, convention 2, film 2, boat-show 1, concert 1, run-walk 1. By region: Tampa 10, St. Petersburg 8, Gulf Beaches 3, Clearwater and North Pinellas 6, Around the Bay 6, Day Trips 13 (Sarasota, Bradenton, Lakeland), no area 1 (GIFF, venues not announced). Status: 45 scheduled, 2 tentative. Featured: 10.\n- Series by kind: festival 20, parade 10, food-drink 7, holiday 6, market 6, fair 4, cultural 3, convention 3, concert 3, film 2, boat-show 1, fireworks 1. Featured: 20.\n\n## Deliberately left out, and why\n- Sports (Gasparilla Distance Classic, Grand Prix, Valspar, spring training, Lightning) belong to events-sports; concerts and theater runs to events-shows (the Hondo Rodeo Fest and Tampa Bay Blues Festival are included as festivals; dedupe with events-shows if needed). Sep-Dec 2026 dated events belong to events-fall; fall items appear here only as series.\n- No 2027 date published, so series only (no event): Sant' Yago Knight Parade (krewe page still shows Feb 14, 2026), Gasparilla Music Festival (\"DATE TBD\"), Dunedin Highland Games (page shows Apr 11, 2026), Clearwater Sea-Blues, Collard Green Festival, Tampa MLK Parade, River O'Green Fest, Fiesta Day, Tampa Pride, Busch Gardens Food, Wine & Garden, The Fest @ Tampa Bay (\"April 2027, details subject to change\").\n- Not found or not verifiable (no record): Guavaween (guavaween.com is a parked domain; no current organizer page found), John's Pass Seafood Festival (its domain shows \"Coming Soon\"), Cigar Heritage Festival and Ybor City Saturday Market (sites down), Plant City Pig Jam (parked domain), Lunar New Year events and St. Patrick's parades in St. Pete or Dunedin (no source found once search was exhausted), Winter Pride St. Pete, St. Pete and Clearwater lighted boat parades, Festival of States (a search summary said the parade was retired in 2014; not verified), Pasco, Manatee and Sarasota county fairs (2027 dates \"coming soon\"), Florida Manatee Festival, Brooksville Raid, Cortez Commercial Fishing Festival, Sarasota Chalk Festival (sites unreadable or no dates), Howard Alan art festivals (artfestival.com returned 526).\n- Minor recurring items (fitness classes, homeschool workshops, comedy dates) were skipped.\n\n## Open questions for the verifier\n- Epiphany (2027-01-06) is tentative: the cathedral says the feast is celebrated on January 6th but has not posted a 2027 schedule.\n- Bay Area Renaissance Festival is tentative: bayarearenfest.com returns a captcha; dates come from two fair directories.\n- Mainsail's own site calls 2027 both the 51st and the 52nd festival.\n- Florida State Fair hours list ends with \"February 15, 2026\" (a typo for 2027). The Strawberry Festival hours heading still says 2026.\n- Hondo Rodeo Fest's own page gives no year; the year comes from Visit Tampa Bay.\n- SPIFFS 2027: which of Mar 4-6 is the public day is not posted.\n- Area choices to confirm: Run For Us 5K at Al Lopez Park (west-tampa vs north-tampa), Pinellas Park events (largo), Riverview (brandon), Dover (plant-city), Lakewood Ranch (bradenton-anna-maria), Tampa Greek Festival (hyde-park).\n- Several series cite Visit St. Pete-Clearwater or Visit Tampa Bay because the organizer site blocked reads (Sea-Blues, St. Pete Pride dates, Saturday Morning Market, Collard Green Festival, Comic Convention, Alafia boat parade, Hyde Park Fresh Market); Tampa Pride cites a 2025 news article.\n- 66 series exceeds the 30-50 target; the craft-fair and market series (Corey Area, Sponge Docks craft, Gulfport Tuesday market, Safety Harbor Sunday market and 3rd Friday) can be dropped if the calendar should hold only signature events.\n- Shared place ids used: bayshore-boulevard, sparkman-wharf, julian-b-lane-riverfront-park, curtis-hixon-waterfront-park, tampa-riverwalk, florida-state-fairgrounds, florida-strawberry-festival-grounds, raymond-james-stadium, tampa-convention-center, busch-gardens-tampa-bay, ybor-city-historic-district, hyde-park-village, williams-park, vinoy-park, straub-park, st-pete-pier, pier-60, sponge-docks-tarpon-springs.\n"
+}

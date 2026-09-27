@@ -1,0 +1,2960 @@
+{
+ "slice": "see-pinellas",
+ "checked": "2026-09-27",
+ "records": {
+  "places": [
+   {
+    "id": "dali-museum",
+    "name": "The Dalí Museum",
+    "aliases": [
+     "Salvador Dalí Museum",
+     "The Dalí"
+    ],
+    "kind": "museum",
+    "topics": [
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "One Dali Blvd",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.765987,
+    "lng": -82.631461,
+    "geo_source": "photon",
+    "url": "https://thedali.org/",
+    "hours_text": "Daily 10am–6pm, Thursdays until 8pm. Closed Thanksgiving and Christmas Day.",
+    "price_text": "Gallery admission: adults (18–64) $32; seniors 65+, educators, first responders and military $29; students (13–17 and college) $22; ages 6–12 $12; 5 and under free. Dome show add-on $15. Thursdays after 5pm: adults $16, ages 6–17 and college $10.",
+    "is_free": false,
+    "summary": "Museum devoted to Salvador Dalí, built on the collection of A. Reynolds and Eleanor Morse; the museum says it holds over 2,400 works in every medium. Admission covers the galleries, special exhibitions and the Avant-garden; the Dalí Dome shows immersive projections for an added fee.",
+    "quote": "The Dalí Museum celebrates the life and work of Salvador Dalí (1904-1989) and features works from the artist’s entire career.",
+    "quote_source": "https://thedali.org/about-the-museum/mission-history/",
+    "signature": true,
+    "status": "open",
+    "accessibility": "Galleries and the Will Raymund Theater are accessible for manual and electric mobility devices; 9 accessible parking spaces next to the museum; courtesy wheelchairs at the information station, first come, first served.",
+    "parking_text": "On-site lot $10 (cards only), first come, first served; city garages, surface lots and street parking nearby.",
+    "tags": [
+     "salvador-dali",
+     "dome",
+     "architecture"
+    ],
+    "source_url": "https://thedali.org/visit/visitor-information/",
+    "also_sources": [
+     "https://thedali.org/visit/buy-tickets/",
+     "https://thedali.org/about-the-museum/mission-history/",
+     "https://www.visitstpeteclearwater.com/profile/dali-museum/138446"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "museum-of-fine-arts-st-petersburg",
+    "name": "Museum of Fine Arts, St. Petersburg",
+    "aliases": [
+     "MFA St. Pete",
+     "The MFA"
+    ],
+    "kind": "museum",
+    "topics": [
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "255 Beach Drive NE",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.774308,
+    "lng": -82.632466,
+    "geo_source": "census",
+    "url": "https://mfastpete.org/",
+    "phone": "(727) 896-2667",
+    "hours_text": "Tuesday–Sunday 10am–5pm; Art After Dark on select Thursdays 5–8pm; closed Monday, Thanksgiving and Christmas Day.",
+    "price_text": "Adults $16; seniors 65+, military, Florida educators and college students $14; youth 7–17 $10; 6 and under free.",
+    "is_free": false,
+    "summary": "Art museum on the downtown waterfront, founded by collector Margaret Acheson Stuart and opened in 1965; the museum says it was the city's first art museum. The collection galleries are closed Sep 21–Nov 21, 2026 for a reinstallation; the New African Masquerades exhibition, shop and café stay open.",
+    "quote": "The MFA opened to the public in 1965–the first art museum in the city.",
+    "quote_source": "https://mfastpete.org/about/history/",
+    "signature": true,
+    "status": "open",
+    "status_note": "Collection galleries temporarily closed Sep 21, 2026 and scheduled to reopen Nov 21, 2026 during the 'Reimagination'; the special exhibition, shop, café and programs continue (per mfastpete.org/about/reimagination, checked 2026-09-27).",
+    "parking_text": "Paid self-parking in the south lot and along Bayshore Drive (Parkmobile or kiosk); garages and lots within walking distance.",
+    "tags": [
+     "docent-tours"
+    ],
+    "source_url": "https://mfastpete.org/visit/hours-and-admission/",
+    "also_sources": [
+     "https://mfastpete.org/about/history/",
+     "https://mfastpete.org/about/reimagination/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "chihuly-collection",
+    "name": "Chihuly Collection",
+    "aliases": [
+     "Morean Arts Center Chihuly Collection"
+    ],
+    "kind": "museum",
+    "kinds": [
+     "gallery"
+    ],
+    "topics": [
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "720 Central Ave",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.771112,
+    "lng": -82.643989,
+    "geo_source": "census",
+    "url": "https://moreanartscenter.org/chihuly-collection-location/",
+    "phone": "727-822-7872",
+    "hours_text": "Monday–Saturday 10am–5pm, Sunday noon–5pm. Closed Thanksgiving and Christmas; closes at 3pm on some holidays.",
+    "price_text": "Adults $22; seniors 65+ and military $20; students (6–18 or college ID) $16; Museums for All $3; 5 and under free.",
+    "is_free": false,
+    "summary": "Permanent collection of glass art by Dale Chihuly, run by the Morean Arts Center in a building designed for it. A ticket includes a live glassblowing demonstration at the Morean Glass Studio nearby.",
+    "quote": "This presentation is unique as it is the first installation of Chihuly art in a building designed specifically for that purpose.",
+    "signature": true,
+    "status": "open",
+    "parking_text": "Street parking and the 4th floor of the Publix parking garage during business hours.",
+    "tags": [
+     "glass",
+     "dale-chihuly"
+    ],
+    "source_url": "https://moreanartscenter.org/chihuly-collection-location/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/chihuly-collection/138433"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "morean-arts-center",
+    "name": "Morean Arts Center",
+    "kind": "gallery",
+    "topics": [
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "719 Central Ave",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.771228,
+    "lng": -82.64413,
+    "geo_source": "census",
+    "url": "https://www.moreanartscenter.org/",
+    "phone": "727-822-7872",
+    "hours_text": "Monday–Saturday 10am–5pm; closed Sunday and some holidays.",
+    "price_text": "Gallery free.",
+    "is_free": true,
+    "summary": "Contemporary art gallery and art school on Central Avenue with changing exhibitions and year-round classes. The same nonprofit runs the Chihuly Collection and the Morean Glass Studio nearby and the Morean Center for Clay in the Warehouse Arts District.",
+    "quote": "The Morean Arts Center offers an amazing contemporary art gallery, FREE and open to the public daily PLUS affordable art classes year-round.",
+    "status": "open",
+    "parking_text": "Street parking and the 4th floor of the Publix parking garage during business hours.",
+    "tags": [
+     "classes"
+    ],
+    "source_url": "https://moreanartscenter.org/morean-arts-center-location/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/morean-arts-center/138329"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "morean-glass-studio",
+    "name": "Morean Glass Studio and Hot Shop",
+    "aliases": [
+     "Morean Glass Studio"
+    ],
+    "kind": "gallery",
+    "kinds": [
+     "attraction"
+    ],
+    "topics": [
+     "arts",
+     "shopping"
+    ],
+    "area": "downtown-stpete",
+    "address": "714 1st Ave N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.772,
+    "lng": -82.644082,
+    "geo_source": "census",
+    "url": "https://moreanartscenter.org/morean-glass-studio-location/",
+    "phone": "727-822-7872 ext. 2220",
+    "hours_text": "Wednesday–Sunday noon–5pm. Live demonstrations Wednesday–Saturday at 12, 1, 2 and 3pm; Sunday at 1, 2 and 3pm.",
+    "price_text": "Live glass demonstration $12, included with a Chihuly Collection ticket; personal glass experiences and classes priced separately.",
+    "is_free": false,
+    "summary": "Glassblowing studio where resident artists work in front of visitors; the pieces are sold in the adjoining shop. You can also book a one-time hands-on glass experience or a class.",
+    "quote": "Get behind the scenes and observe resident glass artists creating unique works of art.",
+    "status": "open",
+    "tags": [
+     "glass",
+     "demonstrations",
+     "classes"
+    ],
+    "source_url": "https://moreanartscenter.org/morean-glass-studio-location/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/morean-glass-studio-hot-shop/140171"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "morean-center-for-clay",
+    "name": "Morean Center for Clay",
+    "kind": "gallery",
+    "topics": [
+     "arts",
+     "history"
+    ],
+    "area": "grand-central",
+    "address": "420 22nd St S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.767205,
+    "lng": -82.662996,
+    "geo_source": "census",
+    "url": "https://moreanartscenter.org/morean-center-for-clay-location/",
+    "phone": "727-821-7162 ext. 2311",
+    "hours_text": "Wednesday–Saturday 10am–5pm; closed Sunday–Tuesday.",
+    "is_free": null,
+    "summary": "Pottery center in a historic freight train depot in the Warehouse Arts District, home to more than 50 ceramic artists' studios, with classes and workshops. The Morean calls it the largest pottery studio in the Southeast.",
+    "quote": "The largest pottery studio in the Southeast and one of the largest in the United States, the Morean Center for Clay is located in a historic freight train depot in the Warehouse Arts District of St. Petersburg.",
+    "status": "open",
+    "parking_text": "Free parking lot.",
+    "tags": [
+     "pottery",
+     "ceramics",
+     "classes",
+     "warehouse-arts-district"
+    ],
+    "source_url": "https://moreanartscenter.org/morean-center-for-clay-location/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "imagine-museum",
+    "name": "Imagine Museum",
+    "kind": "museum",
+    "topics": [
+     "arts"
+    ],
+    "area": "grand-central",
+    "address": "1901 Central Ave",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33713",
+    "lat": 27.771171,
+    "lng": -82.658988,
+    "geo_source": "census",
+    "url": "https://www.imaginemuseum.com/",
+    "phone": "727-300-1700",
+    "hours_text": "Tuesday–Sunday 10am–5pm, Thursday until 8pm; closed Monday.",
+    "price_text": "Adults $15; seniors 65+ and military $13; educators, college students and children 7–17 $10; members and 6 and under free.",
+    "is_free": false,
+    "summary": "Museum of contemporary glass art from around the world, tracing the studio glass movement, with tours, scavenger hunts, a theater about glassmaking and a gift shop.",
+    "quote": "Imagine Museum features a spectacular collection of contemporary glass art from around the world.",
+    "status": "open",
+    "tags": [
+     "glass",
+     "studio-glass"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/imagine-museum/138847",
+    "checked": "2026-09-27",
+    "notes": "The museum's own site (imaginemuseum.com) returned a SiteGround captcha to both curl and WebFetch on 2026-09-27, so the Visit St. Pete/Clearwater listing is the source; verifier should re-check hours and prices on imaginemuseum.com/plan-your-visit if reachable."
+   },
+   {
+    "id": "james-museum",
+    "name": "The James Museum of Western & Wildlife Art",
+    "aliases": [
+     "The James Museum",
+     "The James"
+    ],
+    "kind": "museum",
+    "topics": [
+     "arts",
+     "wildlife"
+    ],
+    "area": "downtown-stpete",
+    "address": "150 Central Ave",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.771156,
+    "lng": -82.634785,
+    "geo_source": "census",
+    "url": "https://thejamesmuseum.org/",
+    "hours_text": "Daily 10am–5pm, Tuesdays until 8pm; last tickets 4:30pm (7:30pm Tuesday). Closed Thanksgiving and Christmas Day.",
+    "price_text": "General admission $23; seniors 65+ $18; students, teachers and active military $15; youth 7–18 $10; 6 and under free. Tuesdays: adults $10, youth $5.",
+    "is_free": false,
+    "summary": "Museum of art of the American West and wildlife art: landscape paintings, sculpture, early Western art, Native American art and jewelry, and a wildlife gallery. Most of the art is on the second level.",
+    "quote": "Showcasing sweeping landscape paintings and powerful sculptures that celebrate the land, people, and cultures of the American West.",
+    "quote_source": "https://thejamesmuseum.org/",
+    "status": "open",
+    "parking_text": "Levels 3 and 4 of the South Core Parking Garage behind the museum (enter at 101 1st Ave S), $2 per hour during regular operation.",
+    "tags": [
+     "western-art",
+     "native-american-art"
+    ],
+    "source_url": "https://thejamesmuseum.org/hours-parking/",
+    "also_sources": [
+     "https://thejamesmuseum.org/",
+     "https://www.visitstpeteclearwater.com/profile/the-james-museum-of-western-wildlife-art/138849"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "museum-of-the-american-arts-and-crafts-movement",
+    "name": "Museum of the American Arts and Crafts Movement",
+    "aliases": [
+     "MAACM",
+     "Museum of the American Arts & Crafts Movement"
+    ],
+    "kind": "museum",
+    "topics": [
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "355 4th Street North",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.776913,
+    "lng": -82.638458,
+    "geo_source": "census",
+    "url": "https://www.museumaacm.org/",
+    "phone": "(727) 440-4859",
+    "hours_text": "Tuesday–Saturday 10am–4pm, Sunday noon–4pm; closed to museum visitors Monday.",
+    "price_text": "Adults $25; seniors 65+ $23; active military, students and educators $20; youth 6–17 $10; 5 and under free. Some seasonal exhibitions cost extra.",
+    "is_free": false,
+    "summary": "Five-story museum founded by collector Rudy Ciccarello, devoted to the American Arts and Crafts movement (about 1890–1930): furniture, pottery, tiles, lighting, textiles and period rooms by Stickley, Frank Lloyd Wright, the Roycrofters, Grueby, Newcomb Pottery and others. It has a café, a store and a library.",
+    "quote": "The Museum of the American Arts and Crafts Movement (MAACM) is the only museum in the world dedicated exclusively to the American Arts and Crafts movement.",
+    "quote_source": "https://www.museumaacm.org/about.php",
+    "status": "open",
+    "status_note": "The Fountain Garden is under construction for a gallery addition; follow signs for the temporary entrance (the 4th Street entrance is not wheelchair accessible), per the museum's visitor information page.",
+    "accessibility": "Free wheelchairs at the admissions desk (a state ID is held as deposit); the 4th Street entrance is not wheelchair accessible during construction.",
+    "parking_text": "MAACM Parking Garage next to the museum at 350 3rd Street North, $1 per hour; metered street parking nearby.",
+    "tags": [
+     "decorative-arts",
+     "stickley",
+     "frank-lloyd-wright"
+    ],
+    "source_url": "https://www.museumaacm.org/visitor_information.html",
+    "also_sources": [
+     "https://www.museumaacm.org/about.php",
+     "https://www.museumaacm.org/footer.html"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "st-petersburg-museum-of-history",
+    "name": "St. Petersburg Museum of History",
+    "aliases": [
+     "Museum of History St. Pete"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history",
+     "family"
+    ],
+    "area": "downtown-stpete",
+    "address": "335 2nd Ave NE",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.773968,
+    "lng": -82.630552,
+    "geo_source": "photon",
+    "url": "https://historystpete.org/",
+    "phone": "(727) 894-1052",
+    "hours_text": "Monday–Saturday 10am–5pm, Sunday noon–5pm. Closed Thanksgiving, Christmas and Easter.",
+    "price_text": "Adults $17; seniors 65+ $14; military and veterans $11; teachers, students and children 7–17 $9; 6 and under free.",
+    "is_free": false,
+    "summary": "History museum at the entrance to the St. Pete Pier, with exhibits on the world's first commercial airline (including a replica of the Benoist airboat), 150 years of baseball in Schrader's Little Cooperstown and the history of tourism in the city. Perry's Porch restaurant is attached.",
+    "quote": "Located at the entrance to the spectacular Pier District, the Museum of History has shared stories of the Sunshine City for a century.",
+    "status": "open",
+    "parking_text": "Metered St. Pete Pier Dolphin lot next to the museum, the Pelican lot, Pier street parking, or the Sundial garage (117 2nd Street N).",
+    "tags": [
+     "aviation",
+     "baseball",
+     "benoist-airboat"
+    ],
+    "source_url": "https://historystpete.org/visit/",
+    "also_sources": [
+     "https://historystpete.org/",
+     "https://stpetepier.org/visit-pier/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "florida-holocaust-museum",
+    "name": "The Florida Holocaust Museum",
+    "aliases": [
+     "Florida Holocaust Museum",
+     "The FHM"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "downtown-stpete",
+    "address": "55 Fifth Street South",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.770502,
+    "lng": -82.640534,
+    "geo_source": "photon",
+    "url": "https://www.thefhm.org/",
+    "phone": "727.820.0100",
+    "hours_text": "Daily 10am–5pm; last admission 4pm. Closed on listed holidays.",
+    "price_text": "General $25; seniors 65+, educators, students, active-duty military, law enforcement and veterans $18; 6 and under free; Museums for All free.",
+    "is_free": false,
+    "summary": "Museum of the Holocaust in downtown St. Petersburg, begun in 1992 by businessman Walter P. Loebenberg and in its current building since 1998. It calls itself one of the largest Holocaust museums in the country.",
+    "quote": "The Florida Holocaust Museum honors the memory of millions of innocent men, women and children who suffered or died in the Holocaust.",
+    "quote_source": "https://www.thefhm.org/about/mission-vision-history/",
+    "status": "open",
+    "accessibility": "ADA compliant and fully accessible; free wheelchairs at the admissions desk; limited accessible parking on the north side of the building along the alley.",
+    "parking_text": "Limited free parking at the museum; metered and free street parking and garages nearby. SunRunner stops at 5th Street South / 5th Street North.",
+    "tags": [
+     "clear-bag-policy"
+    ],
+    "source_url": "https://www.thefhm.org/visit/guide/",
+    "also_sources": [
+     "https://www.thefhm.org/visit/",
+     "https://www.thefhm.org/about/mission-vision-history/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "woodson-african-american-museum-of-florida",
+    "name": "The Woodson African American Museum of Florida",
+    "aliases": [
+     "Dr. Carter G. Woodson African American Museum",
+     "Woodson Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history",
+     "black-history"
+    ],
+    "area": "south-stpete",
+    "address": "2240 9th Ave S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.76084,
+    "lng": -82.663899,
+    "geo_source": "photon",
+    "url": "https://woodsonmuseum.org/",
+    "phone": "727-323-1104",
+    "hours_text": "Tuesday–Saturday noon–5pm.",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Museum of African American history in the former community center of Jordan Park, which the museum describes as St. Petersburg's first African American public housing community. Its Legacy Garden shows the sculpture 'Harriet Tubman: The Beacon of Hope'.",
+    "quote": "The Woodson African American Museum of Florida’s current building was previously the community center and an administrative office for the Jordan Park community",
+    "quote_source": "https://woodsonmuseum.org/about-us/",
+    "status": "temporarily-closed",
+    "status_note": "Closed from Monday, Sep 21, 2026 for scheduled roof maintenance; regular hours resume Tuesday, Sep 29, 2026 (per woodsonmuseum.org, checked 2026-09-27).",
+    "tags": [
+     "jordan-park",
+     "harriet-tubman"
+    ],
+    "source_url": "https://woodsonmuseum.org/",
+    "also_sources": [
+     "https://woodsonmuseum.org/about-us/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "great-explorations-childrens-museum",
+    "name": "Great Explorations Children's Museum",
+    "aliases": [
+     "Great Explorations"
+    ],
+    "kind": "museum",
+    "topics": [
+     "family"
+    ],
+    "area": "old-northeast",
+    "address": "1925 4th St N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33704",
+    "lat": 27.790121,
+    "lng": -82.638495,
+    "geo_source": "census",
+    "url": "https://greatex.org/",
+    "phone": "727-821-8992",
+    "hours_text": "Monday–Saturday 10:30am–4pm, Sunday noon–4pm. Closed Easter, July 4, Thanksgiving, Christmas Eve, Christmas Day and New Year's Day.",
+    "summary": "Hands-on children's museum next to Sunken Gardens, with a preschool, camps and birthday parties.",
+    "quote": "A place where kids can be creative, make discoveries and have fun!",
+    "status": "open",
+    "tags": [
+     "kids"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/great-explorations-childrens-museum/138365",
+    "also_sources": [
+     "https://visit.stpete.com/place/great-explorations-childrens-museum/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "greatex.org returned a bot-check (HTTP 202, empty body) to curl and WebFetch on 2026-09-27; admission prices were not verified on a page we could read, so price_text is null."
+   },
+   {
+    "id": "florida-craftart",
+    "name": "Florida CraftArt",
+    "aliases": [
+     "Florida Craftsmen"
+    ],
+    "kind": "gallery",
+    "kinds": [
+     "shopping"
+    ],
+    "topics": [
+     "arts",
+     "shopping"
+    ],
+    "area": "downtown-stpete",
+    "address": "501 Central Avenue",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.771258,
+    "lng": -82.640267,
+    "geo_source": "census",
+    "url": "https://floridacraftart.org/",
+    "hours_text": "Monday–Saturday 10am–5:30pm, Sunday noon–5pm; open later for the Second Saturday ArtWalk.",
+    "price_text": "Free admission to the galleries.",
+    "is_free": true,
+    "summary": "Statewide nonprofit for Florida fine craft, founded in 1951, with a gallery of work by more than 200 Florida artists (ceramics, glass, jewelry, wood and more) and an exhibition gallery with about ten shows a year, in the former Rutland's Department Store building.",
+    "quote": "Florida CraftArt presents ten exhibitions annually, at no charge to the public, ensuring barrier-free access to the arts for all.",
+    "quote_source": "https://floridacraftart.org/",
+    "status": "open",
+    "tags": [
+     "fine-craft",
+     "second-saturday-artwalk"
+    ],
+    "source_url": "https://floridacraftart.org/about-us/",
+    "also_sources": [
+     "https://floridacraftart.org/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Second Saturday closing time differs on the site (8pm on the home page, 9pm on About), so no time is given."
+   },
+   {
+    "id": "st-pete-pier",
+    "name": "The St. Pete Pier",
+    "aliases": [
+     "St. Pete Pier",
+     "St. Pete Pier District"
+    ],
+    "kind": "pier",
+    "kinds": [
+     "waterfront",
+     "attraction"
+    ],
+    "topics": [
+     "family",
+     "water",
+     "arts",
+     "food",
+     "outdoors"
+    ],
+    "area": "downtown-stpete",
+    "address": "800 2nd Avenue NE",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.77291,
+    "lng": -82.627746,
+    "geo_source": "census",
+    "url": "https://stpetepier.org/",
+    "hours_text": "Opens 30 minutes before sunrise, closes 11pm. Marketplace Friday–Sunday 10am–6pm (seasonal).",
+    "price_text": "No charge to enter the Pier District; some special events are ticketed.",
+    "is_free": true,
+    "summary": "Pier district on Tampa Bay with restaurants and a rooftop bar, public art, a playground and splash pad, Spa Beach, a fishing deck, a marketplace, the Tampa Bay Watch Discovery Center and free trams. The St. Petersburg Museum of History sits at its entrance.",
+    "quote": "There is no charge to enter the Pier District.",
+    "quote_source": "https://stpetepier.org/faq/",
+    "signature": true,
+    "status": "open",
+    "status_note": "Janet Echelman's 'Bending Arc' sculpture is marked temporarily closed on the Pier's map (checked 2026-09-27).",
+    "accessibility": "Three ADA-compliant trams with four stops, accessible for wheelchairs and walkers; the Coastal Thicket boardwalk is ADA accessible.",
+    "parking_text": "More than 500 paid spaces in the Dolphin and Pelican lots (6-hour maximum; $2/hour weekdays, $2.50/hour weekends for the first 4 hours); overflow at the Sundial garage and Al Lang lot; free Downtown Looper trolley.",
+    "tags": [
+     "public-art",
+     "fishing",
+     "pet-friendly",
+     "sunset"
+    ],
+    "source_url": "https://stpetepier.org/getting-here-parking/",
+    "also_sources": [
+     "https://stpetepier.org/",
+     "https://stpetepier.org/visit-pier/",
+     "https://stpetepier.org/faq/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tampa-bay-watch-discovery-center",
+    "name": "Tampa Bay Watch Discovery Center",
+    "kind": "aquarium",
+    "kinds": [
+     "science-center"
+    ],
+    "topics": [
+     "wildlife",
+     "water",
+     "family"
+    ],
+    "area": "downtown-stpete",
+    "address": "700 2nd Ave NE",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.773612,
+    "lng": -82.624867,
+    "geo_source": "photon",
+    "url": "https://www.tbwdiscoverycenter.org/",
+    "hours_text": "Daily 10am–5pm; holiday exceptions listed on the site.",
+    "price_text": "Adults and teens 13+ $8; seniors 60+ $6; military, Florida teachers and children 4–12 $3; 3 and under free.",
+    "is_free": false,
+    "summary": "Small nature center on the St. Pete Pier's over-water walkway, run by the nonprofit Tampa Bay Watch, with interactive exhibits on the Tampa Bay estuary, live animals, a touch tank, daily programs and wildlife boat tours.",
+    "quote": "Our exhibit gallery features interactive displays, live animals, and a touch tank for hands-on learning.",
+    "status": "open",
+    "parking_text": "Pier Pelican lot (paid), first come, first served; Pier trams stop at the center.",
+    "tags": [
+     "touch-tank",
+     "estuary",
+     "st-pete-pier"
+    ],
+    "source_url": "https://www.tbwdiscoverycenter.org/info",
+    "also_sources": [
+     "https://stpetepier.org/visit-pier/"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "grand-central-district",
+    "name": "Grand Central District",
+    "aliases": [
+     "Grand Central",
+     "Central Avenue (Grand Central)"
+    ],
+    "kind": "district",
+    "topics": [
+     "shopping",
+     "food",
+     "drink",
+     "arts",
+     "lgbtq",
+     "nightlife"
+    ],
+    "area": "grand-central",
+    "address": "Central Avenue between 16th and 31st streets",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.770986,
+    "lng": -82.663132,
+    "geo_source": "census",
+    "url": "https://www.grandcentraldistrict.org/",
+    "is_free": true,
+    "summary": "Main Street district along Central Avenue from 16th to 31st Street, just west of downtown, with more than 350 independent shops, restaurants, bars and galleries and many murals. The association calls it the birthplace of St. Pete's Pride Parade; it hosts Halloween on Central and a Christmas market.",
+    "quote": "Founded in 2000 and located just west of downtown St. Petersburg, the Grand Central District is home to over 350 locally owned and operated independent businesses",
+    "status": "open",
+    "tags": [
+     "main-street",
+     "murals",
+     "pride",
+     "independent-shops"
+    ],
+    "source_url": "https://www.grandcentraldistrict.org/about/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/grand-central-district"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Point is the 2200 block of Central Avenue, mid-district (a representative point, not an address of the association)."
+   },
+   {
+    "id": "central-arts-district",
+    "name": "Central Arts District",
+    "aliases": [
+     "Central Avenue downtown",
+     "600 Block"
+    ],
+    "kind": "district",
+    "topics": [
+     "arts",
+     "shopping",
+     "food",
+     "nightlife",
+     "music"
+    ],
+    "area": "downtown-stpete",
+    "address": "Central Avenue, 300 to 700 blocks",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.771144,
+    "lng": -82.640267,
+    "geo_source": "census",
+    "url": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/central-arts",
+    "is_free": true,
+    "summary": "Downtown stretch of Central Avenue from 3rd to 7th Street with murals, galleries and museums (Florida CraftArt, the Chihuly Collection, the Morean Arts Center), boutiques, restaurants, bars and music venues such as Jannus Live and the Floridian Social Club.",
+    "quote": "runs along Central Avenue in downtown St. Pete, extending from 3rd Street to 7th Street (locals will refer to it as the 300 block to the 700 block)",
+    "status": "open",
+    "tags": [
+     "murals",
+     "galleries",
+     "live-music"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/central-arts",
+    "checked": "2026-09-27",
+    "notes": "No district association site found; the Visit St. Pete/Clearwater district page is the source. Point is the 500 block of Central Avenue."
+   },
+   {
+    "id": "edge-district",
+    "name": "EDGE District",
+    "aliases": [
+     "The EDGE District"
+    ],
+    "kind": "district",
+    "topics": [
+     "shopping",
+     "food",
+     "drink",
+     "arts",
+     "nightlife"
+    ],
+    "area": "downtown-stpete",
+    "address": "Central Avenue between 9th Street (MLK) and 16th Street",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.771095,
+    "lng": -82.650742,
+    "geo_source": "census",
+    "url": "https://www.edgedistrict.org/",
+    "is_free": true,
+    "summary": "Walkable Main Street district on Central Avenue between 9th Street (MLK) and 16th Street, with locally owned bars, restaurants and shops, between downtown and the Grand Central District.",
+    "quote": "The EDGE District runs along St. Pete's Central Avenue between 9th Street (MLK) & 16th Street, and outward to both 1st Ave North & 1st Ave South.",
+    "status": "open",
+    "tags": [
+     "main-street",
+     "murals",
+     "breweries"
+    ],
+    "source_url": "https://www.edgedistrict.org/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/edge-district"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Point is the 1200 block of Central Avenue, mid-district."
+   },
+   {
+    "id": "warehouse-arts-district",
+    "name": "Warehouse Arts District",
+    "aliases": [
+     "St. Pete Warehouse Arts District",
+     "ArtsXchange"
+    ],
+    "kind": "district",
+    "kinds": [
+     "gallery"
+    ],
+    "topics": [
+     "arts",
+     "shopping",
+     "drink"
+    ],
+    "area": "grand-central",
+    "address": "515 22nd St S (ArtsXchange campus)",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.765472,
+    "lng": -82.663097,
+    "geo_source": "census",
+    "url": "https://wadastpete.org/",
+    "is_free": true,
+    "summary": "Former industrial area south of Central Avenue (roughly 16th to 31st Street, 1st Avenue North to 10th Avenue South) with artist studios, glass and clay studios, galleries and breweries. The Warehouse Arts District Association's ArtsXchange campus holds studios and galleries and hosts the Second Saturday ArtWalk.",
+    "quote": "The Warehouse Arts District features a collection of artist studios, galleries and events on the campus of ArtsXchange in St. Petersburg, FL.",
+    "status": "open",
+    "tags": [
+     "second-saturday-artwalk",
+     "studios",
+     "glass",
+     "pottery"
+    ],
+    "source_url": "https://wadastpete.org/visit/",
+    "also_sources": [
+     "https://wadastpete.org/",
+     "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/warehouse-arts"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Boundaries from the Visit St. Pete/Clearwater district page. warehouseartsdistrictstpete.com is a hijacked domain (gambling spam) as of 2026-09-27: do not link it."
+   },
+   {
+    "id": "beach-drive",
+    "name": "Beach Drive",
+    "aliases": [
+     "Waterfront Museum District",
+     "Beach Drive NE"
+    ],
+    "kind": "district",
+    "kinds": [
+     "waterfront"
+    ],
+    "topics": [
+     "food",
+     "drink",
+     "shopping",
+     "arts"
+    ],
+    "area": "downtown-stpete",
+    "address": "Beach Drive NE",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.775036,
+    "lng": -82.632323,
+    "geo_source": "census",
+    "url": "https://beachdrive.com/",
+    "is_free": true,
+    "summary": "Downtown waterfront street along the bayfront parks, lined with restaurants with outdoor seating, bars and shops; it anchors what Visit St. Pete/Clearwater calls the Waterfront Museum District, between Beach Drive and 3rd Street from 7th Avenue South to 7th Avenue North, home to the Dalí, the MFA and other museums.",
+    "quote": "You'll find St. Pete's Waterfront Museum District between Beach Drive and 3rd St., stretching from 7th Avenue South to 7th Avenue North.",
+    "quote_source": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/waterfront-museum-district",
+    "status": "open",
+    "tags": [
+     "outdoor-dining",
+     "museums",
+     "waterfront"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/waterfront-museum-district",
+    "also_sources": [
+     "https://beachdrive.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "beachdrive.com is a commercial directory for the street, not an official body. Point is 300 Beach Dr NE."
+   },
+   {
+    "id": "deuces-live",
+    "name": "The Deuces (22nd Street South)",
+    "aliases": [
+     "Deuces Live",
+     "22nd Street South",
+     "Historic Deuces District"
+    ],
+    "kind": "district",
+    "kinds": [
+     "historic-district"
+    ],
+    "topics": [
+     "black-history",
+     "history",
+     "food",
+     "arts"
+    ],
+    "area": "south-stpete",
+    "address": "22nd Street South at 9th Avenue South",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.761539,
+    "lng": -82.663076,
+    "geo_source": "census",
+    "url": "https://www.deuceslive.org/",
+    "phone": "727-433-8237",
+    "is_free": true,
+    "summary": "Corridor on 22nd Street South that was the center of St. Petersburg's Black business community during segregation, with hundreds of Black-owned businesses at its peak in the early 1960s. The Deuces Live Main Street program has worked on its revival since 2012; the Woodson African American Museum and murals are here.",
+    "quote": "During segregation, 22nd Street South — lovingly known as “The Deuces” — became a hub of Black excellence, creativity, and commerce.",
+    "quote_source": "https://www.deuceslive.org/our-history",
+    "status": "open",
+    "tags": [
+     "main-street",
+     "murals",
+     "african-american-history"
+    ],
+    "source_url": "https://www.deuceslive.org/our-history",
+    "also_sources": [
+     "https://www.deuceslive.org/",
+     "https://www.visitstpeteclearwater.com/communities/st-petersburg/districts/deuces-live"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Point is the Deuces Live office, 833 22nd Street South. history-region may also hold this corridor as a historic district; merge by id if so."
+   },
+   {
+    "id": "duncan-mcclellan-gallery",
+    "name": "Duncan McClellan Gallery",
+    "aliases": [
+     "DMG Gallery"
+    ],
+    "kind": "gallery",
+    "topics": [
+     "arts",
+     "shopping"
+    ],
+    "area": "grand-central",
+    "address": "2342 Emerson Avenue South",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.765021,
+    "lng": -82.665502,
+    "geo_source": "photon",
+    "url": "https://dmglass.com/",
+    "hours_text": "Monday–Saturday 11am–6pm, Sunday noon–4pm.",
+    "summary": "Glass art gallery in the Warehouse Arts District with rotating shows of national and international glass artists, in a former fish and tomato packing plant with courtyards and sculpture gardens.",
+    "quote": "The Duncan McClellan Gallery, located in St. Petersburg Florida, features rotating exhibitions showcasing national and internationally recognized glass artists.",
+    "status": "open",
+    "tags": [
+     "glass",
+     "warehouse-arts-district",
+     "sculpture-garden"
+    ],
+    "source_url": "https://dmglass.com/",
+    "checked": "2026-09-27",
+    "notes": "The home page lists two hours blocks (Mon–Sat 11–6 in one place, plus Sundays noon–4 in the footer)."
+   },
+   {
+    "id": "floridarama",
+    "name": "FloridaRAMA",
+    "aliases": [
+     "Fairgrounds St. Pete"
+    ],
+    "kind": "attraction",
+    "kinds": [
+     "gallery"
+    ],
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "area": "grand-central",
+    "address": "2606 Fairfield Ave S",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.763707,
+    "lng": -82.669225,
+    "geo_source": "census",
+    "url": "https://www.floridarama.art/",
+    "hours_text": "Monday, Thursday and Friday noon–8pm; Saturday and Sunday 10am–8pm; closed Tuesday and Wednesday. Last entry 90 minutes before closing.",
+    "price_text": "Ticketed; the art gallery is free.",
+    "is_free": false,
+    "summary": "Indoor, ticketed immersive art installation about Florida stories, made by more than 80 mostly local artists, with scavenger-hunt games, a shop, a snack bar and a free gallery. It is inside Building 5 of The Factory St. Pete in the Warehouse Arts District.",
+    "quote": "Cooler than a museum, smarter than a theme park, and weirder than a carnival, FloridaRAMA is an immersive art experience located in St. Pete’s Warehouse Arts District.",
+    "quote_source": "https://www.floridarama.art/about/",
+    "status": "open",
+    "accessibility": "Indoor and ADA accessible, per the site; ADA parking on the Pinellas Trail side.",
+    "parking_text": "Free parking in The Factory's north lot (Fairfield Ave S) and south lot (7th Ave S), plus street parking; on the Pinellas Trail with bike parking.",
+    "tags": [
+     "immersive",
+     "the-factory",
+     "warehouse-arts-district"
+    ],
+    "source_url": "https://www.floridarama.art/information/",
+    "also_sources": [
+     "https://www.floridarama.art/",
+     "https://www.floridarama.art/about/",
+     "https://www.floridarama.art/news/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Ticket prices are not printed on the pages read (sold through the ticketing link). thefactorystpete.com now redirects to floridarama.art; the site's news page cites 'Fairgrounds St. Pete expands and rebrands as FloridaRAMA', and the footer says it is operated by Fairgrounds Projects Inc. The Factory itself (a campus of studios and galleries) was not given its own record because its own site no longer describes it."
+   },
+   {
+    "id": "zen-glass-studio",
+    "name": "Zen Glass Studio & Gallery",
+    "aliases": [
+     "Zen Glass Studio"
+    ],
+    "kind": "gallery",
+    "topics": [
+     "arts",
+     "shopping"
+    ],
+    "area": "grand-central",
+    "address": "600 27th Street South",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.764635,
+    "lng": -82.669808,
+    "geo_source": "census",
+    "url": "https://zenglass.com/",
+    "phone": "(727) 323-3141",
+    "hours_text": "Tuesday–Saturday 10am–5pm; Second Saturday 10am–9pm.",
+    "summary": "Glass studio and gallery in the Warehouse Arts District, founded in 2002 by artists David Walker and Josh Poll, selling blown and sculpted glass and jewelry and teaching flameworking and glassblowing classes. Visitors can walk into the studio from the 6th Avenue South side.",
+    "quote": "They feature a huge selection of blown and sculpted glass art, jewelry and sculpture in the gallery.",
+    "status": "open",
+    "tags": [
+     "glass",
+     "classes",
+     "warehouse-arts-district"
+    ],
+    "source_url": "https://zenglass.com/info/",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "saturday-morning-market",
+    "name": "Saturday Morning Market",
+    "aliases": [
+     "St. Pete Saturday Morning Market"
+    ],
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping",
+     "music"
+    ],
+    "area": "downtown-stpete",
+    "address": "Al Lang Stadium parking lot, 1st Street South",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.768364,
+    "lng": -82.633091,
+    "geo_source": "photon",
+    "url": "https://saturdaymorningmarket.com/",
+    "hours_text": "Saturdays 9am–2pm, October through May, at Al Lang Stadium; a smaller summer market runs 9am–1pm; no market in September.",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Weekly open-air market, running since 2002, with local farmers, ready-to-eat food from many cuisines, seafood, baked goods, local artists and live music. The fall-to-spring season is held in the Al Lang Stadium lot downtown.",
+    "quote": "Since 2002, the Saturday Morning Market has been a cornerstone of the St. Petersburg community, bringing together residents and visitors in a vibrant celebration of local food, art, music, and connection.",
+    "quote_source": "https://business.stpete.com/eventcalendar/details/saturday-morning-market-summer-season-1753935",
+    "status": "seasonal",
+    "status_note": "On its September break; returns to Al Lang Stadium on Saturday, Oct 3, 2026 for the October–May season (per ilovetheburg.com, Sep 1, 2026). The 2026 summer market was held at St. Pete First United Methodist Church, 212 3rd Street North, because of construction at Williams Park.",
+    "parking_text": "Nearby parking garages and city street parking.",
+    "tags": [
+     "farmers-market",
+     "rain-or-shine"
+    ],
+    "source_url": "https://ilovetheburg.com/saturday-morning-market-summer/",
+    "also_sources": [
+     "https://business.stpete.com/eventcalendar/details/saturday-morning-market-summer-season-1753935",
+     "https://farmersmarkettoolkit.org/markets/st-petersburg-saturday-morning-market"
+    ],
+    "checked": "2026-09-27",
+    "notes": "saturdaymorningmarket.com returned a bot-check (HTTP 202, empty) to curl and WebFetch on 2026-09-27; facts are from a dated local news article and the St. Petersburg Chamber's event page. Point is Al Lang Stadium (OSM)."
+   },
+   {
+    "id": "tyrone-square",
+    "name": "Tyrone Square",
+    "aliases": [
+     "Tyrone Square Mall"
+    ],
+    "kind": "shopping",
+    "topics": [
+     "shopping"
+    ],
+    "area": "west-stpete",
+    "address": "6901 22nd Ave N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33710",
+    "lat": 27.790654,
+    "lng": -82.728494,
+    "geo_source": "census",
+    "url": "https://www.simon.com/mall/tyrone-square-mall",
+    "summary": "Simon shopping mall in west St. Petersburg with more than 55 stores (including Macy's, Dick's Sporting Goods and H&M) and more than 10 restaurants.",
+    "quote": "St. Petersburg's Family-Favorite Shopping Destination. 55+ Stores. 10+ Restaurants.",
+    "status": "open",
+    "tags": [
+     "mall"
+    ],
+    "source_url": "https://www.simon.com/mall/tyrone-square-mall",
+    "checked": "2026-09-27",
+    "notes": "Weekly hours were not shown on the page as read (only the current day's hours), so hours_text is null."
+   },
+   {
+    "id": "crislip-arcade",
+    "name": "Crislip Arcade",
+    "kind": "shopping",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "shopping",
+     "history"
+    ],
+    "area": "downtown-stpete",
+    "address": "600 block of Central Avenue",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.771413,
+    "lng": -82.642518,
+    "geo_source": "photon",
+    "summary": "Renovated 1926 open-air shopping arcade on the 600 block of Central Avenue: a covered walkway lined with small independent shops.",
+    "quote": "A renovated 1926 shopping arcade located on the 600 block of Central Avenue, which is an open-air, covered hallway with a string of small retails shops on either side.",
+    "status": "open",
+    "tags": [
+     "independent-shops",
+     "1926"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/article/best-places-to-shop",
+    "checked": "2026-09-27",
+    "notes": "No official site found. Point is the OpenStreetMap feature for the arcade (tagged 645 Central Avenue); the source says only \"600 block\"."
+   },
+   {
+    "id": "st-petersburg-shuffleboard-club",
+    "name": "St. Petersburg Shuffleboard Club",
+    "aliases": [
+     "St. Pete Shuffle",
+     "Mirror Lake Shuffleboard Club"
+    ],
+    "kind": "sports",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "sports",
+     "history",
+     "nightlife"
+    ],
+    "area": "downtown-stpete",
+    "address": "559 Mirror Lake Dr. N.",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.775246,
+    "lng": -82.64307,
+    "geo_source": "census",
+    "url": "https://www.stpeteshuffle.com/",
+    "hours_text": "Open play Tuesday and Thursday 6–9pm, Friday 7–10pm (Friday night St. Pete Shuffle), Sunday 9am–noon.",
+    "price_text": "Open hours free for members, $10 per non-member; kids free.",
+    "is_free": false,
+    "summary": "Shuffleboard club at Mirror Lake, organized in 1924 by six players as what the club calls the first strictly shuffleboard club in the world; the game's official rules were written here in the late 1920s. Visitors can play during open hours, including Friday nights.",
+    "quote": "So in 1924 a group of shuffleboard players — six in this case — organized what they called the Mirror Lake Park Shuffleboard Club, the first strictly shuffleboard club in the world",
+    "quote_source": "https://www.stpeteshuffle.com/history.html",
+    "status": "open",
+    "tags": [
+     "shuffleboard",
+     "friday-night",
+     "mirror-lake"
+    ],
+    "source_url": "https://www.stpeteshuffle.com/",
+    "also_sources": [
+     "https://www.stpeteshuffle.com/history.html"
+    ],
+    "checked": "2026-09-27",
+    "notes": "history-region may also hold this as a historic site; merge by id."
+   },
+   {
+    "id": "gulfport-waterfront-district",
+    "name": "Gulfport Waterfront District",
+    "aliases": [
+     "Beach Boulevard, Gulfport",
+     "Downtown Gulfport"
+    ],
+    "kind": "district",
+    "kinds": [
+     "waterfront"
+    ],
+    "topics": [
+     "shopping",
+     "arts",
+     "food",
+     "beaches"
+    ],
+    "area": "gulfport",
+    "address": "Beach Boulevard and Shore Boulevard",
+    "city": "Gulfport",
+    "state": "FL",
+    "zip": "33707",
+    "lat": 27.737485,
+    "lng": -82.70786,
+    "geo_source": "photon",
+    "is_free": true,
+    "summary": "Small historic downtown on Boca Ciega Bay along Beach Boulevard (below 28th Avenue South) and Shore Boulevard, with murals, independent galleries, boutiques and more than a dozen restaurants, a fishing pier, a small beach, the historic Casino ballroom, a twice-monthly Art Walk and the Tuesday Fresh Market.",
+    "quote": "The twice-monthly Art Walk transforms Beach Boulevard into an open-air gallery.",
+    "status": "open",
+    "tags": [
+     "art-walk",
+     "tuesday-fresh-market",
+     "murals"
+    ],
+    "source_url": "https://visitgulfportflorida.com/about-gulfport/",
+    "checked": "2026-09-27",
+    "notes": "Source is the Gulfport Merchants Chamber (visitgulfportflorida.com). The City of Gulfport site (mygulfport.us) returned a bot-check on 2026-09-27. Point is the Gulfport Casino at the foot of Beach Blvd (OSM); the Casino ballroom itself belongs to venues-bay.",
+    "url": "https://visitgulfportflorida.com/about-gulfport/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/communities/gulfport",
+     "https://visitgulfportflorida.com/event/gulfport-fresh-market/"
+    ]
+   },
+   {
+    "id": "gulfport-history-museum",
+    "name": "Gulfport History Museum",
+    "aliases": [
+     "Gulfport Historical Society Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "gulfport",
+    "address": "5301 28th Ave. S.",
+    "city": "Gulfport",
+    "state": "FL",
+    "zip": "33707",
+    "lat": 27.742297,
+    "lng": -82.705168,
+    "geo_source": "census",
+    "url": "https://mygulfport.us/gulfporthistorymuseum/",
+    "phone": "(727) 201-8687",
+    "hours_text": "Wednesday 10am–2pm, Thursday noon–4pm, Friday 10am–2pm, 1st and 3rd Saturdays noon–4pm.",
+    "price_text": "Free.",
+    "is_free": true,
+    "summary": "Small free museum of the history of Gulfport, which the listing calls one of Pinellas County's oldest incorporated cities.",
+    "quote": "This museum documents the diversity and colorful history of one of Pinellas County's oldest incorporated cities.",
+    "status": "open",
+    "source_url": "https://www.visitstpeteclearwater.com/profile/gulfport-history-museum/139455",
+    "checked": "2026-09-27",
+    "notes": "The city's museum page (mygulfport.us) returned a bot-check on 2026-09-27; facts are from the Visit St. Pete/Clearwater listing. gulfportmuseum.org is a different Gulfport (Mississippi)."
+   },
+   {
+    "id": "penny-lane-beatles-museum",
+    "name": "Penny Lane Beatles Museum",
+    "kind": "museum",
+    "topics": [
+     "music"
+    ],
+    "area": "downtown-stpete",
+    "address": "146 2nd St. N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33701",
+    "lat": 27.772877,
+    "lng": -82.635623,
+    "geo_source": "census",
+    "url": "https://www.pennylanebeatlesmuseum.com/",
+    "phone": "(727) 281-8130",
+    "hours_text": "Wednesday 10am–4pm; Thursday–Sunday 11am–3pm.",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Free downtown museum of a local collector's Beatles memorabilia, more than 1,000 pieces dating back to 1961. The listing calls it the only permanent Beatles exhibit in the United States.",
+    "quote": "PENNY LANE, Beatles Museum is the brainchild of a long-time Dunedin resident and humanitarian who considers the time is right to share his eclectic collection of Beatles memorabilia covering several decades dating back to 1961.",
+    "status": "open",
+    "tags": [
+     "beatles",
+     "memorabilia"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/penny-lane-beatles-museum/140619",
+    "checked": "2026-09-27",
+    "notes": "The museum's own site returned a bot-check (HTTP 202) on 2026-09-27; verifier should confirm hours there."
+   },
+   {
+    "id": "johns-pass-village",
+    "name": "John's Pass Village & Boardwalk",
+    "aliases": [
+     "John's Pass",
+     "Johns Pass Village"
+    ],
+    "kind": "district",
+    "kinds": [
+     "shopping",
+     "waterfront"
+    ],
+    "topics": [
+     "shopping",
+     "food",
+     "water",
+     "family"
+    ],
+    "area": "madeira-beach",
+    "address": "12901 Gulf Blvd",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "lat": 27.785867,
+    "lng": -82.78227,
+    "geo_source": "photon",
+    "url": "https://johnspass.com/",
+    "phone": "727-394-0756",
+    "hours_text": "Open daily; individual shop and restaurant hours vary.",
+    "is_free": true,
+    "summary": "Waterfront boardwalk village at John's Pass with more than 100 shops, restaurants and water-related businesses: the local fishing fleet, dolphin and shelling tours, pirate ship cruises, boat rentals, parasailing and jet skis. The beach is a short walk away.",
+    "quote": "Over one hundred merchants inhabit the Village with unique retail shopping, a variety of restaurants, the local fishing fleet, dolphin watching and shelling tours, boat rentals, parasailing and jet skiing.",
+    "signature": true,
+    "status": "open",
+    "status_note": "Visit St. Pete/Clearwater's listing says the village is still recovering from the 2024 hurricanes, with some areas (such as the lower decks of certain restaurants) temporarily closed while the boardwalk operates (checked 2026-09-27).",
+    "parking_text": "Pay-by-meter garage at the southwest corner and two pay-by-meter lots (Central lot and Beach lot).",
+    "tags": [
+     "boardwalk",
+     "fishing-fleet",
+     "hurricane-recovery"
+    ],
+    "source_url": "https://johnspass.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/john-s-pass-village-boardwalk/138598"
+    ],
+    "checked": "2026-09-27",
+    "notes": "johnspass.com is the 'Discover John's Pass' merchant site (it calls the village 'Pinellas County’s #1 tourist attraction'). Phone and parking from the VSPC listing."
+   },
+   {
+    "id": "pier-60",
+    "name": "Pier 60",
+    "aliases": [
+     "Pier 60 Park",
+     "Pier 60 at Clearwater Beach"
+    ],
+    "kind": "pier",
+    "kinds": [
+     "park",
+     "attraction"
+    ],
+    "topics": [
+     "beaches",
+     "family",
+     "water",
+     "arts"
+    ],
+    "area": "clearwater-beach",
+    "address": "7 Causeway Blvd.",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.977213,
+    "lng": -82.828905,
+    "geo_source": "photon",
+    "url": "https://www.sunsetsatpier60.com/",
+    "phone": "(727) 871-8060",
+    "hours_text": "Pier 7am–10pm; park 6am–9pm daily. Sunsets at Pier 60 runs nightly from 2 hours before to 2 hours after sunset, weather permitting.",
+    "summary": "A 1,080-foot fishing pier with a bait house, next to a beachfront park with a large beach playground, covered pavilions and telescopes. Sunsets at Pier 60, a free nightly festival of artisans and street performers held since 1995, takes place in the park.",
+    "quote": "Sunsets at Pier 60 debuted on March 17, 1995 as a year-round nightly sunset celebration on the iconic Pier 60.",
+    "quote_source": "https://www.sunsetsatpier60.com/p/about/history",
+    "signature": true,
+    "status": "open",
+    "accessibility": "Wheelchair-accessible walkways, per the listing.",
+    "tags": [
+     "fishing",
+     "sunset",
+     "street-performers",
+     "playground"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/pier-60-at-clearwater-beach/139755",
+    "also_sources": [
+     "https://www.sunsetsatpier60.com/p/about",
+     "https://www.sunsetsatpier60.com/p/about/history",
+     "https://www.myclearwaterparks.com/Things-To-Do/Visit-the-Beach"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Fishing fees were not stated on the pages read. No closure notice was found on the city's beach page (which invites visitors to 'go fishing on Pier 60'); the verifier should confirm the pier's post-2024 status on myclearwater.com if a Pier 60 page exists. Animals are not permitted on Pier 60 or the bathing beaches (service dogs excepted), per sunsetsatpier60.com."
+   },
+   {
+    "id": "clearwater-marine-aquarium",
+    "name": "Clearwater Marine Aquarium",
+    "aliases": [
+     "CMA"
+    ],
+    "kind": "aquarium",
+    "topics": [
+     "wildlife",
+     "family",
+     "water"
+    ],
+    "area": "downtown-clearwater",
+    "address": "249 Windward Passage",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.977711,
+    "lng": -82.819012,
+    "geo_source": "census",
+    "url": "https://www.cmaquarium.org/",
+    "phone": "(727) 441-1790",
+    "hours_text": "Daily 10am–5pm; last entry 30 minutes before closing. Closed Thanksgiving and Christmas; 9am–3pm Christmas Eve and New Year's Eve.",
+    "price_text": "Adults (12+) $41.95; kids 3–11 $32.95; seniors 65+ $39.95; 2 and under free.",
+    "is_free": false,
+    "summary": "Nonprofit aquarium and marine animal hospital just off the Memorial Causeway (via Island Way) between downtown Clearwater and the beach; it rescues, rehabilitates and releases marine life, and visitors see resident dolphins, sea turtles and other rescued animals. Its site keeps a 'Remembering Winter' page for Winter the dolphin.",
+    "quote": "Clearwater Marine Aquarium is a working animal hospital dedicated to the rescue. rehabilitation, and release of marine life and a leader in research and conservation efforts to protect animals in the wild.",
+    "quote_source": "https://mission.cmaquarium.org/about/",
+    "signature": true,
+    "status": "open",
+    "parking_text": "Paid garage at the aquarium (seasonal rates; members discounted); ticketing is on the garage's 3rd level entrance.",
+    "tags": [
+     "dolphins",
+     "sea-turtles",
+     "rescue",
+     "winter-the-dolphin"
+    ],
+    "source_url": "https://www.cmaquarium.org/visit/visit-info/",
+    "also_sources": [
+     "https://www.cmaquarium.org/visit/admissions/",
+     "https://mission.cmaquarium.org/about/",
+     "https://www.visitstpeteclearwater.com/profile/clearwater-marine-aquarium/138275"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Area follows SPEC §4.1 (downtown-clearwater includes 'the aquarium')."
+   },
+   {
+    "id": "clearwater-beach-marina",
+    "name": "Clearwater Beach Marina",
+    "aliases": [
+     "Clearwater Municipal Marina",
+     "Clearwater Beach Municipal Marina"
+    ],
+    "kind": "waterfront",
+    "topics": [
+     "water",
+     "shopping",
+     "food"
+    ],
+    "area": "clearwater-beach",
+    "address": "25 Causeway Blvd.",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.976821,
+    "lng": -82.826335,
+    "geo_source": "photon",
+    "url": "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina",
+    "summary": "City marina on Causeway Boulevard at Clearwater Beach, the departure point for fishing and sailing charters, sightseeing boats, dinner cruises, dolphin tours, parasailing and personal watercraft rentals, with restaurants, shops and a bait house.",
+    "quote": "The fishing fleet and dinner boats are currently in temporary locations, but continue to be fully operational and accessible.",
+    "status": "open",
+    "status_note": "Under a two-phase replacement project expected to finish in August 2026; tourism boats operate from new slips along Coronado Drive and there are no transient or day docks (per the City of Clearwater, checked 2026-09-27).",
+    "tags": [
+     "charters",
+     "dolphin-tours",
+     "departure-point"
+    ],
+    "source_url": "https://www.myclearwater.com/Visit-the-Beach/Boating-and-Marinas/Clearwater-Beach-Marina",
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "beach-walk-clearwater",
+    "name": "Beach Walk",
+    "aliases": [
+     "Clearwater Beach Walk",
+     "Beachwalk"
+    ],
+    "kind": "waterfront",
+    "topics": [
+     "beaches",
+     "outdoors"
+    ],
+    "area": "clearwater-beach",
+    "address": "South Gulfview Boulevard, south of Pier 60",
+    "city": "Clearwater Beach",
+    "state": "FL",
+    "zip": "33767",
+    "lat": 27.974736,
+    "lng": -82.829568,
+    "geo_source": "photon",
+    "url": "https://www.myclearwaterparks.com/Things-To-Do/Visit-the-Beach",
+    "is_free": true,
+    "summary": "Landscaped, winding beachside promenade on Clearwater Beach running south from Pier 60, with views of the beach.",
+    "quote": "Beach Walk is located to the south of Pier 60 and is a winding beachside promenade with lush landscaping, artistic touches and clear views of the beach.",
+    "status": "open",
+    "tags": [
+     "promenade",
+     "walking"
+    ],
+    "source_url": "https://www.myclearwaterparks.com/Things-To-Do/Visit-the-Beach",
+    "also_sources": [
+     "https://www.myclearwater.com/Visit-the-Beach"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "seaside-seabird-sanctuary",
+    "name": "Seaside Seabird Sanctuary",
+    "kind": "attraction",
+    "kinds": [
+     "nature-preserve"
+    ],
+    "topics": [
+     "wildlife",
+     "family",
+     "beaches"
+    ],
+    "area": "indian-rocks-beach",
+    "address": "18328 Gulf Blvd.",
+    "city": "Indian Shores",
+    "state": "FL",
+    "zip": "33785",
+    "lat": 27.836655,
+    "lng": -82.835983,
+    "geo_source": "census",
+    "url": "https://seasideseabirdsanctuary.org/",
+    "hours_text": "Daily 9am–5pm.",
+    "price_text": "Admission and parking free.",
+    "is_free": true,
+    "summary": "Avian hospital and sanctuary on 1.5 beachfront acres that rescues and rehabilitates native wild birds; visitors see more than 100 resident birds, the hospital at work, a gift shop and an observation deck over the Gulf.",
+    "quote": "We are an Avian Rehabilitation Hospital & Sanctuary dedicated to the care of sick, injured, & orphaned native wild birds!",
+    "quote_source": "https://seasideseabirdsanctuary.org/",
+    "status": "open",
+    "status_note": "The sanctuary reported about 4 feet of storm surge through all its buildings in the 2024 hurricanes (post of Jan 13, 2025); its visit page now lists daily hours.",
+    "tags": [
+     "birds",
+     "rescue",
+     "free"
+    ],
+    "source_url": "https://seasideseabirdsanctuary.org/visit/",
+    "also_sources": [
+     "https://seasideseabirdsanctuary.org/",
+     "https://seasideseabirdsanctuary.org/seaside-seabird-sanctuary-affected-by-hurricanes-in-2024/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The home page teaser says 'open every day from 8-4' while the visit page and site header say 9am–5pm; the visit page is used. seabirdsanctuary.org and seasidesanctuary.org are unrelated sites; do not link them."
+   },
+   {
+    "id": "indian-rocks-historical-museum",
+    "name": "Indian Rocks Historical Museum",
+    "aliases": [
+     "Indian Rocks Beach Historical Museum",
+     "IRB Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history",
+     "beaches"
+    ],
+    "area": "indian-rocks-beach",
+    "address": "203 4th Avenue",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "lat": 27.882504,
+    "lng": -82.84964,
+    "geo_source": "census",
+    "url": "https://www.irbmuseum.com/",
+    "phone": "727-593-3861",
+    "hours_text": "Wednesday–Saturday 10am–2pm.",
+    "price_text": "Free; donations requested.",
+    "is_free": true,
+    "summary": "Local history museum in a historic beach cottage in Chic-a-Si Park, covering the beach from prehistoric times through pioneer settlement to the motel and condo eras, with old photographs and a gift shop.",
+    "quote": "Come discover the history and stories of Indian Rocks Beach!",
+    "status": "open",
+    "accessibility": "Wheelchair accessible, with accessible parking and restrooms, per the listing.",
+    "tags": [
+     "beach-history",
+     "self-guided-audio-tour"
+    ],
+    "source_url": "https://www.irbmuseum.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/indian-rocks-historical-museum/139504"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "palm-harbor-museum",
+    "name": "Palm Harbor Museum",
+    "aliases": [
+     "North Pinellas Historical Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "palm-harbor",
+    "address": "2043 Curlew Rd.",
+    "city": "Palm Harbor",
+    "state": "FL",
+    "zip": "34683",
+    "lat": 28.048832,
+    "lng": -82.748616,
+    "geo_source": "census",
+    "url": "https://www.palmharbormuseum.com/",
+    "phone": "(727) 724-3054",
+    "hours_text": "Thursday, Friday and Saturday 10am–2pm; closed on holidays.",
+    "price_text": "Free or donation; docent-led or self-guided.",
+    "is_free": true,
+    "summary": "Small museum of the history of Palm Harbor, Crystal Beach, Ozona and Curlew from 1800s settlement to today, in a house built around 1915, at the corner of Belcher and Curlew roads.",
+    "quote": "We welcome you! Free/Donation Tours can be docent-led or self-guided",
+    "status": "open",
+    "parking_text": "Free parking; enter from Curlew Road.",
+    "source_url": "https://www.palmharbormuseum.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/palm-harbor-museum/138590"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Hours differ: the museum's site says Thu–Sat 10–2, Visit St. Pete/Clearwater says Wed–Fri 10–2; the museum's own site is used. The ~1915 house date is from the VSPC listing."
+   },
+   {
+    "id": "clearwater-historical-society-museum",
+    "name": "Clearwater Historical Society Museum and Cultural Center",
+    "aliases": [
+     "Clearwater History Museum",
+     "South Ward School"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "downtown-clearwater",
+    "address": "610 S Fort Harrison Ave",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33756",
+    "lat": 27.959391,
+    "lng": -82.800015,
+    "geo_source": "census",
+    "url": "https://www.clearwaterhistoricalsociety.org/",
+    "phone": "(727) 754-8019",
+    "hours_text": "Wednesday–Saturday 10am–2pm; private tours by arrangement.",
+    "price_text": "Free; donations encouraged.",
+    "is_free": true,
+    "summary": "History museum on the five-acre campus of the former South Ward School (opened 1906), open since June 2019, with exhibits on Clearwater's founding families, local restaurants and schools. The society also runs the Plumb House Museum.",
+    "quote": "The Clearwater Historical Society Museum and Cultural Center is located on the five-acre campus of the historic South Ward School at 610 South Fort Harrison Avenue in Clearwater.",
+    "quote_source": "https://www.clearwaterhistoricalsociety.org/museum/clearwater-historical-society-museum-and-cultural-center/",
+    "status": "open",
+    "source_url": "https://www.clearwaterhistoricalsociety.org/",
+    "also_sources": [
+     "https://www.clearwaterhistoricalsociety.org/museum/clearwater-historical-society-museum-and-cultural-center/",
+     "https://www.visitstpeteclearwater.com/profile/clearwater-historical-society-museum-and-cultural-center/140091"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Free admission from the VSPC listing; the 1906 school opening year from the VSPC listing."
+   },
+   {
+    "id": "dk-farms-and-gardens",
+    "name": "DK Farms & Gardens",
+    "kind": "zoo",
+    "kinds": [
+     "attraction",
+     "garden"
+    ],
+    "topics": [
+     "family",
+     "wildlife"
+    ],
+    "area": "largo",
+    "address": "1750 Lake Ave SE",
+    "city": "Largo",
+    "state": "FL",
+    "zip": "33771",
+    "lat": 27.900319,
+    "lng": -82.770778,
+    "geo_source": "census",
+    "url": "https://www.dkfarmsandgardens.com/",
+    "phone": "(727) 348-0818",
+    "summary": "Family farm attraction in Largo with a petting zoo (mini cows, goats, donkeys, capybara encounters), tropical gardens, mini-golf, pedal carts and a game zone, plus seasonal events such as a fall festival and pumpkin patch.",
+    "quote": "Pinellas County's Petting Zoo Open Everyday!",
+    "status": "open",
+    "tags": [
+     "petting-zoo",
+     "kids",
+     "pumpkin-patch"
+    ],
+    "source_url": "https://www.dkfarmsandgardens.com/",
+    "also_sources": [
+     "https://www.dkfarmsandgardens.com/zoo",
+     "https://www.visitstpeteclearwater.com/profile/dk-farms-gardens/142239"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Hours on the admissions page are ambiguous ('Sept. Nov. & Dec. Admission 10-4pm' and '10-7pm Mon-Sat 10-4 Sun'); VSPC lists daily 10am–4pm. Prices not legible on the page as read. hours_text and price_text left null."
+   },
+   {
+    "id": "dunedin-history-museum",
+    "name": "Dunedin History Museum",
+    "aliases": [
+     "Dunedin Historical Museum"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "dunedin",
+    "address": "349 Main Street",
+    "city": "Dunedin",
+    "state": "FL",
+    "zip": "34698",
+    "lat": 28.011826,
+    "lng": -82.788773,
+    "geo_source": "census",
+    "url": "https://dunedinmuseum.org/",
+    "hours_text": "Monday–Saturday 11am–5pm, Sunday noon–4pm.",
+    "price_text": "Adults $5; ages 13–17, seniors, college students and teachers $4; visitors with disabilities $3; under 12 free; members free.",
+    "is_free": false,
+    "summary": "Local history museum in downtown Dunedin, in the town's former railroad depot (a station site since 1888; the current building dates from 1924 and served trains until 1987). The museum says the railroad boosted the citrus industry and tourism; its old line is now the Pinellas Trail.",
+    "quote": "The building that houses our Museum, rebuilt for the last time in 1924, was a fully-functioning train depot until 1987",
+    "quote_source": "https://dunedinmuseum.org/about-the-dunedin-history-museum/",
+    "status": "open",
+    "tags": [
+     "train-depot",
+     "pinellas-trail"
+    ],
+    "source_url": "https://dunedinmuseum.org/visit-the-dunedin-history-museum/",
+    "also_sources": [
+     "https://dunedinmuseum.org/about-the-dunedin-history-museum/",
+     "https://www.visitstpeteclearwater.com/profile/dunedin-history-museum/139344"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Admission table has two columns (members free / general); the general column is used."
+   },
+   {
+    "id": "dunedin-fine-art-center",
+    "name": "Dunedin Fine Art Center",
+    "aliases": [
+     "DFAC"
+    ],
+    "kind": "gallery",
+    "kinds": [
+     "museum"
+    ],
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "area": "dunedin",
+    "address": "1143 Michigan Blvd.",
+    "city": "Dunedin",
+    "state": "FL",
+    "zip": "34698",
+    "lat": 28.037722,
+    "lng": -82.77392,
+    "geo_source": "census",
+    "url": "https://www.dfac.org/",
+    "hours_text": "Monday–Friday 9am–5pm, Saturday–Sunday 10am–2pm. DLM Children's Museum: Monday–Friday 10am–5pm, Saturday–Sunday 10am–2pm.",
+    "summary": "Art center, open since 1975, with six galleries of changing exhibitions by local, national and international artists, the David L. Mason Children's Museum, classes, a gallery shop and the Palm Cafe.",
+    "quote": "Explore six art galleries, a children’s museum, the Gallery Shop and The Palm Cafe —all in one inspiring space.",
+    "status": "open",
+    "accessibility": "Free parking with wheelchair-accessible spaces; elevators and accessible seating, per the center.",
+    "parking_text": "Free parking.",
+    "tags": [
+     "childrens-museum",
+     "classes"
+    ],
+    "source_url": "https://www.dfac.org/visit/",
+    "also_sources": [
+     "https://www.dfac.org/",
+     "https://www.visitstpeteclearwater.com/profile/dunedin-fine-art-center/138285"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Admission is not stated on the visit page as read."
+   },
+   {
+    "id": "downtown-dunedin",
+    "name": "Downtown Dunedin (Main Street)",
+    "aliases": [
+     "Dunedin Main Street",
+     "Main Street Dunedin"
+    ],
+    "kind": "district",
+    "topics": [
+     "shopping",
+     "food",
+     "drink",
+     "outdoors"
+    ],
+    "area": "dunedin",
+    "address": "Main Street",
+    "city": "Dunedin",
+    "state": "FL",
+    "zip": "34698",
+    "lat": 28.012019,
+    "lng": -82.789728,
+    "geo_source": "census",
+    "is_free": true,
+    "summary": "Walkable downtown on the Fred Marquis Pinellas Trail with independent boutiques, cafes and several breweries, including Dunedin Brewery, which the listing calls Florida's first microbrewery; the Dunedin History Museum is on Main Street.",
+    "quote": "Downtown Dunedin sits along the 45-mile Fred Marquis Pinellas Trail and includes independent boutiques, cafes, and several breweries, including Dunedin Brewery, Florida's first microbrewery.",
+    "status": "open",
+    "parking_text": "Ample free parking, per the listing.",
+    "tags": [
+     "breweries",
+     "pinellas-trail"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/communities/dunedin",
+    "checked": "2026-09-27",
+    "notes": "Point is 301 Main Street."
+   },
+   {
+    "id": "safety-harbor-museum",
+    "name": "Safety Harbor Museum and Cultural Center",
+    "aliases": [
+     "Safety Harbor Museum & Cultural Center",
+     "Safety Harbor Museum of Regional History"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "safety-harbor",
+    "address": "329 Bayshore Boulevard South",
+    "city": "Safety Harbor",
+    "state": "FL",
+    "zip": "34695",
+    "lat": 27.989056,
+    "lng": -82.690072,
+    "geo_source": "photon",
+    "url": "https://www.cityofsafetyharbor.com/1039/Museum-and-Cultural-Center",
+    "phone": "727-724-1562",
+    "hours_text": "Thursday–Saturday 11am–4pm.",
+    "price_text": "$5 per person; military and first responders $4; children 6 and under free with a paid adult.",
+    "is_free": false,
+    "summary": "City-run museum of Florida history and archaeology on the Tampa Bay shore, with dioramas, fossils and artifacts of Florida's native peoples and the Spanish colonial period, local history and changing art displays.",
+    "quote": "This Florida history and archaeology museum features 12,000 years of history.",
+    "quote_source": "https://www.visitstpeteclearwater.com/profile/safety-harbor-museum-and-cultural-center/139822",
+    "status": "open",
+    "parking_text": "Designated parking on site.",
+    "tags": [
+     "archaeology",
+     "tampa-bay-view"
+    ],
+    "source_url": "https://www.cityofsafetyharbor.com/1039/Museum-and-Cultural-Center",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/safety-harbor-museum-and-cultural-center/139822"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Admission from the city page ($5); the VSPC listing says a suggested $4 donation. The exhibit description is from VSPC."
+   },
+   {
+    "id": "safety-harbor-main-street",
+    "name": "Downtown Safety Harbor (Main Street)",
+    "aliases": [
+     "Safety Harbor Main Street"
+    ],
+    "kind": "district",
+    "topics": [
+     "shopping",
+     "arts",
+     "food"
+    ],
+    "area": "safety-harbor",
+    "address": "Main Street",
+    "city": "Safety Harbor",
+    "state": "FL",
+    "zip": "34695",
+    "lat": 27.990731,
+    "lng": -82.689209,
+    "geo_source": "census",
+    "is_free": true,
+    "summary": "Small-town Main Street in Safety Harbor with shops, galleries and restaurants and the Market on Main farmers market; the Safety Harbor Resort & Spa and the city museum are nearby.",
+    "quote": "The relaxation continues with Safety Harbor's strollable Main Street, where you can pop into shops and galleries for locally",
+    "status": "open",
+    "tags": [
+     "market-on-main",
+     "galleries"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/communities/safety-harbor",
+    "checked": "2026-09-27",
+    "notes": "The quote is cut at 125 characters by the fetch tool. Point is 200 Main Street."
+   },
+   {
+    "id": "safety-harbor-art-and-music-center",
+    "name": "Safety Harbor Art and Music Center",
+    "aliases": [
+     "SHAMc"
+    ],
+    "kind": "gallery",
+    "kinds": [
+     "music-venue"
+    ],
+    "topics": [
+     "arts",
+     "music"
+    ],
+    "area": "safety-harbor",
+    "address": "706 2nd St N",
+    "city": "Safety Harbor",
+    "state": "FL",
+    "zip": "34695",
+    "lat": 27.991681,
+    "lng": -82.694377,
+    "geo_source": "census",
+    "url": "https://www.safetyharborartandmusiccenter.com/",
+    "phone": "(727) 304-5683",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Volunteer-run nonprofit art and music center with mosaic work, murals, ceramics and mixed media on its grounds, plus workshops, open studio, exhibitions and performances.",
+    "quote": "Safety Harbor Art and Music Center (SHAMc) is a nonprofit organization and community space that celebrates art and music.",
+    "status": "open",
+    "accessibility": "Accessible parking and restrooms, wheelchair ramp and zero-step entry, per the listing.",
+    "parking_text": "Free on-site parking.",
+    "tags": [
+     "mosaics",
+     "live-music",
+     "workshops"
+    ],
+    "source_url": "https://www.safetyharborartandmusiccenter.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/safety-harbor-art-music-center/138665",
+     "https://www.visitstpeteclearwater.com/article/best-places-to-shop"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Hours not stated on the pages read."
+   },
+   {
+    "id": "sponge-docks-tarpon-springs",
+    "name": "Tarpon Springs Sponge Docks",
+    "aliases": [
+     "Sponge Docks",
+     "Dodecanese Boulevard"
+    ],
+    "kind": "district",
+    "kinds": [
+     "waterfront",
+     "historic-district",
+     "shopping"
+    ],
+    "topics": [
+     "history",
+     "food",
+     "shopping",
+     "water"
+    ],
+    "area": "tarpon-springs",
+    "address": "Dodecanese Blvd.",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.155818,
+    "lng": -82.762023,
+    "geo_source": "photon",
+    "url": "https://spongedocks.net/",
+    "phone": "727-937-6109",
+    "hours_text": "Daily 10am–10pm, per the listing; shop and restaurant hours vary.",
+    "price_text": "Free to walk.",
+    "is_free": true,
+    "summary": "Historic waterfront along Dodecanese Boulevard on the Anclote River, center of the Greek-American sponge industry: docked sponge boats, sponge and souvenir shops, Greek restaurants and bakeries, sponge-diving exhibits and boat tours out to the Gulf.",
+    "quote": "Walk along Dodecanese Boulevard to see docked sponge boats, shops selling seas sponges and restaurants serving up authentic Greek cuisine.",
+    "quote_source": "https://www.visitstpeteclearwater.com/profile/tarpon-springs-sponge-docks/139970",
+    "signature": true,
+    "status": "open",
+    "tags": [
+     "greek-heritage",
+     "sponges",
+     "boat-tours"
+    ],
+    "source_url": "https://spongedocks.net/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/tarpon-springs-sponge-docks/139970",
+     "https://www.visitstpeteclearwater.com/communities/tarpon-springs"
+    ],
+    "checked": "2026-09-27",
+    "notes": "spongedocks.net is a local commercial guide, not a public body; phone and hours from the VSPC listing. 'on the Anclote River' from the spongedocks.net cruise text ('through the Anclote River and out to the Gulf'). Point: OpenStreetMap 'Sponge Docks' ferry landing."
+   },
+   {
+    "id": "spongeorama",
+    "name": "Spongeorama Sponge Factory",
+    "aliases": [
+     "Spongeorama"
+    ],
+    "kind": "shopping",
+    "kinds": [
+     "attraction"
+    ],
+    "topics": [
+     "shopping",
+     "history"
+    ],
+    "area": "tarpon-springs",
+    "address": "510 Dodecanese Blvd",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.155513,
+    "lng": -82.758464,
+    "geo_source": "census",
+    "url": "https://spongeorama.com/",
+    "summary": "Sponge shop at the Sponge Docks, in business for over fifty years, selling natural Gulf sponges, soaps and Greek and Florida souvenirs; it shows a free film on sponge diving and harvesting and runs a sightseeing cruise.",
+    "quote": "Watch our free movie on sponge diving and harvesting and learn how to take care of your sponges so they will last for many years to come.",
+    "quote_source": "https://spongeorama.com/about/",
+    "status": "open",
+    "tags": [
+     "sponges",
+     "free-film"
+    ],
+    "source_url": "https://spongeorama.com/about/",
+    "also_sources": [
+     "https://spongeorama.com/contact-us/",
+     "https://www.visitstpeteclearwater.com/article/best-places-to-shop"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tarpon-springs-heritage-museum",
+    "name": "Tarpon Springs Heritage Museum",
+    "aliases": [
+     "Heritage Museum & Tarpon Arts Ticket Office"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history",
+     "arts"
+    ],
+    "area": "tarpon-springs",
+    "address": "100 Beekman Ln",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.146254,
+    "lng": -82.760438,
+    "geo_source": "census",
+    "url": "https://tarponarts.org/heritage-museum-tarpon-arts-ticket-office/",
+    "phone": "727.942.5605",
+    "hours_text": "Monday–Friday 10am–4pm.",
+    "price_text": "Adults $5; Tarpon Springs residents $3 (ID required); military and group discounts.",
+    "is_free": false,
+    "summary": "City museum in Craig Park on Spring Bayou, in a former library: one wing covers the Greek community of Tarpon Springs and the sponge industry, the other holds 'The Great State of Florida', paintings by Christopher M. Still.",
+    "quote": "A permanent exhibit, “The Greek Community of Tarpon Springs” explores the history and culture of the Greek community, including domestic traditions, foodways, religion, and celebrations.",
+    "status": "open",
+    "parking_text": "Free street parking and a lot behind the building; ADA-accessible main entrance.",
+    "tags": [
+     "greek-heritage",
+     "sponge-industry",
+     "spring-bayou"
+    ],
+    "source_url": "https://tarponarts.org/heritage-museum-tarpon-arts-ticket-office/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/tarpon-springs-heritage-museum/140731"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "tarpon-springs-depot-museum",
+    "name": "Tarpon Springs Historic Train Depot Museum",
+    "aliases": [
+     "Tarpon Springs Area Historical Society Depot Museum",
+     "Historic Train Depot Museum"
+    ],
+    "kind": "museum",
+    "kinds": [
+     "visitor-center"
+    ],
+    "topics": [
+     "history"
+    ],
+    "area": "tarpon-springs",
+    "address": "160 East Tarpon Avenue",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.146186,
+    "lng": -82.754931,
+    "geo_source": "census",
+    "url": "https://tarponspringsareahistoricalsociety.org/",
+    "phone": "(727) 937-8997",
+    "hours_text": "Wednesday–Saturday 11am–3pm.",
+    "price_text": "No fee; donations appreciated.",
+    "is_free": true,
+    "summary": "Local history museum in the town's century-old railroad depot, run by the Tarpon Springs Area Historical Society, with restored station rooms, exhibits on the railroad and town life, and a history hunt for kids. It is also an official city welcome center.",
+    "quote": "The Tarpon Springs Historic Train Depot has been around for over 100 years.",
+    "status": "open",
+    "tags": [
+     "train-depot",
+     "welcome-center"
+    ],
+    "source_url": "https://tarponspringsareahistoricalsociety.org/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/tarpon-springs-area-historical-society-s-depot-museum/139968"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "leepa-rattner-museum-of-art",
+    "name": "Leepa-Rattner Museum of Art",
+    "kind": "museum",
+    "topics": [
+     "arts"
+    ],
+    "area": "tarpon-springs",
+    "address": "600 Klosterman Rd.",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.121747,
+    "lng": -82.746435,
+    "geo_source": "photon",
+    "url": "https://leeparattner.org/",
+    "phone": "727-712-5762",
+    "hours_text": "Tuesday–Saturday 11am–5pm; closed Monday.",
+    "price_text": "Free; donations encouraged.",
+    "is_free": true,
+    "summary": "Art museum on the Tarpon Springs campus of St. Petersburg College with a collection of over 6,000 works of 20th- and 21st-century art, exhibitions and education programs.",
+    "quote": "over 6,000 works of 20th and 21st-century art",
+    "status": "open",
+    "tags": [
+     "st-petersburg-college"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/leepa-rattner-museum-of-art/138302",
+    "checked": "2026-09-27",
+    "notes": "leeparattner.org returned a certificate error to curl and HTTP 503 to WebFetch on 2026-09-27, so status rests on the current Visit St. Pete/Clearwater listing (which says its hours differ in two places and to call to confirm). Verifier: confirm it is open."
+   },
+   {
+    "id": "tarpon-springs-aquarium",
+    "name": "Tarpon Springs Aquarium and Animal Sanctuary",
+    "aliases": [
+     "Tarpon Springs Aquarium"
+    ],
+    "kind": "aquarium",
+    "kinds": [
+     "zoo"
+    ],
+    "topics": [
+     "wildlife",
+     "family"
+    ],
+    "area": "tarpon-springs",
+    "address": "1722 North Pinellas Avenue",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.167998,
+    "lng": -82.754466,
+    "geo_source": "photon",
+    "url": "https://www.tarponspringsaquarium.com/",
+    "phone": "(727) 938-5378",
+    "hours_text": "Daily 10am–5pm, rain or shine; closed Thanksgiving and Christmas.",
+    "price_text": "Adults (13+) $34.99; children 3–12 $24.99; seniors 65+ $29.99; 2 and under free.",
+    "is_free": false,
+    "summary": "Family-owned aquarium and animal sanctuary (since 1990) with sharks, alligators and crocodiles, stingrays, reptiles, touch tanks, a petting zoo and animal shows.",
+    "quote": "The Tarpon Springs Aquarium has been family owned and operated since 1990.",
+    "quote_source": "https://www.tarponspringsaquarium.com/aboutus",
+    "status": "open",
+    "parking_text": "Free parking on site.",
+    "tags": [
+     "sharks",
+     "alligators",
+     "touch-tank"
+    ],
+    "source_url": "https://www.tarponspringsaquarium.com/hours-and-prices",
+    "also_sources": [
+     "https://www.tarponspringsaquarium.com/aboutus",
+     "https://www.tarponspringsaquarium.com/directions-parking"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Census matched 1722 S Pinellas Ave (wrong side of town), so the OpenStreetMap feature is used."
+   },
+   {
+    "id": "heritage-village",
+    "name": "Heritage Village",
+    "aliases": [
+     "Pinellas County Heritage Village"
+    ],
+    "kind": "museum",
+    "kinds": [
+     "historic-site"
+    ],
+    "topics": [
+     "history",
+     "family"
+    ],
+    "area": "largo",
+    "address": "11909 125th Street N",
+    "city": "Largo",
+    "state": "FL",
+    "zip": "33774",
+    "lat": 27.882264,
+    "lng": -82.811697,
+    "geo_source": "census",
+    "url": "https://www.heritagevillagefl.org/",
+    "phone": "(727) 582-2123",
+    "hours_text": "Wednesday–Saturday 10am–4pm, Sunday 1–4pm.",
+    "price_text": "Free (donations welcome).",
+    "is_free": true,
+    "summary": "Pinellas County's 21-acre history museum park, open since 1976, with more than 28 historic homes and structures from across the county, among them the 1924 Gandy Tower, plus two galleries. It sits in the Pinewood Cultural Park with the Florida Botanical Gardens.",
+    "quote": "Heritage Village includes over twenty-eight historic structures and features from across Pinellas County, as well as two gallery spaces.",
+    "quote_source": "https://www.heritagevillagefl.org/about/",
+    "status": "open",
+    "tags": [
+     "historic-houses",
+     "pinewood-cultural-park"
+    ],
+    "source_url": "https://www.heritagevillagefl.org/",
+    "also_sources": [
+     "https://www.heritagevillagefl.org/about/",
+     "https://pinellas.gov/parks/heritage-village/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Phone from the Google Maps link on pinellas.gov's Heritage Village page."
+   },
+   {
+    "id": "tampa-bay-automobile-museum",
+    "name": "Tampa Bay Automobile Museum",
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "largo",
+    "address": "3301 Gateway Centre Blvd",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "zip": "33782",
+    "lat": 27.852064,
+    "lng": -82.67828,
+    "geo_source": "census",
+    "url": "https://www.tbauto.org/",
+    "hours_text": "Monday and Wednesday–Saturday 10am–4:30pm, Sunday noon–4:30pm; closed Tuesday.",
+    "price_text": "General $16; seniors 65+ $14; active military and veterans $12; youth 6–17 $10; under 5 free with a paid adult.",
+    "is_free": false,
+    "summary": "Museum of vintage cars chosen for their engineering, including pioneering front-wheel-drive and rear-engine cars of the 1920s and 1930s, in 19,000 square feet of galleries in Pinellas Park.",
+    "quote": "The Tampa Bay Automobile Museum, features a unique collection of vintage cars and vehicles that demonstrate special creativity and imagination in their history and engineering.",
+    "quote_source": "https://www.tbauto.org/",
+    "status": "open",
+    "tags": [
+     "cars",
+     "engineering"
+    ],
+    "source_url": "https://www.tbauto.org/about",
+    "also_sources": [
+     "https://www.tbauto.org/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Pinellas Park is in the largo area per SPEC §4.1."
+   },
+   {
+    "id": "collection-on-palmetto",
+    "name": "The Collection on Palmetto",
+    "aliases": [
+     "Collection on Palmetto"
+    ],
+    "kind": "museum",
+    "topics": [
+     "history"
+    ],
+    "area": "downtown-clearwater",
+    "address": "2116 Palmetto Street",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33765",
+    "lat": 27.975313,
+    "lng": -82.748321,
+    "geo_source": "census",
+    "url": "https://collectiononpalmetto.com/",
+    "phone": "727-953-8356",
+    "hours_text": "Tuesday–Saturday 10am–3pm; walk-ins welcome, groups by appointment.",
+    "price_text": "$10–$15 depending on visitor category.",
+    "is_free": false,
+    "summary": "Museum of early automobiles and engines, from the 1886 Benz Patent Motorwagen to mid-20th-century cars, with vintage steam and gas engines.",
+    "status": "open",
+    "tags": [
+     "cars",
+     "engines"
+    ],
+    "source_url": "https://collectiononpalmetto.com/",
+    "checked": "2026-09-27",
+    "notes": "Read with WebFetch (curl connection reset). The phone number is the one given for group tours."
+   },
+   {
+    "id": "cleveland-street-district",
+    "name": "Cleveland Street District",
+    "aliases": [
+     "Downtown Clearwater",
+     "The District (Cleveland Street)"
+    ],
+    "kind": "district",
+    "topics": [
+     "food",
+     "shopping",
+     "music"
+    ],
+    "area": "downtown-clearwater",
+    "address": "Cleveland Street",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33755",
+    "lat": 27.96569,
+    "lng": -82.79862,
+    "geo_source": "census",
+    "is_free": true,
+    "summary": "Pedestrian-friendly stretch of Cleveland Street in downtown Clearwater with restaurants and a few boutiques, home to the Capitol Theatre (built 1921, restored 2013), near Coachman Park, the downtown waterfront park.",
+    "quote": "It's a delightful, pedestrian-friendly street lined with great restaurants and a few boutiques.",
+    "status": "open",
+    "tags": [
+     "capitol-theatre",
+     "coachman-park"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/communities/clearwater",
+    "checked": "2026-09-27",
+    "notes": "Point is 600 Cleveland Street. Capitol Theatre dates are from the same page's summary as returned by the fetch tool."
+   },
+   {
+    "id": "countryside-mall",
+    "name": "Countryside Mall",
+    "kind": "shopping",
+    "topics": [
+     "shopping",
+     "family"
+    ],
+    "area": "downtown-clearwater",
+    "address": "27001 US 19 North",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33761",
+    "lat": 28.017351,
+    "lng": -82.73367,
+    "geo_source": "photon",
+    "url": "https://www.countrysidemallfl.com/",
+    "summary": "Shopping mall in the Countryside area of Clearwater with more than 100 stores, family entertainment and restaurants.",
+    "quote": "This Clearwater mall has something for everyone with over 100 stores, family-friendly entertainment options, and numerous eateries!",
+    "status": "open",
+    "tags": [
+     "mall"
+    ],
+    "source_url": "https://www.countrysidemallfl.com/",
+    "checked": "2026-09-27",
+    "notes": "The mall's page (read with WebFetch) gave no street address or weekly hours; the street address comes from the OpenStreetMap feature."
+   },
+   {
+    "id": "gulfport-tuesday-fresh-market",
+    "name": "Gulfport Tuesday Fresh Market",
+    "aliases": [
+     "Gulfport Fresh Market"
+    ],
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping",
+     "arts",
+     "music"
+    ],
+    "area": "gulfport",
+    "address": "Beach Boulevard below 28th Avenue South (3101 Beach Blvd S)",
+    "city": "Gulfport",
+    "state": "FL",
+    "zip": "33707",
+    "lat": 27.73876,
+    "lng": -82.70788,
+    "geo_source": "census",
+    "url": "https://visitgulfportflorida.com/event/gulfport-fresh-market/",
+    "hours_text": "Every Tuesday, year round: 9am–3pm October–May, 9am–2pm June–September.",
+    "price_text": "Free admission and free parking.",
+    "is_free": true,
+    "summary": "Weekly open-air market in Gulfport's Waterfront District with produce, breads, cheeses, prepared foods, bath products, flowers, local artists and crafters working on site, and live music in two spots.",
+    "quote": "The Market is located in Gulfport’s historic Waterfront District on Beach Boulevard below 28th Avenue South",
+    "status": "open",
+    "tags": [
+     "farmers-market",
+     "pet-friendly",
+     "weekly"
+    ],
+    "source_url": "https://visitgulfportflorida.com/event/gulfport-fresh-market/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/event/gulfport-tuesday-fresh-market/1596",
+     "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The Gulfport Merchants Chamber page says 'Every Tuesday, Year Round, 9am – 2pm'; the VSPC listing gives 9am–3pm Oct–May and 9am–2pm Jun–Sep, which is used. Street number from the VSPC event listing."
+   },
+   {
+    "id": "corey-avenue",
+    "name": "Corey Avenue",
+    "aliases": [
+     "Corey Avenue District",
+     "Corey Ave"
+    ],
+    "kind": "district",
+    "topics": [
+     "shopping",
+     "food",
+     "drink",
+     "beaches"
+    ],
+    "area": "st-pete-beach",
+    "address": "Corey Avenue",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.742422,
+    "lng": -82.749294,
+    "geo_source": "census",
+    "is_free": true,
+    "summary": "Walkable shopping street in St. Pete Beach, near Blind Pass Road, with shops, bars and restaurants, including the Swigwam dive bar; the Corey Avenue Sunday market is held here.",
+    "quote": "Or, mingle with the locals at Swigwam, a legendary dive, on Corey Avenue.",
+    "quote_source": "https://www.visitstpeteclearwater.com/communities/st-pete-beach",
+    "status": "open",
+    "tags": [
+     "sunday-market",
+     "walkable"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/things-to-do/shopping",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/communities/st-pete-beach",
+     "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The shopping page calls Corey Avenue a 'walkable shopping district'. No district association site was found. Point is 350 Corey Ave."
+   },
+   {
+    "id": "corey-avenue-sunday-market",
+    "name": "Corey Ave Sunday Fresh Market",
+    "aliases": [
+     "Corey Avenue Sunday Market"
+    ],
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping",
+     "arts"
+    ],
+    "area": "st-pete-beach",
+    "address": "300–398 Corey Ave.",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.742422,
+    "lng": -82.749294,
+    "geo_source": "census",
+    "url": "https://www.facebook.com/coreyavemarketonstpetebeach",
+    "hours_text": "Sundays 10am–2pm October–May; 9am–1pm June–September.",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Weekly Sunday market on Corey Avenue with more than 100 local vendors: produce, baked goods, jewelry, clothing, art and food.",
+    "quote": "Shop fresh produce, baked goods, handmaid jewelry, and more!",
+    "status": "open",
+    "tags": [
+     "farmers-market",
+     "weekly"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/event/corey-avenue-sunday-fresh-market-st-pete-beach/51371",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The quote keeps the source's spelling ('handmaid'). The VSPC listing runs Oct 4, 2026 – Sep 26, 2027."
+   },
+   {
+    "id": "safety-harbor-market-on-main",
+    "name": "Safety Harbor's Market on Main",
+    "aliases": [
+     "Market on Main"
+    ],
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping"
+    ],
+    "area": "safety-harbor",
+    "address": "401 Main St.",
+    "city": "Safety Harbor",
+    "state": "FL",
+    "zip": "34695",
+    "lat": 27.990849,
+    "lng": -82.691257,
+    "geo_source": "census",
+    "url": "https://www.facebook.com/SHMarketonMain/",
+    "hours_text": "Sundays 10am–3pm, September through July; summer break in August.",
+    "summary": "Weekly Sunday market on Main Street with handcrafted goods, food vendors, produce, fresh orange juice and pickled products.",
+    "quote": "Local hand-crafted items, local food vendors, produce, fresh orange juice, pickled products, and much more! Selection varies each week.",
+    "status": "open",
+    "tags": [
+     "farmers-market",
+     "weekly"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/event/safety-harbors-market-main/1931",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The listing says 'September through July; closed for summer break'; August as the break month is our reading of that."
+   },
+   {
+    "id": "dunedin-downtown-market",
+    "name": "Dunedin Downtown Market",
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping"
+    ],
+    "area": "dunedin",
+    "address": "John L. Lawrence Pioneer Park, 422 Main St. (November–June); Dunedin History Museum lot, 349 Main St. (July–October)",
+    "city": "Dunedin",
+    "state": "FL",
+    "zip": "34698",
+    "lat": 28.012051,
+    "lng": -82.787579,
+    "geo_source": "photon",
+    "url": "https://www.tampabaymarkets.com/dunedin-downtown-market",
+    "hours_text": "Fridays and Saturdays 9am–2pm November–June; Saturdays 9am–1pm July–October.",
+    "price_text": "Free admission.",
+    "is_free": true,
+    "summary": "Open-air market in downtown Dunedin with more than 60 local vendors selling produce, plants, eggs, meats, cheeses, baked goods, prepared foods and local crafts.",
+    "quote": "The Dunedin Downtown Market is a local open-air fresh market that supports 60+ local vendors.",
+    "status": "open",
+    "tags": [
+     "farmers-market",
+     "weekly"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/event/dunedin-downtown-market-saturdays/54881"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Point is Pioneer Park (OSM), the main-season site."
+   },
+   {
+    "id": "spc-planetarium",
+    "name": "St. Petersburg College Planetarium",
+    "aliases": [
+     "SPC Planetarium"
+    ],
+    "kind": "science-center",
+    "topics": [
+     "family"
+    ],
+    "area": "west-stpete",
+    "address": "Natural Science Building (SC 205), St. Petersburg/Gibbs Campus, 69th Street North at 5th Avenue",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.778374,
+    "lng": -82.73227,
+    "geo_source": "photon",
+    "url": "https://www.spcollege.edu/friends-partners/about/locations/community-enrichment-facilities/planetarium",
+    "hours_text": "Free public shows Wednesday 8pm and Friday 7pm when the college is in session (an extra 8:30pm Friday show in October); telescope viewing on the observation deck after Wednesday shows, weather permitting.",
+    "price_text": "Free; walk-in, first come, first served (46 seats).",
+    "is_free": true,
+    "summary": "College planetarium with free, live-narrated 45-minute public shows, followed on Wednesdays by telescope viewing from the rooftop observatory; ages 5 and up.",
+    "quote": "The planetarium offers free public shows on Wednesday and Friday evenings when the college is in session.",
+    "status": "open",
+    "parking_text": "Free parking for the shows.",
+    "tags": [
+     "astronomy",
+     "free",
+     "telescope"
+    ],
+    "source_url": "https://www.spcollege.edu/friends-partners/about/locations/community-enrichment-facilities/planetarium",
+    "checked": "2026-09-27",
+    "notes": "Point is the Gibbs Campus (OSM), not the building."
+   },
+   {
+    "id": "marlene-rose-gallery",
+    "name": "Marlene Rose Gallery",
+    "aliases": [
+     "Marlene Rose Glass"
+    ],
+    "kind": "gallery",
+    "topics": [
+     "arts",
+     "shopping"
+    ],
+    "area": "downtown-clearwater",
+    "address": "416 Cleveland Street",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33755",
+    "lat": 27.965658,
+    "lng": -82.800959,
+    "geo_source": "census",
+    "url": "https://marlenerose.com/",
+    "hours_text": "Monday–Friday 10am–4pm; Saturday and Sunday by appointment.",
+    "summary": "Downtown Clearwater gallery of sculptor Marlene Rose, who works in sand-cast glass: each piece is cast by hand from molten glass.",
+    "quote": "Each piece is hand cast from molten glass into a unique modern work of art that resonates with references and allusions to ancient cultures and civilizations.",
+    "quote_source": "https://marlenerose.com/",
+    "status": "open",
+    "tags": [
+     "glass",
+     "sand-cast-glass",
+     "cleveland-street"
+    ],
+    "source_url": "https://marlenerose.com/contact/",
+    "also_sources": [
+     "https://marlenerose.com/",
+     "https://www.visitstpeteclearwater.com/article/glass-art-galleries-museums"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "clay-co-op",
+    "name": "The Clay Co-op",
+    "kind": "gallery",
+    "topics": [
+     "arts"
+    ],
+    "area": "grand-central",
+    "address": "2724 6th Ave S.",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33712",
+    "lat": 27.764629,
+    "lng": -82.670225,
+    "geo_source": "census",
+    "url": "https://www.claycoopstpete.com/",
+    "phone": "727-321-2071",
+    "hours_text": "Monday–Friday 10am–5pm, Saturday–Sunday 10am–4pm.",
+    "summary": "Working ceramic studio and community space in the Warehouse Arts District with pottery classes for all levels, memberships, gallery exhibitions and a glaze lab.",
+    "quote": "A working ceramic studio and community space",
+    "status": "open",
+    "tags": [
+     "pottery",
+     "classes",
+     "warehouse-arts-district"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/the-clay-co-op/140469",
+    "also_sources": [
+     "https://www.claycoopstpete.com/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit St. Pete/Clearwater's arts page lists it as 'Charlie Parker Pottery/Clay Center'; the profile and the studio's own site name it The Clay Co-op."
+   },
+   {
+    "id": "florida-shell-shop",
+    "name": "The Florida Shell Shop",
+    "kind": "shopping",
+    "topics": [
+     "shopping",
+     "beaches"
+    ],
+    "area": "treasure-island",
+    "address": "9901 Gulf Blvd.",
+    "city": "Treasure Island",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.75755,
+    "lng": -82.764988,
+    "geo_source": "census",
+    "url": "https://www.thefloridashellshop.com/",
+    "phone": "(727) 367-9599",
+    "hours_text": "Daily 10am–6pm.",
+    "summary": "Family-run shell and gift shop on Gulf Boulevard across from the beach, open since 1955, selling local and imported shells, coral, shark teeth and shell crafts. It calls itself the oldest shop on Treasure Island.",
+    "quote": "Since 1955, The Florida Shell Shop has been serving locals and visitors alike in the Tampa Bay area.",
+    "status": "open",
+    "tags": [
+     "shells",
+     "old-florida",
+     "souvenirs"
+    ],
+    "source_url": "https://www.thefloridashellshop.com/",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/profile/the-florida-shell-shop/139051",
+     "https://www.visitstpeteclearwater.com/communities/treasure-island"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "bill-jacksons-shop-for-adventure",
+    "name": "Bill Jackson's Shop for Adventure",
+    "aliases": [
+     "Bill Jackson's"
+    ],
+    "kind": "shopping",
+    "topics": [
+     "shopping",
+     "outdoors",
+     "water"
+    ],
+    "area": "largo",
+    "address": "9501 U.S. Hwy. 19 N.",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "zip": "33782",
+    "lat": 27.858899,
+    "lng": -82.696495,
+    "geo_source": "photon",
+    "url": "https://www.billjacksons.com/",
+    "phone": "727-576-4169",
+    "hours_text": "Monday–Friday 10am–6pm, Saturday 9:30am–6pm, Sunday 10am–5pm.",
+    "summary": "Family-owned outdoor-sports store on a five-acre wooded site, open since 1946, with a 100,000-gallon heated indoor pool for dive and paddling lessons, an indoor carpeted ski slope and an indoor shooting range.",
+    "quote": "More than just a retail store, Bill Jackson's is a 38,000-square-foot destination that 'teaches what it sells.'",
+    "status": "open",
+    "tags": [
+     "outdoor-gear",
+     "scuba",
+     "kayaks",
+     "old-florida"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/bill-jackson-s-shop-for-adventure/139151",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/communities/pinellas-park"
+    ],
+    "checked": "2026-09-27",
+    "notes": "billjacksons.com returned a bot-check (HTTP 202) on 2026-09-27. The 1946 opening year is from the VSPC Pinellas Park page ('This iconic sporting goods store opened in 1946'); the profile says 'operated for 80 years'. Tags 'scuba' and 'kayaks' rest on the diving and paddling instruction in the listing."
+   },
+   {
+    "id": "sunshine-skyway-bridge",
+    "name": "Sunshine Skyway Bridge",
+    "aliases": [
+     "Bob Graham Sunshine Skyway Bridge",
+     "The Skyway"
+    ],
+    "kind": "landmark",
+    "topics": [
+     "history",
+     "water"
+    ],
+    "area": "south-stpete",
+    "address": "I-275 / US 19 over Lower Tampa Bay",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "lat": 27.625,
+    "lng": -82.658611,
+    "geo_source": "wikipedia",
+    "price_text": "Toll bridge (I-275 / US 19).",
+    "is_free": false,
+    "summary": "Cable-stayed toll bridge carrying I-275 and US 19 across Lower Tampa Bay from St. Petersburg to Manatee County, about 4.1 miles long with a 1,200-foot main span; the current bridge opened in 1987. It replaced the original Skyway, part of which fell in 1980 when a freighter struck it.",
+    "heritage": {
+     "built": "1982–1987",
+     "era": "modern",
+     "story": "The first Sunshine Skyway, a two-lane bridge, was completed in 1954, and a second two-lane span opened in 1971. On May 9, 1980, the freighter Summit Venture struck a support pier during a squall; the southbound roadway collapsed and 35 people died. The present cable-stayed bridge, designed by Figg & Muller Engineering Group and built by the American Bridge Company, opened in 1987, and the old bridge was partly demolished and turned into two fishing piers.",
+     "visiting": "You see it by driving across (a toll applies) or from the two long fishing piers made from the old bridge.",
+     "sources": [
+      "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge"
+     ]
+    },
+    "signature": true,
+    "status": "open",
+    "tags": [
+     "bridge",
+     "toll",
+     "1980-disaster"
+    ],
+    "source_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge",
+    "also_sources": [
+     "https://thedali.org/visit/visitor-information/"
+    ],
+    "checked": "2026-09-27",
+    "notes": "No FDOT visitor page was reachable in this pass, so Wikipedia (read as raw wikitext) is the source; the Dalí's directions page also names the toll. Toll amounts differ between sources ($1.50 on the Dalí page; $1.75 toll-by-plate / $1.16 SunPass on Wikipedia), so none is given. Point is the main span (Wikipedia coordinates). The fishing piers are the outdoors slice's skyway-fishing-pier-state-park."
+   },
+   {
+    "id": "a-little-room-for-art",
+    "name": "A Little Room for Art",
+    "kind": "gallery",
+    "topics": [
+     "arts",
+     "shopping",
+     "beaches"
+    ],
+    "area": "pass-a-grille",
+    "address": "111 8th Ave.",
+    "city": "St. Pete Beach",
+    "state": "FL",
+    "zip": "33706",
+    "lat": 27.688046,
+    "lng": -82.73642,
+    "geo_source": "census",
+    "phone": "727-360-8572",
+    "hours_text": "Daily 11am–5pm.",
+    "summary": "Artists' gallery on 8th Avenue in Pass-a-Grille, the historic south end of St. Pete Beach, opened in 2000 by seven artists and now showing more than 35 juried artists' paintings, jewelry, glass and pottery.",
+    "quote": "A Little Room For Art opened in Pass-A-Grille, the historic section of St. Pete Beach, Florida in 2000 with seven artists whose mission was to share in the privileges and responsibilities of presenting and selling their artwork.",
+    "status": "open",
+    "tags": [
+     "artist-cooperative",
+     "8th-avenue"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/a-little-room-for-art/139078",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/article/shopping-art-antiques-collectibles"
+    ],
+    "checked": "2026-09-27",
+    "notes": "alittleroomforart.com returned an empty page to WebFetch on 2026-09-27; the listing gives no website. The quote is 38 words."
+   },
+   {
+    "id": "studio-1212-art-gallery",
+    "name": "Studio 1212 Art Gallery",
+    "aliases": [
+     "Studio 1212"
+    ],
+    "kind": "gallery",
+    "topics": [
+     "arts"
+    ],
+    "area": "dunedin",
+    "address": "234 Monroe St",
+    "city": "Dunedin",
+    "state": "FL",
+    "zip": "34698",
+    "lat": 28.013579,
+    "lng": -82.790844,
+    "geo_source": "census",
+    "url": "https://www.studio1212.org/",
+    "phone": "(727) 999-1524",
+    "hours_text": "Wednesday–Sunday 11am–3pm.",
+    "summary": "Artists' cooperative gallery near the Dunedin waterfront, founded in October 1970 by former students of William Pachner, with member exhibits, workshops and free monthly public critiques. The listing calls it the oldest artists' cooperative in the Tampa Bay area.",
+    "quote": "Founded in October 1970 by former students of William Pachner, Studio 1212 is the oldest artists' cooperative in the Tampa Bay area of Florida.",
+    "status": "open",
+    "tags": [
+     "artist-cooperative"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/studio-1212-art-gallery/139928",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/article/shopping-art-antiques-collectibles"
+    ],
+    "checked": "2026-09-27",
+    "notes": "studio1212.org returned HTTP 403 to curl and WebFetch on 2026-09-27. 'near the Dunedin waterfront' is from the VSPC article ('Located near the water')."
+   },
+   {
+    "id": "st-pete-sunday-market",
+    "name": "Sunday Market St. Pete",
+    "aliases": [
+     "Kenwood Sunday Market St. Pete"
+    ],
+    "kind": "market",
+    "topics": [
+     "food",
+     "shopping",
+     "music"
+    ],
+    "area": "grand-central",
+    "address": "St. Petersburg High School campus, 2501 5th Ave N",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "zip": "33713",
+    "lat": 27.777442,
+    "lng": -82.667271,
+    "geo_source": "census",
+    "url": "https://www.tampabaymarkets.com/sunday-market-st-pete",
+    "hours_text": "Sundays 10am–2pm October–May, 9am–1pm June–August; no market in September.",
+    "price_text": "Free.",
+    "is_free": true,
+    "summary": "Weekly Sunday market on the St. Petersburg High School campus with fresh vegetables, local artisans, food trucks and live music.",
+    "quote": "The market is open to the public and free of charge.",
+    "status": "seasonal",
+    "status_note": "Closed in September; the 2026–27 season starts Sunday, Oct 4, 2026, per the Visit St. Pete/Clearwater listing (checked 2026-09-27).",
+    "tags": [
+     "farmers-market",
+     "weekly"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/event/sunday-market-st-pete/52601",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/list/st-pete-clearwater-markets"
+    ],
+    "checked": "2026-09-27"
+   },
+   {
+    "id": "smugglers-cove-adventure-golf-madeira-beach",
+    "name": "Smugglers Cove Adventure Golf (Madeira Beach)",
+    "aliases": [
+     "Smugglers Cove Adventure Golf"
+    ],
+    "kind": "attraction",
+    "topics": [
+     "family",
+     "wildlife"
+    ],
+    "area": "madeira-beach",
+    "address": "15395 Gulf Blvd.",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "zip": "33708",
+    "lat": 27.80408,
+    "lng": -82.805017,
+    "geo_source": "census",
+    "url": "https://www.smugglersgolf.com/madeira-beach",
+    "hours_text": "Daily 9am–11pm, 365 days a year (shorter hours Christmas Eve, Christmas Day and New Year's Eve).",
+    "price_text": "Adults $19.99; seniors 60+ $18.99; 12 and under $17.99; plus tax.",
+    "is_free": false,
+    "summary": "Pirate-themed 18-hole adventure mini golf course with caves, a pirate ship and waterfalls, and an alligator exhibit of 20 to 30 American alligators that visitors can feed with cane fishing poles.",
+    "quote": "Each location has 20-30 alligators that you can feed using our cane fishing poles.",
+    "quote_source": "https://www.smugglersgolf.com/",
+    "status": "open",
+    "tags": [
+     "mini-golf",
+     "alligators",
+     "kids"
+    ],
+    "source_url": "https://www.smugglersgolf.com/madeira-beach",
+    "also_sources": [
+     "https://www.smugglersgolf.com/",
+     "https://www.visitstpeteclearwater.com/trip-planning/family-vacations"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Visit St. Pete/Clearwater's family page labels its Smugglers Cove listing 'Indian Shores'; the chain's own page gives this Madeira Beach address for its Pinellas course."
+   },
+   {
+    "id": "splash-harbour-water-park",
+    "name": "Splash Harbour Water Park",
+    "kind": "water-park",
+    "topics": [
+     "family",
+     "water",
+     "thrills"
+    ],
+    "area": "indian-rocks-beach",
+    "address": "399 2nd Street",
+    "city": "Indian Rocks Beach",
+    "state": "FL",
+    "zip": "33785",
+    "lat": 27.882358,
+    "lng": -82.84845,
+    "geo_source": "photon",
+    "url": "https://www.splashharbourwaterpark.com/",
+    "phone": "727-754-6492",
+    "hours_text": "10am–5pm, weather permitting; hours subject to change.",
+    "price_text": "Weekdays $29.95 (over 48 in.) / $27.95 (under 48 in.); weekends and holidays $32.95; after-3pm, Florida resident, military and senior (62+) rates lower.",
+    "is_free": false,
+    "summary": "Small water park at a hotel in Indian Rocks Beach, open to the public, with two 42-foot slides (a tube slide and a dark body slide), a 600-foot lazy river and a kids' splash zone.",
+    "quote": "Plunge down our 42-foot slide, with twists, sprays and unexpected turns!",
+    "status": "open",
+    "tags": [
+     "water-slides",
+     "lazy-river",
+     "kids"
+    ],
+    "source_url": "https://www.splashharbourwaterpark.com/tickets/",
+    "also_sources": [
+     "https://www.splashharbourwaterpark.com/",
+     "https://www.splashharbourwaterpark.com/faq/",
+     "https://www.visitstpeteclearwater.com/profile/splash-harbour-water-park/140435"
+    ],
+    "checked": "2026-09-27",
+    "notes": "The FAQ shows 10am–5pm and, in the footer, 10am–6pm ('hours subject to change'); VSPC says daily 10–6. The hotel (Holiday Inn Harbourside) and 'open to the public daily' come from the VSPC listing."
+   },
+   {
+    "id": "replay-amusement-museum",
+    "name": "Replay Amusement Museum",
+    "aliases": [
+     "Replay Museum"
+    ],
+    "kind": "museum",
+    "kinds": [
+     "attraction"
+    ],
+    "topics": [
+     "family",
+     "history"
+    ],
+    "area": "tarpon-springs",
+    "address": "119 E. Tarpon Ave.",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "zip": "34689",
+    "lat": 28.146298,
+    "lng": -82.755189,
+    "geo_source": "census",
+    "url": "https://replaymuseum.com/",
+    "phone": "727-233-8490",
+    "hours_text": "Wednesday, Thursday and Sunday 11am–7pm; Friday and Saturday 11am–11pm.",
+    "price_text": "$16, with in-and-out privileges; no quarters needed.",
+    "is_free": false,
+    "summary": "Playable arcade museum in downtown Tarpon Springs with over 100 pinball machines, video games and other vintage amusements, all set to free play with admission.",
+    "quote": "Leave the coins at home, no quarters needed to play.",
+    "status": "open",
+    "tags": [
+     "pinball",
+     "arcade",
+     "retro"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/replay-amusement-museum/138888",
+    "checked": "2026-09-27",
+    "notes": "The museum's site is a script-rendered page that returned only its title to curl and WebFetch; facts are from the VSPC listing. Verifier: confirm hours."
+   },
+   {
+    "id": "celebration-station-clearwater",
+    "name": "Celebration Station (Clearwater)",
+    "aliases": [
+     "Celebration Station"
+    ],
+    "kind": "attraction",
+    "topics": [
+     "family",
+     "thrills"
+    ],
+    "area": "downtown-clearwater",
+    "address": "24546 US Hwy. 19 N",
+    "city": "Clearwater",
+    "state": "FL",
+    "zip": "33763",
+    "lat": 27.995127,
+    "lng": -82.730773,
+    "geo_source": "photon",
+    "url": "https://www.celebrationstation.com/clearwater/",
+    "phone": "727-791-1799",
+    "hours_text": "Monday–Thursday and Sunday 11am–9pm; Friday–Saturday 11am–11pm.",
+    "summary": "Family amusement center on US 19 with go-karts, laser tag, miniature golf and a two-story arcade.",
+    "quote": "the place with the most ways to play",
+    "status": "open",
+    "tags": [
+     "go-karts",
+     "mini-golf",
+     "arcade",
+     "laser-tag"
+    ],
+    "source_url": "https://www.visitstpeteclearwater.com/profile/celebration-station/138435",
+    "checked": "2026-09-27",
+    "notes": "The operator's site returned a bot-check (HTTP 202) to curl and WebFetch; the listing's link (fivestarparks.com) now redirects to celebrationstation.com/clearwater-location. Verifier: confirm it is open."
+   }
+  ]
+ },
+ "report": "Work in progress: see-pinellas slice (attractions, museums, galleries, districts, markets and shopping in St. Petersburg, the Gulf beaches, Clearwater and North Pinellas). The full report is written at the end of the research pass."
+}

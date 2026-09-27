@@ -1,0 +1,99 @@
+[
+  {
+    "id": "downtown-tampa",
+    "name": "Downtown Tampa",
+    "region": "tampa",
+    "lat": 27.9506,
+    "lng": -82.4572,
+    "kind": "district",
+    "summary": "Fixture summary for Downtown Tampa.",
+    "known_for": [
+      "the Riverwalk",
+      "Tampa Theatre"
+    ],
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "channel-district",
+    "name": "Channel District",
+    "region": "tampa",
+    "lat": 27.9436,
+    "lng": -82.448,
+    "kind": "district",
+    "summary": "Fixture summary for Channel District.",
+    "known_for": [],
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "ybor-city",
+    "name": "Ybor City",
+    "region": "tampa",
+    "lat": 27.9601,
+    "lng": -82.4386,
+    "kind": "neighborhood",
+    "summary": "Fixture summary for Ybor City.",
+    "known_for": [
+      "cigar factories",
+      "Seventh Avenue"
+    ],
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "hyde-park",
+    "name": "Hyde Park",
+    "region": "tampa",
+    "lat": 27.9375,
+    "lng": -82.476,
+    "kind": "neighborhood",
+    "summary": "Fixture summary for Hyde Park.",
+    "known_for": [],
+    "source_url": "https://www.tampa.gov/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "downtown-stpete",
+    "name": "Downtown St. Petersburg",
+    "region": "stpete",
+    "lat": 27.771,
+    "lng": -82.638,
+    "kind": "district",
+    "summary": "Fixture summary for Downtown St. Petersburg.",
+    "known_for": [],
+    "source_url": "https://www.stpete.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "old-northeast",
+    "name": "Old Northeast",
+    "region": "stpete",
+    "lat": 27.788,
+    "lng": -82.631,
+    "kind": "neighborhood",
+    "summary": "Fixture summary for Old Northeast.",
+    "known_for": [],
+    "source_url": "https://www.stpete.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  },
+  {
+    "id": "grand-central",
+    "name": "Grand Central",
+    "region": "stpete",
+    "lat": 27.771,
+    "lng": -82.67,
+    "kind": "district",
+    "summary": "Fixture summary for Grand Central.",
+    "known_for": [],
+    "source_url": "https://www.stpete.org/",
+    "checked": "2026-09-27",
+    "notes": "FIXTURE (tests/fixtures/mini): build-test data, not a verified record; the research merge replaces data/."
+  }
+]
