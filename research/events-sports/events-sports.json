@@ -73,17 +73,18 @@
     "place": "raymond-james-stadium",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "tickets_url": "https://am.ticketmaster.com/univsouthflorida/South_Florida_Football",
-    "summary": "College football: the USF Bulls host Temple at Raymond James Stadium. USF lists it as Family Day, with a 'Jersey' drawstring bag giveaway for the first 5,000 fans. It is an American Conference game on ESPNU.",
+    "summary": "College football: the USF Bulls host Temple at Raymond James Stadium. Kickoff is 7:30 p.m. (gates 6:00 p.m.); the game is on ESPNU.",
     "tags": [
      "college",
      "football",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://raymondjamesstadium.com/events",
     "also_sources": [
-     "https://raymondjamesstadium.com/events"
+     "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+     "https://gousfbulls.com/sports/football/schedule/2026"
     ],
-    "notes": "From the 2026 schedule on gousfbulls.com (facility: Raymond James Stadium); promotions from the schedule's promotion fields.",
+    "notes": "Verifier 2026-09-27: date, opponent, gates and kickoff re-read on the Raymond James Stadium events page; venue and TV confirmed in USF's official calendar feed (gousfbulls.com calendar.ics). Promotion claims (Family Day, Homecoming, Black Out, giveaways) were removed: the gousfbulls.com schedule page returns only its title to fetchers and could not be re-read.",
     "area": "west-tampa"
    },
    {
@@ -107,11 +108,12 @@
      "baseball",
      "postseason"
     ],
-    "source_url": "https://www.mlb.com/postseason/schedule",
+    "source_url": "https://www.mlb.com/postseason",
     "also_sources": [
-     "https://www.mlb.com/rays/tickets/postseason"
+     "https://www.mlb.com/rays/tickets/postseason",
+     "https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=139&season=2026&gameType=D"
     ],
-    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded.",
+    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded. Verifier 2026-09-27: mlb.com/postseason/schedule now redirects to mlb.com/postseason ('Tentative 2026 Postseason Schedule'); the MLB Stats API lists the game at Tropicana Field (ALDS, AL 4/5 Winner @ Tampa Bay Rays) and the standings show the Rays clinched (98-63). The Rays' postseason page lists ALDS home dates Oct. 3, 5 and 10.",
     "area": "grand-central"
    },
    {
@@ -213,11 +215,12 @@
      "baseball",
      "postseason"
     ],
-    "source_url": "https://www.mlb.com/postseason/schedule",
+    "source_url": "https://www.mlb.com/postseason",
     "also_sources": [
-     "https://www.mlb.com/rays/tickets/postseason"
+     "https://www.mlb.com/rays/tickets/postseason",
+     "https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=139&season=2026&gameType=D"
     ],
-    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded.",
+    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded. Verifier 2026-09-27: mlb.com/postseason/schedule now redirects to mlb.com/postseason ('Tentative 2026 Postseason Schedule'); the MLB Stats API lists the game at Tropicana Field (ALDS, AL 4/5 Winner @ Tampa Bay Rays) and the standings show the Rays clinched (98-63). The Rays' postseason page lists ALDS home dates Oct. 3, 5 and 10.",
     "area": "grand-central"
    },
    {
@@ -291,11 +294,12 @@
      "baseball",
      "postseason"
     ],
-    "source_url": "https://www.mlb.com/postseason/schedule",
+    "source_url": "https://www.mlb.com/postseason",
     "also_sources": [
-     "https://www.mlb.com/rays/tickets/postseason"
+     "https://www.mlb.com/rays/tickets/postseason",
+     "https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=139&season=2026&gameType=D"
     ],
-    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded.",
+    "notes": "MLB 'Tentative 2026 Postseason Schedule': 'ALDS | AL 4/5 Winner plays TB'; games 1, 2 and 5* at TB, times TBD, TBS; '* if necessary'. Rays page: tickets for all potential ALDS, ALCS and World Series home games on sale. ALCS home dates depend on seeding and are not recorded. Verifier 2026-09-27: mlb.com/postseason/schedule now redirects to mlb.com/postseason ('Tentative 2026 Postseason Schedule'); the MLB Stats API lists the game at Tropicana Field (ALDS, AL 4/5 Winner @ Tampa Bay Rays) and the standings show the Rays clinched (98-63). The Rays' postseason page lists ALDS home dates Oct. 3, 5 and 10.",
     "area": "grand-central"
    },
    {
@@ -439,21 +443,22 @@
     "title": "USF Bulls football vs. Kent State",
     "series": "usf-bulls-football-home-games",
     "date": "2026-10-17",
-    "time_text": "Kickoff time TBA",
+    "time_text": "Kickoff time not yet announced",
     "place": "raymond-james-stadium",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "tickets_url": "https://am.ticketmaster.com/univsouthflorida/South_Florida_Football",
-    "summary": "College football: the USF Bulls host Kent State at Raymond James Stadium. USF lists it as Homecoming, with an acrylic commemorative ticket for the first 5,000 fans.",
+    "summary": "College football: the USF Bulls host Kent State at Raymond James Stadium. Kickoff time not yet announced.",
     "tags": [
      "college",
      "football",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://raymondjamesstadium.com/events",
     "also_sources": [
-     "https://raymondjamesstadium.com/events"
+     "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+     "https://gousfbulls.com/sports/football/schedule/2026"
     ],
-    "notes": "From the 2026 schedule on gousfbulls.com (facility: Raymond James Stadium); promotions from the schedule's promotion fields.",
+    "notes": "Verifier 2026-09-27: date, opponent, gates and kickoff re-read on the Raymond James Stadium events page; venue and TV confirmed in USF's official calendar feed (gousfbulls.com calendar.ics). Promotion claims (Family Day, Homecoming, Black Out, giveaways) were removed: the gousfbulls.com schedule page returns only its title to fetchers and could not be re-read.",
     "area": "west-tampa"
    },
    {
@@ -497,7 +502,7 @@
     "end_date": "2026-10-25",
     "place": "tampa-convention-center",
     "url": "https://hyrox.com/event/hyrox-tampa/",
-    "summary": "A four-day HYROX fitness race, its first in Tampa, at the Tampa Convention Center; athletes race in timed heats and spectator tickets are sold.",
+    "summary": "A four-day HYROX fitness race at the Tampa Convention Center, the organizer's first event in Tampa. Spectator tickets are sold, with a viewing area the organizer calls the Thunderdome.",
     "description": "For the first time ever, HYROX is heading to Tampa for a four-day event, October 22–25. This milestone marks our first competition in the city, bringing thousands of athletes together for an unforgettable weekend of racing.",
     "tags": [
      "fitness-race"
@@ -592,21 +597,22 @@
     "title": "USF Bulls football vs. UAB",
     "series": "usf-bulls-football-home-games",
     "date": "2026-10-31",
-    "time_text": "Kickoff time TBA",
+    "time_text": "Kickoff time not yet announced",
     "place": "raymond-james-stadium",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "tickets_url": "https://am.ticketmaster.com/univsouthflorida/South_Florida_Football",
-    "summary": "College football: the USF Bulls host UAB at Raymond James Stadium. USF lists it as a Black Out game, with a rally towel giveaway for the first 10,000 fans. It is an American Conference game.",
+    "summary": "College football: the USF Bulls host UAB at Raymond James Stadium on Halloween. Kickoff time not yet announced.",
     "tags": [
      "college",
      "football",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://raymondjamesstadium.com/events",
     "also_sources": [
-     "https://raymondjamesstadium.com/events"
+     "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+     "https://gousfbulls.com/sports/football/schedule/2026"
     ],
-    "notes": "From the 2026 schedule on gousfbulls.com (facility: Raymond James Stadium); promotions from the schedule's promotion fields.",
+    "notes": "Verifier 2026-09-27: date, opponent, gates and kickoff re-read on the Raymond James Stadium events page; venue and TV confirmed in USF's official calendar feed (gousfbulls.com calendar.ics). Promotion claims (Family Day, Homecoming, Black Out, giveaways) were removed: the gousfbulls.com schedule page returns only its title to fetchers and could not be re-read.",
     "area": "west-tampa"
    },
    {
@@ -672,7 +678,7 @@
     "title": "USF Bulls men's basketball vs. Charleston Southern",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-02",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Charleston Southern at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -681,9 +687,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -696,7 +705,7 @@
     "title": "USF Bulls women's basketball vs. Furman",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-02",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host Furman University at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -705,9 +714,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -806,17 +818,18 @@
     "place": "raymond-james-stadium",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "tickets_url": "https://am.ticketmaster.com/univsouthflorida/South_Florida_Football",
-    "summary": "College football: the USF Bulls host Memphis at Raymond James Stadium. USF lists it as its Salute to Service game. It is a Thursday-night American Conference game on ESPN or ESPN2.",
+    "summary": "College football: the USF Bulls host Memphis at Raymond James Stadium on a Thursday night. USF lists it as its Salute to Service game, on ESPN or ESPN2.",
     "tags": [
      "college",
      "football",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://raymondjamesstadium.com/events",
     "also_sources": [
-     "https://raymondjamesstadium.com/events"
+     "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+     "https://gousfbulls.com/sports/football/schedule/2026"
     ],
-    "notes": "From the 2026 schedule on gousfbulls.com (facility: Raymond James Stadium); promotions from the schedule's promotion fields.",
+    "notes": "Verifier 2026-09-27: date, opponent, gates and kickoff re-read on the Raymond James Stadium events page; venue and TV confirmed in USF's official calendar feed (gousfbulls.com calendar.ics). Promotion claims (Family Day, Homecoming, Black Out, giveaways) were removed: the gousfbulls.com schedule page returns only its title to fetchers and could not be re-read.",
     "area": "west-tampa"
    },
    {
@@ -880,7 +893,7 @@
     "title": "USF Bulls men's basketball vs. Coppin State",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-14",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Coppin State at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -889,9 +902,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -904,7 +920,7 @@
     "title": "USF Bulls women's basketball vs. FIU",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-15",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host Florida International University at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -913,9 +929,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -954,7 +973,7 @@
     "title": "USF Bulls men's basketball vs. Tennessee State",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-17",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Tennessee State at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -963,9 +982,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1005,7 +1027,7 @@
     "title": "USF Bulls women's basketball vs. Binghamton",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-18",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host Binghamton University at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1014,9 +1036,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1108,7 +1133,7 @@
     "title": "USF Bulls men's basketball vs. Stetson",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-11-24",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Stetson at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1117,9 +1142,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1190,17 +1218,18 @@
     "place": "raymond-james-stadium",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "tickets_url": "https://am.ticketmaster.com/univsouthflorida/South_Florida_Football",
-    "summary": "College football: the USF Bulls host Tulane at Raymond James Stadium in the regular-season finale; USF lists the date as Nov. 27 or Nov. 28, not yet set.",
+    "summary": "College football: the USF Bulls host Tulane at Raymond James Stadium in the regular-season finale; the date is Nov. 27 or Nov. 28, not yet set.",
     "tags": [
      "college",
      "football",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://raymondjamesstadium.com/events",
     "also_sources": [
-     "https://raymondjamesstadium.com/events"
+     "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+     "https://gousfbulls.com/sports/football/schedule/2026"
     ],
-    "notes": "USF schedule shows date 2026-11-27 with time field 'Or Nov. 28'; the stadium lists 'november 27 or 28, 2026' with kickoff TBD. Stored on Nov. 27 as tentative.",
+    "notes": "Verifier 2026-09-27: date, opponent, gates and kickoff re-read on the Raymond James Stadium events page; venue and TV confirmed in USF's official calendar feed (gousfbulls.com calendar.ics). Promotion claims (Family Day, Homecoming, Black Out, giveaways) were removed: the gousfbulls.com schedule page returns only its title to fetchers and could not be re-read. USF feed lists Tulane on 2026-11-27 (all-day entry); the stadium lists 'November 27 or 28, 2026' with times TBD. Stored on Nov. 27 as tentative.",
     "area": "west-tampa"
    },
    {
@@ -1265,7 +1294,7 @@
     "title": "USF Bulls women's basketball vs. Arkansas-Pine Bluff",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-01",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host University of Arkansas Pine Bluff at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1274,9 +1303,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1289,7 +1321,7 @@
     "title": "USF Bulls men's basketball vs. West Florida",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-02",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host West Florida at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1298,9 +1330,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1313,7 +1348,7 @@
     "title": "USF Bulls women's basketball vs. Morgan State",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-04",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host Morgan State University at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1322,9 +1357,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1392,7 +1430,7 @@
     "title": "USF Bulls men's basketball vs. Jacksonville",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-09",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Jacksonville at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1401,9 +1439,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1468,10 +1509,8 @@
     "id": "hot-chocolate-run-tampa-2026",
     "title": "SKECHERS Hot Chocolate Run Tampa",
     "date": "2026-12-13",
-    "location_text": "Starts and ends at Cotanchobee Fort Brooke Park; course over the Platt Street Bridge and along Bayshore Boulevard",
+    "location_text": "Cotanchobee Fort Brooke Park, 601 Water St, Tampa; course over the Platt Street Bridge and along Bayshore Boulevard",
     "area": "channel-district",
-    "lat": 27.941734,
-    "lng": -82.450829,
     "url": "https://hotchocolate15k.com/city/tampa/",
     "tickets_url": "https://hotchocolate15k.com/city/tampa/",
     "summary": "A 5K, 10K and 15K road race with a chocolate-themed finish and post-race party at Cotanchobee Fort Brooke Park; the course crosses the Platt Street Bridge and runs along Bayshore Boulevard.",
@@ -1479,7 +1518,10 @@
      "running"
     ],
     "source_url": "https://hotchocolate15k.com/city/tampa/",
-    "notes": "Page: 'Tampa | December 13, 2026'; 'Choose your challenge — 5K, 10K, or 15K'; 'You'll start and end at the Cotanchobee Fort Brooke Park'; '2026 Details are subject to change!'. Start time not published. Coordinates: OpenStreetMap (Photon) park feature."
+    "notes": "Page: 'Tampa | December 13, 2026'; 'Choose your challenge — 5K, 10K, or 15K'; 'Location & Time | Cotanchobee Fort Brooke Park | 601 Water St | Tampa, FL 33602 | 5K start time: 7:00 AM | 10K start time: 8:00 AM | 15K start time: 8:00 AM'; '2026 Details are subject to change!'. Verifier 2026-09-27: start times added (the page publishes them); place set to the history-tampa record cotanchobee-fort-brooke-park instead of own coordinates.",
+    "start": "07:00",
+    "time_text": "5K starts 7:00 a.m.; 10K and 15K start 8:00 a.m.; gear check opens 60 minutes before each start",
+    "place": "cotanchobee-fort-brooke-park"
    },
    {
     "kind": "sports",
@@ -1492,7 +1534,7 @@
     "title": "USF Bulls women's basketball vs. Longwood",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-15",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
     "summary": "Women's college basketball: the USF Bulls host Longwood University at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1501,9 +1543,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 women's schedule (time 'TBA'); conference games were not yet listed.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1516,7 +1561,7 @@
     "title": "USF Bulls men's basketball vs. Alabama",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-16",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "Men's college basketball: the USF Bulls host Alabama at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
@@ -1525,9 +1570,12 @@
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1543,7 +1591,7 @@
     "start": "19:00",
     "place": "benchmark-international-arena",
     "url": "https://www.nhl.com/lightning/schedule",
-    "summary": "NHL regular-season game: the Tampa Bay Lightning host the Calgary Flames at Benchmark International Arena. Team promotion: a Holiday Game.",
+    "summary": "NHL regular-season game: the Tampa Bay Lightning host the Calgary Flames at Benchmark International Arena. The Lightning list it as a Holiday Game.",
     "tags": [
      "nhl",
      "hockey",
@@ -1598,18 +1646,21 @@
     "title": "USF Bulls men's basketball vs. Kennesaw State",
     "series": "usf-bulls-basketball-home-games",
     "date": "2026-12-19",
-    "time_text": "Tip time TBA",
+    "time_text": "Tip time not yet announced",
     "place": "yuengling-center",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "summary": "Men's college basketball: the USF Bulls host Kennesaw State at the Yuengling Center in the Love Wins Classic. Tip time not yet announced.",
+    "summary": "Men's college basketball: the USF Bulls host Kennesaw State at the Yuengling Center on USF's Tampa campus. Tip time not yet announced.",
     "tags": [
      "college",
      "basketball",
      "usf"
     ],
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
-    "notes": "Non-conference home game from USF's 2026-27 schedule (time 'TBA'); the American Conference schedule was not yet on the page.",
-    "area": "north-tampa"
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
+    "notes": "Verifier 2026-09-27: date, opponent and venue (Tampa, Fla., Yuengling Center) confirmed in USF's official calendar feed (all-day entry, no tip time). The gousfbulls.com schedule page could not be re-read by the verifier. The 'Love Wins Classic' name was removed: not in USF's calendar feed and the schedule page could not be re-read.",
+    "area": "north-tampa",
+    "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27"
+    ]
    },
    {
     "kind": "sports",
@@ -1653,7 +1704,7 @@
     "start": "19:00",
     "place": "benchmark-international-arena",
     "url": "https://www.nhl.com/lightning/schedule",
-    "summary": "NHL regular-season game: the Tampa Bay Lightning host the St. Louis Blues at Benchmark International Arena. Team promotion: a Holiday Game.",
+    "summary": "NHL regular-season game: the Tampa Bay Lightning host the St. Louis Blues at Benchmark International Arena. The Lightning list it as a Holiday Game.",
     "tags": [
      "nhl",
      "hockey",
@@ -3432,7 +3483,7 @@
     "url": "https://www.tampabaydowns.com/racing-calendar/",
     "cost": "Tampa Bay Derby Day admission $15 (includes a $5 Mystery Mutuel Voucher)",
     "is_free": false,
-    "summary": "Tampa Bay Downs' biggest racing day of the season, the card built around the Tampa Bay Derby; in 2026 Festival Day 46 featured the 46th Tampa Bay Derby, a Grade III race for 3-year-olds.",
+    "summary": "The card built around the Tampa Bay Derby, which the track calls the biggest racing day of its season. The 2027 stakes are not posted yet; in 2026 Festival Day 46 featured the 46th Tampa Bay Derby, a Grade III race for 3-year-olds.",
     "featured": true,
     "tags": [
      "horse-racing",
@@ -3457,24 +3508,26 @@
     "id": "firestone-grand-prix-of-st-petersburg-2027",
     "title": "Firestone Grand Prix of St. Petersburg",
     "series": "firestone-grand-prix-of-st-petersburg",
-    "date": "2027-03-06",
-    "time_text": "The organizer has not posted 2027 dates; NASCAR's 2027 schedule lists the Truck Series race at the Grand Prix of St. Petersburg on Saturday, March 6",
+    "date": "2027-03-05",
+    "time_text": "Fri.-Sun., March 5-7, 2027: practice and qualifying Friday, the NASCAR Truck Series race Saturday, INDY NXT and the IndyCar race Sunday. Session times not yet posted",
     "location_text": "Temporary street circuit in downtown St. Petersburg",
     "area": "downtown-stpete",
     "url": "https://gpstpete.com/",
-    "summary": "The NTT IndyCar Series street race weekend in downtown St. Petersburg. For 2027 the only published date is the NASCAR Craftsman Truck Series race at the Grand Prix on Saturday, March 6; indycar.com still showed only its 2026 schedule on Sep 27, 2026.",
+    "summary": "The NTT IndyCar Series street race weekend on a temporary circuit through downtown St. Petersburg and the Albert Whitted Airport runway. Visit St. Pete/Clearwater lists it for March 5-7, 2027; the organizer had not posted 2027 dates or tickets on Sep 27, 2026.",
     "featured": true,
     "tags": [
      "motorsports",
      "indycar"
     ],
-    "source_url": "https://gpstpete.com/news-head/news/400-nascar-announces-2027-national-series-schedules",
+    "source_url": "https://www.visitstpeteclearwater.com/event/firestone-grand-prix-st-petersburg/1496",
     "also_sources": [
+     "https://gpstpete.com/news-head/news/400-nascar-announces-2027-national-series-schedules",
      "https://gpstpete.com/",
-     "https://gpstpete.com/buy-tickets/ticket-options",
+     "https://gpstpete.com/plan-your-visit/schedule",
      "https://www.indycar.com/schedule"
     ],
-    "notes": "gpstpete.com ticket page: 'Details coming soon for 2027 ticket information.' NASCAR 2027 Truck schedule (reposted on gpstpete.com, Aug 26, 2026): 'Saturday, March 6 | Grand Prix of St. Petersburg'. The 2026 IndyCar race was Sunday, March 1 at 12:00 PM ET (indycar.com). Stored on March 6 as tentative until the full weekend is announced."
+    "notes": "Verifier 2026-09-27: Visit St. Pete/Clearwater event page: 'Mar 5, 2027 – Mar 7, 2027' and 'will hold its inaugural 2027 contest in St. Petersburg, Florida, from March 5 - 7th, 2027'; it also says 2027 prices have not been announced. NASCAR's 2027 Truck schedule (reposted on gpstpete.com, Aug 26, 2026): 'Saturday, March 6 | Grand Prix of St. Petersburg'. gpstpete.com's schedule page still shows 2026 and invites fans to join the e-club for 2027 ticket information; indycar.com shows only the 2026 season. Status stays tentative until the organizer posts the weekend. NASCAR and FedEx Freight announced (Sep 17, 2026) that the Truck Series becomes the NASCAR FedEx Freight Truck Series in 2027.",
+    "end_date": "2027-03-07"
    },
    {
     "kind": "sports",
@@ -5622,12 +5675,13 @@
     "area": "west-tampa",
     "url": "https://gousfbulls.com/sports/football/schedule/2026",
     "summary": "The University of South Florida Bulls play their 2026 home football games at Raymond James Stadium, the Buccaneers' stadium on North Dale Mabry Highway.",
-    "source_url": "https://gousfbulls.com/sports/football/schedule/2026",
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
     "also_sources": [
+     "https://gousfbulls.com/sports/football/schedule/2026",
      "https://raymondjamesstadium.com/events"
     ],
     "checked": "2026-09-27",
-    "notes": "2026 home games: FIU (Sept. 5), Delaware State (Sept. 19), Temple, Kent State, UAB, Memphis, Tulane; all list Raymond James Stadium as the facility. The navigation includes 'On-Campus Stadium & Football Operations' and 'New Stadium'."
+    "notes": "2026 home games: FIU (Sept. 5), Delaware State (Sept. 19), Temple, Kent State, UAB, Memphis, Tulane; all list Raymond James Stadium as the facility. The navigation includes 'On-Campus Stadium & Football Operations' and 'New Stadium'. Verifier 2026-09-27: USF's official calendar feed lists seven 2026 home games at Raymond James Stadium (FIU, Delaware State, Temple, Kent State, UAB, Memphis, Tulane)."
    },
    {
     "id": "usf-bulls-basketball-home-games",
@@ -5645,8 +5699,9 @@
     "area": "north-tampa",
     "url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
     "summary": "USF's men's and women's basketball teams play home games at the Yuengling Center on the Tampa campus. The 2026-27 non-conference home dates are posted; American Conference dates were not yet listed on Sep 27, 2026.",
-    "source_url": "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
+    "source_url": "https://gousfbulls.com/calendar.ashx/calendar.ics?sport_id=0",
     "also_sources": [
+     "https://gousfbulls.com/sports/mens-basketball/schedule/2026-27",
      "https://gousfbulls.com/sports/womens-basketball/schedule/2026-27"
     ],
     "checked": "2026-09-27",
@@ -5920,7 +5975,7 @@
      8,
      9
     ],
-    "when_text": "Florida State League (Single-A) season, April 2 to September 6 in 2027; home opener Apr. 13",
+    "when_text": "Florida State League (Single-A) season, April 2 to September 5 in 2027; home opener Apr. 13",
     "place": "george-m-steinbrenner-field",
     "area": "west-tampa",
     "url": "https://www.milb.com/tampa/schedule/2027-04",
@@ -5932,7 +5987,7 @@
      "https://www.visittampabay.com/things-to-do/tampa-sports/"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Yankees affiliation per Visit Tampa Bay's sports page."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). Yankees affiliation per Visit Tampa Bay's sports page. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
    },
    {
     "id": "clearwater-threshers",
@@ -5950,7 +6005,7 @@
      8,
      9
     ],
-    "when_text": "Florida State League (Single-A) season, April 2 to September 6 in 2027; home opener Apr. 2",
+    "when_text": "Florida State League (Single-A) season, April 2 to September 5 in 2027; home opener Apr. 2",
     "place": "baycare-ballpark",
     "area": "downtown-clearwater",
     "url": "https://www.milb.com/clearwater/schedule/2027-04",
@@ -5961,7 +6016,7 @@
      "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
    },
    {
     "id": "dunedin-blue-jays",
@@ -5979,7 +6034,7 @@
      8,
      9
     ],
-    "when_text": "Florida State League (Single-A) season, April 2 to September 6 in 2027; home opener Apr. 6",
+    "when_text": "Florida State League (Single-A) season, April 2 to September 5 in 2027; home opener Apr. 6",
     "place": "td-ballpark",
     "area": "dunedin",
     "url": "https://www.milb.com/dunedin/schedule/2027-04",
@@ -5990,7 +6045,7 @@
      "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
    },
    {
     "id": "bradenton-marauders",
@@ -6008,7 +6063,7 @@
      8,
      9
     ],
-    "when_text": "Florida State League (Single-A) season, April 2 to September 6 in 2027; home opener Apr. 2",
+    "when_text": "Florida State League (Single-A) season, April 2 to September 5 in 2027; home opener Apr. 2",
     "place": "lecom-park",
     "area": "bradenton-anna-maria",
     "url": "https://www.milb.com/bradenton/schedule/2027-04",
@@ -6019,7 +6074,7 @@
      "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
    },
    {
     "id": "lakeland-flying-tigers",
@@ -6037,7 +6092,7 @@
      8,
      9
     ],
-    "when_text": "Florida State League (Single-A) season, April 2 to September 6 in 2027; home opener Apr. 2",
+    "when_text": "Florida State League (Single-A) season, April 2 to September 5 in 2027; home opener Apr. 2",
     "place": "publix-field-at-joker-marchant-stadium",
     "area": "polk",
     "url": "https://www.milb.com/lakeland/schedule/2027-04",
@@ -6048,7 +6103,7 @@
      "https://statsapi.mlb.com/api/v1/seasons/2027?sportId=14"
     ],
     "checked": "2026-09-27",
-    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation."
+    "notes": "Home park from the MLB Stats API team list (sportId 14, season 2026). The summary names the MLB club that holds spring training at the same ballpark (per that club's spring training page); it does not claim an affiliation. Verifier 2026-09-27: each team's 2027 schedule ends Sep. 5 (the league's season record says Sep. 6); when_text uses the team schedule."
    },
    {
     "id": "gasparilla-bowl",
@@ -6137,7 +6192,7 @@
     "place": "tampa-bay-downs",
     "area": "oldsmar",
     "url": "https://www.tampabaydowns.com/racing-calendar/",
-    "summary": "Tampa Bay Downs, near Oldsmar, races thoroughbreds from mid-November to early May. Festival Day in early March, built around the Tampa Bay Derby, is the season's biggest card.",
+    "summary": "Tampa Bay Downs, near Oldsmar, races thoroughbreds from mid-November to early May. The track calls Festival Day in early March, built around the Tampa Bay Derby, the biggest racing day of the season.",
     "featured": true,
     "source_url": "https://www.tampabaydowns.com/prdownloads/race-cal-archives/2026-2027-season/TBD-Racing-Calendar-2026-27.pdf",
     "also_sources": [
@@ -6157,16 +6212,17 @@
     "months": [
      3
     ],
-    "when_text": "Early March (IndyCar race March 1 in 2026; NASCAR's 2027 schedule puts the Truck Series race there on Saturday, March 6, 2027)",
+    "when_text": "Early March (Sunday, March 1 in 2026; March 5-7, 2027 per Visit St. Pete/Clearwater)",
     "location_text": "Temporary street circuit in downtown St. Petersburg",
     "area": "downtown-stpete",
     "url": "https://gpstpete.com/",
-    "summary": "A race weekend on a temporary street circuit through downtown St. Petersburg, headlined by the NTT IndyCar Series, with INDY NXT and the NASCAR Craftsman Truck Series on the 2026 bill.",
+    "summary": "A race weekend on a temporary street circuit through downtown St. Petersburg, headlined by the NTT IndyCar Series; the 2026 bill also had INDY NXT, the NASCAR Truck Series, the USF2000 Championship and the Mazda MX-5 Cup.",
     "featured": true,
     "source_url": "https://gpstpete.com/plan-your-visit/schedule",
     "also_sources": [
      "https://gpstpete.com/news-head/news/400-nascar-announces-2027-national-series-schedules",
-     "https://www.indycar.com/schedule"
+     "https://www.indycar.com/schedule",
+     "https://www.visitstpeteclearwater.com/event/firestone-grand-prix-st-petersburg/1496"
     ],
     "checked": "2026-09-27",
     "notes": "Schedule page lists the 2026 racing series: NTT INDYCAR SERIES, INDY NXT by Firestone and NASCAR Craftsman Truck Series. indycar.com's 2026 schedule lists St. Petersburg (Mar 1, 12:00 PM ET) as its first race."
@@ -6188,7 +6244,10 @@
     "summary": "A professional golf tournament on the Copperhead Course at Innisbrook in Palm Harbor. The 2027 tournament is May 3-9, just after this guide's event window.",
     "source_url": "https://www.valsparchampionship.com/",
     "checked": "2026-09-27",
-    "notes": "Home page: 'Valspar Championship | May 3-9, 2027 | Innisbrook Golf and Spa, Palm Harbor, Florida'."
+    "notes": "Home page: 'Valspar Championship | May 3-9, 2027 | Innisbrook Golf and Spa, Palm Harbor, Florida'. Verifier 2026-09-27: home page re-read ('May 3-9, 2027 | Innisbrook Golf and Spa, Palm Harbor, Florida'). Visit St. Pete/Clearwater's listing still shows the 2026 edition, March 17-22, 2026.",
+    "also_sources": [
+     "https://www.visitstpeteclearwater.com/event/pga-valspar-championship/2166"
+    ]
    },
    {
     "id": "gasparilla-distance-classic",
