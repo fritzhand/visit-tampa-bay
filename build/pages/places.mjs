@@ -101,7 +101,7 @@ function head(ctx, root, p, { region, area, kindLabel }) {
     c.sheetBadge(p.region, { short: false }),
     `<span class="pl-kind">${h.icon(sym, "sym")}${esc(kindLabel)}</span>`,
     `<a class="pl-area" href="${root}areas/${attr(p.area)}.html">${esc(area.name)}</a>`,
-  ].join('<span class="pl-sep" aria-hidden="true">·</span>');
+  ].map((x) => `<span class="pl-mi">${x}</span>`).join("");
   const state = [p.status !== "open" ? c.statusBadge(p) : "", p.signature ? `<span class="seal">${h.icon("seal")}Signature</span>` : ""].filter(Boolean).join(" ");
   return c.pageHead({
     sheet: p.region, kicker: `Sheet ${region.n} · ${region.name} · ${kindLabel}`, title: p.name, lede: p.summary || "", cls: "pl-head",
@@ -131,7 +131,8 @@ function top(ctx, root, p) {
     ["Good to know", tags.length ? esc(tags.join(" · ")) : ""],
     ["Topics", topics.length ? topics.join(", ") : ""],
   ];
-  const media = img.has("p", p.id) ? img.figure(root, "p", p.id, { cls: "pl-photo" }) : `<div class="pl-plate">${img.plate(root, "p", p, { size: "lg" })}<p class="pl-plate-note">No rights-cleared photo yet: this plate stands in for one.</p></div>`;
+  // the photo with its credit (in a <p>, so its links read as text links), or the plate that stands in for one
+  const media = img.has("p", p.id) ? `<figure class="photo-fig pl-photo">${img.img(root, "p", p.id, { big: true, lazy: false, sizes: "(min-width: 1000px) 460px, 100vw" })}<figcaption><p class="credit">${img.creditHtml("p", p.id)}</p></figcaption></figure>` : `<div class="pl-plate">${img.plate(root, "p", p, { size: "lg" })}<p class="pl-plate-note">No rights-cleared photo yet: this plate stands in for one.</p></div>`;
   return `<div class="pl-top" id="glance">
 <div class="pl-media">${media}</div>
 <div class="pl-glance"><h2 class="sub-h" id="glance-h">At a glance</h2>${c.facts(root, rows, { label: `At a glance: ${p.name}` })}</div>
@@ -145,7 +146,9 @@ function notes(ctx, root, p) {
   if (p.status !== "open" && p.status_note) out.push(c.callout("warn", `<p><b>${esc(ctx.vocab.STATUS_LABEL[p.status] || p.status)}.</b> ${esc(p.status_note)}</p>`, { flag: "Check before you go" }));
   if (p.quote) {
     const src = p.quote_source || p.source_url;
-    out.push(c.callout("org", `“${esc(p.quote)}”`, { sheet: p.region, cite: `${esc(p.name)}, ${h.extLink(src, esc(h.hostOf(src)))}` }));
+    // the speaker is named only when the quote comes from the place's own site; otherwise the page it was read on
+    const own = p.url && h.hostOf(p.url) === h.hostOf(src);
+    out.push(c.callout("org", `“${esc(p.quote)}”`, { sheet: p.region, cite: `${own ? `${esc(p.name)}, ` : "From "}${h.extLink(src, esc(h.hostOf(src)))}` }));
   }
   return out.length ? `<div class="pl-notes">${out.join("")}</div>` : "";
 }
@@ -160,13 +163,13 @@ function whereSection(ctx, root, p, where) {
   if (p.ll) {
     const [lat, lng] = p.ll;
     // the bay chart's crop; beyond it, the region chart's (the whole guide box), else the coordinate line
-    const region = where === "off" && cards.chartMap ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "region", label: `Map: ${p.name}`, minHalfM: 7000, labels: 4 }) : "";
-    map = where === "on" ? cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : region || cards.coordLine(lat, lng);
-    hasMap = where === "on" || !!region;
+    const regionMap = where === "off" && cards.chartMap ? cards.chartMap(root, [{ lat, lng, kind: "place", sheet: p.region, ic: cards.placeSym(p) }], { chart: "region", label: `Map: ${p.name}`, minHalfM: 7000, labels: 4 }) : "";
+    map = where === "on" ? cards.miniMap(root, lat, lng, { sheet: p.region, label: `Map: ${p.name}`, halfWidthM: 1300 }) : regionMap || cards.coordLine(lat, lng);
+    hasMap = where === "on" || !!regionMap;
     links.push(h.extLink(`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`, `${h.icon("pin")}Open in Google Maps`, "btn btn-secondary btn-sm"));
     links.push(h.extLink(`https://maps.apple.com/?ll=${lat},${lng}&q=${encodeURIComponent(p.name)}`, `${h.icon("pin")}Open in Apple Maps`, "btn btn-secondary btn-sm"));
-    if (where === "on" || region) links.push(`<a class="btn btn-ghost btn-sm" href="${root}map.html?focus=place:${attr(p.id)}">${h.icon("map")}On the chart</a>`);
-    note = `${where === "off" ? `${region ? "Beyond the bay chart: shown on the region chart. " : `${c.badge("out", "Outside the chart area")} This place is beyond the edge of this guide's basemap. `}` : ""}Position from ${esc(GEO_WORDS[p.geo_source] || "the source")}.`;
+    if (hasMap) links.push(`<a class="btn btn-ghost btn-sm" href="${root}map.html?focus=place:${attr(p.id)}">${h.icon("map")}On the chart</a>`);
+    note = `${where === "off" ? `${regionMap ? "Beyond the bay chart: shown on the region chart. " : `${c.badge("out", "Outside the chart area")} This place is beyond the edge of this guide's basemap. `}` : ""}Position from ${esc(GEO_WORDS[p.geo_source] || "the source")}.`;
   } else {
     map = `<p class="unk mini-map-none">Not on the map: no coordinates listed</p>`;
     if (addr) links.push(h.extLink(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addr)}`, `${h.icon("pin")}Find the address in Google Maps`, "btn btn-secondary btn-sm"));

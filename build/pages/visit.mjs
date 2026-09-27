@@ -105,7 +105,7 @@ const SECTIONS = [
   { id: "arriving", title: "Arriving", icon: "plane", lede: "The airports, the cruise terminals, the train station and the intercity bus stops, with what each says about the ride onward." },
   { id: "in-tampa", title: "In Tampa", icon: "tram", lede: "Downtown Tampa, the Channel District, Harbour Island and Ybor City by streetcar, water taxi, bus and app-booked ride." },
   { id: "across-the-bay", title: "Across the bay", icon: "ferry", lede: "Public transport between Tampa and Pinellas County." },
-  { id: "st-pete-beaches", title: "In St. Pete & the beaches", icon: "trolley", lede: "Downtown St. Petersburg, the Gulf beaches, Clearwater and Dunedin by rapid bus, trolley, bus and ferry." },
+  { id: "st-pete-beaches", title: "In St. Pete & the beaches", icon: "trolley", lede: "Downtown St. Petersburg, the Gulf beaches, Clearwater and Dunedin by rapid bus, trolley, bus, shuttle and ferry." },
   { id: "south", title: "Day trips", icon: "ferry", lede: "Ferries and trolleys on the Day Trips sheet." },
   { id: "driving", title: "Driving: tolls and parking", icon: "car", lede: "Toll roads, toll accounts and public parking. Rates are the operators' own words, with the dates they give." },
   { id: "bikes-scooters", title: "Bikes & scooters", icon: "bike", lede: "Shared bikes and scooters, rented in the operators' apps, with the cities' rules." },
@@ -197,17 +197,18 @@ function gettingAround(ctx) {
     if (line) items.sort((a, b) => a.n - b.n);
     const sheet = (t.regions || []).length === 1 ? t.regions[0] : null;
     const place = (s) => (s.place && db.byId.place.get(s.place) ? db.byId.place.get(s.place) : null);
+    const anyCoords = S.some((s) => s.lat != null);
     const li = ({ s, n }) => {
       const p = place(s), a = areaName(s.area), label = stopName(s.name);
       const nm = p ? `<a href="${root}places/${attr(p.id)}.html">${esc(label)}</a>` : `<span>${esc(label)}</span>`;
-      const where = [a && !label.includes(a) ? a : "", s.lat == null ? "no coordinates listed" : ""].filter(Boolean).join(" · ");
+      const where = [a && !label.includes(a) ? a : "", s.lat == null && anyCoords ? "no coordinates listed" : ""].filter(Boolean).join(" · ");
       return `<li${s.lat != null && onBase(s) ? ' class="on"' : ""}><span class="tx-n" aria-hidden="true">${esc(n)}</span><span class="tx-s">${nm}${where ? `<span class="tx-sa">${esc(where)}</span>` : ""}</span></li>`;
     };
     const noun = STOPS_LABEL[t.mode] || "Stops";
     const one = { Stops: "Stop", Stations: "Station" }[noun] || noun;
     const heading = line ? `${S.length} ${noun.toLowerCase()}, in the operator's numbering` : S.length > 1 ? `${noun} · ${S.length}` : one;
     const mapped = items.filter(({ s }) => s.lat != null && s.lng != null && onBase(s));
-    const html = `<div class="tx-stops-b"><h4 class="tx-h label">${esc(heading)}</h4><ol class="${line ? "tx-line" : "tx-list"}" aria-label="${attr(`${t.name}: ${heading}`)}">${items.map(li).join("")}</ol>${mapped.length && mapped.length < S.length ? `<p class="tx-note">${esc(`${mapped.length} of ${S.length} on the map; the others have no coordinates listed, or lie outside the basemap.`)}</p>` : ""}</div>`;
+    const html = `<div class="tx-stops-b"><h4 class="tx-h label">${esc(heading)}</h4><ol class="${line ? "tx-line" : "tx-list"}" aria-label="${attr(`${t.name}: ${heading}`)}">${items.map(li).join("")}</ol>${mapped.length && mapped.length < S.length ? `<p class="tx-note">${esc(`${mapped.length} of ${S.length} on the map; the others have no coordinates listed, or lie outside the basemap.`)}</p>` : !anyCoords && S.length > 1 ? `<p class="tx-note">No coordinates are listed for these stops, so they are not on a map.</p>` : ""}</div>`;
     const map = mapped.length >= 2 ? stopMap(ctx, root, mapped.map(({ s, n }) => ({ lat: s.lat, lng: s.lng, n })), { label: `Map of ${t.name}: ${h.plural(mapped.length, "point")}, numbered as in the list`, sheet }) : "";
     return { html, map };
   }
@@ -414,6 +415,21 @@ ${pk != null ? `<span class="wv-hz-pk" aria-hidden="true" style="--at: ${(((pk +
 <figcaption><p class="wv-hz-leg"><span><i class="wv-kseason" aria-hidden="true"></i>${esc(`Hurricane season · ${season.value}`)}</span>${pk != null ? `<span><i class="wv-kpeak" aria-hidden="true"></i>${esc(`Peak · ${peak.value}`)}</span>` : ""}<span class="faint">${h.extLink(season.source_url, esc(h.hostOf(season.source_url)))}</span></p></figcaption>
 </figure>`);
 
+  /* ---------- the seasons: every fact stated as a date range ("June 1 to November 30"), one row each ---------- */
+  const RANGE = /^((?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}) to ((?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2})$/;
+  const rangeFacts = h.sortBy(db.facts.filter((f) => RANGE.test(f.value.trim())), (f) => dayOfYear(RANGE.exec(f.value.trim())[1]));
+  const pctDay = (d) => ((d / 365) * 100).toFixed(2);
+  const bands = (f) => {
+    const m = RANGE.exec(f.value.trim()), a = dayOfYear(m[1]), b = dayOfYear(m[2]);
+    const seg = (x, y) => `<span class="wv-sz-band" style="--a: ${pctDay(x)}%; --b: ${pctDay(y + 1)}%"></span>`;
+    return b >= a ? seg(a, b) : seg(a, 364) + seg(0, b);   // a range across New Year is two segments
+  };
+  const seasonsStrip = () => (rangeFacts.length ? `<figure class="wv-sz">
+<figcaption class="label">Seasons, as their sources state them</figcaption>
+<div class="wv-sz-row wv-sz-head" aria-hidden="true"><span></span><ol class="wv-sz-m">${MONTH.map((m, i) => `<li style="--d: ${MONTH_DAYS[i]}"><span class="wv-m3">${m.slice(0, 3)}</span><span class="wv-m1">${m[0]}</span></li>`).join("")}</ol></div>
+${rangeFacts.map((f) => `<div class="wv-sz-row${f.id === "hurricane-season" ? " is-storm" : ""}"><p class="wv-sz-l"><b>${esc(f.label)}</b><span>${esc(f.value)} · ${h.extLink(f.source_url, esc(h.hostOf(f.source_url)))}</span></p><div class="wv-sz-track" aria-hidden="true">${bands(f)}</div></div>`).join("")}
+</figure>` : "");
+
   /* ---------- the year at a glance ---------- */
   const win = config.dataWindow || db.window || {};
   const seriesIn = (mi) => h.sortBy(db.series.filter((s) => (s.months || []).includes(mi + 1)), (s) => (s.featured ? 0 : 1), (s) => s.name);
@@ -455,8 +471,8 @@ ${list.length ? `<ul class="wv-yr-list">${list.slice(0, SHOW).map(li).join("")}<
     description: "When to visit Tampa Bay: highs, lows, rain and Gulf water temperature by month, hurricane season and what to do, and the year's annual events month by month, each with its source.",
     toc,
     body: (root) => `${c.pageHead({ num: 5, kicker: "Visit · weather, storms and the year", title: "When to visit",
-      lede: "Highs, lows, rain and Gulf water temperature by month, from the National Weather Service's normals and the beaches' own table; hurricane season and what to do; and what happens every year, month by month." })}
-${toc.find(([id]) => id === "climate") ? sect(ctx, { id: "climate", title: "Weather by month", kicker: "Normals, 1991–2020", icon: "sun", root, body: `${hasClimate ? `<p class="vz-lede">Three charts on one scale: the bars run from the average low to the average high${gulfHas ? `, and the Gulf line is the average water temperature (warmest in ${esc(warmest)})` : ""}. Hover a month for its values; the table below lists all of them.</p>
+      lede: "Highs, lows, rain and Gulf water temperature by month, from NOAA's climate normals and a published table of Gulf water temperatures; hurricane season and what to do; and what happens every year, month by month." })}
+${toc.find(([id]) => id === "climate") ? sect(ctx, { id: "climate", title: "Weather by month", kicker: "Normals, 1991–2020", icon: "sun", root, body: `${hasClimate ? `<p class="vz-lede">${esc(["One chart", "Two charts", "Three charts"][CITIES.filter((cty) => cityHas(cty.key)).length + (gulfHas ? 1 : 0) - 1] || "The charts")} on one scale: the bars run from the average low to the average high${gulfHas ? `, and the Gulf line is the average water temperature (warmest in ${esc(warmest)})` : ""}. Point at a month for its values; every value is also listed below.</p>
 <div class="wv-clims">${CITIES.filter((cty) => cityHas(cty.key)).map(cityPanel).join("")}${gulfHas ? gulfPanel() : ""}</div>
 ${table()}
 ${c.sourceLine(climateFacts.map((f) => f.source_url), { note: climateSources.length ? `${climateSources.map((f) => f.source).join(" · ")}. Checked ${h.fmtDateY(climateFacts[0].checked)}` : "" })}` : ""}
@@ -464,6 +480,7 @@ ${annual.length || coolOff.length ? `<h3 class="sub-h">The year in numbers</h3>$
 ${seasonQs.length ? `<h3 class="sub-h">Questions about the seasons</h3>${questions(ctx, root, seasonQs, { more: { href: "faq.html?topic=when-to-visit", label: "These questions in the FAQ" } })}` : ""}` }) : ""}
 ${sect(ctx, { id: "year", title: "The year at a glance", kicker: `${h.plural(db.series.length, "annual event")} · 12 months`, icon: "calendar", root, more: db.series.length ? { href: "whats-on.html", label: "What's On" } : null,
   body: `<p class="vz-lede">Each month's normals, the events that come back every year (as their organizers describe them), and the dated events in the guide's calendar.</p>
+${seasonsStrip()}
 <div class="wv-yrs">${rows.map((r) => monthCard(root, r)).join("\n")}</div>` })}
 ${toc.find(([id]) => id === "hurricanes") ? sect(ctx, { id: "hurricanes", title: "Hurricane season", kicker: season ? season.value : "Storms", icon: "wave", root, body: `${strip()}
 ${tiles(ctx, seasonFacts)}

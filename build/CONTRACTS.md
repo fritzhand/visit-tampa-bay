@@ -251,6 +251,7 @@ are false/null and every mini map is a coordinate line.
 | `miniMap(root, lat, lng, { sheet, n, label, halfWidthM = 900 })` | `.mini-map[role=img]` > `<svg viewBox><use href="{root}assets/map/basemap.svg#bm"/></svg>` + `.mini-labels` + `span.pin.pin-place[data-sheet]` (plain SVG, no JS); no basemap or off it → `p.coord-line` ("27.9497° N, 82.4588° W"); no coordinates → `p.unk.mini-map-none` |
 | `areaMap(root, [{ lat, lng, kind, sheet, n }], { label, minHalfM, center, ratio, cls })` | a crop fitting every point, `span.pin.pin-{kind}` each; `""` without a basemap |
 | `coordLine(lat, lng)`, `directions(lat, lng, { mode })`, `directionsTo(rec, { mode })`, `where(rec)`, `mapStatus(rec)`, `nearbyOf(lat, lng, m, opts)`, `distLabel(m)`, `meta` | coordinate line; `{ apple, google }` (mode walking/driving/transit or null = the reader picks); by coordinates, else the address (Google only), else null; `"on"\|"off"\|"none"`; the honest badge; nearby + `label`; "350 m" / "1.2 mi" (straight line: say so) |
+| `charts`, `chartOf(points)`, `chartMap(root, points, { chart = "auto", label, minHalfM = 900, ratio = 4 / 3, cls, labels = 3, whole = false, grid = true, refW = 640, bare = false })` (Map lane) | `charts = { bay: { id, meta, labels, file: "basemap.svg", grid } \| null, region: { … file: "region.svg" } \| null }` (the two charts of `data/map.json`; `grid` = the file has `#bm-grid`). `chartOf` → `"bay"`, else `"region"`, when every point with coordinates is on it, else null. `chartMap` → `<div class="mini-map chart-map" data-chart style="--map-ratio" [role=img aria-label]>` > `svg.map-base` (`<use …#bm>` + `<use …#bm-grid>` when the file has it) + `.mini-labels` (the chart's own names clear of the pins) + `span.pin.pin-{kind}[data-sheet]` per point `{ lat, lng, kind, sheet, n, ic, title }` (the number, else the icon); points closer than 26 px at `refW` share a `span.pin.pin-cluster` medallion with their count (`title` "Nos. 4, 11, 23"). `whole` = the full chart with a 24-unit paper margin and the minute ticks; `bare` = the inner markup only. `""` when no chart holds a point. Every page that shows one prints the SPEC §7 attribution line with it. |
 | `heritageBlock(root, rec, { headingLevel = 2, id = "heritage", title })` | `<section class="heritage" id="heritage">`: facts (built, architect, style, era), `ul.designations` (linked when a url), story (our words), "Visiting today", heritage source line; `""` without a block |
 | `timelineItem(root, t, { headingLevel = 3 })`, `designationLine(d)`, `eraLabel(era)` | `<li class="tl-item" id="tl-{id}" data-era [data-r data-sheet]>` year, title, text, "At <places>", source line |
 
@@ -453,7 +454,7 @@ value that names nothing. List params take comma-separated values; `k` takes a g
 | outdoors.html | `r` · `k` (place groups or kinds) · `q` |
 | history.html | `era` (ERAS) · `r` · `q` |
 | eat-drink.html | `r` · `a` · `k` (place groups or kinds) · `tag` (tags on places, or TOPICS) · `q` |
-| map.html | `layers` (`places stays experiences events heritage transport`) · `r` · `focus` (`place: stay: experience: event: area: transport:` + an id) |
+| map.html | `layers` (`places outdoors heritage events stays experiences transport`; default `places,outdoors,heritage,events`) · `r` · `focus` (`place: stay: experience: event: area: transport:` + an id) · `k` (place groups or kinds; the page offers the Things-to-do groups) · `t` (TOPICS) · `when` (`today weekend week month`; none = the next 30 days) · `chart` (`bay` the default, `region` the whole guide box) |
 | areas.html | `r` |
 | faq.html | `q` · `topic` (`h.slugify(faq.topic)`) |
 | trip.html | hash only: `#e=<codes>;x=…;p=…;s=…` |
@@ -513,7 +514,9 @@ keywords, `i` an image path.
   **`r` (region)** in `IMAGE_KINDS` (`build/core/images.mjs`) and in the manifest check (`build/core/load.mjs`: key `r/<region id>`,
   unknown region ids warn like the other kinds), so a region page can call `img.figure(root, "r", region.id)` / `img.plate(root, "r",
   region)` (a region's plate takes its chart code from `rec.id`). `creditHtml` compares the credit with the license label
-  case-insensitively, so "(public domain)" in a credit no longer repeats "Public domain" after it.
+  case-insensitively, so "(public domain)" in a credit no longer repeats "Public domain" after it. `tests/build.test.mjs`: the BROKEN
+  mutation "an image manifest entry without its file" now names `img/p/tampa-theatre-missing.webp` (the real `site/img/p/tampa-theatre.webp`
+  exists since the images pass, and the test copy includes `site/`).
 - **2026-09-27 · Explore lane (explore-and-places)** additive component options, no renames (defaults render exactly as before):
   `placeCard(root, p, { …, sym = false, lead = "", extra = "", foot = false, seal = false, plate = true })` (`sym` = the kind's chart
   symbol before the kind word; `lead` = trusted HTML at the start of the kicker (a list number); `extra` = trusted HTML in `.card-extra`
@@ -537,3 +540,56 @@ keywords, `i` an image path.
   JS, so its raw size grows with the data (≈ 400 KB at 135 entries and 186 sites before images; gzipped ≈ 60 KB).
   `data/routes.json` (Passages) is written by the History lane; `scripts/merge-research.mjs` keeps it (drops only FIXTURE
   routes, remaps ids) but rewrites it sorted by id, so passages.html orders routes itself (by sheet, then stop count).
+- **2026-09-27 · Map lane (map-and-areas)** — additive, no renames.
+  - `build/nav.mjs`: `PARAMS.map` gains `k t when chart` (validators in `paramValues`: place groups or kinds, TOPICS, `WHEN` keys,
+    `MAP_CHARTS`); `MAP_LAYERS` gains `outdoors` (Beaches & outdoors); new export `MAP_CHARTS = ["bay", "region"]`.
+  - `build/core/crawl.mjs`: the basemap's gzip budget is the basemap script's own (150 KB; it was 60, the real chart is 127);
+    `assets/map/region.svg` gets a 40 KB budget.
+  - `build/components/mini-map.mjs`: `charts`, `chartOf`, `chartMap` (§6). `build/components/area-card.mjs`: `areaCard(root, a, { …, n,
+    plate = true, counts })` (`n` = a numbered buoy `.card-no` in the kicker, the area's number on its sheet's index chart; `plate: false`
+    leaves the plate out; `counts` replaces the counts line). Defaults render as before.
+  - map.html contract (`build/pages/map.mjs`, exports `mapModel LAYERS DEFAULT_LAYERS THING_GROUPS ATTRIBUTION isHistoric sectionOf
+    oneLine`): the list is the data. `li.map-li[data-id="<k>:<id>"][data-k][data-l][data-r][data-a][data-ll][data-n][data-g][data-t]
+    [data-st]` with ids `p:<place> s:<stay> x:<experience> e:<place id or first event id> t:<transport id>~<n>`; `data-k` place | heritage |
+    stay | experience | event | stop; `data-l` the layers it belongs to (a place: `places` for the Things-to-do groups, `outdoors`,
+    `heritage` for a heritage block or a history kind); event rows add `data-days` (listing days), `data-runs` ("from:to" per long run),
+    `data-evs` (event ids), `data-sub`; stops add `data-f="transport:<id>"`. Places are numbered 1…n (sheet, area, name); historic sites,
+    stays, departures, events and stops carry their chart symbol. Records at the very same point share one buoy (a "+n" stack); records
+    without coordinates are listed under "Not on the chart". Lane JSON: `assets/data/map-charts.json` `{ v, bay, region: { bbox,
+    projection, labels, graticule } | null, areas: { id: { n, r, k, ll } }, attribution, osm }` and `assets/data/map-lines.json`
+    `{ v, l: { "p:<id>" | "s:<id>" | "x:<id>" | "t:<transport id>" | "a:<area id>": first sentence of the summary } }` (loaded on the
+    first selection).
+  - `site/js/features/map.js` exports **`mountMap(el, opts)`** for any page (a List/Map view): `el` an empty container (a `.map-box`
+    is built) or a rendered `.map-box`; `opts = { pins: [{ id, kind: place|heritage|stay|experience|event|stop, lat, lng, sheet, n?,
+    label, meta?, href?, count?, live?, a? }], chart: "bay"|"region"|"auto", focus, fit: "home"|"pins", wheel: "always" (else Ctrl/⌘ +
+    wheel), title, bias (() → 0…1: where a selection sits vertically), onSelect(id, pin, { keyboard }), onClear, onHover(id), onView({ chart,
+    meta, s, x0, y0, x1, y1 }) }` → `{ update(pins), setChart(id, { fit, keep }), select(id, { zoom }), highlight(id), fit(pins), home(),
+    locate(), bounds(), chart, destroy(), el }`. It loads `map-charts.json` and the chart's SVG itself; without `onSelect` a small card
+    in the map shows the pin (Open, Apple Maps, Google Maps). The view has the neatline margin (`svg.map-grat`: minute bands in ink and
+    paper at the chart's real coordinates, labels on the top and left), the rose, a scale bar in miles, "Not for navigation", zoom
+    buttons, the edge chip; max zoom 12 px per unit on the bay chart (≈ 7 m per px), 6 on the region chart.
+  - areas.html: sections `id="r-<region>"` (`data-filter-group`), each with its index chart (`figure.ar-index`) and one card
+    `id="a-<area id>"` per area. areas/<id>.html: `#do #stay #tours #on #history #eat #nearby`, rows `li.ar-row[data-ll][data-n]` numbered
+    1…n in reading order (the chart's buoys), `[data-area-events]` rows `li[data-ev][data-days | data-run-from data-run-to]` that
+    features/map.js shows for the next 60 days by the clock, `figure.ar-chart[data-area-chart]` (made live by features/map.js).
+
+- **2026-09-27 · What's On lane** (`build/pages/{whats-on,trip}.mjs`, `site/js/features/whats-on.js`, `site/css/{41-trip,45-whats-on}.css`,
+  `tests/whats-on.test.mjs`; additive in `build/components/event-card.mjs`):
+  - `eventCard(root, x, { lean, datebox, checked })`: the lean card What's On lists (same `article.ev` contract and attributes but
+    `data-pl`; `data-fe="1"` on featured events). No inline SVG (`i.ev-sb` is the sheet badge drawn by CSS from `--ink-code`, the star
+    `button.star` is empty and drawn by a CSS mask; the core still wires both), no summary, description or `details` (the dialog has them),
+    no `<time>`; the kicker reads KIND · AREA with the badge at its end (DESIGN §8), `.ev-cost` (the source's price words, a Free badge, or
+    "Price not listed"), `p.ev-src` ("Source: host", linked when the event has no place page; "Checked <date>" only when it differs from
+    `checked`, the date the page states once; Tickets when listed), `.seal` "Signature" for featured events, and with `datebox` the date
+    box first in `<i>/<b>/<i>` form (a long run's reads "Until" and its last day). The default card is unchanged, except that a long
+    run's hours are now the source's own words (`time_text`) or the listed hours, never "daily" (a weekly market is a run too), and
+    "Hours not listed" when neither exists.
+  - New in `ctx.cards`: `alsoRow(root, instance, { local, slim, times })` (li.ev-also: a later listing day of a multi-day event under
+    that day), `dateBox(date, { until, compact })`, `costText(ev)`.
+  - whats-on.html: `data-filter-list="manual"` on `.wo-list` (`data-filter-items=".ev, .ev-also"`), mounted by features/whats-on.js
+    with its own `day` / `when` / `month` tests (an item matches on its own listing day; a run on any day it covers) and `star`
+    (`dateTests`, `overlaps` are exported pure helpers). Ids: `#runs`, `#m-YYYY-MM`, `#d-YYYY-MM-DD`, `#annual`, `#yr-0…12`, plus the
+    contract's `e-<id>` and `s-<id>`. New data output `assets/data/whats-on-map.json` `{ v, attribution, labels: [{ text, lat, lng, kind,
+    minZoom }] }` (the map view's names and credit, fetched when the map opens).
+  - trip.html loads the `whats-on` feature too (it owns no other JS file): `[data-trip-clash]` "Times that overlap" from events.json,
+    `[data-trip-print]`. `[data-trip-root]` is the core's view, unchanged; 41-trip.css styles it (and its print sheet).

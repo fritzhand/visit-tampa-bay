@@ -40,7 +40,7 @@ export function pages(ctx) {
   const { db, c, h, cards, vocab, fail } = ctx;
   const { esc, attr } = h;
   const K = kit(ctx);
-  const { EXPERIENCE_KINDS, EXPERIENCE_KIND_LABEL, EXPERIENCE_GROUP, TOPIC_LABEL, TOPICS, STATUS_LABEL } = vocab;
+  const { EXPERIENCE_KINDS, EXPERIENCE_GROUP, EXPERIENCE_GROUP_LABEL, TOPIC_LABEL, TOPICS } = vocab;
   const xs = db.experiences;
 
   // every kind in exactly one family: a new kind in the vocabulary must be placed before it can be listed
@@ -63,10 +63,17 @@ export function pages(ctx) {
   const notRunning = h.sortBy(xs.filter((x) => x.status !== "open"), (x) => x.status, (x) => K.sortName(x.name));
   const regionOpts = db.regions.filter((r) => r.experiences.length).map((r) => [r.id, `${r.name} (${r.experiences.length})`]);
   const kindGroups = fams.map((f) => ({ label: f.title, options: [[f.k, `All ${f.title.toLowerCase()} (${f.n})`], ...(f.kinds.length > 1 ? f.kinds.map((g) => [g.k, `${KIND_HEAD[g.k]} (${g.list.length})`]) : [])] }));
+  // the vocabulary's own groups (?k=tours, the value other pages and the contract use) when no family above equals one:
+  // listed under their own heading so a link with one of them shows its name, not a slug
+  const famKs = new Set(fams.map((f) => f.k));
+  const vocabGroups = [...new Set(Object.values(EXPERIENCE_GROUP))].filter((g) => !famKs.has(g)).map((g) => [g, xs.filter((x) => EXPERIENCE_GROUP[x.kind] === g).length]).filter(([, n]) => n > 0)
+    .map(([g, n]) => [g, `${EXPERIENCE_GROUP_LABEL[g] || g} (${n})`]);
+  if (vocabGroups.length) kindGroups.push({ label: "Other groupings", options: vocabGroups });
   const topicN = (t) => xs.filter((x) => (x.topics || []).includes(t)).length;
   const topicOpts = TOPICS.filter((t) => topicN(t) > 0).map((t) => [t, `${TOPIC_LABEL[t]} (${topicN(t)})`]);
 
-  const index = (root) => `<nav class="tour-index" aria-label="Families of experiences">${fams.map((f) => `<a class="tour-fam-link" href="#fam-${f.id}">${h.icon(f.icon)}<span class="tour-fam-t">${esc(f.title)}</span><span class="tour-fam-n"><b>${f.n}</b> · ${h.plural(f.kinds.length, "kind")}</span></a>`).join("")}</nav>`;
+  const index = (root) => `<nav class="tour-index" aria-label="Families of experiences">${fams.map((f) => `<a class="tour-fam-link" href="#fam-${f.id}">${h.icon(f.icon)}<span class="tour-fam-t">${esc(f.title)}</span><span class="tour-fam-n"><b>${f.n}</b> · ${h.plural(f.kinds.length, "kind")}</span></a>`).join("")}</nav>
+<p class="tour-more"><a href="${root}map.html?layers=experiences">${h.icon("map")}Where they start, on the map</a><a href="#list">${h.icon("sliders")}Filter by kind, sheet or topic</a></p>`;
 
   const checkBox = (root) => (notRunning.length ? `<aside class="callout tone-warn tour-check" aria-labelledby="tour-check-h"><span class="flag label">${h.icon("warn")}Check before you go</span>
 <h2 class="tour-check-h" id="tour-check-h">${h.plural(notRunning.length, "experience is", "experiences are")} not running as usual</h2>

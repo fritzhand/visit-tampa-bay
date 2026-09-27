@@ -34,7 +34,7 @@ export function pages(ctx) {
   const distLabel = (m) => (m < 1609.344 * 0.2 ? `${Math.round(m / 10) * 10} m` : `${(m / 1609.344).toFixed(1)} mi`);
 
   /** SPEC §7: every map's attribution line. */
-  const attribution = `<span class="fig-attrib">Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${extLink("https://www.openstreetmap.org/copyright", "https://www.openstreetmap.org/copyright")}).</span>`;
+  const attribution = `<p class="fig-attrib">Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${extLink("https://www.openstreetmap.org/copyright", "https://www.openstreetmap.org/copyright")}).</p>`;
 
   /* ---------- rows ---------- */
   const mk = (a, n, sym) => (n != null ? `<span class="map-mk mk-buoy" data-sheet="${a.region}" aria-hidden="true">${n}</span>` : `<span class="map-mk mk-sym" data-sheet="${a.region}" aria-hidden="true">${icon(sym)}</span>`);
@@ -90,22 +90,22 @@ export function pages(ctx) {
   const withCounts = (a) => a.places.length + a.stays.length + a.experiences.length + a.events.length;
   const indexChart = (root, r) => {
     const pts = r.areas.map((a, i) => (a.ll ? { lat: a.ll[0], lng: a.ll[1], kind: "place", sheet: r.id, n: i + 1, title: a.name } : null)).filter(Boolean);
-    const m = pts.length ? cards.chartMap(root, pts, { chart: "auto", minHalfM: 2500, ratio: 16 / 10, labels: 3, label: `Chart of the ${plural(pts.length, "area")} on Sheet ${r.n}, ${r.name}, numbered as in the cards below`, cls: "ar-index-map", refW: 720 }) : "";
-    return m ? `<figure class="ar-index" data-sheet="${r.id}">${m}<figcaption class="faint">Each buoy marks an area's center; the numbers match the cards. Not for navigation. ${attribution}</figcaption></figure>` : "";
+    const m = pts.length ? cards.chartMap(root, pts, { chart: "auto", minHalfM: 2500, ratio: "auto", labels: 3, label: `Chart of the ${plural(pts.length, "area")} on Sheet ${r.n}, ${r.name}, numbered as in the cards below`, cls: "ar-index-map", refW: 720 }) : "";
+    return m ? `<figure class="ar-index${/--map-ar: 0\./.test(m) ? " is-tall" : ""}" data-sheet="${r.id}">${m}<figcaption class="faint">Each buoy marks an area's center; the numbers match the cards. Not for navigation. ${attribution}</figcaption></figure>` : "";
   };
   const list = {
     path: "areas.html", nav: "areas", title: "Areas & towns",
     description: `Tampa Bay's ${db.areas.length} neighborhoods, towns and beach towns on six sheets, with what each is known for and how many places, places to stay and events this guide lists there.`,
     toc: db.regions.map((r) => [`r-${r.id}`, r.name]),
     body: (root) => `${c.pageHead({ num: 4, kicker: `Stay · ${db.areas.length} areas on ${db.regions.length} sheets`, title: "Areas & towns", lede: "The neighborhoods, towns and beach towns on each sheet of the chart: what each is known for, and how many places, places to stay and events this guide lists there. Each area's page has its own chart." })}
-${c.tocMobile(db.regions.map((r) => [`r-${r.id}`, r.name]))}
 <div class="ar-filter js-only" data-filter-root><div class="chip-row" role="group" aria-label="Sheets">${db.regions.map((r) => c.chip(r.short || r.name, null, { count: r.areas.length, pressed: false, sheet: r.id, attrs: `data-filter-chip="r=${r.id}"` })).join("")}<button class="btn btn-ghost btn-sm" type="button" data-filter-clear hidden>${icon("x")}All sheets</button></div>${c.resultCount(db.areas.length, db.areas.length, "areas")}</div>
 <div class="ar-sheets" data-filter-list>
 ${db.regions.map((r) => {
     const counts = [plural(r.areas.length, "area"), plural(r.places.length, "place"), plural(r.stays.length, "place to stay", "places to stay"), plural(r.events.length, "event")].join(" · ");
-    return `<section class="section ar-sheet" id="r-${r.id}" aria-labelledby="r-${r.id}-h" data-filter-group data-sheet="${r.id}">
+    const chart = indexChart(root, r);
+    return `<section class="section ar-sheet${chart.includes("ar-index is-tall") ? " has-tall" : ""}" id="r-${r.id}" aria-labelledby="r-${r.id}-h" data-filter-group data-sheet="${r.id}">
 <div class="sec-head oxford ar-sheet-head"><p class="sec-kicker label">${bullet(r.id)}Sheet ${r.n} · ${esc(r.code)}</p><h2 id="r-${r.id}-h">${esc(r.name)}</h2><a class="more" href="${root}${ctx.nav.regionHref(r.id)}">The ${esc(r.name)} sheet${icon("arrow-r")}</a><p class="ar-sheet-counts faint">${esc(counts)}</p></div>
-${indexChart(root, r)}
+${chart}
 <div class="grid ar-grid">${r.areas.map((a, i) => cards.areaCard(root, a, { anchor: true, n: a.ll ? i + 1 : null, plate: false, summary: true })).join("")}</div>
 </section>`;
   }).join("\n")}

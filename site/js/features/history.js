@@ -9,8 +9,8 @@
        - the counts per section: [data-hx-count="all"] "Showing 24 of 115 entries · 30 of 186 historic sites",
          [data-hx-count="sites"] "30 of 186 sites" (the core writes one count for the whole list);
        - the empty state of each section ([data-hx-empty="tl"|"sites"]);
-       - a #tl-<id> or #hs-<id> target (a search hit, a shared link) that the current filter hides clears the
-         filter first, so the link always lands on its entry.
+       - a #tl-<id>, #hs-<id>, #lm-<id> or #era-<era> target (a search hit, a shared link, the era rail, the table of
+         contents) that the current filter hides clears the filter first, so the link always lands on its entry.
 
    passages.html — "Star all n stops" (button[data-star-all='[["p","id"],…]']): adds every stop of the passage
      to My Trip (app.trip.add per kind), or, when all are in it already, takes them out; the label and
@@ -55,19 +55,27 @@ function initHistory(app) {
   if (ctl) write(ctl.state(), ctl.visible());
 
   // a hash that points at an entry the filter hides: clear the filter, then go there
-  function reveal() {
-    const id = decodeURIComponent(location.hash.slice(1));
-    if (!/^(tl|hs)-/.test(id)) return;
+  function unhide(id) {
+    if (!/^(tl|hs|lm|era)-/.test(id)) return null;
     const el = document.getElementById(id);
-    if (!el || !list.contains(el)) return;
-    const hiddenByFilter = el.hidden || !!el.closest("[data-filter-group][hidden]");
-    if (!hiddenByFilter) return;
+    if (!el || !list.contains(el)) return null;
+    if (!el.hidden && !el.closest("[data-filter-group][hidden]")) return null;
     const c = app.filter.get(list);
     if (c) c.reset();
-    requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
+    return el;
+  }
+  function reveal() {
+    const el = unhide(decodeURIComponent(location.hash.slice(1)));
+    if (el) requestAnimationFrame(() => el.scrollIntoView({ block: "start" }));
   }
   reveal();
   window.addEventListener("hashchange", reveal);
+  // an in-page link (the era rail, the table of contents, an era intro) to something the filter hides: clear the
+  // filter before the browser follows it (a click on the hash already in the URL fires no hashchange)
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a) unhide(decodeURIComponent(a.getAttribute("href").slice(1)));
+  });
 }
 
 /* ---------- passages.html ---------- */

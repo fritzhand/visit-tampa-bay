@@ -5,8 +5,10 @@
      - a head: the passage number, its sheet, the title, the lede (plain facts from the stops' records), computed
        stats (stops, the straight-line total and the longest leg, what kinds of stops), "Star all n stops"
        (site/js/features/history.js; adds every stop to My Trip) and Google Maps directions when the stops fit;
-     - a chart (ctx.cards.chartMap, no JS) with the numbered stops and a dashed magenta course line joining them
-       in straight lines (drawn in the chart's own units, so it sits exactly under the pins);
+     - a chart (routeMap below: a crop of the bay chart, or the region chart, from ctx.cards.charts; plain SVG + HTML,
+       no JS) fitted to the stops, with numbered course markers (stops closer than a marker share one: "3–5"), a
+       dashed magenta course line joining them in straight lines in the chart's own units, and up to three of the
+       chart's own names clear of the markers;
      - the course: ol.stops, one li per stop (number, sheet, kind, area, the stop's name linked to its page or
        dialog, our note, the record's own hours and price or its unknowns, its status words and note, the series
        it hosts, its star and its source line), and between stops the straight-line distance, labeled an
@@ -16,7 +18,7 @@
    Contract (build/CONTRACTS.md §3): one element id="r-<route id>" per route.
    ============================================================ */
 import { readFileSync, existsSync } from "node:fs";
-import { project, haversine, walkMinutes } from "../../site/js/lib/geo.js";
+import { project, haversine, walkMinutes, onMap } from "../../site/js/lib/geo.js";
 
 /** Does a chart file (site/map/<file>) carry the graticule group #bm-grid? (A test basemap may not.) */
 const GRID = new Map();
@@ -26,7 +28,7 @@ const hasGrid = (file) => {
 };
 
 const STAR = { place: "p", stay: "s", experience: "x", event: "e" };
-const KIND_WORD = { place: ["place", "places"], stay: ["hotel", "hotels"], experience: ["tour or ride", "tours and rides"], event: ["event", "events"] };
+const KIND_WORD = { place: ["place", "places"], stay: ["place to stay", "places to stay"], experience: ["tour or ride", "tours and rides"], event: ["event", "events"] };
 /** Leg distance words: meters under 1 km, else miles (lib/geo.js haversine; straight line). */
 export const distWords = (m) => (m < 1000 ? `${Math.max(10, Math.round(m / 10) * 10)} m` : `${(m / 1609.344).toFixed(1)} mi`);
 /** An on-foot estimate for a leg (lib/geo.js walkMinutes: straight line × 1.3 at 80 m a minute), only up to 2 km. */
@@ -90,7 +92,7 @@ export function pages(ctx) {
     if (s.kind === "event") return `<a href="${h.attr(href)}" data-open-event="${h.attr(s.id)}">${h.esc(nameOf(s.rec))}</a>`;
     return `<a href="${h.attr(href)}">${h.esc(nameOf(s.rec))}</a>`;
   }
-  function legHtml(s, total) {
+  function legHtml(s) {
     if (!s.next) return "";
     const to = s.next.to;
     if (s.next.d == null) return `<p class="rt-leg">${h.icon("course")}<span>To stop ${to.n}: ${unk("distance not known, no coordinates listed")}</span></p>`;
@@ -101,7 +103,7 @@ export function pages(ctx) {
     const b = s.kind === "event" ? c.eventStatusBadge(s.rec) : s.rec.status && s.rec.status !== "open" ? c.statusBadge(s.rec) : "";
     return b ? ` ${b}` : "";
   }
-  function stopItem(root, rt, s, total) {
+  function stopItem(root, rt, s) {
     const r = s.rec;
     const noteText = s.note || r.summary || "";
     const rows = stopFacts(s).filter(([, v]) => v);
@@ -117,7 +119,7 @@ export function pages(ctx) {
       + (series.length ? `<p class="rt-series">${h.icon("calendar")}<span>${series.map((se) => `<a href="${root}whats-on.html#s-${h.attr(se.id)}">${h.esc(se.name)}</a>: ${h.esc(se.when_text)}`).join("<br>")}</span></p>` : "")
       + (!s.ll ? `<p class="rt-noll">${unk("Not on the map: no coordinates listed")}</p>` : "")
       + c.sourceLine([r.source_url], { label: "Source", note: r.checked ? `Checked ${h.fmtDateY(r.checked)}` : "" })
-      + legHtml(s, total)
+      + legHtml(s)
       + `</li>`;
   }
 
@@ -130,22 +132,33 @@ export function pages(ctx) {
     const L = f.located;
     if (!L.length) return "";
     const pts = L.map((s) => ({ lat: s.ll[0], lng: s.ll[1] }));
-    const id = (cards.chartOf && cards.chartOf(pts)) || null;
-    const ch = id && charts[id];
-    if (!ch || !ch.meta) return "";
-    const M = ch.meta;
-    const xy = pts.map((p) => project(p.lat, p.lng, M));
-    const xs = xy.map((q) => q[0]), ys = xy.map((q) => q[1]);
-    const ex = Math.max(...xs) - Math.min(...xs), ey = Math.max(...ys) - Math.min(...ys);
-    const ratio = Math.min(1.5, Math.max(0.8, (ex + 1) / (ey + 1)));   // tall routes get a tall chart
-    const PAD = 0.11, minU = (2 * 380) / M.mPerUnit;
-    let w = Math.max(ex / (1 - 2 * PAD), minU), hh = Math.max(ey / (1 - 2 * PAD), minU / ratio);
-    if (w / hh > ratio) hh = w / ratio; else w = hh * ratio;
-    if (w > M.W) { w = M.W; hh = w / ratio; }
-    if (hh > M.H) { hh = M.H; w = hh * ratio; }
-    const cx = (Math.max(...xs) + Math.min(...xs)) / 2, cy = (Math.max(...ys) + Math.min(...ys)) / 2;
-    const x0 = Math.min(Math.max(0, cx - w / 2), M.W - w), y0 = Math.min(Math.max(0, cy - hh / 2), M.H - hh);
-    const px = (x) => ((x - x0) / w) * 100, py = (y) => ((y - y0) / hh) * 100;
+    // the crop of one chart fitted to the stops (a margin of PAD on each side), or null when the chart cannot give
+    // every stop that margin (a long route near the bay chart's edge): then the region chart takes over
+    const PAD = 0.11;
+    function frame(id) {
+      const ch = id && charts[id];
+      if (!ch || !ch.meta) return null;
+      const M = ch.meta;
+      const xy = pts.map((p) => project(p.lat, p.lng, M));
+      const xs = xy.map((q) => q[0]), ys = xy.map((q) => q[1]);
+      const ex = Math.max(...xs) - Math.min(...xs), ey = Math.max(...ys) - Math.min(...ys);
+      const ratio = Math.min(1.5, Math.max(0.8, (ex + 1) / (ey + 1)));   // tall routes get a tall chart
+      const minU = (2 * 380) / M.mPerUnit;
+      let w = Math.max(ex / (1 - 2 * PAD), minU), hh = Math.max(ey / (1 - 2 * PAD), minU / ratio);
+      if (w / hh > ratio) hh = w / ratio; else w = hh * ratio;
+      if (w > M.W) { w = M.W; hh = w / ratio; }
+      if (hh > M.H) { hh = M.H; w = hh * ratio; }
+      const cx = (Math.max(...xs) + Math.min(...xs)) / 2, cy = (Math.max(...ys) + Math.min(...ys)) / 2;
+      const x0 = Math.min(Math.max(0, cx - w / 2), M.W - w), y0 = Math.min(Math.max(0, cy - hh / 2), M.H - hh);
+      const px = (x) => ((x - x0) / w) * 100, py = (y) => ((y - y0) / hh) * 100;
+      const inside = xy.every(([x, y]) => px(x) >= 4 && px(x) <= 96 && py(y) >= 4 && py(y) <= 96);
+      return { id, ch, M, xy, ratio, w, hh, x0, y0, px, py, inside };
+    }
+    const first = (cards.chartOf && cards.chartOf(pts)) || null;
+    let F = frame(first);
+    if (F && !F.inside && first === "bay") { const G = frame(charts.region && L.every((s) => onMap(charts.region.meta, s.ll[0], s.ll[1])) ? "region" : null); if (G && G.inside) F = G; }
+    if (!F) return "";
+    const { id, ch, M, xy, ratio, w, hh, x0, y0, px, py } = F;
     // markers: stops closer than a marker (about 24px on a 440px-wide chart) share one
     const P = xy.map((q, i) => ({ x: px(q[0]), y: py(q[1]), s: L[i] }));
     const near = (a, b) => Math.abs(a.x - b.x) < 5.4 && Math.abs(a.y - b.y) < 5.4 * ratio;
@@ -189,12 +202,12 @@ export function pages(ctx) {
     const star = JSON.stringify(f.stops.map((s) => [STAR[s.kind], s.id]));
     const statRows = [
       ["Stops", `${f.stops.length}`],
-      ["Straight-line total", f.located.length > 1 ? `${distWords(f.total)}` : unk("Not known")],
+      ["Straight-line total", f.located.length > 1 ? `${distWords(f.total)}${f.located.length < f.stops.length ? " (legs between stops with coordinates)" : ""}` : unk("Not known")],
       ["Longest leg", f.located.length > 1 ? `${distWords(f.longest)}` : unk("Not known")],
       ["Made of", h.esc(kindsText(f.kinds))],
     ];
     const map = routeMap(root, rt, f);
-    return `<section class="section passage" id="r-${h.attr(rt.id)}" data-sheet="${rt.region}" aria-labelledby="r-${h.attr(rt.id)}-h">
+    return `<section class="section passage oxford" id="r-${h.attr(rt.id)}" data-sheet="${rt.region}" aria-labelledby="r-${h.attr(rt.id)}-h">
 <header class="rt-head">
 <p class="rt-kicker label">${h.bullet(rt.region, "lg")}<span>Passage ${i + 1} of ${routes.length} · Sheet ${REGIONS[rt.region].n} · ${h.esc(REGIONS[rt.region].name)}</span></p>
 <h2 id="r-${h.attr(rt.id)}-h">${h.esc(rt.title)}</h2>
@@ -204,7 +217,7 @@ ${rt.lede ? `<p class="rt-lede">${h.esc(rt.lede)}</p>` : ""}
 </header>
 <div class="rt-grid${map ? "" : " no-map"}">
 ${map ? `<div class="rt-map"><div class="rt-map-in">${map}<p class="rt-map-note">${h.icon("course")}<span>Numbers match the list. The dashed line joins the stops in straight lines, not streets.</span></p></div></div>` : ""}
-<ol class="stops rt-stops">${f.stops.map((s) => stopItem(root, rt, s, f.total)).join("")}</ol>
+<ol class="stops rt-stops">${f.stops.map((s) => stopItem(root, rt, s)).join("")}</ol>
 </div>
 <p class="rt-foot">${h.icon("info")}<span>Put together${rt.checked ? ` on ${h.esc(h.fmtDateY(rt.checked))}` : ""} from the ${f.stops.length} entries above. Each stop's facts come from its own source, linked under it.</span></p>
 </section>`;

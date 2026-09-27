@@ -33,15 +33,7 @@
 .rt-top .callout { margin-top: var(--sp-7); max-width: 72ch; }
 
 /* ---------- a passage ---------- */
-.passage {
-  margin-top: var(--sp-9); padding-top: calc(var(--wl-h) + 18px);
-  background:
-    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
-    linear-gradient(var(--water-line) 0 0) 0 5px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 72%, transparent) 0 0) 0 9px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 46%, transparent) 0 0) 0 14px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 24%, transparent) 0 0) 0 21px / 100% 1px no-repeat;
-}
+.passage { margin-top: var(--sp-9); }   /* + .oxford: the water-lining rule above each passage */
 .rt-head { max-width: 58rem; }
 .rt-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin: 0 0 var(--sp-2); color: var(--ink-text); }
 .rt-kicker > span { color: var(--text-muted); }

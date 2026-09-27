@@ -164,3 +164,25 @@
 .stay-note-h .n { font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); color: var(--text-muted); }
 .fact-sheet { display: block; margin-top: 6px; }
 @media (max-width: 559px) { .stay-main .plate-type.lg { aspect-ratio: 16 / 10; padding: 20px 24px 30px; gap: 8px; } }
+
+/* ---------- review pass (2026-09-27) ---------- */
+/* a status badge beside a row keeps its own width (li.row > span would stretch it onto a line of its own) */
+:root[data-page^="stays/"] li.row > .badge { flex: none; }
+/* feature chips: a count of 0 means selecting it would leave nothing: said by the number, drawn dashed */
+.stay-feats .chip.is-zero { border-style: dashed; color: var(--text-faint); }
+.stay-map-more { margin-top: var(--sp-2); }
+.stay-map-more a, .stay-around a { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.stay-map-more .i, .stay-around .i { width: 16px; height: 16px; flex: none; }
+.stay-around { list-style: none; padding: 0; margin: 0; display: grid; gap: 0 var(--sp-5); grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+/* "Where it is": beside the text on a mid-width screen (a full-width map there is taller than the screen) */
+@media (min-width: 640px) and (max-width: 999px) {
+  .stay-where { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 var(--sp-5); align-items: start; }
+  .stay-where > .sub-h { grid-column: 1 / -1; }
+  .stay-where .mini-map { margin-top: 4px; }
+}
+.stay-where-t > :first-child { margin-top: 0; }
+a.fact-sheet { display: flex; width: fit-content; align-items: center; min-height: var(--tap); margin-top: 0; text-decoration: none; }
+a.fact-sheet:hover .sheet-badge { text-decoration: underline; }
+.stay-tl .stay-tl-d { color: var(--text); font-weight: var(--wght-ui); }
+.near-far-h { display: flex; align-items: center; gap: 8px; margin-top: var(--sp-4); }
+.near-far-h .i { width: 18px; height: 18px; color: var(--text-muted); }

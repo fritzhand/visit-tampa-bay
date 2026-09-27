@@ -118,3 +118,10 @@
 .pl-evs-past { margin-top: var(--sp-2); font-size: var(--fs-xs); color: var(--text-faint); }
 .pl-tl > li:has(.stretched:hover) .tl-title a { text-decoration: underline; text-underline-offset: 0.14em; }
 .pl-tl .tl-places { position: relative; }
+/* the head's meta items: set apart by space and their own styles (badge, symbol, link), so a wrapped line never dangles a dot */
+.pl-mi { display: inline-flex; align-items: center; }
+.pl-head .pl-meta { gap: 4px 18px; }
+/* long source addresses break anywhere rather than push the page wider */
+.pl-page .source-line, .pl-page .source-line > span, .pl-src dd { overflow-wrap: anywhere; min-width: 0; }
+.pl-photo figcaption p { margin: 0; }
+.pl-photo img { border: 1px solid var(--border); }

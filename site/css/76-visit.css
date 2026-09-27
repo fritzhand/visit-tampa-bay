@@ -238,6 +238,28 @@ ol.wv-cols { position: relative; list-style: none; padding: 0; margin: 0; displa
 .wv-kseason { width: 22px; height: 12px; border-radius: 2px; background: var(--warning); }
 .wv-kpeak { width: 3px; height: 16px; background: var(--text); }
 
+/* ---------- when to visit: the seasons strip (one labeled row per date-range fact; the band is the mark, the words carry it) ---------- */
+.wv-sz { margin: 0 0 var(--sp-6); padding: 14px 16px 12px; background: var(--surface); border: 1px solid var(--border); border-top: 2px solid var(--rule-ink); }
+.wv-sz > figcaption { margin-bottom: 10px; color: var(--text-muted); }
+.wv-sz-row { display: grid; grid-template-columns: minmax(0, 230px) minmax(0, 1fr); gap: 4px 16px; align-items: center; padding: 8px 0; border-top: 1px solid var(--border); }
+.wv-sz-head { border-top: 0; padding: 0 0 4px; }
+.wv-sz-l { font-size: var(--fs-sm); line-height: 1.35; }
+.wv-sz-l b { display: block; font-weight: var(--wght-strong); }
+.wv-sz-l span { color: var(--text-muted); font-size: var(--fs-xs); }
+.wv-sz-m { list-style: none; display: flex; padding: 0; margin: 0; }
+.wv-sz-m li { flex: var(--d) 1 0; min-width: 0; text-align: center; color: var(--text-faint); font-family: var(--font-label); font-size: var(--fs-label); font-weight: var(--wght-label); text-transform: uppercase; letter-spacing: 0.04em; border-left: 1px solid var(--border); }
+.wv-sz-m li:first-child { border-left: 0; }
+.wv-sz-m .wv-m1 { display: none; }
+.wv-sz-track { position: relative; height: 14px; background: var(--surface-alt); border-radius: 2px; }
+.wv-sz-band { position: absolute; top: 0; bottom: 0; left: var(--a); width: calc(var(--b) - var(--a)); border-radius: 2px; background: var(--text-muted); }
+.wv-sz-row.is-storm .wv-sz-band { background: var(--warning); }
+@media (max-width: 599px) {
+  .wv-sz-row { grid-template-columns: minmax(0, 1fr); }
+  .wv-sz-head > span { display: none; }
+  .wv-sz-m .wv-m3 { display: none; } .wv-sz-m .wv-m1 { display: inline; }
+}
+.wv-sz { --a: 0%; --b: 0%; --d: 30; }
+
 /* ---------- when to visit: the year at a glance ---------- */
 .wv-yrs { display: grid; gap: var(--sp-4); grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); align-items: start; }
 .wv-yr {

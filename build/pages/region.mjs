@@ -481,7 +481,9 @@ ${r.official_url ? `<p class="sh-official">Official visitor bureau: ${h.extLink(
     const toc = [["chart", "The chart"], ["areas", "Areas"], keyPlaces.length && ["signature", keyWord], fam.length && ["things", "Things to do"], outdoors.length && ["outdoors", beaches.length ? "Beaches and outdoors" : "Outdoors"],
       r.stays.length && ["stay", "Where to stay"], ["on", "What's on"], expFam.length && ["experiences", "Experiences"], (her.length || tl.length) && ["history", "History"], ed.length && ["eat", "Eat and drink"],
       tr.length && ["around", "Getting around"], ["sources", "Sources"]].filter(Boolean);
-    const body = [head, chartSec, areasSec, sigSec, thingsSec, outSec, staySec, onSec, expSec, histSec, eatSec, aroundSec, srcSec].join("\n");
+    // the sheet's own photo (data/images.json "r/<region id>", rights-cleared, with its credit), when there is one
+    const photo = img.has("r", r.id) ? img.figure("ROOT/", "r", r.id, { cls: "sheet-photo", sizes: "(min-width: 1280px) 840px, (min-width: 1024px) 70vw, 100vw" }) : "";
+    const body = [head, photo, chartSec, areasSec, sigSec, thingsSec, outSec, staySec, onSec, expSec, histSec, eatSec, aroundSec, srcSec].join("\n");
     const og = { tampa: "og-tampa.png", stpete: "og-stpete.png", beaches: "og-beaches.png", clearwater: "og-clearwater.png", around: "og-around.png", daytrips: "og-daytrips.png" }[r.id];
     return {
       path, nav: rp.slug, title: r.name, og,

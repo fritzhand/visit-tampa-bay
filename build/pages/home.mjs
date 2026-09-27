@@ -134,8 +134,9 @@ export function pages(ctx) {
     const nf = nextFeatured(db, r.events, W0);
     const counts = [[r.places.length, "places"], [r.stays.length, "to stay"], [r.events.length, "events"]];
     const nfHtml = nf ? `<a href="${root}whats-on.html?e=${attr(nf.id)}#e-${attr(nf.id)}" data-open-event="${attr(nf.id)}"><span class="t">${esc(nf.title)}</span><span class="w">${esc(dateText(h, db, nf))}${nf.venue ? ` · ${esc(nf.venue.name)}` : ""}</span></a>` : `<span class="unk">No signature event listed</span>`;
+    const ph = img.has("r", r.id) ? `<figure class="si-photo"><span class="photo">${img.img(root, "r", r.id, { sizes: "(min-width: 1100px) 330px, (min-width: 700px) 45vw, 92vw" })}</span><figcaption class="si-credit">${img.creditHtml("r", r.id)}</figcaption></figure>` : "";
     return `<article class="si-plate" id="sheet-${r.id}" data-sheet="${r.id}" aria-labelledby="si-${r.id}">
-<header class="si-head"><span class="si-no" aria-hidden="true">${r.n}</span><div class="si-title"><p class="si-code label">Sheet ${r.n} · ${esc(r.code)}</p><h3 id="si-${r.id}"><a href="${root}${sheetHref(r)}">${esc(r.name)}</a></h3></div>${bullet(r.id, "lg")}</header>
+${ph}<header class="si-head"><span class="si-no" aria-hidden="true">${r.n}</span><div class="si-title"><p class="si-code label">Sheet ${r.n} · ${esc(r.code)}</p><h3 id="si-${r.id}"><a href="${root}${sheetHref(r)}">${esc(r.name)}</a></h3></div>${bullet(r.id, "lg")}</header>
 ${r.lede ? `<p class="si-lede">${esc(firstSentence(r.lede))}</p>` : ""}
 <dl class="si-counts tnum">${counts.map(([v, l]) => `<div><dd>${v}</dd><dt>${esc(l)}</dt></div>`).join("")}</dl>
 ${pk.list.length ? `<p class="si-sub label">${pk.signature === pk.list.length ? "Signature places" : pk.signature ? "Signature places, then by kind" : "Places to start, by kind"}</p><ul class="si-sig">${pk.list.map((p) => `<li><a href="${root}places/${attr(p.id)}.html"><span class="t">${esc(p.name)}</span><span class="w">${esc(PLACE_KIND_LABEL[p.kind] || p.kind)}</span></a></li>`).join("")}</ul>` : ""}

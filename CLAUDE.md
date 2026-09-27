@@ -188,11 +188,19 @@ It opens in the experience dialog (`experiences.html?x=<id>`), with the departur
 ### Images
 
 `data/media.json` holds the rights-cleared images (`license`: `public-domain cc0 cc-by cc-by-sa us-gov`; `credit`, `file_url` on
-upload.wikimedia.org, `page_url` the Commons `File:` page, `subject_kind` + `subject`, `alt`). The images pass downloads them once into
-`site/img/<kind>/` (kinds `p` place, `s` stay, `a` area, `t` timeline, `x` experience) and writes the manifest `data/images.json`
-(`"<kind>/<id>": { file, w, h, credit, license, license_url?, page_url?, creator?, alt?, sm?, lg? }`; the script lands with the merge).
-The build fails on a manifest entry whose file is missing or that lacks a credit or license, and never hotlinks.
-**Takedown request:** delete the manifest entry and the file (and the `media.json` record), build, commit.
+upload.wikimedia.org, `page_url` the Commons `File:` page, `subject_kind` + `subject`, `alt`). `python3 scripts/fetch-images.py` (Pillow;
+incremental) downloads each subject's first media record once (a timeline entry's own `media` order first) into `.cache/img-src/`
+(gitignored), writes `site/img/<kind>/<id>.webp` (480 px wide) and `<id>-lg.webp` (≤ 1200 px, when the source is larger), EXIF-rotated,
+sRGB, metadata stripped (kinds `p` place, `s` stay, `a` area, `t` timeline, `x` experience, `r` region), and the manifest
+`data/images.json` (`"<kind>/<id>": { file, w, h, lg?, credit, license, license_url?, page_url?, creator?, alt?, media }`), then build.
+Flags: `--offline` (cache only), `--only p/<id>,a/<id>` (re-process those), `--retry-failed`, `--force` (re-render everything from the
+cache), `--max-minutes N`. Wikimedia throttles this network hard: the script fetches standard-size thumbnails (1280px; an original
+only when its thumbnail errors), one request at a time, honors Retry-After and backs off; an interrupted or throttled run keeps what it finished, reports the
+rest as "deferred", and the next run resumes (`.cache/img-src/report.json` has the last run's details). A hand-picked primary image
+goes in `PRIMARY` at the top of the script. The build fails on a manifest entry whose file is missing or that lacks a credit or
+license, and never hotlinks.
+**Takedown request:** delete the `media.json` record, run `python3 scripts/fetch-images.py --offline` (it drops the entry and the files),
+build, commit.
 
 ### The clock and the live states
 
@@ -282,7 +290,7 @@ integration pass the maintainer owns every file.
 | **Design system** | `design/*`, `site/css/tokens.css` and the re-skinned partials, `site/fonts/*`, `site/favicon.svg`, `site/img/brand/*`, `site/og*.png`, `wordmark()`/`MARK` markup in `build/core/icons.mjs` |
 | **Basemap** | `scripts/build-basemap.mjs`, `site/map/*`, `data/map.json` |
 | **Research** | `research/<slice>/*` (one agent and one verifier per slice), `research/tools/*`, `research/SCHEMA.md`, `research/README.md` |
-| **Merge and images** (next) | `scripts/merge-research.mjs`, `data/*.json`, `data/images.json`, `site/img/{p,s,a,t,x}/` |
+| **Merge and images** | `scripts/merge-research.mjs`, `scripts/fetch-images.py`, `data/*.json`, `data/images.json`, `site/img/{p,s,a,t,x,r}/` |
 | **Page lanes** (next) | one stub each in `build/pages/`, their CSS partial, their `site/js/features/<name>.js`, their `tests/<lane>.test.mjs` |
 
 ## Contracts (code against these)

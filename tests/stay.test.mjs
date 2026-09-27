@@ -17,7 +17,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { copyRepo, build, read, cleanup, editData, fx, REPO } from "./helpers.mjs";
 import { builtYear } from "../build/components/stay-card.mjs";
-import { EXPERIENCE_KINDS, EAT_DRINK_KINDS } from "../build/core/vocab.mjs";
+import { EXPERIENCE_KINDS, EXPERIENCE_GROUP, EAT_DRINK_KINDS } from "../build/core/vocab.mjs";
 import { FAMILIES } from "../build/pages/experiences.mjs";
 
 const count = (s, re) => (s.match(re) || []).length;
@@ -48,7 +48,13 @@ test("the lane's pages on the fixture: cards, anchors, filters, unknowns, states
       e.status_note = "Fixture: the rooftop pool is closed for renovation.";
       const v = a.find((s) => s.id === "the-vinoy");
       v.rooms = 362; v.opened = "1925"; v.phone = "727-894-1000"; v.url = "https://www.marriott.com/";
+      e.lat = 27.929; e.lng = -82.487;               // at Bayshore Boulevard's own point (a campground placed at its park)
+      h.lat = 27.87; h.lng = -82.40;                 // nothing within 1.2 km: the nearest places instead
+      const z = { ...structuredClone(e), id: "zz-no-position-inn", name: "Zz No Position Inn", area: "downtown-tampa", status: "open" };
+      delete z.lat; delete z.lng; delete z.geo_source; delete z.status_note; delete z.address;
+      a.push(z);
     })(dir);
+    editData("timeline", (a) => { a.find((t) => t.id === "vinoy-opens-1925").date = "1925-12-31"; })(dir);
     const r = build(dir);
     assert.equal(r.status, 0, r.stderr + r.stdout);
     const stays = fx("stays"), xs = fx("experiences"), places = fx("places");
@@ -84,7 +90,9 @@ test("the lane's pages on the fixture: cards, anchors, filters, unknowns, states
     const areasWith = [...new Set(stays.map((s) => s.area))];
     for (const a of areasWith) {
       const n = stays.filter((s) => s.area === a).length;
-      assert.match(choose, new RegExp(`href="stay\\.html\\?a=${a}#list" data-set-filter="a=${a}"><b>${n}</b>`), `choose: ${a} counts ${n}`);
+      // the link lands on the area's own group without JS; with JS stay.js applies the filter in place
+      assert.match(choose, new RegExp(`href="stay\\.html\\?a=${a}#area-${a}" data-set-filter="a=${a}"><b>${n}</b>`), `choose: ${a} counts ${n}`);
+      assert.match(st, new RegExp(`id="area-${a}"`), `the list has the anchor area-${a}`);
     }
     assert.match(choose, /straight-line distance/, "distances say they are straight lines");
     // the facts line: only what is stated
@@ -117,6 +125,28 @@ test("the lane's pages on the fixture: cards, anchors, filters, unknowns, states
     assert.match(hy, /class="callout tone-warn"[\s\S]*?Temporarily closed\.[\s\S]*?closed for repairs after a storm/, "the status callout says it in words");
     const ep = read(dir, "docs/stays/epicurean-hotel.html");
     assert.match(ep, /Open, with a note[\s\S]*?rooftop pool is closed/);
+    // a place at the stay's very own point counts (db.nearby skips points under 0.5 m: not here)
+    const epNear = /<section class="section" id="nearby"[\s\S]*?<\/section>/.exec(ep)[0];
+    assert.match(epNear, /Bayshore Boulevard[\s\S]*?same position in this guide/, "a place at the same point is within walking distance");
+    assert.doesNotMatch(epNear, /0 m, about 0 min/, "never '0 m, about 0 min walk'");
+    // nothing within 1.2 km: said so, then the nearest places, with straight-line distances
+    const hyNear = /<section class="section" id="nearby"[\s\S]*?<\/section>/.exec(hy)[0];
+    assert.match(hyNear, /No place in this guide is listed within 1\.2 km/);
+    assert.match(hyNear, /The nearest places in this guide[\s\S]*?class="rows near-far"[\s\S]*?\d(\.\d)? (km|mi|m) away/, "the nearest places, with distances");
+    assert.match(hyNear, /Straight-line distances, an estimate/);
+    // no coordinates: no distances anywhere, the area instead; the heading names the area, not "nearby"
+    const zz = read(dir, "docs/stays/zz-no-position-inn.html"), zzMain = main(zz);
+    assert.doesNotMatch(zzMain, BAD);
+    assert.match(zzMain, /Not on the map: no coordinates listed/);
+    assert.match(zzMain, /The source gives no address and no position/);
+    assert.doesNotMatch(zzMain, /id="near-events"|id="nearby"/, "no distances without a position");
+    assert.match(zzMain, /id="around"[\s\S]*?href="\.\.\/areas\/downtown-tampa\.html"/);
+    assert.match(zzMain, /href="\.\.\/whats-on\.html\?a=downtown-tampa">[\s\S]*?What's on in Downtown Tampa \(\d+\)/, "what's on in its area, with the count");
+    // the timeline: the year as the numeral, a full date in words
+    assert.match(v, /<span class="stay-tl-y">1925<\/span>[\s\S]*?<span class="w stay-tl-d">Dec 31, 1925<\/span>/, "timeline: year numeral and the date in words");
+    assert.doesNotMatch(v, /stay-tl-y">1925-12-31/);
+    // the sheet in the facts links its page
+    assert.match(v, /<a class="fact-sheet" href="\.\.\/st-petersburg\.html">/);
 
     /* ---------- experiences.html ---------- */
     const x = read(dir, "docs/experiences.html"), xMain = main(x);
@@ -128,6 +158,9 @@ test("the lane's pages on the fixture: cards, anchors, filters, unknowns, states
       assert.ok(x.includes(`data-star="${e.id}" data-star-kind="x"`), `${e.id}: star kind x`);
     }
     for (const k of ["k", "r", "t"]) assert.match(x, new RegExp(`data-filter="${k}"`), `experiences: a ${k} control`);
+    // every group id the contract accepts for ?k= (with records) has an option, so a link with one shows its name
+    const kSel = /<select class="select" name="k"[\s\S]*?<\/select>/.exec(x)[0];
+    for (const g of new Set(xs.map((e) => EXPERIENCE_GROUP[e.kind]))) assert.match(kSel, new RegExp(`<option value="${g}"`), `experiences: ?k=${g} has an option`);
     assert.match(x, /id="fam-water"/);
     assert.match(xMain, /Duration not listed/, "missing duration printed as unknown");
     assert.match(xMain, /Price not listed/, "missing price printed as unknown");
@@ -150,6 +183,7 @@ test("the lane's pages on the fixture: cards, anchors, filters, unknowns, states
     assert.doesNotMatch(ed, /Michelin/, "no Michelin words when no place carries a Michelin tag");
     assert.doesNotMatch(ed, /Cuban sandwiches &amp; bakeries/, "no quick filter for tags the data lacks");
     assert.match(ed, /href="eat-drink\.html\?tag=history#list" data-set-filter="tag=history"/, "a quick filter from a topic the data has");
+    assert.match(ed, /<nav class="eat-quick js-only"/, "quick filters need JS (without it every place is listed)");
     assert.match(edMain, /Hours not listed/, "missing hours printed as unknown");
   } finally { cleanup(dir); }
 });
@@ -179,6 +213,12 @@ test("real data: every stay, experience and place to eat or drink is on its page
     // every stay that is not open is named in "Closed for now" with its note
     const closures = /<section class="section stay-closures"[\s\S]*?<\/section>/.exec(st);
     for (const s of realStays.filter((s) => s.status !== "open")) assert.ok(closures && closures[0].includes(`stays/${s.id}.html`), `closures list ${s.id}`);
+    // other places to stay are named by their area (a Sarasota campground's neighbors are 10 miles off: not "nearby")
+    const vin = read(dir, "docs/stays/vinoy-resort-golf-club.html");
+    assert.match(vin, /<h2 id="more-stays-h">Other places to stay in Downtown St\. Petersburg<\/h2>/);
+    // a campground at its park's own point lists the park within walking distance
+    const fds = read(dir, "docs/stays/fort-de-soto-campground.html");
+    assert.match(/<section class="section" id="nearby"[\s\S]*?<\/section>/.exec(fds)[0], /Fort De Soto Park[\s\S]*?same position in this guide/);
     // Michelin words only on places whose tags say so
     for (const p of eat) {
       const card = new RegExp(`<article class="card place eat" id="p-${p.id}"[\\s\\S]*?</article>`).exec(ed)[0];

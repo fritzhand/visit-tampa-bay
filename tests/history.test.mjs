@@ -148,7 +148,7 @@ test("history.html: the filter covers the timeline and the sites (era, sheet, te
   assert.match(H, /data-hx-count="all"[^>]*>4 entries · 3 historic sites</);
   assert.match(H, /data-features="history"/);
   // every era section and sheet group hides when the filter empties it
-  assert.equal(count(H, /class="section hx-era"[^>]*data-filter-group/g), 7);
+  assert.equal(count(H, /class="section hx-era[^"]*"[^>]*data-filter-group/g), 7);
 });
 
 test("passages.html: one id=r-<id> per route, its stops numbered and linked by kind, star-all lists every stop", () => {

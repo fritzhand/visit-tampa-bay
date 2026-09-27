@@ -82,14 +82,7 @@
 .hx-empty { margin: var(--sp-5) 0; padding: var(--sp-4); border: 1px dashed var(--border-strong); background: var(--surface); color: var(--text-muted); }
 
 /* ---------- an era ---------- */
-.hx-era { margin-top: var(--sp-8); padding-top: calc(var(--wl-h) + 14px);
-  background:
-    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
-    linear-gradient(var(--water-line) 0 0) 0 5px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 72%, transparent) 0 0) 0 9px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 46%, transparent) 0 0) 0 14px / 100% 1px no-repeat,
-    linear-gradient(color-mix(in srgb, var(--water-line) 24%, transparent) 0 0) 0 21px / 100% 1px no-repeat;
-}
+.hx-era { margin-top: var(--sp-8); }             /* + .oxford: the water-lining rule above each era */
 .hx-filtered > .hx-filter + [data-filter-list] .hx-era:first-of-type { margin-top: var(--sp-7); }
 .hx-era-head { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: end; gap: 4px var(--sp-4); }
 .hx-era-no {
@@ -132,13 +125,12 @@ ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with 
   letter-spacing: var(--track-label); text-transform: uppercase; color: var(--text-muted);
 }
 .hx-approx { color: var(--text-faint); }
+@media (min-width: 760px) { .hx-when .hx-approx:first-child { margin-bottom: -2px; } }
 .tl-year .era-sfx { margin-left: 0.18em; font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label); letter-spacing: var(--track-label); vertical-align: 0.35em; color: var(--text-muted); }
 .hx-body { min-width: 0; max-width: 46rem; }
 .hx-item .tl-title { margin-top: 2px; font-size: var(--fs-lg); line-height: var(--lh-snug); }
 .hx-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 8px; font-size: var(--fs-xs); color: var(--text-muted); }
 .hx-meta a { color: var(--text-muted); display: inline-flex; align-items: center; min-height: 24px; }
-.hx-meta .sheet-dot { margin-right: -4px; }
-.hx-sheet { color: var(--ink-text); font-weight: var(--wght-strong); }
 .hx-item .tl-text { margin-top: 10px; max-width: var(--measure); }
 .hx-item .tl-places { display: flex; align-items: flex-start; gap: 8px; margin-top: var(--sp-3); font-size: var(--fs-sm); color: var(--text); }
 .hx-item .tl-places::before {                  /* the landmark symbol, drawn */
@@ -180,6 +172,7 @@ ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with 
 .hx-lm-des::before { content: ""; flex: none; width: 12px; height: 12px; border: 2px solid var(--gold-ink); border-radius: 50%; background: radial-gradient(circle, var(--gold-ink) 0 1.5px, transparent 2px); }
 .hx-credit { font-size: var(--fs-xs); color: var(--text-faint); position: relative; z-index: 2; }
 .hx-credit a { color: var(--text-muted); }
+.hx-lm-src { position: relative; z-index: 2; margin-top: 2px; }
 .hx-reg-h { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px var(--sp-3); margin-top: var(--sp-8); }
 .hx-reg-h .result-count { font-family: var(--font-body); font-size: var(--fs-sm); font-weight: var(--wght-ui); }
 .hs-sheet { margin-top: var(--sp-6); }
@@ -187,7 +180,8 @@ ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with 
   display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; padding: 10px 0; font-size: var(--fs-lg); color: var(--ink-text);
   border-bottom: 2px solid var(--ink-edge);
 }
-.hs-sheet-h > span:not(.hs-n) { color: var(--text); }
+.hs-sheet-h > a { display: inline-flex; align-items: center; min-height: var(--tap); color: var(--text); text-decoration: none; }
+.hs-sheet-h > a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.16em; }
 .hs-n { margin-left: auto; font-family: var(--font-body); font-size: var(--fs-sm); font-weight: var(--wght-ui); color: var(--text-muted); font-variant-numeric: tabular-nums; }
 .hs-area { margin-top: var(--sp-4); }
 .hs-area-h {
@@ -225,7 +219,7 @@ ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with 
 .hs-src a { color: var(--text-muted); }
 .hs-year {
   padding-top: 6px; font-family: var(--font-display); font-weight: 800; font-size: 1.375rem; line-height: 1; color: var(--text-muted);
-  font-variant-numeric: lining-nums tabular-nums;
+  font-variant-numeric: lining-nums tabular-nums; white-space: nowrap;
 }
 .hs-item > .star { margin-top: -4px; }
 @media (max-width: 559px) {

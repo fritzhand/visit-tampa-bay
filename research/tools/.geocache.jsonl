@@ -2489,3 +2489,699 @@
 {"k":"photon:columbus drive bridge:27.9667,-82.47","v":null}
 {"k":"census:700 n ashley dr, tampa, fl 33602","v":{"lat":27.949232,"lng":-82.460699,"geo_source":"census","matched":"700 N ASHLEY DR, TAMPA, FL, 33602"}}
 {"k":"census:699 n ashley dr, tampa, fl 33602","v":{"lat":27.949281,"lng":-82.460581,"geo_source":"census","matched":"699 N ASHLEY DR, TAMPA, FL, 33602"}}
+{"k":"census:1810 e busch blvd, tampa, fl 33612","v":{"lat":28.03263,"lng":-82.438589,"geo_source":"census","matched":"1810 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:1307 e hillsborough ave, tampa, fl 33604","v":{"lat":27.996011,"lng":-82.444879,"geo_source":"census","matched":"1307 E HILLSBOROUGH AVE, TAMPA, FL, 33604"}}
+{"k":"census:5605 nebraska ave, tampa, fl 33604","v":{"lat":27.997978,"lng":-82.451124,"geo_source":"census","matched":"5605 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:6529 e hillsborough ave, tampa, fl 33610","v":{"lat":27.996212,"lng":-82.381579,"geo_source":"census","matched":"6529 E HILLSBOROUGH AVE, TAMPA, FL, 33610"}}
+{"k":"census:3301 w kennedy blvd, tampa, fl 33609","v":{"lat":27.944863,"lng":-82.497478,"geo_source":"census","matched":"3301 W KENNEDY BLVD, TAMPA, FL, 33609"}}
+{"k":"census:108 w hillsborough ave, tampa, fl 33604","v":{"lat":27.99601,"lng":-82.460801,"geo_source":"census","matched":"108 W HILLSBOROUGH AVE, TAMPA, FL, 33604"}}
+{"k":"census:2001 e busch blvd, tampa, fl 33612","v":{"lat":28.032502,"lng":-82.436649,"geo_source":"census","matched":"2001 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:2939 w hillsborough ave, tampa, fl 33614","v":{"lat":27.996168,"lng":-82.49073,"geo_source":"census","matched":"2939 W HILLSBOROUGH AVE, TAMPA, FL, 33614"}}
+{"k":"census:906 e brandon blvd, brandon, fl 33511","v":{"lat":27.937759,"lng":-82.27091,"geo_source":"census","matched":"906 E BRANDON BLVD, BRANDON, FL, 33511"}}
+{"k":"census:5809 n nebraska, tampa, fl 33604","v":{"lat":27.99984,"lng":-82.451163,"geo_source":"census","matched":"5809 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:2709 w kennedy, tampa, fl 33609","v":{"lat":27.944834,"lng":-82.487958,"geo_source":"census","matched":"2709 W KENNEDY BLVD, TAMPA, FL, 33609"}}
+{"k":"census:2500 e busch blvd, tampa, fl 33612","v":{"lat":28.032625,"lng":-82.431549,"geo_source":"census","matched":"2500 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:7100 nebraska ave, tampa, fl 33604","v":{"lat":28.012523,"lng":-82.451363,"geo_source":"census","matched":"7100 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:6411 nebraska ave, tampa, fl 33604","v":{"lat":28.005788,"lng":-82.451243,"geo_source":"census","matched":"6411 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:4810 n florida ave, tampa, fl 33603","v":{"lat":27.989169,"lng":-82.459478,"geo_source":"census","matched":"4810 N FLORIDA AVE, TAMPA, FL, 33603"}}
+{"k":"census:3206 w hillsboro ave, tampa, fl 33614","v":null}
+{"k":"photon:3206 w hillsboro ave, tampa, fl 33614:","v":{"lat":27.977833,"lng":-82.509519,"geo_source":"photon","matched":"Hillsborough Community College, 4001, West Tampa Bay Boulevard, Tampa, 33614","osm":"W77080087 amenity=college"}}
+{"k":"census:1042 e hillsborough ave, tampa, fl 33604","v":{"lat":27.996126,"lng":-82.449181,"geo_source":"census","matched":"1042 E HILLSBOROUGH AVE, TAMPA, FL, 33604"}}
+{"k":"census:4100 e hillsborough ave, tampa, fl 33610","v":{"lat":27.99616,"lng":-82.412097,"geo_source":"census","matched":"4100 E HILLSBOROUGH AVE, TAMPA, FL, 33610"}}
+{"k":"census:9408 n nebraska ave, tampa, fl 33612","v":{"lat":28.035031,"lng":-82.451321,"geo_source":"census","matched":"9408 N NEBRASKA AVE, TAMPA, FL, 33612"}}
+{"k":"census:7800 n nebraska ave, tampa, fl 33604","v":{"lat":28.01802,"lng":-82.451345,"geo_source":"census","matched":"7800 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:11507 e us hwy 92, seffner, fl 33584","v":{"lat":28.000871,"lng":-82.307075,"geo_source":"census","matched":"11507 US HWY 92, SEFFNER, FL, 33584"}}
+{"k":"census:4530 e columbus dr, tampa, fl 33605","v":{"lat":27.966901,"lng":-82.405577,"geo_source":"census","matched":"4530 E COLUMBUS DR, TAMPA, FL, 33605"}}
+{"k":"census:6500 nebraska ave, tampa, fl 33604","v":{"lat":28.006598,"lng":-82.451369,"geo_source":"census","matched":"6500 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:4732 n dale mabry, tampa, fl 33614","v":{"lat":27.987248,"lng":-82.505436,"geo_source":"census","matched":"4732 N DALE MABRY HWY, TAMPA, FL, 33614"}}
+{"k":"census:5811 tampa palms blvd, tampa, fl 33647","v":{"lat":28.096083,"lng":-82.391455,"geo_source":"census","matched":"5811 TAMPA PALMS BLVD, TAMPA, FL, 33647"}}
+{"k":"census:321 e fletcher ave, tampa, fl 33612","v":{"lat":28.069236,"lng":-82.455624,"geo_source":"census","matched":"321 E FLETCHER AVE, TAMPA, FL, 33612"}}
+{"k":"census:3301 n 34th st, st. petersburg, fl 33713","v":{"lat":27.801991,"lng":-82.679442,"geo_source":"census","matched":"3301 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:1930 n 4th st, st. petersburg, fl 33704","v":{"lat":27.78989,"lng":-82.638618,"geo_source":"census","matched":"1930 4TH ST N, ST PETERSBURG, FL, 33704"}}
+{"k":"census:1201 n 34th st, st. petersburg, fl 33713","v":{"lat":27.783685,"lng":-82.679369,"geo_source":"census","matched":"1201 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:621 bay esplanade, clearwater beach, fl 33767","v":{"lat":27.986632,"lng":-82.825182,"geo_source":"census","matched":"621 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:14650 66th st n, clearwater, fl 33764","v":null}
+{"k":"photon:14650 66th st n, clearwater, fl 33764:","v":{"lat":27.940823,"lng":-82.737106,"geo_source":"photon","matched":"Unity Church of Clearwater, 2465, Nursery Road, Clearwater, 33764","osm":"W837493230 landuse=religious"}}
+{"k":"census:4600 34th st s, st. petersburg, fl 33711","v":{"lat":27.726145,"lng":-82.679236,"geo_source":"census","matched":"4600 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:1736 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.960682,"lng":-82.765568,"geo_source":"census","matched":"1736 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"census:7555 46th ave n, st. petersburg, fl 33709","v":{"lat":27.813748,"lng":-82.743995,"geo_source":"census","matched":"7555 46TH AVE N, ST PETERSBURG, FL, 33709"}}
+{"k":"census:2275 gulf to bay blvd, clearwater, fl 33765","v":{"lat":27.960469,"lng":-82.743052,"geo_source":"census","matched":"2275 GULF TO BAY BLVD, CLEARWATER, FL, 33765"}}
+{"k":"census:10264 gulf blvd, treasure island, fl 33706","v":{"lat":27.764028,"lng":-82.767221,"geo_source":"census","matched":"10264 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:1001 n 34th st, st. petersburg, fl 33713","v":{"lat":27.781917,"lng":-82.679356,"geo_source":"census","matched":"1001 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:653 mandalay ave, clearwater beach, fl 33767","v":{"lat":27.988192,"lng":-82.82653,"geo_source":"census","matched":"653 MANDALAY AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:20500 cot rd, lutz, fl 33549","v":{"lat":28.183951,"lng":-82.477196,"geo_source":"census","matched":"20500 COT RD, LUTZ, FL, 33558"}}
+{"k":"census:275 s 34th st, st. petersburg, fl 33711","v":{"lat":27.768343,"lng":-82.679479,"geo_source":"census","matched":"275 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:6730 n 4th st, st. petersburg, fl 33702","v":{"lat":27.833924,"lng":-82.638751,"geo_source":"census","matched":"6730 4TH ST N, ST PETERSBURG, FL, 33702"}}
+{"k":"census:3120 n 4th st, st. petersburg, fl 33704","v":{"lat":27.800539,"lng":-82.638651,"geo_source":"census","matched":"3120 4TH ST N, ST PETERSBURG, FL, 33704"}}
+{"k":"census:4040 gall blvd, zephyrhills, fl 33542","v":{"lat":28.216041,"lng":-82.179573,"geo_source":"census","matched":"4040 GALL BLVD, ZEPHYRHILLS, FL, 33542"}}
+{"k":"census:10910 gandy blvd, st. petersburg, fl 33702","v":{"lat":27.869756,"lng":-82.616198,"geo_source":"census","matched":"10910 GANDY BLVD N, ST PETERSBURG, FL, 33702"}}
+{"k":"census:333 coronado dr, clearwater beach, fl 33767","v":{"lat":27.973131,"lng":-82.828341,"geo_source":"census","matched":"333 CORONADO DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:4900 n 34th st, st. petersburg, fl 33714","v":{"lat":27.81389,"lng":-82.679588,"geo_source":"census","matched":"4900 34TH ST N, ST PETERSBURG, FL, 33714"}}
+{"k":"census:3070 gulf to bay blvd, clearwater, fl 33759","v":{"lat":27.960739,"lng":-82.710372,"geo_source":"census","matched":"3070 GULF TO BAY BLVD, CLEARWATER, FL, 33759"}}
+{"k":"census:625 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.967387,"lng":-82.826729,"geo_source":"census","matched":"625 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:624 s 22nd ave, st. petersburg, fl 33705","v":{"lat":27.748397,"lng":-82.64119,"geo_source":"census","matched":"624 22ND AVE S, ST PETERSBURG, FL, 33705"}}
+{"k":"census:2330 s 34th st, st. petersburg, fl 33712","v":{"lat":27.747011,"lng":-82.679247,"geo_source":"census","matched":"2330 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:27615 w sr 54, wesley chapel, fl 33543","v":null}
+{"k":"photon:27615 w sr 54, wesley chapel, fl 33543:","v":{"lat":28.239761,"lng":-82.340724,"geo_source":"photon","matched":"Parks Ford of Wesley Chapel, 28739, State Road 54, Wesley Chapel, 33543","osm":"W1061099618 shop=car"}}
+{"k":"census:26 s hillcrest ave, clearwater, fl 33756","v":{"lat":27.964708,"lng":-82.779459,"geo_source":"census","matched":"26 S HILLCREST AVE, CLEARWATER, FL, 33756"}}
+{"k":"census:11545 s us hwy 41, gibsonton, fl 33534","v":{"lat":27.833111,"lng":-82.381835,"geo_source":"census","matched":"11545 S US HWY 41, GIBSONTON, FL, 33534"}}
+{"k":"census:2061 gulf to bay blvd, clearwater, fl 33765","v":{"lat":27.960497,"lng":-82.75175,"geo_source":"census","matched":"2061 GULF TO BAY BLVD, CLEARWATER, FL, 33765"}}
+{"k":"census:21240 gran via blvd, land o' lakes, fl 34639","v":null}
+{"k":"photon:21240 gran via blvd, land o' lakes, fl 34639:","v":{"lat":28.25576,"lng":-82.465883,"geo_source":"photon","matched":"Caliente Resort and Spa, 21240, Gran Via Boulevard, Land O' Lakes, 34637","osm":"W1128100472 leisure=resort"}}
+{"k":"census:701 34th street n, st. petersburg, fl 33713","v":{"lat":27.77918,"lng":-82.679355,"geo_source":"census","matched":"701 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:2301 4th st n, st. petersburg, fl 33704","v":{"lat":27.793078,"lng":-82.638471,"geo_source":"census","matched":"2301 4TH ST N, ST PETERSBURG, FL, 33704"}}
+{"k":"census:610 4th st n, st. petersburg, fl 33701","v":{"lat":27.778818,"lng":-82.638625,"geo_source":"census","matched":"610 4TH ST N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:4511 land o lakes blvd, land o' lakes, fl 34639","v":{"lat":28.224128,"lng":-82.457812,"geo_source":"census","matched":"4511 LAND O LAKES BLVD, LAND O LAKES, FL, 34639"}}
+{"k":"census:1379 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.965177,"lng":-82.779603,"geo_source":"census","matched":"1379 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"census:7330 4th st n, st. petersburg, fl 33702","v":{"lat":27.839609,"lng":-82.63876,"geo_source":"census","matched":"7330 4TH ST N, ST PETERSBURG, FL, 33702"}}
+{"k":"census:6638 4th st n, st. petersburg, fl 33702","v":{"lat":27.833236,"lng":-82.638743,"geo_source":"census","matched":"6638 4TH ST N, ST PETERSBURG, FL, 33702"}}
+{"k":"census:3113 e college ave, ruskin, fl 33570","v":{"lat":27.712819,"lng":-82.39342,"geo_source":"census","matched":"3113 E COLLEGE AVE, RUSKIN, FL, 33570"}}
+{"k":"census:2523 e busch blvd, tampa, fl 33612","v":{"lat":28.032512,"lng":-82.431327,"geo_source":"census","matched":"2523 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:264 clearwater largo rd, largo, fl 33770","v":{"lat":27.919157,"lng":-82.796375,"geo_source":"census","matched":"264 CLEARWATER LARGO RD, LARGO, FL, 33770"}}
+{"k":"census:164 clearwater-largo rd, largo, fl 33770","v":{"lat":27.918244,"lng":-82.79639,"geo_source":"census","matched":"164 CLEARWATER LARGO RD, LARGO, FL, 33770"}}
+{"k":"census:2960 gulf to bay blvd, clearwater, fl 33759","v":{"lat":27.960734,"lng":-82.71441,"geo_source":"census","matched":"2960 GULF TO BAY BLVD, CLEARWATER, FL, 33759"}}
+{"k":"census:6825 central ave, st. petersburg, fl 33710","v":{"lat":27.770874,"lng":-82.732036,"geo_source":"census","matched":"6825 CENTRAL AVE, ST PETERSBURG, FL, 33710"}}
+{"k":"census:6227 s dale mabry hwy, tampa, fl 33611","v":{"lat":27.877278,"lng":-82.506535,"geo_source":"census","matched":"6227 S DALE MABRY HWY, TAMPA, FL, 33611"}}
+{"k":"census:2739 n florida avenue, tampa, fl 33602","v":{"lat":27.967961,"lng":-82.459385,"geo_source":"census","matched":"2739 N FLORIDA AVE, TAMPA, FL, 33602"}}
+{"k":"census:3411 n us highway 301, tampa, fl 33619","v":null}
+{"k":"photon:3411 n us highway 301, tampa, fl 33619:","v":{"lat":27.941617,"lng":-82.5063,"geo_source":"photon","matched":"LA Fitness, 301, South Dale Mabry Highway, Tampa, 33609","osm":"W523945513 leisure=fitness_centre"}}
+{"k":"census:6110 n nebraska ave, tampa, fl 33604","v":{"lat":28.002556,"lng":-82.451355,"geo_source":"census","matched":"6110 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:800 34th st n, st. petersburg, fl 33713","v":{"lat":27.780115,"lng":-82.679495,"geo_source":"census","matched":"800 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:1509 e hillsborough ave, tampa, fl 33610","v":{"lat":27.996009,"lng":-82.442811,"geo_source":"census","matched":"1509 E HILLSBOROUGH AVE, TAMPA, FL, 33610"}}
+{"k":"census:2739 14th avenue s, st. petersburg, fl 33712","v":{"lat":27.756624,"lng":-82.67054,"geo_source":"census","matched":"2739 14TH AVE S, ST PETERSBURG, FL, 33712"}}
+{"k":"census:1420 bayshore blvd, dunedin, fl 34698","v":{"lat":28.023711,"lng":-82.789779,"geo_source":"census","matched":"1420 BAYSHORE BLVD, DUNEDIN, FL, 34698"}}
+{"k":"census:842 22nd ave s, st. petersburg, fl 33705","v":{"lat":27.748383,"lng":-82.645583,"geo_source":"census","matched":"842 22ND AVE S, ST PETERSBURG, FL, 33705"}}
+{"k":"census:1220 main street, dunedin, fl 34698","v":{"lat":28.019287,"lng":-82.773581,"geo_source":"census","matched":"1220 MAIN ST, DUNEDIN, FL, 34698"}}
+{"k":"census:8207 e adamo dr, tampa, fl 33619","v":{"lat":27.951784,"lng":-82.36456,"geo_source":"census","matched":"8207 ADAMO DR, TAMPA, FL, 33619"}}
+{"k":"census:2833 roosevelt blvd, clearwater, fl 33760","v":{"lat":27.916153,"lng":-82.726838,"geo_source":"census","matched":"2833 ROOSEVELT BLVD, CLEARWATER, FL, 33760"}}
+{"k":"census:2920 n alt 19 n, dunedin, fl 34698","v":null}
+{"k":"photon:2920 n alt 19 n, dunedin, fl 34698:","v":{"lat":28.078509,"lng":-82.767184,"geo_source":"photon","matched":"Alternate 19 & Nebraska Avenue, Palm Harbor Boulevard, Palm Harbor, 34683","osm":"N916908447 highway=bus_stop"}}
+{"k":"census:1301 e hillsbourgh ave, tampa, fl 33604","v":null}
+{"k":"photon:1301 e hillsbourgh ave, tampa, fl 33604:","v":{"lat":27.997456,"lng":-82.452519,"geo_source":"photon","matched":"Autoworks of Tampa, 5507, N Nebraska Ave, Tampa, 33604","osm":"N5081449162 shop=car_repair"}}
+{"k":"census:326 1st ave n, st. petersburg, fl 33701","v":{"lat":27.772012,"lng":-82.637492,"geo_source":"census","matched":"326 1ST AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:3110 w hillsborough ave, tampa, fl 33614","v":{"lat":27.996068,"lng":-82.493399,"geo_source":"census","matched":"3110 W HILLSBOROUGH AVE, TAMPA, FL, 33614"}}
+{"k":"census:4400 34th st s, st. petersburg, fl 33711","v":{"lat":27.727929,"lng":-82.679241,"geo_source":"census","matched":"4400 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:4712 e hillsborough ave, tampa, fl 33610","v":{"lat":27.996155,"lng":-82.404839,"geo_source":"census","matched":"4712 E HILLSBOROUGH AVE, TAMPA, FL, 33610"}}
+{"k":"census:4139 e busch blvd, tampa, fl 33617","v":{"lat":28.032561,"lng":-82.413516,"geo_source":"census","matched":"4139 E BUSCH BLVD, TAMPA, FL, 33617"}}
+{"k":"census:3990 tampa rd, oldsmar, fl 34677","v":{"lat":28.036519,"lng":-82.657157,"geo_source":"census","matched":"3990 TAMPA RD, OLDSMAR, FL, 34677"}}
+{"k":"census:10121 horace ave, tampa, fl 33619","v":{"lat":27.944889,"lng":-82.334239,"geo_source":"census","matched":"10121 HORACE AVE, TAMPA, FL, 33619"}}
+{"k":"census:1600 34th st s, st. petersburg, fl 33711","v":{"lat":27.754308,"lng":-82.679342,"geo_source":"census","matched":"1600 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:6510 n us hwy 301, tampa, fl 33610","v":null}
+{"k":"photon:6510 n us hwy 301, tampa, fl 33610:","v":{"lat":28.005799,"lng":-82.356785,"geo_source":"photon","matched":"Rodeway Inn, 6510, US-301, Tampa, 33610","osm":"W308030532 tourism=motel"}}
+{"k":"census:504 s gulf view blvd, clearwater beach, fl 33767","v":{"lat":27.968444,"lng":-82.828173,"geo_source":"census","matched":"504 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:7261 bay st, st. pete beach, fl 33706","v":{"lat":27.742817,"lng":-82.746265,"geo_source":"census","matched":"7261 BAY ST, ST PETE BEACH, FL, 33706"}}
+{"k":"census:11810 us hwy 19, port richey, fl 34668","v":{"lat":28.328774,"lng":-82.699091,"geo_source":"census","matched":"11810 US HWY 19, PORT RICHEY, FL, 34668"}}
+{"k":"census:6435 w hillsborough ave, tampa, fl 33634","v":{"lat":27.996514,"lng":-82.551751,"geo_source":"census","matched":"6435 W HILLSBOROUGH AVE, TAMPA, FL, 33634"}}
+{"k":"census:12500 us 19, clearwater, fl 33764","v":{"lat":27.885871,"lng":-82.71728,"geo_source":"census","matched":"12500 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:641 bay esplanade, clearwater beach, fl 33767","v":{"lat":27.986716,"lng":-82.825485,"geo_source":"census","matched":"641 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:11310 n 30th st, tampa, fl 33612","v":{"lat":28.051058,"lng":-82.42624,"geo_source":"census","matched":"11310 N 30TH ST, TAMPA, FL, 33612"}}
+{"k":"census:1590 34th st s, st. petersburg, fl 33711","v":{"lat":27.754743,"lng":-82.679339,"geo_source":"census","matched":"1590 34TH ST S, ST PETERSBURG, FL, 33711"}}
+{"k":"census:6801 haines rd, pinellas park, fl 33781","v":{"lat":27.833845,"lng":-82.679848,"geo_source":"census","matched":"6801 HAINES RD, PINELLAS PARK, FL, 33781"}}
+{"k":"census:7510 n florida ave, tampa, fl 33604","v":{"lat":28.016262,"lng":-82.459586,"geo_source":"census","matched":"7510 N FLORIDA AVE, TAMPA, FL, 33604"}}
+{"k":"census:4990 34th st n, st. petersburg, fl 33714","v":{"lat":27.816217,"lng":-82.679569,"geo_source":"census","matched":"4990 34TH ST N, ST PETERSBURG, FL, 33714"}}
+{"k":"census:7200 n florida ave, tampa, fl 33604","v":{"lat":28.013478,"lng":-82.45958,"geo_source":"census","matched":"7200 N FLORIDA AVE, TAMPA, FL, 33604"}}
+{"k":"census:16210 n us hwy 301, dade city, fl 33523","v":{"lat":28.39494,"lng":-82.195272,"geo_source":"census","matched":"16210 US HWY 301, DADE CITY, FL, 33523"}}
+{"k":"census:12520 gulf blvd, treasure island, fl 33706","v":{"lat":27.779635,"lng":-82.780715,"geo_source":"census","matched":"12520 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:28596 us 19 n, clearwater, fl 33761","v":{"lat":28.03215,"lng":-82.738252,"geo_source":"census","matched":"28596 US HWY 19 N, CLEARWATER, FL, 33761"}}
+{"k":"photon:gulf beaches historical museum:27.69,-82.73","v":{"lat":27.689474,"lng":-82.737306,"geo_source":"photon","matched":"Gulf Beaches Historical Museum, 115, 10th Avenue, Saint Pete Beach, 33706","osm":"W421475621 tourism=museum"}}
+{"k":"census:10007 princess palm ave, tampa, fl 33619","v":{"lat":27.979114,"lng":-82.336239,"geo_source":"census","matched":"10007 PRINCESS PALM AVE, TAMPA, FL, 33619"}}
+{"k":"census:660 76th ave, st. pete beach, fl 33706","v":{"lat":27.74181,"lng":-82.754005,"geo_source":"census","matched":"660 76TH AVE, ST PETE BEACH, FL, 33706"}}
+{"k":"census:1814 gulf to bay blvd, clearwater, fl 33765","v":{"lat":27.960643,"lng":-82.762146,"geo_source":"census","matched":"1814 GULF TO BAY BLVD, CLEARWATER, FL, 33765"}}
+{"k":"census:115 10th ave, st pete beach, fl 33706","v":{"lat":27.68922,"lng":-82.736615,"geo_source":"census","matched":"115 10TH AVE, ST PETE BEACH, FL, 33706"}}
+{"k":"census:7401 central ave, st. petersburg, fl 33710","v":{"lat":27.770884,"lng":-82.740724,"geo_source":"census","matched":"7401 CENTRAL AVE, ST PETERSBURG, FL, 33710"}}
+{"k":"census:325 6th ave n, st. petersburg, fl 33701","v":{"lat":27.778562,"lng":-82.637557,"geo_source":"census","matched":"325 6TH AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:1488 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.961796,"lng":-82.776216,"geo_source":"census","matched":"1488 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"photon:the motor enclave:28.01,-82.33","v":{"lat":28.012751,"lng":-82.336491,"geo_source":"photon","matched":"The Motor Enclave, North Falkenburg Road, 33610","osm":"W1359872219 highway=raceway"}}
+{"k":"census:6720 n nebraska ave, tampa, fl 33604","v":{"lat":28.009356,"lng":-82.451366,"geo_source":"census","matched":"6720 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:12208 n florida ave, tampa, fl 33612","v":{"lat":28.05916,"lng":-82.459432,"geo_source":"census","matched":"12208 N FLORIDA AVE, TAMPA, FL, 33612"}}
+{"k":"census:6500 motor enclave way, tampa, fl 33610","v":null}
+{"k":"census:10450 gulf blvd, treasure island, fl 33706","v":{"lat":27.766075,"lng":-82.768178,"geo_source":"census","matched":"10450 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:1800 kofresi ct, ruskin, fl 33570","v":{"lat":27.717726,"lng":-82.456377,"geo_source":"census","matched":"1800 KOFRESI CT, RUSKIN, FL, 33570"}}
+{"k":"census:11600 gulf blvd, treasure island, fl 33706","v":{"lat":27.774455,"lng":-82.774893,"geo_source":"census","matched":"11600 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"photon:6500 motor enclave way, tampa, fl 33610:","v":null}
+{"k":"census:6408 n nebraska ave, tampa, fl 33604","v":{"lat":28.005773,"lng":-82.451372,"geo_source":"census","matched":"6408 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:4999 34th st n, st. petersburg, fl 33714","v":{"lat":27.81738,"lng":-82.679449,"geo_source":"census","matched":"4999 34TH ST N, ST PETERSBURG, FL, 33714"}}
+{"k":"census:3300 34th st n, st. petersburg, fl 33713","v":{"lat":27.80199,"lng":-82.679572,"geo_source":"census","matched":"3300 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"photon:epperson lagoon:28.27,-82.29","v":{"lat":28.272439,"lng":-82.290681,"geo_source":"photon","matched":"Epperson Lagoon, 31885, Overpass Road, Wesley Chapel, 33545","osm":"W904904951 leisure=water_park"}}
+{"k":"census:400 34th st n, st. petersburg, fl 33713","v":{"lat":27.775635,"lng":-82.679477,"geo_source":"census","matched":"400 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:419 3rd ave n, st. petersburg, fl 33701","v":{"lat":27.775005,"lng":-82.638782,"geo_source":"census","matched":"419 3RD AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:415 s hamden dr, clearwater beach, fl 33767","v":{"lat":27.970267,"lng":-82.828102,"geo_source":"census","matched":"415 S HAMDEN DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"photon:southshore bay lagoon:27.70,-82.32","v":{"lat":27.703734,"lng":-82.323776,"geo_source":"photon","matched":"South Shore Bay Lagoon, Wimauma","osm":"W871331661 water=pond"}}
+{"k":"census:2307 e busch blvd, tampa, fl 33612","v":{"lat":28.032502,"lng":-82.433504,"geo_source":"census","matched":"2307 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:2106 e busch blvd, tampa, fl 33612","v":{"lat":28.032618,"lng":-82.4358,"geo_source":"census","matched":"2106 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:5000 lake blvd, clearwater, fl 33760","v":null}
+{"k":"photon:mirada lagoon:28.31,-82.29","v":{"lat":28.316843,"lng":-82.294398,"geo_source":"photon","matched":"Mirada Lagoon, Mirada Boulevard, 33576","osm":"W1368287933 leisure=water_park"}}
+{"k":"photon:5000 lake blvd, clearwater, fl 33760:","v":null}
+{"k":"census:6626 martin luther king jr blvd, tampa, fl 33619","v":{"lat":27.98159,"lng":-82.381289,"geo_source":"census","matched":"6626 E DR MARTIN LUTHER KING JR BLVD, TAMPA, FL, 33619"}}
+{"k":"census:4816 100th way n, st. petersburg, fl 33708","v":{"lat":27.815784,"lng":-82.778417,"geo_source":"census","matched":"4816 100TH WAY N, ST PETERSBURG, FL, 33708"}}
+{"k":"photon:rocky point golf course:27.97,-82.55","v":{"lat":27.977734,"lng":-82.55605,"geo_source":"photon","matched":"Rocky Point Golf Course, 4151, Dana Shores Drive, Tampa, 33634","osm":"W98965416 leisure=golf_course"}}
+{"k":"census:650 bay esplanade, clearwater beach, fl 33767","v":{"lat":27.986494,"lng":-82.825052,"geo_source":"census","matched":"650 BAY ESPLANADE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:200 4th st, st. petersburg, fl 33701","v":{"lat":27.769882,"lng":-82.6384,"geo_source":"census","matched":"200 4TH ST S, ST PETERSBURG, FL, 33701"}}
+{"k":"census:9942 adamo dr, tampa, fl 33619","v":{"lat":27.94653,"lng":-82.34095,"geo_source":"census","matched":"9942 ADAMO DR, TAMPA, FL, 33619"}}
+{"k":"photon:suncoast primate sanctuary:28.08,-82.77","v":null}
+{"k":"census:9839 us hwy 41 s, gibsonton, fl 33534","v":{"lat":27.854692,"lng":-82.382736,"geo_source":"census","matched":"9839 S US HWY 41, GIBSONTON, FL, 33534"}}
+{"k":"census:3655 hospitality ln, clearwater, fl 33762","v":null}
+{"k":"census:4600 alternate 19, palm harbor, fl 34683","v":{"lat":28.117282,"lng":-82.765169,"geo_source":"census","matched":"4600 US HWY 19 ALT, PALM HARBOR, FL, 34683"}}
+{"k":"photon:3655 hospitality ln, clearwater, fl 33762:","v":{"lat":27.895654,"lng":-82.683429,"geo_source":"photon","matched":"SureStay, 3655, Hospitality Lane, Clearwater, 33762","osm":"W198170595 tourism=hotel"}}
+{"k":"census:701 e fletcher ave, tampa, fl 33612","v":{"lat":28.069247,"lng":-82.454085,"geo_source":"census","matched":"701 E FLETCHER AVE, TAMPA, FL, 33612"}}
+{"k":"census:11736 us highway 19 n, port richey, fl 34668","v":{"lat":28.327808,"lng":-82.69909,"geo_source":"census","matched":"11736 US HWY 19, PORT RICHEY, FL, 34668"}}
+{"k":"photon:creative clay:27.77,-82.66","v":{"lat":27.769924,"lng":-82.658732,"geo_source":"photon","matched":"Creative Clay, 1846, 1st Avenue South, Saint Petersburg, 33712","osm":"W198367102 amenity=arts_centre"}}
+{"k":"census:12003 n nebraska ave, tampa, fl 33612","v":{"lat":28.056959,"lng":-82.45114,"geo_source":"census","matched":"12003 N NEBRASKA AVE, TAMPA, FL, 33612"}}
+{"k":"census:11333 us hwy 19, clearwater, fl 33764","v":{"lat":27.874858,"lng":-82.708692,"geo_source":"census","matched":"11333 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:1846 1st ave s, st petersburg, fl 33712","v":{"lat":27.770154,"lng":-82.658573,"geo_source":"census","matched":"1846 1ST AVE S, ST PETERSBURG, FL, 33712"}}
+{"k":"census:12930 seminole blvd, largo, fl 33778","v":{"lat":27.890444,"lng":-82.78716,"geo_source":"census","matched":"12930 SEMINOLE BLVD, LARGO, FL, 33778"}}
+{"k":"census:465 7th ave n, st. petersburg, fl 33701","v":{"lat":27.779729,"lng":-82.639833,"geo_source":"census","matched":"465 7TH AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:1471 court st, clearwater, fl 33756","v":{"lat":27.960678,"lng":-82.776272,"geo_source":"census","matched":"1471 COURT ST, CLEARWATER, FL, 33756"}}
+{"k":"census:1320 cleveland st, clearwater, fl 33755","v":{"lat":27.9657,"lng":-82.782256,"geo_source":"census","matched":"1320 CLEVELAND ST, CLEARWATER, FL, 33755"}}
+{"k":"photon:beach art center:27.88,-82.84","v":{"lat":27.898384,"lng":-82.845838,"geo_source":"photon","matched":"Beach Art Center, Bay Palm Boulevard, Indian Rocks Beach, 33785","osm":"W523594034 amenity=arts_centre"}}
+{"k":"census:2901 e busch blvd, tampa, fl 33612","v":{"lat":28.032508,"lng":-82.42732,"geo_source":"census","matched":"2901 E BUSCH BLVD, TAMPA, FL, 33612"}}
+{"k":"census:11120 e us hwy 92, seffner, fl 33584","v":{"lat":27.999537,"lng":-82.314534,"geo_source":"census","matched":"11120 US HWY 92, SEFFNER, FL, 33584"}}
+{"k":"census:602 poinsettia ave, clearwater beach, fl 33767","v":{"lat":27.985725,"lng":-82.82576,"geo_source":"census","matched":"602 POINSETTIA AVE, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:1515 bay palm blvd, indian rocks beach, fl 33785","v":{"lat":27.897604,"lng":-82.846114,"geo_source":"census","matched":"1515 BAY PALM BLVD, INDIAN ROCKS BEACH, FL, 33785"}}
+{"k":"census:9321 everhart rd, riverview, fl 33578","v":{"lat":27.91198,"lng":-82.349802,"geo_source":"census","matched":"9321 EVERHART RD, RIVERVIEW, FL, 33578"}}
+{"k":"census:110 w tarpon ave, tarpon springs, fl 34689","v":{"lat":28.146301,"lng":-82.757668,"geo_source":"census","matched":"110 W TARPON AVE, TARPON SPRINGS, FL, 34689"}}
+{"k":"census:6010 county rd 579, seffner, fl 33584","v":{"lat":28.00218,"lng":-82.302486,"geo_source":"census","matched":"6010 CO RD 579, SEFFNER, FL, 33584"}}
+{"k":"photon:whimzeyland:28.0,-82.69","v":null}
+{"k":"census:11104 e us hwy 92, seffner, fl 33584","v":{"lat":27.999477,"lng":-82.314841,"geo_source":"census","matched":"11104 US HWY 92, SEFFNER, FL, 33584"}}
+{"k":"census:5700 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.730975,"lng":-82.744082,"geo_source":"census","matched":"5700 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:1206 3rd st n, safety harbor, fl 34695","v":{"lat":27.992257,"lng":-82.700766,"geo_source":"census","matched":"1206 3RD ST N, SAFETY HARBOR, FL, 34695"}}
+{"k":"census:2595 54th ave n, st. petersburg, fl 33714","v":{"lat":27.821149,"lng":-82.668643,"geo_source":"census","matched":"2595 54TH AVE N, ST PETERSBURG, FL, 33714"}}
+{"k":"census:7804 grand blvd, port richey, fl 34668","v":null}
+{"k":"photon:7804 grand blvd, port richey, fl 34668:","v":{"lat":28.225009,"lng":-82.723644,"geo_source":"photon","matched":"Grand Dentistry of New Port Richey, 4530, Grand Blvd., New Port Richey, 34652","osm":"N10173324850 amenity=dentist"}}
+{"k":"census:12901 pelican ln, madeira beach, fl 33708","v":{"lat":27.786292,"lng":-82.781895,"geo_source":"census","matched":"12901 PELICAN LN, MADEIRA BEACH, FL, 33708"}}
+{"k":"census:17300 gulf blvd, redington beach, fl 33708","v":{"lat":27.821616,"lng":-82.826649,"geo_source":"census","matched":"17300 GULF BLVD, REDINGTON BEACH, FL, 33708"}}
+{"k":"census:50 royal way, clearwater beach, fl 33767","v":{"lat":27.987256,"lng":-82.825485,"geo_source":"census","matched":"50 ROYAL WAY, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:720 e fowler ave, tampa, fl 33612","v":{"lat":28.054703,"lng":-82.453028,"geo_source":"census","matched":"720 E FOWLER AVE, TAMPA, FL, 33612"}}
+{"k":"census:345 hamden dr, clearwater beach, fl 33767","v":{"lat":27.971717,"lng":-82.827721,"geo_source":"census","matched":"345 S HAMDEN DR, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:501 s bayview blvd, oldsmar, fl 34677","v":{"lat":28.034678,"lng":-82.6681,"geo_source":"census","matched":"501 BAYVIEW BLVD, OLDSMAR, FL, 34677"}}
+{"k":"census:3415 n nebraska ave, tampa, fl 33603","v":{"lat":27.975458,"lng":-82.451117,"geo_source":"census","matched":"3415 N NEBRASKA AVE, TAMPA, FL, 33603"}}
+{"k":"census:1744 n fort harrison ave, clearwater, fl 33755","v":{"lat":27.984251,"lng":-82.796036,"geo_source":"census","matched":"1744 N FORT HARRISON AVE, CLEARWATER, FL, 33755"}}
+{"k":"census:12600 us hwy 19 n, clearwater, fl 33764","v":{"lat":27.886786,"lng":-82.717929,"geo_source":"census","matched":"12600 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:12854 john's way, madeira beach, fl 33708","v":null}
+{"k":"photon:12854 john's way, madeira beach, fl 33708:","v":{"lat":27.785122,"lng":-82.782561,"geo_source":"photon","matched":"John's way, Madeira Beach, 33708","osm":"W267254776 highway=residential"}}
+{"k":"census:5642 oakley, wesley chapel, fl 33544","v":{"lat":28.237912,"lng":-82.357358,"geo_source":"census","matched":"5642 OAKLEY BLVD, WESLEY CHAPEL, FL, 33544"}}
+{"k":"census:5001 us 301 n, tampa, fl 33610","v":{"lat":27.991289,"lng":-82.358332,"geo_source":"census","matched":"5001 US HWY 301, TAMPA, FL, 33610"}}
+{"k":"census:5900 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.732254,"lng":-82.744801,"geo_source":"census","matched":"5900 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:15672 us highway 19 n, clearwater, fl 33764","v":{"lat":27.914258,"lng":-82.730025,"geo_source":"census","matched":"15672 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:1295 cleveland st, clearwater, fl 33755","v":{"lat":27.965576,"lng":-82.783359,"geo_source":"census","matched":"1295 CLEVELAND ST, CLEARWATER, FL, 33755"}}
+{"k":"census:1064 broadway st, dunedin, fl 34698","v":{"lat":28.017377,"lng":-82.789901,"geo_source":"census","matched":"1064 BROADWAY BLVD, DUNEDIN, FL, 34698"}}
+{"k":"census:7007 n nebraska ave, tampa, fl 33604","v":{"lat":28.011688,"lng":-82.451241,"geo_source":"census","matched":"7007 N NEBRASKA AVE, TAMPA, FL, 33604"}}
+{"k":"census:1735 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.960556,"lng":-82.765124,"geo_source":"census","matched":"1735 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"census:12162 morris bridge rd, temple terrace, fl 33637","v":{"lat":28.066702,"lng":-82.354812,"geo_source":"census","matched":"12162 MORRIS BRIDGE RD, TEMPLE TERRACE, FL, 33637"}}
+{"k":"census:11025 guld blvd, treasure island, fl 33706","v":{"lat":27.771165,"lng":-82.771215,"geo_source":"census","matched":"11025 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:32000 us hwy 19, palm harbor, fl 34683","v":{"lat":28.062944,"lng":-82.738974,"geo_source":"census","matched":"32000 US HWY 19 N, PALM HARBOR, FL, 34684"}}
+{"k":"census:241 3rd street n, st. petersburg, fl 33701","v":{"lat":27.774107,"lng":-82.637038,"geo_source":"census","matched":"241 3RD ST N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:2904 melburne blvd, tampa, fl 33605","v":{"lat":27.970372,"lng":-82.401754,"geo_source":"census","matched":"2904 MELBURNE BLVD, TAMPA, FL, 33605"}}
+{"k":"census:400 e bearrs ave, tampa, fl 33613","v":{"lat":28.088087,"lng":-82.457053,"geo_source":"census","matched":"400 E BEARSS AVE, TAMPA, FL, 33613"}}
+{"k":"census:9331 e adamo dr, tampa, fl 33619","v":{"lat":27.949698,"lng":-82.348643,"geo_source":"census","matched":"9331 ADAMO DR, TAMPA, FL, 33619"}}
+{"k":"census:3580 ulmerton rd, clearwater, fl 33762","v":{"lat":27.893801,"lng":-82.680568,"geo_source":"census","matched":"3580 ULMERTON RD, CLEARWATER, FL, 33762"}}
+{"k":"census:6409 s dale mabry hwy, tampa, fl 33611","v":{"lat":27.873619,"lng":-82.506458,"geo_source":"census","matched":"6409 S DALE MABRY HWY, TAMPA, FL, 33611"}}
+{"k":"census:1106 e hillsborough ave, tampa, fl 33604","v":{"lat":27.996127,"lng":-82.447792,"geo_source":"census","matched":"1106 E HILLSBOROUGH AVE, TAMPA, FL, 33604"}}
+{"k":"census:342 hamden dr, clearwater, fl 33767","v":{"lat":27.971766,"lng":-82.827841,"geo_source":"census","matched":"342 S HAMDEN DR, CLEARWATER, FL, 33767"}}
+{"k":"census:11875 gulf blvd, treasure island, fl 33706","v":{"lat":27.776082,"lng":-82.776931,"geo_source":"census","matched":"11875 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:2501 e fowler, tampa, fl 33612","v":{"lat":28.054439,"lng":-82.432182,"geo_source":"census","matched":"2501 E FOWLER AVE, TAMPA, FL, 33612"}}
+{"k":"census:2450 falkenburg rd, tampa, fl 33619","v":{"lat":27.926156,"lng":-82.337978,"geo_source":"census","matched":"2450 S FALKENBURG RD, TAMPA, FL, 33619"}}
+{"k":"census:21090 us hwy 19 n, clearwater, fl 33765","v":{"lat":27.963962,"lng":-82.730244,"geo_source":"census","matched":"21090 US HWY 19, CLEARWATER, FL, 33765"}}
+{"k":"census:678 s gulfview blvd, clearwater beach, fl 33767","v":{"lat":27.966631,"lng":-82.824746,"geo_source":"census","matched":"678 S GULFVIEW BLVD, CLEARWATER BEACH, FL, 33767"}}
+{"k":"census:1501 9th st n, st. petersburg, fl 33704","v":{"lat":27.786262,"lng":-82.646682,"geo_source":"census","matched":"1501 9TH ST N, ST PETERSBURG, FL, 33704"}}
+{"k":"census:332 hamden dr, clearwater, fl 33767","v":{"lat":27.97196,"lng":-82.827793,"geo_source":"census","matched":"332 S HAMDEN DR, CLEARWATER, FL, 33767"}}
+{"k":"census:648 poinsettia ave, clearwater, fl 33767","v":{"lat":27.987737,"lng":-82.825743,"geo_source":"census","matched":"648 POINSETTIA AVE, CLEARWATER, FL, 33767"}}
+{"k":"census:301 s frontage rd, plant city, fl 33563","v":{"lat":28.035732,"lng":-82.122902,"geo_source":"census","matched":"301 S FRONTAGE RD, PLANT CITY, FL, 33563"}}
+{"k":"census:5703 oakley blvd, wesley chapel, fl 33544","v":{"lat":28.239494,"lng":-82.357115,"geo_source":"census","matched":"5703 OAKLEY BLVD, WESLEY CHAPEL, FL, 33544"}}
+{"k":"census:110 2nd st n, st. petersburg, fl 33701","v":{"lat":27.772311,"lng":-82.635598,"geo_source":"census","matched":"110 2ND ST N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:562 71st ave, st. pete beach, fl 33706","v":{"lat":27.739076,"lng":-82.750601,"geo_source":"census","matched":"562 71ST AVE, ST PETE BEACH, FL, 33706"}}
+{"k":"census:12407 us hwy 19 n, hudson, fl 34667","v":{"lat":28.337646,"lng":-82.699417,"geo_source":"census","matched":"12407 US HWY 19, HUDSON, FL, 34667"}}
+{"k":"census:2001 paradise lakes blvd, lutz, fl 33558","v":null}
+{"k":"photon:2001 paradise lakes blvd, lutz, fl 33558:","v":{"lat":28.186624,"lng":-82.469428,"geo_source":"photon","matched":"Paradise Lakes Resort, 2001, Paradise Lakes Boulevard, Lutz, 33558","osm":"W917255074 leisure=resort"}}
+{"k":"census:11125 gulf blvd, treasure island, fl 33706","v":{"lat":27.771749,"lng":-82.771731,"geo_source":"census","matched":"11125 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:21252 us hwy 19 n, clearwater, fl 33765","v":{"lat":27.96553,"lng":-82.730334,"geo_source":"census","matched":"21252 US HWY 19, CLEARWATER, FL, 33765"}}
+{"k":"census:1630 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.960725,"lng":-82.769489,"geo_source":"census","matched":"1630 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"census:3250 34th st n, st. petersburg, fl 33713","v":{"lat":27.801477,"lng":-82.679567,"geo_source":"census","matched":"3250 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:7141 bay st, st. pete beach, fl 33706","v":{"lat":27.742314,"lng":-82.746314,"geo_source":"census","matched":"7141 BAY ST, ST PETE BEACH, FL, 33706"}}
+{"k":"census:11551 discovery ln, seffner, fl 33584","v":{"lat":28.009676,"lng":-82.303512,"geo_source":"census","matched":"11551 DISCOVERY LN, SEFFNER, FL, 33584"}}
+{"k":"census:210 e fowler ave, tampa, fl 33612","v":{"lat":28.05471,"lng":-82.457854,"geo_source":"census","matched":"210 E FOWLER AVE, TAMPA, FL, 33612"}}
+{"k":"census:1800 n ft harrison ave, clearwater, fl 33755","v":{"lat":27.985939,"lng":-82.796072,"geo_source":"census","matched":"1800 N FORT HARRISON AVE, CLEARWATER, FL, 33755"}}
+{"k":"census:2909 s 50th st, tampa, fl 33619","v":{"lat":27.921963,"lng":-82.402034,"geo_source":"census","matched":"2909 S 50TH ST, TAMPA, FL, 33619"}}
+{"k":"census:1506 gulf blvd, indian rocks beach, fl 33785","v":{"lat":27.897529,"lng":-82.848563,"geo_source":"census","matched":"1506 GULF BLVD, INDIAN ROCKS BEACH, FL, 33785"}}
+{"k":"census:711 3rd ave s, st. petersburg, fl 33701","v":{"lat":27.768614,"lng":-82.643388,"geo_source":"census","matched":"711 3RD AVE S, ST PETERSBURG, FL, 33701"}}
+{"k":"census:11903 gulf blvd, treasure island, fl 33706","v":{"lat":27.77616,"lng":-82.777217,"geo_source":"census","matched":"11903 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:16405 us hwy 19 n, clearwater, fl 33764","v":{"lat":27.923264,"lng":-82.730126,"geo_source":"census","matched":"16405 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:1200 34th st n, st. petersburg, fl 33713","v":{"lat":27.783684,"lng":-82.679499,"geo_source":"census","matched":"1200 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:14920 us hwy 19, hudson, fl 34667","v":{"lat":28.374307,"lng":-82.683305,"geo_source":"census","matched":"14920 US HWY 19, HUDSON, FL, 34667"}}
+{"k":"census:5615 gall blvd, zephyrhills, fl 33542","v":{"lat":28.239062,"lng":-82.184683,"geo_source":"census","matched":"5615 GALL BLVD, ZEPHYRHILLS, FL, 33542"}}
+{"k":"census:18736 us hwy 19 n, clearwater, fl 33764","v":{"lat":27.945157,"lng":-82.730491,"geo_source":"census","matched":"18736 US HWY 19, CLEARWATER, FL, 33764"}}
+{"k":"census:451 34 n, st. petersburg, fl 33713","v":{"lat":27.776759,"lng":-82.679338,"geo_source":"census","matched":"451 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:6902 hillsborough ave w, tampa, fl 33634","v":{"lat":27.996494,"lng":-82.556176,"geo_source":"census","matched":"6902 W HILLSBOROUGH AVE, TAMPA, FL, 33634"}}
+{"k":"census:9359 us hwy 19 n, pinellas park, fl 33782","v":{"lat":27.855503,"lng":-82.695114,"geo_source":"census","matched":"9359 US HWY 19 N, PINELLAS PARK, FL, 33782"}}
+{"k":"census:22950 us hwy 19 n, clearwater, fl 33765","v":{"lat":27.979679,"lng":-82.730069,"geo_source":"census","matched":"22950 US HWY 19, CLEARWATER, FL, 33765"}}
+{"k":"census:6901 sunset way, st. pete beach, fl 33706","v":{"lat":27.737365,"lng":-82.750888,"geo_source":"census","matched":"6901 SUNSET WAY, ST PETE BEACH, FL, 33706"}}
+{"k":"census:4980 gulf blvd, st. pete beach, fl 33706","v":{"lat":27.724055,"lng":-82.741009,"geo_source":"census","matched":"4980 GULF BLVD, ST PETE BEACH, FL, 33706"}}
+{"k":"census:1600 34th st n, st. petersburg, fl 33713","v":{"lat":27.787395,"lng":-82.679521,"geo_source":"census","matched":"1600 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:10809 us hwy 92 e, seffner, fl 33584","v":null}
+{"k":"photon:10809 us hwy 92 e, seffner, fl 33584:","v":{"lat":27.998484,"lng":-82.304476,"geo_source":"photon","matched":"Seffner Christian Academy, 11605, US-92, sefner, 33584","osm":"W879296950 landuse=religious"}}
+{"k":"census:12035 gulf blvd, treasure island, fl 33706","v":{"lat":27.776586,"lng":-82.77822,"geo_source":"census","matched":"12035 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
+{"k":"census:6826 us hwy 19 n, new port richey, fl 34652","v":{"lat":28.257187,"lng":-82.727643,"geo_source":"census","matched":"6826 US HWY 19, NEW PORT RICHEY, FL, 34652"}}
+{"k":"census:550 71st ave ste a343, st. pete beach, fl 33706","v":{"lat":27.739153,"lng":-82.750458,"geo_source":"census","matched":"550 71ST AVE, ST PETE BEACH, FL, 33706"}}
+{"k":"census:6434 us hwy 19 n, new port richey, fl 34652","v":{"lat":28.251379,"lng":-82.7276,"geo_source":"census","matched":"6434 US HWY 19, NEW PORT RICHEY, FL, 34652"}}
+{"k":"census:110 coronado dr, clearwater, fl 33767","v":{"lat":27.975082,"lng":-82.828223,"geo_source":"census","matched":"110 CORONADO DR, CLEARWATER, FL, 33767"}}
+{"k":"census:1466 gulf to bay blvd, clearwater, fl 33755","v":{"lat":27.962652,"lng":-82.777011,"geo_source":"census","matched":"1466 GULF TO BAY BLVD, CLEARWATER, FL, 33755"}}
+{"k":"census:12421 us-301 s, dade city, fl 33525","v":{"lat":28.33789,"lng":-82.187648,"geo_source":"census","matched":"12421 US HWY 301, DADE CITY, FL, 33525"}}
+{"k":"census:1131 us-19, holiday, fl 34691","v":{"lat":28.175399,"lng":-82.740662,"geo_source":"census","matched":"1131 US HWY 19, HOLIDAY, FL, 34691"}}
+{"k":"census:455 s gulf view blvd, clearwater beach, fl 33767","v":null}
+{"k":"photon:455 s gulf view blvd, clearwater beach, fl 33767:","v":null}
+{"k":"census:2431 gulf to bay blvd, clearwater, fl 33765","v":{"lat":27.960468,"lng":-82.736671,"geo_source":"census","matched":"2431 GULF TO BAY BLVD, CLEARWATER, FL, 33765"}}
+{"k":"census:1804 s us hwy 41, ruskin, fl 33570","v":{"lat":27.704949,"lng":-82.44038,"geo_source":"census","matched":"1804 S US HWY 41, RUSKIN, FL, 33570"}}
+{"k":"census:3405 34th st n, st. petersburg, fl 33713","v":{"lat":27.802927,"lng":-82.67945,"geo_source":"census","matched":"3405 34TH ST N, ST PETERSBURG, FL, 33713"}}
+{"k":"census:6736 gall blvd, zephyrhills, fl 33542","v":null}
+{"k":"photon:6736 gall blvd, zephyrhills, fl 33542:","v":{"lat":28.255343,"lng":-82.189128,"geo_source":"photon","matched":"Zephyrhills Car Accident Lawyer Group, 6719, Gall Blvd, Zephyrhills, 33542","osm":"N5431657343 office=lawyer"}}
+{"k":"census:2311 ulmerton rd, clearwater, fl 33762","v":{"lat":27.89411,"lng":-82.667884,"geo_source":"census","matched":"2311 ULMERTON RD, CLEARWATER, FL, 33762"}}
+{"k":"census:17800 gulf blvd, redington shores, fl 33708","v":{"lat":27.828007,"lng":-82.830081,"geo_source":"census","matched":"17800 GULF BLVD, REDINGTON SHORES, FL, 33708"}}
+{"k":"census:1477 s fort harrison ave, clearwater, fl 33756","v":{"lat":27.943243,"lng":-82.799892,"geo_source":"census","matched":"1477 S FT HARRISON AVE, CLEARWATER, FL, 33756"}}
+{"k":"census:6780 lakeview center dr, tampa, fl 33619","v":null}
+{"k":"photon:6780 lakeview center dr, tampa, fl 33619:","v":{"lat":27.980774,"lng":-82.382911,"geo_source":"photon","matched":"Fairfield Inn & Suites Tampa Fairgrounds/Casino, 6720, Lakeview Center Drive, Tampa, 33619","osm":"W918593381 tourism=hotel"}}
+{"k":"census:234 3rd ave n, st. petersburg, fl 33701","v":{"lat":27.774901,"lng":-82.636113,"geo_source":"census","matched":"234 3RD AVE N, ST PETERSBURG, FL, 33701"}}
+{"k":"census:6733 4th st n, st. petersburg, fl 33702","v":{"lat":27.833627,"lng":-82.638622,"geo_source":"census","matched":"6733 4TH ST N, ST PETERSBURG, FL, 33702"}}
+{"k":"census:635 bay st ne, st. petersburg, fl 33701","v":{"lat":27.778884,"lng":-82.632482,"geo_source":"census","matched":"635 BAY ST NE, ST PETERSBURG, FL, 33701"}}
+{"k":"census:411 e shore dr, clearwater, fl 33767","v":{"lat":27.97949,"lng":-82.825789,"geo_source":"census","matched":"411 E SHORE DR, CLEARWATER, FL, 33767"}}
+{"k":"census:809 n pebble beach blvd, sun city center, fl 33573","v":{"lat":27.713472,"lng":-82.351812,"geo_source":"census","matched":"809 N PEBBLE BEACH BLVD, SUN CITY CENTER, FL, 33573"}}
+{"k":"census:15210 us hwy 19, hudson, fl 34667","v":{"lat":28.37746,"lng":-82.680399,"geo_source":"census","matched":"15210 US HWY 19, HUDSON, FL, 34667"}}
+{"k":"census:17103 gulf blvd, north redington beach, fl 33708","v":{"lat":27.819671,"lng":-82.824761,"geo_source":"census","matched":"17103 GULF BLVD, NORTH REDINGTON BEACH, FL, 33708"}}
+{"k":"census:2710 gulf dr, holmes beach, fl 34217","v":{"lat":27.485283,"lng":-82.705745,"geo_source":"census","matched":"2710 GULF DR N, HOLMES BEACH, FL, 34217"}}
+{"k":"census:2003 14th st w, bradenton, fl 34205","v":{"lat":27.481333,"lng":-82.575276,"geo_source":"census","matched":"2003 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:601 bay blvd n, anna maria, fl 34216","v":{"lat":27.536137,"lng":-82.739047,"geo_source":"census","matched":"601 N BAY BLVD, ANNA MARIA, FL, 34216"}}
+{"k":"census:3235 14th st w, bradenton, fl 34205","v":{"lat":27.472699,"lng":-82.57522,"geo_source":"census","matched":"3235 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:1400 e us 301 blvd, bradenton, fl 34203","v":null}
+{"k":"photon:1400 e us 301 blvd, bradenton, fl 34203:","v":{"lat":27.46503,"lng":-82.561993,"geo_source":"photon","matched":"301 Boulevard East, South Bradenton, 34203","osm":"W11079889 highway=secondary"}}
+{"k":"census:1431 w 14th st, bradenton, fl 34205","v":{"lat":27.486804,"lng":-82.575235,"geo_source":"census","matched":"1431 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:1839 w 14th st, bradenton, fl 34205","v":{"lat":27.482961,"lng":-82.575266,"geo_source":"census","matched":"1839 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:1301 n gulf dr, bradenton beach, fl 34217","v":{"lat":27.472705,"lng":-82.701076,"geo_source":"census","matched":"1301 GULF DR N, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:6504 gulf dr n, holmes beach, fl 34217","v":{"lat":27.511653,"lng":-82.721233,"geo_source":"census","matched":"6504 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:6802 n gulf dr, holmes beach, fl 34217","v":{"lat":27.513323,"lng":-82.722569,"geo_source":"census","matched":"6802 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:5810 e 20th ct, ellenton, fl 34222","v":{"lat":27.532082,"lng":-82.504239,"geo_source":"census","matched":"5810 20TH ST E, ELLENTON, FL, 34222"}}
+{"k":"census:100 bridge st, bradenton beach, fl 34217","v":{"lat":27.465032,"lng":-82.698601,"geo_source":"census","matched":"100 BRIDGE ST, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:580 e 66th st court, bradenton, fl 34208","v":{"lat":27.493115,"lng":-82.478844,"geo_source":"census","matched":"580 66TH STREET CT E, BRADENTON, FL, 34208"}}
+{"k":"census:6105 exchange way, bradenton, fl 34202","v":{"lat":27.390435,"lng":-82.447037,"geo_source":"census","matched":"6105 EXCHANGE WAY, BRADENTON, FL, 34202"}}
+{"k":"census:8305 tourist center dr, bradenton, fl 34201","v":{"lat":27.390018,"lng":-82.456942,"geo_source":"census","matched":"8305 TOURIST CENTER DR, BRADENTON, FL, 34201"}}
+{"k":"census:5451 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.411496,"lng":-82.658226,"geo_source":"census","matched":"5451 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:6511 14th st w, bradenton, fl 34207","v":{"lat":27.4255,"lng":-82.57543,"geo_source":"census","matched":"6511 14TH ST W, BRADENTON, FL, 34207"}}
+{"k":"census:668 67th st circle e, bradenton, fl 34208","v":{"lat":27.493707,"lng":-82.4752,"geo_source":"census","matched":"668 67TH STREET CIR E, BRADENTON, FL, 34208"}}
+{"k":"census:5464 lena rd, bradenton, fl 34211","v":{"lat":27.441939,"lng":-82.455116,"geo_source":"census","matched":"5464 LENA RD, BRADENTON, FL, 34211"}}
+{"k":"census:8009 15th st e, sarasota, fl 34243","v":{"lat":27.397258,"lng":-82.546709,"geo_source":"census","matched":"8009 15TH ST E, SARASOTA, FL, 34243"}}
+{"k":"census:8565 cooper creek blvd, university park, fl 34201","v":{"lat":27.393078,"lng":-82.452958,"geo_source":"census","matched":"8565 COOPER CREEK BLVD, UNIVERSITY PARK, FL, 34201"}}
+{"k":"census:7150 n tamiami trail, sarasota, fl 34243","v":{"lat":27.251802,"lng":-82.514923,"geo_source":"census","matched":"7150 TAMIAMI TRL, SARASOTA, FL, 34231"}}
+{"k":"census:4915 17th st e, ellenton, fl 34222","v":{"lat":27.528735,"lng":-82.51534,"geo_source":"census","matched":"4915 17TH ST E, ELLENTON, FL, 34222"}}
+{"k":"census:5218 17th st e, ellenton, fl 34222","v":{"lat":27.528849,"lng":-82.512801,"geo_source":"census","matched":"5218 17TH ST E, ELLENTON, FL, 34222"}}
+{"k":"census:2215 cortez road w, bradenton, fl 34207","v":{"lat":27.46228,"lng":-82.58386,"geo_source":"census","matched":"2215 CORTEZ RD W, BRADENTON, FL, 34207"}}
+{"k":"census:7251 n tamiami trl, sarasota, fl 34243","v":{"lat":27.412362,"lng":-82.572236,"geo_source":"census","matched":"7251 N TAMIAMI TRL, SARASOTA, FL, 34243"}}
+{"k":"census:607 67th st cir e, bradenton, fl 34208","v":{"lat":27.494549,"lng":-82.476141,"geo_source":"census","matched":"607 67TH STREET CIR E, BRADENTON, FL, 34208"}}
+{"k":"census:1526 14th st w, bradenton, fl 34205","v":{"lat":27.48566,"lng":-82.575375,"geo_source":"census","matched":"1526 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:3512 us hwy 41 n, palmetto, fl 34221","v":{"lat":27.544026,"lng":-82.564232,"geo_source":"census","matched":"3512 US HWY 41 N, PALMETTO, FL, 34221"}}
+{"k":"census:6021 exchange way, lakewood ranch, fl 34202","v":{"lat":27.390654,"lng":-82.447348,"geo_source":"census","matched":"6021 EXCHANGE WAY, LAKEWOOD RANCH, FL, 34202"}}
+{"k":"census:4450 47th st w, bradenton, fl 34210","v":{"lat":27.461769,"lng":-82.608344,"geo_source":"census","matched":"4450 47TH ST W, BRADENTON, FL, 34210"}}
+{"k":"census:3506 1st st, bradenton, fl 34208","v":{"lat":27.469609,"lng":-82.562997,"geo_source":"census","matched":"3506 1ST ST, BRADENTON, FL, 34208"}}
+{"k":"census:5441 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.411353,"lng":-82.658087,"geo_source":"census","matched":"5441 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:877 n shore dr, anna maria, fl 34216","v":{"lat":27.537433,"lng":-82.739962,"geo_source":"census","matched":"877 N SHORE DR, ANNA MARIA, FL, 34216"}}
+{"k":"census:5450 bollettieri blvd, bradenton, fl 34210","v":{"lat":27.444722,"lng":-82.608218,"geo_source":"census","matched":"5450 BOLLETTIERI BLVD, BRADENTON, FL, 34210"}}
+{"k":"census:5610 manor hill ln, bradenton, fl 34203","v":null}
+{"k":"photon:5610 manor hill ln, bradenton, fl 34203:","v":{"lat":27.441117,"lng":-82.467637,"geo_source":"photon","matched":"Country Inn & Suites, 5610, Manor Hill Way, Bradenton, 34203","osm":"W516249994 tourism=hotel"}}
+{"k":"census:5451 cortez rd w, bradenton, fl 34210","v":{"lat":27.462408,"lng":-82.617146,"geo_source":"census","matched":"5451 CORTEZ RD W, BRADENTON, FL, 34210"}}
+{"k":"census:6900 gulf dr, holmes beach, fl 34217","v":{"lat":27.513881,"lng":-82.723017,"geo_source":"census","matched":"6900 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:102 12th st w, bradenton, fl 34205","v":{"lat":27.499064,"lng":-82.573468,"geo_source":"census","matched":"102 12TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:6727 14th st w, bradenton, fl 34207","v":{"lat":27.422005,"lng":-82.575444,"geo_source":"census","matched":"6727 14TH ST W, BRADENTON, FL, 34207"}}
+{"k":"census:3225 14th st w, bradenton, fl 34205","v":{"lat":27.4729,"lng":-82.57522,"geo_source":"census","matched":"3225 14TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:4711 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.399718,"lng":-82.648127,"geo_source":"census","matched":"4711 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:12324 manatee ave w, bradenton, fl 34209","v":{"lat":27.496396,"lng":-82.685962,"geo_source":"census","matched":"12324 MANATEE AVE W, BRADENTON, FL, 34209"}}
+{"k":"census:5108 gulf dr, holmes beach, fl 34217","v":{"lat":27.504979,"lng":-82.712806,"geo_source":"census","matched":"5108 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:4235 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.39138,"lng":-82.642437,"geo_source":"census","matched":"4235 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:660 67th st cir e, bradenton, fl 34208","v":{"lat":27.493902,"lng":-82.475197,"geo_source":"census","matched":"660 67TH STREET CIR E, BRADENTON, FL, 34208"}}
+{"k":"census:101 66th st, holmes beach, fl 34217","v":{"lat":27.511691,"lng":-82.722251,"geo_source":"census","matched":"101 66TH ST, HOLMES BEACH, FL, 34217"}}
+{"k":"census:5995 cattleridge blvd, sarasota, fl 34232","v":{"lat":27.300826,"lng":-82.451257,"geo_source":"census","matched":"5995 CATTLERIDGE BLVD, SARASOTA, FL, 34232"}}
+{"k":"census:8260 n tamiami trail, sarasota, fl 34243","v":{"lat":27.393183,"lng":-82.56157,"geo_source":"census","matched":"8260 N TAMIAMI TRL, SARASOTA, FL, 34243"}}
+{"k":"census:8270 n tamiami trail, sarasota, fl 34243","v":{"lat":27.392983,"lng":-82.561457,"geo_source":"census","matched":"8270 N TAMIAMI TRL, SARASOTA, FL, 34243"}}
+{"k":"census:110 8th st s, bradenton beach, fl 34217","v":{"lat":27.461358,"lng":-82.697111,"geo_source":"census","matched":"110 8TH ST S, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:5510 manor hill lane, bradenton, fl 34203","v":null}
+{"k":"photon:5510 manor hill lane, bradenton, fl 34203:","v":{"lat":27.442459,"lng":-82.467675,"geo_source":"photon","matched":"Tru, 5510, Manor Hill Lane, Bradenton, 34203","osm":"N11879278984 tourism=hotel"}}
+{"k":"census:202 1st st n, bradenton beach, fl 34217","v":{"lat":27.466024,"lng":-82.697648,"geo_source":"census","matched":"202 1ST ST N, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:6306 gulf dr, holmes beach, fl 34217","v":{"lat":27.510783,"lng":-82.720547,"geo_source":"census","matched":"6306 GULF DR, HOLMES BEACH, FL, 34217"}}
+{"k":"census:102 39th st, holmes beach, fl 34217","v":{"lat":27.496412,"lng":-82.711441,"geo_source":"census","matched":"102 39TH ST, HOLMES BEACH, FL, 34217"}}
+{"k":"census:6015 exchange way, bradenton, fl 34202","v":{"lat":27.390655,"lng":-82.44735,"geo_source":"census","matched":"6015 EXCHANGE WAY, BRADENTON, FL, 34202"}}
+{"k":"census:2200 gulf dr n, bradenton beach, fl 34217","v":{"lat":27.477562,"lng":-82.703639,"geo_source":"census","matched":"2200 GULF DR N, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:105 39th st, holmes beach, fl 34217","v":{"lat":27.496302,"lng":-82.711624,"geo_source":"census","matched":"105 39TH ST, HOLMES BEACH, FL, 34217"}}
+{"k":"census:2000 gulf dr n, bradenton beach, fl 34217","v":{"lat":27.476029,"lng":-82.702356,"geo_source":"census","matched":"2000 GULF DR N, BRADENTON BEACH, FL, 34217"}}
+{"k":"census:600 us highway 41, palmetto, fl 34221","v":{"lat":27.514185,"lng":-82.562974,"geo_source":"census","matched":"600 US HWY 41, PALMETTO, FL, 34221"}}
+{"k":"census:1601 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.352656,"lng":-82.610362,"geo_source":"census","matched":"1601 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:4550 53rd ave e, bradenton, fl 34203","v":{"lat":27.446062,"lng":-82.504588,"geo_source":"census","matched":"4550 53RD AVE E, BRADENTON, FL, 34203"}}
+{"k":"census:8071 north tamiami trail, sarasota, fl 34243","v":{"lat":27.397414,"lng":-82.563422,"geo_source":"census","matched":"8071 N TAMIAMI TRL, SARASOTA, FL, 34243"}}
+{"k":"census:644 67th st cir e, bradenton, fl 34208","v":{"lat":27.494303,"lng":-82.4752,"geo_source":"census","matched":"644 67TH STREET CIR E, BRADENTON, FL, 34208"}}
+{"k":"census:2645 university pkwy, sarasota, fl 34243","v":{"lat":27.389118,"lng":-82.517038,"geo_source":"census","matched":"2645 UNIVERSITY PKWY, SARASOTA, FL, 34243"}}
+{"k":"census:7376 stone river rd, bradenton, fl 34203","v":{"lat":27.438806,"lng":-82.462565,"geo_source":"census","matched":"7376 STONE RIVER RD, BRADENTON, FL, 34203"}}
+{"k":"census:100 riverfront dr, bradenton, fl 34205","v":{"lat":27.498712,"lng":-82.564352,"geo_source":"census","matched":"100 RIVERFRONT BLVD, BRADENTON, FL, 34205"}}
+{"k":"census:309 10th st w, bradenton, fl 34205","v":{"lat":27.497253,"lng":-82.571857,"geo_source":"census","matched":"309 10TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:1016 64th st ct e, bradenton, fl 34208","v":{"lat":27.490115,"lng":-82.479392,"geo_source":"census","matched":"1016 64TH STREET CT E, BRADENTON, FL, 34208"}}
+{"k":"census:2308 9th st w, bradenton, fl 34205","v":{"lat":27.478874,"lng":-82.571314,"geo_source":"census","matched":"2308 9TH ST W, BRADENTON, FL, 34205"}}
+{"k":"census:5581 gulf of mexico dr, longboat key, fl 34228","v":{"lat":27.413376,"lng":-82.66006,"geo_source":"census","matched":"5581 GULF OF MEXICO DR, LONGBOAT KEY, FL, 34228"}}
+{"k":"census:6516 14th st w, bradenton, fl 34207","v":{"lat":27.425383,"lng":-82.57556,"geo_source":"census","matched":"6516 14TH ST W, BRADENTON, FL, 34207"}}
+{"k":"census:648 67th st cir e, bradenton, fl 34208","v":{"lat":27.494193,"lng":-82.475192,"geo_source":"census","matched":"648 67TH STREET CIR E, BRADENTON, FL, 34208"}}
+{"k":"photon:economy inn:28.03263,-82.438589","v":{"lat":27.209437,"lng":-81.86164,"geo_source":"photon","matched":"Economy Inn, 324, South Brevard Avenue, Arcadia, 34265","osm":"W1222565233 tourism=hotel"}}
+{"k":"photon:alaska motel:27.996011,-82.444879","v":null}
+{"k":"photon:macs motel:27.997978,-82.451124","v":null}
+{"k":"photon:east lake inn:27.996212,-82.381579","v":{"lat":27.995672,"lng":-82.381206,"geo_source":"photon","matched":"East Lake Inn, 6529, East Hillsborough Avenue, Tampa, 33610","osm":"W523002054 tourism=hotel"}}
+{"k":"photon:harbor light motel:27.944863,-82.497478","v":null}
+{"k":"photon:the dutch motel:27.99601,-82.460801","v":{"lat":27.995801,"lng":-82.460371,"geo_source":"photon","matched":"Dutch Motel, 108, West Hillsborough Avenue, Tampa, 33603","osm":"W190119216 tourism=motel"}}
+{"k":"photon:budget inn:28.032502,-82.436649","v":{"lat":28.032159,"lng":-82.436356,"geo_source":"photon","matched":"Budget Inn, 2001, East Busch Boulevard, Tampa, 33612","osm":"W523680778 tourism=motel"}}
+{"k":"photon:rex motel:27.996168,-82.49073","v":null}
+{"k":"photon:brandon motor lodge:27.937759,-82.27091","v":{"lat":27.938292,"lng":-82.270639,"geo_source":"photon","matched":"Brandon Motor Lodge, 906, East Brandon Boulevard, Brandon, 33511","osm":"W903894216 tourism=hotel"}}
+{"k":"photon:royal palm motel:27.99984,-82.451163","v":{"lat":28.000306,"lng":-82.450843,"geo_source":"photon","matched":"Royal Palm Motel, East Clifton Street, Tampa, 33604","osm":"W523104531 tourism=motel"}}
+{"k":"photon:park motel:27.944834,-82.487958","v":{"lat":27.945119,"lng":-82.488484,"geo_source":"photon","matched":"Park Motel, West Kennedy Boulevard, Tampa, 33608","osm":"W1198736000 tourism=hotel"}}
+{"k":"photon:garden view motel:28.032625,-82.431549","v":{"lat":28.032973,"lng":-82.431546,"geo_source":"photon","matched":"Garden View Motel, East Busch Boulevard, Tampa, 33617","osm":"W523904665 tourism=motel"}}
+{"k":"photon:el rancho motel:28.012523,-82.451363","v":{"lat":28.012755,"lng":-82.451836,"geo_source":"photon","matched":"El Rancho Motel, North Arden Avenue, Tampa, 33604","osm":"W523462348 tourism=motel"}}
+{"k":"photon:swan motel:28.005788,-82.451243","v":{"lat":28.006406,"lng":-82.450927,"geo_source":"photon","matched":"Swan Motel, East Lambright Street, Tampa, 33604","osm":"W523103919 tourism=motel"}}
+{"k":"photon:open gate motel:27.989169,-82.459478","v":{"lat":27.989477,"lng":-82.459779,"geo_source":"photon","matched":"Open Gate Motel, West Louisiana Avenue, Tampa, 33603","osm":"W1228017192 tourism=motel"}}
+{"k":"photon:sunny south motel:27.95,-82.46","v":{"lat":27.886722,"lng":-82.718106,"geo_source":"photon","matched":"Sunny Moon Motel, US 19 Southbound Frontage Road, Pinellas Park, 33760","osm":"W534885518 tourism=motel"}}
+{"k":"photon:columbia motel:27.996126,-82.449181","v":{"lat":27.996373,"lng":-82.448026,"geo_source":"photon","matched":"Columbia Motel, 1042, East Hillsborough Avenue, Tampa, 33604","osm":"W523104598 tourism=motel"}}
+{"k":"photon:village motel:27.99616,-82.412097","v":{"lat":27.99639,"lng":-82.411839,"geo_source":"photon","matched":"Village Motel, 4100, East Hillsborough Avenue, Tampa, 33610","osm":"W523018159 tourism=motel"}}
+{"k":"photon:university motel:28.035031,-82.451321","v":null}
+{"k":"photon:orange motel:28.01802,-82.451345","v":{"lat":28.018527,"lng":-82.451723,"geo_source":"photon","matched":"Orange Motel, East Kirby Street, Tampa, 33604","osm":"W523461512 tourism=motel"}}
+{"k":"photon:suites motel:28.000871,-82.307075","v":{"lat":27.980077,"lng":-82.826045,"geo_source":"photon","matched":"Blue Wave Motel Suites, 440, East Shore Drive, Clearwater, 33767","osm":"W191972398 tourism=motel"}}
+{"k":"photon:tampa 8 inn:27.966901,-82.405577","v":{"lat":27.967253,"lng":-82.405611,"geo_source":"photon","matched":"Tampa 8 Inn, North 46th Street, Tampa, 33605","osm":"W524229188 tourism=motel"}}
+{"k":"photon:casa loma motel:28.006598,-82.451369","v":{"lat":28.006866,"lng":-82.451751,"geo_source":"photon","matched":"Casa Loma Motel, East Diana Street, Tampa, 33604","osm":"W1222444561 tourism=motel"}}
+{"k":"photon:econo lodge:27.987248,-82.505436","v":{"lat":27.98696,"lng":-82.507311,"geo_source":"photon","matched":"Econo Lodge Airport @ RJ Stadium, 4732, North Dale Mabry Highway, Tampa, 33614","osm":"W957119598 tourism=motel"}}
+{"k":"photon:tampa palms golf & cc:28.096083,-82.391455","v":{"lat":27.933369,"lng":-82.498174,"geo_source":"photon","matched":"South Golf View Street, Tampa, 33629","osm":"W10977526 highway=residential"}}
+{"k":"photon:americana inn:28.069236,-82.455624","v":null}
+{"k":"photon:venice motel:27.801991,-82.679442","v":{"lat":27.10237,"lng":-82.434185,"geo_source":"photon","matched":"Motel 6, 281, US 41 By-Pass N, Venice, 34285","osm":"W658750784 tourism=motel"}}
+{"k":"photon:landmark motel:27.78989,-82.638618","v":{"lat":27.790189,"lng":-82.639031,"geo_source":"photon","matched":"The Landmark Motel, 4th Street North, Saint Petersburg, 33704","osm":"W162622445 tourism=motel"}}
+{"k":"photon:eight inn:27.783685,-82.679369","v":null}
+{"k":"photon:ebb tide apts:27.986632,-82.825182","v":{"lat":27.986551,"lng":-82.8241,"geo_source":"photon","matched":"Ebb Tide Resort, 621, Bay Esplanade, Clearwater, 33767","osm":"W523896582 tourism=hotel"}}
+{"k":"photon:tuckers motel:27.96,-82.75","v":{"lat":27.905278,"lng":-82.729682,"geo_source":"photon","matched":"Tucker's Motel, US 19 Southbound Frontage Road, Largo, 33764","osm":"W525254888 tourism=motel"}}
+{"k":"photon:crystal inn:27.726145,-82.679236","v":{"lat":27.725653,"lng":-82.678793,"geo_source":"photon","matched":"Crystal Inn, 4600, 34th Street South, Saint Petersburg, 33711","osm":"W522850222 tourism=hotel"}}
+{"k":"photon:orange motel:27.960682,-82.765568","v":{"lat":27.960961,"lng":-82.765319,"geo_source":"photon","matched":"Orange Motel Clearwater, 1736, Gulf to Bay Boulevard, Clearwater, 33755","osm":"W524442801 tourism=motel"}}
+{"k":"photon:villa da costa:27.813748,-82.743995","v":{"lat":28.394875,"lng":-81.470396,"geo_source":"photon","matched":"Villa de Costa Drive, 32821","osm":"W142335039 highway=service"}}
+{"k":"photon:gulf way inn:27.960469,-82.743052","v":{"lat":27.960177,"lng":-82.742928,"geo_source":"photon","matched":"Gulf Way Inn, 2275, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W935786379 tourism=motel"}}
+{"k":"photon:suncoast motel:27.764028,-82.767221","v":{"lat":27.764012,"lng":-82.767471,"geo_source":"photon","matched":"Suncoast Motel, Gulf Boulevard, Treasure Island, 33785","osm":"R2595011 tourism=motel"}}
+{"k":"photon:relax inn of st. petersburg:27.781917,-82.679356","v":{"lat":27.78215,"lng":-82.678929,"geo_source":"photon","matched":"Relax Inn, 1001, 34th Street North, Saint Petersburg, 33713","osm":"W524149853 tourism=motel"}}
+{"k":"photon:royal canadian motel:27.988192,-82.82653","v":{"lat":27.988079,"lng":-82.826177,"geo_source":"photon","matched":"Royal Canadian Motel, 653, Mandalay Avenue, Clearwater, 33767","osm":"W523897876 tourism=motel"}}
+{"k":"photon:lake como club rentals:28.183951,-82.477196","v":{"lat":27.390946,"lng":-82.394331,"geo_source":"photon","matched":"Como Circle, 34202","osm":"W694937908 highway=residential"}}
+{"k":"photon:inn on the hill:27.768343,-82.679479","v":{"lat":27.768569,"lng":-82.679955,"geo_source":"photon","matched":"Inn on the Hill, 34th Street South, Saint Petersburg, 33730","osm":"W280373592 tourism=motel"}}
+{"k":"photon:palms motel:27.833924,-82.638751","v":{"lat":27.834005,"lng":-82.639026,"geo_source":"photon","matched":"Palms Motel, 6730, 4th Street North, Saint Petersburg, 33702","osm":"W534707019 tourism=motel"}}
+{"k":"photon:el rio motel:27.800539,-82.638651","v":{"lat":27.801041,"lng":-82.638845,"geo_source":"photon","matched":"El Rio Motel, 4th Street North, Saint Petersburg, 33704","osm":"R2170775 tourism=motel"}}
+{"k":"photon:twilite motel:28.216041,-82.179573","v":{"lat":28.216689,"lng":-82.179163,"geo_source":"photon","matched":"Twilite Motel, Foss Lane, 33542","osm":"W1228018543 tourism=motel"}}
+{"k":"photon:sahara motel:27.869756,-82.616198","v":{"lat":27.868929,"lng":-82.618998,"geo_source":"photon","matched":"Sahara Motel Inc, Gandy Boulevard, Gandy, 33716","osm":"W523895812 tourism=motel"}}
+{"k":"photon:tropical sky ranch motel:27.973131,-82.828341","v":{"lat":27.97218,"lng":-82.828218,"geo_source":"photon","matched":"Tropical Sky Ranch Motel, 333, Coronado Drive, Clearwater, 33767","osm":"W243307085 tourism=motel"}}
+{"k":"photon:murphy's motel:27.81389,-82.679588","v":{"lat":27.816632,"lng":-82.6801,"geo_source":"photon","matched":"Murphy's Motel, 34th Street North, Clearwater, 33714","osm":"R3723022 tourism=motel"}}
+{"k":"photon:fairfield inn & suites:27.960739,-82.710372","v":{"lat":27.961673,"lng":-82.709951,"geo_source":"photon","matched":"Fairfield Inn & Suites Clearwater, 3070, Gulf to Bay Boulevard, Clearwater, 33759","osm":"W230612246 tourism=hotel"}}
+{"k":"photon:gulfview hotel on the beach:27.967387,-82.826729","v":{"lat":27.966683,"lng":-82.826442,"geo_source":"photon","matched":"Gulfview Hotel on the Beach, 625, South Gulfview Boulevard, Clearwater, 33767","osm":"W192113277 tourism=hotel"}}
+{"k":"photon:parkside motel:27.748397,-82.64119","v":null}
+{"k":"photon:skyview motel:27.747011,-82.679247","v":null}
+{"k":"photon:econo lodge:27.95,-82.55","v":{"lat":27.780349,"lng":-82.680225,"geo_source":"photon","matched":"Econo Lodge, 34th Street North, Saint Petersburg, 33713","osm":"W192545451 tourism=motel"}}
+{"k":"photon:hillcrest motel:27.964708,-82.779459","v":{"lat":27.964604,"lng":-82.779591,"geo_source":"photon","matched":"Hillcrest Motel, Park Street, Clearwater, 33756","osm":"W524442442 tourism=motel"}}
+{"k":"photon:gibtown inn:27.833111,-82.381835","v":null}
+{"k":"photon:econo lodge inn & suites:27.960497,-82.75175","v":{"lat":27.959958,"lng":-82.752206,"geo_source":"photon","matched":"Econo Lodge Inn & Suites, 2061, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W523900417 tourism=motel"}}
+{"k":"photon:caliente:27.95,-82.55","v":{"lat":28.105396,"lng":-82.532731,"geo_source":"photon","matched":"Caliente Place, Northdale, 33624","osm":"W10985056 highway=residential"}}
+{"k":"photon:kenwood village inn:27.77918,-82.679355","v":{"lat":27.779455,"lng":-82.678984,"geo_source":"photon","matched":"Kenwood Village, 701, 34th Street North, Saint Petersburg, 33713","osm":"W524150063 tourism=hotel"}}
+{"k":"photon:rusty anchor motel:27.793078,-82.638471","v":{"lat":27.793388,"lng":-82.638227,"geo_source":"photon","matched":"Rusty Anchor Motel, 4th Street North, Saint Petersburg, 33704","osm":"W917269314 tourism=motel"}}
+{"k":"photon:banyan tree motel:27.778818,-82.638625","v":{"lat":27.778812,"lng":-82.63895,"geo_source":"photon","matched":"Banyan Tree Motel, 610, 4th Street North, Saint Petersburg, 33701","osm":"W226879158 tourism=motel"}}
+{"k":"photon:garland motor court:28.224128,-82.457812","v":{"lat":28.080472,"lng":-82.458019,"geo_source":"photon","matched":"Garland Court, Lake Magdalene, 33613","osm":"W11000622 highway=residential"}}
+{"k":"photon:coral cove motel:27.965177,-82.779603","v":{"lat":27.243661,"lng":-82.516208,"geo_source":"photon","matched":"Coral Cove, 34231","osm":"N369134973 natural=bay"}}
+{"k":"photon:kings rest motel:27.839609,-82.63876","v":{"lat":27.839565,"lng":-82.639081,"geo_source":"photon","matched":"King’s Rest Motel, 74th Avenue North, Saint Petersburg, 33702","osm":"W534707273 tourism=motel"}}
+{"k":"photon:la quinta inn & suites northeast:27.833236,-82.638743","v":null}
+{"k":"photon:ruskin inn:27.712819,-82.39342","v":{"lat":27.714742,"lng":-82.386858,"geo_source":"photon","matched":"Holiday Inn Express & Suites Ruskin - Sun City, 226, Teco Road, Ruskin, 33570","osm":"W920638468 tourism=hotel"}}
+{"k":"photon:travelers inn:28.032512,-82.431327","v":{"lat":28.032051,"lng":-82.431561,"geo_source":"photon","matched":"Travelers Inn, East Busch Boulevard, Tampa, 33617","osm":"W523680231 tourism=motel"}}
+{"k":"photon:sunbeam motel:27.919157,-82.796375","v":null}
+{"k":"photon:d & f pathways motel:27.918244,-82.79639","v":{"lat":28.478443,"lng":-82.612815,"geo_source":"photon","matched":"Pathways, 3261, Commercial Way, Spring Hill, 34606","osm":"N12421390126 healthcare=counselling"}}
+{"k":"photon:clearwater inn:27.960734,-82.71441","v":{"lat":27.961299,"lng":-82.714295,"geo_source":"photon","matched":"Clearwater Inn, 2960, Gulf to Bay Boulevard, Clearwater, 33759","osm":"W173043096 tourism=hotel"}}
+{"k":"photon:valley forge motel:27.770874,-82.732036","v":{"lat":27.771308,"lng":-82.732558,"geo_source":"photon","matched":"Valley Forge Motel, Westwood Terrace North, Saint Petersburg, 33707","osm":"W192532739 tourism=motel"}}
+{"k":"photon:macdill motel:27.877278,-82.506535","v":null}
+{"k":"photon:downtown motel:27.967961,-82.459385","v":{"lat":27.96801,"lng":-82.459109,"geo_source":"photon","matched":"Downtown Motel, 2739, North Florida Avenue, Tampa, 33602","osm":"W935747721 tourism=motel"}}
+{"k":"photon:motel 301:27.95,-82.46","v":null}
+{"k":"photon:alamo motel:28.002556,-82.451355","v":{"lat":28.003201,"lng":-82.451671,"geo_source":"photon","matched":"Alamo Motel, East Hanna Avenue, Tampa, 33604","osm":"W523104338 tourism=motel"}}
+{"k":"photon:econo lodge st. petersburg central:27.780115,-82.679495","v":{"lat":27.780349,"lng":-82.680225,"geo_source":"photon","matched":"Econo Lodge, 34th Street North, Saint Petersburg, 33713","osm":"W192545451 tourism=motel"}}
+{"k":"photon:shaws motel:27.996009,-82.442811","v":{"lat":27.995782,"lng":-82.442421,"geo_source":"photon","matched":"Shaw's Motel, 1509, East Hillsborough Avenue, Tampa, 33610","osm":"W523011506 tourism=motel"}}
+{"k":"photon:wildwood motel:27.756624,-82.67054","v":null}
+{"k":"photon:beso del sol resort:28.023711,-82.789779","v":null}
+{"k":"photon:haven motel:27.748383,-82.645583","v":{"lat":28.029639,"lng":-81.732425,"geo_source":"photon","matched":"Camellia Motel, 820, 6th Street Northwest, Winter Haven, 33881","osm":"W936373672 tourism=hotel"}}
+{"k":"photon:dunedin cove motel:28.019287,-82.773581","v":{"lat":28.019537,"lng":-82.774068,"geo_source":"photon","matched":"Dunedin Cove Motel, 1220, Main Street, Dunedin, 34698","osm":"W523563587 tourism=motel"}}
+{"k":"photon:intown suites:27.951784,-82.36456","v":{"lat":27.950519,"lng":-82.364003,"geo_source":"photon","matched":"InTown Suites Extended Stay Tampa FL, Adamo Drive, Clair-Mel City, 33619","osm":"W53456038 tourism=hotel"}}
+{"k":"photon:intown suites:27.916153,-82.726838","v":{"lat":27.950519,"lng":-82.364003,"geo_source":"photon","matched":"InTown Suites Extended Stay Tampa FL, Adamo Drive, Clair-Mel City, 33619","osm":"W53456038 tourism=hotel"}}
+{"k":"photon:blue moon inn:27.95,-82.55","v":null}
+{"k":"photon:east gate motel:27.95,-82.46","v":{"lat":28.335331,"lng":-81.513787,"geo_source":"photon","matched":"Motel 6 Orlando Kissimmee Main Gate East, 5733, West Irlo Bronson Memorial Highway, Kissimmee, 34746","osm":"W310030798 tourism=motel"}}
+{"k":"photon:williams park hotel:27.772012,-82.637492","v":null}
+{"k":"photon:tampa lodge:27.996068,-82.493399","v":{"lat":28.045658,"lng":-82.418177,"geo_source":"photon","matched":"Lodge at Lakecrest apartments, Tampa","osm":"W524234008 landuse=residential"}}
+{"k":"photon:bay way inn:27.727929,-82.679241","v":{"lat":27.960177,"lng":-82.742928,"geo_source":"photon","matched":"Gulf Way Inn, 2275, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W935786379 tourism=motel"}}
+{"k":"photon:sunset inn motel:27.996155,-82.404839","v":null}
+{"k":"photon:econo lodge:28.032561,-82.413516","v":{"lat":28.238458,"lng":-82.359995,"geo_source":"photon","matched":"Econo Lodge, 27615, Wesley Chapel Boulevard, Wesley Chapel, 33544","osm":"W539766551 tourism=motel"}}
+{"k":"photon:holiday inn express oldsmar:28.036519,-82.657157","v":{"lat":28.03562,"lng":-82.657858,"geo_source":"photon","matched":"Holiday Inn Express & Suites Tampa Northwest-Oldsmar, Saint Petersburg Drive East, Oldsmar, 34677","osm":"W920666648 tourism=hotel"}}
+{"k":"photon:red roof inn:27.944889,-82.334239","v":{"lat":27.944447,"lng":-82.33232,"geo_source":"photon","matched":"Red Roof Inn, Horace Avenue, Clair-Mel City, 33619","osm":"W129432641 tourism=hotel"}}
+{"k":"photon:driftwood motel:27.754308,-82.679342","v":null}
+{"k":"photon:rodeway inn:27.95,-82.46","v":{"lat":28.032124,"lng":-82.433262,"geo_source":"photon","matched":"Rodeway Inn, 2307, East Busch Boulevard, Tampa, 33612","osm":"N11879279005 tourism=motel"}}
+{"k":"photon:clearwater beach hotel:27.968444,-82.828173","v":{"lat":27.968758,"lng":-82.82817,"geo_source":"photon","matched":"Clearwater Beach Hotel, 504, South Gulfview Boulevard, Clearwater, 33767","osm":"W191972386 tourism=hotel"}}
+{"k":"photon:baywaters inn:27.742817,-82.746265","v":null}
+{"k":"photon:rodeway inn port richey:28.328774,-82.699091","v":{"lat":28.328845,"lng":-82.697959,"geo_source":"photon","matched":"Rodeway Inn Port Richey North, 11810, US-19, Port Richey, 34668","osm":"W926859601 tourism=motel"}}
+{"k":"photon:princess motel:27.996514,-82.551751","v":null}
+{"k":"photon:butterfly lodge:27.885871,-82.71728","v":null}
+{"k":"photon:sea side on esplanade:27.986716,-82.825485","v":null}
+{"k":"photon:red roof inn plus & suites:28.051058,-82.42624","v":{"lat":28.051819,"lng":-82.42654,"geo_source":"photon","matched":"Red Roof PLUS+ & Suites Tampa, 11310, North 30th Street, Tampa, 33612","osm":"R13609109 tourism=hotel"}}
+{"k":"photon:sundaze motel:27.754743,-82.679339","v":{"lat":27.754597,"lng":-82.678981,"geo_source":"photon","matched":"Sundaze Motel, 1590, 34th Street South, Saint Petersburg, 33711","osm":"W522700289 tourism=motel"}}
+{"k":"photon:kenvin motel:27.833845,-82.679848","v":{"lat":27.834074,"lng":-82.679806,"geo_source":"photon","matched":"Kenvin's Motel, Haines Road North, Pinellas Park, 33702","osm":"W161968431 tourism=motel"}}
+{"k":"photon:mayflower motel:28.016262,-82.459586","v":{"lat":28.016946,"lng":-82.459691,"geo_source":"photon","matched":"Mayflower Motel, North Hankins Avenue, Tampa, 33604","osm":"W523647223 tourism=motel"}}
+{"k":"photon:gateway motel:27.816217,-82.679569","v":{"lat":27.817194,"lng":-82.680041,"geo_source":"photon","matched":"Gateway Motel, 34th Street North, Saint Petersburg, 33714","osm":"W279921271 tourism=motel"}}
+{"k":"photon:seminole motel:28.013478,-82.45958","v":{"lat":28.013534,"lng":-82.460567,"geo_source":"photon","matched":"Seminole Motel, North Florida Avenue, Tampa, 33549","osm":"W523647149 tourism=motel"}}
+{"k":"photon:rainbow fountain motel:28.39494,-82.195272","v":null}
+{"k":"photon:twins inn & apartments:27.779635,-82.780715","v":{"lat":27.778833,"lng":-82.680223,"geo_source":"photon","matched":"Days Inn, 650, 34th Street North, Saint Petersburg, 33713","osm":"W192545377 tourism=hotel"}}
+{"k":"photon:rodeway inn:28.03215,-82.738252","v":{"lat":27.965362,"lng":-82.731408,"geo_source":"photon","matched":"Rodeway Inn, 21252, US Highway 19 North, Clearwater, 33765","osm":"W206160355 tourism=motel"}}
+{"k":"photon:clarion pointe near fairgrounds casino:27.979114,-82.336239","v":null}
+{"k":"photon:driftwood motel/apts:27.74181,-82.754005","v":null}
+{"k":"photon:diana motel:27.960643,-82.762146","v":{"lat":27.961139,"lng":-82.762185,"geo_source":"photon","matched":"Diana Motel, 1814, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W524441903 tourism=motel"}}
+{"k":"photon:crystal bay hotel:27.770884,-82.740724","v":{"lat":27.771321,"lng":-82.740849,"geo_source":"photon","matched":"Crystal Bay Hotel, Park Street North, Saint Petersburg, 33707","osm":"W918532140 tourism=hotel"}}
+{"k":"photon:lenox:27.778562,-82.637557","v":{"lat":27.692657,"lng":-82.354049,"geo_source":"photon","matched":"Lenox Greens Drive, Sun City Center, 33573","osm":"W10978303 highway=residential"}}
+{"k":"photon:travelers inn at clearwater:27.961796,-82.776216","v":{"lat":27.962981,"lng":-82.72867,"geo_source":"photon","matched":"Clarion Inn & Suites at International Drive, Northbound Frontage Road, Clearwater, 34619","osm":"W525770031 tourism=hotel"}}
+{"k":"photon:oasis motel:28.009356,-82.451366","v":{"lat":28.009456,"lng":-82.451683,"geo_source":"photon","matched":"Oasis Motel, East Elm Street, Tampa, 33604","osm":"W1222442756 tourism=motel"}}
+{"k":"photon:lamplighter motel:28.05916,-82.459432","v":{"lat":28.058975,"lng":-82.46,"geo_source":"photon","matched":"Lamplighter Motel, North Florida Avenue, Lake Magdalene, 33549","osm":"W523830075 tourism=motel"}}
+{"k":"photon:ibeach resort:27.766075,-82.768178","v":null}
+{"k":"photon:pirate's pointe resort:27.717726,-82.456377","v":{"lat":28.2078,"lng":-82.161226,"geo_source":"photon","matched":"Emerald Pointe RV Resort, Zephyrhills","osm":"W1396839111 landuse=residential"}}
+{"k":"photon:beachside resort motel:27.774455,-82.774893","v":{"lat":27.773929,"lng":-82.774835,"geo_source":"photon","matched":"Arvilla Resort Motel, 11580, Gulf Boulevard, Treasure Island, 33706","osm":"W523401916 tourism=motel"}}
+{"k":"photon:casaloma motel 2:28.005773,-82.451372","v":{"lat":28.006321,"lng":-82.451543,"geo_source":"photon","matched":"Casa Loma #2 Motel, 6408, North Nebraska Avenue, Tampa, 33604","osm":"W523103922 tourism=motel"}}
+{"k":"photon:red roof inn:27.81738,-82.679449","v":{"lat":27.81686,"lng":-82.678142,"geo_source":"photon","matched":"Red Roof Inn Tampa Bay - St Petersburg, 50th Avenue North, 33714","osm":"R7678392 tourism=hotel"}}
+{"k":"photon:cedar motel:27.80199,-82.679572","v":{"lat":27.802208,"lng":-82.680144,"geo_source":"photon","matched":"Cedar Motel, 33rd Avenue North, Saint Petersburg, 33713","osm":"W192545471 tourism=motel"}}
+{"k":"photon:palm bay hotel:27.775635,-82.679477","v":{"lat":27.768791,"lng":-82.643817,"geo_source":"photon","matched":"Palm Bay Hotel, 711, 3rd Avenue South, Saint Petersburg, 33701","osm":"W189263450 tourism=hotel"}}
+{"k":"photon:bay plaza:27.775005,-82.638782","v":{"lat":27.775305,"lng":-82.639219,"geo_source":"photon","matched":"Bay Plaza, 419, 3rd Avenue North, Saint Petersburg, 33701","osm":"W180075579 tourism=hotel"}}
+{"k":"photon:silver sands:27.970267,-82.828102","v":{"lat":27.97025,"lng":-82.827878,"geo_source":"photon","matched":"Silver Sands Motel, 415, South Hamden Drive, Clearwater Beach, 33767","osm":"W523896385 tourism=motel"}}
+{"k":"photon:bay inn:28.032502,-82.433504","v":{"lat":27.959071,"lng":-82.525812,"geo_source":"photon","matched":"La Quinta Inn Tampa Bay Airport, West Union Street, Tampa, 33607","osm":"W523825891 tourism=hotel"}}
+{"k":"photon:sunset inn:28.032618,-82.4358","v":{"lat":28.033008,"lng":-82.435445,"geo_source":"photon","matched":"Sunset Inn, North 21st Street, Tampa, 33612","osm":"W523904582 tourism=motel"}}
+{"k":"photon:la quinta inn & suites clearwater south:27.96,-82.75","v":{"lat":27.966317,"lng":-82.730607,"geo_source":"photon","matched":"La Quinta Inn & Suites, Southbound Frontage Road, Clearwater, 34619","osm":"R18773999 tourism=hotel"}}
+{"k":"photon:motel 6:27.98159,-82.381289","v":{"lat":27.945673,"lng":-82.337222,"geo_source":"photon","matched":"Motel 6, 9942, Adamo Drive, Tampa, 33169","osm":"W307059186 tourism=motel"}}
+{"k":"photon:holiday inn express hotel seminole fl:27.815784,-82.778417","v":{"lat":27.913617,"lng":-82.787083,"geo_source":"photon","matched":"Holiday Inn Express & Suites Largo-Clearwater, 210, Seminole Boulevard, Largo, 33770","osm":"W192569314 tourism=hotel"}}
+{"k":"photon:fairfield inn & suites by marriott:27.986494,-82.825052","v":null}
+{"k":"photon:randolph hotel:27.769882,-82.6384","v":{"lat":27.773791,"lng":-82.638752,"geo_source":"photon","matched":"Randolph Hotel, 200, 4th Street North, Saint Petersburg, 33701","osm":"W189241301 tourism=hotel"}}
+{"k":"photon:motel 6 tampa fairgrounds:27.94653,-82.34095","v":{"lat":27.945673,"lng":-82.337222,"geo_source":"photon","matched":"Motel 6, 9942, Adamo Drive, Tampa, 33169","osm":"W307059186 tourism=motel"}}
+{"k":"photon:east bay motel:27.854692,-82.382736","v":{"lat":27.978024,"lng":-82.825462,"geo_source":"photon","matched":"Barefoot Bay Motel, East Shore Drive, Clearwater, 33767","osm":"W523898155 tourism=motel"}}
+{"k":"photon:surestay by best western:27.96,-82.75","v":null}
+{"k":"photon:palms inn:28.069247,-82.454085","v":{"lat":28.305915,"lng":-81.456054,"geo_source":"photon","matched":"Howard Johnson Inn Tropical Palms Kissimmee, 4311, West Vine Street, Kissimmee, 34746","osm":"R6170964 tourism=hotel"}}
+{"k":"photon:la vista inn:28.327808,-82.69909","v":{"lat":28.114217,"lng":-82.739193,"geo_source":"photon","matched":"Vista Inn on Lake Tarpon in Palm Harbor, 37611, US Highway 19 North, Palm Harbor, 34684","osm":"W522858309 tourism=hotel"}}
+{"k":"photon:a1 motel:28.056959,-82.45114","v":{"lat":28.057621,"lng":-82.450658,"geo_source":"photon","matched":"A-1 Motel, East 121st Avenue, Lake Magdalene, 33612","osm":"W524006509 tourism=motel"}}
+{"k":"photon:express inn & suites:27.874858,-82.708692","v":{"lat":27.875289,"lng":-82.707765,"geo_source":"photon","matched":"Express Inn & Suites, 11333, US-19, Pinellas Park, 33764","osm":"W190548117 tourism=motel"}}
+{"k":"photon:birdsong motel:27.890444,-82.78716","v":{"lat":27.890487,"lng":-82.787716,"geo_source":"photon","matched":"Birdsong Motel, Seminole Boulevard, Largo, 33778","osm":"W280508567 tourism=motel"}}
+{"k":"photon:uptown:27.779729,-82.639833","v":{"lat":27.776778,"lng":-82.644459,"geo_source":"photon","matched":"Uptown Historic Flats, 779, 4th Avenue North, Saint Petersburg, 33701","osm":"W308390154 building=apartments"}}
+{"k":"photon:budget inn of clearwater:27.960678,-82.776272","v":null}
+{"k":"photon:tropical inn & suites:27.9657,-82.782256","v":{"lat":27.959958,"lng":-82.752206,"geo_source":"photon","matched":"Econo Lodge Inn & Suites, 2061, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W523900417 tourism=motel"}}
+{"k":"photon:tampa inn:28.032508,-82.42732","v":{"lat":28.031386,"lng":-82.427063,"geo_source":"photon","matched":"Tampa Inn, North 30th Street, Tampa, 33617","osm":"W523680374 tourism=motel"}}
+{"k":"photon:brook motel:27.999537,-82.314534","v":null}
+{"k":"photon:breezeway:27.985725,-82.82576","v":{"lat":27.584121,"lng":-81.513198,"geo_source":"photon","matched":"Breezeway, Avon Park, 33825","osm":"N11021270667 place=neighbourhood"}}
+{"k":"photon:uptown suites - tampa/riverview:27.91198,-82.349802","v":{"lat":27.911027,"lng":-82.34932,"geo_source":"photon","matched":"Uptown Suites Tampa Riverview, 9321, Everhart Road, Riverview, 33578","osm":"W904324648 tourism=hotel"}}
+{"k":"photon:tarpon inn:28.146301,-82.757668","v":{"lat":28.146648,"lng":-82.757807,"geo_source":"photon","matched":"Tarpon Inn, Spring Boulevard, Tarpon Springs, 34689","osm":"W778113886 tourism=hotel"}}
+{"k":"photon:masters inn:28.00218,-82.302486","v":{"lat":28.002686,"lng":-82.303254,"geo_source":"photon","matched":"Masters Inn, Mango, 33592","osm":"W917721913 tourism=hotel"}}
+{"k":"photon:camp knox motel:27.999477,-82.314841","v":{"lat":28.000257,"lng":-82.312931,"geo_source":"photon","matched":"Camp Knox Motel, 11104, E. US-92, Seffner, 33584","osm":"W903895599 tourism=motel"}}
+{"k":"photon:breckenridge beach resort:27.730975,-82.744082","v":{"lat":27.72032,"lng":-82.740259,"geo_source":"photon","matched":"Plaza Beach Hotel - Beachfront Resort, 4506, Gulf Boulevard, Saint Pete Beach, 33706","osm":"W523253390 tourism=hotel"}}
+{"k":"photon:quality inn:27.821149,-82.668643","v":{"lat":27.785996,"lng":-82.680416,"geo_source":"photon","matched":"Quality Inn & Suites, 14th Avenue North, Saint Petersburg, 33713","osm":"W280373579 tourism=hotel"}}
+{"k":"photon:grand boulevard efficiency motel:28.28,-82.71","v":{"lat":28.49399,"lng":-82.650134,"geo_source":"photon","matched":"Hernando Beach Motel LLC & Efficiencies, Shoal Line Boulevard, 34607","osm":"W549899633 tourism=hotel"}}
+{"k":"photon:sea turtle bungalows:27.786292,-82.781895","v":{"lat":27.755609,"lng":-82.422256,"geo_source":"photon","matched":"Sea Turtle Place, Apollo Beach, 33570","osm":"W10981209 highway=residential"}}
+{"k":"photon:redington surf resort:27.821616,-82.826649","v":{"lat":27.821224,"lng":-82.827012,"geo_source":"photon","matched":"Redington Surf Resort, Gulf Boulevard, North Redington Beach, 33776","osm":"W219346177 building=apartments"}}
+{"k":"photon:surf & sand florida:27.987256,-82.825485","v":{"lat":27.987414,"lng":-82.825288,"geo_source":"photon","matched":"Surf n' Sand, 50, Royal Way, Clearwater Beach, 33767","osm":"W523896264 tourism=motel"}}
+{"k":"photon:regency inn:28.054703,-82.453028","v":{"lat":27.943604,"lng":-82.327314,"geo_source":"photon","matched":"La Quinta Inn & Suites By Wyndham Tampa Brandon Regency Park, 310, Grand Regency Boulevard, Brandon, 33510","osm":"W524063149 tourism=hotel"}}
+{"k":"photon:sta n pla motel:27.971717,-82.827721","v":{"lat":27.971715,"lng":-82.827521,"geo_source":"photon","matched":"Sta'n Pla Motel, 345, Hamden Drive, Clearwater, 33767","osm":"W523898113 tourism=motel"}}
+{"k":"photon:bayview motel:28.034678,-82.6681","v":null}
+{"k":"photon:jayhawk motel:27.975458,-82.451117","v":{"lat":27.975363,"lng":-82.450767,"geo_source":"photon","matched":"Jayhawk Motel, 3415, North Nebraska Avenue, Tampa, 33603","osm":"W522984888 tourism=motel"}}
+{"k":"photon:pleasant inn:27.984251,-82.796036","v":{"lat":27.984486,"lng":-82.796414,"geo_source":"photon","matched":"Pleasant Inn Motel, 1744, North Fort Harrison Avenue, Clearwater, 33755","osm":"W525785256 tourism=motel"}}
+{"k":"photon:sunnymoon motel:27.886786,-82.717929","v":null}
+{"k":"photon:john's pass hotel:27.79,-82.78","v":null}
+{"k":"photon:rodeway inn:28.237912,-82.357358","v":{"lat":28.239767,"lng":-82.353962,"geo_source":"photon","matched":"Rodeway Inn, 5642, Oakley Boulevard, Wesley Chapel, 33544","osm":"W294490122 tourism=motel"}}
+{"k":"photon:red roof inn tampa fairgrounds:27.991289,-82.358332","v":{"lat":27.992496,"lng":-82.357027,"geo_source":"photon","matched":"Red Roof Inn Tampa Fairgrounds - Casino, 5001, US-301, Tampa, 33610","osm":"R14118197 tourism=hotel"}}
+{"k":"photon:alden beach resort:27.732254,-82.744801","v":{"lat":27.731947,"lng":-82.745165,"geo_source":"photon","matched":"Alden Suites - A Beachfront Resort, Gulf Boulevard, Saint Pete Beach, 33706","osm":"R2595010 tourism=hotel"}}
+{"k":"photon:extended stay america suites:27.914258,-82.730025","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:new hotel collection:27.882507,-82.848922","v":null}
+{"k":"photon:patio palm:27.965576,-82.783359","v":{"lat":27.965355,"lng":-82.78377,"geo_source":"photon","matched":"Patio Palms of Clearwater, 1295, Cleveland Street, Clearwater, 33755","osm":"W524441955 tourism=motel"}}
+{"k":"photon:seaside artisan motel:28.017377,-82.789901","v":{"lat":28.017549,"lng":-82.79024,"geo_source":"photon","matched":"Seaside Artisan Motel, 1064, Broadway Boulevard, Dunedin, 34698","osm":"N13716991101 tourism=motel"}}
+{"k":"photon:haven inn:28.011688,-82.451241","v":{"lat":28.012171,"lng":-82.450782,"geo_source":"photon","matched":"Haven Inn, East Flora Street, Tampa, 33604","osm":"W523462278 tourism=motel"}}
+{"k":"photon:delux inn:27.960556,-82.765124","v":{"lat":27.960234,"lng":-82.765239,"geo_source":"photon","matched":"Delux Inn, Gulf to Bay Boulevard, Clearwater, 33755","osm":"W524455094 tourism=hotel"}}
+{"k":"photon:extended stay america suites:28.066702,-82.354812","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:satellite motel:27.771165,-82.771215","v":{"lat":27.772623,"lng":-82.772069,"geo_source":"photon","matched":"Satellite Motel, 11205, Gulf Boulevard, Treasure Island, 33706","osm":"W305761259 tourism=motel"}}
+{"k":"photon:extended stay palm harbor:28.062944,-82.738974","v":{"lat":28.390861,"lng":-81.496354,"geo_source":"photon","matched":"Extended Stay America - Orlando - Lake Buena Vista, 8100, Palm Parkway, Orlando, 32836","osm":"W840696738 tourism=hotel"}}
+{"k":"photon:whitney hotel:27.774107,-82.637038","v":null}
+{"k":"photon:rodeway inn:27.970372,-82.401754","v":{"lat":28.005799,"lng":-82.356785,"geo_source":"photon","matched":"Rodeway Inn, 6510, US-301, Tampa, 33610","osm":"W308030532 tourism=motel"}}
+{"k":"photon:parc micro suites:28.088087,-82.457053","v":{"lat":28.331335,"lng":-81.520376,"geo_source":"photon","matched":"Staybridge Suites Orlando Royale Parc Suites, 5876, West Irlo Bronson Memorial Highway, Kissimmee, 34746","osm":"R4456646 tourism=hotel"}}
+{"k":"photon:quality inn tampa-brandon:27.949698,-82.348643","v":{"lat":27.979571,"lng":-82.337972,"geo_source":"photon","matched":"Quality Inn & Suites Tampa - Brandon Near Casino, Princess Palm Avenue, 33550","osm":"W523891599 tourism=hotel"}}
+{"k":"photon:tropical palms hotel:27.893801,-82.680568","v":null}
+{"k":"photon:base motel:27.873619,-82.506458","v":null}
+{"k":"photon:antigua motel:27.996127,-82.447792","v":{"lat":27.996394,"lng":-82.44708,"geo_source":"photon","matched":"Antigua Motel, East Hillsborough Avenue, Tampa, 33604","osm":"W523104572 tourism=motel"}}
+{"k":"photon:devon shores beach suites:27.971766,-82.827841","v":{"lat":27.731947,"lng":-82.745165,"geo_source":"photon","matched":"Alden Suites - A Beachfront Resort, Gulf Boulevard, Saint Pete Beach, 33706","osm":"R2595010 tourism=hotel"}}
+{"k":"photon:paradise beach village:27.776082,-82.776931","v":{"lat":27.786417,"lng":-82.783152,"geo_source":"photon","matched":"Cuban Paradise, 12933, Village Boulevard, Madeira Beach, 33708","osm":"N5759608079 shop=yes"}}
+{"k":"photon:west wing boutique hotel:28.054439,-82.432182","v":{"lat":28.053524,"lng":-82.430803,"geo_source":"photon","matched":"West Wing Hotel, 2501, East Fowler Avenue, Tampa, 33612","osm":"R12274933 tourism=hotel"}}
+{"k":"photon:extended stay america suites:27.926156,-82.337978","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:towneplace suites by marriott tampa clearwater:27.963962,-82.730244","v":null}
+{"k":"photon:coconut cove all suite resort:27.966631,-82.824746","v":{"lat":27.966665,"lng":-82.824362,"geo_source":"photon","matched":"Coconut Cove All-Suite Resort, South Gulfview Boulevard, Clearwater, 33767","osm":"W243116342 tourism=hotel"}}
+{"k":"photon:uptown suites:27.786262,-82.646682","v":{"lat":27.911027,"lng":-82.34932,"geo_source":"photon","matched":"Uptown Suites Tampa Riverview, 9321, Everhart Road, Riverview, 33578","osm":"W904324648 tourism=hotel"}}
+{"k":"photon:devon shores suites & studios:27.97196,-82.827793","v":null}
+{"k":"photon:monaco vacation rentals:27.987737,-82.825743","v":{"lat":27.987535,"lng":-82.825958,"geo_source":"photon","matched":"Monaco Vacation Rentals, 648, Poinsettia Avenue, Clearwater Beach, 33767","osm":"W523898062 tourism=hotel"}}
+{"k":"photon:nights hotel:28.035732,-82.122902","v":null}
+{"k":"photon:clarion pointe tampa/wesley chapel:28.239494,-82.357115","v":null}
+{"k":"photon:ac hotel:27.772311,-82.635598","v":{"lat":27.96509,"lng":-82.51141,"geo_source":"photon","matched":"AC Hotel by Marriott Tampa Airport, West Boy Scout Boulevard, Tampa, 33607","osm":"W918579596 tourism=hotel"}}
+{"k":"photon:sala:27.739076,-82.750601","v":{"lat":28.179822,"lng":-82.638639,"geo_source":"photon","matched":"Salano, Trinity","osm":"W940424610 landuse=residential"}}
+{"k":"photon:woodspring suites hudson:28.337646,-82.699417","v":null}
+{"k":"photon:paradise lakes resort:27.95,-82.55","v":{"lat":28.186624,"lng":-82.469428,"geo_source":"photon","matched":"Paradise Lakes Resort, 2001, Paradise Lakes Boulevard, Lutz, 33558","osm":"W917255074 club=nudism"}}
+{"k":"photon:treasure bay resort and marina:27.771749,-82.771731","v":{"lat":27.771767,"lng":-82.77107,"geo_source":"photon","matched":"Treasure Bay Resort and Marina, 11125, Gulf Boulevard, Treasure Island, 33706","osm":"N7404523174 amenity=restaurant"}}
+{"k":"photon:rodeway inn:27.96553,-82.730334","v":{"lat":27.965362,"lng":-82.731408,"geo_source":"photon","matched":"Rodeway Inn, 21252, US Highway 19 North, Clearwater, 33765","osm":"W206160355 tourism=motel"}}
+{"k":"photon:floridian inn:27.960725,-82.769489","v":{"lat":27.961044,"lng":-82.769586,"geo_source":"photon","matched":"The Floridian Inn, 1630, Gulf to Bay Boulevard, Clearwater, 33755","osm":"W524442761 tourism=motel"}}
+{"k":"photon:palm aire motel:27.801477,-82.679567","v":{"lat":27.801727,"lng":-82.680145,"geo_source":"photon","matched":"Palm Aire Motel, 34th Street North, Saint Petersburg, 33713","osm":"W192480010 tourism=motel"}}
+{"k":"photon:pasa tiempo:27.742314,-82.746314","v":{"lat":27.742274,"lng":-82.746031,"geo_source":"photon","matched":"Pasa Tiempo, 7141, Bay Street, Saint Pete Beach, 33706","osm":"W523258611 building=yes"}}
+{"k":"photon:seffner inn & suites (comfort inn & suites):28.009676,-82.303512","v":{"lat":28.008143,"lng":-82.301107,"geo_source":"photon","matched":"Hampton Inn & Suites Tampa East (Casino Area), 11740, Tampa Gateway Boulevard, Seffner, 33584","osm":"W312218247 tourism=hotel"}}
+{"k":"photon:value lodge hotel:28.05471,-82.457854","v":null}
+{"k":"photon:pink flamingo motel:27.985939,-82.796072","v":{"lat":27.986096,"lng":-82.796208,"geo_source":"photon","matched":"Flamingo Motel, 1806, North Fort Harrison Avenue, Clearwater, 33755","osm":"W525785134 tourism=motel"}}
+{"k":"photon:ranch motel:27.921963,-82.402034","v":{"lat":27.921792,"lng":-82.402381,"geo_source":"photon","matched":"Ranch House Motel, 2909, South 50th Street, Tampa, 33619","osm":"W523917333 tourism=motel"}}
+{"k":"photon:blue water beach rentals:27.897529,-82.848563","v":{"lat":27.971808,"lng":-82.823278,"geo_source":"photon","matched":"BrightWater Blue 188-1, 188, Brightwater Drive, Clearwater, 33767","osm":"W987364284 tourism=hotel"}}
+{"k":"photon:palm grove inn:27.768614,-82.643388","v":null}
+{"k":"photon:ebbtide:27.77616,-82.777217","v":{"lat":28.271031,"lng":-82.737283,"geo_source":"photon","matched":"Ebbtide Lane, Port Richey, 34668","osm":"W11215660 highway=residential"}}
+{"k":"photon:rodeway inn:27.923264,-82.730126","v":{"lat":27.921498,"lng":-82.729274,"geo_source":"photon","matched":"Rodeway Inn, 16405, US 19, Largo, 33760","osm":"W162127909 tourism=motel"}}
+{"k":"photon:holiday inn:27.783684,-82.679499","v":{"lat":27.816317,"lng":-82.778884,"geo_source":"photon","matched":"Holiday Inn, 100th Way North, Seminole, 33708","osm":"W829765719 tourism=hotel"}}
+{"k":"photon:suncoast motel:28.374307,-82.683305","v":{"lat":27.764012,"lng":-82.767471,"geo_source":"photon","matched":"Suncoast Motel, Gulf Boulevard, Treasure Island, 33785","osm":"R2595011 tourism=motel"}}
+{"k":"photon:zephyrinn motel:28.239062,-82.184683","v":null}
+{"k":"photon:econo inn motel:27.945157,-82.730491","v":null}
+{"k":"photon:palm way hotel:27.776759,-82.679338","v":null}
+{"k":"photon:tampa bay extended stay hotel - airport:27.996494,-82.556176","v":{"lat":27.892772,"lng":-82.726328,"geo_source":"photon","matched":"Tampa Bay Extended Stay Hotel, 6500, Ulmerton Road, Largo, 33771","osm":"W534885402 tourism=hotel"}}
+{"k":"photon:sierra:27.855503,-82.695114","v":{"lat":27.938401,"lng":-82.760748,"geo_source":"photon","matched":"Sierra Circle, 33764","osm":"W11241456 highway=residential"}}
+{"k":"photon:valencia:27.979679,-82.730069","v":{"lat":27.430629,"lng":-82.59855,"geo_source":"photon","matched":"Valencia, South Bradenton, 34207","osm":"W11075299 highway=residential"}}
+{"k":"photon:pearl cabana club:27.737365,-82.750888","v":null}
+{"k":"photon:beach haven resort:27.724055,-82.741009","v":null}
+{"k":"photon:cactus motel:27.787395,-82.679521","v":{"lat":27.787573,"lng":-82.679684,"geo_source":"photon","matched":"Cactus Motel, 34th Street North, Saint Petersburg, 33713","osm":"R3727619 tourism=motel"}}
+{"k":"photon:star motel:27.98,-82.28","v":{"lat":27.997424,"lng":-82.320295,"geo_source":"photon","matched":"Star Motel, Mango, 33592","osm":"W917724674 tourism=motel"}}
+{"k":"photon:las olas:27.776586,-82.77822","v":{"lat":27.501099,"lng":-82.387355,"geo_source":"photon","matched":"Las Olas Place, 34212","osm":"W584321447 highway=residential"}}
+{"k":"photon:rodeway inn:28.257187,-82.727643","v":{"lat":28.257347,"lng":-82.727011,"geo_source":"photon","matched":"Rodeway Inn, 6826, US 19 North, New Port Richey, 34652","osm":"W1041342438 tourism=motel"}}
+{"k":"photon:covare hotel:27.739153,-82.750458","v":null}
+{"k":"photon:green key beach motel:28.251379,-82.7276","v":{"lat":28.252371,"lng":-82.727384,"geo_source":"photon","matched":"Green Key Beach Motel, 6434, US Highway 19, New Port Richey, 34652","osm":"W1222444876 tourism=hotel"}}
+{"k":"photon:club wyndham clearwater beach:27.975082,-82.828223","v":{"lat":27.97501,"lng":-82.828508,"geo_source":"photon","matched":"Wyndham Grand, South Gulfview Boulevard, Clearwater, 33767","osm":"W576718851 tourism=hotel"}}
+{"k":"photon:trba motel:27.962652,-82.777011","v":{"lat":27.764623,"lng":-82.767943,"geo_source":"photon","matched":"Trade Winds Motel, 103rd Avenue, Treasure Island, 33706","osm":"W192557855 tourism=motel"}}
+{"k":"photon:vrunda isha:28.33789,-82.187648","v":null}
+{"k":"photon:sunshine inn:28.175399,-82.740662","v":null}
+{"k":"photon:abode beach house:27.98,-82.83","v":{"lat":27.972516,"lng":-82.829928,"geo_source":"photon","matched":"BareFoot Beach House, Beachwalk, Clearwater, 33767","osm":"N6190526331 amenity=fast_food"}}
+{"k":"photon:palm cove motel:27.960468,-82.736671","v":{"lat":27.960095,"lng":-82.737125,"geo_source":"photon","matched":"Palm Cove Motel, 2431, Gulf to Bay Boulevard, Clearwater, 33765","osm":"W524969225 tourism=motel"}}
+{"k":"photon:taraba:27.704949,-82.44038","v":null}
+{"k":"photon:candlelight inn:27.802927,-82.67945","v":{"lat":27.803219,"lng":-82.679078,"geo_source":"photon","matched":"Candlelight Inn, 34th Street North, Saint Petersburg, 33714","osm":"W192545427 tourism=motel"}}
+{"k":"photon:crystal springs inn:28.25,-82.18","v":null}
+{"k":"photon:esa suites clearwater - carillon park:27.89411,-82.667884","v":null}
+{"k":"photon:nachman's reel retreat:27.828007,-82.830081","v":null}
+{"k":"photon:marina bay vacation rentals:27.943243,-82.799892","v":null}
+{"k":"photon:extended stay america premier suites:27.95,-82.46","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:hotel nexa:27.774901,-82.636113","v":null}
+{"k":"photon:sunny days motel:27.833627,-82.638622","v":{"lat":27.886722,"lng":-82.718106,"geo_source":"photon","matched":"Sunny Moon Motel, US 19 Southbound Frontage Road, Pinellas Park, 33760","osm":"W534885518 tourism=motel"}}
+{"k":"photon:one inn & suites:27.778884,-82.632482","v":null}
+{"k":"photon:cw resort and marina:27.97949,-82.825789","v":{"lat":27.771767,"lng":-82.77107,"geo_source":"photon","matched":"Treasure Bay Resort and Marina, 11125, Gulf Boulevard, Treasure Island, 33706","osm":"N7404523174 amenity=restaurant"}}
+{"k":"photon:rodeway inn sun city center:27.713472,-82.351812","v":{"lat":27.713777,"lng":-82.351102,"geo_source":"photon","matched":"Rodeway Inn Sun City Center, 809, North Pebble Beach Boulevard, Sun City Center, 33573","osm":"W954889927 tourism=motel"}}
+{"k":"photon:star motel:28.37746,-82.680399","v":{"lat":28.378112,"lng":-82.679201,"geo_source":"photon","matched":"Star Motel, US Highway 19, Hudson, 34667","osm":"W526297557 tourism=motel"}}
+{"k":"photon:island house resort hotel:27.819671,-82.824761","v":null}
+{"k":"photon:cedar cove resort & cottages:27.485283,-82.705745","v":null}
+{"k":"photon:florida bound motel:27.481333,-82.575276","v":{"lat":27.478584,"lng":-82.571679,"geo_source":"photon","matched":"9th St West Motel, 24th Avenue West, Bradenton, 34205","osm":"W1228056240 tourism=motel"}}
+{"k":"photon:sea isle motel:27.536137,-82.739047","v":{"lat":27.536103,"lng":-82.739297,"geo_source":"photon","matched":"Sea Isle Motel, 601, North Bay Boulevard, Anna Maria island, 34216","osm":"W835407121 tourism=motel"}}
+{"k":"photon:michiana motel:27.472699,-82.57522","v":null}
+{"k":"photon:budget motel:27.47,-82.57","v":null}
+{"k":"photon:kentucky motel:27.486804,-82.575235","v":{"lat":27.811004,"lng":-82.639034,"geo_source":"photon","matched":"Kentucky Motel, 43rd Avenue North, Saint Petersburg, 33703","osm":"W917262454 tourism=motel"}}
+{"k":"photon:blue boy motel:27.482961,-82.575266","v":null}
+{"k":"photon:silver surf motel:27.472705,-82.701076","v":null}
+{"k":"photon:white sands beach resort:27.511653,-82.721233","v":null}
+{"k":"photon:white sands beach resort annex:27.513323,-82.722569","v":null}
+{"k":"photon:hampton inn:27.532082,-82.504239","v":{"lat":27.382979,"lng":-82.550916,"geo_source":"photon","matched":"Hampton Inn, Sarasota, 34270","osm":"W296765728 highway=service"}}
+{"k":"photon:bridgewalk a landmark resort:27.465032,-82.698601","v":{"lat":27.465321,"lng":-82.697909,"geo_source":"photon","matched":"Bridgewalk Resort, 100, Bridge Street, Bradenton Beach, 34217","osm":"N8109908020 leisure=resort"}}
+{"k":"photon:quality inn:27.493115,-82.478844","v":{"lat":27.267887,"lng":-82.454708,"geo_source":"photon","matched":"Quality Inn, Augusta Circle, 34238","osm":"W308005793 building=hotel"}}
+{"k":"photon:fairfield inn & suites-lwr:27.390435,-82.447037","v":{"lat":27.390584,"lng":-82.446538,"geo_source":"photon","matched":"Fairfield Inn & Suites Sarasota Lakewood Ranch, 6105, Exchange Way, Bradenton, 34202","osm":"W461587979 tourism=hotel"}}
+{"k":"photon:courtyard sarasota university park:27.390018,-82.456942","v":{"lat":27.390395,"lng":-82.456503,"geo_source":"photon","matched":"Courtyard Sarasota University Park, 8305, Tourist Center Drive, Sarasota, 34201","osm":"R13852261 tourism=hotel"}}
+{"k":"photon:sandpiper inn:27.411496,-82.658226","v":null}
+{"k":"photon:magnuson:27.4255,-82.57543","v":{"lat":27.425479,"lng":-82.57492,"geo_source":"photon","matched":"Magnuson Hotel Bradenton, 14th Street West, 34207","osm":"W244140197 tourism=hotel"}}
+{"k":"photon:sunrise inn:27.493707,-82.4752","v":null}
+{"k":"photon:holiday inn express:27.441939,-82.455116","v":{"lat":27.442146,"lng":-82.456036,"geo_source":"photon","matched":"Holiday Inn Express & Suites Bradenton East-Lakewood Ranch, Lena Road, 34202","osm":"W450026658 tourism=hotel"}}
+{"k":"photon:doubletree by hilton sarasota bradenton airport:27.397258,-82.546709","v":null}
+{"k":"photon:hampton inn & suites sarasota/univ park:27.393078,-82.452958","v":{"lat":27.382398,"lng":-82.551489,"geo_source":"photon","matched":"Hampton Inn & Suites, 975, University Parkway, Sarasota, 34243","osm":"W296765711 tourism=hotel"}}
+{"k":"photon:ramada waterfront hotel:27.251802,-82.514923","v":{"lat":27.413089,"lng":-82.573374,"geo_source":"photon","matched":"Ramada Sarasota Waterfront, 7150, North Tamiami Trail, Sarasota, 34238","osm":"W621307842 tourism=hotel"}}
+{"k":"photon:red roof inn:27.528735,-82.51534","v":{"lat":27.528352,"lng":-82.514028,"geo_source":"photon","matched":"Red Roof Inn Ellenton, 17th Street East, 34221","osm":"W915818638 tourism=hotel"}}
+{"k":"photon:super 8:27.528849,-82.512801","v":{"lat":27.530108,"lng":-82.511,"geo_source":"photon","matched":"Super 8, 5218, 17th Street East, Ellenton, 34222","osm":"W309666673 tourism=motel"}}
+{"k":"photon:best western plus manatee hotel:27.46228,-82.58386","v":{"lat":28.419293,"lng":-81.464449,"geo_source":"photon","matched":"Best Western Plus Orlando Convention Center Hotel, 6301, Westwood Boulevard, Orlando, 32821","osm":"W141276939 tourism=hotel"}}
+{"k":"photon:lantern inn & suites:27.412362,-82.572236","v":{"lat":27.382398,"lng":-82.551489,"geo_source":"photon","matched":"Hampton Inn & Suites, 975, University Parkway, Sarasota, 34243","osm":"W296765711 tourism=hotel"}}
+{"k":"photon:america's best value inn:27.494549,-82.476141","v":null}
+{"k":"photon:bay breeze inn:27.48566,-82.575375","v":null}
+{"k":"photon:little palm inn:27.544026,-82.564232","v":null}
+{"k":"photon:hyatt place:27.390654,-82.447348","v":{"lat":27.381275,"lng":-82.551976,"geo_source":"photon","matched":"Hyatt Place, 950, University Parkway, Sarasota, 34234","osm":"W402891639 tourism=hotel"}}
+{"k":"photon:holiday inn express & suites bradenton west:27.461769,-82.608344","v":{"lat":27.461022,"lng":-82.608922,"geo_source":"photon","matched":"Holiday Inn Express & Suites Bradenton West, Hampton Court, Bradenton, 34210","osm":"W307992947 building=hotel"}}
+{"k":"photon:days inn bradenton:27.469609,-82.562997","v":{"lat":27.493191,"lng":-82.474854,"geo_source":"photon","matched":"Days Inn Bradenton I-75, 644, 67th Street Circle East, Bradenton, 34208","osm":"W307992917 tourism=hotel"}}
+{"k":"photon:abrams arbors:27.411353,-82.658087","v":null}
+{"k":"photon:waterline marina resort and beach club:27.506091,-82.71411","v":{"lat":27.507323,"lng":-82.713665,"geo_source":"photon","matched":"Waterline Marina Resort & Beach Club, Autograph Collection, Sunrise Lane, Holmes Beach, 34217","osm":"W918539400 building=yes"}}
+{"k":"photon:rod & reel resort:27.537433,-82.739962","v":{"lat":27.537434,"lng":-82.739816,"geo_source":"photon","matched":"The Rod and Reel Resort, 877, North Shore Drive, Anna Maria, 34216","osm":"W835375233 tourism=hotel"}}
+{"k":"photon:legacy hotel:27.444722,-82.608218","v":{"lat":27.444388,"lng":-82.609031,"geo_source":"photon","matched":"Legacy Hotel, 47th Street West, South Bradenton, 34210","osm":"W872786076 tourism=hotel"}}
+{"k":"photon:country inn & suites by radisson:27.47,-82.57","v":null}
+{"k":"photon:towneplace suites by marriott:27.462408,-82.617146","v":null}
+{"k":"photon:bali hai beach resort:27.513881,-82.723017","v":{"lat":27.513775,"lng":-82.723443,"geo_source":"photon","matched":"Bali Hai Beachfront Resort and Spa, 69th Street, Holmes Beach, 34217","osm":"W1108034211 building=yes"}}
+{"k":"photon:springhill suites by marriott bradenton downtown/riverfront:27.499064,-82.573468","v":{"lat":27.498884,"lng":-82.573751,"geo_source":"photon","matched":"SpringHill Suites Bradenton Downtown/Riverfront, 102, 12th Street, Bradenton, 34205","osm":"W857857833 tourism=hotel"}}
+{"k":"photon:quality inn:27.422005,-82.575444","v":{"lat":27.267887,"lng":-82.454708,"geo_source":"photon","matched":"Quality Inn, Augusta Circle, 34238","osm":"W308005793 building=hotel"}}
+{"k":"photon:baxter's motel:27.4729,-82.57522","v":{"lat":27.472233,"lng":-82.574689,"geo_source":"photon","matched":"Baxter's Motel, 14th Street West, South Bradenton, 34207","osm":"W895395434 tourism=motel"}}
+{"k":"photon:zota beach resort:27.399718,-82.648127","v":{"lat":27.399077,"lng":-82.648436,"geo_source":"photon","matched":"Zota Beach Resort, 4711, Gulf of Mexico Drive, Longboat Key, 34228","osm":"W449763136 tourism=hotel"}}
+{"k":"photon:compass by margaritaville anna maria sound:27.496396,-82.685962","v":null}
+{"k":"photon:driftwood:27.504979,-82.712806","v":{"lat":27.53369,"lng":-82.484839,"geo_source":"photon","matched":"Driftwood Lane, 34222","osm":"W11068458 highway=residential"}}
+{"k":"photon:turtle crawl inn:27.39138,-82.642437","v":null}
+{"k":"photon:motel 6 - bradenton:27.493902,-82.475197","v":{"lat":27.492283,"lng":-82.476339,"geo_source":"photon","matched":"Motel 6 - Bradenton, 67th Street Circle East, 34208","osm":"W307992918 tourism=motel"}}
+{"k":"photon:mainsail beach inn:27.511691,-82.722251","v":{"lat":27.69222,"lng":-82.737279,"geo_source":"photon","matched":"Inn on the Beach, 1401, Gulf Way, Saint Petersburg, 33706","osm":"W388902636 tourism=motel"}}
+{"k":"photon:hampton inn sarasota:27.300826,-82.451257","v":{"lat":27.300045,"lng":-82.450091,"geo_source":"photon","matched":"Hampton Inn Sarasota - I-75 Bee Ridge, 5995, Cattleridge Boulevard, Sarasota, 34232","osm":"W578705339 tourism=hotel"}}
+{"k":"photon:home2 suites by hilton sarasota bradenton airport:27.393183,-82.56157","v":null}
+{"k":"photon:hilton garden inn sarasota bradenton airport:27.392983,-82.561457","v":null}
+{"k":"photon:captains quarters at anna maria island inn:27.461358,-82.697111","v":{"lat":27.477336,"lng":-82.702869,"geo_source":"photon","matched":"Tropic Isle at Anna Maria Island Inn, Gulf Drive North, Bradenton Beach, 34217","osm":"W1228040719 tourism=hotel"}}
+{"k":"photon:tru by hilton bradenton/lakewood ranch:27.47,-82.57","v":null}
+{"k":"photon:pelican's post at anna maria island inn:27.466024,-82.697648","v":{"lat":27.477336,"lng":-82.702869,"geo_source":"photon","matched":"Tropic Isle at Anna Maria Island Inn, Gulf Drive North, Bradenton Beach, 34217","osm":"W1228040719 tourism=hotel"}}
+{"k":"photon:anna maria beach resort:27.510783,-82.720547","v":{"lat":27.538103,"lng":-82.742583,"geo_source":"photon","matched":"Anna Maria Motel and Resort Apartments, 808, North Bay Boulevard, Anna Maria, 34216","osm":"W835375133 tourism=hotel"}}
+{"k":"photon:alamanda villa:27.496412,-82.711441","v":null}
+{"k":"photon:home2 suites by hilton - lakewood ranch:27.390655,-82.44735","v":null}
+{"k":"photon:seaside at the anna maria island inn:27.477562,-82.703639","v":{"lat":27.477336,"lng":-82.702869,"geo_source":"photon","matched":"Tropic Isle at Anna Maria Island Inn, Gulf Drive North, Bradenton Beach, 34217","osm":"W1228040719 tourism=hotel"}}
+{"k":"photon:mello on the beach:27.496302,-82.711624","v":{"lat":27.69222,"lng":-82.737279,"geo_source":"photon","matched":"Inn on the Beach, 1401, Gulf Way, Saint Petersburg, 33706","osm":"W388902636 tourism=motel"}}
+{"k":"photon:bungalow beach resort:27.476029,-82.702356","v":null}
+{"k":"photon:palmetto marriott resort & spa:27.514185,-82.562974","v":null}
+{"k":"photon:st. regis longboat key resort:27.352656,-82.610362","v":{"lat":27.330625,"lng":-82.590744,"geo_source":"photon","matched":"The Resort at Longboat Key Club, 220, Sands Point Road, Longboat Key, 34228","osm":"W449794394 tourism=hotel"}}
+{"k":"photon:extended stay america premier suites bradenton:27.446062,-82.504588","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"photon:deluxe inn:27.397414,-82.563422","v":null}
+{"k":"photon:days inn bradenton i 75:27.494303,-82.4752","v":{"lat":27.493191,"lng":-82.474854,"geo_source":"photon","matched":"Days Inn Bradenton I-75, 644, 67th Street Circle East, Bradenton, 34208","osm":"W307992917 tourism=hotel"}}
+{"k":"photon:staybridge suites sarasota-bradenton airport:27.389118,-82.517038","v":null}
+{"k":"photon:woodspring suites bradenton:27.438806,-82.462565","v":{"lat":27.439092,"lng":-82.460915,"geo_source":"photon","matched":"WoodSpring Suites, 55th Avenue East, 34201","osm":"W1096388415 tourism=hotel"}}
+{"k":"photon:courtyard by marriott bradenton:27.498712,-82.564352","v":{"lat":27.999385,"lng":-81.976006,"geo_source":"photon","matched":"Courtyard by Marriott Lakeland, 3725, Harden Boulevard, Lakeland, 33803","osm":"W114223346 tourism=hotel"}}
+{"k":"photon:hampton inn & suites bradenton downtown historic district:27.497253,-82.571857","v":null}
+{"k":"photon:hometowne studio bradenton:27.490115,-82.479392","v":{"lat":28.023045,"lng":-82.546334,"geo_source":"photon","matched":"HomeTowne Studios Tampa - Airport, Town 'n' Country","osm":"W1413963055 landuse=construction"}}
+{"k":"photon:ninth street motel:27.478874,-82.571314","v":{"lat":27.472233,"lng":-82.574689,"geo_source":"photon","matched":"Baxter's Motel, 14th Street West, South Bradenton, 34207","osm":"W895395434 tourism=motel"}}
+{"k":"photon:wicker inn:27.413376,-82.66006","v":null}
+{"k":"photon:super 8 bradenton sarasota area:27.425383,-82.57556","v":null}
+{"k":"photon:comfort inn & suites:27.494193,-82.475192","v":{"lat":27.492407,"lng":-82.475378,"geo_source":"photon","matched":"Comfort Inn & Suites, 648, 67th Street Circle East, Bradenton, 34208","osm":"W307992916 tourism=hotel"}}
+{"k":"census:3206 w hillsborough ave, tampa, fl 33614","v":{"lat":27.996066,"lng":-82.49481,"geo_source":"census","matched":"3206 W HILLSBOROUGH AVE, TAMPA, FL, 33614"}}
+{"k":"census:1301 e hillsborough ave, tampa, fl 33604","v":{"lat":27.996011,"lng":-82.444937,"geo_source":"census","matched":"1301 E HILLSBOROUGH AVE, TAMPA, FL, 33604"}}
+{"k":"census:3411 us highway 301 n, tampa, fl 33619","v":null}
+{"k":"photon:3411 us highway 301 n, tampa, fl 33619:","v":{"lat":27.941617,"lng":-82.5063,"geo_source":"photon","matched":"LA Fitness, 301, South Dale Mabry Highway, Tampa, 33609","osm":"W523945513 leisure=fitness_centre"}}
+{"k":"census:455 s gulfview blvd, clearwater beach, fl 33767","v":null}
+{"k":"photon:455 s gulfview blvd, clearwater beach, fl 33767:","v":{"lat":27.966683,"lng":-82.826442,"geo_source":"photon","matched":"Gulfview Hotel on the Beach, 625, South Gulfview Boulevard, Clearwater, 33767","osm":"W192113277 tourism=hotel"}}
+{"k":"census:1400 301 blvd e, bradenton, fl 34203","v":{"lat":27.455585,"lng":-82.548466,"geo_source":"census","matched":"1400 301 BLVD E, BRADENTON, FL, 34203"}}
+{"k":"census:2920 alt 19, dunedin, fl 34698","v":null}
+{"k":"photon:2920 alt 19, dunedin, fl 34698:","v":null}
+{"k":"census:10809 e us highway 92, seffner, fl 33584","v":null}
+{"k":"photon:10809 e us highway 92, seffner, fl 33584:","v":{"lat":27.997422,"lng":-82.321203,"geo_source":"photon","matched":"10809, East 92 Highway, Mango, 33584","osm":"W1040650227 building=yes"}}
+{"k":"census:27615 state road 54, wesley chapel, fl 33543","v":null}
+{"k":"photon:27615 state road 54, wesley chapel, fl 33543:","v":{"lat":28.239761,"lng":-82.340724,"geo_source":"photon","matched":"Parks Ford of Wesley Chapel, 28739, State Road 54, Wesley Chapel, 33543","osm":"W1061099618 shop=car"}}
+{"k":"photon:motel 301:27.97,-82.37","v":null}
+{"k":"photon:extended stay america premier suites tampa brandon:27.98,-82.38","v":{"lat":28.001828,"lng":-82.353631,"geo_source":"photon","matched":"Extended Stay America Premier Suites - Tampa - Fairgrounds - Casino, 8940, East Sligh Avenue, Tampa, 33610","osm":"N9724817649 tourism=hotel"}}
+{"k":"census:6780 lakeview center drive, tampa, fl 33619","v":null}
+{"k":"photon:6780 lakeview center drive, tampa, fl 33619:","v":{"lat":27.980774,"lng":-82.382911,"geo_source":"photon","matched":"Fairfield Inn & Suites Tampa Fairgrounds/Casino, 6720, Lakeview Center Drive, Tampa, 33619","osm":"W918593381 tourism=hotel"}}
+{"k":"photon:abode:27.97,-82.83","v":null}
+{"k":"photon:crystal springs inn:28.25,-82.19","v":null}
+{"k":"photon:grand boulevard efficiency motel:28.27,-82.72","v":{"lat":28.49399,"lng":-82.650134,"geo_source":"photon","matched":"Hernando Beach Motel LLC & Efficiencies, Shoal Line Boulevard, 34607","osm":"W549899633 tourism=hotel"}}
+{"k":"census:7804 grand blvd, new port richey, fl 34652","v":null}
+{"k":"photon:7804 grand blvd, new port richey, fl 34652:","v":{"lat":28.225009,"lng":-82.723644,"geo_source":"photon","matched":"Grand Dentistry of New Port Richey, 4530, Grand Blvd., New Port Richey, 34652","osm":"N10173324850 amenity=dentist"}}
+{"k":"photon:dunedin rv resort:28.03,-82.77","v":{"lat":28.274945,"lng":-82.680162,"geo_source":"photon","matched":"Orchid Lake RV Resort, Jasmine Estates","osm":"W931992337 landuse=residential"}}
+{"k":"photon:econo lodge wesley chapel:28.19,-82.35","v":{"lat":28.238458,"lng":-82.359995,"geo_source":"photon","matched":"Econo Lodge, 27615, Wesley Chapel Boulevard, Wesley Chapel, 33544","osm":"W539766551 tourism=motel"}}
+{"k":"photon:blue moon inn:28.03,-82.77","v":null}

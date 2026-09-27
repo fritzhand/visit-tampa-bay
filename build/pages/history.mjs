@@ -29,21 +29,37 @@ export function yearText(year, era = "") {
   if (era === "indigenous" || year < 1000) return `${year} CE`;
   return String(year);
 }
-/** The date of a timeline entry as the source gives it: { year, day, iso, approx }.
- *  "1914-01-01" → day "Jan 1"; "1539-05" → day "May"; "1821" → the year only; no date → approx (the year is a sort key). */
+/** The date of a timeline entry as the source gives it: { year, day, iso, approx, about }.
+ *  "1914-01-01" → day "Jan 1"; "1539-05" → day "May"; "1821" → the year only. An entry with no `date` is read
+ *  from its own text (our summary of its sources), never guessed: "from about 900 CE" → about (printed "About");
+ *  "in the 1960s" → the decade ("1960s"); "went up … in 1887" → the year only, like a year-only date; a year the
+ *  text never states → approx (the year is only its place in the timeline: "No exact date"). */
 export function tlDate(t) {
   const d = t.date || "";
   let m;
-  if ((m = /^(-?\d{1,4})-(\d{2})-(\d{2})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: `${MON[Number(m[2]) - 1]} ${Number(m[3])}`, iso: d, approx: false };
-  if ((m = /^(-?\d{1,4})-(\d{2})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: MONTHS[Number(m[2]) - 1], iso: d, approx: false };
-  if ((m = /^(-?\d{1,4})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: "", iso: Number(m[1]) > 999 ? m[1] : "", approx: false };
-  if (d) return { year: yearText(t.year, t.era), day: d, iso: "", approx: false };        // free text: print it as given
-  return { year: yearText(t.year, t.era), day: "", iso: "", approx: true };
+  if ((m = /^(-?\d{1,4})-(\d{2})-(\d{2})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: `${MON[Number(m[2]) - 1]} ${Number(m[3])}`, iso: d, approx: false, about: false };
+  if ((m = /^(-?\d{1,4})-(\d{2})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: MONTHS[Number(m[2]) - 1], iso: d, approx: false, about: false };
+  if ((m = /^(-?\d{1,4})$/.exec(d))) return { year: yearText(Number(m[1]), t.era), day: "", iso: Number(m[1]) > 999 ? m[1] : "", approx: false, about: false };
+  if (d) return { year: yearText(t.year, t.era), day: d, iso: "", approx: false, about: false };        // free text: print it as given
+  const y = Math.abs(Number(t.year)), text = String(t.text || "");
+  const yearIn = y ? new RegExp(`(?<![\\d.,])${y}(?![\\d])`) : null;
+  if (yearIn && new RegExp(`\\b(?:about|around|approximately|circa|c\\.)\\s*\\(?\\s*${y}(?![\\d])`, "i").test(text)) return { year: yearText(t.year, t.era), day: "", iso: "", approx: false, about: true };
+  if (y > 999 && y % 10 === 0 && new RegExp(`(?<![\\d.,])${y}s\\b`).test(text) && !new RegExp(`(?<![\\d.,])${y}(?![\\ds])`).test(text)) return { year: `${y}s`, day: "", iso: "", approx: false, about: false };
+  if (yearIn && yearIn.test(text)) return { year: yearText(t.year, t.era), day: "", iso: y > 999 ? String(y) : "", approx: false, about: false };
+  return { year: yearText(t.year, t.era), day: "", iso: "", approx: true, about: false };
 }
+/** A date as words in a sentence: "about 900 CE", "the 1960s", "1886". */
+export const dateWords = (x) => (x.approx || x.about ? `about ${x.year}` : /\ds$/.test(x.year) ? `the ${x.year}` : x.year);
 /** Designation words: which kinds a record holds (for counts and the register's tags). */
 export const isNHL = (d) => /^National Historic Landmark/.test(d.name);
 export const isNR = (d) => /National Register/.test(d.name) && !/delisted/i.test(d.name);
 const firstYear = (s) => { const m = /(\d{4})/.exec(String(s || "")); return m ? Number(m[1]) : null; };
+/** The register's big numeral: only when `built` is a plain year or range ("1912", "1898–1905", "c. 1855", "about 1928");
+ *  anything qualified ("1539 (event commemorated)", "1900–1949 (period of significance)") keeps its words only. */
+export function yearNumeral(built) {
+  const m = /^\s*(c\.|ca\.|circa|about)?\s*(\d{4})(?:\s*[–-]\s*\d{2,4})?\s*$/i.exec(String(built || ""));
+  return m ? `${m[1] ? "c. " : ""}${m[2]}` : "";
+}
 
 export function pages(ctx) {
   const { db, c, h, cards, img, vocab } = ctx;
@@ -80,7 +96,7 @@ export function pages(ctx) {
     const m = /^(\d+) (BCE|CE)$/.exec(d.year);
     const yy = m ? `${m[1]}<span class="era-sfx">${m[2]}</span>` : h.esc(d.year);
     const y = d.iso ? `<time datetime="${h.attr(d.iso)}">${yy}</time>` : yy;
-    return `<div class="hx-when"><p class="tl-year">${y}</p>${d.day ? `<p class="hx-day">${h.esc(d.day)}</p>` : ""}${d.approx ? `<p class="hx-day hx-approx">No exact date</p>` : ""}</div>`;
+    return `<div class="hx-when">${d.about ? `<p class="hx-day hx-approx">About</p>` : ""}<p class="tl-year">${y}</p>${d.day ? `<p class="hx-day">${h.esc(d.day)}</p>` : ""}${d.approx ? `<p class="hx-day hx-approx">No exact date</p>` : ""}</div>`;
   }
   function figureOf(root, t) {
     if (!img.has("t", t.id)) return "";
@@ -112,7 +128,7 @@ export function pages(ctx) {
   function eraIntro(root, e) {
     if (!e.entries.length) return `<p class="hx-intro">No timeline entries for this era yet.</p>`;
     const a = e.entries[0], b = e.entries[e.entries.length - 1];
-    const d = (t) => { const x = tlDate(t); return x.approx ? `about ${x.year}` : x.year; };
+    const d = (t) => dateWords(tlDate(t));
     const parts = [
       `${count(e.entries.length, "entry", "entries")}${e.entries.length > 1 ? `, from ${h.esc(d(a))} (<a href="#tl-${h.attr(a.id)}">${h.esc(a.title)}</a>) to ${h.esc(d(b))} (<a href="#tl-${h.attr(b.id)}">${h.esc(b.title)}</a>)` : ` (<a href="#tl-${h.attr(a.id)}">${h.esc(a.title)}</a>)`}.`,
       e.at ? `${e.at} of them happened at places in this guide you can visit.` : "",
@@ -123,7 +139,7 @@ export function pages(ctx) {
     return `<p class="hx-intro">${parts}</p>${siteLink || walk ? `<p class="hx-links">${siteLink}${walk}</p>` : ""}`;
   }
   function eraSection(root, e) {
-    return `<section class="section hx-era" id="era-${e.era}" aria-labelledby="era-${e.era}-h" data-filter-group data-era-sec="${e.era}">
+    return `<section class="section hx-era oxford" id="era-${e.era}" aria-labelledby="era-${e.era}-h" data-filter-group data-era-sec="${e.era}">
 <div class="hx-era-head"><p class="hx-era-no" aria-hidden="true">${ROMAN[e.i]}</p><div><p class="sec-kicker label">Era ${e.i + 1} of ${ERAS.length} · ${h.esc(spanText(e.era))}</p><h2 id="era-${e.era}-h">${h.esc(ERA_NAME[e.era])}</h2></div></div>
 ${eraIntro(root, e)}
 ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(root, t)).join("")}</ol>` : ""}
@@ -139,9 +155,9 @@ ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(r
     const tile = (n, label) => `<div class="hx-stat"><dt>${h.esc(label)}</dt><dd>${h.esc(String(n))}</dd></div>`;
     return `<dl class="hx-stats" aria-label="The history at a glance">${[
       tile(timeline.length, "Timeline entries"),
-      tile(sites.length, `Historic places (${placesN}) and hotels (${staysN})`),
-      tile(nhl.length, "National Historic Landmarks"),
-      tile(nr.length, "On the National Register"),
+      tile(sites.length, `Historic places (${placesN}) and places to stay (${staysN})`),
+      tile(nhl.length, "Tied to a National Historic Landmark"),
+      tile(nr.length, "Tied to a National Register listing"),
     ].join("")}</dl>`;
   }
 
@@ -161,7 +177,7 @@ ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(r
   const oneDay = checkedDays.size === 1 ? [...checkedDays][0] : "";
   function siteRow(root, { kind, rec }) {
     const her = rec.heritage;
-    const y = firstYear(her.built);
+    const y = yearNumeral(her.built);
     const q = norm([rec.aliases, areaName(rec.area), kind === "stay" ? "hotel" : ""].flat().filter(Boolean).join(" "));
     const src = (her.sources || [])[0] || rec.source_url;
     return `<li class="hs-item${kind === "stay" ? " is-stay" : ""}" id="hs-${h.attr(rec.id)}"${rec.region ? ` data-sheet="${rec.region}"` : ""}${her.era ? ` data-era="${her.era}"` : ""}${q ? ` data-q="${h.attr(q)}"` : ""}>`
@@ -179,14 +195,17 @@ ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(r
   function landmarkCard(root, { kind, rec }) {
     const d = (rec.heritage.designations || []).filter(isNHL)[0];
     const photo = img.has(kind === "stay" ? "s" : "p", rec.id);
-    return `<article class="card hx-lm" data-sheet="${rec.region}">`
+    const src = (rec.heritage.sources || [])[0] || rec.source_url;
+    const q = norm([rec.aliases, areaName(rec.area), kind === "stay" ? "hotel" : ""].flat().filter(Boolean).join(" "));
+    return `<article class="card hx-lm" id="lm-${h.attr(rec.id)}" data-sheet="${rec.region}"${rec.heritage.era ? ` data-era="${rec.heritage.era}"` : ""}${q ? ` data-q="${h.attr(q)}"` : ""}>`
       + img.plate(root, kind === "stay" ? "s" : "p", rec)
       + `<div class="card-body"><p class="card-kicker">${c.sheetBadge(rec.region)} · <span>${h.esc(kindLabel(kind, rec))}</span> · <span>${h.esc(areaName(rec.area))}</span></p>`
       + `<h4 class="card-title"><a class="stretched" href="${root}${hrefOf(kind, rec)}">${h.esc(rec.name)}</a></h4>`
-      + `<p class="hx-lm-des">${h.esc(`National Historic Landmark${d && d.year ? `, ${d.year}` : ""}`)}</p>`
+      + `<p class="hx-lm-des">${h.esc(`${d ? d.name : "National Historic Landmark"}${d && d.year ? `, ${d.year}` : ""}`)}</p>`
       + (rec.summary ? `<p class="card-sum">${h.esc(rec.summary)}</p>` : "")
       + `<p class="card-meta">${builtHtml(rec)}</p>`
       + (photo ? `<p class="hx-credit">${img.creditHtml(kind === "stay" ? "s" : "p", rec.id)}</p>` : "")
+      + (src ? `<p class="hs-src hx-lm-src">Source: ${h.extLink(src, h.esc(h.hostOf(src)))}${rec.checked ? ` · Checked ${h.esc(h.fmtDateY(rec.checked))}` : ""}</p>` : "")
       + `</div>${c.starButton(rec.id, rec.name, { kind: kind === "stay" ? "s" : "p" })}</article>`;
   }
   function register(root) {
@@ -194,7 +213,7 @@ ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(r
     return bySheet.map(({ r, list }) => {
       const areas = AREA_IDS.map((a) => ({ a, list: h.sortBy(list.filter((x) => x.rec.area === a), (x) => firstYear(x.rec.heritage.built) ?? 9999, (x) => x.rec.name.toLowerCase()) })).filter((g) => g.list.length);
       return `<div class="hs-sheet" data-sheet="${r}" data-filter-group>
-<h3 class="hs-sheet-h">${h.bullet(r, "lg")}<span>${h.esc(REGIONS[r].name)}</span><span class="hs-n">${h.esc(count(list.length, "site", "sites"))}</span></h3>
+<h3 class="hs-sheet-h">${h.bullet(r, "lg")}<a href="${root}${h.regionHref(r)}">${h.esc(REGIONS[r].name)}</a><span class="hs-n">${h.esc(count(list.length, "site", "sites"))}</span></h3>
 ${areas.map(({ a, list: al }) => `<div class="hs-area" data-filter-group><h4 class="hs-area-h"><a href="${root}areas/${a}.html">${h.esc(areaName(a))}</a><span class="hs-n">${al.length}</span></h4><ul class="hs-list">${al.map((x) => siteRow(root, x)).join("")}</ul></div>`).join("\n")}
 </div>`;
     }).join("\n");
@@ -214,12 +233,12 @@ ${c.toolbar({ search: { label: "Search the timeline and the historic sites", pla
 
   const toc = [["eras", "The seven eras"], ...eras.filter((e) => e.entries.length).map((e) => [`era-${e.era}`, ERA_NAME[e.era]]), ["sites", "Historic sites"], ...(routeEras.length ? [["walk", "Walk the history"]] : []), ["how", "How this page is made"]];
   const lede = timeline.length
-    ? `${count(timeline.length, "dated moment", "dated moments")} in the region's history, from ${tlDate(first).approx ? "about " : ""}${tlDate(first).year} to ${tlDate(last).approx ? "about " : ""}${tlDate(last).year}, and ${count(sites.length, "historic place and hotel", "historic places and hotels")} you can visit. Every entry links to its source.`
-    : `The historic places and hotels you can visit, ${sites.length} in all. Every entry links to its source.`;
+    ? `${count(timeline.length, "dated moment", "dated moments")} in the region's history, from ${dateWords(tlDate(first))} to ${dateWords(tlDate(last))}, and ${count(sites.length, "historic place", "historic places")} you can visit${staysN ? `, ${staysN} of them ${staysN === 1 ? "a place" : "places"} to stay` : ""}. Every entry links to its source.`
+    : `The historic places you can visit, ${sites.length} in all. Every entry links to its source.`;
 
   return [{
     path: "history.html", nav: "history", title: "History & heritage",
-    description: `Tampa Bay in seven eras: ${timeline.length} dated moments from the first peoples to today, and ${sites.length} historic places and hotels you can visit, each linked to its source.`,
+    description: `Tampa Bay in seven eras: ${timeline.length} dated moments from the first peoples to today, and ${sites.length} historic places and places to stay you can visit, each linked to its source.`,
     toc, features: ["history"],
     body: (root) => `${c.pageHead({ kicker: "History & heritage", num: 3, title: "Tampa Bay in seven eras", lede })}
 <section class="section hx-top" id="eras" aria-labelledby="eras-h">
@@ -230,15 +249,15 @@ ${stats()}
 </section>
 <div class="hx-filtered" data-filter-root>
 ${filterBar()}
-<div data-filter-list data-filter-items=".tl-item, .hs-item">
+<div data-filter-list data-filter-items=".tl-item, .hs-item, .hx-lm">
 <div class="hx-timeline">
 <p class="hx-empty" data-hx-empty="tl" hidden>No timeline entries match. <button class="btn btn-ghost btn-sm" type="button" data-filter-clear>Clear the filters</button></p>
 ${eras.map((e) => eraSection(root, e)).join("\n")}
 </div>
 <section class="section hx-sites" id="sites" aria-labelledby="sites-h">
 <div class="sec-head oxford"><p class="sec-kicker label">${h.icon("landmark")}Heritage · ${h.esc(count(sites.length, "site", "sites"))}</p><h2 id="sites-h">Historic sites you can visit</h2><a class="more" href="${root}map.html?layers=heritage">On the map${h.icon("arrow-r")}</a></div>
-<p class="hx-intro">Every place and hotel in this guide with a heritage entry: ${h.esc(`${placesN} places and ${staysN} hotels`)}, grouped by sheet and area. Each shows the year it was built as its sources give it, its designations in words and the source of its history (the full list is on its page)${oneDay ? `, all checked ${h.esc(h.fmtDateY(oneDay))}` : ""}. ${h.esc(count(sites.filter((x) => !(x.rec.heritage.designations || []).length).length, "site has", "sites have"))} no designation listed.</p>
-${nhl.length ? `<div class="hx-lms"><h3 class="sub-h">The ${h.esc(count(nhl.length, "National Historic Landmark", "National Historic Landmarks"))} in this guide</h3><div class="grid hx-lm-grid">${h.sortBy(nhl, (x) => firstYear(x.rec.heritage.built) ?? 9999).map((x) => landmarkCard(root, x)).join("")}</div></div>` : ""}
+<p class="hx-intro">Every place in this guide with a heritage entry, ${h.esc(`${count(placesN, "place", "places")} to see and ${count(staysN, "place", "places")} to stay`)}, grouped by sheet and area. Each shows the year it was built as its sources give it, its designations in words and the source of its history (the full list is on its page)${oneDay ? `, all checked ${h.esc(h.fmtDateY(oneDay))}` : ""}. ${h.esc(count(sites.filter((x) => !(x.rec.heritage.designations || []).length).length, "site has", "sites have"))} no designation listed.</p>
+${nhl.length ? `<div class="hx-lms" data-filter-group><h3 class="sub-h">${h.esc(`${count(nhl.length, "place", "places")} tied to a National Historic Landmark`)}</h3><div class="grid hx-lm-grid">${h.sortBy(nhl, (x) => firstYear(x.rec.heritage.built) ?? 9999).map((x) => landmarkCard(root, x)).join("")}</div></div>` : ""}
 <h3 class="sub-h hx-reg-h">The register, by sheet and area <span class="result-count" data-hx-count="sites">${h.esc(count(sites.length, "site", "sites"))}</span></h3>
 <p class="hx-empty" data-hx-empty="sites" hidden>No historic sites match. <button class="btn btn-ghost btn-sm" type="button" data-filter-clear>Clear the filters</button></p>
 ${register(root)}
@@ -248,8 +267,8 @@ ${register(root)}
 ${routeEras.length ? c.section({ id: "walk", title: "Walk the history", kicker: "Passages", root, more: { href: "passages.html", label: "All passages" },
   body: `<ul class="hx-walks">${routeEras.map(({ rt, hs }) => `<li data-sheet="${rt.region}"><a href="${root}passages.html#r-${h.attr(rt.id)}">${h.bullet(rt.region)}<span><span class="t">${h.esc(rt.title)}</span><span class="w">${h.esc(`${count(rt.stopsResolved.length, "stop", "stops")}, ${hs.length} of them historic sites`)}</span></span></a></li>`).join("")}</ul>` }) : ""}
 ${c.section({ id: "how", title: "How this page is made", kicker: "Sources", root, body: `<div class="prose hx-how">
-<p>Each timeline entry is our own short summary of the pages linked under it. Dates are printed as precisely as those pages give them: a year alone when they name no month or day, and "No exact date" when they give only a period.</p>
-<p>The historic sites come from the heritage entries of places and hotels in this guide. A designation is listed only when a source names it; the year built is the sources' own wording.</p>
+<p>Each timeline entry is our own short summary of the pages linked under it. Dates are printed as precisely as those pages give them: a day or a month when they name one, a year alone when they name only the year, "About" when the year is approximate, a decade when they give only the decade, and "No exact date" when the entry's text states no year (the year then only places it on the timeline).</p>
+<p>The historic sites come from the heritage entries of places and places to stay in this guide. A designation is listed only when a source names it, with its own name (a landmark or listing named in parentheses is part of the place, not the whole of it); the year built is the sources' own wording.</p>
 <p>${imagesShown ? `${h.esc(count(imagesShown, "entry shows", "entries show"))} a rights-cleared image, each with its creator, license and a link to its page.` : "No timeline images are shown yet: this guide shows only rights-cleared images it has downloaded, each with its credit."}</p>
 </div>` })}`,
   }];
@@ -262,7 +281,7 @@ export function search(ctx) {
     const d = tlDate(t);
     return {
       k: "tl", id: t.id, t: t.title,
-      s: `${d.approx ? "About " : ""}${d.day ? `${d.day}, ` : ""}${d.year} · ${vocab.ERA_NAME[t.era]}`,
+      s: `${d.approx || d.about ? "About " : ""}${d.day ? `${d.day}, ` : ""}${d.year} · ${vocab.ERA_NAME[t.era]}`,
       u: `history.html#tl-${t.id}`, r: t.region,
       g: [...new Set([vocab.ERA_NAME[t.era], db.byId.area.get(t.area)?.name, ...t.links.map((l) => l.rec.name)].filter(Boolean))].join(" "),
       i: ctx.img.path("t", t.id),

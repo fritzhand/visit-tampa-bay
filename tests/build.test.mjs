@@ -246,7 +246,8 @@ const BROKEN = [
   ["a broken srcset", extraPage("<h1>X</h1><img src=\"../assets/tokens.css\" srcset=\"../assets/img/p/nope-960.webp 960w\" alt=\"\" width=\"1\" height=\"1\">"), "broken link ../assets/img/p/nope-960.webp"],
   ["a font url() that does not resolve", edit("site/css/tokens.css", (s) => s.replace(/url\((['"]?)fonts\/archivo-roman-latin\.woff2/, "url($1fonts/nope.woff2")), "does not resolve"],
   ["a search entry that does not resolve", (dir) => write(dir, "build/pages/zz-search.mjs", `export function pages() { return []; }\nexport function search() { return [{ k: "pg", id: "zz", t: "ZZ", u: "zz-nowhere.html" }]; }\n`), "assets/data/search.json"],
-  ["an image manifest entry without its file", (dir) => write(dir, "data/images.json", JSON.stringify({ "p/tampa-theatre": { file: "img/p/tampa-theatre.webp", w: 640, h: 427, credit: "X / Wikimedia Commons (CC BY 4.0)", license: "cc-by" } })), "site/img/p/tampa-theatre.webp does not exist"],
+  // a file name the images pass never writes (the real site/img/p/ holds downloaded images the test copy includes)
+  ["an image manifest entry without its file", (dir) => write(dir, "data/images.json", JSON.stringify({ "p/tampa-theatre": { file: "img/p/tampa-theatre-missing.webp", w: 640, h: 427, credit: "X / Wikimedia Commons (CC BY 4.0)", license: "cc-by" } })), "site/img/p/tampa-theatre-missing.webp does not exist"],
 ];
 
 for (const [name, mutate, expected] of BROKEN) {

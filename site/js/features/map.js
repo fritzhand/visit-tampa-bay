@@ -252,6 +252,7 @@ export function mountMap(el, opts = {}) {
   /* the neatline margin: minute bands in ink and paper at the chart's real coordinates, labels top and left */
   function grat(x0, y0, w, h) {
     const M = S.meta, s = S.v.s, W = S.vw, H = S.vh, T = GRAT.t, L = GRAT.l, B = GRAT.b, R = GRAT.r, bw = GRAT.band;
+    if (W < L + R + 40 || H < T + B + 40) return;
     const [latTop, lngLeft] = unproject(x0, y0, M), [latBot, lngRight] = unproject(x0 + w, y0 + h, M);
     const ppmLat = (M.sx * s) / 60, ppmLng = (M.sx * M.k * s) / 60;
     const labLat = LAB_STEPS.find((m) => m * ppmLat >= 64) || 60, labLng = LAB_STEPS.find((m) => m * ppmLng >= 96) || 60;
@@ -265,7 +266,7 @@ export function mountMap(el, opts = {}) {
       const a = X(m / 60), b = X((m + bLng) / 60);
       if (b < L || a > W - R) continue;
       const xa = Math.max(L, a), xb = Math.min(W - R, b);
-      if (Math.round(m / bLng) % 2 === 0) out.push(`<rect class="g-ink" x="${xa.toFixed(1)}" y="${T - bw}" width="${(xb - xa).toFixed(1)}" height="${bw}"/><rect class="g-ink" x="${xa.toFixed(1)}" y="${H - B}" width="${(xb - xa).toFixed(1)}" height="${bw}"/>`);
+      if (Math.round(m / bLng) % 2 === 0 && xb > xa) out.push(`<rect class="g-ink" x="${xa.toFixed(1)}" y="${T - bw}" width="${(xb - xa).toFixed(1)}" height="${bw}"/><rect class="g-ink" x="${xa.toFixed(1)}" y="${H - B}" width="${(xb - xa).toFixed(1)}" height="${bw}"/>`);
       if (Math.abs(m / labLng - Math.round(m / labLng)) < 1e-6 && a > L + 36 && a < W - R - 36) {
         lines.push(`M${a.toFixed(1)} ${T}V${H - B}`);
         labs.push(`<text class="g-lab" x="${a.toFixed(1)}" y="${T - bw - 2}" text-anchor="middle">${dm(m / 60, labLng, "E", "W")}</text>`);
@@ -276,7 +277,7 @@ export function mountMap(el, opts = {}) {
       const a = Y((m + bLat) / 60), b = Y(m / 60);
       if (b < T || a > H - B) continue;
       const ya = Math.max(T, a), yb = Math.min(H - B, b);
-      if (Math.round(m / bLat) % 2 === 0) out.push(`<rect class="g-ink" x="${L - bw}" y="${ya.toFixed(1)}" width="${bw}" height="${(yb - ya).toFixed(1)}"/><rect class="g-ink" x="${W - R}" y="${ya.toFixed(1)}" width="${bw}" height="${(yb - ya).toFixed(1)}"/>`);
+      if (Math.round(m / bLat) % 2 === 0 && yb > ya) out.push(`<rect class="g-ink" x="${L - bw}" y="${ya.toFixed(1)}" width="${bw}" height="${(yb - ya).toFixed(1)}"/><rect class="g-ink" x="${W - R}" y="${ya.toFixed(1)}" width="${bw}" height="${(yb - ya).toFixed(1)}"/>`);
       const yl = Y(m / 60);
       if (Math.abs(m / labLat - Math.round(m / labLat)) < 1e-6 && yl > T + 34 && yl < H - B - 34) {
         lines.push(`M${L} ${yl.toFixed(1)}H${W - R}`);
@@ -334,7 +335,7 @@ export function mountMap(el, opts = {}) {
       pts.push({ p, x, y });
     }
     const sel = pts.find((q) => q.p.id === S.sel);
-    const groups = cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 50 : 44);
+    const groups = cluster(pts.filter((q) => q !== sel), S.vw < 520 ? 56 : 44);
     if (sel) groups.push({ x: sel.x, y: sel.y, members: [sel] });
     const keep = new Set(), placed = [];
     for (const g of groups) {

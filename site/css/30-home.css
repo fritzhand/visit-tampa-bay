@@ -215,3 +215,8 @@ table.dist td { white-space: nowrap; }
 }
 .stat.mid .st-v { font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem); }
 .ix-map .ix-badge .bullet { position: static; width: 40px; height: 24px; }
+@media (max-width: 559px) { .home-sig .card > .plate-type, .home-sig .card > .photo { aspect-ratio: 5 / 2; } }
+.si-photo { margin: calc(-1 * var(--sp-4) + 6px) calc(-1 * var(--sp-4) + 6px) 0; }
+.si-photo .photo { aspect-ratio: 16 / 7; }
+.si-credit { margin-top: 4px; font-size: var(--fs-xs); color: var(--text-faint); overflow-wrap: anywhere; }
+.si-credit a { color: var(--text-muted); }

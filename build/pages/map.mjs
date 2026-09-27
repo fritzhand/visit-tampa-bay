@@ -206,12 +206,12 @@ export function pages(ctx) {
 <p class="map-attrib-line">Basemap: US Census Bureau TIGER/Line (public domain). Place coordinates include data © OpenStreetMap contributors, ODbL (${h.extLink(OSM_URL, OSM_URL)}).</p>
 </div>`;
 
-  const offRows = (root) => sortBy(off, (o) => ["place", "stay", "experience", "event"].indexOf(o.kind), (o) => o.name.toLowerCase()).map((o) => `<li class="map-li is-off"><span class="map-mk mk-off" aria-hidden="true">–</span><span class="map-li-b"><a class="t" href="${root}${attr(o.href)}"${o.dlg?.e ? ` data-open-event="${attr(o.dlg.e)}"` : o.dlg?.x ? ` data-open-experience="${attr(o.dlg.x)}"` : ""}>${esc(o.name)}</a><span class="m">${esc([o.meta, "no coordinates listed"].filter(Boolean).join(" · "))}</span></span></li>`).join("");
+  const offRows = (root) => sortBy(off, (o) => ["place", "stay", "experience", "event"].indexOf(o.kind), (o) => o.name.toLowerCase()).map((o) => `<li class="map-li is-off"><span class="map-mk mk-off" aria-hidden="true">–</span><span class="map-li-b"><a class="t stretched" href="${root}${attr(o.href)}"${o.dlg?.e ? ` data-open-event="${attr(o.dlg.e)}"` : o.dlg?.x ? ` data-open-experience="${attr(o.dlg.x)}"` : ""}>${esc(o.name)}</a><span class="m">${esc([o.meta, "no coordinates listed"].filter(Boolean).join(" · "))}</span></span></li>`).join("");
 
   return [{
     path: "map.html", nav: "map", title: "Map", features: ["map"], pageClass: "page-map",
     description: `A chart of Tampa Bay with the guide's ${fmtN(model.numbered)} numbered places, its historic sites, places to stay, tour departures, events and transit stops, each linked to its page and source.`,
-    body: (root) => `${c.pageHead({ num: 1, kicker: `Plan · ${fmtN(onChart)} on the chart`, title: "Map", cls: "ph-compact", lede: "Everything in this guide that has coordinates, on one chart of the bay. Choose what to show and zoom in: the list follows what is in view." })}
+    body: (root) => `${c.pageHead({ num: 1, kicker: `Plan · ${fmtN(onChart)} on the chart`, title: "Map", cls: "ph-compact", lede: "Everything in this guide that has coordinates, on one chart. Choose what to show and zoom in: the list follows what is in view." })}
 <div class="map-page" data-map-page data-default-layers="${DEFAULT_LAYERS.join(" ")}">
 <a class="skip-list" href="#map-list">Skip the chart and go to the list</a>
 <div class="map-main">

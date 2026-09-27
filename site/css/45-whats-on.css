@@ -184,7 +184,7 @@
 
 /* the sheet badge without an SVG (i.ev-sb, decorative): the sheet's shape (clip or mask) in its fill, its chart code in
    Archivo on top; at the end of the kicker, whose area names the place in words */
-.ev-sb { flex: none; display: inline-flex; margin-left: auto; }
+.ev-sb { flex: none; display: inline-flex; margin-left: auto; font-style: normal; }
 .ev-sb::before {
   content: var(--ink-code); flex: none; display: grid; place-items: center; width: 40px; height: 24px;
   background: var(--ink-fill); color: var(--ink-on);
@@ -229,7 +229,7 @@
 .ev-also::before { content: ""; flex: none; width: 18px; height: 12px; background: var(--ink-fill); clip-path: var(--ink-shape); }
 .ev-also > a { font-weight: var(--wght-strong); color: var(--text); text-decoration: none; }
 .ev-also > a:hover { text-decoration: underline; text-underline-offset: 0.16em; }
-.ev-also .w { color: var(--text-muted); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
+.ev-also .w { color: var(--text-muted); font-size: var(--fs-xs); font-variant-numeric: tabular-nums; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
 .ev-also[data-cancelled] > a { text-decoration: line-through; color: var(--text-muted); }
 .wo-empty { margin: var(--sp-5) 0; }
 

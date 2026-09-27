@@ -23,7 +23,7 @@
      charts → { bay: { meta, labels, file: "basemap.svg" } | null, region: { … file: "region.svg" } | null }
               the two charts of data/map.json (the bay chart, and `region`: the whole guide box, site/map/region.svg)
      chartOf(points) → "bay" | "region" | null: the chart that holds every point with coordinates (bay first)
-     chartMap(root, points, { chart = "auto", label, minHalfM = 900, ratio = 4 / 3, cls, labels = 3, whole = false, grid = true })
+     chartMap(root, points, { chart = "auto", label, minHalfM = 900, ratio = 4 / 3 | "auto", cls, labels = 3, whole = false, grid = true })
          a static crop (no JS) of that chart fitting every point: .mini-map.chart-map[data-chart] > <svg> with
          <use href="…#bm"/> (+ the graticule lines <use href="…#bm-grid"/>), up to `labels` basemap labels clear of the
          pins, and one .pin.pin-{kind}[data-sheet] per point ({ lat, lng, kind = "place", sheet, n, ic, title }): the
@@ -32,12 +32,14 @@
          "" when no chart holds a point (callers print the honest line). Points off the chosen chart are dropped.
    }
    ============================================================ */
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { esc, attr } from "../core/util.mjs";
 import { icon } from "../core/icons.mjs";
 import { metaOf, crop, onMap, project, cluster } from "../../site/js/lib/geo.js";
 
-const REGION_SVG = new URL("../../site/map/region.svg", import.meta.url);
+const REGION_SVG = new URL("../../site/map/region.svg", import.meta.url), BAY_SVG = new URL("../../site/map/basemap.svg", import.meta.url);
+/** Does a chart file carry its graticule group (#bm-grid)? (A basemap without one gets no graticule lines.) */
+const hasGrid = (u) => { try { return /\sid="bm-grid"/.test(readFileSync(u, "utf8")); } catch { return false; } };
 
 export function makeMiniMaps(ctx) {
   const { db, c } = ctx;
@@ -111,9 +113,6 @@ export function makeMiniMaps(ctx) {
     const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
     x0 = Math.min(Math.max(0, cx - w / 2), meta.W - w); y0 = Math.min(Math.max(0, cy - hh / 2), meta.H - hh);
     const pct = (v, a, b) => (((v - a) / b) * 100).toFixed(2);
-    // places too close to tell apart at this size share a medallion with their count (the lists name them)
-    const groups = whole ? pts.map((p) => ({ members: [{ p }] })) : cluster(pts.map((p) => ({ p, x: (px(p.xy[0]) / 100) * refW, y: (py(p.xy[1]) / 100) * (refW / ratio) })), 26);
-    const med = (g) => { const ms = g.members.map((m) => m.p), x = ms.reduce((a, m) => a + m.xy[0], 0) / ms.length, y = ms.reduce((a, m) => a + m.xy[1], 0) / ms.length; return `<span class="pin pin-cluster" style="left: ${f2(px(x))}%; top: ${f2(py(y))}%" title="${attr(ms.some((m) => m.n != null) ? `Nos. ${ms.map((m) => m.n).filter((n) => n != null).join(", ")}` : `${ms.length} places`)}"><span>${ms.length}</span></span>`; };
     const pin = (p) => `<span class="pin pin-${attr(p.kind || "place")}"${p.sheet ? ` data-sheet="${attr(p.sheet)}"` : ""} style="left: ${pct(p.xy[0], x0, w)}%; top: ${pct(p.xy[1], y0, hh)}%"><span>${p.n != null ? esc(p.n) : ""}</span></span>`;
     return `<div class="mini-map area-map${cls ? " " + cls : ""}" style="--map-ratio: ${w.toFixed(1)} / ${hh.toFixed(1)}"${label ? ` role="img" aria-label="${attr(label)}"` : ""}><svg viewBox="${x0.toFixed(1)} ${y0.toFixed(1)} ${w.toFixed(1)} ${hh.toFixed(1)}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><use href="${root}assets/map/basemap.svg#bm"/></svg>${pts.map(pin).join("")}</div>`;
   }
@@ -121,8 +120,8 @@ export function makeMiniMaps(ctx) {
   /* ---------- the two charts, and a static crop of either (the Map lane) ---------- */
   const regionMeta = meta && db.map.region && existsSync(REGION_SVG) ? metaOf(db.map.region) : null;
   const charts = {
-    bay: meta ? { id: "bay", meta, labels: LABELS, file: "basemap.svg" } : null,
-    region: regionMeta ? { id: "region", meta: regionMeta, labels: db.map.region.labels || [], file: "region.svg" } : null,
+    bay: meta ? { id: "bay", meta, labels: LABELS, file: "basemap.svg", grid: hasGrid(BAY_SVG) } : null,
+    region: regionMeta ? { id: "region", meta: regionMeta, labels: db.map.region.labels || [], file: "region.svg", grid: hasGrid(REGION_SVG) } : null,
   };
   function chartOf(points) {
     const pts = points.filter((p) => p.lat != null && p.lng != null);
@@ -131,17 +130,20 @@ export function makeMiniMaps(ctx) {
   }
   // land names wide, water names in italic: rough widths (px at 12px) to keep labels clear of pins and each other
   const LABEL_KINDS = { water: 0, city: 1, town: 2, beach: 3, island: 3, hood: 4, area: 5, park: 6 };
-  function chartMap(root, points, { chart = "auto", label = "", minHalfM = 900, ratio = 4 / 3, cls = "", labels = 3, whole = false, grid = true, refW = 640, bare = false } = {}) {
+  function chartMap(root, points, { chart = "auto", label = "", minHalfM = 900, ratio: ratio0 = 4 / 3, cls = "", labels = 3, whole = false, grid = true, refW = 640, bare = false } = {}) {
     const id = chart === "auto" ? chartOf(points) || (charts.bay && points.some((p) => onMap(meta, p.lat, p.lng)) ? "bay" : null) : chart;
     const ch = id && charts[id];
     if (!ch) return "";
     const M = ch.meta, pts = points.filter((p) => onMap(M, p.lat, p.lng)).map((p) => ({ ...p, xy: project(p.lat, p.lng, M) }));
+    let ratio = ratio0 === "auto" && whole ? M.W / M.H : ratio0;
     let x0, y0, w, hh, mg = 0;
     if (whole) { mg = 24; x0 = -mg; y0 = -mg; w = M.W + 2 * mg; hh = M.H + 2 * mg; }
     else {
       if (!pts.length) return "";
       const xs = pts.map((p) => p.xy[0]), ys = pts.map((p) => p.xy[1]);
       const minU = (2 * minHalfM) / M.mPerUnit, pad = Math.max(300 / M.mPerUnit, 0.12 * Math.max(Math.max(...xs) - Math.min(...xs), Math.max(...ys) - Math.min(...ys)));
+      // ratio "auto": the points' own shape (a long beach strip gets a tall chart), between 0.6 and 1.9
+      if (ratio === "auto") ratio = Math.min(1.9, Math.max(0.6, (Math.max(...xs) - Math.min(...xs) + 2 * pad) / Math.max(1, Math.max(...ys) - Math.min(...ys) + 2 * pad)));
       x0 = Math.min(...xs) - pad; y0 = Math.min(...ys) - pad;
       w = Math.max(Math.max(...xs) + pad - x0, minU); hh = Math.max(Math.max(...ys) + pad - y0, minU / ratio);
       if (w / hh > ratio) hh = w / ratio; else w = hh * ratio;
@@ -179,11 +181,11 @@ export function makeMiniMaps(ctx) {
     const href = `${root}assets/map/${ch.file}`;
     const vb = [x0, y0, w, hh].map((v) => v.toFixed(1)).join(" ");
     const inner = whole
-      ? `<rect x="${x0}" y="${y0}" width="${w}" height="${hh}" style="fill:var(--surface)"/><svg x="0" y="0" width="${M.W}" height="${M.H}" viewBox="0 0 ${M.W} ${M.H}"><use href="${href}#bm"/></svg>${grid ? `<use href="${href}#bm-grid"/>` : ""}`
-      : `<use href="${href}#bm"/>${grid ? `<use href="${href}#bm-grid"/>` : ""}`;
+      ? `<rect x="${x0}" y="${y0}" width="${w}" height="${hh}" style="fill:var(--surface)"/><svg x="0" y="0" width="${M.W}" height="${M.H}" viewBox="0 0 ${M.W} ${M.H}"><use href="${href}#bm"/></svg>${grid && ch.grid ? `<use href="${href}#bm-grid"/>` : ""}`
+      : `<use href="${href}#bm"/>${grid && ch.grid ? `<use href="${href}#bm-grid"/>` : ""}`;
     const body = `<svg class="map-base" viewBox="${vb}" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">${inner}</svg><span class="mini-labels" aria-hidden="true">${lab}</span>${groups.map((g) => (g.members.length > 1 ? med(g) : pin(g.members[0].p))).join("")}`;
     if (bare) return body;
-    return `<div class="mini-map chart-map${cls ? " " + cls : ""}" data-chart="${id}" style="--map-ratio: ${w.toFixed(1)} / ${hh.toFixed(1)}"${label ? ` role="img" aria-label="${attr(label)}"` : ""}>${body}</div>`;
+    return `<div class="mini-map chart-map${cls ? " " + cls : ""}" data-chart="${id}" style="--map-ratio: ${w.toFixed(1)} / ${hh.toFixed(1)}; --map-ar: ${(w / hh).toFixed(3)}"${label ? ` role="img" aria-label="${attr(label)}"` : ""}>${body}</div>`;
   }
 
   return { miniMap, areaMap, coordLine, directions, directionsTo, where, mapStatus, nearbyOf, distLabel, meta, charts, chartOf, chartMap };

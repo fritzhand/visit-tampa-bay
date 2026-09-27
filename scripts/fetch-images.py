@@ -10,6 +10,7 @@ network or Pillow. Never hotlink (CLAUDE.md rule 8).
   python3 scripts/fetch-images.py --retry-failed    # also retry downloads that failed on an earlier run
   python3 scripts/fetch-images.py --offline         # no network: .cache/img-src only (a miss is reported)
   python3 scripts/fetch-images.py --only p/tampa-theatre,t/first-gasparilla-1904   # just these keys (re-processed)
+  python3 scripts/fetch-images.py --max-minutes 30  # stop downloading after 30 min, then finish with what is cached
   python3 scripts/fetch-images.py --prefetch research/media-commons/media-commons.json
                                                     # only warm the cache from another media list (a slice or a
                                                     # media.json); writes no rendition and no manifest entry
@@ -20,7 +21,8 @@ Inputs   data/media.json (license public-domain cc0 cc-by cc-by-sa us-gov; credi
          Media about an event or a series have no image kind in the engine and are reported, not processed.
          One image per subject: the first media record for it in media.json; for a timeline entry, the first of its
          own `media` list (the history page captions the figure with that record's title), then the rest.
-         PRIMARY below records hand-picked exceptions.
+         PRIMARY below records hand-picked exceptions. Fetch order (so a run cut short has done what matters most):
+         regions, areas, signature places, historic places and stays, timeline entries, other places, other stays.
 Fetch    Standard-size thumbnails only. Wikimedia serves direct requests only at its standard thumbnail widths (20 40
          60 120 250 330 500 960 1280 1920 3840; https://www.mediawiki.org/wiki/Common_thumbnail_sizes), so a 1600px
          thumbnail would be refused, and it answers requests for originals from this network with 429 "use thumbnail
@@ -32,7 +34,10 @@ Etiquette  User-Agent "tampa-bay-chartbook/1.0 (https://github.com/fritzhand/vis
          WMF User-Agent policy's form), one request at a time and at least 1.5 s between requests to a host (doubling,
          up to 16 s, after every 429, easing back after 8 answers in a row), Retry-After honored (up to 15 min), exponential backoff (5, 10, 20, 40, 80 s)
          on 429 and 5xx without one, and after 4 images in a row are refused for rate limiting the run stops fetching
-         (those images are "deferred" and retried by the next plain run). Every response's outcome is logged.
+         (those images are "deferred" and retried by the next plain run); with --max-minutes it pauses 10 min
+         instead and goes on until the time is up. Every response's outcome is logged.
+         Ctrl-C, SIGTERM or --max-minutes stop the downloads the same way: images already cached are still
+         processed and the manifest is written, so a run can be interrupted at any time and resumed by the next one.
 Cache    .cache/img-src/<sha1(fetch url)>.<ext> (the downloads, gitignored) + index.json (url → file, bytes, type,
          date; or the error, its HTTP status and date) + requests.log (one line per HTTP response: status,
          Retry-After, bytes) + state.json (manifest key → src, media, pipeline) + report.json (the last run).
@@ -53,6 +58,7 @@ import io
 import json
 import os
 import re
+import signal
 import ssl
 import sys
 import time
@@ -80,10 +86,11 @@ MANIFEST = os.path.join(DATA, "images.json")
 PIPELINE = 1  # bump when the processing below changes: renditions made by an older pipeline are redone
 
 UA = f"tampa-bay-chartbook/1.0 (https://github.com/fritzhand/visit-tampa-bay) python-urllib/{sys.version_info[0]}.{sys.version_info[1]}"
-GAP, GAP_MAX = 1.5, 16.0         # seconds between request starts to one host; the gap doubles after a 429
+GAP, GAP_MAX = 1.5, 64.0         # seconds between request starts to one host; the gap doubles after a 429
 BACKOFF = (5, 10, 20, 40, 80)    # seconds to wait before attempts 2..6 when there is no Retry-After
 RETRY_AFTER_MAX = 900
 STOP_AFTER_RATE_LIMITED = 4      # images refused in a row for rate limiting → stop fetching this run
+PAUSE = 600                      # … or, with --max-minutes, pause this many seconds and go on
 MAX_BYTES = 60 * 1024 * 1024
 Image.MAX_IMAGE_PIXELS = 250_000_000
 
@@ -197,6 +204,39 @@ class FetchError(Exception):
         self.code = code
 
 
+class Deferred(Exception):
+    """Not downloaded in this run (it stopped fetching); the next plain run tries again."""
+
+
+class Stopped(Exception):
+    """SIGTERM, Ctrl-C or --max-minutes: stop fetching, keep what is done, write the manifest."""
+
+
+STOP = {"flag": False, "why": "", "deadline": None}
+
+
+def stop_requested():
+    if not STOP["flag"] and STOP["deadline"] is not None and time.monotonic() >= STOP["deadline"]:
+        STOP["flag"], STOP["why"] = True, "--max-minutes reached"
+    return STOP["flag"]
+
+
+def on_signal(signum, _frame):
+    STOP["flag"], STOP["why"] = True, f"signal {signal.Signals(signum).name}"
+
+
+def nap(seconds):
+    """time.sleep that wakes up for a stop request."""
+    end = time.monotonic() + seconds
+    while True:
+        if stop_requested():
+            raise Stopped(STOP["why"])
+        left = end - time.monotonic()
+        if left <= 0:
+            return
+        time.sleep(min(left, 0.5))
+
+
 class Limiter:
     def __init__(self):
         self.last = {}
@@ -207,7 +247,9 @@ class Limiter:
         gap = self.gap.get(host, GAP)
         delay = self.last.get(host, 0) + gap - time.monotonic()
         if delay > 0:
-            time.sleep(delay)
+            nap(delay)
+        if stop_requested():
+            raise Stopped(STOP["why"])
         self.last[host] = time.monotonic()
 
     def slow(self, host):
@@ -215,9 +257,9 @@ class Limiter:
         self.ok[host] = 0
 
     def eased(self, host):
-        """After 8 answers in a row without a 429, shorten the gap again (never below GAP)."""
+        """After 4 answers in a row without a 429, shorten the gap again (never below GAP)."""
         self.ok[host] = self.ok.get(host, 0) + 1
-        if self.ok[host] >= 8 and self.gap.get(host, GAP) > GAP:
+        if self.ok[host] >= 4 and self.gap.get(host, GAP) > GAP:
             self.gap[host] = max(GAP, self.gap[host] * 0.75)
             self.ok[host] = 0
 
@@ -273,9 +315,10 @@ def fetch(url, events):
             if e.code in (429, 500, 502, 503, 504) and attempt < len(BACKOFF):
                 if e.code == 429:
                     LIMIT.slow(host)
+                # Retry-After is a minimum: the next attempt also waits out the host's (grown) gap in LIMIT.wait
                 wait = min(ra if ra is not None else BACKOFF[attempt], RETRY_AFTER_MAX)
-                log(f"    HTTP {e.code} from {host}; waiting {wait:.0f} s (attempt {attempt + 1})")
-                time.sleep(wait)
+                log(f"    HTTP {e.code} from {host}; waiting {max(wait, LIMIT.gap.get(host, GAP)):.0f} s (attempt {attempt + 1})")
+                nap(wait)
                 continue
             if e.code == 429:
                 raise RateLimited(last)
@@ -284,7 +327,7 @@ def fetch(url, events):
             last, last_code = f"{type(e).__name__}: {getattr(e, 'reason', e)}", None
             events.append({"url": url, "error": last, "at": time.strftime("%Y-%m-%dT%H:%M:%S")})
             if attempt < len(BACKOFF):
-                time.sleep(BACKOFF[attempt])
+                nap(BACKOFF[attempt])
                 continue
     if last_code == 429:
         raise RateLimited(last)
@@ -311,12 +354,23 @@ class Originals:
         self.idx = load_json(os.path.join(CACHE, "index.json"), {}) or {}
         self.events = []
         self.fetched = 0
+        self.no_network = None  # set when the run stops fetching: cached originals are still processed
 
     def cached(self, url):
         rec = self.idx.get(url)
         if rec and rec.get("file") and os.path.exists(os.path.join(CACHE, rec["file"])):
             with open(os.path.join(CACHE, rec["file"]), "rb") as f:
                 return f.read()
+        # a download whose index entry was lost (the run was killed before it saved): the file name is sha1(url)
+        base = hashlib.sha1(url.encode("utf-8")).hexdigest()
+        for ext in ("jpg", "png", "gif", "tif", "webp"):
+            path = os.path.join(CACHE, f"{base}.{ext}")
+            if os.path.exists(path):
+                with open(path, "rb") as f:
+                    data = f.read()
+                if sniff(data) == ext:
+                    self.idx[url] = {"file": f"{base}.{ext}", "bytes": len(data), "type": None, "at": time.strftime("%Y-%m-%d"), "recovered": True}
+                    return data
         return None
 
     def get(self, urls):
@@ -325,6 +379,10 @@ class Originals:
             data = self.cached(url)
             if data is not None:
                 return data, url
+        if self.no_network:
+            raise Deferred(self.no_network)
+        if self.args.offline and not any(self.idx.get(u, {}).get("error") and self.idx[u].get("code") != 429 for u in urls):
+            raise Deferred("not cached (offline)")
         errors = []
         for url in urls:
             rec = self.idx.get(url)
@@ -353,6 +411,7 @@ class Originals:
             with open(os.path.join(CACHE, name), "wb") as f:
                 f.write(data)
             self.idx[url] = {"file": name, "bytes": len(data), "type": ctype, "at": time.strftime("%Y-%m-%d")}
+            self.save()
             return data, url
         raise FetchError("; ".join(errors) or "no URL to fetch")
 
@@ -468,6 +527,19 @@ def meta(rec):
 
 
 # ---------------------------------------------------------------- data → jobs
+def rank(kind, rec):
+    """Fetch order: regions, areas, signature places, historic places and stays, timeline, other places, stays."""
+    if kind == "r":
+        return 0
+    if kind == "a":
+        return 1
+    if kind == "p" and rec.get("signature"):
+        return 2
+    if kind in ("p", "s") and rec.get("heritage"):
+        return 3
+    return {"t": 4, "p": 5, "s": 6}.get(kind, 7)
+
+
 def plan_jobs():
     """→ (jobs [{ key, kind, id, rec, alts }], skipped { reason: [media ids] })."""
     media = media_list(load_json(os.path.join(DATA, "media.json"), []))
@@ -509,8 +581,11 @@ def plan_jobs():
             cands = sorted(cands, key=lambda m: order.get(m["id"], len(order)))
         if key in PRIMARY and PRIMARY[key] in by_id:
             cands = [by_id[PRIMARY[key]]] + [m for m in cands if m["id"] != PRIMARY[key]]
-        jobs.append({"key": key, "kind": kind, "id": rid, "rec": cands[0], "alts": [m["id"] for m in cands[1:]]})
-    jobs.sort(key=lambda j: (KINDS.index(j["kind"]), j["id"]))
+        subject = ids[{v[0]: k for k, v in SUBJECTS.items()}[kind]][rid]
+        jobs.append({"key": key, "kind": kind, "id": rid, "rec": cands[0], "alts": [m["id"] for m in cands[1:]],
+                     "rank": rank(kind, subject)})
+    # the most visible images first, so a run cut short by rate limiting has done what matters most
+    jobs.sort(key=lambda j: (j["rank"], KINDS.index(j["kind"]), j["id"]))
     return jobs, skipped
 
 
@@ -528,6 +603,9 @@ def prefetch(path, args):
         try:
             orig.get(urls)
             got += 1
+        except Stopped as e:
+            log(f"  stopped ({e}) at {m.get('id')}")
+            break
         except RateLimited as e:
             failed[m.get("id")] = str(e)
             log(f"  rate limited at {m.get('id')}: stopping (run again later)")
@@ -551,8 +629,13 @@ def main():
     ap.add_argument("--offline", action="store_true", help="no network; use .cache/img-src only")
     ap.add_argument("--only", help="comma-separated manifest keys to (re)process, e.g. p/tampa-theatre,a/ybor-city")
     ap.add_argument("--prefetch", metavar="MEDIA_JSON", help="only download the originals another media list names")
+    ap.add_argument("--max-minutes", type=float, help="stop downloading after this long, then finish with what is cached")
     args = ap.parse_args()
     os.makedirs(CACHE, exist_ok=True)
+    signal.signal(signal.SIGTERM, on_signal)
+    signal.signal(signal.SIGINT, on_signal)
+    if args.max_minutes:
+        STOP["deadline"] = time.monotonic() + args.max_minutes * 60
     if args.prefetch:
         return prefetch(args.prefetch, args)
 
@@ -583,22 +666,34 @@ def main():
     orig = Originals(args)
     results, failures, deferred = {}, {}, {}
     rate_limited_run = 0
-    stopped = False
     t0 = time.monotonic()
     for n, j in enumerate(todo, 1):
-        if stopped:
-            deferred[j["key"]] = "not tried: the run stopped after repeated rate limiting"
-            continue
         urls = fetch_plan(j["rec"])
         try:
             data, src = orig.get(urls)
             rate_limited_run = 0
+        except Deferred as e:
+            deferred[j["key"]] = str(e)
+            continue
+        except Stopped as e:
+            orig.no_network = f"not downloaded: the run stopped fetching ({e}); the next run tries again"
+            log(f"  stopping downloads ({e}); processing what is cached")
+            deferred[j["key"]] = orig.no_network
+            continue
         except RateLimited as e:
             deferred[j["key"]] = f"{e} (rate limited; the next run retries it)"
             rate_limited_run += 1
             if rate_limited_run >= STOP_AFTER_RATE_LIMITED:
-                log(f"  {rate_limited_run} images in a row refused for rate limiting: stopping downloads for this run")
-                stopped = True
+                if STOP["deadline"] is not None:  # a time budget was given: pause, then keep going until it runs out
+                    log(f"  {rate_limited_run} images in a row refused for rate limiting: pausing downloads for {PAUSE // 60} min")
+                    rate_limited_run = 0
+                    try:
+                        nap(PAUSE)
+                    except Stopped as s_:
+                        orig.no_network = f"not downloaded: the run stopped fetching ({s_}); the next run tries again"
+                else:
+                    log(f"  {rate_limited_run} images in a row refused for rate limiting: stopping downloads for this run")
+                    orig.no_network = "not downloaded: the run stopped after repeated rate limiting; the next run tries again"
             continue
         except FetchError as e:
             failures[j["key"]] = str(e)
@@ -687,7 +782,7 @@ def main():
         for k, e in sorted(failures.items()):
             log(f"  {k}: {e}{' (previous image kept)' if k in kept_after_failure else ''}")
     if deferred:
-        log(f"\n{len(deferred)} image(s) deferred by rate limiting (run the script again later):")
+        log(f"\n{len(deferred)} image(s) deferred: not downloaded this run (run the script again; it resumes):")
         for k, e in sorted(deferred.items()):
             log(f"  {k}: {e}{' (previous image kept)' if k in kept_after_failure else ''}")
     return 1 if failures or deferred else 0

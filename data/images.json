@@ -1,4 +1,217 @@
 {
+  "a/apollo-beach": {
+    "alt": "Appollo Beach.",
+    "creator": "Ssriram mt",
+    "credit": "Ssriram mt / Wikimedia Commons (CC BY-SA 3.0)",
+    "file": "img/a/apollo-beach.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/a/apollo-beach-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media": "m-apollo-beach",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Appollo_Beach1.JPG",
+    "w": 480
+  },
+  "a/bradenton-anna-maria": {
+    "alt": "Bradenton, Florida: Iron Block Building.",
+    "creator": "Ebyabe",
+    "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+    "file": "img/a/bradenton-anna-maria.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/a/bradenton-anna-maria-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media": "m-bradenton-anna-maria",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Bradenton_FL_Iron_Block03.jpg",
+    "w": 480
+  },
+  "a/brandon": {
+    "alt": "Westfield Shoppingtown in Brandon, east of Tampa.",
+    "creator": "FightingRaven531",
+    "credit": "FightingRaven531 / Wikimedia Commons (public domain)",
+    "file": "img/a/brandon.webp",
+    "h": 320,
+    "lg": {
+      "file": "img/a/brandon-lg.webp",
+      "h": 800,
+      "w": 1200
+    },
+    "license": "public-domain",
+    "media": "m-brandon",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Westfieldmall.jpg",
+    "w": 480
+  },
+  "a/channel-district": {
+    "alt": "View of Channelside Drive from the parking garage.",
+    "creator": "Divinek",
+    "credit": "Divinek / Wikimedia Commons (CC BY 3.0)",
+    "file": "img/a/channel-district.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/a/channel-district-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "media": "m-channel-district",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Channelside_Bay_Plaza_in_Tampa,_FL.jpg",
+    "w": 480
+  },
+  "a/clearwater-beach": {
+    "alt": "Clearwater Beach.",
+    "creator": "Evan Nichols",
+    "credit": "Evan Nichols / Wikimedia Commons (CC BY 3.0)",
+    "file": "img/a/clearwater-beach.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/a/clearwater-beach-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "media": "m-clearwater-beach",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Clearwater_Beach_-_panoramio_(2).jpg",
+    "w": 480
+  },
+  "p/american-victory-ship-mariners-museum": {
+    "alt": "The World War II cargo ship American Victory moored at a pier in Tampa.",
+    "creator": "Fl295",
+    "credit": "Fl295 / Wikimedia Commons (public domain)",
+    "file": "img/p/american-victory-ship-mariners-museum.webp",
+    "h": 360,
+    "license": "public-domain",
+    "media": "american-victory-ship-mariners-museum-ss-american-victory-at-its-tampa-berth",
+    "page_url": "https://commons.wikimedia.org/wiki/File:SS_AMERICAN_VICTORY.JPG",
+    "w": 480
+  },
+  "p/anclote-key-lighthouse": {
+    "alt": "The Anclote Key Lighthouse, an iron skeletal tower, at the southern tip of Anclote Key.",
+    "creator": "United States Coast Guard, PA2 Tasha Tully",
+    "credit": "United States Coast Guard, PA2 Tasha Tully / Wikimedia Commons (Public domain)",
+    "file": "img/p/anclote-key-lighthouse.webp",
+    "h": 650,
+    "lg": {
+      "file": "img/p/anclote-key-lighthouse-lg.webp",
+      "h": 1200,
+      "w": 887
+    },
+    "license": "public-domain",
+    "media": "anclote-key-lighthouse-photo",
+    "page_url": "https://commons.wikimedia.org/wiki/File:USCG_Anclote_Keys_Lighthouse.jpg",
+    "w": 480
+  },
+  "p/andrews-memorial-chapel": {
+    "alt": "Andrews Memorial Chapel in Dunedin, seen from outside.",
+    "creator": "Ebyabe",
+    "credit": "Ebyabe / Wikimedia Commons (CC BY 2.5)",
+    "file": "img/p/andrews-memorial-chapel.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/p/andrews-memorial-chapel-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "media": "andrews-memorial-chapel-photo",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Dunedin_Andr_Mem_Chapel01.jpg",
+    "w": 480
+  },
+  "p/babe-zaharias-golf-course": {
+    "alt": "A fairway and trees at the Babe Zaharias Golf Course.",
+    "creator": "Kalbbes",
+    "credit": "Kalbbes / Wikimedia Commons (CC BY-SA 4.0)",
+    "file": "img/p/babe-zaharias-golf-course.webp",
+    "h": 349,
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media": "babe-zaharias-golf-course-babe-zaharias-golf-course",
+    "page_url": "https://commons.wikimedia.org/wiki/File:View_of_Babe_Zaharias_golf_course_-_Tampa.jpg",
+    "w": 480
+  },
+  "p/bing-rooming-house-museum": {
+    "alt": "The Bing Rooming House in Plant City, seen from the street.",
+    "creator": "Ebyabe",
+    "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+    "file": "img/p/bing-rooming-house-museum.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/p/bing-rooming-house-museum-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media": "bing-rooming-house-museum-photo",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Plant_City_FL_Bing_Rmng_House01.JPG",
+    "w": 480
+  },
+  "p/bok-tower-gardens": {
+    "alt": "The pink and gray Singing Tower at Bok Tower Gardens, reflected in a lily pond framed by palms and oaks.",
+    "creator": "Milesb1217",
+    "credit": "Milesb1217 / Wikimedia Commons (CC BY-SA 4.0)",
+    "file": "img/p/bok-tower-gardens.webp",
+    "h": 640,
+    "lg": {
+      "file": "img/p/bok-tower-gardens-lg.webp",
+      "h": 1200,
+      "w": 900
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "media": "bok-tower-reflection-photo",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Bok_Tower_at_Work.jpg",
+    "w": 480
+  },
+  "p/braden-castle-park-historic-district": {
+    "alt": "A lane of small white cottages with metal roofs and awnings in the Braden Castle Park Historic District, Bradenton.",
+    "creator": "Ebyabe",
+    "credit": "Ebyabe / Wikimedia Commons (CC BY-SA 3.0)",
+    "file": "img/p/braden-castle-park-historic-district.webp",
+    "h": 360,
+    "lg": {
+      "file": "img/p/braden-castle-park-historic-district-lg.webp",
+      "h": 900,
+      "w": 1200
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media": "braden-castle-park-photo",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Bradenton_FL_Braden_Castle_Park_HD01.jpg",
+    "w": 480
+  },
+  "p/centro-asturiano-de-tampa": {
+    "alt": "Black-and-white photograph of the Centro Asturiano clubhouse with its tall columns.",
+    "creator": "Florida Memory",
+    "credit": "Florida Memory / Wikimedia Commons (public domain)",
+    "file": "img/p/centro-asturiano-de-tampa.webp",
+    "h": 307,
+    "license": "public-domain",
+    "media": "centro-asturiano-de-tampa-centro-asturiano-about-1947",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Centro_Asturiano_in_Ybor_City,_Florida_(7899760104).jpg",
+    "w": 480
+  },
+  "p/columbia-restaurant-ybor-city": {
+    "alt": "Photograph of the Columbia Restaurant building in Ybor City in 1973.",
+    "creator": "Florida Memory",
+    "credit": "Florida Memory / Wikimedia Commons (public domain)",
+    "file": "img/p/columbia-restaurant-ybor-city.webp",
+    "h": 377,
+    "license": "public-domain",
+    "media": "columbia-restaurant-ybor-city-the-columbia-restaurant-1973",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Columbia_Restaurant-_Ybor_City,_Florida_(7335201518).jpg",
+    "w": 480
+  },
   "p/palma-ceia-spring": {
     "alt": "Black-and-white photograph of the original spring-fed pool at Palma Ceia in 1906.",
     "credit": "Unknown author / Wikimedia Commons (public domain)",
@@ -29,6 +242,56 @@
     "license_url": "https://creativecommons.org/licenses/by/2.5",
     "media": "tampa-theatre-tampa-theatre",
     "page_url": "https://commons.wikimedia.org/wiki/File:TampaTheatre01.jpg",
+    "w": 480
+  },
+  "r/stpete": {
+    "alt": "Nighttime skyline of downtown St. Petersburg.",
+    "creator": "Jamie Beverly from St. Petersburg, Florida, USA",
+    "credit": "Jamie Beverly from St. Petersburg, Florida, USA / Wikimedia Commons (CC BY-SA 2.0)",
+    "file": "img/r/stpete.webp",
+    "h": 319,
+    "lg": {
+      "file": "img/r/stpete-lg.webp",
+      "h": 798,
+      "w": 1200
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "media": "m-stpete",
+    "page_url": "https://commons.wikimedia.org/wiki/File:Skyline_StPetersburgFL.jpg",
+    "w": 480
+  },
+  "r/tampa": {
+    "alt": "Tampa, Florida.",
+    "creator": "Averette (compilation)",
+    "credit": "Averette (compilation) / Wikimedia Commons (CC BY-SA 3.0)",
+    "file": "img/r/tampa.webp",
+    "h": 622,
+    "lg": {
+      "file": "img/r/tampa-lg.webp",
+      "h": 1200,
+      "w": 927
+    },
+    "license": "cc-by-sa",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "media": "m-tampa",
+    "page_url": "https://commons.wikimedia.org/wiki/File:City_of_Tampa_montage.jpg",
+    "w": 480
+  },
+  "t/anclote-key-lighthouse-1887": {
+    "alt": "The Anclote Key Lighthouse, an iron skeleton tower, at the southern tip of Anclote Key",
+    "creator": "United States Coast Guard, PA2 Tasha Tully",
+    "credit": "PA2 Tasha Tully, U.S. Coast Guard / Wikimedia Commons (public domain, U.S. government work)",
+    "file": "img/t/anclote-key-lighthouse-1887.webp",
+    "h": 650,
+    "lg": {
+      "file": "img/t/anclote-key-lighthouse-1887-lg.webp",
+      "h": 1200,
+      "w": 887
+    },
+    "license": "us-gov",
+    "media": "tl-anclote-key-lighthouse-2005",
+    "page_url": "https://commons.wikimedia.org/wiki/File:USCG_Anclote_Keys_Lighthouse.jpg",
     "w": 480
   },
   "t/tampa-theatre-opens-1926": {

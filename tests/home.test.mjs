@@ -245,9 +245,15 @@ test("with a basemap: the sheet chart numbers its buoys, prints its limits, keys
     write(d, "data/map.json", JSON.stringify({ ...core, region }));
     write(d, "site/map/basemap.svg", `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${core.projection.viewBox.join(" ")}"><g id="bm"></g><g id="bm-grid"></g></svg>`);
     write(d, "site/map/region.svg", `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${region.projection.viewBox.join(" ")}"><g id="bm"></g><g id="bm-grid"></g></svg>`);
+    // a sheet photo (data/images.json "r/<region id>") shows on the sheet page and its plate, with its credit
+    write(d, "site/img/r/tampa.webp", "RIFF0000WEBP");
+    write(d, "data/images.json", JSON.stringify({ "r/tampa": { file: "img/r/tampa.webp", w: 960, h: 540, credit: "Test Creator / Wikimedia Commons (CC BY 4.0)", license: "cc-by", alt: "Downtown Tampa from the river" } }));
     const r = build(d);
     assert.equal(r.status, 0, r.stderr);
     const t = read(d, "docs/tampa.html");
+    assert.match(t, /<figure class="photo-fig sheet-photo"><img[^>]*src="assets\/img\/r\/tampa\.webp"[^>]*alt="Downtown Tampa from the river"[\s\S]*?Test Creator \/ Wikimedia Commons/);
+    assert.ok(!read(d, "docs/st-petersburg.html").includes("sheet-photo"), "no image, no photo (never a stand-in)");
+    assert.match(read(d, "docs/index.html"), /<figure class="si-photo">[\s\S]*?<figcaption class="si-credit">Test Creator/);
     assert.match(t, /<div class="mini-map area-map sheet-map-view" style="--map-ratio: [\d.]+ \/ [\d.]+" role="img" aria-label="Chart of Tampa:[^"]*"><svg viewBox="[\d. ]+"[^>]*><use href="assets\/map\/basemap\.svg#bm"\/>/);
     const buoys = [...t.matchAll(/class="pin pin-place[^"]*" data-sheet="tampa"[^>]*><span>([^<]+)<\/span>/g)].map((m) => m[1]);
     assert.deepEqual(buoys, ["1"], "one signature place in the fixture, buoy 1");

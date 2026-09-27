@@ -65,10 +65,11 @@ export function kit(ctx) {
     if (!ds.length) return "";
     return ds.length === 1 ? `Checked ${h.fmtDateY(ds[0])}` : `Checked ${h.fmtDateRange(ds[0], ds[ds.length - 1])}, ${ds[ds.length - 1].slice(0, 4)}`;
   }
-  /** A link that also sets the list filter in place (site/js/features/stay.js): key=value pairs on this page. */
-  const filterLink = (root, page, params, html, cls = "") => {
+  /** A link that also sets the list filter in place (site/js/features/stay.js): key=value pairs on this page.
+      `hash` is where the link lands without JS (the list is then complete): an area's own group when given. */
+  const filterLink = (root, page, params, html, cls = "", hash = "list") => {
     const qs = Object.entries(params).map(([k, v]) => `${k}=${[].concat(v).sort().join(",")}`).join("&");
-    return `<a${cls ? ` class="${cls}"` : ""} href="${root}${page}?${attr(qs)}#list" data-set-filter="${attr(qs)}">${html}</a>`;
+    return `<a${cls ? ` class="${cls}"` : ""} href="${root}${page}?${attr(qs)}#${attr(hash)}" data-set-filter="${attr(qs)}">${html}</a>`;
   };
   return { sortName, select, toolbar, clearBtn, countLine, empty, checked, filterLink };
 }
@@ -135,7 +136,7 @@ ${openNoted.length ? `<details class="stay-noted"><summary>${h.icon("chev-d")}<s
         const ap = a.ll ? nearestAirport(a.ll[0], a.ll[1]) : null;
         const cl = closedN(a.stays);
         return `<tr data-sheet="${r.id}"><th scope="row"><a href="${root}areas/${attr(a.id)}.html">${esc(a.name)}</a></th>`
-          + `<td class="num ch-n" data-label="Stays">${K.filterLink(root, "stay.html", { a: a.id }, `<b>${a.stays.length}</b><span class="ch-w"> ${a.stays.length === 1 ? "stay" : "stays"}</span><span class="sr-only">: show them</span>`)}${cl ? `<span class="ch-closed">${cl} closed</span>` : ""}</td>`
+          + `<td class="num ch-n" data-label="Stays">${K.filterLink(root, "stay.html", { a: a.id }, `<b>${a.stays.length}</b><span class="ch-w"> ${a.stays.length === 1 ? "stay" : "stays"}</span><span class="sr-only">: show them</span>`, "", `area-${a.id}`)}${cl ? `<span class="ch-closed">${cl} closed</span>` : ""}</td>`
           + `<td class="ch-kinds" data-label="Kinds">${esc(kindsText(a.stays))}</td>`
           + `<td class="num ch-beach" data-label="Beachfront">${beach(a.stays) ? `<b>${beach(a.stays)}</b><span class="ch-w"> beachfront</span>` : `<span class="faint">0<span class="ch-w"> beachfront</span></span>`}</td>`
           + (airportCol ? `<td class="ch-air" data-label="Nearest airport">${ap ? `<span class="ch-code">${esc(ap.t.code || "")}</span> ${esc(miles(ap.d))}` : c.unk("No center listed")}</td>` : "")
@@ -197,6 +198,7 @@ ${meta ? `<div class="stay-map-pane js-only" data-view-pane="map" hidden>
 <div class="map-legend"><span><i class="lg-stay"></i>A place to stay</span><span><i class="lg-cluster"></i>Several: select to zoom in</span><span class="map-attrib-t">${esc(db.map.attribution || "")}</span></div>
 </div>
 <p class="stay-map-off" data-map-off${offMap ? "" : " hidden"}>${offMap ? `${h.plural(offMap, "place to stay is", "places to stay are")} not on this chart (outside its area, or no coordinates listed). The list shows them.` : ""}</p>
+<p class="stay-map-more"><a href="${root}map.html?layers=stays">${h.icon("map")}Places to stay on the full map, with what's on and things to do</a></p>
 </div>` : ""}
 </div>
 ${K.empty("places to stay")}
@@ -218,7 +220,17 @@ ${listSection(root)}
   /* ================= stays/<id>.html ================= */
   const EAT = new Set(vocab.EAT_DRINK_KINDS);
   const isEat = (p) => p.kindsAll.some((k) => EAT.has(k));
-  const walkNote = (d, a, b) => `${cards.distLabel(d)}, about ${walkMinutes(a, b)} min walk`;
+  // a campground is often placed at its park's own point: "same position", never "0 m, about 0 min walk"
+  const SAME = 25;
+  const walkNote = (d, a, b) => (d < SAME ? "same position in this guide" : `${cards.distLabel(d)}, about ${walkMinutes(a, b)} min walk`);
+  const farNote = (d) => (d < SAME ? "same position in this guide" : `${cards.distLabel(d)} away`);
+  /** Places and experiences within m meters of a stay, nearest first. (db.nearby skips points under 0.5 m away, meant
+      for a record's own point; a stay is never a place, so here a park at the very same point must count.) */
+  function nearOf(ll, m) {
+    const here = P(ll), out = [];
+    for (const [kind, arr] of [["place", db.places], ["experience", db.experiences]]) for (const r of arr) if (r.ll) { const d = haversine(here, P(r.ll)); if (d <= m) out.push({ kind, rec: r, d }); }
+    return h.sortBy(out, (x) => x.d, (x) => K.sortName(x.rec.name));
+  }
 
   /** One row per event within `m` meters of a point (every listed day in data-days; a long run by data-run). */
   function nearEvents(ll, m = 2000) {
@@ -249,7 +261,7 @@ ${listSection(root)}
     if (!list.length) return `<section class="section" id="near-events" aria-labelledby="near-events-h">${head}<p class="unk">No event in this guide is listed within 2 km of ${esc(s.name)}.</p><p><a href="${root}whats-on.html?a=${attr(s.area)}">${h.icon("calendar")}What's on in ${esc(db.byId.area.get(s.area)?.name || "the area")}</a></p></section>`;
     const FIRST = 8;
     const rows = list.map((x) => eventRowNear(root, x));
-    return `<section class="section" id="near-events" aria-labelledby="near-events-h" data-near-events data-n="${list.length}">${head}
+    return `<section class="section" id="near-events" aria-labelledby="near-events-h" data-near-events data-n="${list.length}" data-window-end="${attr(w.end)}">${head}
 <p class="nx-count"><span data-near-n>${h.plural(list.length, "event")} listed this season</span>. Select one for its dates, times and source.</p>
 <ol class="nx-list" data-near-list>${rows.slice(0, FIRST).join("")}</ol>
 ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.icon("chev-d")}<span data-near-more-l>${h.plural(rows.length - FIRST, "more event")}</span></summary><ol class="nx-list">${rows.slice(FIRST).join("")}</ol></details>` : ""}
@@ -261,7 +273,7 @@ ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.ic
   function nearbyBlocks(root, s) {
     if (!s.ll) return "";
     const here = P(s.ll);
-    const near = db.nearby(s.ll[0], s.ll[1], 1200, { kinds: ["place", "experience"] });
+    const near = nearOf(s.ll, 1200);
     const places = near.filter((x) => x.kind === "place" && x.rec.status !== "closed");
     const todo = places.filter((x) => !isEat(x.rec)).slice(0, 8), eat = places.filter((x) => isEat(x.rec)).slice(0, 6);
     const exps = near.filter((x) => x.kind === "experience").slice(0, 5);
@@ -273,8 +285,28 @@ ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.ic
       blk("near-exp", "Tours and trips that start here", "daymark", exps.map((x) => cards.experienceRow(root, x.rec, { note: note(x) })).join(""), exps.length),
     ].filter(Boolean);
     const head = `<div class="sec-head oxford"><p class="sec-kicker label">${h.icon("walk")}Within 1.2 km in a straight line · walking times are estimates</p><h2 id="nearby-h">Within walking distance</h2></div>`;
-    if (!cols.length) return `<section class="section" id="nearby" aria-labelledby="nearby-h">${head}<p class="unk">No place in this guide is listed within 1.2 km.</p></section>`;
+    if (!cols.length) {
+      // nothing within walking distance (a campground in a park, a motel on a highway): the nearest places instead, by straight line
+      const far = nearOf(s.ll, 16000).filter((x) => x.kind === "experience" || x.rec.status !== "closed").slice(0, 5);
+      const rows = far.map((x) => (x.kind === "place" ? cards.placeRow(root, x.rec, { note: farNote(x.d) }) : cards.experienceRow(root, x.rec, { note: farNote(x.d) }))).join("");
+      return `<section class="section" id="nearby" aria-labelledby="nearby-h">${head}<p class="unk">No place in this guide is listed within 1.2 km.</p>${far.length ? `<h3 class="sub-h near-far-h">${h.icon("compass")}The nearest places in this guide</h3><ul class="rows near-far">${rows}</ul><p class="faint near-note">Straight-line distances, an estimate: too far to walk; the drive is longer.</p>` : ""}</section>`;
+    }
     return `<section class="section" id="nearby" aria-labelledby="nearby-h">${head}<div class="near-cols">${cols.join("")}</div><p class="faint near-note">Walking time: the straight-line distance × 1.3, at 80 m a minute. Real routes can be longer (bridges, causeways, busy roads).</p></section>`;
+  }
+
+  /** A stay with no coordinates has no "nearby": point to its area instead (only lists that hold something). */
+  function aroundArea(root, s) {
+    if (s.ll) return "";
+    const a = db.byId.area.get(s.area);
+    const evN = (db.eventsByArea.get(s.area) || []).length;
+    const eatN = db.places.filter((p) => p.area === s.area && isEat(p)).length;
+    const links = [
+      `<a href="${root}areas/${attr(a.id)}.html">${h.icon("compass")}${esc(a.name)}: the area's page</a>`,
+      evN ? `<a href="${root}whats-on.html?a=${attr(a.id)}">${h.icon("calendar")}What's on in ${esc(a.name)} (${evN})</a>` : "",
+      eatN ? `<a href="${root}eat-drink.html?a=${attr(a.id)}#ea-${attr(a.id)}">${h.icon("fork-knife")}Eat and drink in ${esc(a.name)} (${eatN})</a>` : "",
+    ].filter(Boolean);
+    return `<section class="section" id="around" aria-labelledby="around-h"><div class="sec-head oxford"><p class="sec-kicker label">${h.icon("pin")}No position listed, so no distances</p><h2 id="around-h">Around ${esc(a.name)}</h2></div>
+<ul class="stay-around">${links.map((l) => `<li>${l}</li>`).join("")}</ul></section>`;
   }
 
   function moreStays(root, s) {
@@ -282,14 +314,20 @@ ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.ic
     const others = a.stays.filter((o) => o !== s);
     if (!others.length) return "";
     const withD = h.sortBy(others.map((o) => ({ o, d: s.ll && o.ll ? haversine(P(s.ll), P(o.ll)) : null })), (x) => (x.d == null ? 1e12 : x.d), (x) => K.sortName(x.o.name)).slice(0, 6);
-    return `<section class="section" id="more-stays" aria-labelledby="more-stays-h"><div class="sec-head oxford"><p class="sec-kicker label">${h.icon("anchor")}${esc(a.name)} · ${h.plural(a.stays.length, "place to stay", "places to stay")}</p><h2 id="more-stays-h">Other places to stay nearby</h2>${K.filterLink(root, "stay.html", { a: a.id }, `All ${a.stays.length} in ${esc(a.name)}${h.icon("arrow-r")}`, "more")}</div>
-<ul class="rows">${withD.map(({ o, d }) => cards.stayRow(root, o, { note: d != null ? `${cards.distLabel(d)} away` : "" })).join("")}</ul></section>`;
+    const byDist = withD.some((x) => x.d != null);
+    const kick = [a.name, h.plural(a.stays.length, "place to stay", "places to stay"), byDist ? "nearest first, in a straight line" : "A to Z"].join(" · ");
+    return `<section class="section" id="more-stays" aria-labelledby="more-stays-h"><div class="sec-head oxford"><p class="sec-kicker label">${h.icon("anchor")}${esc(kick)}</p><h2 id="more-stays-h">Other places to stay in ${esc(a.name)}</h2>${K.filterLink(root, "stay.html", { a: a.id }, `All ${a.stays.length} in ${esc(a.name)}${h.icon("arrow-r")}`, "more", `area-${a.id}`)}</div>
+<ul class="rows">${withD.map(({ o, d }) => cards.stayRow(root, o, { note: d != null ? farNote(d) : "" })).join("")}</ul></section>`;
   }
 
   function timelineBlock(root, s) {
     if (!s.timeline.length) return "";
     return `<section class="section" id="on-the-timeline" aria-labelledby="tl-h"><div class="sec-head oxford"><p class="sec-kicker label">${h.icon("landmark")}History & heritage</p><h2 id="tl-h">On the timeline</h2></div>
-<ul class="rows stay-tl">${h.sortBy(s.timeline, (t) => t.year).map((t) => `<li class="row"><a href="${root}history.html#tl-${attr(t.id)}"><span class="stay-tl-y">${esc(t.date || String(t.year))}</span><span><span class="t">${esc(t.title)}</span><span class="w">${esc(t.text)}</span></span></a></li>`).join("")}</ul></section>`;
+<ul class="rows stay-tl">${h.sortBy(s.timeline, (t) => t.year, (t) => t.date || "").map((t) => {
+      // the year as the big numeral; a full date or a month, when the entry has one, in words on the line below the title
+      const d = t.date || "", when = /^\d{4}-\d{2}-\d{2}$/.test(d) ? h.fmtDateY(d) : /^\d{4}-\d{2}$/.test(d) ? h.fmtMonth(d) : "";
+      return `<li class="row"><a href="${root}history.html#tl-${attr(t.id)}"><span class="stay-tl-y">${esc(String(t.year ?? d.slice(0, 4)))}</span><span><span class="t">${esc(t.title)}</span>${when ? `<span class="w stay-tl-d">${esc(when)}</span>` : ""}<span class="w">${esc(t.text)}</span></span></a></li>`;
+    }).join("")}</ul></section>`;
   }
 
   function facts(root, s) {
@@ -298,7 +336,7 @@ ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.ic
     const addr = s.address ? esc([s.address, s.city, [s.state, s.zip].filter(Boolean).join(" ")].filter(Boolean).join(", ")) : c.unk("Address not listed");
     return c.facts(root, [
       ["Kind", esc(STAY_KIND_LABEL[s.kind] || s.kind)],
-      ["Where", `<a href="${root}areas/${attr(s.area)}.html">${esc(area?.name || "")}</a><span class="fact-sheet">${c.sheetBadge(s.region, { short: false })}</span>`],
+      ["Where", `<a href="${root}areas/${attr(s.area)}.html">${esc(area?.name || "")}</a><a class="fact-sheet" href="${root}${ctx.nav.regionHref(s.region)}">${c.sheetBadge(s.region, { short: false })}<span class="sr-only"> (the sheet's page)</span></a>`],
       ["Address", addr],
       ["Phone", s.phone ? `<a href="tel:${attr(s.phone.replace(/[^\d+]/g, ""))}">${esc(s.phone)}</a>` : c.unk("Phone not listed")],
       ["Website", s.url ? h.extLink(s.url, esc(h.hostOf(s.url))) : c.unk("Website not listed")],
@@ -321,12 +359,19 @@ ${rows.length > FIRST ? `<details class="nx-more" data-near-more><summary>${h.ic
       w === "on" ? `<a class="btn btn-secondary btn-sm" href="${root}map.html?focus=stay:${attr(s.id)}">${h.icon("map")}On the map</a>` : "",
     ].filter(Boolean).join("");
     const geo = s.geo_source && GEO_WORDS[s.geo_source] ? `Position from ${GEO_WORDS[s.geo_source]}.` : "";
+    const label = `Map: ${s.name}, ${db.byId.area.get(s.area)?.name || ""}`;
+    // the bay chart's crop; beyond it the region chart (the whole guide box, as place pages do), else the coordinate line
+    const regionMap = s.ll && w === "off" && cards.chartMap ? cards.chartMap(root, [{ lat: s.ll[0], lng: s.ll[1], kind: "stay", sheet: s.region, ic: "anchor" }], { chart: "region", label, minHalfM: 7000, labels: 4 }) : "";
+    const map = !s.ll ? cards.miniMap(root, null, null) : regionMap || cards.miniMap(root, s.ll[0], s.ll[1], { sheet: s.region, label, halfWidthM: 1100 });
     return `<section class="stay-where" id="where" aria-labelledby="where-h"><h2 class="sub-h" id="where-h">${h.icon("pin")}Where it is</h2>
-${s.ll ? cards.miniMap(root, s.ll[0], s.ll[1], { sheet: s.region, label: `Map: ${s.name}, ${db.byId.area.get(s.area)?.name || ""}`, halfWidthM: 1100 }) : cards.miniMap(root, null, null)}
-${s.address ? `<p class="stay-addr">${esc([s.address, s.city, [s.state, s.zip].filter(Boolean).join(" ")].filter(Boolean).join(", "))}</p>` : ""}
+<div class="stay-where-map">${map}</div>
+<div class="stay-where-t">
+${s.address ? `<p class="stay-addr">${esc([s.address, s.city, [s.state, s.zip].filter(Boolean).join(" ")].filter(Boolean).join(", "))}</p>` : `<p>${c.unk("Address not listed")}</p>`}
 ${btns ? `<p class="btn-row stay-dir">${btns}</p>` : ""}
-${w === "off" && s.ll ? `<p class="faint stay-geo">Outside this guide's chart; the directions links still work.</p>` : ""}
+${w === "off" && s.ll ? `<p class="faint stay-geo">${regionMap ? "Beyond the bay chart: shown on the region chart." : "Outside this guide's chart; the directions links still work."}</p>` : ""}
+${!s.ll ? `<p class="faint stay-geo">${s.address ? "The source gives an address but no position, so this place has no buoy on the chart." : "The source gives no address and no position."}</p>` : ""}
 ${geo ? `<p class="faint stay-geo">${esc(geo)}</p>` : ""}
+</div>
 </section>`;
   }
 
@@ -341,7 +386,7 @@ ${geo ? `<p class="faint stay-geo">${esc(geo)}</p>` : ""}
   const detail = stays.map((s) => {
     const area = db.byId.area.get(s.area), region = db.byId.region.get(s.region);
     const by = builtYear(s);
-    const toc = [["glance", "At a glance"], ...(s.heritage ? [["heritage", "History and heritage"]] : []), ["where", "Where it is"], ...(s.ll ? [["near-events", "What's on nearby"], ["nearby", "Within walking distance"]] : []), ...(area.stays.length > 1 ? [["more-stays", "Other places to stay"]] : [])];
+    const toc = [["glance", "At a glance"], ["where", "Where it is"], ...(s.heritage ? [["heritage", "History and heritage"]] : []), ...(s.timeline.length ? [["on-the-timeline", "On the timeline"]] : []), ...(s.ll ? [["near-events", "What's on nearby"], ["nearby", "Within walking distance"]] : [["around", `Around ${area.name}`]]), ...(area.stays.length > 1 ? [["more-stays", "Other places to stay"]] : [])];
     return {
       path: `stays/${s.id}.html`, nav: "stay", title: s.name, pagenav: null, features: ["stay"], toc,
       description: s.summary || `${s.name}: ${STAY_KIND_LABEL[s.kind]} in ${area.name}, ${region.name}. Features and the official source.`,
@@ -365,6 +410,7 @@ ${geo ? `<p class="faint stay-geo">${esc(geo)}</p>` : ""}
           timelineBlock(root, s),
           nearEventsBlock(root, s),
           nearbyBlocks(root, s),
+          aroundArea(root, s),
           moreStays(root, s),
           `<div class="stay-src">${c.recordSource(s)}</div>`,
         ].filter(Boolean).join("\n");

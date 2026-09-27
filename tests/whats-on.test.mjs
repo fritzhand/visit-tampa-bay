@@ -18,6 +18,8 @@ import { dateTests, overlaps } from "../site/js/features/whats-on.js";
 
 const events = fx("events"), series = fx("series");
 const card = (html, id) => { const m = html.match(new RegExp(`<article class="ev" id="e-${id}"[\\s\\S]*?</article>`)); return m ? m[0] : null; };
+/** A month section's HTML (it holds day sections, so it runs to the next month, or to the annual calendar). */
+const monthOf = (html, key) => { const i = html.indexOf(`id="m-${key}"`); assert.ok(i > 0, `#m-${key}`); const ends = [html.indexOf('<section class="wo-month"', i + 1), html.indexOf('id="annual"', i), html.indexOf("</main>", i)].filter((x) => x > 0); return html.slice(i, Math.min(...ends)); };
 const section = (html, id) => { const i = html.indexOf(`id="${id}"`); assert.ok(i > 0, `#${id} exists`); const s = html.lastIndexOf("<section", i); const e = html.indexOf("</section>", i); return html.slice(s, e); };
 
 let dir, wo, trip;
@@ -62,7 +64,7 @@ test("cards sit under their first listing day; later days are rows under theirs"
   // day sections in date order, each inside its month
   const days = [...wo.matchAll(/<section class="wo-day" id="d-(\d{4}-\d\d-\d\d)"/g)].map((m) => m[1]);
   assert.deepEqual(days, [...days].sort(), "days in order");
-  for (const d of days) assert.ok(section(wo, `m-${d.slice(0, 7)}`), `month of ${d}`);
+  for (const d of days) assert.ok(monthOf(wo, d.slice(0, 7)).includes(`id="d-${d}"`), `${d} sits in its month`);
 });
 
 test("a long run is listed once, in the long-runs band, with its last day", () => {
@@ -81,7 +83,8 @@ test("unknowns print as unknowns, prices as the source gives them", () => {
   assert.match(card(wo, "guavaween-2026"), /<p class="ev-cost unk">Price not listed<\/p>/);
   assert.match(card(wo, "riverwalk-concert-2026-10-02"), /<span class="badge badge-free">Free<\/span>/);
   assert.match(card(wo, "lightning-home-game-2026-10-10"), /<span class="ev-cw">Fixture cost text<\/span>/);
-  assert.match(card(wo, "dali-fixture-exhibition-2026"), /<span class="unk">Hours not listed<\/span>/);
+  const run = events.find((e) => e.id === "dali-fixture-exhibition-2026");
+  assert.ok(card(wo, run.id).includes(run.time_text ? `<span class="ev-tt">${run.time_text}</span>` : '<span class="unk">Hours not listed</span>'), "a run's hours: the source's words, or not listed");
   const main = wo.slice(wo.indexOf("<main"), wo.indexOf("</main>")).replace(/<[^>]+>/g, " ");
   assert.doesNotMatch(main, /\b(undefined|null|NaN|TBA|TBD|N\/A)\b/, "no invented or leaked placeholder");
 });
@@ -92,7 +95,7 @@ test("counts are computed from the data", () => {
   assert.match(wo, new RegExp(`${live.filter((e) => e.is_free === true).length} are free`));
   // month bar: a link per month section, its number = distinct live events filed in that month (cards + rows)
   for (const m of wo.matchAll(/<section class="wo-month" id="m-(\d{4}-\d\d)"/g)) {
-    const key = m[1], s = section(wo, `m-${key}`);
+    const key = m[1], s = monthOf(wo, key);
     const ids = new Set([...s.matchAll(/<article class="ev" id="e-([a-z0-9-]+)"[^>]*>/g)].filter((x) => !x[0].includes("data-cancelled")).map((x) => x[1]));
     for (const r of s.matchAll(/<li class="ev-also"><a href="#e-([a-z0-9-]+)">/g)) ids.add(r[1]);
     assert.match(wo, new RegExp(`<a href="#m-${key}" data-m="${key}"><b>[^<]*(<small>\\d{4}</small>)?</b><span class="n tnum" data-wo-bn="${key}">${ids.size}</span></a>`), `bar count for ${key}`);

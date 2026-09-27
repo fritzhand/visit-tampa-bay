@@ -217,3 +217,8 @@
 }
 .sheet-map-view .map-label.city-l { color: var(--text-faint); letter-spacing: var(--track-label); }
 @media (max-width: 1099px) { .sc-side { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); align-items: start; } }
+
+/* ---------- the sheet's own photo (a rights-cleared image with its credit), when the guide has one ---------- */
+.sheet-photo { margin: 0 0 var(--sp-6); }
+.sheet-photo img { width: 100%; height: auto; aspect-ratio: 21 / 9; object-fit: cover; }
+@media (max-width: 559px) { .sheet-photo img { aspect-ratio: 3 / 2; } }

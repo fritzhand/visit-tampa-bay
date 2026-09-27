@@ -65,3 +65,8 @@
   .tour-fam-link > .i { grid-row: auto; width: 18px; height: 18px; padding: 7px; margin: 4px 0 2px 4px; }
   .tour-fam-t { font-size: var(--fs-base); }
 }
+
+/* ---------- review pass (2026-09-27): the map and filter links under the family index ---------- */
+.tour-more { display: flex; flex-wrap: wrap; gap: 0 var(--sp-5); margin: 0 0 var(--sp-3); }
+.tour-more a { display: inline-flex; align-items: center; gap: 6px; min-height: var(--tap); font-size: var(--fs-sm); font-weight: var(--wght-strong); }
+.tour-more .i { width: 16px; height: 16px; flex: none; }

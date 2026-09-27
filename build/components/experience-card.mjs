@@ -2,7 +2,8 @@
    build/components/experience-card.mjs · OWNER: E1 (engine). The Experiences lane may extend it additively.
    Experiences lane additions (2026-09-27): the options plate, symbol and note (defaults keep E1's markup, plus
    the source's status note under the badge of an experience that is not open, and the operator's season words
-   in the meta line), and KIND_ICON (a chart symbol per experience kind).
+   in the meta line), and KIND_ICON (a chart symbol per experience kind). Review pass: the facts' "Where" row
+   adds the operator's departs_text (.fact-note) when a departure place is also linked.
 
    makeExperienceCards(ctx) → {
      experienceCard(root, x, { headingLevel = 3, anchor = true, summary = true, plate = true, symbol = false, note = "auto" }),
@@ -53,7 +54,8 @@ export function makeExperienceCards(ctx) {
     return [
       ["Operator", x.url ? extLink(x.url, esc(x.operator)) : esc(x.operator)],
       ["Kind", esc(EXPERIENCE_KIND_LABEL[x.kind] || x.kind)],
-      ["Where", departsHtml(root, x)],
+      // the operator's own departure words too, when a place is linked (a slip, a lobby, "pick up at …")
+      ["Where", `${departsHtml(root, x)}${x.departs && x.departs_text ? `<span class="fact-note">${esc(x.departs_text)}</span>` : ""}`],
       ["Area", `<a href="${root}areas/${attr(x.area)}.html">${esc(areaName(x.area))}</a>`],
       ["Duration", x.duration_text ? esc(x.duration_text) : c.unk("Duration not listed")],
       ["Price", priceHtml(x)],

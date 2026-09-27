@@ -28,11 +28,12 @@ export const FAMILIES = [
 
 const SECTION_LIMIT = 6;
 
-/** Sheet order, then signature places first, then name (a leading "The" ignored). */
+/** Signature places first, then places with a cleared photo, then sheet order, then name (a leading "The" ignored):
+ *  a collapsed section opens on its defining places from every sheet. */
 export function sortPlaces(ctx, list) {
   const n = (p) => ctx.vocab.REGIONS[p.region]?.n ?? 9;
   const key = (p) => p.name.toLowerCase().replace(/^the\s+/, "");
-  return ctx.h.sortBy(list, n, (p) => (p.signature ? 0 : 1), key);
+  return ctx.h.sortBy(list, (p) => (p.signature ? 0 : 1), (p) => (ctx.img.has("p", p.id) ? 0 : 1), n, key);
 }
 
 /** The filter toolbar: search + view toggle, sheet chips, selects, free, clear, the live count.

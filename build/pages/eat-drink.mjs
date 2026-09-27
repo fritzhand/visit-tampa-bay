@@ -22,6 +22,11 @@ const DISTINCTIONS = [
   ["michelin-star", "Michelin star"], ["michelin-bib-gourmand", "Michelin Bib Gourmand"], ["michelin-recommended", "Michelin recommended"],
   ["james-beard-award", "James Beard Award"],
 ];
+/** How the "Why a place is here" box counts each distinction ("4 with a Michelin star"). */
+const DIST_COUNT = {
+  "michelin-star": "with a Michelin star", "michelin-bib-gourmand": "with a Michelin Bib Gourmand", "michelin-recommended": "recommended by the Michelin Guide",
+  "james-beard-award": "with a James Beard Award",
+};
 /** "Known for" quick filters: a label and the tags (or topics) they match. Shown only when the data holds them. */
 const KNOWN_FOR = [
   { id: "michelin", label: "Michelin Guide", tags: ["michelin-star", "michelin-bib-gourmand", "michelin-recommended"] },
@@ -53,7 +58,7 @@ const TAG_WORDS = {
   gastropub: "Gastropub", "sports-bar": "Sports bar", "dive-bar": "Dive bar", "cocktail-bar": "Cocktail bar", "listening-bar": "Listening bar",
   "juice-bar": "Juice bar", "afternoon-tea": "Afternoon tea", "drag-brunch": "Drag brunch", "seafood-market": "Seafood market",
   "new-american": "New American", "italian-american": "Italian-American", "afro-cuban": "Afro-Cuban", tapas: "Tapas", paella: "Paella",
-  "brewery-tours": "Brewery tours", tastings: "Tastings", "dance-club": "Dance club", "u-pick": "U-pick", "comfort-food": "Comfort food",
+  "brewery-tours": "Brewery tours", "dock-and-dine": "Dock and dine", "boat-docks": "Boat docks", "boat-slips": "Boat slips", tastings: "Tastings", "dance-club": "Dance club", "u-pick": "U-pick", "comfort-food": "Comfort food",
 };
 const KIND_ICON = { restaurant: "fork-knife", "cafe-bakery": "utensils", "food-hall": "utensils", bar: "glass", brewery: "glass", "distillery-winery": "glass", nightlife: "moon" };
 const KIND_PLURAL = { restaurant: "Restaurants", "cafe-bakery": "Cafés and bakeries", "food-hall": "Food halls", bar: "Bars", brewery: "Breweries", "distillery-winery": "Distilleries and wineries", nightlife: "Nightlife" };
@@ -91,7 +96,8 @@ export function pages(ctx) {
     const lead = EAT.has(p.kind) ? p.kind : kinds[0];
     const words = (p.tags || []).filter((t) => TAG_WORDS[t]).slice(0, 5).map((t) => TAG_WORDS[t]);
     const q = h.aliasKey([p.aliases, p.city, (p.tags || []).map((t) => TAG_WORDS[t] || t.replace(/-/g, " ")), (p.topics || []).map((t) => TOPIC_LABEL[t]), p.kindsAll.map((k) => PLACE_KIND_LABEL[k]), DISTINCTIONS.filter(([t]) => (p.tags || []).includes(t)).map(([, w]) => w)].flat().filter(Boolean).join(" "));
-    const kicker = [c.sheetBadge(p.region), `<span class="card-kind">${h.icon(KIND_ICON[lead] || "fork-knife")}${esc(PLACE_KIND_LABEL[p.kind] || p.kind)}</span>`, p.area !== here ? `<span class="card-area">${esc(areaName(p.area))}</span>` : ""].filter(Boolean).join(" · ");
+    // the kind word matches its symbol: the eat or drink kind that lists the place here (a shop with a restaurant says "Restaurant")
+    const kicker = [c.sheetBadge(p.region), `<span class="card-kind">${h.icon(KIND_ICON[lead] || "fork-knife")}${esc(PLACE_KIND_LABEL[lead] || lead)}</span>`, p.area !== here ? `<span class="card-area">${esc(areaName(p.area))}</span>` : ""].filter(Boolean).join(" · ");
     return `<article class="card place eat" id="p-${attr(p.id)}" data-place="${attr(p.id)}" data-sheet="${p.region}" data-r="${p.region}" data-a="${attr(p.area)}" data-k="${p.kind}" data-ks="${p.kindsAll.join(" ")}" data-g="${p.groups.join(" ")}" data-t="${(p.topics || []).join(" ")}" data-tag="${attr((p.tags || []).join(" "))}" data-st="${p.status}"${p.signature ? ' data-sig="1"' : ""}${p.heritage?.era ? ` data-era="${p.heritage.era}"` : p.heritage ? ' data-h="1"' : ""}${p.ll ? ` data-ll="${p.ll.join(",")}"` : ""} data-compact="1" data-q="${attr(q)}">`
       + `<div class="card-body"><p class="card-kicker">${kicker}</p>`
       + `<h4 class="card-title"><a class="stretched" href="${root}places/${attr(p.id)}.html">${esc(p.name)}</a></h4>`
@@ -111,11 +117,11 @@ export function pages(ctx) {
   const heritageN = list.filter((p) => p.heritage).length;
   const distN = (t) => list.filter((p) => (p.tags || []).includes(t)).length;
 
-  const quick = (root) => (known.length ? `<nav class="eat-quick" aria-label="Known for"><p class="label eat-quick-l">Known for</p><div class="chip-row">${known.map((k) => K.filterLink(root, "eat-drink.html", knownHref(k), `<span>${esc(k.label)}</span><span class="n">${k.n}</span>`, "chip")).join("")}</div></nav>` : "");
+  const quick = (root) => (known.length ? `<nav class="eat-quick js-only" aria-label="Known for"><p class="label eat-quick-l">Known for</p><div class="chip-row">${known.map((k) => K.filterLink(root, "eat-drink.html", knownHref(k), `<span>${esc(k.label)}</span><span class="n">${k.n}</span>`, "chip")).join("")}</div></nav>` : "");
 
   const reasons = () => {
     const bits = [
-      ...DISTINCTIONS.map(([t, w]) => [distN(t), w]).filter(([n]) => n).map(([n, w]) => `<li><b>${n}</b> ${esc(w)}</li>`),
+      ...DISTINCTIONS.map(([t]) => [distN(t), DIST_COUNT[t]]).filter(([n]) => n).map(([n, w]) => `<li><b>${n}</b> ${esc(w)}</li>`),
       heritageN ? `<li><b>${heritageN}</b> in a historic building or site (with its heritage record)</li>` : "",
     ].filter(Boolean);
     return bits.length ? `<aside class="callout tone-tip eat-reasons"><span class="flag label">${h.icon("compass")}Why a place is here</span><p>A place is listed when a source we read names it: its own page, a tourism office's listing, or a guide. The card says what the records show:</p><ul>${bits.join("")}</ul><p class="faint">Distinctions are the ones our sources record; this guide adds none of its own and ranks nothing.</p></aside>` : "";
@@ -133,6 +139,13 @@ ${areasOf(r).map(({ a, ps }) => `<div class="eat-area" id="ea-${attr(a.id)}" dat
   const areaGroups = regions.map((r) => ({ label: r.name, options: areasOf(r).map(({ a, ps }) => [a.id, `${a.name} (${ps.length})`]) }));
   const kindOpts = [["eat", `${PLACE_GROUP_LABEL.eat} (${groupN("eat")})`], ["drink", `${PLACE_GROUP_LABEL.drink} (${groupN("drink")})`], ...EAT_DRINK_KINDS.filter((k) => kindN(k)).map((k) => [k, `${KIND_PLURAL[k] || PLACE_KIND_LABEL[k]} (${kindN(k)})`])];
   const knownOpts = known.map((k) => [k.vals.join(","), `${k.label} (${k.n})`]);
+  // single tags, one group each (a link from another page, ?tag=michelin-star or ?tag=rooftop, then selects its own word)
+  const tagN = (t) => list.filter((p) => tagsOf(p).has(t)).length;
+  const tagWord = (t) => { const w = (DISTINCTIONS.find(([d]) => d === t) || [])[1] || TAG_WORDS[t] || TOPIC_LABEL[t] || t.replace(/-/g, " "); return w.charAt(0).toUpperCase() + w.slice(1); };
+  const singleGroups = [
+    ...known.filter((k) => k.vals.length > 1).map((k) => ({ label: k.label, options: k.vals.map((t) => [t, `${tagWord(t)} (${tagN(t)})`]) })),
+    { label: "Distinctions", options: DISTINCTIONS.filter(([t]) => !known.some((k) => k.vals.includes(t)) && tagN(t)).map(([t, w]) => [t, `${w} (${tagN(t)})`]) },
+  ].filter((g) => g.options.length);
   const topicN = (t) => list.filter((p) => (p.topics || []).includes(t)).length;
   const topicOpts = TOPICS.filter((t) => topicN(t) > 0 && !known.some((k) => k.vals.length === 1 && k.vals[0] === t)).map((t) => [t, `${TOPIC_LABEL[t]} (${topicN(t)})`]);
 
@@ -148,7 +161,7 @@ ${K.toolbar({
   search: { label: "Search places to eat and drink", placeholder: "Search by name, dish, cuisine or town" },
   selects: [
     K.select({ name: "k", label: "Kind", all: "All kinds", options: kindOpts }),
-    K.select({ name: "tag", label: "Known for", all: "Anything", options: knownOpts, groups: topicOpts.length ? [{ label: "Topics", options: topicOpts }] : [] }),
+    K.select({ name: "tag", label: "Known for", all: "Anything", options: knownOpts, groups: [...singleGroups, ...(topicOpts.length ? [{ label: "Topics", options: topicOpts }] : [])] }),
     K.select({ name: "r", label: "Sheet", all: "All sheets", options: regionOpts }),
     K.select({ name: "a", label: "Area", all: "All areas", groups: areaGroups }),
   ],

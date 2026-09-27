@@ -1,6 +1,1010 @@
 {
   "slice": "gaps-listings",
   "checked": "2026-09-27",
-  "records": {},
-  "report": "Placeholder written by the orchestrator so the merge runs; the gaps-listings research agent replaces this file with its records and a full report of what it covered, how, and what it left out and why."
+  "records": {
+    "places": [
+      {
+        "id": "gulf-beaches-historical-museum",
+        "name": "Gulf Beaches Historical Museum",
+        "kind": "museum",
+        "kinds": [
+          "historic-site"
+        ],
+        "topics": [
+          "history",
+          "beaches"
+        ],
+        "area": "pass-a-grille",
+        "address": "115 10th Avenue",
+        "city": "St. Pete Beach",
+        "state": "FL",
+        "zip": "33706",
+        "lat": 27.689474,
+        "lng": -82.737306,
+        "geo_source": "photon",
+        "url": "https://gulfbeachesmuseum.org/",
+        "phone": "(727) 552-1610",
+        "hours_text": null,
+        "price_text": null,
+        "is_free": null,
+        "summary": "A volunteer-run county museum of Gulf beach community history in a former church built in 1917 on Pass-a-Grille. It is closed for repairs after Hurricane Helene flooded it.",
+        "quote": "Located on beautiful Pass-a-Grille, in a former church constructed in 1917, the Gulf Beaches Historical Museum has been collecting, preserving and sharing the history of the beach community since 1993.",
+        "status": "temporarily-closed",
+        "status_note": "The museum says it is temporarily closed for indefinite repairs after flooding from Hurricane Helene (2024); its artifacts are stored at Heritage Village (per gulfbeachesmuseum.org, read Sep 27, 2026).",
+        "tags": [
+          "hurricane-2024"
+        ],
+        "source_url": "https://gulfbeachesmuseum.org/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: listed by Visit St. Pete/Clearwater (profile gulf-beaches-historical-museum/138418). The pass-a-grille-historic-district record mentions the building. OSM feature W421475621 tourism=museum."
+      },
+      {
+        "id": "motor-enclave",
+        "name": "The Motor Enclave",
+        "kind": "sports",
+        "kinds": [
+          "attraction"
+        ],
+        "topics": [
+          "thrills",
+          "sports"
+        ],
+        "area": "east-tampa",
+        "address": "6500 Motor Enclave Way",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33610",
+        "lat": 28.012751,
+        "lng": -82.336491,
+        "geo_source": "photon",
+        "url": "https://themotorenclave.com/",
+        "phone": "877-836-2528",
+        "hours_text": null,
+        "price_text": null,
+        "is_free": null,
+        "summary": "A 200-acre motorsports campus with a 1.72-mile track, the Hard Rock Speedway, in east Tampa. Non-members can book driving experiences and track-driving classes and attend public events on its calendar.",
+        "quote": "The Motor Enclave is unlike anything else in the country, a 200-acre motorsports campus set just minutes from downtown Tampa and Tampa International Airport.",
+        "status": "open",
+        "tags": [
+          "motorsports",
+          "driving-experience"
+        ],
+        "source_url": "https://themotorenclave.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/the-motor-enclave/18612/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 18612 (Motorsports). Coordinates: OSM raceway W1359872219 (Census had no match for the private street)."
+      },
+      {
+        "id": "epperson-lagoon",
+        "name": "Epperson Lagoon",
+        "kind": "water-park",
+        "topics": [
+          "family",
+          "water"
+        ],
+        "area": "lutz-wesley-chapel",
+        "address": "31885 Overpass Rd",
+        "city": "Wesley Chapel",
+        "state": "FL",
+        "zip": "33545",
+        "lat": 28.272439,
+        "lng": -82.290681,
+        "geo_source": "photon",
+        "url": "https://www.metrolagoons.com/lagoon/epperson/",
+        "phone": null,
+        "hours_text": "Operating hours 11AM - 8PM; water hours 11AM - 6PM",
+        "price_text": "Starting at $25; the site says tickets bought online cost up to $10 less than at the gate.",
+        "is_free": false,
+        "summary": "A seven-acre swimming lagoon in Wesley Chapel run by MetroLagoons that sells day tickets. It has water slides, floating obstacle courses, bumper boats, kayaks, paddleboards, beach volleyball, a swim-up bar and cabanas.",
+        "quote": "Sun, sand, serenity, and picturesque blue waters.",
+        "status": "open",
+        "tags": [
+          "lagoon",
+          "day-pass"
+        ],
+        "source_url": "https://www.metrolagoons.com/lagoon/epperson/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/epperson-lagoon/21419/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 21419. Hours are the page's current posted hours and may be seasonal."
+      },
+      {
+        "id": "mirada-lagoon",
+        "name": "Mirada Lagoon",
+        "kind": "water-park",
+        "topics": [
+          "family",
+          "water"
+        ],
+        "area": "lutz-wesley-chapel",
+        "address": "31461 Mirada Boulevard",
+        "city": "San Antonio",
+        "state": "FL",
+        "zip": "33576",
+        "lat": 28.316843,
+        "lng": -82.294398,
+        "geo_source": "photon",
+        "url": "https://www.metrolagoons.com/lagoon/mirada/",
+        "phone": null,
+        "hours_text": "Operating hours 11AM - 7PM; water hours 11AM - 6PM",
+        "price_text": "Starting at $20; day tickets with or without a Splash Pass and late-day tickets after 3PM; online prices are up to $10 lower than at the gate.",
+        "is_free": false,
+        "summary": "A 15-acre swimming lagoon in east Pasco County run by MetroLagoons, which calls it the nation’s largest lagoon. Day-ticket guests get a water slide, kayaks, paddleboards, a floating obstacle course, a kids’ splash zone and a swim-up bar.",
+        "quote": "The nation's largest Lagoon at fifteen acres sits in San Antonio, FL.",
+        "status": "open",
+        "tags": [
+          "lagoon",
+          "day-pass"
+        ],
+        "source_url": "https://www.metrolagoons.com/lagoon/mirada/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/mirada-lagoon/21418/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 21418. San Antonio is in east Pasco near Dade City (area lutz-wesley-chapel)."
+      },
+      {
+        "id": "southshore-bay-lagoon",
+        "name": "Southshore Bay Lagoon",
+        "kind": "water-park",
+        "topics": [
+          "family",
+          "water"
+        ],
+        "area": "apollo-beach",
+        "address": "16881 Lagoon Shore Blvd",
+        "city": "Wimauma",
+        "state": "FL",
+        "zip": "33598",
+        "lat": 27.703734,
+        "lng": -82.323776,
+        "geo_source": "photon",
+        "url": "https://www.metrolagoons.com/lagoon/southshore-bay/",
+        "phone": null,
+        "hours_text": "Operating hours 11AM - 7PM; water hours 11AM - 6PM",
+        "price_text": "Starting at $20; all-day and late-day (after 3PM) tickets; online prices are up to $10 lower than at the gate.",
+        "is_free": false,
+        "summary": "A swimming lagoon in Wimauma, south Hillsborough County, run by MetroLagoons that sells day tickets. It has water slides, floating obstacle courses, kayaks, paddleboards, bumper boats, volleyball, a swim-up bar and cabanas.",
+        "quote": "Southshore Bay Lagoon Wimauma is the perfect place to unwind, play, and soak up the sun.",
+        "status": "open",
+        "tags": [
+          "lagoon",
+          "day-pass"
+        ],
+        "source_url": "https://www.metrolagoons.com/lagoon/southshore-bay/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/southshore-bay-lagoon/18061/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 18061. Wimauma is next to Sun City Center (area apollo-beach). Coordinates: OSM water=pond feature named South Shore Bay Lagoon."
+      },
+      {
+        "id": "rocky-point-golf-course",
+        "name": "Rocky Point Golf Course",
+        "kind": "sports",
+        "topics": [
+          "sports",
+          "outdoors"
+        ],
+        "area": "westshore",
+        "address": "4151 Dana Shores Dr",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33634",
+        "lat": 27.977734,
+        "lng": -82.55605,
+        "geo_source": "photon",
+        "url": "https://www.rockypointgolf.net/",
+        "phone": "813-673-4316",
+        "hours_text": "Daily 7am to 6pm",
+        "price_text": null,
+        "is_free": null,
+        "summary": "A par-71, 6,238-yard golf course run by the Tampa Sports Authority near Westshore Boulevard and the Rocky Point causeway. Its site says it is part of the Florida Historic Golf Trail.",
+        "quote": "Rocky Point Golf Course provides Tampa Bay area golfers with everything they need for a perfect day of golf: a beautiful yet challenging course.",
+        "status": "open",
+        "tags": [
+          "golf",
+          "municipal"
+        ],
+        "source_url": "https://www.rockypointgolf.net/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/rocky-point-golf-course-tampa-sports-authority/3529/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay listing 3529 (Golf). Course facts (par 71, 6,238 yards, Florida Historic Golf Trail) read on rockypointgolf.net."
+      },
+      {
+        "id": "suncoast-primate-sanctuary",
+        "name": "Suncoast Primate Sanctuary",
+        "kind": "zoo",
+        "topics": [
+          "wildlife",
+          "family"
+        ],
+        "area": "palm-harbor",
+        "address": "4600 Alternate Highway 19",
+        "city": "Palm Harbor",
+        "state": "FL",
+        "zip": "34683",
+        "lat": 28.117282,
+        "lng": -82.765169,
+        "geo_source": "census",
+        "url": "https://www.suncoast-primate.org/",
+        "phone": "(727) 943-5897",
+        "hours_text": "Open Thursday - Sunday 10 am - 4 pm",
+        "price_text": null,
+        "is_free": false,
+        "summary": "A nonprofit sanctuary in Palm Harbor for primates and other animals that can no longer live as pets or have retired from labs and film. Visitors see chimpanzees, orangutans, monkeys, reptiles and tropical birds.",
+        "quote": "The Sanctuary provides a home to more than 50 animals, including chimpanzees, orangutans, monkeys, reptiles, tropical birds and more.",
+        "status": "open",
+        "tags": [
+          "animal-sanctuary"
+        ],
+        "source_url": "https://www.suncoast-primate.org/",
+        "also_sources": [
+          "https://www.visitstpeteclearwater.com/profile/suncoast-primate-sanctuary/138588"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile 138588 (it says 'over 70 animals'; the sanctuary's own site says more than 50, used here). is_free false: the VSPC profile says admission proceeds support animal care; no price is published. Census address point."
+      },
+      {
+        "id": "creative-clay",
+        "name": "Creative Clay",
+        "kind": "gallery",
+        "topics": [
+          "arts"
+        ],
+        "area": "grand-central",
+        "address": "1846 1st Avenue South",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33712",
+        "lat": 27.769924,
+        "lng": -82.658732,
+        "geo_source": "photon",
+        "url": "https://www.creativeclay.org/",
+        "phone": "(727) 825-0515",
+        "hours_text": "Mon to Fri 9am to 4pm; Sat and Sun closed",
+        "price_text": null,
+        "is_free": null,
+        "summary": "A St. Petersburg nonprofit arts center for people with disabilities, with a gallery that shows and sells work by its member artists.",
+        "quote": "Creative Clay's mission is to help people with disabilities achieve full and inclusive lives by providing expressive, educational and vocational experiences in the arts.",
+        "status": "open",
+        "tags": [
+          "gallery",
+          "disability-arts"
+        ],
+        "source_url": "https://www.creativeclay.org/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile creative-clay-cultural-arts-center/138281."
+      },
+      {
+        "id": "beach-art-center",
+        "name": "Beach Art Center",
+        "kind": "gallery",
+        "topics": [
+          "arts",
+          "beaches"
+        ],
+        "area": "indian-rocks-beach",
+        "address": "1515 Bay Palm Blvd",
+        "city": "Indian Rocks Beach",
+        "state": "FL",
+        "zip": "33785",
+        "lat": 27.898384,
+        "lng": -82.845838,
+        "geo_source": "photon",
+        "url": "https://www.beachartcenter.org/",
+        "phone": "(727) 596-4331",
+        "hours_text": "Monday - Friday 9:00 AM - 4:00 PM; Saturdays 10:00 AM - 2:00 PM",
+        "price_text": null,
+        "is_free": null,
+        "summary": "A community art center in Indian Rocks Beach, founded in 1978, with gallery exhibitions, a boutique, and classes and workshops in painting, drawing, photography, jewelry and more.",
+        "quote": "A place where creativity, community, and connection come together.",
+        "status": "open",
+        "tags": [
+          "art-classes"
+        ],
+        "source_url": "https://www.beachartcenter.org/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile beach-art-center/138432."
+      },
+      {
+        "id": "whimzeyland",
+        "name": "WhimzeyLand",
+        "aliases": [
+          "Whimzeyland"
+        ],
+        "kind": "landmark",
+        "kinds": [
+          "attraction"
+        ],
+        "topics": [
+          "arts"
+        ],
+        "area": "safety-harbor",
+        "address": "1206 3rd St N",
+        "city": "Safety Harbor",
+        "state": "FL",
+        "zip": "34695",
+        "lat": 27.992257,
+        "lng": -82.700766,
+        "geo_source": "census",
+        "url": "https://www.safetyharborartandmusiccenter.com/whimzeyland",
+        "phone": null,
+        "hours_text": null,
+        "price_text": null,
+        "is_free": null,
+        "summary": "The painted home of Todd Ramquist and Kiaralinda, founders of the Safety Harbor Art and Music Center, lined with hundreds of hand-painted bowling balls, mosaic walkways, bottle trees and sculptures. Visitors may walk the grounds and take photos; docent-led tours are arranged through the art center.",
+        "quote": "WhimzeyLand is the brightly painted, joyfully over-the-top home of SHAMc's founders, Todd Ramquist and Kiaralinda.",
+        "status": "open",
+        "tags": [
+          "folk-art",
+          "photo-spot"
+        ],
+        "source_url": "https://www.safetyharborartandmusiccenter.com/whimzeyland",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater profile whimzeyland (id not captured). whimzeyland.com redirects to this page. It is a private home: the page welcomes visitors to walk the grounds. Census address point."
+      }
+    ],
+    "experiences": [
+      {
+        "id": "preserve-the-burg-walking-tours",
+        "name": "Preserve the ‘Burg historic walking tours",
+        "operator": "Preserve the ‘Burg (St. Petersburg Preservation)",
+        "kind": "walking-tour",
+        "topics": [
+          "history"
+        ],
+        "area": "downtown-stpete",
+        "departs_text": "Each tour has its own meeting point (Straub Park, Craft Kafe on Central Ave, Seminole Park in Kenwood, Roser Park and others)",
+        "url": "https://www.stpetepreservation.org/",
+        "booking_url": "https://www.stpetepreservation.org/",
+        "phone": null,
+        "duration_text": "90 minutes to two hours",
+        "price_text": "$10 for members; $20 for guests and non-members",
+        "is_free": false,
+        "schedule_text": "Dated tours on the group’s events calendar; fall 2026 dates run Oct 17 to Dec 19 (Saturday mornings and some Tuesday evenings)",
+        "season_text": null,
+        "ages_text": null,
+        "summary": "Guided neighborhood walks run by St. Petersburg’s preservation group: Central Avenue, the waterfront, Historic Kenwood, Roser Park, Mirror Lake, the Old Northeast and 4th and 5th Avenues North. Reservations are strongly recommended; space is limited.",
+        "quote": "Tour reservations are strongly recommended, space is limited.",
+        "status": "open",
+        "tags": [
+          "history",
+          "architecture"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit St. Pete/Clearwater lists the group (profile st-petersburg-preservation/138399). Dated tours are separate event records (ids ptb-*)."
+      }
+    ],
+    "events": [
+      {
+        "id": "creatures-of-the-night-zootampa-2026",
+        "title": "Creatures of the Night",
+        "kind": "holiday",
+        "topics": [
+          "family",
+          "wildlife"
+        ],
+        "series": "creatures-of-the-night-zootampa",
+        "date": "2026-10-02",
+        "end_date": "2026-10-31",
+        "start": "16:00",
+        "end": "22:00",
+        "occurrences": [
+          {
+            "date": "2026-10-02",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-03",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-09",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-10",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-11",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-16",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-17",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-18",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-23",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-24",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-25",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-30",
+            "start": "16:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-31",
+            "start": "16:00",
+            "end": "22:00"
+          }
+        ],
+        "time_text": "After 4PM event admission",
+        "place": "zootampa-at-lowry-park",
+        "area": "north-tampa",
+        "cost": "Friday $34.95; Saturday $39.95; Sunday $34.95; included with a ZooTampa Membership or Zoo Fun ticket",
+        "is_free": false,
+        "url": "https://zootampa.org/events/creatures-of-the-night/",
+        "tickets_url": null,
+        "description": "Ghouls and goblins of all ages can enjoy howling entertainment, eerie characters, creepy culinary treats, and so much more!",
+        "summary": "ZooTampa's Halloween nights for all ages, with themed zones, characters, live shows and treats, on select Friday to Sunday evenings in October.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "halloween"
+        ],
+        "source_url": "https://zootampa.org/events/creatures-of-the-night/",
+        "also_sources": [
+          "https://zootampa.org/event/creatures-of-the-night-2/2026-10-02/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: not in data/. Nights listed on the event page: Sep 25 (members), Sep 26 (before the data window), then Oct 2, 3, 9, 10, 11, 16, 17, 18, 23, 24, 25, 30, 31. Hours 4:00 pm - 10:00 pm from the dated event page."
+      },
+      {
+        "id": "art-fair-tampa-2026",
+        "title": "Art Fair Tampa",
+        "kind": "exhibition",
+        "topics": [
+          "arts",
+          "shopping"
+        ],
+        "date": "2026-10-15",
+        "end_date": "2026-10-18",
+        "occurrences": [
+          {
+            "date": "2026-10-15",
+            "start": "17:00",
+            "end": "22:00"
+          },
+          {
+            "date": "2026-10-16",
+            "start": "10:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2026-10-17",
+            "start": "10:00",
+            "end": "18:00"
+          },
+          {
+            "date": "2026-10-18",
+            "start": "10:00",
+            "end": "16:00"
+          }
+        ],
+        "time_text": "Thu Oct 15 5–10 PM VIP night; Fri 10–6 PM; Sat 10–6 PM; Sun 10–4 PM",
+        "place": "tampa-convention-center",
+        "area": "downtown-tampa",
+        "cost": "Free Admission; VIP opening night tickets sold separately",
+        "is_free": true,
+        "url": "https://www.artfairtampa.com/",
+        "tickets_url": null,
+        "description": "Art Fair Tampa brings together 300+ talented artists from across the country for four days of creativity, inspiration, and community. Explore stunning works across painting, sculpture, photography, mixed media, and more — all under one roof at the Tampa Convention Center.",
+        "summary": "A four-day art fair at the Tampa Convention Center with more than 300 artists, free public admission and a ticketed VIP preview night on Thursday.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "art-fair"
+        ],
+        "source_url": "https://www.artfairtampa.com/",
+        "also_sources": [
+          "https://www.tampasdowntown.com/events/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: listed on the Tampa Downtown Partnership calendar (Oct 15-18); not in data/. Oct 15 is the VIP opening (ticketed); the public days are free."
+      },
+      {
+        "id": "ellen-harvey-picturesque-usf-cam-2026",
+        "title": "PICTURE(SQUE): Ellen Harvey Works, 1999-2025",
+        "kind": "exhibition",
+        "topics": [
+          "arts"
+        ],
+        "date": "2026-08-24",
+        "end_date": "2027-03-06",
+        "time_text": "Mon-Fri 10am-5pm; Thu 10am-8pm; Sat 1-4pm; closed Sundays and USF holidays",
+        "place": "usf-contemporary-art-museum",
+        "area": "north-tampa",
+        "cost": "Exhibition and events are free and open to all.",
+        "is_free": true,
+        "url": "https://www.graphicstudio.usf.edu/CAM/exhibitions/2026_08_Picture-sque_Ellen_Harvey_Works_1999-2025/Picture-sque_Ellen_Harvey_Works_1999-2025.html",
+        "tickets_url": null,
+        "description": "PICTURE(SQUE): Ellen Harvey Works, 1999-2025 presents four major bodies of work by the celebrated Anglo-American artist that honor and question ideas around travel, memory, monuments and history making.",
+        "summary": "A free survey of four bodies of work by the artist Ellen Harvey at the USF Contemporary Art Museum, including her installation of more than 300 postcard-like paintings, The Disappointed Tourist.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "free"
+        ],
+        "source_url": "https://www.graphicstudio.usf.edu/CAM/exhibitions/2026_08_Picture-sque_Ellen_Harvey_Works_1999-2025/Picture-sque_Ellen_Harvey_Works_1999-2025.html",
+        "also_sources": [
+          "https://www.graphicstudio.usf.edu/events.html"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: the museum's place record mentions the show but data/ has no event. Closed Sept 7, Nov 11 and Nov 26-28 per the page; winter-break dates not posted."
+      },
+      {
+        "id": "jim-dine-swaying-in-the-florida-night-2026",
+        "title": "Jim Dine: Swaying in the Florida Night",
+        "kind": "exhibition",
+        "topics": [
+          "arts"
+        ],
+        "date": "2026-09-08",
+        "end_date": "2026-12-18",
+        "time_text": "Monday - Friday, 10 am to 5 pm. Closed: November 11, 26, 27.",
+        "place": "usf-graphicstudio",
+        "area": "north-tampa",
+        "cost": "Free and open to all.",
+        "is_free": true,
+        "url": "https://www.graphicstudio.usf.edu/events.html#gsdine2026",
+        "tickets_url": null,
+        "description": "From September 8 through December 18, USF Graphicstudio presents Jim Dine: Swaying in the Florida Night, a survey of the artist’s collaborative prints and sculpture editions created at the studio from 1973 to 1989.",
+        "summary": "A free exhibition at USF Graphicstudio of the prints and sculpture editions Jim Dine made there from 1973 to 1989; a reception is on Oct 16, 5-8 pm.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "museum-exhibition",
+          "free"
+        ],
+        "source_url": "https://www.graphicstudio.usf.edu/events.html",
+        "also_sources": [
+          "https://www.visittampabay.com/tampa-events/details/jim-dine-swaying-in-the-florida-night/102097/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: Visit Tampa Bay lists Sep 14 - Dec 14; the studio's own page says September 8 - December 18, 2026 (used). Address on the page: 3702 Spectrum Blvd. Suite 100, Tampa."
+      },
+      {
+        "id": "st-pete-run-fest-2026",
+        "title": "St Pete Run Fest",
+        "kind": "run-walk",
+        "topics": [
+          "sports"
+        ],
+        "series": "st-pete-run-fest",
+        "date": "2026-11-13",
+        "end_date": "2026-11-15",
+        "occurrences": [
+          {
+            "date": "2026-11-13",
+            "start": "14:00",
+            "end": "19:00"
+          },
+          {
+            "date": "2026-11-14",
+            "start": "06:00",
+            "end": "14:00"
+          },
+          {
+            "date": "2026-11-15",
+            "start": "06:45",
+            "end": "13:00"
+          }
+        ],
+        "time_text": "Fri Nov 13: expo 2pm-7pm. Sat Nov 14: expo 6am-2pm, 10K start 6:45am, 5K start 8:45am, PeliKids start 10:45am. Sun Nov 15: half marathon start 6:45am, post-run party 8:30am-1pm.",
+        "place": null,
+        "location_text": "Race starts on Bayshore Drive near the Dali Museum; Athlete Village at Albert Whitted Park, downtown St. Petersburg",
+        "area": "downtown-stpete",
+        "cost": null,
+        "is_free": null,
+        "url": "https://stpeterunfest.org/",
+        "tickets_url": "https://stpeterunfest.org/",
+        "description": "This 13.1 mile certified course highlights all that is spectacular about St. Pete! Run through the heart of downtown St. Pete, and along the scenic waterfront.",
+        "summary": "A three-day running weekend in downtown St. Petersburg: an expo on Friday, a 10K, 5K and kids' runs on Saturday, and a half marathon on Sunday, starting near the Dali Museum.",
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "half-marathon",
+          "10k",
+          "5k"
+        ],
+        "source_url": "https://stpeterunfest.org/schedule/",
+        "also_sources": [
+          "https://stpeterunfest.org/",
+          "https://www.stpete.org/visitors/attractions/major_events.php"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: one of the six 'Major Events' on the City of St. Petersburg's visitor page; not in data/. Registration prices were not read. The description is the half marathon's blurb on the home page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-kenwood-walking-tour-2026-10-17",
+        "title": "Historic Kenwood Walking Tour",
+        "date": "2026-10-17",
+        "start": "10:00",
+        "end": "11:30",
+        "place": "historic-kenwood",
+        "location_text": "Seminole Park, 29th St. N. and Burlington Ave., St. Petersburg",
+        "area": "grand-central",
+        "url": "https://www.stpetepreservation.org/event-6818345",
+        "description": "Join Preserve the Burg and the Historic Kenwood Neighborhood Association on a tour of St. Pete’s first suburb. Attendees will be led on a pleasant stroll through the neighborhood that has one of the largest concentrations of bungalow homes in the country.",
+        "summary": "A 90-minute guided walk through Historic Kenwood, a St. Petersburg bungalow neighborhood, led by Preserve the Burg and the neighborhood association; one restored bungalow is open on this date.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-kenwood-walking-tour-2026-11-21",
+        "title": "Historic Kenwood Walking Tour",
+        "date": "2026-11-21",
+        "start": "10:00",
+        "end": "11:30",
+        "place": "historic-kenwood",
+        "location_text": "Seminole Park, 29th St. N. and Burlington Ave., St. Petersburg",
+        "area": "grand-central",
+        "url": "https://www.stpetepreservation.org/event-6818348",
+        "description": "Join Preserve the Burg and the Historic Kenwood Neighborhood Association on a tour of St. Pete’s first suburb. Attendees will be led on a pleasant stroll through the neighborhood that has one of the largest concentrations of bungalow homes in the country.",
+        "summary": "A 90-minute guided walk through Historic Kenwood, a St. Petersburg bungalow neighborhood, ending in the Grand Central District.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-twilight-walking-tour-waterfront-2026-10-20",
+        "title": "Twilight Walking Tour: Waterfront",
+        "date": "2026-10-20",
+        "start": "17:00",
+        "end": "18:30",
+        "place": "straub-park",
+        "location_text": "South Straub Park, the paved plaza at 2nd Ave N and Beach Drive",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846670",
+        "description": "Join our expert PTB guide and past president Emily Elwyn for a stroll along the waterfront! Tour participants will learn about the waterfront’s importance to the city’s efforts to promote itself as the embodiment of the Florida dream.",
+        "summary": "An evening walk along the downtown St. Petersburg waterfront parks with a Preserve the Burg guide, covering spring training, the 1914 airboat line and the city’s waterfront park system.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-roser-park-walking-tour-2026-10-24",
+        "title": "Historic Roser Park Walking Tour",
+        "date": "2026-10-24",
+        "start": "10:00",
+        "end": "11:30",
+        "place": "roser-park-historic-district",
+        "location_text": "The large oak tree (\"Charles\") near the corner of Prospect Court and Roser Park Drive",
+        "area": "south-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846676",
+        "description": "Join Preserve the ‘Burg and the Historic Roser Park Neighborhood Association on a tour of St. Pete’s first Local Historic District. This casual walk will follow scenic Booker Creek through the Historic Roser Park neighborhood.",
+        "summary": "A guided walk along Booker Creek through Roser Park, St. Petersburg’s first local historic district, led by the neighborhood association.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-roser-park-walking-tour-2026-12-05",
+        "title": "Historic Roser Park Walking Tour",
+        "date": "2026-12-05",
+        "start": "10:00",
+        "end": "11:30",
+        "place": "roser-park-historic-district",
+        "location_text": "The large oak tree (\"Charles\") near the corner of Prospect Court and Roser Park Drive",
+        "area": "south-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846704",
+        "description": "Join Preserve the ‘Burg and the Historic Roser Park Neighborhood Association on a tour of St. Pete’s first Local Historic District. This casual walk will follow scenic Booker Creek through the Historic Roser Park neighborhood.",
+        "summary": "A guided walk along Booker Creek through Roser Park, St. Petersburg’s first local historic district, led by the neighborhood association.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-4th-and-5th-ave-n-walking-tour-2026-10-31",
+        "title": "Historic 4th and 5th Ave. N., Downtown’s Northern Edge",
+        "date": "2026-10-31",
+        "start": "10:00",
+        "end": "12:00",
+        "place": "museum-of-the-american-arts-and-crafts-movement",
+        "location_text": "Entrance to the cafe at the Arts & Crafts Museum, 355 4th St. N.; the group gathers at 4th Ave. and 3rd Street",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846681",
+        "description": "Back by popular demand, join Preserve the ‘Burg for a relaxing stroll led by architectural historian and preservationist Emily Elwyn. This special walking tour will take you on a stroll along the two of the most historic Avenues in St. Pete.",
+        "summary": "A two-hour architecture walk along 4th and 5th Avenues North, between the Old Northeast and the downtown National Register district.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-central-avenue-downtown-walking-tour-2026-11-14",
+        "title": "Central Avenue/Downtown Walking Tour",
+        "date": "2026-11-14",
+        "start": "10:00",
+        "end": "12:00",
+        "location_text": "Craft Kafe, 200 Central Ave, St. Petersburg",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846692",
+        "description": "Did you know that the majority of the buildings lining St. Pete’s Central Avenue were built before 1950? Indeed, Central Avenue is one of St. Petersburg’s defining features, a historic \"main street\" lined with distinctive retail storefronts and arcade buildings, many dating back more than a century.",
+        "summary": "A two-hour walk down historic Central Avenue that includes the 600 Block, the Snell Building and the Open Air Post Office.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-central-avenue-downtown-walking-tour-2026-12-19",
+        "title": "Central Avenue/Downtown Walking Tour",
+        "date": "2026-12-19",
+        "start": "10:00",
+        "end": "12:00",
+        "location_text": "Craft Kafe, 200 Central Ave, St. Petersburg",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846710",
+        "description": "Did you know that the majority of the buildings lining St. Pete’s Central Avenue were built before 1950? Indeed, Central Avenue is one of St. Petersburg’s defining features, a historic \"main street\" lined with distinctive retail storefronts and arcade buildings, many dating back more than a century.",
+        "summary": "A two-hour walk down historic Central Avenue that includes the 600 Block, the Snell Building and the Open Air Post Office.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-twilight-walking-tour-old-northeast-2026-12-01",
+        "title": "Twilight Walking Tour: Old Northeast",
+        "date": "2026-12-01",
+        "start": "17:00",
+        "end": "19:00",
+        "place": "historic-old-northeast",
+        "location_text": "836 16th Ave. NE, St. Petersburg",
+        "area": "old-northeast",
+        "url": "https://www.stpetepreservation.org/event-6846701",
+        "description": "This special installment of our Twilight Tour will take attendees around the Old Northeast neighborhood.",
+        "summary": "An evening walk through the Old Northeast’s historic house styles, starting at the guide’s restored 1924 home.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      },
+      {
+        "kind": "tour",
+        "topics": [
+          "history"
+        ],
+        "cost": "$10 for Preserve the Burg members; $20 for non-members",
+        "is_free": false,
+        "status": "scheduled",
+        "featured": false,
+        "tags": [
+          "walking-tour",
+          "preserve-the-burg"
+        ],
+        "source_url": "https://www.stpetepreservation.org/",
+        "checked": "2026-09-27",
+        "id": "ptb-historic-mirror-lake-walking-tour-2026-12-12",
+        "title": "Historic Mirror Lake Walking Tour",
+        "date": "2026-12-12",
+        "start": "10:00",
+        "end": "12:00",
+        "location_text": "Unitarian Universalist Church, 100 Mirror Lake Drive, St. Petersburg",
+        "area": "downtown-stpete",
+        "url": "https://www.stpetepreservation.org/event-6846706",
+        "description": "Tour St. Petersburg’s newest Local Historic District, Mirror Lake! Designated as a LHD at the end of 2024 after years of hard work by Mirror Lake residents and Preserve the ‘Burg board members and volunteers, Mirror Lake and its surrounding neighborhood are a special part of the ‘Burg.",
+        "summary": "A walk around Mirror Lake, a local historic district since 2024, past the 1916 Carnegie Library and the 1924 St. Petersburg Shuffleboard Club.",
+        "notes": "gaps-listings: Preserve the Burg (St. Petersburg Preservation) walking tour; dates, times, meeting points and prices from the events list on its home page, each date checked on its own event page."
+      }
+    ],
+    "series": [
+      {
+        "id": "creatures-of-the-night-zootampa",
+        "name": "Creatures of the Night at ZooTampa",
+        "kind": "holiday",
+        "topics": [
+          "family",
+          "wildlife"
+        ],
+        "months": [
+          9,
+          10
+        ],
+        "when_text": "Select nights in late September and October (Sept. 25 to Oct. 31 in 2026)",
+        "place": "zootampa-at-lowry-park",
+        "area": "north-tampa",
+        "since": null,
+        "url": "https://zootampa.org/events/creatures-of-the-night/",
+        "summary": "ZooTampa's Halloween event: after-4 p.m. admission on select autumn nights, with themed zones, characters, live performances and treats.",
+        "quote": "Ghouls and goblins of all ages can enjoy howling entertainment, eerie characters, creepy culinary treats, and so much more!",
+        "featured": false,
+        "source_url": "https://zootampa.org/events/creatures-of-the-night/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings."
+      },
+      {
+        "id": "christmas-in-the-wild-zootampa",
+        "name": "Christmas in the Wild at ZooTampa",
+        "kind": "holiday",
+        "topics": [
+          "family",
+          "wildlife"
+        ],
+        "months": [
+          12
+        ],
+        "when_text": "Select Nights in December",
+        "place": "zootampa-at-lowry-park",
+        "area": "north-tampa",
+        "since": null,
+        "url": "https://zootampa.org/events/christmas-in-the-wild/",
+        "summary": "ZooTampa's holiday nights with a light display, holiday treats and animals; admission after 4 p.m. is $34.95, free for members and Zoo Fun ticket holders. The 2026 dates were not posted when checked.",
+        "quote": "It's the most wonderful time of the year at ZooTampa with the return of Christmas in the Wild, featuring one of Tampa Bay's largest light displays, delectable holiday treats, amazing wildlife and new festive adventures.",
+        "featured": false,
+        "source_url": "https://zootampa.org/events/christmas-in-the-wild/",
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: no 2026 dates on the page (Sep 27, 2026), so no dated event record. The Creatures of the Night page lists 11/27/26-11/28/26 as Zoo Fun blockout dates, which suggests but does not state that the event opens then."
+      },
+      {
+        "id": "st-pete-run-fest",
+        "name": "St Pete Run Fest",
+        "kind": "run-walk",
+        "topics": [
+          "sports"
+        ],
+        "months": [
+          11
+        ],
+        "when_text": "Three days in November (Nov 13-15 in 2026)",
+        "place": null,
+        "location_text": "Downtown St. Petersburg waterfront (Bayshore Drive and Albert Whitted Park)",
+        "area": "downtown-stpete",
+        "since": null,
+        "url": "https://stpeterunfest.org/",
+        "summary": "St. Petersburg's November running festival: a half marathon, 10K, 5K, kids' runs, a dog walk and an expo along the downtown waterfront.",
+        "quote": "Three day festival, including running events, health expos and more.",
+        "quote_source": "https://www.stpete.org/visitors/attractions/major_events.php",
+        "featured": false,
+        "source_url": "https://stpeterunfest.org/",
+        "also_sources": [
+          "https://www.stpete.org/visitors/attractions/major_events.php"
+        ],
+        "checked": "2026-09-27",
+        "notes": "gaps-listings: listed by the city among its major events."
+      }
+    ]
+  },
+  "report": "## areas slice: what is here\n\nAll 6 regions (the ids and names in `research/tools/schema.mjs` REGIONS) and all 45 areas fixed in SPEC §4.1, 51 records, each with a `source_url` read on Sep 27, 2026, plus `also_sources` for the other pages its facts come from.\n\n- **Regions (6):** tampa, stpete, beaches, clearwater, around, daytrips. Each has a 2–3 sentence `lede` in our own words, 5–6 `known_for` phrases and an `official_url`: Visit Tampa Bay (tampa, around), Visit St. Pete/Clearwater (stpete, beaches, clearwater) and VISIT FLORIDA (daytrips, because that sheet covers five counties; each day-trip area carries its own county tourism site).\n- **Areas by region:** Tampa 13, St. Petersburg 7, Gulf Beaches 8, Clearwater & North Pinellas 7, Around the Bay 6, Day Trips 4.\n- **Areas by kind:** district 12 (downtown-tampa, channel-district, ybor-city, north-tampa, westshore, south-tampa, east-tampa, downtown-stpete, grand-central, south-stpete, northeast-stpete, west-stpete); neighborhood 5 (tampa-heights, hyde-park, west-tampa, seminole-heights, old-northeast); island 4 (harbour-island, davis-islands, sand-key, fort-de-soto); beach-town 6 (clearwater-beach, indian-rocks-beach, madeira-beach, treasure-island, st-pete-beach, pass-a-grille); city 10 (gulfport, downtown-clearwater, dunedin, safety-harbor, tarpon-springs, oldsmar, largo, temple-terrace, plant-city, sarasota); county-area 8 (palm-harbor, brandon, apollo-beach, lutz-wesley-chapel, west-pasco, bradenton-anna-maria, nature-coast, polk).\n- **Folded areas.** Where SPEC §4.1 folds several places into one area, the summary says so (\"Includes Riverview, Valrico and Seffner.\"). Those \"includes\" lines follow the SPEC's area definitions, not a source.\n\n## How the sources were found\n\n1. **Official tourism lists.** Visit Tampa Bay's sitemap (443 non-listing pages) has only three neighborhood pages: /channel-district/, /ybor-city/ and /plant-city/. Its /media/fast-facts/ page gave the county facts: the three incorporated cities and the major unincorporated areas. Visit St. Pete/Clearwater's /communities index (19 communities) and its St. Petersburg district pages (Waterfront Museum, St. Pete Pier, Central Arts, Grand Central, Warehouse Arts, EDGE, Deuces Live) were read with WebFetch, because curl gets a Cloudflare 403.\n2. **District and city sites.** Tampa Downtown Partnership neighborhood pages (Downtown Core, Channel District, Tampa Heights, Water Street Tampa, Downtown River Arts, West Riverfront), the City of Tampa (CRA area and history pages, park pages, historic preservation, found through the city's 11,223-URL sitemap), the Tampa Heights Civic Association, the Ybor City Chamber's visitor center page, the Old Seminole Heights Neighborhood Association, Deuces Live, the Gulfport Merchants Chamber, and the official sites of Clearwater, Treasure Island, St. Pete Beach, Madeira Beach, Indian Rocks Beach, Indian Shores, Redington Beach, Dunedin, Safety Harbor, Tarpon Springs, Oldsmar, Largo, Temple Terrace and Plant City.\n3. **County parks pages** for the named visitor draws: Pinellas County (Fort De Soto, Shell Key, Sand Key, Weedon Island, Philippe Park, Sawgrass Lake), Hillsborough County (Lithia Springs, E.G. Simmons), St. Petersburg Parks (Boyd Hill, beaches) and City of Tampa parks (Ballast Point, Picnic Island, Bayshore trail).\n4. **County tourism offices for the outer sheets.** Florida's Sports Coast (Pasco: Wesley Chapel, Zephyrhills, Dade City, New Port Richey), Bradenton Area CVB (explore, beaches, beach conditions), Visit Sarasota (WebFetch), Florida's Adventure Coast (Weeki Wachee, Brooksville), Discover Crystal River, Visit Central Florida (Polk).\n5. **Wikipedia**, only where no official neighborhood page exists: Harbour Island, Davis Islands, Hyde Park, Bayshore Boulevard, West Tampa, Seminole Heights, Sulphur Springs, Westshore, Rocky Point, Palma Ceia, Port Tampa, the North Shore Historic District, Snell Isle, Sunken Gardens, Jungle Prada, Tyrone Square, Gulfport Casino, Sand Key, Clearwater Beach, Palm Harbor, Temple Terrace, Brandon, Apollo Beach, Tampa, St. Petersburg, Tropicana Field and Homosassa Springs. The MediaWiki API rate-limited us after about 20 calls, so the later articles were read with WebFetch.\n6. **Other slices' records** (see-*, outdoors, venues, eat-*, stays-*) served only as a discovery list of each area's visitor draws and closures. Every fact used here was re-read from its own page in this task.\n\n**Coordinates.** Areas have no `geo_source` field, so each record's `notes` names the point and how it was found. We used an OpenStreetMap place node or feature matched by name through Photon for neighborhoods and cities (for example 'Ybor City' place=suburb, Pier 60, Coachman Park, Fort De Soto County Park); a Census address match for a central address where the name match was poor (the Deuces Live office, Gulfport Casino, 2400 Central Ave, 350 Main St Dunedin, the Safety Harbor resort, Seminole Hard Rock); and Wikipedia's coordinates for Westshore. Every point was checked against its area (for example, Photon's 'East Tampa' matched a Gibsonton neighborhood and was rejected).\n\n## Status checked (Sep 27, 2026), noted in records\n\n- Visit St. Pete/Clearwater's beach-conditions page: \"All St. Pete-Clearwater beaches are open, with no advisories.\"\n- Tropicana Field reopened April 6, 2026, after the Milton roof repairs (Wikipedia; mlb.com/rays/ballpark lists it as the Rays' home).\n- Ballast Point Park's pier is closed for Helene/Milton repairs (City of Tampa).\n- Boyd Hill's nature center exhibits are closed for renovation, while its trails are open.\n- Weedon Island's north paddling trail is closed.\n- Tampa Electric's Manatee Viewing Center is closed until the season opens on Nov 1, 2026.\n- The Sand Key Park seawall section was listed as closed until August 2026.\n- The St. Pete Pier's 'Bending Arc' sculpture is temporarily closed.\n- The mall formerly called Westfield Brandon is now Brandon Exchange.\n- MOSI renamed itself the Museum of Science & Innovation (Jan 2026).\n- Gulfport's Art Walk is now the Gulfport Night Market (Gulfport Merchants Chamber; Visit St. Pete/Clearwater still says Art Walk).\n- Coachman Park's amphitheater is The BayCare Sound (City of Clearwater).\n\n## Deliberately left out\n\n- **Drive times and distances** between areas: no source read. The only distances kept are ones a source states, such as \"about 20 minutes north of Clearwater\" and \"11 miles east of downtown Tampa\".\n- **Rankings and marketing claims** (Tripadvisor \"#1 beach\", \"world-class\"): kept out of summaries. The few superlatives we kept are attributed, for example \"Visit St. Pete/Clearwater says it has the largest Greek community per capita\".\n- **Population figures:** kept in notes, not in summaries.\n- **Hurricane damage narratives:** none of the area pages read mention them. Closures are handled record by record in the place and stay slices.\n- **No `official_url`** (null) for areas without a site of their own: Harbour Island, Davis Islands, Hyde Park, West Tampa, North Tampa, Westshore, South Tampa, East Tampa, Grand Central, Old Northeast, South St. Pete, Northeast St. Pete, West St. Pete, Sand Key, Pass-a-Grille (part of the City of St. Pete Beach), Palm Harbor (unincorporated), Brandon and Apollo Beach (unincorporated).\n- **Sites we would not cite:**\n  - warehouseartsdistrictstpete.com now serves an unrelated gambling page.\n  - theedgedistrict.com belongs to a New Hampshire business.\n  - historicoldnortheast.com redirects to a realtor.\n  - harbourislandtampa.com redirects to an apparel shop.\n  - grandcentralstpete.com, westshorealliance.org and davisislands.org did not resolve or respond.\n  - Florida State Parks pages and weekiwachee.com refused our fetches.\n\n## Open questions for the verifier\n\n1. **Tarpon Springs founding.** Visit St. Pete/Clearwater says the city \"was founded in the early 1900s by Greek sponge divers\". spongedocks.net gives settlement in 1876, incorporation in 1887 and 500+ Greek divers by 1905. We used spongedocks.net.\n2. **\"Tampa's first suburb\".** Both Tampa Heights (its civic association and the Tampa Downtown Partnership) and Seminole Heights (Wikipedia) are called this. We used it only for Tampa Heights.\n3. **Tropicana Field** is on Visit St. Pete/Clearwater's EDGE District page. SPEC files it under grand-central, and the summary says \"The guide also files Tropicana Field here\".\n4. **Sawgrass Lake Park** is in unincorporated Lealman (Pinellas County page) but is listed by Visit St. Pete/Clearwater under Pinellas Park. The Largo record says \"nearby\".\n5. **Pages read only through WebFetch** (all Visit St. Pete/Clearwater pages, Visit Sarasota, some Wikipedia pages) were read through a summarizing fetcher. Please re-check the short phrases quoted in `notes` against the live pages.\n6. **The Tampa Downtown Partnership's neighborhoods page** puts a West Tampa blurb (\"daily access to plenty of incredible Cuban food\") under its Water Street Tampa heading. We used it for West Tampa's \"Cuban food\" and say so in the notes.\n7. **Areas with thin sourcing:** west-stpete (Wikipedia plus venue pages), northeast-stpete (Gateway and Carillon named from the SPEC only), harbour-island and davis-islands (Wikipedia only).\n"
 }

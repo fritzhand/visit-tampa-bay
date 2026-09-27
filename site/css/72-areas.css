@@ -12,7 +12,7 @@
 .ar-sheet-head .sec-kicker .bullet { margin-right: 2px; }
 .ar-sheet-counts { flex-basis: 100%; margin: 0; font-size: var(--fs-xs); font-variant-numeric: tabular-nums; }
 .ar-index { margin: 0 0 var(--sp-5); }
-.ar-index .mini-map { margin: 4px; max-width: 900px; }
+.ar-index .mini-map { margin: 4px; width: min(calc(100% - 8px), 900px, calc(72vh * var(--map-ar, 1.6))); }
 .ar-index figcaption { margin-top: var(--sp-2); font-size: var(--fs-xs); }
 .ar-grid { gap: var(--sp-4); }
 .ar-grid .card.area { scroll-margin-top: calc(var(--topbar-h) + var(--sp-4)); }
@@ -91,3 +91,12 @@
 .ar-live .map-card { right: 64px; }
 .fig-attrib { display: block; margin-top: 4px; overflow-wrap: anywhere; }
 .fig-attrib a { color: inherit; }
+.ar-live .map-note { display: none; }
+/* a tall index chart (a coast of beach towns) stands beside its cards on wide screens */
+@media (min-width: 1100px) {
+  .ar-sheet.has-tall { display: grid; grid-template-columns: minmax(260px, 36%) minmax(0, 1fr); gap: 0 var(--sp-5); align-items: start; }
+  .ar-sheet.has-tall > .sec-head { grid-column: 1 / -1; }
+  .ar-sheet.has-tall > .ar-index { position: sticky; top: calc(var(--topbar-h) + var(--sp-4)); margin: 0; }
+  .ar-sheet.has-tall > .ar-index .mini-map { width: min(calc(100% - 8px), calc((100vh - var(--topbar-h) - 150px) * var(--map-ar, 0.7))); }
+  .ar-sheet.has-tall .ar-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
+}

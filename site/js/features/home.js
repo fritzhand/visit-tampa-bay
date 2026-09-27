@@ -102,9 +102,11 @@ export function init(app) {
   const almanac = (now) => {
     const key = nyParts(now).date.slice(0, 7);
     const months = $$(".al-month");
-    const i = months.findIndex((m) => m.dataset.month === key);
-    months.forEach((m, j) => { if (j === i) m.setAttribute("data-now", "1"); else m.removeAttribute("data-now"); });
-    if (window.matchMedia && window.matchMedia("(max-width: 699px)").matches && i > -1) months.forEach((m, j) => { m.open = j >= i && j <= i + 2; });
+    months.forEach((m) => { if (m.dataset.month === key) m.setAttribute("data-now", "1"); else m.removeAttribute("data-now"); });
+    // on phones: this month (or the next in the calendar) and the two after it stay open
+    let i = months.findIndex((m) => m.dataset.month >= key);
+    if (i < 0) i = 0;
+    if (window.matchMedia && window.matchMedia("(max-width: 699px)").matches) months.forEach((m, j) => { m.open = j >= i && j <= i + 2; });
   };
 
   /* the stat tiles: hover opens them where there is a mouse */
