@@ -1,0 +1,3 @@
+{"k":"census:711 n franklin st, tampa, fl 33602","v":{"lat":27.950053,"lng":-82.458916,"geo_source":"census","matched":"711 N FRANKLIN ST, TAMPA, FL, 33602"}}
+{"k":"photon:salvador dali museum:27.77,-82.63","v":{"lat":27.765987,"lng":-82.631461,"geo_source":"photon","matched":"Salvador Dalí Museum, 1, Dali Boulevard, Saint Petersburg, 33701","osm":"W89139858 tourism=museum"}}
+{"k":"photon:pirate water taxi:","v":null}
