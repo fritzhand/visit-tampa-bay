@@ -139,9 +139,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.776424,
-        "lng": -82.638885,
-        "geo_source": "census",
+        "lat": 27.776787,
+        "lng": -82.638938,
+        "geo_source": "photon",
         "url": "https://www.hollanderhotel.com/",
         "phone": "727-873-7900",
         "rooms": 75,
@@ -182,9 +182,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.776423,
-        "lng": -82.639228,
-        "geo_source": "census",
+        "lat": 27.776691,
+        "lng": -82.639533,
+        "geo_source": "photon",
         "url": "https://www.avalonstpetersburg.com/",
         "phone": "727-317-5508",
         "features": [
@@ -227,15 +227,16 @@
         "features": [
           "historic"
         ],
-        "summary": "A downtown hotel that opened in 1921 as the Hotel Cordova, was renamed The Pier Hotel in 2001 and took back its historic name in 2014. It is part of the New Hotel Collection and charges a daily resort fee.",
+        "summary": "A downtown hotel that opened in 1921 as the Hotel Cordova, was renamed The Pier Hotel in 2001 and took back its historic name in 2014. A 65-room addition opened in April 2026, bringing it to 95 rooms; it is part of the New Hotel Collection and charges a daily resort fee.",
         "quote": "The Cordova Inn is located in the heart of Florida's premier downtown waterfront district, within walking distance of many local museums and attractions.",
         "heritage": {
           "built": "1921",
           "era": "land-boom",
-          "story": "The hotel says it was established in 1921 as the Hotel Cordova. It was renamed The Pier Hotel in 2001 after renovations and returned to its historic name in 2014.",
-          "visiting": "Operates as a hotel.",
+          "story": "The hotel says it was established in 1921 as the Hotel Cordova. It was renamed The Pier Hotel in 2001 after renovations and returned to its historic name in 2014. St Pete Catalyst reports that the original building had 30 rooms and that a 65-room, 56,000-square-foot addition, delayed by Hurricanes Helene and Milton, began taking guests in April 2026.",
+          "visiting": "Operates as a hotel; The Scott coffee and cocktail bar is on site.",
           "sources": [
-            "https://www.cordovainnstpete.com/"
+            "https://www.cordovainnstpete.com/",
+            "https://stpetecatalyst.com/cordova-inn-opens-after-multi-year-expansion-project/"
           ]
         },
         "status": "open",
@@ -244,10 +245,12 @@
         ],
         "source_url": "https://www.cordovainnstpete.com/",
         "also_sources": [
-          "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations"
+          "https://www.visitstpeteclearwater.com/list/new-hotels-fresh-renovations",
+          "https://stpetecatalyst.com/cordova-inn-opens-after-multi-year-expansion-project/"
         ],
         "checked": "2026-09-27",
-        "notes": "Site lists a $40 per day resort fee. The tourism office's new-and-renovated list says a renovation was completed in April 2026."
+        "notes": "Site lists a $40 per day resort fee. Verifier 2026-09-27: 95 rooms after the April 2026 expansion per the tourism office's new-and-renovated list and St Pete Catalyst (Apr 20, 2026); a rooftop bar was expected later in 2026 (not yet recorded as a feature).",
+        "rooms": 95
       },
       {
         "id": "ponce-de-leon-hotel",
@@ -457,9 +460,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.775013,
-        "lng": -82.638577,
-        "geo_source": "census",
+        "lat": 27.775347,
+        "lng": -82.638847,
+        "geo_source": "photon",
         "url": "https://www.marriott.com/en-us/hotels/tpasd-courtyard-st-petersburg-downtown/overview/",
         "phone": "727-450-6200",
         "rooms": 128,
@@ -771,9 +774,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33701",
-        "lat": 27.777642,
-        "lng": -82.63394,
-        "geo_source": "census",
+        "lat": 27.777842,
+        "lng": -82.633874,
+        "geo_source": "photon",
         "url": "https://mymansioninn.com/",
         "phone": "727-289-2121",
         "rooms": 13,
@@ -887,7 +890,8 @@
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/st-petersburg-marriott-clearwater/139909",
         "checked": "2026-09-27",
-        "notes": "marriott.com refuses automated readers. Listing gives website as www.marriott.com/tpasb (not stored: no scheme). Verifier 2026-09-27: free-parking removed (only a guest review on the listing mentions it)."
+        "notes": "marriott.com refuses automated readers. The listing's website www.marriott.com/tpasb redirects (checked 2026-09-27 by the verifier) to the Marriott property page used as url. Verifier 2026-09-27: free-parking removed (only a guest review on the listing mentions it).",
+        "url": "https://www.marriott.com/en-us/hotels/tpasb-st-petersburg-marriott-clearwater/overview/"
       },
       {
         "id": "karol-hotel",
@@ -939,9 +943,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894569,
-        "lng": -82.676775,
-        "geo_source": "census",
+        "lat": 27.895504,
+        "lng": -82.676044,
+        "geo_source": "photon",
         "url": "https://www.marriott.com/en-us/hotels/tpapg-courtyard-st-petersburg-clearwater/overview/",
         "phone": "727-572-8484",
         "rooms": 149,
@@ -959,9 +963,10 @@
         "checked": "2026-09-27"
       },
       {
-        "id": "fairfield-inn-suites-clearwater",
-        "name": "Fairfield Inn & Suites by Marriott Clearwater",
+        "id": "fairfield-inn-suites-st-petersburg-clearwater",
+        "name": "Fairfield Inn & Suites St. Petersburg Clearwater",
         "aliases": [
+          "Fairfield Inn & Suites by Marriott Clearwater",
           "Fairfield Inn & Suites Clearwater Airport"
         ],
         "kind": "hotel",
@@ -972,9 +977,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894344,
-        "lng": -82.678029,
-        "geo_source": "census",
+        "lat": 27.894831,
+        "lng": -82.677333,
+        "geo_source": "photon",
         "phone": "727-572-4400",
         "rooms": 82,
         "features": [
@@ -982,14 +987,15 @@
           "fitness",
           "free-breakfast"
         ],
-        "summary": "An 82-room Fairfield Inn on Executive Drive in Clearwater with free hot breakfast, an outdoor pool, a hot tub and a fire pit.",
+        "summary": "An 82-room Fairfield Inn & Suites on Executive Drive in the Gateway area of Clearwater with free hot breakfast, an outdoor pool, a hot tub and a fire pit.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/fairfield-inn-suites-by-marriott-clearwater/138065",
         "also_sources": [
           "https://hotelguides.com/florida/clearwater-ulmerton-road-hotels.html"
         ],
         "checked": "2026-09-27",
-        "notes": "Listing's website link is http (not stored). Verifier: confirm current flag on marriott.com (blocked to us)."
+        "notes": "Verifier 2026-09-27: the tourism listing's website (fairfieldinn.com/tpacw) uses Marriott code tpacw, and marriott.com/tpacw redirects to 'tpacw-fairfield-inn-and-suites-st-petersburg-clearwater', so the current Marriott name is Fairfield Inn & Suites St. Petersburg Clearwater. The page itself refuses automated readers; amenities from the tourism listing. Id renamed from fairfield-inn-suites-clearwater to match the current name; OpenStreetMap (way 197456917, ref TPACW) also names it Fairfield Inn & Suites Saint Petersburg Clearwater.",
+        "url": "https://www.marriott.com/en-us/hotels/tpacw-fairfield-inn-and-suites-st-petersburg-clearwater/overview/"
       },
       {
         "id": "springhill-suites-clearwater",
@@ -1002,9 +1008,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.893915,
-        "lng": -82.680676,
-        "geo_source": "census",
+        "lat": 27.894965,
+        "lng": -82.681265,
+        "geo_source": "photon",
         "phone": "727-571-1600",
         "rooms": 79,
         "features": [
@@ -1035,9 +1041,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894728,
-        "lng": -82.676096,
-        "geo_source": "census",
+        "lat": 27.89542,
+        "lng": -82.675026,
+        "geo_source": "photon",
         "phone": "727-561-9032",
         "rooms": 104,
         "features": [
@@ -1162,9 +1168,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.894095,
-        "lng": -82.673468,
-        "geo_source": "census",
+        "lat": 27.894776,
+        "lng": -82.678387,
+        "geo_source": "photon",
         "url": "https://www.wyndhamhotels.com/laquinta/clearwater-florida/la-quinta-st-pete-clearwater-airport/overview",
         "phone": "727-491-7934",
         "features": [
@@ -1181,7 +1187,7 @@
           "https://www.visitstpeteclearwater.com/profile/la-quinta-inn-suites-tampa-bay-clearwater-airport/138087"
         ],
         "checked": "2026-09-27",
-        "notes": "The tourism office listing (older) gives 114 rooms and an airport shuttle; not on Wyndham's page, so not recorded."
+        "notes": "The tourism office listing (older) gives 114 rooms and an airport shuttle; not on Wyndham's page, so not recorded. Verifier 2026-09-27: the census point for 3301 Ulmerton Rd sat about 450 m east of the hotel (street-range interpolation); replaced with the OpenStreetMap hotel feature (way 197456919, tagged with this hotel's phone and Wyndham URL)."
       },
       {
         "id": "holiday-inn-st-petersburg-n-clearwater",
@@ -1232,9 +1238,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.893897,
-        "lng": -82.687234,
-        "geo_source": "census",
+        "lat": 27.894654,
+        "lng": -82.687305,
+        "geo_source": "photon",
         "phone": "727-573-5049",
         "rooms": 81,
         "features": [
@@ -1263,9 +1269,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33762",
-        "lat": 27.893806,
-        "lng": -82.68551,
-        "geo_source": "census",
+        "lat": 27.893026,
+        "lng": -82.686736,
+        "geo_source": "photon",
         "url": "https://www.choicehotels.com/florida/clearwater/comfort-inn-hotels/flc09",
         "phone": "727-573-3334",
         "rooms": 93,
@@ -1482,9 +1488,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33702",
-        "lat": 27.857555,
-        "lng": -82.646435,
-        "geo_source": "census",
+        "lat": 27.858197,
+        "lng": -82.646256,
+        "geo_source": "photon",
         "url": "https://www.choicehotels.com/florida/saint-petersburg/comfort-inn-hotels/fl947",
         "phone": "727-563-9100",
         "rooms": 53,
@@ -1518,9 +1524,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33713",
-        "lat": 27.785499,
-        "lng": -82.679503,
-        "geo_source": "census",
+        "lat": 27.785956,
+        "lng": -82.680217,
+        "geo_source": "photon",
         "url": "https://www.choicehotels.com/florida/saint-petersburg/quality-inn-hotels/fl484",
         "phone": "727-323-3100",
         "rooms": 75,
@@ -1550,9 +1556,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33713",
-        "lat": 27.778662,
-        "lng": -82.679471,
-        "geo_source": "census",
+        "lat": 27.778833,
+        "lng": -82.680011,
+        "geo_source": "photon",
         "url": "https://www.wyndhamhotels.com/days-inn/st-petersburg-florida/days-inn-st-petersburg-central/overview",
         "phone": "727-300-5425",
         "features": [
@@ -2156,7 +2162,13 @@
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/palm-court-motel/138169",
         "checked": "2026-09-27",
-        "notes": "Listing's website is http (not stored)."
+        "notes": "Verifier 2026-09-27: the motel's own site is live (https) and confirms address, phone, pool, kitchenettes, bicycles and beach gear. 16 units and pets per the tourism listing.",
+        "url": "https://www.palmcourtmoteldunedin.com/",
+        "quote": "Palm Court Motel is the closest motel to Honeymoon Island State Park and Caladesi Island State Park.",
+        "quote_source": "https://www.palmcourtmoteldunedin.com/",
+        "also_sources": [
+          "https://www.palmcourtmoteldunedin.com/"
+        ]
       },
       {
         "id": "comfort-suites-clearwater-dunedin",
@@ -2198,9 +2210,9 @@
         "city": "Clearwater",
         "state": "FL",
         "zip": "33756",
-        "lat": 27.961768,
-        "lng": -82.793573,
-        "geo_source": "census",
+        "lat": 27.962003,
+        "lng": -82.793247,
+        "geo_source": "photon",
         "phone": "727-562-5400",
         "rooms": 115,
         "features": [
@@ -2215,7 +2227,8 @@
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/residence-inn-clearwater-downtown/138361",
         "checked": "2026-09-27",
-        "notes": "marriott.com refuses automated readers."
+        "notes": "marriott.com refuses automated readers. The listing's website marriott.com/tparw redirects (checked 2026-09-27 by the verifier) to the Marriott property page used as url.",
+        "url": "https://www.marriott.com/en-us/hotels/tparw-residence-inn-clearwater-downtown/overview/"
       },
       {
         "id": "holiday-inn-express-suites-clearwater-gulf-to-bay",
@@ -2264,7 +2277,7 @@
         "lat": 27.961279,
         "lng": -82.715264,
         "geo_source": "photon",
-        "phone": "727-799-0100",
+        "phone": "727-228-9290",
         "rooms": 90,
         "features": [
           "pool",
@@ -2275,7 +2288,12 @@
         "quote": "The Days Inn by Wyndham Clearwater / Gulf to Bay offers guests a comfortable and convenient stay in the heart of Clearwater, ideally positioned between the vibrant city of Tampa and the world-famous Gulf Coast beaches.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/days-inn-clearwater-central/138133",
-        "checked": "2026-09-27"
+        "checked": "2026-09-27",
+        "url": "https://www.wyndhamhotels.com/days-inn/clearwater-florida/days-inn-clearwater-gulf-to-bay/overview",
+        "also_sources": [
+          "https://www.wyndhamhotels.com/days-inn/clearwater-florida/days-inn-clearwater-gulf-to-bay/overview"
+        ],
+        "notes": "Verifier 2026-09-27: Wyndham's page confirms the name, address, free breakfast, heated outdoor pool, guest laundry and kitchenette suites; its phone (+1-727-228-9290) is used; the tourism listing gives 727-799-0100. 90 rooms, hot tub and playground per the tourism listing."
       },
       {
         "id": "clarion-inn-suites-clearwater",
@@ -2358,11 +2376,18 @@
         "features": [
           "kitchens"
         ],
-        "summary": "A 13-unit motel under live oaks on Main Street, within a mile's walk of downtown Safety Harbor and the marina. Some rooms have kitchens and laundry is free.",
+        "summary": "A 13-unit motel under live oaks on Main Street, within a mile's walk of downtown Safety Harbor and the marina, with studios, suites and apartments that have kitchens or kitchenettes. The motel says it has been a downtown landmark since 1957.",
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/safety-harbor-motel/138185",
         "checked": "2026-09-27",
-        "notes": "Listing gives the website as safetyharbormotel.com without scheme (not stored)."
+        "notes": "Verifier 2026-09-27: the motel's own site is live and takes bookings (studios, one-bedroom suites, two-bedroom apartments, kitchens, laundry, keypad entry); 13 units, live oaks and free laundry per the tourism listing.",
+        "url": "https://safetyharbormotel.com/",
+        "opened": "1957",
+        "quote": "A downtown Safety Harbor landmark since 1957, the Safety Harbor Motel is the unique solution for your next Tampa Bay vacation or business getaway.",
+        "quote_source": "https://safetyharbormotel.com/",
+        "also_sources": [
+          "https://safetyharbormotel.com/"
+        ]
       },
       {
         "id": "hampton-inn-suites-largo",
@@ -2509,9 +2534,9 @@
         "city": "Pinellas Park",
         "state": "FL",
         "zip": "33781",
-        "lat": 27.845336,
-        "lng": -82.688261,
-        "geo_source": "census",
+        "lat": 27.845667,
+        "lng": -82.689261,
+        "geo_source": "photon",
         "url": "https://www.radissonhotelsamericas.com/en-us/hotels/country-inn-pinellas-park-fl",
         "phone": "727-369-9997",
         "rooms": 70,
@@ -2598,9 +2623,9 @@
         "city": "Oldsmar",
         "state": "FL",
         "zip": "34677",
-        "lat": 28.035933,
-        "lng": -82.655481,
-        "geo_source": "census",
+        "lat": 28.034686,
+        "lng": -82.656592,
+        "geo_source": "photon",
         "phone": "813-925-8887",
         "rooms": 99,
         "features": [
@@ -2613,7 +2638,8 @@
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/courtyard-by-marriott-tampa-oldsmar/138057",
         "checked": "2026-09-27",
-        "notes": "marriott.com refuses automated readers."
+        "notes": "marriott.com refuses automated readers. The listing's website www.marriott.com/tpaol redirects (checked 2026-09-27 by the verifier) to the Marriott property page used as url. Point: OpenStreetMap hotel feature.",
+        "url": "https://www.marriott.com/en-us/hotels/tpaol-courtyard-tampa-oldsmar/overview/"
       },
       {
         "id": "hilton-garden-inn-tampa-northwest-oldsmar",
@@ -2663,9 +2689,9 @@
         "city": "Oldsmar",
         "state": "FL",
         "zip": "34677",
-        "lat": 28.03665,
-        "lng": -82.657181,
-        "geo_source": "census",
+        "lat": 28.03793,
+        "lng": -82.657281,
+        "geo_source": "photon",
         "url": "https://www.hilton.com/en/hotels/tpaomhx-hampton-suites-tampa-northwest-oldsmar/",
         "phone": "813-818-7202",
         "rooms": 110,
@@ -2695,9 +2721,9 @@
         "city": "Oldsmar",
         "state": "FL",
         "zip": "34677",
-        "lat": 28.035979,
-        "lng": -82.65562,
-        "geo_source": "census",
+        "lat": 28.034828,
+        "lng": -82.657427,
+        "geo_source": "photon",
         "phone": "813-818-9400",
         "rooms": 78,
         "features": [
@@ -2713,7 +2739,8 @@
         "status": "open",
         "source_url": "https://www.visitstpeteclearwater.com/profile/residence-inn-by-marriott-tampa-oldsmar/138259",
         "checked": "2026-09-27",
-        "notes": "marriott.com refuses automated readers."
+        "notes": "marriott.com refuses automated readers. The listing's website marriott.com/tpaod redirects (checked 2026-09-27 by the verifier) to the Marriott property page used as url. Point: OpenStreetMap hotel feature.",
+        "url": "https://www.marriott.com/en-us/hotels/tpaod-residence-inn-tampa-oldsmar/overview/"
       },
       {
         "id": "peninsula-bed-and-cocktails",
@@ -2850,9 +2877,9 @@
         "city": "St. Petersburg",
         "state": "FL",
         "zip": "33714",
-        "lat": 27.817527,
-        "lng": -82.679449,
-        "geo_source": "census",
+        "lat": 27.818106,
+        "lng": -82.678036,
+        "geo_source": "photon",
         "url": "https://www.wyndhamhotels.com/days-inn/st-petersburg-florida/days-inn-st-petersburg-north/overview",
         "phone": "727-202-2323",
         "features": [
@@ -2868,8 +2895,116 @@
         ],
         "checked": "2026-09-27",
         "notes": "North St. Petersburg has no area of its own; filed under northeast-stpete."
+      },
+      {
+        "id": "super-8-st-petersburg",
+        "name": "Super 8 by Wyndham St. Petersburg",
+        "kind": "motel",
+        "brand": "Wyndham",
+        "collection": "Super 8 by Wyndham",
+        "area": "northeast-stpete",
+        "address": "5005A 34th St N",
+        "city": "St. Petersburg",
+        "state": "FL",
+        "zip": "33714",
+        "lat": 27.817824,
+        "lng": -82.678595,
+        "geo_source": "photon",
+        "url": "https://www.wyndhamhotels.com/super-8/st-petersburg-florida/super-8-by-wyndham-st-petersburg/overview",
+        "phone": "727-547-3800",
+        "features": [
+          "pool"
+        ],
+        "summary": "A Super 8 on 34th Street North (US 19) in north St. Petersburg, sharing the 5005 34th Street North address with the Days Inn, with an outdoor pool.",
+        "quote": "Stay with us at Super 8 by Wyndham St. Petersburg, conveniently located off I-275 just a short drive from downtown St. Petersburg and Tampa attractions.",
+        "status": "open",
+        "tags": [
+          "budget"
+        ],
+        "source_url": "https://www.wyndhamhotels.com/super-8/st-petersburg-florida/super-8-by-wyndham-st-petersburg/overview",
+        "also_sources": [
+          "https://www.wyndhamhotels.com/super-8/locations",
+          "https://hotelguides.com/florida/pinellas-park-us-19-hotels.html"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier (2026-09-27): listed on Wyndham's Super 8 locations page; point is the OpenStreetMap Super 8 feature (node 11879278994). North St. Petersburg has no area of its own; filed under northeast-stpete like its neighbor the Days Inn."
+      },
+      {
+        "id": "howard-johnson-clearwater-dunedin",
+        "name": "Howard Johnson by Wyndham Clearwater/Dunedin",
+        "kind": "hotel",
+        "brand": "Wyndham",
+        "collection": "Howard Johnson by Wyndham",
+        "area": "downtown-clearwater",
+        "address": "27988 US Highway 19 N",
+        "city": "Clearwater",
+        "state": "FL",
+        "zip": "33761",
+        "lat": 28.02659,
+        "lng": -82.739228,
+        "geo_source": "photon",
+        "url": "https://www.wyndhamhotels.com/hojo/clearwater-florida/howard-johnson-clearwater-dunedin/overview",
+        "phone": "727-219-9173",
+        "features": [
+          "pool",
+          "free-breakfast",
+          "free-parking"
+        ],
+        "summary": "A Howard Johnson on US 19 North in north Clearwater, between Countryside and Dunedin, with a light breakfast, free Wi-Fi and parking, and an outdoor pool.",
+        "status": "open",
+        "tags": [
+          "budget"
+        ],
+        "source_url": "https://www.wyndhamhotels.com/hojo/clearwater-florida/howard-johnson-clearwater-dunedin/overview",
+        "also_sources": [
+          "https://www.wyndhamhotels.com/hojo/locations",
+          "https://hotelguides.com/florida/tarpon-springs-us-19-hotels.html"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier (2026-09-27): Wyndham's page gives the address and amenities; the researcher had skipped it as a stale tourism listing (Howard Johnson 27988 US 19), but Wyndham lists it today. Point is the OpenStreetMap hotel feature (way 526245808). Filed under downtown-clearwater (Clearwater mainland incl. Countryside)."
+      },
+      {
+        "id": "vista-hotel-on-lake-tarpon",
+        "name": "VISTA Hotel on Lake Tarpon",
+        "aliases": [
+          "Vista Inn on Lake Tarpon",
+          "Vista Inn Lake Tarpon"
+        ],
+        "kind": "hotel",
+        "area": "palm-harbor",
+        "address": "37611 US Highway 19 N",
+        "city": "Palm Harbor",
+        "state": "FL",
+        "zip": "34684",
+        "lat": 28.114217,
+        "lng": -82.739193,
+        "geo_source": "photon",
+        "url": "https://vistainnlaketarpon.com/",
+        "features": [
+          "waterfront",
+          "pool",
+          "fitness",
+          "free-breakfast",
+          "free-parking",
+          "pet-friendly",
+          "meeting-space"
+        ],
+        "summary": "A Mediterranean-style hotel on US 19 in Palm Harbor, just north of Innisbrook, built around a boat basin that opens onto Lake Tarpon. Every room faces the lagoon; it has a pool and spa, boat slips, continental breakfast and a few pet rooms.",
+        "quote": "We are a beautiful, waterfront, Mediterranean style hotel, nestled quaintly around a boat basin, which adjoins Lake Tarpon.",
+        "status": "open",
+        "tags": [
+          "lake",
+          "fishing"
+        ],
+        "source_url": "https://vistainnlaketarpon.com/",
+        "also_sources": [
+          "https://vistainnlaketarpon.com/location/",
+          "https://vistainnlaketarpon.com/amenities/"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier (2026-09-27), found through OpenStreetMap (way 522858309, 'Vista Inn on Lake Tarpon in Palm Harbor'). Address and airport distances (PIE 10 miles, TPA 20 miles) from the hotel's Location page; amenities (free continental breakfast, outdoor pool and spa, exercise gym, meeting facilities, free parking, boat slips, small pets in specified rooms for a fee) from its Amenities page. No phone number is printed on the site; no chain is named."
       }
     ]
   },
-  "report": "# stays-stpete-pinellas: research report (Sep 27, 2026)\n\n## What this slice covers\n\n82 hotels, inns, B&Bs, resorts, extended-stay hotels and motels in St. Petersburg (every area except the Gulf beach towns), Gulfport, and mainland Pinellas: Clearwater (mainland), Dunedin, Safety Harbor, Tarpon Springs, Palm Harbor (Innisbrook), Oldsmar, and Largo with Belleair and Pinellas Park. Gulf beach towns (Clearwater Beach to Pass-a-Grille) belong to `stays-beaches` and are not here; no id overlaps with that slice.\n\nCounts by kind: hotel 40, extended-stay 11, boutique-hotel 8, motel 8, historic-hotel 7, bed-and-breakfast 4, inn 2, resort 2.\n\nCounts by area: northeast-stpete 21 (Carillon, the Gateway/Ulmerton Road airport cluster and north St. Petersburg), downtown-stpete 17, largo 10 (incl. Belleair, Pinellas Park, ICOT Center), dunedin 8, downtown-clearwater 6, grand-central 4, tarpon-springs 4, oldsmar 4, safety-harbor 3, gulfport 2, south-stpete 1 (SkyBeach), old-northeast 1 (Mansion Inn), palm-harbor 1 (Innisbrook). west-stpete: none found.\n\nHeritage blocks (9): The Vinoy (NRHP 78000955, 1978; history from thevinoy.com/history and Wikipedia), The Belleview Inn (surviving 1897 core of Plant's Belleview-Biltmore, NRHP 79000687 listed 1979 and delisted 2017, moved Dec 21, 2016, reopened Dec 5, 2018, per Wikipedia and Opal Collection), Safety Harbor Resort & Spa (Espiritu Santo Springs chronology from tampahistorical.org), Fenway Hotel (WGHB radio 1925, Trinity College 1961-1988, Schiller 1991-2005, per Wikipedia), The Birchwood (1924 Lantern Lane Apartments), The Cordova Inn (1921 Hotel Cordova), Ponce De Leon Hotel (1922, George Feltham, Mission Revival), The 1910 Inn (Queen Anne, local Tarpon Springs register) and The Peninsula (1905, Gulfport).\n\n## How candidates were found\n\n1. Visit St. Pete/Clearwater: the places-to-stay hub and its category pages (hotels-resorts, motels-inns, bed-breakfasts, pet-friendly), the \"Best Downtown Hotels\", \"New Hotels and Fresh Renovations\" and \"Best Boutique Hotels & Retro Motels\" articles, community pages, and its XML sitemap (pages 2 and 3; profile URLs with ids up to about 138664 and from 141445 up could be read, the middle range was cut off by the fetcher).\n2. `site:visitstpeteclearwater.com/profile` WebSearch queries by city and brand (Clearwater, Largo, Pinellas Park, Dunedin, Tarpon Springs, Safety Harbor/Oldsmar, Gulfport, B&Bs, Marriott).\n3. Brand locators that could be read: hilton.com location pages for St. Petersburg, Clearwater, Largo, Pinellas Park, Dunedin and Tarpon Springs (these confirm every Hilton-family hotel in the area as of today); wyndhamhotels.com property pages (La Quinta, Days Inn, Super 8); sonesta.com.\n4. hotelguides.com lists for Ulmerton Road (Clearwater), US 19 Pinellas Park, US 19 Clearwater and US 19 Tarpon Springs.\n5. General WebSearch by area (downtown St. Pete, Largo, Pinellas Park/Gateway, Tarpon Springs B&Bs) and Wikipedia for the historic hotels.\n\nThe session's shared WebSearch budget ran out midway, so later discovery used only pages that could be fetched directly.\n\n## Sources and their limits\n\nEvery record's source_url was opened on Sep 27, 2026. The chain sites marriott.com, hilton.com hotel pages, ihg.com, hyatt.com, choicehotels.com, bestwestern.com, redroof.com and extendedstayamerica.com refuse automated readers (403/503), so for chain hotels the source is usually the Visit St. Pete/Clearwater profile (56 of 82 records); 26 records cite the property's own site or its brand page. Tourism-office profiles can be old: room counts and amenity lists on them may date from earlier renovations. Where a profile only offered an http website link, url was left null rather than guessed (hence the \"no official url\" warnings). Quotes were copied from the fetched page text; the fetch tool summarizes pages, so the verifier should spot-check quotes against the live page.\n\n## Deliberately left out (and why)\n\n- Residence Inn St. Petersburg Clearwater (5050 Ulmerton Rd): Yelp and HotelPlanner titles say permanently closed.\n- Blue Moon Inn (Dunedin): its website now redirects to Sun Retreats Dunedin, an RV resort; not a hotel today.\n- Mar Bay Motel & Suites (Safety Harbor): website domain no longer resolves; could not confirm it operates.\n- Dickens House B&B (Old Northeast): domain now redirects to an unrelated gambling site; treated as closed. Watergarden Inn and Bayboro House domains do not resolve.\n- La Quinta St. Petersburg NE (6638 4th St N) and La Quinta Clearwater South (5000 Lake Blvd): tourism listings are old and the matching Wyndham pages no longer exist, so the current operator and flag are unknown.\n- Econo Lodge Clearwater, Rodeway Inn (16405 US 19), Express Inn & Suites (11333 US 19), Howard Johnson (27988 US 19), Clearwater Inn, D&F Pathways Motel, Gateway Motel, Uptown Suites (long-term rentals), Sierra Vistas Extended Stay: budget roadside motels whose only readable source is a stale tourism listing (or which rent long-term); current operation and brand could not be confirmed.\n- Chain hotels found on hotelguides.com with no readable official or tourism page: TownePlace Suites Clearwater (21090 US 19 N), Fairfield Inn & Suites Clearwater Bayside (3070 Gulf to Bay Blvd), Super 8 US 19 N Clearwater (22950 US 19 N), SureStay by Best Western Clearwater Airport (3655 Hospitality Ln), Extended Stay America Carillon Park (2311 Ulmerton Rd) and ESA US 19 N (15672 US 19 N), Red Roof Inn St. Petersburg (4999 34th St N), Super 8 St. Petersburg (5005-A 34th St N), Quality Inn St. Petersburg North (2595 54th Ave N), Holiday Inn Express & Suites Tampa Northwest-Oldsmar (OpenStreetMap only). These are real candidates for the verifier or the merge to add.\n- The Ballad Hotel Clearwater Downtown, Tapestry by Hilton: on Hilton's locator as coming March 2028; too far out for the guide.\n- Fort Harrison Hotel (Clearwater): owned by the Church of Scientology, not a public hotel.\n- Gulf beach properties (Don CeSar, Sirata, Hotel Zamora, Opal Sands and others): stays-beaches slice.\n\n## Open questions for the verifier\n\n1. Ids to align: vinoy-resort-golf-club, belleview-inn, fenway-hotel and safety-harbor-resort-spa may also be produced by history-region (historic hotels); both slices must use the same id.\n2. Home2 Suites Largo and Home2 Suites Clearwater St. Petersburg Ulmerton Rd have no street address or coordinates: Hilton's locator confirms both, but no readable page gave an address (search snippets say 4485 Ulmerton Rd for the latter).\n3. Hampton Inn Dunedin's address (2641 Michael Pl) comes from hotelguides.com and OpenStreetMap only.\n4. Fenway Hotel build year: the tourism listing says 1924, Wikipedia says 1927 (left blank).\n5. Belleview Inn move distance: the operator says about 250 feet, Wikipedia 375 feet (story uses Wikipedia).\n6. Vinoy room count: 354 per the tourism office; Wikipedia cites 362 at the 2018 sale.\n7. Flags to re-check on the brand sites (blocked to us): Fairfield Inn & Suites Clearwater (3211 Executive Dr), SpringHill Suites Clearwater, Comfort Inn NE Gateway (hotelguides calls it Comfort Inn & Suites), Quality Inn & Suites Tarpon Springs, Holiday Inn Express Clearwater (2580 Gulf to Bay), La Quinta Pinellas Park, Tarpon Shores Inn, The J Hotel & Suites (Dunedin; its site returned 404) and Beach Drive Inn (its site returned 503).\n8. Courtyard St. Petersburg Downtown is described in a Marriott search snippet as the former Pennsylvania Hotel; no readable page confirmed it, so there is no heritage block.\n9. Area choices: hotels on Ulmerton Road, Executive Drive, Roosevelt Boulevard and 49th/34th Street near St. Pete-Clearwater International Airport and Carillon (Clearwater or St. Petersburg mailing addresses) are filed under northeast-stpete (Gateway); ICOT Center, Pinellas Park and Belleair under largo; north St. Petersburg (54th Ave N, 34th St N, 94th Ave N) under northeast-stpete because SPEC has no north St. Pete area. Candlewood Suites Safety Harbor has a Clearwater mailing address but is filed under safety-harbor by its name and the operator's description.\n10. Safety Harbor Resort's census match reads \"105 Bayshore Blvd\" for the listed \"105 N Bayshore Dr\"; the point is at the resort.\n"
+  "report": "# stays-stpete-pinellas: research report (Sep 27, 2026)\n\n## What this slice covers\n\n82 hotels, inns, B&Bs, resorts, extended-stay hotels and motels in St. Petersburg (every area except the Gulf beach towns), Gulfport, and mainland Pinellas: Clearwater (mainland), Dunedin, Safety Harbor, Tarpon Springs, Palm Harbor (Innisbrook), Oldsmar, and Largo with Belleair and Pinellas Park. Gulf beach towns (Clearwater Beach to Pass-a-Grille) belong to `stays-beaches` and are not here; no id overlaps with that slice.\n\nCounts by kind: hotel 40, extended-stay 11, boutique-hotel 8, motel 8, historic-hotel 7, bed-and-breakfast 4, inn 2, resort 2.\n\nCounts by area: northeast-stpete 21 (Carillon, the Gateway/Ulmerton Road airport cluster and north St. Petersburg), downtown-stpete 17, largo 10 (incl. Belleair, Pinellas Park, ICOT Center), dunedin 8, downtown-clearwater 6, grand-central 4, tarpon-springs 4, oldsmar 4, safety-harbor 3, gulfport 2, south-stpete 1 (SkyBeach), old-northeast 1 (Mansion Inn), palm-harbor 1 (Innisbrook). west-stpete: none found.\n\nHeritage blocks (9): The Vinoy (NRHP 78000955, 1978; history from thevinoy.com/history and Wikipedia), The Belleview Inn (surviving 1897 core of Plant's Belleview-Biltmore, NRHP 79000687 listed 1979 and delisted 2017, moved Dec 21, 2016, reopened Dec 5, 2018, per Wikipedia and Opal Collection), Safety Harbor Resort & Spa (Espiritu Santo Springs chronology from tampahistorical.org), Fenway Hotel (WGHB radio 1925, Trinity College 1961-1988, Schiller 1991-2005, per Wikipedia), The Birchwood (1924 Lantern Lane Apartments), The Cordova Inn (1921 Hotel Cordova), Ponce De Leon Hotel (1922, George Feltham, Mission Revival), The 1910 Inn (Queen Anne, local Tarpon Springs register) and The Peninsula (1905, Gulfport).\n\n## How candidates were found\n\n1. Visit St. Pete/Clearwater: the places-to-stay hub and its category pages (hotels-resorts, motels-inns, bed-breakfasts, pet-friendly), the \"Best Downtown Hotels\", \"New Hotels and Fresh Renovations\" and \"Best Boutique Hotels & Retro Motels\" articles, community pages, and its XML sitemap (pages 2 and 3; profile URLs with ids up to about 138664 and from 141445 up could be read, the middle range was cut off by the fetcher).\n2. `site:visitstpeteclearwater.com/profile` WebSearch queries by city and brand (Clearwater, Largo, Pinellas Park, Dunedin, Tarpon Springs, Safety Harbor/Oldsmar, Gulfport, B&Bs, Marriott).\n3. Brand locators that could be read: hilton.com location pages for St. Petersburg, Clearwater, Largo, Pinellas Park, Dunedin and Tarpon Springs (these confirm every Hilton-family hotel in the area as of today); wyndhamhotels.com property pages (La Quinta, Days Inn, Super 8); sonesta.com.\n4. hotelguides.com lists for Ulmerton Road (Clearwater), US 19 Pinellas Park, US 19 Clearwater and US 19 Tarpon Springs.\n5. General WebSearch by area (downtown St. Pete, Largo, Pinellas Park/Gateway, Tarpon Springs B&Bs) and Wikipedia for the historic hotels.\n\nThe session's shared WebSearch budget ran out midway, so later discovery used only pages that could be fetched directly.\n\n## Sources and their limits\n\nEvery record's source_url was opened on Sep 27, 2026. The chain sites marriott.com, hilton.com hotel pages, ihg.com, hyatt.com, choicehotels.com, bestwestern.com, redroof.com and extendedstayamerica.com refuse automated readers (403/503), so for chain hotels the source is usually the Visit St. Pete/Clearwater profile (56 of 82 records); 26 records cite the property's own site or its brand page. Tourism-office profiles can be old: room counts and amenity lists on them may date from earlier renovations. Where a profile only offered an http website link, url was left null rather than guessed (hence the \"no official url\" warnings). Quotes were copied from the fetched page text; the fetch tool summarizes pages, so the verifier should spot-check quotes against the live page.\n\n## Deliberately left out (and why)\n\n- Residence Inn St. Petersburg Clearwater (5050 Ulmerton Rd): Yelp and HotelPlanner titles say permanently closed.\n- Blue Moon Inn (Dunedin): its website now redirects to Sun Retreats Dunedin, an RV resort; not a hotel today.\n- Mar Bay Motel & Suites (Safety Harbor): website domain no longer resolves; could not confirm it operates.\n- Dickens House B&B (Old Northeast): domain now redirects to an unrelated gambling site; treated as closed. Watergarden Inn and Bayboro House domains do not resolve.\n- La Quinta St. Petersburg NE (6638 4th St N) and La Quinta Clearwater South (5000 Lake Blvd): tourism listings are old and the matching Wyndham pages no longer exist, so the current operator and flag are unknown.\n- Econo Lodge Clearwater, Rodeway Inn (16405 US 19), Express Inn & Suites (11333 US 19), Howard Johnson (27988 US 19), Clearwater Inn, D&F Pathways Motel, Gateway Motel, Uptown Suites (long-term rentals), Sierra Vistas Extended Stay: budget roadside motels whose only readable source is a stale tourism listing (or which rent long-term); current operation and brand could not be confirmed.\n- Chain hotels found on hotelguides.com with no readable official or tourism page: TownePlace Suites Clearwater (21090 US 19 N), Fairfield Inn & Suites Clearwater Bayside (3070 Gulf to Bay Blvd), Super 8 US 19 N Clearwater (22950 US 19 N), SureStay by Best Western Clearwater Airport (3655 Hospitality Ln), Extended Stay America Carillon Park (2311 Ulmerton Rd) and ESA US 19 N (15672 US 19 N), Red Roof Inn St. Petersburg (4999 34th St N), Super 8 St. Petersburg (5005-A 34th St N), Quality Inn St. Petersburg North (2595 54th Ave N), Holiday Inn Express & Suites Tampa Northwest-Oldsmar (OpenStreetMap only). These are real candidates for the verifier or the merge to add.\n- The Ballad Hotel Clearwater Downtown, Tapestry by Hilton: on Hilton's locator as coming March 2028; too far out for the guide.\n- Fort Harrison Hotel (Clearwater): owned by the Church of Scientology, not a public hotel.\n- Gulf beach properties (Don CeSar, Sirata, Hotel Zamora, Opal Sands and others): stays-beaches slice.\n\n## Open questions for the verifier\n\n1. Ids to align: vinoy-resort-golf-club, belleview-inn, fenway-hotel and safety-harbor-resort-spa may also be produced by history-region (historic hotels); both slices must use the same id.\n2. Home2 Suites Largo and Home2 Suites Clearwater St. Petersburg Ulmerton Rd have no street address or coordinates: Hilton's locator confirms both, but no readable page gave an address (search snippets say 4485 Ulmerton Rd for the latter).\n3. Hampton Inn Dunedin's address (2641 Michael Pl) comes from hotelguides.com and OpenStreetMap only.\n4. Fenway Hotel build year: the tourism listing says 1924, Wikipedia says 1927 (left blank).\n5. Belleview Inn move distance: the operator says about 250 feet, Wikipedia 375 feet (story uses Wikipedia).\n6. Vinoy room count: 354 per the tourism office; Wikipedia cites 362 at the 2018 sale.\n7. Flags to re-check on the brand sites (blocked to us): Fairfield Inn & Suites Clearwater (3211 Executive Dr), SpringHill Suites Clearwater, Comfort Inn NE Gateway (hotelguides calls it Comfort Inn & Suites), Quality Inn & Suites Tarpon Springs, Holiday Inn Express Clearwater (2580 Gulf to Bay), La Quinta Pinellas Park, Tarpon Shores Inn, The J Hotel & Suites (Dunedin; its site returned 404) and Beach Drive Inn (its site returned 503).\n8. Courtyard St. Petersburg Downtown is described in a Marriott search snippet as the former Pennsylvania Hotel; no readable page confirmed it, so there is no heritage block.\n9. Area choices: hotels on Ulmerton Road, Executive Drive, Roosevelt Boulevard and 49th/34th Street near St. Pete-Clearwater International Airport and Carillon (Clearwater or St. Petersburg mailing addresses) are filed under northeast-stpete (Gateway); ICOT Center, Pinellas Park and Belleair under largo; north St. Petersburg (54th Ave N, 34th St N, 94th Ave N) under northeast-stpete because SPEC has no north St. Pete area. Candlewood Suites Safety Harbor has a Clearwater mailing address but is filed under safety-harbor by its name and the operator's description.\n10. Safety Harbor Resort's census match reads \"105 Bayshore Blvd\" for the listed \"105 N Bayshore Dr\"; the point is at the resort.\n\n## Verification (2026-09-27)\n\nAdversarial pass by a second agent. All 82 records were re-checked: every source_url was opened again with WebFetch (55 Visit St. Pete/Clearwater profiles, 26 official or brand pages, 1 Hilton locator), plus the property's own site wherever one answered, Hilton's locator pages (St. Petersburg, Clearwater, Pinellas Park, Largo, Dunedin, Tarpon Springs) and Wyndham's brand location lists. Name, address, phone, rooms, features, every summary claim and every quote were compared with the page. The session's WebSearch budget was already spent, so closure checks used Google News RSS searches for every property name (then the publisher's article where it could be read: St Pete Rising, St Pete Catalyst) and OpenStreetMap.\n\n**Result: 82 checked, 66 changed (30 content fixes, 36 coordinate-only upgrades), 0 removed, 3 added. Final: 85 stays.**\n\n### Content fixes (30 records)\n- Quotes made verbatim or re-attributed: 1888-hotel (full sentence), karol-hotel (the sentence starts \"At The Karol Hotel...\"), peninsula-bed-and-cocktails (capital E), 1910-inn (lowercase start as on the page), tarpon-shores-inn (period). hollander-hotel and safety-harbor-resort-spa quotes come from the hotels' own sites, not the listing: quote_source added.\n- Unsupported claims removed: pet-friendly on hilton-st-petersburg-bayfront (not on any page read); free-parking on st-petersburg-marriott-clearwater (only a guest review mentions it); kitchens on 1910-inn (not stated); \"sold by the night or the week\" on tampa-bay-extended-stay; \"just off I-275\" on fairfield-inn-suites-st-petersburg-north; \"near the airport\" on the Ulmerton Hampton (listing says only \"minutes from ... airports\"); moxy \"valet only\" softened to \"overnight parking is valet\"; ponce-de-leon-hotel restaurant is Tapas at Ponce (formerly Ceviche), parking wording fixed; avalon now says \"Art Deco roots\" as the listing does.\n- Features added where a page states them: free-breakfast on holiday-inn-express-suites-largo; pet-friendly on tampa-bay-extended-stay (operator site).\n- Names, flags and ids brought up to date (ids renamed; nothing is published yet and no other slice references them):\n  - comfort-inn-ne-gateway -> comfort-inn-suites-northeast-gateway (\"Comfort Inn & Suites (Northeast Gateway)\" on the current listing; 53 units).\n  - la-quinta-pinellas-park-clearwater -> la-quinta-st-petersburg-clearwater: Wyndham now names 7500 US 19 N \"La Quinta by Wyndham St Petersburg-Clearwater\" (phone +1-727-513-5200); source_url is now Wyndham's page.\n  - fairfield-inn-suites-clearwater -> fairfield-inn-suites-st-petersburg-clearwater: marriott.com/tpacw (the listing's own code) redirects to \"fairfield-inn-and-suites-st-petersburg-clearwater\", and OpenStreetMap (ref TPACW) agrees.\n- Facts updated from newer sources: cordova-inn now 95 rooms after a 65-room addition opened in April 2026 (VSPC new-hotels list; St Pete Catalyst, Apr 20, 2026), heritage story extended; peninsula-bed-and-cocktails 1905 and 16 rooms now cited to St Pete Rising (the hotel's page gives no year); days-inn-clearwater-gulf-to-bay url and phone from Wyndham; tampa-bay-extended-stay phone from the operator's site.\n- Official urls added (were null): tarpon-shores-inn, palm-court-motel-dunedin, safety-harbor-motel (own sites answer over https; the latter adds \"landmark since 1957\", opened 1957), and four Marriott hotels whose listing short links (marriott.com/tpasb, tparw, tpaol, tpaod) redirect to their property pages.\n- home2-suites-largo: address (10145 Ulmerton Rd, Largo 33771) and point from the OpenStreetMap hotel feature (way 980506545, ref TPAURHT = the Hilton URL code). home2-suites-clearwater-st-petersburg-ulmerton still has no readable address (the snippet \"4485 Ulmerton Rd\" has no OSM building); left without coordinates.\n- Status context in notes: hilton-st-petersburg-bayfront (Kolter Group agreed to buy it for $96 million; St Pete Rising, Feb 24, 2026: \"expected to remain open for now\"); inn-on-third (listed for sale, Mar 2026; still booking); beach-drive-inn (St Pete Catalyst, Jul 2, 2026: \"a bed and breakfast\" listed for $2.7 million; its site returns 503; kept open because the latest source still calls it a B&B); j-hotel-suites-dunedin (built for Toronto Blue Jays players and, per city officials in 2022, open to the public at certain times of the year; summary now says so); hollander-hotel (the approved 21-story tower shares the block, hotel stays).\n\n### Coordinates\nEvery address was re-geocoded (census) and every name matched against OpenStreetMap (Photon, Nominatim, and an Overpass extract of all tourism=hotel/motel/guest_house in mainland Pinellas). All stored census points matched their address. Following SPEC §7 (an OSM feature that marks the building beats a street-centerline census match), 55 records now use the OSM hotel feature (photon), each checked by name and address; 13 remain census, 1 has none. One real error: la-quinta-st-pete-clearwater-airport's census point for 3301 Ulmerton Rd was about 450 m east of the hotel. Area ids were checked against the points; none changed (north St. Petersburg on 54th Ave N/34th St N stays under northeast-stpete, Pinellas Park and ICOT under largo, as the researcher explained).\n\n### Closures (2025-2026)\nNo record in scope is closed. Checked: Hilton Bayfront (sold, open), Hilton Carillon (sold to Highline, Oct 2025, open), Cordova (expanded), Galaxy (opened Oct 2024), Peninsula (reopened Jan 2024), Belleview Inn (open), Safety Harbor Resort (2023 sauna fire, open). Confirmed closed and correctly left out: Residence Inn St. Petersburg Clearwater (5050 Ulmerton Rd) and TownePlace Suites St. Petersburg Clearwater (49th St N; the Sonesta Simply Suites record sits 70 m from its OSM footprint, apparently the same building), both tagged \"Permanently Closed\" in OSM; The Kenwood Gables B&B (its site says \"now closed\"); La Veranda B&B (domain now a parked blog).\n\n### Added (3)\n- super-8-st-petersburg: Super 8 by Wyndham St. Petersburg, 5005A 34th St N (Wyndham page and Super 8 locations list).\n- howard-johnson-clearwater-dunedin: Howard Johnson by Wyndham Clearwater/Dunedin, 27988 US 19 N (Wyndham page; the researcher had skipped it as a stale tourism listing, but Wyndham lists it today).\n- vista-hotel-on-lake-tarpon: VISTA Hotel on Lake Tarpon, 37611 US 19 N, Palm Harbor (its own Location and Amenities pages; found through OpenStreetMap).\n\n### Completeness notes and open questions for the merge\n- Hilton (all locator pages) and Wyndham (La Quinta, Days Inn, Super 8, Howard Johnson; no Wingate, Travelodge, Baymont, Ramada, Microtel, Wyndham Garden or Trademark in scope) are now complete.\n- Real hotels found in OpenStreetMap and hotelguides.com but NOT added because their only official pages (marriott.com, ihg.com, choicehotels.com, redroof.com, extendedstayamerica.com, woodspring) refuse automated readers: TownePlace Suites Tampa Clearwater (US 19 N at Gulf to Bay; marriott.com/tpacl redirects to that slug), Fairfield Inn & Suites Clearwater (3070 Gulf to Bay Blvd; tpacr), Holiday Inn Express & Suites Tampa Northwest-Oldsmar (next to 4017 Tampa Rd), Comfort Inn & Suites (5000 Lake Blvd, Pinellas Park), Sleep Inn & Suites (4th St N at about 67th Ave N), Red Roof (3580 Ulmerton Rd) and Red Roof Inn St. Petersburg (34th St N), Extended Stay America Carillon Park (2311 Ulmerton Rd), WoodSpring Suites Clearwater (15672 US 19 N), Quality Inn St. Petersburg North (2595 54th Ave N), Econo Lodge and Rodeway Inn roadside motels. Someone with a browser should confirm and add them.\n- Small independent motels on 4th St N, 34th St N, Gulf to Bay Blvd and in Dunedin (Banyan Tree, Landmark, Kentucky, King's Rest, Palms, Amberlee, Seaside Artisan, Dunedin Cove, Terrace Park Studios) have only old tourism listings (one still mentions BayWalk) or bare sites; not added. InTown Suites (2833 Roosevelt Blvd) rents weekly/monthly only; not added.\n- Beach Drive Inn is for sale and its site is down: re-check before publishing. The J Hotel's public availability outside spring training is unconfirmed.\n- 13 records still have no url because their brand sites block readers and the listing gives only an http or generic link (Staybridge, SpringHill, ESA, Sleep Inn, Comfort Inn North, five Holiday Inn Express, Best Western Yacht Harbor, Clarion) or its site is down (J Hotel); Home2 Ulmerton has no address.\n"
 }
