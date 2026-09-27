@@ -1767,7 +1767,7 @@
     "url": "https://www.myclearwater.com/Visit-the-Beach",
     "phone": "(727) 447-7600",
     "hours_text": "Open 24/7. Lifeguards on duty daily, 10 a.m. to 5 p.m.",
-    "summary": "About three miles of city beach at the west end of State Road 60, with public entrances from South Gulfview Boulevard to Eldorado Avenue, year-round lifeguards, playgrounds, restrooms, volleyball nets and the Beach Walk promenade south of Pier 60. No alcohol, smoking or animals (except service animals) are allowed on the beach.",
+    "summary": "The City of Clearwater's public Gulf beach at the west end of State Road 60, with public entrances from South Gulfview Boulevard near Opal Sands to Eldorado Avenue, lifeguards year round (towers staffed daily 10 a.m. to 5 p.m.), volleyball, and the Beach Walk promenade. No alcohol, no animals except service animals, and no fishing on the public bathing beaches.",
     "quote": "Sugar-white sands, warm Gulf of Mexico waters and fiery sunsets are just a few of the things to expect from a trip to Clearwater Beach.",
     "signature": true,
     "status_note": "Open. The city says Pier 60 is open only up to the fishing pier; the bait house and fishing pier are closed until further notice after the recent hurricanes (city beach rules page, read Sep 27, 2026).",
@@ -1786,7 +1786,7 @@
      "https://www.visittampabay.com/listings/clearwater-beach/2694/",
      "https://www.visitstpeteclearwater.com/current-beach-conditions"
     ],
-    "notes": "The id avoids the area id clearwater-beach. Pier 60 is a separate shared record (pier-60, see-pinellas). Phone is from Visit Tampa Bay's listing. Coordinates are the OSM 'Clearwater Beach' place node (near Pier 60)."
+    "notes": "The id avoids the area id clearwater-beach. Pier 60 is a separate shared record (pier-60, see-pinellas). Phone and the State Road 60 address are from Visit Tampa Bay's listing. Coordinates are the OSM 'Clearwater Beach' place node (near Pier 60). Verifier (2026-09-27): re-read the city pages with WebFetch; removed 'about three miles', playgrounds, restrooms, the no-smoking rule and 'south of Pier 60', which the city pages read do not state."
    },
    {
     "state": "FL",
@@ -1811,8 +1811,8 @@
     "geo_source": "census",
     "url": "https://www.visitstpeteclearwater.com/communities/pass-a-grille-beach",
     "phone": "(727) 367-2735",
-    "price_text": "Metered street parking along Gulf Way and Gulf Boulevard.",
-    "summary": "The beach along Gulf Way in Pass-a-Grille, St. Pete Beach, with walkways over sea-grape and sea-oat dunes, almost no buildings on the sand, jetties for fishing, the Paradise Grille concession and metered parking; crowds gather for the sunset every evening.",
+    "price_text": "Metered parking along Gulf Boulevard and Gulf Way.",
+    "summary": "The beach along Gulf Way in Pass-a-Grille, at the south end of St. Pete Beach, with walkways over dunes of sea grapes and sea oats, almost no buildings on the sand except the Paradise Grille, jetties to fish from and metered parking; crowds gather for the sunset every evening.",
     "quote": "Pass-a-Grille is unique among beach communities in Florida in that there is almost no building directly on the sand",
     "tags": [
      "sunset",
@@ -1824,7 +1824,7 @@
      "https://www.visittampabay.com/listings/pass-a-grille-beach/2536/",
      "https://www.visitstpeteclearwater.com/current-beach-conditions"
     ],
-    "notes": "No official St. Pete Beach city page describes the beach (city site has only parking and permit pages). Point is census 900 Gulf Way (Paradise Grille), mid-beach. Phone is St. Pete Beach City Hall (Visit Tampa Bay listing)."
+    "notes": "No official St. Pete Beach city page describes the beach (city site has only parking and permit pages). Point is census 900 Gulf Way (Paradise Grille), mid-beach. Phone and the address line ('Off Gulf Way, from 1st Ave to 22nd Ave') are from Visit Tampa Bay's listing, which also mentions casting from the jetties. Verifier (2026-09-27): re-read the Visit St. Pete/Clearwater page with WebFetch; quote confirmed."
    },
    {
     "state": "FL",
@@ -1930,36 +1930,6 @@
     "state": "FL",
     "status": "open",
     "checked": "2026-09-27",
-    "id": "archibald-memorial-beach-park",
-    "name": "Archibald Memorial Beach Park",
-    "aliases": [
-     "Archibald Beach Park",
-     "Archibald Park"
-    ],
-    "kind": "beach",
-    "topics": [
-     "beaches"
-    ],
-    "area": "madeira-beach",
-    "address": "15100 Gulf Boulevard",
-    "city": "Madeira Beach",
-    "zip": "33708",
-    "lat": 27.801426,
-    "lng": -82.801767,
-    "geo_source": "census",
-    "phone": "(727) 391-7373",
-    "summary": "A Madeira Beach public beach that is often busy on weekends, with restrooms and restaurants nearby.",
-    "quote": "This favorite hot spot is often busy on weekends, and has restrooms and restaurants nearby.",
-    "source_url": "https://www.visittampabay.com/listings/archibald-beach-park/5039/",
-    "also_sources": [
-     "https://www.visitstpeteclearwater.com/current-beach-conditions"
-    ],
-    "notes": "Thin source: only Visit Tampa Bay's listing; the City of Madeira Beach site loads its park pages by script and could not be read. The name 'Archibald Memorial Beach Park' is the verifier's to confirm (listing says Archibald Beach Park)."
-   },
-   {
-    "state": "FL",
-    "status": "open",
-    "checked": "2026-09-27",
     "id": "johns-pass-beach",
     "name": "John's Pass Beach",
     "kind": "beach",
@@ -1974,16 +1944,14 @@
     "lng": -82.783216,
     "geo_source": "census",
     "phone": "(727) 391-7373",
-    "summary": "The south end of Madeira Beach beside John's Pass, where boats pass all day; Visit Tampa Bay warns of frequent rip currents here.",
+    "summary": "The south end of Madeira Beach beside John's Pass, where boats pass all day; Visit Tampa Bay warns that the beach often has riptides.",
     "quote": "This popular beach borders the pass, so a constant parade of boats and watercraft can be seen on the water.",
     "tags": [
      "rip-currents"
     ],
     "source_url": "https://www.visittampabay.com/listings/johns-pass-beach/2902/",
-    "also_sources": [
-     "https://www.visitstpeteclearwater.com/communities/madeira-beach"
-    ],
-    "notes": "Thin source (tourism listing). Point is census 12901 Gulf Blvd, Madeira Beach."
+    "also_sources": [],
+    "notes": "Thin source (tourism listing). Point is census 12901 Gulf Blvd, Madeira Beach. Verifier (2026-09-27): quote and address ('129th Ave along Gulf Blvd') confirmed in the listing's page data."
    },
    {
     "state": "FL",
@@ -2442,19 +2410,30 @@
      "outdoors"
     ],
     "area": "nature-coast",
-    "lat": 28.731926,
-    "lng": -82.29785,
-    "geo_source": "wikipedia",
+    "lat": 28.810397,
+    "lng": -82.295937,
+    "geo_source": "census",
     "url": "https://www.floridastateparks.org/parks-and-trails/withlacoochee-state-trail",
-    "summary": "A 46-mile paved rail trail through Citrus, Hernando and Pasco counties that follows the Withlacoochee River and passes through the Withlacoochee State Forest, for hiking, biking and horseback riding; Wikipedia calls it the longest paved rail trail in Florida.",
+    "summary": "A 47-mile paved rail trail through Citrus, Hernando and Pasco counties between Citrus Springs and Dade City, for cycling, running, walking and skating, with an unpaved equestrian trail alongside parts of it; it passes small towns, ranches and the Withlacoochee State Forest.",
     "tags": [
      "paved-trail",
      "rail-trail",
      "biking",
      "equestrian"
     ],
-    "source_url": "https://en.wikipedia.org/wiki/Withlacoochee_State_Trail",
-    "notes": "floridastateparks.org's trail page returned a Cloudflare challenge even through the r.jina.ai reader on 2026-09-27; facts come from Wikipedia. Verifier: current trail conditions not confirmed on the state page."
+    "source_url": "https://www.floridastateparks.org/parks-and-trails/withlacoochee-state-trail",
+    "notes": "Verifier (2026-09-27): re-sourced to the state trail page, read through the r.jina.ai reader on a second try (the first returned a Cloudflare challenge). Wikipedia gives 46 miles; the state page says 47. The point is the trail's listed address in Inverness (census match); the trail itself is linear.",
+    "address": "3100 S. Old Floral City Road",
+    "city": "Inverness",
+    "zip": "34450",
+    "phone": "(352) 726-0315",
+    "hours_text": "Daily, 8 a.m. to sunset, 365 days a year.",
+    "price_text": "No fee.",
+    "is_free": true,
+    "quote": "At 47 miles, the Withlacoochee State Trail is one of the longest paved rail-trails in Florida.",
+    "also_sources": [
+     "https://en.wikipedia.org/wiki/Withlacoochee_State_Trail"
+    ]
    },
    {
     "state": "FL",
@@ -2684,7 +2663,7 @@
     "hours_text": "Visitor Center and Nature Store: daily 9 a.m. to 4 p.m. Nov. 15 to March 31; weekdays 10 a.m. to 4 p.m. April 1 to Nov. 14.",
     "price_text": "No entry fee for the Visitor Center.",
     "is_free": true,
-    "summary": "The only national wildlife refuge created to protect Florida manatee habitat, in Kings Bay about an hour north of Tampa; most of it is reached only by water, through permitted tour operators or your own boat, and the Visitor Center on Kings Bay explains the manatees.",
+    "summary": "A refuge in Kings Bay about an hour north of Tampa that USFWS says is the only national wildlife refuge created to protect Florida manatee habitat; most of it is reached only by water (your own boat or a permitted tour operator), and the free Visitor Center and Nature Store on Kings Bay explains the manatees.",
     "quote": "Crystal River is home to the only national wildlife refuge in the United States specifically created to protect habitats for Florida’s beloved official marine mammal, the Florida manatee.",
     "quote_source": "https://www.fws.gov/refuge/crystal-river",
     "tags": [
@@ -2755,7 +2734,7 @@
     "url": "https://www.mymanatee.org/connect/locations/location-details/coquina-beach",
     "phone": "(941) 748-4501",
     "hours_text": "Sunrise to sunset.",
-    "summary": "A Manatee County beach in Bradenton Beach near Longboat Pass, with lifeguards, volleyball courts, reservable pavilions and beach wheelchair rentals. Alcohol, glass and pets are not allowed, and the county warns that parking often floods after summer rains.",
+    "summary": "A Manatee County Gulf beach in Bradenton Beach with lifeguards, sand volleyball courts, reservable pavilions and beach wheelchair rentals. Alcohol, glass and pets are not allowed, and the county warns that the parking lots often flood after summer rains.",
     "accessibility": "Beach wheelchair rentals.",
     "tags": [
      "lifeguards",
@@ -2944,7 +2923,7 @@
      "https://www.visitsarasota.com/siesta-key",
      "https://en.wikipedia.org/wiki/Siesta_Key"
     ],
-    "notes": "Sarasota County's own site (scgov.net) returned 403, so hours, lifeguards and parking rules come from no official page. Visit Sarasota says U.S. News & World Report ranked it the best U.S. beach for 2026. Current status not confirmed by the county."
+    "notes": "Sarasota County's own park page could not be found or read (scgov.net search renders by script; the old park URL returns 'page not found'), so hours, lifeguards and parking rules come from no official page. Visit Sarasota (read with WebFetch) says U.S. News & World Report ranked it the best U.S. beach for 2026. Verifier (2026-09-27): Wikipedia's 99 percent quartz and cool-underfoot claims and Visit Sarasota's parking, concession and trolley claims confirmed."
    },
    {
     "state": "FL",
@@ -2975,7 +2954,7 @@
     "also_sources": [
      "https://www.visitsarasota.com/lido-key-st-armands-circle"
     ],
-    "notes": "Thin source; Sarasota County and City pages (scgov.net) returned 403. Coordinates are Wikipedia's Lido Key point. The wade-in is dated Oct. 2, 1955 on Wikipedia."
+    "notes": "Thin source; Sarasota County and City pages could not be read. Coordinates are Wikipedia's Lido Key point. The wade-in is dated Oct. 2, 1955 on Wikipedia and was organized by Sarasota NAACP president Neil Humphrey Sr. Verifier (2026-09-27): the Visit Sarasota quote was re-read with WebFetch and confirmed."
    },
    {
     "state": "FL",
@@ -3187,15 +3166,22 @@
     "lng": -81.86616,
     "geo_source": "photon",
     "url": "https://www.polkfl.gov/park/circle-b-bar-reserve/",
-    "summary": "A 1,267-acre reserve of restored wetlands on a former cattle ranch by Lake Hancock near Lakeland, on the Great Florida Birding Trail and home to spoonbills, ibis, sandhill cranes, bald eagles and alligators, with 3.5 miles of unpaved trails; Polk's Nature Discovery Center has exhibits.",
+    "summary": "A 1,267-acre reserve on a former cattle ranch on the northwest shore of Lake Hancock near Lakeland, where the county says you are almost guaranteed to see alligators; it is a Great Florida Birding Trail site with spoonbills, ibis, sandhill cranes and bald eagles, about 3.5 miles of unpaved trails and Polk's Nature Discovery Center. No pets and no fishing.",
     "tags": [
      "birding",
      "alligators",
      "nature-center",
-     "hiking"
+     "hiking",
+     "no-pets"
     ],
-    "source_url": "https://en.wikipedia.org/wiki/Circle_B_Bar_Reserve",
-    "notes": "Polk County's page renders by script and could not be read; facts are from Wikipedia. Hours and current status not confirmed."
+    "source_url": "https://www.polkfl.gov/park/circle-b-bar-reserve/",
+    "notes": "Verifier (2026-09-27): re-sourced to Polk County's page, read through the r.jina.ai reader (it renders by script for curl). Phone is the county Parks and Natural Resources Division line the page gives for trail closures. Birding Trail, species, trail miles and the Nature Discovery Center are from Wikipedia.",
+    "phone": "(863) 668-4673",
+    "hours_text": "Daily, 6 a.m. to 6:30 p.m. (standard time); 5:30 a.m. to 8 p.m. (daylight saving time).",
+    "quote": "You’re almost guaranteed to see alligators in Lake Hancock, often considered the headwaters of the Peace River, which flows more than 100 miles from Polk County southwest to the Gulf of Mexico.",
+    "also_sources": [
+     "https://en.wikipedia.org/wiki/Circle_B_Bar_Reserve"
+    ]
    },
    {
     "state": "FL",
@@ -3248,7 +3234,6 @@
     "id": "robert-k-rees-memorial-park",
     "name": "Robert K. Rees Memorial Park",
     "aliases": [
-     "Green Key Beach",
      "Rees Park"
     ],
     "kind": "beach",
@@ -3279,7 +3264,7 @@
     "also_sources": [
      "https://www.pascocountyfl.gov/services/parks_recreation_and_natural_resources/park_directory.php"
     ],
-    "notes": "Coordinates are the county page's map link."
+    "notes": "Coordinates are the county page's map link. Verifier (2026-09-27): removed the alias 'Green Key Beach', which no page read uses (the park is on Green Key Road)."
    },
    {
     "state": "FL",
@@ -3287,9 +3272,7 @@
     "checked": "2026-09-27",
     "id": "robert-j-strickland-memorial-park",
     "name": "Robert J. Strickland Memorial Park",
-    "aliases": [
-     "Hudson Beach"
-    ],
+    "aliases": [],
     "kind": "beach",
     "kinds": [
      "park"
@@ -3317,7 +3300,7 @@
     "also_sources": [
      "https://www.pascocountyfl.gov/services/parks_recreation_and_natural_resources/park_directory.php"
     ],
-    "notes": "Coordinates are the county page's map link. 'Hudson Beach' alias is the common local name; verify."
+    "notes": "Coordinates are the county page's map link. Verifier (2026-09-27): removed the unverified alias 'Hudson Beach'."
    },
    {
     "state": "FL",
@@ -3604,6 +3587,32 @@
     ],
     "source_url": "https://www.floridastateparks.org/parks-and-trails/werner-boyce-salt-springs-state-park",
     "notes": "Added by the verifier (2026-09-27); read through the r.jina.ai reader. Second entrance: Black Rail Trailhead, 6641 State Road 52. Kayak concession: Salty Dog Kayak Rentals."
+   },
+   {
+    "checked": "2026-09-27",
+    "state": "FL",
+    "status": "open",
+    "id": "archibald-beach-park",
+    "name": "Archibald Beach Park",
+    "aliases": [
+     "Archibald Park"
+    ],
+    "kind": "beach",
+    "topics": [
+     "beaches"
+    ],
+    "area": "madeira-beach",
+    "address": "15100 Gulf Boulevard",
+    "city": "Madeira Beach",
+    "zip": "33708",
+    "lat": 27.801426,
+    "lng": -82.801767,
+    "geo_source": "census",
+    "phone": "(727) 391-7373",
+    "summary": "A Madeira Beach public beach that Visit Tampa Bay says is often busy on weekends, with restrooms and restaurants nearby.",
+    "quote": "This favorite hot spot is often busy on weekends, and has restrooms and restaurants nearby.",
+    "source_url": "https://www.visittampabay.com/listings/archibald-beach-park/5039/",
+    "notes": "Thin source: only Visit Tampa Bay's listing (its page data gives '15100 Gulf Blvd', St. Petersburg postal city, and (727) 391-7373); the City of Madeira Beach site loads its pages by script and could not be read. Verifier (2026-09-27): renamed from 'Archibald Memorial Beach Park' (id archibald-memorial-beach-park), a name no page read supports, to the listing's name; no other slice referenced the old id."
    }
   ],
   "stays": [
@@ -3999,6 +4008,38 @@
      "https://www.floridastateparks.org/parks-and-trails/oscar-scherer-state-park"
     ],
     "notes": "Added by the verifier (2026-09-27); read through the r.jina.ai reader. The park page gives 101 campsites in its Camping section and 104 in its Campgrounds section, so no count is stated. A primitive group camp holds up to 40 people. Coordinates are the park point."
+   },
+   {
+    "checked": "2026-09-27",
+    "id": "turtle-beach-campground",
+    "name": "Turtle Beach Campground",
+    "kind": "campground",
+    "area": "sarasota",
+    "address": "8862 Midnight Pass Road",
+    "city": "Sarasota",
+    "state": "FL",
+    "zip": "34242",
+    "lat": 27.220985,
+    "lng": -82.516412,
+    "geo_source": "census",
+    "url": "https://www.scgov.net/government/parks-recreation-and-natural-resources/find-a-park/specialty-parks/turtle-beach-campground",
+    "phone": "(941) 861-2267",
+    "features": [
+     "beachfront"
+    ],
+    "summary": "Sarasota County's 39-site RV and tent campground at Turtle Beach on the south end of Siesta Key, with full hookups (20/30/50-amp, water, sewer), crushed-shell sites, a picnic area with grills, a kayak launch and direct beach access; the free Siesta Key trolley stops for Siesta Beach, Siesta Village and downtown Sarasota. No pets (service animals excepted) and no campfires; up to six guests per site.",
+    "quote": "Turtle Beach Campground is Sarasota County’s premier beachfront campground on Siesta Key.",
+    "status": "open",
+    "status_note": "Open. The county lists portable restrooms and shower trailers among the amenities, and closed the campground for maintenance Sept. 14-18, 2026 (county page, read Sep 27, 2026).",
+    "tags": [
+     "rv",
+     "tent",
+     "reservations",
+     "no-pets",
+     "beach-access"
+    ],
+    "source_url": "https://www.scgov.net/government/parks-recreation-and-natural-resources/find-a-park/specialty-parks/turtle-beach-campground",
+    "notes": "Added by the verifier (2026-09-27); read through the r.jina.ai reader. The county says the campground dates from 1921 and was acquired by Sarasota County in 2006. Phone printed as 941-861-CAMP (2267)."
    }
   ]
  },

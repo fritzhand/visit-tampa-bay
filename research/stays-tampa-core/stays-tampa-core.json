@@ -1,1215 +1,1414 @@
 {
- "slice": "stays-tampa-core",
- "checked": "2026-09-27",
- "records": {
-  "stays": [
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "aloft-tampa-downtown",
-    "name": "Aloft Tampa Downtown",
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "Aloft Hotels",
-    "area": "downtown-tampa",
-    "address": "100 W Kennedy Blvd",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpatl-aloft-tampa-downtown/overview/",
-    "phone": "(813) 898-8000",
-    "rooms": 130,
-    "features": [
-     "pool",
-     "fitness",
-     "pet-friendly",
-     "ev-charging",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "An eight-floor, 130-room Aloft on Kennedy Boulevard in downtown, near the Riverwalk, with a pool, a fitness room and the brand's W XYZ bar.",
-    "quote": "We offer easy-breezy access to the Riverwalk, the Tampa Convention Center, and the Benchmark International Arena.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/aloft-tampa-downtown/9973/",
-    "also_sources": [
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. The listing gives 8 floors, 130 sleeping rooms, 13 accessible rooms, pets allowed, pool, fitness facilities, an electric car charging station and valet parking (charge).",
-    "lat": 27.947031,
-    "lng": -82.459691,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "courtyard-tampa-downtown",
-    "name": "Courtyard by Marriott Tampa Downtown",
-    "aliases": [
-     "Courtyard Tampa Downtown"
-    ],
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "Courtyard by Marriott",
-    "area": "downtown-tampa",
-    "address": "102 E Cass St",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpadt-courtyard-tampa-downtown/overview/",
-    "phone": "(813) 229-1100",
-    "rooms": 141,
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A six-floor, 141-room Courtyard in the north end of downtown, with a bistro serving breakfast and dinner, a bar, a pool and two meeting rooms.",
-    "quote": "Enjoy breakfast in our Bistro, proudly serving Starbucks coffee, or a drink in our bar and lounge.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/courtyard-by-marriott-tampa-downtown/2722/",
-    "also_sources": [
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 6 floors, 141 sleeping rooms incl. 5 suites, 13 accessible rooms; restaurant for breakfast and dinner, bar; self and valet parking (charge).",
-    "lat": 27.950826,
-    "lng": -82.461301,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "residence-inn-tampa-downtown",
-    "name": "Residence Inn by Marriott Tampa Downtown",
-    "aliases": [
-     "Residence Inn Tampa Downtown"
-    ],
-    "kind": "extended-stay",
-    "brand": "Marriott",
-    "collection": "Residence Inn by Marriott",
-    "area": "downtown-tampa",
-    "address": "101 E Tyler St",
-    "zip": "33602",
-    "url": "https://www.marriott.com/hotels/travel/tpatd-residence-inn-tampa-downtown/",
-    "phone": "(813) 221-4224",
-    "rooms": 109,
-    "features": [
-     "all-suites",
-     "kitchens",
-     "free-breakfast",
-     "pool",
-     "fitness",
-     "pet-friendly",
-     "accessible-rooms"
-    ],
-    "summary": "A 109-suite Residence Inn in the north end of downtown; every suite has a full kitchen and breakfast is included.",
-    "quote": "Spacious all-suite hotel in downtown Tampa featuring fully equipped kitchens and areas for sleeping, working, eating and relaxing. Complimentary breakfast served daily.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/residence-inn-by-marriott-downtown-tampa/2493/",
-    "also_sources": [
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 7 floors, 109 suites, 4 accessible rooms, pets allowed, pool, fitness, self parking (charge).",
-    "lat": 27.951511,
-    "lng": -82.46158,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "springhill-suites-tampa-downtown",
-    "name": "SpringHill Suites by Marriott Tampa Downtown",
-    "aliases": [
-     "SpringHill Suites Tampa Downtown"
-    ],
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "SpringHill Suites by Marriott",
-    "area": "downtown-tampa",
-    "address": "1105 N Tampa St",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpads-springhill-suites-tampa-downtown/overview/",
-    "phone": "(813) 430-5100",
-    "opened": "2025",
-    "features": [
-     "all-suites",
-     "free-breakfast",
-     "pool",
-     "fitness",
-     "restaurant",
-     "rooftop-bar",
-     "pet-friendly"
-    ],
-    "summary": "An all-suite SpringHill Suites in the north end of downtown, walking distance from Curtis Hixon Waterfront Park, opened in March 2025, with a rooftop pool and The Lighthouse rooftop restaurant and bar.",
-    "quote": "After a day exploring Tampa's historic downtown area, unwind at our lobby bar, or make your way upstairs to the rooftop restaurant and bar, The Lighthouse, serving upscale American Cuisine with a coastal flair.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/springhill-suites-tampa-downtown/20428/",
-    "also_sources": [
-     "https://www.visittampabay.com/meeting-planners/new-development/",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Opening month (March 2025) from Visit Tampa Bay's new-development page ('Opened March 2025'). Room count not stated.",
-    "lat": 27.952533,
-    "lng": -82.460906,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "embassy-suites-tampa-downtown-convention-center",
-    "name": "Embassy Suites by Hilton Tampa Downtown Convention Center",
-    "aliases": [
-     "Embassy Suites Tampa-Downtown Convention Center"
-    ],
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Embassy Suites by Hilton",
-    "area": "downtown-tampa",
-    "address": "513 S Florida Ave",
-    "zip": "33602",
-    "url": "https://www.hilton.com/en/hotels/TPAESES",
-    "phone": "(813) 769-8300",
-    "rooms": 360,
-    "features": [
-     "all-suites",
-     "free-breakfast",
-     "pool",
-     "fitness",
-     "restaurant",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A 20-floor, 360-suite Embassy Suites joined to the Tampa Convention Center by a skybridge, on the Riverwalk; breakfast and an evening reception are included, and the pool is on the roof.",
-    "quote": "Connected via skybridge to the Tampa Convention Center, our all-suite hotel is ideal for business travelers, families, and event attendees alike.",
-    "opened": "2006",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/embassy-suites-tampa-downtown-convention-center/4748/",
-    "also_sources": [
-     "https://www.cvent.com/venues/tampa/hotel/embassy-suites-by-hilton-tampa-downtown-convention-center/venue-adf9b077-300d-42cb-b47a-2b896511a007",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 20 floors, 360 suites, 20 accessible rooms, 11,010 sq ft of meeting rooms, valet parking (charge). url: where the listing's website tampadowntown.embassysuites.com redirects (hilton.com, not readable). Cvent (hotel-supplied): 360 suites, built 2006 ('Opened in 2006'), renovated 2019.",
-    "lat": 27.942614,
-    "lng": -82.454856,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hilton-tampa-downtown",
-    "name": "Hilton Tampa Downtown",
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Hilton Hotels & Resorts",
-    "area": "downtown-tampa",
-    "address": "211 N Tampa St",
-    "zip": "33602",
-    "url": "https://www.hilton.com/en/hotels/tpanthf-hilton-tampa-downtown/",
-    "phone": "(813) 204-3000",
-    "rooms": 520,
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A 17-floor, 520-room Hilton steps from the Riverwalk, with a rooftop pool, the Che Vita Southern Italian restaurant, a Starbucks and about 30,000 sq ft of meeting space.",
-    "quote": "Perfectly situated just steps from Tampa's bustling Riverwalk, our hotel offers contemporary accommodations, a rooftop pool with stunning city views",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/hilton-tampa-downtown/10242/",
-    "also_sources": [
-     "https://www.cvent.com/venues/tampa/hotel/hilton-tampa-downtown/venue-2baf38b1-13f0-4390-904d-72845e3d4412",
-     "https://www.tampasdowntown.com/place_category/stay/",
-     "https://www.hilton.com/en/locations/usa/florida/tampa/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 17 floors, 520 sleeping rooms incl. 14 suites, 17 accessible rooms, pets allowed, valet parking (charge), 30,000 sq ft meeting rooms. Cvent: 520 rooms incl. 14 suites; building built 1982, renovated 2020.",
-    "lat": 27.946089,
-    "lng": -82.45812,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hotel-flor-tampa-downtown",
-    "name": "Hotel Flor Tampa Downtown, Tapestry Collection by Hilton",
-    "aliases": [
-     "Hotel Flor",
-     "Floridan Palace Hotel",
-     "Hotel Floridan",
-     "Floridan Hotel"
-    ],
-    "kind": "historic-hotel",
-    "brand": "Hilton",
-    "collection": "Tapestry Collection by Hilton",
-    "area": "downtown-tampa",
-    "address": "905 N Florida Ave",
-    "zip": "33602",
-    "url": "https://www.hotelflortampa.com/",
-    "phone": "(813) 225-1700",
-    "rooms": 210,
-    "features": [
-     "historic",
-     "restaurant",
-     "fitness",
-     "pet-friendly",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "The 1920s Floridan hotel tower at the north end of downtown, reopened in 2024 as a Tapestry Collection by Hilton hotel with 210 rooms, The Dan restaurant and event spaces including the Crystal Dining Room and Floridan Ballroom.",
-    "quote": "Historic charm meets modern luxury",
-    "heritage": {
-     "built": "1926–1927",
-     "architect": "G. A. Miller and Francis J. Kennard",
-     "designations": [
+  "slice": "stays-tampa-core",
+  "checked": "2026-09-27",
+  "records": {
+    "stays": [
       {
-       "name": "National Register of Historic Places",
-       "ref": "96000315",
-       "year": 1996,
-       "url": "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida"
-      }
-     ],
-     "era": "land-boom",
-     "story": "Construction of the Hotel Floridan began in 1926 and it opened in 1927 with 19 floors and 316 rooms; it was Tampa's tallest building until 1966. Its Sapphire Room bar was a World War II nightspot for servicemen training at nearby Drew Field. The hotel closed to overnight guests in 1966 and shut in 1989. After a long restoration it reopened as the Floridan Palace Hotel in 2012, and in January 2024 it reopened as Hotel Flor Tampa Downtown, Tapestry Collection by Hilton.",
-     "visiting": "Open as a hotel; The Dan restaurant and Cass Street Coffee Company are on site, per the hotel's site.",
-     "sources": [
-      "https://en.wikipedia.org/wiki/Hotel_Flor_Tampa",
-      "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
-      "https://www.hotelflortampa.com/"
-     ]
-    },
-    "status": "open",
-    "source_url": "https://www.hotelflortampa.com/",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/hotel-flor-tampa-downtown-tapestry-collection-by-hilton/8892/",
-     "https://www.cvent.com/venues/tampa/hotel/hotel-flor-tampa-downtown-tapestry-collection-by-hilton/venue-defa28f1-6b9b-458b-995c-75c67a6b1096",
-     "https://en.wikipedia.org/wiki/Hotel_Flor_Tampa",
-     "https://www.visittampabay.com/meeting-planners/new-development/"
-    ],
-    "notes": "Hotel site (WebFetch): The Dan, Cass Street Coffee Company, 'Flor in the Morning' breakfast; dogs up to two per room, 50 lbs, $75 per stay; $30/day destination fee. Room count 210 from the Visit Tampa Bay listing (20 floors, 15 suites, 11 accessible rooms, valet parking); Wikipedia gives 213 rooms at the 2012 reopening. Build year: the hotel's listing says 'Built in 1926' and Cvent says 'Opened in 1926' (renovated 2023); Wikipedia says construction began in 1926 and it opened in 1927, so opened is left null. NRHP listing name: Floridan Hotel, listed 1996-03-12.",
-    "lat": 27.951794,
-    "lng": -82.458706,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hotel-tampa-riverwalk",
-    "name": "Hotel Tampa Riverwalk",
-    "aliases": [
-     "Sheraton Tampa Riverwalk Hotel"
-    ],
-    "kind": "hotel",
-    "brand": "Hilton",
-    "area": "downtown-tampa",
-    "address": "200 N Ashley Dr",
-    "zip": "33602",
-    "url": "https://www.hoteltampariverwalk.com/",
-    "phone": "813-223-2222",
-    "rooms": 275,
-    "features": [
-     "waterfront",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "ev-charging",
-     "meeting-space"
-    ],
-    "summary": "A 275-room hotel on the Hillsborough River with direct access to the Tampa Riverwalk and river- or city-view balconies. It is open during a renovation that runs through Nov 30, 2026.",
-    "quote": "In the heart of Tampa Bay's iconic Riverwalk, Hotel Tampa is a vibrant destination for local charm and downtown discovery.",
-    "status": "open",
-    "status_note": "Open during renovation through Nov 30, 2026: the pool, River's Edge restaurant and pool bar are closed until then; the fitness center stays open (hotel FAQ, read Sep 27, 2026).",
-    "source_url": "https://www.hoteltampariverwalk.com/",
-    "also_sources": [
-     "https://www.hoteltampariverwalk.com/faq",
-     "https://www.cvent.com/venues/tampa/hotel/hotel-tampa-riverwalk/venue-a40965ca-b7ca-4d29-a1b1-cc76f91b18c6",
-     "https://www.visittampabay.com/listings/hotel-tampa-riverwalk/3063/",
-     "https://www.tampasdowntown.com/11-awesome-places-to-stay-in-downtown-tampa/"
-    ],
-    "notes": "Official site: 275 oversized rooms (JSON-LD), valet parking with EV charging ($44/day), pets up to 50 lbs ($75/stay), 12,000 sq ft of meeting space, and it calls itself 'our downtown Tampa Hilton hotel'. Cvent: 275 rooms incl. 8 suites, built 1969, renovated 2018. The Visit Tampa Bay listing says 277 rooms. The Tampa Downtown Partnership's 2019 list names 200 N Ashley Dr as the Sheraton Tampa Riverwalk Hotel. Visit Tampa Bay's new-development page lists a 'Curio Collection by Hilton on the Tampa Riverwalk' (281 rooms, late 2026) without naming the building; the hotel's own pages do not mention Curio. Open question for the verifier.",
-    "lat": 27.945753,
-    "lng": -82.458863,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hyatt-place-tampa-downtown",
-    "name": "Hyatt Place Tampa Downtown",
-    "kind": "hotel",
-    "brand": "Hyatt",
-    "collection": "Hyatt Place",
-    "area": "downtown-tampa",
-    "address": "325 N Florida Ave",
-    "zip": "33602",
-    "url": "https://www.hyatt.com/hyatt-place/en-US/tpazd-hyatt-place-tampa-downtown",
-    "phone": "(813) 616-1234",
-    "rooms": 230,
-    "opened": "2021",
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "meeting-space"
-    ],
-    "summary": "A 230-room Hyatt Place that shares a 17-story tower, lobby, pool deck and Corazon restaurant with Hyatt House Tampa Downtown, across from Tampa City Hall; both opened in February 2021.",
-    "quote": "Situated across the street from the historic City Hall, the 17-story building offers a unique layout with a stylish, single lobby",
-    "quote_source": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
-    "status": "open",
-    "source_url": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/hyatt-place-%26-hyatt-house-tampa-downtown/15141/",
-     "https://www.cvent.com/venues/tampa/hotel/hyatt-place-downtown-tampa/venue-166615ef-9488-4342-bb41-213c23448d03",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "Source is the managing company's opening release (Feb 25, 2021): 230-room Hyatt Place + 115-room Hyatt House, heated rooftop pool and terrace, fitness center, Corazon restaurant/bar, 3,600 sq ft meeting space, self and valet parking. hyatt.com refuses automated reading (HTTP 403). The current Visit Tampa Bay listing (345 rooms combined, pool on the 5th-floor deck, Corazon, Wicked Pour, Starbucks) confirms it is operating.",
-    "lat": 27.947455,
-    "lng": -82.456792,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hyatt-house-tampa-downtown",
-    "name": "Hyatt House Tampa Downtown",
-    "kind": "extended-stay",
-    "brand": "Hyatt",
-    "collection": "Hyatt House",
-    "area": "downtown-tampa",
-    "address": "325 N Florida Ave",
-    "zip": "33602",
-    "url": "https://www.hyatt.com/hyatt-house/en-US/tpaxd-hyatt-house-tampa-downtown",
-    "phone": "(813) 616-1234",
-    "rooms": 115,
-    "opened": "2021",
-    "features": [
-     "kitchens",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space"
-    ],
-    "summary": "A 115-room Hyatt House for longer stays, with kitchens in its suites; it shares the tower, lobby, pool and restaurant of Hyatt Place Tampa Downtown and takes dogs up to 50 lbs.",
-    "quote": "Ideal for extended stays and designed in residential style, Hyatt House Tampa Downtown guests can enjoy suites complete with fully fitted kitchens",
-    "status": "open",
-    "source_url": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/hyatt-place-%26-hyatt-house-tampa-downtown/15141/"
-    ],
-    "notes": "Same building and front desk as hyatt-place-tampa-downtown. Opening release Feb 25, 2021 (HRI Hospitality); hyatt.com refuses automated reading.",
-    "lat": 27.947455,
-    "lng": -82.456792,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "le-meridien-tampa",
-    "name": "Le Méridien Tampa",
-    "aliases": [
-     "Le Meridien Tampa"
-    ],
-    "kind": "historic-hotel",
-    "brand": "Marriott",
-    "collection": "Le Méridien",
-    "area": "downtown-tampa",
-    "address": "601 N Florida Ave",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpamd-le-meridien-tampa/overview/",
-    "phone": "(813) 221-9555",
-    "rooms": 130,
-    "features": [
-     "historic",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A 130-room hotel inside Tampa's 1905 federal courthouse, where former courtrooms serve as meeting rooms; it has the Bizou Brasserie restaurant, a pool and a 24-hour fitness center.",
-    "quote": "This century-old Historic Federal Courthouse has been transformed into a one-of-a-kind Tampa hotel.",
-    "heritage": {
-     "built": "1905",
-     "architect": "James Knox Taylor (Supervising Architect of the U.S. Treasury)",
-     "designations": [
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "aloft-tampa-downtown",
+        "name": "Aloft Tampa Downtown",
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "Aloft Hotels",
+        "area": "downtown-tampa",
+        "address": "100 W Kennedy Blvd",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpatl-aloft-tampa-downtown/overview/",
+        "phone": "(813) 898-8000",
+        "rooms": 130,
+        "features": [
+          "pool",
+          "fitness",
+          "pet-friendly",
+          "ev-charging",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "An eight-floor, 130-room Aloft on Kennedy Boulevard in downtown, near the Riverwalk, with a pool, a fitness room and the brand's W XYZ bar.",
+        "quote": "We offer easy-breezy access to the Riverwalk, the Tampa Convention Center, and the Benchmark International Arena.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/aloft-tampa-downtown/9973/",
+        "also_sources": [
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. The listing gives 8 floors, 130 sleeping rooms, 13 accessible rooms, pets allowed, pool, fitness facilities, an electric car charging station and valet parking (charge). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26287186). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'ALOFT TAMPA DOWNTOWN' with 130 rental units, license current, last inspected 2026-04-03.",
+        "lat": 27.946689,
+        "lng": -82.460094,
+        "geo_source": "photon"
+      },
       {
-       "name": "National Register of Historic Places",
-       "ref": "74000633",
-       "year": 1974,
-       "url": "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)"
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "courtyard-tampa-downtown",
+        "name": "Courtyard by Marriott Tampa Downtown",
+        "aliases": [
+          "Courtyard Tampa Downtown"
+        ],
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "Courtyard by Marriott",
+        "area": "downtown-tampa",
+        "address": "102 E Cass St",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpadt-courtyard-tampa-downtown/overview/",
+        "phone": "(813) 229-1100",
+        "rooms": 141,
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A six-floor, 141-room Courtyard in the north end of downtown, with a Bistro serving breakfast and Starbucks coffee, a bar and lounge, a pool and two meeting rooms.",
+        "quote": "Enjoy breakfast in our Bistro, proudly serving Starbucks coffee, or a drink in our bar and lounge.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/courtyard-by-marriott-tampa-downtown/2722/",
+        "also_sources": [
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 6 floors, 141 sleeping rooms incl. 5 suites, 13 accessible rooms; restaurant for breakfast and dinner, bar; self and valet parking (charge). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 918578798). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'COURTYARD BY MARRIOTT, 102 E CASS ST' with 141 rental units, license current, last inspected 2026-09-18. Verified 2026-09-27: summary no longer says the Bistro serves dinner (the listing's text names breakfast and the bar only).",
+        "lat": 27.951206,
+        "lng": -82.46091,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "residence-inn-tampa-downtown",
+        "name": "Residence Inn by Marriott Tampa Downtown",
+        "aliases": [
+          "Residence Inn Tampa Downtown"
+        ],
+        "kind": "extended-stay",
+        "brand": "Marriott",
+        "collection": "Residence Inn by Marriott",
+        "area": "downtown-tampa",
+        "address": "101 E Tyler St",
+        "zip": "33602",
+        "url": "https://www.marriott.com/hotels/travel/tpatd-residence-inn-tampa-downtown/",
+        "phone": "(813) 221-4224",
+        "rooms": 109,
+        "features": [
+          "all-suites",
+          "kitchens",
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "pet-friendly",
+          "accessible-rooms"
+        ],
+        "summary": "A 109-suite Residence Inn in the north end of downtown; every suite has a full kitchen and breakfast is included.",
+        "quote": "Spacious all-suite hotel in downtown Tampa featuring fully equipped kitchens and areas for sleeping, working, eating and relaxing. Complimentary breakfast served daily.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/residence-inn-by-marriott-downtown-tampa/2493/",
+        "also_sources": [
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 7 floors, 109 suites, 4 accessible rooms, pets allowed, pool, fitness, self parking (charge). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26312786). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'RESIDENCE INN TAMPA DOWNTOWN' with 109 rental units, license current, last inspected 2026-06-30.",
+        "lat": 27.951531,
+        "lng": -82.461022,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "springhill-suites-tampa-downtown",
+        "name": "SpringHill Suites by Marriott Tampa Downtown",
+        "aliases": [
+          "SpringHill Suites Tampa Downtown"
+        ],
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "SpringHill Suites by Marriott",
+        "area": "downtown-tampa",
+        "address": "1105 N Tampa St",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpads-springhill-suites-tampa-downtown/overview/",
+        "phone": "(813) 430-5100",
+        "opened": "2025",
+        "features": [
+          "all-suites",
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "restaurant",
+          "rooftop-bar",
+          "pet-friendly"
+        ],
+        "summary": "An all-suite SpringHill Suites in the north end of downtown, walking distance from Curtis Hixon Waterfront Park, opened in March 2025, with a rooftop pool and The Lighthouse rooftop restaurant and bar.",
+        "quote": "After a day exploring Tampa's historic downtown area, unwind at our lobby bar, or make your way upstairs to the rooftop restaurant and bar, The Lighthouse, serving upscale American Cuisine with a coastal flair.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/springhill-suites-tampa-downtown/20428/",
+        "also_sources": [
+          "https://www.visittampabay.com/meeting-planners/new-development/",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Opening month (March 2025) from Visit Tampa Bay's new-development page ('Opened March 2025'). Room count not stated. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM node 11879279014). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'SPRINGHILL SUITES TAMPA, 1105 N TAMPA ST' with 168 rental units, license current, last inspected 2026-08-14. Verified 2026-09-27: rooms=168 is the state license's unit count (neither the hotel's listing nor Visit Tampa Bay states a room count).",
+        "lat": 27.95305,
+        "lng": -82.460749,
+        "geo_source": "photon",
+        "rooms": 168
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "embassy-suites-tampa-downtown-convention-center",
+        "name": "Embassy Suites by Hilton Tampa Downtown Convention Center",
+        "aliases": [
+          "Embassy Suites Tampa-Downtown Convention Center"
+        ],
+        "kind": "hotel",
+        "brand": "Hilton",
+        "collection": "Embassy Suites by Hilton",
+        "area": "downtown-tampa",
+        "address": "513 S Florida Ave",
+        "zip": "33602",
+        "url": "https://www.hilton.com/en/hotels/TPAESES",
+        "phone": "(813) 769-8300",
+        "rooms": 360,
+        "features": [
+          "all-suites",
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "restaurant",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A 20-floor, 360-suite Embassy Suites joined to the Tampa Convention Center by a skybridge, on the Riverwalk; breakfast and an evening reception are included, and it has a rooftop heated swim spa with a cabana pool bar.",
+        "quote": "Connected via skybridge to the Tampa Convention Center, our all-suite hotel is ideal for business travelers, families, and event attendees alike.",
+        "opened": "2006",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/embassy-suites-tampa-downtown-convention-center/4748/",
+        "also_sources": [
+          "https://www.cvent.com/venues/tampa/hotel/embassy-suites-by-hilton-tampa-downtown-convention-center/venue-adf9b077-300d-42cb-b47a-2b896511a007",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 20 floors, 360 suites, 20 accessible rooms, 11,010 sq ft of meeting rooms, valet parking (charge). url: where the listing's website tampadowntown.embassysuites.com redirects (hilton.com, not readable). Cvent (hotel-supplied): 360 suites, built 2006 ('Opened in 2006'), renovated 2019. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26265103). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'EMBASSY SUITES HOTEL TAMPA-DOWNTOWN CONVENTION CENTER' with 360 rental units, license current, last inspected 2026-03-23. Verified 2026-09-27: summary corrected: the listing describes a 'Rooftop heated outdoor swim spa with cabana pool bar', not a rooftop pool.",
+        "lat": 27.942277,
+        "lng": -82.455043,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hilton-tampa-downtown",
+        "name": "Hilton Tampa Downtown",
+        "kind": "hotel",
+        "brand": "Hilton",
+        "collection": "Hilton Hotels & Resorts",
+        "area": "downtown-tampa",
+        "address": "211 N Tampa St",
+        "zip": "33602",
+        "url": "https://www.hilton.com/en/hotels/tpanthf-hilton-tampa-downtown/",
+        "phone": "(813) 204-3000",
+        "rooms": 520,
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A 17-floor, 520-room Hilton steps from the Riverwalk, with a rooftop pool, the Che Vita Southern Italian restaurant, a Starbucks and about 30,000 sq ft of meeting space.",
+        "quote": "Perfectly situated just steps from Tampa's bustling Riverwalk, our hotel offers contemporary accommodations, a rooftop pool with stunning city views",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/hilton-tampa-downtown/10242/",
+        "also_sources": [
+          "https://www.cvent.com/venues/tampa/hotel/hilton-tampa-downtown/venue-2baf38b1-13f0-4390-904d-72845e3d4412",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www.hilton.com/en/locations/usa/florida/tampa/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 17 floors, 520 sleeping rooms incl. 14 suites, 17 accessible rooms, pets allowed, valet parking (charge), 30,000 sq ft meeting rooms. Cvent: 520 rooms incl. 14 suites; building built 1982, renovated 2020. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 175997892). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HILTON DOWNTOWN TAMPA' with 520 rental units, license current, last inspected 2026-01-09.",
+        "lat": 27.946221,
+        "lng": -82.457752,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hotel-flor-tampa-downtown",
+        "name": "Hotel Flor Tampa Downtown, Tapestry Collection by Hilton",
+        "aliases": [
+          "Hotel Flor",
+          "Floridan Palace Hotel",
+          "Hotel Floridan",
+          "Floridan Hotel"
+        ],
+        "kind": "historic-hotel",
+        "brand": "Hilton",
+        "collection": "Tapestry Collection by Hilton",
+        "area": "downtown-tampa",
+        "address": "905 N Florida Ave",
+        "zip": "33602",
+        "url": "https://www.hotelflortampa.com/",
+        "phone": "(813) 225-1700",
+        "rooms": 210,
+        "features": [
+          "historic",
+          "restaurant",
+          "fitness",
+          "pet-friendly",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "The 1920s Floridan hotel tower at the north end of downtown, reopened in 2024 as a Tapestry Collection by Hilton hotel with 210 rooms, The Dan restaurant and event spaces including the Floridan Ballroom and the Crystal Ballroom.",
+        "quote": "Historic charm meets modern luxury",
+        "heritage": {
+          "built": "1926–1927",
+          "architect": "G. A. Miller and Francis J. Kennard",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "96000315",
+              "year": 1996,
+              "url": "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida"
+            }
+          ],
+          "era": "land-boom",
+          "story": "Construction of the Hotel Floridan began in 1926 and it opened in 1927 with 19 floors and 316 rooms; it was Tampa's tallest building until 1966. Its Sapphire Room bar was a World War II nightspot for servicemen training at nearby Drew Field. The hotel closed to overnight guests in 1966 and shut in 1989. After a long restoration it reopened as the Floridan Palace Hotel in 2012, and in January 2024 it reopened as Hotel Flor Tampa Downtown, Tapestry Collection by Hilton.",
+          "visiting": "Open as a hotel; The Dan restaurant and Cass Street Coffee Company are on site, per the hotel's site.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Hotel_Flor_Tampa",
+            "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
+            "https://www.hotelflortampa.com/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.hotelflortampa.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/hotel-flor-tampa-downtown-tapestry-collection-by-hilton/8892/",
+          "https://www.cvent.com/venues/tampa/hotel/hotel-flor-tampa-downtown-tapestry-collection-by-hilton/venue-defa28f1-6b9b-458b-995c-75c67a6b1096",
+          "https://en.wikipedia.org/wiki/Hotel_Flor_Tampa",
+          "https://www.visittampabay.com/meeting-planners/new-development/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Hotel site (WebFetch): The Dan, Cass Street Coffee Company, 'Flor in the Morning' breakfast; dogs up to two per room, 50 lbs, $75 per stay; $30/day destination fee. Room count 210 from the Visit Tampa Bay listing (20 floors, 15 suites, 11 accessible rooms, valet parking); Wikipedia gives 213 rooms at the 2012 reopening. Build year: the hotel's listing says 'Built in 1926' and Cvent says 'Opened in 1926' (renovated 2023); Wikipedia says construction began in 1926 and it opened in 1927, so opened is left null. NRHP listing name: Floridan Hotel, listed 1996-03-12. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26304326). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HOTEL FLOR' with 213 rental units, license current, last inspected 2026-07-24. Verified 2026-09-27: summary corrected: the Visit Tampa Bay listing names the 'Crystal Ballroom' (not 'Crystal Dining Room'). rooms kept at 210 (hotel listing); the state license and Wikipedia (2012) say 213. Heritage facts re-read on Wikipedia (construction 1926, opened 1927, 19 floors, 316 rooms, tallest until 1966, Sapphire Room, closed 1966/1989, reopened July 30, 2012, Tapestry January 2024, NRHP 96000315 on March 12, 1996).",
+        "lat": 27.952072,
+        "lng": -82.458585,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hotel-tampa-riverwalk",
+        "name": "Hotel Tampa Riverwalk",
+        "aliases": [
+          "Sheraton Tampa Riverwalk Hotel"
+        ],
+        "kind": "hotel",
+        "brand": "Hilton",
+        "area": "downtown-tampa",
+        "address": "200 N Ashley Dr",
+        "zip": "33602",
+        "url": "https://www.hoteltampariverwalk.com/",
+        "phone": "813-223-2222",
+        "rooms": 275,
+        "features": [
+          "waterfront",
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "ev-charging",
+          "meeting-space"
+        ],
+        "summary": "A 275-room hotel on the Hillsborough River with direct access to the Tampa Riverwalk and river- or city-view balconies. It is open during a renovation that runs through Nov 30, 2026.",
+        "quote": "In the heart of Tampa Bay's iconic Riverwalk, Hotel Tampa is a vibrant destination for local charm and downtown discovery.",
+        "status": "open",
+        "status_note": "Open during a renovation through Nov 30, 2026 (work 9 AM-5 PM daily): the pool is closed during the renovation and River's Edge and its pool bar are closed through late 2026; the fitness center stays open 24/7 (hotel FAQ, read Sep 27, 2026).",
+        "source_url": "https://www.hoteltampariverwalk.com/",
+        "also_sources": [
+          "https://www.hoteltampariverwalk.com/faq",
+          "https://www.cvent.com/venues/tampa/hotel/hotel-tampa-riverwalk/venue-a40965ca-b7ca-4d29-a1b1-cc76f91b18c6",
+          "https://www.visittampabay.com/listings/hotel-tampa-riverwalk/3063/",
+          "https://www.tampasdowntown.com/11-awesome-places-to-stay-in-downtown-tampa/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+          "https://www.hilton.com/en/locations/usa/florida/tampa/"
+        ],
+        "notes": "Official site: 275 oversized rooms (JSON-LD), valet parking with EV charging ($44/day), pets up to 50 lbs ($75/stay), 12,000 sq ft of meeting space, and it calls itself 'our downtown Tampa Hilton hotel'. Cvent: 275 rooms incl. 8 suites, built 1969, renovated 2018. The Visit Tampa Bay listing says 277 rooms. The Tampa Downtown Partnership's 2019 list names 200 N Ashley Dr as the Sheraton Tampa Riverwalk Hotel. Visit Tampa Bay's new-development page lists a 'Curio Collection by Hilton on the Tampa Riverwalk' (281 rooms, late 2026) without naming the building; the hotel's own pages do not mention Curio. Open question for the verifier. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26282747). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HOTEL TAMPA RIVERWALK' with 277 rental units, license current, last inspected 2026-04-28. Verified 2026-09-27: Brand Hilton confirmed: the hotel's site books through hilton.com (ctyhocn TPARWQQ) and calls itself 'our downtown Tampa Hilton hotel', and hilton.com's Tampa locations page lists 'Hotel Tampa Riverwalk'. Collection not stated anywhere read, left null. Visit Tampa Bay's new-development page still lists a 281-room 'Curio Collection by Hilton on the Tampa Riverwalk', 'Coming late 2026', with a pool and 10,000 sq ft of meeting space, without naming the building; likely this hotel after its renovation but unconfirmed. The site's JSON-LD says petsAllowed false, but its FAQ says 'We welcome one pet per room, up to 50 pounds' ($75 per stay): pet-friendly kept on the FAQ's explicit wording.",
+        "lat": 27.946123,
+        "lng": -82.459381,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hyatt-place-tampa-downtown",
+        "name": "Hyatt Place Tampa Downtown",
+        "kind": "hotel",
+        "brand": "Hyatt",
+        "collection": "Hyatt Place",
+        "area": "downtown-tampa",
+        "address": "325 N Florida Ave",
+        "zip": "33602",
+        "url": "https://www.hyatt.com/hyatt-place/en-US/tpazd-hyatt-place-tampa-downtown",
+        "phone": "(813) 616-1234",
+        "rooms": 230,
+        "opened": "2021",
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "meeting-space"
+        ],
+        "summary": "A 230-room Hyatt Place that shares a 17-story tower, lobby, pool deck and Corazon restaurant with Hyatt House Tampa Downtown, across from Tampa City Hall; both opened in February 2021.",
+        "quote": "Situated across the street from the historic City Hall, the 17-story building offers a unique layout with a stylish, single lobby",
+        "quote_source": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
+        "status": "open",
+        "source_url": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/hyatt-place-%26-hyatt-house-tampa-downtown/15141/",
+          "https://www.cvent.com/venues/tampa/hotel/hyatt-place-downtown-tampa/venue-166615ef-9488-4342-bb41-213c23448d03",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Source is the managing company's opening release (Feb 25, 2021): 230-room Hyatt Place + 115-room Hyatt House, heated rooftop pool and terrace, fitness center, Corazon restaurant/bar, 3,600 sq ft meeting space, self and valet parking. hyatt.com refuses automated reading (HTTP 403). The current Visit Tampa Bay listing (345 rooms combined, pool on the 5th-floor deck, Corazon, Wicked Pour, Starbucks) confirms it is operating. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HYATT PLACE / HYATT HOUSE TAMPA DOWNTOWN' with 345 rental units, license current, last inspected 2026-09-11.",
+        "lat": 27.947455,
+        "lng": -82.456792,
+        "geo_source": "census"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hyatt-house-tampa-downtown",
+        "name": "Hyatt House Tampa Downtown",
+        "kind": "extended-stay",
+        "brand": "Hyatt",
+        "collection": "Hyatt House",
+        "area": "downtown-tampa",
+        "address": "325 N Florida Ave",
+        "zip": "33602",
+        "url": "https://www.hyatt.com/hyatt-house/en-US/tpaxd-hyatt-house-tampa-downtown",
+        "phone": "(813) 616-1234",
+        "rooms": 115,
+        "opened": "2021",
+        "features": [
+          "kitchens",
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space"
+        ],
+        "summary": "A 115-room Hyatt House for longer stays, with kitchens in its suites; it shares the tower, lobby, pool and restaurant of Hyatt Place Tampa Downtown and takes dogs up to 50 lbs.",
+        "quote": "Ideal for extended stays and designed in residential style, Hyatt House Tampa Downtown guests can enjoy suites complete with fully fitted kitchens",
+        "status": "open",
+        "source_url": "https://hrihospitality.com/new-hyatt-place-and-hyatt-house-hotels-invite-travelers-to-discover-the-vibrancy-of-downtown-tampa-2/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/hyatt-place-%26-hyatt-house-tampa-downtown/15141/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Same building and front desk as hyatt-place-tampa-downtown. Opening release Feb 25, 2021 (HRI Hospitality); hyatt.com refuses automated reading. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HYATT PLACE / HYATT HOUSE TAMPA DOWNTOWN' with 345 rental units, license current, last inspected 2026-09-11. Verified 2026-09-27: HRI release: 'The hotel is pet-friendly and welcomes dogs up to 50 lbs.' refers to Hyatt House.",
+        "lat": 27.947455,
+        "lng": -82.456792,
+        "geo_source": "census"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "le-meridien-tampa",
+        "name": "Le Méridien Tampa",
+        "aliases": [
+          "Le Meridien Tampa"
+        ],
+        "kind": "historic-hotel",
+        "brand": "Marriott",
+        "collection": "Le Méridien",
+        "area": "downtown-tampa",
+        "address": "601 N Florida Ave",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpamd-le-meridien-tampa/overview/",
+        "phone": "(813) 221-9555",
+        "rooms": 130,
+        "features": [
+          "historic",
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A 130-room hotel inside Tampa's 1905 federal courthouse, where former courtrooms serve as meeting and event rooms; it has the Bizou Brasserie restaurant, an outdoor heated pool and a 24-hour fitness center.",
+        "quote": "This century-old Historic Federal Courthouse has been transformed into a one-of-a-kind Tampa hotel.",
+        "heritage": {
+          "built": "1905",
+          "architect": "James Knox Taylor (Supervising Architect of the U.S. Treasury)",
+          "designations": [
+            {
+              "name": "National Register of Historic Places",
+              "ref": "74000633",
+              "year": 1974,
+              "url": "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)"
+            }
+          ],
+          "era": "boomtown",
+          "story": "The building was completed in 1905 under James Knox Taylor, Supervising Architect of the U.S. Treasury. It served as a federal courthouse for the Southern District of Florida and, after the Middle District was created in 1962, for the Middle District until 2001. It was listed on the National Register in 1974 as the Federal Building, U.S. Courthouse, Downtown Postal Station. The City of Tampa owns it, and it is now a Le Méridien hotel.",
+          "visiting": "Open as a hotel; the Bizou Brasserie restaurant serves breakfast, lunch and dinner, per the hotel's listing.",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)",
+            "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
+            "https://www.visittampabay.com/listings/le-m%c3%a9ridien-tampa/9138/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/le-m%c3%a9ridien-tampa/9138/",
+        "also_sources": [
+          "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)",
+          "https://www.tampasdowntown.com/11-awesome-places-to-stay-in-downtown-tampa/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 5 floors, 130 rooms incl. 4 suites, 7 accessible rooms, pets allowed, pool, 24-hour fitness, Bizou Brasserie, 4,823 sq ft meeting rooms, valet parking. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 105951108). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'LE MERIDIEN TAMPA' with 130 rental units, license current, last inspected 2026-09-16. Verified 2026-09-27: heritage.story rewritten: 'post office, courthouse and custom house' was not on the cited page; Wikipedia says completed 1905, courthouse of the Southern then Middle District until 2001, NRHP June 7, 1974 (74000633), owned by the city, used as a Le Méridien hotel.",
+        "lat": 27.950071,
+        "lng": -82.457467,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "barrymore-hotel-tampa-riverwalk",
+        "name": "The Barrymore Hotel Tampa Riverwalk",
+        "aliases": [
+          "Barrymore Hotel"
+        ],
+        "kind": "hotel",
+        "area": "downtown-tampa",
+        "address": "111 W Fortune St",
+        "zip": "33602",
+        "url": "https://www.barrymorehotel.com/",
+        "phone": "(813) 223-1351",
+        "rooms": 332,
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space"
+        ],
+        "summary": "A 14-floor, 332-room hotel beside the Straz Center for the Performing Arts, with an outdoor pool deck overlooking the Hillsborough River, the Gaudin Kitchen & Bar and a free shuttle within 2 miles.",
+        "quote": "With a revamped ballroom and a charming outdoor pool deck overlooking the Hillsborough River, we're equipped for gatherings of varying sizes.",
+        "status": "open",
+        "source_url": "https://www.barrymorehotel.com/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/the-barrymore-hotel-tampa-riverwalk/5535/",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Official site: outdoor pool (sunrise to sunset), 24-hour fitness center, pet fee $75 per stay, complimentary shuttle within a 2-mile radius 8 AM-10 PM (not to the airport), gated self-parking $20/night. Room count 332 and 14 floors from the Visit Tampa Bay listing (the hotel site gives no count). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26287341). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'BARRYMORE HOTEL TAMPA RIVERWALK' with 331 rental units, license current, last inspected 2026-02-25. Verified 2026-09-27: 'waterfront' dropped: the hotel says its pool deck overlooks the river, not that the hotel is waterfront. Visit Tampa Bay's listing still names an old 'Waterworks Bar & Grille'; the hotel's own site names Gaudin Kitchen & Bar.",
+        "lat": 27.95293,
+        "lng": -82.46396,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "jw-marriott-tampa-water-street",
+        "name": "JW Marriott Tampa Water Street",
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "JW Marriott",
+        "area": "channel-district",
+        "address": "510 Water St",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/overview/",
+        "phone": "(813) 221-4950",
+        "rooms": 519,
+        "features": [
+          "pool",
+          "spa",
+          "fitness",
+          "restaurant",
+          "meeting-space"
+        ],
+        "summary": "A 27-floor, 519-room JW Marriott in the Water Street district, with a sixth-floor pool with private cabanas, the Spa by JW, six dining outlets and 41 meeting rooms.",
+        "quote": "the JW Marriott Tampa Water Street is the region's first four-star, convention-oriented hotel.",
+        "quote_source": "https://waterstreettampa.com/stay",
+        "opened": "2020",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/jw-marriott-tampa-water-street/14933/",
+        "also_sources": [
+          "https://www.cvent.com/venues/tampa/hotel/jw-marriott-tampa-water-street/venue-8787e710-7c98-4bfe-871b-c54c933213b3",
+          "https://waterstreettampa.com/stay",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 27 floors, 519 sleeping rooms, 6 restaurants and 3 bars, spa, pools with private cabanas, valet parking. Quote is Water Street Tampa's (the developer's) description. Cvent: 519 rooms incl. 24 suites, 'Opened in 2020'. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'JW MARRIOTT TAMPA WATER STREET' with 519 rental units, license current, last inspected 2026-04-17. Verified 2026-09-27: summary corrected: the listing gives 122,287 sq ft of meeting space in total (70,900 indoor, 29,100 outdoor), not 'nearly 100,000'; 'waterfront' dropped (the listing says water views; the 'waterfront neighborhood' wording is the developer's).",
+        "lat": 27.941906,
+        "lng": -82.453668,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "tampa-marriott-water-street",
+        "name": "Tampa Marriott Water Street",
+        "aliases": [
+          "Tampa Marriott Waterside Hotel & Marina"
+        ],
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "Marriott Hotels",
+        "area": "channel-district",
+        "address": "505 Water St",
+        "zip": "33602",
+        "url": "https://www.marriott.com/hotels/travel/tpamc-tampa-marriott-water-street/",
+        "phone": "(813) 221-4900",
+        "rooms": 727,
+        "features": [
+          "waterfront",
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space",
+          "accessible-rooms",
+          "marina"
+        ],
+        "summary": "A 27-floor, 727-room waterfront Marriott next to the Tampa Convention Center, with a rooftop pool, balconies with water or skyline views, a 28-slip marina, several Riverwalk restaurants and 20 event spaces.",
+        "quote": "Our beautiful-redesigned waterfront hotel sits adjacent to the convention center in Tampa's dynamic downtown just steps from the Tampa Riverwalk",
+        "opened": "2000",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/tampa-marriott-water-street/4650/",
+        "also_sources": [
+          "https://www.cvent.com/venues/tampa/hotel/tampa-marriott-water-street/venue-0caf2860-684f-4375-8638-97fe2323844b",
+          "https://waterstreettampa.com/stay",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 27 floors, 727 sleeping rooms incl. 28 suites (a second field says 719), 27 accessible rooms, pets allowed, 4 restaurants, 2 bars, 42,608 sq ft meeting rooms. Cvent: 727 rooms incl. 28 suites, built 2000, renovated 2019. The Tampa Downtown Partnership stay directory still lists it as 'Marriott Waterside Hotel & Marina - 700 S. Florida Ave.' Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'TAMPA MARRIOTT WATERSTREET' with 722 rental units, license current, last inspected 2026-09-10. Verified 2026-09-27: Listing re-read: 28-slip full-service marina (feature added), 4 restaurants, 2 bars, 20 event spaces. opened=2000 rests on Cvent's 'Built 2000'.",
+        "lat": 27.940915,
+        "lng": -82.453872,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "tampa-edition",
+        "name": "The Tampa EDITION",
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "EDITION Hotels",
+        "area": "channel-district",
+        "address": "500 Channelside Dr",
+        "zip": "33602",
+        "url": "https://www.editionhotels.com/tampa/",
+        "phone": "+1 (813) 221-4600",
+        "rooms": 172,
+        "features": [
+          "pool",
+          "rooftop-bar",
+          "spa",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "ev-charging",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "An EDITION hotel in the Water Street district, created with Ian Schrager's company, with 172 guest rooms and 30 suites, a rooftop bar and pool, a spa and more than 8,000 sq ft of event space.",
+        "quote": "Situated within the new 56-acre Water Street Tampa neighborhood, the hotel is home to 172 guest rooms and 30 spacious suites, including a 2,059 sqft Penthouse Suite.",
+        "status": "open",
+        "status_note": "The hotel says its rooftop pool, pool bar and Azure restaurant are unavailable through Oct 3, 2026, with pool access arranged elsewhere for guests (read Sep 27, 2026).",
+        "source_url": "https://www.editionhotels.com/tampa/",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/the-tampa-edition/18655/",
+          "https://www.cvent.com/venues/tampa/hotel/the-tampa-edition/venue-a10151ae-045d-4a1a-a27a-20db024d16d3",
+          "https://waterstreettampa.com/stay",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Rooms: the hotel says '172 guest rooms and 30 spacious suites'; its Visit Tampa Bay listing gives 172 sleeping rooms including 30 suites, and the hotel's RFP form caps rooms at 172, and Cvent gives 172 total incl. 30 suites (built 2022), so rooms=172. Architects: Morris Adjmi with Nichols Brosch Wurst Wolfe & Associates; interiors Roman & Williams (hotel site). Listing: pets allowed, EV charging. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 1122687941). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'TAMPA EDITION' with 172 rental units, license current, last inspected 2026-04-13. Verified 2026-09-27: opened removed: Cvent gives only 'Built 2022', with no opening year stated. The spa closure (through Sep 26, 2026) has ended and was dropped from status_note. Visit Tampa Bay listing re-read: pets allowed, EV charging station, 22 accessible rooms (accessible-rooms added).",
+        "lat": 27.94379,
+        "lng": -82.45087,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hampton-inn-tampa-downtown-channel-district",
+        "name": "Hampton Inn Tampa Downtown Channel District",
+        "kind": "hotel",
+        "brand": "Hilton",
+        "collection": "Hampton by Hilton",
+        "area": "channel-district",
+        "address": "1155 E Kennedy Blvd",
+        "zip": "33602",
+        "url": "https://www.hilton.com/en/hotels/tpatbhx-hampton-tampa-downtown-channel-district/",
+        "phone": "(813) 525-9900",
+        "rooms": 116,
+        "features": [
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "pet-friendly",
+          "cruise-shuttle",
+          "ev-charging",
+          "meeting-space"
+        ],
+        "summary": "A 116-room Hampton Inn sharing a building, rooftop pool and terrace with Home2 Suites in the Channel District; breakfast and a shuttle to the cruise port are included.",
+        "quote": "With the closest location to cruise terminals, this hotel offers a complimentary shuttle to the cruise port.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/hampton-inn-tampa-downtown-channel-district/22850/",
+        "also_sources": [
+          "https://www.hilton.com/en/locations/usa/florida/tampa/",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: Hampton and Home2 share 213 rooms (Hampton 116, Home2 97 suites), 10 floors, rooftop pool, 1,400 sq ft meeting room, EV charging, secured garage parking (charge). url: where the listing's website hamptontampadowntown.com redirects. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 781401062). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HAMPTON INN/HOME2 SUITES TAMPA DOWNTOWN CHANNEL DISTRICT' with 213 rental units, license current, last inspected 2026-09-02.",
+        "lat": 27.950076,
+        "lng": -82.448566,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "home2-suites-tampa-downtown-channel-district",
+        "name": "Home2 Suites by Hilton Tampa Downtown Channel District",
+        "kind": "extended-stay",
+        "brand": "Hilton",
+        "collection": "Home2 Suites by Hilton",
+        "area": "channel-district",
+        "address": "1155 E Kennedy Blvd",
+        "zip": "33602",
+        "url": "https://www.hilton.com/en/hotels/tpadbht-home2-suites-tampa-downtown-channel-district/",
+        "phone": "(813) 525-9900",
+        "rooms": 97,
+        "features": [
+          "all-suites",
+          "kitchens",
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "pet-friendly",
+          "cruise-shuttle",
+          "ev-charging"
+        ],
+        "summary": "A 97-suite Home2 Suites with kitchenettes, in the same Channel District building as the Hampton Inn; breakfast and a cruise-port shuttle are included.",
+        "quote": "The pet-friendly hotels share an outdoor rooftop pool with landscaped terrace overlooking downtown and Channel District which features a fire pit and cooking grills",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/home2-suites-by-hilton-tampa-downtown-channel-district/22849/",
+        "also_sources": [
+          "https://www.hilton.com/en/locations/usa/florida/tampa/",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Same building as hampton-inn-tampa-downtown-channel-district. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HAMPTON INN/HOME2 SUITES TAMPA DOWNTOWN CHANNEL DISTRICT' with 213 rental units, license current, last inspected 2026-09-02. Verified 2026-09-27: coordinates: the shared building's OpenStreetMap feature (OSM way 781401062, tagged as the Hampton Inn).",
+        "lat": 27.950076,
+        "lng": -82.448566,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "roost-tampa",
+        "name": "ROOST Tampa",
+        "kind": "extended-stay",
+        "brand": "ROOST Apartment Hotel",
+        "area": "channel-district",
+        "address": "1050 Water St",
+        "zip": "33602",
+        "url": "https://www.myroost.com/hotel/tampa-florida",
+        "phone": "(813) 945-4890",
+        "rooms": 97,
+        "features": [
+          "pool",
+          "fitness",
+          "kitchens",
+          "pet-friendly",
+          "ev-charging"
+        ],
+        "summary": "An apartment hotel in the Water Street district: 97 furnished units with full kitchens and washer-dryers, on floors 2 to 7 of a tower, with a seventh-floor pool deck.",
+        "quote": "ROOST Tampa is a luxury lifestyle hotel situated in the center of the Water Street district, offering apartment-style Rooms & Suites",
+        "status": "open",
+        "source_url": "https://www.myroost.com/hotel/tampa-florida",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/roost-tampa/18807/",
+          "https://waterstreettampa.com/stay",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Official site: resort-style pool, fitness center, full kitchens, in-unit washer and dryer; 'Designed for stays of 30 nights or longer' but also 'for both short visits and longer stays'. Unit count (97), floors, pets and parking with charging stations from the Visit Tampa Bay listing. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'ROOST TAMPA' with 97 rental units, license current, last inspected 2026-04-20.",
+        "lat": 27.944704,
+        "lng": -82.450683,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "mint-house-tampa-downtown",
+        "name": "Mint House Tampa Downtown by Kasa",
+        "aliases": [
+          "Mint House Tampa Downtown"
+        ],
+        "kind": "extended-stay",
+        "brand": "Kasa",
+        "area": "channel-district",
+        "address": "801 E Whiting St",
+        "zip": "33602",
+        "url": "https://kasa.com/properties/mint-house-tampa-downtown-by-kasa",
+        "rooms": 53,
+        "features": [
+          "kitchens",
+          "pool",
+          "fitness",
+          "pet-friendly"
+        ],
+        "summary": "Apartment-style suites with full kitchens and in-unit laundry in the Channel District, with self check-in, a plunge pool and a fitness center; parking is off site.",
+        "quote": "Perfect for work trips and longer stays, you'll find comfort in our selection of apartment-style suites with full kitchens and in-unit laundry",
+        "status": "open",
+        "source_url": "https://kasa.com/properties/mint-house-tampa-downtown-by-kasa",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/mint-house-tampa-downtown-by-kasa/23050/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Kasa page: one pet per unit ($8-30/night), paid off-site parking one block away, self check-in at 4 PM, virtual front desk. 53 units from the Visit Tampa Bay listing. Coordinates: the Census geocoder did not match 801 E Whiting St; the point is its match for 800 E Whiting St (same block, opposite side). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'KL FLORIDA LLC, 801 E WHITING ST STE 8835' with 50 rental units, license current, last inspected 2026-06-30. Verified 2026-09-27: rooms kept at 53 (Visit Tampa Bay listing); the state license counts 50 units.",
+        "lat": 27.946963,
+        "lng": -82.452715,
+        "geo_source": "census"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "westin-tampa-downtown-waterside",
+        "name": "Westin Tampa Downtown Waterside",
+        "aliases": [
+          "The Westin Tampa Waterside",
+          "The Westin Tampa Harbour Island"
+        ],
+        "kind": "hotel",
+        "brand": "Marriott",
+        "collection": "Westin Hotels & Resorts",
+        "area": "harbour-island",
+        "address": "725 S Harbour Island Blvd",
+        "zip": "33602",
+        "url": "https://www.marriott.com/en-us/hotels/tpawh-westin-tampa-downtown-waterside/overview/",
+        "phone": "(813) 229-5000",
+        "rooms": 309,
+        "features": [
+          "waterfront",
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space"
+        ],
+        "summary": "A 12-floor, 309-room waterfront Westin on Harbour Island, a few blocks from the convention center, with an outdoor pool, a fitness room, 24-hour room service and meeting space.",
+        "status": "open",
+        "source_url": "https://www.cvent.com/venues/tampa/hotel/westin-tampa-downtown-waterside-newly-renovated-/venue-b1e9414b-1249-4acb-88f3-2fa49e3cb08b",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/the-westin-tampa-waterside/3121/",
+          "https://www.tampasdowntown.com/place_category/stay/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "marriott.com refuses automated reading (HTTP 403). Name and rooms from the hotel's Cvent profile: 'Westin Tampa Downtown Waterside', 309 total guest rooms incl. 23 suites, building built 1985, renovated 2026, pet friendly, outdoor pool; it describes a $20 million renovation completed in November 2017. The Visit Tampa Bay listing still uses 'The Westin Tampa Waterside' (12 floors, 309 rooms incl. 23 suites in its fields; its text says 299 rooms and 19 suites), with pets allowed, 24-hour room service and self and valet parking. The hotel's old domain westintampaharbourisland.com redirects to a marriott.com page whose slug is 'westin-tampa-downtown-waterside' (alias). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 29212177). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'WESTIN TAMPA WATERSIDE' with 309 rental units, license current, last inspected 2026-07-30.",
+        "lat": 27.938472,
+        "lng": -82.454887,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hotel-haya",
+        "name": "Hotel Haya",
+        "kind": "boutique-hotel",
+        "brand": "Aparium Hotel Group",
+        "area": "ybor-city",
+        "address": "1412 E 7th Ave",
+        "zip": "33605",
+        "url": "https://hotelhaya.com/",
+        "phone": "(813) 462-9515",
+        "rooms": 178,
+        "opened": "2020",
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A 178-room boutique hotel on 7th Avenue in Ybor City that the hotel says rose from the historic facade of Las Novedades, with a courtyard pool, the Flor Fina restaurant and Café Quiquiriquí.",
+        "quote": "Hotel Haya is a place of curious contrast, a vibrant new voice in an old-world neighborhood, and a celebration of Ybor City's multicultural heart.",
+        "heritage": {
+          "story": "The hotel says it rose from the historic facade of Las Novedades. It is named for Ignacio Haya, whose Haya y Sanchez cigar factory, the hotel says, was significant for rolling the first cigar in Tampa.",
+          "sources": [
+            "https://hotelhaya.com/explore/history-about/"
+          ]
+        },
+        "status": "open",
+        "source_url": "https://hotelhaya.com/",
+        "also_sources": [
+          "https://hotelhaya.com/explore/history-about/",
+          "https://hotelhaya.com/faq/",
+          "https://www.visittampabay.com/listings/hotel-haya/15920/",
+          "https://www.cvent.com/venues/tampa/hotel/hotel-haya/venue-bacfdec8-65e3-439c-95d2-fd76aa5d7162",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Official site: courtyard pool, 24-hour fitness center, 24/7 valet, two pets per room ($100 per pet), Flor Fina restaurant and Café Quiquiriquí; part of the Aparium family of hotels. Built 2020 per Cvent. 178 keys, 4 floors, 16 suites, 9 accessible rooms from the Visit Tampa Bay listing. The listing phone (813) 568-1200 differs from the site's (813) 462-9515; site used. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 74112614). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HOTEL HAYA' with 178 rental units, license current, last inspected 2026-05-08. Verified 2026-09-27: heritage.story corrected: the hotel's history page does not call Las Novedades a restaurant or describe storefronts joined to new construction. opened=2020 per Cvent ('Opened in 2020').",
+        "lat": 27.960662,
+        "lng": -82.443821,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hampton-inn-suites-tampa-ybor-city-downtown",
+        "name": "Hampton Inn & Suites Tampa/Ybor City/Downtown",
+        "kind": "hotel",
+        "brand": "Hilton",
+        "collection": "Hampton by Hilton",
+        "area": "ybor-city",
+        "address": "1301 E 7th Ave",
+        "zip": "33605",
+        "url": "https://www.hilton.com/en/hotels/tpaybhx-hampton-suites-tampa-ybor-city-downtown/",
+        "phone": "(813) 247-6700",
+        "rooms": 138,
+        "features": [
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "ev-charging",
+          "accessible-rooms"
+        ],
+        "summary": "A five-floor, 138-room Hampton Inn & Suites on 7th Avenue in Ybor City, which says it is right on the streetcar (trolley) line to the convention center.",
+        "quote": "Located in famous Ybor City (Downtown Tampa), a nationally recognized historic district, known for its vibrant nightlife and rich history.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/hampton-inn-%26-suites-tampa-ybor-city-downtown/3542/",
+        "also_sources": [
+          "https://www.hilton.com/en/locations/usa/florida/tampa/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 5 floors, 138 sleeping rooms incl. 40 suites, 7 accessible rooms, pool, fitness, EV charging, self parking (charge). The listing says 'Right on Trolley line' (the streetcar). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 333538478). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HAMPTON INN & SUITES, 1301 E 7 AVE' with 138 rental units, license current, last inspected 2026-07-24. Verified 2026-09-27: free-breakfast added: the listing states complimentary daily breakfast.",
+        "lat": 27.959954,
+        "lng": -82.445314,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hilton-garden-inn-tampa-ybor-historic-district",
+        "name": "Hilton Garden Inn Tampa Ybor Historic District",
+        "kind": "hotel",
+        "brand": "Hilton",
+        "collection": "Hilton Garden Inn",
+        "area": "ybor-city",
+        "address": "1700 E 9th Ave",
+        "zip": "33605",
+        "url": "https://www.hilton.com/en/hotels/tpaycgi-hilton-garden-inn-tampa-ybor-historic-district/",
+        "phone": "(813) 769-9267",
+        "rooms": 96,
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A four-floor, 96-room Hilton Garden Inn on 9th Avenue in the Ybor City historic district, with a pool and a restaurant serving breakfast.",
+        "quote": "Centrally located in historic Ybor City.",
+        "status": "open",
+        "source_url": "https://www.visittampabay.com/listings/hilton-garden-inn-tampa-ybor-historic-district/4783/",
+        "also_sources": [
+          "https://www.hilton.com/en/locations/usa/florida/tampa/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 4 floors, 96 rooms incl. 11 suites, 4 accessible rooms, 1 restaurant and 1 bar, breakfast Mon-Fri 6-10 AM and Sat-Sun 7-11 AM, self parking (charge). Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 26234626). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HILTON GARDEN INN TAMPA YBOR HISTORIC DISTRICT' with 96 rental units, license current, last inspected 2026-09-14.",
+        "lat": 27.962146,
+        "lng": -82.439839,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "inn-at-el-reloj",
+        "name": "The Inn at El Reloj",
+        "kind": "inn",
+        "brand": "J.C. Newman Hospitality Co.",
+        "area": "ybor-city",
+        "url": "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
+        "rooms": 11,
+        "features": [
+          "historic",
+          "free-breakfast",
+          "free-parking"
+        ],
+        "summary": "An 11-room inn opening in a restored 1910 boarding house for El Reloj's cigar workers, across Columbus Drive from J.C. Newman's El Reloj cigar factory, with Stanford's Cigar Club downstairs.",
+        "quote": "The Inn at El Reloj is an intimate 11-room hotel and a place of respite in Ybor City.",
+        "heritage": {
+          "built": "1910",
+          "story": "J.C. Newman says the building was originally a boarding house for the cigar workers of its El Reloj factory and was restored in 2026, keeping the original concrete floors and paint colors uncovered during the work. From its shared balcony guests look across Columbus Drive to the El Reloj factory.",
+          "sources": [
+            "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
+            "https://www.jcnewman.com/visit-el-reloj/elaines-restaurant/"
+          ]
+        },
+        "status": "opening-soon",
+        "status_note": "J.C. Newman's page says 'Coming Soon' with no opening date, and Visit Tampa Bay's new-development page says 'Coming Next Year' (both read Sep 27, 2026).",
+        "source_url": "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
+        "also_sources": [
+          "https://www.jcnewman.com/visit-el-reloj/elaines-restaurant/",
+          "https://www.visittampabay.com/meeting-planners/new-development/"
+        ],
+        "notes": "Street address not published on the pages read; the factory is at 2701 N 16th St and the inn faces it across E Columbus Dr, so no coordinates were set. Breakfast, Wi-Fi and parking included; all spaces nonsmoking. Year 1910 from Elaine's page ('a fully restored historic 1910 building') and the '116-year-old' wording on the inn page. Visit Tampa Bay's new-development page calls it the Sanchez y Haya building, 11 rooms, 'COMING NEXT YEAR'. Verified 2026-09-27: No state lodging license for the inn yet (DBPR extract, 2026-09-27), consistent with not yet open."
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "epicurean-hotel",
+        "name": "Epicurean Hotel, Autograph Collection",
+        "aliases": [
+          "Epicurean Hotel"
+        ],
+        "kind": "boutique-hotel",
+        "brand": "Marriott",
+        "collection": "Autograph Collection",
+        "area": "hyde-park",
+        "address": "1207 S Howard Ave",
+        "zip": "33606",
+        "url": "https://www.epicureanhotel.com/",
+        "phone": "813-999-8700",
+        "rooms": 188,
+        "opened": "2013",
+        "features": [
+          "pool",
+          "spa",
+          "fitness",
+          "restaurant",
+          "rooftop-bar",
+          "ev-charging",
+          "meeting-space",
+          "accessible-rooms"
+        ],
+        "summary": "A food-focused hotel on South Howard Avenue in SoHo, with the Élevage restaurant, the EDGE rooftop bar, the Epicurean Theatre cooking classroom and Spa Evangeline. Pets are not allowed.",
+        "quote": "All rooms feature personal artisan pantries stocked with premium liquors, locally crafted beers, still and sparkling water, coffee and espresso",
+        "status": "open",
+        "source_url": "https://www.epicureanhotel.com/",
+        "also_sources": [
+          "https://www.epicureanhotel.com/stay/",
+          "https://www.epicureanhotel.com/location/",
+          "https://www.visittampabay.com/listings/epicurean-hotel/8908/",
+          "https://www.cvent.com/venues/tampa/hotel/epicurean-hotel-autograph-collection/venue-6fcedbe3-a675-412a-921f-07a8b73468f4",
+          "https://www.mainsailhotels.com/portfolio/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Official site: AAA Four Diamond, Autograph Collection member, pool (accessible entrance), Spa Evangeline, EDGE Rooftop, Élevage, Epicurean Theatre; 'Pets Not Allowed (service animals only)'. 188 rooms incl. 16 suites and built 2013 per Cvent; the Visit Tampa Bay listing also gives 188 rooms and which says it was developed with Mainsail Lodging & Development and Bern's Steak House. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 918583742). Verified 2026-09-27: quote is on the /stay/ page, not the home page (quote_source set). Home page: 'Epicurean's 188 guest rooms and suites', 'AAA Four Diamond'. EV charging from the Visit Tampa Bay listing. State license: two licenses, 1207 S Howard Ave (137 units) and 1226 S Howard Ave (51 units), together 188.",
+        "lat": 27.930788,
+        "lng": -82.483379,
+        "geo_source": "photon",
+        "quote_source": "https://www.epicureanhotel.com/stay/"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "palihouse-hyde-park-village",
+        "name": "Palihouse Hyde Park Village",
+        "kind": "boutique-hotel",
+        "brand": "Palisociety",
+        "area": "hyde-park",
+        "address": "1509 W Swann Ave",
+        "zip": "33606",
+        "url": "https://www.palisociety.com/hotels/tampa",
+        "phone": "813 820 1685",
+        "rooms": 36,
+        "features": [
+          "all-suites",
+          "kitchens",
+          "restaurant",
+          "pet-friendly"
+        ],
+        "summary": "A 36-room hotel in the Hyde Park Village shopping district; every room has a kitchenette, and the Lobby Bar serves breakfast, lunch and cocktails.",
+        "quote": "Featuring 36 oversized guest rooms and an intimate lobby lounge and cocktail bar, this lovely urban lodge is designed to welcome and charm the most discerning traveler.",
+        "status": "open",
+        "source_url": "https://www.palisociety.com/hotels/tampa",
+        "also_sources": [
+          "https://www.visittampabay.com/listings/palihouse-hyde-park-village/20414/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Official site: 36 King and Queen guest suites with kitchenettes; Lobby Bar. Pets allowed and valet parking per the Visit Tampa Bay listing. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM node 13461613702). Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'PALIHOUSE HYDE PARK VILLAGE' with 36 rental units, license current, last inspected 2026-04-08.",
+        "lat": 27.937523,
+        "lng": -82.475297,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "tahitian-inn",
+        "name": "Tahitian Inn",
+        "aliases": [
+          "Tahitian Inn Hotel, Cafe & Spa",
+          "Tahitiann Inn & Suites"
+        ],
+        "kind": "boutique-hotel",
+        "area": "south-tampa",
+        "address": "601 S Dale Mabry Hwy",
+        "zip": "33609",
+        "url": "https://tahitianinn.com/",
+        "phone": "813-877-6721",
+        "rooms": 82,
+        "opened": "1953",
+        "features": [
+          "pool",
+          "fitness",
+          "restaurant",
+          "pet-friendly"
+        ],
+        "summary": "A family-owned, island-themed hotel on South Dale Mabry Highway that says it has been family owned and operated since 1953, with 82 rooms and suites, a pool and Pach's Place restaurant.",
+        "quote": "The Tahitian Inn Hotel is a historic boutique establishment that has been family owned and operated since its origin in 1953.",
+        "quote_source": "https://tahitianinn.com/about-us/",
+        "status": "open",
+        "status_note": "Open during renovations; the hotel says its pool is closed for renovations and it has no operational elevator, so guests use the stairs (read Sep 27, 2026).",
+        "source_url": "https://tahitianinn.com/",
+        "also_sources": [
+          "https://tahitianinn.com/about-us/",
+          "https://tahitianinn.com/services-and-amenities/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "notes": "Pet fee $50 one time. Fitness center and Pach's Place restaurant (breakfast and lunch) per the amenities page. Area: south of Kennedy Blvd on S Dale Mabry, at the Westshore edge. Verified 2026-09-27: coordinates moved from the Census street-centerline point to the OpenStreetMap hotel feature (OSM way 523945521). Verified 2026-09-27: State license (motel, 82 units) shows status 'Delinquent' (expired 2026-02-01 and not renewed in the extract) but was inspected on 2026-06-30; the hotel's own site says it remains 'open and fully operational'. 'South Seas-themed' changed to 'island-themed' (the about page says 'island-inspired themes').",
+        "lat": 27.939146,
+        "lng": -82.506384,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "hotel-south-tampa-and-suites",
+        "name": "Hotel South Tampa & Suites",
+        "kind": "hotel",
+        "area": "south-tampa",
+        "address": "3314 S Dale Mabry Hwy",
+        "zip": "33629",
+        "url": "https://www.hotelsouthtampa.com/",
+        "phone": "+1 (813) 832-4656",
+        "features": [
+          "pool",
+          "fitness",
+          "free-breakfast",
+          "free-parking",
+          "kitchens"
+        ],
+        "summary": "A renovated hotel on South Dale Mabry Highway with kitchenette suites, a heated outdoor pool, free hot breakfast and free parking. No pets.",
+        "quote": "A hidden jewel nestled in the heart of South Tampa, we welcome you to Hotel South Tampa & Suites.",
+        "status": "open",
+        "source_url": "https://www.hotelsouthtampa.com/",
+        "notes": "Site footer: 'This website is individually owned by Hotel South Tampa & Suites.' Strict no-pet policy (service animals welcome). Booking.com's page slug (howard-johnson-tampa-south-dale-mabry) suggests a former Howard Johnson; not confirmed. Verified 2026-09-27: Florida DBPR public-lodging license extract (District 3, read 2026-09-27) lists 'HOTEL SOUTH TAMPA & SUITES (motel license)' with 80 rental units, license current, last inspected 2026-08-03. Verified 2026-09-27: rooms=80 from the state license (the hotel's site gives no count). Yellow Pages lists a 'Howard Johnson' at the same address and phone, supporting the former-HoJo note; still not stated by the hotel.",
+        "lat": 27.914317,
+        "lng": -82.505987,
+        "geo_source": "census",
+        "rooms": 80,
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ]
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "grams-place",
+        "name": "Gram's Place",
+        "aliases": [
+          "Gram's Place Bed and Hostel",
+          "Gram's Place BnB/Hostel"
+        ],
+        "kind": "hostel",
+        "area": "tampa-heights",
+        "address": "3109 N Ola Ave",
+        "zip": "33603",
+        "summary": "A music-themed hostel and bed-and-breakfast north of downtown with private rooms and shared dorms; its listing calls it Tampa's oldest hostel.",
+        "quote": "Gram's Place Bed and Hostel is Tampa, Florida's oldest Hostel / Le Gite!",
+        "status": "open",
+        "status_note": "Its own site tampahostel.com returned a Wix 'ConnectYourDomain' error on Sep 27, 2026; the Hostelworld listing was bookable, with guest reviews from April and May 2026.",
+        "source_url": "https://www.hostelworld.com/hostels/p/807/gram-s-place-bnb-hostel/",
+        "notes": "Hostelworld lists free parking, free Wi-Fi, private en-suite rooms, dorms and semi-private rooms. Area: 3109 N Ola Ave is in Riverside Heights, north of Columbus Dr; mapped to tampa-heights (closest SPEC area). Verifier: confirm it is still operating (official site down). Verified 2026-09-27: Re-read Hostelworld (bookable; reviews April-May 2026; the quote is verbatim). Coordinates moved to the OSM hostel node 6329704398 ('Gram's Place B&B/hostel'). The DBPR lodging extract has no license at 3109 N Ola Ave, but that extract carries no rooming-house or hostel licenses statewide, so this neither confirms nor rules out operation. Keep an eye on it: no official site.",
+        "lat": 27.973454,
+        "lng": -82.463196,
+        "geo_source": "photon"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "james-hotel-west-tampa",
+        "name": "The James Hotel",
+        "aliases": [
+          "The James - West Tampa",
+          "The James Hotel by Sonesta"
+        ],
+        "kind": "boutique-hotel",
+        "area": "west-tampa",
+        "address": "North Howard Ave",
+        "summary": "A roughly 70-room hotel being built inside the former Balbin Brothers cigar factory on North Howard Avenue in West Tampa; Visit Tampa Bay calls it The James Hotel by Sonesta.",
+        "heritage": {
+          "story": "The building was the Balbin Bros. cigar factory. In 2023 My Hospitality Hotels, the family-run developer, was converting it into a 70-room hotel; Fox 13 described the building as 110 years old, and Tampa's historic preservation manager praised the plan to keep it.",
+          "sources": [
+            "https://www.fox13news.com/news/balbin-bros-cigar-factory-being-transformed-into-70-room-boutique-hotel",
+            "https://www.tampabay.com/life-culture/history/2023/09/28/balbin-bros-tampa-cigar-factory-hotel/"
+          ]
+        },
+        "status": "opening-soon",
+        "status_note": "Visit Tampa Bay's new-development page lists The James Hotel by Sonesta as 'Coming Soon' (read Sep 27, 2026); a Sep 2023 Fox 13 report had expected it to open by the end of March 2025.",
+        "source_url": "https://www.visittampabay.com/meeting-planners/new-development/",
+        "also_sources": [
+          "https://www.fox13news.com/news/balbin-bros-cigar-factory-being-transformed-into-70-room-boutique-hotel",
+          "https://www.tampabay.com/life-culture/history/2023/09/28/balbin-bros-tampa-cigar-factory-hotel/"
+        ],
+        "notes": "No official hotel page was found (search budget exhausted; sonesta.com guesses 404). Street number not on an opened page, so no coordinates. Visit Tampa Bay describes it as 'roughly 70 guest rooms' in the historic Balbin Brothers Cigar Factory. Verified 2026-09-27: Visit Tampa Bay entry re-read: 'The James Hotel by Sonesta will transform the historic Balbin Brothers Cigar Factory', roughly 70 rooms, 'Coming Soon'; brand set to Sonesta from it. No state lodging license on N Howard Ave yet (DBPR extract), consistent with not open. No official page found (thejameshotel.com is a parked domain).",
+        "brand": "Sonesta"
+      },
+      {
+        "city": "Tampa",
+        "state": "FL",
+        "checked": "2026-09-27",
+        "id": "pendry-tampa",
+        "name": "Pendry Tampa",
+        "kind": "hotel",
+        "brand": "Pendry",
+        "area": "downtown-tampa",
+        "url": "https://www.pendry.com/tampa/",
+        "rooms": 220,
+        "features": [],
+        "summary": "A 220-room Pendry hotel planned in the heart of the downtown Riverwalk; Visit Tampa Bay lists its debut for fall 2027.",
+        "status": "opening-soon",
+        "status_note": "Visit Tampa Bay's new-development page lists Pendry Tampa as 'Debuting Fall 2027' (read Sep 27, 2026); the first researcher read 'Debuting in 2027' on pendry.com.",
+        "source_url": "https://www.visittampabay.com/meeting-planners/new-development/",
+        "also_sources": [
+          "https://www.pendry.com/tampa/"
+        ],
+        "notes": "Street address not on the opened pages, so no coordinates. Features are planned ones per Pendry's page (rooftop pool, spa and fitness center, three signature F&B outlets, 14,000+ sq ft of event space). Verified 2026-09-27: pendry.com refused re-reading (HTTP 403, Cloudflare) on 2026-09-27, so source_url moved to Visit Tampa Bay's new-development page, which states the name, 220 rooms, the Riverwalk location and 'Debuting Fall 2027'. Planned amenities (rooftop pool, spa, three F&B outlets, event space) were dropped because they could not be re-read."
+      },
+      {
+        "id": "la-quinta-tampa-bay-area-tampa-south",
+        "name": "La Quinta Inn & Suites by Wyndham Tampa Bay Area-Tampa South",
+        "aliases": [
+          "La Quinta Tampa South"
+        ],
+        "kind": "hotel",
+        "brand": "Wyndham",
+        "collection": "La Quinta by Wyndham",
+        "area": "south-tampa",
+        "address": "4620 W Gandy Blvd",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33611",
+        "lat": 27.893296,
+        "lng": -82.523198,
+        "geo_source": "census",
+        "url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-tampa-bay-area-tampa-south/overview",
+        "phone": "(813) 835-6262",
+        "rooms": 54,
+        "features": [
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "pet-friendly"
+        ],
+        "summary": "A La Quinta Inn & Suites on West Gandy Boulevard in South Tampa, minutes from MacDill Air Force Base, with free breakfast, a fitness center, a heated outdoor pool and pet-friendly rooms.",
+        "quote": "Located off US-92 toward the southern end of Tampa, La Quinta® by Wyndham Tampa Bay Area Tampa South puts you minutes from both MacDill Air Force Base and Tampa International Airport (TPA).",
+        "status": "open",
+        "source_url": "https://www.wyndhamhotels.com/laquinta/tampa-florida/la-quinta-tampa-bay-area-tampa-south/overview",
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv",
+          "https://www.yellowpages.com/search?search_terms=hotels&geo_location_terms=Tampa%2C+FL+33611"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. Wyndham's hotel page (read with WebFetch and curl): name, address, phone, 'free Bright Side Breakfast', fitness center, 'heated outdoor pool', 'Our pet-friendly hotel'. rooms=54 from the Florida DBPR lodging license extract (motel license 'LA QUINTA INN & SUITES', 4620 W Gandy Blvd, 54 units, current, inspected 2026-09-17). Coordinates: Census exact address match (Photon's name match was a different La Quinta)."
+      },
+      {
+        "id": "towneplace-suites-tampa-south",
+        "name": "TownePlace Suites by Marriott Tampa South",
+        "aliases": [
+          "TownePlace Suites Tampa South",
+          "TownePlace Suites Tampa Westshore South"
+        ],
+        "kind": "extended-stay",
+        "brand": "Marriott",
+        "collection": "TownePlace Suites by Marriott",
+        "area": "south-tampa",
+        "address": "4505 S Dale Mabry Hwy",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33611",
+        "lat": 27.902615,
+        "lng": -82.507047,
+        "geo_source": "photon",
+        "url": "https://www.marriott.com/en-us/hotels/tpaxt-towneplace-suites-tampa-south/overview/",
+        "phone": "(813) 542-4500",
+        "rooms": 84,
+        "features": [
+          "all-suites",
+          "kitchens",
+          "free-breakfast",
+          "free-parking",
+          "pool",
+          "fitness"
+        ],
+        "summary": "An extended-stay TownePlace Suites on South Dale Mabry Highway near MacDill Air Force Base; every suite has a full kitchen, breakfast and parking are free, and there is a pool and a 24-hour fitness center.",
+        "status": "open",
+        "source_url": "https://www.yellowpages.com/tampa-fl/mip/towneplace-suites-by-marriott-tampa-south-544873398",
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. marriott.com refuses automated reading (HTTP 403), so the facts come from the hotel's Yellow Pages listing (description supplied by the hotel: 'We are an extended stay hotel', 'All suites are equipped with full kitchen!', free breakfast, free Wi-Fi, free parking, 24/7 fitness center, swimming pool, fire pit; website link to marriott.com code tpaxt). Operating status and rooms=84 from the Florida DBPR lodging license extract ('TOWNEPLACE SUITES TAMPA WESTSHORE SOUTH', 4505 S Dale Mabry Hwy, 84 units, license current, inspected 2026-09-16). Coordinates: OSM hotel feature W523385611."
+      },
+      {
+        "id": "sleep-inn-suites-tampa-south",
+        "name": "Sleep Inn & Suites Tampa South",
+        "kind": "hotel",
+        "brand": "Choice Hotels",
+        "collection": "Sleep Inn",
+        "area": "south-tampa",
+        "address": "6231 S Dale Mabry Hwy",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33611",
+        "lat": 27.876384,
+        "lng": -82.506969,
+        "geo_source": "photon",
+        "phone": "(813) 831-4020",
+        "rooms": 77,
+        "features": [],
+        "summary": "A Sleep Inn & Suites on South Dale Mabry Highway near MacDill Air Force Base, at the south end of the city.",
+        "status": "open",
+        "source_url": "https://www.yellowpages.com/tampa-fl/mip/sleep-inn-suites-tampa-south-548469509",
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. Thinly sourced: choicehotels.com times out or returns 503, and the hotel's own site sleepinnhoteltampa.com has an expired TLS certificate and returns 403 over http, so url is null and no amenities are listed. Yellow Pages (hotel-supplied text): 'This hotel near MacDill AFB', 24 hours. Operating status and rooms=77 from the Florida DBPR lodging license extract ('SLEEP INN AND SUITES TAMPA SOUTH', 6231 S Dale Mabry Hwy, 77 units, license current, inspected 2026-09-14). Coordinates: OSM hotel feature W523195126."
+      },
+      {
+        "id": "best-western-tampa",
+        "name": "Best Western Tampa",
+        "kind": "hotel",
+        "brand": "Best Western",
+        "collection": "Best Western",
+        "area": "south-tampa",
+        "address": "734 S Dale Mabry Hwy",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33609",
+        "lat": 27.935901,
+        "lng": -82.505164,
+        "geo_source": "photon",
+        "url": "https://www.bestwestern.com/en_US/book/hotel-rooms.10306.html",
+        "phone": "(813) 490-2378",
+        "rooms": 54,
+        "features": [],
+        "summary": "A Best Western on South Dale Mabry Highway, a few blocks south of Kennedy Boulevard.",
+        "status": "open",
+        "source_url": "https://www.yellowpages.com/tampa-fl/mip/best-western-tampa-22642228",
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. bestwestern.com refuses automated reading (HTTP 403), so name, address and phone come from the Yellow Pages listing (open 24 hours; free internet and a business center); url is the bestwestern.com property link (code 10306) given on the Yellow Pages search listing. Operating status and rooms=54 from the Florida DBPR lodging license extract ('BEST WESTERN TAMPA', 734 S Dale Mabry Hwy, 54 units, license current, inspected 2026-08-17). Area: south of Kennedy Blvd on S Dale Mabry, like the Tahitian Inn. Coordinates: OSM hotel feature W523945373."
+      },
+      {
+        "id": "quality-inn-airport-cruise-port",
+        "name": "Quality Inn Airport - Cruise Port",
+        "aliases": [
+          "Quality Inn Tampa Airport"
+        ],
+        "kind": "hotel",
+        "brand": "Choice Hotels",
+        "collection": "Quality Inn",
+        "area": "south-tampa",
+        "address": "1020 S Dale Mabry Hwy",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33629",
+        "lat": 27.933584,
+        "lng": -82.504971,
+        "geo_source": "photon",
+        "url": "https://qualityinnairporttampa.com/",
+        "phone": "(813) 254-3005",
+        "rooms": 76,
+        "features": [
+          "free-breakfast",
+          "pool",
+          "fitness",
+          "pet-friendly",
+          "cruise-shuttle",
+          "accessible-rooms"
+        ],
+        "summary": "A Quality Inn on South Dale Mabry Highway that says it is 4 miles from Tampa International Airport and 3 miles from the cruise port, with free hot breakfast, an outdoor pool and a cruise-port shuttle for $10 per person.",
+        "quote": "We are conveniently located just 4 miles from Tampa International Airport and 3 miles from the Cruise Port.",
+        "status": "open",
+        "source_url": "https://qualityinnairporttampa.com/",
+        "also_sources": [
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. The hotel's own site ('This website is owned and maintained by Quality Inn Airport - Cruise Port, a licensed user of ... Choice Hotels International'): outdoor pool, fitness center, complimentary hot breakfast, 'Cruise port shuttle service is available for a fee of $10 per person', pet-friendly (two dogs per room, $25 per night per pet), accessible rooms. The site shows two numbers, (813) 254-3005 (main tel link) and (813) 253-2909. rooms=76 from the Florida DBPR lodging license extract ('QUALITY INN', 1020 S Dale Mabry, motel license, 76 units, current, inspected 2026-08-03). Area: south of Kennedy Blvd on S Dale Mabry. Coordinates: OSM hotel feature W935768670."
+      },
+      {
+        "id": "hyde-park-hotel",
+        "name": "Hyde Park Hotel",
+        "kind": "hotel",
+        "area": "hyde-park",
+        "address": "2105 W Bristol Ave",
+        "city": "Tampa",
+        "state": "FL",
+        "zip": "33606",
+        "lat": 27.935186,
+        "lng": -82.481076,
+        "geo_source": "census",
+        "url": "https://hydeparkhoteltampa.com/",
+        "phone": "(813) 254-2000",
+        "rooms": 25,
+        "features": [
+          "free-parking"
+        ],
+        "summary": "A small, veteran-family-owned hotel on West Bristol Avenue in Hyde Park with contactless self check-in, smoke-free rooms and free parking; pets are not allowed.",
+        "quote": "Walk to restaurants, shops and entertainment",
+        "status": "open",
+        "source_url": "https://hydeparkhoteltampa.com/",
+        "also_sources": [
+          "https://hydeparkhoteltampa.com/accommodations/",
+          "https://hydeparkhoteltampa.com/check-in/",
+          "https://hydeparkhoteltampa.com/ada/",
+          "https://www2.myfloridalicense.com/sto/file_download/extracts/hrlodge3.csv"
+        ],
+        "checked": "2026-09-27",
+        "notes": "Added by the verifier 2026-09-27. Own site: 'American Veteran Family Owned and Operated'; accommodations page: 'Smoke Free', 'No Pets', 'Free Parking', rooms bookable through an RMS Cloud booking engine; check-in page: contactless check-in after 4:00 pm. ADA page: two steps up to the room level, 32-inch room doors, an accessible room being renovated. rooms=25 from the Florida DBPR lodging license extract ('HYDE PARK HOTEL', hotel license, 25 units), which shows the license as 'Delinquent' (expired 2026-02-01, last inspected 2026-01-30): the site and booking engine are live, but a verifier should re-check."
       }
-     ],
-     "era": "boomtown",
-     "story": "The building was completed in 1905 as Tampa's U.S. post office, courthouse and custom house, under Supervising Architect James Knox Taylor. It served the federal Southern District of Florida and, from 1962, the Middle District, until 2001. It was listed on the National Register in 1974 as the Federal Building, U.S. Courthouse, Downtown Postal Station, and is now owned by the City of Tampa and used as a Le Méridien hotel.",
-     "visiting": "Open as a hotel; the Bizou Brasserie restaurant serves breakfast, lunch and dinner, per the hotel's listing.",
-     "sources": [
-      "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)",
-      "https://en.wikipedia.org/wiki/National_Register_of_Historic_Places_listings_in_Tampa,_Florida",
-      "https://www.visittampabay.com/listings/le-m%c3%a9ridien-tampa/9138/"
-     ]
-    },
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/le-m%c3%a9ridien-tampa/9138/",
-    "also_sources": [
-     "https://en.wikipedia.org/wiki/United_States_Courthouse_Building_and_Downtown_Postal_Station_(Tampa,_Florida)",
-     "https://www.tampasdowntown.com/11-awesome-places-to-stay-in-downtown-tampa/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 5 floors, 130 rooms incl. 4 suites, 7 accessible rooms, pets allowed, pool, 24-hour fitness, Bizou Brasserie, 4,823 sq ft meeting rooms, valet parking.",
-    "lat": 27.949541,
-    "lng": -82.457705,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "barrymore-hotel-tampa-riverwalk",
-    "name": "The Barrymore Hotel Tampa Riverwalk",
-    "aliases": [
-     "Barrymore Hotel"
-    ],
-    "kind": "hotel",
-    "area": "downtown-tampa",
-    "address": "111 W Fortune St",
-    "zip": "33602",
-    "url": "https://www.barrymorehotel.com/",
-    "phone": "(813) 223-1351",
-    "rooms": 332,
-    "features": [
-     "waterfront",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space"
-    ],
-    "summary": "A 14-floor hotel beside the Straz Center for the Performing Arts, with a pool deck over the Hillsborough River, the Gaudin Kitchen & Bar and a free shuttle within 2 miles.",
-    "quote": "With a revamped ballroom and a charming outdoor pool deck overlooking the Hillsborough River, we're equipped for gatherings of varying sizes.",
-    "status": "open",
-    "source_url": "https://www.barrymorehotel.com/",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/the-barrymore-hotel-tampa-riverwalk/5535/",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "Official site: outdoor pool (sunrise to sunset), 24-hour fitness center, pet fee $75 per stay, complimentary shuttle within a 2-mile radius 8 AM-10 PM (not to the airport), gated self-parking $20/night. Room count 332 and 14 floors from the Visit Tampa Bay listing (the hotel site gives no count).",
-    "lat": 27.952461,
-    "lng": -82.463493,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "university-inn-downtown-tampa",
-    "name": "University Inn Downtown Tampa",
-    "aliases": [
-     "University Inn"
-    ],
-    "kind": "motel",
-    "area": "downtown-tampa",
-    "address": "830 W Kennedy Blvd",
-    "zip": "33606",
-    "phone": "(813) 253-0851",
-    "summary": "A budget motel on West Kennedy Boulevard across the street from the University of Tampa, open around the clock with daily and weekly rates.",
-    "quote": "clean, comfortable and quiet rooms at budget friendly rates",
-    "status": "open",
-    "source_url": "https://www.yellowpages.com/tampa-fl/mip/university-inn-downtown-tampa-205381",
-    "also_sources": [
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "No working official site: the directory lists universityinntampa.com, which did not respond on 2026-09-27. The Tampa Downtown Partnership's current Stay directory lists 'University Inn - 830 W. Kennedy Blvd.' Business text on the directory: open 24 hours, daily and weekly rates, guest laundry, smoking and non-smoking rooms. Area: west bank next to UT; SPEC puts UT in downtown-tampa. Verifier: confirm it is still operating.",
-    "lat": 27.944567,
-    "lng": -82.467909,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "jw-marriott-tampa-water-street",
-    "name": "JW Marriott Tampa Water Street",
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "JW Marriott",
-    "area": "channel-district",
-    "address": "510 Water St",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpajd-jw-marriott-tampa-water-street/overview/",
-    "phone": "(813) 221-4950",
-    "rooms": 519,
-    "features": [
-     "waterfront",
-     "pool",
-     "spa",
-     "fitness",
-     "restaurant",
-     "meeting-space"
-    ],
-    "summary": "A 27-floor, 519-room JW Marriott in the Water Street district, with sixth-floor pools, the Spa by JW, six dining outlets and nearly 100,000 sq ft of event space.",
-    "quote": "the JW Marriott Tampa Water Street is the region's first four-star, convention-oriented hotel.",
-    "quote_source": "https://waterstreettampa.com/stay",
-    "opened": "2020",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/jw-marriott-tampa-water-street/14933/",
-    "also_sources": [
-     "https://www.cvent.com/venues/tampa/hotel/jw-marriott-tampa-water-street/venue-8787e710-7c98-4bfe-871b-c54c933213b3",
-     "https://waterstreettampa.com/stay",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 27 floors, 519 sleeping rooms, 6 restaurants and 3 bars, spa, pools with private cabanas, valet parking. Quote is Water Street Tampa's (the developer's) description. Cvent: 519 rooms incl. 24 suites, 'Opened in 2020'.",
-    "lat": 27.941906,
-    "lng": -82.453668,
-    "geo_source": "photon"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "tampa-marriott-water-street",
-    "name": "Tampa Marriott Water Street",
-    "aliases": [
-     "Tampa Marriott Waterside Hotel & Marina"
-    ],
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "Marriott Hotels",
-    "area": "channel-district",
-    "address": "505 Water St",
-    "zip": "33602",
-    "url": "https://www.marriott.com/hotels/travel/tpamc-tampa-marriott-water-street/",
-    "phone": "(813) 221-4900",
-    "rooms": 727,
-    "features": [
-     "waterfront",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A 27-floor waterfront Marriott next to the Tampa Convention Center, with a rooftop pool, balconies with water or skyline views, several Riverwalk restaurants and 20 event spaces.",
-    "quote": "Our beautiful-redesigned waterfront hotel sits adjacent to the convention center in Tampa's dynamic downtown just steps from the Tampa Riverwalk",
-    "opened": "2000",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/tampa-marriott-water-street/4650/",
-    "also_sources": [
-     "https://www.cvent.com/venues/tampa/hotel/tampa-marriott-water-street/venue-0caf2860-684f-4375-8638-97fe2323844b",
-     "https://waterstreettampa.com/stay",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (marriott.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 27 floors, 727 sleeping rooms incl. 28 suites (a second field says 719), 27 accessible rooms, pets allowed, 4 restaurants, 2 bars, 42,608 sq ft meeting rooms. Cvent: 727 rooms incl. 28 suites, built 2000, renovated 2019. The Tampa Downtown Partnership stay directory still lists it as 'Marriott Waterside Hotel & Marina - 700 S. Florida Ave.'",
-    "lat": 27.940915,
-    "lng": -82.453872,
-    "geo_source": "photon"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "tampa-edition",
-    "name": "The Tampa EDITION",
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "EDITION Hotels",
-    "area": "channel-district",
-    "address": "500 Channelside Dr",
-    "zip": "33602",
-    "url": "https://www.editionhotels.com/tampa/",
-    "phone": "+1 (813) 221-4600",
-    "rooms": 172,
-    "features": [
-     "pool",
-     "rooftop-bar",
-     "spa",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "ev-charging",
-     "meeting-space"
-    ],
-    "summary": "Ian Schrager's EDITION hotel in the Water Street district, with guest rooms and suites, a rooftop bar and terrace, a spa and more than 8,000 sq ft of event space.",
-    "quote": "Situated within the new 56-acre Water Street Tampa neighborhood, the hotel is home to 172 guest rooms and 30 spacious suites, including a 2,059 sqft Penthouse Suite.",
-    "opened": "2022",
-    "status": "open",
-    "status_note": "The hotel says its rooftop pool, bar and Azure restaurant are unavailable through Oct 3, 2026 (alternative pool access arranged) and its spa through Sep 26, 2026.",
-    "source_url": "https://www.editionhotels.com/tampa/",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/the-tampa-edition/18655/",
-     "https://www.cvent.com/venues/tampa/hotel/the-tampa-edition/venue-a10151ae-045d-4a1a-a27a-20db024d16d3",
-     "https://waterstreettampa.com/stay"
-    ],
-    "notes": "Rooms: the hotel says '172 guest rooms and 30 spacious suites'; its Visit Tampa Bay listing gives 172 sleeping rooms including 30 suites, and the hotel's RFP form caps rooms at 172, and Cvent gives 172 total incl. 30 suites (built 2022), so rooms=172. Architects: Morris Adjmi with Nichols Brosch Wurst Wolfe & Associates; interiors Roman & Williams (hotel site). Listing: pets allowed, EV charging.",
-    "lat": 27.943596,
-    "lng": -82.451239,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hampton-inn-tampa-downtown-channel-district",
-    "name": "Hampton Inn Tampa Downtown Channel District",
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Hampton by Hilton",
-    "area": "channel-district",
-    "address": "1155 E Kennedy Blvd",
-    "zip": "33602",
-    "url": "https://www.hilton.com/en/hotels/tpatbhx-hampton-tampa-downtown-channel-district/",
-    "phone": "(813) 525-9900",
-    "rooms": 116,
-    "features": [
-     "free-breakfast",
-     "pool",
-     "fitness",
-     "pet-friendly",
-     "cruise-shuttle",
-     "ev-charging",
-     "meeting-space"
-    ],
-    "summary": "A 116-room Hampton Inn sharing a building, rooftop pool and terrace with Home2 Suites in the Channel District; breakfast and a shuttle to the cruise port are included.",
-    "quote": "With the closest location to cruise terminals, this hotel offers a complimentary shuttle to the cruise port.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/hampton-inn-tampa-downtown-channel-district/22850/",
-    "also_sources": [
-     "https://www.hilton.com/en/locations/usa/florida/tampa/",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: Hampton and Home2 share 213 rooms (Hampton 116, Home2 97 suites), 10 floors, rooftop pool, 1,400 sq ft meeting room, EV charging, secured garage parking (charge). url: where the listing's website hamptontampadowntown.com redirects.",
-    "lat": 27.950503,
-    "lng": -82.448358,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "home2-suites-tampa-downtown-channel-district",
-    "name": "Home2 Suites by Hilton Tampa Downtown Channel District",
-    "kind": "extended-stay",
-    "brand": "Hilton",
-    "collection": "Home2 Suites by Hilton",
-    "area": "channel-district",
-    "address": "1155 E Kennedy Blvd",
-    "zip": "33602",
-    "url": "https://www.hilton.com/en/hotels/tpadbht-home2-suites-tampa-downtown-channel-district/",
-    "phone": "(813) 525-9900",
-    "rooms": 97,
-    "features": [
-     "all-suites",
-     "kitchens",
-     "free-breakfast",
-     "pool",
-     "fitness",
-     "pet-friendly",
-     "cruise-shuttle",
-     "ev-charging"
-    ],
-    "summary": "A 97-suite Home2 Suites with kitchenettes, in the same Channel District building as the Hampton Inn; breakfast and a cruise-port shuttle are included.",
-    "quote": "The pet-friendly hotels share an outdoor rooftop pool with landscaped terrace overlooking downtown and Channel District which features a fire pit and cooking grills",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/home2-suites-by-hilton-tampa-downtown-channel-district/22849/",
-    "also_sources": [
-     "https://www.hilton.com/en/locations/usa/florida/tampa/",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Same building as hampton-inn-tampa-downtown-channel-district.",
-    "lat": 27.950503,
-    "lng": -82.448358,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "roost-tampa",
-    "name": "ROOST Tampa",
-    "kind": "extended-stay",
-    "brand": "ROOST Apartment Hotel",
-    "area": "channel-district",
-    "address": "1050 Water St",
-    "zip": "33602",
-    "url": "https://www.myroost.com/hotel/tampa-florida",
-    "phone": "(813) 945-4890",
-    "rooms": 97,
-    "features": [
-     "pool",
-     "fitness",
-     "kitchens",
-     "pet-friendly",
-     "ev-charging"
-    ],
-    "summary": "An apartment hotel in the Water Street district: 97 furnished units with full kitchens and washer-dryers, on floors 2 to 7 of a tower, with a seventh-floor pool deck.",
-    "quote": "ROOST Tampa is a luxury lifestyle hotel situated in the center of the Water Street district, offering apartment-style Rooms & Suites",
-    "status": "open",
-    "source_url": "https://www.myroost.com/hotel/tampa-florida",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/roost-tampa/18807/",
-     "https://waterstreettampa.com/stay"
-    ],
-    "notes": "Official site: resort-style pool, fitness center, full kitchens, in-unit washer and dryer; 'Designed for stays of 30 nights or longer' but also 'for both short visits and longer stays'. Unit count (97), floors, pets and parking with charging stations from the Visit Tampa Bay listing.",
-    "lat": 27.944704,
-    "lng": -82.450683,
-    "geo_source": "photon"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "mint-house-tampa-downtown",
-    "name": "Mint House Tampa Downtown by Kasa",
-    "aliases": [
-     "Mint House Tampa Downtown"
-    ],
-    "kind": "extended-stay",
-    "brand": "Kasa",
-    "area": "channel-district",
-    "address": "801 E Whiting St",
-    "zip": "33602",
-    "url": "https://kasa.com/properties/mint-house-tampa-downtown-by-kasa",
-    "rooms": 53,
-    "features": [
-     "kitchens",
-     "pool",
-     "fitness",
-     "pet-friendly"
-    ],
-    "summary": "Apartment-style suites with full kitchens and in-unit laundry in the Channel District, with self check-in, a plunge pool and a fitness center; parking is off site.",
-    "quote": "Perfect for work trips and longer stays, you'll find comfort in our selection of apartment-style suites with full kitchens and in-unit laundry",
-    "status": "open",
-    "source_url": "https://kasa.com/properties/mint-house-tampa-downtown-by-kasa",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/mint-house-tampa-downtown-by-kasa/23050/"
-    ],
-    "notes": "Kasa page: one pet per unit ($8-30/night), paid off-site parking one block away, self check-in at 4 PM, virtual front desk. 53 units from the Visit Tampa Bay listing. Coordinates: the Census geocoder did not match 801 E Whiting St; the point is its match for 800 E Whiting St (same block, opposite side).",
-    "lat": 27.946963,
-    "lng": -82.452715,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "westin-tampa-downtown-waterside",
-    "name": "Westin Tampa Downtown Waterside",
-    "aliases": [
-     "The Westin Tampa Waterside",
-     "The Westin Tampa Harbour Island"
-    ],
-    "kind": "hotel",
-    "brand": "Marriott",
-    "collection": "Westin Hotels & Resorts",
-    "area": "harbour-island",
-    "address": "725 S Harbour Island Blvd",
-    "zip": "33602",
-    "url": "https://www.marriott.com/en-us/hotels/tpawh-westin-tampa-downtown-waterside/overview/",
-    "phone": "(813) 229-5000",
-    "rooms": 309,
-    "features": [
-     "waterfront",
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space"
-    ],
-    "summary": "A 12-floor, 309-room waterfront Westin on Harbour Island, a few blocks from the convention center, with an outdoor pool, a fitness room, 24-hour room service and meeting space.",
-    "status": "open",
-    "source_url": "https://www.cvent.com/venues/tampa/hotel/westin-tampa-downtown-waterside-newly-renovated-/venue-b1e9414b-1249-4acb-88f3-2fa49e3cb08b",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/the-westin-tampa-waterside/3121/",
-     "https://www.tampasdowntown.com/place_category/stay/"
-    ],
-    "notes": "marriott.com refuses automated reading (HTTP 403). Name and rooms from the hotel's Cvent profile: 'Westin Tampa Downtown Waterside', 309 total guest rooms incl. 23 suites, building built 1985, renovated 2026, pet friendly, outdoor pool; it describes a $20 million renovation completed in November 2017. The Visit Tampa Bay listing still uses 'The Westin Tampa Waterside' (12 floors, 309 rooms incl. 23 suites in its fields; its text says 299 rooms and 19 suites), with pets allowed, 24-hour room service and self and valet parking. The hotel's old domain westintampaharbourisland.com redirects to a marriott.com page whose slug is 'westin-tampa-downtown-waterside' (alias).",
-    "lat": 27.938394,
-    "lng": -82.453918,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hotel-haya",
-    "name": "Hotel Haya",
-    "kind": "boutique-hotel",
-    "brand": "Aparium Hotel Group",
-    "area": "ybor-city",
-    "address": "1412 E 7th Ave",
-    "zip": "33605",
-    "url": "https://hotelhaya.com/",
-    "phone": "(813) 462-9515",
-    "rooms": 178,
-    "opened": "2020",
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A 178-room boutique hotel on 7th Avenue in Ybor City that rose from the historic facade of Las Novedades, with a courtyard pool, the Flor Fina restaurant and Café Quiquiriquí.",
-    "quote": "Hotel Haya is a place of curious contrast, a vibrant new voice in an old-world neighborhood, and a celebration of Ybor City's multicultural heart.",
-    "heritage": {
-     "story": "The hotel says it rose from the historic facade of Las Novedades, a 7th Avenue restaurant, joining restored storefronts with new construction. It is named for Ignacio Haya, whose Haya y Sanchez factory the hotel credits with rolling the first cigar in Tampa.",
-     "sources": [
-      "https://hotelhaya.com/explore/history-about/"
-     ]
-    },
-    "status": "open",
-    "source_url": "https://hotelhaya.com/",
-    "also_sources": [
-     "https://hotelhaya.com/explore/history-about/",
-     "https://hotelhaya.com/faq/",
-     "https://www.visittampabay.com/listings/hotel-haya/15920/",
-     "https://www.cvent.com/venues/tampa/hotel/hotel-haya/venue-bacfdec8-65e3-439c-95d2-fd76aa5d7162"
-    ],
-    "notes": "Official site: courtyard pool, 24-hour fitness center, 24/7 valet, two pets per room ($100 per pet), Flor Fina restaurant and Café Quiquiriquí; part of the Aparium family of hotels. Built 2020 per Cvent. 178 keys, 4 floors, 16 suites, 9 accessible rooms from the Visit Tampa Bay listing. The listing phone (813) 568-1200 differs from the site's (813) 462-9515; site used.",
-    "lat": 27.960342,
-    "lng": -82.444033,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hampton-inn-suites-tampa-ybor-city-downtown",
-    "name": "Hampton Inn & Suites Tampa/Ybor City/Downtown",
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Hampton by Hilton",
-    "area": "ybor-city",
-    "address": "1301 E 7th Ave",
-    "zip": "33605",
-    "url": "https://www.hilton.com/en/hotels/tpaybhx-hampton-suites-tampa-ybor-city-downtown/",
-    "phone": "(813) 247-6700",
-    "rooms": 138,
-    "features": [
-     "pool",
-     "fitness",
-     "ev-charging",
-     "accessible-rooms"
-    ],
-    "summary": "A five-floor, 138-room Hampton Inn & Suites on 7th Avenue in Ybor City, which says it is right on the streetcar (trolley) line to the convention center.",
-    "quote": "Located in famous Ybor City (Downtown Tampa), a nationally recognized historic district, known for its vibrant nightlife and rich history.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/hampton-inn-%26-suites-tampa-ybor-city-downtown/3542/",
-    "also_sources": [
-     "https://www.hilton.com/en/locations/usa/florida/tampa/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 5 floors, 138 sleeping rooms incl. 40 suites, 7 accessible rooms, pool, fitness, EV charging, self parking (charge). The listing says 'Right on Trolley line' (the streetcar).",
-    "lat": 27.960226,
-    "lng": -82.445392,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hilton-garden-inn-tampa-ybor-historic-district",
-    "name": "Hilton Garden Inn Tampa Ybor Historic District",
-    "kind": "hotel",
-    "brand": "Hilton",
-    "collection": "Hilton Garden Inn",
-    "area": "ybor-city",
-    "address": "1700 E 9th Ave",
-    "zip": "33605",
-    "url": "https://www.hilton.com/en/hotels/tpaycgi-hilton-garden-inn-tampa-ybor-historic-district/",
-    "phone": "(813) 769-9267",
-    "rooms": 96,
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A four-floor, 96-room Hilton Garden Inn on 9th Avenue in the Ybor City historic district, with a pool and a restaurant serving breakfast.",
-    "quote": "Centrally located in historic Ybor City.",
-    "status": "open",
-    "source_url": "https://www.visittampabay.com/listings/hilton-garden-inn-tampa-ybor-historic-district/4783/",
-    "also_sources": [
-     "https://www.hilton.com/en/locations/usa/florida/tampa/"
-    ],
-    "notes": "The brand site (hilton.com) refuses automated reading (HTTP 403), so rooms and amenities come from the hotel's own Visit Tampa Bay partner listing (source_url), read 2026-09-27. Listing: 4 floors, 96 rooms incl. 11 suites, 4 accessible rooms, 1 restaurant and 1 bar, breakfast Mon-Fri 6-10 AM and Sat-Sun 7-11 AM, self parking (charge).",
-    "lat": 27.96175,
-    "lng": -82.440405,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "inn-at-el-reloj",
-    "name": "The Inn at El Reloj",
-    "kind": "inn",
-    "brand": "J.C. Newman Hospitality Co.",
-    "area": "ybor-city",
-    "url": "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
-    "rooms": 11,
-    "features": [
-     "historic",
-     "free-breakfast",
-     "free-parking"
-    ],
-    "summary": "An 11-room inn opening in a restored 1910 boarding house for El Reloj's cigar workers, across Columbus Drive from J.C. Newman's El Reloj cigar factory, with Stanford's Cigar Club downstairs.",
-    "quote": "The Inn at El Reloj is an intimate 11-room hotel and a place of respite in Ybor City.",
-    "heritage": {
-     "built": "1910",
-     "story": "J.C. Newman says the building was originally a boarding house for the cigar workers of its El Reloj factory and was restored in 2026, keeping the original concrete floors and paint colors uncovered during the work. From its shared balcony guests look across Columbus Drive to the El Reloj factory.",
-     "sources": [
-      "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
-      "https://www.jcnewman.com/visit-el-reloj/elaines-restaurant/"
-     ]
-    },
-    "status": "opening-soon",
-    "status_note": "J.C. Newman's page says 'Coming Soon' and gives no opening date (read Sep 27, 2026).",
-    "source_url": "https://www.jcnewman.com/visit-el-reloj/the-inn-at-el-reloj/",
-    "also_sources": [
-     "https://www.jcnewman.com/visit-el-reloj/elaines-restaurant/",
-     "https://www.visittampabay.com/meeting-planners/new-development/"
-    ],
-    "notes": "Street address not published on the pages read; the factory is at 2701 N 16th St and the inn faces it across E Columbus Dr, so no coordinates were set. Breakfast, Wi-Fi and parking included; all spaces nonsmoking. Year 1910 from Elaine's page ('a fully restored historic 1910 building') and the '116-year-old' wording on the inn page. Visit Tampa Bay's new-development page calls it the Sanchez y Haya building, 11 rooms, 'COMING NEXT YEAR'."
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "epicurean-hotel",
-    "name": "Epicurean Hotel, Autograph Collection",
-    "aliases": [
-     "Epicurean Hotel"
-    ],
-    "kind": "boutique-hotel",
-    "brand": "Marriott",
-    "collection": "Autograph Collection",
-    "area": "hyde-park",
-    "address": "1207 S Howard Ave",
-    "zip": "33606",
-    "url": "https://www.epicureanhotel.com/",
-    "phone": "813-999-8700",
-    "rooms": 188,
-    "opened": "2013",
-    "features": [
-     "pool",
-     "spa",
-     "fitness",
-     "restaurant",
-     "rooftop-bar",
-     "ev-charging",
-     "meeting-space",
-     "accessible-rooms"
-    ],
-    "summary": "A food-focused hotel on South Howard Avenue in SoHo, with the Élevage restaurant, the EDGE rooftop bar, the Epicurean Theatre cooking classroom and Spa Evangeline. Pets are not allowed.",
-    "quote": "All rooms feature personal artisan pantries stocked with premium liquors, locally crafted beers, still and sparkling water, coffee and espresso",
-    "status": "open",
-    "source_url": "https://www.epicureanhotel.com/",
-    "also_sources": [
-     "https://www.epicureanhotel.com/stay/",
-     "https://www.epicureanhotel.com/location/",
-     "https://www.visittampabay.com/listings/epicurean-hotel/8908/",
-     "https://www.cvent.com/venues/tampa/hotel/epicurean-hotel-autograph-collection/venue-6fcedbe3-a675-412a-921f-07a8b73468f4",
-     "https://www.mainsailhotels.com/portfolio/"
-    ],
-    "notes": "Official site: AAA Four Diamond, Autograph Collection member, pool (accessible entrance), Spa Evangeline, EDGE Rooftop, Élevage, Epicurean Theatre; 'Pets Not Allowed (service animals only)'. 188 rooms incl. 16 suites and built 2013 per Cvent; the Visit Tampa Bay listing also gives 188 rooms and which says it was developed with Mainsail Lodging & Development and Bern's Steak House.",
-    "lat": 27.930194,
-    "lng": -82.483267,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "palihouse-hyde-park-village",
-    "name": "Palihouse Hyde Park Village",
-    "kind": "boutique-hotel",
-    "brand": "Palisociety",
-    "area": "hyde-park",
-    "address": "1509 W Swann Ave",
-    "zip": "33606",
-    "url": "https://www.palisociety.com/hotels/tampa",
-    "phone": "813 820 1685",
-    "rooms": 36,
-    "features": [
-     "all-suites",
-     "kitchens",
-     "restaurant",
-     "pet-friendly"
-    ],
-    "summary": "A 36-room hotel in the Hyde Park Village shopping district; every room has a kitchenette, and the Lobby Bar serves breakfast, lunch and cocktails.",
-    "quote": "Featuring 36 oversized guest rooms and an intimate lobby lounge and cocktail bar, this lovely urban lodge is designed to welcome and charm the most discerning traveler.",
-    "status": "open",
-    "source_url": "https://www.palisociety.com/hotels/tampa",
-    "also_sources": [
-     "https://www.visittampabay.com/listings/palihouse-hyde-park-village/20414/"
-    ],
-    "notes": "Official site: 36 King and Queen guest suites with kitchenettes; Lobby Bar. Pets allowed and valet parking per the Visit Tampa Bay listing.",
-    "lat": 27.937372,
-    "lng": -82.474917,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "tahitian-inn",
-    "name": "Tahitian Inn",
-    "aliases": [
-     "Tahitian Inn Hotel, Cafe & Spa",
-     "Tahitiann Inn & Suites"
-    ],
-    "kind": "boutique-hotel",
-    "area": "south-tampa",
-    "address": "601 S Dale Mabry Hwy",
-    "zip": "33609",
-    "url": "https://tahitianinn.com/",
-    "phone": "813-877-6721",
-    "rooms": 82,
-    "opened": "1953",
-    "features": [
-     "pool",
-     "fitness",
-     "restaurant",
-     "pet-friendly"
-    ],
-    "summary": "A family-owned, South Seas-themed inn on South Dale Mabry Highway, run by the same family since 1953, with 82 rooms and suites, a pool and Pach's Place restaurant.",
-    "quote": "The Tahitian Inn Hotel is a historic boutique establishment that has been family owned and operated since its origin in 1953.",
-    "quote_source": "https://tahitianinn.com/about-us/",
-    "status": "open",
-    "status_note": "Open during renovations; the hotel says its pool is closed for renovations and it has no operational elevator, so guests use stairs in its three-story building (read Sep 27, 2026).",
-    "source_url": "https://tahitianinn.com/",
-    "also_sources": [
-     "https://tahitianinn.com/about-us/",
-     "https://tahitianinn.com/services-and-amenities/"
-    ],
-    "notes": "Pet fee $50 one time. Fitness center and Pach's Place restaurant (breakfast and lunch) per the amenities page. Area: south of Kennedy Blvd on S Dale Mabry, at the Westshore edge.",
-    "lat": 27.939362,
-    "lng": -82.505804,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "hotel-south-tampa-and-suites",
-    "name": "Hotel South Tampa & Suites",
-    "kind": "hotel",
-    "area": "south-tampa",
-    "address": "3314 S Dale Mabry Hwy",
-    "zip": "33629",
-    "url": "https://www.hotelsouthtampa.com/",
-    "phone": "+1 (813) 832-4656",
-    "features": [
-     "pool",
-     "fitness",
-     "free-breakfast",
-     "free-parking",
-     "kitchens"
-    ],
-    "summary": "A renovated hotel on South Dale Mabry Highway with kitchenette suites, a heated outdoor pool, free hot breakfast and free parking. No pets.",
-    "quote": "A hidden jewel nestled in the heart of South Tampa, we welcome you to Hotel South Tampa & Suites.",
-    "status": "open",
-    "source_url": "https://www.hotelsouthtampa.com/",
-    "notes": "Site footer: 'This website is individually owned by Hotel South Tampa & Suites.' Strict no-pet policy (service animals welcome). Booking.com's page slug (howard-johnson-tampa-south-dale-mabry) suggests a former Howard Johnson; not confirmed.",
-    "lat": 27.914317,
-    "lng": -82.505987,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "grams-place",
-    "name": "Gram's Place",
-    "aliases": [
-     "Gram's Place Bed and Hostel",
-     "Gram's Place BnB/Hostel"
-    ],
-    "kind": "hostel",
-    "area": "tampa-heights",
-    "address": "3109 N Ola Ave",
-    "zip": "33603",
-    "summary": "A music-themed hostel and bed-and-breakfast north of downtown with private rooms and shared dorms; its listing calls it Tampa's oldest hostel.",
-    "quote": "Gram's Place Bed and Hostel is Tampa, Florida's oldest Hostel / Le Gite!",
-    "status": "open",
-    "status_note": "Its own site tampahostel.com returned a Wix 'ConnectYourDomain' error on Sep 27, 2026; the Hostelworld listing was bookable with guest reviews from April-May 2026.",
-    "source_url": "https://www.hostelworld.com/hostels/p/807/gram-s-place-bnb-hostel/",
-    "notes": "Hostelworld lists free parking, free Wi-Fi, private en-suite rooms, dorms and semi-private rooms. Area: 3109 N Ola Ave is in Riverside Heights, north of Columbus Dr; mapped to tampa-heights (closest SPEC area). Verifier: confirm it is still operating (official site down).",
-    "lat": 27.972505,
-    "lng": -82.46346,
-    "geo_source": "census"
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "james-hotel-west-tampa",
-    "name": "The James Hotel",
-    "aliases": [
-     "The James - West Tampa"
-    ],
-    "kind": "boutique-hotel",
-    "area": "west-tampa",
-    "address": "North Howard Ave",
-    "summary": "A roughly 70-room hotel being built inside the former Balbin Bros. cigar factory on North Howard Avenue in West Tampa.",
-    "heritage": {
-     "story": "The building was the Balbin Bros. cigar factory; in 2023 the developer My Hospitality Hotels was converting it into a 70-room hotel while working with the city on preserving the building, which Fox 13 described as 110 years old.",
-     "sources": [
-      "https://www.fox13news.com/news/balbin-bros-cigar-factory-being-transformed-into-70-room-boutique-hotel",
-      "https://www.tampabay.com/life-culture/history/2023/09/28/balbin-bros-tampa-cigar-factory-hotel/"
-     ]
-    },
-    "status": "opening-soon",
-    "status_note": "Visit Tampa Bay's new-development page lists The James Hotel as 'COMING SOON' (read Sep 27, 2026); a Sep 2023 Fox 13 report expected it to open by the end of March 2025.",
-    "source_url": "https://www.visittampabay.com/meeting-planners/new-development/",
-    "also_sources": [
-     "https://www.fox13news.com/news/balbin-bros-cigar-factory-being-transformed-into-70-room-boutique-hotel",
-     "https://www.tampabay.com/life-culture/history/2023/09/28/balbin-bros-tampa-cigar-factory-hotel/"
-    ],
-    "notes": "No official hotel page was found (search budget exhausted; sonesta.com guesses 404). Street number not on an opened page, so no coordinates. Visit Tampa Bay describes it as 'roughly 70 guest rooms' in the historic Balbin Brothers Cigar Factory."
-   },
-   {
-    "city": "Tampa",
-    "state": "FL",
-    "checked": "2026-09-27",
-    "id": "pendry-tampa",
-    "name": "Pendry Tampa",
-    "kind": "hotel",
-    "brand": "Pendry",
-    "area": "downtown-tampa",
-    "url": "https://www.pendry.com/tampa/",
-    "rooms": 220,
-    "features": [
-     "pool",
-     "spa",
-     "fitness",
-     "restaurant",
-     "meeting-space"
-    ],
-    "summary": "A 220-room Pendry hotel with private residences planned for 2027 on the downtown Riverwalk, with a rooftop pool, a spa and three signature food and drink outlets.",
-    "quote": "Debuting in 2027.",
-    "status": "opening-soon",
-    "status_note": "Pendry's page says 'Debuting in 2027' with no date (read Sep 27, 2026).",
-    "source_url": "https://www.pendry.com/tampa/",
-    "also_sources": [
-     "https://www.visittampabay.com/meeting-planners/new-development/"
-    ],
-    "notes": "Street address not on the opened pages, so no coordinates. Features are planned ones per Pendry's page (rooftop pool, spa and fitness center, three signature F&B outlets, 14,000+ sq ft of event space)."
-   }
-  ]
- },
- "report": "# stays-tampa-core: report (researched 2026-09-27)\n\n## Coverage\n\n32 stay records in the City of Tampa core. By area: downtown-tampa 14 (incl. Pendry, not yet open), channel-district incl. Water Street 7, harbour-island 1, ybor-city 4 (incl. The Inn at El Reloj, not yet open), hyde-park incl. SoHo 2, south-tampa 2, tampa-heights 1, west-tampa 1 (The James Hotel, not yet open). No record for davis-islands or seminole-heights: no hotel, inn or B&B there could be confirmed as operating (see \"Left out\").\n\nBy kind: hotel 17, boutique-hotel 5, extended-stay 5 (Residence Inn, Hyatt House, Home2 Suites, ROOST, Mint House), historic-hotel 2 (Hotel Flor, the 1926-27 Floridan; Le Méridien, in the 1905 federal courthouse), inn 1, motel 1, hostel 1.\n\nBy status: 29 open (four with a status_note: Hotel Tampa Riverwalk is under renovation to Nov 30, 2026 with its pool and restaurant closed; the Tampa EDITION's rooftop pool, bar and Azure are closed to Oct 3, 2026; the Tahitian Inn's pool is closed and it has no working elevator; Gram's Place's own website is down), 3 opening-soon (The Inn at El Reloj, The James Hotel, Pendry Tampa).\n\nHeritage blocks (5): Hotel Flor (NRHP 96000315, listed 1996 as the Floridan Hotel; architects G. A. Miller and Francis J. Kennard), Le Méridien Tampa (NRHP 74000633, listed 1974 as Federal Building, U.S. Courthouse, Downtown Postal Station; completed 1905 under Supervising Architect James Knox Taylor), and short sourced stories for Hotel Haya (rose from the Las Novedades facade), The Inn at El Reloj (1910 boarding house for cigar workers) and The James (former Balbin Bros. cigar factory).\n\n## How candidates were found\n\n1. Visit Tampa Bay accommodation listings, pulled through the site's listings API (category 5; regions Downtown/Channel District, South Tampa, Ybor City, and the other regions to check boundaries); every in-scope listing page then read in full (23 hotels in scope).\n2. Tampa Downtown Partnership \"Stay\" directory (20 hotels) and its 2019 \"11 places to stay\" article (former names: Sheraton Tampa Riverwalk, Floridan Palace, Marriott Waterside).\n3. Hilton's Tampa locations page (every Hilton-family hotel in the city).\n4. OpenStreetMap via Photon: tourism=hotel|motel|guest_house|hostel inside a box around the core (86 features, incl. every motel on N Florida, N Nebraska and E Hillsborough avenues).\n5. Water Street Tampa's Stay page; Visit Tampa Bay's new-development page (openings); Cvent's Tampa hotel-venue profiles (44 hotels bay-wide, 11 in scope) for hotel-supplied room counts and build years; booking.com district pages (Ybor City, Downtown) as a cross-check; hotelguides.com's Gandy Blvd list for South Tampa.\n6. WebSearch for new openings, B&Bs, Seminole Heights, Tampa Heights, Ybor City and South Tampa hotels. The session's shared search budget ran out part-way, which limited follow-up on the South Tampa chains (below).\n\n## Sources\n\nThe hotel's own site is source_url wherever it could be read (Barrymore, Hotel Tampa Riverwalk, Hotel Flor, Hotel Haya, Epicurean, Palihouse, Tampa EDITION, ROOST, Kasa for Mint House, Tahitian Inn, Hotel South Tampa, J.C. Newman for El Reloj, Pendry). marriott.com, hilton.com hotel pages, hyatt.com, ihg.com, choicehotels.com and bestwestern.com refuse automated reading (HTTP 403/503), and the Wayback Machine is blocked by the proxy, so for those chain hotels source_url is the hotel's own Visit Tampa Bay partner listing (hotel-supplied text, room counts and amenity flags), with the Cvent profile, Water Street Tampa or the managing company's opening release (HRI Hospitality for the two Hyatts) as also_sources. Each record's notes say which fact came from which page. features list only what a source states; free-breakfast only where it says complimentary breakfast. rooms come from the hotel's own page when stated, else its Visit Tampa Bay listing, cross-checked with Cvent where available (all 11 agree, after resolving the Westin to 309). opened is set only for the hotel's own opening (Cvent built year for new builds, the Hyatt release, SpringHill per Visit Tampa Bay, Tahitian Inn 1953) and left null where the building predates the current hotel. Quotes were checked character by character against the saved page text (WebFetch pages re-read with a verbatim prompt).\n\nCoordinates: US Census geocoder on the street address for 26 records (exact address matches; Mint House matched 800 E Whiting St, the even side of the same block, noted), Photon/OSM building matches for JW Marriott, Tampa Marriott Water Street and ROOST. The three not-yet-open hotels have no published street address and no coordinates.\n\n## Left out, and why\n\n- Westshore/airport, Drew Park and stadium-area hotels, per the slice split: Holiday Inn Express & Suites Tampa Stadium (2055 N Dale Mabry, filed under Westshore/Airport by Visit Tampa Bay), the Tampa Stadium hotel at 4750 N Dale Mabry (Country Inn & Suites in OSM, \"Express\" on HotelPlanner), Econo Lodge Raymond James (4732 N Dale Mabry), Days Inn & Suites Raymond James Stadium (5405 N Church Ave). Flagged for the merge because SPEC places the stadium in west-tampa.\n- East Tampa hotels named for Ybor: Holiday Inn Express & Suites Tampa East-Ybor City (2520 N 50th St), Days Inn & Suites Tampa near Ybor City (2905 N 50th St), Quality Inn & Suites Near Fairgrounds Ybor City, Rodeway Inn Near Ybor City-Casino (2904 Melbourne Blvd), Tampa 8 Inn (N 46th St): they sit on 50th St/I-4 in east-tampa (other slice).\n- South Tampa chain hotels seen in OSM and on hotelguides.com but not verified, because their brand sites block reading and no reliable current page was found after search ran out: La Quinta Inn & Suites by Wyndham Tampa Bay Area-Tampa South (4620 W Gandy Blvd), TownePlace Suites Tampa South (4505 S Dale Mabry Hwy), Sleep Inn & Suites Tampa South (6231 S Dale Mabry Hwy), Best Western Tampa (734 S Dale Mabry Hwy), Quality Inn Airport-Cruise Port (1020 S Dale Mabry Hwy, OSM only). HotelPlanner pages exist for some but mix in another hotel's data, so they were not used. This is the main known gap.\n- Budget motels in Tampa Heights and Seminole Heights on N Florida Ave, N Nebraska Ave and E Hillsborough Ave (OSM: Downtown Motel, Jayhawk, Oaks, Open Gate, Dutch, Alamo, Antigua, Casa Loma and Casa Loma #2, Columbia, El Rancho, Haven Inn, Mayflower, Oasis, Orange, Royal Palm, Swan, Seminole Motel) and Park Motel on W Kennedy Blvd: no official websites and no way to confirm they operate; several rent weekly.\n- AVE Tampa Riverwalk (160 W Tyler St): furnished apartments for stays of 30 days or longer.\n- Future hotels opening after the guide window or not yet begun: AC Hotel + Moxy Tampa Downtown (111 N Meridian Ave, early 2028), Hotel ORA (1101 E Jackson St, expected to break ground in 2026), the Magnolia Hotel on Bayshore (announced). Pendry Tampa is included as opening-soon (\"Debuting in 2027\").\n- Closed or not hotels today: Don Vicente de Ybor Historic Inn (closed 2015), the Tampa Bay Hotel (UT's Plant Hall), the Palmerin Hotel and Old Union Depot Hotel (NRHP names only), MacDill Inn (military), Ronald McDonald House and Good Samaritan Inn, and vacation-rental homes on booking sites.\n\n## Open questions for the verifier\n\n1. Hotel Tampa Riverwalk: is it the \"Curio Collection by Hilton on the Tampa Riverwalk\" (281 rooms, late 2026) on Visit Tampa Bay's new-development page? Its own site does not say so; brand/collection may change after Nov 30, 2026.\n2. Westin: Cvent and the marriott.com URL say \"Westin Tampa Downtown Waterside\"; Visit Tampa Bay still says \"The Westin Tampa Waterside\". The record uses the former; confirm on marriott.com.\n3. Gram's Place: tampahostel.com shows a Wix domain error; Hostelworld still takes bookings with reviews through May 2026. Confirm it operates.\n4. University Inn Downtown Tampa: only directory sources (Yellow Pages, Tampa Downtown Partnership); its listed website did not respond. Confirm it operates.\n5. The James Hotel: no official page found; street number and brand (seen only in search snippets) were left out.\n6. The Inn at El Reloj: no published street address or opening date.\n7. Hotel Flor opening year: 1926 (hotel listing, Cvent) vs 1927 (Wikipedia); heritage.built is 1926–1927 and opened is null.\n8. Amenity flags for Marriott, Hilton and Hyatt hotels come from their Visit Tampa Bay listings; please spot-check them on the brand pages in a browser, and add the unverified South Tampa chain hotels if they are open.\n"
+    ]
+  },
+  "report": "# stays-tampa-core: report (researched 2026-09-27)\n\n## Coverage\n\n32 stay records in the City of Tampa core. By area: downtown-tampa 14 (incl. Pendry, not yet open), channel-district incl. Water Street 7, harbour-island 1, ybor-city 4 (incl. The Inn at El Reloj, not yet open), hyde-park incl. SoHo 2, south-tampa 2, tampa-heights 1, west-tampa 1 (The James Hotel, not yet open). No record for davis-islands or seminole-heights: no hotel, inn or B&B there could be confirmed as operating (see \"Left out\").\n\nBy kind: hotel 17, boutique-hotel 5, extended-stay 5 (Residence Inn, Hyatt House, Home2 Suites, ROOST, Mint House), historic-hotel 2 (Hotel Flor, the 1926-27 Floridan; Le Méridien, in the 1905 federal courthouse), inn 1, motel 1, hostel 1.\n\nBy status: 29 open (four with a status_note: Hotel Tampa Riverwalk is under renovation to Nov 30, 2026 with its pool and restaurant closed; the Tampa EDITION's rooftop pool, bar and Azure are closed to Oct 3, 2026; the Tahitian Inn's pool is closed and it has no working elevator; Gram's Place's own website is down), 3 opening-soon (The Inn at El Reloj, The James Hotel, Pendry Tampa).\n\nHeritage blocks (5): Hotel Flor (NRHP 96000315, listed 1996 as the Floridan Hotel; architects G. A. Miller and Francis J. Kennard), Le Méridien Tampa (NRHP 74000633, listed 1974 as Federal Building, U.S. Courthouse, Downtown Postal Station; completed 1905 under Supervising Architect James Knox Taylor), and short sourced stories for Hotel Haya (rose from the Las Novedades facade), The Inn at El Reloj (1910 boarding house for cigar workers) and The James (former Balbin Bros. cigar factory).\n\n## How candidates were found\n\n1. Visit Tampa Bay accommodation listings, pulled through the site's listings API (category 5; regions Downtown/Channel District, South Tampa, Ybor City, and the other regions to check boundaries); every in-scope listing page then read in full (23 hotels in scope).\n2. Tampa Downtown Partnership \"Stay\" directory (20 hotels) and its 2019 \"11 places to stay\" article (former names: Sheraton Tampa Riverwalk, Floridan Palace, Marriott Waterside).\n3. Hilton's Tampa locations page (every Hilton-family hotel in the city).\n4. OpenStreetMap via Photon: tourism=hotel|motel|guest_house|hostel inside a box around the core (86 features, incl. every motel on N Florida, N Nebraska and E Hillsborough avenues).\n5. Water Street Tampa's Stay page; Visit Tampa Bay's new-development page (openings); Cvent's Tampa hotel-venue profiles (44 hotels bay-wide, 11 in scope) for hotel-supplied room counts and build years; booking.com district pages (Ybor City, Downtown) as a cross-check; hotelguides.com's Gandy Blvd list for South Tampa.\n6. WebSearch for new openings, B&Bs, Seminole Heights, Tampa Heights, Ybor City and South Tampa hotels. The session's shared search budget ran out part-way, which limited follow-up on the South Tampa chains (below).\n\n## Sources\n\nThe hotel's own site is source_url wherever it could be read (Barrymore, Hotel Tampa Riverwalk, Hotel Flor, Hotel Haya, Epicurean, Palihouse, Tampa EDITION, ROOST, Kasa for Mint House, Tahitian Inn, Hotel South Tampa, J.C. Newman for El Reloj, Pendry). marriott.com, hilton.com hotel pages, hyatt.com, ihg.com, choicehotels.com and bestwestern.com refuse automated reading (HTTP 403/503), and the Wayback Machine is blocked by the proxy, so for those chain hotels source_url is the hotel's own Visit Tampa Bay partner listing (hotel-supplied text, room counts and amenity flags), with the Cvent profile, Water Street Tampa or the managing company's opening release (HRI Hospitality for the two Hyatts) as also_sources. Each record's notes say which fact came from which page. features list only what a source states; free-breakfast only where it says complimentary breakfast. rooms come from the hotel's own page when stated, else its Visit Tampa Bay listing, cross-checked with Cvent where available (all 11 agree, after resolving the Westin to 309). opened is set only for the hotel's own opening (Cvent built year for new builds, the Hyatt release, SpringHill per Visit Tampa Bay, Tahitian Inn 1953) and left null where the building predates the current hotel. Quotes were checked character by character against the saved page text (WebFetch pages re-read with a verbatim prompt).\n\nCoordinates: US Census geocoder on the street address for 26 records (exact address matches; Mint House matched 800 E Whiting St, the even side of the same block, noted), Photon/OSM building matches for JW Marriott, Tampa Marriott Water Street and ROOST. The three not-yet-open hotels have no published street address and no coordinates.\n\n## Left out, and why\n\n- Westshore/airport, Drew Park and stadium-area hotels, per the slice split: Holiday Inn Express & Suites Tampa Stadium (2055 N Dale Mabry, filed under Westshore/Airport by Visit Tampa Bay), the Tampa Stadium hotel at 4750 N Dale Mabry (Country Inn & Suites in OSM, \"Express\" on HotelPlanner), Econo Lodge Raymond James (4732 N Dale Mabry), Days Inn & Suites Raymond James Stadium (5405 N Church Ave). Flagged for the merge because SPEC places the stadium in west-tampa.\n- East Tampa hotels named for Ybor: Holiday Inn Express & Suites Tampa East-Ybor City (2520 N 50th St), Days Inn & Suites Tampa near Ybor City (2905 N 50th St), Quality Inn & Suites Near Fairgrounds Ybor City, Rodeway Inn Near Ybor City-Casino (2904 Melbourne Blvd), Tampa 8 Inn (N 46th St): they sit on 50th St/I-4 in east-tampa (other slice).\n- South Tampa chain hotels seen in OSM and on hotelguides.com but not verified, because their brand sites block reading and no reliable current page was found after search ran out: La Quinta Inn & Suites by Wyndham Tampa Bay Area-Tampa South (4620 W Gandy Blvd), TownePlace Suites Tampa South (4505 S Dale Mabry Hwy), Sleep Inn & Suites Tampa South (6231 S Dale Mabry Hwy), Best Western Tampa (734 S Dale Mabry Hwy), Quality Inn Airport-Cruise Port (1020 S Dale Mabry Hwy, OSM only). HotelPlanner pages exist for some but mix in another hotel's data, so they were not used. This is the main known gap.\n- Budget motels in Tampa Heights and Seminole Heights on N Florida Ave, N Nebraska Ave and E Hillsborough Ave (OSM: Downtown Motel, Jayhawk, Oaks, Open Gate, Dutch, Alamo, Antigua, Casa Loma and Casa Loma #2, Columbia, El Rancho, Haven Inn, Mayflower, Oasis, Orange, Royal Palm, Swan, Seminole Motel) and Park Motel on W Kennedy Blvd: no official websites and no way to confirm they operate; several rent weekly.\n- AVE Tampa Riverwalk (160 W Tyler St): furnished apartments for stays of 30 days or longer.\n- Future hotels opening after the guide window or not yet begun: AC Hotel + Moxy Tampa Downtown (111 N Meridian Ave, early 2028), Hotel ORA (1101 E Jackson St, expected to break ground in 2026), the Magnolia Hotel on Bayshore (announced). Pendry Tampa is included as opening-soon (\"Debuting in 2027\").\n- Closed or not hotels today: Don Vicente de Ybor Historic Inn (closed 2015), the Tampa Bay Hotel (UT's Plant Hall), the Palmerin Hotel and Old Union Depot Hotel (NRHP names only), MacDill Inn (military), Ronald McDonald House and Good Samaritan Inn, and vacation-rental homes on booking sites.\n\n## Open questions for the verifier\n\n1. Hotel Tampa Riverwalk: is it the \"Curio Collection by Hilton on the Tampa Riverwalk\" (281 rooms, late 2026) on Visit Tampa Bay's new-development page? Its own site does not say so; brand/collection may change after Nov 30, 2026.\n2. Westin: Cvent and the marriott.com URL say \"Westin Tampa Downtown Waterside\"; Visit Tampa Bay still says \"The Westin Tampa Waterside\". The record uses the former; confirm on marriott.com.\n3. Gram's Place: tampahostel.com shows a Wix domain error; Hostelworld still takes bookings with reviews through May 2026. Confirm it operates.\n4. University Inn Downtown Tampa: only directory sources (Yellow Pages, Tampa Downtown Partnership); its listed website did not respond. Confirm it operates.\n5. The James Hotel: no official page found; street number and brand (seen only in search snippets) were left out.\n6. The Inn at El Reloj: no published street address or opening date.\n7. Hotel Flor opening year: 1926 (hotel listing, Cvent) vs 1927 (Wikipedia); heritage.built is 1926–1927 and opened is null.\n8. Amenity flags for Marriott, Hilton and Hyatt hotels come from their Visit Tampa Bay listings; please spot-check them on the brand pages in a browser, and add the unverified South Tampa chain hotels if they are open.\n"
 }

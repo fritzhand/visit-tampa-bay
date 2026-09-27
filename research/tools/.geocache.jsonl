@@ -2045,3 +2045,16 @@
 {"k":"photon:albert whitted airport:27.765,-82.627","v":{"lat":27.764399,"lng":-82.6289,"geo_source":"photon","matched":"Albert Whitted Airport, 107, 8th Avenue Southeast, Saint Petersburg, 33701","osm":"W39977231 aeroway=aerodrome"}}
 {"k":"census:8862 midnight pass road, sarasota, fl 34242","v":{"lat":27.220985,"lng":-82.516412,"geo_source":"census","matched":"8862 MIDNIGHT PASS RD, SARASOTA, FL, 34242"}}
 {"k":"photon:turtle beach campground:27.21,-82.51","v":null}
+{"k":"census:10850 moore road, lakeland, fl 33809","v":{"lat":28.199516,"lng":-81.922428,"geo_source":"census","matched":"10850 MOORE RD, LAKELAND, FL, 33809"}}
+{"k":"census:2607 e dr martin luther king jr blvd, tampa, fl 33610","v":{"lat":27.981409,"lng":-82.430515,"geo_source":"census","matched":"2607 E DR MARTIN LUTHER KING JR BLVD, TAMPA, FL, 33610"}}
+{"k":"census:107 8th ave se, st. petersburg, fl 33701","v":{"lat":27.762369,"lng":-82.633047,"geo_source":"census","matched":"107 8TH AVE SE, ST PETERSBURG, FL, 33701"}}
+{"k":"photon:tampa's black history museum:27.955,-82.458","v":null}
+{"k":"photon:ifly tampa:27.93,-82.33","v":{"lat":27.931503,"lng":-82.332651,"geo_source":"photon","matched":"iFly Tampa, 10654, Palm River Road, Tampa, 33619","osm":"W904907484 building=yes"}}
+{"k":"census:3636 henderson blvd, tampa, fl","v":{"lat":27.936813,"lng":-82.502354,"geo_source":"census","matched":"3636 HENDERSON BLVD, TAMPA, FL, 33609"}}
+{"k":"census:2904 melbourne blvd, tampa, fl 33605","v":{"lat":27.970372,"lng":-82.401754,"geo_source":"census","matched":"2904 MELBURNE BLVD, TAMPA, FL, 33605"}}
+{"k":"census:180 race track rd, oldsmar, fl 34677","v":{"lat":28.036798,"lng":-82.64862,"geo_source":"census","matched":"180 RACE TRACK RD, OLDSMAR, FL, 34677"}}
+{"k":"photon:oldsmar flea market:28.04,-82.67","v":{"lat":28.035839,"lng":-82.649596,"geo_source":"photon","matched":"Oldsmar Flea Market, Race Track Road, Westchase, 33626","osm":"N1834862143 shop=second_hand"}}
+{"k":"census:2909 22nd ave n, st. petersburg, fl 33713","v":{"lat":27.791955,"lng":-82.6735,"geo_source":"census","matched":"2909 22ND AVE N, ST PETERSBURG, FL, 33713"}}
+{"k":"photon:mazzaro's italian market:27.79,-82.67","v":{"lat":27.792337,"lng":-82.673571,"geo_source":"photon","matched":"Mazzaro Italian Market, 2909, 22nd Avenue N, Saint Petersburg, 33713","osm":"R2595029 shop=deli"}}
+{"k":"census:19463 gulf blvd, indian shores, fl 33785","v":{"lat":27.851602,"lng":-82.844702,"geo_source":"census","matched":"19463 GULF BLVD, INDIAN SHORES, FL, 33785"}}
+{"k":"photon:smugglers cove adventure golf:27.85,-82.84","v":{"lat":27.851129,"lng":-82.844082,"geo_source":"photon","matched":"Smuggler's Cove Adventure Golf, 19463, Gulf Boulevard, Indian Shores, 33785","osm":"W70794718 leisure=miniature_golf"}}
