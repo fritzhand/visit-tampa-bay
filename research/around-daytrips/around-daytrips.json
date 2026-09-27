@@ -250,7 +250,8 @@
           "https://parkesdale.com/"
         ],
         "checked": "2026-09-27",
-        "notes": "Only service animals allowed inside, per the market's page."
+        "notes": "Only service animals allowed inside, per the market's page.",
+        "quote_source": "https://parkesdale.com/"
       },
       {
         "id": "robert-w-willaford-railroad-museum",
@@ -280,7 +281,7 @@
         "hours_text": "Tuesday-Friday 11:00 AM-4:00 PM; Saturday 10:00 AM-4:00 PM",
         "price_text": "Free admission; donations appreciated",
         "is_free": true,
-        "summary": "A free railroad museum in Plant City's 1909 Union Depot, in historic downtown, with railroad artifacts, a caboose and a train viewing platform where you can watch freight trains pass.",
+        "summary": "A free railroad museum in Plant City's 1909 Union Depot, in historic downtown, with railroad artifacts, a caboose and a train viewing platform where you can watch trains pass.",
         "heritage": {
           "built": "1908–1909",
           "architect": "J.F. Leitner",
@@ -354,7 +355,7 @@
             }
           ],
           "era": "boomtown",
-          "story": "Dade City was incorporated in 1889 and is the county seat of Pasco County. Its centerpiece is the Pasco County Courthouse, built in 1909 to a design by Georgia architect Edward Columbus Hosford and added to the National Register of Historic Places in 2006. The city's historic register lists more than 160 designated properties, and the Dade City Heritage and Cultural Museum occupies the 1912 Atlantic Coast Line depot.",
+          "story": "Dade City was incorporated in 1889 and is the county seat of Pasco County. Its centerpiece is the Pasco County Courthouse, built in 1909 to a design by Georgia architect Edward Columbus Hosford and added to the National Register of Historic Places in 2006. The city's historic register lists more than 160 designated properties, among them the 1912 Atlantic Coast Line depot.",
           "visiting": "Walk the downtown streets and the self-guided historic walking tour (the courthouse is stop No. 1); the city publishes walking tour guides and a map of historic properties.",
           "sources": [
             "https://en.wikipedia.org/wiki/Pasco_County_Courthouse",
@@ -519,7 +520,7 @@
         "geo_source": "photon",
         "url": "https://www.premiumoutlets.com/outlet/tampa",
         "hours_text": "Monday–Thursday 10:00AM–8:00PM; Friday–Saturday 10:00AM–9:00PM; Sunday 11:00AM–6:00PM",
-        "summary": "An outlet mall in Lutz, north of Tampa, with more than 110 stores plus places to eat.",
+        "summary": "An outlet mall in Lutz with more than 110 stores plus places to eat.",
         "quote": "Tampa's Premier Outlet Shopping Destination",
         "status": "open",
         "tags": [
@@ -530,7 +531,8 @@
           "https://www.premiumoutlets.com/outlet/tampa"
         ],
         "checked": "2026-09-27",
-        "notes": "premiumoutlets.com blocks curl (captcha); read with WebFetch."
+        "notes": "premiumoutlets.com blocks curl (captcha); read with WebFetch.",
+        "quote_source": "https://www.premiumoutlets.com/outlet/tampa"
       },
       {
         "id": "downtown-new-port-richey",
@@ -706,7 +708,7 @@
         "lng": -82.731677,
         "geo_source": "photon",
         "url": "https://www.cityofannamaria.com/",
-        "summary": "The city-owned pier on the Tampa Bay side of Anna Maria, at the north end of Anna Maria Island. Hurricane Milton destroyed its walkway in October 2024; a new walkway has been built, and the city expects the pier and a new dining, drinking and fishing business called PIERadise in the T-end buildings to be fully open before the end of 2026.",
+        "summary": "The city-owned fishing pier in Anna Maria, on Anna Maria Island. Hurricane Milton destroyed its walkway in October 2024; a new walkway has been built, and the city expects the pier and a new dining, drinking and fishing business called PIERadise in the T-end buildings to be fully open before the end of 2026.",
         "status": "opening-soon",
         "status_note": "Closed since Hurricane Milton (Oct 2024) destroyed the walkway. By Sept 2026 the new walkway was complete and final repairs to the T-end buildings were under contract; the AMI Sun (Sept 16, 2026) reports the pier and PIERadise are expected to be fully open before the end of the year, with the operators hoping to open in November.",
         "tags": [
@@ -914,7 +916,7 @@
         "lng": -82.68389,
         "geo_source": "wikipedia",
         "url": "https://www.floridamaritimemuseum.org/exploringcortez",
-        "summary": "A working fishing village on Sarasota Bay between Bradenton and Anna Maria Island, listed on the National Register as the Cortez Historic District in 1995. You can walk it with a downloadable brochure from the Florida Maritime Museum; the Cortez Cultural Center (by appointment) tells the story of its founding families.",
+        "summary": "A working fishing village on Sarasota Bay, listed on the National Register as the Cortez Historic District in 1995. You can walk it with a downloadable brochure from the Florida Maritime Museum; the Cortez Cultural Center (by appointment) tells the story of its founding families.",
         "quote": "Download our walking tour brochure to help you explore one of the last remaining fishing villages on Florida’s Gulf Coast.",
         "heritage": {
           "built": null,
@@ -929,7 +931,7 @@
             }
           ],
           "era": "boomtown",
-          "story": "Cortez, originally known as Hunter's Point, has been a fishing community since the 1880s. Its 1912 Cortez Rural Graded Schoolhouse served as a hurricane shelter during the 1921 hurricane, which destroyed much of the village. Residents formed the Cortez Village Historical Society, which placed the village on the National Register of Historic Places in 1995, and the Florida Institute for Saltwater Heritage, which saved about 100 acres along Sarasota Bay.",
+          "story": "Cortez, originally known as Hunter's Point, has been worked by generations of fishing families for more than a century. Its 1912 Cortez Rural Graded Schoolhouse served as a hurricane shelter during the 1921 hurricane, which destroyed much of the village. Residents formed the Cortez Village Historical Society, which placed the village on the National Register of Historic Places in 1995, and the Florida Institute for Saltwater Heritage, which saved about 100 acres along Sarasota Bay.",
           "visiting": "Walk the village with the museum's walking tour brochure; the district is bounded by Cortez Road, 119th Street W, Sarasota Bay and 124th Street Court W. The Florida Maritime Museum (in the schoolhouse) is closed for rehabilitation; the Cortez Cultural Center, 11655 Cortez Road West, opens by appointment (941-840-0590).",
           "sources": [
             "https://www.floridamaritimemuseum.org/exploringcortez",
@@ -946,10 +948,11 @@
         "source_url": "https://www.floridamaritimemuseum.org/exploringcortez",
         "also_sources": [
           "https://www.floridamaritimemuseum.org/fmm-history",
-          "https://en.wikipedia.org/wiki/Cortez_Historic_District"
+          "https://en.wikipedia.org/wiki/Cortez_Historic_District",
+          "https://www.bradentongulfislands.com/blogs/history-trail/"
         ],
         "checked": "2026-09-27",
-        "notes": "'Fishing community since the 1880s' rests on the Cultural Center line 'the lives of Cortezians since the 1880s'. Coordinates: district point from Wikipedia."
+        "notes": "Coordinates: district point from Wikipedia."
       },
       {
         "id": "de-soto-national-memorial",
@@ -976,7 +979,7 @@
         "hours_text": "Park grounds open dawn to dusk; parking lot gates close at 5:00pm. Visitor welcome area open daily 9:00am to 4:45pm. Closed New Year's Day, Thanksgiving and Christmas.",
         "price_text": "Free; no entrance pass required",
         "is_free": true,
-        "summary": "A National Park Service site where the Manatee River meets Tampa Bay, west of Bradenton, commemorating Hernando de Soto's 1539 landing and his expedition's impact on the region's native peoples. It has shoreline trails and Camp Uzita, a recreated 16th-century native village used for living history programs.",
+        "summary": "A National Park Service site where the Manatee River meets Tampa Bay, west of Bradenton, commemorating Hernando de Soto's 1539 landing and his expedition's impact on the American Indian societies of the Southeast. It has shoreline trails and Camp Uzita, a recreated 16th-century native village used for living history programs.",
         "quote": "In May 1539, Conquistador Hernando de Soto’s army of soldiers, hired mercenaries, craftsmen, and clergy made landfall in Tampa Bay.",
         "quote_source": "https://www.nps.gov/deso/index.htm",
         "heritage": {
@@ -1136,7 +1139,8 @@
           "https://www.bradentongulfislands.com/listing/florida-railroad-museum-3/"
         ],
         "checked": "2026-09-27",
-        "notes": "Ticket prices are sold through the booking system and not printed on the pages read. The exp-land slice may hold the train ride as an experience. Point is OSM 'Florida Gulf Coast Railroad Museum' on 83rd St E, Parrish (the other OSM museum point is at Willow, the far end of the line)."
+        "notes": "Ticket prices are sold through the booking system and not printed on the pages read. The exp-land slice may hold the train ride as an experience. Point is OSM 'Florida Gulf Coast Railroad Museum' on 83rd St E, Parrish (the other OSM museum point is at Willow, the far end of the line).",
+        "quote_source": "https://www.frrm.org/"
       },
       {
         "id": "gamble-plantation-historic-state-park",
@@ -1326,7 +1330,7 @@
         "hours_text": "Monday–Friday and the 2nd and 4th Saturdays of the month, 9 AM–4 PM",
         "price_text": "Admission is free; donations appreciated",
         "is_free": true,
-        "summary": "A free county-run park of historic buildings in east Bradenton covering Manatee County pioneer life from 1840 to 1918, including the county's 1860 courthouse, an 1887 church, the 1903 Wiggins General Store, a 1912 Cracker Gothic farmhouse, a one-room \"strawberry school\" and a 1913 steam engine.",
+        "summary": "A free county-run park of historic buildings in Bradenton covering Manatee County pioneer life from 1840 to 1918, including the county's 1860 courthouse, an 1887 church, the 1903 Wiggins General Store, a 1912 Cracker Gothic farmhouse, a one-room \"strawberry school\" and a 1913 steam engine.",
         "quote": "Discover the rich history of Manatee County through our 15 points of interest, including the oldest building from 1860.",
         "heritage": {
           "built": "1860–1913",
@@ -1722,7 +1726,7 @@
         "hours_text": "10:00 AM–4:00 PM; open 363 days a year, closed Thanksgiving and Christmas Days. Shows: 11:00 am Wildlife Wonder Show, 12:00 pm Jungle Bird Show, 1:00 pm Wildlife Wonder Show, 3:00 pm Reptile Show.",
         "price_text": "Adult $24.99; child (4-12) $14.99",
         "is_free": false,
-        "summary": "A family animal attraction in Sarasota since 1939, with about 10 acres of tropical gardens, flamingos you can hand-feed, alligators and crocodiles, parrots, rescued lemurs, tortoises and daily animal shows.",
+        "summary": "A family animal attraction in Sarasota since 1939, with more than 10 acres of tropical gardens, flamingos you can hand-feed, alligators and crocodiles, parrots, rescued lemurs, tortoises and daily animal shows.",
         "quote": "Get closer to wildlife than you ever imagined!",
         "quote_source": "https://www.visitsarasota.com/attractions/sarasota-jungle-gardens",
         "status": "open",
@@ -2008,7 +2012,7 @@
         "geo_source": "census",
         "url": "https://floridasadventurecoast.com/attractions/historic-sites-museums/p/may-stringer-house-5f7f1ee77ea4e53939ed889e",
         "hours_text": "Tuesday–Saturday 11:00 AM–3:00 PM",
-        "summary": "A four-story, seven-gable Victorian house overlooking Brooksville that is now the Hernando Heritage Museum, with themed rooms such as a dining room, bedrooms, a military room, an 1880s doctor's office and a 1900s communication room, seen on guided tours. It is known locally as a haunted house and offers ghost tours on weekends.",
+        "summary": "A four-story, seven-gable Victorian house overlooking Brooksville that is now the Hernando Heritage Museum, with themed rooms such as a dining room, bedrooms, a military room, an 1880s doctor's office and a 1900s communication room, seen on guided tours. Hernando County's tourism office calls it one of Florida's top five haunted locations, and ghost tours run on weekends.",
         "quote": "The May-Stringer House is considered one of the top five haunted locations in Florida, and they offer ghost tours on weekends for those brave enough to experience it.",
         "quote_source": "https://floridasadventurecoast.com/attractions/historic-sites-museums/",
         "heritage": {
@@ -2024,7 +2028,7 @@
             }
           ],
           "era": "frontier",
-          "story": "John L. May bought the land, first homesteaded under the Armed Occupation Act, in 1855 and built a four-room house for his family; the house later grew into the fourteen-room Victorian home that stands today. The Hernando Historical Museum Association runs it as a museum with more than 10,000 artifacts, and it was added to the National Register of Historic Places in 1997.",
+          "story": "John L. May bought the land, first homesteaded under the Armed Occupation Act, in 1855 and built a four-room house for his family. The house standing today is a four-story, fourteen-room Victorian home. The Hernando Historical Museum Association runs it as a museum with more than 10,000 artifacts, and it was added to the National Register of Historic Places in 1997.",
           "visiting": "Guided tours Tuesday to Saturday; ghost tours on weekends.",
           "sources": [
             "https://en.wikipedia.org/wiki/May-Stringer_House",
@@ -2247,7 +2251,7 @@
         "hours_text": "Monday–Saturday 10 AM–4 PM; Sunday 12 PM–4 PM",
         "price_text": "Adults (18-65) $15; youth (11-17) $10; 10 and under free; seniors (55+) and retired military $12; active-duty military free",
         "is_free": false,
-        "summary": "Florida's official aviation museum, on the SUN 'n FUN campus at Lakeland Linder International Airport, with display aircraft and exhibits on commercial aviation, NASA, NOAA, air racing, wartime flying, the Florida Aviation Hall of Fame and a Howard Hughes collection, plus an outdoor aviation playground.",
+        "summary": "Florida's official aviation museum, at Lakeland Linder International Airport, with display aircraft and exhibits on commercial aviation, NASA, NOAA, air racing, wartime flying, the Florida Aviation Hall of Fame and a Howard Hughes collection, plus an outdoor aviation playground.",
         "quote": "Florida’s “Official Aviation Museum and Education Center,”",
         "status": "open",
         "status_note": "The museum describes itself as reimagined after a construction project (it closed in August for glass-wall installation and has posted a grand re-opening); regular hours and prices are published.",
@@ -2263,7 +2267,8 @@
           "https://floridaairmuseum.org/latest-news/the-florida-air-museum-grand-re-opening/"
         ],
         "checked": "2026-09-27",
-        "notes": "The year of the August closure and of the grand re-opening is not shown on the pages read; verifier may confirm it is open now."
+        "notes": "The year of the August closure and of the grand re-opening is not shown on the pages read; verifier may confirm it is open now.",
+        "quote_source": "https://floridaairmuseum.org/"
       },
       {
         "id": "florida-childrens-museum",
@@ -2942,5 +2947,5 @@
       }
     ]
   },
-  "report": "Work in progress."
+  "report": "# around-daytrips: non-nature attractions Around the Bay and on Day Trips\n\nChecked Sep 27, 2026. 62 `places` records, all in the `around` and `daytrips` regions. Every record's facts come from pages read today (curl text dumps, or WebFetch where curl was blocked). `source_url` is the organization's own page wherever it could be read, otherwise the county's official tourism office (Visit Tampa Bay, Florida's Sports Coast, Bradenton Gulf Islands, Visit Sarasota, Discover Crystal River, Florida's Adventure Coast, Visit Central Florida) or Visit Florida. Wikipedia supplies NRHP reference numbers, build dates and history in `heritage` blocks, always next to an official page.\n\n## Covered (counts by area)\n\n- **plant-city (6):** Dinosaur World; Robert W. Willaford Railroad Museum (1909 Union Depot, heritage); Historic Downtown Plant City (NRHP district, heritage); Parkesdale Market; Keel Farms (winery/cidery, u-pick); Fort Foster State Historic Site (heritage, seasonal tours).\n- **lutz-wesley-chapel (5):** Tampa Premium Outlets; The Shops at Wiregrass; Historic Downtown Dade City (1909 courthouse, heritage); Pioneer Florida Museum and Village; Joy-Lan Drive-In.\n- **west-pasco (2):** Downtown New Port Richey; West Pasco Historical Society Museum.\n- **brandon (2):** Brandon Exchange (ex-Westfield Brandon); Carnival World Museum (International Independent Showmen's Museum, Riverview).\n- **temple-terrace (0), apollo-beach (0):** nothing non-nature that justifies a trip (see \"Left out\").\n- **bradenton-anna-maria (15):** De Soto National Memorial (heritage); The Bishop Museum of Science and Nature; Village of the Arts; Bradenton Riverwalk; Anna Maria City Pier (opening-soon); Bridge Street Pier with Historic Bridge Street; Anna Maria Island Historical Museum (seasonal, closed in September); Cortez Historic Fishing Village (heritage); Florida Maritime Museum (temporarily-closed); Manatee Village Historical Park (heritage); Gamble Plantation Historic State Park (heritage); Madira Bickel Mound (heritage); Florida Railroad Museum (Parrish); Ellenton Premium Outlets; Hunsader Farms (seasonal).\n- **sarasota (8):** ringling-museum (shared id; includes Ca' d'Zan, heritage); St. Armands Circle; mote-marine-laboratory-aquarium (the new Mote SEA, opened Oct 8, 2025); Historic Spanish Point (heritage); Sarasota Art Museum; Sarasota Jungle Gardens (status to confirm); Sarasota Farmers Market; Big Cat Habitat.\n- **nature-coast (7):** Crystal River Archaeological State Park (NHL, heritage); Yulee Sugar Mill Ruins (heritage); Chinsegut Hill (heritage); May-Stringer House / Hernando Heritage Museum (heritage); 1885 Brooksville Train Depot Museum; Old Courthouse Heritage Museum (Inverness); Boyett's Grove.\n- **polk (17):** legoland-florida (shared id); Peppa Pig Theme Park; Florida Southern College's Frank Lloyd Wright buildings (NHL, heritage); Ashley Gibson Barnett Museum of Art (id `polk-museum-of-art`, its former name); Fantasy of Flight (seasonal, scaled down); Florida Air Museum; Florida Children's Museum; Polk Theatre (heritage); Historic Downtown Lakeland (Munn Park NRHP district); Spook Hill (NRHP 2019); Polk County History Center (1908 courthouse); Lake Wales History Museum; L.B. Brown House Museum (Black history); Mulberry Phosphate Museum; Homeland Heritage Park; Florida's Natural Grove Store (seasonal Oct-May); Davidson of Dundee.\n\nBy kind: museum 20, historic-site 11, shopping 6, historic-district 5, market 3, attraction 3, theme-park 2, pier 2, zoo 2, district 2, and one each of landmark, waterfront, visitor-center, performing-arts, distillery-winery, aquarium. 21 records carry a `heritage` block. Status: open 55, seasonal 5, temporarily-closed 1, opening-soon 1. Signature: ringling-museum, legoland-florida, the Frank Lloyd Wright campus.\n\n## How candidates were found\n\n1. Official tourism listings: Visit Tampa Bay (Plant City page; its listing sitemap grepped for around-the-bay names, which surfaced the renamed Carnival World Museum), Florida's Sports Coast (Pasco), the Bradenton Gulf Islands listing sitemap (615 listings scanned), Visit Sarasota's Things to Do page, Discover Crystal River's historical and museum pages, Florida's Adventure Coast's Historic Sites & Museums page (34 place cards), Visit Central Florida's \"50+ Ways\" list and its partner sitemap (544 listings scanned).\n2. WebSearch by area and kind (Plant City, Pasco, Bradenton/AMI, Polk, Sarasota, Hernando, Citrus) until the session's shared search budget ran out; after that, discovery used the sitemaps above.\n3. Wikipedia NRHP articles for reference numbers and dates; the Manatee County Clerk's Historical Resources page (Manatee Village, Florida Maritime Museum); the Anna Maria Island Sun for pier status.\n4. Status checks on each place's own page (Helene/Milton notices, construction closures, seasonal calendars).\n\n## Status findings\n\n- Anna Maria City Pier: walkway destroyed by Hurricane Milton (Oct 2024); new walkway finished; the AMI Sun (Sep 16, 2026) expects the pier and the new PIERadise to be fully open before year end (operators hope for November). `opening-soon`.\n- Bridge Street Pier (Bradenton Beach): the only one of the island's three piers left standing after 2024; whether its restaurant reopened is unconfirmed. The Rod & Reel Pier was destroyed and is left out.\n- Florida Maritime Museum: closed for rehabilitation of its 1912 schoolhouse, no date. `temporarily-closed`.\n- De Soto National Memorial: grounds and trails reopened after Helene; the visitor center building was still closed in a March 2025 report; NPS now lists a \"Visitor welcome area\".\n- The Ringling: open; Ca' d'Zan shown on first-floor visits and guided tours while post-2024 restoration continues.\n- Mote: the public aquarium is now Mote SEA at 225 University Town Center Drive; City Island is the research campus.\n- Fantasy of Flight: scaled down, seasonal Fri-Sun 11-3 on calendar dates; closed on Sep 27. Fort Foster: tours on third Saturdays, Nov 2026-Apr 2027.\n- Sarasota Jungle Gardens: conflict. Visit Sarasota lists it as open 363 days a year with hours; the attraction's own homepage still shows an Oct 15, 2024 Milton damage notice asking visitors to watch social media for a reopening date. Kept `open` with a status_note.\n\n## Left out, and why\n\n- Nature places (outdoors slice): TECO Manatee Viewing Center, Bok Tower Gardens, Selby's downtown campus, Weeki Wachee/Buccaneer Bay, Homosassa Springs, Three Sisters, Robinson Preserve, Myakka, Hillsborough River State Park, Bonnet Springs Park, Circle B, Hollis Garden, Siesta Key.\n- Event venues (venues-bay): LECOM Park, Joker Marchant Stadium, RP Funding Center, Van Wezel, Sarasota Opera House, Richey Suncoast Theatre, Florida Strawberry Festival grounds. Polk Theatre was kept as a heritage landmark on a day-trip sheet.\n- Experiences (exp-land/exp-water): Skydive City, Florida's Giraffe Ranch, Myakka Elephant Ranch, airboats, Cypress Gardens Water Ski Team shows, the Fantasy of Flight biplane ride. Stays: the Hacienda Hotel, LEGOLAND hotels.\n- Not verifiable today: Saint Leo Abbey (Cloudflare challenge, WebFetch 403); Sarasota Classic Car Museum (absent from Visit Sarasota's current list, site unreachable; may have closed); Coastal Heritage Museum in Crystal River (its tourism directory page is gone); Pine Avenue (Anna Maria) as its own record (no source beyond \"shops along Pine Avenue\"); Old Main Street Bradenton and Braden Castle ruins (listings without text); Plant City Photo Archives (a research archive); Zephyrhills Depot Museum, Silver Moon Drive-In, Webb's Candy, Golden Ridge Groves, the Wonder House; Temple Terrace's 1920s Mediterranean Revival neighborhood (no visitable site).\n\n## Open questions for the verifier\n\n1. Sarasota Jungle Gardens: reopened after Milton? If not, set `temporarily-closed`.\n2. Anna Maria City Pier: re-check in Oct-Nov 2026 and flip to `open` when the walkway opens.\n3. De Soto National Memorial: has the visitor center building reopened?\n4. Gamble Plantation, Crystal River Archaeological, Yulee Sugar Mill, Madira Bickel Mound: floridastateparks.org blocks curl and WebFetch (403), so hours, fees and alerts were not read; `url` points at the park pages anyway.\n5. Carnival World Museum: showmensmuseum.org returned 503/connection resets all day; hours and admission not recorded.\n6. Florida Air Museum posted a \"Grand Re-Opening\" and an August closure without a year; Polk County History Center's listing mentions a reopening \"on July 15\" without a year. Both publish regular hours.\n7. Ids where another slice may differ: `florida-southern-college-architectural-district`, `polk-museum-of-art` (museum now the Ashley Gibson Barnett Museum of Art), `mote-marine-laboratory-aquarium` (record is Mote SEA), `historic-downtown-dade-city` (the courthouse may appear as `pasco-county-courthouse`), `carnival-world-museum` (a.k.a. International Independent Showmen's Museum).\n8. Approximate coordinates: Village of the Arts (a point inside the district, geo_source manual), Florida Children's Museum (Bonnet Springs Park centroid), Homeland Heritage Park (Church Avenue centroid); districts use Wikipedia NRHP points.\n9. Process note: research agents share one scratchpad directory. At about 16:56 this agent accidentally ran the exp-land agent's `assemble.py`, which rewrote `research/exp-land/exp-land.json` from that agent's then-empty batches folder. A note was left in the scratchpad and the orchestrator was messaged.\n"
 }

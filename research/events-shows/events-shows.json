@@ -69,6 +69,35 @@
     "checked": "2026-09-27"
    },
    {
+    "id": "buena-vista-social-club-straz-2026",
+    "title": "Buena Vista Social Club",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "arts",
+     "latin-heritage"
+    ],
+    "date": "2026-10-06",
+    "end_date": "2026-10-11",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://buenavistamusical.com/tour",
+    "tickets_url": "https://www.strazcenter.org/events/2627-season/broadway/buena-vista-social-club/",
+    "summary": "The national tour of the Broadway musical Buena Vista Social Club plays the Straz Center's Carol Morsani Hall for one week.",
+    "status": "scheduled",
+    "tags": [
+     "broadway",
+     "touring-musical"
+    ],
+    "source_url": "https://buenavistamusical.com/tour",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/buena-vista-social-club-tampa-61688",
+     "https://www.broadwayworld.com/tampa/article/Previews-BUENA-VISTA-SOCIAL-CLUB-at-Straz-Center-20260917"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'Tampa, FL Oct 6 – Oct 11, 2026 Straz Center'. BroadwayWorld: 'Straz Center [Carol Morsani Hall]', October 6-11, 2026."
+   },
+   {
     "id": "nurse-john-2026-10-09",
     "title": "Nurse John: Against Medical Advice Tour",
     "kind": "comedy",
@@ -160,6 +189,36 @@
     "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Pre-concert conversation one hour before, included with the ticket (page)."
    },
    {
+    "id": "hamilton-straz-2026",
+    "title": "Hamilton",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "arts",
+     "history"
+    ],
+    "date": "2026-10-21",
+    "end_date": "2026-11-08",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://www.hamiltonmusical.com/us-tour/",
+    "tickets_url": "https://www.strazcenter.org/events/2627-season/encore/hamilton/",
+    "description": "HAMILTON is the story of America's Founding Father Alexander Hamilton, an immigrant from the West Indies who became George Washington's right-hand man during the Revolutionary War",
+    "summary": "The North American tour of the musical Hamilton plays a three-week run at the Straz Center's Carol Morsani Hall.",
+    "status": "scheduled",
+    "featured": true,
+    "tags": [
+     "broadway",
+     "touring-musical"
+    ],
+    "source_url": "https://www.hamiltonmusical.com/us-tour/",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/hamilton--angelica-companytampa-61297"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'Straz Center for the Performing Arts Tampa, FL October 21, 2026 – November 8, 2026'; its ticket button links to the Straz page under /2627-season/encore/. BroadwayWorld lists the Angelica Company in Carol Morsani Hall; the description is from that listing."
+   },
+   {
     "id": "tfo-a-star-to-remember-2026-10-25",
     "title": "The Florida Orchestra: A Star to Remember",
     "kind": "family",
@@ -241,6 +300,36 @@
     ],
     "checked": "2026-09-27",
     "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "peter-and-the-starcatcher-tamparep-2026",
+    "title": "Peter and the Starcatcher",
+    "kind": "theater",
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "date": "2026-11-05",
+    "end_date": "2026-11-22",
+    "time_text": "Thu/Fri/Sat evenings 7:30pm; Sat/Sun matinees 3:00pm. Preview Nov 5; opening night Nov 6 at 7:30pm.",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "cost": "$16–$76 (choose your price)",
+    "is_free": false,
+    "url": "https://www.tamparep.org/peter",
+    "tickets_url": "https://www.tamparep.org/peter",
+    "description": "Peter and the Starcatcher is a wildly imaginative prequel to the Peter Pan story, filled with theatrical invention, quick wit, and swashbuckling adventure.",
+    "summary": "Tampa Repertory Theatre and ThinkTank Theatre stage Rick Elice's Peter Pan prequel in the Straz Center's Shimberg Playhouse; about 90 minutes plus an intermission.",
+    "status": "scheduled",
+    "tags": [
+     "local-theater"
+    ],
+    "source_url": "https://www.tamparep.org/peter",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/Peter-and-the-Starcatcher-4400181"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Tampa Repertory Theatre production in the Straz Center's Shimberg Playhouse. BroadwayWorld's listing gives tickets as '$16–$76 — Choose the price that fits your budget'. General admission seating."
    },
    {
     "id": "tfo-ginastera-harp-concerto-2026-11-07",
@@ -361,7 +450,7 @@
     "area": "downtown-stpete",
     "url": "https://themahaffey.com/show/ub40-the-unstoppable-tour-2/",
     "tickets_url": "https://www.ticketmaster.com/event/0D006435D170A87C",
-    "description": "Four-time Grammy nominated UB40, one of the most successful and influential British groups of all time with more than 100 million albums sold worldwide, with trademark global #1 hits “Red Red Wine” and “(I Can't Help) Falling in Love With You”",
+    "description": "Four-time Grammy® nominated UB40, one of the most successful and influential British groups of all time with more than 100 million albums sold worldwide",
     "summary": "The British reggae band UB40 plays the Mahaffey Theater on its Unstoppable Tour.",
     "status": "scheduled",
     "tags": [
@@ -477,6 +566,37 @@
     "checked": "2026-09-27"
    },
    {
+    "id": "miracle-on-34th-street-tamparep-2026",
+    "title": "Miracle on 34th Street: A Live Musical Radio Play",
+    "kind": "theater",
+    "topics": [
+     "arts",
+     "family"
+    ],
+    "date": "2026-12-03",
+    "end_date": "2026-12-23",
+    "time_text": "Thu/Fri/Sat evenings 7:30pm; Sat/Sun matinees 3:00pm. Preview Dec 3; opening night Dec 4.",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "cost": "$16–$76 (choose your price)",
+    "is_free": false,
+    "url": "https://www.tamparep.org/miracle",
+    "tickets_url": "https://www.tamparep.org/miracle",
+    "description": "A holiday classic comes to life in the style of a live radio broadcast, complete with theatrical imagination, music, and the warmth of a story that has delighted generations.",
+    "summary": "Tampa Repertory Theatre's holiday production, adapted as a live musical radio play, in the Straz Center's Shimberg Playhouse.",
+    "status": "scheduled",
+    "tags": [
+     "local-theater",
+     "holiday"
+    ],
+    "source_url": "https://www.tamparep.org/miracle",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/Miracle-on-34th-StreetA-Live-Musical-Radio-Play-4400184"
+    ],
+    "checked": "2026-09-27",
+    "notes": "Tampa Repertory Theatre production in the Straz Center's Shimberg Playhouse. BroadwayWorld's listing gives tickets as '$16–$76 — Choose the price that fits your budget'. The page header says 'run December 3-23, 2025' (a typo); the Dates & Times block and BroadwayWorld say December 3-23, 2026."
+   },
+   {
     "id": "tfo-nightmare-before-christmas-in-concert-2026-12-05",
     "title": "The Florida Orchestra: Disney Tim Burton's The Nightmare Before Christmas in Concert",
     "kind": "concert",
@@ -516,6 +636,34 @@
     ],
     "checked": "2026-09-27",
     "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance. Sat Dec 5 at 7:30pm and Sun Dec 6 at 2pm, each on its own show page (the Dec 6 page ends in -2; tickets https://www.ticketmaster.com/nightmare-before-christmas-st-petersburg-florida-12-06-2026/event/0D006514A06A6D12)."
+   },
+   {
+    "id": "death-becomes-her-straz-2026",
+    "title": "Death Becomes Her",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "arts"
+    ],
+    "date": "2026-12-08",
+    "end_date": "2026-12-13",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://deathbecomesherbroadway.com/tour/",
+    "tickets_url": "https://www.strazcenter.org/events/2627-season/broadway/death-becomes-her/",
+    "description": "Madeline Ashton is the most beautiful actress (just ask her) ever to grace the stage and screen. Helen Sharp is the long-suffering author (just ask her) who lives in her shadow.",
+    "summary": "The North American tour of the Broadway musical comedy Death Becomes Her plays one week at the Straz Center's Carol Morsani Hall.",
+    "status": "scheduled",
+    "tags": [
+     "broadway",
+     "touring-musical"
+    ],
+    "source_url": "https://deathbecomesherbroadway.com/tour/",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/death-becomes-her-tampa-61713-4401666"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'Tampa, FL Carol Morsani Hall December 8 – December 13, 2026'. Description from the BroadwayWorld listing."
    },
    {
     "id": "vienna-light-orchestra-christmas-2026-12-10",
@@ -1007,6 +1155,36 @@
     "checked": "2026-09-27"
    },
    {
+    "id": "wicked-straz-2027",
+    "title": "Wicked",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "arts",
+     "family"
+    ],
+    "date": "2027-02-03",
+    "end_date": "2027-02-28",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://tour.wickedthemusical.com/",
+    "tickets_url": "https://www.strazcenter.org/events/2627-season/broadway/wicked/",
+    "description": "WICKED is the untold story of the witches of Oz.",
+    "summary": "The North American tour of Wicked, Stephen Schwartz and Winnie Holzman's musical about the witches of Oz, plays four weeks at the Straz Center.",
+    "status": "scheduled",
+    "featured": true,
+    "tags": [
+     "broadway",
+     "touring-musical"
+    ],
+    "source_url": "https://tour.wickedthemusical.com/",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/wicked-tampa-61283"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'Tampa, FL Feb 3 - Feb 28 2027 Straz Center ON SALE OCT 30' (single tickets on sale Oct 30, 2026). BroadwayWorld: Carol Morsani Hall; description and authors from that listing."
+   },
+   {
     "id": "tfo-come-swing-with-me-2027-02-13",
     "title": "The Florida Orchestra: Come Swing With Me",
     "kind": "concert",
@@ -1116,6 +1294,34 @@
     "checked": "2026-09-27"
    },
    {
+    "id": "the-sound-of-music-straz-2027",
+    "title": "The Sound of Music",
+    "kind": "theater",
+    "topics": [
+     "music",
+     "arts",
+     "family"
+    ],
+    "date": "2027-03-09",
+    "end_date": "2027-03-14",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://soundofmusicontour.com/tour",
+    "tickets_url": "https://www.strazcenter.org/events/2627-season/broadway/the-sound-of-music/",
+    "summary": "A national tour of Rodgers & Hammerstein's The Sound of Music, directed by Jack O'Brien, plays one week at the Straz Center's Morsani Hall.",
+    "status": "scheduled",
+    "tags": [
+     "broadway",
+     "touring-musical"
+    ],
+    "source_url": "https://soundofmusicontour.com/tour",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/the-sound-of-music-tampa-61485"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'TAMPA, FL Straz Center Morsani Hall Mar. 9 - 14, 2027'. Director Jack O'Brien from the BroadwayWorld listing."
+   },
+   {
     "id": "tfo-beethoven-fidelio-in-concert-2027-03-20",
     "title": "The Florida Orchestra: Beethoven's Fidelio in Concert",
     "kind": "classical",
@@ -1143,6 +1349,33 @@
     ],
     "checked": "2026-09-27",
     "notes": "floridaorchestra.org returned a SiteGround captcha to curl and an empty page to WebFetch, so the Mahaffey Theater's own show page is the source for this St. Petersburg performance."
+   },
+   {
+    "id": "oh-mary-straz-2027",
+    "title": "Oh, Mary!",
+    "kind": "theater",
+    "topics": [
+     "arts",
+     "lgbtq"
+    ],
+    "date": "2027-04-06",
+    "end_date": "2027-04-11",
+    "place": "straz-center",
+    "area": "downtown-tampa",
+    "url": "https://www.ohmaryplay.com/tour/home",
+    "summary": "The North American tour of Cole Escola's Tony-winning comedy about Mary Todd Lincoln plays one week at the Straz Center.",
+    "status": "scheduled",
+    "tags": [
+     "broadway",
+     "touring-play",
+     "comedy"
+    ],
+    "source_url": "https://www.ohmaryplay.com/tour/home",
+    "also_sources": [
+     "https://www.broadwayworld.com/tampa/regional/ohmarytampa-61185"
+    ],
+    "checked": "2026-09-27",
+    "notes": "strazcenter.org is behind an Incapsula/Queue-it bot wall (curl and WebFetch both got an empty page), so the touring production's own tour page is the source for the Tampa dates; the BroadwayWorld Tampa listing (read with WebFetch) confirms the hall. Performance times and prices were not published on either page. Tour page: 'Tampa, FL Apr 6, 2027 - Apr 11, 2027 Straz Center'. The tour page says Alaska Thunderf*ck stars 'Sept 19, 2026 thru Jan 17, 2027', so the Tampa cast may differ. BroadwayWorld: Carol Morsani Hall; 'Tony Award and Olivier Award-winning comedy'; written by Cole Escola."
    },
    {
     "id": "tfo-rachmaninoff-symphony-2-2027-04-17",

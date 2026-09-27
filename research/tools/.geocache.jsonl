@@ -843,3 +843,6 @@
 {"k":"census:10232 gulf blvd, treasure island, fl 33706","v":{"lat":27.763513,"lng":-82.767015,"geo_source":"census","matched":"10232 GULF BLVD, TREASURE ISLAND, FL, 33706"}}
 {"k":"census:111 8th ave, st. pete beach, fl 33706","v":{"lat":27.688046,"lng":-82.73642,"geo_source":"census","matched":"111 8TH AVE, ST PETE BEACH, FL, 33706"}}
 {"k":"census:234 monroe st, dunedin, fl 34698","v":{"lat":28.013579,"lng":-82.790844,"geo_source":"census","matched":"234 MONROE ST, DUNEDIN, FL, 34698"}}
+{"k":"census:1515 pinellas bayway, tierra verde, fl 33715","v":{"lat":27.674118,"lng":-82.725669,"geo_source":"census","matched":"1515 PINELLAS BAYWAY S, TIERRA VERDE, FL, 33715"}}
+{"k":"photon:centennial park station:27.955,-82.445","v":null}
+{"k":"photon:centro ybor station:27.955,-82.445","v":{"lat":27.961083,"lng":-82.441385,"geo_source":"photon","matched":"Centro Ybor, East 8th Avenue, Tampa, 33605","osm":"N1904760778 railway=tram_stop"}}
