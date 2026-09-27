@@ -142,5 +142,16 @@ Search (⌘K) covers every record. Phone dock: What's On · Map · Trip · Searc
 - **Pages** (parallel lanes on disjoint files), then **Images** (Commons), then **QA** (data accuracy, UX audit), then
   integration.
 
+## 7. Coordinates and map credits (owner's decision, Sep 27)
+
+OpenStreetMap is welcome: use whatever is most accurate and easiest, and credit it. Per record, keep the most
+accurate point: (1) coordinates the operator publishes; (2) an OpenStreetMap feature matched by name (Photon), which
+marks the actual building, beach, park or pier; (3) a US Census address match (street centerline, can be a block off);
+(4) Wikipedia. When two sources disagree by more than ~250 m, flag the record and settle it from the source, never by
+averaging. Credits, on the About page and in every map's attribution line: "Basemap: US Census Bureau TIGER/Line
+(public domain). Place coordinates include data © OpenStreetMap contributors, ODbL
+(https://www.openstreetmap.org/copyright)."
+
 ## Changelog
 - 2026-09-27: first version.
+- 2026-09-27: §7 coordinates policy and credits (OpenStreetMap allowed, credited).
