@@ -43,12 +43,14 @@ const GEOCACHE = join(RESEARCH, "tools", ".geocache.jsonl");
 const WORK = join(REPO, ".cache", "merge");
 
 /** The 23 research slices (research/README.md), plus media-commons (Commons images for records that had none, written by
- *  research/tools/find-images.mjs). A missing one stops the merge (it would silently drop records). */
+ *  research/tools/find-images.mjs), stays-dbpr (every hotel and motel with a current Florida DBPR lodging license that no
+ *  other slice holds) and gaps-listings (omissions found by auditing the official tourism listings). A missing one stops the merge (it would silently drop records). */
 const SLICES = [
   "areas", "see-tampa", "see-pinellas", "venues-bay", "outdoors", "around-daytrips", "eat-tampa", "eat-pinellas",
   "history-tampa", "history-region", "stays-tampa-core", "stays-tampa-outer", "stays-stpete-pinellas", "stays-beaches",
   "exp-water", "exp-land", "events-fall", "events-spring", "events-sports", "events-shows", "timeline", "getting-around", "practical",
   "media-commons",
+  "stays-dbpr", "gaps-listings",
 ];
 const COLLECTIONS = ["regions", "areas", "places", "stays", "experiences", "events", "series", "timeline", "transport", "faqs", "facts", "media"];
 const FIELDS = Object.fromEntries(Object.entries(SPECS).map(([c, s]) => [c, Object.keys(s)]));
@@ -60,7 +62,7 @@ const HISTORY_SLICES = new Set(["history-tampa", "history-region"]);
  *  ("Verified 2026-09-27", "Verifier (2026-09-27)") wins over an unverified one before this order applies. Places pick
  *  their list by kind: venues-bay owns venue facts, outdoors parks and beaches, eat-* food and drink, see-* (and
  *  around-daytrips, their counterpart outside the core) attractions; history-* never own the base record, only heritage. */
-const PLACE_ATTRACTION = ["see-tampa", "see-pinellas", "around-daytrips", "venues-bay", "outdoors", "eat-tampa", "eat-pinellas", "practical", "history-tampa", "history-region"];
+const PLACE_ATTRACTION = ["see-tampa", "see-pinellas", "around-daytrips", "venues-bay", "outdoors", "eat-tampa", "eat-pinellas", "practical", "gaps-listings", "history-tampa", "history-region"];
 const OWNER = {
   places: {
     venue: ["venues-bay", ...PLACE_ATTRACTION],
@@ -68,11 +70,11 @@ const OWNER = {
     eat: ["eat-tampa", "eat-pinellas", ...PLACE_ATTRACTION],
     attraction: PLACE_ATTRACTION,
   },
-  stays: ["stays-tampa-core", "stays-tampa-outer", "stays-stpete-pinellas", "stays-beaches", "outdoors", "history-region", "history-tampa"],
-  experiences: ["exp-water", "exp-land"],
-  events: ["events-sports", "events-shows", "events-fall", "events-spring"],
+  stays: ["stays-tampa-core", "stays-tampa-outer", "stays-stpete-pinellas", "stays-beaches", "outdoors", "gaps-listings", "stays-dbpr", "history-region", "history-tampa"],
+  experiences: ["exp-water", "exp-land", "gaps-listings"],
+  events: ["events-sports", "events-shows", "events-fall", "events-spring", "gaps-listings"],
   // series: the slice holding most of the series' dated events owns it ("events-* own their events"); ties → this order
-  series: ["events-spring", "events-fall", "events-sports", "events-shows"],
+  series: ["events-spring", "events-fall", "events-sports", "events-shows", "gaps-listings"],
   timeline: ["timeline"], media: ["history-tampa", "history-region", "timeline", "media-commons"], transport: ["getting-around"],
   faqs: ["practical", "getting-around"], facts: ["practical", "getting-around", "timeline"], regions: ["areas"], areas: ["areas"],
 };

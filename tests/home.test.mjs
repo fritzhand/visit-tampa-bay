@@ -102,10 +102,14 @@ test("home.js band: today, the weekend, runs, the next listed day; before and af
   assert.equal(sun.nextDay, "2026-10-02");
   const fri = HJ.band(all, at("2026-10-02", "19:00"), win);
   assert.deepEqual(fri.todayList.map((x) => x.ev.id), ["fri"]);
-  assert.equal(fri.wkLabel, "This weekend");
+  assert.equal(fri.wkLabel, "Rest of the weekend", "on a Friday the weekend shown is the rest of it");
   assert.deepEqual(fri.weekend.map((d) => d.d), ["2026-10-03", "2026-10-04"], "the rest of the weekend, today left out");
   assert.deepEqual(fri.weekend[0].list.map((x) => x.ev.id), ["sat", "sat-untimed"], "timed first, then untimed");
   assert.deepEqual(fri.runs.map((x) => x.ev.id), ["run"]);
+  const mon = HJ.band(all, at("2026-09-28", "12:00"), win);
+  assert.equal(mon.wkLabel, "This weekend");
+  const satNight = HJ.band([...all, ...HJ.items([ev("sat-late", [["2026-10-03", at("2026-10-03", "20:00"), at("2026-10-03", "22:00"), 0]])])], at("2026-10-03", "19:00"), win);
+  assert.deepEqual(satNight.todayList.map((x) => x.ev.id), ["sat-late", "sat-untimed", "sat"], "what is still ahead comes before what has ended");
   const late = HJ.band(all, at("2027-05-02", "12:00"), win);
   assert.equal(late.phase, "after");
   assert.equal(late.nextDay, null);

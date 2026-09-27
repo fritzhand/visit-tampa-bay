@@ -514,3 +514,26 @@ keywords, `i` an image path.
   unknown region ids warn like the other kinds), so a region page can call `img.figure(root, "r", region.id)` / `img.plate(root, "r",
   region)` (a region's plate takes its chart code from `rec.id`). `creditHtml` compares the credit with the license label
   case-insensitively, so "(public domain)" in a credit no longer repeats "Public domain" after it.
+- **2026-09-27 · Explore lane (explore-and-places)** additive component options, no renames (defaults render exactly as before):
+  `placeCard(root, p, { …, sym = false, lead = "", extra = "", foot = false, seal = false, plate = true })` (`sym` = the kind's chart
+  symbol before the kind word; `lead` = trusted HTML at the start of the kicker (a list number); `extra` = trusted HTML in `.card-extra`
+  after the summary; `foot` = `.card-src` "Source: host · Checked Sep 27, 2026"; `seal` = the gold "Signature" seal in the meta line for
+  `signature` places; `plate: "photo"` = the image only when one is cleared, `false` = none, either way the article gets `.no-plate`).
+  New exports of `build/components/place-card.mjs` (also on `ctx.cards`): `placeHome(p)` → "things-to-do" | "outdoors" | "eat-drink" (the
+  Explore page that lists a place and its detail page's parent: eat/drink primary kinds → Eat & drink; beach, park, state park, preserve,
+  garden, trail, island → Beaches & outdoors; everything else, piers and waterfronts included, → Things to do), `placeSym(p)` (the primary
+  kind's sprite icon), `placeTagWords(p, { max })` (research tags as plain words, "Dog beach", "No alcohol"; tags without a word are left
+  out), `OUTDOOR_HOME_KINDS`. `heritageBlock(root, rec, { …, sourceLabel })`: a function url → text naming each heritage source (place pages
+  pass "host/path", so several pages of one site stay apart); default unchanged. `build/pages/things-to-do.mjs` exports the list kit
+  outdoors.mjs uses (`FAMILIES listTools mapPane familySection sortPlaces areaGroups topicGroups`). Page contracts: things-to-do.html
+  sections `id="f-<family>"` (attractions museums stages history sports waterfront districts info) and `#start`; outdoors.html `#safety`,
+  `#f-gulf #f-bay #f-daytrip #f-springs #f-state #f-parks #f-trails #f-islands #f-gardens #f-piers #f-camp`; places/<id>.html `#glance
+  #heritage #where #whats-on-here #departures #timeline #nearby #source`. The things-to-do Map view reads the two charts from
+  `ctx.cards.charts` (bay, and region for day trips) into `data-charts` on `.xp-map-view`; place pages beyond the bay chart show a
+  region-chart crop (`chartMap(…, { chart: "region" })`).
+- **2026-09-27 · History lane** (additive, one word): `history.html` joins the list-page raw budget tier (1000 KB) in
+  `build/core/crawl.mjs`, like things-to-do, stay, eat-drink, experiences and map: it server-renders every timeline entry
+  (with its sources and, as the images pass lands, its credited image) and every historic place and hotel for readers without
+  JS, so its raw size grows with the data (≈ 400 KB at 135 entries and 186 sites before images; gzipped ≈ 60 KB).
+  `data/routes.json` (Passages) is written by the History lane; `scripts/merge-research.mjs` keeps it (drops only FIXTURE
+  routes, remaps ids) but rewrites it sorted by id, so passages.html orders routes itself (by sheet, then stop count).

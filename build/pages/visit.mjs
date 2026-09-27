@@ -186,7 +186,7 @@ function gettingAround(ctx) {
      "(#11)", the water taxi's "Stop 7:". Otherwise a plain list in data order (a route's order is not claimed), numbered
      for the map. Pins carry the same numbers. ---------- */
   function stopsBlock(root, t) {
-    const S = t.stops || [];
+    const S = (t.stops || []).filter((s, i, all) => !(all.length === 1 && t.name.includes(s.name)));   // "Amtrak at Tampa Union Station" needs no one-stop list
     if (!S.length) return { html: "", map: "" };
     const opNums = S.map((s) => stopNo(s.name));
     const line = S.length >= 2 && opNums.every((n) => n != null) && new Set(opNums).size === S.length;
@@ -243,7 +243,7 @@ function gettingAround(ctx) {
 <h3 class="tx-title">${esc(t.name)}</h3>${t.operator ? `<p class="tx-op">${esc(t.operator)}</p>` : ""}</div></div>
 ${status ? `<p class="tx-status">${status}</p>` : ""}${t.summary ? `<p class="tx-sum">${esc(t.summary)}</p>` : ""}
 ${c.facts(root, rows, { label: `${t.name}: fares and hours` })}
-${conn.length ? `<div class="tx-conn"><h4 class="tx-h label">At the airport · within ${AIRPORT_NEAR_M} m</h4><ul>${conn.map(({ rec, stop }) => `<li><a href="#t-${attr(rec.id)}">${icon(MODE_ICON[rec.mode] || "route")}<span><b>${esc(rec.name)}</b>${stop ? `<span class="tx-sa">${esc(stopName(stop.name))}</span>` : ""}</span></a></li>`).join("")}</ul></div>` : ""}
+${conn.length ? `<div class="tx-conn"><h4 class="tx-h label">At the airport · stops within ${AIRPORT_NEAR_M} m, straight line</h4><ul>${conn.map(({ rec, stop }) => `<li><a href="#t-${attr(rec.id)}">${icon(MODE_ICON[rec.mode] || "route")}<span><b>${esc(rec.name)}</b>${stop ? `<span class="tx-sa">${esc(stopName(stop.name))}</span>` : ""}</span></a></li>`).join("")}</ul></div>` : ""}
 </div>
 ${side}
 <div class="tx-foot">${sheetsLine(t)}${acts ? `<p class="tx-acts">${acts}</p>` : ""}${srcLine(ctx, t)}</div>

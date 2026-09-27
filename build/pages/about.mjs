@@ -14,10 +14,6 @@ import { srcLine } from "./faq.mjs";
 
 /** The collections whose records cite sources (region and area records only when they exist). */
 const COLLECTIONS = ["places", "stays", "experiences", "events", "series", "timeline", "transport", "faqs", "facts", "media", "areas", "regions", "routes"];
-const COLL_LABEL = {
-  places: "places", stays: "places to stay", experiences: "experiences and tours", events: "events", series: "annual events", timeline: "history entries",
-  transport: "ways to get around", faqs: "questions", facts: "facts", media: "images", areas: "areas", regions: "sheets", routes: "passages",
-};
 /** Source groups. The guide's own grouping of the sites its records cite (a judgment, shown as such). */
 const GROUPS = [
   { id: "official", title: "Official sites", note: "The places, hotels, operators, venues, teams and organizers themselves." },
@@ -70,7 +66,7 @@ export function pages(ctx) {
     if (r.heritage) { u.push(...(r.heritage.sources || [])); for (const d of r.heritage.designations || []) u.push(d.url); }
     return u.filter((x) => typeof x === "string" && /^https:\/\//.test(x));
   };
-  const hosts = new Map();   // host → { n: records, url: first page, colls: Map(coll → n) }
+  const hosts = new Map();   // host → { n: records, url: the first page cited }
   let citing = 0;
   for (const coll of COLLECTIONS) for (const r of db[coll] || []) {
     if (r.record === false) continue;
@@ -81,8 +77,8 @@ export function pages(ctx) {
       const k = h.hostOf(u);
       if (!k || seen.has(k)) continue;
       seen.add(k);
-      if (!hosts.has(k)) hosts.set(k, { n: 0, url: u, colls: new Map() });
-      const x = hosts.get(k); x.n++; x.colls.set(coll, (x.colls.get(coll) || 0) + 1);
+      if (!hosts.has(k)) hosts.set(k, { n: 0, url: u });
+      hosts.get(k).n++;
     }
   }
   const byGroup = new Map(GROUPS.map((g) => [g.id, []]));
@@ -152,16 +148,19 @@ export function pages(ctx) {
   };
   const mediaRow = (root, m) => {
     const href = mediaSubjectHref(m);
-    return `<tr><th scope="row" data-label="Image">${esc(m.title)}${m.year ? ` <span class="faint">(${esc(m.year)})</span>` : ""}${href ? `<span class="ab-sub"><a href="${root}${attr(href)}">${esc(subjectName({ place: "p", stay: "s", area: "a", timeline: "t", experience: "x" }[m.subject_kind], m.subject))}</a></span>` : ""}</th><td data-label="Creator">${m.creator ? esc(m.creator) : c.unk("Creator not named")}</td><td data-label="License">${licenseLink(m.license, m.license_url)}</td><td data-label="Source">${h.extLink(m.page_url, esc(h.hostOf(m.page_url)))}</td><td data-label="Shown">${usedMedia.has(m.id) ? "Shown" : "Not yet"}</td></tr>`;
+    return `<tr><th scope="row" data-label="Image">${esc(m.title)}${m.year ? ` <span class="faint">(${esc(m.year)})</span>` : ""}${href ? `<span class="ab-sub"><a href="${root}${attr(href)}">${esc(subjectName({ place: "p", stay: "s", area: "a", timeline: "t", experience: "x" }[m.subject_kind], m.subject))}</a></span>` : ""}</th><td data-label="Creator">${m.creator ? esc(m.creator) : c.unk("Creator not named")}</td><td data-label="License">${licenseLink(m.license, m.license_url)}</td><td data-label="Source">${h.extLink(m.page_url, esc(h.hostOf(m.page_url)))}</td></tr>`;
   };
+  const notShown = db.media.filter((m) => !usedMedia.has(m.id));
   const mediaLic = new Map();
-  for (const m of db.media) mediaLic.set(m.license, (mediaLic.get(m.license) || 0) + 1);
+  for (const m of notShown) mediaLic.set(m.license, (mediaLic.get(m.license) || 0) + 1);
 
-  const hostList = (list) => `<ul class="ab-hosts">${list.map(([k, x]) => `<li>${h.extLink(x.url, esc(k))}<span class="ab-n tnum" title="${attr([...x.colls].map(([cl, n]) => `${n} ${COLL_LABEL[cl]}`).join(", "))}">${esc(h.plural(x.n, "record"))}</span></li>`).join("")}</ul>`;
+  /* the most-cited sites of a group link to a page the records cite; the long tail is listed as plain names (each is linked
+     from its own records), which keeps about.html inside the page budget */
+  const hostList = (list, link = true) => `<ul class="ab-hosts">${list.map(([k, x]) => `<li>${link ? h.extLink(x.url, esc(k)) : `<span class="ab-h">${esc(k)}</span>`}<span class="ab-n tnum">${esc(h.plural(x.n, "record"))}</span></li>`).join("")}</ul>`;
   const sourcesBody = () => GROUPS.filter((g) => byGroup.get(g.id).length).map((g) => {
     const list = byGroup.get(g.id), total = list.reduce((a, [, x]) => a + x.n, 0);
     return `<div class="ab-group" id="src-${g.id}"><h3 class="ab-gh"><span>${esc(g.title)}</span><span class="label faint">${esc(`${h.plural(list.length, "site")} · ${total} citations`)}</span></h3><p class="ab-gn">${esc(g.note)}</p>
-${hostList(list.slice(0, SHOW))}${list.length > SHOW ? `<details class="ab-more"><summary>${esc(`${list.length - SHOW} more ${g.title.toLowerCase().startsWith("official") ? "official sites" : "sites"}`)}</summary>${hostList(list.slice(SHOW))}</details>` : ""}</div>`;
+${hostList(list.slice(0, SHOW))}${list.length > SHOW ? `<details class="ab-more"><summary>${esc(`${list.length - SHOW} more ${g.title.toLowerCase().startsWith("official") ? "official sites" : "sites"}`)}</summary>${hostList(list.slice(SHOW), false)}</details>` : ""}</div>`;
   }).join("\n");
 
   const steps = [
@@ -209,7 +208,7 @@ ${c.section({ id: "images", title: "Images and credits", anchor: true, root, bod
 ${manifest.length ? `<p class="ab-lic">${[...byLicense].map(([lic, n]) => `<span><b class="tnum">${n}</b> ${esc(vocab.LICENSE_LABEL[lic] || lic)}</span>`).join("")}</p>
 <details class="ab-credits" id="credits-list" open><summary>${esc(`All ${h.plural(manifest.length, "image")} shown, with credits`)}</summary><div class="table-wrap"><table class="data ab-img"><thead><tr><th scope="col">Image</th><th scope="col">Creator</th><th scope="col">License</th><th scope="col">Source</th></tr></thead><tbody>${shown.map((x) => creditRow(root, x)).join("")}</tbody></table></div></details>`
       : `<p class="ab-lic"><span>No photographs are shown yet: every record carries its typographic plate.</span></p>`}
-${db.media.length ? `<details class="ab-credits" id="media-list"><summary>${esc(`The ${h.plural(db.media.length, "rights-cleared image")} gathered for the guide`)}</summary><p class="ab-lic">${[...mediaLic].map(([lic, n]) => `<span><b class="tnum">${n}</b> ${esc(vocab.LICENSE_LABEL[lic] || lic)}</span>`).join("")}</p><div class="table-wrap"><table class="data ab-img"><thead><tr><th scope="col">Image</th><th scope="col">Creator</th><th scope="col">License</th><th scope="col">Source</th><th scope="col">In the guide</th></tr></thead><tbody>${h.sortBy(db.media, (m) => m.title.toLowerCase()).map((m) => mediaRow(root, m)).join("")}</tbody></table></div></details>` : ""}
+${notShown.length ? `<details class="ab-credits" id="media-list"><summary>${esc(manifest.length ? `${h.plural(notShown.length, "more rights-cleared image")} gathered for the guide, not shown yet` : `The ${h.plural(notShown.length, "rights-cleared image")} gathered for the guide`)}</summary><p class="ab-lic">${[...mediaLic].map(([lic, n]) => `<span><b class="tnum">${n}</b> ${esc(vocab.LICENSE_LABEL[lic] || lic)}</span>`).join("")}</p><div class="table-wrap"><table class="data ab-img"><thead><tr><th scope="col">Image</th><th scope="col">Creator</th><th scope="col">License</th><th scope="col">Source</th></tr></thead><tbody>${h.sortBy(notShown, (m) => m.title.toLowerCase()).map((m) => mediaRow(root, m)).join("")}</tbody></table></div></details>` : ""}
 <p class="ab-note">An image of yours? Ask for a change or a takedown under <a href="#corrections">Corrections</a>.</p>` })}
 ${c.section({ id: "credits", title: "Map, type and code", anchor: true, root, body: `<dl class="ab-dl">
 <div><dt>Basemap</dt><dd>${h.extLink(mapSrc, esc(mapAttr))}. The water lining, roads and coastline of every map are drawn from it for this guide.</dd></div>

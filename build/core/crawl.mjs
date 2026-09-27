@@ -162,7 +162,7 @@ export function crawl({ out, pages, config, params, values = {}, navSlugs, searc
     // budgets: raw for every page; gzipped for the overview, What's On and detail pages. whats-on.html server-renders
     // every event (the no-JS list), so its raw size grows with the calendar; what travels is the gzipped page.
     const kb = Buffer.byteLength(d.raw) / 1024;
-    const limit = f === "whats-on.html" ? 1600 : ["things-to-do.html", "stay.html", "eat-drink.html", "experiences.html", "map.html"].includes(f) ? 1000 : 400;
+    const limit = f === "whats-on.html" ? 1600 : ["things-to-do.html", "stay.html", "eat-drink.html", "experiences.html", "map.html", "history.html"].includes(f) ? 1000 : 400;
     if (kb > limit) warn(f, `${kb.toFixed(0)} KB raw (budget ${limit} KB)`);
     const gzLimit = f === "index.html" ? 120 : f === "whats-on.html" ? 240 : /^(places|stays|areas)\//.test(f) ? 40 : 0;
     if (gzLimit) { const gz = gzipSync(d.raw).length / 1024; if (gz > gzLimit) warn(f, `${gz.toFixed(1)} KB gzipped (budget ${gzLimit} KB)`); }

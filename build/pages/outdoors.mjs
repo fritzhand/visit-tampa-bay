@@ -107,7 +107,7 @@ ${sections.map((s) => {
   const body = s.list.map((p, i) => card(root, p, s.numbered ? i + 1 : 0, s.group === "beaches")).join("");
   return familySection(ctx, root, { id: s.id, title: s.title, n: s.list.length, note: s.note ? esc(s.note) : "", pre: s.numbered ? chart(root) : "", body, limit: s.numbered ? 999 : 6, cls: [s.numbered ? "xp-gulf" : "", s.group === "beaches" ? "xp-beaches" : ""].filter(Boolean).join(" ") });
 }).join("\n")}
-${camps.length ? familySection(ctx, root, { id: "f-camp", title: "Campgrounds", n: camps.length, noun: ["campground", "campgrounds"], note: `Tent and RV sites in parks, from the ${esc(h.plural(camps.length, "campground"))} in Where to stay. Each page names its source.`, body: camps.map((s) => cards.stayCard(root, s, { features: 3 })).join("") }) : ""}
+${camps.length ? familySection(ctx, root, { id: "f-camp", title: "Campgrounds", n: camps.length, noun: ["campground", "campgrounds"], note: `The ${esc(h.plural(camps.length, "campground"))} listed in <a href="${root}stay.html">Where to stay</a>, sheet by sheet. Each page gives what its source lists and names that source.`, body: camps.map((s) => cards.stayCard(root, s, { features: 3 })).join("") }) : ""}
 </div>
 <div data-filter-empty hidden>${c.emptyState({ title: "Nothing matches these filters", body: "Clear a filter, pick another sheet or search for something else.", glyph: "compass", action: `<button class="btn btn-secondary" type="button" data-filter-clear>${h.icon("x")}Clear filters</button>` })}</div>
 </div>

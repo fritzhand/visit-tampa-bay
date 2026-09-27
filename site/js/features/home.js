@@ -32,10 +32,12 @@ export function band(all, now, win) {
   const today = nyParts(now).date;
   const dated = all.filter((x) => !(x.f & FL.RUN));
   const byDay = (d) => dated.filter((x) => x.day === d).sort((a, b) => ((a.f & (FL.TIME_UNKNOWN | FL.ALL_DAY)) ? 1 : 0) - ((b.f & (FL.TIME_UNKNOWN | FL.ALL_DAY)) ? 1 : 0) || a.s - b.s);
-  const todayList = byDay(today);
+  // today: what is on or still ahead first (timed by start, then untimed), what has ended after it
+  const ended = (x) => !(x.f & (FL.TIME_UNKNOWN | FL.ALL_DAY | FL.END_UNKNOWN)) && x.e <= now;
+  const todayList = byDay(today).sort((a, b) => (ended(a) ? 1 : 0) - (ended(b) ? 1 : 0));
   let [a, b] = whenRange("weekend", now);
   let wkDays = dateRange(a, b).filter((d) => d > today);
-  let wkLabel = "This weekend";
+  let wkLabel = wkDays.length && wkDays.length < dateRange(a, b).length ? "Rest of the weekend" : "This weekend";
   if (!wkDays.length) { const w = weekday(today); const fri = addDays(today, ((5 - w + 7) % 7) || 7); wkDays = [fri, addDays(fri, 1), addDays(fri, 2)]; wkLabel = "Next weekend"; }
   const weekend = wkDays.map((d) => ({ d, list: byDay(d) }));
   const runs = all.filter((x) => (x.f & FL.RUN) && x.day <= today && x.e > now && (x.ev.ed ? x.ev.ed >= today : true));
@@ -134,13 +136,14 @@ export function init(app) {
     col.push(t + "</div>");
     // the weekend
     const n = b.weekend.reduce((s, d) => s + d.list.length, 0);
-    let w = `<div class="tb-col"><h3 class="tb-h"><span class="label">${esc(b.wkLabel)}</span><span class="tb-d">${esc(`${fmtDay(b.weekend[0].d)} to ${fmtDay(b.weekend[b.weekend.length - 1].d)}`)}</span></h3>`;
+    const w0 = b.weekend[0].d, w1 = b.weekend[b.weekend.length - 1].d;
+    let w = `<div class="tb-col"><h3 class="tb-h"><span class="label">${esc(b.wkLabel)}</span><span class="tb-d">${esc(w0 === w1 ? fmtDay(w0) : `${fmtDay(w0)} to ${fmtDay(w1)}`)}</span></h3>`;
     if (!n) w += `<p class="tb-none">${esc(b.phase === "after" ? "Nothing listed: the listings have ended." : "Nothing is listed for these days.")}</p>`;
     for (const d of b.weekend) {
       if (!d.list.length) continue;
       w += `<div class="tb-day"><h4 class="sub-h">${esc(`${fmtDay(d.d)} · ${d.list.length === 1 ? "1 event" : `${d.list.length} events`}`)}</h4>${list(d.list, PER)}${d.list.length > PER ? `<p class="tb-more"><a href="${R}whats-on.html?day=${d.d}">${esc(`All ${d.list.length} on ${fmtDay(d.d)}`)}</a></p>` : ""}</div>`;
     }
-    if (b.wkLabel === "This weekend" && n) w += `<p class="tb-more"><a href="${R}whats-on.html?when=weekend">This weekend on What's On</a></p>`;
+    if (b.wkLabel !== "Next weekend" && n) w += `<p class="tb-more"><a href="${R}whats-on.html?when=weekend">This weekend on What's On</a></p>`;
     col.push(w + "</div>");
     const runs = b.runs.slice(0, 4);
     const runsHtml = runs.length ? `<div class="tb-runs"><h3 class="sub-h">${esc(`Open for a run of weeks · ${b.runs.length}`)}</h3><ul class="tb-runlist">${runs.map((x) => `<li${x.ev.r ? ` data-sheet="${esc(x.ev.r)}"` : ""}><a href="${R}whats-on.html?e=${esc(x.ev.id)}#e-${esc(x.ev.id)}" data-open-event="${esc(x.ev.id)}">${bullet(x.ev.r)}<span><span class="t">${esc(x.ev.t)}</span><span class="w">${esc(x.ev.ed ? fmtThrough(x.ev.ed, b.today) : "")} · ${place(x.ev)}</span></span></a></li>`).join("")}</ul></div>` : "";

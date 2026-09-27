@@ -220,7 +220,7 @@ function whatsOn(ctx, root, p, events) {
   return section(ctx, {
     id: "whats-on-here", title: "What's on here",
     kicker: events.length ? `${h.plural(events.length, "event")} listed · next first` : "",
-    note: events.length ? `Times are Eastern. Select an event for its details, tickets and source, or see <a href="${root}whats-on.html">everything on What's On</a>.` : "",
+    note: events.length ? `Times are Eastern. Select an event for its details and source, or see <a href="${root}whats-on.html">everything on What's On</a>.` : "",
     body: list + series,
   });
 }

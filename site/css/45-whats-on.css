@@ -109,7 +109,7 @@
     overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: thin;
     margin: 0 calc(-1 * var(--gutter)); padding: 2px var(--gutter) 10px; scroll-padding: 0 var(--gutter);
   }
-  .wo-rgrid > .ev { scroll-snap-align: start; }
+  .wo-rgrid > .ev { scroll-snap-align: start; align-content: start; }
   .wo-rgrid > .ev.wo-fold { display: grid; }
 }
 

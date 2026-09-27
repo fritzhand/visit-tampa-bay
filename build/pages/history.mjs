@@ -172,8 +172,9 @@ ${e.entries.length ? `<ol class="timeline hx-tl">${e.entries.map((t) => tlItem(r
       + designationTags(rec)
       + (src ? `<p class="hs-src">Source: ${h.extLink(src, h.esc(h.hostOf(src)))}${!oneDay && rec.checked ? ` · Checked ${h.esc(h.fmtDateY(rec.checked))}` : ""}</p>` : "")
       + `</div>`
-      + (y ? `<p class="hs-year" aria-hidden="true">${y}</p>` : "")
-      + `</li>`;   // no star here: 186 rows; each site's page (linked) and the landmark cards carry one
+      + (y ? `<p class="hs-year" aria-hidden="true">${y}</p>` : `<span></span>`)
+      + c.starButton(rec.id, rec.name, { kind: kind === "stay" ? "s" : "p" })
+      + `</li>`;
   }
   function landmarkCard(root, { kind, rec }) {
     const d = (rec.heritage.designations || []).filter(isNHL)[0];

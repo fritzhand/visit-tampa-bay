@@ -38,6 +38,42 @@ const set = (v) => v != null && v !== "" && v !== false && !(Array.isArray(v) &&
 const DEAD = new Set(["cancelled", "postponed"]);
 const hm = (t) => nyParts(t).hhmm;
 
+/* ---------- pure helpers (exported for tests/whats-on.test.mjs) ---------- */
+
+/** The page's date tests for core/filter.js: an item matches a date key on its OWN listing day (data-day: a card's
+ *  first day, a row's day); a long run (data-run) on any day it covers. now: a function returning epoch ms. */
+export function dateTests(now) {
+  return {
+    day: (it, v) => { const ds = [].concat(v); return it.run ? ds.some((d) => inDays(it, d, d)) : ds.includes(it.ds.day); },
+    when: (it, v) => { const r = whenRange(v, now()); if (!r) return true; return it.run ? inDays(it, r[0], r[1]) : it.ds.day >= r[0] && it.ds.day <= r[1]; },
+    month: (it, v) => { const ms = [].concat(v); if (it.run) { const have = String(it.ds.month || "").split(/\s+/); return ms.some((m) => have.includes(m)); } return ms.includes(String(it.ds.day || "").slice(0, 7)); },
+  };
+}
+
+/** Starred events (events.json records) whose listed times overlap, as pairs [a, b] of { ev, day, s, e|null }
+ *  (a starts first). Only published times count: untimed, all-day and long-run instances are skipped, as are
+ *  cancelled and postponed events and instances already over at `now`. With no end time listed an instance has no
+ *  known span: it overlaps what is under way when it starts, or what starts with it, never what starts after it. */
+export function overlaps(events, now) {
+  const slots = [];
+  for (const ev of events) {
+    if (!ev || DEAD.has(ev.st)) continue;
+    for (const [day, s, e, f] of ev.i || []) {
+      if (f & (2 | 4 | 32)) continue;
+      if ((f & 1 ? s : e) <= now) continue;
+      slots.push({ ev, day, s, e: f & 1 ? null : e });
+    }
+  }
+  slots.sort((a, b) => a.s - b.s || (a.ev.id < b.ev.id ? -1 : 1));
+  const out = [];
+  for (let i = 0; i < slots.length; i++) for (let j = i + 1; j < slots.length; j++) {
+    const a = slots[i], b = slots[j];
+    if (!(b.s === a.s || (a.e != null && b.s < a.e))) break;   // nothing later can overlap a
+    if (a.ev !== b.ev) out.push([a, b]);
+  }
+  return out;
+}
+
 export function init(app) {
   if (app.page === "trip") return initTrip(app);
   const list = $("[data-wo-list]");
@@ -89,12 +125,7 @@ function initWhatsOn(app, list) {
   let state = {}, showPast = false, lastKey = "";
 
   /* ---------- the date keys match an item's own listing day ---------- */
-  const tests = {
-    day: (it, v) => { const ds = [].concat(v); return it.run ? ds.some((d) => inDays(it, d, d)) : ds.includes(it.ds.day); },
-    when: (it, v) => { const r = whenRange(v, app.now()); if (!r) return true; return it.run ? inDays(it, r[0], r[1]) : it.ds.day >= r[0] && it.ds.day <= r[1]; },
-    month: (it, v) => { const ms = [].concat(v); if (it.run) { const have = String(it.ds.month || "").split(/\s+/); return ms.some((m) => have.includes(m)); } return ms.includes(String(it.ds.day || "").slice(0, 7)); },
-    star: (it) => app.trip.has(it.ds.ev),
-  };
+  const tests = { ...dateTests(() => app.now()), star: (it) => app.trip.has(it.ds.ev) };
 
   /* ---------- the past (only while the clock is inside the window) ---------- */
   const inWindow = () => { const d = app.today(); return !!win.start && d >= win.start && d <= win.end; };
@@ -422,27 +453,7 @@ async function initTrip(app) {
   const placeOf = (ev) => (ev.pl && places[ev.pl] ? places[ev.pl].n : ev.lt || "");
   const mi = (m) => (m < 400 ? `${Math.round(m / 10) * 10} m` : `${(m / 1609.344).toFixed(1)} mi`);
 
-  function clashes() {
-    const t = app.now(), slots = [];
-    for (const id of app.trip.list().e) {
-      const ev = byId.get(id);
-      if (!ev || DEAD.has(ev.st)) continue;
-      for (const [day, s, e, f] of ev.i || []) {
-        if (f & (2 | 4 | 32)) continue;                 // no listed time, all day, a long run: nothing to compare
-        if ((f & 1 ? s : e) <= t) continue;              // over
-        slots.push({ ev, day, s, e: f & 1 ? null : e });
-      }
-    }
-    slots.sort((a, b) => a.s - b.s);
-    const out = [];
-    for (let i = 0; i < slots.length; i++) for (let j = i + 1; j < slots.length; j++) {
-      const a = slots[i], b = slots[j];
-      // b starts while a is on (a's end is listed), or both start together; nothing later can overlap a
-      if (!(b.s === a.s || (a.e != null && b.s < a.e))) break;
-      if (a.ev !== b.ev) out.push([a, b]);
-    }
-    return out;
-  }
+  const clashes = () => overlaps(app.trip.list().e.map((id) => byId.get(id)).filter(Boolean), app.now());
   const whenOf = (x) => (x.e ? fmtRange(hm(x.s), hm(x.e)) : `${fmtTime(hm(x.s))}, end time not listed`);
   const link = (ev) => `<a href="${app.root}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${esc(ev.t)}</a>`;
   const prints = $$("[data-trip-print]");
