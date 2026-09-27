@@ -213,7 +213,7 @@ ${map ? `<div class="rt-map"><div class="rt-map-in">${map}<p class="rt-map-note"
   /* ---------- the index ---------- */
   function index(root) {
     const bySheet = REGION_IDS.map((r) => ({ r, list: routes.filter((rt) => rt.region === r) })).filter((g) => g.list.length);
-    return `<nav class="rt-index" aria-label="All passages">${bySheet.map(({ r, list }) => `<div class="rt-index-g" data-sheet="${r}"><h2 class="rt-index-h">${h.bullet(r)}<span>${h.esc(REGIONS[r].name)}</span></h2><ol class="rt-index-list">${list.map((rt) => {
+    return `<nav class="rt-index" aria-label="All passages">${bySheet.map(({ r, list }) => `<div class="rt-index-g" data-sheet="${r}"><h3 class="rt-index-h">${h.bullet(r)}<span>${h.esc(REGIONS[r].name)}</span></h3><ol class="rt-index-list">${list.map((rt) => {
       const f = facts.get(rt.id), n = routes.indexOf(rt) + 1;
       return `<li><a href="#r-${h.attr(rt.id)}"><span class="rt-index-no" aria-hidden="true">${n}</span><span class="rt-index-t"><span class="t">${h.esc(rt.title)}</span><span class="w">${h.esc(`${f.stops.length} stops${f.located.length > 1 ? ` · ${distWords(f.total)} in straight lines · longest leg ${distWords(f.longest)}` : ""}`)}</span></span></a></li>`;
     }).join("")}</ol></div>`).join("")}</nav>`;

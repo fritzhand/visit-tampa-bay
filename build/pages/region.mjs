@@ -120,7 +120,7 @@ export function timeRow(ctx, root, inst, { withDate = false } = {}) {
     : inst.allDay ? "<time><small>All day</small></time>"
       : ev.time_text ? `<time>${h.icon("clock")}</time>` : "<time><small>Time not listed</small></time>";
   const bits = [withDate ? h.esc(inst.run ? fmtThrough(inst.through, inst.date) : fmtDay(inst.day)) : "",
-    timed && inst.end ? h.esc(fmtRange(inst.start, inst.end)) : inst.timeUnknown && ev.time_text ? h.esc(h.truncate(ev.time_text, 72)) : "",
+    timed && inst.end ? h.esc(fmtRange(inst.start, inst.end)) : timed ? c.unk("end time not listed") : inst.timeUnknown && ev.time_text ? h.esc(h.truncate(ev.time_text, 72)) : "",
     whereHtml(h, c, ev)].filter(Boolean);
   return `<li class="evrow" data-ev="${h.attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}"` : ""}${liveAttrs({ ...ev, instances: [inst] })}><a href="${root}whats-on.html?e=${h.attr(ev.id)}#e-${h.attr(ev.id)}" data-open-event="${h.attr(ev.id)}">${tcol}${ev.region ? h.bullet(ev.region) : '<span aria-hidden="true"></span>'}<span><span class="t">${h.esc(ev.title)}</span>${c.eventStatusBadge(ev)}<span class="w">${bits.join(" · ")} <span class="evr-st" data-status></span></span></span></a></li>`;
 }

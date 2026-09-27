@@ -173,6 +173,20 @@ test("index.html: the no-JS band lists only the first seven days of the listings
   assert.match(fb, /Mon, Sep 28 to Sun, Oct 4, 2026/);
 });
 
+test("the client's time-first rows are the server's, byte for byte (home.js rowHtml = region.mjs timeRow)", () => {
+  const html = read(docs, "index.html");
+  const data = JSON.parse(read(docs, "assets/data/events.json"));
+  const fb = html.match(/<div class="tb-fallback" data-tb-fallback>[\s\S]*?<\/div>\n<\/div>/)[0];
+  const rows = [...fb.matchAll(/<li class="evrow"[\s\S]*?<\/li>/g)].map((m) => m[0]);
+  assert.ok(rows.length > 0);
+  for (const row of rows) {
+    const id = row.match(/data-ev="([^"]+)"/)[1], s = Number(row.match(/data-s="(\d+)"/)[1]);
+    const ev = data.events.find((e) => e.id === id);
+    const [day, , e, f] = ev.i.find((x) => x[1] === s);
+    assert.equal(HJ.rowHtml({ ev, day, s, e, f }, data, ""), row, `${id}: same markup from events.json`);
+  }
+});
+
 test("index.html: signature events in order, every series once in the calendar, seven eras, stat tiles with sources", () => {
   const html = read(docs, "index.html");
   const fe = [...html.matchAll(/<li class="fe-item evrow" data-ev="([^"]+)"/g)].map((m) => m[1]);
@@ -275,6 +289,13 @@ test("real data: every signature place is in its sheet's key with the buoy the c
     assert.equal(rows.length, 6);
     for (const row of rows) assert.equal((row.match(/class="near">nearest</g) || []).length, 1, "one nearest airport per sheet, said in words");
     assert.match(home, /Straight-line distances/);
+    const data = JSON.parse(read(d, "docs/assets/data/events.json"));
+    for (const row of [...home.match(/<div class="tb-fallback" data-tb-fallback>[\s\S]*?<\/div>\n<\/div>/)[0].matchAll(/<li class="evrow"[\s\S]*?<\/li>/g)].map((m) => m[0])) {
+      const id = row.match(/data-ev="([^"]+)"/)[1], s = Number(row.match(/data-s="(\d+)"/)[1]);
+      const ev = data.events.find((e) => e.id === id);
+      const [day, , e, f] = ev.i.find((x) => x[1] === s);
+      assert.equal(HJ.rowHtml({ ev, day, s, e, f }, data, ""), row, `${id}: the client row matches the server's`);
+    }
     assert.ok(!/\bundefined\b|>NaN</.test(home.replace(/<script[\s\S]*?<\/script>/g, "")));
   } finally { cleanup(d); }
 });

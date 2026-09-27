@@ -171,9 +171,8 @@
 .ev-cost { grid-area: tags; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin-top: 6px; padding-right: 8px; font-size: var(--fs-xs); color: var(--text-muted); font-variant-numeric: tabular-nums; }
 .ev-cost .badge { min-height: 22px; }
 .ev-cw { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
-.ev-src { grid-area: note; display: flex; align-items: center; flex-wrap: wrap; gap: 0 4px; min-height: 40px; margin-top: 10px; padding: 4px 46px 0 0; border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-faint); overflow-wrap: anywhere; }
+.ev-src { grid-area: note; display: flex; align-items: center; flex-wrap: wrap; gap: 0 4px; min-height: 40px; margin-top: 10px; padding: 4px 46px 0 0; border-top: 1px solid var(--border); font-size: var(--fs-xs); color: var(--text-muted); overflow-wrap: anywhere; }
 .ev-src a { position: relative; z-index: 2; color: var(--text-muted); }
-.ev-src .h { color: var(--text-muted); }
 .ev-tt { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; font-weight: var(--wght-body); }
 .ev-meta .seal { min-height: 24px; padding: 0 8px; }
 /* the kicker (KIND · AREA) and the badge share the first line; a seal or a status word takes the next */
@@ -183,8 +182,8 @@
 .wo-list .ev-where { display: block; }
 .nw { white-space: nowrap; }
 
-/* the sheet badge without an SVG (span.ev-sb[role=img][aria-label="Sheet 1 · Tampa"]): the sheet's shape (clip or mask)
-   in its fill, its chart code in Archivo on top; at the end of the kicker, whose area names the place in words */
+/* the sheet badge without an SVG (i.ev-sb, decorative): the sheet's shape (clip or mask) in its fill, its chart code in
+   Archivo on top; at the end of the kicker, whose area names the place in words */
 .ev-sb { flex: none; display: inline-flex; margin-left: auto; }
 .ev-sb::before {
   content: var(--ink-code); flex: none; display: grid; place-items: center; width: 40px; height: 24px;

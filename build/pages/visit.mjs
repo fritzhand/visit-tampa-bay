@@ -113,15 +113,18 @@ const SECTIONS = [
 ];
 /** Which section a Getting-around question is printed under (first match on its id; the rest go to #questions). */
 const FAQ_ROUTES = [
-  [/pie-parking/, "arriving"], [/toll|sunpass|ezpass|parking/, "driving"], [/streetcar|pirate|dash/, "in-tampa"], [/bike|scooter/, "bikes-scooters"],
+  [/(pie|tpa)-parking/, "arriving"], [/toll|sunpass|ezpass|parking/, "driving"], [/streetcar|pirate|dash/, "in-tampa"], [/bike|scooter/, "bikes-scooters"],
   [/cross-bay|tampa-to-stpete|both-counties/, "across-the-bay"], [/tpa|pie|cruise|train|brightline|intercity|amtrak/, "arriving"],
-  [/stpete|beach|clearwater|looper|sunrunner/, "st-pete-beaches"],
+  [/stpete|beach|clearwater|looper|sunrunner|jolley|trolley/, "st-pete-beaches"],
 ];
 /** Fact tiles printed at the top of getting-around (the facts' own values; missing ids are skipped). */
 const GA_FACTS = ["fact-streetcar-fare", "fact-hart-fare", "fact-psta-fare", "fact-pirate-water-taxi-pass", "fact-skyway-toll", "fact-toll-by-plate-fee"];
 const ARRIVE_FACTS = ["fact-tpa-passengers-2025", "fact-pie-nonstops", "fact-port-tampa-bay-cruise"];
 
 /** Every point of a transport record: its own coordinates and its stops' ([{ lat, lng, stop }]). */
+/** The word for a season_text (the text itself is printed as the source states it): "Not running", "Not running yet"
+ *  (a launch the operator announced), else "Seasonal". */
+const seasonWord = (txt) => (!txt ? "" : /\bnot running\b/i.test(txt) && !/\bnot yet running\b/i.test(txt) ? "Not running" : /\bnot yet running\b|\blaunch/i.test(txt) ? "Not running yet" : "Seasonal");
 const pointsOf = (t) => [...(t.lat != null && t.lng != null ? [{ lat: t.lat, lng: t.lng, stop: null }] : []), ...(t.stops || []).filter((s) => s.lat != null && s.lng != null).map((s) => ({ lat: s.lat, lng: s.lng, stop: s }))];
 /** The number a stop carries in its operator's naming ("Stop 7: …", "Hattricks Station (#11), …"), else null. */
 const stopNo = (name) => { const m = /^Stop (\d+):/.exec(name) || /\(#(\d+)\)/.exec(name); return m ? Number(m[1]) : null; };
@@ -174,7 +177,7 @@ function gettingAround(ctx) {
   const areaName = (id) => (id ? db.byId.area.get(id)?.name || vocab.AREA_NAMES[id] || "" : "");
   const onBase = (p) => !!meta && onMap(meta, p.lat, p.lng);
   const free = T.filter((t) => t.is_free === true && t.mode !== "toll" && t.mode !== "parking");
-  const notRunning = T.filter((t) => /^not running\b/i.test(t.season_text || ""));
+  const notRunning = T.filter((t) => /^Not running/.test(seasonWord(t.season_text)));
   const sheetsLine = (t) => {
     const R = (t.regions || []).filter((r) => c.SHEET_LABELS[r]);
     if (!R.length) return "";
@@ -219,7 +222,7 @@ function gettingAround(ctx) {
     if (t.address) rows.push(["Address", esc(t.address)]);
     const status = [
       t.is_free === true && t.mode !== "toll" && t.mode !== "parking" ? c.badge("free", "Free") : "",
-      /^not running\b/i.test(t.season_text || "") ? c.badge("warn", "Not running") : t.season_text ? c.badge("", "Seasonal") : "",
+      t.season_text ? c.badge(seasonWord(t.season_text) === "Seasonal" ? "" : "warn", seasonWord(t.season_text)) : "",
     ].join("");
     const stops = stopsBlock(root, t);
     const pts = pointsOf(t);
@@ -261,7 +264,7 @@ ${side}
 
   const notices = () => [
     free.length ? c.callout("tip", `<p>${esc(h.plural(free.length, "ride", "rides"))} in the guide ${free.length === 1 ? "is" : "are"} free, as ${free.length === 1 ? "its operator says" : "their operators say"}:</p><ul class="ga-free">${free.map((t) => `<li><a href="#t-${attr(t.id)}">${esc(t.name)}</a> <span class="faint">${esc(vocab.MODE_LABEL[t.mode] || t.mode)}${(t.regions || [])[0] ? ` · ${esc(c.sheetName(t.regions[0]))}` : ""}</span></li>`).join("")}</ul>`, { flag: "Free to ride" }) : "",
-    ...notRunning.map((t) => c.callout("warn", `<p><a href="#t-${attr(t.id)}"><b>${esc(t.name)}</b></a>: ${esc(t.season_text)}</p>`, { flag: "Not running" })),
+    ...notRunning.map((t) => c.callout("warn", `<p><a href="#t-${attr(t.id)}"><b>${esc(t.name)}</b></a>: ${esc(t.season_text)}</p>`, { flag: seasonWord(t.season_text) })),
   ].join("");
   const secQs = (root, id) => { const l = faqsIn(id); return l.length ? `<h3 class="sub-h ga-qh">${icon("help")}<span>${esc(`Questions · ${l.length}`)}</span></h3>${questions(ctx, root, l)}` : ""; };
 
@@ -471,4 +474,4 @@ ${toc.find(([id]) => id === "sun-heat") ? sect(ctx, { id: "sun-heat", title: "Su
 }
 
 /* The parsers, for tests/visit.test.mjs (the build only calls pages()). */
-export { parseNormals, parseF, dayOfYear, stopNo, stopName, statTile };
+export { parseNormals, parseF, dayOfYear, stopNo, stopName, statTile, seasonWord };

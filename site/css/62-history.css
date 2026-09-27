@@ -151,6 +151,7 @@ ol.timeline.hx-tl > li.hx-item.is-at::before {   /* the landmark: a circle with 
 .hx-fig { max-width: 440px; margin: var(--sp-4) 0 0; }
 .hx-fig img { border: 1px solid var(--border); }
 .hx-fig.is-tall { max-width: 280px; }              /* a portrait image never fills a phone screen */
+.hx-fig figcaption a { display: inline-block; padding: 14px 0; margin: -14px 0; }   /* 44px targets, same layout */
 @media (min-width: 760px) {
   ol.timeline.hx-tl { --when-w: 124px; --line-x: 140px; }
   ol.timeline.hx-tl > li.hx-item { grid-template-columns: var(--when-w) minmax(0, 1fr); column-gap: 42px; padding-left: 0; }

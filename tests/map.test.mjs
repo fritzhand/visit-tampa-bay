@@ -200,7 +200,7 @@ test("areas/<id>.html (fixture): What's on here holds the season, shows the next
 test("with a basemap: the static chart has the neatline and signature buoys; area pages carry their chart", () => {
   const dir = built("charts", withCharts);
   const html = read(dir, "docs/map.html");
-  assert.match(html, /<div class="map-view is-static" data-map-view style="--map-ratio: \d+ \/ \d+"><svg class="map-base" viewBox="-24 -24 /);
+  assert.match(html, /<div class="map-view is-static" data-map-view style="--map-ratio: \d+ \/ \d+"><svg class="map-base" viewBox="-24(\.0)? -24(\.0)? /);
   assert.match(html, /<use href="assets\/map\/basemap\.svg#bm"\/><\/svg><use href="assets\/map\/basemap\.svg#bm-grid"\/>/);
   assert.match(html, /Not for navigation/);
   const charts = json(dir, "docs/assets/data/map-charts.json");

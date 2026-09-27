@@ -43,6 +43,9 @@ test("parsers: climate normals, water temperature, day of year, operator stop nu
   assert.equal(V.stopNo("Gateway Mall"), null);
   assert.equal(V.stopName("Stop 16: Armature Works / Ulele"), "Armature Works / Ulele");
   assert.equal(V.stopName("Hattricks Station (#11), Franklin St & Whiting St"), "Hattricks Station, Franklin St & Whiting St");
+  assert.equal(V.seasonWord("Not running as of Sep 27, 2026. PSTA says it will announce a start date"), "Not running");
+  assert.equal(V.seasonWord("Launching October 4, 2026, per PSTA; not yet running on Sep 27, 2026."), "Not running yet");
+  assert.equal(V.seasonWord("November to April"), "Seasonal");
 });
 
 test("about: the source groups", () => {

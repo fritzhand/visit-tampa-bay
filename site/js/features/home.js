@@ -60,6 +60,27 @@ export function nextFor(all, region, now) {
 const bullet = (r) => (r ? `<svg class="bullet" viewBox="0 0 44 26" aria-hidden="true" focusable="false"><use href="#b-${esc(r)}"/></svg>` : '<span aria-hidden="true"></span>');
 const hhmm = (t) => nyParts(t).hhmm;
 
+/** Where an event is: its place's name, else the source's location text, else "Place not listed" (HTML). */
+export const placeOf = (ev, data) => {
+  const p = ev.pl && data.places && data.places[ev.pl];
+  if (p) return esc(p.n);
+  if (ev.lt) return esc(ev.lt);
+  return '<span class="unk">Place not listed</span>';
+};
+const stBadge = (ev, data) => (ev.st && ev.st !== "scheduled" ? `<span class="badge ${ev.st === "tentative" ? "badge-unconfirmed" : "badge-warn"}">${esc((data.lb && data.lb.st && data.lb.st[ev.st]) || ev.st)}</span>` : "");
+/** A time-first row from events.json: the same markup as build/pages/region.mjs timeRow (tests/home.test.mjs compares them). */
+export function rowHtml(x, data, R, { withDate = false } = {}) {
+  const ev = x.ev, f = x.f;
+  const tu = f & FL.TIME_UNKNOWN, ad = f & FL.ALL_DAY, eu = f & FL.END_UNKNOWN;
+  const timed = !tu && !ad;
+  const [hm, ap] = timed ? fmtTime(hhmm(x.s)).split(" ") : ["", ""];
+  const tcol = timed ? `<time datetime="${isoLocal(x.s)}">${esc(hm)}<small>${esc(ap)}</small></time>`
+    : ad ? "<time><small>All day</small></time>"
+      : ev.tt ? '<time><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></time>' : "<time><small>Time not listed</small></time>";
+  const bits = [withDate ? esc(fmtDay(x.day)) : "", timed && !eu ? esc(fmtRange(hhmm(x.s), hhmm(x.e))) : timed ? '<span class="unk">end time not listed</span>' : tu && ev.tt ? esc(truncate(ev.tt, 72)) : "", placeOf(ev, data)].filter(Boolean);
+  return `<li class="evrow" data-ev="${esc(ev.id)}"${ev.r ? ` data-sheet="${esc(ev.r)}"` : ""} data-s="${x.s}" data-e="${x.e}"${eu ? ' data-end-unknown="1"' : ""}${tu ? ` data-days="${x.day}"` : ""}${tu ? ' data-time-unknown="1"' : ""}${ad ? ' data-all-day="1"' : ""}><a href="${R}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${tcol}${bullet(ev.r)}<span><span class="t">${esc(ev.t)}</span>${stBadge(ev, data)}<span class="w">${bits.join(" · ")} <span class="evr-st" data-status></span></span></span></a></li>`;
+}
+
 export function init(app) {
   const R = app.root;
   const $ = (s, el = document) => el.querySelector(s);
@@ -97,26 +118,8 @@ export function init(app) {
   }
 
   let data = null, all = null, lastKey = "";
-  const place = (ev) => {
-    const p = ev.pl && data.places[ev.pl];
-    if (p) return esc(p.n);
-    if (ev.lt) return esc(ev.lt);
-    return '<span class="unk">Place not listed</span>';
-  };
-  const stBadge = (ev) => (ev.st && ev.st !== "scheduled" ? `<span class="badge ${ev.st === "tentative" ? "badge-unconfirmed" : "badge-warn"}">${esc((data.lb && data.lb.st && data.lb.st[ev.st]) || ev.st)}</span>` : "");
-  /** A time-first row (the same markup as build/pages/region.mjs timeRow). */
-  function row(x, { withDate = false } = {}) {
-    const ev = x.ev, f = x.f;
-    const tu = f & FL.TIME_UNKNOWN, ad = f & FL.ALL_DAY, eu = f & FL.END_UNKNOWN;
-    const timed = !tu && !ad;
-    const [hm, ap] = timed ? fmtTime(hhmm(x.s)).split(" ") : ["", ""];
-    const tcol = timed ? `<time datetime="${isoLocal(x.s)}">${esc(hm)}<small>${esc(ap)}</small></time>`
-      : ad ? "<time><small>All day</small></time>"
-        : ev.tt ? '<time><svg class="i" aria-hidden="true" focusable="false"><use href="#i-clock"/></svg></time>' : "<time><small>Time not listed</small></time>";
-    const bits = [withDate ? esc(fmtDay(x.day)) : "", timed && !eu ? esc(fmtRange(hhmm(x.s), hhmm(x.e))) : tu && ev.tt ? esc(truncate(ev.tt, 72)) : "", place(ev)].filter(Boolean);
-    return `<li class="evrow" data-ev="${esc(ev.id)}"${ev.r ? ` data-sheet="${esc(ev.r)}"` : ""} data-s="${x.s}" data-e="${x.e}"${eu ? ' data-end-unknown="1"' : ""}${tu ? ` data-time-unknown="1" data-days="${x.day}"` : ""}${ad ? ' data-all-day="1"' : ""}><a href="${R}whats-on.html?e=${esc(ev.id)}#e-${esc(ev.id)}" data-open-event="${esc(ev.id)}">${tcol}${bullet(ev.r)}<span><span class="t">${esc(ev.t)}</span>${stBadge(ev)}<span class="w">${bits.join(" · ")} <span class="evr-st" data-status></span></span></span></a></li>`;
-  }
-  const list = (xs, max) => `<ol class="tonight evrows">${xs.slice(0, max).map((x) => row(x)).join("")}</ol>`;
+  const list = (xs, max) => `<ol class="tonight evrows">${xs.slice(0, max).map((x) => rowHtml(x, data, R)).join("")}</ol>`;
+  const place = (ev) => placeOf(ev, data);
 
   function drawBand(now) {
     const body = $("[data-tb-body]");

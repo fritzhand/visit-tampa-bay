@@ -144,7 +144,7 @@ ${months.map(monthSec).join("\n")}
     const evs = seriesEvents(s);
     const where = s.venue ? `<a href="${root}places/${attr(s.venue.id)}.html">${esc(s.venue.name)}</a>` : s.location_text ? esc(s.location_text) : c.unk("Place not listed");
     const kicker = [vocab.EVENT_KIND_LABEL[s.kind] || s.kind, s.area ? db.byId.area.get(s.area)?.name : "", s.since ? `Since ${s.since}` : ""].filter(Boolean).join(" · ");
-    const meta = `<span class="ev-kind">${esc(kicker)}</span>${s.featured ? '<span class="seal">Signature</span>' : ""}${s.region ? `<span class="ev-sb" role="img" aria-label="${attr(`Sheet ${c.SHEET_LABELS[s.region].n} · ${c.sheetName(s.region)}`)}"></span>` : ""}`;
+    const meta = `<span class="ev-kind">${esc(kicker)}</span>${s.featured ? '<span class="seal">Signature</span>' : ""}${s.region ? '<i class="ev-sb" aria-hidden="true"></i>' : ""}`;
     const dates = evs.length ? `<p class="wo-se-next"><span class="label">In this guide</span> ${evs.map((e) => `<a href="#e-${attr(e.id)}">${esc(e.run ? h.fmtDateRange(e.date, e.end_date) : e.instances.length > 1 ? h.fmtDateRange(e.instances[0].day, e.instances[e.instances.length - 1].day) : h.fmtDay(e.instances[0].day))}</a>${e.live ? "" : ` (${esc(vocab.EVENT_STATUS_LABEL[e.status])})`}`).join(", ")}</p>` : "";
     return `<article class="wo-se" id="s-${attr(s.id)}"${s.region ? ` data-sheet="${s.region}"` : ""}>
 ${strip(s.months || [])}<p class="ev-meta">${meta}</p>

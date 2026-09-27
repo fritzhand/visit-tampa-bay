@@ -32,8 +32,8 @@
    - data-q is normalized text of what the card does NOT print (place aliases, series name, tags beyond the
      three shown, topics); a filter adds the card's visible text.
    The lean card ({ lean: true }, What's On's list: 556 of them on one page) keeps every attribute above (but data-pl)
-   and the same classes, and drops the weight: no inline SVG at all (the sheet badge .ev-sb[role=img][aria-label="Sheet 1 ·
-   Tampa"] and the star are drawn by CSS, 45-whats-on.css; the kicker reads KIND · AREA as in the design's card grammar), no summary and no description (the dialog, one click away, shows both: event-text.json),
+   and the same classes, and drops the weight: no inline SVG at all (the sheet badge i.ev-sb[aria-hidden] and the star are drawn
+   by CSS, 45-whats-on.css; the kicker reads KIND · AREA as in the design's card grammar), no summary and no description (the dialog, one click away, shows both: event-text.json),
    no details, no <time> elements; it adds .ev-cost (the source's price words, "Free", or "Price not listed"), a source
    line (.ev-src: "Source: host", plus "Checked <date>" when it differs from { checked }, the date the page
    states once, and Tickets when listed), the signature seal for featured events (data-fe="1"), and with
@@ -149,7 +149,7 @@ export function makeEventCards(ctx) {
    *  place page (a place page's full card links it too), so a reader without JavaScript can always reach it. */
   const leanSource = (ev, checked) => {
     const host = esc(hostOf(ev.source_url) || "the source");
-    return `<p class="ev-src">Source: ${ev.venue ? `<span class="h">${host}</span>` : extLink(ev.source_url, host)}${ev.checked && ev.checked !== checked ? ` · Checked ${esc(fmtDateY(ev.checked))}` : ""}${ev.tickets_url ? ` · ${extLink(ev.tickets_url, "Tickets")}` : ""}</p>`;
+    return `<p class="ev-src">Source: ${ev.venue ? host : extLink(ev.source_url, host)}${ev.checked && ev.checked !== checked ? ` · Checked ${esc(fmtDateY(ev.checked))}` : ""}${ev.tickets_url ? ` · ${extLink(ev.tickets_url, "Tickets")}` : ""}</p>`;
   };
 
   /** The date box: weekday and month in caps over the day numeral; a long run's box says "Until" and its last day.
@@ -181,8 +181,9 @@ export function makeEventCards(ctx) {
     const open = `<article class="ev"${anchor ? ` id="e-${attr(ev.id)}"` : ""} data-ev="${attr(ev.id)}"${ev.region ? ` data-sheet="${ev.region}" data-r="${ev.region}"` : ""}${ev.area ? ` data-a="${attr(ev.area)}"` : ""} data-k="${ev.kind}" data-kg="${ev.kg}" data-day="${inst.day}" data-month="${monthsOf(ev).join(" ")}" data-s="${inst.s}" data-e="${inst.e}"${instAttr}${daysAttr}${inst.run ? ` data-run="${inst.through}"` : ""}${inst.endUnknown ? ' data-end-unknown="1"' : ""}${inst.timeUnknown ? ' data-time-unknown="1"' : ""} data-t="${t}"${ev.place && !lean ? ` data-pl="${attr(ev.place)}"` : ""}${ev.series ? ` data-se="${attr(ev.series)}"` : ""} data-free="${ev.is_free === true ? 1 : 0}" data-q="${attr(q)}"${dead ? ' data-cancelled="1"' : ""}${lean && ev.featured ? ' data-fe="1"' : ""}>`;
     const title = `<${H} class="ev-title"><a href="${root}whats-on.html?e=${attr(ev.id)}#e-${attr(ev.id)}" data-open-event="${attr(ev.id)}">${esc(ev.title)}</a></${H}>`;
     if (lean) {
-      // the design's card kicker: KIND · AREA, the sheet badge (code, shape, ink; named for screen readers) at its end
-      const sb = ev.region ? `<span class="ev-sb" role="img" aria-label="${attr(`Sheet ${c.SHEET_LABELS[ev.region].n} · ${c.sheetName(ev.region)}`)}"></span>` : "";
+      // the design's card kicker: KIND · AREA in words, the sheet badge (code, shape, ink: decorative, the area names the
+      // place) at its end
+      const sb = ev.region ? '<i class="ev-sb" aria-hidden="true"></i>' : "";
       const kicker = [EVENT_KIND_LABEL[ev.kind] || ev.kind, ev.area ? areaName(ev.area) : ""].filter(Boolean).join(" · ");
       const seal = ev.featured ? '<span class="seal">Signature</span>' : "";
       return open
