@@ -16,6 +16,13 @@ import { project, unproject, metaOf } from "../../site/js/lib/geo.js";
 import { tripHash, code } from "../../site/js/lib/share.js";
 import { sunEvent } from "./sun.mjs";
 import { UNIT } from "./promo-world.mjs";
+import { REGION_PAGES } from "../../build/nav.mjs";
+import { REGIONS } from "../../build/core/vocab.mjs";
+
+/** Stage-only nudges (basemap units) that lift three sheet badges off their town labels at the whole-bay view: the
+ *  site's index chart places them on the towns, and the stage's larger badges covered "ST. PETERSBURG", "TAMPA" and
+ *  "CLEARWATER" (review, round 2). */
+export const BADGE_NUDGE = { stpete: [0, 4], tampa: [9, 10], clearwater: [0, -10] };   // SP: its label moved instead (promo-world STAGE_LABELS)
 
 /** The only hand-written lines (plan.md §9.3). */
 export const HAND = {
@@ -95,6 +102,9 @@ export function read(ROOT, SITE, planId = "A") {
   if (!(dekN.includes(counts.places) && dekN.includes(counts.stays) && dekN.includes(counts.events))) fail(`mast-dek counts ${dekN} ≠ data`);
   const countLabels = ["places", "places to stay", "events"];                      // nouns and order from the meta description
   const mastSide = must("index.html", /<div class="mast-line[^"]*"><span class="side">([^<]+)<\/span>/, "masthead line");
+  // the masthead's other side, "Not for navigation", is the hook's and the end card's ribbon (review round 3: "SHEETS 1–6 ·
+  // TAMPA BAY" sat right above the wordmark's "TAMPA BAY" eyebrow, so the name was read twice)
+  const mastNote = must("index.html", /<div class="mast-line[^"]*">(?:<span[^>]*>[^<]*<\/span>){2}<span class="side">([^<]+)<\/span>/, "masthead line (right side)");
   const footer = index.match(/<p class="footer-indep"><b>([^<]+)<\/b>\s*([^<]+)<\/p>/);
   if (!footer) fail("footer independence line not found");
   const independence = decode(footer[1]), sourced = decode(footer[2]);
@@ -135,7 +145,10 @@ export function read(ROOT, SITE, planId = "A") {
     if (!m) fail(`index badge ${id} not found`);
     const [lat, lng] = unproject(vx + vw * Number(m[1]) / 100, vy + vh * Number(m[2]) / 100, rm);
     const [ux, uy] = project(lat, lng, bm);
-    badges.push({ id, x: ux * UNIT, y: uy * UNIT, ux: +ux.toFixed(1), uy: +uy.toFixed(1) });
+    const [nx, ny] = BADGE_NUDGE[id] || [0, 0];
+    const page = REGION_PAGES.find((p) => p.region === id);
+    if (!page || !page.label) fail(`build/nav.mjs REGION_PAGES has no name for sheet ${id}`);
+    badges.push({ id, x: (ux + nx) * UNIT, y: (uy + ny) * UNIT, ux: +ux.toFixed(1), uy: +uy.toFixed(1), name: page.label, code: REGIONS[id]?.code, n: REG.indexOf(id) + 1 });
   }
 
   /* the dots of the pull-back: every map row whose point is on the chart */
@@ -164,7 +177,7 @@ export function read(ROOT, SITE, planId = "A") {
     siteName: config.siteName,
     host: "fritzhand.github.io",
     tag1: tagParts[0] + ",", tag2: tagParts[1],
-    mastSide, ribbonHook: mastSide.toUpperCase(),
+    mastSide, mastNote, ribbonHook: mastNote.toUpperCase(),
     date: fmtDay(plan.date).toUpperCase(),
     kicker: HAND.kicker, footnote: HAND.footnote, punch: HAND.punch,
     sourced, independence, startedNever, aboutLine, founded, mapLede, mapKicker, attribution: attrib,

@@ -32,7 +32,8 @@ export class Audit {
     this.guardRuns = new Map(); this.frames = 0;
     this.guardSrc = R.guard.map((g) => g.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
     this.capMin = cut === "reel" ? 26 : 22;
-    this.devMin = cut === "reel" ? 36 : 30;
+    this.devMin = cut === "reel" ? 40 : 30;                  // in-device must-reads (the Reel is read on a phone: ≥ 40 px)
+    this.tripCardSeen = new Map(); this.sliced = new Map(); this.inBand = new Map();
   }
   note(m) { this.notes.push(m); }
   fail(m) { this.failures.push(m); }
@@ -48,6 +49,11 @@ export class Audit {
     // stage lines
     for (const s of a.stage) this.track(i, t, { ...s, kind: "stage" });
     for (const s of a.device) this.track(i, t, { ...s, kind: "device" });
+    for (const s of a.device) {
+      if (!(s.o > 0.985) || s.vis === false) continue;
+      if (s.sliced && !this.sliced.has(s.id)) this.sliced.set(s.id, `f${i}: the block around the must-read "${s.id}" is sliced at the ${s.sliced} frame edge (no edge fade covers it)`);
+      if (s.inBand && !this.inBand.has(s.id)) this.inBand.set(s.id, `f${i}: the must-read "${s.id}" runs into an edge fade`);
+    }
     // laptop reads (origin B, screen-space device)
     const lp = st.laptop;
     for (const r of (this.C.laptopReads || []).filter((d) => t >= d.t0 && t < d.t1)) {
@@ -75,6 +81,14 @@ export class Audit {
       this.mirrorLog ||= []; this.mirrorLog.push([i, info.mirror.text]);
     }
     for (const w of a.forbidden) this.fail(`f${i}: forbidden "${w.text}" visible in ${w.slot}`);
+    // the film's payoff ("Started", never "Now") must hold everywhere the site says it: every device's sidebar trip card,
+    // in frame or not (origin A in the page, origin B every 3 frames)
+    for (const [slot, text] of Object.entries(a.tripCards || {})) this.tripCard(i, slot, text);
+    if (this.cut === "wide" && i % 3 === 0) for (const name of ["map", "shared"]) {
+      const f = page.frame({ name }); if (!f) continue;
+      const text = await f.evaluate(() => document.querySelector("[data-trip-card-next]")?.textContent.replace(/\s+/g, " ").trim() || null).catch(() => null);
+      if (text) this.tripCard(i, `laptop ${name}`, text);
+    }
     // images in devices: only the site's rights-cleared ones, credited (plan.md §15)
     this.images ||= {}; this.imgRuns ||= {};
     for (const im of a.imgs) {
@@ -95,6 +109,12 @@ export class Audit {
       if (run === 9) this.fail(`f${i}: "${g.text}" legible (cap ${g.cap.toFixed(0)} px) and settled for 9 frames in ${g.slot}`);
     }
     for (const k of [...this.guardRuns.keys()]) if (!seen.has(k)) this.guardRuns.delete(k);
+  }
+
+  /** a sidebar trip card that leads with "Now" for the parade, which has no end time, contradicts the film (and the About page) */
+  tripCard(i, slot, text) {
+    if (!text || !/^Now\b/.test(text) || this.R.ev.end != null || !text.includes(this.R.ev.title)) return;
+    if (!this.tripCardSeen.has(slot)) this.tripCardSeen.set(slot, { f: i, text });
   }
 
   /** motion caps and the horizon (plan.md §4.5): Node-side, from the frame's state */
@@ -171,8 +191,15 @@ export class Audit {
     // fonts, in the stage and in every same-origin device
     const fonts = await page.evaluate(() => { const faces = ["800 40px 'Bodoni Moda'", "italic 540 40px 'Bodoni Moda'", "700 40px 'Bodoni Moda'", "400 20px Figtree", "650 20px Figtree", "680 20px Archivo"]; const out = { stage: faces.filter((f) => !document.fonts.check(f)) }; for (const fr of document.querySelectorAll("iframe")) { try { const d = fr.contentDocument; if (d && d.fonts) out[fr.name] = ["400 16px Figtree", "700 20px 'Bodoni Moda'", "680 12px Archivo"].filter((f) => !d.fonts.check(f)); } catch {} } return out; });
     for (const [k, v] of Object.entries(fonts)) if (v.length) this.fail(`fonts not loaded in ${k}: ${v.join(", ")}`);
+    if (this.tripCardSeen.size) {
+      const [[slot0, first]] = [...this.tripCardSeen.entries()].sort((a, b) => a[1].f - b[1].f);
+      this.fail(`f${first.f}: the site contradicts the film's "${this.R.words.startedNever}": the sidebar trip card reads "${first.text}" for an event with no end time (in ${[...this.tripCardSeen.keys()].join(", ")}; the card is never in frame). Fix nextLine() in site/js/core/trip-store.js (lead "Started", not "Now", when the end is not listed: flag 1), rebuild, re-render`);
+      void slot0;
+    }
     if (this.caps) this.note(`motion: largest scale change ${(100 * (Math.exp(this.caps.ds) - 1)).toFixed(1)}%/frame (f${this.caps.dsF}); largest table speed ${this.caps.sp.toFixed(0)} px/frame (f${this.caps.spF}); largest scroll ${this.caps.scroll.toFixed(0)} css/frame (f${this.caps.scrollF})`);
     if (this.horizon) this.note(`horizon: ${this.horizon} frame(s) look past the paper at the top of the picture (under the running head)`);
+    if (this.blurred) this.note(`motion blur: ${this.blurred} frame(s) exposed from up to ${this.blurMax} sub-frames (a device page smearing 8 px or more; the shutter opens with the speed); largest unfilled sample spacing ${(this.blurGapMax || 0).toFixed(1)} px (fails over 8 px)`);
+    if (this.painted) this.note(`painted check: ${this.painted} device viewport samples, each with luma sd ≥ 1 or reported`);
     this.done = true;
   }
 
@@ -183,13 +210,14 @@ export class Audit {
       const ok = L.role === "texture" || L.zone === "free" || longest + 1e-6 >= n;
       return { ...L, need: n, longest, ok };
     });
-    const floor = this.cut === "reel" ? { must: 44, secondary: 24 } : { must: 40, secondary: 22 };
-    const fails = [...this.failures];
+    const floor = this.cut === "reel" ? { must: 44, independence: 40, secondary: 28 } : { must: 40, independence: 30, secondary: 22 };
+    const fails = [...this.failures, ...this.sliced.values(), ...this.inBand.values()];
     if (!partial) for (const r of rows) {
       if (r.role === "must" && !r.ok) fails.push(`${r.id}: settled ${r.longest.toFixed(2)} s at most, needs ${r.need.toFixed(2)} s`);
       if (r.role === "secondary" && !r.ok) fails.push(`${r.id} (secondary): settled ${r.longest.toFixed(2)} s, needs ${r.need.toFixed(2)} s`);
       if (r.unsafe.length && r.role !== "texture") fails.push(`${r.id}: outside the safe zone ×${r.unsafe.length} (${r.unsafe[0]})`);
-      if (r.kind === "stage" && r.role === "must" && r.minPx < floor.must && r.id !== "independence" && r.minPx !== Infinity) fails.push(`${r.id}: ${r.minPx} px < ${floor.must} px`);
+      if (r.kind === "stage" && r.role === "must" && r.minPx !== Infinity && r.minPx < (r.id === "independence" ? floor.independence : floor.must)) fails.push(`${r.id}: ${r.minPx} px < ${r.id === "independence" ? floor.independence : floor.must} px`);
+      if (this.cut === "reel" && r.kind === "stage" && r.role === "secondary" && r.minPx !== Infinity && r.minPx < floor.secondary) fails.push(`${r.id} (secondary): ${r.minPx} px < ${floor.secondary} px`);
       if (r.kind === "device" && r.role === "must" && r.minPx !== Infinity && r.minPx < this.devMin) fails.push(`${r.id}: in-device ${r.minPx.toFixed(1)} px < ${this.devMin} px`);
     }
     const lines = [
@@ -199,6 +227,7 @@ export class Audit {
       "", "warnings:", ...this.warnings.map((n) => "  " + n),
       "", `failures (${fails.length}):`, ...fails.map((n) => "  " + n),
     ];
+    if (this.blurLog) lines.push("", "motion blur (frame, slot, content speed, samples, spacing, camera spacing, fill):", ...this.blurLog.map((n) => "  " + n));
     if (this.mirrorLog) {
       const ch = []; let last = null; for (const [f, x] of this.mirrorLog) if (x !== last) { ch.push(`f${f} ${x}`); last = x; }
       lines.push("", "mirror changes: " + ch.join(" · "));
@@ -231,11 +260,17 @@ window.auditFrame=(spec)=>{
     let o=1;const f=document.getElementById("f-"+d.slot);o*=parseFloat(f.style.opacity||"1");
     if(d.toast){const doc=f.contentDocument,el=doc.querySelector(d.sel);if(!el||!el.classList.contains("show"))continue;o*=parseFloat(getComputedStyle(el).opacity);}
     const cap=0.7*b.fs*b.scale;
-    out.device.push({id:d.id,words:d.words,role:d.role,o,busy:false,box:[b.x0,b.y0,b.x1,b.y1],px:b.fs*b.scale,cap,vis:b.vis});
+    // the must-read's whole block (e.g. the source line with its notes) must not be sliced by the frame edge, unless the
+    // stage's edge fade dissolves that edge; and the must-read itself must stay clear of any edge fade
+    const E=(S&&S.edge)||{},blk=window.blockLines(d.slot,d.sel,d.last)||[];let sliced=null;
+    for(const q of blk){const cr=q[2]-L.W,cl=-q[0];if(cr>0.5&&q[0]<L.W&&!(E.r&&E.r.o>=Math.min(1,cr/8)-0.02)){sliced="right";break;}if(cl>0.5&&q[2]>0&&!(E.l&&E.l.o>=Math.min(1,cl/8)-0.02)){sliced="left";break;}}
+    const inBand=!!((E.r&&E.r.o>0.05&&b.x1>L.W-E.r.w)||(E.l&&E.l.o>0.05&&b.x0<E.l.w));
+    out.device.push({id:d.id,words:d.words,role:d.role,o,busy:false,box:[b.x0,b.y0,b.x1,b.y1],px:b.fs*b.scale,cap,vis:b.vis,sliced,inBand});
   }
   // editions and stored themes
   if(!spec.only||spec.only==="themes")for(const f of document.querySelectorAll("iframe")){try{const d=f.contentDocument;if(d&&d.documentElement&&d.location.href!=="about:blank")out.themes[f.name]=d.documentElement.dataset.theme;}catch(e){}}
   try{const v=localStorage.getItem("tbc-theme");if(v)out.stored="A:"+v;}catch(e){}
+  out.tripCards={};if(!spec.only||spec.only==="themes")for(const f of document.querySelectorAll("iframe")){try{const d=f.contentDocument;const e=d&&d.querySelector("[data-trip-card-next]");if(e)out.tripCards[f.name]=e.textContent.replace(/\s+/g," ").trim();}catch(e){}}
   // the name guard and forbidden strings, in the visible part of each visible device
   const gre=spec.guard.length?new RegExp("(?:^|[^A-Za-z])("+spec.guard.join("|")+")(?![A-Za-z])"):null;
   const fre=new RegExp("("+spec.forbidden.map((s)=>s.replace(/[.*+?^$(){}|[\]\\]/g,"\\$&")).join("|")+")");

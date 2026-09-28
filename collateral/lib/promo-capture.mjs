@@ -51,8 +51,8 @@ export function serve(siteDir, { texDir, pathPrefix = "/visit-tampa-bay/", port 
 export const MOTION_OFF = "*,*::before,*::after{transition:none!important;animation:none!important;caret-color:transparent!important}";
 
 /** A context for one cut. W0 is the installed clock's start; slots load while it is paused one whole minute earlier. */
-export async function newContext(browser, { width, height, originA, clockAt }) {
-  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1, reducedMotion: "reduce", colorScheme: "dark" });
+export async function newContext(browser, { width, height, originA, clockAt, dsf = 1 }) {
+  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: dsf, reducedMotion: "reduce", colorScheme: "dark" });
   await ctx.grantPermissions(["clipboard-read", "clipboard-write"], { origin: originA });
   await ctx.addInitScript((css) => {
     const add = () => { const s = document.createElement("style"); s.setAttribute("data-promo", "motion-off"); s.textContent = css; (document.head || document.documentElement).appendChild(s); };

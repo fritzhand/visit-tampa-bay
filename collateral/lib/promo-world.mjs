@@ -154,11 +154,19 @@ export function neatline(meta) {
   return { lat: fix(lat), lng: fix(lng) };
 }
 
+/** Stage-only label placement (basemap units; the site's own map is untouched): at the stage's hero scale the site's
+ *  placement collides. "Tampa Bay" sat on "ST. PETERSBURG", the gold coast stroke of the Night hook crossed the "CL" of
+ *  "CLEARWATER", and "Boca Ciega Bay" lay under the phone at Fort De Soto (review, round 2). On the end cards the
+ *  downtown dots and the course line covered "ST. PETERSBURG": it moves north-west onto the peninsula's open land, the
+ *  clearest spot within 60 units (2 dots under it, 23 units from the course; review round 3). */
+export const STAGE_LABELS = { hide: ["Boca Ciega Bay"], nudge: { "Tampa Bay": [30, 10], "Clearwater": [14, 2], "St. Petersburg": [-40, -52] } };
+
 /** The label set baked into the textures (plan.md §4.2): water names minZoom ≤ 1.6, towns minZoom ≤ 1. */
 export function textureLabels(root, meta) {
   const m = JSON.parse(fs.readFileSync(path.join(root, "data", "map.json"), "utf8"));
   return m.labels.filter((l) => (l.kind === "water" && l.minZoom <= 1.6) || ((l.kind === "city" || l.kind === "town") && l.minZoom <= 1))
-    .map((l) => { const [x, y] = project(l.lat, l.lng, meta); return { text: l.text, kind: l.kind, x, y }; });
+    .filter((l) => !STAGE_LABELS.hide.includes(l.text))
+    .map((l) => { const [x, y] = project(l.lat, l.lng, meta); const [dx, dy] = STAGE_LABELS.nudge[l.text] || [0, 0]; return { text: l.text, kind: l.kind, x: x + dx, y: y + dy }; });
 }
 
 /** Render (or reuse) every texture. Returns { dir, files: { "WB-dark": "…png", … }, hash }. */

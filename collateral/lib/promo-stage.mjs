@@ -50,25 +50,32 @@ export const LAYOUT = {
   reel: {
     W: 1080, H: 1920, P: 2600, ox: 540, oy: 960,
     frame: { x0: 32, x1: 1048, top: 280 }, ribbon: { cx: 540, top: 250, h: 60, font: 28, track: "0.18em" },
-    hook: { wmW: 560, wmTop: 340, tagTop: 490, tagSize: 44, tagW: 936, clockTop: 634, clockSize: 28, cx: 540 },
+    // the hook: the wordmark's "TAMPA BAY" eyebrow is set apart and 1.8× larger (it read at 13 px cap height on a phone),
+    // and a legend names the six sheets as their badges land
+    hook: { ebW: 560, ebTop: 330, wmW: 560, wmTop: 362, tagTop: 480, tagSize: 44, tagW: 936, clockTop: 604, clockSize: 28, cx: 540,
+      legend: { x: 72, w: 936, top: 650, rowH: 44, size: 26, cols: 3, glyph: [48, 28], gap: 30 } },
     chrono: { x: 72, top: 318, size: 128, mer: 40 }, date: { right: 1000, top: 346, size: 28 },
     mirror: { right: 1000, top: 392, h: 58, size: 44 }, log: { x: 72, w: 936, top: 484, size: 46, big: 52, lh: 1.15 },
-    foot: { x: 72, w: 936, top: 606, size: 24 },
+    foot: { x: 72, w: 936, top: 606, size: 30 },
     end: { wmW: 440, wmTop: 318, cx: 540, counts: { top: 460, h: 200, x0: 48, x1: 1032, num: 88, label: 24, rows: false } },
-    plate: { x0: 64, x1: 1016, y0: 1096, y1: 1436, url: { top: 1130, size: 44 }, ind: { top: 1206, size: 34, w: 860 }, src: { top: 1310, size: 30 }, attr: { top: 1364, size: 20, w: 820 } },
-    mist: 300, typedLink: { x: 72, top: 600, size: 24 },
+    // the address panel over the chart's empty north (Pasco, north Pinellas), so the course through the three stops stays in view
+    plate: { x0: 64, x1: 1016, y0: 756, y1: 1100, url: { top: 782, size: 44 }, ind: { top: 850, size: 40, w: 920 }, src: { top: 972, size: 30 }, attr: { top: 1026, size: 20, w: 820 } },
+    mist: 300, typedLink: { x: 72, top: 588, size: 30 },
   },
   wide: {
     W: 1920, H: 1080, P: 2400, ox: 1320, oy: 540,
     frame: { x0: 32, x1: 712, top: 80, bottom: 1012 }, ribbon: { cx: 372, top: 52, h: 56, font: 26, track: "0.2em" },
-    hook: { wmW: 540, wmTop: 146, tagTop: 300, tagSize: 40, tagW: 568, clockTop: 476, clockSize: 24, cx: 372 },
-    chrono: { x: 96, top: 140, size: 150, mer: 44 }, date: { right: 664, top: 120, size: 26 },
+    hook: { ebW: 500, ebTop: 136, wmW: 540, wmTop: 168, tagTop: 292, tagSize: 40, tagW: 540, clockTop: 466, clockSize: 24, cx: 372,
+      legend: { x: 96, w: 568, top: 540, rowH: 68, size: 30, cols: 1, glyph: [58, 34], gap: 0 } },
+    chrono: { x: 96, top: 156, size: 150, mer: 44 }, date: { right: 664, top: 120, size: 26 },
     mirror: { right: 664, top: 310, h: 60, size: 44 }, log: { x: 96, w: 568, top: 400, size: 52, big: 52, lh: 60 / 52 },
     foot: { x: 96, w: 568, top: 670, size: 24 },
     dayRule: { x0: 96, x1: 664, top: 770, h: 70 }, rowE: { x: 96, w: 568, top: 876, size: 24 },
-    end: { wmW: 440, wmTop: 120, cx: 372, counts: { top: 266, h: 340, x0: 96, x1: 664, num: 80, label: 26, rows: true }, src: { top: 640, size: 32 }, about: { top: 700, size: 30, w: 568 } },
-    plate: { x0: 780, x1: 1780, y0: 696, y1: 964, url: { top: 722, size: 44 }, ind: { top: 792, size: 30, w: 900 }, attr: { top: 884, size: 20, w: 860 } },
-    mist: 0, typedLink: { x: 96, top: 660, size: 22, w: 568 },
+    end: { wmW: 440, wmTop: 120, cx: 372, counts: { top: 266, h: 340, x0: 96, x1: 664, num: 80, label: 26, rows: true }, src: { top: 640, size: 32 }, about: { top: 700, size: 30, w: 568 },
+      attr: { top: 900, size: 20, w: 568 } },
+    // the address panel under the chart (the chart ends above it at the end card), the attribution in the left panel
+    plate: { x0: 850, x1: 1790, y0: 784, y1: 986, url: { top: 806, size: 44 }, ind: { top: 872, size: 30, w: 880 } },
+    mist: 0, typedLink: { x: 96, top: 652, size: 28, w: 568 },
   },
 };
 
@@ -77,6 +84,13 @@ export function stageHtml(d) {
   const L = LAYOUT[d.cut], W = L.W, H = L.H;
   const brand = `${d.base}assets/img/brand/brand.svg`;
   const wm = (id, w) => `<svg id="${id}" class="wm-art" viewBox="0 -2 544.2 132" style="width:${w}px;height:${(w * 132 / 544.2).toFixed(1)}px" role="img" aria-label="${d.words.siteName}"><use href="${brand}#wm"/></svg>`;
+  // the brand's wordmark in two crops of its own symbol: the eyebrow ("TAMPA BAY" between its diamonds) and the word
+  const crop = (id, w, vb, label) => { const [, , vw, vh] = vb; return `<svg id="${id}" class="wm-art" viewBox="${vb.join(" ")}" style="width:${w}px;height:${(w * vh / vw).toFixed(1)}px;display:block;margin:0 auto" ${label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"'}><use href="${brand}#wm" x="0" y="-2" width="544.2" height="132"/></svg>`; };
+  const EB = [118, -1.5, 308, 15], WORD = [0, 16, 544.2, 106];
+  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const LG = L.hook.legend, per = LG.cols;
+  const lgItems = d.badges.map((b) => `<span class="lg-i" id="lg-${b.id}" data-read="${1 + b.name.split(/\s+/).length}" data-role="texture" data-zone="free" data-id="legend-${b.id}" style="font-size:${LG.size}px"><svg viewBox="0 0 44 26" style="width:${LG.glyph[0]}px;height:${LG.glyph[1]}px" aria-hidden="true"><use href="#b-${b.id}"/></svg><span>${esc(b.name)}</span></span>`);
+  const lgRows = []; for (let i = 0; i < lgItems.length; i += per) lgRows.push(`<div class="lg-row" style="height:${LG.rowH}px;gap:${LG.gap}px;justify-content:${per > 1 ? "center" : "flex-start"}">${lgItems.slice(i, i + per).join("")}</div>`);
   const phoneSlots = Object.keys(d.slotsA).map((s) => `<iframe name="${s}" id="f-${s}" src="about:blank" title="${s}"></iframe>`).join("");
   const lapSlots = Object.keys(d.slotsB || {}).map((s) => `<iframe name="${s}" id="f-${s}" src="about:blank" title="${s}"></iframe>`).join("");
   const K = L.end.counts, nC = d.counts.length;
@@ -94,7 +108,7 @@ body{font-family:var(--font-body);color:var(--text)}
 #stage svg{max-width:none}
 .abs{position:absolute;left:0;top:0}
 canvas{position:absolute;left:0;top:0;width:${W}px;height:${H}px}
-#eng{position:absolute;left:0;top:0;overflow:visible}
+#eng{position:absolute;left:0;top:0;overflow:hidden}
 #eng path{fill:none;stroke:var(--map-coast);stroke-linecap:round;stroke-linejoin:round}
 #eng path.wl{stroke:var(--map-water-line)}
 /* stop symbols: the site's chart symbols on a pin disc with the sheet's keyline */
@@ -127,8 +141,9 @@ canvas{position:absolute;left:0;top:0;width:${W}px;height:${H}px}
 .key{position:absolute;width:4px;border-radius:2px}
 .key.l{left:-2.5px;background:${DEVICE.keyL}}.key.r{right:-2.5px;background:${DEVICE.keyR}}
 /* the running head: the site's label frame at poster scale */
-#rosefg{z-index:3}#arc{z-index:4}#laptop{z-index:5}
-#mist{z-index:6;position:absolute;left:0;top:0;width:${W}px;height:${L.mist}px;background:linear-gradient(var(--bg) 0 93%,transparent)}
+#rosefg{z-index:3}#arc{z-index:4}#lclip{z-index:5}
+#lclip{position:absolute;left:0;top:0;width:${W}px;height:${H}px;pointer-events:none;clip-path:inset(0 0 0 ${L.frame.x1 + 8}px)}
+#mist{z-index:6;position:absolute;left:0;top:0;width:${W}px;height:${L.mist}px;background:linear-gradient(var(--bg) 0 calc(100% - 22px),transparent)}
 #head{z-index:7;position:absolute;left:0;top:0;width:${W}px;height:${H}px;pointer-events:none}
 #plate{z-index:8}#credit{z-index:9}#cursor{z-index:10}#cring{z-index:10}#tap{z-index:11}
 #frame{position:absolute;left:${L.frame.x0}px;top:${L.frame.top}px;width:${L.frame.x1 - L.frame.x0}px;height:400px;box-sizing:border-box;
@@ -149,19 +164,30 @@ canvas{position:absolute;left:0;top:0;width:${W}px;height:${H}px}
 .hk,.st,.en{position:absolute;left:0;top:0;width:${W}px}
 .wm-art{display:block;color:var(--text);--wordmark-accent:var(--accent)}
 .lbl{font-family:var(--font-label);font-stretch:108%;font-weight:680;text-transform:uppercase;letter-spacing:var(--track-label);color:var(--text-muted);white-space:nowrap;font-variant-numeric:tabular-nums lining-nums}
-.tag{position:absolute;left:0;width:${W}px;text-align:center;font-family:var(--font-display);font-style:italic;font-weight:540;line-height:1.2;color:var(--text);white-space:nowrap}
+.tag{position:absolute;left:0;width:${W}px;text-align:center;font-family:var(--font-display);font-style:italic;font-weight:540;line-height:1.2;color:var(--text);white-space:nowrap;text-wrap:balance}
 #chrono{position:absolute;display:flex;align-items:baseline;font-family:var(--font-display);font-weight:800;font-variant-numeric:tabular-nums lining-nums;color:var(--text);line-height:1;white-space:nowrap}
-.col{display:inline-block;position:relative;overflow:hidden;vertical-align:baseline;height:1.12em;text-align:center}
+.col{display:inline-block;position:relative;overflow:hidden;vertical-align:baseline;height:1.12em;text-align:center;clip-path:inset(0.08em 0 0.16em 0)}
+#mer .col{clip-path:inset(0.15em 0 0.16em 0)}
 .col i{display:block;font-style:normal;height:1.12em;line-height:1.12em}
 .col .strip{display:block}
 #mer{font-family:var(--font-label);font-stretch:108%;font-weight:680;letter-spacing:var(--track-label);margin-left:.34em;color:var(--text)}
 #mirror{position:absolute;display:flex;justify-content:flex-end}
 #mirror span{display:inline-flex;align-items:center;box-sizing:border-box;height:${L.mirror.h}px;padding:0 18px;border:2px solid transparent;border-radius:3px;
   font-family:var(--font-label);font-stretch:108%;font-weight:680;font-size:${L.mirror.size}px;letter-spacing:var(--track-label);text-transform:uppercase;white-space:nowrap}
-#log{position:absolute;font-family:var(--font-display);font-style:italic;font-weight:540;color:var(--text);transform-origin:0 50%}
+#log{position:absolute;font-family:var(--font-display);font-style:italic;font-weight:540;color:var(--text);transform-origin:0 50%;text-wrap:balance}
 #log.title{font-style:normal;font-weight:700}
-#foot{position:absolute;font-size:${L.foot.size}px;font-stretch:100%;letter-spacing:.04em}
-#typed{position:absolute;font-family:var(--font-body);font-weight:500;color:var(--text-muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+#foot{position:absolute;font-size:${L.foot.size}px;font-stretch:100%;letter-spacing:.04em;text-wrap:balance}
+#typed{position:absolute;font-family:var(--font-body);font-weight:500;color:var(--text-muted);white-space:nowrap;font-variant-numeric:tabular-nums;line-height:1.25}
+.lg-row{display:flex;align-items:center}
+.lg-i{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-body);font-weight:600;color:var(--text);white-space:nowrap;line-height:1}
+.lg-i svg{display:block;flex:none;overflow:visible}
+#edge{z-index:6;position:absolute;left:0;top:0;width:${W}px;height:${H}px;pointer-events:none;overflow:hidden}
+#edge i{position:absolute;display:none}
+#edL{left:0;top:0;height:${H}px;background:linear-gradient(to right,var(--bg) 0 8%,transparent)}
+#edR{right:0;top:0;height:${H}px;background:linear-gradient(to left,var(--bg) 0 8%,transparent)}
+#edT{top:0;background:linear-gradient(to bottom,var(--bg) 0 12%,transparent)}
+#edB{background:linear-gradient(to bottom,transparent 0,var(--bg) 72px)}
+#endattr{position:absolute;font-family:var(--font-body);font-weight:400;color:var(--text-faint);line-height:1.3;text-align:center}
 #typed b{font-weight:500;color:var(--link)}
 .cnt{position:absolute;text-align:center}
 .cnt .n{display:block;font-family:var(--font-display);font-weight:800;font-variant-numeric:lining-nums tabular-nums;line-height:1;color:var(--text)}
@@ -231,12 +257,14 @@ html[data-theme="dark"] #lbar .pill{background:${DEVICE.pillDark}}
 <div class="toolbar"><div class="addr">${lockSvg}<span>${d.words.host}</span></div><div class="homebar"></div></div></div></div></div></div></div></div>
 <div id="rosefg" style="display:none"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="${brand}#compass"/></svg></div>
 <svg id="arc" width="${W}" height="${H}" aria-hidden="true"><path id="arcp"/><path id="arch"/></svg>
-<div id="laptop"><div id="lbody"><div id="lid"></div><div id="hinge"></div><div id="deck"></div></div><div id="lscreen"><div id="lbar"><span class="dots"><i></i><i></i><i></i></span><span class="pill">${lockSvg}<span id="lurl"></span></span></div>${lapSlots}</div></div>
+<div id="lclip"><div id="laptop"><div id="lbody"><div id="lid"></div><div id="hinge"></div><div id="deck"></div></div><div id="lscreen"><div id="lbar"><span class="dots"><i></i><i></i><i></i></span><span class="pill">${lockSvg}<span id="lurl"></span></span></div>${lapSlots}</div></div></div>
+<div id="edge"><i id="edL"></i><i id="edR"></i><i id="edT"></i><i id="edB"></i></div>
 <div id="mist"></div>
 <div id="head">
   <div id="frame"></div>
   <div class="hk" id="hook">
-    <div class="abs" style="left:${L.hook.cx - L.hook.wmW / 2}px;top:${L.hook.wmTop}px" id="hk-wmw" data-read="1" data-role="must" data-id="wordmark">${wm("hk-wm", L.hook.wmW)}</div>
+    <div class="abs" style="left:${L.hook.cx - L.hook.wmW / 2}px;top:${L.hook.ebTop}px;width:${L.hook.wmW}px" id="hk-wmw" data-read="1" data-role="must" data-id="wordmark">${crop("hk-eb", L.hook.ebW, EB, null)}<div style="height:${(L.hook.wmTop - L.hook.ebTop - L.hook.ebW * EB[3] / EB[2]).toFixed(1)}px"></div>${crop("hk-wm", L.hook.wmW, WORD, d.words.siteName)}</div>
+    <div class="abs" id="hk-legend" style="left:${LG.x}px;top:${LG.top}px;width:${LG.w}px">${lgRows.join("")}</div>
     <div class="abs" id="hk-tags" style="left:${L.hook.cx - L.hook.tagW / 2}px;top:${L.hook.tagTop}px;width:${L.hook.tagW}px">
       <div class="tag" id="hk-t1" data-read="${d.words.tag1.split(/\s+/).length}" data-role="must" data-id="tagline-1" style="position:relative;width:auto;white-space:normal;font-size:${L.hook.tagSize}px">${d.words.tag1}</div>
       <div class="tag" id="hk-t2" data-read="${d.words.tag2.split(/\s+/).length}" data-role="secondary" data-id="tagline-2" style="position:relative;width:auto;white-space:normal;font-size:${L.hook.tagSize}px">${d.words.tag2}</div>
@@ -249,7 +277,7 @@ html[data-theme="dark"] #lbar .pill{background:${DEVICE.pillDark}}
     <div id="mirror" data-read="3" data-role="must" data-id="mirror" style="left:auto;right:${W - L.mirror.right}px;top:${L.mirror.top}px"><span id="mirt"></span></div>
     <div id="log" data-role="must" style="left:${L.log.x}px;top:${L.log.top}px;width:${L.log.w}px;font-size:${L.log.size}px;line-height:${L.log.lh}"></div>
     <div id="foot" class="lbl" data-role="secondary" data-id="footnote" style="left:${L.foot.x}px;top:${L.foot.top}px;width:${L.foot.w}px;white-space:normal;line-height:1.25"></div>
-    <div id="typed" data-read="3" data-role="texture" data-zone="free" data-id="typed-link" style="left:${L.typedLink.x}px;top:${L.typedLink.top}px;font-size:${L.typedLink.size}px;${L.typedLink.w ? `width:${L.typedLink.w}px;white-space:normal;word-break:break-all;line-height:1.3` : ""}"></div>
+    <div id="typed" data-read="3" data-role="secondary" data-id="typed-link" style="left:${L.typedLink.x}px;top:${L.typedLink.top}px;font-size:${L.typedLink.size}px"></div>
     ${d.cut === "wide" ? `<div id="dayrule" style="left:${L.dayRule.x0}px;top:${L.dayRule.top}px;width:${L.dayRule.x1 - L.dayRule.x0}px;height:${L.dayRule.h}px"></div>
     <div id="rowE" data-read="5" data-role="secondary" data-id="row-e" style="left:${L.rowE.x}px;top:${L.rowE.top}px;width:${L.rowE.w}px"></div>` : ""}
   </div>
@@ -258,6 +286,7 @@ html[data-theme="dark"] #lbar .pill{background:${DEVICE.pillDark}}
     <div id="counts" data-read="${countWords}" data-role="must" data-id="counts">${counts}</div>
     ${d.cut === "wide" ? `<div id="endsrc" data-read="6" data-role="secondary" data-id="end-sourced" style="left:${L.frame.x0}px;width:${L.frame.x1 - L.frame.x0}px;top:${L.end.src.top}px;font-size:${L.end.src.size}px">${d.words.sourced}</div>
     <div id="about" data-read="${d.words.aboutLine.split(/\s+/).length}" data-role="secondary" data-id="about-line" style="left:${L.end.cx - L.end.about.w / 2}px;width:${L.end.about.w}px;top:${L.end.about.top}px;font-size:${L.end.about.size}px;line-height:1.3">${d.words.aboutLine}</div>` : ""}
+    ${L.end.attr ? `<div id="endattr" data-read="8" data-role="texture" data-zone="free" data-id="attribution" style="left:${L.end.cx - L.end.attr.w / 2}px;width:${L.end.attr.w}px;top:${L.end.attr.top}px;font-size:${L.end.attr.size}px">${d.words.attribution}</div>` : ""}
   </div>
   <div id="ribbon"><div class="rbw"><i class="tl"></i><i class="tr"></i><span id="rbt" data-read="4" data-role="secondary" data-id="ribbon"></span></div></div>
 </div>
@@ -265,7 +294,7 @@ html[data-theme="dark"] #lbar .pill{background:${DEVICE.pillDark}}
   <div class="ln" style="top:${L.plate.url.top - L.plate.y0}px"><div id="purl" data-read="3" data-role="must" data-id="url" style="font-size:${L.plate.url.size}px"><span>${d.words.url}</span></div></div>
   <div class="ln" style="top:${L.plate.ind.top - L.plate.y0}px"><div id="pind" data-read="${d.words.independence.split(/\s+/).length}" data-role="must" data-id="independence" style="font-size:${L.plate.ind.size}px;width:${L.plate.ind.w}px">${d.words.independenceHtml}</div></div>
   ${L.plate.src ? `<div class="ln" style="top:${L.plate.src.top - L.plate.y0}px"><div id="psrc" data-read="6" data-role="secondary" data-id="plate-sourced" style="font-size:${L.plate.src.size}px">${d.words.sourced}</div></div>` : ""}
-  <div class="ln" style="top:${L.plate.attr.top - L.plate.y0}px"><div id="pattr" data-read="8" data-role="texture" data-zone="free" data-id="attribution" style="font-size:${L.plate.attr.size}px;width:${L.plate.attr.w}px">${d.words.attribution}</div></div>
+  ${L.plate.attr ? `<div class="ln" style="top:${L.plate.attr.top - L.plate.y0}px"><div id="pattr" data-read="8" data-role="texture" data-zone="free" data-id="attribution" style="font-size:${L.plate.attr.size}px;width:${L.plate.attr.w}px">${d.words.attribution}</div></div>` : ""}
 </div>
 <div id="credit" data-zone="free"></div>
 <svg id="cursor" viewBox="0 0 34 48" aria-hidden="true"><path d="M3 2 L3 38 L12 30 L18 45 L25 42 L19 28 L31 28 Z" fill="${DEVICE.cursorFill}" stroke="${DEVICE.cursorEdge}" stroke-width="2.5" stroke-linejoin="round"/></svg>
@@ -339,10 +368,14 @@ function drawGL(st){
   const sweep=g.termMode>=2,nightC=g.termMode===1?1:0,mode=g.termMode===2?1:g.termMode===3?2:0;
   const bg=sweep?(g.termMode===2?bgD:bgN):(nightC?bgN:bgD);
   gl.disable(gl.BLEND);gl.clearColor(bg[0],bg[1],bg[2],1);gl.clear(gl.COLOR_BUFFER_BIT);
-  const uni={nightC,termX:g.termX,bias:g.dof||0,grade:g.grade||0,gradeInk:rgbOfTheme("light","--gold-tint"),paperD:bgD,paperN:bgN};
+  const uni={nightC,termX:g.termX,bias:g.dof||0,grade:g.grade||0,gradeInk:rgbOfTheme("light",g.gradeTok||"--gold-tint"),paperD:bgD,paperN:bgN};
   const ed=(lvl,night)=>lvl+(night?"-dark":"-light");
-  const k=cam.s*D.UNIT;const wbw=cam.pitch<8?1-Math.min(1,Math.max(0,(k-1.3)/0.9)):0;
-  const P=D.PAPER,geo=[P.x0-600,P.y0-600,P.x1+600,P.y1+600],paper={x0:P.x0,y0:P.y0,x1:P.x1,y1:P.y1};
+  // the whole-bay level and L0 place their labels apart: a slow crossfade doubled every label (review round 3), so the
+  // switch between them is a cut (two frames at most)
+  const k=cam.s*D.UNIT;const wbw=cam.pitch<8?1-Math.min(1,Math.max(0,(k-1.7)/0.08)):0;
+  // the paper's surround: far enough out that the clear color never shows in a top-down view (review round 3: at the 16:9
+  // sunset the surround beyond this quad flipped to Night in one frame while the sweep was halfway across the paper)
+  const ext=cam.pitch<20?6000:600,P=D.PAPER,geo=[P.x0-ext,P.y0-ext,P.x1+ext,P.y1+ext],paper={x0:P.x0,y0:P.y0,x1:P.x1,y1:P.y1};
   const lvl=wbw>=0.5?"WB":"L0";
   if(sweep) glPass("t"+mode,geo,paper,ed(lvl,0),ed(lvl,1),uni);
   else if(nightC&&g.fillMix>0&&wbw>=0.5) g.fillMix>=0.999?glPass("o0",geo,paper,"WB-dark-fill",null,uni):glPass("t0",geo,paper,"WB-dark","WB-dark-fill",{...uni,w:g.fillMix});
@@ -383,6 +416,12 @@ window.slotRect=slotRect;
 function phoneBox(slot,sel,last,child){const r=slotRect(slot,sel,last,child);if(!r)return null;const M=phoneM();const cs=[[r.x,r.y],[r.x+r.w,r.y],[r.x,r.y+r.h],[r.x+r.w,r.y+r.h]].map(([u,v])=>vpToScreen(M,u,v));
   const xs=cs.map((c)=>c[0]),ys=cs.map((c)=>c[1]);const sc=Math.hypot(cs[1][0]-cs[0][0],cs[1][1]-cs[0][1])/Math.max(1,r.w);return {x0:Math.min(...xs),y0:Math.min(...ys),x1:Math.max(...xs),y1:Math.max(...ys),scale:sc,fs:r.fs,vis:r.y<D.PHONE.vp&&r.y+r.h>0};}
 window.phoneBox=phoneBox;
+/** every visible line box of a phone slot element, projected to the screen (the audit's frame-edge check) */
+window.blockLines=(slot,sel,last)=>{const doc=frameDoc(slot);if(!doc)return null;const els=doc.querySelectorAll(sel);const e=last?els[els.length-1]:els[0];if(!e)return null;
+  const M=phoneM(),out=[],tw=doc.createTreeWalker(e,NodeFilter.SHOW_TEXT),rg=doc.createRange();
+  for(let n=tw.nextNode();n;n=tw.nextNode()){if(!n.textContent.trim()||n.parentElement.closest(".sr-only"))continue;rg.selectNodeContents(n);
+    for(const q of rg.getClientRects()){if(q.width<.5||q.bottom<0||q.top>D.PHONE.vp)continue;const ym=(q.top+q.bottom)/2,a=vpToScreen(M,q.left,ym),b=vpToScreen(M,q.right,ym),ya=vpToScreen(M,q.left,q.top)[1],yb=vpToScreen(M,q.left,q.bottom)[1];out.push([Math.min(a[0],b[0]),Math.min(ya,yb),Math.max(a[0],b[0]),Math.max(ya,yb)]);}}
+  return out;};
 /* ---------- the engraving (S1) ---------- */
 function drawEngraving(st){
   const e=$("eng");
@@ -390,6 +429,7 @@ function drawEngraving(st){
   e.style.display="block";
   const c=st.cam,k=c.s*D.UNIT;             // screen px per unit (pitch 0, yaw 0 in S1)
   e.style.left=(c.Cx-c.s*c.X)+"px";e.style.top=(c.Cy-c.s*c.Y)+"px";e.setAttribute("width",1000*k);e.setAttribute("height",1118*k);
+  e.style.transformOrigin=(c.s*c.X)+"px "+(c.s*c.Y)+"px";e.style.transform=c.yaw?"rotate("+c.yaw+"deg)":"none";   // the hook turns the chart to north
   e.style.opacity=st.engrave.o;
   for(const p of e.querySelectorAll("path")){const len=+p.dataset.len,q=p.classList.contains("wl1")?st.engrave.p1:p.classList.contains("wl2")?st.engrave.p2:st.engrave.p;
     p.style.strokeDasharray=len+" "+len;p.style.strokeDashoffset=String(len*(1-q));p.style.display=q<=0?"none":"";}
@@ -464,14 +504,15 @@ function drawHead(st){
   fx(rb,{o:h.ribbon.o??1});
   // hook
   fx($("hook"),h.hook?{o:1}:null);
-  if(h.hook){fx($("hk-wmw"),h.hook.wm);fx($("hk-t1"),h.hook.t1);fx($("hk-t2"),h.hook.t2);fx($("hk-clock"),h.hook.clock);setText($("hk-clock"),h.hook.clockText||"");}
+  if(h.hook){fx($("hk-wmw"),h.hook.wm);fx($("hk-t1"),h.hook.t1);fx($("hk-t2"),h.hook.t2);fx($("hk-clock"),h.hook.clock);setText($("hk-clock"),h.hook.clockText||"");
+    const lg=h.hook.legend||{};for(const el of document.querySelectorAll(".lg-i"))fx(el,lg[el.id.slice(3)]||null);}
   // stops
   fx($("stops"),h.stops?{o:1}:null);
   if(h.stops){const s=h.stops;
     fx($("chrono"),s.chrono);if(s.chrono){col($("c-h"),s.chrono.h);col($("c-m1"),s.chrono.m1);col($("c-m2"),s.chrono.m2);col($("c-mer"),s.chrono.mer);$("chrono").dataset.busy=s.chrono.busy?"1":"";}
     fx($("date"),s.date);
     const mr=$("mirror");if(s.mirror&&s.mirror.o>0){fx(mr,s.mirror);const m=S.live&&S.live.mirror;if(m){const t=$("mirt");setText(t,m.text.toUpperCase());t.style.color=m.color;t.style.background=m.bg;t.style.borderColor=m.border;mr.dataset.busy=s.mirror.busy?"1":"";}}else fx(mr,null);
-    const lg=$("log");if(s.log&&s.log.o>0){if(lg.dataset.t!==s.log.text){lg.dataset.t=s.log.text;lg.innerHTML=s.log.html||s.log.text;}lg.className=s.log.style==="title"?"title":"";lg.style.fontSize=(s.log.size||L.log.size)+"px";lg.dataset.read=String(s.log.words);lg.dataset.id="log:"+s.log.id;lg.dataset.role=s.log.role||"must";fx(lg,s.log);}else{fx(lg,null);lg.removeAttribute("data-read");}
+    const lg=$("log");if(s.log&&s.log.o>0){if(lg.dataset.t!==s.log.text){lg.dataset.t=s.log.text;lg.innerHTML=s.log.html||s.log.text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/(\S+-\S+)/g,'<span style="white-space:nowrap">$1</span>');}lg.className=s.log.style==="title"?"title":"";lg.style.fontSize=(s.log.size||L.log.size)+"px";lg.dataset.read=String(s.log.words);lg.dataset.id="log:"+s.log.id;lg.dataset.role=s.log.role||"must";fx(lg,s.log);}else{fx(lg,null);lg.removeAttribute("data-read");}
     const ft=$("foot");if(s.foot&&s.foot.o>0){setText(ft,s.foot.text);ft.dataset.read=String(s.foot.words);ft.dataset.id="foot:"+s.foot.id;ft.dataset.role=s.foot.role||"secondary";fx(ft,s.foot);}else{fx(ft,null);ft.removeAttribute("data-read");}
     const ty=$("typed");if(s.typed&&s.typed.o>0){ty.innerHTML=s.typed.html;fx(ty,s.typed);}else fx(ty,null);
     if($("dayrule"))drawDayRule(s.dayRule);
@@ -479,7 +520,7 @@ function drawHead(st){
   }
   // end
   fx($("end"),h.end?{o:1}:null);
-  if(h.end){fx($("en-wm").parentElement,h.end.wm);fx($("counts"),h.end.counts);if($("endsrc"))fx($("endsrc"),h.end.src);if($("about"))fx($("about"),h.end.about);}
+  if(h.end){fx($("en-wm").parentElement,h.end.wm);fx($("counts"),h.end.counts);if($("endsrc"))fx($("endsrc"),h.end.src);if($("about"))fx($("about"),h.end.about);if($("endattr"))fx($("endattr"),h.end.attr);}
 }
 let dayRuleBuilt=false;
 function drawDayRule(dr){
@@ -497,14 +538,38 @@ function drawDayRule(dr){
 function drawPhone(st){
   const ph=st.phone,el=$("phone");
   if(!ph||!ph.on){el.style.display="none";return;}
-  el.style.display="block";el.style.transform=phoneCss(ph);
+  el.style.display="block";el.style.transform=phoneCss(ph);el.style.opacity=String(ph.o??1);
   setText($("ptime"),ph.time);
-  for(const f of $("vp").querySelectorAll("iframe")){const o=ph.slots[f.name]||0;if(o>0){f.classList.remove("park");f.style.opacity=String(o);f.style.zIndex=o>=1?"1":"2";}else{f.classList.add("park");f.style.opacity="0";}}
+  // page changes: a cut, or a horizontal push (both pages opaque, side by side); never a dissolve of two dense pages
+  for(const f of $("vp").querySelectorAll("iframe")){const o=ph.slots[f.name]||0,sh=ph.shift&&ph.shift[f.name];
+    if(o>0){f.classList.remove("park");f.style.opacity=String(o);f.style.zIndex=o>=1?"1":"2";f.style.transform=sh?"translateX("+sh.toFixed(2)+"px)":"";}else{f.classList.add("park");f.style.opacity="0";f.style.transform="";}}
+}
+/* ---------- edge fades: a phone page wider than the frame dissolves into its own paper instead of being sliced ---------- */
+/** how far (screen px) the phone's visible text crosses the left and right frame edges; null when the viewport fits */
+function phoneEdgeNeed(){
+  const ph=S.phone;if(!ph||!ph.on||(ph.o??1)<0.5)return null;
+  const M=phoneM(),a=vpToScreen(M,0,D.PHONE.vp/2),b=vpToScreen(M,D.PHONE.w,D.PHONE.vp/2);
+  if(Math.min(a[0],b[0])>=0&&Math.max(a[0],b[0])<=L.W)return null;
+  let cl=0,cr=0;
+  for(const f of $("vp").querySelectorAll("iframe")){if((ph.slots[f.name]||0)<0.3)continue;const doc=frameDoc(f.name);if(!doc||!doc.body)continue;const sh=(ph.shift&&ph.shift[f.name])||0;
+    const tw=doc.createTreeWalker(doc.body,NodeFilter.SHOW_TEXT),rg=doc.createRange();
+    for(let n=tw.nextNode();n;n=tw.nextNode()){const p=n.parentElement;if(!p||!n.textContent.trim()||p.closest(".sr-only"))continue;
+      rg.selectNodeContents(n);for(const q of rg.getClientRects()){if(q.width<.5||q.bottom<0||q.top>D.PHONE.vp)continue;
+        const x0=vpToScreen(M,q.left+sh,(q.top+q.bottom)/2)[0],x1=vpToScreen(M,q.right+sh,(q.top+q.bottom)/2)[0];
+        if(x0<0&&x1>0)cl=Math.max(cl,-x0);if(x1>L.W&&x0<L.W)cr=Math.max(cr,x1-L.W);}}}
+  return {cl,cr};
+}
+function drawEdges(e){e=e||{};
+  const set=(el,v,f)=>{if(!v||!(v.o>0)){el.style.display="none";return;}el.style.display="block";el.style.opacity=String(Math.min(1,v.o));f(el,v);};
+  set($("edL"),e.l,(el,v)=>{el.style.width=v.w+"px";el.style.top=(v.y0||0)+"px";el.style.height=((v.y1||L.H)-(v.y0||0))+"px";});
+  set($("edR"),e.r,(el,v)=>{el.style.width=v.w+"px";el.style.top=(v.y0||0)+"px";el.style.height=((v.y1||L.H)-(v.y0||0))+"px";});
+  set($("edT"),e.t,(el,v)=>{el.style.height=v.h+"px";el.style.left=(v.x0||0)+"px";el.style.width=((v.x1||L.W)-(v.x0||0))+"px";});
+  set($("edB"),e.b,(el,v)=>{el.style.top=v.y0+"px";el.style.height=Math.max(0,L.H-v.y0)+"px";el.style.left=(v.x0||0)+"px";el.style.width=((v.x1||L.W)-(v.x0||0))+"px";});
 }
 /* ---------- the laptop ---------- */
 function drawLaptop(st){
   const lp=st.laptop,el=$("laptop");
-  if(!lp||!lp.on){el.style.opacity="0";return;}   // transparent, in place: cross-origin slots must stay in the viewport or Chromium throttles them
+  if(!lp||!lp.on){el.style.opacity="0";el.style.clipPath="none";return;}   // transparent, in place: cross-origin slots must stay in the viewport or Chromium throttles them
 
   const k=lp.k,sw=D.LAPTOP.cssW*k,sh=D.LAPTOP.cssH*k,bz=D.LAPTOP.bezel*1.3*(k/0.72),barH=lp.bar?30*(k/0.72):0;
   const lid=$("lid");lid.style.left=(lp.sx-bz)+"px";lid.style.top=(lp.sy-bz-barH)+"px";lid.style.width=(sw+2*bz)+"px";lid.style.height=(sh+2*bz+barH)+"px";lid.style.borderRadius=(18*k/0.72)+"px";
@@ -513,9 +578,12 @@ function drawLaptop(st){
   for(const f of scr.querySelectorAll("iframe")){const o=lp.slots[f.name]||0;f.style.top=barH+"px";f.style.transform="scale("+k+")";if(o>0){f.classList.remove("park");f.style.opacity=String(o);}else{f.classList.add("park");f.style.opacity="0";}}
   const hg=$("hinge");hg.style.left=(lp.sx-bz+60*k/0.72)+"px";hg.style.top=(lp.sy+sh+bz)+"px";hg.style.width=(sw+2*bz-120*k/0.72)+"px";hg.style.height=(10*k/0.72)+"px";
   const dk=$("deck");dk.style.left=(lp.sx-bz-50*k/0.72)+"px";dk.style.top=(lp.sy+sh+bz+6*k/0.72)+"px";dk.style.width=(sw+2*bz+100*k/0.72)+"px";dk.style.height=(22*k/0.72)+"px";
-  const body=$("lbody");body.style.opacity=String(lp.bodyO??1);body.style.transformOrigin=lp.bodyOrigin||"0 0";body.style.transform=lp.bodyScale&&lp.bodyScale!==1?"scale("+lp.bodyScale+")":"none";
-  bar.style.opacity=String(lp.bodyO??1);
+  // the body is never faded: it is hidden while only the map's own chart shows (the dock match), then revealed opaque
+  const body=$("lbody");body.style.opacity="1";body.style.transform="none";body.style.visibility=lp.bodyOn===false?"hidden":"visible";
+  bar.style.opacity="1";bar.style.visibility=lp.bodyOn===false?"hidden":"visible";
+  scr.style.background=lp.screenBg===false?"transparent":"";
   scr.style.clipPath=lp.clip?"inset("+lp.clip.map((v)=>Math.max(0,v)+"px").join(" ")+")":"none";
+  el.style.clipPath=lp.iris?"inset("+lp.iris.map((v)=>v.toFixed(2)+"px").join(" ")+" round "+(lp.irisR||0).toFixed(1)+"px)":"none";
   el.style.opacity=String(lp.o??1);
   el.style.transform=lp.transform||"none";el.style.transformOrigin=lp.origin||"0 0";
 }
@@ -561,7 +629,10 @@ window.render=(st)=>{
   $("world").style.transform=camCss(st.cam);
   if(!st.noGL)drawGL(st);drawOverlay(st);drawEngraving(st);drawSyms(st);drawBadges(st);drawRose($("rose"),st.rose);drawRose($("rosefg"),st.rosefg);
   drawPhone(st);drawLaptop(st);
-  $("mist").style.opacity=String(st.mist??1);
+  // the Reel's edge fades follow the page: a side fades only while a line of the phone's text actually crosses that edge
+  if(st.edgeAuto){const n=phoneEdgeNeed(),e={...(st.edge||{})};if(n){if(n.cl>0)e.l={o:Math.min(1,n.cl/8),w:st.edgeAuto.l||72};if(n.cr>0)e.r={o:Math.min(1,n.cr/8),w:st.edgeAuto.r||150};}S.edge=e;}
+  drawEdges(S.edge);
+  $("mist").style.opacity=String(st.mist??1);$("mist").style.height=(st.mistH??L.mist)+"px";
   drawHead(st);
   const pl=$("plate");if(st.plate&&st.plate.o>0){pl.style.display="block";pl.style.opacity=st.plate.o;pl.style.transform="translateY("+(st.plate.dy||0)+"px)";}else pl.style.display="none";
   // the tap ripple: centered on the tapped element, projected through its device

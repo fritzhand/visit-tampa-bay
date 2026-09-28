@@ -1,0 +1,36 @@
+TAMPA BAY CHARTBOOK PROMO: SHARE COPY
+(the numbers were read from the data at render time; re-render before posting if the data changed)
+
+== Instagram (Reel, 9:16) ==
+One Saturday on Tampa Bay, run through a guide that shows its sources: sunrise at Fort De Soto Park, Ybor City Historic District, and the Riverwalk's Holiday Lighted Boat Parade at 6:15 PM on Dec 19. Tampa Bay Chartbook lists 641 places, 414 places to stay and 589 events on six sheets, each linked to the page that states it. Star what you want; share the day as one link.
+
+The phone and laptop in the video were set to automatic dark mode: the guide follows the device's setting, it does not switch at sunset by itself.
+
+Link in bio: fritzhand.github.io/visit-tampa-bay
+Independent guide. Not affiliated with any tourism office, venue or operator.
+#TampaBay #StPete #YborCity
+
+(Upload cover-9x16.jpg as the cover. The soundtrack is original: keep it, or lower it in the editor if you add a library track. Use neutral place tags only; never an official tourism tag or a team tag.)
+
+== LinkedIn (16:9 or 9:16) ==
+One Saturday on Tampa Bay, run through a guide that shows its sources: sunrise at Fort De Soto Park, Ybor City Historic District, and the Riverwalk's Holiday Lighted Boat Parade at 6:15 PM on Dec 19. Tampa Bay Chartbook lists 641 places, 414 places to stay and 589 events on six sheets, each linked to the page that states it. Star what you want; share the day as one link.
+
+How it is made: every record lives in data files with a source URL and the date it was checked, and the build fails on a record without its source URL. The video is the real site on an installed clock: a real date with its computed sunrise and sunset, real clicks, the site's own words.
+
+The phone and laptop in the video were set to automatic dark mode: the guide follows the device's setting, it does not switch at sunset by itself.
+
+fritzhand.github.io/visit-tampa-bay · Independent guide. Not affiliated with any tourism office, venue or operator.
+
+== YouTube (16:9) ==
+Title: One Saturday on Tampa Bay, in a guide that shows its sources
+
+One Saturday on Tampa Bay, run through a guide that shows its sources: sunrise at Fort De Soto Park, Ybor City Historic District, and the Riverwalk's Holiday Lighted Boat Parade at 6:15 PM on Dec 19. Tampa Bay Chartbook lists 641 places, 414 places to stay and 589 events on six sheets, each linked to the page that states it. Star what you want; share the day as one link.
+
+The phone and laptop in the video were set to automatic dark mode: the guide follows the device's setting, it does not switch at sunset by itself.
+
+Chapters:
+0:00 Morning on the bay: Fort De Soto Park and Ybor City Historic District
+0:19 Sunset and the Tampa Riverwalk Holiday Lighted Boat Parade
+0:31 One day, one link
+
+fritzhand.github.io/visit-tampa-bay · Independent guide. Not affiliated with any tourism office, venue or operator.

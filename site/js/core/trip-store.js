@@ -70,7 +70,8 @@ function nextLine(x, t) {
   // a long run is never "Now": before it opens, its first day; while it runs, its last day
   if (x.run) return x.s > t ? `Next: <b class="tnum">${esc(day)}</b> · ${esc(x.t)}` : `<b class="tnum">${esc(fmtThrough(x.ev.ed || x.day, today))}</b> · ${esc(x.t)}`;
   const when = x.f & 4 ? "all day" : x.f & 2 ? "time not listed" : fmtTime(nyParts(x.s).hhmm);
-  const lead = !(x.f & 6) && x.s <= t ? "Now" : "Next";
+  // the site's rule (lib/status.js): "Now" only when both ends are published; a started event with no end time is "Started"
+  const lead = x.s > t || x.f & 6 ? "Next" : x.f & 1 ? "Started" : "Now";
   return `${lead}: <b class="tnum">${esc(day)} · ${esc(when)}</b> · ${esc(x.t)}`;
 }
 let cardSeq = 0;
