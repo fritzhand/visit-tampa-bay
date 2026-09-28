@@ -158,16 +158,8 @@ every tap shows its result in words; the payoff is a word ("In 23 min" → "Star
 
 ## The render's audit
 
-- **9:16 Reel:** 1 failure(s):
-  - f645: the site contradicts the film's "“Started”, never “Now”": the sidebar trip card reads "Now: Today · 6:15 PM · Tampa Riverwalk Holiday Lighted Boat Parade" for an event with no end time (in fds, ybor, wo, trip; the card is never in frame). Fix nextLine() in site/js/core/trip-store.js (lead "Started", not "Now", when the end is not listed: flag 1), rebuild, re-render
-- **16:9:** 2 failure(s):
-  - f1065 add-all: the laptop's sidebar trip card reads "3 in My TripNow: Today · 6:15 PM · Tampa Riverwalk Holiday Lighted Boat Parade", contradicting the film's "“Started”, never “Now”" (site/js/core/trip-store.js nextLine)
-  - f885: the site contradicts the film's "“Started”, never “Now”": the sidebar trip card reads "Now: Today · 6:15 PM · Tampa Riverwalk Holiday Lighted Boat Parade" for an event with no end time (in fds, ybor, wo, trip, laptop map, laptop shared; the card is never in frame). Fix nextLine() in site/js/core/trip-store.js (lead "Started", not "Now", when the end is not listed: flag 1), rebuild, re-render
-
-**Before posting:** the live site contradicts the film's payoff line. The film never shows it (the laptop's sidebar card is
-out of frame), but a reader who stars the parade and opens the site on a laptop at 6:15 PM on Dec 19 would see "Now". The fix is one
-line in `site/js/core/trip-store.js` (`nextLine`: lead with "Started", not "Now", when the end time is not listed, flag 1), outside
-this folder. Rebuild the site, re-render (`node collateral/build-promo.mjs all`) and post only when this audit passes.
+- **9:16 Reel:** every check passed (reading times, safe zones, type floors, the name guard, forbidden strings, editions, the live words, the trip cards, fonts, loudness, determinism).
+- **16:9:** every check passed (reading times, safe zones, type floors, the name guard, forbidden strings, editions, the live words, the trip cards, fonts, loudness, determinism).
 
 ## Revisions
 
@@ -245,7 +237,7 @@ Round 1 (Sep 28, 2026), after two reviews:
 - **Sync.** The six sheet badges now land (full size, the squash, the rings) on the frames of their plucks (f60–f98); they used
   to land 5 frames (167 ms) after the sound.
 - **Payoff guard.** The audit now reads every device's sidebar trip card, in frame or not, and fails the render if it says
-  "Now" for the parade (no end time). It fails on this render: see "Before posting" above.
+  "Now" for the parade (no end time). It passes on this render.
 - **Clock.** Each odometer column is clipped to its own digits, so a rolling digit no longer shows over the date line.
 - **Sunset (Reel).** The table warms to gold from 13.5 s, the dusk sweeps across it from 15.0 to 15.5 s, then the devices and the
   running head flip in one frame, as in the 16:9.
