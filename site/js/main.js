@@ -24,6 +24,8 @@
      share({ title, text, url }) → "shared" | "copied" | "failed", copyText(text) → bool
      openEvent(id, { trigger, push }), openExperience(id, { trigger, push }), openSearch(trigger, q)
      download(text, filename, type)
+     consent            { state() → { id, choice, first: { action, reason }, loaded, open }, open(trigger) } (core/consent.js:
+                        Google Analytics only after a yes; the footer's [data-consent-open] button reopens the settings)
    Pages must be served over http(s) (npm run dev): ES modules do not load from file://.
    ============================================================ */
 import { ROOT, PAGE, $$ } from "./core/dom.js";
@@ -45,6 +47,7 @@ import { initLive } from "./core/live.js";
 import { initEventDialog, open as openEvent, download } from "./core/event-dialog.js";
 import { initExperienceDialog, open as openExperience } from "./core/experience-dialog.js";
 import { initFilters, mountFilter, getFilter } from "./core/filter.js";
+import { initConsent, consentState, openConsent } from "./core/consent.js";
 
 const app = {
   root: ROOT, page: PAGE, now, today, when, onTick, isSimulated, data: getJSON, store, pref,
@@ -53,6 +56,7 @@ const app = {
   status: { update: updateStatus, stateOf, statusOf },
   filter: { mount: mountFilter, get: getFilter },
   share, copyText, openEvent, openExperience, openSearch, download,
+  consent: { state: consentState, open: openConsent },
 };
 window.tbc = app; // handy in the console and for Playwright checks
 
@@ -70,6 +74,7 @@ safe("live", initLive);
 safe("event dialog", initEventDialog);
 safe("experience dialog", initExperienceDialog);
 safe("filters", initFilters);
+safe("consent", initConsent);
 
 // views: core-provided, page-specific, loaded on demand (views/trip.js renders My Trip into [data-trip-root])
 const views = document.querySelector('[data-trip-root]:not([data-trip-root="manual"])') ? [import("./views/trip.js").then((m) => m.initTripView()).catch((e) => console.error("[tbc] trip view failed", e))] : [];

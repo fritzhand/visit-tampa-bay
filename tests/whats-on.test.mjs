@@ -144,7 +144,7 @@ test("the map data file carries labels and the basemap credit", () => {
 test("trip.html: the page around the core's view", () => {
   assert.match(trip, /<div class="trip-root" data-trip-root><\/div>/);
   assert.match(trip, /<section class="trip-clash" data-trip-clash hidden/);
-  assert.match(trip, /Your list stays in this browser, on this device\. Nothing is sent anywhere/);
+  assert.match(trip, /Your list stays in this browser, on this device\. The list itself is never sent anywhere/);
   assert.match(trip, /<noscript>/);
   assert.match(trip, /data-features="whats-on"/);
   assert.match(trip, /data-trip-print/);

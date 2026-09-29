@@ -263,7 +263,8 @@ To add a component, export it from a factory in `build/components/*.mjs`; `build
 - **Partials:** `site/css/NN-name.css`, concatenated in name order into `assets/site.css`; `tokens.css` is served separately (its no-JS
   dark block is generated when missing). The lint fails on a color literal outside `tokens.css`, a `font-size` under 12px / 0.75rem, a badly
   named partial; it warns on an undefined `var(--x)`. **Today's partials are a mechanical port of Cincy Week's** (00-base 10-shell 20-content
-  40-events 50-map 80-dialogs 81-event-dialog 86-faq 90-pages 99-print) plus `21-records.css` (cards, plates, rows, heritage, timeline).
+  40-events 50-map 80-dialogs 81-event-dialog 86-faq 90-pages 99-print) plus `21-records.css` (cards, plates, rows, heritage, timeline)
+  and `15-consent.css` (the analytics question and the footer's `.footer-btn`, 2026-09-29).
   The design agent re-skins them. Suggested ranges for lane partials: 30 home, 31 region, 41 trip, 45 whats-on, 51 map page,
   55 things-to-do/outdoors/eat-drink, 60 experiences, 62 history, 64 passages, 70 stay, 72 areas, 74 detail pages, 76 visit, 85 about.
 - **Tokens:** `tokens.css` must define, in the light (`:root[data-theme="light"]`) and dark (`:root[data-theme="dark"]`) blocks,
@@ -326,6 +327,7 @@ app = {                                  // window.tbc in the console and in Pla
   filter: { mount(listEl, { tests, facets, items, root }) → controller, get(listEl) → controller | null },
   share({ title, text, url }) → "shared" | "copied" | "failed", copyText(text) → bool, download(text, filename, type),
   openEvent(id, { trigger, push = true }), openExperience(id, { trigger, push = true }), openSearch(trigger, q),
+  consent: { state() → { id, choice, first, loaded, open }, open(trigger) },   // 2026-09-29: analytics consent (core/consent.js)
 }
 ```
 - **Feature modules:** `export function init(app) {}` in `site/js/features/<name>.js`, listed in the page's `features` (the build fails on a
@@ -400,7 +402,11 @@ app = {                                  // window.tbc in the console and in Pla
 - **Clock:** `<html data-now>` (the boot script sets it from `?now=YYYY-MM-DDTHH:MM`, New York time, on localhost or with `tbc-debug=1`) makes
   `now()` start there and run forward.
 - **Storage keys** (all through `core/store.js`, try/catch, in-memory fallback): `tbc-theme` · `tbc-rail` · `tbc-trip` `{ v: 1, e, x, p, s, t }` ·
-  `tbc-prefs` `{ "<page>.<name>": value }` · `tbc-seen-shared` · `tbc-debug`. New keys start with `tbc-` and are documented in `core/store.js`
+  `tbc-prefs` `{ "<page>.<name>": value }` · `tbc-seen-shared` · `tbc-debug` · `tbc-consent` `{ v: 1, analytics: "granted" | "denied", t }`.
+- **Analytics consent** (`core/consent.js`, pure rules in `lib/consent.js`; added 2026-09-29, see the Changelog): with
+  `<meta name="tbc-analytics" content="G-…">` in the head it asks before Google Analytics loads (`section#consent.consent[role=region]
+  [aria-labelledby=consent-title][data-consent="ask"|"settings"]`, first in `<body>`), and every `[data-consent-open]` button reopens it
+  as settings. `app.consent = { state() → { id, choice, first: { action, reason }, loaded, open }, open(trigger) }`. New keys start with `tbc-` and are documented in `core/store.js`
   (`tests/client.test.mjs` fails otherwise).
 - **Classes the client adds** (for the CSS partials; tokens only): `.evd-sum .evd-cite .xd-media .xd-op .xd-status .xd-quote .xd-links
   .trip-summary .trip-actions .trip-gone .trip-group .trip-list .trip-item .is-removed .trip-shared`, `html.tbc-ready` once features ran,
@@ -610,3 +616,40 @@ keywords, `i` an image path.
   its quoted dates are "as each source states them". My Trip: "Find things to star" gives each Explore page's own count (Things to do,
   Beaches & outdoors with its campgrounds, Eat & drink: tests/whats-on.test.mjs compares them with the pages' result lines), and more
   than three overlapping pairs on a day fold behind "How far apart".
+- **2026-09-29 · Analytics consent** (additive; one crawler check tightened). Google Analytics 4 (`site.config.json analyticsId`,
+  now `G-EWSGXNE3L2`) loads only after the visitor's yes; before that no request goes to any Google host.
+  - **Shell** (`build/core/shell.mjs`): the `GA(id)` helper that printed the gtag.js `<script>` tags on every page is gone. With an
+    `analyticsId` the head carries `<meta name="tbc-analytics" content="G-…">` (after the description) and the footer's "This guide"
+    list adds `<a href="about.html#privacy">Privacy and analytics</a>` and `<button class="footer-btn js-only" type="button"
+    data-consent-open aria-expanded="false">Analytics settings</button>` (exported as `CONSENT_BUTTON`; never `href="#"`; hidden without
+    JS, which never loads analytics). Without an id: no meta tag, no button, and the list links `about.html#privacy` as "Privacy".
+  - **Crawler** (`build/core/crawl.mjs`): the googletagmanager exception is gone; it now **fails** any page with an external
+    `<script src>` (any host) and any inline, non-JSON-LD `<script>` that mentions googletagmanager, google-analytics, `gtag(` or
+    `dataLayer`.
+  - **Client**: `site/js/lib/consent.js` (pure; `tests/consent.test.mjs`): `CONSENT_KEY COPY parseChoice makeRecord isLocalHost qaForced
+    guardReason decide stateOf gtagSrc gtagCalls revokeCalls disableKey withoutHash gaCookieNames cookieDomains cookiePaths
+    expireCookies`. `decide({ id, stored, gpc, host, protocol, webdriver, simulated, qa })` → `{ action: "load" | "banner" | "none",
+    reason }`: no id → none; localhost / 127.x / [::1] / *.localhost / `file:` / `navigator.webdriver` / a simulated clock → none
+    (unless `?consent=show`, `qa`, which lifts only this guard); stored granted → load; stored denied → none; no choice +
+    `navigator.globalPrivacyControl === true` → none (no banner); else banner. `site/js/core/consent.js` (wired in `main.js` as
+    `safe("consent", initConsent)`): load = `gtag("consent", "default", { analytics_storage: "granted", ad_storage: "denied",
+    ad_user_data: "denied", ad_personalization: "denied" })`, `gtag("js", new Date())`, `gtag("config", id, { allow_google_signals:
+    false, allow_ad_personalization_signals: false, page_location: <URL without #> })`, then the async gtag.js script. Revoke =
+    `window["ga-disable-<id>"] = true`, `gtag("consent", "update", { analytics_storage: "denied" })` (when loaded), and every `_ga`,
+    `_ga_<container>`, `_gid`, `_gat*` cookie expired on the host-only, host and parent domains and on every ancestor path. A stored No
+    also sweeps leftover `_ga` cookies on load; a choice made in another tab (storage event) applies at once.
+  - **The region**: `section#consent.consent` (role region, labelled by `h2#consent-title`), inserted first in `<body>` (the first
+    thing a keyboard or screen reader meets), drawn fixed at the bottom: below 1024px full width on top of the dock, from 1024px a
+    392px card at the bottom left of the content column. It never takes focus on load and is not a focus trap; it hides with
+    `body.nav-open .modal-open .kb-open`, and `body.consent-open` pads the page by `--consent-h`. `.consent-kicker`, `.consent-title`
+    ("Count this visit?"), `.consent-state` (settings only: "Analytics is on." / "Analytics is off.", plus the GPC sentence when GPC
+    decided it), `.consent-text`, `.consent-actions` (two identical `.btn.consent-btn[data-consent-choice="granted"|"denied"]`:
+    "Allow analytics", "No thanks"), `.consent-foot` ("Privacy details" → `about.html#privacy`; settings add `[data-consent-close]`
+    "Close"). A choice stores `tbc-consent`, closes the region and toasts "Analytics on" / "Analytics off". The footer button opens it
+    as settings and moves focus to its title; Esc and Close (settings only) return focus to the button; Esc never makes a choice.
+  - **Pages**: about.html gains `section#privacy` ("Privacy and analytics", TOC item before Corrections; "Privacy" with no id) and its
+    Code line says "with Google Analytics only after you allow it"; trip.html's line now reads "The list itself is never sent anywhere".
+  - **Storage key** `tbc-consent` (documented in `core/store.js`; `tests/client.test.mjs` lists it). CSS: `site/css/15-consent.css`.
+  - Verified in Chromium (Playwright, localhost with `?consent=show`, Google hosts routed to a stub): no Google request before a
+    choice; Allow → gtag.js; reload → loads without the banner; No thanks → nothing, and it persists; revoke after a yes →
+    `ga-disable` set and the `_ga` cookies gone; GPC → no banner, no request.

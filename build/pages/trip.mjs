@@ -4,7 +4,7 @@
    (site/js/lib/share.js). The list itself is the core's view (site/js/views/trip.js on [data-trip-root]): starred
    events by their next date with live words, then experiences, places and places to stay; the share link, the
    calendar file (.ics) of starred events, Clear, a shared trip's import. This module adds the page around it:
-   - the page head and one line on what My Trip is (it stays in this browser; nothing is sent anywhere);
+   - the page head and one line on what My Trip is (it stays in this browser; the list itself is never sent anywhere, analytics or not);
    - "Times that overlap" ([data-trip-clash], filled by site/js/features/whats-on.js from events.json): starred events
      whose listed times overlap, with the straight-line distance between the two places, said to be an estimate;
    - how it works (stars, the share link, the calendar file, print), where to find things to star (counts from the
@@ -49,7 +49,7 @@ export function pages(ctx) {
     body: (root) => `${c.pageHead({
       kicker: "Plan · Your list", num: 1, title: "My Trip",
       lede: "Everything you star in this guide collects here: events by date, then tours, places and places to stay.",
-      after: `<p class="trip-privacy">${icon("info")}<span>Your list stays in this browser, on this device. Nothing is sent anywhere; a share link carries the list in the link itself.</span></p>`,
+      after: `<p class="trip-privacy">${icon("info")}<span>Your list stays in this browser, on this device. The list itself is never sent anywhere: a share link carries it inside the link.</span></p>`,
     })}
 <section class="trip-clash" data-trip-clash hidden aria-labelledby="trip-clash-h"></section>
 <div class="trip-root" data-trip-root></div>

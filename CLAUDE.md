@@ -207,6 +207,21 @@ both ends are published; no end time → "Started" until the end of its day; no 
 "This weekend"); all day → "Today"; a long run → nothing while it runs ("Through Jan 10" is on the card); cancelled and postponed →
 nothing. The topbar pill says "On today · n" and links to `whats-on.html?when=today`.
 
+### Analytics and consent
+
+Google Analytics 4 (`analyticsId` in `site.config.json`, now `G-EWSGXNE3L2`) loads **only after the visitor says yes**. Pages carry
+`<meta name="tbc-analytics" content="G-…">` and no Google script (the crawler fails an external `<script src>` or an inline script
+that loads or calls gtag). `site/js/lib/consent.js` (pure, `tests/consent.test.mjs`) decides and `site/js/core/consent.js` acts:
+a stored yes loads gtag.js (consent defaults with ads denied, Google signals and ad personalization off, `page_location` without
+the `#`, where a shared trip lives); a stored No or Global Privacy Control loads nothing and shows no banner; no choice shows
+"Count this visit?" (a non-modal region above the phone dock, bottom left on desktop; "Allow analytics" and "No thanks" weigh
+the same). The choice lives in `tbc-consent` (`{ v: 1, analytics: "granted" | "denied", t }`). The footer's "Analytics settings"
+button (`[data-consent-open]`, every page) reopens it with the state in words; a No after a yes sets `ga-disable-<id>`, sends
+consent update denied and expires the `_ga` cookies. about.html#privacy explains it. Nothing asks or loads on localhost,
+127.0.0.1, `file:`, under `navigator.webdriver` (the audits, the promo renderer) or with `?now=`, unless the URL has
+`?consent=show` (the QA hook; the table then applies as on the live site). Changing the id: edit `analyticsId` and build; turning
+analytics off: set it to `""` (the meta tag and the button go, about.html#privacy says there is none).
+
 ### Research and the merge
 
 Each `research/<slice>/<slice>.json` holds final-shape records (`research/SCHEMA.md`, machine definition
@@ -246,7 +261,7 @@ outputs, deep-link values, tests). Read it before coding a page lane. Pages use 
 
 ```
 site.config.json        siteName, siteTagline, siteBase, pathPrefix (/visit-tampa-bay/), repo, author, timezone,
-                        dataWindow {start,end}, analyticsId (empty = no analytics)
+                        dataWindow {start,end}, analyticsId (GA4, consent-gated: see "Analytics and consent"; "" = none)
 data/*.json             the single source of truth: regions areas places stays experiences events series timeline transport
                         faqs facts media routes (arrays) + aliases images map (objects)
 build.mjs               orchestrator: config → load+validate → tokens/CSS lint → page modules → render into docs.tmp/ → crawl
@@ -337,7 +352,8 @@ statusOf }, filter: { mount, get }, share, copyText, download, openEvent(id), op
 - Client JSON (`build/core/client-data.mjs`): `events.json` (instances `[day, s, e, flags]`, flags 1 end unknown · 2 time unknown ·
   4 all day · 8 ongoing · 16 late night · 32 long run), `event-text.json`, `experiences.json`, `places-lite.json`, `stays-lite.json`,
   `search.json` (kinds `pl st ex ev se ar rg pg fq tr tl`); every record carries its share code in `x`.
-- Storage keys (all `tbc-*`, documented in `site/js/core/store.js`): `tbc-theme tbc-rail tbc-trip tbc-prefs tbc-seen-shared tbc-debug`.
+- Storage keys (all `tbc-*`, documented in `site/js/core/store.js`): `tbc-theme tbc-rail tbc-trip tbc-prefs tbc-seen-shared tbc-debug
+  tbc-consent` (the analytics choice, `{ v: 1, analytics: "granted" | "denied", t }`).
 - Pure libs (`site/js/lib/`, each with `tests/<lib>.test.mjs`): `time` (nyToEpoch, expand, whenRange, fmt*), `status` (liveState),
   `filters` (URL state), `facets` (card matching), `search`, `share` (codes, tripHash, decode), `trip`, `ics`, `text`, `geo`.
 
@@ -391,7 +407,8 @@ CSS partials; a nav page with no producer, two producers, or an orphan page; a p
 without its JS file; and, crawling the output: broken links, anchors and srcsets, query keys a page does not accept and values that
 name nothing (`?r=nope`, an unknown `?e=`), `url(…)` in the CSS that does not resolve, `href="#"`, external links without the
 new-tab note, ≠ 1 `<h1>`, duplicate ids, a missing title, description, canonical or aria-current, `<img>` without alt, width or
-height, inline color, search entries that do not resolve, an incomplete sitemap, relative links on the 404 page. It **warns**
+height, inline color, search entries that do not resolve, an incomplete sitemap, relative links on the 404 page, an external
+`<script src>` or an inline script that loads or calls Google Analytics (it is consent-gated). It **warns**
 (grouped) on regions and areas without a record, records without coordinates or off the basemap, places without a summary, closed
 places without heritage, events without an area, images for records that do not exist, and size budgets.
 

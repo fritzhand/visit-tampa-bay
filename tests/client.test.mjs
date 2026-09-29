@@ -70,7 +70,8 @@ const HOOKS = ["data-star", "data-star-kind", "data-trip-count", "data-trip-card
   "data-search-results", "data-search-status", "data-k-hint", "data-theme-toggle", "data-nav-toggle", "data-scrim", "data-to-top",
   "data-toast", "data-toast-text", "data-toast-link", "data-evd-kicker", "data-evd-body", "data-xd-kicker", "data-xd-body",
   "data-trip-root", "data-filter-q", "data-filter", "data-result-count", "data-view", "data-modal", "data-close",
-  "data-s", "data-e", "data-inst", "data-days", "data-end-unknown", "data-time-unknown", "data-run", "data-cancelled", "data-status", "data-now"];
+  "data-s", "data-e", "data-inst", "data-days", "data-end-unknown", "data-time-unknown", "data-run", "data-cancelled", "data-status", "data-now",
+  "data-consent-open"];
 const camel = (h) => h.replace(/^data-/, "").replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
 test("every hook the build emits is wired by the client", () => {
@@ -107,8 +108,8 @@ test("the fixture build emits the hooks, loads main.js, and ships the client fil
 
 test("storage keys: tbc-* only, the documented set, the same the boot script reads", () => {
   assert.doesNotMatch(allSource, /["'`]cw-/, "a Cincy Week key survived the port");
-  const used = new Set([...allSource.matchAll(/["'`](tbc-[a-z-]+)["'`]/g)].map((m) => m[1]).filter((k) => k !== "tbc-ready"));
-  const documented = ["tbc-theme", "tbc-rail", "tbc-trip", "tbc-prefs", "tbc-seen-shared", "tbc-debug"];
+  const used = new Set([...allSource.matchAll(/["'`](tbc-[a-z-]+)["'`]/g)].map((m) => m[1]).filter((k) => k !== "tbc-ready" && k !== "tbc-analytics")); // a class and a <meta name>, not storage keys
+  const documented = ["tbc-theme", "tbc-rail", "tbc-trip", "tbc-prefs", "tbc-seen-shared", "tbc-debug", "tbc-consent"];
   for (const k of used) assert.ok(documented.includes(k), `undocumented storage key ${k} (document it in site/js/core/store.js)`);
   const store = src(path.join(JS, "core", "store.js"));
   for (const k of documented) assert.ok(store.includes(k), `core/store.js does not document ${k}`);

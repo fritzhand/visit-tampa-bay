@@ -3,8 +3,10 @@
    The page shell: topbar (masthead, search, My Trip, theme), grouped icon
    sidebar with the six sheets (chart code + name + a count line), collapsible
    rail, drawer, theme toggle with a FOUC-free boot script, ⌘K palette,
-   breadcrumbs, TOC rail, prev/next, footer (the independence lines), phone
-   dock, toast, the event and experience dialogs, one modal component.
+   breadcrumbs, TOC rail, prev/next, footer (the independence lines; with an
+   analyticsId, "Analytics settings" [data-consent-open]), phone dock, toast,
+   the event and experience dialogs, one modal component. With an analyticsId
+   the head carries <meta name="tbc-analytics"> and no Google script.
 
    makeShell(site) → shell(page) where `page` is a page-module output
    (build/CONTRACTS.md §3) plus the orchestrator's `root` and `slug`.
@@ -37,9 +39,12 @@ if(m&&(dbg==="1"||/^(localhost|127\\.0\\.0\\.1|\\[::1\\])$/.test(location.hostna
 var g=Date.UTC(+m[1],m[2]-1,+m[3],+m[4],+m[5]);d.setAttribute("data-now",String(g-off(g-off(g))))}})();</script>`;
 }
 
-const GA = (id) => (id ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${attr(id)}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","${attr(id)}");</script>
-` : "");
+/** Google Analytics is consent-gated: the page carries only the measurement id, never a Google script. The client
+ *  (site/js/core/consent.js, rules in site/js/lib/consent.js) asks first and injects gtag.js only after a yes; the
+ *  crawler fails any page with an external <script src>. */
+const ANALYTICS_META = (id) => (id ? `<meta name="tbc-analytics" content="${attr(id)}">\n` : "");
+/** The footer's way back to the choice (only when analytics is configured; hidden without JS, which never loads it). */
+export const CONSENT_BUTTON = `<button class="footer-btn js-only" type="button" data-consent-open aria-expanded="false">Analytics settings</button>`;
 
 export function makeShell(site) {
   const { config, db, tokens, hashes, assets } = site;
@@ -102,7 +107,7 @@ ${wordmarkArt(root, { cls: "wm-art footer-wm" })}
 </div>
 <div>
 <h2>This guide</h2>
-<ul><li><a href="${root}about.html">About and sources</a></li><li><a href="${root}about.html#corrections">Corrections and takedowns</a></li><li>${extLink(config.repo, "Source on GitHub")}</li></ul>
+<ul><li><a href="${root}about.html">About and sources</a></li><li><a href="${root}about.html#corrections">Corrections and takedowns</a></li>${config.analyticsId ? `<li><a href="${root}about.html#privacy">Privacy and analytics</a></li><li>${CONSENT_BUTTON}</li>` : `<li><a href="${root}about.html#privacy">Privacy</a></li>`}<li>${extLink(config.repo, "Source on GitHub")}</li></ul>
 </div>
 </div>
 <div class="footer-base"><span>${esc(INDEPENDENCE)} ${esc(SOURCED)} Always check the official sites before you go.</span>${mapCredit ? `<span>${esc(mapCredit)}</span>` : ""}</div>
@@ -163,9 +168,9 @@ ${tocItems.length ? `<div class="content-with-toc"><div class="content-main">${t
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-${GA(config.analyticsId)}<title>${esc(fullTitle)}</title>
+<title>${esc(fullTitle)}</title>
 <meta name="description" content="${attr(page.description)}">
-${canonical ? `<link rel="canonical" href="${attr(canonical)}">\n` : ""}${page.noindex ? '<meta name="robots" content="noindex">\n' : ""}<meta name="color-scheme" content="light dark">
+${ANALYTICS_META(config.analyticsId)}${canonical ? `<link rel="canonical" href="${attr(canonical)}">\n` : ""}${page.noindex ? '<meta name="robots" content="noindex">\n' : ""}<meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="${attr(tokens.light)}" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="${attr(tokens.dark)}" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">

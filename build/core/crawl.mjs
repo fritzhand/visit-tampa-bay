@@ -15,6 +15,8 @@
    - a color literal in a style attribute or an SVG paint attribute
    - a search.json entry whose URL does not resolve; a sitemap that misses a page
    - a 404 page with a relative link
+   - an external <script src> (any host), or an inline script that loads or calls Google Analytics (it is
+     consent-gated: site/js/core/consent.js injects gtag.js after a yes)
    It warns on size budgets.
    ============================================================ */
 import { readFileSync, readdirSync, statSync, existsSync } from "node:fs";
@@ -119,6 +121,7 @@ export function crawl({ out, pages, config, params, values = {}, navSlugs, searc
     if (h1 !== 1) fail(f, `has ${h1} <h1> elements (exactly one required)`);
     if (!/<title>[^<]+<\/title>/.test(d.raw)) fail(f, "missing <title>");
     if (!/<meta name="description" content="[^"]+">/.test(d.raw)) fail(f, "missing meta description");
+    for (const m of d.raw.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) if (!/ld\+json/.test(m[1]) && /googletagmanager|google-analytics|\bgtag\(|\bdataLayer\b/.test(m[2])) fail(f, "an inline script loads or calls Google Analytics: it loads only after consent (site/js/core/consent.js)");
     if (page && !page.noindex && !/<link rel="canonical" href="https:\/\/[^"]+">/.test(d.raw)) fail(f, "missing canonical link");
     if (page && navSlugs.includes(page.slug)) {
       const sb = d.html.slice(d.html.indexOf('<nav class="sidebar"'), d.html.indexOf("</nav>", d.html.indexOf('<nav class="sidebar"')));
@@ -153,7 +156,9 @@ export function crawl({ out, pages, config, params, values = {}, navSlugs, searc
       if (t.name === "form" && a.action) urls.push(["action", a.action]);
       for (const [kind, u] of urls) {
         if (kind === "use" && u.startsWith("#")) { if (!d.ids.has(u.slice(1))) fail(f, `<use href="${u}">: no symbol with that id on the page`); continue; }
-        if (kind === "src" && /^https:\/\/www\.googletagmanager\.com\//.test(u)) continue;
+        // no third-party script in any page: the site is self-hosted, and Google Analytics loads only after the visitor's
+        // yes (site/js/core/consent.js injects gtag.js; the page carries only <meta name="tbc-analytics">)
+        if (kind === "src" && t.name === "script" && /^(https?:)?\/\//i.test(u)) { fail(f, `external <script src="${u.slice(0, 80)}">: no page loads a third-party script (analytics is consent-gated in site/js/core/consent.js)`); continue; }
         if (is404 && !/^(https:|mailto:|tel:|#)/.test(u) && !u.startsWith(prefix)) fail(f, `404 links must be absolute (start with ${prefix}): ${u}`);
         const err = check(f, u);
         if (err) fail(f, err);

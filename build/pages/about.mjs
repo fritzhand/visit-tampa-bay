@@ -5,7 +5,8 @@
    every site the records cite with the number of records citing it (grouped: official sites, government and public
    agencies, tourism offices and chambers, news and guides, Wikipedia and Wikimedia Commons), the image credits (counts by
    license from data/images.json, a table of every image shown, and the rights-cleared images in data/media.json), the
-   map and font credits, the engine and the history this guide is built on, #corrections (the footer links it) and the
+   map and font credits, the engine and the history this guide is built on, #privacy (what the consent-gated Google
+   Analytics does, or that there is none; the footer and the consent banner link it), #corrections (the footer links it) and the
    author, with "Last built" (ctx.buildDate: the only volatile line in the site; test.yml ignores about.html's date).
    Every number on this page is computed from data/ at build time; nothing is typed in.
    ============================================================ */
@@ -176,7 +177,24 @@ ${hostList(list.slice(0, SHOW))}${list.length > SHOW ? `<details class="ab-more"
     ["Build", "The site is built from those files by a script that stops, listing every problem, when a record has no source, a placeholder such as “TBA”, a non-secure link, an impossible time or a link that leads nowhere. Every count on every page is computed from the data at build time."],
   ];
 
-  const toc = [["what", "What this is"], ["method", "How it is made"], ["rules", "The rules"], ["sources", "Sources"], ["images", "Images and credits"], ["credits", "Map, type and code"], ["corrections", "Corrections"], ["author", "Who makes it"]];
+  /* ---------- privacy: what the consent-gated analytics does (site/js/core/consent.js, rules in site/js/lib/consent.js) ---------- */
+  const ga = !!config.analyticsId;
+  const privacyTitle = ga ? "Privacy and analytics" : "Privacy";
+  const GOOGLE_PRIVACY = "https://policies.google.com/privacy";
+  const GA_DATA = "https://support.google.com/analytics/answer/6004245";
+  const privacyBody = () => (ga ? `<div class="prose ab-privacy">
+<p>This guide counts visits with Google Analytics 4, and only after you choose <b>Allow analytics</b>. Until you do, and if you choose <b>No thanks</b>, nothing from Google loads: no script, no cookie, no request to a Google server.</p>
+<p>With your OK, Google Analytics records the pages you open (each page's address without the part after a “#”, where a shared trip link carries its list) and the usage data it collects with them. Google says Analytics “collects first-party cookies, data related to the device/browser, IP address (when collecting data, Google Analytics does not log or store IP addresses), and on-site/app activities to measure and report statistics about user interactions” (${h.extLink(GA_DATA, "Safeguarding your data")}). How Google uses that data: ${h.extLink(GOOGLE_PRIVACY, "Google Privacy Policy")}.</p>
+<p>Google signals and ad personalization are off: the guide tells Google Analytics not to use your visit for advertising, and that you have not agreed to advertising cookies.</p>
+<p>Your choice is stored in this browser, under the name <code>tbc-consent</code>, and nowhere else. If your browser sends Global Privacy Control, the guide takes it as No and does not ask.</p>
+<p>You can change your choice at any time with <b>Analytics settings</b>, at the foot of every page. When you turn analytics off, the guide stops Google Analytics on the page you are on and deletes its cookies (<code>_ga</code> and <code>_ga_…</code>).</p>
+<p>My Trip, your stars and the edition you pick (Day or Night chart) are stored only in your browser and are never sent anywhere. A share link carries a trip in the link itself, to whoever you give it to.</p>
+</div>
+<p class="btn-row js-only"><button class="btn btn-secondary" type="button" data-consent-open aria-expanded="false">${icon("sliders")}Analytics settings</button></p>`
+    : `<div class="prose ab-privacy"><p>This guide has no analytics: it loads nothing from Google or any other counter, and sets no cookies.</p>
+<p>My Trip, your stars and the edition you pick (Day or Night chart) are stored only in your browser and are never sent anywhere. A share link carries a trip in the link itself, to whoever you give it to.</p></div>`);
+
+  const toc = [["what", "What this is"], ["method", "How it is made"], ["rules", "The rules"], ["sources", "Sources"], ["images", "Images and credits"], ["credits", "Map, type and code"], ["privacy", privacyTitle], ["corrections", "Corrections"], ["author", "Who makes it"]];
   const osmLink = (t) => h.extLink("https://www.openstreetmap.org/copyright", t);
   const mapSrc = db.map && db.map.source_url ? db.map.source_url : "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html";
   const mapAttr = db.map && typeof db.map.attribution === "string" ? db.map.attribution : "U.S. Census Bureau, TIGER/Line Shapefiles (public domain)";
@@ -223,8 +241,9 @@ ${c.section({ id: "credits", title: "Map, type and code", anchor: true, root, bo
 <div><dt>Type</dt><dd>Bodoni Moda, Figtree and Archivo, all under the SIL Open Font License 1.1, served with the site: <a href="${root}assets/fonts/OFL-BodoniModa.txt">Bodoni Moda license</a> · <a href="${root}assets/fonts/OFL-Figtree.txt">Figtree license</a> · <a href="${root}assets/fonts/OFL-Archivo.txt">Archivo license</a>.</dd></div>
 <div><dt>Engine</dt><dd>The build engine, the checks and the tone rules come from ${h.extLink("https://github.com/fritzhand/cincy-week", "Cincy Week")} (fritzhand/cincy-week), a source-linked guide to a week in Cincinnati.</dd></div>
 <div><dt>History</dt><dd>The history and the citation standard come from ${h.extLink("https://github.com/fritzhand/history-of-tampa", "History of Tampa")} (fritzhand/history-of-tampa).</dd></div>
-<div><dt>Code</dt><dd>The guide is a static site built from JSON data files${config.analyticsId ? "" : ", with no analytics"}. Its source is on ${h.extLink(config.repo, esc(config.repo.replace(/^https:\/\//, "")))}.</dd></div>
+<div><dt>Code</dt><dd>The guide is a static site built from JSON data files${ga ? ", with Google Analytics only after you allow it (<a href=\"#privacy\">Privacy and analytics</a>)" : ", with no analytics"}. Its source is on ${h.extLink(config.repo, esc(config.repo.replace(/^https:\/\//, "")))}.</dd></div>
 </dl>` })}
+${c.section({ id: "privacy", title: privacyTitle, anchor: true, root, body: privacyBody() })}
 ${c.section({ id: "corrections", title: "Corrections and takedowns", anchor: true, root, body: `<div class="ab-fix">
 <div class="prose"><p>Found a wrong hour, a closed business, a moved event, a broken link? Is a photo or a listing yours, and you want it changed or removed? ${h.extLink(issues, "Open an issue on GitHub")} with:</p>
 <ol><li>the link to the page in this guide,</li><li>what is wrong, or what you want removed,</li><li>for a correction, the official page that states the right information.</li></ol>

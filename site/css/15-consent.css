@@ -1,0 +1,74 @@
+/* ======================================================================
+   site/css/15-consent.css · OWNER: the maintainer (analytics consent, added 2026-09-29)
+   The analytics question (site/js/core/consent.js builds it; nothing loads from Google before a yes):
+     section.consent[role=region][data-consent="ask"|"settings"] > .consent-card
+       .consent-kicker · h2.consent-title#consent-title · .consent-state (settings: "Analytics is on.") ·
+       .consent-text · .consent-actions (two .btn.consent-btn of equal weight) · .consent-foot (Privacy details, Close)
+   A small label card: cream (Night: bay navy) with the label's double rule on top, Bodoni title, Archivo caps kicker.
+   Below 1024px it spans the width just above the dock (never over it); from 1024px it is a compact card at the
+   bottom left of the content column, clear of the sidebar. Non-modal: it hides while the drawer, a dialog or the
+   on-screen keyboard is up, and body.consent-open pads the page by its height (--consent-h) so nothing stays under it.
+   Also the footer's "Analytics settings" button (.footer-btn[data-consent-open]). Tokens only; no color literal.
+   ====================================================================== */
+.consent {
+  position: fixed; z-index: calc(var(--z-dock) + 1);
+  left: 0; right: 0; bottom: 0;
+  color: var(--text);
+}
+.consent-card {
+  position: relative; max-height: calc(100dvh - var(--topbar-h) - var(--sp-4)); overflow-y: auto; overscroll-behavior: contain;
+  padding: calc(var(--sp-4) + 6px) var(--gutter) var(--sp-4);
+  background:
+    linear-gradient(var(--rule-ink) 0 0) 0 0 / 100% 2px no-repeat,
+    linear-gradient(var(--rule-ink) 0 0) 0 5px / 100% 1px no-repeat,
+    var(--surface);
+  box-shadow: var(--shadow-3);
+}
+.consent-kicker {
+  display: flex; align-items: center; gap: 10px; color: var(--gold-ink);
+  font-family: var(--font-label); font-stretch: var(--label-stretch); font-size: var(--fs-label); font-weight: var(--wght-label);
+  letter-spacing: var(--track-label); text-transform: uppercase; line-height: 1.3;
+}
+.consent-kicker::after { content: ""; flex: 1 1 auto; min-width: 24px; height: 6px; background: var(--water-line); -webkit-mask: var(--mask-ripple) 0 50% / 20px 6px repeat-x; mask: var(--mask-ripple) 0 50% / 20px 6px repeat-x; }
+.consent-title {
+  margin-top: 6px; font-family: var(--font-display); font-weight: var(--wght-head); font-size: var(--fs-lg); line-height: var(--lh-head);
+  letter-spacing: var(--track-head); color: var(--text);
+}
+.consent-title:focus { outline: none; }
+.consent-title:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.consent-state { margin-top: var(--sp-2); font-size: var(--fs-sm); line-height: var(--lh-ui); color: var(--text-muted); }
+.consent-state b { color: var(--text); font-weight: var(--wght-strong); }
+.consent-text { margin-top: var(--sp-2); font-size: var(--fs-sm); line-height: 1.5; color: var(--text); }
+.consent-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--sp-3); margin-top: var(--sp-4); }
+/* equal weight: the same outline button twice, neither one filled or colored (no nudge toward either answer) */
+.btn.consent-btn { width: 100%; padding: 0 12px; background: var(--surface); color: var(--text); border-color: var(--rule-ink); }
+.btn.consent-btn:hover { background: var(--primary); color: var(--primary-contrast); border-color: var(--primary); }
+.consent-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 var(--sp-3); margin-top: var(--sp-2); font-size: var(--fs-sm); }
+.consent-foot a { display: inline-flex; align-items: center; min-height: var(--tap); }
+.btn.consent-close { margin-left: auto; }
+@media (max-width: 359px) { .consent-actions { grid-template-columns: minmax(0, 1fr); } }
+
+/* phones and tablets: full width, sitting on top of the dock */
+@media (max-width: 1023px) {
+  .consent { bottom: calc(var(--dock-h) + env(safe-area-inset-bottom)); }
+  .consent-card { max-height: calc(100dvh - var(--topbar-h) - var(--dock-h) - var(--sp-4)); border-bottom: 1px solid var(--border-strong); }
+  .consent-card > * { max-width: 600px; margin-left: auto; margin-right: auto; }
+  body.nav-open .consent, body.modal-open .consent, body.kb-open .consent { display: none; }
+}
+/* desktop: a compact card at the bottom left of the content column, clear of the sidebar */
+@media (min-width: 1024px) {
+  .consent { left: calc(var(--sidebar-w) + var(--sp-5)); right: auto; bottom: var(--sp-5); width: min(392px, calc(100vw - var(--sidebar-w) - 2 * var(--sp-5))); }
+  :root.rail-collapsed .consent { left: var(--sp-5); }
+  .consent-card { padding: calc(var(--sp-4) + 6px) var(--sp-5) var(--sp-3); border: 1px solid var(--border-strong); border-top: 0; }
+  body.modal-open .consent { display: none; }
+}
+body.consent-open { padding-bottom: var(--consent-h, 0px); }
+
+/* the footer's way back to the choice: reads like the footer's links */
+.footer-btn {
+  display: flex; align-items: center; min-height: var(--tap); color: var(--text); font-size: var(--fs-sm);
+  text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em;
+}
+.footer-btn:hover { color: var(--link-hover); text-decoration-thickness: 2px; }
+
+@media print { .consent, .footer-btn { display: none !important; } }
