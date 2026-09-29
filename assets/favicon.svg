@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style>svg{--mk-ink:#12264c;--mk-paper:#fcf8eb;--mk-gold:#c5953b;--mk-gold-hi:#e4c87c;--mk-north:#a7186f}
+.gold{fill:var(--mk-gold)}.ink{fill:var(--mk-ink)}.paper{fill:var(--mk-paper)}
+.dk{fill:var(--mk-ink)}.dk.n{fill:var(--mk-north)}.lt{fill:var(--mk-paper);stroke:var(--mk-ink);stroke-width:.7;stroke-linejoin:round}</style>
+<ellipse class="gold" cx="16" cy="16" rx="12.6" ry="15.6"/>
+<ellipse class="ink" cx="16" cy="16" rx="11.2" ry="14.2"/>
+<ellipse class="paper" cx="16" cy="16" rx="9.4" ry="12.4"/>
+<path class="dk n" d="M16 16L16 4L18.6 16Z"/><path class="lt" d="M16 16L16 4L13.4 16Z"/><path class="dk" d="M16 16L24.2 16L16 18.6Z"/><path class="lt" d="M16 16L24.2 16L16 13.4Z"/><path class="dk" d="M16 16L16 28L13.4 16Z"/><path class="lt" d="M16 16L16 28L18.6 16Z"/><path class="dk" d="M16 16L7.8 16L16 13.4Z"/><path class="lt" d="M16 16L7.8 16L16 18.6Z"/>
+<circle class="gold" cx="16" cy="16" r="1.5"/></svg>
