@@ -13,6 +13,8 @@
                       page's last list/map view here; features may add keys named "<page>.<name>")
      tbc-seen-shared  the last shared-trip hash the reader answered (views/trip.js), so it does not ask again
      tbc-debug        "1" enables ?now= on the live site (QA only; read by the boot script)
+     tbc-consent      { v: 1, analytics: "granted" | "denied", t: epoch ms of the choice }   consent.js (Google Analytics
+                      loads only after "granted"; lib/consent.js parseChoice() reads it, anything else is no choice)
    ============================================================ */
 const mem = new Map();
 let blocked = false;
